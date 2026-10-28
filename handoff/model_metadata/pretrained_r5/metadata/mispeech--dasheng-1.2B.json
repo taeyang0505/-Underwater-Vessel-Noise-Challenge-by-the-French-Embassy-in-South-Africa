@@ -1,0 +1,106 @@
+{
+  "_id": "666125b9d33c5239748685d2",
+  "id": "mispeech/dasheng-1.2B",
+  "private": false,
+  "pipeline_tag": "audio-classification",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dasheng",
+    "feature-extraction",
+    "audio",
+    "audio-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "deploy:azure",
+    "region:us"
+  ],
+  "downloads": 280,
+  "likes": 5,
+  "modelId": "mispeech/dasheng-1.2B",
+  "author": "mispeech",
+  "sha": "4ae6b990f87bf40579b97bab065f4e47920b28dc",
+  "lastModified": "2026-10-25T08:51:40.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "DashengModel"
+    ],
+    "auto_map": {
+      "AutoConfig": "configuration_dasheng.DashengConfig",
+      "AutoModel": "modeling_dasheng.DashengModel"
+    },
+    "model_type": "dasheng"
+  },
+  "cardData": {
+    "license": "apache-2.0",
+    "tags": [
+      "audio",
+      "audio-classification"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModel",
+    "custom_class": "modeling_dasheng.DashengModel",
+    "pipeline_tag": "feature-extraction"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "6def6cf80c8d9b46ef3a1d106e0267a598d874c0",
+      "size": 2720
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "49014c0ada6a824583b247f56f9b03b0c73a703d",
+      "size": 519
+    },
+    {
+      "rfilename": "configuration_dasheng.py",
+      "blobId": "0b9e8e43641110b914c7fe1db10979e5dbdbf33a",
+      "size": 2798
+    },
+    {
+      "rfilename": "feature_extraction_dasheng.py",
+      "blobId": "a3d2312d79fa96db51d2817c9046c2f6b1e13d35",
+      "size": 6717
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "1575970609484a9029e4dacebd49637e426ad112",
+      "size": 4536241360,
+      "lfs": {
+        "sha256": "b3b9316fe0ea051eefafff51ee2341629914b8db5f78cbe991803dc86f5669df",
+        "size": 4536241360,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "modeling_dasheng.py",
+      "blobId": "f81afedbda108a6ce09ded423bb8beba94685fce",
+      "size": 19639
+    },
+    {
+      "rfilename": "preprocessor_config.json",
+      "blobId": "fa0bb8851b31cede41806c3b94fd2a7ef56926fb",
+      "size": 445
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2024-06-06T02:58:01.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 1134047488
+    },
+    "total": 1134047488
+  },
+  "usedStorage": 4536241360
+}

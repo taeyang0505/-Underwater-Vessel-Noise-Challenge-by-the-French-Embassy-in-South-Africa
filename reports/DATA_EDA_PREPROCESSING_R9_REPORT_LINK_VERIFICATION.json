@@ -1,0 +1,1233 @@
+{
+  "status": "passed",
+  "files_checked": 41,
+  "relative_links_checked": 204,
+  "broken_count": 0,
+  "broken": [],
+  "checked": [
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/02_missingness.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/02_missingness.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/01_site_rows.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/01_site_rows.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/03_band_profile.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/03_band_profile.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/04_source_hours.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/04_source_hours.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/05_fold_roles.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/05_fold_roles.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/06_model_parameters.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/06_model_parameters.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_preprocessing.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_preprocessing.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_training.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_training.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_inference.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_inference.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/metric_catalog_305.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/metric_catalog_305.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/02_missingness.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/02_missingness.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/01_site_rows.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/01_site_rows.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/03_band_profile.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/03_band_profile.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/04_source_hours.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/04_source_hours.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/05_fold_roles.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/05_fold_roles.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/06_model_parameters.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/06_model_parameters.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_preprocessing.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_preprocessing.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_training.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_training.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_inference.png",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/figures/r9_pipeline_inference.png",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/01_site_summary.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/02_recorder_summary.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/03_column_missingness.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/04_recorder_band_missingness.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/05_common_band_global_stats.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/06_common_band_site_stats.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/07_duration_counts.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/08_file_inventory.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/09_recorder_duty_cycle.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/10_run_edge_artifacts.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/11_band_energy_share.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/12_diurnal_band_deviation.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/13_monthly_broadband_deviation.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/14_broadband_acf.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/15_band_correlation.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/16_window_feature_train_vs_test.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/17_band_transient_profiles.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/18_domain_probe_cv_confusion.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/19_domain_probe_vs_missing_pattern.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/20_site_matched_feature_comparison.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/21_top_band_support_by_recorder.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/22_test_missing_patterns.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/23_test_minute_band_missingness.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/24_recorder_spectrum_quantiles.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/25_missing_pattern_by_recorder.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.html",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.html",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "link": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.csv",
+      "target": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/tables/26_test_features_by_missing_pattern.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R7_R5_SUBMISSION_PATH_AUDIT.md",
+      "link": "../../R7_R5_SUBMISSION_PATH_AUDIT_PLAN.json",
+      "target": "R7_R5_SUBMISSION_PATH_AUDIT_PLAN.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R7_R5_SUBMISSION_PATH_AUDIT.md",
+      "link": "../../R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+      "target": "R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.md",
+      "link": "../../R8_EXTERNAL_DATA_EVIDENCE.json",
+      "target": "R8_EXTERNAL_DATA_EVIDENCE.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.md",
+      "link": "../../R7_ANIL45_SOURCE_COMPARISON.md",
+      "target": "R7_ANIL45_SOURCE_COMPARISON.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.md",
+      "link": "../../external_expansion_catalog.json",
+      "target": "external_expansion_catalog.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.md",
+      "link": "../../R8_EXTERNAL_DATA_EVIDENCE.json",
+      "target": "R8_EXTERNAL_DATA_EVIDENCE.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.md",
+      "link": "../../R7_ANIL45_SOURCE_COMPARISON.md",
+      "target": "R7_ANIL45_SOURCE_COMPARISON.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../R8_FEATURE_PIPELINE_EVIDENCE.json",
+      "target": "R8_FEATURE_PIPELINE_EVIDENCE.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../data/extracted/DATA_DICTIONARY.md",
+      "target": "../data/extracted/DATA_DICTIONARY.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/prepare_sa.py:31",
+      "target": "../pipeline/prepare_sa.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../data/processed/sa_preparation_manifest.json",
+      "target": "../data/processed/sa_preparation_manifest.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/audio.py:10",
+      "target": "../pipeline/audio.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../data/versions/vtuad_reference_r4_v1/manifest.json",
+      "target": "../data/versions/vtuad_reference_r4_v1/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+      "target": "R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/passage_sampler_r4.py:198",
+      "target": "../pipeline/passage_sampler_r4.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/dynamic_passage_r5.py:117",
+      "target": "../pipeline/dynamic_passage_r5.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/robust_sampler_r6.py:115",
+      "target": "../pipeline/robust_sampler_r6.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../configs/r6_cpu_guardrails_v2.json",
+      "target": "../configs/r6_cpu_guardrails_v2.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/relative_models_r6_v2.py:21",
+      "target": "../pipeline/relative_models_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/cpu_ablation_r6_v2.py:141",
+      "target": "../pipeline/cpu_ablation_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/mixtures.py:157",
+      "target": "../pipeline/mixtures.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/background_prior_features.py:45",
+      "target": "../pipeline/background_prior_features.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/grid_inputs_r5.py:117",
+      "target": "../pipeline/grid_inputs_r5.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/relative_grid_r6.py:89",
+      "target": "../pipeline/relative_grid_r6.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/relative_grid_r6_v2.py:30",
+      "target": "../pipeline/relative_grid_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/physics_features_r6_v2.py:25",
+      "target": "../pipeline/physics_features_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/physics_features_r6_v2.py:129",
+      "target": "../pipeline/physics_features_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/cpu_ablation_r6_v2.py:116",
+      "target": "../pipeline/cpu_ablation_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/lgbm_r5.py:19",
+      "target": "../pipeline/lgbm_r5.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../R7_SMALL_MODEL_CONTROLS_RESULTS.md",
+      "target": "R7_SMALL_MODEL_CONTROLS_RESULTS.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/group_cv.py:71",
+      "target": "../pipeline/group_cv.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/build_passage_cv_r4.py:95",
+      "target": "../pipeline/build_passage_cv_r4.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/source_split_r6.py:53",
+      "target": "../pipeline/source_split_r6.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../R6_SOURCE_SPLIT_AUDIT.md",
+      "target": "R6_SOURCE_SPLIT_AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../data/versions/source_split_r6_guardrails_v2/manifest.json",
+      "target": "../data/versions/source_split_r6_guardrails_v2/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../../pipeline/hard_negatives_r6_v2.py:60",
+      "target": "../pipeline/hard_negatives_r6_v2.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "link": "../../R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+      "target": "R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../R8_SA_EDA_EVIDENCE.json",
+      "target": "R8_SA_EDA_EVIDENCE.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../TASK_EDA_REPORT.md",
+      "target": "../TASK_EDA_REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../R5_EDA_INTEGRATION_FACTCHECK.md",
+      "target": "R5_EDA_INTEGRATION_FACTCHECK.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../R5_OUTLIER_AUDIT.md",
+      "target": "R5_OUTLIER_AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../data_quality_boundary_audit.json",
+      "target": "data_quality_boundary_audit.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+      "target": "R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda/summary.json",
+      "target": "../eda/summary.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda/tables/site_summary.csv",
+      "target": "../eda/tables/site_summary.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda/tables/recorder_summary.csv",
+      "target": "../eda/tables/recorder_summary.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda/tables/file_inventory.csv",
+      "target": "../eda/tables/file_inventory.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../data/extracted/README.md",
+      "target": "../data/extracted/README.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../data/extracted/DATA_DICTIONARY.md",
+      "target": "../data/extracted/DATA_DICTIONARY.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../R5_OUTLIER_AUDIT.json",
+      "target": "R5_OUTLIER_AUDIT.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda_deep/tables/run_edge_artifacts.csv",
+      "target": "../eda_deep/tables/run_edge_artifacts.csv",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda_deep/deep_eda.py",
+      "target": "../eda_deep/deep_eda.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+      "target": "R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda_deep/deep_eda.py",
+      "target": "../eda_deep/deep_eda.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda/summary.json",
+      "target": "../eda/summary.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+      "link": "../../../eda_deep/summary.json",
+      "target": "../eda_deep/summary.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.md",
+      "link": "../../../data/versions/background_cv_r9/manifest.json",
+      "target": "../data/versions/background_cv_r9/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.md",
+      "link": "../../../data/versions/background_cv_r9/readiness.json",
+      "target": "../data/versions/background_cv_r9/readiness.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.md",
+      "link": "../../R9_BACKGROUND_CV_AUDIT.json",
+      "target": "R9_BACKGROUND_CV_AUDIT.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.md",
+      "link": "../../../pipeline/background_cv_r9.py",
+      "target": "../pipeline/background_cv_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.md",
+      "link": "../../../ops/build_background_cv_r9.py",
+      "target": "../ops/build_background_cv_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_DIAGRAM_FACTS.md",
+      "link": "../../R9_DIAGRAM_FACTS.json",
+      "target": "R9_DIAGRAM_FACTS.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_MODEL_ADAPTER_VERIFICATION.md",
+      "link": "../../../pipeline/models_r9.py",
+      "target": "../pipeline/models_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_MODEL_ADAPTER_VERIFICATION.md",
+      "link": "../../../ops/verify_models_r9.py",
+      "target": "../ops/verify_models_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_MODEL_ADAPTER_VERIFICATION.md",
+      "link": "../../R9_MODEL_ADAPTER_VERIFICATION.json",
+      "target": "R9_MODEL_ADAPTER_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_MODEL_ADAPTER_VERIFICATION.md",
+      "link": "../../R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "target": "R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_R6_PILOT_SUBMISSION.md",
+      "link": "../../R9_R6_PILOT_SUBMISSION_PLAN.json",
+      "target": "R9_R6_PILOT_SUBMISSION_PLAN.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_R6_PILOT_SUBMISSION.md",
+      "link": "../../R9_R6_PILOT_SUBMISSION.json",
+      "target": "R9_R6_PILOT_SUBMISSION.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REAL_DATA_CONNECTION_VERIFICATION.md",
+      "link": "../../R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+      "target": "R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.md",
+      "link": "../../../data/versions/vtuad_full_r9/manifest.json",
+      "target": "../data/versions/vtuad_full_r9/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.md",
+      "link": "../../R9_REFERENCE_POOL_AUDIT.json",
+      "target": "R9_REFERENCE_POOL_AUDIT.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.md",
+      "link": "../../../data/versions/vtuad_full_r9/readiness.json",
+      "target": "../data/versions/vtuad_full_r9/readiness.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.md",
+      "link": "../../../pipeline/reference_pool_r9.py",
+      "target": "../pipeline/reference_pool_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.md",
+      "link": "../../../ops/build_reference_pool_r9.py",
+      "target": "../ops/build_reference_pool_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TRAINING_ENGINE_VERIFICATION.md",
+      "link": "../../R9_TRAINING_ENGINE_VERIFICATION.json",
+      "target": "R9_TRAINING_ENGINE_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.md",
+      "link": "../../R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+      "target": "R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.md",
+      "link": "../../../pipeline/trees_ensemble_r9.py",
+      "target": "../pipeline/trees_ensemble_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.md",
+      "link": "../../../ops/verify_trees_ensemble_r9.py",
+      "target": "../ops/verify_trees_ensemble_r9.py",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.md",
+      "link": "../../R9_TREES_ENSEMBLE_VERIFICATION.json",
+      "target": "R9_TREES_ENSEMBLE_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.md",
+      "link": "../../R9_MODEL_ADAPTER_VERIFICATION.md",
+      "target": "R9_MODEL_ADAPTER_VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "file": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.md",
+      "link": "../../R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "target": "R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "exists": true
+    }
+  ]
+}

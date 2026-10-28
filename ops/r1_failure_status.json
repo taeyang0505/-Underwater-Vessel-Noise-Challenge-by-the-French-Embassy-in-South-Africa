@@ -1,0 +1,70 @@
+{
+  "run": "group_cv_physics_v2_r1_adam",
+  "execution_status": "failed",
+  "completed_cv_folds": 0,
+  "failure": "TabICL outer phase: query-batch numerical invariance check rejected",
+  "failure_time_KST": "2026-10-25T03:08:15.989754+09:00",
+  "full_run_outer_access": "Outer evaluation began after frozen inner ensemble policy. Diagnostics do not read outer inputs, labels, predictions or scores.",
+  "constant_train_mean_inner_rmse": 0.317663195570357,
+  "models": [
+    {
+      "model": "lgbm",
+      "inner_rmse": 0.30552356090617117,
+      "bias": -0.08315550562490745
+    },
+    {
+      "model": "lgbm_physics",
+      "inner_rmse": 0.28370051829302556,
+      "bias": -0.08643627680087831
+    },
+    {
+      "model": "lgbm_retrieval",
+      "inner_rmse": 0.28375993925912385,
+      "bias": -0.08211737787127771
+    },
+    {
+      "model": "tabm",
+      "inner_rmse": 0.2893611035810582,
+      "bias": -0.09459479602488378,
+      "first_loss": 0.05332805724359333,
+      "last_loss": 0.053631981163511734,
+      "last_train_rmse": 0.17411673086266283,
+      "epochs": 9,
+      "best_epoch": 2
+    },
+    {
+      "model": "cnn",
+      "inner_rmse": 0.32115460396931594,
+      "bias": -0.18075348280767017,
+      "first_loss": 0.03993374424267357,
+      "last_loss": 0.008640220241901912,
+      "last_train_rmse": 0.06015936801620161,
+      "epochs": 13,
+      "best_epoch": 6
+    },
+    {
+      "model": "fdy",
+      "inner_rmse": 0.32616478232706997,
+      "bias": -0.17950415547700443,
+      "first_loss": 0.0440748477233324,
+      "last_loss": 0.012139497166700298,
+      "last_train_rmse": 0.0752288136848103,
+      "epochs": 16,
+      "best_epoch": 9
+    },
+    {
+      "model": "itransformer",
+      "inner_rmse": 0.34479741349093734,
+      "bias": -0.191481587709859,
+      "first_loss": 0.03846972251239439,
+      "last_loss": 0.01573368177398545,
+      "last_train_rmse": 0.09547445654788078,
+      "epochs": 14,
+      "best_epoch": 7
+    }
+  ],
+  "backup": "ops/server_backups/snapshot_20261024T180856_204764Z_56e064fd.zip",
+  "backup_verified_files": 37,
+  "data_or_frozen_code_modified_for_diagnosis": false,
+  "official_submission_created_or_sent": false
+}

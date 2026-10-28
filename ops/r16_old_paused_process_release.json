@@ -1,0 +1,12 @@
+{
+  "status": "terminated_already_paused_old_run_to_release_memory",
+  "pid": 80906,
+  "previous_state_command": "Ts   /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m ops.train_r14_production_nn train --config configs/r14_production_mac_v1.json --fold 0 --preflight reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.json --qa reports/R14_PRODUCTION_NN_INDEPENDENT_QA.json --output /Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r14_production_nn_fold0_r1",
+  "signal": "SIGKILL_to_stopped_process_no_SIGCONT",
+  "checkpoint_epoch": 37,
+  "checkpoint_path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/latest.pt",
+  "checkpoint_sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9",
+  "checkpoint_unchanged_after": true,
+  "reason": "User approved ending R14 training and new R16 training; old stopped process retained RAM; all completed checkpoint artifacts preserved",
+  "utc": "2026-10-27T08:59:30.154634+00:00"
+}

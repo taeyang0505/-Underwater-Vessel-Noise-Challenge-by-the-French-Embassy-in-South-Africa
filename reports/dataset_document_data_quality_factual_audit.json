@@ -1,0 +1,78 @@
+{
+  "document": "DATASET_CONSTRUCTION_PREPROCESSING_REPORT.md",
+  "numeric_facts_reverified": true,
+  "rows": 1715779,
+  "eligible": 1698224,
+  "window_included": 1698184,
+  "dur_below55": 16896,
+  "sentinel": 653,
+  "sites": 10,
+  "recorders": 12,
+  "site_recorder_pairs": 17,
+  "all_windows": 133641,
+  "v2_split_counts": {
+    "train": 91186,
+    "domain_holdout": 16048,
+    "validation": 9779,
+    "calibration": 9049,
+    "purged_temporal_boundary": 7579
+  },
+  "cv_windows": 100965,
+  "cv_sites": 7,
+  "cv_background_groups": 258,
+  "cv_reference_counts": [
+    {
+      "source": "HearMyShip_V1",
+      "clips": 945,
+      "components": 19,
+      "original_groups": 19,
+      "duration_seconds": 18974.027541666666,
+      "native_clips": 0
+    },
+    {
+      "source": "NOAA_SanctSound_extension_v1",
+      "clips": 8,
+      "components": 4,
+      "original_groups": 4,
+      "duration_seconds": 7200.0,
+      "native_clips": 8
+    },
+    {
+      "source": "VTUAD_v1.3.2",
+      "clips": 218,
+      "components": 3,
+      "original_groups": 88,
+      "duration_seconds": 51534.0,
+      "native_clips": 3
+    }
+  ],
+  "canonical_npz_bytes": 173747257,
+  "array_payload_from_declared_shapes": 330880000,
+  "feature_shapes": {
+    "fixed_features": 1254,
+    "physics_features": 45,
+    "foundation_features": 96,
+    "cnn_channels": [
+      4,
+      4,
+      15,
+      25
+    ]
+  },
+  "example": {
+    "stored_share": 0.6327685117721558,
+    "recovered_share": 0.6327684780581277,
+    "mean_cell_fraction": 0.9622203707695007,
+    "observed_minutes": 13,
+    "original_total_band_energy_fraction_first8": 0.5023162897502589
+  },
+  "full_original_minutes_preserved": true,
+  "challenge_Test_arrays_opened": false,
+  "calibration_or_sealed_arrays_opened": false,
+  "outer_arrays_opened": false,
+  "document_modified": false,
+  "minor_clarifications": [
+    "For u=0, alpha=0 is an explicit implementation branch; the general alpha formula requires positive observed reference energy.",
+    "The first 8 frequency bands carry large background/mixture energy in the illustrated example; its component panels are reconstructed from saved known q, not a separator prediction."
+  ]
+}

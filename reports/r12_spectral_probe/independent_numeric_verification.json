@@ -1,0 +1,45 @@
+{
+  "format": "r12_scalar_probe_independent_numeric_qa_v1",
+  "status": "passed",
+  "created_utc": "2026-10-26T16:24:02.536749+00:00",
+  "manual_numpy_scalar_vs_saved_max_errors": {
+    "full_smooth15": {
+      "old8_profile_mid_minus_low_db": 3.1864477634258037e-07,
+      "old8_profile_mid_chord_excess_db": 5.045284809934714e-07,
+      "old8_sqrtw_mid_energy_fraction": 1.3106448037980556e-08,
+      "new11_positive_PCA_residual_RMS_db": 2.841332369385441e-08,
+      "new11_signed_PCA_residual_mid_mean_db": 1.3915240515416372e-08,
+      "new11_positive_local_curvature_RMS_db": 1.0196099964332461e-07
+    },
+    "native_long15": {
+      "old8_profile_mid_minus_low_db": 5.299929100033296e-07,
+      "old8_profile_mid_chord_excess_db": 4.2486936413510534e-07,
+      "old8_sqrtw_mid_energy_fraction": 1.2007598526597718e-08,
+      "new11_positive_PCA_residual_RMS_db": 4.338981174356604e-08,
+      "new11_signed_PCA_residual_mid_mean_db": 1.6433880534183487e-08,
+      "new11_positive_local_curvature_RMS_db": 9.846310522476642e-08
+    },
+    "st_francis_dense": {
+      "old8_profile_mid_minus_low_db": 2.578894271465515e-07,
+      "old8_profile_mid_chord_excess_db": 4.52995302969994e-07,
+      "old8_sqrtw_mid_energy_fraction": 3.1413934564739066e-08,
+      "new11_positive_PCA_residual_RMS_db": 4.279611998114774e-08,
+      "new11_signed_PCA_residual_mid_mean_db": 2.12731761095597e-08,
+      "new11_positive_local_curvature_RMS_db": 7.168834637027999e-08
+    },
+    "hf_high": {
+      "old8_profile_mid_minus_low_db": 7.698271033973469e-07,
+      "old8_profile_mid_chord_excess_db": 9.934107474407483e-07,
+      "old8_sqrtw_mid_energy_fraction": 2.466088666608357e-08,
+      "new11_positive_PCA_residual_RMS_db": 4.279611998114774e-08,
+      "new11_signed_PCA_residual_mid_mean_db": 1.4523119332143786e-08,
+      "new11_positive_local_curvature_RMS_db": 7.695133508178742e-08
+    }
+  },
+  "manual_scalar_tolerance": 1e-05,
+  "rank_count_vs_pairwise_AUC_max_error": 1.1102230246251565e-16,
+  "all_24_AUCs_checked": true,
+  "all_original_plan_input_SHA_unchanged": true,
+  "new_fit_model_inference_Test_new_val_gate_eval_access": false,
+  "source_code_sha256": "8cc649a7409008519bdb8c285b7d99854053172cd9eefab14f8471aef16fa687"
+}

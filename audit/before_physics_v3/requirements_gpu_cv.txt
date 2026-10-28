@@ -1,0 +1,17 @@
+# Python 3.12 was used locally; structured-data-models requires Python >=3.11.
+# Install a CUDA-enabled torch build compatible with the server's driver first.
+# Torch 2.14.1 was checked locally on CPU/Mac; GPU memory/throughput are unmeasured.
+# This supported range is intentional because the CUDA wheel is platform-specific.
+torch>=2.7,<3
+numpy==2.3.5
+pandas==2.2.3
+pyarrow==26.0.0
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+tabm==0.0.3
+tabicl==2.2.0
+structured-data-models==0.2.1
+joblib==1.6.0
+soundfile==0.14.0
+

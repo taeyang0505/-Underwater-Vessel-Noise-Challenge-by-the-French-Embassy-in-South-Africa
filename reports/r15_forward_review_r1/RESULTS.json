@@ -1,0 +1,74 @@
+{
+  "status": "report_built_no_fit_or_candidate_selection",
+  "prototype_manifest_sha256": "de607256bd824c7a84602c4c61c054bf8d16c884e59663f5a2da30143b461c72",
+  "audit_manifest_sha256": "038d67319e043bf2a18af927f291a770307689a462a22f5103179e1db90548b2",
+  "input_sha256": {
+    "reports/r15_forward_prototype_r1/manifest.json": "de607256bd824c7a84602c4c61c054bf8d16c884e59663f5a2da30143b461c72",
+    "reports/r15_forward_prototype_r1/band25_TRAIN_sensitivity.csv": "1bb0f511a990bebdf41ae651303badb96a407de550bee7a3314f59f946e722f9",
+    "reports/r15_score_duration_r3/RESULTS.json": "a75ddff31f538f5876a49b580dfb87f058fe068fd4f48fd4e5724471c7aff1b3",
+    "reports/r15_score_duration_r3/FINDINGS.md": "6d82754641dbbdeb2ed608f245341cbab7fb649bb756630e0b419776b3c6080b",
+    "reports/r15_validation_checks_r1/POLICY_PAUSE_RULES_VERIFICATION.json": "c0f713ab375f1e22038e6a4768198a9b56c0ffeedac31037c58e68367469e642",
+    "reports/r15_validation_checks_r1/PROTOTYPE_INDEPENDENT_QA.json": "c848ff7971f498268254a4ae93c167526b8040d822b0c4d5d841cc05c4a31d7a",
+    "reports/r15_forward_prototype_r1/control_eq6.npz": "397c18a9a1e7874b7aeeecd7e3c66c58636feb61e20c25d12dcc2367d5fb73d0",
+    "reports/r15_forward_prototype_r1/mfhf_shelf6.npz": "5da1bf45726025cbe5fdb48b3e792cc4be07d4b1af939cd1bd2437e218663e3e",
+    "reports/r15_forward_prototype_r1/mfhf_shelf12.npz": "67c15efc5305fc79a6c4838fd6adc68952602776eb83502649f94ded5c4601e6",
+    "reports/r15_forward_prototype_r1/mfhf_shelf12_lfminus6.npz": "b4f732c1767fd78d57c83f6567ab6365d386e67c5198c8c09a2c98849bfd1df7",
+    "reports/r15_score_duration_r3/Test_joined_duration1500.csv": "6020eee36998e5773e0ccc19aa9616a3a265d661ad83ab820ff33e85b67cf7d3"
+  },
+  "page": "reports/R15_FORWARD_REVIEW_START.html",
+  "page_sha256": "aab998c972777f2bc38ce20690cdbb71634e92212c35dbbe1828d2136c0e8034",
+  "report_sha256": "ffa17ef6d77abd83d6b332c66b6866090ea7195ee71d46ccbeb38aae556e0425",
+  "prototype_summary": [
+    {
+      "후보": "control_eq6",
+      "N": 4000,
+      "y 평균": 0.12025164616737669,
+      "y 중앙값": 0.04410362523745449,
+      "y RMS": 0.20078834804159182,
+      "y p90": 0.3705413368201085,
+      "HF p50 dB": 8.58612995114072,
+      "HF p90 dB": 24.60596808666694,
+      "HF15–20 N": 478,
+      "HF15–20 y 중앙값": 0.09365406422115397
+    },
+    {
+      "후보": "mfhf_shelf6",
+      "N": 4000,
+      "y 평균": 0.12045250590842631,
+      "y 중앙값": 0.04439686131399071,
+      "y RMS": 0.20109412911119035,
+      "y p90": 0.3706679982729583,
+      "HF p50 dB": 9.687309420039846,
+      "HF p90 dB": 26.04085359108907,
+      "HF15–20 N": 517,
+      "HF15–20 y 중앙값": 0.0880673280052912
+    },
+    {
+      "후보": "mfhf_shelf12",
+      "N": 4000,
+      "y 평균": 0.12031209852120373,
+      "y 중앙값": 0.044204409026136704,
+      "y RMS": 0.2008380291452245,
+      "y p90": 0.3695908581243325,
+      "HF p50 dB": 10.332384987364499,
+      "HF p90 dB": 26.703073331172224,
+      "HF15–20 N": 530,
+      "HF15–20 y 중앙값": 0.08762922757299829
+    },
+    {
+      "후보": "mfhf_shelf12_lfminus6",
+      "N": 4000,
+      "y 평균": 0.12025766995178648,
+      "y 중앙값": 0.04391652660883166,
+      "y RMS": 0.20075018200397304,
+      "y p90": 0.3687886926668844,
+      "HF p50 dB": 10.700648622668865,
+      "HF p90 dB": 26.969526904284386,
+      "HF15–20 N": 540,
+      "HF15–20 y 중앙값": 0.08397109117109786
+    }
+  ],
+  "Test_parameter_fitting": false,
+  "model_training_or_inference": false,
+  "paused_training_resumed": false
+}

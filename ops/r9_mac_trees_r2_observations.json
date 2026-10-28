@@ -1,0 +1,40 @@
+{
+  "format": "r9_mac_tree_observations_v1",
+  "pid": 5474,
+  "observations": [
+    {
+      "utc": "2026-10-26T07:11:14.346458+00:00",
+      "elapsed": "02:24",
+      "rss_KiB": 4196656,
+      "rss_bytes": 4297375744,
+      "CPU_percent": 378.0,
+      "native_fit_warning_seen": true,
+      "summary_exists": false
+    },
+    {
+      "utc": "2026-10-26T07:13:56.090692+00:00",
+      "fold": 0,
+      "status": "completed_and_artifact_SHA_verified",
+      "receipt_sha256": "d836be9d229ec751e8d9c71181ce5b14017950a65898b6d425a6918a279deee7",
+      "summary_sha256": "39db3c409cd94a6df044288544e9a5219ddc0e32becb65c38ae5e564ebd0a6ce",
+      "train_rows": 78869,
+      "selection_rows": 1000,
+      "features": 3827,
+      "best_iteration": 1500,
+      "presence_best_iteration": 139,
+      "best_selection_rmse": 0.057347324228058605,
+      "native_fit_elapsed_seconds": 239.95224395766854,
+      "tree_settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 4,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "maximum_training_rows": 100000,
+        "feature_batch_size": 512
+      },
+      "report_or_Test_used": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "complete_diagnostic_only",
+  "files_sha256": {
+    "README.md": "a9cf60655a0a36998017248a8ffecb4fc01dd86c2cbe990eada19e938dacb5ec",
+    "dense_known_components.npz": "ecfccbe249430eeddfa10c322461ae4083915e51fc8900bf8313778a44f71c39",
+    "dense_mask5_known_components.npz": "f66c9b3773596a295b2538d0b3e3adb3d0bf9ccd06d858445993e4b7ec0ae95d",
+    "dense_mask5_predictions.npz": "8c57e60eff700bdf1efb7fc4f6b942ec3d0091bc11b7bb33e01ad58a2dff2776",
+    "dense_mask5_recipes.jsonl": "30419b2d8972b4d020cdc68e4c027ae792d2a7cc96571d7504b865a021293f6d",
+    "dense_predictions.npz": "57eabf16d5c17515e9a5e4d171734463fc27dc7988c48f483a89edc2724f6b9b",
+    "dense_recipes.jsonl": "7001cf01735c15274c21edae12b905a1ed2dc82537082fdd45fcf0c8a25defe3",
+    "dense_sources.parquet": "124e41bd7669020de86d3e59219309044b6c49be4d6a35e45e435e25a293c0a4",
+    "generation_gate.json": "608b3be89b7519beac9dc1fbacb3e73303b773b0dcfc3ffc4f7e8a6530cdc9aa",
+    "independent_numeric_check.py": "eb932c8bded58de3357ef90acf02d68ac1d677525d28fbdbff0cbc950b1cd390",
+    "independent_numeric_verification.json": "c1320bdba77390fc7b89c9c430b40ba18365fa6f4aae263c9cee99ee0fae35fb",
+    "metrics.csv": "7b99051eba01c122c3231f855750728dcb751f9538d7043f73c1b0d36e4fda98",
+    "original_R9_mask_geometry.json": "d1e3fcd2ffe077ab689d7daf763612121c043baa33b45942c3b60ef90509d896",
+    "plan.json": "bf6b3c09d3c78d63050c3c6557282c2a20c902012a1d33f2c453b5e605a8668d",
+    "prefit_geometry_support_gate.json": "5437d72ae998dc26fef86283be18c4d9995281b123631f403ef610b220e7b4d5",
+    "results.json": "4eb7731ccaab1e7e46c2dd968093c17ecc213a25eebd5a21b8dba0d89cb8dd2a",
+    "source_feasibility.json": "e2edf6c6c4e53873ab6109503b182eb01a5684246e35634cf3882982ee8dae8f",
+    "sparse_known_components.npz": "de9660b1d03605af42d0d37e95524ea892273b576efb23d780ce2917c4cde5d2",
+    "sparse_predictions.npz": "7639fd66691b86c70a7816e3ffc96adfbf008585460c9796364475e123b17c5d",
+    "sparse_recipes.jsonl": "77b94ba18211fa84ae55394b090830aa0c9693e759618330ee0c50a57efb8d20",
+    "sparse_sources.parquet": "112ac7ff5982438bdc5883a2d38d0b9e6418b0a604cd3c4ca63ea3f625b21dbc",
+    "treatment_bank.json": "2f439449b0e10b55920e969b0e4c50cac97e74e1c0fda23007db0b4ed64c7429"
+  },
+  "audit_code": "ops/r11_st_francis_density_audit.py",
+  "audit_code_sha256": "88e45edaa23860af1fd370c6373661c55962547dc9466e8533ff4fdefdd250c9",
+  "source_model_policy_unchanged": true,
+  "Test_report_fit_GPU_network_upload": false
+}

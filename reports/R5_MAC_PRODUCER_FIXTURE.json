@@ -1,0 +1,42 @@
+{
+  "status": "passed synthetic Mac producer fixture",
+  "formal_training_performed": false,
+  "real_dataset_SSH_GPU_OUTER_Test_accessed": false,
+  "numeric_TRAIN": 64,
+  "numeric_INNER": 16,
+  "tiny_trees": 4,
+  "replay": {
+    "batch_sizes": [
+      1,
+      7,
+      256
+    ],
+    "absolute_tolerance": 1e-06,
+    "relative_tolerance": 0,
+    "maximum_absolute_errors": {
+      "1": {
+        "share": 0.0,
+        "score": 0.0
+      },
+      "7": {
+        "share": 0.0,
+        "score": 0.0
+      },
+      "256": {
+        "share": 0.0,
+        "score": 0.0
+      }
+    },
+    "query_accepts_db_only": true
+  },
+  "guards_rejected": [
+    "partial_output_resume",
+    "exclusive_job_claim",
+    "wrong_winner",
+    "outer_used",
+    "actual_code_SHA_mismatch",
+    "artifact_tampering"
+  ],
+  "completed_receipt_verify_only_noop": true,
+  "core19_unchanged": true
+}

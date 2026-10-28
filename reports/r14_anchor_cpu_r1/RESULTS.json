@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "panels": 17,
+  "rows": 153,
+  "policy": {
+    "regression": "Blend50_c0",
+    "classifier_weight": 1.0,
+    "fit_rmse": {
+      "CNN_c0": 0.0773273124772353,
+      "Tree_c0": 0.08017140801335051,
+      "Blend50_c0": 0.07055248060403523,
+      "CNN_c2": 0.07199166750286788,
+      "Tree_c2": 0.08431131721898681,
+      "Blend50_c2": 0.07055372220255347
+    },
+    "fit_auc": {
+      "0.0": 0.8859875,
+      "0.25": 0.92768125,
+      "0.5": 0.93114375,
+      "0.75": 0.93355,
+      "1.0": 0.940875
+    },
+    "selection_data": "R12 validation_fit1000 only",
+    "models_freeze_sha256": "6611e81558b8fdb4d8e4bde676efcbfc559e233c1aa8a484b605b9089f6d1b28",
+    "source_sha256": "e2537c01f4a600d1f0909b3701afd8bfc0acdbe0a49d1e55a7399862843310e2",
+    "Test_read": false,
+    "development_exposed": true
+  },
+  "physical_pool_max_error": 1.7881393432617188e-07,
+  "Test_read": false,
+  "GPU_training": false,
+  "not_blind_OOF": true,
+  "outputs": {
+    "selected_policy.json": "6689770baab5d4be4268d866bd40dce0ed3792ff3227e5954cdb11e4c10fa2b8",
+    "results.csv": "ec61065074ca5d2462f22a03b62d17ac4d1116e213c084a6d9f37ea4c8ba0ba3",
+    "predictions/R12_high_snr_long.npz": "26aacf714fd6fbff9c4026f9ea86dddc1aa7604e2f32cc6dc527719c402d8d50",
+    "predictions/R11_full_smooth15_VS_st_francis_dense.npz": "4dec561cf7019d772f84eec0d12ed41cd4235d5fdd9b0a25864108c8aa58cd2a",
+    "predictions/R11_full_smooth12_VS_st_francis_dense.npz": "1adf0427d239a11839189156e83ce104a4308280b60fc7af4ad74e96f2401b85",
+    "predictions/R12_eval.npz": "1e5a982303320bef73e53f61f6b945435d1f83c297815b10f7cf45d232c7ff53",
+    "predictions/R11_native_long15_VS_hf_high.npz": "61e1b489fc8fdfda287a87d39dd063a61ba3c2359ff70970dd385eeca3d74697",
+    "predictions/R9_ensemble_gate.npz": "190cabe654019aa36a7d8db47906d9cf270c40d79c7ee5b20e1bf57e72061075",
+    "predictions/R10_seen__combined_stress.npz": "1dd22c3d4a83af0d14ef16c9bd1b7c197a7c04468d1c7556148dc087434a27b9",
+    "predictions/R12_validation_gate.npz": "f7cb01661defb9eddffe885782ad7c4db099f7d4d332d2734c9cb25949d6f6bc",
+    "predictions/R11_full_smooth13_VS_hf_high.npz": "aa65184f7682a5b8a187ac29c3946fcc73172d66602a54b00c1ff801290609ed",
+    "predictions/R10_unseen__r9_complete.npz": "e383632cef2920f356ddd269ce2d43bb87b9be2c6b739d6c941e2f55d5432513",
+    "predictions/R11_full_smooth12_VS_hf_high.npz": "b62a5f4075264d37faa2b629ea25120e4bbad5e9a4a9bbcfe3bd4e18c58531dd",
+    "predictions/R9_selection.npz": "135b6ad887cfd4a73e58a53cfeb2a17a7f93ff14602648a2f905533e643cf22c",
+    "predictions/R11_native_long15_VS_st_francis_dense.npz": "a9930b14c920b5ac3ccc23f5cecb6b6611428e588a5092d691ec04d97ce6e03c",
+    "predictions/R11_full_smooth15_VS_hf_high.npz": "9cba2aac3d750f5d7b03d18a7d203bbfb1e99d856916a3887ceac086398c169e",
+    "predictions/R10_unseen__combined_stress.npz": "d974e37ce95278a86ea70a81a1a473872d58a19c8aeb607ffe9d5efcd4983218",
+    "predictions/R10_seen__mean_scale_only.npz": "3a0dd72a86a86e1733eff97879b3217990c5291ebcc2be72c2e1c1e781838f9c",
+    "predictions/R11_full_smooth13_VS_st_francis_dense.npz": "70b3f06797a77a4c645dd9357d25117a3573e279e447ee50b266c09fcd47a761"
+  }
+}

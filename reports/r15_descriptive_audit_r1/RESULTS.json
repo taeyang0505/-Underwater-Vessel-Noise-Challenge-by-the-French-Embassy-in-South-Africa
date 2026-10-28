@@ -1,0 +1,112 @@
+{
+  "status": "passed_descriptive_only",
+  "rows": 1500,
+  "prediction_series": 57,
+  "elapsed_seconds": 3.085432291030884,
+  "script_sha256": "1afb667ed6c4a5606e2346d9a9508db80980c0ffd248464bf710930d0443e40e",
+  "plan_sha256": "02f7e7dc938c454d403beb41d3c0c961a660a1463b35b84a873119dadaa38b53",
+  "input_files_unchanged": true,
+  "source_file_sha256": {
+    "eda_deep/tables/test_window_features.csv": "c5b3a24d02053184d1f6baf80148e4e32537dfa304e5ec6c87afb23825a6c35b",
+    "reports/r15_member_audit_r1/aligned_saved_predictions_1500.csv": "c74e79a7436bedf3c7e0733353e60f58a5994b7b00906be5e39fc217793ea9b1",
+    "reports/r15_member_audit_r1/RESULTS.json": "b737e6956381452919eaf6791ea41dab80679a9f5d537128bf345328a421f3b2",
+    "reports/r15_member_audit_r1/distribution_summary.csv": "adc64f2e3041d02103546a4c39db503e4fa742a59bf8c4690c16ef992080a117",
+    "eda_deep/deep_eda.py": "96a15617498c024a8454f69b01c12ca6d46a1c577c06e4e47dd3fb0ab1d542d8",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "data/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "models/r14_production_outputs_r2/hybrid_fast3/policy.json": "f6662d5f82457a7ae67d6a5e942502ed0e2792e1681b7a9fe69e2b6de4b2033c",
+    "models/r14_production_outputs_r2/hybrid_fast3/COMPLETED.json": "3b45dbca13fba7e0e19e68c194d429cd1ff02122b0cbd2878acda7dcb1f99a01",
+    "submissions/r14_main_r2/submission_r14_step1.csv": "947c71dcc52d50fa2e3f63a6bbc3859cca9413169847697a509199c4d5da70a4",
+    "ops/r15_input_output_audit.py": "1afb667ed6c4a5606e2346d9a9508db80980c0ffd248464bf710930d0443e40e"
+  },
+  "member_audit_input_sha256": {
+    "models/r14_production_outputs_r2/hybrid_fast3/query_predictions.npz": "264f8cd984324b2a4a9bd838c5fccb7d6d210f2d30ba0eb5d22d663c4a2cc3da",
+    "models/r14_production_outputs_r2/hybrid_fast3/policy.json": "f6662d5f82457a7ae67d6a5e942502ed0e2792e1681b7a9fe69e2b6de4b2033c",
+    "models/r14_production_outputs_r1/tree_query_predictions.npz": "6fcab529a74b2f4cd07cfe21357bfcc6a56a396d6fd80671af07bd61846e326c",
+    "submissions/r9_fold0_all5_cpu_r1/query_member_predictions.npz": "87f47dee43e02dff265a0f26d79f8a4aff2e45e00489a56dfbcaa3d85b5d66a8",
+    "submissions/r9_fold0_all5_cpu_r1/frozen_policy.json": "46ec3b14cafb5d07e79d77ff35849e46ec68a6b575bb1ff1781b43fe46f28af9",
+    "submissions/r9_lightgbm_5fold_cpu_r1/frozen_fold_predictions.npz": "d4ed19323591fea10b2a1f007516ad21746d977683757c1f7158707c3614d78a",
+    "pipeline/models_r14_production.py": "fd04a99e72e29a105f1f2ad8e4c335a9ec51cfc1cd52ff1955e5f96d22010235",
+    "pipeline/training_r14_production.py": "4970bfd162e364d1f9b0fc2f5a2b344327875662539a4ff5227f022b058f4a36",
+    "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0",
+    "ops/run_r14_production_outputs_v2.py": "0e348cc7fbf9c11e70e9ac7e189034fca7c2f3fa143ef7d1c036ccd8f3a3a879",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "submissions/r5_fold0_raw_cnn_cpu_pilot_r1/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "submissions/r9_lightgbm_5fold_cpu_r1/submission.csv": "d6011245ff1b6cf2e17fb1509336afcb1317477cfd2775bb6cf0a24e070a5f6b",
+    "submissions/r9_fold0_all5_cpu_r1/submission.csv": "f016265ae9a1702dbb7121bfb0c852f5900f85a17194881056316768300fb39d",
+    "submissions/r14_main_r2/submission_r14_step1.csv": "947c71dcc52d50fa2e3f63a6bbc3859cca9413169847697a509199c4d5da70a4",
+    "submissions/R14_r2/submission_r14_fold0.csv": "81ec7e4f4324f6585c97d3f8e1140b62e401fc37251d833674e565c17fdb9978",
+    "submissions/R14/submission_r14_fulltree_5fold.csv": "f011e0201e2c13204472a0061bccdb824f46f0fa96de9fdda92436544038684c"
+  },
+  "probe_site_counts_estimates_not_GT": {
+    "07 St Francis": 487,
+    "01 Richards Bay": 423,
+    "13 Saldanha Bay": 284,
+    "05 St Croix": 236,
+    "02 Durban": 32,
+    "04 Bird Island": 16,
+    "09 Fish Hoek": 15,
+    "10 Sea Point": 7
+  },
+  "attachment_SF489_does_not_match_actual_cached_SF": 487,
+  "features": [
+    "bump_high_db",
+    "bump_low_db",
+    "corr_low_high",
+    "naive_share_q20",
+    "tilt_db",
+    "level_db",
+    "std_broadband_db",
+    "Nobs",
+    "S_phys_safe_mid_db",
+    "centroid_hz",
+    "mean_abs_step_db",
+    "lag1_acf_broadband",
+    "d7943_5012",
+    "probe_conf",
+    "probe_nn_rms_db"
+  ],
+  "input_only_group_thresholds": {
+    "bump_high_q25_db": 8.0123825,
+    "std_broadband_q25_db": 2.231185,
+    "tilt_q25_db": 6.438765
+  },
+  "group_counts": {
+    "all": 1500,
+    "bump_high_le5db": 242,
+    "low_temporal_q25": 138,
+    "high_static_proxy_lowtilt_q25": 375,
+    "low_temporal_AND_high_static_proxy": 36,
+    "low_temporal_NOT_high_static_proxy": 102,
+    "not_low_temporal_AND_high_static_proxy": 339
+  },
+  "S_phys_numeric_static_band_offset_fixture_max_error": 3.552713678800501e-15,
+  "raw_Test_read_scope": "Only original public-ID/mask integrity and the predeclared S_phys scalar; no fitting/inference/hidden labels",
+  "actual_model_inference_training_calibration_or_submission_calls": 0,
+  "unavailable": [
+    "Per-query exact R14 PCA/LF-anchor maps were not cached and were not reconstructed; tilt/centroid are explicitly different proxies.",
+    "R14 raw classifier probabilities are not present in the saved query NPZ. No algebraic reconstruction is presented as an observed probability."
+  ],
+  "limits": [
+    "kNN probe_site is an estimated domain label, not true Test site; no new matching was fitted.",
+    "Predictive output mean/RMS are not target moments. Correlation with physical features is neither AUC nor evidence of correct vessel labels.",
+    "Four public submissions changed multiple factors together, so their ordering cannot isolate CNN weight, architecture, PCA or a generator as the cause.",
+    "S_phys is a fixed temporal descriptor, not a predicted share or probability. A static per-band dB offset cancels algebraically; arbitrary changes before0.1dB rounding retain a quantization limitation.",
+    "Cached historical EDA columns were rounded to five decimals. This audit reuses them instead of silently replacing definitions.",
+    "No Test-label inference, public-score target matching, new thresholds/weights/calibration for prediction or submission file generation occurred."
+  ],
+  "outputs_sha256": {
+    "main_feature_prediction_correlations.csv": "10995e14f78f06f0c66229936cfc3ff6a393f5a8fc925c6b53e31c6256a47f3d",
+    "feature_prediction_correlations.csv": "65f3213e59e878a22689dc171eec7eb625a212f3766da25a33c01ba0f04516ba",
+    "joined1500.csv": "df83b2a631c0384c52bc82b6ea186ca357e9cea54f7225480ee37e8a42a99ab5",
+    "plan.json": "02f7e7dc938c454d403beb41d3c0c961a660a1463b35b84a873119dadaa38b53",
+    "model_correlations_pearson.csv": "2074a5f66d91fc78fb9cf3db7dc286003a9af79a9df50cd196c5d1a5ba5fbf1a",
+    "top50_positive_delta.csv": "a5e1dffacbc1c34b4b424606e3ad77e8b4c1c6c8fd9c389d00c9ed996cb35456",
+    "lowtemporal_highstatic_groups.csv": "8ffd846d09991d981afd140f4755d36bb97e391fc12681e4546e9ad0a8a10490",
+    "model_distribution.csv": "bb7593b1b61a41555bb22292d1f5641863424ec9694649642bbc4f63b267039c",
+    "top50_absdelta.csv": "a5e1dffacbc1c34b4b424606e3ad77e8b4c1c6c8fd9c389d00c9ed996cb35456",
+    "site_model_stats.csv": "5b3b9dd6ab52da7ac2243d5c8b30c69c4f43946b21af5c0ee8dfa420a98ba770",
+    "model_correlations_spearman.csv": "1c4ee23475d507d854881281662d03057d361c30e2b11bd8a032e1069a9df631"
+  }
+}

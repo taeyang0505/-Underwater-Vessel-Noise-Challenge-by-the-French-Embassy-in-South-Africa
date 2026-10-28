@@ -1,0 +1,331 @@
+{
+  "scope": "frozen31nonqueryR11base acoustic panels and8standard pair combinations; no source regeneration",
+  "created_utc": "2026-10-27T08:49:35.466820+00:00",
+  "base_panels": [
+    {
+      "name": "R11_edge_QC_paired",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/edge_QC_paired_samples.npz"
+    },
+    {
+      "name": "R11_edge_restored",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/edge_restored_samples.npz"
+    },
+    {
+      "name": "R11_full_smooth12",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/full_smooth12_samples.npz"
+    },
+    {
+      "name": "R11_full_smooth13",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/full_smooth13_samples.npz"
+    },
+    {
+      "name": "R11_full_smooth15",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_samples.npz"
+    },
+    {
+      "name": "R11_full_smooth15_share030",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_share030_samples.npz"
+    },
+    {
+      "name": "R11_hf_high",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/hf_high_samples.npz"
+    },
+    {
+      "name": "R11_hf_quiet",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/hf_quiet_samples.npz"
+    },
+    {
+      "name": "R11_native_long15",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/native_long15_samples.npz"
+    },
+    {
+      "name": "R11_r9_original",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/r9_original_samples.npz"
+    },
+    {
+      "name": "R11_st_francis_dense",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/st_francis_dense_samples.npz"
+    },
+    {
+      "name": "R11_stationary15_control",
+      "path": "reports/r11_diagnostics/full_support_hf_r1/stationary15_control_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf10_hf10_asym",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf10_hf10_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf10_hf20_asym",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf10_hf20_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf15_hf10_asym",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf15_hf10_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf15_hf20_asym",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_eq_r1__lf15_hf20_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf15_mid20_hf15_asym",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf15_mid20_hf15_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf25_mid10_hf15_asym",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf25_mid10_hf15_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf25_mid20_hf15_asym",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf25_mid20_hf15_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf35_mid10_hf15_asym",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_asym_samples.npz"
+    },
+    {
+      "name": "R11_asymmetric_feasible_models_r1__lf35_mid10_hf15_matched_R9eq6",
+      "path": "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_matched_R9eq6_samples.npz"
+    },
+    {
+      "name": "R11_st_francis_density_r2__sparse",
+      "path": "reports/r11_diagnostics/st_francis_density_r2/sparse_known_components.npz"
+    },
+    {
+      "name": "R11_st_francis_density_r2__dense",
+      "path": "reports/r11_diagnostics/st_francis_density_r2/dense_known_components.npz"
+    },
+    {
+      "name": "R11_st_francis_density_r2__dense_mask5",
+      "path": "reports/r11_diagnostics/st_francis_density_r2/dense_mask5_known_components.npz"
+    }
+  ],
+  "standard_pairs": [
+    "R11_full_smooth12_VS_st_francis_dense",
+    "R11_full_smooth12_VS_hf_high",
+    "R11_full_smooth13_VS_st_francis_dense",
+    "R11_full_smooth13_VS_hf_high",
+    "R11_full_smooth15_VS_st_francis_dense",
+    "R11_full_smooth15_VS_hf_high",
+    "R11_native_long15_VS_st_francis_dense",
+    "R11_native_long15_VS_hf_high"
+  ],
+  "primary_benchmark": "R16 original crossoperator/source panels remain primary; R11 is stress diagnosis only",
+  "excluded": [
+    "saved_query_audit_r1:queryderived",
+    "failed st_francis_density_r1",
+    "model-free-only arithmetic/feasibility folders without stored acoustic panels"
+  ],
+  "new_models": [
+    "control_NN",
+    "control_Tree",
+    "control_60T40N",
+    "mixed_NN",
+    "mixed_Tree",
+    "mixed_60T40N"
+  ],
+  "old_models": "saved R9 available individual4NN+Treef0+originalaggregate; R14 only exact cached8standardpairs; other23-catalogue entries unmeasured",
+  "score": "original local_fit-only score lambdas frozen, plus independent classifier and share-only reported separately",
+  "no_Test_or_Testderived_read": true,
+  "no_fit_or_threshold_weight_selection": true,
+  "old_heavy_model_inference": false,
+  "new_small_CPU_threads": 2,
+  "input_file_sha256": {
+    "reports/r11_diagnostics/full_support_hf_r1/edge_QC_paired_samples.npz": "515ec266663b920cc96708aa049d06b17cf808f8774da8b45d7cdd4c370be541",
+    "reports/r11_diagnostics/full_support_hf_r1/edge_QC_paired_predictions.npz": "00eb7d186b5578013805d67cb447bc7ea8799d5757d24d7d9abe784d781eb875",
+    "reports/r11_diagnostics/full_support_hf_r1/edge_restored_samples.npz": "209737e9f77c7e50a789159a8bac9354d2ccfb015cf5c0cc3c9609eebc9e07fb",
+    "reports/r11_diagnostics/full_support_hf_r1/edge_restored_predictions.npz": "efd848112b902d6727a7a491f3a9098b1c721b3b4bb1a6eb9ba1eea5459f8378",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth12_samples.npz": "f098acbb79b94e02e590a95445e80de49c4dc394c0234e7f837ce232b8e6d572",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth12_predictions.npz": "89bfd59d0cddb72394975f45ffa20b60c298a6b30ebb30b36447a21d5a2c1c99",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth13_samples.npz": "33e954cb60f36df46a923b11c440299b5e1ba2ca42717cb0efd988930d4f1f54",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth13_predictions.npz": "1efd09706268575d807d6f6077224d751076c475c60dd1c6fd73460442de817d",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_samples.npz": "eae3b3346d4e551ea9ee5665c38577c039c5b08d7469e35c2a01278e276c0b01",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_predictions.npz": "291ad2fc114ac17cb2ea72d6e2c56e0d4a445fc1cbcc713fb80fd367ec38874d",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_share030_samples.npz": "d6094a34aa4a7bce5b40f2ff564fbd24af18750af00bed3ab17ff4f844bb3dc5",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_share030_predictions.npz": "2ad0992daee46b94046f3567c458c2b7c78f931fc819d740cc9dfb2ca5cb291a",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_high_samples.npz": "17ef52369f9641c0ab9082be3ae7af3188da093bd22b19250b087f73d33babee",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_high_predictions.npz": "d7b4d7dec0548c0844d8070a9f94a595be8b8f9082e7ab6bb9ade16cc21f66d3",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_quiet_samples.npz": "702ae5ff59179a4be208ac39744ba1f453c04dfe84f7966249f0d032bfd6e478",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_quiet_predictions.npz": "9af6a9b574f61b05f784172022f88f41e8aeced3df161d76bbe127fdd493d3f3",
+    "reports/r11_diagnostics/full_support_hf_r1/native_long15_samples.npz": "245efef099635ddf741603e95297b2cd55afbbc454dc93180e9bab4a30cb8fb8",
+    "reports/r11_diagnostics/full_support_hf_r1/native_long15_predictions.npz": "48ecf5ad26baa740c269876261a9aadfe805c8aa645ae4403ba7ab0b351814dd",
+    "reports/r11_diagnostics/full_support_hf_r1/r9_original_samples.npz": "7494c281da46a0340752953d96b2c8fe206ce8e164125f0a08e30121c2e004e4",
+    "reports/r11_diagnostics/full_support_hf_r1/r9_original_predictions.npz": "9f12e788537dd476e453c89afc1eac62a2c660188a85660560a1bb6049420b0a",
+    "reports/r11_diagnostics/full_support_hf_r1/st_francis_dense_samples.npz": "c2b8c0985d6d4d4e13847fde2312721f012c50054a968a9f434fa00eb9e93c5b",
+    "reports/r11_diagnostics/full_support_hf_r1/st_francis_dense_predictions.npz": "93fa7199196d1386daca00f431d6f7169e0d3bf27fe1521b13b44204b6fb709a",
+    "reports/r11_diagnostics/full_support_hf_r1/stationary15_control_samples.npz": "cffa4d35e589f67e661aa8fc3cc8365390253c2a8ff69754ecd75b8f168c6aae",
+    "reports/r11_diagnostics/full_support_hf_r1/stationary15_control_predictions.npz": "bcd098de4e3d4318b1b9b31e8097b853fe84548d790f1de26df76b39b2936d26",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_asym_samples.npz": "e42a0d7fcd6287f51c1b24222639fe0b514efe999af7889ab4a679385c6e7419",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_asym_predictions.npz": "2fafe46b047f582dd5a4191d13a97cbdae3377fef8031cfc4641791942e41a83",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_matched_R9eq6_samples.npz": "96423b6d8f70010b8a37647b3fd8787cd1d2209c82bf956ff85d827d5b7aee2c",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_matched_R9eq6_predictions.npz": "1fea7b9082c92f3be38da21d653e56ea4888073a8777685f4dcef3993938e6e7",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_asym_samples.npz": "b1f23a9a357fd99723ff8ca56903ce48466a4c21dfb4a882e6453f1b8758f968",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_asym_predictions.npz": "445dc680f687c835a542652bcda576d9304f29d9c196c05c27c2298136961754",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_matched_R9eq6_samples.npz": "e326301293c3facb250fa8013c211942aa55819a99d0d18b7e506bd681c5c918",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_matched_R9eq6_predictions.npz": "d0581edd31168dca214ac26197629495587363ebd25da52fde810f970cb94e4c",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_asym_samples.npz": "5750cba54e0c233144d511f96d0be64834fee2699bb39203fa57cde426bde8d5",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_asym_predictions.npz": "dac635d3752a772b94920c03e1aa3e14f57a6e790e84675922d8719592e7f87e",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_matched_R9eq6_samples.npz": "b6f46f3e817aaa887f2145fad4a64f9ef564a45f9caef0e0d7e6ae4c077b3af6",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_matched_R9eq6_predictions.npz": "9506cf02710ff24108c6b678cbe78641240eb62247b153484ba6447aa6011f22",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_asym_samples.npz": "3e61274ae0c166d40a166a487facc22be182ee2be1a88bcf3b122f0bc17065c5",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_asym_predictions.npz": "c2ad90bec58a7b8871c8e67d330651b2a3f47f44f5ed2aae5efa3edf04554101",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_matched_R9eq6_samples.npz": "85b2d06c6f520a68919949dcfdd5d9a596bd96ad637526b9fd3900e509f1b083",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_matched_R9eq6_predictions.npz": "5f93781697ab1e2a603a2c4a9102ce0d3da78a407eff1736f3416094028e9ba8",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_asym_samples.npz": "e2974d7fe991d1742a3b196cd82db5e49dd44f184d4ec4005c63389f77c0f2e4",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_asym_predictions.npz": "e524800b99f13820683038f6fb2f264528a15a91b0def1b9242b888873092b43",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_matched_R9eq6_samples.npz": "d747b7a15f8f93dc28ba3d16b89c1e58ed74e04d465ef5f72db0ae6a8fa7b147",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_matched_R9eq6_predictions.npz": "23df1c821a4a3c0111e4b54734fa9c8512a932d58eeb172149c04c89333c47d3",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_asym_samples.npz": "482387e4b3702d72a4834e965db3a16233e96a05847b57cebc06388187fd33e3",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_asym_predictions.npz": "d9ab046a39ee3144932108df0c7134d207f635427971effc373ad808010902fb",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_matched_R9eq6_samples.npz": "2d13a50c16eb161f0edfaa2d203dd5b567fbe1099ff5c411287ca7b438853561",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_matched_R9eq6_predictions.npz": "9d911b292664c2133bd88256afa83e554f741d80fbae38eb6260b44eb115e289",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_asym_samples.npz": "7225565f957a38a69a542612dda9c32dd70ca6998083a3243809b9dc2c58106c",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_asym_predictions.npz": "17c6e4c4bf09ed7c7b0d54eca1de76a3bc2868787fb3492d6758771032ad746f",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_matched_R9eq6_samples.npz": "70119cdbdbec5066c43c50be1711534f8546de377ba57d283bbbac0577801bb8",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_matched_R9eq6_predictions.npz": "e69edee5c57c83e0655700a8526815aa4bcf04865817663a72f19d88081f8f8f",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_asym_samples.npz": "b5b82446aaa6c274e3a3abcbcf411005ceef6de5f2bb517e4ba0a98e631270cd",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_asym_predictions.npz": "78e815fa3d742e9beaa7075cb115641deff114b2213c8fccc13046635e499c64",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_matched_R9eq6_samples.npz": "ec949f706e98a0749beefaf740118bf5fe2a5e0519b937285062c39cdb618d5f",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_matched_R9eq6_predictions.npz": "35ade14945334e8cbc2e5489375cf7b1cc701e2bc4d98053376cbe0354f0f026",
+    "reports/r11_diagnostics/st_francis_density_r2/sparse_known_components.npz": "de9660b1d03605af42d0d37e95524ea892273b576efb23d780ce2917c4cde5d2",
+    "reports/r11_diagnostics/st_francis_density_r2/sparse_predictions.npz": "7639fd66691b86c70a7816e3ffc96adfbf008585460c9796364475e123b17c5d",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_known_components.npz": "ecfccbe249430eeddfa10c322461ae4083915e51fc8900bf8313778a44f71c39",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_predictions.npz": "57eabf16d5c17515e9a5e4d171734463fc27dc7988c48f483a89edc2724f6b9b",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_mask5_known_components.npz": "f66c9b3773596a295b2538d0b3e3adb3d0bf9ccd06d858445993e4b7ec0ae95d",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_mask5_predictions.npz": "8c57e60eff700bdf1efb7fc4f6b942ec3d0091bc11b7bb33e01ad58a2dff2776",
+    "reports/r11_diagnostics/full_support_hf_r1/SAVED_OUTPUT_VERIFICATION.json": "f75c1485f7b1bdcb0de9e720c65c01e362294522d02b5397a28d0cf0b8342ba6",
+    "reports/r11_diagnostics/full_support_hf_r1/numeric_fixture.json": "8af9b5a1ad5d4ab59cd34c67a8746ce3eaa2c41f64348f2ef1f615a4cdfd2149",
+    "reports/r11_diagnostics/full_support_hf_r1/r9_original_recipes.json": "22ca4891a6b8cc45c806004d8b250a61e85a8a838728ca46ff3755628e11a32a",
+    "reports/r11_diagnostics/full_support_hf_r1/edge_restored_background_manifest.parquet": "b12da94c3e42bd661bd0faa547512df5e448cb8aad036b562cb67f36845b01e4",
+    "reports/r11_diagnostics/full_support_hf_r1/stationary15_control_recipes.json": "f15a9f262aa5081fedaf764ecafc56a5a31878d0ddb46cad48dd388535ddd57e",
+    "reports/r11_diagnostics/full_support_hf_r1/predeclared_plan.json": "58761f50fee570a8d2982e60b236048b6e9c1589c81dad80ba3eb8e908acf8a6",
+    "reports/r11_diagnostics/full_support_hf_r1/positive_schedule.json": "8de6ebbabccb7512e41f0cd517f4ab35657e5a9914e22c4a1fdecd73dd6823ca",
+    "reports/r11_diagnostics/full_support_hf_r1/RESULTS.json": "fa844759de0d7b35b75a01b7628151a3b4809a99f336ba137ab854c0a4839806",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_high_background_manifest.parquet": "e57213be21a16453f93dc3db70c0b5c81f1ab55063bd7ac5caa94b50e32f6228",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth13_recipes.json": "e8c76d803cf855036f0af8f5a90e618b86c1f8f9c6011bdfc62f744cfa4ecf23",
+    "reports/r11_diagnostics/full_support_hf_r1/native_long15_recipes.json": "a1d61f5bd6d6836ca45f319a05d4ec580a29a92237b9d307566db47b4b873295",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_share030_recipes.json": "789c601f1209d88871187ff12274971b61e5a82edf56c9d4d8bc1256d6521f3e",
+    "reports/r11_diagnostics/full_support_hf_r1/positive_background_manifest.parquet": "8f2cf688983b69dc79cf9cc15fb22939dbdffd66f5ebaeb33783d7828e87e2fe",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth15_recipes.json": "2895a19612d5fe8245f10a97d9f4b94e88e6a7eb013c37ac8ec9c296f5715833",
+    "reports/r11_diagnostics/full_support_hf_r1/full_smooth12_recipes.json": "8a09006157458e7da820a6b21312a62767b7680da8f29f9da3cc88d10e79bfb9",
+    "reports/r11_diagnostics/full_support_hf_r1/edge_QC_paired_background_manifest.parquet": "b12da94c3e42bd661bd0faa547512df5e448cb8aad036b562cb67f36845b01e4",
+    "reports/r11_diagnostics/full_support_hf_r1/FROZEN_BEFORE_PREDICTIONS.json": "1a5634366604301f657a6224035fb10f6f96ab40846e46f4a497f821ba495ba5",
+    "reports/r11_diagnostics/full_support_hf_r1/st_francis_dense_background_manifest.parquet": "334dbaec2df5fb7426590a094c7e254d3c4ec93531569e521b99165c80e67eea",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_quiet_background_manifest.parquet": "433739c251272ca5aa4d194e0ce2b9e14addfb241ab19b100992a8e95e7a2e18",
+    "reports/r11_diagnostics/full_support_hf_r1/source_model_pins.json": "310701ea0d0f698679a7723e61180938a93117e66b3309067e522ad04a30fbcf",
+    "reports/r11_diagnostics/full_support_hf_r1/source_panels.json": "4ffd98c3eca1f94fa7b2c52cc849ad7738b6a747c1aa35cad723a708f69af8c6",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_matched_R9eq6_recipes.json": "9e984f8a5bf89f4dd4d758ea74c8ed915a33dfce16061c84a82f15fc546207e0",
+    "reports/r11_diagnostics/asymmetric_eq_r1/background_source_manifest.parquet": "2f2b1ad762b53b0cd7b98994b1faf8b50bdda3ecbbc3a91aa1a71bf97e667fee",
+    "reports/r11_diagnostics/asymmetric_eq_r1/numeric_fixture.json": "e34240a269383bf4dccad3f231107e518faed112216028b16313d02276bda703",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf10_asym_recipes.json": "5b63b63f2b06479bc4205272a41a74ed1462aae00844eaeb0f975179179b0108",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_matched_R9eq6_recipes.json": "78d97d48b59de5b8449ed912c6e2db5ee1c487f6e27c9875078c10fe5180b4af",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_asym_recipes.json": "5397b59aa2dc2cda50be4cb040a956ce29bf46504f016d355e85da562b5dc651",
+    "reports/r11_diagnostics/asymmetric_eq_r1/predeclared_plan.json": "ed7ddc7b8a8d72ff04ac943bb8cb51f9cbd36eed909361b3d84f0f3910369a5f",
+    "reports/r11_diagnostics/asymmetric_eq_r1/FORWARD_INDEPENDENT_VERIFICATION.json": "933c80c973e85a3dfd58bdbb2a03bca5846cabf956cbb812571b15d85a499efa",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf10_asym_recipes.json": "cb701c37f5518df005d70cf07cbe0733d2e55513c6e52842381ad505a71aaa9c",
+    "reports/r11_diagnostics/asymmetric_eq_r1/FORWARD_BEFORE_MODEL.json": "22ff44c6b82fb401dd2af5f5b8f0b4c9b3f89d88354b5f7f345699fef3833b83",
+    "reports/r11_diagnostics/asymmetric_eq_r1/RESULTS.json": "69ba96840066e380ed0efe4c8156a2b02cae5981e1b10b26bd3e15c159033944",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_asym_recipes.json": "951b401e384ac22d0f56b6f4269df870b2310b52ee16f754f49d7189f82a77ce",
+    "reports/r11_diagnostics/asymmetric_eq_r1/MODEL_EVALUATION_STARTED.json": "3039e8716733e5130017a7aa84f58e65fa823e66c005e150a9a6119bdd443fb0",
+    "reports/r11_diagnostics/asymmetric_eq_r1/shared_specs.json": "4f05add31ffb4c0d47fbd72b0048af618bcca8a594c750adf3288391fb81f530",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf15_hf20_matched_R9eq6_recipes.json": "5c0686ee8385412da28c74b1316a10034862ced01e6258d0bd9faa8dd38c9e75",
+    "reports/r11_diagnostics/asymmetric_eq_r1/INDEPENDENT_VERIFICATION.json": "35a5df0b53555014ec16afaa605c1d52a9eb2ac3daca8b7dcbf0ce2a32d9184b",
+    "reports/r11_diagnostics/asymmetric_eq_r1/lf10_hf20_matched_R9eq6_recipes.json": "a73a5442c5156dffebd3099aadd7274784352c1a175921a47ed6016526863a8e",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_matched_R9eq6_recipes.json": "f00b948919e486c05b157bbb9519abcfc3f03a9ce47eff6397b4fafecf951b8f",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_matched_R9eq6_recipes.json": "5eb481844807e5e5ba9f6e498f0b6a9293c80fe6ffa625cb00143953560d62e3",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/predeclared_plan.json": "999ff58fb8871bc4f181ef9314bdc6c765eec02cb06ecec7681f8fd2fbe551a0",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/FORWARD_INDEPENDENT_VERIFICATION.json": "21e82e777ee7826f4e175728b5c55b8b02b58f3a349e9436b88a73ebfd692b64",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_matched_R9eq6_recipes.json": "e4e2f150763837548b20244efabcf94ca8d93e32ace8354df3ff8be47c6981d1",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf15_mid20_hf15_asym_recipes.json": "a105480b09ce2509e2ea582e9a80f0dbeda31a352ebb6990912113270b83e71a",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/FORWARD_BEFORE_MODEL.json": "9ee0654bd836f8f9443353e935f5f241642cb004c1b70d9c88684067e78dd7d5",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/feasible_manifest.json": "65481f8fc719d54898068633366bc8d03700e576661644fbba09fa29d33eddf9",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/RESULTS.json": "b2f892e8c9ca9a7e51aad89b18e76f040f7ecca153192a017a578865ff7eeea1",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_asym_recipes.json": "dc8f890c2e7a6458faac9c8fad7716029fbd220e69b9731a67a48595a1ea1ab4",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/MODEL_EVALUATION_STARTED.json": "531d0d9d09bd937e73ec4a470bbbc6333153db0b323c733501f8ebce54203ee9",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid20_hf15_asym_recipes.json": "05b63d37696e66d42b68531d5544679909190d2153081fc9346924e74a0fbac0",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf35_mid10_hf15_matched_R9eq6_recipes.json": "b59fd7e340298370f8558c83b004c868fe8466ae77a191cda3ed64ec43f042b3",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/lf25_mid10_hf15_asym_recipes.json": "95622230a94e97d1fc344df5ef3b6a7317c5eaff3c990f21e075b348a55dde73",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/INDEPENDENT_VERIFICATION.json": "af0ebe18965d74109d51ae051c3a4887b96a21a2ef5a546d10d39d74f8a32b73",
+    "reports/r11_diagnostics/st_francis_density_r2/generation_gate.json": "608b3be89b7519beac9dc1fbacb3e73303b773b0dcfc3ffc4f7e8a6530cdc9aa",
+    "reports/r11_diagnostics/st_francis_density_r2/sparse_recipes.jsonl": "77b94ba18211fa84ae55394b090830aa0c9693e759618330ee0c50a57efb8d20",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_sources.parquet": "124e41bd7669020de86d3e59219309044b6c49be4d6a35e45e435e25a293c0a4",
+    "reports/r11_diagnostics/st_francis_density_r2/independent_numeric_verification.json": "c1320bdba77390fc7b89c9c430b40ba18365fa6f4aae263c9cee99ee0fae35fb",
+    "reports/r11_diagnostics/st_francis_density_r2/plan.json": "bf6b3c09d3c78d63050c3c6557282c2a20c902012a1d33f2c453b5e605a8668d",
+    "reports/r11_diagnostics/st_francis_density_r2/sparse_sources.parquet": "112ac7ff5982438bdc5883a2d38d0b9e6418b0a604cd3c4ca63ea3f625b21dbc",
+    "reports/r11_diagnostics/st_francis_density_r2/delivery_manifest.json": "081b50c356fa858f5b4589951d28c1a252de681085261627fc8c08863b4af1a3",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_mask5_recipes.jsonl": "30419b2d8972b4d020cdc68e4c027ae792d2a7cc96571d7504b865a021293f6d",
+    "reports/r11_diagnostics/st_francis_density_r2/prefit_geometry_support_gate.json": "5437d72ae998dc26fef86283be18c4d9995281b123631f403ef610b220e7b4d5",
+    "reports/r11_diagnostics/st_francis_density_r2/original_R9_mask_geometry.json": "d1e3fcd2ffe077ab689d7daf763612121c043baa33b45942c3b60ef90509d896",
+    "reports/r11_diagnostics/st_francis_density_r2/results.json": "4eb7731ccaab1e7e46c2dd968093c17ecc213a25eebd5a21b8dba0d89cb8dd2a",
+    "reports/r11_diagnostics/st_francis_density_r2/source_feasibility.json": "e2edf6c6c4e53873ab6109503b182eb01a5684246e35634cf3882982ee8dae8f",
+    "reports/r11_diagnostics/st_francis_density_r2/dense_recipes.jsonl": "7001cf01735c15274c21edae12b905a1ed2dc82537082fdd45fcf0c8a25defe3",
+    "reports/r11_diagnostics/st_francis_density_r2/treatment_bank.json": "2f439449b0e10b55920e969b0e4c50cac97e74e1c0fda23007db0b4ed64c7429",
+    "reports/r14_production_r2/hybrid_fast3/R11_full_smooth12_VS_st_francis_dense.npz": "6de9f12209c48099a3eeb9926c6a63b864bb96680a7375bdc889d52a0022e373",
+    "reports/r14_tree_full_r1/predictions/R11_full_smooth12_VS_st_francis_dense.npz": "944f359355f112adf30511efe94574d1a466c4ad721ea22b3aac1a0edae5c262",
+    "reports/r14_production_r2/hybrid_fast3/R11_full_smooth12_VS_hf_high.npz": "4ecd06bee2ddb9ecc6d29de324c79bad2cb081cc4fd290a7d44f1b1a1e368667",
+    "reports/r14_tree_full_r1/predictions/R11_full_smooth12_VS_hf_high.npz": "50c45a04e02a6d8fbcfda15cfc38b4bce2c071b31680fb0031940ae2160b8070",
+    "reports/r14_production_r2/hybrid_fast3/R11_full_smooth13_VS_st_francis_dense.npz": "a53c02543357b887fb5aa754d8a637cca2b180eae324d429de3a8f05219569d7",
+    "reports/r14_tree_full_r1/predictions/R11_full_smooth13_VS_st_francis_dense.npz": "dcfd2e657901c2db10068e8b1a16ad4da8255d56e35b6808db33c7065f295ad5",
+    "reports/r14_production_r2/hybrid_fast3/R11_full_smooth13_VS_hf_high.npz": "61357280de4e53a35250295c628626b92a8a9db6b06ff238d963d08284784046",
+    "reports/r14_tree_full_r1/predictions/R11_full_smooth13_VS_hf_high.npz": "c60c18483a4cd72f1f0a9429a6af517657904dc8450959784ceef70864d31d50",
+    "reports/r14_production_r2/hybrid_fast3/R11_full_smooth15_VS_st_francis_dense.npz": "b5b5a931fc719397aa2fb985e3a477ba29f104350796e86af9217af7e1867172",
+    "reports/r14_tree_full_r1/predictions/R11_full_smooth15_VS_st_francis_dense.npz": "16b72515a3f75a6f38cf68bb6e70f647865d8c79105e78ddafe8015eea143e6b",
+    "reports/r14_production_r2/hybrid_fast3/R11_full_smooth15_VS_hf_high.npz": "da1b8be2604818ff09dcdf03fe900a17a238786333d3a0eb84ebf63801a61186",
+    "reports/r14_tree_full_r1/predictions/R11_full_smooth15_VS_hf_high.npz": "2c63af99cae9704d15df3e29bc2e4c87da14770084490d469e742bf6a617a452",
+    "reports/r14_production_r2/hybrid_fast3/R11_native_long15_VS_st_francis_dense.npz": "5a6b5caa9466da51ab87c93bbffe937429af916568d7d52cef62613abe23be97",
+    "reports/r14_tree_full_r1/predictions/R11_native_long15_VS_st_francis_dense.npz": "2697b1139e76cf5340cb0d8f613ada5327baaa81e3e6797e91e14b027fabb7e4",
+    "reports/r14_production_r2/hybrid_fast3/R11_native_long15_VS_hf_high.npz": "2e0ebaa9253726948a466d997b422028e4468b39666f0f9ff0f0355332e02cca",
+    "reports/r14_tree_full_r1/predictions/R11_native_long15_VS_hf_high.npz": "ccc011ba7b924d95bad73de3c3bd7e63ccaf2278d22cdb6c2b1356059620e619",
+    "data/versions/background_cv_r9/background_pool_manifest.parquet": "ab5047405c35bd07fe976d1e6b6c7bd33a33f7287891c065921d75d176b001e7",
+    "reports/r16_cross_operator_r1/data/train_backgrounds.parquet": "df58641b1c15ef76753486707dbec3e05e03e3982846d579c4204b9f81a69ce1",
+    "reports/r16_cross_operator_r1/data/reference_partitions.parquet": "e9867b457d28ab7e6c823c40cb453bcb6a0f7a5815912ec323ca10d2db50f8e6",
+    "data/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91"
+  },
+  "R16_frozen_file_sha256": {
+    "reports/r16_locked_comparison_r1/GLOBAL_FREEZE.json": "46cffc361b852bd510cef2d2b9f2234fda545a5d13b135931d9da0a8f5665329",
+    "reports/r16_locked_comparison_r1/POLICIES.json": "6905a7cdd8e379b7779053d23fe4308fc2f2e646820751ca95a12f35768e487c",
+    "models/r16_clean_pilot_r1/PLAN.json": "ee27cbc3e9e936dcfdd6ead6b3054993ca884418df647a58557581133e55095a",
+    "models/r16_clean_pilot_r1/ALL_COMPLETED.json": "a8e6037029d3006876cc7ae9b2725b5d1afcfe2c376faf5e255c1481a7f81a37",
+    "ops/r16_clean_models.py": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+    "models/r16_clean_pilot_r1/control/COMPLETED.json": "dfcc5f7ffdb36187ce750da4604e4bf233b0f1af8dad83b6e096ff476bdeb89e",
+    "models/r16_clean_pilot_r1/control/best_regression.pt": "fa7821e8523c5adb34173186e9406cf94714d14b99294ba1f131ba0f668f1023",
+    "models/r16_clean_pilot_r1/control/best_classifier.pt": "fa7821e8523c5adb34173186e9406cf94714d14b99294ba1f131ba0f668f1023",
+    "models/r16_clean_pilot_r1/control/tree_regressor.txt": "da806e2bb3a03b2c19218f3a2ce5118a4d6fd01ad86c360f2145372ff5435b3b",
+    "models/r16_clean_pilot_r1/control/tree_classifier.txt": "233ef24876eeeb9f6c7dc46f71035e95753426685ba49923374989a509fa7e9e",
+    "models/r16_clean_pilot_r1/mixed/COMPLETED.json": "c85b030f8b06d0475d617ec876d5dcbdc501b76719285bff5148ad90cbe0c9ed",
+    "models/r16_clean_pilot_r1/mixed/best_regression.pt": "a30d18025e845b43c38a1f1579e399b59e1cf41dae7a22ef507821eb301d343b",
+    "models/r16_clean_pilot_r1/mixed/best_classifier.pt": "ffbf460758e35d70ae1474727a3b649c07e53f5f702abf7b1c86865de27353f8",
+    "models/r16_clean_pilot_r1/mixed/tree_regressor.txt": "e1cc5462a79936e8c04c88b73db3d7f76f76cb0a07e668924f1bf8aa0938ef4a",
+    "models/r16_clean_pilot_r1/mixed/tree_classifier.txt": "0a5c859231e655403a119faae8de32c9787ba61c2029a4228ce00d1cbb7a4f65"
+  },
+  "code_sha256": {
+    "ops/r16_r11_stress_evaluation.py": "a0f7a8f2147e2608d2a56643966c266e00fb9fee87fb62c6f5454762f2cca801"
+  }
+}

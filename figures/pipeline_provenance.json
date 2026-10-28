@@ -1,0 +1,46 @@
+{
+  "outline": {
+    "claim": "Known-energy controlled additions support source-isolated regression and frozen inference.",
+    "width_mm": 280,
+    "ncol": 1,
+    "row_heights_mm": [
+      118,
+      77
+    ],
+    "panels": [
+      {
+        "letter": "a",
+        "role": "schematic",
+        "row": 0,
+        "col": 0,
+        "colspan": 1,
+        "chart_family": "flow diagram",
+        "message": "Split sources before constructing mixtures and optimize window MSE.",
+        "ask": "Show data collection, quality checks, exact targets, models and validation."
+      },
+      {
+        "letter": "b",
+        "role": "schematic",
+        "row": 1,
+        "col": 0,
+        "colspan": 1,
+        "chart_family": "flow diagram",
+        "message": "All inference transformations and postprocessing are frozen on development data.",
+        "ask": "Show per-window inference, ensemble, permitted postprocessing and submission checks."
+      }
+    ]
+  },
+  "producer": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise/make_pipeline_figure.py",
+  "style_reference": "/Users/hongtaeyang/Downloads/image (2).png",
+  "panels": {
+    "a": {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise/figures/panel_a.png",
+      "sha256": "e07e8738be456bf10729a6ed665a1ac479b1aa65543130af93ea3b3efdb397a7"
+    },
+    "b": {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise/figures/panel_b.png",
+      "sha256": "dc33bc66620186de2b0db542db86061c7ec6228fe644e4e7367e1fe8fed60e1b"
+    }
+  },
+  "status": "Design of the implemented candidate pipeline; dashed branches require separate validation."
+}

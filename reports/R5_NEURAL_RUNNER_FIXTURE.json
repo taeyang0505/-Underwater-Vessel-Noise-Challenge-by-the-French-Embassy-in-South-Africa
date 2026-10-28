@@ -1,0 +1,1325 @@
+{
+  "status": "passed synthetic CPU neural runner integration",
+  "fixture_root": "/var/folders/c1/ff1kv08j2fd06b_058sckl9w0000gn/T/r5_neural_runner_fixture_ckomwhzu",
+  "models": {
+    "bg_cnn": {
+      "status": "passed actual-factory fit_neural CPU fixture",
+      "kind": "bg_cnn",
+      "fixture_only": true,
+      "actual_dataset_Test_OUTER_or_GPU_used": false,
+      "no_network_during_load_or_compute": true,
+      "public_checkpoint_used": false,
+      "receipt": {
+        "model_config": {
+          "width": 128,
+          "blocks": 5,
+          "dropout": 0.1
+        },
+        "pretrained": false,
+        "kind": "bg_cnn",
+        "total_parameters": 1488002,
+        "trainable_parameters": 1488002
+      },
+      "parameters": 1488002,
+      "trainable_elements": 1488002,
+      "frozen_elements": 0,
+      "TRAIN_fixture_pool_rows": 5,
+      "TRAIN_rows_fitted": 5,
+      "INNER_rows": 3,
+      "Adam_updates": 2,
+      "epochs": 1,
+      "finite_parameter_gradients": {
+        "hook_calls": 138,
+        "nonzero_hook_calls": 138,
+        "maximum_norm": 8.452532768249512
+      },
+      "trainable_sha_changed": true,
+      "frozen_parameter_sha_before": null,
+      "frozen_parameter_sha_after": null,
+      "first_forward": {
+        "shape": [
+          2,
+          8,
+          15,
+          25
+        ],
+        "first_example_grid_sha256": "fdf4035bfa221fe2ed8ee991cf9e96e90c4182667d8abcd5890b727df1a8a57d",
+        "first_example_weight_sha256": "870bc5c8210236ea0b707dbb5c047bfe455af138288f77cc4d099b687e9cfdef"
+      },
+      "shared_prior_payload_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+      "canonical_five_window_grid_sha256": "61213015fad4dd7295fe4040699ff4f22e4393a3f1d851793d94eb03377165f2",
+      "canonical_raw_physical_weight_sha256": "717ce8ee7db23062a68e03baaf793ab5c89c43796725d90472209b961f8592a3",
+      "observation_augmentation_calls": [
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 7.956110770201974e-09
+        },
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.8188948952845294e-08
+        },
+        {
+          "input_windows": 1,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.6018528442861566e-09
+        }
+      ],
+      "best_checkpoint_restored": true,
+      "checkpoint_reload_bitwise": true,
+      "fresh_second_model_for_reload": true,
+      "same_verified_backbone_adapter_reload": false,
+      "wrong_data_prior_or_policy_rejected": true,
+      "checkpoint_code_closure_sha256": {
+        "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+        "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+        "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+        "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+        "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+        "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+        "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+        "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+        "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69"
+      },
+      "each_of_eleven_code_closure_mismatches_rejected": true,
+      "empty_and_partial_code_closure_rejected": true,
+      "physical_pooling_guard_rejected_scalar_bypass": true,
+      "saved_summary": {
+        "status": "completed",
+        "kind": "bg_cnn",
+        "best_epoch": 1,
+        "epochs_run": 1,
+        "best_inner_rmse": 0.46308373275758197,
+        "training_binding": {
+          "train_npz_sha256": "1585d2994ea99363ea8c85c546ff633ac92a5e0e4cb573ebe6a4b3cfb8c4275d",
+          "data_package_hash": "dc647fcef0d661965c444fe059e21271cd85df3fe0a747c9e9f7beb3fa98cbac",
+          "source_hash": "7cc3a3d41664ec3da5e125bb5b3bebe9ff98610d24c966743a7172cc2c1a58eb",
+          "seed": 42,
+          "fold": 0,
+          "train_examples": 5
+        },
+        "shared_prior_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+        "observation_policy": {
+          "quantization_decimals": 1,
+          "endpoint_dropout_probability": 0.2
+        },
+        "settings": {
+          "epochs": 1,
+          "patience": 7,
+          "optimizer": "adam",
+          "learning_rate": 0.001,
+          "weight_decay": 0.0003,
+          "effective_batch": 4,
+          "microbatch": 128,
+          "evaluation_batch": 2,
+          "gradient_clip": 1.0,
+          "minimum_improvement": 1e-05,
+          "cell_loss_weight": 0.25,
+          "presence_loss_weight": 0.05,
+          "contrastive_weight": 0.0
+        },
+        "receipt": {
+          "model_config": {
+            "width": 128,
+            "blocks": 5,
+            "dropout": 0.1
+          },
+          "pretrained": false,
+          "kind": "bg_cnn",
+          "total_parameters": 1488002,
+          "trainable_parameters": 1488002
+        },
+        "checkpoint_sha256": "03e1cdb66101b94b29f97b0a4df4e4dd61197f3646d376e4589d9ca5667a498c",
+        "prediction_sha256": "6a347bdaa4be337f810e699f1cb5000e59e8d9507aae306647e24fcba73d16e1",
+        "stop_reason": "maximum_epochs",
+        "device": "cpu",
+        "fixture_only": true,
+        "outer_or_Test_accessed": false,
+        "dynamic_source_identity": null,
+        "dynamic_source_receipts_file": null,
+        "elapsed_seconds": 0.12493862491101027
+      },
+      "fixture_prediction_sha256": {
+        "share": "003518ad6b42e0a63d06f7c6863735c3620d21c376ed61fdf80b38d515e0c9dd",
+        "score": "7e88ffa15cfa74a712950ec07913a2f95ac20e3bdbfd4ed6af9a8cbddbfd41c1",
+        "cell_mask": "88f185c4407d8ce021f8b2909f6ac35441803b4b5358c9728cb329c60cf4d02c"
+      },
+      "training_input_files_unchanged": true,
+      "elapsed_seconds": 1.529882250353694
+    },
+    "tfgrid_fdy_conformer": {
+      "status": "passed actual-factory fit_neural CPU fixture",
+      "kind": "tfgrid_fdy_conformer",
+      "fixture_only": true,
+      "actual_dataset_Test_OUTER_or_GPU_used": false,
+      "no_network_during_load_or_compute": true,
+      "public_checkpoint_used": false,
+      "receipt": {
+        "model_config": {
+          "embed_dim": 64,
+          "hidden_size": 128,
+          "grid_blocks": 5,
+          "dropout": 0.1,
+          "conformer_blocks": 1
+        },
+        "pretrained": false,
+        "kind": "tfgrid_fdy_conformer",
+        "total_parameters": 2562150,
+        "trainable_parameters": 2562150
+      },
+      "parameters": 2562150,
+      "trainable_elements": 2562150,
+      "frozen_elements": 0,
+      "TRAIN_fixture_pool_rows": 5,
+      "TRAIN_rows_fitted": 5,
+      "INNER_rows": 3,
+      "Adam_updates": 2,
+      "epochs": 1,
+      "finite_parameter_gradients": {
+        "hook_calls": 1053,
+        "nonzero_hook_calls": 1053,
+        "maximum_norm": 3.138016700744629
+      },
+      "trainable_sha_changed": true,
+      "frozen_parameter_sha_before": null,
+      "frozen_parameter_sha_after": null,
+      "first_forward": {
+        "shape": [
+          2,
+          8,
+          15,
+          25
+        ],
+        "first_example_grid_sha256": "fdf4035bfa221fe2ed8ee991cf9e96e90c4182667d8abcd5890b727df1a8a57d",
+        "first_example_weight_sha256": "870bc5c8210236ea0b707dbb5c047bfe455af138288f77cc4d099b687e9cfdef"
+      },
+      "shared_prior_payload_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+      "canonical_five_window_grid_sha256": "61213015fad4dd7295fe4040699ff4f22e4393a3f1d851793d94eb03377165f2",
+      "canonical_raw_physical_weight_sha256": "717ce8ee7db23062a68e03baaf793ab5c89c43796725d90472209b961f8592a3",
+      "observation_augmentation_calls": [
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 7.956110770201974e-09
+        },
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.8188948952845294e-08
+        },
+        {
+          "input_windows": 1,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.6018528442861566e-09
+        }
+      ],
+      "best_checkpoint_restored": true,
+      "checkpoint_reload_bitwise": true,
+      "fresh_second_model_for_reload": true,
+      "same_verified_backbone_adapter_reload": false,
+      "wrong_data_prior_or_policy_rejected": true,
+      "checkpoint_code_closure_sha256": {
+        "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+        "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+        "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+        "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+        "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+        "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+        "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+        "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+        "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69"
+      },
+      "each_of_eleven_code_closure_mismatches_rejected": true,
+      "empty_and_partial_code_closure_rejected": true,
+      "physical_pooling_guard_rejected_scalar_bypass": true,
+      "saved_summary": {
+        "status": "completed",
+        "kind": "tfgrid_fdy_conformer",
+        "best_epoch": 1,
+        "epochs_run": 1,
+        "best_inner_rmse": 0.24352837257049015,
+        "training_binding": {
+          "train_npz_sha256": "1585d2994ea99363ea8c85c546ff633ac92a5e0e4cb573ebe6a4b3cfb8c4275d",
+          "data_package_hash": "dc647fcef0d661965c444fe059e21271cd85df3fe0a747c9e9f7beb3fa98cbac",
+          "source_hash": "7cc3a3d41664ec3da5e125bb5b3bebe9ff98610d24c966743a7172cc2c1a58eb",
+          "seed": 42,
+          "fold": 0,
+          "train_examples": 5
+        },
+        "shared_prior_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+        "observation_policy": {
+          "quantization_decimals": 1,
+          "endpoint_dropout_probability": 0.2
+        },
+        "settings": {
+          "epochs": 1,
+          "patience": 7,
+          "optimizer": "adam",
+          "learning_rate": 0.001,
+          "weight_decay": 0.0003,
+          "effective_batch": 4,
+          "microbatch": 128,
+          "evaluation_batch": 2,
+          "gradient_clip": 1.0,
+          "minimum_improvement": 1e-05,
+          "cell_loss_weight": 0.25,
+          "presence_loss_weight": 0.05,
+          "contrastive_weight": 0.0
+        },
+        "receipt": {
+          "model_config": {
+            "embed_dim": 64,
+            "hidden_size": 128,
+            "grid_blocks": 5,
+            "dropout": 0.1,
+            "conformer_blocks": 1
+          },
+          "pretrained": false,
+          "kind": "tfgrid_fdy_conformer",
+          "total_parameters": 2562150,
+          "trainable_parameters": 2562150
+        },
+        "checkpoint_sha256": "0df50caa170b92c4b06152c65779664af8a49eaeee370f1674594041c8a182f1",
+        "prediction_sha256": "05d5f607be73132581afa3379f86bc348d5bafef54b9a0328b5867cd432ea7b9",
+        "stop_reason": "maximum_epochs",
+        "device": "cpu",
+        "fixture_only": true,
+        "outer_or_Test_accessed": false,
+        "dynamic_source_identity": null,
+        "dynamic_source_receipts_file": null,
+        "elapsed_seconds": 0.541922583244741
+      },
+      "fixture_prediction_sha256": {
+        "share": "ec6007822bd4dc4d50c7e9047b36dadd8a2d762245c7db0058a50e51569b5995",
+        "score": "2a859422c3a08465c4bcc3ac113890e91b3c1532ba575c2d0a44e7c364f7aa9e",
+        "cell_mask": "1acdfd98174b3e565474fd42dd5ed1be303994eca8d7f369a451b796bb932bc0"
+      },
+      "training_input_files_unchanged": true,
+      "elapsed_seconds": 1.649078750051558
+    },
+    "fdy": {
+      "status": "passed actual-factory fit_neural CPU fixture",
+      "kind": "fdy",
+      "fixture_only": true,
+      "actual_dataset_Test_OUTER_or_GPU_used": false,
+      "no_network_during_load_or_compute": true,
+      "public_checkpoint_used": false,
+      "receipt": {
+        "model_config": {
+          "width": 32,
+          "dropout": 0.1
+        },
+        "input_channels": 8,
+        "pretrained": false,
+        "kind": "fdy",
+        "total_parameters": 129966,
+        "trainable_parameters": 129966
+      },
+      "parameters": 129966,
+      "trainable_elements": 129966,
+      "frozen_elements": 0,
+      "TRAIN_fixture_pool_rows": 5,
+      "TRAIN_rows_fitted": 5,
+      "INNER_rows": 3,
+      "Adam_updates": 2,
+      "epochs": 1,
+      "finite_parameter_gradients": {
+        "hook_calls": 114,
+        "nonzero_hook_calls": 114,
+        "maximum_norm": 0.8361667990684509
+      },
+      "trainable_sha_changed": true,
+      "frozen_parameter_sha_before": null,
+      "frozen_parameter_sha_after": null,
+      "first_forward": {
+        "shape": [
+          2,
+          8,
+          15,
+          25
+        ],
+        "first_example_grid_sha256": "fdf4035bfa221fe2ed8ee991cf9e96e90c4182667d8abcd5890b727df1a8a57d",
+        "first_example_weight_sha256": "870bc5c8210236ea0b707dbb5c047bfe455af138288f77cc4d099b687e9cfdef"
+      },
+      "shared_prior_payload_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+      "canonical_five_window_grid_sha256": "61213015fad4dd7295fe4040699ff4f22e4393a3f1d851793d94eb03377165f2",
+      "canonical_raw_physical_weight_sha256": "717ce8ee7db23062a68e03baaf793ab5c89c43796725d90472209b961f8592a3",
+      "observation_augmentation_calls": [
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 7.956110770201974e-09
+        },
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.8188948952845294e-08
+        },
+        {
+          "input_windows": 1,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.6018528442861566e-09
+        }
+      ],
+      "best_checkpoint_restored": true,
+      "checkpoint_reload_bitwise": true,
+      "fresh_second_model_for_reload": true,
+      "same_verified_backbone_adapter_reload": false,
+      "wrong_data_prior_or_policy_rejected": true,
+      "checkpoint_code_closure_sha256": {
+        "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+        "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+        "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+        "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+        "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+        "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+        "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+        "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+        "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69"
+      },
+      "each_of_eleven_code_closure_mismatches_rejected": true,
+      "empty_and_partial_code_closure_rejected": true,
+      "physical_pooling_guard_rejected_scalar_bypass": true,
+      "saved_summary": {
+        "status": "completed",
+        "kind": "fdy",
+        "best_epoch": 1,
+        "epochs_run": 1,
+        "best_inner_rmse": 0.23090415110454712,
+        "training_binding": {
+          "train_npz_sha256": "1585d2994ea99363ea8c85c546ff633ac92a5e0e4cb573ebe6a4b3cfb8c4275d",
+          "data_package_hash": "dc647fcef0d661965c444fe059e21271cd85df3fe0a747c9e9f7beb3fa98cbac",
+          "source_hash": "7cc3a3d41664ec3da5e125bb5b3bebe9ff98610d24c966743a7172cc2c1a58eb",
+          "seed": 42,
+          "fold": 0,
+          "train_examples": 5
+        },
+        "shared_prior_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+        "observation_policy": {
+          "quantization_decimals": 1,
+          "endpoint_dropout_probability": 0.2
+        },
+        "settings": {
+          "epochs": 1,
+          "patience": 7,
+          "optimizer": "adam",
+          "learning_rate": 0.001,
+          "weight_decay": 0.0003,
+          "effective_batch": 4,
+          "microbatch": 128,
+          "evaluation_batch": 2,
+          "gradient_clip": 1.0,
+          "minimum_improvement": 1e-05,
+          "cell_loss_weight": 0.25,
+          "presence_loss_weight": 0.05,
+          "contrastive_weight": 0.0
+        },
+        "receipt": {
+          "model_config": {
+            "width": 32,
+            "dropout": 0.1
+          },
+          "input_channels": 8,
+          "pretrained": false,
+          "kind": "fdy",
+          "total_parameters": 129966,
+          "trainable_parameters": 129966
+        },
+        "checkpoint_sha256": "4a6e77f537d7ec798d1fed2265b042c5220f2427b1f8f2f1a6a0e57812e3bb2b",
+        "prediction_sha256": "61c6de0f9a656f13c7bf85468b807f116ce602632382f7bfed0bd8d1cf3eb3c4",
+        "stop_reason": "maximum_epochs",
+        "device": "cpu",
+        "fixture_only": true,
+        "outer_or_Test_accessed": false,
+        "dynamic_source_identity": null,
+        "dynamic_source_receipts_file": null,
+        "elapsed_seconds": 0.04968145955353975
+      },
+      "fixture_prediction_sha256": {
+        "share": "e2c64347f805782284fd86c60ce9a46fa197f400b4c2a05d5a750fa278c8e379",
+        "score": "c056977593e93f00f5b2bd71af46e0f7e07660ce565a1754ffabcd64c98c9c4f",
+        "cell_mask": "e3d6704a495efa7e59be8985ebd03cc36c7df2684cc7a8e3113d39205a0608c5"
+      },
+      "training_input_files_unchanged": true,
+      "elapsed_seconds": 1.017309290356934
+    },
+    "itransformer": {
+      "status": "passed actual-factory fit_neural CPU fixture",
+      "kind": "itransformer",
+      "fixture_only": true,
+      "actual_dataset_Test_OUTER_or_GPU_used": false,
+      "no_network_during_load_or_compute": true,
+      "public_checkpoint_used": false,
+      "receipt": {
+        "model_config": {
+          "width": 96,
+          "dropout": 0.1
+        },
+        "input_channels": 8,
+        "pretrained": false,
+        "kind": "itransformer",
+        "total_parameters": 295696,
+        "trainable_parameters": 295696
+      },
+      "parameters": 295696,
+      "trainable_elements": 295696,
+      "frozen_elements": 0,
+      "TRAIN_fixture_pool_rows": 5,
+      "TRAIN_rows_fitted": 5,
+      "INNER_rows": 3,
+      "Adam_updates": 2,
+      "epochs": 1,
+      "finite_parameter_gradients": {
+        "hook_calls": 135,
+        "nonzero_hook_calls": 135,
+        "maximum_norm": 1.7225948572158813
+      },
+      "trainable_sha_changed": true,
+      "frozen_parameter_sha_before": null,
+      "frozen_parameter_sha_after": null,
+      "first_forward": {
+        "shape": [
+          2,
+          8,
+          15,
+          25
+        ],
+        "first_example_grid_sha256": "fdf4035bfa221fe2ed8ee991cf9e96e90c4182667d8abcd5890b727df1a8a57d",
+        "first_example_weight_sha256": "870bc5c8210236ea0b707dbb5c047bfe455af138288f77cc4d099b687e9cfdef"
+      },
+      "shared_prior_payload_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+      "canonical_five_window_grid_sha256": "61213015fad4dd7295fe4040699ff4f22e4393a3f1d851793d94eb03377165f2",
+      "canonical_raw_physical_weight_sha256": "717ce8ee7db23062a68e03baaf793ab5c89c43796725d90472209b961f8592a3",
+      "observation_augmentation_calls": [
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 7.956110770201974e-09
+        },
+        {
+          "input_windows": 2,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.8188948952845294e-08
+        },
+        {
+          "input_windows": 1,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 2.6018528442861566e-09
+        }
+      ],
+      "best_checkpoint_restored": true,
+      "checkpoint_reload_bitwise": true,
+      "fresh_second_model_for_reload": true,
+      "same_verified_backbone_adapter_reload": false,
+      "wrong_data_prior_or_policy_rejected": true,
+      "checkpoint_code_closure_sha256": {
+        "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+        "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+        "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+        "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+        "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+        "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+        "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+        "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+        "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69"
+      },
+      "each_of_eleven_code_closure_mismatches_rejected": true,
+      "empty_and_partial_code_closure_rejected": true,
+      "physical_pooling_guard_rejected_scalar_bypass": true,
+      "saved_summary": {
+        "status": "completed",
+        "kind": "itransformer",
+        "best_epoch": 1,
+        "epochs_run": 1,
+        "best_inner_rmse": 0.20360493323707174,
+        "training_binding": {
+          "train_npz_sha256": "1585d2994ea99363ea8c85c546ff633ac92a5e0e4cb573ebe6a4b3cfb8c4275d",
+          "data_package_hash": "dc647fcef0d661965c444fe059e21271cd85df3fe0a747c9e9f7beb3fa98cbac",
+          "source_hash": "7cc3a3d41664ec3da5e125bb5b3bebe9ff98610d24c966743a7172cc2c1a58eb",
+          "seed": 42,
+          "fold": 0,
+          "train_examples": 5
+        },
+        "shared_prior_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+        "observation_policy": {
+          "quantization_decimals": 1,
+          "endpoint_dropout_probability": 0.2
+        },
+        "settings": {
+          "epochs": 1,
+          "patience": 7,
+          "optimizer": "adam",
+          "learning_rate": 0.001,
+          "weight_decay": 0.0003,
+          "effective_batch": 4,
+          "microbatch": 128,
+          "evaluation_batch": 2,
+          "gradient_clip": 1.0,
+          "minimum_improvement": 1e-05,
+          "cell_loss_weight": 0.25,
+          "presence_loss_weight": 0.05,
+          "contrastive_weight": 0.0
+        },
+        "receipt": {
+          "model_config": {
+            "width": 96,
+            "dropout": 0.1
+          },
+          "input_channels": 8,
+          "pretrained": false,
+          "kind": "itransformer",
+          "total_parameters": 295696,
+          "trainable_parameters": 295696
+        },
+        "checkpoint_sha256": "1e70dde6267a6f6cd9adb9deff6cc5b698b0f0549baaf7e839f99a042bd3a274",
+        "prediction_sha256": "5bf18a777ddb87f308159e1c38919d5ffc76c1d0e707c67163c29e526e5b2a33",
+        "stop_reason": "maximum_epochs",
+        "device": "cpu",
+        "fixture_only": true,
+        "outer_or_Test_accessed": false,
+        "dynamic_source_identity": null,
+        "dynamic_source_receipts_file": null,
+        "elapsed_seconds": 0.04089900013059378
+      },
+      "fixture_prediction_sha256": {
+        "share": "6a5d2cd463ea1acfea6ef149c22b0887aee28da4373c05e88cc89bbf36684ed9",
+        "score": "2c6afc4df8395b141d152bac654a535e79e6c30fd8d26d92d9cae08559153f49",
+        "cell_mask": "4ebc0897f680fd578ca35fb014ec26a6d6c6ec6ba09cca4888a280044c4da17e"
+      },
+      "training_input_files_unchanged": true,
+      "elapsed_seconds": 1.00280945841223
+    },
+    "timemoe_public": {
+      "status": "passed actual-factory fit_neural CPU fixture",
+      "kind": "timemoe_public",
+      "fixture_only": true,
+      "actual_dataset_Test_OUTER_or_GPU_used": false,
+      "no_network_during_load_or_compute": true,
+      "public_checkpoint_used": true,
+      "receipt": {
+        "kind": "timemoe_public",
+        "model_id": "Maple728/TimeMoE-200M",
+        "revision": "794591bfeb1225fdf742cec0f4c71f20c3f3b87e",
+        "weight_bytes": 906450104,
+        "weight_sha256": "28d1cbf480c1f63d4ad56d8b7649d9860b9afa9f31abeedff9decea48d9aee57",
+        "source_sha256": {
+          "README.md": "c0ab1a3140946b09c2e10f62194eda89db391bde05576fbfcf664f703829f1f6",
+          "config.json": "cd582cc3dd64decc15c088735d18dcae00ad2bdc013ec6a814af7999e16952bd",
+          "configuration_time_moe.py": "d9b2e91a18fcc79753af7504a93382d43fa87d168318db01eb8431ef8d1b1125",
+          "modeling_time_moe.py": "afd34fc6799799ef7784ae55425da7e58f4dabe49f2873744af201c06ebcfae6",
+          "ts_generation_mixin.py": "b8ed9708bb450dda5443093ce46fa84890ae119823bd897e7f86c4f50dd2814d"
+        },
+        "license": {
+          "repository": "Time-MoE/Time-MoE",
+          "revision": "915bfda4c78a544d62a2bec6ab22948423059236",
+          "url": "https://raw.githubusercontent.com/Time-MoE/Time-MoE/915bfda4c78a544d62a2bec6ab22948423059236/LICENSE",
+          "sha256": "7cd9951c712ed85dc4e03d25fff036a925ee7d1a0fceb5aa42a7e8788b40eac9",
+          "license": "Apache-2.0"
+        },
+        "credential_policy": "anonymous urllib; no HF token lookup; no from_pretrained",
+        "verified": true,
+        "transformers": "4.40.1",
+        "checkpoint_tensor_elements": 453196800,
+        "native_tensor_dtypes": [
+          "torch.bfloat16"
+        ],
+        "load_dtype": "float32",
+        "strict_assign_load": true,
+        "meta_then_assign": true,
+        "adapter_manifest": {
+          "family": "timemoe_public_200m_active_453m_total",
+          "fixture_mode": false,
+          "pretrained_claim": true,
+          "provenance": {
+            "family": "timemoe_public_200m_active_453m_total",
+            "checkpoint_url": "https://huggingface.co/Maple728/TimeMoE-200M/resolve/794591bfeb1225fdf742cec0f4c71f20c3f3b87e/model.safetensors",
+            "revision": "794591bfeb1225fdf742cec0f4c71f20c3f3b87e",
+            "checkpoint_sha256": "28d1cbf480c1f63d4ad56d8b7649d9860b9afa9f31abeedff9decea48d9aee57",
+            "weights_verified": true
+          },
+          "width": 768,
+          "layers": 12,
+          "rank": 16,
+          "alpha": 32,
+          "lora_dropout": 0.1,
+          "lora_paths": [
+            "layers.0.self_attn.q_proj",
+            "layers.0.self_attn.v_proj",
+            "layers.1.self_attn.q_proj",
+            "layers.1.self_attn.v_proj",
+            "layers.2.self_attn.q_proj",
+            "layers.2.self_attn.v_proj",
+            "layers.3.self_attn.q_proj",
+            "layers.3.self_attn.v_proj",
+            "layers.4.self_attn.q_proj",
+            "layers.4.self_attn.v_proj",
+            "layers.5.self_attn.q_proj",
+            "layers.5.self_attn.v_proj",
+            "layers.6.self_attn.q_proj",
+            "layers.6.self_attn.v_proj",
+            "layers.7.self_attn.q_proj",
+            "layers.7.self_attn.v_proj",
+            "layers.8.self_attn.q_proj",
+            "layers.8.self_attn.v_proj",
+            "layers.9.self_attn.q_proj",
+            "layers.9.self_attn.v_proj",
+            "layers.10.self_attn.q_proj",
+            "layers.10.self_attn.v_proj",
+            "layers.11.self_attn.q_proj",
+            "layers.11.self_attn.v_proj"
+          ],
+          "input_grid": [
+            8,
+            15,
+            25
+          ],
+          "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+          "presence": "independent learned logit head",
+          "base_frozen": true,
+          "tokens": 15,
+          "position": "new learned 15-time positions plus official RoPE",
+          "router_lora": false,
+          "experts_trainable": false,
+          "availability_gate": "verified_exact_public_checkpoint",
+          "checkpoint_brand": "Maple728/TimeMoE-200M",
+          "paper_approximate_active_parameters": 200000000,
+          "paper_approximate_total_parameters": 453000000,
+          "is_Ultra_2_4B": false
+        },
+        "adapter_counts": {
+          "total": 453891866,
+          "trainable": 775706,
+          "frozen": 453116160,
+          "lora": 589824
+        },
+        "is_Ultra_2_4B": false,
+        "official_source_edited": false,
+        "loader_sha256": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "adapter_module_sha256": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "total_parameters": 453891866,
+        "trainable_parameters": 775706
+      },
+      "parameters": 453891866,
+      "trainable_elements": 775706,
+      "frozen_elements": 453116160,
+      "TRAIN_fixture_pool_rows": 5,
+      "TRAIN_rows_fitted": 1,
+      "INNER_rows": 1,
+      "Adam_updates": 1,
+      "epochs": 1,
+      "finite_parameter_gradients": {
+        "hook_calls": 55,
+        "nonzero_hook_calls": 31,
+        "maximum_norm": 3.7362759113311768
+      },
+      "trainable_sha_changed": true,
+      "frozen_parameter_sha_before": "0eddb34369b265317cb85c83aaeb70180eb6362c00575a3784472428940e2c7e",
+      "frozen_parameter_sha_after": "0eddb34369b265317cb85c83aaeb70180eb6362c00575a3784472428940e2c7e",
+      "first_forward": {
+        "shape": [
+          1,
+          8,
+          15,
+          25
+        ],
+        "first_example_grid_sha256": "fdf4035bfa221fe2ed8ee991cf9e96e90c4182667d8abcd5890b727df1a8a57d",
+        "first_example_weight_sha256": "870bc5c8210236ea0b707dbb5c047bfe455af138288f77cc4d099b687e9cfdef"
+      },
+      "shared_prior_payload_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+      "canonical_five_window_grid_sha256": "61213015fad4dd7295fe4040699ff4f22e4393a3f1d851793d94eb03377165f2",
+      "canonical_raw_physical_weight_sha256": "717ce8ee7db23062a68e03baaf793ab5c89c43796725d90472209b961f8592a3",
+      "observation_augmentation_calls": [
+        {
+          "input_windows": 1,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 0.0
+        }
+      ],
+      "best_checkpoint_restored": true,
+      "checkpoint_reload_bitwise": true,
+      "fresh_second_model_for_reload": false,
+      "same_verified_backbone_adapter_reload": true,
+      "wrong_data_prior_or_policy_rejected": true,
+      "checkpoint_code_closure_sha256": {
+        "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+        "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+        "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+        "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+        "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+        "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+        "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+        "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+        "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69"
+      },
+      "each_of_eleven_code_closure_mismatches_rejected": true,
+      "empty_and_partial_code_closure_rejected": true,
+      "physical_pooling_guard_rejected_scalar_bypass": true,
+      "saved_summary": {
+        "status": "completed",
+        "kind": "timemoe_public",
+        "best_epoch": 1,
+        "epochs_run": 1,
+        "best_inner_rmse": 0.009979069232940674,
+        "training_binding": {
+          "train_npz_sha256": "1585d2994ea99363ea8c85c546ff633ac92a5e0e4cb573ebe6a4b3cfb8c4275d",
+          "data_package_hash": "dc647fcef0d661965c444fe059e21271cd85df3fe0a747c9e9f7beb3fa98cbac",
+          "source_hash": "7cc3a3d41664ec3da5e125bb5b3bebe9ff98610d24c966743a7172cc2c1a58eb",
+          "seed": 42,
+          "fold": 0,
+          "train_examples": 5
+        },
+        "shared_prior_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+        "observation_policy": {
+          "quantization_decimals": 1,
+          "endpoint_dropout_probability": 0.2
+        },
+        "settings": {
+          "epochs": 1,
+          "patience": 7,
+          "optimizer": "adam",
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0003,
+          "effective_batch": 1,
+          "microbatch": 128,
+          "evaluation_batch": 1,
+          "gradient_clip": 1.0,
+          "minimum_improvement": 1e-05,
+          "cell_loss_weight": 0.25,
+          "presence_loss_weight": 0.05,
+          "contrastive_weight": 0.0
+        },
+        "receipt": {
+          "kind": "timemoe_public",
+          "model_id": "Maple728/TimeMoE-200M",
+          "revision": "794591bfeb1225fdf742cec0f4c71f20c3f3b87e",
+          "weight_bytes": 906450104,
+          "weight_sha256": "28d1cbf480c1f63d4ad56d8b7649d9860b9afa9f31abeedff9decea48d9aee57",
+          "source_sha256": {
+            "README.md": "c0ab1a3140946b09c2e10f62194eda89db391bde05576fbfcf664f703829f1f6",
+            "config.json": "cd582cc3dd64decc15c088735d18dcae00ad2bdc013ec6a814af7999e16952bd",
+            "configuration_time_moe.py": "d9b2e91a18fcc79753af7504a93382d43fa87d168318db01eb8431ef8d1b1125",
+            "modeling_time_moe.py": "afd34fc6799799ef7784ae55425da7e58f4dabe49f2873744af201c06ebcfae6",
+            "ts_generation_mixin.py": "b8ed9708bb450dda5443093ce46fa84890ae119823bd897e7f86c4f50dd2814d"
+          },
+          "license": {
+            "repository": "Time-MoE/Time-MoE",
+            "revision": "915bfda4c78a544d62a2bec6ab22948423059236",
+            "url": "https://raw.githubusercontent.com/Time-MoE/Time-MoE/915bfda4c78a544d62a2bec6ab22948423059236/LICENSE",
+            "sha256": "7cd9951c712ed85dc4e03d25fff036a925ee7d1a0fceb5aa42a7e8788b40eac9",
+            "license": "Apache-2.0"
+          },
+          "credential_policy": "anonymous urllib; no HF token lookup; no from_pretrained",
+          "verified": true,
+          "transformers": "4.40.1",
+          "checkpoint_tensor_elements": 453196800,
+          "native_tensor_dtypes": [
+            "torch.bfloat16"
+          ],
+          "load_dtype": "float32",
+          "strict_assign_load": true,
+          "meta_then_assign": true,
+          "adapter_manifest": {
+            "family": "timemoe_public_200m_active_453m_total",
+            "fixture_mode": false,
+            "pretrained_claim": true,
+            "provenance": {
+              "family": "timemoe_public_200m_active_453m_total",
+              "checkpoint_url": "https://huggingface.co/Maple728/TimeMoE-200M/resolve/794591bfeb1225fdf742cec0f4c71f20c3f3b87e/model.safetensors",
+              "revision": "794591bfeb1225fdf742cec0f4c71f20c3f3b87e",
+              "checkpoint_sha256": "28d1cbf480c1f63d4ad56d8b7649d9860b9afa9f31abeedff9decea48d9aee57",
+              "weights_verified": true
+            },
+            "width": 768,
+            "layers": 12,
+            "rank": 16,
+            "alpha": 32,
+            "lora_dropout": 0.1,
+            "lora_paths": [
+              "layers.0.self_attn.q_proj",
+              "layers.0.self_attn.v_proj",
+              "layers.1.self_attn.q_proj",
+              "layers.1.self_attn.v_proj",
+              "layers.2.self_attn.q_proj",
+              "layers.2.self_attn.v_proj",
+              "layers.3.self_attn.q_proj",
+              "layers.3.self_attn.v_proj",
+              "layers.4.self_attn.q_proj",
+              "layers.4.self_attn.v_proj",
+              "layers.5.self_attn.q_proj",
+              "layers.5.self_attn.v_proj",
+              "layers.6.self_attn.q_proj",
+              "layers.6.self_attn.v_proj",
+              "layers.7.self_attn.q_proj",
+              "layers.7.self_attn.v_proj",
+              "layers.8.self_attn.q_proj",
+              "layers.8.self_attn.v_proj",
+              "layers.9.self_attn.q_proj",
+              "layers.9.self_attn.v_proj",
+              "layers.10.self_attn.q_proj",
+              "layers.10.self_attn.v_proj",
+              "layers.11.self_attn.q_proj",
+              "layers.11.self_attn.v_proj"
+            ],
+            "input_grid": [
+              8,
+              15,
+              25
+            ],
+            "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+            "presence": "independent learned logit head",
+            "base_frozen": true,
+            "tokens": 15,
+            "position": "new learned 15-time positions plus official RoPE",
+            "router_lora": false,
+            "experts_trainable": false,
+            "availability_gate": "verified_exact_public_checkpoint",
+            "checkpoint_brand": "Maple728/TimeMoE-200M",
+            "paper_approximate_active_parameters": 200000000,
+            "paper_approximate_total_parameters": 453000000,
+            "is_Ultra_2_4B": false
+          },
+          "adapter_counts": {
+            "total": 453891866,
+            "trainable": 775706,
+            "frozen": 453116160,
+            "lora": 589824
+          },
+          "is_Ultra_2_4B": false,
+          "official_source_edited": false,
+          "loader_sha256": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+          "adapter_module_sha256": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+          "total_parameters": 453891866,
+          "trainable_parameters": 775706
+        },
+        "checkpoint_sha256": "8bf0e6c3b0aa8c9e730f343704ac1cf5c66043a40abb66f89a06cf7812cf9e9b",
+        "prediction_sha256": "13fb753e13dacf7d7c34ff9e33b86e97b1302cfb6d880715df921cac9adb27c7",
+        "stop_reason": "maximum_epochs",
+        "device": "cpu",
+        "fixture_only": true,
+        "outer_or_Test_accessed": false,
+        "dynamic_source_identity": null,
+        "dynamic_source_receipts_file": null,
+        "elapsed_seconds": 0.21805041655898094
+      },
+      "fixture_prediction_sha256": {
+        "share": "b8e28e96fdc7028283fc35166a2e30e5948919112140b5e9c79ee15313823235",
+        "score": "cee83e5cf079b83c58079c1be68d44b432b665f6b52b0b8dd42d8ecb94ed0607",
+        "cell_mask": "96d8edbb0608ae8ee00cfe72311f85158132c2645591fc6cd16a94b7b33c68a2"
+      },
+      "training_input_files_unchanged": true,
+      "elapsed_seconds": 2.8270236244425178
+    },
+    "dasheng": {
+      "status": "passed actual-factory fit_neural CPU fixture",
+      "kind": "dasheng",
+      "fixture_only": true,
+      "actual_dataset_Test_OUTER_or_GPU_used": false,
+      "no_network_during_load_or_compute": true,
+      "public_checkpoint_used": true,
+      "receipt": {
+        "kind": "dasheng",
+        "model_id": "mispeech/dasheng-1.2B",
+        "revision": "4ae6b990f87bf40579b97bab065f4e47920b28dc",
+        "weight_bytes": 4536241360,
+        "weight_sha256": "b3b9316fe0ea051eefafff51ee2341629914b8db5f78cbe991803dc86f5669df",
+        "source_sha256": {
+          "README.md": "cdc8c6a1b114b22202a2c140c8daae3caf37cab151750082cc1c558036408855",
+          "config.json": "16d0439c565428d2de2bc2cd64b734bbc886a6d367d16652a4080d1b19902913",
+          "configuration_dasheng.py": "7a524b9d37c0e0392b75bbfb0fe5e2d1f60f62a8f2c46917bb186b638580966b",
+          "modeling_dasheng.py": "480d07bf805abae43ebea7f32d1ea321041ab17266329d1eac999da12dec3a8e"
+        },
+        "license": {
+          "repository": "RicherMans/Dasheng",
+          "revision": "91bc15c728f08e8d10f741311d8afc42fb33d497",
+          "url": "https://raw.githubusercontent.com/RicherMans/Dasheng/91bc15c728f08e8d10f741311d8afc42fb33d497/LICENSE",
+          "sha256": "249c4ef6ef22f69a8a1076d4eb04eb8560af2d4fc48440749f51477efacbaa8f",
+          "license": "Apache-2.0"
+        },
+        "credential_policy": "anonymous urllib; no HF token lookup; no from_pretrained",
+        "verified": true,
+        "transformers": "4.40.1",
+        "checkpoint_tensor_elements": 1134047489,
+        "native_tensor_dtypes": [
+          "torch.float32",
+          "torch.int64"
+        ],
+        "load_dtype": "float32",
+        "strict_assign_load": true,
+        "meta_then_assign": true,
+        "adapter_manifest": {
+          "family": "dasheng_1.2b",
+          "fixture_mode": false,
+          "pretrained_claim": true,
+          "provenance": {
+            "family": "dasheng_1.2b",
+            "checkpoint_url": "https://huggingface.co/mispeech/dasheng-1.2B/resolve/4ae6b990f87bf40579b97bab065f4e47920b28dc/model.safetensors",
+            "revision": "4ae6b990f87bf40579b97bab065f4e47920b28dc",
+            "checkpoint_sha256": "b3b9316fe0ea051eefafff51ee2341629914b8db5f78cbe991803dc86f5669df",
+            "weights_verified": true
+          },
+          "width": 1536,
+          "layers": 40,
+          "rank": 8,
+          "alpha": 16,
+          "lora_dropout": 0.1,
+          "lora_paths": [
+            "blocks.0.attn.qkv",
+            "blocks.1.attn.qkv",
+            "blocks.2.attn.qkv",
+            "blocks.3.attn.qkv",
+            "blocks.4.attn.qkv",
+            "blocks.5.attn.qkv",
+            "blocks.6.attn.qkv",
+            "blocks.7.attn.qkv",
+            "blocks.8.attn.qkv",
+            "blocks.9.attn.qkv",
+            "blocks.10.attn.qkv",
+            "blocks.11.attn.qkv",
+            "blocks.12.attn.qkv",
+            "blocks.13.attn.qkv",
+            "blocks.14.attn.qkv",
+            "blocks.15.attn.qkv",
+            "blocks.16.attn.qkv",
+            "blocks.17.attn.qkv",
+            "blocks.18.attn.qkv",
+            "blocks.19.attn.qkv",
+            "blocks.20.attn.qkv",
+            "blocks.21.attn.qkv",
+            "blocks.22.attn.qkv",
+            "blocks.23.attn.qkv",
+            "blocks.24.attn.qkv",
+            "blocks.25.attn.qkv",
+            "blocks.26.attn.qkv",
+            "blocks.27.attn.qkv",
+            "blocks.28.attn.qkv",
+            "blocks.29.attn.qkv",
+            "blocks.30.attn.qkv",
+            "blocks.31.attn.qkv",
+            "blocks.32.attn.qkv",
+            "blocks.33.attn.qkv",
+            "blocks.34.attn.qkv",
+            "blocks.35.attn.qkv",
+            "blocks.36.attn.qkv",
+            "blocks.37.attn.qkv",
+            "blocks.38.attn.qkv",
+            "blocks.39.attn.qkv"
+          ],
+          "input_grid": [
+            8,
+            15,
+            25
+          ],
+          "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+          "presence": "independent learned logit head",
+          "base_frozen": true,
+          "tokens": 375,
+          "token_order": "time-major then band",
+          "position": "new learned factorized time15 plus band25 positions",
+          "bypassed": [
+            "waveform_frontend",
+            "mel_patch_embed",
+            "original_mel_positions",
+            "original_outputlayer"
+          ],
+          "router_lora": false,
+          "self_attention_lora": "all rows of official fused qkv"
+        },
+        "adapter_counts": {
+          "total": 1136190082,
+          "trainable": 2142722,
+          "frozen": 1134047360,
+          "lora": 1966080
+        },
+        "is_Ultra_2_4B": false,
+        "official_source_edited": false,
+        "loader_sha256": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "adapter_module_sha256": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "total_parameters": 1136190082,
+        "trainable_parameters": 2142722
+      },
+      "parameters": 1136190082,
+      "trainable_elements": 2142722,
+      "frozen_elements": 1134047360,
+      "TRAIN_fixture_pool_rows": 5,
+      "TRAIN_rows_fitted": 1,
+      "INNER_rows": 1,
+      "Adam_updates": 1,
+      "epochs": 1,
+      "finite_parameter_gradients": {
+        "hook_calls": 88,
+        "nonzero_hook_calls": 48,
+        "maximum_norm": 14.236371994018555
+      },
+      "trainable_sha_changed": true,
+      "frozen_parameter_sha_before": "bd35c0350028fe309ae169a8d8182a65ae12568e714e50247f694d1c5460f71f",
+      "frozen_parameter_sha_after": "bd35c0350028fe309ae169a8d8182a65ae12568e714e50247f694d1c5460f71f",
+      "first_forward": {
+        "shape": [
+          1,
+          8,
+          15,
+          25
+        ],
+        "first_example_grid_sha256": "fdf4035bfa221fe2ed8ee991cf9e96e90c4182667d8abcd5890b727df1a8a57d",
+        "first_example_weight_sha256": "870bc5c8210236ea0b707dbb5c047bfe455af138288f77cc4d099b687e9cfdef"
+      },
+      "shared_prior_payload_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+      "canonical_five_window_grid_sha256": "61213015fad4dd7295fe4040699ff4f22e4393a3f1d851793d94eb03377165f2",
+      "canonical_raw_physical_weight_sha256": "717ce8ee7db23062a68e03baaf793ab5c89c43796725d90472209b961f8592a3",
+      "observation_augmentation_calls": [
+        {
+          "input_windows": 1,
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "maximum_float32_raw_weight_target_residual": 0.0
+        }
+      ],
+      "best_checkpoint_restored": true,
+      "checkpoint_reload_bitwise": true,
+      "fresh_second_model_for_reload": false,
+      "same_verified_backbone_adapter_reload": true,
+      "wrong_data_prior_or_policy_rejected": true,
+      "checkpoint_code_closure_sha256": {
+        "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+        "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+        "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+        "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+        "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+        "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+        "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+        "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+        "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+        "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+        "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69"
+      },
+      "each_of_eleven_code_closure_mismatches_rejected": true,
+      "empty_and_partial_code_closure_rejected": true,
+      "physical_pooling_guard_rejected_scalar_bypass": true,
+      "saved_summary": {
+        "status": "completed",
+        "kind": "dasheng",
+        "best_epoch": 1,
+        "epochs_run": 1,
+        "best_inner_rmse": 0.1758052110671997,
+        "training_binding": {
+          "train_npz_sha256": "1585d2994ea99363ea8c85c546ff633ac92a5e0e4cb573ebe6a4b3cfb8c4275d",
+          "data_package_hash": "dc647fcef0d661965c444fe059e21271cd85df3fe0a747c9e9f7beb3fa98cbac",
+          "source_hash": "7cc3a3d41664ec3da5e125bb5b3bebe9ff98610d24c966743a7172cc2c1a58eb",
+          "seed": 42,
+          "fold": 0,
+          "train_examples": 5
+        },
+        "shared_prior_sha256": "eaee7685f0c0ec4bf91845df20b82f2b9b05b29dbd3d4d7a4a564acf87358539",
+        "observation_policy": {
+          "quantization_decimals": 1,
+          "endpoint_dropout_probability": 0.2
+        },
+        "settings": {
+          "epochs": 1,
+          "patience": 7,
+          "optimizer": "adam",
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0003,
+          "effective_batch": 1,
+          "microbatch": 128,
+          "evaluation_batch": 1,
+          "gradient_clip": 1.0,
+          "minimum_improvement": 1e-05,
+          "cell_loss_weight": 0.25,
+          "presence_loss_weight": 0.05,
+          "contrastive_weight": 0.0
+        },
+        "receipt": {
+          "kind": "dasheng",
+          "model_id": "mispeech/dasheng-1.2B",
+          "revision": "4ae6b990f87bf40579b97bab065f4e47920b28dc",
+          "weight_bytes": 4536241360,
+          "weight_sha256": "b3b9316fe0ea051eefafff51ee2341629914b8db5f78cbe991803dc86f5669df",
+          "source_sha256": {
+            "README.md": "cdc8c6a1b114b22202a2c140c8daae3caf37cab151750082cc1c558036408855",
+            "config.json": "16d0439c565428d2de2bc2cd64b734bbc886a6d367d16652a4080d1b19902913",
+            "configuration_dasheng.py": "7a524b9d37c0e0392b75bbfb0fe5e2d1f60f62a8f2c46917bb186b638580966b",
+            "modeling_dasheng.py": "480d07bf805abae43ebea7f32d1ea321041ab17266329d1eac999da12dec3a8e"
+          },
+          "license": {
+            "repository": "RicherMans/Dasheng",
+            "revision": "91bc15c728f08e8d10f741311d8afc42fb33d497",
+            "url": "https://raw.githubusercontent.com/RicherMans/Dasheng/91bc15c728f08e8d10f741311d8afc42fb33d497/LICENSE",
+            "sha256": "249c4ef6ef22f69a8a1076d4eb04eb8560af2d4fc48440749f51477efacbaa8f",
+            "license": "Apache-2.0"
+          },
+          "credential_policy": "anonymous urllib; no HF token lookup; no from_pretrained",
+          "verified": true,
+          "transformers": "4.40.1",
+          "checkpoint_tensor_elements": 1134047489,
+          "native_tensor_dtypes": [
+            "torch.float32",
+            "torch.int64"
+          ],
+          "load_dtype": "float32",
+          "strict_assign_load": true,
+          "meta_then_assign": true,
+          "adapter_manifest": {
+            "family": "dasheng_1.2b",
+            "fixture_mode": false,
+            "pretrained_claim": true,
+            "provenance": {
+              "family": "dasheng_1.2b",
+              "checkpoint_url": "https://huggingface.co/mispeech/dasheng-1.2B/resolve/4ae6b990f87bf40579b97bab065f4e47920b28dc/model.safetensors",
+              "revision": "4ae6b990f87bf40579b97bab065f4e47920b28dc",
+              "checkpoint_sha256": "b3b9316fe0ea051eefafff51ee2341629914b8db5f78cbe991803dc86f5669df",
+              "weights_verified": true
+            },
+            "width": 1536,
+            "layers": 40,
+            "rank": 8,
+            "alpha": 16,
+            "lora_dropout": 0.1,
+            "lora_paths": [
+              "blocks.0.attn.qkv",
+              "blocks.1.attn.qkv",
+              "blocks.2.attn.qkv",
+              "blocks.3.attn.qkv",
+              "blocks.4.attn.qkv",
+              "blocks.5.attn.qkv",
+              "blocks.6.attn.qkv",
+              "blocks.7.attn.qkv",
+              "blocks.8.attn.qkv",
+              "blocks.9.attn.qkv",
+              "blocks.10.attn.qkv",
+              "blocks.11.attn.qkv",
+              "blocks.12.attn.qkv",
+              "blocks.13.attn.qkv",
+              "blocks.14.attn.qkv",
+              "blocks.15.attn.qkv",
+              "blocks.16.attn.qkv",
+              "blocks.17.attn.qkv",
+              "blocks.18.attn.qkv",
+              "blocks.19.attn.qkv",
+              "blocks.20.attn.qkv",
+              "blocks.21.attn.qkv",
+              "blocks.22.attn.qkv",
+              "blocks.23.attn.qkv",
+              "blocks.24.attn.qkv",
+              "blocks.25.attn.qkv",
+              "blocks.26.attn.qkv",
+              "blocks.27.attn.qkv",
+              "blocks.28.attn.qkv",
+              "blocks.29.attn.qkv",
+              "blocks.30.attn.qkv",
+              "blocks.31.attn.qkv",
+              "blocks.32.attn.qkv",
+              "blocks.33.attn.qkv",
+              "blocks.34.attn.qkv",
+              "blocks.35.attn.qkv",
+              "blocks.36.attn.qkv",
+              "blocks.37.attn.qkv",
+              "blocks.38.attn.qkv",
+              "blocks.39.attn.qkv"
+            ],
+            "input_grid": [
+              8,
+              15,
+              25
+            ],
+            "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+            "presence": "independent learned logit head",
+            "base_frozen": true,
+            "tokens": 375,
+            "token_order": "time-major then band",
+            "position": "new learned factorized time15 plus band25 positions",
+            "bypassed": [
+              "waveform_frontend",
+              "mel_patch_embed",
+              "original_mel_positions",
+              "original_outputlayer"
+            ],
+            "router_lora": false,
+            "self_attention_lora": "all rows of official fused qkv"
+          },
+          "adapter_counts": {
+            "total": 1136190082,
+            "trainable": 2142722,
+            "frozen": 1134047360,
+            "lora": 1966080
+          },
+          "is_Ultra_2_4B": false,
+          "official_source_edited": false,
+          "loader_sha256": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+          "adapter_module_sha256": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+          "total_parameters": 1136190082,
+          "trainable_parameters": 2142722
+        },
+        "checkpoint_sha256": "8ad21c5d8479660067e36439ccb73f0e42385571c6eb9a13257d37a894317849",
+        "prediction_sha256": "1017f5634cc800282c01aa6563a0bb3d31bdacccb413603d72a516441021573d",
+        "stop_reason": "maximum_epochs",
+        "device": "cpu",
+        "fixture_only": true,
+        "outer_or_Test_accessed": false,
+        "dynamic_source_identity": null,
+        "dynamic_source_receipts_file": null,
+        "elapsed_seconds": 6.580019041895866
+      },
+      "fixture_prediction_sha256": {
+        "share": "a19b75e6d34d6d609d46ae104601497b52b2e75c4d799a07134a2ac3ce9ad805",
+        "score": "a2f503ba42bfd5dfb1939b5fc3d148f01aaa6f1c5a154d34043f4d92a9fd290d",
+        "cell_mask": "c435594b0782d16fee99a01417254970f0b52b6686c918667ea7214912455fde"
+      },
+      "training_input_files_unchanged": true,
+      "elapsed_seconds": 13.030025165528059
+    }
+  },
+  "failures": {},
+  "same_shared_prior_grid8_and_raw_weight_inputs_across_factories": true,
+  "actual_public_objects_separate_processes": true,
+  "R4_R5_real_datasets_Test_OUTER_or_GPU_accessed": false,
+  "full_TRAIN_or_production_training_performed": false,
+  "synthetic_prior_for_production_reuse": false,
+  "official_or_validation_performance_claimed": false,
+  "existing_public_CPU_reports_overwritten": false,
+  "elapsed_seconds": 26.88571779243648,
+  "code_sha256": {
+    "ops/verify_neural_runner_r5.py": "465a248cf22a4e7a7f8aa9c28d388315940788ea0cf51a4239ba198f1c5e4f55",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "models": [
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm",
+    "cnn",
+    "fdy",
+    "itransformer",
+    "tabicl",
+    "kumo_large"
+  ],
+  "weights": [
+    0.2975523228516642,
+    0.0,
+    0.0,
+    0.026763441081739576,
+    0.06290419764892421,
+    0.0,
+    0.6127800384176721,
+    0.0,
+    1.4544026278215928e-17
+  ],
+  "affine": [
+    1.0,
+    0.0
+  ],
+  "fit_split": "inner validation only",
+  "outer_used_for_fit": false,
+  "seeds": [
+    42
+  ],
+  "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+  "source_hash": "6b9e24f6302799e5e2f0cf3a4774a53e200f73c8f48b95b75da0f09ba6e8f0d6",
+  "fold": 2,
+  "protocol": "source_group_nested5_week24h_v1"
+}

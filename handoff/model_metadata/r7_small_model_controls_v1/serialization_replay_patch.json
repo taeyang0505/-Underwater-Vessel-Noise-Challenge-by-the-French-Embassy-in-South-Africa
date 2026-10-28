@@ -1,0 +1,11 @@
+{
+  "scope": "saved model evaluation only; match actual sklearn float32 StandardScaler/Ridge arithmetic",
+  "before_script_sha256": "927696218878ccc8abedfebcd88555cef279c0d5d03727cfe787856690c3ad20",
+  "after_script_sha256": "7ec5b0ddd89aa854419889848489ab955c2b7166fece96ecdc0bdaef0b52e963",
+  "saved_ridge_sha256": "4eb31023835e536376dcc29fa002180999b4ac1a50842579c547eef0568e2592",
+  "additional_fit_allowed": false,
+  "alpha_or_coefficients_or_training_data_changed": false,
+  "cause": "Independent replay originally used float64 instead of the fitted float32 transform; no cross-panel scores evaluated before failure.",
+  "previous_replay_patch_sha256": "fe953bb376f403ca38651b1895f0c1b33c15a5bf26fd6b7be2d71a00484d651e",
+  "exact_scaler_order": "local sklearn casts mean/scale to Xfloat32 before in-place subtraction/division; preserve stored float32 Ridge coefficients"
+}

@@ -1,0 +1,25 @@
+{
+  "format": "r14_saved_prediction_independent_numeric_qa_v1",
+  "status": "passed",
+  "created_unix": 1793043015.868844,
+  "plan_sha256": "04b549636d9e718854c29926648269bef2ab3352231b06545610b451108fa3d2",
+  "policy_sha256": "6d37151552fde95f0908c6b5192d02a94f0474ddcfac95253a415a940fb0b01e",
+  "point_scalar_checks": 32844,
+  "max_abs_error": 2.220446049250313e-16,
+  "all_276_candidate_17panel_target_checks_pass_count": 0,
+  "selected_policy_independently_reselected_using_fit_only": true,
+  "exact_saved_source_ID_target_alignment_all17": true,
+  "policy_serialized_before_all_new_panel_output_files": true,
+  "strict_R12_vs_fresh_R13_baseline_classifier_predictions_exact_all17": true,
+  "strict_R12_vs_fresh_R13_baseline_booster_text_only_num_threads4_to2_differs": true,
+  "strict_and_baseline_train_and_fit_typed_inputs_exact": true,
+  "baseline_and_highshare_presence_and_validation_fit_typed_inputs_exact": true,
+  "AUC_oracle": "Independent grouped pairwise wins/ties calculation, not sklearn roc_auc_score",
+  "no_new_fit_or_inference_or_Test": true,
+  "original_input_sha256_unchanged": true,
+  "limitations": [
+    "Does not make old development panels blind.",
+    "No per-panel candidate chosen after results; zero passing candidates is descriptive of this predeclared finite family only.",
+    "CNN fit NPZ has no IDs; alignment is by immutable shared validation input/order provenance, not a new model replay."
+  ]
+}

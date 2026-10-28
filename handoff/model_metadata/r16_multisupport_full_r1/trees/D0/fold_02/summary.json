@@ -1,0 +1,50 @@
+{
+  "status": "completed",
+  "fold": 2,
+  "regime": "D0",
+  "iterations": {
+    "regression": 1010,
+    "classification": 809
+  },
+  "train_n": 61259,
+  "feature_counts": {
+    "regression": 5160,
+    "classification": 2033
+  },
+  "selection_metrics": {
+    "n": 2400,
+    "rmse": 0.09045973447540685,
+    "bias": -0.012745221128833941,
+    "prediction_mean": 0.15842570147574017,
+    "prediction_rms": 0.23353555500275372,
+    "share_auc": 0.8765820312500006,
+    "classifier_auc": 0.966419270833334,
+    "classifier_mean": 0.7830217112009942,
+    "classifier_ge099": 0.49916666666666665
+  },
+  "data_manifest_sha256": "cc0b59a7d18bf3d81fe60c4d764384edfd30ace4998bd596e89793a8960bb39c",
+  "code_sha256": {
+    "pipeline/r16_multisupport_data.py": "2a107b3a1ae84e1c07f7cbb41db359dd11b53fbcfac44de694ceb0fb7116cbbd",
+    "pipeline/training_r16_multisupport.py": "d67603c3628472ba7f8bfb59d01810d32ffef78b0e68107a84a3f01c7f3fb49b",
+    "pipeline/models_r16_multisupport.py": "a55cb165bcf999f02e4a2c3a555795cf96ba449f37f63c3ce03fd0a445647264",
+    "pipeline/models_r16_f1_preflight.py": "b1f179fa5655fc7133375b63ebf84916e6c62f8496ff94e6e5c0ee9f6ce6724f",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770"
+  },
+  "artifact_sha256": {
+    "classification.txt": "fcb7e84a78f3cfee2736db8f7405eff9b0ca7958d5116de443f6ab4d241d4bc5",
+    "PLAN.json": "d187c80ec176419c3d6b10e29d852c65ea52807a54db28265bb9b6120a7fba33",
+    "selection.npz": "6622a6a326839ded7c41562feb00781cd69585978e31189e3d3b47de0ac172c2",
+    "history.json": "ea4a617d952211b9e8095b0cc23fc32d45fe475904ffd797f14bdd45df94c31b",
+    "regression.txt": "6333e63b143611c593ee8e21b49ff2c3df3029d8e67593dbb79810b29f05326e"
+  },
+  "Test_used": false
+}

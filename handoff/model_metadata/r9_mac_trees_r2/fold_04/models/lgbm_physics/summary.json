@@ -1,0 +1,137 @@
+{
+  "format": "r9_physics_lgbm_v1",
+  "status": "completed",
+  "kind": "lgbm_physics",
+  "fixture_only": false,
+  "training_binding": {
+    "fold": 4,
+    "config_sha256": "580187b81c3b1e955398b55d6b3d977e488c74ed1005f233a2b42fdff5345c32",
+    "config_file_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "data_bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+    "source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+    "train_identity": {
+      "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+      "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+      "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+      "code_sha256": {
+        "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+        "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+        "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+        "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+        "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+        "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+        "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492"
+      },
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "epoch_policy": "each primary once; fixed-index stateless epoch seed",
+      "fold": 4,
+      "hard_negative_allocation": "min(round(.1*N), candidates) explicit zero, no primary duplication; rest of .2*N zeros uniform",
+      "hard_negative_candidate_sha256": "5272e8105db3c891f08fb00e140ecf1d590481b74af5e1133f9b66a928914748",
+      "hard_negative_policy": {
+        "broadband_definition": "sum linear powers of every band in the declared region; complete regional minutes only",
+        "bump_definition": "max-minute regional broadband power dB minus temporal median regional broadband power dB",
+        "input_db_basis": "admitted raw SA window dB after actual-minute QC; no extra rounding for candidate selection",
+        "known_added_component_A": 0,
+        "lf_excess_over_safe_high_db": 3.0,
+        "lf_quantile": 0.9,
+        "minimum_observed_minutes_per_region": 3,
+        "natural_ship_ground_truth": false,
+        "quantile_method": "linear",
+        "quantile_scope": "all eligible TRAIN windows, pooled; no site/Test population matching",
+        "safe_high_definition": "max(safe_mid_high_bump_db,high_bump_db)",
+        "source_role": "train",
+        "threshold_ties": "LF >= TRAIN 90th quantile; ties included and counted"
+      },
+      "hard_negative_threshold_db": 13.313086590556567,
+      "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+      "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+      "reference_count": 509,
+      "reference_independent_CV": false,
+      "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+      "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+      "role": "train",
+      "rows": 78124,
+      "site_counts": {
+        "1 Richards Bay": 45358,
+        "2 Durban": 2304,
+        "3 Cape_Recife": 288,
+        "4 Bird Island": 2256,
+        "5 St Croix Island": 9817,
+        "6 Riy_Banks": 223,
+        "7 St_Francis": 17878
+      },
+      "site_weights_sha256": "2e1c7160260efc9ddb9ec9807945ec877b1ae8b4701c4fe424ceb4514b2739d0",
+      "train_manifest_sha256": "02edac6e682bcda454a43b8cd3823066a8a575a38313c39e8123e31819507266",
+      "version": "r9_minute_full_dataset_v1"
+    },
+    "selection_identity": {
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "data_bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+      "fold": 4,
+      "metadata_sha256": "7ae11ca3ad628a8d86ddacb52e0f51484ed88044f2402462a06954e822c8fd74",
+      "npz_sha256": "1c9172cd3ae3bc0172120f3f5c0d9d60ca1c3a12ba32f9970c41ce7a00b86c42",
+      "report_access_gate_sha256": null,
+      "role": "selection",
+      "rows": 1000,
+      "version": "r9_minute_full_dataset_v1"
+    },
+    "reference_independent_cv": false,
+    "all509_references_shared": true,
+    "fixture_only": false
+  },
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 4,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "maximum_training_rows": 100000,
+    "feature_batch_size": 512
+  },
+  "seed": 20301054,
+  "n_features": 3827,
+  "feature_schema_sha256": "40923a7fad8f5615988e7222cbf0d301d2d9b116ba819a521e03c6da76630650",
+  "score_policy": "half_clipped_share_half_presence_classifier_v1",
+  "selection": "fixed INNER pooled clipped-share RMSE",
+  "presence_selection": "fixed INNER binary logloss",
+  "best_iteration": 1500,
+  "presence_best_iteration": 101,
+  "train_rows": 78124,
+  "inner_rows": 1000,
+  "feature_matrix_bytes": {
+    "train": 1195922192,
+    "inner": 15308000
+  },
+  "input_sha256": {
+    "train": {
+      "db": "20218978dedb91458343c23323ab92d85a78aff899794171033140e3a23d90f5",
+      "share": "8f4a6d286ae8f95323c4564e67595da0a5bd37428c3dadebf2149060a574c197",
+      "presence": "e5c42bbecce056db05f7986d7c5821b166d58d09c34529f0ae5fbbc77f99bae8"
+    },
+    "inner": {
+      "db": "508ce4f06ead33a77fbb20950c0e2e2a2cd3958682bd740f58c67f2430dc1fcb",
+      "share": "538a2ed3d8682546e8e01a722685442e6e8c682602d5c0cbf064def74613f19a",
+      "presence": "fc4e2835163a5252b28fc9dc9345e6061d7db26db3683c7a4542cc59f20f88f4"
+    }
+  },
+  "best_inner_rmse": 0.051666414042809534,
+  "artifact_sha256": {
+    "share.txt": "b671d41756008d1efea456b9925126d1d92eb789c144d60b36e8d0819e7f333b",
+    "presence.txt": "4083982b985a4fa3f0fbfd38629bfa6eb6c94ef0b178f65e6da1618c55a35bfd",
+    "feature_schema.json": "5b8a67382dde85e42d98e470da2ac3c91fad87053e74aaac8d23bdf0d70fa781",
+    "inner_predictions.npz": "01e0c139bc382b05155d209410aedb28aea8b862ec35fdef0d6d0f5693743223"
+  },
+  "code_sha256": {
+    "pipeline/trees_ensemble_r9.py": "365a476c7d5cc56e701ec56ab366fd0371d857755f91330644c609f97a52c2bc",
+    "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "lightgbm_version": "4.7.0",
+  "device": "cpu",
+  "elapsed_seconds": 237.88369529042393,
+  "Test_or_outer_accessed": false,
+  "NN_100_epoch_policy_applicable": false
+}

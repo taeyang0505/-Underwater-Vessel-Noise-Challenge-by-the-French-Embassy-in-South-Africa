@@ -1,0 +1,1858 @@
+{
+  "format": "r12_pretraining_dataset_verification_v1",
+  "status": "passed",
+  "created_utc": "2026-10-26T16:11:10.978567+00:00",
+  "data_path": "data/synthetic/r12_cpu_ablation_v3",
+  "manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+  "data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+  "code_sha256": {
+    "pipeline/dataset_r12.py": "4ad08edb149745f1b5c04c2672cf588c47ba0e80b5e1dcf7bd35ef01f634cd14",
+    "ops/build_r12_cpu_data.py": "43e6d8e6e2227dacecf2c846dd003012cabe38aa730c3e1f5ea5577969eec86a"
+  },
+  "numeric_fixture": {
+    "passed": true,
+    "positive_cases": 120,
+    "same_reference_edge_fallback_cases": 7,
+    "zero_masks_checked": 32,
+    "HF_shortfall_preserves_source_uniqueness": true,
+    "no_original_sources_or_models_opened": true
+  },
+  "checks": [
+    {
+      "name": "same 6000 row indices/no duplicates",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact zero schedule",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 6000 subset composition",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 all TRAIN base IDs",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact zero schedule",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 6000 subset composition",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 all TRAIN base IDs",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact zero schedule",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 6000 subset composition",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 all TRAIN base IDs",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact zero schedule",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 6000 subset composition",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 all TRAIN base IDs",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive db",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive share",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive presence",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive base_window_index",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive reference_index",
+      "passed": true
+    },
+    {
+      "name": "L0 HF preserves positive family",
+      "passed": true
+    },
+    {
+      "name": "L0 HF modifies only1200zero sourceIDs",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive db",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive share",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive presence",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive base_window_index",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive reference_index",
+      "passed": true
+    },
+    {
+      "name": "L1 HF preserves positive family",
+      "passed": true
+    },
+    {
+      "name": "L1 HF modifies only1200zero sourceIDs",
+      "passed": true
+    },
+    {
+      "name": "H0 2880 long-only modifications",
+      "passed": true
+    },
+    {
+      "name": "H0 unaffected rows db",
+      "passed": true
+    },
+    {
+      "name": "H0 unaffected rows cell_share",
+      "passed": true
+    },
+    {
+      "name": "H0 unaffected rows share",
+      "passed": true
+    },
+    {
+      "name": "H0 unaffected rows reference_index",
+      "passed": true
+    },
+    {
+      "name": "H0 unaffected rows base_window_index",
+      "passed": true
+    },
+    {
+      "name": "H0 long originals shared background draws",
+      "passed": true
+    },
+    {
+      "name": "H1 2880 long-only modifications",
+      "passed": true
+    },
+    {
+      "name": "H1 unaffected rows db",
+      "passed": true
+    },
+    {
+      "name": "H1 unaffected rows cell_share",
+      "passed": true
+    },
+    {
+      "name": "H1 unaffected rows share",
+      "passed": true
+    },
+    {
+      "name": "H1 unaffected rows reference_index",
+      "passed": true
+    },
+    {
+      "name": "H1 unaffected rows base_window_index",
+      "passed": true
+    },
+    {
+      "name": "H1 long originals shared background draws",
+      "passed": true
+    },
+    {
+      "name": "R12 v2-v3 numeric artifacts unchanged",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 numeric schema",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.508568102716936e-08
+    },
+    {
+      "name": "L0_H0 rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0017133698070154746
+    },
+    {
+      "name": "L0_H0 exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 1714/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 1714/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 1714/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 1714/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 1714/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 3428/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 3428/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 3428/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 3428/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 3428/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 5142/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 5142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 5142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 5142/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 5142/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 6856/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 6856/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 6856/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 6856/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 6856/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 8570/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 8570/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 8570/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 8570/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 8570/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 10284/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 10284/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 10284/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 10284/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 10284/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 11999/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 11999/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 11999/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 11999/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H0 exact replay 11999/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 numeric schema",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.508568102716936e-08
+    },
+    {
+      "name": "L0_H1 rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0017133698070154746
+    },
+    {
+      "name": "L0_H1 exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 1714/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 1714/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 1714/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 1714/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 1714/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 3428/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 3428/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 3428/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 3428/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 3428/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 5142/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 5142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 5142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 5142/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 5142/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 6856/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 6856/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 6856/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 6856/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 6856/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 8570/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 8570/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 8570/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 8570/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 8570/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 10284/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 10284/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 10284/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 10284/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 10284/presence",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 11999/db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 11999/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 11999/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 11999/share",
+      "passed": true
+    },
+    {
+      "name": "L0_H1 exact replay 11999/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 numeric schema",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.508568102716936e-08
+    },
+    {
+      "name": "L1_H0 rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0017133698070154746
+    },
+    {
+      "name": "L1_H0 exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 1714/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 1714/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 1714/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 1714/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 1714/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 3428/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 3428/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 3428/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 3428/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 3428/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 5142/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 5142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 5142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 5142/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 5142/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 6856/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 6856/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 6856/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 6856/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 6856/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 8570/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 8570/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 8570/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 8570/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 8570/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 10284/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 10284/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 10284/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 10284/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 10284/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 11999/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 11999/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 11999/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 11999/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H0 exact replay 11999/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 numeric schema",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.508568102716936e-08
+    },
+    {
+      "name": "L1_H1 rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0017133698070154746
+    },
+    {
+      "name": "L1_H1 exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 1714/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 1714/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 1714/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 1714/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 1714/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 3428/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 3428/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 3428/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 3428/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 3428/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 5142/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 5142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 5142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 5142/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 5142/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 6856/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 6856/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 6856/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 6856/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 6856/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 8570/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 8570/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 8570/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 8570/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 8570/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 10284/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 10284/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 10284/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 10284/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 10284/presence",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 11999/db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 11999/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 11999/cell_share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 11999/share",
+      "passed": true
+    },
+    {
+      "name": "L1_H1 exact replay 11999/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit numeric schema",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "validation_fit independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.035102102977305e-08
+    },
+    {
+      "name": "validation_fit rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0014790354089742053
+    },
+    {
+      "name": "validation_fit excludes all R11 used IDs",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 142/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 142/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 142/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 285/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 285/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 285/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 285/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 285/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 428/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 428/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 428/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 428/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 428/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 570/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 570/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 570/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 570/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 570/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 713/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 713/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 713/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 713/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 713/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 856/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 856/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 856/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 856/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 856/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 999/db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 999/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 999/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 999/share",
+      "passed": true
+    },
+    {
+      "name": "validation_fit exact replay 999/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate numeric schema",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "validation_gate independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.312505492125695e-08
+    },
+    {
+      "name": "validation_gate rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.001244313901914762
+    },
+    {
+      "name": "validation_gate excludes all R11 used IDs",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 71/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 71/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 71/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 71/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 71/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 142/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 142/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 142/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 213/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 213/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 213/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 213/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 213/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 285/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 285/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 285/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 285/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 285/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 356/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 356/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 356/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 356/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 356/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 427/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 427/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 427/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 427/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 427/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 499/db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 499/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 499/cell_share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 499/share",
+      "passed": true
+    },
+    {
+      "name": "validation_gate exact replay 499/presence",
+      "passed": true
+    },
+    {
+      "name": "eval numeric schema",
+      "passed": true
+    },
+    {
+      "name": "eval exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "eval independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.771635559424169e-08
+    },
+    {
+      "name": "eval rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0010762966008018848
+    },
+    {
+      "name": "eval excludes all R11 used IDs",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 71/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 71/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 71/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 71/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 71/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 142/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 142/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 142/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 213/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 213/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 213/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 213/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 213/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 285/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 285/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 285/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 285/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 285/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 356/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 356/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 356/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 356/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 356/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 427/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 427/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 427/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 427/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 427/presence",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 499/db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 499/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 499/cell_share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 499/share",
+      "passed": true
+    },
+    {
+      "name": "eval exact replay 499/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long numeric schema",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact20pct known zeros/observed positives",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long independent saved-q/raw-energy target oracle",
+      "passed": true,
+      "max_abs_error": 3.2862816246037596e-08
+    },
+    {
+      "name": "high_snr_long rounded-weight theoretical bound",
+      "passed": true,
+      "max_gap": 0.0007687443183860276
+    },
+    {
+      "name": "high_snr_long excludes all R11 used IDs",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 0/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 0/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 0/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 0/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 0/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 71/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 71/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 71/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 71/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 71/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 142/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 142/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 142/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 142/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 142/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 213/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 213/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 213/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 213/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 213/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 285/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 285/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 285/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 285/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 285/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 356/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 356/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 356/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 356/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 356/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 427/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 427/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 427/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 427/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 427/presence",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 499/db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 499/unrounded_db",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 499/cell_share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 499/share",
+      "passed": true
+    },
+    {
+      "name": "high_snr_long exact replay 499/presence",
+      "passed": true
+    },
+    {
+      "name": "validation_fit/validation_gate unique IDs and whole groups",
+      "passed": true
+    },
+    {
+      "name": "validation_fit/eval unique IDs and whole groups",
+      "passed": true
+    },
+    {
+      "name": "validation_gate/eval unique IDs and whole groups",
+      "passed": true
+    },
+    {
+      "name": "high-SNR new eval IDs",
+      "passed": true
+    },
+    {
+      "name": "PCA background TRAIN-only unique2000",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 0",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 128",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 256",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 384",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 512",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 640",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 768",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 896",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1024",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1152",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1280",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1408",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1536",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1664",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1792",
+      "passed": true
+    },
+    {
+      "name": "PCA raw background byte parity 1920",
+      "passed": true
+    }
+  ],
+  "profiles": {
+    "L0_H0": {
+      "rows": 12000,
+      "raw_target_error": 3.508568102716936e-08,
+      "rounded_gap": 0.0017133698070154746,
+      "replayed_indices": [
+        0,
+        1714,
+        3428,
+        5142,
+        6856,
+        8570,
+        10284,
+        11999
+      ]
+    },
+    "L0_H1": {
+      "rows": 12000,
+      "raw_target_error": 3.508568102716936e-08,
+      "rounded_gap": 0.0017133698070154746,
+      "replayed_indices": [
+        0,
+        1714,
+        3428,
+        5142,
+        6856,
+        8570,
+        10284,
+        11999
+      ]
+    },
+    "L1_H0": {
+      "rows": 12000,
+      "raw_target_error": 3.508568102716936e-08,
+      "rounded_gap": 0.0017133698070154746,
+      "replayed_indices": [
+        0,
+        1714,
+        3428,
+        5142,
+        6856,
+        8570,
+        10284,
+        11999
+      ]
+    },
+    "L1_H1": {
+      "rows": 12000,
+      "raw_target_error": 3.508568102716936e-08,
+      "rounded_gap": 0.0017133698070154746,
+      "replayed_indices": [
+        0,
+        1714,
+        3428,
+        5142,
+        6856,
+        8570,
+        10284,
+        11999
+      ]
+    },
+    "validation_fit": {
+      "rows": 1000,
+      "raw_target_error": 3.035102102977305e-08,
+      "rounded_gap": 0.0014790354089742053,
+      "replayed_indices": [
+        0,
+        142,
+        285,
+        428,
+        570,
+        713,
+        856,
+        999
+      ]
+    },
+    "validation_gate": {
+      "rows": 500,
+      "raw_target_error": 3.312505492125695e-08,
+      "rounded_gap": 0.001244313901914762,
+      "replayed_indices": [
+        0,
+        71,
+        142,
+        213,
+        285,
+        356,
+        427,
+        499
+      ]
+    },
+    "eval": {
+      "rows": 500,
+      "raw_target_error": 3.771635559424169e-08,
+      "rounded_gap": 0.0010762966008018848,
+      "replayed_indices": [
+        0,
+        71,
+        142,
+        213,
+        285,
+        356,
+        427,
+        499
+      ]
+    },
+    "high_snr_long": {
+      "rows": 500,
+      "raw_target_error": 3.2862816246037596e-08,
+      "rounded_gap": 0.0007687443183860276,
+      "replayed_indices": [
+        0,
+        71,
+        142,
+        213,
+        285,
+        356,
+        427,
+        499
+      ]
+    }
+  },
+  "all_source_code_model_policy_changes": false,
+  "new_model_fit_or_inference_Test_or_unused_report_values": false,
+  "validation_limitations": "TRAIN-separated background groups with24h purge; baseIDs not used inR11, but all25selection groups were exposed inR11. Development, not blind/OOF.",
+  "prefit_failed_r1_preserved": true,
+  "v2_v3_numeric_data_unchanged": true,
+  "verification_script_sha256": "a048c5d688c55af62925821fa0d1988ae9f8a13ffae0ac4f3ee269e807f1977e"
+}

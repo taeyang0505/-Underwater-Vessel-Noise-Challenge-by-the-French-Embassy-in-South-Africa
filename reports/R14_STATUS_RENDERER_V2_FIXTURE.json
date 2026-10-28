@@ -1,0 +1,34 @@
+{
+  "format": "r14_status_renderer_R2_synthetic_fixture_v1",
+  "status": "passed",
+  "checks": [
+    "same_canonical_output_default",
+    "R2_state_selected",
+    "old_supervisor_failure_is_archived_not_training_error",
+    "old_error_escaped",
+    "R1_tree_report_preserved",
+    "R1_tree_download_preserved",
+    "R2_hybrid_reports_only",
+    "R2_exact_Fold0_download",
+    "R2_bagging_download",
+    "old_hybrid_download_not_reused",
+    "unverified_TF_output_hidden",
+    "R1_tree_stage_completed_without_R2_stage_entry",
+    "neural_and_tree_counts_derived",
+    "caller_snapshot_not_mutated",
+    "changed_generated_CSV_rejected",
+    "changed_CSV_download_hidden",
+    "missing_R2_state_falls_back_to_training_files",
+    "old_renderer_source_unchanged"
+  ],
+  "checks_passed": 18,
+  "code_sha256": {
+    "ops/render_r14_production_status.py": "6b9723f756955b94945b9d1cf33c13e268e60f6efe691000da94dda38c64ce15",
+    "ops/render_r14_production_status_v2.py": "c17f7b8b0171662de5cd0eba1b3731eaa77bb52ecf0fa0f6d31a7ae04273d152",
+    "ops/verify_r14_status_v2.py": "90fdb773d102f91403ef638d1b49c2b1cde3851b3d9fd255993ff7b1609a4e83"
+  },
+  "synthetic_files_only": true,
+  "model_training_inference_raw_Test_or_audio_accessed": false,
+  "R1_models_config_state_reports_changed": false,
+  "default_page_only_actual_write_when_invoked": true
+}

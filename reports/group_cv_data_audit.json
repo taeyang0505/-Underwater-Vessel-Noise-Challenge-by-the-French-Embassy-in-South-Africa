@@ -1,0 +1,553 @@
+{
+  "protocol": "source_group_nested5_week24h_v1",
+  "native_components": [
+    {
+      "reference_component": "REF_45c386908642ed6df567",
+      "clips": 2,
+      "native": 2,
+      "source": "NOAA_SanctSound_extension_v1",
+      "outer_fold": 0
+    },
+    {
+      "reference_component": "REF_a2e6bf2a77ec9392cca0",
+      "clips": 2,
+      "native": 2,
+      "source": "NOAA_SanctSound_extension_v1",
+      "outer_fold": 1
+    },
+    {
+      "reference_component": "REF_c5900b785764b0f3a9e8",
+      "clips": 2,
+      "native": 2,
+      "source": "NOAA_SanctSound_extension_v1",
+      "outer_fold": 2
+    },
+    {
+      "reference_component": "REF_d4af4b6dce30a035069d",
+      "clips": 2,
+      "native": 2,
+      "source": "NOAA_SanctSound_extension_v1",
+      "outer_fold": 3
+    },
+    {
+      "reference_component": "REF_eca948a5584d1f14fbea",
+      "clips": 208,
+      "native": 3,
+      "source": "VTUAD_v1.3.2",
+      "outer_fold": 4
+    }
+  ],
+  "reference_components": 26,
+  "reference_clips": 1171,
+  "background_windows": 100965,
+  "background_groups": 258,
+  "outer_source_assignment_once": true,
+  "reference_hull_day_overlap_bytes_connected": true,
+  "folds": [
+    {
+      "fold": 0,
+      "background_counts": {
+        "train": 56789,
+        "outer_validation": 20121,
+        "validation": 19714,
+        "purged_temporal_boundary": 4341
+      },
+      "reference_counts": [
+        {
+          "split": "outer_validation",
+          "source": "HearMyShip_V1",
+          "clips": 197,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "outer_validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        },
+        {
+          "split": "train",
+          "source": "HearMyShip_V1",
+          "clips": 557,
+          "components": 11,
+          "original_groups": 11,
+          "days": 11,
+          "native_clips": 0
+        },
+        {
+          "split": "train",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 4,
+          "components": 2,
+          "original_groups": 2,
+          "days": 4,
+          "native_clips": 4
+        },
+        {
+          "split": "train",
+          "source": "VTUAD_v1.3.2",
+          "clips": 218,
+          "components": 3,
+          "original_groups": 88,
+          "days": 23,
+          "native_clips": 3
+        },
+        {
+          "split": "validation",
+          "source": "HearMyShip_V1",
+          "clips": 191,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        }
+      ],
+      "native_connected_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      },
+      "minimum_gap_hours": 24.0,
+      "ready_to_train": true,
+      "background_source_fraction_including_purged": {
+        "train": 0.5624622393898876,
+        "outer_validation": 0.1992868815926311,
+        "validation": 0.19525578170653196,
+        "purged_temporal_boundary": 0.04299509731094934
+      },
+      "background_groups_by_partition": {
+        "outer_validation": 51,
+        "train": 156,
+        "validation": 50
+      },
+      "reference_components_by_partition": {
+        "outer_validation": 5,
+        "train": 16,
+        "validation": 5
+      }
+    },
+    {
+      "fold": 1,
+      "background_counts": {
+        "train": 57095,
+        "outer_validation": 20121,
+        "validation": 19358,
+        "purged_temporal_boundary": 4391
+      },
+      "reference_counts": [
+        {
+          "split": "outer_validation",
+          "source": "HearMyShip_V1",
+          "clips": 191,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "outer_validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        },
+        {
+          "split": "train",
+          "source": "HearMyShip_V1",
+          "clips": 584,
+          "components": 12,
+          "original_groups": 12,
+          "days": 12,
+          "native_clips": 0
+        },
+        {
+          "split": "train",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 4,
+          "components": 2,
+          "original_groups": 2,
+          "days": 4,
+          "native_clips": 4
+        },
+        {
+          "split": "train",
+          "source": "VTUAD_v1.3.2",
+          "clips": 218,
+          "components": 3,
+          "original_groups": 88,
+          "days": 23,
+          "native_clips": 3
+        },
+        {
+          "split": "validation",
+          "source": "HearMyShip_V1",
+          "clips": 170,
+          "components": 3,
+          "original_groups": 3,
+          "days": 3,
+          "native_clips": 0
+        },
+        {
+          "split": "validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        }
+      ],
+      "native_connected_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      },
+      "minimum_gap_hours": 24.0,
+      "ready_to_train": true,
+      "background_source_fraction_including_purged": {
+        "train": 0.5654929926212053,
+        "outer_validation": 0.1992868815926311,
+        "validation": 0.1917298073589858,
+        "purged_temporal_boundary": 0.04349031842717774
+      },
+      "background_groups_by_partition": {
+        "outer_validation": 50,
+        "train": 157,
+        "validation": 51
+      },
+      "reference_components_by_partition": {
+        "outer_validation": 5,
+        "train": 17,
+        "validation": 4
+      }
+    },
+    {
+      "fold": 2,
+      "background_counts": {
+        "train": 57360,
+        "outer_validation": 20170,
+        "validation": 19728,
+        "purged_temporal_boundary": 3707
+      },
+      "reference_counts": [
+        {
+          "split": "outer_validation",
+          "source": "HearMyShip_V1",
+          "clips": 170,
+          "components": 3,
+          "original_groups": 3,
+          "days": 3,
+          "native_clips": 0
+        },
+        {
+          "split": "outer_validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        },
+        {
+          "split": "train",
+          "source": "HearMyShip_V1",
+          "clips": 586,
+          "components": 12,
+          "original_groups": 12,
+          "days": 12,
+          "native_clips": 0
+        },
+        {
+          "split": "train",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 4,
+          "components": 2,
+          "original_groups": 2,
+          "days": 4,
+          "native_clips": 4
+        },
+        {
+          "split": "train",
+          "source": "VTUAD_v1.3.2",
+          "clips": 213,
+          "components": 2,
+          "original_groups": 86,
+          "days": 20,
+          "native_clips": 3
+        },
+        {
+          "split": "validation",
+          "source": "HearMyShip_V1",
+          "clips": 189,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        },
+        {
+          "split": "validation",
+          "source": "VTUAD_v1.3.2",
+          "clips": 5,
+          "components": 1,
+          "original_groups": 2,
+          "days": 3,
+          "native_clips": 0
+        }
+      ],
+      "native_connected_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      },
+      "minimum_gap_hours": 24.0,
+      "ready_to_train": true,
+      "background_source_fraction_including_purged": {
+        "train": 0.5681176645372159,
+        "outer_validation": 0.19977219828653495,
+        "validation": 0.19539444361907593,
+        "purged_temporal_boundary": 0.03671569355717328
+      },
+      "background_groups_by_partition": {
+        "outer_validation": 51,
+        "train": 156,
+        "validation": 51
+      },
+      "reference_components_by_partition": {
+        "outer_validation": 4,
+        "train": 16,
+        "validation": 6
+      }
+    },
+    {
+      "fold": 3,
+      "background_counts": {
+        "train": 56633,
+        "outer_validation": 20316,
+        "validation": 19877,
+        "purged_temporal_boundary": 4139
+      },
+      "reference_counts": [
+        {
+          "split": "outer_validation",
+          "source": "HearMyShip_V1",
+          "clips": 189,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "outer_validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        },
+        {
+          "split": "outer_validation",
+          "source": "VTUAD_v1.3.2",
+          "clips": 5,
+          "components": 1,
+          "original_groups": 2,
+          "days": 3,
+          "native_clips": 0
+        },
+        {
+          "split": "train",
+          "source": "HearMyShip_V1",
+          "clips": 558,
+          "components": 11,
+          "original_groups": 11,
+          "days": 11,
+          "native_clips": 0
+        },
+        {
+          "split": "train",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 6,
+          "components": 3,
+          "original_groups": 3,
+          "days": 6,
+          "native_clips": 6
+        },
+        {
+          "split": "validation",
+          "source": "HearMyShip_V1",
+          "clips": 198,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "validation",
+          "source": "VTUAD_v1.3.2",
+          "clips": 213,
+          "components": 2,
+          "original_groups": 86,
+          "days": 20,
+          "native_clips": 3
+        }
+      ],
+      "native_connected_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      },
+      "minimum_gap_hours": 24.0,
+      "ready_to_train": true,
+      "background_source_fraction_including_purged": {
+        "train": 0.560917149507255,
+        "outer_validation": 0.20121824394592186,
+        "validation": 0.19687020254543655,
+        "purged_temporal_boundary": 0.04099440400138662
+      },
+      "background_groups_by_partition": {
+        "outer_validation": 51,
+        "train": 151,
+        "validation": 55
+      },
+      "reference_components_by_partition": {
+        "outer_validation": 6,
+        "train": 14,
+        "validation": 6
+      }
+    },
+    {
+      "fold": 4,
+      "background_counts": {
+        "train": 57549,
+        "outer_validation": 20237,
+        "validation": 19329,
+        "purged_temporal_boundary": 3850
+      },
+      "reference_counts": [
+        {
+          "split": "outer_validation",
+          "source": "HearMyShip_V1",
+          "clips": 198,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "outer_validation",
+          "source": "VTUAD_v1.3.2",
+          "clips": 213,
+          "components": 2,
+          "original_groups": 86,
+          "days": 20,
+          "native_clips": 3
+        },
+        {
+          "split": "train",
+          "source": "HearMyShip_V1",
+          "clips": 550,
+          "components": 11,
+          "original_groups": 11,
+          "days": 11,
+          "native_clips": 0
+        },
+        {
+          "split": "train",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 6,
+          "components": 3,
+          "original_groups": 3,
+          "days": 6,
+          "native_clips": 6
+        },
+        {
+          "split": "train",
+          "source": "VTUAD_v1.3.2",
+          "clips": 5,
+          "components": 1,
+          "original_groups": 2,
+          "days": 3,
+          "native_clips": 0
+        },
+        {
+          "split": "validation",
+          "source": "HearMyShip_V1",
+          "clips": 197,
+          "components": 4,
+          "original_groups": 4,
+          "days": 4,
+          "native_clips": 0
+        },
+        {
+          "split": "validation",
+          "source": "NOAA_SanctSound_extension_v1",
+          "clips": 2,
+          "components": 1,
+          "original_groups": 1,
+          "days": 2,
+          "native_clips": 2
+        }
+      ],
+      "native_connected_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      },
+      "minimum_gap_hours": 24.0,
+      "ready_to_train": true,
+      "background_source_fraction_including_purged": {
+        "train": 0.5699896003565592,
+        "outer_validation": 0.200435794582281,
+        "validation": 0.1914425791115733,
+        "purged_temporal_boundary": 0.03813202594958649
+      },
+      "background_groups_by_partition": {
+        "outer_validation": 55,
+        "train": 151,
+        "validation": 51
+      },
+      "reference_components_by_partition": {
+        "outer_validation": 6,
+        "train": 15,
+        "validation": 5
+      }
+    }
+  ],
+  "limitations": [
+    "Sensor-week CV measures temporal generalization within known sensors, not fully unseen-sensor transfer.",
+    "Exactly five independent native components: four NOAA stations and one connected VT recording component.",
+    "Native corpus differs across outer folds; report fold dispersion and corpus-specific errors.",
+    "HearMyShip recurring hull identity is unavailable; day separation cannot prove hull independence.",
+    "OOF covers synthetic draws from disjoint source units; it does not supply true labels for natural SA observations.",
+    "No blanket run-edge removal or nominal sample-rate correction has been applied without verified provenance."
+  ],
+  "ready_to_train": true,
+  "source_hash": "f8e78e5add5d3131d0d11e362fec72928e999987e479815d3c5c5c6fa114498d",
+  "outer_oof_examples": 15000
+}

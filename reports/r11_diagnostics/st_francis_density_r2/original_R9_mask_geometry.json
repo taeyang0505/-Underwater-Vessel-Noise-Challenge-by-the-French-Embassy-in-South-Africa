@@ -1,0 +1,88 @@
+{
+  "scope": "exact geometry under native-positive-minute assumption; uniformreference averaging, not empirical R9 labels or official generator",
+  "reference_count": 509,
+  "native_ge7_reference_count": 43,
+  "mask_specific": [
+    {
+      "observed_minutes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "references": 509,
+      "native_inside": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.5709517234566351,
+        "references_with_structurally_no_supported_placement": 0
+      },
+      "native_short": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.6457855067874715,
+        "references_with_structurally_no_supported_placement": 0
+      },
+      "native_edge": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.4962127759043709,
+        "references_with_structurally_no_supported_placement": 0
+      }
+    },
+    {
+      "observed_minutes": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "references": 509,
+      "native_inside": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.38517278399400207,
+        "references_with_structurally_no_supported_placement": 0
+      },
+      "native_short": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.5831420271498857,
+        "references_with_structurally_no_supported_placement": 0
+      },
+      "native_edge": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.9629698782213946,
+        "references_with_structurally_no_supported_placement": 465
+      }
+    },
+    {
+      "observed_minutes": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "references": 509,
+      "native_inside": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.5709517234566351,
+        "references_with_structurally_no_supported_placement": 0
+      },
+      "native_short": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.6457855067874715,
+        "references_with_structurally_no_supported_placement": 0
+      },
+      "native_edge": {
+        "uniform_reference_mean_P_zero_observed_given_positive_request": 0.4962127759043709,
+        "references_with_structurally_no_supported_placement": 0
+      }
+    }
+  ],
+  "real_sparse_pattern_weights": [
+    0.33347529812606475,
+    0.33347529812606475,
+    0.3330494037478705
+  ],
+  "family_P_zero_observed_given_positive_request": {
+    "native_inside": 0.5089990362337895,
+    "native_short": 0.6248954537396736,
+    "native_edge": 0.6518647397519985
+  },
+  "mixture_P_zero_observed_given_positive_request": 0.5736895664898127,
+  "illustrative_total_zero_if_independent_explicit20percent": 0.6589516531918502,
+  "illustration_not_actual_class_fraction": "Original TRAIN explicit-zero allocation includes its own hard-negative procedure; do not assert this illustrative fraction as actual SF training prevalence.",
+  "dense15_P_zero_observed_given_positive_request": 0.0,
+  "finding": "mask-induced zero is coupled to family, native length and observed block, not merely an independent random draw"
+}

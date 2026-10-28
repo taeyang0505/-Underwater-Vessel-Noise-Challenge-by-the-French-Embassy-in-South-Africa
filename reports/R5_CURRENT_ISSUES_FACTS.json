@@ -1,0 +1,321 @@
+{
+  "scope": "Report-only local evidence aggregation. User screenshot public metrics; uploaded bytes unverified.",
+  "dataset": {
+    "active_dataset": "group_cv_passage_r4_v1",
+    "scope": "Frozen materialized R4 data; R5 dynamic epochs are not counted as already stored independent samples",
+    "roles": {
+      "train": {
+        "samples": 267837,
+        "nominal_15minute_window_hours": 66959.25,
+        "observed_minute_grid_hours": 57023.53333333333,
+        "npz_bytes": 390338328
+      },
+      "validation": {
+        "samples": 15000,
+        "nominal_15minute_window_hours": 3750.0,
+        "observed_minute_grid_hours": 3219.983333333333,
+        "npz_bytes": 22015916
+      },
+      "outer_validation": {
+        "samples": 15000,
+        "nominal_15minute_window_hours": 3750.0,
+        "observed_minute_grid_hours": 3210.7166666666667,
+        "npz_bytes": 21976038
+      }
+    },
+    "samples_total": 297837,
+    "nominal_window_hours_total": 74459.25,
+    "npz_bytes": 434330282,
+    "uncompressed_array_payload_bytes": 895893696,
+    "original_SA_rows": 1715779,
+    "original_SA_recorded_duration_sum_hours": 28358.330833333333,
+    "original_SA_duration_scope": "Sum of row duration metadata across recorders/sites; not distinct global clock hours or raw WAV availability",
+    "selected_VTUAD_clips": 119,
+    "selected_VTUAD_components": 22,
+    "selected_VTUAD_clip_duration_sum_hours": 8.631944444444445,
+    "unique_primary_train_background_windows": 94711,
+    "readiness": "CPU integration/preflight passed; GPU training/OOF pending",
+    "synthetic_hours_are_not_new_independent_measured_audio": true
+  },
+  "completed_CNNs": {
+    "raw": {
+      "best_epoch": 19,
+      "epochs_run": 26,
+      "best_inner_rmse": 0.09084926102040936,
+      "elapsed_seconds": 5916.697580354987,
+      "stop_reason": "patience"
+    },
+    "resolution_01": {
+      "best_epoch": 3,
+      "epochs_run": 10,
+      "best_inner_rmse": 0.09960257457163214,
+      "elapsed_seconds": 2255.1534255709266,
+      "stop_reason": "patience"
+    },
+    "resolution_01_endpoint": {
+      "best_epoch": 10,
+      "epochs_run": 17,
+      "best_inner_rmse": 0.0965752769333839,
+      "elapsed_seconds": 3846.3057593710255,
+      "stop_reason": "patience"
+    }
+  },
+  "raw_CNN_epochs": [
+    {
+      "epoch": 1,
+      "train_rmse": 0.180163409732858,
+      "inner_rmse": 0.1318657404428426,
+      "best_epoch": 1,
+      "patience_used": 0,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_rmse": 0.13531921059076032,
+      "inner_rmse": 0.11625845290310502,
+      "best_epoch": 2,
+      "patience_used": 0,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_rmse": 0.10552567810272295,
+      "inner_rmse": 0.10215661893433049,
+      "best_epoch": 3,
+      "patience_used": 0,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 4,
+      "train_rmse": 0.08798729712818777,
+      "inner_rmse": 0.09766326204792966,
+      "best_epoch": 4,
+      "patience_used": 0,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 5,
+      "train_rmse": 0.0810506724305878,
+      "inner_rmse": 0.11358307723059143,
+      "best_epoch": 4,
+      "patience_used": 1,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 6,
+      "train_rmse": 0.07501584804098604,
+      "inner_rmse": 0.09850047241245775,
+      "best_epoch": 4,
+      "patience_used": 2,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 7,
+      "train_rmse": 0.07266401169498943,
+      "inner_rmse": 0.11390925751024938,
+      "best_epoch": 4,
+      "patience_used": 3,
+      "learning_rate": 0.001
+    },
+    {
+      "epoch": 8,
+      "train_rmse": 0.06329833801261552,
+      "inner_rmse": 0.09706302533729333,
+      "best_epoch": 8,
+      "patience_used": 0,
+      "learning_rate": 0.0005
+    },
+    {
+      "epoch": 9,
+      "train_rmse": 0.06334622183830546,
+      "inner_rmse": 0.10103802392691892,
+      "best_epoch": 8,
+      "patience_used": 1,
+      "learning_rate": 0.0005
+    },
+    {
+      "epoch": 10,
+      "train_rmse": 0.06282563898160966,
+      "inner_rmse": 0.10004995214568063,
+      "best_epoch": 8,
+      "patience_used": 2,
+      "learning_rate": 0.0005
+    },
+    {
+      "epoch": 11,
+      "train_rmse": 0.06252911661098214,
+      "inner_rmse": 0.1030526622258446,
+      "best_epoch": 8,
+      "patience_used": 3,
+      "learning_rate": 0.0005
+    },
+    {
+      "epoch": 12,
+      "train_rmse": 0.054451140816598964,
+      "inner_rmse": 0.10184270170792195,
+      "best_epoch": 8,
+      "patience_used": 4,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 13,
+      "train_rmse": 0.054986979232237894,
+      "inner_rmse": 0.09585581947052287,
+      "best_epoch": 13,
+      "patience_used": 0,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 14,
+      "train_rmse": 0.05453302807407264,
+      "inner_rmse": 0.09236071863318014,
+      "best_epoch": 14,
+      "patience_used": 0,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 15,
+      "train_rmse": 0.05406304798591301,
+      "inner_rmse": 0.09180378543045996,
+      "best_epoch": 15,
+      "patience_used": 0,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 16,
+      "train_rmse": 0.053259530270314014,
+      "inner_rmse": 0.10024036476434507,
+      "best_epoch": 15,
+      "patience_used": 1,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 17,
+      "train_rmse": 0.05420759712916846,
+      "inner_rmse": 0.09702988512530496,
+      "best_epoch": 15,
+      "patience_used": 2,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 18,
+      "train_rmse": 0.05229261611650359,
+      "inner_rmse": 0.0977252633175246,
+      "best_epoch": 15,
+      "patience_used": 3,
+      "learning_rate": 0.00025
+    },
+    {
+      "epoch": 19,
+      "train_rmse": 0.04951539005040228,
+      "inner_rmse": 0.09084926102040936,
+      "best_epoch": 19,
+      "patience_used": 0,
+      "learning_rate": 0.000125
+    },
+    {
+      "epoch": 20,
+      "train_rmse": 0.048879329387108525,
+      "inner_rmse": 0.09597740420966984,
+      "best_epoch": 19,
+      "patience_used": 1,
+      "learning_rate": 0.000125
+    },
+    {
+      "epoch": 21,
+      "train_rmse": 0.04868753811364778,
+      "inner_rmse": 0.09849726295766142,
+      "best_epoch": 19,
+      "patience_used": 2,
+      "learning_rate": 0.000125
+    },
+    {
+      "epoch": 22,
+      "train_rmse": 0.04818276567584607,
+      "inner_rmse": 0.0942846505454671,
+      "best_epoch": 19,
+      "patience_used": 3,
+      "learning_rate": 0.000125
+    },
+    {
+      "epoch": 23,
+      "train_rmse": 0.046531542549717864,
+      "inner_rmse": 0.09967405567080172,
+      "best_epoch": 19,
+      "patience_used": 4,
+      "learning_rate": 6.25e-05
+    },
+    {
+      "epoch": 24,
+      "train_rmse": 0.04598782174281622,
+      "inner_rmse": 0.0973465339395198,
+      "best_epoch": 19,
+      "patience_used": 5,
+      "learning_rate": 6.25e-05
+    },
+    {
+      "epoch": 25,
+      "train_rmse": 0.04571890303042006,
+      "inner_rmse": 0.09706666093351456,
+      "best_epoch": 19,
+      "patience_used": 6,
+      "learning_rate": 6.25e-05
+    },
+    {
+      "epoch": 26,
+      "train_rmse": 0.045049123165998343,
+      "inner_rmse": 0.09780509285585316,
+      "best_epoch": 19,
+      "patience_used": 7,
+      "learning_rate": 3.125e-05
+    }
+  ],
+  "CPU_INNER_RMSE": 0.09080814708083197,
+  "public_RMSE_user_screenshot": 0.348008679,
+  "RMSE_arithmetic_gap_different_populations": 0.25720053191916803,
+  "RMSE_ratio_different_populations": 3.83235084281836,
+  "MSE_ratio_different_populations": 14.686912982450593,
+  "benchmark_RMSE_from_user_score": 0.24613217499999995,
+  "public_RMSE_minus_benchmark": 0.10187650400000003,
+  "public_RMSE_relative_increase_vs_benchmark": 0.4139097377252692,
+  "role_percentages": {
+    "train": 89.92737638372667,
+    "validation": 5.036311808136666,
+    "outer_validation": 5.036311808136666
+  },
+  "Fold0_role_percentages": {
+    "train": 89.8723921409763,
+    "inner": 5.06380392951185,
+    "outer": 5.06380392951185
+  },
+  "observation_receipt": {
+    "created_at_utc": "2026-10-25T18:19:47.008350+00:00",
+    "submission_id": "Vz5mjZEr",
+    "public_score_user_screenshot": 0.65199132,
+    "public_share_rmse_user_screenshot": 0.348008679,
+    "diagnostic_presence_AUC_user_screenshot": 0.539533333,
+    "local_CPU_INNER_RMSE": 0.09080814708083197,
+    "local_submission_csv_sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "uploaded_CSV_download_hash_verified": false,
+    "no_LB_parameter_fitting": true,
+    "implementation_audit_status": "Local CSV identity/order/postprocessing and own-fixture parse/energy checks pass so far; hidden generator equivalence unproven",
+    "current_training": "SIGSTOP confirmed on supervisor/launcher/current TFGrid child; no Pod control",
+    "completed_checkpoint_backup": {
+      "path": "ops/server_backups/r5_gpu_r1/r5_snapshot_20261025T181356_426036Z_a349d40f.zip",
+      "sha256": "6e539c915d01482c43d4a9606d5281657ebad11083f96039714214ccc12f2b2b",
+      "verified": true,
+      "CRC_and_entry_SHA_verified": 21,
+      "completed_models": 3,
+      "completed_folds": 0
+    },
+    "Test_cohort_tuning_or_label_recovery_performed": false,
+    "next_scope": "Mac TRAIN/INNER-only simulator/operator robustness and source-domain validation audit"
+  },
+  "no_Test_OUTER_GPU_SSH_or_fitting": true,
+  "source_sha256": {
+    "ops/server_backups/r5_gpu_r1/r5_snapshot_20261025T181356_426036Z_a349d40f.zip": "6e539c915d01482c43d4a9606d5281657ebad11083f96039714214ccc12f2b2b",
+    "reports/R5_CNN_MAC_INFERENCE_PROFILE.json": "9f91a8bf85c2b7ba33ea85368269073a2f6d5c53a499c87dc23f0f3b67ccce80",
+    "ops/r5_lb_failure_observation.json": "6e603c1a476393dd39d45fdcd685d09464568c7d7c95e44e84b104a0ade7070e",
+    "reports/FINAL_DATASET_SCALE.json": "b4b8ff9887861b8db8afaf2cf9cd3dc220d1bdce90401f56fca34300fb62bc6b"
+  }
+}

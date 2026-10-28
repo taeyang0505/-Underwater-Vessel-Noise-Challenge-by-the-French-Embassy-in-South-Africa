@@ -1,0 +1,82 @@
+{
+  "data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+  "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+  "arms": [
+    {
+      "name": "legacy_contrast_control",
+      "long": false,
+      "HF": false,
+      "shape": false,
+      "legacy_control": true
+    },
+    {
+      "name": "L0H0P0",
+      "long": false,
+      "HF": false,
+      "shape": false,
+      "legacy_control": false
+    },
+    {
+      "name": "L0H0P1",
+      "long": false,
+      "HF": false,
+      "shape": true,
+      "legacy_control": false
+    },
+    {
+      "name": "L0H1P0",
+      "long": false,
+      "HF": true,
+      "shape": false,
+      "legacy_control": false
+    },
+    {
+      "name": "L0H1P1",
+      "long": false,
+      "HF": true,
+      "shape": true,
+      "legacy_control": false
+    },
+    {
+      "name": "L1H0P0",
+      "long": true,
+      "HF": false,
+      "shape": false,
+      "legacy_control": false
+    },
+    {
+      "name": "L1H0P1",
+      "long": true,
+      "HF": false,
+      "shape": true,
+      "legacy_control": false
+    },
+    {
+      "name": "L1H1P0",
+      "long": true,
+      "HF": true,
+      "shape": false,
+      "legacy_control": false
+    },
+    {
+      "name": "L1H1P1",
+      "long": true,
+      "HF": true,
+      "shape": true,
+      "legacy_control": false
+    }
+  ],
+  "training_code_sha256": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+  "script_sha256": "2ca0ac74cf119c154ea8045997e1b3f97cbea8935b06ef797f646a5c63176611",
+  "fit_val_only": true,
+  "train_examples_per_arm": 6000,
+  "same_indexed_subset_all_arms": true,
+  "training_subset_sha256": "cb33cd518f007b53cb829db10457cbd416da691eb78fc304ff3d322eb53e5ffd",
+  "source_code_sha256": {
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/dataset_r12.py": "4ad08edb149745f1b5c04c2672cf588c47ba0e80b5e1dcf7bd35ef01f634cd14",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf"
+  }
+}

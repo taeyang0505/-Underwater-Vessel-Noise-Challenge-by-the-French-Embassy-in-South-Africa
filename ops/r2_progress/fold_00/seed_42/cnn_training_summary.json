@@ -1,0 +1,84 @@
+{
+  "max_epochs": 100,
+  "epochs_run": 11,
+  "best_epoch": 4,
+  "best_validation_rmse": 0.2885544668496046,
+  "restored_validation_rmse": 0.2885544668496046,
+  "last_validation_rmse": 0.2977438935335092,
+  "stop_reason": "early_stopping_patience_reached",
+  "early_stopping_patience": 7,
+  "min_delta": 0.0,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0003,
+  "momentum": null,
+  "nesterov": false,
+  "scheduler": "plateau",
+  "dropout": 0.1,
+  "architecture": {
+    "architecture_version": 4,
+    "dropout": 0.1,
+    "model_width": 32,
+    "input_channels": 8,
+    "prior_clip": 0.01,
+    "prior_strength": 0.5
+  },
+  "contrastive_weight": 0.0,
+  "contrastive_temperature": 0.1,
+  "contrastive_source_groups_available": false,
+  "contrastive_limit": "Optional identity-projection ablation; source-level false negatives cannot all be excluded without batch source IDs.",
+  "selection_metric": "validation_rmse",
+  "best_checkpoint_restored": true,
+  "convergence_claim": "Stopping by patience or epoch budget does not prove a global optimum or sufficient training.",
+  "feature_version": 3,
+  "input_shape": [
+    8,
+    15,
+    25
+  ],
+  "loss_components": {
+    "share_MSE": 1.0,
+    "presence_BCE": 0.03,
+    "energy_weighted_cell_MSE": 0.03,
+    "energy_weighted_residual_logit_MSE": 0.001
+  },
+  "spectrum_share_is_energy_weighted_sigmoid_cell_mask": true,
+  "background_prior": {
+    "file": "cnn_background_prior.json",
+    "sha256": "060f91c275d237f063889f9bf7566ca3004ddbf355dc1faa604d339f3a914a14",
+    "training_binding": {
+      "train_npz_sha256": "28b5841227b5b77bf409003ad388b0bd6dee82958ad328587d8b1335c04761e5",
+      "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+      "seed": 42,
+      "source_hash": "41ff15121c76bcf8ca5fd0e98b46b945fb332034f9506782e6533df4968ee7d3",
+      "fold": 0
+    },
+    "fit_split": "train only",
+    "query_inputs": "db and aggregate training prior only",
+    "settings": {
+      "enabled": true,
+      "prior_strength": 0.5,
+      "prior_clip": 0.01,
+      "residual_weight": 0.001,
+      "clusters": 32
+    },
+    "module_sha256": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a"
+  },
+  "initial_validation_rmse": 0.4884708189140445,
+  "epoch_zero_best_eligible": true,
+  "domain_augmentation": {
+    "mode": "none",
+    "enabled": false,
+    "probability": 0.75,
+    "strength_db": 12.0,
+    "seed_policy": "training seed + epoch * 1000003; epochs start at 1",
+    "source": "original training db/cell_share every epoch; never cumulative",
+    "labels": "share, presence and cell_share recomputed from augmented known components",
+    "validation_augmented": false,
+    "base_train_rmse": "fixed original training arrays",
+    "interpretation": "Smooth known-component domain randomization; not an exact propagation model."
+  },
+  "augmentation_epochs": [],
+  "last_base_train_rmse": 0.08186060037640519,
+  "last_augmented_train_rmse": null
+}

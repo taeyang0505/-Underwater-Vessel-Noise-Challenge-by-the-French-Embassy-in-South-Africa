@@ -1,0 +1,157 @@
+{
+  "format": "r13_physics_lgbm_v1",
+  "status": "completed",
+  "kind": "lgbm_physics",
+  "fixture_only": false,
+  "training_binding": {
+    "format": "r14_approved_full_tree_production_binding_v1",
+    "fold": 1,
+    "variant": "highshare",
+    "include_shape": true,
+    "production_config_sha256": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+    "approval_file_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+    "user_instruction_sha256": "54bae81c2c0aa8b5e5fa299cf6aebbbe0af98b69d68f41add3c3b1802a212ba6",
+    "plan_sha256": "aaf91d74932e13d693db391e3d836a775a7908b30d1f24bb11f3da898fd01a4e",
+    "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+    "source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+    "TRAIN_identity": {
+      "version": "r13_full_background_cv_data_v1",
+      "role": "train",
+      "fold": 1,
+      "rows": 78069,
+      "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+      "TRAIN_pool_sha256": "777f59b544d932ec59aa3c13631f42a6d9882279f3a10069bc4fecc26c65ce62",
+      "basis_sha256": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056",
+      "dynamic_epoch_seed": 2026102713,
+      "all509_shared_references": true,
+      "reference_independent_CV": false,
+      "data_variant": "highshare",
+      "include_shape": true,
+      "runtime_policy_sha256": "4145175de8d2574bd4640fb6ba74c3b0454e81c0828ea6eb1734fecb3873d630",
+      "epoch_law": "primaryonce/stratumzeroquotaHF/highshare0or25pct; exact20pctover5epochs"
+    },
+    "TRAIN_npz_sha256": "188ad2608f3d73b5d14dcf063be9eaeda798dce04f95432ee1994cf2a22ab4f6",
+    "selection_identity": {
+      "version": "r13_full_background_cv_data_v1",
+      "role": "selection",
+      "fold": 1,
+      "rows": 1000,
+      "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+      "npz_sha256": "01554afba24f223c75ecb11b2c06de6aecee4a66ee25febdc95d202c6bbd78bc",
+      "basis_sha256": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056",
+      "data_variant": "highshare",
+      "include_shape": true
+    },
+    "PCA_sha256": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056",
+    "source_separation": {
+      "primary_ID_intersection": 0,
+      "background_group_intersection": 0,
+      "same_sensor_rows_checked": 1000,
+      "minimum_900second_support_gap_hours": 24.0,
+      "required_hours": 24,
+      "time_basis": "same sensor export clock; independently verified UTC not asserted"
+    },
+    "feature_count": 5252,
+    "executor": "Mac CPU2",
+    "executor_source_sha256": "11afc5d6f6fc2763b49275019859eca1751e007f2cf645cfeb6747ac9460ad43"
+  },
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "maximum_training_rows": 100000,
+    "feature_batch_size": 512
+  },
+  "seed": 2026112720,
+  "n_features": 5252,
+  "include_shape": true,
+  "basis_training_binding": {
+    "version": "r13_full_background_cv_data_v1",
+    "role": "train",
+    "fold": 1,
+    "source_identity": {
+      "version": "r9_minute_full_dataset_v1",
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+      "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+      "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+      "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+      "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+      "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+      "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+      "code_sha256": {
+        "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+        "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+        "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+        "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+        "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+        "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+        "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+      },
+      "reference_count": 509,
+      "reference_independent_CV": false
+    },
+    "source_ids_sha256": "a9ea513ec75c2963b770e804d45c836bb3fdd2421feb6fc1f25f2395b19ed60f",
+    "background_npz_sha256": "8b44929360dff4c705195b6a5efc9f2c5d1f14b4f7d98dadbde360cfd807834b",
+    "TRAIN_pool_sha256": "777f59b544d932ec59aa3c13631f42a6d9882279f3a10069bc4fecc26c65ce62",
+    "config_sha256": "d65abe4c4cde8277b53db8dd4c3a8d42055eb7abbaa54f38f6f773e5061bf1d8",
+    "no_added_component": true,
+    "site_counts": {
+      "1 Richards Bay": 286,
+      "2 Durban": 286,
+      "3 Cape_Recife": 286,
+      "4 Bird Island": 286,
+      "5 St Croix Island": 286,
+      "6 Riy_Banks": 285,
+      "7 St_Francis": 285
+    }
+  },
+  "feature_schema_sha256": "5f8a6e48eae4ff00f5ea0789ab58828cb26fb7597c69b053da241b1c1c6e4040",
+  "score_policy": "clipped_share_default_independent_classifier_diagnostic_v1",
+  "selection": "fixed INNER pooled clipped-share RMSE",
+  "presence_selection": "fixed INNER binary logloss",
+  "best_iteration": 1500,
+  "presence_best_iteration": 783,
+  "train_rows": 78069,
+  "inner_rows": 1000,
+  "feature_matrix_bytes": {
+    "train": 1640073552,
+    "inner": 21008000
+  },
+  "input_sha256": {
+    "train": {
+      "db": "b5ee2fe53da1571adb50188f23151c24d42de3e036192a2e44d28c6c7127e04b",
+      "share": "540967861aff3b133c58df36b665a236914e3f8505ffd9240091f0f27f4e17ba",
+      "presence": "20803c2c1512a7db73c923b778ae585a93e2101f72017a702647fa06e25cbc19"
+    },
+    "inner": {
+      "db": "0606f0aa99c6af545e3f93f9ca9189069731695337b2818d70a316f3d6df07c4",
+      "share": "c2a7bd63e087dfa51f44bb6feac3bbd0123c7d92d37a3d2a7e16380d1f9b2b97",
+      "presence": "8a321114ade764af78e993e85ae382605a85c6ad77d6065cb86969bf9ece6c6e"
+    }
+  },
+  "best_inner_rmse": 0.07168802388299365,
+  "artifact_sha256": {
+    "share.txt": "31d47d9aaa6e0eaa0f32bf2035ac29e8ffb243b517c810a72183501de034e6c7",
+    "presence.txt": "d1754557ccc79ef5a5b573d8f1f77f78e16732196d94be520c9ec39b7978ffcd",
+    "feature_schema.json": "1a75b4b8f3fa7495e0ca84c11a6386bd4754f055ec33b150fa3363f7c3cff358",
+    "inner_predictions.npz": "d91927f6ce7365e6d74e92424ae5c339bb3d62b56f2ada939031a4a06eae3b4c",
+    "basis.npz": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056"
+  },
+  "code_sha256": {
+    "pipeline/trees_ensemble_r13.py": "d65b1f865cb1531c2a9fbc7e3980263d3b105751f4d99bbcbdc7591ff2c8e29e",
+    "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "lightgbm_version": "4.7.0",
+  "device": "cpu",
+  "elapsed_seconds": 755.9217357076705,
+  "Test_or_outer_accessed": false,
+  "NN_100_epoch_policy_applicable": false
+}

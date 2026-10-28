@@ -1,0 +1,206 @@
+{
+  "passed": true,
+  "scope": "CPU tiny protocol fixtures only; NOT actual pretrained inference or validation of real Ultra/Dasheng weights.",
+  "real_B_sized_models_instantiated": false,
+  "pretrained_weights_downloaded": false,
+  "GPU_used": false,
+  "Test_or_real_acoustic_arrays_read": false,
+  "source_code_sha256": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+  "fixture_code_sha256": "bdb2cd9c5094264005c63ee38a1084d6ec7598ecefb933d107c923a26da05051",
+  "availability_default_rejections": [
+    "Time-MoE Ultra 2.4B pretrained checkpoint availability is unverified. No 453M substitution/random pretrained fallback is permitted.",
+    "Inject a verified Dasheng-1.2B pretrained object with exact checkpoint evidence"
+  ],
+  "small_Dasheng_substitution_rejected": true,
+  "LoRA_zero_initialization_bitwise_base_parity": true,
+  "cases": [
+    {
+      "kind": "timemoe",
+      "router_lora": false,
+      "passed": true,
+      "counts": {
+        "total": 56538,
+        "trainable": 11866,
+        "frozen": 44672,
+        "lora": 4096
+      },
+      "manifest": {
+        "family": "timemoe_ultra_2.4b",
+        "fixture_mode": true,
+        "pretrained_claim": false,
+        "provenance": null,
+        "width": 32,
+        "layers": 2,
+        "rank": 16,
+        "alpha": 32,
+        "lora_dropout": 0.1,
+        "lora_paths": [
+          "layers.0.self_attn.q_proj",
+          "layers.0.self_attn.v_proj",
+          "layers.1.self_attn.q_proj",
+          "layers.1.self_attn.v_proj"
+        ],
+        "input_grid": [
+          8,
+          15,
+          25
+        ],
+        "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+        "presence": "independent learned logit head",
+        "base_frozen": true,
+        "tokens": 15,
+        "position": "new learned 15-time positions plus official RoPE",
+        "router_lora": false,
+        "experts_trainable": false,
+        "availability_gate": "fixture_only_until_exact_Ultra_pretrained_checkpoint_verified"
+      },
+      "finite_fixture_loss_values_not_performance": [
+        0.17370502650737762,
+        0.14123709499835968
+      ],
+      "frozen_parameters_bytes_unchanged": true,
+      "frozen_experts_no_grad": true,
+      "only_LoRA_inside_backbone_trainable": true,
+      "original_energy_weights_no_grad_unchanged": true,
+      "original_missing_cells_zero_mask": true,
+      "adapter_bytes": 53174,
+      "adapter_excludes_frozen_vendor_weights": true,
+      "adapter_roundtrip_bitwise": true,
+      "adapter_identity_missing_tensor_rejected": true,
+      "invalid_inputs_rejected": 4,
+      "physical_zero_one_limits_passed": true
+    },
+    {
+      "kind": "timemoe",
+      "router_lora": true,
+      "passed": true,
+      "counts": {
+        "total": 57690,
+        "trainable": 13018,
+        "frozen": 44672,
+        "lora": 5248
+      },
+      "manifest": {
+        "family": "timemoe_ultra_2.4b",
+        "fixture_mode": true,
+        "pretrained_claim": false,
+        "provenance": null,
+        "width": 32,
+        "layers": 2,
+        "rank": 16,
+        "alpha": 32,
+        "lora_dropout": 0.1,
+        "lora_paths": [
+          "layers.0.self_attn.q_proj",
+          "layers.0.self_attn.v_proj",
+          "layers.0.ffn_layer.gate",
+          "layers.1.self_attn.q_proj",
+          "layers.1.self_attn.v_proj",
+          "layers.1.ffn_layer.gate"
+        ],
+        "input_grid": [
+          8,
+          15,
+          25
+        ],
+        "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+        "presence": "independent learned logit head",
+        "base_frozen": true,
+        "tokens": 15,
+        "position": "new learned 15-time positions plus official RoPE",
+        "router_lora": true,
+        "experts_trainable": false,
+        "availability_gate": "fixture_only_until_exact_Ultra_pretrained_checkpoint_verified"
+      },
+      "finite_fixture_loss_values_not_performance": [
+        0.178253635764122,
+        0.15249469876289368
+      ],
+      "frozen_parameters_bytes_unchanged": true,
+      "frozen_experts_no_grad": true,
+      "only_LoRA_inside_backbone_trainable": true,
+      "original_energy_weights_no_grad_unchanged": true,
+      "original_missing_cells_zero_mask": true,
+      "adapter_bytes": 58986,
+      "adapter_excludes_frozen_vendor_weights": true,
+      "adapter_roundtrip_bitwise": true,
+      "adapter_identity_missing_tensor_rejected": true,
+      "invalid_inputs_rejected": 4,
+      "physical_zero_one_limits_passed": true
+    },
+    {
+      "kind": "dasheng",
+      "router_lora": false,
+      "passed": true,
+      "counts": {
+        "total": 47522,
+        "trainable": 5730,
+        "frozen": 41792,
+        "lora": 2048
+      },
+      "manifest": {
+        "family": "dasheng_1.2b",
+        "fixture_mode": true,
+        "pretrained_claim": false,
+        "provenance": null,
+        "width": 32,
+        "layers": 2,
+        "rank": 8,
+        "alpha": 16,
+        "lora_dropout": 0.1,
+        "lora_paths": [
+          "blocks.0.attn.qkv",
+          "blocks.1.attn.qkv"
+        ],
+        "input_grid": [
+          8,
+          15,
+          25
+        ],
+        "pool": "sum(original_detached_energy_weights * sigmoid_grid_mask)",
+        "presence": "independent learned logit head",
+        "base_frozen": true,
+        "tokens": 375,
+        "token_order": "time-major then band",
+        "position": "new learned factorized time15 plus band25 positions",
+        "bypassed": [
+          "waveform_frontend",
+          "mel_patch_embed",
+          "original_mel_positions",
+          "original_outputlayer"
+        ],
+        "router_lora": false,
+        "self_attention_lora": "all rows of official fused qkv"
+      },
+      "finite_fixture_loss_values_not_performance": [
+        0.19758081436157227,
+        0.18743282556533813
+      ],
+      "frozen_parameters_bytes_unchanged": true,
+      "frozen_experts_no_grad": true,
+      "only_LoRA_inside_backbone_trainable": true,
+      "original_energy_weights_no_grad_unchanged": true,
+      "original_missing_cells_zero_mask": true,
+      "adapter_bytes": 27775,
+      "adapter_excludes_frozen_vendor_weights": true,
+      "adapter_roundtrip_bitwise": true,
+      "adapter_identity_missing_tensor_rejected": true,
+      "invalid_inputs_rejected": 4,
+      "physical_zero_one_limits_passed": true
+    }
+  ],
+  "official_sources": {
+    "timemoe_code": "https://github.com/Time-MoE/Time-MoE/blob/main/time_moe/models/modeling_time_moe.py",
+    "timemoe_paper": "https://arxiv.org/html/2409.16040v4",
+    "timemoe_public_checkpoint": "https://huggingface.co/Maple728/TimeMoE-200M",
+    "dasheng_hf_code": "https://huggingface.co/mispeech/dasheng-1.2B/blob/main/modeling_dasheng.py",
+    "dasheng_hf_config": "https://huggingface.co/mispeech/dasheng-1.2B/blob/main/config.json",
+    "dasheng_weight_url": "https://huggingface.co/mispeech/dasheng-1.2B/resolve/main/model.safetensors",
+    "dasheng_author_weight_url": "https://zenodo.org/records/11511780/files/dasheng_12b.pt?download=1"
+  },
+  "remaining_production_gates": [
+    "Ultra exact pretrained checkpoint remains unavailable/unverified",
+    "Real Dasheng artifact SHA/revision and audited code loading must be supplied by caller",
+    "Real backbone numeric/memory/adapter reload smoke and source-held-out regression validation not run"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "protocol": "source_group_nested5_week24h_v1",
+  "cv_dir": "data/synthetic/group_cv_physics_v2_r1",
+  "output_dir": "models/group_cv_physics_v2_r1_adam",
+  "status": "Physics V3 configuration; awaiting regeneration verification and GPU smoke test",
+  "seeds": [
+    42
+  ],
+  "models": [
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm",
+    "cnn",
+    "fdy",
+    "itransformer"
+  ],
+  "foundation_models": {
+    "tabicl": {
+      "context": 16000,
+      "members": 4,
+      "precision": "auto"
+    },
+    "kumo_large": {
+      "context": 4096,
+      "members": 4,
+      "precision": "fp32"
+    }
+  },
+  "training": {
+    "epochs": 60,
+    "patience": 7,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "dropout": 0.1,
+    "scheduler": "plateau",
+    "batch": 128,
+    "width": 256,
+    "k": 16,
+    "trees": 800,
+    "threads": 4,
+    "contrastive_weight": 0.0,
+    "contrastive_temperature": 0.1,
+    "feature_version": 3,
+    "epoch_policy": "Method B: every clean primary background once in an expanded fixed NPZ, lower maximum epochs to 60; early stopping 7 remains active."
+  },
+  "explicit_ablation_candidates": [
+    {
+      "name": "nadam",
+      "optimizer": "nadam",
+      "dropout": 0.1,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "sgd_nesterov",
+      "optimizer": "sgd_nesterov",
+      "learning_rate": 0.01,
+      "dropout": 0.1,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "dropout_005",
+      "optimizer": "adam",
+      "dropout": 0.05,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "dropout_020",
+      "optimizer": "adam",
+      "dropout": 0.2,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "contrastive_001",
+      "optimizer": "adam",
+      "dropout": 0.1,
+      "contrastive_weight": 0.01
+    }
+  ],
+  "experiment_policy": "Run the baseline first. Ablations are explicit separate experiments, not an automatic search. Never select by challenge Test or leaderboard fitting.",
+  "selection_metric": "inner validation RMSE",
+  "loss": "share MSE + explicitly logged auxiliary losses",
+  "ensemble": "Fit nonnegative sum-to-one weights on inner predictions only, freeze before outer evaluation. No outer-fitted affine calibration.",
+  "final_assessment": "Calibration and sealed sources remain outside this CV. Outer CV becomes development evidence after model comparison; it is not an endlessly reusable final holdout.",
+  "global_minimum_guaranteed": false,
+  "gpu": {
+    "recommended": "RTX 4090 24GB x1",
+    "ram_GB": 31,
+    "free_SSD_GB": 100,
+    "CUDA_memory_and_throughput_measured": false,
+    "ram_note": "31GB offered; sequential models only, 64GB preferred when available; actual server measurements pending."
+  },
+  "dataset_policy": "Original inner/outer NPZ frozen byte for byte; train support cap, reference-only EQ and clean-pool blending; evaluate full and boundary-excluded OOF. Reference support cap plus maximum synthetic added/background minute SNR 20dB; requested/effective targets recorded."
+}

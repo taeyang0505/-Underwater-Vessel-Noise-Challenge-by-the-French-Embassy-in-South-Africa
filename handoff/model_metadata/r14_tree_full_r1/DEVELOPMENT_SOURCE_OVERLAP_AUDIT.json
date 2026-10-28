@@ -1,0 +1,94 @@
+{
+  "format": "r14_development_metadata_background_overlap_v1",
+  "TRAIN_metadata_sha256": "bfb6899fd3aa447566402d84892573aa8884bf9e388409d00265e9dd459d8b3f",
+  "TRAIN_rows": 78869,
+  "metadata_only_no_acoustic_values_or_targets_read": true,
+  "panels_share_metadata_rows_as_before": true,
+  "results": {
+    "R12_validation_gate": {
+      "metadata_path": "data/synthetic/r12_cpu_ablation_v3/validation_gate_metadata.parquet",
+      "rows": 500,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "980c085f25229f84b54b7e8fa0acabfc4880ccbdd09526827a5073db9d8e4939",
+      "background_group_overlap": 0
+    },
+    "R12_eval": {
+      "metadata_path": "data/synthetic/r12_cpu_ablation_v3/eval_metadata.parquet",
+      "rows": 500,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "94988c116f6eeb557a3ab4dcc50be88953a8b2e238383eb54bd2902226fb93c4",
+      "background_group_overlap": 0
+    },
+    "R12_high_snr_long": {
+      "metadata_path": "data/synthetic/r12_cpu_ablation_v3/high_snr_long_metadata.parquet",
+      "rows": 500,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "f9df1a67d234e9873fa0c72ee9b3ce4ced3f92a98265a0c150addc9b09510392",
+      "background_group_overlap": 0
+    },
+    "R9_selection": {
+      "metadata_path": "data/synthetic/group_cv_minute_full_r9_v1/fold_00/selection_metadata.parquet",
+      "rows": 1000,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "8ac0e27cb0bc52c5571821060729d7cdb19e85045d0bd00527700d7b420895d4",
+      "background_group_overlap": 0
+    },
+    "R9_ensemble_gate": {
+      "metadata_path": "data/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_gate_metadata.parquet",
+      "rows": 500,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "a793c168ef4db5f47cae79b13bdab578496951a57e16d71fe2a44834db6d5814",
+      "background_group_overlap": 0
+    },
+    "R10_unseen": {
+      "metadata_path": "reports/r10_diagnostics/factorial_transfer_r2/unseen_source_manifest.parquet",
+      "rows": 1000,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "f37006ef0dc3abe77d3cb633d9c56042903d1034d2d82d87055246abd93ec20c",
+      "sensor_week_signature_overlap": 0
+    },
+    "R10_seen": {
+      "metadata_path": "reports/r10_diagnostics/factorial_transfer_r2/seen_source_manifest.parquet",
+      "rows": 1000,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "96cfbc93fb7127b7a9f51ee4ee4edf91cbe523f0b7ad12a0df7982d40639e39d",
+      "sensor_week_signature_overlap": 0,
+      "background_group_overlap": 0
+    },
+    "R11_positive": {
+      "metadata_path": "reports/r11_diagnostics/full_support_hf_r1/positive_background_manifest.parquet",
+      "rows": 500,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "8f2cf688983b69dc79cf9cc15fb22939dbdffd66f5ebaeb33783d7828e87e2fe",
+      "sensor_week_signature_overlap": 0,
+      "background_group_overlap": 0
+    },
+    "R11_st_francis_dense": {
+      "metadata_path": "reports/r11_diagnostics/full_support_hf_r1/st_francis_dense_background_manifest.parquet",
+      "rows": 312,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "334dbaec2df5fb7426590a094c7e254d3c4ec93531569e521b99165c80e67eea",
+      "sensor_week_signature_overlap": 0,
+      "background_group_overlap": 0
+    },
+    "R11_hf_high": {
+      "metadata_path": "reports/r11_diagnostics/full_support_hf_r1/hf_high_background_manifest.parquet",
+      "rows": 500,
+      "primary_ID_overlap_with_fullTRAIN": 0,
+      "matching_ID_rows": 0,
+      "metadata_sha256": "e57213be21a16453f93dc3db70c0b5c81f1ab55063bd7ac5caa94b50e32f6228",
+      "sensor_week_signature_overlap": 0,
+      "background_group_overlap": 0
+    }
+  },
+  "note": "Counts are source-overlap diagnostics only, not prediction performance. R10 unseen is an inherited panel name; exposure is relative to full R14TRAIN tested here."
+}

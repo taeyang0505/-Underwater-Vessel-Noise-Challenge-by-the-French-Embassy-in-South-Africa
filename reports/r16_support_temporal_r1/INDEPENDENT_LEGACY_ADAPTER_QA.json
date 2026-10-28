@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "compatibility_only": [
+    {
+      "panel": "r9_original",
+      "rows": 2,
+      "redundant_known_presence_adapted": true,
+      "zero_only_q_filled_for_legacy_validator": false,
+      "prediction_keys": [
+        "tree_share",
+        "tree_classifier",
+        "nn_share",
+        "nn_classifier",
+        "balanced_share",
+        "balanced_classifier"
+      ],
+      "finite_unit_range": true
+    },
+    {
+      "panel": "native_long15",
+      "rows": 2,
+      "redundant_known_presence_adapted": true,
+      "zero_only_q_filled_for_legacy_validator": false,
+      "prediction_keys": [
+        "tree_share",
+        "tree_classifier",
+        "nn_share",
+        "nn_classifier",
+        "balanced_share",
+        "balanced_classifier"
+      ],
+      "finite_unit_range": true
+    },
+    {
+      "panel": "hf_high",
+      "rows": 2,
+      "redundant_known_presence_adapted": true,
+      "zero_only_q_filled_for_legacy_validator": true,
+      "prediction_keys": [
+        "tree_share",
+        "tree_classifier",
+        "nn_share",
+        "nn_classifier",
+        "balanced_share",
+        "balanced_classifier"
+      ],
+      "finite_unit_range": true
+    },
+    {
+      "panel": "st_francis_dense",
+      "rows": 2,
+      "redundant_known_presence_adapted": true,
+      "zero_only_q_filled_for_legacy_validator": true,
+      "prediction_keys": [
+        "tree_share",
+        "tree_classifier",
+        "nn_share",
+        "nn_classifier",
+        "balanced_share",
+        "balanced_classifier"
+      ],
+      "finite_unit_range": true
+    }
+  ],
+  "no_model_training_or_policy_tuning": true,
+  "source_and_arrays_unchanged": true,
+  "Test_accessed": false,
+  "verified_pins": {
+    "models/r16_clean_pilot_r1/mixed/COMPLETED.json": "c85b030f8b06d0475d617ec876d5dcbdc501b76719285bff5148ad90cbe0c9ed",
+    "models/r16_clean_pilot_r1/mixed/best_regression.pt": "a30d18025e845b43c38a1f1579e399b59e1cf41dae7a22ef507821eb301d343b",
+    "models/r16_clean_pilot_r1/mixed/best_classifier.pt": "ffbf460758e35d70ae1474727a3b649c07e53f5f702abf7b1c86865de27353f8",
+    "models/r16_clean_pilot_r1/mixed/tree_regressor.txt": "e1cc5462a79936e8c04c88b73db3d7f76f76cb0a07e668924f1bf8aa0938ef4a",
+    "models/r16_clean_pilot_r1/mixed/tree_classifier.txt": "0a5c859231e655403a119faae8de32c9787ba61c2029a4228ce00d1cbb7a4f65",
+    "reports/r11_diagnostics/full_support_hf_r1/r9_original_samples.npz": "7494c281da46a0340752953d96b2c8fe206ce8e164125f0a08e30121c2e004e4",
+    "reports/r11_diagnostics/full_support_hf_r1/native_long15_samples.npz": "245efef099635ddf741603e95297b2cd55afbbc454dc93180e9bab4a30cb8fb8",
+    "reports/r11_diagnostics/full_support_hf_r1/hf_high_samples.npz": "17ef52369f9641c0ab9082be3ae7af3188da093bd22b19250b087f73d33babee",
+    "reports/r11_diagnostics/full_support_hf_r1/st_francis_dense_samples.npz": "c2b8c0985d6d4d4e13847fde2312721f012c50054a968a9f434fa00eb9e93c5b"
+  },
+  "elapsed_seconds": 0.11081183329224586,
+  "all_rows_schema_without_additional_inference": [
+    {
+      "panel": "r9_original",
+      "rows": 500,
+      "full_historical_integrity_assertions": "passed",
+      "max_raw_q_rounded_w_vs_y": 0.0008308589458465576
+    },
+    {
+      "panel": "native_long15",
+      "rows": 500,
+      "full_historical_integrity_assertions": "passed",
+      "max_raw_q_rounded_w_vs_y": 0.0015026330947875977
+    },
+    {
+      "panel": "hf_high",
+      "rows": 500,
+      "full_historical_integrity_assertions": "passed",
+      "max_raw_q_rounded_w_vs_y": 0.0
+    },
+    {
+      "panel": "st_francis_dense",
+      "rows": 312,
+      "full_historical_integrity_assertions": "passed",
+      "max_raw_q_rounded_w_vs_y": 0.0
+    }
+  ]
+}

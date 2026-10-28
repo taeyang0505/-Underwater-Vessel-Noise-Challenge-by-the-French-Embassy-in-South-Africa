@@ -1,0 +1,31 @@
+{
+  "kind": "fdy",
+  "epoch": 100,
+  "budget": 100,
+  "train_online_rmse": 0.05403486757171374,
+  "train_cell_mse": 0.015676154022800592,
+  "selection": {
+    "rmse": 0.0760385854794933,
+    "n": 1000
+  },
+  "best_selection_rmse": 0.07445696543578068,
+  "best_epoch": 94,
+  "actual_epoch_seconds_including_validation_checkpoint": 30.52125387545675,
+  "training_and_validation_seconds_before_checkpoint": 30.50032650027424,
+  "raw_cache_materialization_seconds": 10.347565750591457,
+  "raw_epoch_receipt_path": "epoch_receipts/epoch_100_61eda19e5db25ad4.json",
+  "raw_epoch_receipt_sha256": "289225a44b33e4ad5e5e35e68fac88023693bb5e134a14ec612d78f3cfd66f54",
+  "rows": 78869,
+  "optimizer_steps": 61700,
+  "learning_rate": 1.024425261896286e-05,
+  "next_learning_rate": 1e-05,
+  "max_rounded_pool_gap": 0.001785188913345337,
+  "site_or_target_row_weighting": false,
+  "cache_shared_in_phase": [
+    "itransformer",
+    "fdy",
+    "bg_cnn"
+  ],
+  "source_epoch": 100,
+  "memory_driver_bytes_sampled": 1245839360
+}

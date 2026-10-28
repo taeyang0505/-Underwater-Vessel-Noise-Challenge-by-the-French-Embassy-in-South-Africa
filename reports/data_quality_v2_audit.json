@@ -1,0 +1,119 @@
+{
+  "version": "quality_v2",
+  "source_data_modified": false,
+  "challenge_test_accessed": false,
+  "sealed_NOAA_accessed": false,
+  "source_sha256": {
+    "sa_windows_db.npy": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "sa_window_manifest.parquet": "7a3425d40a160fb31da0b5c5fbcba1641dccefae8fdc8035a7ad84c232d0c413",
+    "external_segments_power.npy": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+    "external_clip_manifest.parquet": "aa4affc7bd61afdea226bfec6f34d5b6c6e519cd23af55a463531bd8a67c624f",
+    "sa_row_manifest.parquet": "e05004b977bf7db91f131ffe2d87d944a135de48685591d484aa53294bf29de4",
+    "sa_all_rows_weak_labels.parquet": "ad4a6c9adcfe98b4cd27fdcdc992ccf5a66729b47333140f0622a3baf6747a9d"
+  },
+  "base_processed_relative_to_project": "data/processed",
+  "background_manifest": "background_manifest.parquet",
+  "external_manifest": "external_manifest.parquet",
+  "all_rows_preserved": 1715779,
+  "weak_scores_are_truth": false,
+  "weak_scores_allowed_for_training": false,
+  "v1_sensor_group_days_with_cross_fold_windows": 10,
+  "v1_background_coverage_counts": {
+    "3": 17,
+    "4": 126,
+    "5": 26747,
+    "6": 286,
+    "7": 18,
+    "8": 115,
+    "9": 160,
+    "10": 2963,
+    "11": 24,
+    "12": 45,
+    "13": 2671,
+    "14": 12500,
+    "15": 87969
+  },
+  "background_split_policy": "sensor_group × export-clock Monday weeks, metadata-hash seed 42; symmetric support-aware 24h boundary purge",
+  "background_split_counts": {
+    "train": 91186,
+    "domain_holdout": 16048,
+    "validation": 9779,
+    "calibration": 9049,
+    "purged_temporal_boundary": 7579
+  },
+  "background_quality_counts": [
+    {
+      "split": "calibration",
+      "quality_tier": "high_coverage",
+      "windows": 7073
+    },
+    {
+      "split": "calibration",
+      "quality_tier": "sparse_observed",
+      "windows": 1976
+    },
+    {
+      "split": "domain_holdout",
+      "quality_tier": "high_coverage",
+      "windows": 9525
+    },
+    {
+      "split": "domain_holdout",
+      "quality_tier": "sparse_observed",
+      "windows": 6523
+    },
+    {
+      "split": "purged_temporal_boundary",
+      "quality_tier": "high_coverage",
+      "windows": 5599
+    },
+    {
+      "split": "purged_temporal_boundary",
+      "quality_tier": "sparse_observed",
+      "windows": 1980
+    },
+    {
+      "split": "train",
+      "quality_tier": "high_coverage",
+      "windows": 74219
+    },
+    {
+      "split": "train",
+      "quality_tier": "sparse_observed",
+      "windows": 16967
+    },
+    {
+      "split": "validation",
+      "quality_tier": "high_coverage",
+      "windows": 6769
+    },
+    {
+      "split": "validation",
+      "quality_tier": "sparse_observed",
+      "windows": 3010
+    }
+  ],
+  "do_not_reuse_v1_fitted_models_for_v2_validation": true,
+  "domain_holdout_previously_inspected": true,
+  "source_duplicate_audit": {
+    "duplicate_band_vectors": 0,
+    "cross_fold_band_vector_conflicts": [],
+    "limitation": "Power-vector equality is only an additional diagnostic, not proof against all re-encodings or overlapping recordings."
+  },
+  "native_long_reference_counts": {
+    "train": 3
+  },
+  "missing_native_reference_partitions": [
+    "validation",
+    "calibration"
+  ],
+  "native_first_full_training_ready": false,
+  "readiness_gate": "Require verified additional native long references in every development partition before large-scale native-first materialization.",
+  "augmentation_policy": "native crop/placement without repeated audio; optional common gain, time reverse, measured ambient addition and background blending; recompute observed-cell target from known components",
+  "limitations": [
+    "SA export clock and level calibration remain unverified.",
+    "HearMyShip hull recurrence is unknown, even with day separation.",
+    "AIS and ship-event annotations do not prove isolated vessel sound.",
+    "Synthetic sample count is not the number of independent source groups."
+  ]
+}

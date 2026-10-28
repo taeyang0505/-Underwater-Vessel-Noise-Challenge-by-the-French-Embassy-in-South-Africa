@@ -1,0 +1,77 @@
+{
+  "status": "frozen 9-model inference replay PASSED on own validation",
+  "challenge_Test_values_read": false,
+  "sealed_NOAA_read": false,
+  "submission_bytes_hashed_only": true,
+  "policy_sha256": "3b6d902c2c96ecd74aaea56de865da00cc1c8b870720d1e1590f66bebe3ec0f5",
+  "submission_csv_sha256": "3b61240ef270412afa0329cce623e55d8e9267a39a2516530469627ac2dfb630",
+  "own_validation_indices": [
+    0,
+    1,
+    17,
+    301,
+    640,
+    1200,
+    2099,
+    2999
+  ],
+  "elapsed_seconds": 166.9956470420584,
+  "replay_errors": {
+    "share_max_abs_error": 4.302484080398461e-07,
+    "score_max_abs_error": 4.726014890266139e-07
+  },
+  "small_neural_training_evidence": [
+    {
+      "model": "tabm",
+      "floating_state_tensors": 14,
+      "tensors_different_from_seeded_initialization": 14,
+      "parameter_L2_change_relative_to_initialization": 0.12130337855882369,
+      "epochs_recorded": 8,
+      "first_validation_RMSE": 0.19596214019341837,
+      "best_validation_RMSE": 0.1452609470656833,
+      "last_validation_RMSE": 0.1487193756575308
+    },
+    {
+      "model": "cnn",
+      "floating_state_tensors": 30,
+      "tensors_different_from_seeded_initialization": 30,
+      "parameter_L2_change_relative_to_initialization": 0.34106371494038307,
+      "epochs_recorded": 8,
+      "first_validation_RMSE": 0.17097363588662168,
+      "best_validation_RMSE": 0.10541778675371362,
+      "last_validation_RMSE": 0.10541778675371362
+    },
+    {
+      "model": "fdy",
+      "floating_state_tensors": 38,
+      "tensors_different_from_seeded_initialization": 38,
+      "parameter_L2_change_relative_to_initialization": 0.58282044262678,
+      "epochs_recorded": 8,
+      "first_validation_RMSE": 0.16824922321524285,
+      "best_validation_RMSE": 0.10987581817302802,
+      "last_validation_RMSE": 0.10987581817302802
+    },
+    {
+      "model": "itransformer",
+      "floating_state_tensors": 45,
+      "tensors_different_from_seeded_initialization": 45,
+      "parameter_L2_change_relative_to_initialization": 0.33907638907762416,
+      "epochs_recorded": 8,
+      "first_validation_RMSE": 0.17403778012786122,
+      "best_validation_RMSE": 0.12003378182119358,
+      "last_validation_RMSE": 0.12003378182119358
+    }
+  ],
+  "code_matches_submission_reproducibility_ledger": true,
+  "code_sha256": {
+    "pipeline/infer.py": "a6ecdb8912947e53a9e50fd81e599362f0b2a8e968e3302844fe36e3a08312d6",
+    "pipeline/predict_foundation.py": "fb4d7d61c7ec7826b7a497f442bd83fe09447b5045d92e8dbf68d9df31a6f95c",
+    "pipeline/predict_lgbm.py": "b4e451a7c3fc182ccc2e4b09883f9b4e1cd8cb5ef99b2b9d96d84d83fa87ab90",
+    "pipeline/models.py": "11c1f8ded89290470ac3d3229c0d52cab8042b4e44913c89415f87ee38b2d595",
+    "pipeline/mixtures.py": "4b217ad101ad09d4d1120bae178ab117d85dd2c60ef87bdcd0e5ec49072cd437",
+    "pipeline/train.py": "2714bdb7d3227d72c6005f009678fa350f16191987ca4c1a4ae40f04dd3e4cc8",
+    "pipeline/train_tabicl.py": "cee90279379cdfcdb453ba75cb4236ab1cbb90506a311cc384770b852281a2e2",
+    "pipeline/train_kumo.py": "326119af047100089a58e508044fcda58c3cbefb4a62293e19fec8ae75e19799"
+  },
+  "limits": "This verifies execution consistency with stored local predictions, not the validity of synthetic distribution, a matched challenge data-generating process, or training convergence."
+}

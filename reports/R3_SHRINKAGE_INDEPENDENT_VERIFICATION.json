@@ -1,0 +1,37 @@
+{
+  "status": "passed independent R3 metric and frozen-policy reconstruction",
+  "examples": 15000,
+  "rmse": 0.24032800878689142,
+  "boundary_excluded_rmse": 0.24282205252206596,
+  "R2_baseline_rmse": 0.24558482854226693,
+  "best_R2_single_CNN_rmse": 0.23854461484414052,
+  "policies": [
+    {
+      "fold": 0,
+      "max_reconstruction_error": 0.0,
+      "policy_sha256": "9f942354a8f04ef6513fa51d22d347148fc1b2a0976e1635109fb61261ef1a44"
+    },
+    {
+      "fold": 1,
+      "max_reconstruction_error": 0.0,
+      "policy_sha256": "b5ce8d2b714aa1cd4f2415cd0db8f652bae73c2ea0c4a72f336f1eca48f61f19"
+    },
+    {
+      "fold": 2,
+      "max_reconstruction_error": 0.0,
+      "policy_sha256": "ebce782df1c7f6634a3b669945f3c4f3fb6777d7c21d081b7109ca5f14f86ea9"
+    },
+    {
+      "fold": 3,
+      "max_reconstruction_error": 0.0,
+      "policy_sha256": "e30505c695bd26dc712365e909757ee6387b585400624ce1f416373af51f5426"
+    },
+    {
+      "fold": 4,
+      "max_reconstruction_error": 0.0,
+      "policy_sha256": "90a3663fa5c33a094d26714f78584f518aa85d610668c29f2609b49fc15224c1"
+    }
+  ],
+  "report_sha256": "2df279c9b58b01da70c0a7efb18608943c30f9de71fe91e93b8416a769be8eec",
+  "no_fit_or_parameter_change_by_verifier": true
+}

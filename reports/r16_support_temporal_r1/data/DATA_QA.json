@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "manifest_sha256": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80",
+  "D0_D1_pairing": true,
+  "source_graph_and_hull_day_time_disjoint": true,
+  "background24hour_support_purge": true,
+  "raw_physical_labels_and_rounding_bound": true,
+  "exact_zero_fraction": 0.2,
+  "HF_negative": {
+    "requested": 800,
+    "replaced": 798,
+    "shortfall": 2,
+    "exact_site_sensor_recorder_effective_mask_preserved": true,
+    "positive_backgrounds_unchanged": true,
+    "replacement_source_ids_unique": true,
+    "replacement_ids_overlap_original_train_rows": 0,
+    "threshold_scope": "Fold0 TRAIN within site/sensor/recorder/effective-mask; strictly above q90",
+    "source_candidates": 7919,
+    "known_A_zero_not_natural_ship_absence": true,
+    "all_source_rows_examined": 78869,
+    "HF_scope_bands": "18..24 = 1.995..7.943 kHz"
+  },
+  "heldout_long_native_minutes": 12,
+  "no_independent_ge15_source": true,
+  "no_Test_or_model_fitting": true,
+  "source_pin_count": 20,
+  "elapsed_seconds": 9.62527179159224
+}

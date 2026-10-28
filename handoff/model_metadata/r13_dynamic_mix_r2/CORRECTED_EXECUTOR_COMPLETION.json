@@ -1,0 +1,25 @@
+{
+  "format": "r13_static_corrected_executor_completion_v1",
+  "status": "completed",
+  "one_recipe_only": true,
+  "CNN_actual_training_path": "models/r13_dynamic_mix_r1/cnn",
+  "CNN_staging_copy": "models/r13_dynamic_mix_r2/cnn",
+  "tree_actual_training_path": "models/r13_dynamic_mix_r2/tree",
+  "CNN_completed100_byte_exact": {
+    "summary.json": "a4eca2dbfac7f33b88f5a707aa1ad8ec9f8d6152adba1bd4801785b5a67b4e9e",
+    "epochs.jsonl": "d93c6dad64d64d9884e22707c8e9ab2e26af82c9b7dcd293d081020a20b73a78",
+    "best.pt": "72de43e8996e3efb8c88f22776fda6171d371952fff12492150bb5f8999d2345",
+    "validation_fit_predictions.npz": "170fa5a706549cec165f65823021fc06d73986e78b75337a8960144a99a62131",
+    "STARTED.json": "6e7043f590125ba614853479bcdd88f2f89fe2ce29850ef6ef9f99bb51f85bc1",
+    "progress.json": "299bacefe3d372e7ee2f86cadbec26789d0d05b8ec9045d1878c36cd8c1e895a"
+  },
+  "original_parent_failure_sha256": "e6083d62c1c6aa58a0bbcbf8346a59eef403cb86f2ad9cb7b948863e5651aa20",
+  "static_source_path": "ops/train_r13_dynamic_mix_tree_static.py",
+  "static_source_sha256": "fb87bdd170f6c5d296735896072c2e8f09f57f9add68f0418c455b79b2e2df87",
+  "correction_receipt_sha256": "7ba3086ea65c574f924f27db306a48405625d4ab23e22edeeb9e023179aec06b",
+  "no_runtime_monkeypatch": true,
+  "actual_CNN_fits": 1,
+  "actual_tree_booster_fits": 1,
+  "all2_freeze_sha256": "0a11a8c59028d4c100cde85b77b095458c9c1f9143b0334c106db9a89fc496c9",
+  "no_partial_checkpoint_resume": true
+}

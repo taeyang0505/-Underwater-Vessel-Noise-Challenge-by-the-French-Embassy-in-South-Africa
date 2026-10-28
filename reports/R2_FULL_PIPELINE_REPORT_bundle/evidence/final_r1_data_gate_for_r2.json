@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "purpose": "Read-only preserved r1 data gate for forthcoming R2 full run",
+  "cv_source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "cv_manifest_sha256": "76f5954676a2f0552f5dcf6116ddcbb5195fc9f6afb54ebfeaaf9279ba2df067",
+  "parent_cv_manifest_sha256": "0d273288604e3eb642ada2d85ede89fa21451daffef664d5c8567b35fa5fc25d",
+  "folds": [
+    {
+      "fold": 0,
+      "train_examples": 53244,
+      "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+      "readiness_sha256": "ce60637cc25021f68c2106a92dd04b9513a938c6b226721cbf10ebd49d310d49",
+      "source_version_manifest_sha256": "28da0960e3ffc0f8f980462211673ae347f5713a42d5a6742dff01aef2db1d58",
+      "payload_files_verified": 13
+    },
+    {
+      "fold": 1,
+      "train_examples": 53315,
+      "data_package_hash": "738eadbd0660ee591d3b80317cbe560f5e5bba262285d997ea7c6673d997b095",
+      "readiness_sha256": "41db3b5943113415dd0826426610e410a94465f20dfb1df2ab192c678334989c",
+      "source_version_manifest_sha256": "f5b0dd692fa9448d168a6421cdbd7fd52de77976a2e7a45c07d5a6632679ea76",
+      "payload_files_verified": 13
+    },
+    {
+      "fold": 2,
+      "train_examples": 53522,
+      "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+      "readiness_sha256": "3746ad88acf7025562a3c015745c6b5361ac4cc1b97b8933d0c534872e94cd6c",
+      "source_version_manifest_sha256": "d63b5bdafa3a72129ab319a69ec519267fd366f712f634c73b6729231fe98070",
+      "payload_files_verified": 13
+    },
+    {
+      "fold": 3,
+      "train_examples": 52998,
+      "data_package_hash": "ea5fb87b41fd258afe92cdd7f768631d7914b54b010cc9d25a311f8e39ff9f93",
+      "readiness_sha256": "f3987cbc08347dc50875cacfc536661bbb923f87ab3afee8682f429e73f436fa",
+      "source_version_manifest_sha256": "e2fb12d26b113794dfbe9f61a79e6da308bc70da6209f8255e4ab6e5e4dbfbc5",
+      "payload_files_verified": 13
+    },
+    {
+      "fold": 4,
+      "train_examples": 54758,
+      "data_package_hash": "9c7ed6327baa3b82ce4bb92bfa087d326f664c225af34aba05f47cb06679bd5a",
+      "readiness_sha256": "cce5f9b0b1dbe1be879a5729f92f63739fde04cf67c2280f1135b8b2aa2c87b3",
+      "source_version_manifest_sha256": "96d286a7d120c8464ff19c12242291b9c6b061b4cb5aa6fabe6478a793901c0d",
+      "payload_files_verified": 13
+    }
+  ],
+  "training_examples_total": 267837,
+  "outer_payloads_hashed_for_integrity_only": true,
+  "outer_label_arrays_or_predictions_or_metrics_loaded": false,
+  "Test_calibration_sealed_arrays_loaded": false,
+  "core_or_data_or_configuration_modified": false,
+  "actual_training_executed": false,
+  "R2_final_runtime_configuration_binding": "pending root final config/code selection"
+}

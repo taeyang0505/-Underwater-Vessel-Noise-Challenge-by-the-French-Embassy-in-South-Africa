@@ -1,0 +1,124 @@
+{
+  "reference": {
+    "source_manifest": "data/versions/vtuad_reference_r4_v1/reference_manifest.parquet",
+    "source_sha256": "49ae1e7c99fb7cc166d272aca3e9b1467ecd61953928ee243def5e98602c5f1e",
+    "selected_clips": 119,
+    "selected_graph_components": 22,
+    "full525_graph_components": 1,
+    "partition_rule": "stableSHA metadata order12A/5B/5C components, no acoustic/model results",
+    "partition_counts": {
+      "A": {
+        "clips": 66,
+        "components": 12
+      },
+      "B": {
+        "clips": 19,
+        "components": 5
+      },
+      "C": {
+        "clips": 34,
+        "components": 5
+      }
+    },
+    "cross_partition_hull_day_bytes_or_UTC_overlaps": 0,
+    "excluded_fullcorpustransitivebridges_unused": true,
+    "new_models_reference_unseen_only": true,
+    "old_R9_R14_models_saw_shared509": true,
+    "conditional_selected_graph_independence_not_new_corpus": true
+  },
+  "background_crossrole": [
+    {
+      "a": "train",
+      "b": "local_fit",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": 24.0,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "local_gate",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": 29.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "local_report",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": 26.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "domain_holdout",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_fit",
+      "b": "local_gate",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": 114.25,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_fit",
+      "b": "local_report",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": 338.5,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_fit",
+      "b": "domain_holdout",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_gate",
+      "b": "local_report",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": 559.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_gate",
+      "b": "domain_holdout",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_report",
+      "b": "domain_holdout",
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    }
+  ],
+  "domain": {
+    "metadata_path": "data/versions/quality_v2_native/background_manifest.parquet",
+    "metadata_sha256": "ed8cfe0c749a75f538b80da6205f3ea9a51e506d9edeba6a41002a0b525e197f",
+    "eligible_rows": 16048,
+    "source_sites": [
+      "10 Sea Point",
+      "13 Saldhana Bay",
+      "9 Fish Hoek"
+    ],
+    "QC_masked_source_minutes": 0,
+    "previous_development_domain_has_been_evaluated": true,
+    "unseen_site_relative_to_new_TRAIN_only_not_genuinely_new_blind_panel": true
+  }
+}

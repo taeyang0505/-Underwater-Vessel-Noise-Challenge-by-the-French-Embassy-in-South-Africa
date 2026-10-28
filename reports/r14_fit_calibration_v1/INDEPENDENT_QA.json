@@ -1,0 +1,18 @@
+{
+  "format": "r14_scalar_calibration_independent_qa_v1",
+  "status": "passed",
+  "created_unix": 1793043645.031539,
+  "plan_sha256": "bbc8860c226654c1127bfa21dbda84e3d24a3705cbbeb33f5f2ecb0b9f0beb34",
+  "policy_sha256": "dd05fc991b38089ee3b89db8bd7a503e1db45f53fb6285ccb01aa6b6cbbb54c0",
+  "fit_candidate_objectives_and_score_lambda_independently_recomputed": true,
+  "panel_ID_target_exact": true,
+  "transform_recomputed_with_alternative_formulas": true,
+  "point_scalar_checks": 2312,
+  "max_absolute_error": 1.1102230246251565e-16,
+  "AUC_oracle": "Independent grouped positive-negative win/tie formula, no sklearn",
+  "passing_predeclared_candidates": [],
+  "passing_count": 0,
+  "original_inputs_unchanged": true,
+  "model_fit_or_inference_or_Test": false,
+  "physical_limit": "Scalar postprocessing changes share while original cell q is left unchanged; this is not a newly conserved physical mask output."
+}

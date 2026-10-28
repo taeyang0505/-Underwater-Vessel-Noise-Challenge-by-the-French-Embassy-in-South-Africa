@@ -1,0 +1,361 @@
+{
+  "format": "r9_r6_local_diagnostic_pilot_v1",
+  "status": "completed",
+  "local_diagnostic_only": true,
+  "not_to_upload": true,
+  "official_submission": false,
+  "created_utc": "2026-10-26T05:10:39.306998+00:00",
+  "plan_sha256": "cd3fe4dcd8361b8a45eee57493d48a06855137af12c562d72332efa6ef64813b",
+  "checkpoint_sha256": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+  "checkpoint_epoch": 31,
+  "arm": "r6law_relative8_global",
+  "model_config": {
+    "input_channels": 8,
+    "width": 32,
+    "blocks": 3,
+    "dropout": 0.1,
+    "global_context": true
+  },
+  "selected_model_summary_sha256": "6c370f1315f4bf0f70f54412f6c4c4cc5b270349f32dc1c96e082d1ba771ee34",
+  "fixed100_config_sha256": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259",
+  "input_file_sha256": {
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/configs/r6_fixed100_v1.json": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/r6_cpu_guardrails_v3_schemafix/manifest.json": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r6_fixed100_v1/freeze.json": "0146ab919e7aa94b2301cc28054ad0fa96b771d7a5d01f47a3da9d9326745821",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r6_fixed100_v1/all_models_frozen.json": "bfa1db940f9d8bb8becb1fa39c21974efb85ded7e007a7248a58c9f467da16cb",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r6_fixed100_v1/results.json": "84f15c5a7f70d1325dfac5e7f661b367c72556f0fba561f7047d4f4973b09217",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r6_fixed100_v1/r6law_relative8_global/summary.json": "6c370f1315f4bf0f70f54412f6c4c4cc5b270349f32dc1c96e082d1ba771ee34",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r6_fixed100_v1/r6law_relative8_global/best_window.pt": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r6_fixed100_v1/r6law_relative8_global/checkpoints/epoch_031.pt": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R6_FIXED100_COMPLETION_VERIFICATION.json": "a76be194ecf972e07ddb2e38fe199bb4835e2a21d0b002dfc7d765633cfe4310",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/raw/sample_submission.csv": "b9ca88ef9249e34572a564adc87025c4186a59bb7b4836a53f09c4208e36693a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/build_r6_pilot_submission_r1.py": "a4eca0fe44371635896cff74429dbd752a41ccb2b8e9eb73eab161cd17d8dc48",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/run_r6_cpu_guardrails_v2.py": "1181c62e24182273b832b325d3f8c9d8932aecb6c1c8625372e7e8e098c14b60",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/passage_sampler_r4.py": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/robust_sampler_r6.py": "59a8bafbbad9c42c7628d2283ac5f9fb3550a6945686958ea207ebeb61b0722b",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492"
+  },
+  "query_schema": {
+    "raw_query_csv_sha256": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "rows": 1500,
+    "canonical_features": 375,
+    "ID_order_preserved": true,
+    "NaN_kept_missing": true
+  },
+  "query_open_after_plan_and_model_freeze_utc": "2026-10-26T05:10:37.399803+00:00",
+  "rows": 1500,
+  "columns": [
+    "ID",
+    "share_added_vessel",
+    "score_added_vessel"
+  ],
+  "ID_order_sha256": "09407eb36b4c327f87f902c2fccf176ce54b0ad0ee4f793fa70b9a47376ba771",
+  "physical_pool_max_absolute_error": 9.179476112564089e-08,
+  "fixed_score_max_absolute_error": 5.960464477539063e-08,
+  "prediction_seconds": 1.777142665348947,
+  "CSV_sha256": "e2cf56255a9fc14ce9b4b27e7c772ebe0f03401b7e1cbe1dd194cb70c0ee1558",
+  "raw_prediction_sha256": "31e2076144cc4f37c3857bc79115d3a4a2c78fa485f81bc33d4b62a9bac632c2",
+  "CSV_roundtrip_exact": true,
+  "old_R5_CSV_sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+  "statistics": {
+    "all": {
+      "n": 1500,
+      "stratum_is_not_a_site_label": true,
+      "output_summary": {
+        "R5_share": {
+          "n": 1500,
+          "mean": 0.3546583593599498,
+          "population_std_ddof0": 0.2691577490375382,
+          "RMS": 0.44522853202691953,
+          "min": 0.002224851166829467,
+          "max": 0.9611883163452148
+        },
+        "R6_share": {
+          "n": 1500,
+          "mean": 0.31646793930480877,
+          "population_std_ddof0": 0.2302612140042642,
+          "RMS": 0.39137218000587326,
+          "min": 0.002714968752115965,
+          "max": 0.9506534337997437
+        },
+        "R5_score": {
+          "n": 1500,
+          "mean": 0.9200907629802824,
+          "population_std_ddof0": 0.20861449512117297,
+          "RMS": 0.9434442324251604,
+          "min": 0.026481904089450836,
+          "max": 0.9999301433563232
+        },
+        "R6_score": {
+          "n": 1500,
+          "mean": 0.6547669087698063,
+          "population_std_ddof0": 0.12114274327664185,
+          "RMS": 0.6658793201989067,
+          "min": 0.1106867641210556,
+          "max": 0.975145161151886
+        }
+      },
+      "R6_minus_R5": {
+        "share": {
+          "n": 1500,
+          "mean": -0.038190420055141054,
+          "MAE": 0.0820324054658413,
+          "RMS": 0.14143764198019979,
+          "Pearson_same_output": 0.8625839374751458
+        },
+        "score": {
+          "n": 1500,
+          "mean": -0.2653238542104761,
+          "MAE": 0.30838187168786924,
+          "RMS": 0.328804060647362,
+          "Pearson_same_output": 0.40519353402414976
+        }
+      },
+      "fixed_feature_correlations": {
+        "HIGH_bump": {
+          "n_defined": 1500,
+          "R5_share": 0.49640040319060064,
+          "R5_score": 0.3675065806621605,
+          "R6_share": 0.4862618748374866,
+          "R6_score": 0.4953272315714993
+        },
+        "SAFE_bump": {
+          "n_defined": 1500,
+          "R5_share": 0.5456608483248437,
+          "R5_score": 0.3642052095066706,
+          "R6_share": 0.584122668103353,
+          "R6_score": 0.5890251495306655
+        }
+      }
+    },
+    "first_minute_all_missing": {
+      "n": 624,
+      "stratum_is_not_a_site_label": true,
+      "output_summary": {
+        "R5_share": {
+          "n": 624,
+          "mean": 0.38750622652803896,
+          "population_std_ddof0": 0.26502993233052424,
+          "RMS": 0.4694698506071738,
+          "min": 0.003250466426834464,
+          "max": 0.9611883163452148
+        },
+        "R6_share": {
+          "n": 624,
+          "mean": 0.34574515718775684,
+          "population_std_ddof0": 0.21265741007546807,
+          "RMS": 0.40590995033232735,
+          "min": 0.009325489401817322,
+          "max": 0.9506534337997437
+        },
+        "R5_score": {
+          "n": 624,
+          "mean": 0.9223397687608854,
+          "population_std_ddof0": 0.20367053253841153,
+          "RMS": 0.9445593336907765,
+          "min": 0.02995246835052967,
+          "max": 0.9999301433563232
+        },
+        "R6_score": {
+          "n": 624,
+          "mean": 0.6695168196725158,
+          "population_std_ddof0": 0.11103086501584127,
+          "RMS": 0.6786609056152902,
+          "min": 0.1715833693742752,
+          "max": 0.975145161151886
+        }
+      },
+      "R6_minus_R5": {
+        "share": {
+          "n": 624,
+          "mean": -0.04176106934028212,
+          "MAE": 0.11945914078051618,
+          "RMS": 0.18136436729192637,
+          "Pearson_same_output": 0.747996150621074
+        },
+        "score": {
+          "n": 624,
+          "mean": -0.2528229490883696,
+          "MAE": 0.29810409377723074,
+          "RMS": 0.3174029429687703,
+          "Pearson_same_output": 0.375532146890399
+        }
+      },
+      "fixed_feature_correlations": {
+        "HIGH_bump": {
+          "n_defined": 624,
+          "R5_share": 0.5047093964524765,
+          "R5_score": 0.3487056983169166,
+          "R6_share": 0.4361497246394462,
+          "R6_score": 0.4464775547330792
+        },
+        "SAFE_bump": {
+          "n_defined": 624,
+          "R5_share": 0.49961708262548765,
+          "R5_score": 0.31259860495049063,
+          "R6_share": 0.5493024384374385,
+          "R6_score": 0.5562330053500834
+        }
+      }
+    },
+    "first_minute_all_observed": {
+      "n": 876,
+      "stratum_is_not_a_site_label": true,
+      "output_summary": {
+        "R5_share": {
+          "n": 876,
+          "mean": 0.3312598786374754,
+          "population_std_ddof0": 0.2696303400068826,
+          "RMS": 0.42712249700424587,
+          "min": 0.002224851166829467,
+          "max": 0.8864171504974365
+        },
+        "R6_share": {
+          "n": 876,
+          "mean": 0.29561293478544853,
+          "population_std_ddof0": 0.23985158708289772,
+          "RMS": 0.3806780674515551,
+          "min": 0.002714968752115965,
+          "max": 0.8388386964797974
+        },
+        "R5_score": {
+          "n": 876,
+          "mean": 0.9184887314653322,
+          "population_std_ddof0": 0.2120513930886961,
+          "RMS": 0.9426491092339989,
+          "min": 0.026481904089450836,
+          "max": 0.9998698234558105
+        },
+        "R6_score": {
+          "n": 876,
+          "mean": 0.6442601229213009,
+          "population_std_ddof0": 0.1268169539679491,
+          "RMS": 0.6566229098959908,
+          "min": 0.1106867641210556,
+          "max": 0.9193609952926636
+        }
+      },
+      "R6_minus_R5": {
+        "share": {
+          "n": 876,
+          "mean": -0.035646943852026866,
+          "MAE": 0.05537226524168932,
+          "RMS": 0.10403753718707233,
+          "Pearson_same_output": 0.9329970550643849
+        },
+        "score": {
+          "n": 876,
+          "mean": -0.27422860854403136,
+          "MAE": 0.3157030285557213,
+          "RMS": 0.3366900350979719,
+          "Pearson_same_output": 0.42558620555340987
+        }
+      },
+      "fixed_feature_correlations": {
+        "HIGH_bump": {
+          "n_defined": 876,
+          "R5_share": 0.5665230652907702,
+          "R5_score": 0.4027030795485848,
+          "R6_share": 0.5882407523765104,
+          "R6_score": 0.5942595895903342
+        },
+        "SAFE_bump": {
+          "n_defined": 876,
+          "R5_share": 0.6183461623035997,
+          "R5_score": 0.4050436807946438,
+          "R6_share": 0.6469575005657674,
+          "R6_score": 0.6487990473285694
+        }
+      }
+    },
+    "first_minute_partial": {
+      "n": 0,
+      "stratum_is_not_a_site_label": true,
+      "output_summary": {
+        "R5_share": {
+          "n": 0
+        },
+        "R6_share": {
+          "n": 0
+        },
+        "R5_score": {
+          "n": 0
+        },
+        "R6_score": {
+          "n": 0
+        }
+      },
+      "R6_minus_R5": {
+        "share": {
+          "n": 0,
+          "mean": null,
+          "MAE": null,
+          "RMS": null,
+          "Pearson_same_output": null
+        },
+        "score": {
+          "n": 0,
+          "mean": null,
+          "MAE": null,
+          "RMS": null,
+          "Pearson_same_output": null
+        }
+      },
+      "fixed_feature_correlations": {
+        "HIGH_bump": {
+          "n_defined": 0,
+          "R5_share": null,
+          "R5_score": null,
+          "R6_share": null,
+          "R6_score": null
+        },
+        "SAFE_bump": {
+          "n_defined": 0,
+          "R5_share": null,
+          "R5_score": null,
+          "R6_share": null,
+          "R6_score": null
+        }
+      }
+    }
+  },
+  "StFrancis_or_other_hidden_site_statistics": "not provided; no ground-truth Test site IDs and no hidden source inference",
+  "observation_strata_do_not_identify_sites": true,
+  "no_calibration_postprocessing_or_new_model_selection": true,
+  "statistics_do_not_drive_future_R9_parameters": true,
+  "model_input_and_policy_unchanged": true,
+  "device": "CPU FP32",
+  "torch_threads": 2,
+  "batch_size": 128,
+  "no_training_OUTER_cross_GPU_SSH_external_transmission": true,
+  "limitations": [
+    "R5 and R6 scores are different uncalibrated diagnostic functions. Correlation is descriptive, not calibration or causality.",
+    "Statistics have no hidden target labels and cannot estimate official performance.",
+    "Original R5 e32b hash identifies local handoff bytes; actual uploaded server bytes remain unverified."
+  ]
+}

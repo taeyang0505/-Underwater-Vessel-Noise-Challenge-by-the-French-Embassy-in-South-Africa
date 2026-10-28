@@ -1,0 +1,3682 @@
+{
+  "format": "r14_production14_independent_TRAIN_mask_parity_v1",
+  "status": "passed",
+  "config_sha256": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+  "source_sha256": {
+    "pipeline/features_r14_production.py": "fd0826ff3771f0fe1ef18af6081eec2709986adc950a2f3b0816b24d9c80e4f4",
+    "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+    "pipeline/features_r14_anchor.py": "6027bc03cf6ae97f1c533d1b1a09835e28689b19908cc636ebaad97f69981fac",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/models_r14_production.py": "fd04a99e72e29a105f1f2ad8e4c335a9ec51cfc1cd52ff1955e5f96d22010235",
+    "pipeline/full_data_r13.py": "1ab10cc3ab1a00c8cada4c7f781d729f4896fc9df483ab6e952e4abf2f363d16"
+  },
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "folds": {
+    "0": {
+      "TRAIN_rows": 78869,
+      "unique_TRAIN_mask_patterns": 115,
+      "actual_synthesized_representatives": 115,
+      "all_mask_patterns_represented": true,
+      "basis_training_fold": 0,
+      "feature_max_abs_error": 0.0,
+      "weight_max_abs_error": 0.0,
+      "representatives": [
+        {
+          "TRAIN_metadata_index": 0,
+          "base_window_index": 1152,
+          "effective_mask_bits": 32767,
+          "observed_minutes": 15,
+          "source_id": "SA:1152"
+        },
+        {
+          "TRAIN_metadata_index": 3,
+          "base_window_index": 1155,
+          "effective_mask_bits": 16383,
+          "observed_minutes": 14,
+          "source_id": "SA:1155"
+        },
+        {
+          "TRAIN_metadata_index": 42,
+          "base_window_index": 1194,
+          "effective_mask_bits": 32735,
+          "observed_minutes": 14,
+          "source_id": "SA:1194"
+        },
+        {
+          "TRAIN_metadata_index": 308,
+          "base_window_index": 1460,
+          "effective_mask_bits": 32719,
+          "observed_minutes": 13,
+          "source_id": "SA:1460"
+        },
+        {
+          "TRAIN_metadata_index": 1100,
+          "base_window_index": 2252,
+          "effective_mask_bits": 15,
+          "observed_minutes": 4,
+          "source_id": "SA:2252"
+        },
+        {
+          "TRAIN_metadata_index": 1101,
+          "base_window_index": 2253,
+          "effective_mask_bits": 32704,
+          "observed_minutes": 9,
+          "source_id": "SA:2253"
+        },
+        {
+          "TRAIN_metadata_index": 2280,
+          "base_window_index": 4814,
+          "effective_mask_bits": 7,
+          "observed_minutes": 3,
+          "source_id": "SA:4814"
+        },
+        {
+          "TRAIN_metadata_index": 3079,
+          "base_window_index": 6285,
+          "effective_mask_bits": 32575,
+          "observed_minutes": 13,
+          "source_id": "SA:6285"
+        },
+        {
+          "TRAIN_metadata_index": 3250,
+          "base_window_index": 6457,
+          "effective_mask_bits": 8191,
+          "observed_minutes": 13,
+          "source_id": "SA:6457"
+        },
+        {
+          "TRAIN_metadata_index": 4049,
+          "base_window_index": 7256,
+          "effective_mask_bits": 511,
+          "observed_minutes": 9,
+          "source_id": "SA:7256"
+        },
+        {
+          "TRAIN_metadata_index": 4734,
+          "base_window_index": 8681,
+          "effective_mask_bits": 32760,
+          "observed_minutes": 12,
+          "source_id": "SA:8681"
+        },
+        {
+          "TRAIN_metadata_index": 6471,
+          "base_window_index": 12122,
+          "effective_mask_bits": 255,
+          "observed_minutes": 8,
+          "source_id": "SA:12122"
+        },
+        {
+          "TRAIN_metadata_index": 10510,
+          "base_window_index": 17499,
+          "effective_mask_bits": 4095,
+          "observed_minutes": 12,
+          "source_id": "SA:17499"
+        },
+        {
+          "TRAIN_metadata_index": 10512,
+          "base_window_index": 17501,
+          "effective_mask_bits": 29695,
+          "observed_minutes": 13,
+          "source_id": "SA:17501"
+        },
+        {
+          "TRAIN_metadata_index": 11168,
+          "base_window_index": 18829,
+          "effective_mask_bits": 1023,
+          "observed_minutes": 10,
+          "source_id": "SA:18829"
+        },
+        {
+          "TRAIN_metadata_index": 12741,
+          "base_window_index": 20402,
+          "effective_mask_bits": 32512,
+          "observed_minutes": 7,
+          "source_id": "SA:20402"
+        },
+        {
+          "TRAIN_metadata_index": 12745,
+          "base_window_index": 20406,
+          "effective_mask_bits": 127,
+          "observed_minutes": 7,
+          "source_id": "SA:20406"
+        },
+        {
+          "TRAIN_metadata_index": 12746,
+          "base_window_index": 20407,
+          "effective_mask_bits": 32736,
+          "observed_minutes": 10,
+          "source_id": "SA:20407"
+        },
+        {
+          "TRAIN_metadata_index": 12750,
+          "base_window_index": 20411,
+          "effective_mask_bits": 32751,
+          "observed_minutes": 14,
+          "source_id": "SA:20411"
+        },
+        {
+          "TRAIN_metadata_index": 12758,
+          "base_window_index": 20419,
+          "effective_mask_bits": 32743,
+          "observed_minutes": 13,
+          "source_id": "SA:20419"
+        },
+        {
+          "TRAIN_metadata_index": 13939,
+          "base_window_index": 21848,
+          "effective_mask_bits": 30720,
+          "observed_minutes": 4,
+          "source_id": "SA:21848"
+        },
+        {
+          "TRAIN_metadata_index": 15034,
+          "base_window_index": 24219,
+          "effective_mask_bits": 32766,
+          "observed_minutes": 14,
+          "source_id": "SA:24219"
+        },
+        {
+          "TRAIN_metadata_index": 20626,
+          "base_window_index": 32134,
+          "effective_mask_bits": 24703,
+          "observed_minutes": 9,
+          "source_id": "SA:32134"
+        },
+        {
+          "TRAIN_metadata_index": 20670,
+          "base_window_index": 32178,
+          "effective_mask_bits": 20479,
+          "observed_minutes": 13,
+          "source_id": "SA:32178"
+        },
+        {
+          "TRAIN_metadata_index": 21398,
+          "base_window_index": 33739,
+          "effective_mask_bits": 31,
+          "observed_minutes": 5,
+          "source_id": "SA:33739"
+        },
+        {
+          "TRAIN_metadata_index": 22411,
+          "base_window_index": 34752,
+          "effective_mask_bits": 28668,
+          "observed_minutes": 12,
+          "source_id": "SA:34752"
+        },
+        {
+          "TRAIN_metadata_index": 22412,
+          "base_window_index": 34753,
+          "effective_mask_bits": 32703,
+          "observed_minutes": 14,
+          "source_id": "SA:34753"
+        },
+        {
+          "TRAIN_metadata_index": 22416,
+          "base_window_index": 34757,
+          "effective_mask_bits": 32655,
+          "observed_minutes": 12,
+          "source_id": "SA:34757"
+        },
+        {
+          "TRAIN_metadata_index": 22420,
+          "base_window_index": 34761,
+          "effective_mask_bits": 32671,
+          "observed_minutes": 13,
+          "source_id": "SA:34761"
+        },
+        {
+          "TRAIN_metadata_index": 22447,
+          "base_window_index": 34788,
+          "effective_mask_bits": 32759,
+          "observed_minutes": 14,
+          "source_id": "SA:34788"
+        },
+        {
+          "TRAIN_metadata_index": 22451,
+          "base_window_index": 34792,
+          "effective_mask_bits": 32755,
+          "observed_minutes": 13,
+          "source_id": "SA:34792"
+        },
+        {
+          "TRAIN_metadata_index": 22506,
+          "base_window_index": 34847,
+          "effective_mask_bits": 32255,
+          "observed_minutes": 14,
+          "source_id": "SA:34847"
+        },
+        {
+          "TRAIN_metadata_index": 22509,
+          "base_window_index": 34850,
+          "effective_mask_bits": 28671,
+          "observed_minutes": 14,
+          "source_id": "SA:34850"
+        },
+        {
+          "TRAIN_metadata_index": 22513,
+          "base_window_index": 34854,
+          "effective_mask_bits": 26623,
+          "observed_minutes": 13,
+          "source_id": "SA:34854"
+        },
+        {
+          "TRAIN_metadata_index": 22646,
+          "base_window_index": 34987,
+          "effective_mask_bits": 32511,
+          "observed_minutes": 14,
+          "source_id": "SA:34987"
+        },
+        {
+          "TRAIN_metadata_index": 22673,
+          "base_window_index": 35014,
+          "effective_mask_bits": 31999,
+          "observed_minutes": 13,
+          "source_id": "SA:35014"
+        },
+        {
+          "TRAIN_metadata_index": 22698,
+          "base_window_index": 35039,
+          "effective_mask_bits": 31611,
+          "observed_minutes": 12,
+          "source_id": "SA:35039"
+        },
+        {
+          "TRAIN_metadata_index": 22703,
+          "base_window_index": 35044,
+          "effective_mask_bits": 31726,
+          "observed_minutes": 12,
+          "source_id": "SA:35044"
+        },
+        {
+          "TRAIN_metadata_index": 22707,
+          "base_window_index": 35048,
+          "effective_mask_bits": 31231,
+          "observed_minutes": 13,
+          "source_id": "SA:35048"
+        },
+        {
+          "TRAIN_metadata_index": 22730,
+          "base_window_index": 35071,
+          "effective_mask_bits": 22527,
+          "observed_minutes": 13,
+          "source_id": "SA:35071"
+        },
+        {
+          "TRAIN_metadata_index": 22814,
+          "base_window_index": 35155,
+          "effective_mask_bits": 32761,
+          "observed_minutes": 13,
+          "source_id": "SA:35155"
+        },
+        {
+          "TRAIN_metadata_index": 22982,
+          "base_window_index": 35323,
+          "effective_mask_bits": 24057,
+          "observed_minutes": 11,
+          "source_id": "SA:35323"
+        },
+        {
+          "TRAIN_metadata_index": 22985,
+          "base_window_index": 35326,
+          "effective_mask_bits": 32383,
+          "observed_minutes": 13,
+          "source_id": "SA:35326"
+        },
+        {
+          "TRAIN_metadata_index": 22986,
+          "base_window_index": 35327,
+          "effective_mask_bits": 4983,
+          "observed_minutes": 9,
+          "source_id": "SA:35327"
+        },
+        {
+          "TRAIN_metadata_index": 22987,
+          "base_window_index": 35328,
+          "effective_mask_bits": 31995,
+          "observed_minutes": 12,
+          "source_id": "SA:35328"
+        },
+        {
+          "TRAIN_metadata_index": 22993,
+          "base_window_index": 35334,
+          "effective_mask_bits": 32757,
+          "observed_minutes": 13,
+          "source_id": "SA:35334"
+        },
+        {
+          "TRAIN_metadata_index": 22997,
+          "base_window_index": 35338,
+          "effective_mask_bits": 32739,
+          "observed_minutes": 12,
+          "source_id": "SA:35338"
+        },
+        {
+          "TRAIN_metadata_index": 23011,
+          "base_window_index": 35352,
+          "effective_mask_bits": 32503,
+          "observed_minutes": 13,
+          "source_id": "SA:35352"
+        },
+        {
+          "TRAIN_metadata_index": 23136,
+          "base_window_index": 35477,
+          "effective_mask_bits": 31743,
+          "observed_minutes": 14,
+          "source_id": "SA:35477"
+        },
+        {
+          "TRAIN_metadata_index": 23178,
+          "base_window_index": 35519,
+          "effective_mask_bits": 32765,
+          "observed_minutes": 14,
+          "source_id": "SA:35519"
+        },
+        {
+          "TRAIN_metadata_index": 23232,
+          "base_window_index": 35573,
+          "effective_mask_bits": 32639,
+          "observed_minutes": 14,
+          "source_id": "SA:35573"
+        },
+        {
+          "TRAIN_metadata_index": 23240,
+          "base_window_index": 35581,
+          "effective_mask_bits": 32764,
+          "observed_minutes": 13,
+          "source_id": "SA:35581"
+        },
+        {
+          "TRAIN_metadata_index": 23749,
+          "base_window_index": 36521,
+          "effective_mask_bits": 2228,
+          "observed_minutes": 5,
+          "source_id": "SA:36521"
+        },
+        {
+          "TRAIN_metadata_index": 23832,
+          "base_window_index": 36604,
+          "effective_mask_bits": 30719,
+          "observed_minutes": 14,
+          "source_id": "SA:36604"
+        },
+        {
+          "TRAIN_metadata_index": 24186,
+          "base_window_index": 36958,
+          "effective_mask_bits": 32499,
+          "observed_minutes": 12,
+          "source_id": "SA:36958"
+        },
+        {
+          "TRAIN_metadata_index": 24320,
+          "base_window_index": 37092,
+          "effective_mask_bits": 31487,
+          "observed_minutes": 13,
+          "source_id": "SA:37092"
+        },
+        {
+          "TRAIN_metadata_index": 24324,
+          "base_window_index": 37096,
+          "effective_mask_bits": 28287,
+          "observed_minutes": 12,
+          "source_id": "SA:37096"
+        },
+        {
+          "TRAIN_metadata_index": 24328,
+          "base_window_index": 37100,
+          "effective_mask_bits": 29694,
+          "observed_minutes": 12,
+          "source_id": "SA:37100"
+        },
+        {
+          "TRAIN_metadata_index": 24844,
+          "base_window_index": 37616,
+          "effective_mask_bits": 31731,
+          "observed_minutes": 12,
+          "source_id": "SA:37616"
+        },
+        {
+          "TRAIN_metadata_index": 24848,
+          "base_window_index": 37620,
+          "effective_mask_bits": 30975,
+          "observed_minutes": 12,
+          "source_id": "SA:37620"
+        },
+        {
+          "TRAIN_metadata_index": 24901,
+          "base_window_index": 37673,
+          "effective_mask_bits": 32763,
+          "observed_minutes": 14,
+          "source_id": "SA:37673"
+        },
+        {
+          "TRAIN_metadata_index": 24913,
+          "base_window_index": 37685,
+          "effective_mask_bits": 32505,
+          "observed_minutes": 12,
+          "source_id": "SA:37685"
+        },
+        {
+          "TRAIN_metadata_index": 24955,
+          "base_window_index": 37727,
+          "effective_mask_bits": 30335,
+          "observed_minutes": 12,
+          "source_id": "SA:37727"
+        },
+        {
+          "TRAIN_metadata_index": 25092,
+          "base_window_index": 37864,
+          "effective_mask_bits": 12287,
+          "observed_minutes": 13,
+          "source_id": "SA:37864"
+        },
+        {
+          "TRAIN_metadata_index": 25093,
+          "base_window_index": 37865,
+          "effective_mask_bits": 32687,
+          "observed_minutes": 13,
+          "source_id": "SA:37865"
+        },
+        {
+          "TRAIN_metadata_index": 25094,
+          "base_window_index": 37866,
+          "effective_mask_bits": 59,
+          "observed_minutes": 5,
+          "source_id": "SA:37866"
+        },
+        {
+          "TRAIN_metadata_index": 25349,
+          "base_window_index": 38121,
+          "effective_mask_bits": 24439,
+          "observed_minutes": 12,
+          "source_id": "SA:38121"
+        },
+        {
+          "TRAIN_metadata_index": 25403,
+          "base_window_index": 38175,
+          "effective_mask_bits": 27135,
+          "observed_minutes": 12,
+          "source_id": "SA:38175"
+        },
+        {
+          "TRAIN_metadata_index": 25404,
+          "base_window_index": 38176,
+          "effective_mask_bits": 28926,
+          "observed_minutes": 10,
+          "source_id": "SA:38176"
+        },
+        {
+          "TRAIN_metadata_index": 25405,
+          "base_window_index": 38177,
+          "effective_mask_bits": 32732,
+          "observed_minutes": 12,
+          "source_id": "SA:38177"
+        },
+        {
+          "TRAIN_metadata_index": 25406,
+          "base_window_index": 38178,
+          "effective_mask_bits": 1015,
+          "observed_minutes": 9,
+          "source_id": "SA:38178"
+        },
+        {
+          "TRAIN_metadata_index": 25474,
+          "base_window_index": 38246,
+          "effective_mask_bits": 28371,
+          "observed_minutes": 10,
+          "source_id": "SA:38246"
+        },
+        {
+          "TRAIN_metadata_index": 25475,
+          "base_window_index": 38247,
+          "effective_mask_bits": 24167,
+          "observed_minutes": 10,
+          "source_id": "SA:38247"
+        },
+        {
+          "TRAIN_metadata_index": 25476,
+          "base_window_index": 38248,
+          "effective_mask_bits": 8167,
+          "observed_minutes": 11,
+          "source_id": "SA:38248"
+        },
+        {
+          "TRAIN_metadata_index": 25477,
+          "base_window_index": 38249,
+          "effective_mask_bits": 28663,
+          "observed_minutes": 13,
+          "source_id": "SA:38249"
+        },
+        {
+          "TRAIN_metadata_index": 25521,
+          "base_window_index": 38293,
+          "effective_mask_bits": 18431,
+          "observed_minutes": 12,
+          "source_id": "SA:38293"
+        },
+        {
+          "TRAIN_metadata_index": 25528,
+          "base_window_index": 38300,
+          "effective_mask_bits": 24575,
+          "observed_minutes": 14,
+          "source_id": "SA:38300"
+        },
+        {
+          "TRAIN_metadata_index": 25861,
+          "base_window_index": 38633,
+          "effective_mask_bits": 31295,
+          "observed_minutes": 11,
+          "source_id": "SA:38633"
+        },
+        {
+          "TRAIN_metadata_index": 25913,
+          "base_window_index": 38685,
+          "effective_mask_bits": 767,
+          "observed_minutes": 9,
+          "source_id": "SA:38685"
+        },
+        {
+          "TRAIN_metadata_index": 25949,
+          "base_window_index": 38721,
+          "effective_mask_bits": 7567,
+          "observed_minutes": 9,
+          "source_id": "SA:38721"
+        },
+        {
+          "TRAIN_metadata_index": 25950,
+          "base_window_index": 38722,
+          "effective_mask_bits": 32745,
+          "observed_minutes": 12,
+          "source_id": "SA:38722"
+        },
+        {
+          "TRAIN_metadata_index": 26008,
+          "base_window_index": 38780,
+          "effective_mask_bits": 32644,
+          "observed_minutes": 9,
+          "source_id": "SA:38780"
+        },
+        {
+          "TRAIN_metadata_index": 26041,
+          "base_window_index": 38813,
+          "effective_mask_bits": 16061,
+          "observed_minutes": 11,
+          "source_id": "SA:38813"
+        },
+        {
+          "TRAIN_metadata_index": 26042,
+          "base_window_index": 38814,
+          "effective_mask_bits": 21502,
+          "observed_minutes": 11,
+          "source_id": "SA:38814"
+        },
+        {
+          "TRAIN_metadata_index": 26043,
+          "base_window_index": 38815,
+          "effective_mask_bits": 23679,
+          "observed_minutes": 11,
+          "source_id": "SA:38815"
+        },
+        {
+          "TRAIN_metadata_index": 26044,
+          "base_window_index": 38816,
+          "effective_mask_bits": 24559,
+          "observed_minutes": 13,
+          "source_id": "SA:38816"
+        },
+        {
+          "TRAIN_metadata_index": 26045,
+          "base_window_index": 38817,
+          "effective_mask_bits": 111,
+          "observed_minutes": 6,
+          "source_id": "SA:38817"
+        },
+        {
+          "TRAIN_metadata_index": 26046,
+          "base_window_index": 38818,
+          "effective_mask_bits": 32747,
+          "observed_minutes": 13,
+          "source_id": "SA:38818"
+        },
+        {
+          "TRAIN_metadata_index": 26360,
+          "base_window_index": 39132,
+          "effective_mask_bits": 30175,
+          "observed_minutes": 12,
+          "source_id": "SA:39132"
+        },
+        {
+          "TRAIN_metadata_index": 26361,
+          "base_window_index": 39133,
+          "effective_mask_bits": 32507,
+          "observed_minutes": 13,
+          "source_id": "SA:39133"
+        },
+        {
+          "TRAIN_metadata_index": 26362,
+          "base_window_index": 39134,
+          "effective_mask_bits": 32509,
+          "observed_minutes": 13,
+          "source_id": "SA:39134"
+        },
+        {
+          "TRAIN_metadata_index": 26363,
+          "base_window_index": 39135,
+          "effective_mask_bits": 32762,
+          "observed_minutes": 13,
+          "source_id": "SA:39135"
+        },
+        {
+          "TRAIN_metadata_index": 26368,
+          "base_window_index": 39140,
+          "effective_mask_bits": 32711,
+          "observed_minutes": 12,
+          "source_id": "SA:39140"
+        },
+        {
+          "TRAIN_metadata_index": 26420,
+          "base_window_index": 39192,
+          "effective_mask_bits": 19191,
+          "observed_minutes": 10,
+          "source_id": "SA:39192"
+        },
+        {
+          "TRAIN_metadata_index": 26421,
+          "base_window_index": 39193,
+          "effective_mask_bits": 8188,
+          "observed_minutes": 11,
+          "source_id": "SA:39193"
+        },
+        {
+          "TRAIN_metadata_index": 26572,
+          "base_window_index": 39344,
+          "effective_mask_bits": 32713,
+          "observed_minutes": 11,
+          "source_id": "SA:39344"
+        },
+        {
+          "TRAIN_metadata_index": 29087,
+          "base_window_index": 42243,
+          "effective_mask_bits": 32257,
+          "observed_minutes": 7,
+          "source_id": "SA:42243"
+        },
+        {
+          "TRAIN_metadata_index": 29088,
+          "base_window_index": 42244,
+          "effective_mask_bits": 32758,
+          "observed_minutes": 13,
+          "source_id": "SA:42244"
+        },
+        {
+          "TRAIN_metadata_index": 29092,
+          "base_window_index": 42248,
+          "effective_mask_bits": 32707,
+          "observed_minutes": 11,
+          "source_id": "SA:42248"
+        },
+        {
+          "TRAIN_metadata_index": 29097,
+          "base_window_index": 42253,
+          "effective_mask_bits": 32640,
+          "observed_minutes": 8,
+          "source_id": "SA:42253"
+        },
+        {
+          "TRAIN_metadata_index": 29101,
+          "base_window_index": 42257,
+          "effective_mask_bits": 63,
+          "observed_minutes": 6,
+          "source_id": "SA:42257"
+        },
+        {
+          "TRAIN_metadata_index": 29106,
+          "base_window_index": 42262,
+          "effective_mask_bits": 32679,
+          "observed_minutes": 12,
+          "source_id": "SA:42262"
+        },
+        {
+          "TRAIN_metadata_index": 29121,
+          "base_window_index": 42277,
+          "effective_mask_bits": 32752,
+          "observed_minutes": 11,
+          "source_id": "SA:42277"
+        },
+        {
+          "TRAIN_metadata_index": 29514,
+          "base_window_index": 42670,
+          "effective_mask_bits": 32319,
+          "observed_minutes": 12,
+          "source_id": "SA:42670"
+        },
+        {
+          "TRAIN_metadata_index": 29519,
+          "base_window_index": 42675,
+          "effective_mask_bits": 31744,
+          "observed_minutes": 5,
+          "source_id": "SA:42675"
+        },
+        {
+          "TRAIN_metadata_index": 29562,
+          "base_window_index": 42718,
+          "effective_mask_bits": 28687,
+          "observed_minutes": 7,
+          "source_id": "SA:42718"
+        },
+        {
+          "TRAIN_metadata_index": 29566,
+          "base_window_index": 42722,
+          "effective_mask_bits": 25599,
+          "observed_minutes": 12,
+          "source_id": "SA:42722"
+        },
+        {
+          "TRAIN_metadata_index": 29570,
+          "base_window_index": 42726,
+          "effective_mask_bits": 2047,
+          "observed_minutes": 11,
+          "source_id": "SA:42726"
+        },
+        {
+          "TRAIN_metadata_index": 29623,
+          "base_window_index": 42779,
+          "effective_mask_bits": 32256,
+          "observed_minutes": 6,
+          "source_id": "SA:42779"
+        },
+        {
+          "TRAIN_metadata_index": 29642,
+          "base_window_index": 42798,
+          "effective_mask_bits": 28672,
+          "observed_minutes": 3,
+          "source_id": "SA:42798"
+        },
+        {
+          "TRAIN_metadata_index": 29739,
+          "base_window_index": 42895,
+          "effective_mask_bits": 24607,
+          "observed_minutes": 7,
+          "source_id": "SA:42895"
+        },
+        {
+          "TRAIN_metadata_index": 29800,
+          "base_window_index": 42956,
+          "effective_mask_bits": 31871,
+          "observed_minutes": 12,
+          "source_id": "SA:42956"
+        },
+        {
+          "TRAIN_metadata_index": 41090,
+          "base_window_index": 56722,
+          "effective_mask_bits": 7166,
+          "observed_minutes": 11,
+          "source_id": "SA:56722"
+        },
+        {
+          "TRAIN_metadata_index": 48465,
+          "base_window_index": 69957,
+          "effective_mask_bits": 8190,
+          "observed_minutes": 12,
+          "source_id": "SA:69957"
+        },
+        {
+          "TRAIN_metadata_index": 63659,
+          "base_window_index": 93920,
+          "effective_mask_bits": 992,
+          "observed_minutes": 5,
+          "source_id": "SA:93920"
+        }
+      ]
+    },
+    "1": {
+      "TRAIN_rows": 78069,
+      "unique_TRAIN_mask_patterns": 99,
+      "actual_synthesized_representatives": 99,
+      "all_mask_patterns_represented": true,
+      "basis_training_fold": 1,
+      "feature_max_abs_error": 0.0,
+      "weight_max_abs_error": 0.0,
+      "representatives": [
+        {
+          "TRAIN_metadata_index": 0,
+          "base_window_index": 0,
+          "effective_mask_bits": 32767,
+          "observed_minutes": 15,
+          "source_id": "SA:0"
+        },
+        {
+          "TRAIN_metadata_index": 3,
+          "base_window_index": 3,
+          "effective_mask_bits": 16383,
+          "observed_minutes": 14,
+          "source_id": "SA:3"
+        },
+        {
+          "TRAIN_metadata_index": 522,
+          "base_window_index": 1194,
+          "effective_mask_bits": 32735,
+          "observed_minutes": 14,
+          "source_id": "SA:1194"
+        },
+        {
+          "TRAIN_metadata_index": 788,
+          "base_window_index": 1460,
+          "effective_mask_bits": 32719,
+          "observed_minutes": 13,
+          "source_id": "SA:1460"
+        },
+        {
+          "TRAIN_metadata_index": 1580,
+          "base_window_index": 2252,
+          "effective_mask_bits": 15,
+          "observed_minutes": 4,
+          "source_id": "SA:2252"
+        },
+        {
+          "TRAIN_metadata_index": 1581,
+          "base_window_index": 2253,
+          "effective_mask_bits": 32704,
+          "observed_minutes": 9,
+          "source_id": "SA:2253"
+        },
+        {
+          "TRAIN_metadata_index": 2358,
+          "base_window_index": 3030,
+          "effective_mask_bits": 30719,
+          "observed_minutes": 14,
+          "source_id": "SA:3030"
+        },
+        {
+          "TRAIN_metadata_index": 2359,
+          "base_window_index": 3031,
+          "effective_mask_bits": 255,
+          "observed_minutes": 8,
+          "source_id": "SA:3031"
+        },
+        {
+          "TRAIN_metadata_index": 3950,
+          "base_window_index": 4814,
+          "effective_mask_bits": 7,
+          "observed_minutes": 3,
+          "source_id": "SA:4814"
+        },
+        {
+          "TRAIN_metadata_index": 5338,
+          "base_window_index": 6737,
+          "effective_mask_bits": 8191,
+          "observed_minutes": 13,
+          "source_id": "SA:6737"
+        },
+        {
+          "TRAIN_metadata_index": 6151,
+          "base_window_index": 8681,
+          "effective_mask_bits": 32760,
+          "observed_minutes": 12,
+          "source_id": "SA:8681"
+        },
+        {
+          "TRAIN_metadata_index": 6691,
+          "base_window_index": 10565,
+          "effective_mask_bits": 31744,
+          "observed_minutes": 5,
+          "source_id": "SA:10565"
+        },
+        {
+          "TRAIN_metadata_index": 6695,
+          "base_window_index": 10569,
+          "effective_mask_bits": 31999,
+          "observed_minutes": 13,
+          "source_id": "SA:10569"
+        },
+        {
+          "TRAIN_metadata_index": 10957,
+          "base_window_index": 17499,
+          "effective_mask_bits": 4095,
+          "observed_minutes": 12,
+          "source_id": "SA:17499"
+        },
+        {
+          "TRAIN_metadata_index": 10959,
+          "base_window_index": 17501,
+          "effective_mask_bits": 29695,
+          "observed_minutes": 13,
+          "source_id": "SA:17501"
+        },
+        {
+          "TRAIN_metadata_index": 11923,
+          "base_window_index": 18829,
+          "effective_mask_bits": 1023,
+          "observed_minutes": 10,
+          "source_id": "SA:18829"
+        },
+        {
+          "TRAIN_metadata_index": 13496,
+          "base_window_index": 20402,
+          "effective_mask_bits": 32512,
+          "observed_minutes": 7,
+          "source_id": "SA:20402"
+        },
+        {
+          "TRAIN_metadata_index": 13500,
+          "base_window_index": 20406,
+          "effective_mask_bits": 127,
+          "observed_minutes": 7,
+          "source_id": "SA:20406"
+        },
+        {
+          "TRAIN_metadata_index": 13501,
+          "base_window_index": 20407,
+          "effective_mask_bits": 32736,
+          "observed_minutes": 10,
+          "source_id": "SA:20407"
+        },
+        {
+          "TRAIN_metadata_index": 13505,
+          "base_window_index": 20411,
+          "effective_mask_bits": 32751,
+          "observed_minutes": 14,
+          "source_id": "SA:20411"
+        },
+        {
+          "TRAIN_metadata_index": 13513,
+          "base_window_index": 20419,
+          "effective_mask_bits": 32743,
+          "observed_minutes": 13,
+          "source_id": "SA:20419"
+        },
+        {
+          "TRAIN_metadata_index": 15006,
+          "base_window_index": 24219,
+          "effective_mask_bits": 32766,
+          "observed_minutes": 14,
+          "source_id": "SA:24219"
+        },
+        {
+          "TRAIN_metadata_index": 18105,
+          "base_window_index": 29253,
+          "effective_mask_bits": 508,
+          "observed_minutes": 7,
+          "source_id": "SA:29253"
+        },
+        {
+          "TRAIN_metadata_index": 19662,
+          "base_window_index": 32134,
+          "effective_mask_bits": 24703,
+          "observed_minutes": 9,
+          "source_id": "SA:32134"
+        },
+        {
+          "TRAIN_metadata_index": 19706,
+          "base_window_index": 32178,
+          "effective_mask_bits": 20479,
+          "observed_minutes": 13,
+          "source_id": "SA:32178"
+        },
+        {
+          "TRAIN_metadata_index": 20353,
+          "base_window_index": 32825,
+          "effective_mask_bits": 32763,
+          "observed_minutes": 14,
+          "source_id": "SA:32825"
+        },
+        {
+          "TRAIN_metadata_index": 20354,
+          "base_window_index": 32826,
+          "effective_mask_bits": 32765,
+          "observed_minutes": 14,
+          "source_id": "SA:32826"
+        },
+        {
+          "TRAIN_metadata_index": 20355,
+          "base_window_index": 32827,
+          "effective_mask_bits": 31742,
+          "observed_minutes": 13,
+          "source_id": "SA:32827"
+        },
+        {
+          "TRAIN_metadata_index": 20358,
+          "base_window_index": 32830,
+          "effective_mask_bits": 55,
+          "observed_minutes": 5,
+          "source_id": "SA:32830"
+        },
+        {
+          "TRAIN_metadata_index": 21075,
+          "base_window_index": 33739,
+          "effective_mask_bits": 31,
+          "observed_minutes": 5,
+          "source_id": "SA:33739"
+        },
+        {
+          "TRAIN_metadata_index": 21608,
+          "base_window_index": 34752,
+          "effective_mask_bits": 28668,
+          "observed_minutes": 12,
+          "source_id": "SA:34752"
+        },
+        {
+          "TRAIN_metadata_index": 21609,
+          "base_window_index": 34753,
+          "effective_mask_bits": 32703,
+          "observed_minutes": 14,
+          "source_id": "SA:34753"
+        },
+        {
+          "TRAIN_metadata_index": 21613,
+          "base_window_index": 34757,
+          "effective_mask_bits": 32655,
+          "observed_minutes": 12,
+          "source_id": "SA:34757"
+        },
+        {
+          "TRAIN_metadata_index": 21617,
+          "base_window_index": 34761,
+          "effective_mask_bits": 32671,
+          "observed_minutes": 13,
+          "source_id": "SA:34761"
+        },
+        {
+          "TRAIN_metadata_index": 21644,
+          "base_window_index": 34788,
+          "effective_mask_bits": 32759,
+          "observed_minutes": 14,
+          "source_id": "SA:34788"
+        },
+        {
+          "TRAIN_metadata_index": 21648,
+          "base_window_index": 34792,
+          "effective_mask_bits": 32755,
+          "observed_minutes": 13,
+          "source_id": "SA:34792"
+        },
+        {
+          "TRAIN_metadata_index": 21703,
+          "base_window_index": 34847,
+          "effective_mask_bits": 32255,
+          "observed_minutes": 14,
+          "source_id": "SA:34847"
+        },
+        {
+          "TRAIN_metadata_index": 21706,
+          "base_window_index": 34850,
+          "effective_mask_bits": 28671,
+          "observed_minutes": 14,
+          "source_id": "SA:34850"
+        },
+        {
+          "TRAIN_metadata_index": 21710,
+          "base_window_index": 34854,
+          "effective_mask_bits": 26623,
+          "observed_minutes": 13,
+          "source_id": "SA:34854"
+        },
+        {
+          "TRAIN_metadata_index": 21843,
+          "base_window_index": 34987,
+          "effective_mask_bits": 32511,
+          "observed_minutes": 14,
+          "source_id": "SA:34987"
+        },
+        {
+          "TRAIN_metadata_index": 21895,
+          "base_window_index": 35039,
+          "effective_mask_bits": 31611,
+          "observed_minutes": 12,
+          "source_id": "SA:35039"
+        },
+        {
+          "TRAIN_metadata_index": 21900,
+          "base_window_index": 35044,
+          "effective_mask_bits": 31726,
+          "observed_minutes": 12,
+          "source_id": "SA:35044"
+        },
+        {
+          "TRAIN_metadata_index": 21904,
+          "base_window_index": 35048,
+          "effective_mask_bits": 31231,
+          "observed_minutes": 13,
+          "source_id": "SA:35048"
+        },
+        {
+          "TRAIN_metadata_index": 21927,
+          "base_window_index": 35071,
+          "effective_mask_bits": 22527,
+          "observed_minutes": 13,
+          "source_id": "SA:35071"
+        },
+        {
+          "TRAIN_metadata_index": 22284,
+          "base_window_index": 36336,
+          "effective_mask_bits": 31743,
+          "observed_minutes": 14,
+          "source_id": "SA:36336"
+        },
+        {
+          "TRAIN_metadata_index": 22469,
+          "base_window_index": 36521,
+          "effective_mask_bits": 2228,
+          "observed_minutes": 5,
+          "source_id": "SA:36521"
+        },
+        {
+          "TRAIN_metadata_index": 22906,
+          "base_window_index": 36958,
+          "effective_mask_bits": 32499,
+          "observed_minutes": 12,
+          "source_id": "SA:36958"
+        },
+        {
+          "TRAIN_metadata_index": 22954,
+          "base_window_index": 37006,
+          "effective_mask_bits": 32383,
+          "observed_minutes": 13,
+          "source_id": "SA:37006"
+        },
+        {
+          "TRAIN_metadata_index": 23040,
+          "base_window_index": 37092,
+          "effective_mask_bits": 31487,
+          "observed_minutes": 13,
+          "source_id": "SA:37092"
+        },
+        {
+          "TRAIN_metadata_index": 23043,
+          "base_window_index": 37095,
+          "effective_mask_bits": 32575,
+          "observed_minutes": 13,
+          "source_id": "SA:37095"
+        },
+        {
+          "TRAIN_metadata_index": 23044,
+          "base_window_index": 37096,
+          "effective_mask_bits": 28287,
+          "observed_minutes": 12,
+          "source_id": "SA:37096"
+        },
+        {
+          "TRAIN_metadata_index": 23048,
+          "base_window_index": 37100,
+          "effective_mask_bits": 29694,
+          "observed_minutes": 12,
+          "source_id": "SA:37100"
+        },
+        {
+          "TRAIN_metadata_index": 23469,
+          "base_window_index": 37521,
+          "effective_mask_bits": 32639,
+          "observed_minutes": 14,
+          "source_id": "SA:37521"
+        },
+        {
+          "TRAIN_metadata_index": 23564,
+          "base_window_index": 37616,
+          "effective_mask_bits": 31731,
+          "observed_minutes": 12,
+          "source_id": "SA:37616"
+        },
+        {
+          "TRAIN_metadata_index": 23568,
+          "base_window_index": 37620,
+          "effective_mask_bits": 30975,
+          "observed_minutes": 12,
+          "source_id": "SA:37620"
+        },
+        {
+          "TRAIN_metadata_index": 23625,
+          "base_window_index": 37677,
+          "effective_mask_bits": 32761,
+          "observed_minutes": 13,
+          "source_id": "SA:37677"
+        },
+        {
+          "TRAIN_metadata_index": 23633,
+          "base_window_index": 37685,
+          "effective_mask_bits": 32505,
+          "observed_minutes": 12,
+          "source_id": "SA:37685"
+        },
+        {
+          "TRAIN_metadata_index": 23675,
+          "base_window_index": 37727,
+          "effective_mask_bits": 30335,
+          "observed_minutes": 12,
+          "source_id": "SA:37727"
+        },
+        {
+          "TRAIN_metadata_index": 23812,
+          "base_window_index": 37864,
+          "effective_mask_bits": 12287,
+          "observed_minutes": 13,
+          "source_id": "SA:37864"
+        },
+        {
+          "TRAIN_metadata_index": 23813,
+          "base_window_index": 37865,
+          "effective_mask_bits": 32687,
+          "observed_minutes": 13,
+          "source_id": "SA:37865"
+        },
+        {
+          "TRAIN_metadata_index": 23814,
+          "base_window_index": 37866,
+          "effective_mask_bits": 59,
+          "observed_minutes": 5,
+          "source_id": "SA:37866"
+        },
+        {
+          "TRAIN_metadata_index": 23869,
+          "base_window_index": 38780,
+          "effective_mask_bits": 32644,
+          "observed_minutes": 9,
+          "source_id": "SA:38780"
+        },
+        {
+          "TRAIN_metadata_index": 23902,
+          "base_window_index": 38813,
+          "effective_mask_bits": 16061,
+          "observed_minutes": 11,
+          "source_id": "SA:38813"
+        },
+        {
+          "TRAIN_metadata_index": 23903,
+          "base_window_index": 38814,
+          "effective_mask_bits": 21502,
+          "observed_minutes": 11,
+          "source_id": "SA:38814"
+        },
+        {
+          "TRAIN_metadata_index": 23904,
+          "base_window_index": 38815,
+          "effective_mask_bits": 23679,
+          "observed_minutes": 11,
+          "source_id": "SA:38815"
+        },
+        {
+          "TRAIN_metadata_index": 23905,
+          "base_window_index": 38816,
+          "effective_mask_bits": 24559,
+          "observed_minutes": 13,
+          "source_id": "SA:38816"
+        },
+        {
+          "TRAIN_metadata_index": 23906,
+          "base_window_index": 38817,
+          "effective_mask_bits": 111,
+          "observed_minutes": 6,
+          "source_id": "SA:38817"
+        },
+        {
+          "TRAIN_metadata_index": 23907,
+          "base_window_index": 38818,
+          "effective_mask_bits": 32747,
+          "observed_minutes": 13,
+          "source_id": "SA:38818"
+        },
+        {
+          "TRAIN_metadata_index": 24006,
+          "base_window_index": 38917,
+          "effective_mask_bits": 32764,
+          "observed_minutes": 13,
+          "source_id": "SA:38917"
+        },
+        {
+          "TRAIN_metadata_index": 24088,
+          "base_window_index": 38999,
+          "effective_mask_bits": 32503,
+          "observed_minutes": 13,
+          "source_id": "SA:38999"
+        },
+        {
+          "TRAIN_metadata_index": 24221,
+          "base_window_index": 39132,
+          "effective_mask_bits": 30175,
+          "observed_minutes": 12,
+          "source_id": "SA:39132"
+        },
+        {
+          "TRAIN_metadata_index": 24222,
+          "base_window_index": 39133,
+          "effective_mask_bits": 32507,
+          "observed_minutes": 13,
+          "source_id": "SA:39133"
+        },
+        {
+          "TRAIN_metadata_index": 24223,
+          "base_window_index": 39134,
+          "effective_mask_bits": 32509,
+          "observed_minutes": 13,
+          "source_id": "SA:39134"
+        },
+        {
+          "TRAIN_metadata_index": 24224,
+          "base_window_index": 39135,
+          "effective_mask_bits": 32762,
+          "observed_minutes": 13,
+          "source_id": "SA:39135"
+        },
+        {
+          "TRAIN_metadata_index": 24229,
+          "base_window_index": 39140,
+          "effective_mask_bits": 32711,
+          "observed_minutes": 12,
+          "source_id": "SA:39140"
+        },
+        {
+          "TRAIN_metadata_index": 24230,
+          "base_window_index": 39141,
+          "effective_mask_bits": 24575,
+          "observed_minutes": 14,
+          "source_id": "SA:39141"
+        },
+        {
+          "TRAIN_metadata_index": 24281,
+          "base_window_index": 39192,
+          "effective_mask_bits": 19191,
+          "observed_minutes": 10,
+          "source_id": "SA:39192"
+        },
+        {
+          "TRAIN_metadata_index": 24282,
+          "base_window_index": 39193,
+          "effective_mask_bits": 8188,
+          "observed_minutes": 11,
+          "source_id": "SA:39193"
+        },
+        {
+          "TRAIN_metadata_index": 24433,
+          "base_window_index": 39344,
+          "effective_mask_bits": 32713,
+          "observed_minutes": 11,
+          "source_id": "SA:39344"
+        },
+        {
+          "TRAIN_metadata_index": 26276,
+          "base_window_index": 42243,
+          "effective_mask_bits": 32257,
+          "observed_minutes": 7,
+          "source_id": "SA:42243"
+        },
+        {
+          "TRAIN_metadata_index": 26277,
+          "base_window_index": 42244,
+          "effective_mask_bits": 32758,
+          "observed_minutes": 13,
+          "source_id": "SA:42244"
+        },
+        {
+          "TRAIN_metadata_index": 26281,
+          "base_window_index": 42248,
+          "effective_mask_bits": 32707,
+          "observed_minutes": 11,
+          "source_id": "SA:42248"
+        },
+        {
+          "TRAIN_metadata_index": 26286,
+          "base_window_index": 42253,
+          "effective_mask_bits": 32640,
+          "observed_minutes": 8,
+          "source_id": "SA:42253"
+        },
+        {
+          "TRAIN_metadata_index": 26290,
+          "base_window_index": 42257,
+          "effective_mask_bits": 63,
+          "observed_minutes": 6,
+          "source_id": "SA:42257"
+        },
+        {
+          "TRAIN_metadata_index": 26295,
+          "base_window_index": 42262,
+          "effective_mask_bits": 32679,
+          "observed_minutes": 12,
+          "source_id": "SA:42262"
+        },
+        {
+          "TRAIN_metadata_index": 26305,
+          "base_window_index": 42272,
+          "effective_mask_bits": 30720,
+          "observed_minutes": 4,
+          "source_id": "SA:42272"
+        },
+        {
+          "TRAIN_metadata_index": 26310,
+          "base_window_index": 42277,
+          "effective_mask_bits": 32752,
+          "observed_minutes": 11,
+          "source_id": "SA:42277"
+        },
+        {
+          "TRAIN_metadata_index": 26655,
+          "base_window_index": 42670,
+          "effective_mask_bits": 32319,
+          "observed_minutes": 12,
+          "source_id": "SA:42670"
+        },
+        {
+          "TRAIN_metadata_index": 26690,
+          "base_window_index": 42705,
+          "effective_mask_bits": 511,
+          "observed_minutes": 9,
+          "source_id": "SA:42705"
+        },
+        {
+          "TRAIN_metadata_index": 26703,
+          "base_window_index": 42718,
+          "effective_mask_bits": 28687,
+          "observed_minutes": 7,
+          "source_id": "SA:42718"
+        },
+        {
+          "TRAIN_metadata_index": 26707,
+          "base_window_index": 42722,
+          "effective_mask_bits": 25599,
+          "observed_minutes": 12,
+          "source_id": "SA:42722"
+        },
+        {
+          "TRAIN_metadata_index": 26711,
+          "base_window_index": 42726,
+          "effective_mask_bits": 2047,
+          "observed_minutes": 11,
+          "source_id": "SA:42726"
+        },
+        {
+          "TRAIN_metadata_index": 26764,
+          "base_window_index": 42779,
+          "effective_mask_bits": 32256,
+          "observed_minutes": 6,
+          "source_id": "SA:42779"
+        },
+        {
+          "TRAIN_metadata_index": 26783,
+          "base_window_index": 42798,
+          "effective_mask_bits": 28672,
+          "observed_minutes": 3,
+          "source_id": "SA:42798"
+        },
+        {
+          "TRAIN_metadata_index": 26880,
+          "base_window_index": 42895,
+          "effective_mask_bits": 24607,
+          "observed_minutes": 7,
+          "source_id": "SA:42895"
+        },
+        {
+          "TRAIN_metadata_index": 26941,
+          "base_window_index": 42956,
+          "effective_mask_bits": 31871,
+          "observed_minutes": 12,
+          "source_id": "SA:42956"
+        },
+        {
+          "TRAIN_metadata_index": 37791,
+          "base_window_index": 56722,
+          "effective_mask_bits": 7166,
+          "observed_minutes": 11,
+          "source_id": "SA:56722"
+        },
+        {
+          "TRAIN_metadata_index": 47445,
+          "base_window_index": 69789,
+          "effective_mask_bits": 8190,
+          "observed_minutes": 12,
+          "source_id": "SA:69789"
+        },
+        {
+          "TRAIN_metadata_index": 62820,
+          "base_window_index": 93920,
+          "effective_mask_bits": 992,
+          "observed_minutes": 5,
+          "source_id": "SA:93920"
+        }
+      ]
+    },
+    "2": {
+      "TRAIN_rows": 78362,
+      "unique_TRAIN_mask_patterns": 109,
+      "actual_synthesized_representatives": 109,
+      "all_mask_patterns_represented": true,
+      "basis_training_fold": 2,
+      "feature_max_abs_error": 0.0,
+      "weight_max_abs_error": 0.0,
+      "representatives": [
+        {
+          "TRAIN_metadata_index": 0,
+          "base_window_index": 0,
+          "effective_mask_bits": 32767,
+          "observed_minutes": 15,
+          "source_id": "SA:0"
+        },
+        {
+          "TRAIN_metadata_index": 3,
+          "base_window_index": 3,
+          "effective_mask_bits": 16383,
+          "observed_minutes": 14,
+          "source_id": "SA:3"
+        },
+        {
+          "TRAIN_metadata_index": 522,
+          "base_window_index": 1194,
+          "effective_mask_bits": 32735,
+          "observed_minutes": 14,
+          "source_id": "SA:1194"
+        },
+        {
+          "TRAIN_metadata_index": 788,
+          "base_window_index": 1460,
+          "effective_mask_bits": 32719,
+          "observed_minutes": 13,
+          "source_id": "SA:1460"
+        },
+        {
+          "TRAIN_metadata_index": 1580,
+          "base_window_index": 2252,
+          "effective_mask_bits": 15,
+          "observed_minutes": 4,
+          "source_id": "SA:2252"
+        },
+        {
+          "TRAIN_metadata_index": 1581,
+          "base_window_index": 2253,
+          "effective_mask_bits": 32704,
+          "observed_minutes": 9,
+          "source_id": "SA:2253"
+        },
+        {
+          "TRAIN_metadata_index": 2358,
+          "base_window_index": 3030,
+          "effective_mask_bits": 30719,
+          "observed_minutes": 14,
+          "source_id": "SA:3030"
+        },
+        {
+          "TRAIN_metadata_index": 2359,
+          "base_window_index": 3031,
+          "effective_mask_bits": 255,
+          "observed_minutes": 8,
+          "source_id": "SA:3031"
+        },
+        {
+          "TRAIN_metadata_index": 3470,
+          "base_window_index": 4814,
+          "effective_mask_bits": 7,
+          "observed_minutes": 3,
+          "source_id": "SA:4814"
+        },
+        {
+          "TRAIN_metadata_index": 4941,
+          "base_window_index": 6285,
+          "effective_mask_bits": 32575,
+          "observed_minutes": 13,
+          "source_id": "SA:6285"
+        },
+        {
+          "TRAIN_metadata_index": 5112,
+          "base_window_index": 6457,
+          "effective_mask_bits": 8191,
+          "observed_minutes": 13,
+          "source_id": "SA:6457"
+        },
+        {
+          "TRAIN_metadata_index": 5431,
+          "base_window_index": 7256,
+          "effective_mask_bits": 511,
+          "observed_minutes": 9,
+          "source_id": "SA:7256"
+        },
+        {
+          "TRAIN_metadata_index": 6116,
+          "base_window_index": 8681,
+          "effective_mask_bits": 32760,
+          "observed_minutes": 12,
+          "source_id": "SA:8681"
+        },
+        {
+          "TRAIN_metadata_index": 6656,
+          "base_window_index": 10565,
+          "effective_mask_bits": 31744,
+          "observed_minutes": 5,
+          "source_id": "SA:10565"
+        },
+        {
+          "TRAIN_metadata_index": 6660,
+          "base_window_index": 10569,
+          "effective_mask_bits": 31999,
+          "observed_minutes": 13,
+          "source_id": "SA:10569"
+        },
+        {
+          "TRAIN_metadata_index": 12520,
+          "base_window_index": 17499,
+          "effective_mask_bits": 4095,
+          "observed_minutes": 12,
+          "source_id": "SA:17499"
+        },
+        {
+          "TRAIN_metadata_index": 12522,
+          "base_window_index": 17501,
+          "effective_mask_bits": 29695,
+          "observed_minutes": 13,
+          "source_id": "SA:17501"
+        },
+        {
+          "TRAIN_metadata_index": 13658,
+          "base_window_index": 18829,
+          "effective_mask_bits": 1023,
+          "observed_minutes": 10,
+          "source_id": "SA:18829"
+        },
+        {
+          "TRAIN_metadata_index": 15467,
+          "base_window_index": 21848,
+          "effective_mask_bits": 30720,
+          "observed_minutes": 4,
+          "source_id": "SA:21848"
+        },
+        {
+          "TRAIN_metadata_index": 16900,
+          "base_window_index": 26457,
+          "effective_mask_bits": 63,
+          "observed_minutes": 6,
+          "source_id": "SA:26457"
+        },
+        {
+          "TRAIN_metadata_index": 17921,
+          "base_window_index": 28330,
+          "effective_mask_bits": 32766,
+          "observed_minutes": 14,
+          "source_id": "SA:28330"
+        },
+        {
+          "TRAIN_metadata_index": 18656,
+          "base_window_index": 29253,
+          "effective_mask_bits": 508,
+          "observed_minutes": 7,
+          "source_id": "SA:29253"
+        },
+        {
+          "TRAIN_metadata_index": 21349,
+          "base_window_index": 32134,
+          "effective_mask_bits": 24703,
+          "observed_minutes": 9,
+          "source_id": "SA:32134"
+        },
+        {
+          "TRAIN_metadata_index": 21393,
+          "base_window_index": 32178,
+          "effective_mask_bits": 20479,
+          "observed_minutes": 13,
+          "source_id": "SA:32178"
+        },
+        {
+          "TRAIN_metadata_index": 22038,
+          "base_window_index": 32823,
+          "effective_mask_bits": 32743,
+          "observed_minutes": 13,
+          "source_id": "SA:32823"
+        },
+        {
+          "TRAIN_metadata_index": 22040,
+          "base_window_index": 32825,
+          "effective_mask_bits": 32763,
+          "observed_minutes": 14,
+          "source_id": "SA:32825"
+        },
+        {
+          "TRAIN_metadata_index": 22041,
+          "base_window_index": 32826,
+          "effective_mask_bits": 32765,
+          "observed_minutes": 14,
+          "source_id": "SA:32826"
+        },
+        {
+          "TRAIN_metadata_index": 22042,
+          "base_window_index": 32827,
+          "effective_mask_bits": 31742,
+          "observed_minutes": 13,
+          "source_id": "SA:32827"
+        },
+        {
+          "TRAIN_metadata_index": 22045,
+          "base_window_index": 32830,
+          "effective_mask_bits": 55,
+          "observed_minutes": 5,
+          "source_id": "SA:32830"
+        },
+        {
+          "TRAIN_metadata_index": 22762,
+          "base_window_index": 33739,
+          "effective_mask_bits": 31,
+          "observed_minutes": 5,
+          "source_id": "SA:33739"
+        },
+        {
+          "TRAIN_metadata_index": 23775,
+          "base_window_index": 34752,
+          "effective_mask_bits": 28668,
+          "observed_minutes": 12,
+          "source_id": "SA:34752"
+        },
+        {
+          "TRAIN_metadata_index": 23776,
+          "base_window_index": 34753,
+          "effective_mask_bits": 32703,
+          "observed_minutes": 14,
+          "source_id": "SA:34753"
+        },
+        {
+          "TRAIN_metadata_index": 23780,
+          "base_window_index": 34757,
+          "effective_mask_bits": 32655,
+          "observed_minutes": 12,
+          "source_id": "SA:34757"
+        },
+        {
+          "TRAIN_metadata_index": 23784,
+          "base_window_index": 34761,
+          "effective_mask_bits": 32671,
+          "observed_minutes": 13,
+          "source_id": "SA:34761"
+        },
+        {
+          "TRAIN_metadata_index": 23811,
+          "base_window_index": 34788,
+          "effective_mask_bits": 32759,
+          "observed_minutes": 14,
+          "source_id": "SA:34788"
+        },
+        {
+          "TRAIN_metadata_index": 23815,
+          "base_window_index": 34792,
+          "effective_mask_bits": 32755,
+          "observed_minutes": 13,
+          "source_id": "SA:34792"
+        },
+        {
+          "TRAIN_metadata_index": 23870,
+          "base_window_index": 34847,
+          "effective_mask_bits": 32255,
+          "observed_minutes": 14,
+          "source_id": "SA:34847"
+        },
+        {
+          "TRAIN_metadata_index": 23873,
+          "base_window_index": 34850,
+          "effective_mask_bits": 28671,
+          "observed_minutes": 14,
+          "source_id": "SA:34850"
+        },
+        {
+          "TRAIN_metadata_index": 23877,
+          "base_window_index": 34854,
+          "effective_mask_bits": 26623,
+          "observed_minutes": 13,
+          "source_id": "SA:34854"
+        },
+        {
+          "TRAIN_metadata_index": 24010,
+          "base_window_index": 34987,
+          "effective_mask_bits": 32511,
+          "observed_minutes": 14,
+          "source_id": "SA:34987"
+        },
+        {
+          "TRAIN_metadata_index": 24062,
+          "base_window_index": 35039,
+          "effective_mask_bits": 31611,
+          "observed_minutes": 12,
+          "source_id": "SA:35039"
+        },
+        {
+          "TRAIN_metadata_index": 24067,
+          "base_window_index": 35044,
+          "effective_mask_bits": 31726,
+          "observed_minutes": 12,
+          "source_id": "SA:35044"
+        },
+        {
+          "TRAIN_metadata_index": 24071,
+          "base_window_index": 35048,
+          "effective_mask_bits": 31231,
+          "observed_minutes": 13,
+          "source_id": "SA:35048"
+        },
+        {
+          "TRAIN_metadata_index": 24094,
+          "base_window_index": 35071,
+          "effective_mask_bits": 22527,
+          "observed_minutes": 13,
+          "source_id": "SA:35071"
+        },
+        {
+          "TRAIN_metadata_index": 24178,
+          "base_window_index": 35155,
+          "effective_mask_bits": 32761,
+          "observed_minutes": 13,
+          "source_id": "SA:35155"
+        },
+        {
+          "TRAIN_metadata_index": 24346,
+          "base_window_index": 35323,
+          "effective_mask_bits": 24057,
+          "observed_minutes": 11,
+          "source_id": "SA:35323"
+        },
+        {
+          "TRAIN_metadata_index": 24349,
+          "base_window_index": 35326,
+          "effective_mask_bits": 32383,
+          "observed_minutes": 13,
+          "source_id": "SA:35326"
+        },
+        {
+          "TRAIN_metadata_index": 24350,
+          "base_window_index": 35327,
+          "effective_mask_bits": 4983,
+          "observed_minutes": 9,
+          "source_id": "SA:35327"
+        },
+        {
+          "TRAIN_metadata_index": 24351,
+          "base_window_index": 35328,
+          "effective_mask_bits": 31995,
+          "observed_minutes": 12,
+          "source_id": "SA:35328"
+        },
+        {
+          "TRAIN_metadata_index": 24357,
+          "base_window_index": 35334,
+          "effective_mask_bits": 32757,
+          "observed_minutes": 13,
+          "source_id": "SA:35334"
+        },
+        {
+          "TRAIN_metadata_index": 24361,
+          "base_window_index": 35338,
+          "effective_mask_bits": 32739,
+          "observed_minutes": 12,
+          "source_id": "SA:35338"
+        },
+        {
+          "TRAIN_metadata_index": 24375,
+          "base_window_index": 35352,
+          "effective_mask_bits": 32503,
+          "observed_minutes": 13,
+          "source_id": "SA:35352"
+        },
+        {
+          "TRAIN_metadata_index": 24500,
+          "base_window_index": 35477,
+          "effective_mask_bits": 31743,
+          "observed_minutes": 14,
+          "source_id": "SA:35477"
+        },
+        {
+          "TRAIN_metadata_index": 24596,
+          "base_window_index": 35573,
+          "effective_mask_bits": 32639,
+          "observed_minutes": 14,
+          "source_id": "SA:35573"
+        },
+        {
+          "TRAIN_metadata_index": 24604,
+          "base_window_index": 35581,
+          "effective_mask_bits": 32764,
+          "observed_minutes": 13,
+          "source_id": "SA:35581"
+        },
+        {
+          "TRAIN_metadata_index": 25113,
+          "base_window_index": 36521,
+          "effective_mask_bits": 2228,
+          "observed_minutes": 5,
+          "source_id": "SA:36521"
+        },
+        {
+          "TRAIN_metadata_index": 25550,
+          "base_window_index": 36958,
+          "effective_mask_bits": 32499,
+          "observed_minutes": 12,
+          "source_id": "SA:36958"
+        },
+        {
+          "TRAIN_metadata_index": 25684,
+          "base_window_index": 37092,
+          "effective_mask_bits": 31487,
+          "observed_minutes": 13,
+          "source_id": "SA:37092"
+        },
+        {
+          "TRAIN_metadata_index": 25688,
+          "base_window_index": 37096,
+          "effective_mask_bits": 28287,
+          "observed_minutes": 12,
+          "source_id": "SA:37096"
+        },
+        {
+          "TRAIN_metadata_index": 25692,
+          "base_window_index": 37100,
+          "effective_mask_bits": 29694,
+          "observed_minutes": 12,
+          "source_id": "SA:37100"
+        },
+        {
+          "TRAIN_metadata_index": 26208,
+          "base_window_index": 37616,
+          "effective_mask_bits": 31731,
+          "observed_minutes": 12,
+          "source_id": "SA:37616"
+        },
+        {
+          "TRAIN_metadata_index": 26212,
+          "base_window_index": 37620,
+          "effective_mask_bits": 30975,
+          "observed_minutes": 12,
+          "source_id": "SA:37620"
+        },
+        {
+          "TRAIN_metadata_index": 26277,
+          "base_window_index": 37685,
+          "effective_mask_bits": 32505,
+          "observed_minutes": 12,
+          "source_id": "SA:37685"
+        },
+        {
+          "TRAIN_metadata_index": 26319,
+          "base_window_index": 37727,
+          "effective_mask_bits": 30335,
+          "observed_minutes": 12,
+          "source_id": "SA:37727"
+        },
+        {
+          "TRAIN_metadata_index": 26456,
+          "base_window_index": 37864,
+          "effective_mask_bits": 12287,
+          "observed_minutes": 13,
+          "source_id": "SA:37864"
+        },
+        {
+          "TRAIN_metadata_index": 26457,
+          "base_window_index": 37865,
+          "effective_mask_bits": 32687,
+          "observed_minutes": 13,
+          "source_id": "SA:37865"
+        },
+        {
+          "TRAIN_metadata_index": 26458,
+          "base_window_index": 37866,
+          "effective_mask_bits": 59,
+          "observed_minutes": 5,
+          "source_id": "SA:37866"
+        },
+        {
+          "TRAIN_metadata_index": 26517,
+          "base_window_index": 37925,
+          "effective_mask_bits": 32751,
+          "observed_minutes": 14,
+          "source_id": "SA:37925"
+        },
+        {
+          "TRAIN_metadata_index": 26713,
+          "base_window_index": 38121,
+          "effective_mask_bits": 24439,
+          "observed_minutes": 12,
+          "source_id": "SA:38121"
+        },
+        {
+          "TRAIN_metadata_index": 26767,
+          "base_window_index": 38175,
+          "effective_mask_bits": 27135,
+          "observed_minutes": 12,
+          "source_id": "SA:38175"
+        },
+        {
+          "TRAIN_metadata_index": 26768,
+          "base_window_index": 38176,
+          "effective_mask_bits": 28926,
+          "observed_minutes": 10,
+          "source_id": "SA:38176"
+        },
+        {
+          "TRAIN_metadata_index": 26769,
+          "base_window_index": 38177,
+          "effective_mask_bits": 32732,
+          "observed_minutes": 12,
+          "source_id": "SA:38177"
+        },
+        {
+          "TRAIN_metadata_index": 26770,
+          "base_window_index": 38178,
+          "effective_mask_bits": 1015,
+          "observed_minutes": 9,
+          "source_id": "SA:38178"
+        },
+        {
+          "TRAIN_metadata_index": 26838,
+          "base_window_index": 38246,
+          "effective_mask_bits": 28371,
+          "observed_minutes": 10,
+          "source_id": "SA:38246"
+        },
+        {
+          "TRAIN_metadata_index": 26839,
+          "base_window_index": 38247,
+          "effective_mask_bits": 24167,
+          "observed_minutes": 10,
+          "source_id": "SA:38247"
+        },
+        {
+          "TRAIN_metadata_index": 26840,
+          "base_window_index": 38248,
+          "effective_mask_bits": 8167,
+          "observed_minutes": 11,
+          "source_id": "SA:38248"
+        },
+        {
+          "TRAIN_metadata_index": 26841,
+          "base_window_index": 38249,
+          "effective_mask_bits": 28663,
+          "observed_minutes": 13,
+          "source_id": "SA:38249"
+        },
+        {
+          "TRAIN_metadata_index": 26885,
+          "base_window_index": 38293,
+          "effective_mask_bits": 18431,
+          "observed_minutes": 12,
+          "source_id": "SA:38293"
+        },
+        {
+          "TRAIN_metadata_index": 26892,
+          "base_window_index": 38300,
+          "effective_mask_bits": 24575,
+          "observed_minutes": 14,
+          "source_id": "SA:38300"
+        },
+        {
+          "TRAIN_metadata_index": 27225,
+          "base_window_index": 38633,
+          "effective_mask_bits": 31295,
+          "observed_minutes": 11,
+          "source_id": "SA:38633"
+        },
+        {
+          "TRAIN_metadata_index": 27277,
+          "base_window_index": 38685,
+          "effective_mask_bits": 767,
+          "observed_minutes": 9,
+          "source_id": "SA:38685"
+        },
+        {
+          "TRAIN_metadata_index": 27313,
+          "base_window_index": 38721,
+          "effective_mask_bits": 7567,
+          "observed_minutes": 9,
+          "source_id": "SA:38721"
+        },
+        {
+          "TRAIN_metadata_index": 27314,
+          "base_window_index": 38722,
+          "effective_mask_bits": 32745,
+          "observed_minutes": 12,
+          "source_id": "SA:38722"
+        },
+        {
+          "TRAIN_metadata_index": 27372,
+          "base_window_index": 38780,
+          "effective_mask_bits": 32644,
+          "observed_minutes": 9,
+          "source_id": "SA:38780"
+        },
+        {
+          "TRAIN_metadata_index": 27405,
+          "base_window_index": 38813,
+          "effective_mask_bits": 16061,
+          "observed_minutes": 11,
+          "source_id": "SA:38813"
+        },
+        {
+          "TRAIN_metadata_index": 27406,
+          "base_window_index": 38814,
+          "effective_mask_bits": 21502,
+          "observed_minutes": 11,
+          "source_id": "SA:38814"
+        },
+        {
+          "TRAIN_metadata_index": 27407,
+          "base_window_index": 38815,
+          "effective_mask_bits": 23679,
+          "observed_minutes": 11,
+          "source_id": "SA:38815"
+        },
+        {
+          "TRAIN_metadata_index": 27408,
+          "base_window_index": 38816,
+          "effective_mask_bits": 24559,
+          "observed_minutes": 13,
+          "source_id": "SA:38816"
+        },
+        {
+          "TRAIN_metadata_index": 27409,
+          "base_window_index": 38817,
+          "effective_mask_bits": 111,
+          "observed_minutes": 6,
+          "source_id": "SA:38817"
+        },
+        {
+          "TRAIN_metadata_index": 27410,
+          "base_window_index": 38818,
+          "effective_mask_bits": 32747,
+          "observed_minutes": 13,
+          "source_id": "SA:38818"
+        },
+        {
+          "TRAIN_metadata_index": 27724,
+          "base_window_index": 39132,
+          "effective_mask_bits": 30175,
+          "observed_minutes": 12,
+          "source_id": "SA:39132"
+        },
+        {
+          "TRAIN_metadata_index": 27725,
+          "base_window_index": 39133,
+          "effective_mask_bits": 32507,
+          "observed_minutes": 13,
+          "source_id": "SA:39133"
+        },
+        {
+          "TRAIN_metadata_index": 27726,
+          "base_window_index": 39134,
+          "effective_mask_bits": 32509,
+          "observed_minutes": 13,
+          "source_id": "SA:39134"
+        },
+        {
+          "TRAIN_metadata_index": 27727,
+          "base_window_index": 39135,
+          "effective_mask_bits": 32762,
+          "observed_minutes": 13,
+          "source_id": "SA:39135"
+        },
+        {
+          "TRAIN_metadata_index": 27732,
+          "base_window_index": 39140,
+          "effective_mask_bits": 32711,
+          "observed_minutes": 12,
+          "source_id": "SA:39140"
+        },
+        {
+          "TRAIN_metadata_index": 27784,
+          "base_window_index": 39192,
+          "effective_mask_bits": 19191,
+          "observed_minutes": 10,
+          "source_id": "SA:39192"
+        },
+        {
+          "TRAIN_metadata_index": 27785,
+          "base_window_index": 39193,
+          "effective_mask_bits": 8188,
+          "observed_minutes": 11,
+          "source_id": "SA:39193"
+        },
+        {
+          "TRAIN_metadata_index": 29624,
+          "base_window_index": 42243,
+          "effective_mask_bits": 32257,
+          "observed_minutes": 7,
+          "source_id": "SA:42243"
+        },
+        {
+          "TRAIN_metadata_index": 29625,
+          "base_window_index": 42244,
+          "effective_mask_bits": 32758,
+          "observed_minutes": 13,
+          "source_id": "SA:42244"
+        },
+        {
+          "TRAIN_metadata_index": 29629,
+          "base_window_index": 42248,
+          "effective_mask_bits": 32707,
+          "observed_minutes": 11,
+          "source_id": "SA:42248"
+        },
+        {
+          "TRAIN_metadata_index": 29634,
+          "base_window_index": 42253,
+          "effective_mask_bits": 32640,
+          "observed_minutes": 8,
+          "source_id": "SA:42253"
+        },
+        {
+          "TRAIN_metadata_index": 29639,
+          "base_window_index": 42258,
+          "effective_mask_bits": 32736,
+          "observed_minutes": 10,
+          "source_id": "SA:42258"
+        },
+        {
+          "TRAIN_metadata_index": 29643,
+          "base_window_index": 42262,
+          "effective_mask_bits": 32679,
+          "observed_minutes": 12,
+          "source_id": "SA:42262"
+        },
+        {
+          "TRAIN_metadata_index": 29658,
+          "base_window_index": 42277,
+          "effective_mask_bits": 32752,
+          "observed_minutes": 11,
+          "source_id": "SA:42277"
+        },
+        {
+          "TRAIN_metadata_index": 29957,
+          "base_window_index": 42990,
+          "effective_mask_bits": 32512,
+          "observed_minutes": 7,
+          "source_id": "SA:42990"
+        },
+        {
+          "TRAIN_metadata_index": 29962,
+          "base_window_index": 42995,
+          "effective_mask_bits": 28672,
+          "observed_minutes": 3,
+          "source_id": "SA:42995"
+        },
+        {
+          "TRAIN_metadata_index": 30013,
+          "base_window_index": 43046,
+          "effective_mask_bits": 2047,
+          "observed_minutes": 11,
+          "source_id": "SA:43046"
+        },
+        {
+          "TRAIN_metadata_index": 47588,
+          "base_window_index": 69789,
+          "effective_mask_bits": 8190,
+          "observed_minutes": 12,
+          "source_id": "SA:69789"
+        },
+        {
+          "TRAIN_metadata_index": 62784,
+          "base_window_index": 93920,
+          "effective_mask_bits": 992,
+          "observed_minutes": 5,
+          "source_id": "SA:93920"
+        }
+      ]
+    },
+    "3": {
+      "TRAIN_rows": 78753,
+      "unique_TRAIN_mask_patterns": 96,
+      "actual_synthesized_representatives": 96,
+      "all_mask_patterns_represented": true,
+      "basis_training_fold": 3,
+      "feature_max_abs_error": 0.0,
+      "weight_max_abs_error": 0.0,
+      "representatives": [
+        {
+          "TRAIN_metadata_index": 0,
+          "base_window_index": 0,
+          "effective_mask_bits": 32767,
+          "observed_minutes": 15,
+          "source_id": "SA:0"
+        },
+        {
+          "TRAIN_metadata_index": 3,
+          "base_window_index": 3,
+          "effective_mask_bits": 16383,
+          "observed_minutes": 14,
+          "source_id": "SA:3"
+        },
+        {
+          "TRAIN_metadata_index": 481,
+          "base_window_index": 1460,
+          "effective_mask_bits": 32719,
+          "observed_minutes": 13,
+          "source_id": "SA:1460"
+        },
+        {
+          "TRAIN_metadata_index": 1273,
+          "base_window_index": 2252,
+          "effective_mask_bits": 15,
+          "observed_minutes": 4,
+          "source_id": "SA:2252"
+        },
+        {
+          "TRAIN_metadata_index": 1274,
+          "base_window_index": 2253,
+          "effective_mask_bits": 32704,
+          "observed_minutes": 9,
+          "source_id": "SA:2253"
+        },
+        {
+          "TRAIN_metadata_index": 2051,
+          "base_window_index": 3030,
+          "effective_mask_bits": 30719,
+          "observed_minutes": 14,
+          "source_id": "SA:3030"
+        },
+        {
+          "TRAIN_metadata_index": 2052,
+          "base_window_index": 3031,
+          "effective_mask_bits": 255,
+          "observed_minutes": 8,
+          "source_id": "SA:3031"
+        },
+        {
+          "TRAIN_metadata_index": 3183,
+          "base_window_index": 4814,
+          "effective_mask_bits": 7,
+          "observed_minutes": 3,
+          "source_id": "SA:4814"
+        },
+        {
+          "TRAIN_metadata_index": 4175,
+          "base_window_index": 6457,
+          "effective_mask_bits": 8191,
+          "observed_minutes": 13,
+          "source_id": "SA:6457"
+        },
+        {
+          "TRAIN_metadata_index": 4974,
+          "base_window_index": 7256,
+          "effective_mask_bits": 511,
+          "observed_minutes": 9,
+          "source_id": "SA:7256"
+        },
+        {
+          "TRAIN_metadata_index": 5363,
+          "base_window_index": 10565,
+          "effective_mask_bits": 31744,
+          "observed_minutes": 5,
+          "source_id": "SA:10565"
+        },
+        {
+          "TRAIN_metadata_index": 5367,
+          "base_window_index": 10569,
+          "effective_mask_bits": 31999,
+          "observed_minutes": 13,
+          "source_id": "SA:10569"
+        },
+        {
+          "TRAIN_metadata_index": 11433,
+          "base_window_index": 18829,
+          "effective_mask_bits": 1023,
+          "observed_minutes": 10,
+          "source_id": "SA:18829"
+        },
+        {
+          "TRAIN_metadata_index": 13006,
+          "base_window_index": 20402,
+          "effective_mask_bits": 32512,
+          "observed_minutes": 7,
+          "source_id": "SA:20402"
+        },
+        {
+          "TRAIN_metadata_index": 13010,
+          "base_window_index": 20406,
+          "effective_mask_bits": 127,
+          "observed_minutes": 7,
+          "source_id": "SA:20406"
+        },
+        {
+          "TRAIN_metadata_index": 13011,
+          "base_window_index": 20407,
+          "effective_mask_bits": 32736,
+          "observed_minutes": 10,
+          "source_id": "SA:20407"
+        },
+        {
+          "TRAIN_metadata_index": 13015,
+          "base_window_index": 20411,
+          "effective_mask_bits": 32751,
+          "observed_minutes": 14,
+          "source_id": "SA:20411"
+        },
+        {
+          "TRAIN_metadata_index": 13023,
+          "base_window_index": 20419,
+          "effective_mask_bits": 32743,
+          "observed_minutes": 13,
+          "source_id": "SA:20419"
+        },
+        {
+          "TRAIN_metadata_index": 14452,
+          "base_window_index": 21848,
+          "effective_mask_bits": 30720,
+          "observed_minutes": 4,
+          "source_id": "SA:21848"
+        },
+        {
+          "TRAIN_metadata_index": 15223,
+          "base_window_index": 24219,
+          "effective_mask_bits": 32766,
+          "observed_minutes": 14,
+          "source_id": "SA:24219"
+        },
+        {
+          "TRAIN_metadata_index": 17461,
+          "base_window_index": 26457,
+          "effective_mask_bits": 63,
+          "observed_minutes": 6,
+          "source_id": "SA:26457"
+        },
+        {
+          "TRAIN_metadata_index": 19881,
+          "base_window_index": 29253,
+          "effective_mask_bits": 508,
+          "observed_minutes": 7,
+          "source_id": "SA:29253"
+        },
+        {
+          "TRAIN_metadata_index": 21745,
+          "base_window_index": 32825,
+          "effective_mask_bits": 32763,
+          "observed_minutes": 14,
+          "source_id": "SA:32825"
+        },
+        {
+          "TRAIN_metadata_index": 21746,
+          "base_window_index": 32826,
+          "effective_mask_bits": 32765,
+          "observed_minutes": 14,
+          "source_id": "SA:32826"
+        },
+        {
+          "TRAIN_metadata_index": 21747,
+          "base_window_index": 32827,
+          "effective_mask_bits": 31742,
+          "observed_minutes": 13,
+          "source_id": "SA:32827"
+        },
+        {
+          "TRAIN_metadata_index": 21750,
+          "base_window_index": 32830,
+          "effective_mask_bits": 55,
+          "observed_minutes": 5,
+          "source_id": "SA:32830"
+        },
+        {
+          "TRAIN_metadata_index": 22687,
+          "base_window_index": 35155,
+          "effective_mask_bits": 32761,
+          "observed_minutes": 13,
+          "source_id": "SA:35155"
+        },
+        {
+          "TRAIN_metadata_index": 22855,
+          "base_window_index": 35323,
+          "effective_mask_bits": 24057,
+          "observed_minutes": 11,
+          "source_id": "SA:35323"
+        },
+        {
+          "TRAIN_metadata_index": 22858,
+          "base_window_index": 35326,
+          "effective_mask_bits": 32383,
+          "observed_minutes": 13,
+          "source_id": "SA:35326"
+        },
+        {
+          "TRAIN_metadata_index": 22859,
+          "base_window_index": 35327,
+          "effective_mask_bits": 4983,
+          "observed_minutes": 9,
+          "source_id": "SA:35327"
+        },
+        {
+          "TRAIN_metadata_index": 22860,
+          "base_window_index": 35328,
+          "effective_mask_bits": 31995,
+          "observed_minutes": 12,
+          "source_id": "SA:35328"
+        },
+        {
+          "TRAIN_metadata_index": 22866,
+          "base_window_index": 35334,
+          "effective_mask_bits": 32757,
+          "observed_minutes": 13,
+          "source_id": "SA:35334"
+        },
+        {
+          "TRAIN_metadata_index": 22870,
+          "base_window_index": 35338,
+          "effective_mask_bits": 32739,
+          "observed_minutes": 12,
+          "source_id": "SA:35338"
+        },
+        {
+          "TRAIN_metadata_index": 22884,
+          "base_window_index": 35352,
+          "effective_mask_bits": 32503,
+          "observed_minutes": 13,
+          "source_id": "SA:35352"
+        },
+        {
+          "TRAIN_metadata_index": 23000,
+          "base_window_index": 35468,
+          "effective_mask_bits": 32575,
+          "observed_minutes": 13,
+          "source_id": "SA:35468"
+        },
+        {
+          "TRAIN_metadata_index": 23005,
+          "base_window_index": 35473,
+          "effective_mask_bits": 31231,
+          "observed_minutes": 13,
+          "source_id": "SA:35473"
+        },
+        {
+          "TRAIN_metadata_index": 23009,
+          "base_window_index": 35477,
+          "effective_mask_bits": 31743,
+          "observed_minutes": 14,
+          "source_id": "SA:35477"
+        },
+        {
+          "TRAIN_metadata_index": 23105,
+          "base_window_index": 35573,
+          "effective_mask_bits": 32639,
+          "observed_minutes": 14,
+          "source_id": "SA:35573"
+        },
+        {
+          "TRAIN_metadata_index": 23113,
+          "base_window_index": 35581,
+          "effective_mask_bits": 32764,
+          "observed_minutes": 13,
+          "source_id": "SA:35581"
+        },
+        {
+          "TRAIN_metadata_index": 23166,
+          "base_window_index": 38077,
+          "effective_mask_bits": 32759,
+          "observed_minutes": 14,
+          "source_id": "SA:38077"
+        },
+        {
+          "TRAIN_metadata_index": 23210,
+          "base_window_index": 38121,
+          "effective_mask_bits": 24439,
+          "observed_minutes": 12,
+          "source_id": "SA:38121"
+        },
+        {
+          "TRAIN_metadata_index": 23214,
+          "base_window_index": 38125,
+          "effective_mask_bits": 20479,
+          "observed_minutes": 13,
+          "source_id": "SA:38125"
+        },
+        {
+          "TRAIN_metadata_index": 23264,
+          "base_window_index": 38175,
+          "effective_mask_bits": 27135,
+          "observed_minutes": 12,
+          "source_id": "SA:38175"
+        },
+        {
+          "TRAIN_metadata_index": 23265,
+          "base_window_index": 38176,
+          "effective_mask_bits": 28926,
+          "observed_minutes": 10,
+          "source_id": "SA:38176"
+        },
+        {
+          "TRAIN_metadata_index": 23266,
+          "base_window_index": 38177,
+          "effective_mask_bits": 32732,
+          "observed_minutes": 12,
+          "source_id": "SA:38177"
+        },
+        {
+          "TRAIN_metadata_index": 23267,
+          "base_window_index": 38178,
+          "effective_mask_bits": 1015,
+          "observed_minutes": 9,
+          "source_id": "SA:38178"
+        },
+        {
+          "TRAIN_metadata_index": 23323,
+          "base_window_index": 38234,
+          "effective_mask_bits": 32755,
+          "observed_minutes": 13,
+          "source_id": "SA:38234"
+        },
+        {
+          "TRAIN_metadata_index": 23335,
+          "base_window_index": 38246,
+          "effective_mask_bits": 28371,
+          "observed_minutes": 10,
+          "source_id": "SA:38246"
+        },
+        {
+          "TRAIN_metadata_index": 23336,
+          "base_window_index": 38247,
+          "effective_mask_bits": 24167,
+          "observed_minutes": 10,
+          "source_id": "SA:38247"
+        },
+        {
+          "TRAIN_metadata_index": 23337,
+          "base_window_index": 38248,
+          "effective_mask_bits": 8167,
+          "observed_minutes": 11,
+          "source_id": "SA:38248"
+        },
+        {
+          "TRAIN_metadata_index": 23338,
+          "base_window_index": 38249,
+          "effective_mask_bits": 28663,
+          "observed_minutes": 13,
+          "source_id": "SA:38249"
+        },
+        {
+          "TRAIN_metadata_index": 23342,
+          "base_window_index": 38253,
+          "effective_mask_bits": 26623,
+          "observed_minutes": 13,
+          "source_id": "SA:38253"
+        },
+        {
+          "TRAIN_metadata_index": 23382,
+          "base_window_index": 38293,
+          "effective_mask_bits": 18431,
+          "observed_minutes": 12,
+          "source_id": "SA:38293"
+        },
+        {
+          "TRAIN_metadata_index": 23385,
+          "base_window_index": 38296,
+          "effective_mask_bits": 28671,
+          "observed_minutes": 14,
+          "source_id": "SA:38296"
+        },
+        {
+          "TRAIN_metadata_index": 23389,
+          "base_window_index": 38300,
+          "effective_mask_bits": 24575,
+          "observed_minutes": 14,
+          "source_id": "SA:38300"
+        },
+        {
+          "TRAIN_metadata_index": 23722,
+          "base_window_index": 38633,
+          "effective_mask_bits": 31295,
+          "observed_minutes": 11,
+          "source_id": "SA:38633"
+        },
+        {
+          "TRAIN_metadata_index": 23773,
+          "base_window_index": 38684,
+          "effective_mask_bits": 32671,
+          "observed_minutes": 13,
+          "source_id": "SA:38684"
+        },
+        {
+          "TRAIN_metadata_index": 23774,
+          "base_window_index": 38685,
+          "effective_mask_bits": 767,
+          "observed_minutes": 9,
+          "source_id": "SA:38685"
+        },
+        {
+          "TRAIN_metadata_index": 23810,
+          "base_window_index": 38721,
+          "effective_mask_bits": 7567,
+          "observed_minutes": 9,
+          "source_id": "SA:38721"
+        },
+        {
+          "TRAIN_metadata_index": 23811,
+          "base_window_index": 38722,
+          "effective_mask_bits": 32745,
+          "observed_minutes": 12,
+          "source_id": "SA:38722"
+        },
+        {
+          "TRAIN_metadata_index": 23869,
+          "base_window_index": 38780,
+          "effective_mask_bits": 32644,
+          "observed_minutes": 9,
+          "source_id": "SA:38780"
+        },
+        {
+          "TRAIN_metadata_index": 23902,
+          "base_window_index": 38813,
+          "effective_mask_bits": 16061,
+          "observed_minutes": 11,
+          "source_id": "SA:38813"
+        },
+        {
+          "TRAIN_metadata_index": 23903,
+          "base_window_index": 38814,
+          "effective_mask_bits": 21502,
+          "observed_minutes": 11,
+          "source_id": "SA:38814"
+        },
+        {
+          "TRAIN_metadata_index": 23904,
+          "base_window_index": 38815,
+          "effective_mask_bits": 23679,
+          "observed_minutes": 11,
+          "source_id": "SA:38815"
+        },
+        {
+          "TRAIN_metadata_index": 23905,
+          "base_window_index": 38816,
+          "effective_mask_bits": 24559,
+          "observed_minutes": 13,
+          "source_id": "SA:38816"
+        },
+        {
+          "TRAIN_metadata_index": 23906,
+          "base_window_index": 38817,
+          "effective_mask_bits": 111,
+          "observed_minutes": 6,
+          "source_id": "SA:38817"
+        },
+        {
+          "TRAIN_metadata_index": 23907,
+          "base_window_index": 38818,
+          "effective_mask_bits": 32747,
+          "observed_minutes": 13,
+          "source_id": "SA:38818"
+        },
+        {
+          "TRAIN_metadata_index": 24053,
+          "base_window_index": 38964,
+          "effective_mask_bits": 32735,
+          "observed_minutes": 14,
+          "source_id": "SA:38964"
+        },
+        {
+          "TRAIN_metadata_index": 24054,
+          "base_window_index": 38965,
+          "effective_mask_bits": 32511,
+          "observed_minutes": 14,
+          "source_id": "SA:38965"
+        },
+        {
+          "TRAIN_metadata_index": 24100,
+          "base_window_index": 39011,
+          "effective_mask_bits": 32255,
+          "observed_minutes": 14,
+          "source_id": "SA:39011"
+        },
+        {
+          "TRAIN_metadata_index": 24221,
+          "base_window_index": 39132,
+          "effective_mask_bits": 30175,
+          "observed_minutes": 12,
+          "source_id": "SA:39132"
+        },
+        {
+          "TRAIN_metadata_index": 24222,
+          "base_window_index": 39133,
+          "effective_mask_bits": 32507,
+          "observed_minutes": 13,
+          "source_id": "SA:39133"
+        },
+        {
+          "TRAIN_metadata_index": 24223,
+          "base_window_index": 39134,
+          "effective_mask_bits": 32509,
+          "observed_minutes": 13,
+          "source_id": "SA:39134"
+        },
+        {
+          "TRAIN_metadata_index": 24224,
+          "base_window_index": 39135,
+          "effective_mask_bits": 32762,
+          "observed_minutes": 13,
+          "source_id": "SA:39135"
+        },
+        {
+          "TRAIN_metadata_index": 24229,
+          "base_window_index": 39140,
+          "effective_mask_bits": 32711,
+          "observed_minutes": 12,
+          "source_id": "SA:39140"
+        },
+        {
+          "TRAIN_metadata_index": 24281,
+          "base_window_index": 39192,
+          "effective_mask_bits": 19191,
+          "observed_minutes": 10,
+          "source_id": "SA:39192"
+        },
+        {
+          "TRAIN_metadata_index": 24282,
+          "base_window_index": 39193,
+          "effective_mask_bits": 8188,
+          "observed_minutes": 11,
+          "source_id": "SA:39193"
+        },
+        {
+          "TRAIN_metadata_index": 24289,
+          "base_window_index": 39200,
+          "effective_mask_bits": 32703,
+          "observed_minutes": 14,
+          "source_id": "SA:39200"
+        },
+        {
+          "TRAIN_metadata_index": 24433,
+          "base_window_index": 39344,
+          "effective_mask_bits": 32713,
+          "observed_minutes": 11,
+          "source_id": "SA:39344"
+        },
+        {
+          "TRAIN_metadata_index": 25796,
+          "base_window_index": 42243,
+          "effective_mask_bits": 32257,
+          "observed_minutes": 7,
+          "source_id": "SA:42243"
+        },
+        {
+          "TRAIN_metadata_index": 25797,
+          "base_window_index": 42244,
+          "effective_mask_bits": 32758,
+          "observed_minutes": 13,
+          "source_id": "SA:42244"
+        },
+        {
+          "TRAIN_metadata_index": 25801,
+          "base_window_index": 42248,
+          "effective_mask_bits": 32707,
+          "observed_minutes": 11,
+          "source_id": "SA:42248"
+        },
+        {
+          "TRAIN_metadata_index": 25806,
+          "base_window_index": 42253,
+          "effective_mask_bits": 32640,
+          "observed_minutes": 8,
+          "source_id": "SA:42253"
+        },
+        {
+          "TRAIN_metadata_index": 25815,
+          "base_window_index": 42262,
+          "effective_mask_bits": 32679,
+          "observed_minutes": 12,
+          "source_id": "SA:42262"
+        },
+        {
+          "TRAIN_metadata_index": 25830,
+          "base_window_index": 42277,
+          "effective_mask_bits": 32752,
+          "observed_minutes": 11,
+          "source_id": "SA:42277"
+        },
+        {
+          "TRAIN_metadata_index": 26223,
+          "base_window_index": 42670,
+          "effective_mask_bits": 32319,
+          "observed_minutes": 12,
+          "source_id": "SA:42670"
+        },
+        {
+          "TRAIN_metadata_index": 26271,
+          "base_window_index": 42718,
+          "effective_mask_bits": 28687,
+          "observed_minutes": 7,
+          "source_id": "SA:42718"
+        },
+        {
+          "TRAIN_metadata_index": 26275,
+          "base_window_index": 42722,
+          "effective_mask_bits": 25599,
+          "observed_minutes": 12,
+          "source_id": "SA:42722"
+        },
+        {
+          "TRAIN_metadata_index": 26279,
+          "base_window_index": 42726,
+          "effective_mask_bits": 2047,
+          "observed_minutes": 11,
+          "source_id": "SA:42726"
+        },
+        {
+          "TRAIN_metadata_index": 26316,
+          "base_window_index": 42763,
+          "effective_mask_bits": 4095,
+          "observed_minutes": 12,
+          "source_id": "SA:42763"
+        },
+        {
+          "TRAIN_metadata_index": 26326,
+          "base_window_index": 42773,
+          "effective_mask_bits": 31,
+          "observed_minutes": 5,
+          "source_id": "SA:42773"
+        },
+        {
+          "TRAIN_metadata_index": 26332,
+          "base_window_index": 42779,
+          "effective_mask_bits": 32256,
+          "observed_minutes": 6,
+          "source_id": "SA:42779"
+        },
+        {
+          "TRAIN_metadata_index": 26351,
+          "base_window_index": 42798,
+          "effective_mask_bits": 28672,
+          "observed_minutes": 3,
+          "source_id": "SA:42798"
+        },
+        {
+          "TRAIN_metadata_index": 36738,
+          "base_window_index": 56722,
+          "effective_mask_bits": 7166,
+          "observed_minutes": 11,
+          "source_id": "SA:56722"
+        },
+        {
+          "TRAIN_metadata_index": 48269,
+          "base_window_index": 69789,
+          "effective_mask_bits": 8190,
+          "observed_minutes": 12,
+          "source_id": "SA:69789"
+        },
+        {
+          "TRAIN_metadata_index": 63319,
+          "base_window_index": 94640,
+          "effective_mask_bits": 992,
+          "observed_minutes": 5,
+          "source_id": "SA:94640"
+        }
+      ]
+    },
+    "4": {
+      "TRAIN_rows": 78124,
+      "unique_TRAIN_mask_patterns": 95,
+      "actual_synthesized_representatives": 95,
+      "all_mask_patterns_represented": true,
+      "basis_training_fold": 4,
+      "feature_max_abs_error": 0.0,
+      "weight_max_abs_error": 0.0,
+      "representatives": [
+        {
+          "TRAIN_metadata_index": 0,
+          "base_window_index": 0,
+          "effective_mask_bits": 32767,
+          "observed_minutes": 15,
+          "source_id": "SA:0"
+        },
+        {
+          "TRAIN_metadata_index": 3,
+          "base_window_index": 3,
+          "effective_mask_bits": 16383,
+          "observed_minutes": 14,
+          "source_id": "SA:3"
+        },
+        {
+          "TRAIN_metadata_index": 522,
+          "base_window_index": 1194,
+          "effective_mask_bits": 32735,
+          "observed_minutes": 14,
+          "source_id": "SA:1194"
+        },
+        {
+          "TRAIN_metadata_index": 788,
+          "base_window_index": 2515,
+          "effective_mask_bits": 32719,
+          "observed_minutes": 13,
+          "source_id": "SA:2515"
+        },
+        {
+          "TRAIN_metadata_index": 1303,
+          "base_window_index": 3030,
+          "effective_mask_bits": 30719,
+          "observed_minutes": 14,
+          "source_id": "SA:3030"
+        },
+        {
+          "TRAIN_metadata_index": 1304,
+          "base_window_index": 3031,
+          "effective_mask_bits": 255,
+          "observed_minutes": 8,
+          "source_id": "SA:3031"
+        },
+        {
+          "TRAIN_metadata_index": 3851,
+          "base_window_index": 6285,
+          "effective_mask_bits": 32575,
+          "observed_minutes": 13,
+          "source_id": "SA:6285"
+        },
+        {
+          "TRAIN_metadata_index": 4022,
+          "base_window_index": 6457,
+          "effective_mask_bits": 8191,
+          "observed_minutes": 13,
+          "source_id": "SA:6457"
+        },
+        {
+          "TRAIN_metadata_index": 4821,
+          "base_window_index": 7256,
+          "effective_mask_bits": 511,
+          "observed_minutes": 9,
+          "source_id": "SA:7256"
+        },
+        {
+          "TRAIN_metadata_index": 5506,
+          "base_window_index": 8681,
+          "effective_mask_bits": 32760,
+          "observed_minutes": 12,
+          "source_id": "SA:8681"
+        },
+        {
+          "TRAIN_metadata_index": 6046,
+          "base_window_index": 10565,
+          "effective_mask_bits": 31744,
+          "observed_minutes": 5,
+          "source_id": "SA:10565"
+        },
+        {
+          "TRAIN_metadata_index": 6050,
+          "base_window_index": 10569,
+          "effective_mask_bits": 31999,
+          "observed_minutes": 13,
+          "source_id": "SA:10569"
+        },
+        {
+          "TRAIN_metadata_index": 10771,
+          "base_window_index": 17499,
+          "effective_mask_bits": 4095,
+          "observed_minutes": 12,
+          "source_id": "SA:17499"
+        },
+        {
+          "TRAIN_metadata_index": 10773,
+          "base_window_index": 17501,
+          "effective_mask_bits": 29695,
+          "observed_minutes": 13,
+          "source_id": "SA:17501"
+        },
+        {
+          "TRAIN_metadata_index": 12728,
+          "base_window_index": 20402,
+          "effective_mask_bits": 32512,
+          "observed_minutes": 7,
+          "source_id": "SA:20402"
+        },
+        {
+          "TRAIN_metadata_index": 12732,
+          "base_window_index": 20406,
+          "effective_mask_bits": 127,
+          "observed_minutes": 7,
+          "source_id": "SA:20406"
+        },
+        {
+          "TRAIN_metadata_index": 12733,
+          "base_window_index": 20407,
+          "effective_mask_bits": 32736,
+          "observed_minutes": 10,
+          "source_id": "SA:20407"
+        },
+        {
+          "TRAIN_metadata_index": 12737,
+          "base_window_index": 20411,
+          "effective_mask_bits": 32751,
+          "observed_minutes": 14,
+          "source_id": "SA:20411"
+        },
+        {
+          "TRAIN_metadata_index": 12745,
+          "base_window_index": 20419,
+          "effective_mask_bits": 32743,
+          "observed_minutes": 13,
+          "source_id": "SA:20419"
+        },
+        {
+          "TRAIN_metadata_index": 12753,
+          "base_window_index": 20427,
+          "effective_mask_bits": 15,
+          "observed_minutes": 4,
+          "source_id": "SA:20427"
+        },
+        {
+          "TRAIN_metadata_index": 14174,
+          "base_window_index": 21848,
+          "effective_mask_bits": 30720,
+          "observed_minutes": 4,
+          "source_id": "SA:21848"
+        },
+        {
+          "TRAIN_metadata_index": 14176,
+          "base_window_index": 21850,
+          "effective_mask_bits": 1023,
+          "observed_minutes": 10,
+          "source_id": "SA:21850"
+        },
+        {
+          "TRAIN_metadata_index": 15269,
+          "base_window_index": 24219,
+          "effective_mask_bits": 32766,
+          "observed_minutes": 14,
+          "source_id": "SA:24219"
+        },
+        {
+          "TRAIN_metadata_index": 17507,
+          "base_window_index": 26457,
+          "effective_mask_bits": 63,
+          "observed_minutes": 6,
+          "source_id": "SA:26457"
+        },
+        {
+          "TRAIN_metadata_index": 19455,
+          "base_window_index": 29253,
+          "effective_mask_bits": 508,
+          "observed_minutes": 7,
+          "source_id": "SA:29253"
+        },
+        {
+          "TRAIN_metadata_index": 21480,
+          "base_window_index": 32134,
+          "effective_mask_bits": 24703,
+          "observed_minutes": 9,
+          "source_id": "SA:32134"
+        },
+        {
+          "TRAIN_metadata_index": 21524,
+          "base_window_index": 32178,
+          "effective_mask_bits": 20479,
+          "observed_minutes": 13,
+          "source_id": "SA:32178"
+        },
+        {
+          "TRAIN_metadata_index": 22171,
+          "base_window_index": 32825,
+          "effective_mask_bits": 32763,
+          "observed_minutes": 14,
+          "source_id": "SA:32825"
+        },
+        {
+          "TRAIN_metadata_index": 22172,
+          "base_window_index": 32826,
+          "effective_mask_bits": 32765,
+          "observed_minutes": 14,
+          "source_id": "SA:32826"
+        },
+        {
+          "TRAIN_metadata_index": 22173,
+          "base_window_index": 32827,
+          "effective_mask_bits": 31742,
+          "observed_minutes": 13,
+          "source_id": "SA:32827"
+        },
+        {
+          "TRAIN_metadata_index": 22176,
+          "base_window_index": 32830,
+          "effective_mask_bits": 55,
+          "observed_minutes": 5,
+          "source_id": "SA:32830"
+        },
+        {
+          "TRAIN_metadata_index": 22893,
+          "base_window_index": 33739,
+          "effective_mask_bits": 31,
+          "observed_minutes": 5,
+          "source_id": "SA:33739"
+        },
+        {
+          "TRAIN_metadata_index": 23450,
+          "base_window_index": 34752,
+          "effective_mask_bits": 28668,
+          "observed_minutes": 12,
+          "source_id": "SA:34752"
+        },
+        {
+          "TRAIN_metadata_index": 23451,
+          "base_window_index": 34753,
+          "effective_mask_bits": 32703,
+          "observed_minutes": 14,
+          "source_id": "SA:34753"
+        },
+        {
+          "TRAIN_metadata_index": 23455,
+          "base_window_index": 34757,
+          "effective_mask_bits": 32655,
+          "observed_minutes": 12,
+          "source_id": "SA:34757"
+        },
+        {
+          "TRAIN_metadata_index": 23459,
+          "base_window_index": 34761,
+          "effective_mask_bits": 32671,
+          "observed_minutes": 13,
+          "source_id": "SA:34761"
+        },
+        {
+          "TRAIN_metadata_index": 23486,
+          "base_window_index": 34788,
+          "effective_mask_bits": 32759,
+          "observed_minutes": 14,
+          "source_id": "SA:34788"
+        },
+        {
+          "TRAIN_metadata_index": 23490,
+          "base_window_index": 34792,
+          "effective_mask_bits": 32755,
+          "observed_minutes": 13,
+          "source_id": "SA:34792"
+        },
+        {
+          "TRAIN_metadata_index": 23545,
+          "base_window_index": 34847,
+          "effective_mask_bits": 32255,
+          "observed_minutes": 14,
+          "source_id": "SA:34847"
+        },
+        {
+          "TRAIN_metadata_index": 23548,
+          "base_window_index": 34850,
+          "effective_mask_bits": 28671,
+          "observed_minutes": 14,
+          "source_id": "SA:34850"
+        },
+        {
+          "TRAIN_metadata_index": 23552,
+          "base_window_index": 34854,
+          "effective_mask_bits": 26623,
+          "observed_minutes": 13,
+          "source_id": "SA:34854"
+        },
+        {
+          "TRAIN_metadata_index": 23685,
+          "base_window_index": 34987,
+          "effective_mask_bits": 32511,
+          "observed_minutes": 14,
+          "source_id": "SA:34987"
+        },
+        {
+          "TRAIN_metadata_index": 23737,
+          "base_window_index": 35039,
+          "effective_mask_bits": 31611,
+          "observed_minutes": 12,
+          "source_id": "SA:35039"
+        },
+        {
+          "TRAIN_metadata_index": 23742,
+          "base_window_index": 35044,
+          "effective_mask_bits": 31726,
+          "observed_minutes": 12,
+          "source_id": "SA:35044"
+        },
+        {
+          "TRAIN_metadata_index": 23746,
+          "base_window_index": 35048,
+          "effective_mask_bits": 31231,
+          "observed_minutes": 13,
+          "source_id": "SA:35048"
+        },
+        {
+          "TRAIN_metadata_index": 23769,
+          "base_window_index": 35071,
+          "effective_mask_bits": 22527,
+          "observed_minutes": 13,
+          "source_id": "SA:35071"
+        },
+        {
+          "TRAIN_metadata_index": 23853,
+          "base_window_index": 35155,
+          "effective_mask_bits": 32761,
+          "observed_minutes": 13,
+          "source_id": "SA:35155"
+        },
+        {
+          "TRAIN_metadata_index": 24021,
+          "base_window_index": 35323,
+          "effective_mask_bits": 24057,
+          "observed_minutes": 11,
+          "source_id": "SA:35323"
+        },
+        {
+          "TRAIN_metadata_index": 24024,
+          "base_window_index": 35326,
+          "effective_mask_bits": 32383,
+          "observed_minutes": 13,
+          "source_id": "SA:35326"
+        },
+        {
+          "TRAIN_metadata_index": 24025,
+          "base_window_index": 35327,
+          "effective_mask_bits": 4983,
+          "observed_minutes": 9,
+          "source_id": "SA:35327"
+        },
+        {
+          "TRAIN_metadata_index": 24026,
+          "base_window_index": 35328,
+          "effective_mask_bits": 31995,
+          "observed_minutes": 12,
+          "source_id": "SA:35328"
+        },
+        {
+          "TRAIN_metadata_index": 24032,
+          "base_window_index": 35334,
+          "effective_mask_bits": 32757,
+          "observed_minutes": 13,
+          "source_id": "SA:35334"
+        },
+        {
+          "TRAIN_metadata_index": 24036,
+          "base_window_index": 35338,
+          "effective_mask_bits": 32739,
+          "observed_minutes": 12,
+          "source_id": "SA:35338"
+        },
+        {
+          "TRAIN_metadata_index": 24050,
+          "base_window_index": 35352,
+          "effective_mask_bits": 32503,
+          "observed_minutes": 13,
+          "source_id": "SA:35352"
+        },
+        {
+          "TRAIN_metadata_index": 24175,
+          "base_window_index": 35477,
+          "effective_mask_bits": 31743,
+          "observed_minutes": 14,
+          "source_id": "SA:35477"
+        },
+        {
+          "TRAIN_metadata_index": 24271,
+          "base_window_index": 35573,
+          "effective_mask_bits": 32639,
+          "observed_minutes": 14,
+          "source_id": "SA:35573"
+        },
+        {
+          "TRAIN_metadata_index": 24279,
+          "base_window_index": 35581,
+          "effective_mask_bits": 32764,
+          "observed_minutes": 13,
+          "source_id": "SA:35581"
+        },
+        {
+          "TRAIN_metadata_index": 24788,
+          "base_window_index": 36521,
+          "effective_mask_bits": 2228,
+          "observed_minutes": 5,
+          "source_id": "SA:36521"
+        },
+        {
+          "TRAIN_metadata_index": 25225,
+          "base_window_index": 36958,
+          "effective_mask_bits": 32499,
+          "observed_minutes": 12,
+          "source_id": "SA:36958"
+        },
+        {
+          "TRAIN_metadata_index": 25359,
+          "base_window_index": 37092,
+          "effective_mask_bits": 31487,
+          "observed_minutes": 13,
+          "source_id": "SA:37092"
+        },
+        {
+          "TRAIN_metadata_index": 25363,
+          "base_window_index": 37096,
+          "effective_mask_bits": 28287,
+          "observed_minutes": 12,
+          "source_id": "SA:37096"
+        },
+        {
+          "TRAIN_metadata_index": 25367,
+          "base_window_index": 37100,
+          "effective_mask_bits": 29694,
+          "observed_minutes": 12,
+          "source_id": "SA:37100"
+        },
+        {
+          "TRAIN_metadata_index": 25883,
+          "base_window_index": 37616,
+          "effective_mask_bits": 31731,
+          "observed_minutes": 12,
+          "source_id": "SA:37616"
+        },
+        {
+          "TRAIN_metadata_index": 25887,
+          "base_window_index": 37620,
+          "effective_mask_bits": 30975,
+          "observed_minutes": 12,
+          "source_id": "SA:37620"
+        },
+        {
+          "TRAIN_metadata_index": 25952,
+          "base_window_index": 37685,
+          "effective_mask_bits": 32505,
+          "observed_minutes": 12,
+          "source_id": "SA:37685"
+        },
+        {
+          "TRAIN_metadata_index": 25994,
+          "base_window_index": 37727,
+          "effective_mask_bits": 30335,
+          "observed_minutes": 12,
+          "source_id": "SA:37727"
+        },
+        {
+          "TRAIN_metadata_index": 26131,
+          "base_window_index": 37864,
+          "effective_mask_bits": 12287,
+          "observed_minutes": 13,
+          "source_id": "SA:37864"
+        },
+        {
+          "TRAIN_metadata_index": 26132,
+          "base_window_index": 37865,
+          "effective_mask_bits": 32687,
+          "observed_minutes": 13,
+          "source_id": "SA:37865"
+        },
+        {
+          "TRAIN_metadata_index": 26133,
+          "base_window_index": 37866,
+          "effective_mask_bits": 59,
+          "observed_minutes": 5,
+          "source_id": "SA:37866"
+        },
+        {
+          "TRAIN_metadata_index": 26388,
+          "base_window_index": 38121,
+          "effective_mask_bits": 24439,
+          "observed_minutes": 12,
+          "source_id": "SA:38121"
+        },
+        {
+          "TRAIN_metadata_index": 26442,
+          "base_window_index": 38175,
+          "effective_mask_bits": 27135,
+          "observed_minutes": 12,
+          "source_id": "SA:38175"
+        },
+        {
+          "TRAIN_metadata_index": 26443,
+          "base_window_index": 38176,
+          "effective_mask_bits": 28926,
+          "observed_minutes": 10,
+          "source_id": "SA:38176"
+        },
+        {
+          "TRAIN_metadata_index": 26444,
+          "base_window_index": 38177,
+          "effective_mask_bits": 32732,
+          "observed_minutes": 12,
+          "source_id": "SA:38177"
+        },
+        {
+          "TRAIN_metadata_index": 26445,
+          "base_window_index": 38178,
+          "effective_mask_bits": 1015,
+          "observed_minutes": 9,
+          "source_id": "SA:38178"
+        },
+        {
+          "TRAIN_metadata_index": 26513,
+          "base_window_index": 38246,
+          "effective_mask_bits": 28371,
+          "observed_minutes": 10,
+          "source_id": "SA:38246"
+        },
+        {
+          "TRAIN_metadata_index": 26514,
+          "base_window_index": 38247,
+          "effective_mask_bits": 24167,
+          "observed_minutes": 10,
+          "source_id": "SA:38247"
+        },
+        {
+          "TRAIN_metadata_index": 26515,
+          "base_window_index": 38248,
+          "effective_mask_bits": 8167,
+          "observed_minutes": 11,
+          "source_id": "SA:38248"
+        },
+        {
+          "TRAIN_metadata_index": 26516,
+          "base_window_index": 38249,
+          "effective_mask_bits": 28663,
+          "observed_minutes": 13,
+          "source_id": "SA:38249"
+        },
+        {
+          "TRAIN_metadata_index": 26560,
+          "base_window_index": 38293,
+          "effective_mask_bits": 18431,
+          "observed_minutes": 12,
+          "source_id": "SA:38293"
+        },
+        {
+          "TRAIN_metadata_index": 26567,
+          "base_window_index": 38300,
+          "effective_mask_bits": 24575,
+          "observed_minutes": 14,
+          "source_id": "SA:38300"
+        },
+        {
+          "TRAIN_metadata_index": 29090,
+          "base_window_index": 42670,
+          "effective_mask_bits": 32319,
+          "observed_minutes": 12,
+          "source_id": "SA:42670"
+        },
+        {
+          "TRAIN_metadata_index": 29104,
+          "base_window_index": 42684,
+          "effective_mask_bits": 32704,
+          "observed_minutes": 9,
+          "source_id": "SA:42684"
+        },
+        {
+          "TRAIN_metadata_index": 29138,
+          "base_window_index": 42718,
+          "effective_mask_bits": 28687,
+          "observed_minutes": 7,
+          "source_id": "SA:42718"
+        },
+        {
+          "TRAIN_metadata_index": 29142,
+          "base_window_index": 42722,
+          "effective_mask_bits": 25599,
+          "observed_minutes": 12,
+          "source_id": "SA:42722"
+        },
+        {
+          "TRAIN_metadata_index": 29146,
+          "base_window_index": 42726,
+          "effective_mask_bits": 2047,
+          "observed_minutes": 11,
+          "source_id": "SA:42726"
+        },
+        {
+          "TRAIN_metadata_index": 29147,
+          "base_window_index": 42727,
+          "effective_mask_bits": 32752,
+          "observed_minutes": 11,
+          "source_id": "SA:42727"
+        },
+        {
+          "TRAIN_metadata_index": 29155,
+          "base_window_index": 42735,
+          "effective_mask_bits": 7,
+          "observed_minutes": 3,
+          "source_id": "SA:42735"
+        },
+        {
+          "TRAIN_metadata_index": 29199,
+          "base_window_index": 42779,
+          "effective_mask_bits": 32256,
+          "observed_minutes": 6,
+          "source_id": "SA:42779"
+        },
+        {
+          "TRAIN_metadata_index": 29218,
+          "base_window_index": 42798,
+          "effective_mask_bits": 28672,
+          "observed_minutes": 3,
+          "source_id": "SA:42798"
+        },
+        {
+          "TRAIN_metadata_index": 29311,
+          "base_window_index": 42891,
+          "effective_mask_bits": 32640,
+          "observed_minutes": 8,
+          "source_id": "SA:42891"
+        },
+        {
+          "TRAIN_metadata_index": 29315,
+          "base_window_index": 42895,
+          "effective_mask_bits": 24607,
+          "observed_minutes": 7,
+          "source_id": "SA:42895"
+        },
+        {
+          "TRAIN_metadata_index": 29376,
+          "base_window_index": 42956,
+          "effective_mask_bits": 31871,
+          "observed_minutes": 12,
+          "source_id": "SA:42956"
+        },
+        {
+          "TRAIN_metadata_index": 39043,
+          "base_window_index": 56722,
+          "effective_mask_bits": 7166,
+          "observed_minutes": 11,
+          "source_id": "SA:56722"
+        },
+        {
+          "TRAIN_metadata_index": 47662,
+          "base_window_index": 69789,
+          "effective_mask_bits": 8190,
+          "observed_minutes": 12,
+          "source_id": "SA:69789"
+        },
+        {
+          "TRAIN_metadata_index": 62884,
+          "base_window_index": 93920,
+          "effective_mask_bits": 992,
+          "observed_minutes": 5,
+          "source_id": "SA:93920"
+        }
+      ]
+    }
+  },
+  "actual_representatives": 514,
+  "max_feature_abs_error": 0.0,
+  "max_weight_abs_error": 0.0,
+  "raw_label_rounded_pool_gap_max": 0.001055598258972168,
+  "synthetic_partial_rounding_URN_max_feature_error": 0.0,
+  "synthetic_max_weight_error": 0.0,
+  "common_gain20db_and_chunk1_checks": true,
+  "input_labels_dict_rejected": true,
+  "source_unchanged": true,
+  "elapsed_seconds": 4.737498790957034,
+  "new_model_fit_or_inference_or_MPS": false,
+  "Test_or_heldout_arrays": false,
+  "scope": "Complete fivefold TRAIN-mask-pattern coverage, one actual mixed-input representative per pattern; not all TRAIN rows numerically compared."
+}

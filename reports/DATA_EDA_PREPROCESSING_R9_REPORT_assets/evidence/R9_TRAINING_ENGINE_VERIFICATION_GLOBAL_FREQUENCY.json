@@ -1,0 +1,131 @@
+{
+  "format": "r9_training_engine_numeric_fixture_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "real_source_dataset_or_Test_OUTER_cross_accessed": false,
+  "formal_training_or_GPU_SSH_external_transmission": false,
+  "code_sha256": {
+    "pipeline/training_r9.py": "e7df7e3acc5c0358cc3e8cc4558039c6b3985e90be04abb12fdc0c09507bd11a",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c"
+  },
+  "fixture_code_sha256": "31ec2807437d1871920aa61d4adeefdad9bc3216f29245ff6e1d2d4d6407bcc1",
+  "cases": [
+    {
+      "kind": "bg_cnn",
+      "status": "passed",
+      "fixture_only": true,
+      "actual_Adam_steps": 2,
+      "epochs": 2,
+      "TRAIN_set_epoch_calls": [
+        1,
+        2
+      ],
+      "validation_set_epoch_calls": [],
+      "validation_unchanged": true,
+      "validation_byte_fingerprint_fixed": true,
+      "best_window_epoch": 2,
+      "best_macro_epoch": 2,
+      "checkpoint_reload_prediction_bitwise": true,
+      "optimizer_scheduler_last_state_verified": true,
+      "resume_rejected": true,
+      "weighted_loss_distinct_from_unweighted_metric": true,
+      "parameters": 1793
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "status": "passed",
+      "fixture_only": true,
+      "actual_Adam_steps": 2,
+      "epochs": 2,
+      "TRAIN_set_epoch_calls": [
+        1,
+        2
+      ],
+      "validation_set_epoch_calls": [],
+      "validation_unchanged": true,
+      "validation_byte_fingerprint_fixed": true,
+      "best_window_epoch": 2,
+      "best_macro_epoch": 2,
+      "checkpoint_reload_prediction_bitwise": true,
+      "optimizer_scheduler_last_state_verified": true,
+      "resume_rejected": true,
+      "weighted_loss_distinct_from_unweighted_metric": true,
+      "parameters": 22709
+    },
+    {
+      "kind": "fdy",
+      "status": "passed",
+      "fixture_only": true,
+      "actual_Adam_steps": 2,
+      "epochs": 2,
+      "TRAIN_set_epoch_calls": [
+        1,
+        2
+      ],
+      "validation_set_epoch_calls": [],
+      "validation_unchanged": true,
+      "validation_byte_fingerprint_fixed": true,
+      "best_window_epoch": 2,
+      "best_macro_epoch": 2,
+      "checkpoint_reload_prediction_bitwise": true,
+      "optimizer_scheduler_last_state_verified": true,
+      "resume_rejected": true,
+      "weighted_loss_distinct_from_unweighted_metric": true,
+      "parameters": 3933
+    },
+    {
+      "kind": "itransformer",
+      "status": "passed",
+      "fixture_only": true,
+      "actual_Adam_steps": 2,
+      "epochs": 2,
+      "TRAIN_set_epoch_calls": [
+        1,
+        2
+      ],
+      "validation_set_epoch_calls": [],
+      "validation_unchanged": true,
+      "validation_byte_fingerprint_fixed": true,
+      "best_window_epoch": 2,
+      "best_macro_epoch": 2,
+      "checkpoint_reload_prediction_bitwise": true,
+      "optimizer_scheduler_last_state_verified": true,
+      "resume_rejected": true,
+      "weighted_loss_distinct_from_unweighted_metric": true,
+      "parameters": 2055
+    }
+  ],
+  "failure_guards": [
+    {
+      "case": "NaN",
+      "failure_recorded": true,
+      "resume_forbidden": true,
+      "CUDA_OOM_simulated": false
+    },
+    {
+      "case": "OOM",
+      "failure_recorded": true,
+      "resume_forbidden": true,
+      "CUDA_OOM_simulated": true
+    },
+    {
+      "case": "negative_weight",
+      "failure_recorded": true,
+      "resume_forbidden": true,
+      "CUDA_OOM_simulated": false
+    }
+  ],
+  "loss_formula_oracle_exact": true,
+  "raw_label_rounded_weight_gap_validated_not_relabelled": true,
+  "invalid_known_target_rejected": true,
+  "production_non100_rejected": true,
+  "production100_CUDA_BF16_workers4_not_executed_here": true,
+  "temporary_numeric_outputs_must_not_be_reused": "/private/tmp/r9-engine-numeric-9ukdnx4d",
+  "elapsed_seconds": 1.9491388332098722
+}

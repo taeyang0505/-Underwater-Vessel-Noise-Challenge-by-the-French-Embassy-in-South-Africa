@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "code_sha256": {
+    "pipeline/r16_multisupport_data.py": "2a107b3a1ae84e1c07f7cbb41db359dd11b53fbcfac44de694ceb0fb7116cbbd",
+    "pipeline/training_r16_multisupport.py": "d67603c3628472ba7f8bfb59d01810d32ffef78b0e68107a84a3f01c7f3fb49b",
+    "pipeline/models_r16_multisupport.py": "a55cb165bcf999f02e4a2c3a555795cf96ba449f37f63c3ce03fd0a445647264",
+    "pipeline/models_r16_f1_preflight.py": "b1f179fa5655fc7133375b63ebf84916e6c62f8496ff94e6e5c0ee9f6ce6724f",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "pipeline/training_r16_multisupport_fivefold.py": "e08595a93e51670c7cff2ed79af5aa17c04699a409cf55fc57f2d3d7b598bdd3",
+    "ops/run_r16_multisupport_fivefold.py": "35fb6f11a3bbc0cc50b890a092b7566ca6e1c301faabf50b3a04dcf927b57fce",
+    "ops/finalize_r16_multisupport_fivefold.py": "9c37527d98fe9373685cc54d6d657129754a9e90c63338e25b1535487e51befe"
+  },
+  "32_unique_new_jobs": true,
+  "40_unique_full_model_paths": true,
+  "fold0_completion_barrier_rejects_early_start": true,
+  "bad_CSV_hash_and_row_count_rejected": true,
+  "fold_source_purge_proof": [
+    {
+      "fold": 1,
+      "train_rows": 61368,
+      "cv_rows": 1000,
+      "background_purge": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        }
+      ],
+      "reference_component_overlap": 0,
+      "validation_labels_used_for_optimization": false
+    },
+    {
+      "fold": 2,
+      "train_rows": 61259,
+      "cv_rows": 1000,
+      "background_purge": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        }
+      ],
+      "reference_component_overlap": 0,
+      "validation_labels_used_for_optimization": false
+    },
+    {
+      "fold": 3,
+      "train_rows": 61546,
+      "cv_rows": 1000,
+      "background_purge": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        }
+      ],
+      "reference_component_overlap": 0,
+      "validation_labels_used_for_optimization": false
+    },
+    {
+      "fold": 4,
+      "train_rows": 61685,
+      "cv_rows": 1000,
+      "background_purge": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        }
+      ],
+      "reference_component_overlap": 0,
+      "validation_labels_used_for_optimization": false
+    }
+  ],
+  "disposable_CPU_checks": [
+    {
+      "kind": "bg_cnn",
+      "CPU_forward_backward_checkpoint_reload": "passed",
+      "maximum_reload_error": 0.0,
+      "disposable_only": true
+    },
+    {
+      "kind": "fdy",
+      "CPU_forward_backward_checkpoint_reload": "passed",
+      "maximum_reload_error": 0.0,
+      "disposable_only": true
+    },
+    {
+      "kind": "itransformer",
+      "CPU_forward_backward_checkpoint_reload": "passed",
+      "maximum_reload_error": 0.0,
+      "disposable_only": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "CPU_forward_backward_checkpoint_reload": "passed",
+      "maximum_reload_error": 0.0,
+      "disposable_only": true
+    }
+  ],
+  "new_fold_full_training_started": false,
+  "full_finalization_executed": false,
+  "MPS_validation": "reuses unchanged actual Fold0 preflight after SHA check",
+  "Test_used": false,
+  "locked_panels_used": false,
+  "elapsed_seconds": 3.6427883747965097
+}

@@ -1,0 +1,22 @@
+{
+  "seed": 2026102716,
+  "epochs": 100,
+  "NN_early_stopping": false,
+  "optimizer": "Adam",
+  "regressor_features": "R6v2 relative8, compact466 tree; no PCA/LFanchor",
+  "classifier_features": "temporal-only, no w/profile/PCA/anchor; separate NN parameters",
+  "arms": [
+    "control",
+    "mixed"
+  ],
+  "selection": "all local_fit operators equal weight, no gate/report access during fitting",
+  "fixed_small_ensemble": {
+    "tree_regressor": 0.6,
+    "NN_regressor": 0.4,
+    "tree_classifier": 0.5,
+    "NN_classifier": 0.5
+  },
+  "Test_used": false,
+  "code_sha256": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+  "manifest_sha256": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1"
+}

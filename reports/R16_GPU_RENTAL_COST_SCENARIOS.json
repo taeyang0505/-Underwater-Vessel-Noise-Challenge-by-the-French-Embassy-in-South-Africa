@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-10-27T09:28:52.539787+00:00",
+  "scope": "4 neural architectures x 5 folds x 100 epochs = 2000 epochs; independent classifiers included; Tree5 remains Mac CPU; excludes TimeMoE/Dasheng",
+  "historical_R9_4090_evidence": {
+    "bg_cnn": {
+      "log": "ops/server_backups/r9_gpu_r1/fold_00_bg_cnn_completed_r1/restored/fold_00/models/bg_cnn/epochs.jsonl",
+      "epochs": 100,
+      "rows_per_epoch": 78869,
+      "elapsed_seconds": 4544.023014706094
+    },
+    "fdy": {
+      "log": "ops/server_backups/r9_gpu_r1/fold_00_fdy_completed_r1/restored/fold_00/models/fdy/epochs.jsonl",
+      "epochs": 100,
+      "rows_per_epoch": 78869,
+      "elapsed_seconds": 4561.980151618016
+    },
+    "itransformer": {
+      "log": "ops/server_backups/r9_gpu_r1/fold_00_itransformer_boundary_handoff_r1/restored/fold_00/models/itransformer/epochs.jsonl",
+      "epochs": 100,
+      "rows_per_epoch": 78869,
+      "elapsed_seconds": 4637.037458477076
+    },
+    "tfgrid_fdy_conformer": {
+      "log": "ops/server_backups/r9_gpu_r1/fold_00_tfgrid_fdy_conformer_completed_r1/restored/fold_00/models/tfgrid_fdy_conformer/epochs.jsonl",
+      "epochs": 100,
+      "rows_per_epoch": 78869,
+      "elapsed_seconds": 4588.824980142992
+    }
+  },
+  "R16_train_rows_by_fold": [
+    61446,
+    61368,
+    61259,
+    61546,
+    61685
+  ],
+  "R9_N_only_projection_hours": 19.841113561946482,
+  "projection_limitations": [
+    "R9 had online synthesis and CPU features; R16 has precomputed features",
+    "R9 BF16 and R16 current FP32 differ",
+    "R16 independent classifier has additional work",
+    "No R16 CUDA or RTX5090/A100/B200 benchmark yet; current runner is CPU/MPS and needs a separately verified CUDA path"
+  ],
+  "published_Pods_rates_USD_hour": {
+    "RTX4090": 0.89,
+    "RTX5090": 1.19,
+    "A100_80GB": 1.79,
+    "B200": 7.99
+  },
+  "price_source": "https://www.runpod.io/pricing",
+  "historical_projection_rounded_for_scenarios_hours": 20,
+  "training_only_reference_cost_USD": 17.8,
+  "same_training_cost_max_hours": {
+    "RTX4090": 20.0,
+    "RTX5090": 14.957983193277313,
+    "A100_80GB": 9.94413407821229,
+    "B200": 2.2277847309136423
+  },
+  "required_speedup_over_4090": {
+    "RTX4090": 1.0,
+    "RTX5090": 1.3370786516853932,
+    "A100_80GB": 2.0112359550561796,
+    "B200": 8.97752808988764
+  },
+  "4090_budget_hours_training": [
+    16,
+    26
+  ],
+  "setup_validation_backup_hours_assumption": [
+    1,
+    3
+  ],
+  "4090_budget_total_USD_including_50GB_active_disk": [
+    15.248055555555556,
+    26.011388888888888
+  ],
+  "storage_assumption": {
+    "GB": 50,
+    "USD_GB_month": 0.1,
+    "month_hours": 720,
+    "source": "https://docs.runpod.io/pods/storage/types"
+  },
+  "same_setup_2h_examples_assumptions_not_measurements": {
+    "4090": {
+      "training_h": 20,
+      "total_h": 22,
+      "cost": 19.732777777777777
+    },
+    "5090_if_1_5x": {
+      "training_h": 13.333333333333334,
+      "total_h": 15.333333333333334,
+      "cost": 18.353148148148147
+    }
+  },
+  "tax_exchange_payment_fees_excluded": true,
+  "rental_purchase_authorized_or_started": false
+}

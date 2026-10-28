@@ -1,0 +1,177 @@
+[
+  {
+    "work": "FDY convolution",
+    "year_venue": "2022 · INTERSPEECH",
+    "primary": "https://arxiv.org/abs/2203.15296",
+    "project": "https://github.com/frednam93/FDY-SED",
+    "decision": "주파수 이동 불변 가정을 완화. 25대역·15분 마스크 회귀로 독립 구현해 비교. 원래 SED 성적을 대회 성적으로 해석하지 않음."
+  },
+  {
+    "work": "Frequency Dynamic Convolutions",
+    "year_venue": "2025",
+    "primary": "https://arxiv.org/abs/2506.12785",
+    "project": "https://github.com/frednam93/FDY-SED",
+    "decision": "DFD/PFD/MDFD 확장 조사. 짧은 시간축에서는 모델 확대보다 검증 우선."
+  },
+  {
+    "work": "iTransformer",
+    "year_venue": "2024 · ICLR",
+    "primary": "https://arxiv.org/abs/2310.06625",
+    "project": "https://github.com/thuml/iTransformer",
+    "decision": "주파수 25개를 토큰으로 변환. 시간 예측 백본을 추가 에너지 마스크 회귀로 변경."
+  },
+  {
+    "work": "ModernTCN",
+    "year_venue": "2024 · ICLR",
+    "primary": "https://openreview.net/pdf?id=vpJMJerXHU",
+    "project": "https://github.com/luodhhh/ModernTCN",
+    "decision": "시간·변수 축 컨볼루션 후보. 이번 CPU 실험에는 미포함; 장기 예측 성능이 15분 회귀 우위를 보장하지 않음."
+  },
+  {
+    "work": "TabM",
+    "year_venue": "2025 · ICLR",
+    "primary": "https://arxiv.org/abs/2410.24210",
+    "project": "https://github.com/yandex-research/tabm",
+    "decision": "공식 Apache-2.0 패키지. 멤버별 MSE를 평균하는 학습 방식 적용."
+  },
+  {
+    "work": "TabICLv2",
+    "year_venue": "2026 · ICML",
+    "primary": "https://proceedings.mlr.press/v306/qu26a.html",
+    "project": "https://github.com/soda-inria/tabicl",
+    "decision": "최신 표형 기반 모델 비교 후보. 별도 GPU·체크포인트·전처리 감사 필요. 미실행. 이 대회 SOTA라고 주장하지 않음."
+  },
+  {
+    "work": "TabR",
+    "year_venue": "2024 · ICLR",
+    "primary": "https://arxiv.org/abs/2307.14338",
+    "project": "https://github.com/yandex-research/tabular-dl-tabr",
+    "decision": "검색을 특징에 결합하는 연구. 실제 구현은 개별 클립 검색 대신 학습 그룹 집계 프로토타입."
+  },
+  {
+    "work": "ModernNCA",
+    "year_venue": "2025 · ICLR",
+    "primary": "https://arxiv.org/abs/2407.03257",
+    "project": "https://openreview.net/pdf?id=JytL2MrlLT",
+    "decision": "이웃 기반 표형 학습의 비교 근거. 단일 외부 클립 식별에는 사용하지 않음."
+  },
+  {
+    "work": "TabPFN",
+    "year_venue": "2025 · Nature",
+    "primary": "https://www.nature.com/articles/s41586-024-08328-6",
+    "project": "",
+    "decision": "표형 기반 모델 계열 조사. 크기·가중치 라이선스·규칙 적합성 확인 전 실행 제외."
+  },
+  {
+    "work": "LightGBM",
+    "year_venue": "2017 · NeurIPS",
+    "primary": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
+    "project": "https://github.com/microsoft/LightGBM",
+    "decision": "L2 회귀와 별도 추가 여부 분류. 기본/물리 특징/프로토타입을 동일 조건 비교."
+  },
+  {
+    "work": "CatBoost",
+    "year_venue": "2018 · NeurIPS",
+    "primary": "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+    "project": "https://github.com/catboost/catboost",
+    "decision": "대안 GBDT 후보; 현재 CPU 비교에는 미포함."
+  },
+  {
+    "work": "InceptionTime",
+    "year_venue": "2020 · DMKD",
+    "primary": "https://arxiv.org/abs/1909.04939",
+    "project": "https://github.com/hfawaz/inceptiontime",
+    "decision": "다중 시간 스케일 컨볼루션 후보. 짧은 입력에 맞는 커널 폭 검토 필요."
+  },
+  {
+    "work": "TSMixer",
+    "year_venue": "2023",
+    "primary": "https://arxiv.org/abs/2303.06053",
+    "project": "https://github.com/google-research/google-research/tree/master/tsmixer",
+    "decision": "축 혼합 MLP 후보. TabM과 비교할 후속 실험."
+  },
+  {
+    "work": "BEATs",
+    "year_venue": "2023 · ICML",
+    "primary": "https://arxiv.org/abs/2212.09058",
+    "project": "https://github.com/microsoft/unilm/tree/master/beats",
+    "decision": "파형 오디오 사전학습. 25대역 요약값에 원본 파형이 복원되는 것은 아님."
+  },
+  {
+    "work": "AudioMAE",
+    "year_venue": "2022 · NeurIPS",
+    "primary": "https://arxiv.org/abs/2207.06405",
+    "project": "https://github.com/facebookresearch/AudioMAE",
+    "decision": "외부 파형 표현의 후보. 대회 요약 입력과 해상도가 달라 직접 적용하지 않음."
+  },
+  {
+    "work": "OceanBEATs corrected release",
+    "year_venue": "2026 · revision in review",
+    "primary": "https://huggingface.co/BiologgingSolutions/OceanBEATs/blob/main/README.md",
+    "project": "",
+    "decision": "수정된 2026년 9월 encoder/head 쌍 조사. 폐기된 이전 가중치는 제외. 일부 원천 학습 자료의 비공개성과 입력 차이 때문에 현재 파이프라인에는 미사용."
+  },
+  {
+    "work": "AudioRAG",
+    "year_venue": "2026 · Audio-AAAI",
+    "primary": "https://arxiv.org/abs/2602.10656",
+    "project": "",
+    "decision": "오디오 질의응답·검색 벤치마크. 에너지 비율 RMSE 개선의 직접 근거는 아님."
+  },
+  {
+    "work": "TangoFlux",
+    "year_venue": "2026 · ICLR",
+    "primary": "https://arxiv.org/abs/2412.21037",
+    "project": "https://github.com/declare-lab/TangoFlux",
+    "decision": "텍스트→오디오 flow 모델. 생성 음질이 수중 음향 물리·정확한 에너지 라벨을 보장하지 않아 주 합성기로 미채택."
+  },
+  {
+    "work": "MixIT",
+    "year_venue": "2020 · NeurIPS",
+    "primary": "https://arxiv.org/abs/2006.12701",
+    "project": "https://research.google/pubs/unsupervised-sound-separation-using-mixture-invariant-training/",
+    "decision": "혼합물 기반 비지도 분리 연구. 25대역 요약값에서 유일한 실제 선박 성분을 복원할 수 있다는 보장은 없음."
+  },
+  {
+    "work": "UATFSN",
+    "year_venue": "2025 · Ocean Engineering",
+    "primary": "https://doi.org/10.1016/j.oceaneng.2025.123234",
+    "project": "",
+    "decision": "수중 음향 분류의 경량 모델 조사. 클래스 정확도와 추가 에너지 비율 회귀는 과제가 다름."
+  },
+  {
+    "work": "UATR-SLM",
+    "year_venue": "2026",
+    "primary": "https://arxiv.org/abs/2601.18086",
+    "project": "",
+    "decision": "수중 오디오 모델 계열 조사. 원본 파형·분류 과제와의 입력/목표 차이로 현재 실험 제외."
+  },
+  {
+    "work": "ONCship",
+    "year_venue": "2026 · preprint",
+    "primary": "https://arxiv.org/abs/2610.19722",
+    "project": "https://huggingface.co/datasets/zcao123/ONCship",
+    "decision": "대규모 추가 자료 후보. 중복·라이선스·다운로드 규모 검토 전 수집/학습에 사용하지 않음."
+  },
+  {
+    "work": "HearMyShip dataset paper",
+    "year_venue": "2025 · Scientific Data",
+    "primary": "https://doi.org/10.1038/s41597-025-04584-x",
+    "project": "https://doi.org/10.57760/sciencedb.13099",
+    "decision": "연구 논문의 라이선스와 데이터 CC0를 구분. 원본 배포 MD5와 일치하는 WAV만 사용."
+  },
+  {
+    "work": "VTUAD v1.3.2",
+    "year_venue": "2026 · data release",
+    "primary": "https://doi.org/10.5281/zenodo.23037895",
+    "project": "https://doi.org/10.17616/R3RW43",
+    "decision": "strict interval 전체와 파일별 체크섬 사용. AIS 라벨은 약한 시나리오 라벨."
+  },
+  {
+    "work": "POMDP planning",
+    "year_venue": "1998 · Artificial Intelligence",
+    "primary": "https://doi.org/10.1016/S0004-3702(98)00023-X",
+    "project": "",
+    "decision": "현재 과제에는 행동·환경 전이·순차 보상이 없어 POMDP/RL을 주 학습기로 도입할 근거가 부족함."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "n": 1200,
+  "rmse": 0.3755490184062555,
+  "zero_addition_mean": 0.06526991372611236,
+  "seed": 7401,
+  "references": "3 actual contiguous NOAA 15-minute intervals, 1 deployment, 3 dates; unknown hull independence",
+  "policy_sha256": "5eff2d71b04790d1e5e7300d9b3c4e319e25d6934d788074f1481becefdbcaae",
+  "used_for_model_selection": false,
+  "test_accessed": false,
+  "training_mean_constant_rmse": 0.31934246699825153,
+  "transfer_assessment": "failed: worse than training-mean constant baseline"
+}

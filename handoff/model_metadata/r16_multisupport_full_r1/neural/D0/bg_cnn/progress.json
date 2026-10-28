@@ -1,0 +1,26 @@
+{
+  "regime": "D0",
+  "kind": "bg_cnn",
+  "epoch": 35,
+  "train_rmse": 0.0571904385836891,
+  "train_cell_mse": 0.014140399953414871,
+  "train_classifier_BCE": 0.1646872529530166,
+  "selection": {
+    "n": 2400,
+    "rmse": 0.10694854123235376,
+    "bias": -0.025447163578181362,
+    "prediction_mean": 0.14572375902639276,
+    "prediction_rms": 0.22584072960002255,
+    "share_auc": 0.8640755208333338,
+    "classifier_auc": 0.9364453125000005,
+    "classifier_mean": 0.7503246865801825,
+    "classifier_ge099": 0.4454166666666667
+  },
+  "best_RMSE": 0.10065085757227729,
+  "best_regression_epoch": 23,
+  "best_classifier_AUC": 0.9394335937500005,
+  "best_classifier_epoch": 21,
+  "learning_rate": 0.0007434680686803494,
+  "epoch_seconds": 64.42120941635221,
+  "driver_bytes": 1176453120
+}

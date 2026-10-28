@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "production_NN_launched": true,
+  "server": "root@213.173.108.140",
+  "port": 19324,
+  "base": "/workspace/underwater_vessel_noise_r9_r1",
+  "project": "/workspace/underwater_vessel_noise_r9_r1/project",
+  "started_KST": "2026-10-26 15:36:13 KST",
+  "supervisor_pid": 2256,
+  "driver_pid": 2257,
+  "source_config_or_dataset_changed": false,
+  "Test_or_WAV_or_old_weights_or_credentials_transferred": false,
+  "package_receipt": "reports/R9_GPU_LOCAL_PACKAGE_RECEIPT.json",
+  "portability_report": "reports/R9_GPU_PACKAGE_PORTABILITY.json",
+  "actual_CUDA_preflight_report": "reports/r9_remote_r1/R9_CUDA_FULL_MODEL_PREFLIGHT.json",
+  "receipts": {
+    "reports/r9_remote_r1/nn_supervisor_state.json": "627fb61ac586690b75be9125e17708916f8228906b3d35773ce1007ac087e26f",
+    "reports/r9_remote_r1/deployment_verification.json": "691d2b54a65e3b59643490916853330f73afaeda512206a1fb2cb5611ef5d711",
+    "reports/r9_remote_r1/R9_CUDA_FULL_MODEL_PREFLIGHT.json": "8d5b2848b07afd7cdd96f6145a52ad8ac16a50aff552a93ebb5d68cc6e3b0df9",
+    "reports/r9_remote_r1/R9_GPU_PREFLIGHT.json": "099b2426f81322a280defa51f37046d6194be11513310bb4ef5b59de479e5d34",
+    "reports/r9_remote_r1/environment_frozen.json": "4e63b75f07201696bdd8bff513c185b5b57ae5ea5c63e05ab6b0a7d4f2ebf431"
+  },
+  "CUDA_cases": [
+    {
+      "kind": "bg_cnn",
+      "parameters": 1487873,
+      "elapsed_seconds": 1.8459478790173307,
+      "peak_allocated_MiB": 672.267578125,
+      "peak_reserved_MiB": 734.0,
+      "batch": 128,
+      "BF16": true,
+      "FP32_pool": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "parameters": 2562085,
+      "elapsed_seconds": 0.35571979999076575,
+      "peak_allocated_MiB": 2991.93017578125,
+      "peak_reserved_MiB": 3668.0,
+      "batch": 128,
+      "BF16": true,
+      "FP32_pool": true
+    },
+    {
+      "kind": "fdy",
+      "parameters": 129901,
+      "elapsed_seconds": 0.05053589609451592,
+      "peak_allocated_MiB": 263.3203125,
+      "peak_reserved_MiB": 428.0,
+      "batch": 128,
+      "BF16": true,
+      "FP32_pool": true
+    },
+    {
+      "kind": "itransformer",
+      "parameters": 295599,
+      "elapsed_seconds": 0.015804948983713984,
+      "peak_allocated_MiB": 63.69873046875,
+      "peak_reserved_MiB": 436.0,
+      "batch": 128,
+      "BF16": true,
+      "FP32_pool": true
+    }
+  ],
+  "first_actual_epoch": {
+    "fold": 0,
+    "model": "bg_cnn",
+    "completed_epoch": 1,
+    "TRAIN_examples": 78869,
+    "optimizer_steps": 617,
+    "selection_rmse": 0.0927662057102183,
+    "selection_site_macro_rmse": 0.06964448528970109,
+    "epoch_elapsed_seconds": 46.621611151029356
+  },
+  "completion_claimed": false,
+  "server_tree_fitting": false,
+  "failure_policy": "stop; no automatic restart/resume/partial reuse",
+  "environment": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "torch": "2.8.0+cu128",
+    "CUDA": "12.8",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "pyarrow": "26.0.0",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "tabm": "0.0.3",
+    "GPU": "NVIDIA GeForce RTX 4090",
+    "GPU_memory_bytes": 25252724736,
+    "bf16_supported": true,
+    "cgroup_memory_bytes": 60999999488,
+    "cgroup_cpu_quota": 1360000,
+    "cgroup_cpu_period": 100000,
+    "pip_check": "passed"
+  },
+  "operator_supervisor_sha256": "782915ace432a9828c281173f286bbedfdae3aa377dece37b1b8efd085184a86"
+}

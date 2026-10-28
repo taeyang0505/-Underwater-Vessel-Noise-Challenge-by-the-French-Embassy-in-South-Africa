@@ -1,0 +1,167 @@
+{
+  "status": "all prepared CV folds passed training-input gate",
+  "training_executed": false,
+  "outer_validation_read": false,
+  "folds": [
+    {
+      "fold": "fold_00",
+      "data_package_hash": "e047f0ce1c0bb4f6344dfd9a7c807f3ab520628affbf47352efa0838fd0e5072",
+      "splits": {
+        "train": 16000,
+        "validation": 3000
+      },
+      "outer_validation_opened": false,
+      "verification": {
+        "readiness_manifest_sha256": "90cd1c7a385cbb821a71f41a2248a788f16c8b2a156ac8922a0fc799c5983498",
+        "data_package_hash": "e047f0ce1c0bb4f6344dfd9a7c807f3ab520628affbf47352efa0838fd0e5072",
+        "splits": {
+          "train": {
+            "examples": 16000,
+            "max_cell_target_error": 5.498045224650028e-07,
+            "npz_sha256": "72259a31daa7e4908163a795fca15823861a3bfd494a6dc58658a88fa7dbef47"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.1195487021351553e-07,
+            "npz_sha256": "5648b6509b70b0e3c7495fe3ec538c4574d51b8577d53f3884b182f2516823da"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "validation_metadata.parquet"
+        ]
+      }
+    },
+    {
+      "fold": "fold_01",
+      "data_package_hash": "50b4e0e7746be1290110caead2f7b4d7a245a47cdef17a4a47e37eb8a4715931",
+      "splits": {
+        "train": 16000,
+        "validation": 3000
+      },
+      "outer_validation_opened": false,
+      "verification": {
+        "readiness_manifest_sha256": "6053346a4206da6cc60246018c8d3dd63a400799e1d9f3df5fb1314e4c700b24",
+        "data_package_hash": "50b4e0e7746be1290110caead2f7b4d7a245a47cdef17a4a47e37eb8a4715931",
+        "splits": {
+          "train": {
+            "examples": 16000,
+            "max_cell_target_error": 5.31763995170742e-07,
+            "npz_sha256": "1d1cdc3c752d90f8701dd651df1f4c1c01721673650f2f65d0b6f1a212a695e7"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.749328866820001e-07,
+            "npz_sha256": "383315810cad64f7bbe8f778e72eaad8b6ae9157720c0d98df3348bf8f1613e8"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "validation_metadata.parquet"
+        ]
+      }
+    },
+    {
+      "fold": "fold_02",
+      "data_package_hash": "1dd1224c2e36fbbb0a34ff5154cfe0a7d2674a87ea333e1f6982957333a86525",
+      "splits": {
+        "train": 16000,
+        "validation": 3000
+      },
+      "outer_validation_opened": false,
+      "verification": {
+        "readiness_manifest_sha256": "b7b5defa67e1155008b4ca3dfd11284935751d7307e342754c6b2aa8444ac9e3",
+        "data_package_hash": "1dd1224c2e36fbbb0a34ff5154cfe0a7d2674a87ea333e1f6982957333a86525",
+        "splits": {
+          "train": {
+            "examples": 16000,
+            "max_cell_target_error": 3.5136687143166867e-07,
+            "npz_sha256": "67833091ba30a44eecd2d1c030c638db258f5e09fd82a1add699fdbd52375691"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.151468830342452e-07,
+            "npz_sha256": "eaf4fc9a65c40f2ceb82a1b7fc56b5e9967515c1b64abe3dd531fe0235d3b8e2"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "validation_metadata.parquet"
+        ]
+      }
+    },
+    {
+      "fold": "fold_03",
+      "data_package_hash": "4f438f34bb5c2a43a7f4fdc2b12fe7fe132515f1ab3c3e025725a70c60cf99d0",
+      "splits": {
+        "train": 16000,
+        "validation": 3000
+      },
+      "outer_validation_opened": false,
+      "verification": {
+        "readiness_manifest_sha256": "920c3b6fa5ba1a89ea7d7c6ea708e6296cf4d694cf855cc3a77a9684f94eeb26",
+        "data_package_hash": "4f438f34bb5c2a43a7f4fdc2b12fe7fe132515f1ab3c3e025725a70c60cf99d0",
+        "splits": {
+          "train": {
+            "examples": 16000,
+            "max_cell_target_error": 4.936092398155623e-07,
+            "npz_sha256": "906aaa13368c2b70613d3ec69d3b148255c7c425d3afd6482456459c1c732802"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.8921724898610677e-07,
+            "npz_sha256": "5539ad9251292688173137a11112db503b65757962cf8e3c5a413c09b06c9512"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "validation_metadata.parquet"
+        ]
+      }
+    },
+    {
+      "fold": "fold_04",
+      "data_package_hash": "4657e26b9f42bfba50b878af125b0b4c446e9ebeb92346b18e3ad25b39bce79b",
+      "splits": {
+        "train": 16000,
+        "validation": 3000
+      },
+      "outer_validation_opened": false,
+      "verification": {
+        "readiness_manifest_sha256": "01d1e5d42dec4dfcd8098c7cb9f44b852099fe687fcc3009d8e6ebd05bb35c26",
+        "data_package_hash": "4657e26b9f42bfba50b878af125b0b4c446e9ebeb92346b18e3ad25b39bce79b",
+        "splits": {
+          "train": {
+            "examples": 16000,
+            "max_cell_target_error": 4.912508083099176e-07,
+            "npz_sha256": "65864f3888f42fa0fb2b702c5570280b32601b6827f6c5b8182ea7c973d1ad61"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.138175607708682e-07,
+            "npz_sha256": "2e11d9431fa2b09b2d6059f5104768211ab0f87e75e6515528b594e362ce06f8"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "validation_metadata.parquet"
+        ]
+      }
+    }
+  ]
+}

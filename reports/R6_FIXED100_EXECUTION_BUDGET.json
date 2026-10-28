@@ -1,0 +1,362 @@
+{
+  "status": "read_only_budget_completed",
+  "created_utc": "2026-10-25T20:27:38.122524+00:00",
+  "scope": "five small CNN arms at100epochs each; not five CV folds or paused R5 large-backbone training",
+  "actual_new_model_fit_started_by_this_audit": false,
+  "Test_values_or_prediction_outputs_read": false,
+  "existing_timings": [
+    {
+      "arm": "r4law_legacy8_global",
+      "observed_epochs": 32,
+      "median_epoch_seconds": 8.694365084171295,
+      "p10_epoch_seconds": 8.663244999945164,
+      "p90_epoch_seconds": 8.746597750112414,
+      "estimated_preparation_seconds": 23.087229249998927,
+      "finalization_seconds": 0.31514466740190983,
+      "estimated_100epoch_seconds": 892.8388823345304,
+      "parameters": 64449,
+      "history_sha256": "fa37fc5a27951953583395ea63f50f3fa5dd5f65f5af11f2a5fc5f8b4c4dfc88",
+      "summary_sha256": "3a36c1bc8c502edd5d28ce47db434bb6e3adfa44c2e18b3910728442cade651b"
+    },
+    {
+      "arm": "r4law_relative8_global",
+      "observed_epochs": 32,
+      "median_epoch_seconds": 8.644266250543296,
+      "p10_epoch_seconds": 8.595654582604766,
+      "p90_epoch_seconds": 8.702840874902904,
+      "estimated_preparation_seconds": 9.189534957520664,
+      "finalization_seconds": 0.31239345856010914,
+      "estimated_100epoch_seconds": 873.9285534704104,
+      "parameters": 64449,
+      "history_sha256": "21055cf07533c7518eff5b2928fca574d12094021923403d189bf12e115e7d38",
+      "summary_sha256": "6d045773ff662a8f6c7b007fab5813c737e15c898d6cb5229ede70db175e8870"
+    },
+    {
+      "arm": "r6law_legacy8_global",
+      "observed_epochs": 28,
+      "median_epoch_seconds": 8.913838291540742,
+      "p10_epoch_seconds": 8.656644183024763,
+      "p90_epoch_seconds": 9.288361092656851,
+      "estimated_preparation_seconds": 23.76206145901233,
+      "finalization_seconds": 0.3380767507478595,
+      "estimated_100epoch_seconds": 915.4839673638344,
+      "parameters": 64449,
+      "history_sha256": "d53b1df1674502422c7a03df35bd0f0224b8d2a28b13ed52a8eccd562dd7e213",
+      "summary_sha256": "e111094b8542bd4f29f3114a5a8bd7af1c89479b46a0b38c9a6251c6651109f0"
+    },
+    {
+      "arm": "r6law_relative8_global",
+      "observed_epochs": 21,
+      "median_epoch_seconds": 8.841788979712874,
+      "p10_epoch_seconds": 8.571578007936477,
+      "p90_epoch_seconds": 9.11328631322831,
+      "estimated_preparation_seconds": 9.168028478976339,
+      "finalization_seconds": 0.3056533755734563,
+      "estimated_100epoch_seconds": 893.6525798258372,
+      "parameters": 64449,
+      "history_sha256": "5157d8fd6574e503c5de0bc6039ad6e5a85def294953caf55329c442218af7f4",
+      "summary_sha256": "6b547752da44d931fac19f3ac1fcf7dca7831966ea03df3a5b206f25dae609f4"
+    },
+    {
+      "arm": "r6law_relative8_local",
+      "observed_epochs": 43,
+      "median_epoch_seconds": 8.158887875266373,
+      "p10_epoch_seconds": 8.050776108819992,
+      "p90_epoch_seconds": 8.307041982840747,
+      "estimated_preparation_seconds": 9.033567374572158,
+      "finalization_seconds": 0.3153243334963918,
+      "estimated_100epoch_seconds": 825.2376792347059,
+      "parameters": 58241,
+      "history_sha256": "ebcedb2821f8829789c5ba72390957e988440eac2382f46082666c5b4b321978",
+      "summary_sha256": "8bab5e3f260b42d1c249d302a2abda5d114198a5b1caa1873bdb859a4295fed4"
+    }
+  ],
+  "training_point_estimates": {
+    "legacy_serial_four_threads_minutes": 73.3523610371553,
+    "synthetic_training_batches_100epochs_two_threads_per_arm_minutes": 16.412231077750523,
+    "optimistic_five_arm_uncontended_wall_minutes_approximately": [
+      17,
+      19
+    ],
+    "full_epoch_projection_with_prior_validation_overhead_minutes": 18.0221941298065
+  },
+  "planning_budget_minutes": {
+    "chosen_five_parallel_two_thread_provisional": [
+      30,
+      60
+    ],
+    "conservative_upper_planning_minutes": 80,
+    "not_a_deadline_or_guarantee": true,
+    "no_new_heldout_evaluation_in_chosen_run": true
+  },
+  "method": "median of consecutive observed epoch wall-clock deltas including fixed INNER evaluation, plus first-epoch preparation and finalization; linear projection to100. Parallel ideal uses greedy two-worker scheduling of indivisible arms; contention ranges are estimates, not benchmarks.",
+  "fixed_conditions": {
+    "TRAIN_rows": 8192,
+    "INNER_rows": 1024,
+    "threads_per_arm": 2,
+    "parallel_arms_proposed": 5,
+    "combined_arm_threads": 10,
+    "batch_size": 128,
+    "optimizer": "Adam",
+    "dropout": 0.1,
+    "planned_epochs": 100,
+    "planned_early_stopping": false,
+    "primary_updates_per_arm": 6400
+  },
+  "memory": {
+    "RAM_budget_GiB": 24,
+    "all_input_array_sizes_from_headers": {
+      "train_r4.npz": {
+        "decompressed_all_fields_bytes_from_zip_headers": 51439104,
+        "disk_bytes": 18660065
+      },
+      "inner_r4.npz": {
+        "decompressed_all_fields_bytes_from_zip_headers": 6431232,
+        "disk_bytes": 2426108
+      },
+      "train_r6.npz": {
+        "decompressed_all_fields_bytes_from_zip_headers": 51340800,
+        "disk_bytes": 15704034
+      },
+      "inner_r6.npz": {
+        "decompressed_all_fields_bytes_from_zip_headers": 6418944,
+        "disk_bytes": 2135233
+      }
+    },
+    "TRAIN_INNER_8channel_grids_plus_weights_bytes": 124416000,
+    "one_arm_RSS_budget_GiB_estimate": [
+      1,
+      3
+    ],
+    "two_arm_RSS_budget_GiB_estimate": [
+      2,
+      6
+    ],
+    "RSS_measured_for_this_new_schedule": false,
+    "activation_example_bytes_per_B128_C32_grid": 6144000,
+    "snapshot_note": "Existing vm_stat snapshot had about9.6GiB occupied by compressor,0.15GiB free and4.9GiB inactive. This is system-wide, not model RSS. Cumulative swap counters are not proof of a current swapping rate; inactive pages may be reclaimed. No allocation or concurrency benchmark was performed.",
+    "hardware_query": "sysctl sandbox denied;24GiB is the task-provided budget, not a newly verified hw.memsize result",
+    "steady_state_RSS_budget_GiB_per_arm_estimate": [
+      0.6,
+      0.8
+    ],
+    "five_arm_steady_state_RSS_GiB_estimate": [
+      3,
+      4
+    ],
+    "peak_RSS_not_measured_for_five_arm_run": true,
+    "temporary_transform_allocation_caveat": "Full-array float64 feature/prior preparation can temporarily exceed steady state; the synthetic419MiB RSS +55MiB inputs +119MiB grids estimate is not a measured production peak. Simultaneous preparation and system compression require monitoring."
+  },
+  "core17_reference_receipt": "ops/gpu_preflight_r5_r1/evidence/project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json",
+  "core17_reference_receipt_sha256": "a9e7d3399ab62f940338e38fc96379ecdd79e8ad77dfbf657480a742075dfc41",
+  "core17_current_all_match": true,
+  "core17_per_file": {
+    "pipeline/runner_r5.py": {
+      "expected": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+      "current": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+      "match": true
+    },
+    "pipeline/neural_r5.py": {
+      "expected": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+      "current": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+      "match": true
+    },
+    "pipeline/lgbm_r5.py": {
+      "expected": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+      "current": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+      "match": true
+    },
+    "pipeline/fold_data_r5.py": {
+      "expected": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+      "current": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+      "match": true
+    },
+    "pipeline/grid_inputs_r5.py": {
+      "expected": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+      "current": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+      "match": true
+    },
+    "pipeline/dynamic_passage_r5.py": {
+      "expected": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+      "current": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+      "match": true
+    },
+    "pipeline/observation_augmentation_r5.py": {
+      "expected": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+      "current": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+      "match": true
+    },
+    "pipeline/physics_features_r5.py": {
+      "expected": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+      "current": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+      "match": true
+    },
+    "pipeline/hierarchical_ensemble_r5.py": {
+      "expected": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+      "current": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+      "match": true
+    },
+    "pipeline/hybrid_models_r5.py": {
+      "expected": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+      "current": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+      "match": true
+    },
+    "pipeline/grid_models_r5.py": {
+      "expected": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+      "current": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+      "match": true
+    },
+    "pipeline/foundation_masks_r5.py": {
+      "expected": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+      "current": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+      "match": true
+    },
+    "pipeline/load_foundation_r5.py": {
+      "expected": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+      "current": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+      "match": true
+    },
+    "pipeline/mixtures.py": {
+      "expected": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+      "current": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+      "match": true
+    },
+    "pipeline/models.py": {
+      "expected": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+      "current": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+      "match": true
+    },
+    "pipeline/background_prior_features.py": {
+      "expected": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+      "current": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+      "match": true
+    },
+    "pipeline/inference_r5.py": {
+      "expected": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+      "current": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+      "match": true
+    }
+  },
+  "frozen_R6_data_manifest_sha256": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+  "frozen_R6_checks": {
+    "code": {
+      "pipeline/relative_grid_r6.py": true,
+      "pipeline/relative_grid_r6_v2.py": true,
+      "pipeline/relative_models_r6_v2.py": true,
+      "pipeline/physics_features_r6_v2.py": true,
+      "pipeline/hard_negatives_r6_v2.py": true,
+      "pipeline/robust_sampler_r6.py": true,
+      "pipeline/source_split_r6.py": true,
+      "pipeline/cpu_ablation_r6_v2.py": true,
+      "ops/run_r6_cpu_guardrails_v2.py": true,
+      "pipeline/passage_sampler_r4.py": true,
+      "pipeline/mixtures.py": true,
+      "pipeline/background_prior_features.py": true
+    },
+    "config": true,
+    "arrays_integrity_hash_only": {
+      "cross_sensor.npz": true,
+      "cross_sensor_generator.npz": true,
+      "cross_generator.npz": true,
+      "inner_r4.npz": true,
+      "train_r6.npz": true,
+      "train_r4.npz": true,
+      "inner_r6.npz": true
+    },
+    "metadata_integrity_hash_only": {
+      "train_r4.recipes.json": true,
+      "inner_r4.recipes.json": true,
+      "cross_sensor_generator.recipes.json": true,
+      "train_source_draw_audit.json": true,
+      "pre_generation_freeze.json": true,
+      "cross_sensor.recipes.json": true,
+      "cross_generator.recipes.json": true,
+      "inner_r6.recipes.json": true,
+      "train_r6.recipes.json": true
+    },
+    "source_manifest": true,
+    "hardnegative_manifest": true
+  },
+  "new_fixed100_paths_at_audit": {
+    "pipeline/fixed100_r6.py": {
+      "exists_at_budget_time": true,
+      "sha256": "4621ee60c525e45f7a52a0bc3591818826cf2b19a970fbdbbed4d0b6fe3373b0"
+    },
+    "ops/run_r6_fixed100.py": {
+      "exists_at_budget_time": true,
+      "sha256": "a0fd8b9a5e536aa182dc825d87ce5592a36ef8a07c19adeb4f523ea7ae3d667d"
+    },
+    "configs/r6_fixed100_v1.json": {
+      "exists_at_budget_time": true,
+      "sha256": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259"
+    }
+  },
+  "limitations": [
+    "Parallel8-thread runtime is not measured; thermal load, CPU contention, memory pressure and other apps can change wall time.",
+    "LightGBM uses boosting iterations, not neural epochs; unchanged completed tree artifacts need not be refitted for a longer CNN run.",
+    "The original locked panels have already been evaluated. Re-evaluation after a100epoch change is a development comparison, not an independent untouched holdout.",
+    "More epochs do not guarantee better generalization. Keep100th and INNER-selected checkpoints labelled separately if both are reported.",
+    "New fixed100 source files may still be under construction; pending paths are not yet independently code-reviewed or frozen by this budget receipt.",
+    "Chosen5-process throughput is not measured;17–19min assumes no competition, while30–60min is a provisional operational budget and80min is a conservative planning allowance, not a guarantee.",
+    "Chosen run does not read/evaluate the prior cross panels. Prior panels remain development data if assessed later.",
+    "Steady-state3–4GiB across5arms is an approximate sum, not a production peak-memory guarantee."
+  ],
+  "earlier_two_worker_planning": {
+    "serial_minutes": 73.3523610371553,
+    "two_workers_ideal_no_contention_minutes": 43.52881902325122,
+    "two_worker_ideal_assignment": [
+      [
+        "r6law_legacy8_global",
+        "r4law_relative8_global"
+      ],
+      [
+        "r6law_relative8_global",
+        "r4law_legacy8_global",
+        "r6law_relative8_local"
+      ]
+    ]
+  },
+  "revision": "five_concurrent_arms_two_threads_each",
+  "updated_utc": "2026-10-25T20:33:07.500120+00:00",
+  "new_fixed100_config_sha256": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259",
+  "hardware_fixture": {
+    "path": "reports/R6_CPU_THREAD_HARDWARE_FIXTURE.json",
+    "sha256": "8880c6e751dd51e61f58d64fdd2489e366e3420200dc190c6380d7c7c5bdc8f6",
+    "sequential_measurement_only": true,
+    "thread2_to_thread4_step_ratio": 1.1811584761032128,
+    "measured_steps": {
+      "1": {
+        "median_seconds": 0.2012786869890988,
+        "peak_RSS_bytes": 434929664
+      },
+      "2": {
+        "median_seconds": 0.15386466635391116,
+        "peak_RSS_bytes": 439255040
+      },
+      "4": {
+        "median_seconds": 0.13026589527726173,
+        "peak_RSS_bytes": 434962432
+      }
+    }
+  },
+  "chosen_execution": {
+    "concurrent_independent_arms": 5,
+    "Torch_threads_each": 2,
+    "total_intraop_threads": 10,
+    "host_cores_parent_provided": 14,
+    "actual_five_process_concurrency_benchmarked": false,
+    "fresh_process_each": true,
+    "no_source_or_learning_config_change_except_declared_threads_and_checkpoint_policies": true
+  },
+  "implementation_review": {
+    "normal_path_per_arm_progress_and_checkpoints_are_disjoint": true,
+    "parent_only_shared_progress_writer": true,
+    "all_models_fresh_subprocesses": true,
+    "exact100_no_ES_break": true,
+    "counterfactual_ES7_uses_same_new_trajectory_only": true,
+    "thread_change_bitwise_prefix_claim": false,
+    "unchanged_trees_refitted": false,
+    "operational_P2_reported_to_parent": "ThreadPoolExecutor exit waits for other workers after one job.result failure; FAILED visibility can be delayed unless recorded before the executor wait.",
+    "fixture_pass_or_actual_fit_start_claimed_by_this_audit": false
+  }
+}

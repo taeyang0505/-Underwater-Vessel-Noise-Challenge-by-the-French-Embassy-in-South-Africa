@@ -1,0 +1,72 @@
+{
+  "format": "r16_multisupport_tree5_fixed_v1",
+  "members": [
+    {
+      "regime": "D0",
+      "fold": 0,
+      "weight": 0.1
+    },
+    {
+      "regime": "D0",
+      "fold": 1,
+      "weight": 0.1
+    },
+    {
+      "regime": "D0",
+      "fold": 2,
+      "weight": 0.1
+    },
+    {
+      "regime": "D0",
+      "fold": 3,
+      "weight": 0.1
+    },
+    {
+      "regime": "D0",
+      "fold": 4,
+      "weight": 0.1
+    },
+    {
+      "regime": "H0",
+      "fold": 0,
+      "weight": 0.1
+    },
+    {
+      "regime": "H0",
+      "fold": 1,
+      "weight": 0.1
+    },
+    {
+      "regime": "H0",
+      "fold": 2,
+      "weight": 0.1
+    },
+    {
+      "regime": "H0",
+      "fold": 3,
+      "weight": 0.1
+    },
+    {
+      "regime": "H0",
+      "fold": 4,
+      "weight": 0.1
+    }
+  ],
+  "fold_weights_each_regime": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "regime_weights": [
+    0.5,
+    0.5
+  ],
+  "regression": "clip each raw Tree prediction to [0,1], then equal average",
+  "score": "independent Tree classifier probability only; no share/contrast",
+  "postprocessing": "[0,1] clipping only",
+  "policy_fit": false,
+  "Test_used_for_policy": false,
+  "official_upload": false
+}

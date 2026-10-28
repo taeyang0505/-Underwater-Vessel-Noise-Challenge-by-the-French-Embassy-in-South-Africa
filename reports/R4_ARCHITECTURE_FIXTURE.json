@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "historical_architecture_state_parity_count": 13,
+  "checks": [
+    "tabm_architecture1_state_identical",
+    "cnn_architecture1_state_identical",
+    "fdy_architecture1_state_identical",
+    "itransformer_architecture1_state_identical",
+    "tabm_architecture2_state_identical",
+    "cnn_architecture2_state_identical",
+    "fdy_architecture2_state_identical",
+    "itransformer_architecture2_state_identical",
+    "tabm_architecture3_state_identical",
+    "cnn_architecture3_state_identical",
+    "fdy_architecture3_state_identical",
+    "itransformer_architecture3_state_identical",
+    "cnn_architecture4_state_identical",
+    "direct_head_has_no_forced_q0_logit",
+    "cnn_energy_pooling_finite_gradient",
+    "fdy_energy_pooling_finite_gradient",
+    "itransformer_energy_pooling_finite_gradient"
+  ],
+  "requested_loss_weights": {
+    "share": 1,
+    "energy_weighted_cell": 0.25,
+    "presence": 0.05,
+    "prior_residual": 0
+  },
+  "training_executed": false,
+  "Test_accessed": false
+}

@@ -1,0 +1,97 @@
+{
+  "format": "r6_relative_features_numeric_fixture_v2",
+  "status": "passed",
+  "fixture_only": true,
+  "code_sha256": {
+    "pipeline/relative_features_r6.py": "92f345012ffa62c9c8bd3abb77aebd7366fdebddc6179a2d2a2863d324cfe303",
+    "ops/verify_relative_features_r6.py": "7af2bd6158326bd2edd57e725f45f1f5b715659b0a4dc81bb5b8bf9e79b824f5"
+  },
+  "source_data_opened": false,
+  "Test_OUTER_INNER_or_TRAIN_datasets_used": false,
+  "GPU_SSH_external_submission_used": false,
+  "formal_training_performed": false,
+  "feature_names": [
+    "band_temporal_median_relative_div10",
+    "band_temporal_q20_relative_div15",
+    "adjacent_observed_delta_div10",
+    "positive_mid_high_delta_times_smooth_low_band_co_rise",
+    "band_median_minus_window_median_div20",
+    "observed_mask"
+  ],
+  "co_rise_bands_hz": "31.6--199.5 inclusive (indices0--8)",
+  "co_rise_output_bands_hz": "316.2--7943.3 inclusive (indices10--24)",
+  "co_rise_gate_formula": "tanh(mean_observed_low_band(max(adjacent_delta_db,0))/3.0)",
+  "pre_fit_numerical_correction": {
+    "old_formula": "fraction_observed_low_band(adjacent_delta_db>0)",
+    "new_formula": "tanh(mean_observed_low_band(max(adjacent_delta_db,0))/3.0)",
+    "reason": "initial numeric fixture showed a hard-sign jump under common +0.037dB gain",
+    "scale_db": 3.0,
+    "model_or_heldout_performance_used": false,
+    "old_numeric_hard_sign_max_channel_change": 0.26777777777777767,
+    "new_numeric_smooth_max_channel_change": 0.014331817626953125,
+    "initial_fixture_preserved": "R6_RELATIVE_FEATURES_FIXTURE_hard_sign_prefit.json",
+    "CNN_architecture_unchanged": true
+  },
+  "query_api": "relative_grid(db) -> float32 x[N,6,15,25],w[N,15,25]",
+  "weights_from_same_0p1dB_quantized_input": true,
+  "original_input_unchanged": true,
+  "mask_and_adjacent_pair_checks": true,
+  "chunk_and_permutation_bitwise": true,
+  "hand_computed_feature_oracle": true,
+  "common_gain_12dB": {
+    "feature_max_abs": 0.0,
+    "weight_max_abs": 0.0
+  },
+  "per_band_static_offset": {
+    "channels_0_to_3_max_abs": 0.0,
+    "profile_channel_max_abs": 0.3199999928474426,
+    "weight_max_abs": 0.1304209679365158
+  },
+  "nongrid_gain_0p037dB": {
+    "feature_max_abs": 0.014331817626953125,
+    "smooth_co_rise_channel_max_abs": 0.014331817626953125,
+    "weight_max_abs": 0.0013011321425437927
+  },
+  "quantization": {
+    "max_real_valued_db_error": 0.05,
+    "pooling_error_bound": 0.005756399149621881,
+    "bound_formula": "tanh(ln(10)*0.05/20)",
+    "independent_2mass_numerical_bound": 0.005756399149547231,
+    "actual_near_worst_rounding_raw_y": 0.5057560932971487,
+    "actual_near_worst_rounding_rounded_weight_y": 0.5,
+    "actual_near_worst_rounding_gap": 0.005756093297148657,
+    "random_known_q_max_pooling_gap": 0.0007259720231658218,
+    "supervision_unchanged": true,
+    "float32_weight_roundoff_additional": true
+  },
+  "CNN_numeric_fixtures": [
+    {
+      "input_channels": 6,
+      "parameters": 57698,
+      "numeric_Adam_steps": 2,
+      "fixture_losses": [
+        0.18892335891723633,
+        0.12041303515434265
+      ],
+      "max_singleton_vs_batch_abs": 2.9802322387695312e-08,
+      "reload_bitwise": true
+    },
+    {
+      "input_channels": 8,
+      "parameters": 58274,
+      "numeric_Adam_steps": 2,
+      "fixture_losses": [
+        0.09558683633804321,
+        0.11757668107748032
+      ],
+      "max_singleton_vs_batch_abs": 5.960464477539063e-08,
+      "reload_bitwise": true
+    }
+  ],
+  "environment": {
+    "numpy": "2.3.5",
+    "torch": "2.14.1",
+    "CPU_threads": 4
+  },
+  "elapsed_seconds": 0.6054783342406154
+}

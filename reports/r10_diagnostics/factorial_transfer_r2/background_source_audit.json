@@ -1,0 +1,40 @@
+{
+  "unseen_full_source_windows": 16048,
+  "unseen_minute_flags_masked": 0,
+  "unseen_source_counts_by_site": {
+    "13 Saldhana Bay": 9000,
+    "9 Fish Hoek": 6804,
+    "10 Sea Point": 244
+  },
+  "eligible_complete_counts": {
+    "seen": 5452,
+    "unseen": 9394
+  },
+  "selected_site_counts": {
+    "seen": {
+      "1 Richards Bay": 582,
+      "5 St Croix Island": 184,
+      "2 Durban": 111,
+      "7 St_Francis": 67,
+      "4 Bird Island": 56
+    },
+    "unseen": {
+      "13 Saldhana Bay": 935,
+      "9 Fish Hoek": 35,
+      "10 Sea Point": 30
+    }
+  },
+  "selected_observed_minutes": 15,
+  "source_windows_within_arm_unique": true,
+  "train_base_index_overlap": 0,
+  "train_recorder_string_overlap": [],
+  "train_sensor_group_overlap": [],
+  "same_sensor_minimum_support_gap_seconds": null,
+  "purge_result": "no common sensor component; source/recorder components disjoint",
+  "identity_limit": "sensor_group and recorder strings are metadata identities, not verified physical hardware IDs",
+  "source_sha256": {
+    "data/versions/quality_v2_native/background_manifest.parquet": "ed8cfe0c749a75f538b80da6205f3ea9a51e506d9edeba6a41002a0b525e197f",
+    "data/processed/sa_row_manifest.parquet": "e05004b977bf7db91f131ffe2d87d944a135de48685591d484aa53294bf29de4",
+    "reports/data_quality_boundary_flags.parquet": "2909c1941b6b325b3d78d2bac101190d9d01a73e6e646982849eaa5e2e3c74d7"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "status": "CPU_frontend_verified_not_production_integrated",
+  "feature_count": 11,
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "feature_max_abs_error": 4.547473508864641e-13,
+  "weights_max_abs_error": 0.0,
+  "source_code_sha256": {
+    "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+    "pipeline/raw_frontend_r14.py": "244d03fc85e962b5722ebdf50751a9e6349737818f47ecccdea2c5fab49a516c",
+    "ops/verify_r14_torch_frontend.py": "12ca5b96ed3c094c627acea0723808945295349044928641e703e4f38ddecdf5",
+    "ops/benchmark_r14_full_epoch.py": "e76b7480a4304265125d9bd79c672544ae67b49fdab5a23950c1a4161d650988",
+    "ops/benchmark_r14_mps.py": "a1c4c37bc0ced55f775d2580b4ea597473a2b2f956ce5b128b1fa846ee4935c4",
+    "ops/build_r14_frontend_reports.py": "8ac5965bd6ef816d37170b6242c979e0e9260998bbc310bcd400fddf0161e289",
+    "ops/r14_runtime_py/tabm.py": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade",
+    "ops/r14_runtime_py/rtdl_num_embeddings.py": "48dfc019d447e0cd225deb8b8145b3efa8b42cde9aa314772d6e234753e1cee1",
+    "ops/r14_runtime_py/receipt.json": "61a4ee20dad3fbedcc99c75f8622229892746494df957c9203450626f3715b8b"
+  },
+  "original_R13_code_unchanged": true,
+  "evidence_sha256": {
+    "reports/R14_TORCH_FRONTEND/RESULTS.json": "83b3949ba398204d2a5171c88254096866351723279f10df28eca5b53f9ac67d",
+    "reports/R14_TORCH_FRONTEND/FULL_EPOCH_V2.json": "72eae0cc5a28092198f0836a826211a70581a55a3e0e31057b9cabf4470148e8",
+    "reports/R14_MPS_BENCHMARK_r2/RESULTS.json": "78aa817dd218cd8fdd4c65fc648a45f3e8e82ff71d8ed2b647c1469e74bf6d98"
+  },
+  "CPU4096_benchmark": {
+    "rows": 4096,
+    "synthesis_only_seconds": 0.6523054586723447,
+    "NumPy_per_item_seconds": 5.845992165617645,
+    "NumPy_batched128": {
+      "repetitions": [
+        3.8438587076961994,
+        3.82237062510103,
+        3.809365665540099
+      ],
+      "median_seconds": 3.82237062510103
+    },
+    "Torch_batched128": {
+      "repetitions": [
+        0.10420845821499825,
+        0.1018072497099638,
+        0.10135120712220669
+      ],
+      "median_seconds": 0.1018072497099638
+    },
+    "GPU_latency_or_speedup_measured": false,
+    "not_full_epoch_or_full_training_timing": true
+  },
+  "CPU_full_epoch": {
+    "status": "completed",
+    "fold": 0,
+    "epoch": 1,
+    "actual_primary_rows": 78869,
+    "observed_zero_rows": 15774,
+    "CPU_threads": 2,
+    "batch_size": 128,
+    "raw_synthesis_collation_seconds": 13.046798707917333,
+    "batched_Torch_features_seconds": 2.4358994513750076,
+    "total_seconds_including_stream_hash": 16.030401458963752,
+    "feature_stream_sha256": "3ace481bd41d3e01e25b22463d9a3af703bb169fb38aa227826ba3c6c72d7678",
+    "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+    "code_sha256": {
+      "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+      "pipeline/raw_frontend_r14.py": "244d03fc85e962b5722ebdf50751a9e6349737818f47ecccdea2c5fab49a516c",
+      "ops/benchmark_r14_full_epoch.py": "e76b7480a4304265125d9bd79c672544ae67b49fdab5a23950c1a4161d650988"
+    },
+    "DataLoader_multiprocessing_backbone_optimizer_GPU_steps": false,
+    "concurrent_host_CPU_load_controlled": false,
+    "not_a_GPU_epoch_or_fulltraining_estimate": true,
+    "original_sources_unchanged": true,
+    "Test_report_newfit_or_network": false
+  },
+  "model_checks": [
+    {
+      "kind": "bg_cnn",
+      "old_vs_raw_frontend_max_abs": 0.0,
+      "actual_Adam_steps": 1,
+      "backbone_gradient_L1": 3932.5719261579216,
+      "frontend_parameters": 0,
+      "strict_checkpoint_reload_bitwise": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "old_vs_raw_frontend_max_abs": 0.0,
+      "actual_Adam_steps": 1,
+      "backbone_gradient_L1": 551.2080620525807,
+      "frontend_parameters": 0,
+      "strict_checkpoint_reload_bitwise": true
+    },
+    {
+      "kind": "fdy",
+      "old_vs_raw_frontend_max_abs": 0.0,
+      "actual_Adam_steps": 1,
+      "backbone_gradient_L1": 149.83809334877878,
+      "frontend_parameters": 0,
+      "strict_checkpoint_reload_bitwise": true
+    },
+    {
+      "kind": "itransformer",
+      "old_vs_raw_frontend_max_abs": 0.0,
+      "actual_Adam_steps": 1,
+      "backbone_gradient_L1": 161.27297415211797,
+      "frontend_parameters": 0,
+      "strict_checkpoint_reload_bitwise": true
+    }
+  ],
+  "MPS_fp64_frontend_supported": false,
+  "CUDA_frontend_parity_latency_VRAM_verified": false,
+  "production_runner_or_approval_modified": false,
+  "anchor14channels_integrated": false,
+  "Test_report_newdatafit_or_network": false
+}

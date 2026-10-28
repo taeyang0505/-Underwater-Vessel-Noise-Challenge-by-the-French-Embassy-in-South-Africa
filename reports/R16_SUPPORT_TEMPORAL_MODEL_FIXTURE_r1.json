@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "temporal_features": {
+    "status": "passed",
+    "grid_channels": [
+      "temporal_zscore",
+      "rolling_mean2_relative_div10",
+      "rolling_mean4_relative_div10",
+      "rolling_mean8_relative_div10",
+      "observed_contiguous_lag1_div10",
+      "observed_contiguous_lag2_div10",
+      "observed_contiguous_lag3_div10",
+      "rolling4_persistence_above_q20_plus3dB",
+      "local3_arch_curvature_div10"
+    ],
+    "statistics_columns": 1333,
+    "static_per_band_offset_max_abs": 0.0,
+    "grid_static_per_band_offset_max_abs": 1.420738526825005e-15,
+    "missing_and_constant_windows_finite": true,
+    "deterministic_exact": true,
+    "time_shuffle_changes_features_max_abs": 3.299999713897705,
+    "learned_transform": false,
+    "PCA_or_profile_or_energy_denominator": false,
+    "lag_pair_validity": "Actual clock-index lag; both observed endpoints; no compression/interpolation",
+    "grid_delta_validity": "Every intermediate minute observed, including both endpoints",
+    "Test_used": false,
+    "elapsed_seconds": 0.07728095911443233,
+    "code_sha256": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770"
+  },
+  "feature0_legacy_CNN_forward_max_abs": 0.0,
+  "F0_F1_initial_forward_max_abs": 0.0,
+  "classifier_gradient_to_regression": false,
+  "physical_pool_max_abs": 5.960464477539063e-08,
+  "feature0_parameter_counts": {
+    "regression": 26305,
+    "classification": 3745,
+    "total": 30050
+  },
+  "feature1_parameter_counts": {
+    "regression": 28249,
+    "classification": 5041,
+    "total": 33290
+  },
+  "tiny_learner_reload_finite": true,
+  "tiny_rows_train": 140,
+  "tiny_epochs": 2,
+  "fixture_only_learners_discarded": true,
+  "elapsed_seconds": 2.197394291870296,
+  "Test_used": false,
+  "real_benchmark_training": false,
+  "source_code_sha256": {
+    "ops/r16_support_temporal_models.py": "7875978c446e1c3eb01341ce1abe3968c2e3ce4003780d2aad859a5c6cf96329",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "ops/r16_clean_models.py": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb"
+  },
+  "synthetic_4000_train_2400_validation_benchmark": [
+    {
+      "feature_mode": 0,
+      "precompute6400seconds": 5.297801291570067,
+      "tree_features1000seconds": 1.7047819998115301,
+      "train4000seconds": 3.5946298744529486,
+      "validation2400seconds": 0.49778262432664633,
+      "epoch_total_seconds": 4.092412498779595,
+      "nn100epoch_estimate_seconds": 409.2412498779595
+    },
+    {
+      "feature_mode": 1,
+      "precompute6400seconds": 10.927885124459863,
+      "tree_features1000seconds": 2.7158675836399198,
+      "train4000seconds": 3.84047141764313,
+      "validation2400seconds": 0.5454869586974382,
+      "epoch_total_seconds": 4.385958376340568,
+      "nn100epoch_estimate_seconds": 438.5958376340568
+    }
+  ],
+  "data_or_Test_access": false
+}

@@ -1,0 +1,83 @@
+{
+  "pid": 2679,
+  "procName": "python3.12",
+  "procLaunch": "2026-10-26 15:26:02.5798 +0900",
+  "captureTime": "2026-10-26 15:27:33.6303 +0900",
+  "exception": {
+    "codes": "0x0000000000000001, 0x0000000000000580",
+    "rawCodes": [
+      1,
+      1408
+    ],
+    "type": "EXC_BAD_ACCESS",
+    "signal": "SIGSEGV",
+    "subtype": "KERN_INVALID_ADDRESS at 0x0000000000000580"
+  },
+  "termination": {
+    "flags": 0,
+    "code": 11,
+    "namespace": "SIGNAL",
+    "indicator": "Segmentation fault: 11",
+    "byProc": "exc handler",
+    "byPid": 2679
+  },
+  "faultingThread": 7,
+  "source_file": "/Users/hongtaeyang/Library/Logs/DiagnosticReports/python3.12-2026-10-26-152735.ips",
+  "source_sha256": "6e72beb3b9a941d73304ed34778779e0dc57a903a5ddbcc555e8d86d339fbaad",
+  "fault_frames": [
+    {
+      "symbol": "__kmp_suspend_initialize_thread",
+      "symbolLocation": 32,
+      "imageIndex": 10,
+      "image_path": "/private/tmp/*/libomp.dylib"
+    },
+    {
+      "symbol": "void __kmp_suspend_64<false, true>(int, kmp_flag_64<false, true>*)",
+      "symbolLocation": 68,
+      "imageIndex": 10,
+      "image_path": "/private/tmp/*/libomp.dylib"
+    },
+    {
+      "symbol": "kmp_flag_64<false, true>::wait(kmp_info*, int, void*)",
+      "symbolLocation": 1712,
+      "imageIndex": 89,
+      "image_path": "/opt/homebrew/*/libomp.dylib"
+    },
+    {
+      "symbol": "__kmp_hyper_barrier_release(barrier_type, kmp_info*, int, int, int, void*)",
+      "symbolLocation": 164,
+      "imageIndex": 89,
+      "image_path": "/opt/homebrew/*/libomp.dylib"
+    },
+    {
+      "symbol": "__kmp_fork_barrier(int, int)",
+      "symbolLocation": 460,
+      "imageIndex": 89,
+      "image_path": "/opt/homebrew/*/libomp.dylib"
+    },
+    {
+      "symbol": "__kmp_launch_thread",
+      "symbolLocation": 220,
+      "imageIndex": 89,
+      "image_path": "/opt/homebrew/*/libomp.dylib"
+    },
+    {
+      "symbol": "__kmp_launch_worker(void*)",
+      "symbolLocation": 252,
+      "imageIndex": 89,
+      "image_path": "/opt/homebrew/*/libomp.dylib"
+    },
+    {
+      "symbol": "_pthread_start",
+      "symbolLocation": 136,
+      "imageIndex": 201,
+      "image_path": "/usr/lib/system/libsystem_pthread.dylib"
+    },
+    {
+      "symbol": "thread_start",
+      "symbolLocation": 8,
+      "imageIndex": 201,
+      "image_path": "/usr/lib/system/libsystem_pthread.dylib"
+    }
+  ]
+}

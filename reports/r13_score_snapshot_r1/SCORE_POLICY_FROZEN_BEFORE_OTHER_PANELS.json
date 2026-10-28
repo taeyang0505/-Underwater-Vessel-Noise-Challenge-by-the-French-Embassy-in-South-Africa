@@ -1,0 +1,347 @@
+{
+  "format": "r13_R12snapshot_score_policy_v1",
+  "chosen_classifier_weight": 0.5,
+  "candidate_gate_metrics": {
+    "0.0": {
+      "n": 500,
+      "positive_n": 400,
+      "auc_presence": 0.888125,
+      "brier_presence": 0.455592429312938,
+      "ECE10_presence": 0.5647788123680512,
+      "score_mean": 0.23522118763194885,
+      "score_RMS": 0.32980553767796184,
+      "score_le001_fraction": 0.064,
+      "score_ge099_fraction": 0.0,
+      "zero_score_mean": 0.043157779734465294,
+      "positive_score_mean": 0.28323703960631974,
+      "physical_share_RMSE_unchanged": 0.09032824500111401,
+      "physical_share_mean": 0.23522118763194885,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "n": 214,
+          "mean_score": 0.0376998751419357,
+          "presence_frequency": 0.5794392523364486
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 69,
+          "mean_score": 0.14074089637269144,
+          "presence_frequency": 0.9130434782608695
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 45,
+          "mean_score": 0.24319899612002902,
+          "presence_frequency": 0.9555555555555556
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 51,
+          "mean_score": 0.34280460605434343,
+          "presence_frequency": 0.9803921568627451
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 38,
+          "mean_score": 0.4584260747620934,
+          "presence_frequency": 0.9736842105263158
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 28,
+          "mean_score": 0.5556832360369819,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 30,
+          "mean_score": 0.6442907869815826,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 19,
+          "mean_score": 0.7439840561465213,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 6,
+          "mean_score": 0.8268278042475382,
+          "presence_frequency": 1.0
+        }
+      ]
+    },
+    "0.25": {
+      "n": 500,
+      "positive_n": 400,
+      "auc_presence": 0.906625,
+      "brier_presence": 0.2790037617513069,
+      "ECE10_presence": 0.4058041878305376,
+      "score_mean": 0.3941958121694624,
+      "score_RMS": 0.44530037058418037,
+      "score_le001_fraction": 0.0,
+      "score_ge099_fraction": 0.0,
+      "zero_score_mean": 0.17275741511955858,
+      "positive_score_mean": 0.4495554114319384,
+      "physical_share_RMSE_unchanged": 0.09032824500111401,
+      "physical_share_mean": 0.23522118763194885,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "n": 35,
+          "mean_score": 0.05035246126353741,
+          "presence_frequency": 0.05714285714285714
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 41,
+          "mean_score": 0.15418777069667491,
+          "presence_frequency": 0.34146341463414637
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 116,
+          "mean_score": 0.25758260899576646,
+          "presence_frequency": 0.7586206896551724
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 96,
+          "mean_score": 0.33963176390777033,
+          "presence_frequency": 0.9166666666666666
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 64,
+          "mean_score": 0.45090014580637217,
+          "presence_frequency": 0.953125
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 51,
+          "mean_score": 0.5481189559487736,
+          "presence_frequency": 0.9803921568627451
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 43,
+          "mean_score": 0.6485465959061024,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 39,
+          "mean_score": 0.7485085725784302,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 15,
+          "mean_score": 0.8425750215848287,
+          "presence_frequency": 1.0
+        }
+      ]
+    },
+    "0.5": {
+      "n": 500,
+      "positive_n": 400,
+      "auc_presence": 0.90825,
+      "brier_presence": 0.1602240911282239,
+      "ECE10_presence": 0.25249647301435474,
+      "score_mean": 0.553170436680317,
+      "score_RMS": 0.5878963726313724,
+      "score_le001_fraction": 0.0,
+      "score_ge099_fraction": 0.0,
+      "zero_score_mean": 0.3023570488393307,
+      "positive_score_mean": 0.6158737836405634,
+      "physical_share_RMSE_unchanged": 0.09032824500111401,
+      "physical_share_mean": 0.23522118763194885,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "n": 21,
+          "mean_score": 0.05553539594014486,
+          "presence_frequency": 0.0
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 14,
+          "mean_score": 0.14124033919402532,
+          "presence_frequency": 0.14285714285714285
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 25,
+          "mean_score": 0.2500193643569946,
+          "presence_frequency": 0.24
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 26,
+          "mean_score": 0.35659598731077635,
+          "presence_frequency": 0.6538461538461539
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 68,
+          "mean_score": 0.4610781630172449,
+          "presence_frequency": 0.7058823529411765
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 137,
+          "mean_score": 0.5401657824098629,
+          "presence_frequency": 0.8832116788321168
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 92,
+          "mean_score": 0.6472910221504129,
+          "presence_frequency": 0.967391304347826
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 65,
+          "mean_score": 0.7503699174294105,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 46,
+          "mean_score": 0.8427467177743497,
+          "presence_frequency": 1.0
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 6,
+          "mean_score": 0.9120725890000662,
+          "presence_frequency": 1.0
+        }
+      ]
+    },
+    "1.0": {
+      "n": 500,
+      "positive_n": 400,
+      "auc_presence": 0.90525,
+      "brier_presence": 0.09609174176306137,
+      "ECE10_presence": 0.07111968529224394,
+      "score_mean": 0.8711196852922439,
+      "score_RMS": 0.9020579720764255,
+      "score_le001_fraction": 0.0,
+      "score_ge099_fraction": 0.394,
+      "zero_score_mean": 0.5615563184022904,
+      "positive_score_mean": 0.9485105270147324,
+      "physical_share_RMSE_unchanged": 0.09032824500111401,
+      "physical_share_mean": 0.23522118763194885,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "n": 10,
+          "mean_score": 0.05856826901435852,
+          "presence_frequency": 0.0
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 13,
+          "mean_score": 0.14917155756400183,
+          "presence_frequency": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 8,
+          "mean_score": 0.25527006946504116,
+          "presence_frequency": 0.25
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 7,
+          "mean_score": 0.35704233816691805,
+          "presence_frequency": 0.2857142857142857
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 11,
+          "mean_score": 0.4483727785674008,
+          "presence_frequency": 0.09090909090909091
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 12,
+          "mean_score": 0.5307915955781937,
+          "presence_frequency": 0.3333333333333333
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 15,
+          "mean_score": 0.6480934063593546,
+          "presence_frequency": 0.6
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 22,
+          "mean_score": 0.7595414519309998,
+          "presence_frequency": 0.7272727272727273
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 33,
+          "mean_score": 0.8648025610230186,
+          "presence_frequency": 0.6666666666666666
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 369,
+          "mean_score": 0.9816316409808833,
+          "presence_frequency": 0.9322493224932249
+        }
+      ]
+    }
+  },
+  "primary_share": "Blend50_L1HM1P1",
+  "selection_target": "presenceAUC",
+  "canonical_first_tie": true,
+  "plan_file_sha256": "a31c7afd07d2a9722ecdeaae07358be14ff5d70db212b09b5f343d8fb02fb1ed",
+  "not_future_R13_policy": true,
+  "not_original8recipe_change": true,
+  "policy_sha256": "4cbaf4a3db2370bcadb5d5dccf47830c4c140391da0e347afb2f5d627bfca6b6"
+}

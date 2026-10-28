@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "no_improvement_uses_fixed_mask_mean",
+    "group_crossfit_and_fullfit_must_both_beat_baselines",
+    "too_few_groups_falls_back",
+    "outer_failure_does_not_replace_predictions"
+  ],
+  "no_Test_or_outer_fit": true,
+  "candidate_gates": "INNER source-LOO + fullfit; fixed lambda .05 epsilon .0001"
+}

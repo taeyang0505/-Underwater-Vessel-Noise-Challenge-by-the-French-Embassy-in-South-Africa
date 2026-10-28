@@ -1,0 +1,28 @@
+{
+  "format": "r14_decoupled_saved_predictions_policy_v1",
+  "fit_role": "validation_fit1000_only",
+  "regression": {
+    "name": "linear_high0.0",
+    "kind": "linear",
+    "high_weight": 0.0
+  },
+  "classifier": "base",
+  "classifier_score_weight": 1.0,
+  "regression_base_definition": "0.5 CNN baselineP1 + 0.5 Tree baselineP1, stored FP32",
+  "regression_high_definition": "0.5 CNN highshareP1 + 0.5 Tree highshareP1, stored FP32",
+  "selection": "min validation_fit RMSE then max validation_fit score AUC; first canonical tie",
+  "gate_panel_not_used_to_select": true,
+  "panels17_not_used_to_fit": true,
+  "plan_sha256": "04b549636d9e718854c29926648269bef2ab3352231b06545610b451108fa3d2",
+  "validation_fit_prediction_sha256": {
+    "models/r12_mask_matched_control_r2/cnn/validation_fit_predictions.npz": "3038798251e8c6aacafa449280cff69159a26b9f5eaaae67a7157fd11490f10e",
+    "models/r13_cpu_cnn_r1/highshareP1/validation_fit_predictions.npz": "06e824be06995d9a96fe6c475965f2391062550a02595dcefc90a15321b0bd11",
+    "models/r13_compact_trees_v1/baselineP1/validation_fit_predictions.npz": "f54d60f937c45f06d549ebee197d84d8e553d9fc76a134c7171632b86c3a257a",
+    "models/r13_compact_trees_v1/highshareP1/validation_fit_predictions.npz": "f2a029fd749e579d696eb59b62e902a268a8cc06313dab31af052f2aa77acdbf"
+  },
+  "validation_fit_CNN_order_evidence": "Same immutable validation_fit NPZ SHA and original predictor order; CNN NPZ has no IDs, tree NPZ provides IDs/targets. No new replay inferred.",
+  "development_not_blind": true,
+  "Test_used": false,
+  "production_approved": false,
+  "policy_sha256": "6d37151552fde95f0908c6b5192d02a94f0474ddcfac95253a415a940fb0b01e"
+}

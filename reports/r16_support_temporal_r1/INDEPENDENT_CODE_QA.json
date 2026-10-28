@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "synthetic_rows": 8,
+  "new_temporal_grid_channels": 9,
+  "new_temporal_statistics_columns": 1333,
+  "additional_grid_static_band_offset_max_abs": 1.6881922292391605e-14,
+  "additional_stats_static_band_offset_max_abs": 1.3322676295501878e-15,
+  "classifier_static_band_offset_checks": {
+    "0": 0.0,
+    "tree_features_0": 0.0,
+    "1": 0.0,
+    "tree_features_1": 1.3322676295501878e-15
+  },
+  "time_shuffle_feature_change_max_abs": 1.5199999809265137,
+  "missing_lag1_no_time_compression": true,
+  "missing_all_band_and_constant_windows_finite": true,
+  "parameter_gradient_isolation": {
+    "0": {
+      "classifier_to_regressor_blocked": true,
+      "regressor_to_classifier_blocked": true
+    },
+    "1": {
+      "classifier_to_regressor_blocked": true,
+      "regressor_to_classifier_blocked": true
+    }
+  },
+  "forward_parity_max_abs": {
+    "F0_F1_common_initial_function": 0.0,
+    "F0_legacy_architecture_and_initialization": 0.0
+  },
+  "counts": {
+    "0": {
+      "regression": 26305,
+      "classification": 3745,
+      "total": 30050,
+      "tree_reg_features": 466,
+      "tree_clf_features": 700
+    },
+    "1": {
+      "regression": 28249,
+      "classification": 5041,
+      "total": 33290,
+      "tree_reg_features": 1799,
+      "tree_clf_features": 2033
+    }
+  },
+  "weighted_measure_rmse_error": 2.7755575615628914e-17,
+  "query_open_guard_rejected_synthetic_path": true,
+  "source_hash_unchanged_during_QA": {
+    "ops/r16_support_temporal_models.py": "7c2534091c37998954506b93dffca67908a68601d39821c40fbd58338fc75f8a",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "ops/evaluate_r16_support_temporal.py": "1590a80540a6d12db2223645648b86c93504272dca3533f72d2080559b5522f4",
+    "reports/r16_support_temporal_r1/PROTOCOL.md": "6bed89696ce6f494f202e48e4094fb43f4908bc9b8e5e22525c6ef4f48703e13"
+  },
+  "model_training_performed": false,
+  "official_query_accessed": false,
+  "elapsed_seconds": 0.27487762551754713
+}

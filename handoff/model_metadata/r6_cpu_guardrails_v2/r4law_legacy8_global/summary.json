@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "arm": {
+    "name": "r4law_legacy8_global",
+    "generator": "r4",
+    "channels": "legacy8",
+    "global_context": true
+  },
+  "model_config": {
+    "input_channels": 8,
+    "width": 32,
+    "blocks": 3,
+    "dropout": 0.1,
+    "global_context": true
+  },
+  "parameters": 64449,
+  "best_epoch": 25,
+  "epochs_run": 32,
+  "selection": "inner_site_macro_rmse",
+  "best_inner_metrics": {
+    "n": 1024,
+    "rmse": 0.08793228550355293,
+    "site_macro_rmse": 0.07243387113578283,
+    "mae": 0.05173561048090569,
+    "bias": 0.0029195725395272376,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 772,
+        "rmse": 0.09360326417699723,
+        "mae": 0.05501361281937812,
+        "bias": 0.0057221296879718985
+      },
+      "2 Durban": {
+        "n": 55,
+        "rmse": 0.05234330371134074,
+        "mae": 0.03638489000573331,
+        "bias": 0.008886104260719466
+      },
+      "5 St Croix Island": {
+        "n": 197,
+        "rmse": 0.07135504551901055,
+        "mae": 0.04317556896229537,
+        "bias": -0.009728820167400941
+      }
+    },
+    "presence_auc": 0.9817385866166355,
+    "presence_auc_share_only": 0.9788796569284375,
+    "family_slices": {
+      "r4_whole_timewarp": {
+        "n": 819,
+        "rmse": 0.0928161466320959,
+        "mae": 0.05871360205365197,
+        "bias": -0.002321346483553813
+      },
+      "zero": {
+        "n": 205,
+        "rmse": 0.06484899355895257,
+        "mae": 0.023857683173202266,
+        "bias": 0.023857683173202266
+      }
+    },
+    "target_slices": {
+      "zero": {
+        "n": 205,
+        "rmse": 0.06484899355895257,
+        "mae": 0.023857683173202266,
+        "bias": 0.023857683173202266
+      },
+      "positive_low_to_.1": {
+        "n": 82,
+        "rmse": 0.06932431976434734,
+        "mae": 0.0463192039424917,
+        "bias": 0.03578801667488112
+      },
+      ".1_to_.4": {
+        "n": 261,
+        "rmse": 0.09755272543539091,
+        "mae": 0.06145256173964661,
+        "bias": 0.022797046107921565
+      },
+      ".4_to_1": {
+        "n": 476,
+        "rmse": 0.09368344136857773,
+        "mae": 0.059346946942455625,
+        "bias": -0.02265930498222343
+      }
+    }
+  },
+  "stop_reason": "patience",
+  "device": "Mac CPU FP32",
+  "pilot_only": true,
+  "heldout_evaluated": false,
+  "elapsed_seconds": 301.99428079184145,
+  "checkpoint_sha256": "41ba8e48801e008e6e5eedbdef9780e93d7120ce7ab2b4081562fd23263db920",
+  "prior_sha256": "187908fe90b34c7a6a14cde32149720c62376cdb53689997bef4d72d00eeed03"
+}

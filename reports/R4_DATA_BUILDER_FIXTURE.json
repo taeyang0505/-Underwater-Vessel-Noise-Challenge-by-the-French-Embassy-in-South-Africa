@@ -1,0 +1,28 @@
+{
+  "status": "passed tiny 5-fold builder and independent package verification",
+  "fixture_root": "/private/tmp/r4_builder_fixture_zpyn5xuw",
+  "cv_dir": "/private/tmp/r4_builder_fixture_zpyn5xuw/data/out",
+  "actual_competition_arrays_used": false,
+  "actual_R4_dataset_materialized": false,
+  "fixture_train_examples": 360,
+  "fixture_outer_examples": 240,
+  "each_fold_train_inner_outer": [
+    72,
+    48,
+    48
+  ],
+  "all_five_packages_verified": [
+    "passed independent R4 package verification",
+    "passed independent R4 package verification",
+    "passed independent R4 package verification",
+    "passed independent R4 package verification",
+    "passed independent R4 package verification"
+  ],
+  "coarse_distribution_tolerances_widened_for_tiny_fixture_only": true,
+  "production_config_changed": false,
+  "code_sha256": {
+    "pipeline/passage_sampler_r4.py": "a3400f658c6ff9510b098428f039d791b9cda412a1a7bcde145f21612d4843ad",
+    "pipeline/build_passage_cv_r4.py": "56b29b810aa995a89fd5e191f0d27de04e423418736b92e40776256662b88e2b",
+    "ops/verify_passage_cv_r4.py": "af40c70a2c9cb8382630801bf3701e4fdf52e1d885b6dc2fd3c1c8c8097df0c5"
+  }
+}

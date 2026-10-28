@@ -1,0 +1,780 @@
+[
+  {
+    "original_source": "reports/R8_SA_EDA_EVIDENCE.json",
+    "original_sha256": "d78a4a6141a624541b95a115e469e2fc02289d08b4a5e85f0f26d6928cc2b8d6",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.json",
+    "portable_sha256": "d78a4a6141a624541b95a115e469e2fc02289d08b4a5e85f0f26d6928cc2b8d6",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R8_SA_EDA_EVIDENCE.md",
+    "original_sha256": "39e610fdcf9b4b8ee989cfb7d9fd5a6741c15b93fbc856b1afc965748badacd6",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_SA_EDA_EVIDENCE.md",
+    "portable_sha256": "4d0225477300849896ba4763f2fe76fc223ff29f47db7162c624735fbda1c5ac",
+    "relative_link_rebindings": [
+      {
+        "original": "R8_SA_EDA_EVIDENCE.json",
+        "portable": "../../R8_SA_EDA_EVIDENCE.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R8_SA_EDA_EVIDENCE.json",
+        "target_exists": true
+      },
+      {
+        "original": "../TASK_EDA_REPORT.md",
+        "portable": "../../../TASK_EDA_REPORT.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/TASK_EDA_REPORT.md",
+        "target_exists": true
+      },
+      {
+        "original": "R5_EDA_INTEGRATION_FACTCHECK.md",
+        "portable": "../../R5_EDA_INTEGRATION_FACTCHECK.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_EDA_INTEGRATION_FACTCHECK.md",
+        "target_exists": true
+      },
+      {
+        "original": "R5_OUTLIER_AUDIT.md",
+        "portable": "../../R5_OUTLIER_AUDIT.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_OUTLIER_AUDIT.md",
+        "target_exists": true
+      },
+      {
+        "original": "data_quality_boundary_audit.json",
+        "portable": "../../data_quality_boundary_audit.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/data_quality_boundary_audit.json",
+        "target_exists": true
+      },
+      {
+        "original": "R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+        "portable": "../../R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+        "target_exists": true
+      },
+      {
+        "original": "../eda/summary.json",
+        "portable": "../../../eda/summary.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda/summary.json",
+        "target_exists": true
+      },
+      {
+        "original": "../eda/tables/site_summary.csv",
+        "portable": "../../../eda/tables/site_summary.csv",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda/tables/site_summary.csv",
+        "target_exists": true
+      },
+      {
+        "original": "../eda/tables/recorder_summary.csv",
+        "portable": "../../../eda/tables/recorder_summary.csv",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda/tables/recorder_summary.csv",
+        "target_exists": true
+      },
+      {
+        "original": "../eda/tables/file_inventory.csv",
+        "portable": "../../../eda/tables/file_inventory.csv",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda/tables/file_inventory.csv",
+        "target_exists": true
+      },
+      {
+        "original": "../data/extracted/README.md",
+        "portable": "../../../data/extracted/README.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/extracted/README.md",
+        "target_exists": true
+      },
+      {
+        "original": "../data/extracted/DATA_DICTIONARY.md",
+        "portable": "../../../data/extracted/DATA_DICTIONARY.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/extracted/DATA_DICTIONARY.md",
+        "target_exists": true
+      },
+      {
+        "original": "R5_OUTLIER_AUDIT.json",
+        "portable": "../../R5_OUTLIER_AUDIT.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_OUTLIER_AUDIT.json",
+        "target_exists": true
+      },
+      {
+        "original": "../eda_deep/tables/run_edge_artifacts.csv",
+        "portable": "../../../eda_deep/tables/run_edge_artifacts.csv",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda_deep/tables/run_edge_artifacts.csv",
+        "target_exists": true
+      },
+      {
+        "original": "../eda_deep/deep_eda.py",
+        "portable": "../../../eda_deep/deep_eda.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda_deep/deep_eda.py",
+        "target_exists": true
+      },
+      {
+        "original": "R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+        "portable": "../../R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+        "target_exists": true
+      },
+      {
+        "original": "../eda_deep/deep_eda.py",
+        "portable": "../../../eda_deep/deep_eda.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda_deep/deep_eda.py",
+        "target_exists": true
+      },
+      {
+        "original": "../eda/summary.json",
+        "portable": "../../../eda/summary.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda/summary.json",
+        "target_exists": true
+      },
+      {
+        "original": "../eda_deep/summary.json",
+        "portable": "../../../eda_deep/summary.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/eda_deep/summary.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R8_EXTERNAL_DATA_EVIDENCE.json",
+    "original_sha256": "1f35ffad30724b3a244c4aaa8b8bf9c2e08c096f49496ce2d907dc892a34a193",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.json",
+    "portable_sha256": "1f35ffad30724b3a244c4aaa8b8bf9c2e08c096f49496ce2d907dc892a34a193",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R8_EXTERNAL_DATA_EVIDENCE.md",
+    "original_sha256": "3f5f87b36583e1ea71bf73f9a22cf1dabd4a29f922035ceb2994617337fc491d",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_EXTERNAL_DATA_EVIDENCE.md",
+    "portable_sha256": "1452e09bd96da08f0da6ec971e27804872c11300c4b7a2fda4dca92d34e34ca4",
+    "relative_link_rebindings": [
+      {
+        "original": "R8_EXTERNAL_DATA_EVIDENCE.json",
+        "portable": "../../R8_EXTERNAL_DATA_EVIDENCE.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R8_EXTERNAL_DATA_EVIDENCE.json",
+        "target_exists": true
+      },
+      {
+        "original": "R7_ANIL45_SOURCE_COMPARISON.md",
+        "portable": "../../R7_ANIL45_SOURCE_COMPARISON.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R7_ANIL45_SOURCE_COMPARISON.md",
+        "target_exists": true
+      },
+      {
+        "original": "external_expansion_catalog.json",
+        "portable": "../../external_expansion_catalog.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/external_expansion_catalog.json",
+        "target_exists": true
+      },
+      {
+        "original": "R8_EXTERNAL_DATA_EVIDENCE.json",
+        "portable": "../../R8_EXTERNAL_DATA_EVIDENCE.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R8_EXTERNAL_DATA_EVIDENCE.json",
+        "target_exists": true
+      },
+      {
+        "original": "R7_ANIL45_SOURCE_COMPARISON.md",
+        "portable": "../../R7_ANIL45_SOURCE_COMPARISON.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R7_ANIL45_SOURCE_COMPARISON.md",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R8_FEATURE_PIPELINE_EVIDENCE.json",
+    "original_sha256": "be8a33e0fc76b7324f3828382e8cdceb0164687d8f097107b6765092cb8dded1",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.json",
+    "portable_sha256": "be8a33e0fc76b7324f3828382e8cdceb0164687d8f097107b6765092cb8dded1",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R8_FEATURE_PIPELINE_EVIDENCE.md",
+    "original_sha256": "bce1ba5931180386d87f58b06f7d48f7d03bf6bf01ef2988b21a45b02b5a3ee5",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R8_FEATURE_PIPELINE_EVIDENCE.md",
+    "portable_sha256": "72eb023c0dcd8969dfc8c4f72f8646c7ceb28ad5568fe6f214ef202c4ddc1269",
+    "relative_link_rebindings": [
+      {
+        "original": "R8_FEATURE_PIPELINE_EVIDENCE.json",
+        "portable": "../../R8_FEATURE_PIPELINE_EVIDENCE.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R8_FEATURE_PIPELINE_EVIDENCE.json",
+        "target_exists": true
+      },
+      {
+        "original": "../data/extracted/DATA_DICTIONARY.md",
+        "portable": "../../../data/extracted/DATA_DICTIONARY.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/extracted/DATA_DICTIONARY.md",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/prepare_sa.py:31",
+        "portable": "../../../pipeline/prepare_sa.py:31",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/prepare_sa.py",
+        "target_exists": true
+      },
+      {
+        "original": "../data/processed/sa_preparation_manifest.json",
+        "portable": "../../../data/processed/sa_preparation_manifest.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/processed/sa_preparation_manifest.json",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/audio.py:10",
+        "portable": "../../../pipeline/audio.py:10",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/audio.py",
+        "target_exists": true
+      },
+      {
+        "original": "../data/versions/vtuad_reference_r4_v1/manifest.json",
+        "portable": "../../../data/versions/vtuad_reference_r4_v1/manifest.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/versions/vtuad_reference_r4_v1/manifest.json",
+        "target_exists": true
+      },
+      {
+        "original": "R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+        "portable": "../../R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/passage_sampler_r4.py:198",
+        "portable": "../../../pipeline/passage_sampler_r4.py:198",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/passage_sampler_r4.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/dynamic_passage_r5.py:117",
+        "portable": "../../../pipeline/dynamic_passage_r5.py:117",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/dynamic_passage_r5.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/robust_sampler_r6.py:115",
+        "portable": "../../../pipeline/robust_sampler_r6.py:115",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/robust_sampler_r6.py",
+        "target_exists": true
+      },
+      {
+        "original": "../configs/r6_cpu_guardrails_v2.json",
+        "portable": "../../../configs/r6_cpu_guardrails_v2.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/configs/r6_cpu_guardrails_v2.json",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/relative_models_r6_v2.py:21",
+        "portable": "../../../pipeline/relative_models_r6_v2.py:21",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/relative_models_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/cpu_ablation_r6_v2.py:141",
+        "portable": "../../../pipeline/cpu_ablation_r6_v2.py:141",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/cpu_ablation_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/mixtures.py:157",
+        "portable": "../../../pipeline/mixtures.py:157",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/mixtures.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/background_prior_features.py:45",
+        "portable": "../../../pipeline/background_prior_features.py:45",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/background_prior_features.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/grid_inputs_r5.py:117",
+        "portable": "../../../pipeline/grid_inputs_r5.py:117",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/grid_inputs_r5.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/relative_grid_r6.py:89",
+        "portable": "../../../pipeline/relative_grid_r6.py:89",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/relative_grid_r6.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/relative_grid_r6_v2.py:30",
+        "portable": "../../../pipeline/relative_grid_r6_v2.py:30",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/relative_grid_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/physics_features_r6_v2.py:25",
+        "portable": "../../../pipeline/physics_features_r6_v2.py:25",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/physics_features_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/physics_features_r6_v2.py:129",
+        "portable": "../../../pipeline/physics_features_r6_v2.py:129",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/physics_features_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/cpu_ablation_r6_v2.py:116",
+        "portable": "../../../pipeline/cpu_ablation_r6_v2.py:116",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/cpu_ablation_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/lgbm_r5.py:19",
+        "portable": "../../../pipeline/lgbm_r5.py:19",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/lgbm_r5.py",
+        "target_exists": true
+      },
+      {
+        "original": "R7_SMALL_MODEL_CONTROLS_RESULTS.md",
+        "portable": "../../R7_SMALL_MODEL_CONTROLS_RESULTS.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R7_SMALL_MODEL_CONTROLS_RESULTS.md",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/group_cv.py:71",
+        "portable": "../../../pipeline/group_cv.py:71",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/group_cv.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/build_passage_cv_r4.py:95",
+        "portable": "../../../pipeline/build_passage_cv_r4.py:95",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/build_passage_cv_r4.py",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/source_split_r6.py:53",
+        "portable": "../../../pipeline/source_split_r6.py:53",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/source_split_r6.py",
+        "target_exists": true
+      },
+      {
+        "original": "R6_SOURCE_SPLIT_AUDIT.md",
+        "portable": "../../R6_SOURCE_SPLIT_AUDIT.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R6_SOURCE_SPLIT_AUDIT.md",
+        "target_exists": true
+      },
+      {
+        "original": "../data/versions/source_split_r6_guardrails_v2/manifest.json",
+        "portable": "../../../data/versions/source_split_r6_guardrails_v2/manifest.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/versions/source_split_r6_guardrails_v2/manifest.json",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/hard_negatives_r6_v2.py:60",
+        "portable": "../../../pipeline/hard_negatives_r6_v2.py:60",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/hard_negatives_r6_v2.py",
+        "target_exists": true
+      },
+      {
+        "original": "R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+        "portable": "../../R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_DIAGRAM_FACTS.json",
+    "original_sha256": "8726caf16a4ffbbaa6a21ceafacadda30e7adbf4282f5660542a4ef8c8852b51",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_DIAGRAM_FACTS.json",
+    "portable_sha256": "8726caf16a4ffbbaa6a21ceafacadda30e7adbf4282f5660542a4ef8c8852b51",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_DIAGRAM_FACTS.md",
+    "original_sha256": "6bc2c0021deaa566d710bdc13e42a4de64741f0c42dc329df7ee10e929a0494b",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_DIAGRAM_FACTS.md",
+    "portable_sha256": "f5429b5fb1519a5b05af70925103322d7a3d6ff0f827442107ffbc1354f83595",
+    "relative_link_rebindings": [
+      {
+        "original": "R9_DIAGRAM_FACTS.json",
+        "portable": "../../R9_DIAGRAM_FACTS.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_DIAGRAM_FACTS.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_BACKGROUND_CV_AUDIT.json",
+    "original_sha256": "7c06d5306f335e5c205dcc3a39215c431fcb86e58cdfc8c8bb94374db8d00576",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.json",
+    "portable_sha256": "7c06d5306f335e5c205dcc3a39215c431fcb86e58cdfc8c8bb94374db8d00576",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_BACKGROUND_CV_AUDIT.md",
+    "original_sha256": "44c3f904ae12ece05105851d80df2093b82f1f915f5709097654d8b8028216c1",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_BACKGROUND_CV_AUDIT.md",
+    "portable_sha256": "374381d5422d8d59829ca30050c310eee371fc8e922226b19d8c1e8cfa3b9d8d",
+    "relative_link_rebindings": [
+      {
+        "original": "../data/versions/background_cv_r9/manifest.json",
+        "portable": "../../../data/versions/background_cv_r9/manifest.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/versions/background_cv_r9/manifest.json",
+        "target_exists": true
+      },
+      {
+        "original": "../data/versions/background_cv_r9/readiness.json",
+        "portable": "../../../data/versions/background_cv_r9/readiness.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/versions/background_cv_r9/readiness.json",
+        "target_exists": true
+      },
+      {
+        "original": "R9_BACKGROUND_CV_AUDIT.json",
+        "portable": "../../R9_BACKGROUND_CV_AUDIT.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_BACKGROUND_CV_AUDIT.json",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/background_cv_r9.py",
+        "portable": "../../../pipeline/background_cv_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/background_cv_r9.py",
+        "target_exists": true
+      },
+      {
+        "original": "../ops/build_background_cv_r9.py",
+        "portable": "../../../ops/build_background_cv_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/build_background_cv_r9.py",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_REFERENCE_POOL_AUDIT.json",
+    "original_sha256": "495b3d252db448b2b4f79df5b9de961d426113692daabd90a80bb63716091a45",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.json",
+    "portable_sha256": "495b3d252db448b2b4f79df5b9de961d426113692daabd90a80bb63716091a45",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_REFERENCE_POOL_AUDIT.md",
+    "original_sha256": "927f69dbe4f9e1b7e5b2974861f68944bb5d22c7b857d2af50930aa45fe32633",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REFERENCE_POOL_AUDIT.md",
+    "portable_sha256": "aedcc58b1ebc0af4a0290b27752fe9aedd1b29e264aadd82c65014296298b04c",
+    "relative_link_rebindings": [
+      {
+        "original": "../data/versions/vtuad_full_r9/manifest.json",
+        "portable": "../../../data/versions/vtuad_full_r9/manifest.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/versions/vtuad_full_r9/manifest.json",
+        "target_exists": true
+      },
+      {
+        "original": "R9_REFERENCE_POOL_AUDIT.json",
+        "portable": "../../R9_REFERENCE_POOL_AUDIT.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_REFERENCE_POOL_AUDIT.json",
+        "target_exists": true
+      },
+      {
+        "original": "../data/versions/vtuad_full_r9/readiness.json",
+        "portable": "../../../data/versions/vtuad_full_r9/readiness.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/versions/vtuad_full_r9/readiness.json",
+        "target_exists": true
+      },
+      {
+        "original": "../pipeline/reference_pool_r9.py",
+        "portable": "../../../pipeline/reference_pool_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/reference_pool_r9.py",
+        "target_exists": true
+      },
+      {
+        "original": "../ops/build_reference_pool_r9.py",
+        "portable": "../../../ops/build_reference_pool_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/build_reference_pool_r9.py",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_MODEL_ADAPTER_VERIFICATION.json",
+    "original_sha256": "70ea2c3e16c21a81ee089aad4ca7ff76baa4e1f05bef453b88b299fa4a862b5b",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_MODEL_ADAPTER_VERIFICATION.json",
+    "portable_sha256": "70ea2c3e16c21a81ee089aad4ca7ff76baa4e1f05bef453b88b299fa4a862b5b",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_MODEL_ADAPTER_VERIFICATION.md",
+    "original_sha256": "2c36035098aaecb481445c9d2a1980bc88d742b63ce6c53f36fc3d0420e25ddf",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_MODEL_ADAPTER_VERIFICATION.md",
+    "portable_sha256": "1ebef0222564d99f49f889ee9a0c8773f54bfec566a3f27df3e5123fa418ce9c",
+    "relative_link_rebindings": [
+      {
+        "original": "../pipeline/models_r9.py",
+        "portable": "../../../pipeline/models_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/models_r9.py",
+        "target_exists": true
+      },
+      {
+        "original": "../ops/verify_models_r9.py",
+        "portable": "../../../ops/verify_models_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/verify_models_r9.py",
+        "target_exists": true
+      },
+      {
+        "original": "R9_MODEL_ADAPTER_VERIFICATION.json",
+        "portable": "../../R9_MODEL_ADAPTER_VERIFICATION.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_MODEL_ADAPTER_VERIFICATION.json",
+        "target_exists": true
+      },
+      {
+        "original": "R8_FEATURE_PIPELINE_EVIDENCE.md",
+        "portable": "../../R8_FEATURE_PIPELINE_EVIDENCE.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R8_FEATURE_PIPELINE_EVIDENCE.md",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_TRAINING_ENGINE_VERIFICATION.json",
+    "original_sha256": "e7decb1cf6b4266b98f36c049f4a13a7790409b890bda731c6d5a1410c42cd5a",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TRAINING_ENGINE_VERIFICATION.json",
+    "portable_sha256": "e7decb1cf6b4266b98f36c049f4a13a7790409b890bda731c6d5a1410c42cd5a",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_TRAINING_ENGINE_VERIFICATION.md",
+    "original_sha256": "f322dc675220f7641763548c90fc8abf85f66951f3bed35710f5a2bc418fa150",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TRAINING_ENGINE_VERIFICATION.md",
+    "portable_sha256": "7dbe7e493e1653ce2097ed1cf68b55b1b9315b6abd5634313bc0265a461b8fba",
+    "relative_link_rebindings": [
+      {
+        "original": "R9_TRAINING_ENGINE_VERIFICATION.json",
+        "portable": "../../R9_TRAINING_ENGINE_VERIFICATION.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_TRAINING_ENGINE_VERIFICATION.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_TREES_ENSEMBLE_VERIFICATION.json",
+    "original_sha256": "52e67817aeb498a8fd12e05fcd0be5bc8ca9fa4454ecca6ff53ecc322c02be66",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.json",
+    "portable_sha256": "52e67817aeb498a8fd12e05fcd0be5bc8ca9fa4454ecca6ff53ecc322c02be66",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_TREES_ENSEMBLE_VERIFICATION.md",
+    "original_sha256": "deb7a7943d1c3ec0660d97e2158939cc2f2fe8b5a282d851ae8dafa4b371d908",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TREES_ENSEMBLE_VERIFICATION.md",
+    "portable_sha256": "0ec60ecc70b0715d26decb53de44a0ce1ba992d30b826dcba6eb974957804768",
+    "relative_link_rebindings": [
+      {
+        "original": "../pipeline/trees_ensemble_r9.py",
+        "portable": "../../../pipeline/trees_ensemble_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/trees_ensemble_r9.py",
+        "target_exists": true
+      },
+      {
+        "original": "../ops/verify_trees_ensemble_r9.py",
+        "portable": "../../../ops/verify_trees_ensemble_r9.py",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/verify_trees_ensemble_r9.py",
+        "target_exists": true
+      },
+      {
+        "original": "R9_TREES_ENSEMBLE_VERIFICATION.json",
+        "portable": "../../R9_TREES_ENSEMBLE_VERIFICATION.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_TREES_ENSEMBLE_VERIFICATION.json",
+        "target_exists": true
+      },
+      {
+        "original": "R9_MODEL_ADAPTER_VERIFICATION.md",
+        "portable": "../../R9_MODEL_ADAPTER_VERIFICATION.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_MODEL_ADAPTER_VERIFICATION.md",
+        "target_exists": true
+      },
+      {
+        "original": "R8_FEATURE_PIPELINE_EVIDENCE.md",
+        "portable": "../../R8_FEATURE_PIPELINE_EVIDENCE.md",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R8_FEATURE_PIPELINE_EVIDENCE.md",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+    "original_sha256": "7b93c30468ff58699c792f9fc5e276845c6a06d350467bb34e41182d63db4f38",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+    "portable_sha256": "7b93c30468ff58699c792f9fc5e276845c6a06d350467bb34e41182d63db4f38",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R7_R5_SUBMISSION_PATH_AUDIT.md",
+    "original_sha256": "dd8171feeba303c9dca594589d451bffc574ab559c26755f20c09bb3ef2d9799",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R7_R5_SUBMISSION_PATH_AUDIT.md",
+    "portable_sha256": "b2416b9d06c0b37c79b51e6c33646a3a6dce94308b1926cd23d975f6350c402f",
+    "relative_link_rebindings": [
+      {
+        "original": "R7_R5_SUBMISSION_PATH_AUDIT_PLAN.json",
+        "portable": "../../R7_R5_SUBMISSION_PATH_AUDIT_PLAN.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R7_R5_SUBMISSION_PATH_AUDIT_PLAN.json",
+        "target_exists": true
+      },
+      {
+        "original": "R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+        "portable": "../../R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_R6_PILOT_SUBMISSION.json",
+    "original_sha256": "cd4bfd8d4e801812ac07f022353601ff6e404332012e7fed268b9728729b8f39",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_R6_PILOT_SUBMISSION.json",
+    "portable_sha256": "cd4bfd8d4e801812ac07f022353601ff6e404332012e7fed268b9728729b8f39",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_R6_PILOT_SUBMISSION.md",
+    "original_sha256": "f66d84ffe69ec9bd5e946f3bca8573a638764c5809503b5ba801772f3f422811",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_R6_PILOT_SUBMISSION.md",
+    "portable_sha256": "afa95dfe5e17592e31d23adb8dc1db218df1d5b1e95024ba57bcafff4feea459",
+    "relative_link_rebindings": [
+      {
+        "original": "R9_R6_PILOT_SUBMISSION_PLAN.json",
+        "portable": "../../R9_R6_PILOT_SUBMISSION_PLAN.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_R6_PILOT_SUBMISSION_PLAN.json",
+        "target_exists": true
+      },
+      {
+        "original": "R9_R6_PILOT_SUBMISSION.json",
+        "portable": "../../R9_R6_PILOT_SUBMISSION.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_R6_PILOT_SUBMISSION.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "configs/r9_full_training_v1.json",
+    "original_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/r9_full_training_v1.json",
+    "portable_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_DATASET_READY_VERIFICATION.json",
+    "original_sha256": "18b7246a4db6fddad707bf41b5659e0181105847f5ec3cc57561e463ca56eadb",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_DATASET_READY_VERIFICATION.json",
+    "portable_sha256": "18b7246a4db6fddad707bf41b5659e0181105847f5ec3cc57561e463ca56eadb",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "data/synthetic/group_cv_minute_full_r9_v1/manifest.json",
+    "original_sha256": "76c2089791e512db942cc56ee495d061b6334dac80b1aca00c06cb1c8b2f72d5",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/manifest.json",
+    "portable_sha256": "76c2089791e512db942cc56ee495d061b6334dac80b1aca00c06cb1c8b2f72d5",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "data/synthetic/group_cv_minute_full_r9_v1/readiness.json",
+    "original_sha256": "c17408bd9f060449797c5d98dafe73ccfa6edae403f33686d2f8f5cc463c96f2",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/readiness.json",
+    "portable_sha256": "c17408bd9f060449797c5d98dafe73ccfa6edae403f33686d2f8f5cc463c96f2",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+    "original_sha256": "06d82732578465c05767e2b987fa34477d0dc58e05f29fee9af46deb7e55a23f",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+    "portable_sha256": "06d82732578465c05767e2b987fa34477d0dc58e05f29fee9af46deb7e55a23f",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_REAL_DATA_CONNECTION_VERIFICATION.md",
+    "original_sha256": "3b6cb490b4433db7293b0951f8e7380e0afedfd5ef1a4e02e5875a340e949150",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_REAL_DATA_CONNECTION_VERIFICATION.md",
+    "portable_sha256": "5fa76f0950474402341b1af6888e04b6f081bc1e64a97eb7698b2cdeb4051493",
+    "relative_link_rebindings": [
+      {
+        "original": "R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+        "portable": "../../R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+    "original_sha256": "969f13824b2b8821825ca87eaed48894e27804b7f774d3cab67e9ac97b10e052",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+    "portable_sha256": "969f13824b2b8821825ca87eaed48894e27804b7f774d3cab67e9ac97b10e052",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  },
+  {
+    "original_source": "reports/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.md",
+    "original_sha256": "dced711143bec9c96fa42dd9e8a878c806745a706dcad8577699e72b0094d60a",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.md",
+    "portable_sha256": "a5e255c3a95b01f6ce75d19b55d9005b6dedaf89c367b15491498557f4885aac",
+    "relative_link_rebindings": [
+      {
+        "original": "R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+        "portable": "../../R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+        "original_target": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+        "target_exists": true
+      }
+    ],
+    "original_modified": false,
+    "byte_exact_copy": false
+  },
+  {
+    "original_source": "reports/R9_RUNNER_VERIFICATION.json",
+    "original_sha256": "7330e53d328d40ae17acd2a87c75fb270e294782183edbbfd6ea5b071415f627",
+    "portable_path": "DATA_EDA_PREPROCESSING_R9_REPORT_assets/evidence/R9_RUNNER_VERIFICATION.json",
+    "portable_sha256": "7330e53d328d40ae17acd2a87c75fb270e294782183edbbfd6ea5b071415f627",
+    "relative_link_rebindings": [],
+    "original_modified": false,
+    "byte_exact_copy": true
+  }
+]

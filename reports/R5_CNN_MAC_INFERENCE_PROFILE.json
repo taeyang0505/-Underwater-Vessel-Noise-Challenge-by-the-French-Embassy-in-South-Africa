@@ -1,0 +1,201 @@
+{
+  "status": "passed original CNN FP32 Mac CPU inference diagnostic",
+  "diagnostic_only": true,
+  "created_at_utc": "2026-10-25T17:36:53.059613+00:00",
+  "model_kind": "bg_cnn",
+  "checkpoint_epoch": 19,
+  "checkpoint_sha256": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+  "original_backup_archive_sha256": "12ec9d8bfb176a19c53891a3578ab32ffdacb4c1d99633a3f11b8a94c5a2fe2a",
+  "original_backup_payload_files_verified": 11,
+  "training_binding": {
+    "data_package_hash": "4759dffad3a9abb57c28f40519284792607762a0501666a04f139fdd8eba38df",
+    "fold": 0,
+    "seed": 42,
+    "source_hash": "6a36a6e3a8cbdb5873ddfc6359674e397cc06e39f672f39b6fbf25079fbe913d",
+    "train_examples": 53244,
+    "train_npz_sha256": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c"
+  },
+  "context_sha256": "4467ede43c800a93bdf1e0fdafe3e271425cb65fc55923c4cdfc1fdfeef00a90",
+  "prior_record": {
+    "filename": "shared_background_prior.json",
+    "file_sha256": "23fc4019c943c69b0d6353b06b7d9b371e881c62893cc32e71c907a4ffad5d05",
+    "payload_sha256": "2059596d8e4bfafb6bc5a943a7509328afdf49cf331554ada1c45ea39e1e6503",
+    "training_binding": {
+      "data_package_hash": "4759dffad3a9abb57c28f40519284792607762a0501666a04f139fdd8eba38df",
+      "fold": 0,
+      "seed": 42,
+      "source_hash": "6a36a6e3a8cbdb5873ddfc6359674e397cc06e39f672f39b6fbf25079fbe913d",
+      "train_examples": 53244,
+      "train_npz_sha256": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c"
+    },
+    "shared_input_schema": "shared_grid8_r5_v1"
+  },
+  "observation_policy": {
+    "quantization_decimals": null,
+    "endpoint_dropout_probability": 0.0
+  },
+  "model_factory_receipt": {
+    "model_config": {
+      "width": 128,
+      "blocks": 5,
+      "dropout": 0.1
+    },
+    "pretrained": false,
+    "kind": "bg_cnn",
+    "total_parameters": 1488002,
+    "trainable_parameters": 1488002
+  },
+  "model_state_unchanged": true,
+  "timing_prefixes": [
+    {
+      "examples": 32,
+      "batch_size": 128,
+      "warmup_examples": 8,
+      "seconds": 0.14714762475341558,
+      "seconds_per_example": 0.004598363273544237,
+      "linear_Test1500_seconds_estimate": 6.8975449103163555,
+      "linear_INNER3000_seconds_estimate": 13.795089820632711
+    },
+    {
+      "examples": 128,
+      "batch_size": 128,
+      "warmup_examples": 8,
+      "seconds": 0.5044790422543883,
+      "seconds_per_example": 0.003941242517612409,
+      "linear_Test1500_seconds_estimate": 5.911863776418613,
+      "linear_INNER3000_seconds_estimate": 11.823727552837227
+    },
+    {
+      "examples": 512,
+      "batch_size": 128,
+      "warmup_examples": 8,
+      "seconds": 1.9295826246961951,
+      "seconds_per_example": 0.003768716063859756,
+      "linear_Test1500_seconds_estimate": 5.653074095789634,
+      "linear_INNER3000_seconds_estimate": 11.306148191579268
+    }
+  ],
+  "timing_seconds": {
+    "hash_verify_prior_factory_checkpoint_restore_seconds": 1.9253110000863671,
+    "INNER_load_and_integrity_seconds": 0.12474133353680372,
+    "full_INNER3000_FP32_predict_seconds": 11.28625804092735
+  },
+  "estimation_limit": "Linear same-host CPU inference-only estimates include common feature/prior transforms. Actual Test is not read; timing varies with system load and input masks. Full INNER time is measured.",
+  "CPU_batch_1_7_128_max_absolute_differences": {
+    "1": {
+      "share": 1.1920928955078125e-06,
+      "score": 5.364418029785156e-06,
+      "cell_mask": 7.12275505065918e-06
+    },
+    "7": {
+      "share": 1.1920928955078125e-06,
+      "score": 5.364418029785156e-06,
+      "cell_mask": 7.12275505065918e-06
+    },
+    "128": {
+      "share": 0.0,
+      "score": 0.0,
+      "cell_mask": 0.0
+    }
+  },
+  "CPU_batch_equivalence_atol": 1e-05,
+  "CPU_batch_equivalence_rtol": 0,
+  "saved_GPU_CUDA_BF16_vs_CPU_FP32": {
+    "share": {
+      "maximum_absolute_difference": 0.006063938140869141,
+      "mean_absolute_difference": 0.00033194634315926425,
+      "p95_absolute_difference": 0.001239889860153197
+    },
+    "score": {
+      "maximum_absolute_difference": 0.01104310154914856,
+      "mean_absolute_difference": 0.0007200563009828329,
+      "p95_absolute_difference": 0.0018848329782485962
+    },
+    "cell_mask": {
+      "maximum_absolute_difference": 0.03281274437904358,
+      "mean_absolute_difference": 0.0008082376328933631,
+      "p95_absolute_difference": 0.002707451581954956
+    }
+  },
+  "precision_comparison_limit": "Same FP32 checkpoint/policy/input binding; saved CUDA inference used BF16 autocast, while this run used FP32 CPU. Differences include precision/backend effects; their individual causes were not isolated by a new GPU experiment.",
+  "INNER_metrics": {
+    "examples": 3000,
+    "CPU_FP32_RMSE": 0.09080814708083197,
+    "saved_GPU_BF16_RMSE": 0.09084926102040936,
+    "CPU_minus_GPU_RMSE": -4.111393957738352e-05,
+    "CPU_MAE": 0.04821762880724176,
+    "CPU_bias_pred_minus_truth": -0.009386678048307659
+  },
+  "maximum_CPU_physical_pooling_residual": 1.1094736840355779e-07,
+  "inner_identity": {
+    "sample_id_order_sha256": "d71a4fc2fb1291de1ba111cd7345d3685e3f6600ac9b7da8d9aabeab42abface",
+    "raw_db_sha256": "5a2beeb195572f819d4621e023026e41c19861b7b43618d7fdda802823d7b62a",
+    "raw_energy_weights_sha256": "5bcbb04158b0d08ab6131df66c08e61ea27f83b4286e958e8112d601ab36354f",
+    "target_share_sha256": "0376c5a167649a41f6f75182e91d02f1c27f0f6e604a38b3ed7b0704c70fb46c"
+  },
+  "prediction_file": "reports/R5_CNN_MAC_INFERENCE_PROFILE/inner_cpu_predictions.npz",
+  "prediction_file_sha256": "6a44209a9c160b158ac01ac681a69f8fcfd4fcba2ac56a8fecc9fccc52f7278e",
+  "source_files_sha256": {
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/__ops__/config.json": "05bc0144b514a55c5cc39b504a49458d5705e37c105f6d92819d9b5cd8bbb665",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/__ops__/environment_receipt.json": "258479a532d9d606a5b0a92d8002e56d4b09184d4488cf8276b79d43af383c2b",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/__ops__/preflight_report.json": "a9e7d3399ab62f940338e38fc96379ecdd79e8ad77dfbf657480a742075dfc41",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/__ops__/startup_receipt.json": "c5ac4434e3f8d7ef0eed77888355b3a650047ccb0fc84fa61fe825ba66245074",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/context.json": "4467ede43c800a93bdf1e0fdafe3e271425cb65fc55923c4cdfc1fdfeef00a90",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/best.pt": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/dynamic_source_receipts.json": "fea947e2a2516d716075e208147c13c5c206798e2e787178c43a053e6c64c1c2",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/epochs.jsonl": "6258bfee115396797501263d3ecdb07442e57ea93fd9a583603e7cf93f9920a6",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/inner_predictions.npz": "efdb98f0c4d61360b27674572f76d8f6e1b6fff2794ec6509d09b7ee007435cc",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/summary.json": "901a29899e35cd7330b3697bd9e42f6d390ae0aabc24b2f67fa7d91dc842cd8c",
+    "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/shared_background_prior.json": "23fc4019c943c69b0d6353b06b7d9b371e881c62893cc32e71c907a4ffad5d05"
+  },
+  "input_files_sha256": {
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/readiness_manifest.json": "028905299c3d9cfde16ca893ba97928e35dd58c8b11346bc242b721e25ac4f8e",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/sources/manifest.json": "05dccb9a717352469de372593e217be8688e99807a946cff947ddd34d58ed614",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/train.npz": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/validation.npz": "51b8ff0d1c28dba263c8e2261d7a31a35138512f9a1b214f236922face592d57",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/inner_validation_metadata.parquet": "a7fdca7fee3e5aabf180fe3a718f44d037533e863015ce1ef5ac9c4d71626fb8"
+  },
+  "code_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "ops/profile_r5_cnn_mac_inference.py": "ffe99271e38957130a15fde15aa3951fd3c6fe367ee7c11ca60c90fd8c12f4ff"
+  },
+  "CPU_full_FP32": true,
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "peak_RSS_bytes": 603815936,
+  "parameters": 1488002,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "torch": "2.14.1",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "system": "Darwin",
+    "machine": "arm64",
+    "logical_CPUs": 14,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    }
+  },
+  "labels_used_only_for_final_metrics_not_prediction_or_timing": true,
+  "TRAIN_prior_refit_neural_training_postprocessing_selection_or_weight_update_performed": false,
+  "Test_OUTER_GPU_SSH_external_transmission_or_submission_used": false,
+  "elapsed_seconds": 18.988966915756464
+}

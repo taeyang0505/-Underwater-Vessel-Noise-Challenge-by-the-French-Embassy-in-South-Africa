@@ -1,0 +1,42 @@
+{
+  "model": "NVIDIA Kumo Tabular Large",
+  "parameters": 215683191,
+  "context_rows": 4096,
+  "features": 96,
+  "members": 4,
+  "device": "cpu",
+  "context_fit_seconds": 49.22192591615021,
+  "test_accessed": false,
+  "results": {
+    "validation": {
+      "n": 3000,
+      "rmse": 0.08564653247594833,
+      "seconds": 25.83261225000024
+    },
+    "calibration": {
+      "n": 3000,
+      "rmse": 0.09857509285211563,
+      "seconds": 25.3530534170568
+    },
+    "domain_holdout": {
+      "n": 3000,
+      "rmse": 0.10430888086557388,
+      "seconds": 25.23999658226967
+    }
+  },
+  "checkpoint": {
+    "model": "NVIDIA Kumo Tabular Large regression",
+    "repository": "nvidia/Kumo-Tabular",
+    "revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+    "release_tag": "v1.0.1",
+    "filename": "large/regressor.pt",
+    "sha256": "745e0e5d97e4256d8a24cb61c2eecbd1128da6c83938c196b7589ea6f62e7421",
+    "bytes": 862909259,
+    "licence": "OpenMDW-1.1",
+    "download_url": "https://huggingface.co/nvidia/Kumo-Tabular/resolve/3c3e10bbdb590ace29e7026847f92db3c603096d/large/regressor.pt",
+    "licence_evidence": "https://openmdw.ai/license/1-1/"
+  },
+  "status": "CPU/GPU candidate comparison, not a claim of competition SOTA; sealed NOAA assessment is not reused",
+  "peak_CPU_resident_GiB": 9.004287719726562,
+  "query_independence_checked": true
+}

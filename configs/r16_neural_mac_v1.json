@@ -1,0 +1,33 @@
+{
+  "format": "r16_neural_mac_v1",
+  "seed": 2026102716,
+  "input_channels": 8,
+  "input_policy": "relative_grid_v2",
+  "forbidden_features": ["PCA", "LF_anchor", "q0", "absolute_db", "highshare"],
+  "data_recipe": "R16 fixed mixed six operators; source data manifest separately SHA-pinned",
+  "training": {
+    "epochs": 100,
+    "early_stopping": false,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "dropout": 0.1,
+    "CPU_threads": 2,
+    "batch_candidates": [64, 128],
+    "scheduler": "cosine100_eta1e-5",
+    "feature_device": "explicit_CPU_FP64_precompute_mmap_once",
+    "backbone_dtype": "float32",
+    "MPS_unsupported_operator_fallback": false
+  },
+  "models": {
+    "bg_cnn": {"device": "mps", "epochs": 100},
+    "fdy": {"device": "mps", "epochs": 100},
+    "itransformer": {"device": "cpu", "epochs": 100},
+    "tfgrid_fdy_conformer": {"device": "mps", "epochs": 100}
+  },
+  "loss": {"share_MSE": 1.0, "energy_weighted_cell_MSE": 0.25, "independent_classifier_BCE": 1.0, "contrast_BCE": 0.0},
+  "checkpoint_policy": "separate_best_regression_best_classifier_and_latest_complete_epoch_optimizer_scheduler_RNG",
+  "query_policy": "db-only frozen inference after global checkpoint/ensemble freeze; no training Test access",
+  "old_R14_TF37": "preserved paused, never resumed or used as R16 initial weights",
+  "pause": "SIGUSR1 or PAUSE_AFTER_EPOCH file stops at next completed atomic epoch; explicit resume only"
+}

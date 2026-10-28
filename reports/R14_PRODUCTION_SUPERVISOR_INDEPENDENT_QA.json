@@ -1,0 +1,65 @@
+{
+  "format": "r14_continuous_output_supervisor_independent_stdlib_QA_v1",
+  "status": "passed",
+  "checked_unix": 1793048318.50286,
+  "source_code_sha256": {
+    "ops/supervise_r14_production_outputs.py": "bbc66ae4ca0df3e809427597588036a325e8fe2e80d321e1570e7203c45009c1",
+    "ops/render_r14_production_status.py": "6b9723f756955b94945b9d1cf33c13e268e60f6efe691000da94dda38c64ce15",
+    "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0"
+  },
+  "outputs_QA_sha256": "bceced7d2856a7a466b2c0089b530a70a710ae26c6e3a5052ac40de769201255",
+  "fixture_directory": "/private/tmp/r14-supervisor-stdlib-fixture-tamj1epm",
+  "synthetic_PID_alive_dead_completed_unknown_cases": true,
+  "PID_signal_calls_simulated_only": [
+    [
+      11,
+      0
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "actual_process_signal_or_PID_probe": false,
+  "complete_CSV_and_manifest_and_source_tamper_rejected": true,
+  "single_and_multiple_receipts_validated": true,
+  "extra_QA_parser_SHA_tamper_rejected": true,
+  "QA_validation_inside_cleanup_try": true,
+  "lock_unlinked_in_finally": true,
+  "only_frozen_output_driver_spawn_in_AST": true,
+  "no_training_start_restart_or_automatic_retry": true,
+  "render_synthetic_snapshot_only": true,
+  "actual_model_Test_or_production_state_read_or_modified": false,
+  "limits": [
+    "This audit never executes supervisor.main or any child process. Actual operator launch/liveness and completion are separate runtime observations.",
+    "PID0 probing is the production liveness implementation; fixtures replace it entirely with a fake function, with no actual OS signals."
+  ]
+}

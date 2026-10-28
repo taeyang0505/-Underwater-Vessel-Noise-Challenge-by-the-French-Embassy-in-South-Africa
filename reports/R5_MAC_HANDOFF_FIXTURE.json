@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "synthetic proc records/signals and JSON checkpoint metadata only",
+  "real_proc_read_real_signals_SSH_GPU_or_training_executed": false,
+  "Torch_imported": false,
+  "checks": [
+    "Linux stat start/exit field offsets and zombie live-thread rejection",
+    "raw exit0 is explicit verified sequential-parent progress, not summary alone",
+    "active NN child blocks finalization without further signals",
+    "TERM pending verified before CONT; only old driver and then old supervisor signaled",
+    "same-PID/start zombie kernel wait-status0 required",
+    "both completed NN models certified",
+    "original model/context/code/data files unchanged",
+    "new RUN absent; new controller only after both old controllers inactive",
+    "driver_reuse rejected before signals",
+    "non_neural_child rejected before signals",
+    "wrong_parent rejected before signals",
+    "nonzero_child rejected before termination",
+    "term_handler rejected before termination",
+    "new_run_blocks_rollback",
+    "explicit pre-finalization rollback resumes only the original launcher"
+  ],
+  "receipt_format": "r5_controller_handoff_v1"
+}

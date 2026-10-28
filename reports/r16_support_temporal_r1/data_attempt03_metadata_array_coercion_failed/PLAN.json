@@ -1,0 +1,30 @@
+{
+  "version": "r16_support_temporal_data_v1",
+  "seed": 202610282149,
+  "created_utc": "2026-10-27T18:12:38.999935+00:00",
+  "D0": "new A-prime joint native-length reference draws; old 25percent-natural-full/otherwise1..6 geometry",
+  "D1": "same reference IDs; natural whole short/medium and contiguous11..15-minute real long crops + exact-stratum HF zero swaps",
+  "paired_invariants": [
+    "positive base background",
+    "reference ID",
+    "explicit20percent zero slots",
+    "operator draw",
+    "EQ/SNR seeds"
+  ],
+  "train_rows_per_arm": 4000,
+  "positive_native_length_stratum_fractions": {
+    "short": 0.35,
+    "medium": 0.4,
+    "long": 0.25
+  },
+  "target_share_forcing": false,
+  "artificial_flat_or_warp_or_repeat": false,
+  "relative_features_only_model_agent_responsibility": true,
+  "Test_EDA_or_LB_target_matching": false,
+  "original_R16_source_data_models_untouched": true,
+  "new_pilot_not_production": true,
+  "long_split_limitation": "Only one native>=15 component goes TRAIN; independent native12 component holds out; unseen>=15 unavailable",
+  "old_R11_reference_seen_after_new_training": true,
+  "report_domain_long_require_GLOBAL_FREEZE": true,
+  "data_builder_model_fitting": false
+}

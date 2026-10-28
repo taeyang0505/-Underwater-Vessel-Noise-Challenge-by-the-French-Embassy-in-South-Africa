@@ -1,0 +1,29 @@
+{
+  "kind": "tfgrid_fdy_conformer",
+  "epoch": 37,
+  "budget": 50,
+  "train_online_rmse": 0.04796883537058982,
+  "train_cell_mse": 0.012637531134320729,
+  "selection": {
+    "rmse": 0.058705338189848084,
+    "n": 1000
+  },
+  "best_selection_rmse": 0.058705338189848084,
+  "best_epoch": 37,
+  "actual_epoch_seconds_including_validation_checkpoint": 644.9580746656284,
+  "training_and_validation_seconds_before_checkpoint": 644.5335820000619,
+  "raw_cache_materialization_seconds": 15.096123417839408,
+  "raw_epoch_receipt_path": "epoch_receipts/epoch_037_59c1b7ffccba60bb.json",
+  "raw_epoch_receipt_sha256": "42e7886df6d8e4ededfffbcda30f53602d4a5c60fd1f553a41f72c840a43e9dc",
+  "rows": 78869,
+  "optimizer_steps": 45621,
+  "learning_rate": 0.00018947512507439847,
+  "next_learning_rate": 0.000166149182565299,
+  "max_rounded_pool_gap": 0.001944214105606079,
+  "site_or_target_row_weighting": false,
+  "cache_shared_in_phase": [
+    "tfgrid_fdy_conformer"
+  ],
+  "source_epoch": 37,
+  "memory_driver_bytes_sampled": 4781768704
+}

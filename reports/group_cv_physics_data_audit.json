@@ -1,0 +1,472 @@
+{
+  "version": "quality_v2_physics_group_cv_prebuilt",
+  "source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "parent_cv_manifest_sha256": "0d273288604e3eb642ada2d85ede89fa21451daffef664d5c8567b35fa5fc25d",
+  "augmentation_version": "physics_aware_v3_minute20db_r1",
+  "physical_limit_assumption": "Synthetic design limit: for every observed minute, sum(added energy)/sum(background energy) <= 100 (20 dB), for short and native references alike; not inferred from challenge Test or leaderboard.",
+  "parent_source_hash": "f8e78e5add5d3131d0d11e362fec72928e999987e479815d3c5c5c6fa114498d",
+  "all_source_fold_assignments_preserved": true,
+  "boundary_candidate_physical_cause_verified": false,
+  "boundary_policy": "Exclude training windows containing any flagged original row actually included in the frozen background array. Keep heldout bytes and add diagnostic flags.",
+  "URN_band_removal_applied": false,
+  "calibration_sealed_Test_arrays_accessed": false,
+  "actual_training_executed": false,
+  "physics_config": {
+    "native_long_fraction": 0.5,
+    "high_background_coverage_fraction": 0.8,
+    "multi_reference_probability": 0.5,
+    "time_reverse_probability": 0.5,
+    "common_gain_range_db": 8.0,
+    "whole_minute_dropout_probability": 0.1,
+    "common_response_range_db": 0.0,
+    "background_blend_probability": 0.25,
+    "measured_ambient_probability": 0.0,
+    "reference_eq_enabled": true,
+    "reference_eq_max_db": 4.0,
+    "zero_addition_probability": 0.2,
+    "high_share_threshold": 0.4,
+    "min_positive_share": 0.005,
+    "max_positive_share": 0.98,
+    "max_minute_snr_db": 20.0
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "background_counts": {
+        "train": 53244,
+        "outer_validation": 20121,
+        "validation": 19714,
+        "purged_temporal_boundary": 4341,
+        "excluded_boundary_candidate": 3545
+      },
+      "clean_train_primary_backgrounds": 53244,
+      "excluded_boundary_train_windows": 3545,
+      "URN_flagged_clean_train_windows": 4185,
+      "minimum_cross_split_support_gap_hours": 24.0,
+      "training_checks": {
+        "examples": 53244,
+        "input_shape": [
+          53244,
+          15,
+          25
+        ],
+        "npz_bytes": 84193786,
+        "max_saved_cell_target_error": 3.6182728296862976e-07,
+        "positive_draw_became_zero_count": 0,
+        "frozen_generation_replayed": true,
+        "primary_background_unique_count": 53244,
+        "clean_primary_coverage_fraction": 1.0,
+        "boundary_contaminated_primary_count": 0,
+        "boundary_contaminated_secondary_count": 0,
+        "secondary_background_uses": 13357,
+        "short_support_cap_independent_checks": 2448,
+        "route_counts": {
+          "ordinary": 17185,
+          "high_share_native": 12774,
+          "high_share_dispersed_multi": 12550,
+          "zero_addition": 10735
+        },
+        "capped_examples": 3840,
+        "active_snr_float32_interval_check": {
+          "positive_examples_checked": 42509,
+          "all_recorded_values_inside_float32_rounding_intervals": true,
+          "point_reconstruction_error_above_0p002db_examples": 0,
+          "max_finite_point_reconstruction_error_db": 7.0944742738277e-06,
+          "method": "IEEE float32 half-ULP q/db intervals; no target or physical component altered"
+        },
+        "minute_snr_check": {
+          "active_minutes_checked": 390763,
+          "known_component_max_minute_snr_db": 20.0,
+          "declared_synthetic_ceiling_db": 20.0,
+          "all_minutes_within_ceiling": true,
+          "all_known_minute_SNRs_inside_float32_rounding_intervals": true,
+          "physical_calibration_or_challenge_distribution_verified": false
+        },
+        "minute_snr_capped_examples": 3528,
+        "active_snr_db_quantiles": [
+          1.5104987955922453,
+          10.470763961775278,
+          16.903521419105576,
+          20.0
+        ],
+        "active_snr_above30db_examples": 0,
+        "zero_target_fraction": 0.2016189617609496,
+        "seconds": 32.35338120814413,
+        "surrogate_envelopes_used": false,
+        "audio_repetition_used": false
+      },
+      "evaluation_flags": {
+        "validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 907,
+          "urn_nominal_band_warning_examples": 236,
+          "original_sample_order_preserved": true
+        },
+        "inner_validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 47,
+          "urn_nominal_band_warning_examples": 403,
+          "original_sample_order_preserved": true
+        }
+      },
+      "frozen_heldout_file_sha256": {
+        "validation.npz": "5648b6509b70b0e3c7495fe3ec538c4574d51b8577d53f3884b182f2516823da",
+        "validation_recipes.json": "dc2dc46a30e79e0a9304e45e9c46d1ab0628deca00184f27bed0cc88b8eb312f",
+        "outer_validation.npz": "41c836130e25f53f87859f8c768a34229b59b8840e3a0ef858a3b7104d5c93d5",
+        "outer_validation_recipes.json": "81493b19ce27270de7e3a28d708f32d15e5fcc47e3710b20a75a5ab86350e972"
+      },
+      "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1"
+    },
+    {
+      "fold": 1,
+      "background_counts": {
+        "train": 53315,
+        "outer_validation": 20121,
+        "validation": 19358,
+        "purged_temporal_boundary": 4391,
+        "excluded_boundary_candidate": 3780
+      },
+      "clean_train_primary_backgrounds": 53315,
+      "excluded_boundary_train_windows": 3780,
+      "URN_flagged_clean_train_windows": 4068,
+      "minimum_cross_split_support_gap_hours": 24.0,
+      "training_checks": {
+        "examples": 53315,
+        "input_shape": [
+          53315,
+          15,
+          25
+        ],
+        "npz_bytes": 83260189,
+        "max_saved_cell_target_error": 3.3501653584622204e-07,
+        "positive_draw_became_zero_count": 0,
+        "frozen_generation_replayed": true,
+        "primary_background_unique_count": 53315,
+        "clean_primary_coverage_fraction": 1.0,
+        "boundary_contaminated_primary_count": 0,
+        "boundary_contaminated_secondary_count": 0,
+        "secondary_background_uses": 13468,
+        "short_support_cap_independent_checks": 2564,
+        "route_counts": {
+          "ordinary": 17415,
+          "high_share_dispersed_multi": 12779,
+          "high_share_native": 12508,
+          "zero_addition": 10613
+        },
+        "capped_examples": 3548,
+        "active_snr_float32_interval_check": {
+          "positive_examples_checked": 42702,
+          "all_recorded_values_inside_float32_rounding_intervals": true,
+          "point_reconstruction_error_above_0p002db_examples": 0,
+          "max_finite_point_reconstruction_error_db": 1.0597709657389487e-05,
+          "method": "IEEE float32 half-ULP q/db intervals; no target or physical component altered"
+        },
+        "minute_snr_check": {
+          "active_minutes_checked": 385440,
+          "known_component_max_minute_snr_db": 20.0,
+          "declared_synthetic_ceiling_db": 20.0,
+          "all_minutes_within_ceiling": true,
+          "all_known_minute_SNRs_inside_float32_rounding_intervals": true,
+          "physical_calibration_or_challenge_distribution_verified": false
+        },
+        "minute_snr_capped_examples": 3227,
+        "active_snr_db_quantiles": [
+          1.4812222057093969,
+          10.434257042265891,
+          16.80927154790387,
+          20.0
+        ],
+        "active_snr_above30db_examples": 0,
+        "zero_target_fraction": 0.1990621776235581,
+        "seconds": 34.70685733295977,
+        "surrogate_envelopes_used": false,
+        "audio_repetition_used": false
+      },
+      "evaluation_flags": {
+        "validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 65,
+          "urn_nominal_band_warning_examples": 377,
+          "original_sample_order_preserved": true
+        },
+        "inner_validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 66,
+          "urn_nominal_band_warning_examples": 412,
+          "original_sample_order_preserved": true
+        }
+      },
+      "frozen_heldout_file_sha256": {
+        "validation.npz": "383315810cad64f7bbe8f778e72eaad8b6ae9157720c0d98df3348bf8f1613e8",
+        "validation_recipes.json": "7ed62242bcca5d6f06df82af958a40dcd8e592d87552dff9bb0be7ea10da053a",
+        "outer_validation.npz": "5661ddf084811d23bedd8c5b2f373dcc53968ea672c1551d435a54de836eec89",
+        "outer_validation_recipes.json": "e68a5d2a70007f4816a1c19898ed72df6e697ea17db82b8876ab6c0428bac89c"
+      },
+      "data_package_hash": "738eadbd0660ee591d3b80317cbe560f5e5bba262285d997ea7c6673d997b095"
+    },
+    {
+      "fold": 2,
+      "background_counts": {
+        "train": 53522,
+        "outer_validation": 20170,
+        "validation": 19728,
+        "excluded_boundary_candidate": 3838,
+        "purged_temporal_boundary": 3707
+      },
+      "clean_train_primary_backgrounds": 53522,
+      "excluded_boundary_train_windows": 3838,
+      "URN_flagged_clean_train_windows": 4075,
+      "minimum_cross_split_support_gap_hours": 24.0,
+      "training_checks": {
+        "examples": 53522,
+        "input_shape": [
+          53522,
+          15,
+          25
+        ],
+        "npz_bytes": 82845296,
+        "max_saved_cell_target_error": 3.637663491540266e-07,
+        "positive_draw_became_zero_count": 0,
+        "frozen_generation_replayed": true,
+        "primary_background_unique_count": 53522,
+        "clean_primary_coverage_fraction": 1.0,
+        "boundary_contaminated_primary_count": 0,
+        "boundary_contaminated_secondary_count": 0,
+        "secondary_background_uses": 13311,
+        "short_support_cap_independent_checks": 2425,
+        "route_counts": {
+          "ordinary": 17395,
+          "high_share_native": 12746,
+          "high_share_dispersed_multi": 12740,
+          "zero_addition": 10641
+        },
+        "capped_examples": 3293,
+        "active_snr_float32_interval_check": {
+          "positive_examples_checked": 42881,
+          "all_recorded_values_inside_float32_rounding_intervals": true,
+          "point_reconstruction_error_above_0p002db_examples": 0,
+          "max_finite_point_reconstruction_error_db": 7.370353505731231e-06,
+          "method": "IEEE float32 half-ULP q/db intervals; no target or physical component altered"
+        },
+        "minute_snr_check": {
+          "active_minutes_checked": 383817,
+          "known_component_max_minute_snr_db": 20.0,
+          "declared_synthetic_ceiling_db": 20.0,
+          "all_minutes_within_ceiling": true,
+          "all_known_minute_SNRs_inside_float32_rounding_intervals": true,
+          "physical_calibration_or_challenge_distribution_verified": false
+        },
+        "minute_snr_capped_examples": 2976,
+        "active_snr_db_quantiles": [
+          1.4929695560027736,
+          10.571520462960365,
+          16.699074402646108,
+          20.0
+        ],
+        "active_snr_above30db_examples": 0,
+        "zero_target_fraction": 0.19881544037965695,
+        "seconds": 34.880380749702454,
+        "surrogate_envelopes_used": false,
+        "audio_repetition_used": false
+      },
+      "evaluation_flags": {
+        "validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 67,
+          "urn_nominal_band_warning_examples": 383,
+          "original_sample_order_preserved": true
+        },
+        "inner_validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 870,
+          "urn_nominal_band_warning_examples": 316,
+          "original_sample_order_preserved": true
+        }
+      },
+      "frozen_heldout_file_sha256": {
+        "validation.npz": "eaf4fc9a65c40f2ceb82a1b7fc56b5e9967515c1b64abe3dd531fe0235d3b8e2",
+        "validation_recipes.json": "b019798ac023d076d1a78beb8702bd01f632dd7abf30524d42b1cd4a3d98617f",
+        "outer_validation.npz": "ee7f6cefe12cbd09c469ea36bb86483fcd52861167fdf6b531c4c113a869f334",
+        "outer_validation_recipes.json": "5ee4f34931f9c2673b5a70c233715f88068889e71959a5d4305de4de08f9fb28"
+      },
+      "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c"
+    },
+    {
+      "fold": 3,
+      "background_counts": {
+        "train": 52998,
+        "outer_validation": 20316,
+        "validation": 19877,
+        "purged_temporal_boundary": 4139,
+        "excluded_boundary_candidate": 3635
+      },
+      "clean_train_primary_backgrounds": 52998,
+      "excluded_boundary_train_windows": 3635,
+      "URN_flagged_clean_train_windows": 3739,
+      "minimum_cross_split_support_gap_hours": 24.0,
+      "training_checks": {
+        "examples": 52998,
+        "input_shape": [
+          52998,
+          15,
+          25
+        ],
+        "npz_bytes": 78672553,
+        "max_saved_cell_target_error": 3.4134614712577616e-07,
+        "positive_draw_became_zero_count": 0,
+        "frozen_generation_replayed": true,
+        "primary_background_unique_count": 52998,
+        "clean_primary_coverage_fraction": 1.0,
+        "boundary_contaminated_primary_count": 0,
+        "boundary_contaminated_secondary_count": 0,
+        "secondary_background_uses": 13215,
+        "short_support_cap_independent_checks": 4302,
+        "route_counts": {
+          "ordinary": 17268,
+          "high_share_dispersed_multi": 12733,
+          "high_share_native": 12567,
+          "zero_addition": 10430
+        },
+        "capped_examples": 4153,
+        "active_snr_float32_interval_check": {
+          "positive_examples_checked": 42568,
+          "all_recorded_values_inside_float32_rounding_intervals": true,
+          "point_reconstruction_error_above_0p002db_examples": 0,
+          "max_finite_point_reconstruction_error_db": 1.20792379867396e-05,
+          "method": "IEEE float32 half-ULP q/db intervals; no target or physical component altered"
+        },
+        "minute_snr_check": {
+          "active_minutes_checked": 343434,
+          "known_component_max_minute_snr_db": 20.0,
+          "declared_synthetic_ceiling_db": 20.0,
+          "all_minutes_within_ceiling": true,
+          "all_known_minute_SNRs_inside_float32_rounding_intervals": true,
+          "physical_calibration_or_challenge_distribution_verified": false
+        },
+        "minute_snr_capped_examples": 3494,
+        "active_snr_db_quantiles": [
+          2.6242223032554763,
+          12.413485710515763,
+          18.313448843083975,
+          20.0
+        ],
+        "active_snr_above30db_examples": 0,
+        "zero_target_fraction": 0.19679987924072606,
+        "seconds": 32.598954250104725,
+        "surrogate_envelopes_used": false,
+        "audio_repetition_used": false
+      },
+      "evaluation_flags": {
+        "validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 848,
+          "urn_nominal_band_warning_examples": 286,
+          "original_sample_order_preserved": true
+        },
+        "inner_validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 898,
+          "urn_nominal_band_warning_examples": 187,
+          "original_sample_order_preserved": true
+        }
+      },
+      "frozen_heldout_file_sha256": {
+        "validation.npz": "5539ad9251292688173137a11112db503b65757962cf8e3c5a413c09b06c9512",
+        "validation_recipes.json": "0bce2f4fb67018d5ceb3d7659880a893c04290455a0bdff1cda34088abd17411",
+        "outer_validation.npz": "8604be53190401304079ce82046275de4dc1e1a5f4cd7cc8aabae3f0c851c317",
+        "outer_validation_recipes.json": "6f5ecb67912b72df08b34db7dc98adc3a132069d95e42ed39736488a6bb0df79"
+      },
+      "data_package_hash": "ea5fb87b41fd258afe92cdd7f768631d7914b54b010cc9d25a311f8e39ff9f93"
+    },
+    {
+      "fold": 4,
+      "background_counts": {
+        "train": 54758,
+        "outer_validation": 20237,
+        "validation": 19329,
+        "purged_temporal_boundary": 3850,
+        "excluded_boundary_candidate": 2791
+      },
+      "clean_train_primary_backgrounds": 54758,
+      "excluded_boundary_train_windows": 2791,
+      "URN_flagged_clean_train_windows": 4225,
+      "minimum_cross_split_support_gap_hours": 24.0,
+      "training_checks": {
+        "examples": 54758,
+        "input_shape": [
+          54758,
+          15,
+          25
+        ],
+        "npz_bytes": 84840474,
+        "max_saved_cell_target_error": 3.142711298975698e-07,
+        "positive_draw_became_zero_count": 0,
+        "frozen_generation_replayed": true,
+        "primary_background_unique_count": 54758,
+        "clean_primary_coverage_fraction": 1.0,
+        "boundary_contaminated_primary_count": 0,
+        "boundary_contaminated_secondary_count": 0,
+        "secondary_background_uses": 13802,
+        "short_support_cap_independent_checks": 2641,
+        "route_counts": {
+          "ordinary": 17796,
+          "high_share_dispersed_multi": 13175,
+          "high_share_native": 12914,
+          "zero_addition": 10873
+        },
+        "capped_examples": 4276,
+        "active_snr_float32_interval_check": {
+          "positive_examples_checked": 43885,
+          "all_recorded_values_inside_float32_rounding_intervals": true,
+          "point_reconstruction_error_above_0p002db_examples": 0,
+          "max_finite_point_reconstruction_error_db": 9.94876146620527e-06,
+          "method": "IEEE float32 half-ULP q/db intervals; no target or physical component altered"
+        },
+        "minute_snr_check": {
+          "active_minutes_checked": 383405,
+          "known_component_max_minute_snr_db": 20.0,
+          "declared_synthetic_ceiling_db": 20.0,
+          "all_minutes_within_ceiling": true,
+          "all_known_minute_SNRs_inside_float32_rounding_intervals": true,
+          "physical_calibration_or_challenge_distribution_verified": false
+        },
+        "minute_snr_capped_examples": 3893,
+        "active_snr_db_quantiles": [
+          1.762777166187854,
+          11.027304354379718,
+          17.17822660211052,
+          20.0
+        ],
+        "active_snr_above30db_examples": 0,
+        "zero_target_fraction": 0.19856459330143542,
+        "seconds": 32.68772204127163,
+        "surrogate_envelopes_used": false,
+        "audio_repetition_used": false
+      },
+      "evaluation_flags": {
+        "validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 843,
+          "urn_nominal_band_warning_examples": 206,
+          "original_sample_order_preserved": true
+        },
+        "inner_validation_metadata.parquet": {
+          "examples": 3000,
+          "boundary_candidate_examples": 897,
+          "urn_nominal_band_warning_examples": 221,
+          "original_sample_order_preserved": true
+        }
+      },
+      "frozen_heldout_file_sha256": {
+        "validation.npz": "2e11d9431fa2b09b2d6059f5104768211ab0f87e75e6515528b594e362ce06f8",
+        "validation_recipes.json": "af6e4be3437b521581285999103c66909537b13cc3dd65c209c94d33af5b1190",
+        "outer_validation.npz": "bd9c8a261a22d4fd7277406c94aae59abc3177c55dd88082f69a5c750dc061fb",
+        "outer_validation_recipes.json": "6653c38b7d45cf1da1e3a63c6550cd707b9dd48df476a843751654f504a4ae9e"
+      },
+      "data_package_hash": "9c7ed6327baa3b82ce4bb92bfa087d326f664c225af34aba05f47cb06679bd5a"
+    }
+  ],
+  "ready_to_train": true,
+  "training_examples_total": 267837,
+  "all_fold_examples_total": 297837
+}

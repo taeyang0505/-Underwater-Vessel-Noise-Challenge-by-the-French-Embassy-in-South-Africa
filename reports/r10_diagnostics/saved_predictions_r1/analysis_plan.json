@@ -1,0 +1,191 @@
+{
+  "format": "r10_saved_prediction_audit_plan_v1",
+  "input_sha256": {
+    "ops/r9_fold0_pilot_nn_map.json": "1e849241c9df95cbf426005b7fdf949c47996725b692e0b18af50f2f59da3497",
+    "submissions/r9_fold0_all5_cpu_r1/frozen_policy.json": "46ec3b14cafb5d07e79d77ff35849e46ec68a6b575bb1ff1781b43fe46f28af9",
+    "submissions/r9_fold0_all5_cpu_r1/PREQUERY_READY.json": "3331cb009a7b9c81435472cca83e8938454e9fa6bd1c2ccafe1bf889cb1e4be3",
+    "submissions/r9_fold0_all5_cpu_r1/gate_comparison.json": "ad4066dc89c75e1981d0ddada5008dec9dd69f9e36db0d8747415ef360757511",
+    "submissions/r9_fold0_all5_cpu_r1/fit_member_predictions.npz": "25b21b8bdff7307cf0cb7cef81723662515c984546c5fc415b9eeaa9a8be1147",
+    "submissions/r9_fold0_all5_cpu_r1/gate_member_predictions.npz": "341a55363af08beb853fef53803bdd0f7142f1c48ee9850083e89fdd395f02e5",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/manifest.json": "76c2089791e512db942cc56ee495d061b6334dac80b1aca00c06cb1c8b2f72d5",
+    "data.nosync/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+    "models/r9_mac_trees_r2/fold_00/receipt.json": "d836be9d229ec751e8d9c71181ce5b14017950a65898b6d425a6918a279deee7",
+    "models/r9_mac_trees_r2/fold_00/models/lgbm_physics/summary.json": "39db3c409cd94a6df044288544e9a5219ddc0e32becb65c38ae5e564ebd0a6ce",
+    "models/r9_mac_trees_r2/fold_00/models/lgbm_physics/inner_predictions.npz": "964e1d30df9464dd3dbe9b923d8736e606958aecd882e1a60c84e905fc9b3c9e",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/selection.npz": "a1bac2fc5eade44d51ddc65138de2e52a79b9fd3492f74e2d25a0164ced15f4a",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/selection_metadata.parquet": "8ac0e27cb0bc52c5571821060729d7cdb19e85045d0bd00527700d7b420895d4",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/selection_recipes.json": "4d3bac3af0e00b4b67453458508f96261cc7e331e052a7b15643cfa402d825ae",
+    "data.nosync/versions/background_cv_r9/fold_00/selection_manifest.parquet": "b29d30027d28fe849600bdf618049ced18fef373841b037e36f2865333fd05ce",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_fit.npz": "817f10df480865e2a0b75ee59026bb7deaae910b4dce7874f25251caeee3b9a6",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_fit_metadata.parquet": "5a23b17b12603266bee3ccc5791d8dca7c41621e7b67f8eb0d7566e1c59f92b5",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_fit_recipes.json": "b7bcc93468f6791e5a4319e37561cf547df157fa58beac3d421653565f5930e5",
+    "data.nosync/versions/background_cv_r9/fold_00/ensemble_fit_manifest.parquet": "928746b09434eb9dd693366a765a4c222003418d2d633fc56f4dfdab1bd5b28a",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_gate.npz": "5f464a525eaf0b815565bd54d2e0e8170e46313965167bac29ba0bf56431bb51",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_gate_metadata.parquet": "a793c168ef4db5f47cae79b13bdab578496951a57e16d71fe2a44834db6d5814",
+    "data.nosync/synthetic/group_cv_minute_full_r9_v1/fold_00/ensemble_gate_recipes.json": "0a294c32d66547f13e11395f31a465597edba30798b4ab9465879cacd8f2b5ad",
+    "data.nosync/versions/background_cv_r9/fold_00/ensemble_gate_manifest.parquet": "1857ae7c239bcb949ccff3c7ae81c388ff7227c8ca63c7baea09271e5c87b77d",
+    "ops/server_backups/r9_gpu_r1/fold_00_bg_cnn_completed_r1/restored/fold_00/models/bg_cnn/summary.json": "24d238e5e33d828cc0595d9456c2c1f69ae5b2933ce300e7515001e01c1a20b9",
+    "ops/server_backups/r9_gpu_r1/fold_00_bg_cnn_completed_r1/restored/fold_00/models/bg_cnn/best_window_validation_predictions.npz": "9e5770239d020f8deb3b77c2887ccf9cd36fe6796a7da18e8afec06fda7434bf",
+    "ops/server_backups/r9_gpu_r1/fold_00_tfgrid_fdy_conformer_completed_r1/restored/fold_00/models/tfgrid_fdy_conformer/summary.json": "ac4a9ebb30685aea27f42196996615662ff5d51911269d11837c0f1cf0f75a57",
+    "ops/server_backups/r9_gpu_r1/fold_00_tfgrid_fdy_conformer_completed_r1/restored/fold_00/models/tfgrid_fdy_conformer/best_window_validation_predictions.npz": "15b270fe9c217d03f50764f542d643bf78835c988dae01b866d0939b54c51b17",
+    "ops/server_backups/r9_gpu_r1/fold_00_fdy_completed_r1/restored/fold_00/models/fdy/summary.json": "973b51ab708538b084210ff223e89ee1c850d7a77f1a9a629cbdf057ddb9c15a",
+    "ops/server_backups/r9_gpu_r1/fold_00_fdy_completed_r1/restored/fold_00/models/fdy/best_window_validation_predictions.npz": "43b2ca82d42e04cb8d8cd52edef8d6175943bf56d3d0dc944b7f141db56c17f9",
+    "ops/server_backups/r9_gpu_r1/fold_00_itransformer_boundary_handoff_r1/restored/fold_00/models/itransformer/summary.json": "ac904482a4c313ec14bff21dde46cfe93a73cf4a72a1c6d2fc5d9f73a2e3df1d",
+    "ops/server_backups/r9_gpu_r1/fold_00_itransformer_boundary_handoff_r1/restored/fold_00/models/itransformer/best_window_validation_predictions.npz": "d566cafa0aaaba81ceeac5ddcda0419dfde25fbbac5431949d8500e4b2554809",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/trees_ensemble_r9.py": "365a476c7d5cc56e701ec56ab366fd0371d857755f91330644c609f97a52c2bc",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+  },
+  "roles": [
+    "selection",
+    "ensemble_fit",
+    "ensemble_gate"
+  ],
+  "members": [
+    "bg_cnn",
+    "tfgrid_fdy_conformer",
+    "fdy",
+    "itransformer",
+    "lgbm_physics",
+    "all5_frozen"
+  ],
+  "frozen_weights": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.6
+  ],
+  "bootstrap_background_group_replicates": 200,
+  "predeclared_Nobs_slices": [
+    "5",
+    ">=13",
+    "15"
+  ],
+  "positive_bins": [
+    "(0,.03]",
+    "(.03,.08]",
+    "(.08,.2]",
+    ">.2"
+  ],
+  "AUC_labels": "observed added-recording share>0; plus explicit-no-source negatives only contrast excluding mask-induced zeros",
+  "feature_AUC_signs": [
+    "Nobs",
+    "-Nobs",
+    "HF_bump",
+    "-HF_bump",
+    "safe_bump",
+    "-safe_bump"
+  ],
+  "bump_definition": {
+    "schema": "r6_physics_bandpower_v2_27",
+    "feature_count": 27,
+    "feature_names": [
+      "bump_low_db",
+      "bump_mid_db",
+      "bump_high_db",
+      "bump_safe_db",
+      "corr_low_mid",
+      "corr_low_high",
+      "corr_low_safe",
+      "std_broadband_db",
+      "tilt_median_high_minus_low_db",
+      "bump_low_db_defined",
+      "bump_mid_db_defined",
+      "bump_high_db_defined",
+      "bump_safe_db_defined",
+      "corr_low_mid_defined",
+      "corr_low_high_defined",
+      "corr_low_safe_defined",
+      "std_broadband_db_defined",
+      "tilt_median_high_minus_low_db_defined",
+      "bump_low_db_valid_minutes",
+      "bump_mid_db_valid_minutes",
+      "bump_high_db_valid_minutes",
+      "bump_safe_db_valid_minutes",
+      "corr_low_mid_valid_minutes",
+      "corr_low_high_valid_minutes",
+      "corr_low_safe_valid_minutes",
+      "std_broadband_db_valid_minutes",
+      "tilt_median_high_minus_low_db_valid_minutes"
+    ],
+    "signal_names": [
+      "bump_low_db",
+      "bump_mid_db",
+      "bump_high_db",
+      "bump_safe_db",
+      "corr_low_mid",
+      "corr_low_high",
+      "corr_low_safe",
+      "std_broadband_db",
+      "tilt_median_high_minus_low_db"
+    ],
+    "groups_zero_based": {
+      "low": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mid": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "high": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "safe": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "safe_band_upper_actual_centre_hz": 5011.9,
+    "quantization_decimals": 1,
+    "query_inputs": [
+      "db"
+    ],
+    "learned_state": false,
+    "definitions": {
+      "group_level_db": "10log10(sum linear powers); all group frequencies observed in the minute",
+      "bump": "max(group_level_db)-median(group_level_db), >=2 complete minutes",
+      "correlation": "Pearson of paired complete group dB levels; >=3 pairs and both nonconstant",
+      "broadband_std": "population std(ddof=0) of all25-band summed-power dB; >=2 complete minutes",
+      "tilt": "median(high_level_db-low_level_db) over >=1 paired complete minute",
+      "missing": "undefined value=0 plus explicit defined mask and integer valid-minute count",
+      "constant_tolerance": "centered sum of squares >1e-20 for each Pearson series"
+    },
+    "common_offset_invariance": "exact mathematically on quantized input; pre-round arbitrary gain can change quantization",
+    "per_band_offset_invariance_guaranteed": false
+  },
+  "component_recovery": "2*score-share; NN temporal q contrast / tree classifier; floating tolerance3e-6; raw and bounded values preserved",
+  "selection_precision": "saved GPU BF16 neural operators with FP32 pooling; native CPU LightGBM",
+  "fit_gate_precision": "saved CPU FP32 neural predictions and native CPU LightGBM",
+  "no_new_predictions_fitting_policy_changes_Test_report_server_or_transmission": true,
+  "source_script_sha256": "b6ee53190d257511e5cacfe30429f373f909ff4ca2c85473a22e90d408de278d"
+}

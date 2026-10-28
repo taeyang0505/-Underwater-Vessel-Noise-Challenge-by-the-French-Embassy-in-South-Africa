@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "fixture_path": "/private/tmp/uvn-hybrid-outer-ready-llw5rsx4",
+  "train_rows": 24,
+  "inner_rows": 12,
+  "outer_rows": 12,
+  "real_competition_data_read": false,
+  "GPU_used": false,
+  "checks": {
+    "actual_hybrid_CNN_1epoch_train_with_outer_open_guard": "passed",
+    "policy_frozen_before_outer": "passed",
+    "tampered_prior_rejected_before_load_outer": "CNN background prior checksum differs from checkpoint",
+    "valid_arch4_outer_CLI_and_prior_binding": "passed"
+  },
+  "code_sha256": {
+    "train.py": "addd233b936c2c0b5497ffe81c7462acc1dec5e82d469ecd77cc85178fa79c0b",
+    "train_group_cv.py": "19d35e976618b622ce6dcf3201c25139bfa8f71242c6cb255516bc89d6620ab6",
+    "evaluate_cv_outer.py": "1fcd4cfe541edcee286e1d10fb7310902e4543cc8a8af2fffcb1097a130fc11c",
+    "checkpoint_prior.py": "3f45c5b7b71c088f7658e288aeb78b9f7cea7ddfa50fec3c294ae8949ae1a55e",
+    "models.py": "a11c9dda847b4a2aeedaf1e892c4c32298ee03e73758568b96a565fd539c21f9",
+    "mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf"
+  }
+}

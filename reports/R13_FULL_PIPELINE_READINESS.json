@@ -1,0 +1,165 @@
+{
+  "format": "r13_full_pipeline_technical_readiness_v1",
+  "created_utc": "2026-10-26T18:52:44.078059+00:00",
+  "technical_preparation_complete": true,
+  "production_approved": false,
+  "ready_for_production_training": false,
+  "production_block_reason": "CPU highshareP1 did not meet simultaneous all-panel improvement; actual CUDA1epoch measurement is also absent",
+  "GPU_CUDA_full_training_executed": false,
+  "new_submission_r13_csv_exists": false,
+  "runtime_policy": "configs/r13_runtime_candidate_highshare_P1_v2.json",
+  "runtime_file_sha256": "227ae599fe830ab37de5d8395c29ca7cad65d178dba0ce0fa5917f99839151ee",
+  "runtime_payload_sha256": "32f6ea653cc802d8609671c4c88d79c5b174d1ee4ebbab8dd55cd0d169e0122c",
+  "candidate": {
+    "variant": "highshare",
+    "P": 1
+  },
+  "small_CPU_policy_evidence": "reports/r13_cpu_correction_r1/selected_policy.json",
+  "small_CPU_policy_evidence_sha256": "2929222af6dd07450eecdcdb31f99ab2d093e254ce5ca123ce1c4aac66cc47ed",
+  "small_CPU_lambda_or_regression_weights_transferred": false,
+  "data_bundle": "data/synthetic/group_cv_physics_r13_variants_v2",
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "manifest_sha256": "ac592fcaa1ab8f7c8b0175988b4bdb27ab22392dbc26d6848f8bf447c17aa96b",
+  "prepared_artifacts": 156,
+  "prepared_artifact_bytes": 167235874,
+  "report_builder_sha256": "1045a95a50baee6e333bba4953c1dc8f49d7e4d3f32eec07637acf98f383d603",
+  "config_file": "configs/r13_full_training_v1.json",
+  "config_file_sha256": "d65abe4c4cde8277b53db8dd4c3a8d42055eb7abbaa54f38f6f773e5061bf1d8",
+  "code_sha256": {
+    "pipeline/runner_r13.py": "99c2a311b01048dd7d72a67250c5c6e71335cb6c538d3373bee6455ff1451634",
+    "ops/run_r13_training.py": "8b4459f909edde4b1c279008f64187430fbe3663d239699ed8fd6bfc89ea35ef",
+    "ops/prepare_r13_training.py": "b9580685168972f49d4b63bf3f7759e27e5ab564c64cb8a7cc7384f5f0d41dfd",
+    "pipeline/runtime_policy_r13.py": "a27281c982526003efb7d759f9c225b4d3d03ce479fc263e7eb429ec9c30f1d4",
+    "ops/benchmark_r13_cuda_epoch.py": "9d28dfb91505a2aa3edba98ed0ee39aa40bafbb1374ee16441ee7c2e7ad2d690",
+    "pipeline/full_data_r13.py": "1ab10cc3ab1a00c8cada4c7f781d729f4896fc9df483ab6e952e4abf2f363d16",
+    "pipeline/dataset_r13.py": "13c47d9208ea8c4578617ee9434be38f0240558e070c5a043e384bffad8939af",
+    "pipeline/dataset_r12.py": "4ad08edb149745f1b5c04c2672cf588c47ba0e80b5e1dcf7bd35ef01f634cd14",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/background_cv_r9.py": "0d2562bc41fc9f823bc2b5eee90cd7e80e0eac9c715788894487714eb58d2e52",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/models_r13.py": "e3ea69d969dfc02e81f091e3e2c03482891291ced18c5414fdff2085b7c7f2c3",
+    "pipeline/training_r13.py": "2962af0f91be7c74708298138feb0c561a21fc3255d0fe8aaaddd44c09041523",
+    "pipeline/trees_ensemble_r13.py": "d65b1f865cb1531c2a9fbc7e3980263d3b105751f4d99bbcbdc7591ff2c8e29e",
+    "pipeline/inference_r13.py": "64d2f90661839746998aaed49f19edb438a71c3e4e6f7bd9c2cc1f3337fb977a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c"
+  },
+  "folds": {
+    "0": {
+      "TRAIN_rows": 78869,
+      "basis_sha256": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+      "basis_explained_variance_sum": 0.8487032214269096,
+      "roles": {
+        "selection": 1000,
+        "ensemble_fit": 500,
+        "ensemble_gate": 500,
+        "report": 1000
+      }
+    },
+    "1": {
+      "TRAIN_rows": 78069,
+      "basis_sha256": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056",
+      "basis_explained_variance_sum": 0.8483868327652732,
+      "roles": {
+        "selection": 1000,
+        "ensemble_fit": 500,
+        "ensemble_gate": 500,
+        "report": 1000
+      }
+    },
+    "2": {
+      "TRAIN_rows": 78362,
+      "basis_sha256": "07d98440a7e41601849f078988200b0876e29f6972e44727078332900a4b21ca",
+      "basis_explained_variance_sum": 0.8430834487298292,
+      "roles": {
+        "selection": 1000,
+        "ensemble_fit": 500,
+        "ensemble_gate": 500,
+        "report": 1000
+      }
+    },
+    "3": {
+      "TRAIN_rows": 78753,
+      "basis_sha256": "7f5bd144360c52dbd04de9a5264cb8bd679a9e388aeb044b42eb2c527857193c",
+      "basis_explained_variance_sum": 0.855263161507416,
+      "roles": {
+        "selection": 1000,
+        "ensemble_fit": 500,
+        "ensemble_gate": 500,
+        "report": 1000
+      }
+    },
+    "4": {
+      "TRAIN_rows": 78124,
+      "basis_sha256": "875b487d50bca396a2a16acf4e6ca5dbaa3dfe33d347a7ebafd0a7e41d934621",
+      "basis_explained_variance_sum": 0.8420905322531987,
+      "roles": {
+        "selection": 1000,
+        "ensemble_fit": 500,
+        "ensemble_gate": 500,
+        "report": 1000
+      }
+    }
+  },
+  "prepared_variants": [
+    "baseline",
+    "highshare"
+  ],
+  "fixed_examples_per_variant": 15000,
+  "fixed_examples_total_both_variants": 30000,
+  "model_parameters": {
+    "bg_cnn": 1491329,
+    "tfgrid_fdy_conformer": 2563813,
+    "fdy": 130765,
+    "itransformer": 299919
+  },
+  "tree_feature_count": 5252,
+  "neural_epochs": 100,
+  "neural_early_stopping": false,
+  "optimizer": "Adam",
+  "dropout": 0.1,
+  "loss": "ShareMSE + .25 * energy-weighted CellMSE; no presence BCE",
+  "inference": "five completed folds, own frozen regression/score policies, equal arithmetic fold average, numericalclip[0,1] only",
+  "source_independence_scope": "background source-group fivefold with >=24h support-aware purge; all509 references shared, no reference-independent claim",
+  "CPU_epoch_synthesis": {
+    "rows": 78869,
+    "threads": 1,
+    "synthesis_and11channel_seconds": 115.44112279266119,
+    "rows_per_second": 683.1967507943699,
+    "max_raw_label_rounded_pool_gap": 0.002094268798828125
+  },
+  "DataLoader": {
+    "workers": 4,
+    "start_method": "spawn",
+    "prefetch_factor": 2,
+    "actual64row_transport_parity_passed": true,
+    "full_parallel_epoch_speedup_measured": false,
+    "CUDA_time_or_VRAM_measured": false
+  },
+  "independent_QA_file": "reports/R13_FULL_DATA_STATIC_INDEPENDENT_QA_FINAL.json",
+  "independent_QA_sha256": "6f5e68d80e46b9f388930f4d14d260663bc408ff9cfa36167608c1104ab6ffca",
+  "evidence_sha256": {
+    "reports/R13_RUNNER_FINAL_VERIFICATION.json": "1d4fe8c2ef1ab7109945a8bb3942170d208c6ab4af8acca481ff6d4f9244a583",
+    "reports/R13_REAL_FULL_MODEL_CONNECTION_V3.json": "eddfc17e0719950826eb5d1591e1de9546530b21e3539126dcd937d4766681d1",
+    "reports/R13_TREE_PCA_CONNECTION.json": "61a93cd4d046fecedad7591cf18a3fcca9934efc6804d96b74dd7c0e8e93d9e8",
+    "reports/R13_FROZEN_INFERENCE_VERIFICATION_V2.json": "489d7b79204a3d022def92744469a773c3c4f20be758e8ad422d4af2fac65049",
+    "reports/R13_SPAWN_LOADER_CONNECTION.json": "a04e0ad0a07275331e15d0f33b9cf3499391b0fb93254a7cdc183bd7ae94cff7",
+    "reports/R13_SYNTHESIS_FULL_EPOCH_BENCHMARK.json": "b5a5a1a06438c7b37648b9830bffcf66010c6ad205b4a02b10ae3ff5b6f11369",
+    "reports/R13_PREPARED_PREFLIGHT_FINAL.json": "d92f9643bcf495a8503772162dba298d41581bc5d24fa6e115095ce52fed4408",
+    "reports/R13_PORTABLE_PACKAGE_PLAN_FINAL.json": "94bb1e33f6e96f877aa88fc8c92b55f535e42f1084ada68879b4a3e478405f8c"
+  },
+  "no_Test_report_array_values_GPU_SSH_or_external_transmission_by_readiness_builder": true
+}

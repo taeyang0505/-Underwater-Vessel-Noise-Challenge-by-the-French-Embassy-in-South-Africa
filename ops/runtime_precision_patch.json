@@ -1,0 +1,25 @@
+{
+  "created_kst": "2026-10-25T02:56:27.036703+09:00",
+  "reason": "Controlled CUDA diagnostic: Kumo FP16 batch-size drift 2.071857e-4; FP32 drift 8.940697e-8 under unchanged 3e-5 tolerance.",
+  "original_archive_sha256": "565933fc2df2a616cd91a6d5bf6ef07ff52766655b5f3e34b1497b99e5059079",
+  "data_changed": false,
+  "vendor_weights_changed": false,
+  "query_tolerance_changed": false,
+  "changes": {
+    "configs/group_cv_physics_training.json": {
+      "before": "bdec58df8e8b77b22334da6eac56281ba45f7e5f10a7a5e99db85edcbfd1738c",
+      "after": "27d9c8bcb248b8ad9ef932bb8356276c77d31028baddabf860e6e67b0087bfa9",
+      "bytes": 3053
+    },
+    "pipeline/cv_foundations.py": {
+      "before": "e8055540c440dea074d176d958dcb71f02ca1757eefe026970324990b2ce22c1",
+      "after": "3e504bc36e9fe43df6e571686464e7e5bc8e51bd238b2870546be0b18e2ceeb7",
+      "bytes": 19868
+    },
+    "pipeline/train_group_cv.py": {
+      "before": "8b45b7456ec8700bd0854c0eeff09efdf05347828eab3d4bcb4579ca04c52f35",
+      "after": "0ff9386c248aa260fbe7ac83b3ab8af23a2ad583e9e90f3a4d81b7af537884ae",
+      "bytes": 19897
+    }
+  }
+}

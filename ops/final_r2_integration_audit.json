@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "review": "Read-only final R2 integration/data/config audit; no new experiment",
+  "release_manifest_sha256": "58b8de0d11586a82a49f053b87bcb295df9c367121413cc12a239fef636189cd",
+  "release_archive_sha256": "40abd4c5340ca561382e6406dce9cb34ec8c34ddf5e4157ff7e5c296af43b3d2",
+  "configuration_sha256": "92bcf84892839fdf9e1963d4448229923cf34a80a4dbe9ecd9eb6ae27a5452f4",
+  "files_sha256": {
+    "pipeline/models.py": "a11c9dda847b4a2aeedaf1e892c4c32298ee03e73758568b96a565fd539c21f9",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/train.py": "addd233b936c2c0b5497ffe81c7462acc1dec5e82d469ecd77cc85178fa79c0b",
+    "pipeline/train_group_cv.py": "19d35e976618b622ce6dcf3201c25139bfa8f71242c6cb255516bc89d6620ab6",
+    "pipeline/cv_foundations.py": "238ae433ea2bf2fbc747cefdf6b8fe3c337b9a4606a9072965c219600478c60a",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/checkpoint_prior.py": "3f45c5b7b71c088f7658e288aeb78b9f7cea7ddfa50fec3c294ae8949ae1a55e",
+    "pipeline/evaluate_cv_outer.py": "1fcd4cfe541edcee286e1d10fb7310902e4543cc8a8af2fffcb1097a130fc11c",
+    "pipeline/infer.py": "0c941abeab0249c0be80c06b154c5bcd52c56f2ec140c465782a494724f885fa",
+    "pipeline/energy_domain_augmentation.py": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5",
+    "pipeline/build_domain_cv_r2.py": "2cffdc4c8d3c937e054c3d62deec318ad7030d638f05c955ee4f61bca2e66c42",
+    "configs/group_cv_physics_training_r2.json": "92bcf84892839fdf9e1963d4448229923cf34a80a4dbe9ecd9eb6ae27a5452f4"
+  },
+  "source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "cv_manifest_sha256": "76f5954676a2f0552f5dcf6116ddcbb5195fc9f6afb54ebfeaaf9279ba2df067",
+  "folds": [
+    {
+      "fold": 0,
+      "train_examples": 53244,
+      "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+      "readiness_sha256": "ce60637cc25021f68c2106a92dd04b9513a938c6b226721cbf10ebd49d310d49",
+      "command_namespace_valid": true
+    },
+    {
+      "fold": 1,
+      "train_examples": 53315,
+      "data_package_hash": "738eadbd0660ee591d3b80317cbe560f5e5bba262285d997ea7c6673d997b095",
+      "readiness_sha256": "41db3b5943113415dd0826426610e410a94465f20dfb1df2ab192c678334989c",
+      "command_namespace_valid": true
+    },
+    {
+      "fold": 2,
+      "train_examples": 53522,
+      "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+      "readiness_sha256": "3746ad88acf7025562a3c015745c6b5361ac4cc1b97b8933d0c534872e94cd6c",
+      "command_namespace_valid": true
+    },
+    {
+      "fold": 3,
+      "train_examples": 52998,
+      "data_package_hash": "ea5fb87b41fd258afe92cdd7f768631d7914b54b010cc9d25a311f8e39ff9f93",
+      "readiness_sha256": "f3987cbc08347dc50875cacfc536661bbb923f87ab3afee8682f429e73f436fa",
+      "command_namespace_valid": true
+    },
+    {
+      "fold": 4,
+      "train_examples": 54758,
+      "data_package_hash": "9c7ed6327baa3b82ce4bb92bfa087d326f664c225af34aba05f47cb06679bd5a",
+      "readiness_sha256": "cce5f9b0b1dbe1be879a5729f92f63739fde04cf67c2280f1135b8b2aa2c87b3",
+      "command_namespace_valid": true
+    }
+  ],
+  "prior_fit": "fresh current-fold TRAIN db/cell_share only; aggregate32, no fold0 cache reuse",
+  "query_prior": "db plus frozen aggregate prior only; no query labels/tags/population fit",
+  "checkpoint_binding": "prior file SHA, embedded payload, internal/external binding, expected package/train/seed/source/fold checked before outer load",
+  "model_policy": {
+    "task_candidates": 7,
+    "foundation_candidates": 2,
+    "CNN": "architecture4 eight-channel residual replacement only",
+    "others": "original feature3",
+    "epochs": 100,
+    "patience": 7,
+    "optimizer": "adam",
+    "domain_augmentation": "none",
+    "both_foundations": "fp32"
+  },
+  "existing_fixtures": {
+    "old_12_variants_and_OPS_hybrid_bitwise": true,
+    "guarded_fake_outer_and_tampered_prior_failclosed": true
+  },
+  "raw_prior_is_not_groundtruth_or_direct_prediction": true,
+  "full_real_OOF_claimed": false,
+  "outer_label_arrays_predictions_metrics_opened": false,
+  "Test_calibration_sealed_opened": false,
+  "core_data_config_modified": false,
+  "actual_training_executed": false
+}

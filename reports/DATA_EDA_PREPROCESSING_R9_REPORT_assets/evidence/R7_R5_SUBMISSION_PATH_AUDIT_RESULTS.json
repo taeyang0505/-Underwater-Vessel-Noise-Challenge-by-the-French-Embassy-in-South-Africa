@@ -1,0 +1,271 @@
+{
+  "format": "r7_r5_submitted_path_audit_result_v1",
+  "status": "passed",
+  "created_utc": "2026-10-25T21:29:20.273936+00:00",
+  "plan_sha256": "e5512533f6299da9daa9c7c91bb1da2dc226fda82b5a3e8c8d93d2459bb87780",
+  "input_file_sha256": {
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/context.json": "4467ede43c800a93bdf1e0fdafe3e271425cb65fc55923c4cdfc1fdfeef00a90",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/shared_background_prior.json": "23fc4019c943c69b0d6353b06b7d9b371e881c62893cc32e71c907a4ffad5d05",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/r5_snapshot_20261025T161450_550440Z_8aeccd97.zip": "12ec9d8bfb176a19c53891a3578ab32ffdacb4c1d99633a3f11b8a94c5a2fe2a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/best.pt": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/summary.json": "901a29899e35cd7330b3697bd9e42f6d390ae0aabc24b2f67fa7d91dc842cd8c",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/epochs.jsonl": "6258bfee115396797501263d3ecdb07442e57ea93fd9a583603e7cf93f9920a6",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/dynamic_source_receipts.json": "fea947e2a2516d716075e208147c13c5c206798e2e787178c43a053e6c64c1c2",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/inner_predictions.npz": "efdb98f0c4d61360b27674572f76d8f6e1b6fff2794ec6509d09b7ee007435cc",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/inference_receipt.json": "b4f11cbbfd35c1bf47e351a4b7ee757711ab27087d0c07c263c880ed468938f6",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/raw_test_predictions.npz": "6f029c7bce2438b9291e8d6f80281a5eedc30d391e2099502ec81e5b866386aa",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/frozen_postprocessing_policy.json": "4a820595c51ec78a8080091bafedaada35b0fd9a9d164608733c5c5ae677a410",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_MAC_INFERENCE_PROFILE.json": "9f91a8bf85c2b7ba33ea85368269073a2f6d5c53a499c87dc23f0f3b67ccce80",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_MAC_INFERENCE_PROFILE/inner_cpu_predictions.npz": "6a44209a9c160b158ac01ac681a69f8fcfd4fcba2ac56a8fecc9fccc52f7278e",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_PILOT_CALIBRATION/specification.json": "580728c8531382b04148c492e13483e7acd06db7a1cf96642ac1ca914dbeafaa",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/raw/sample_submission.csv": "b9ca88ef9249e34572a564adc87025c4186a59bb7b4836a53f09c4208e36693a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/readiness_manifest.json": "028905299c3d9cfde16ca893ba97928e35dd58c8b11346bc242b721e25ac4f8e",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/sources/manifest.json": "05dccb9a717352469de372593e217be8688e99807a946cff947ddd34d58ed614",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/train.npz": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/validation.npz": "51b8ff0d1c28dba263c8e2261d7a31a35138512f9a1b214f236922face592d57",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/inner_validation_metadata.parquet": "a7fdca7fee3e5aabf180fe3a718f44d037533e863015ce1ef5ac9c4d71626fb8",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/build_r5_cnn_pilot_submission.py": "214322278baa234713b4e588710a5310d6b1c2f207f16b27953d432abca4812d",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/profile_r5_cnn_mac_inference.py": "ffe99271e38957130a15fde15aa3951fd3c6fe367ee7c11ca60c90fd8c12f4ff",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/calibrate_r5_single_cnn.py": "e33351265033954999fdd374a605823c80aaefb01a3d878360ce057923627e0a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/audit_r5_submission_replay_r1.py": "4150ad6015f24235ed8d32373c0e1ca8be16d5059885b30257ab4660ee098ab5",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/delivery/r5_cnn_pilot_repro_r1/reproduced_submission/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "/Users/hongtaeyang/Desktop/French_Embassy_Underwater_Vessel_Noise/SUBMIT_NOW/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe"
+  },
+  "checkpoint_sha256": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+  "checkpoint_epoch": 19,
+  "core17_verified": 17,
+  "archive_entries_verified": 11,
+  "factory_receipt": {
+    "model_config": {
+      "width": 128,
+      "blocks": 5,
+      "dropout": 0.1
+    },
+    "pretrained": false,
+    "kind": "bg_cnn",
+    "total_parameters": 1488002,
+    "trainable_parameters": 1488002
+  },
+  "TRAIN_prior_loaded_not_refit": true,
+  "model_state_unchanged": true,
+  "model_state_sha256": "f606251d975031ce70416226223e1aa498af8b7fb9f5d89b917b9cfd43f0d537",
+  "375_minute_major_band_mapping_ID_mask_roundtrip_bitwise": true,
+  "wrong_column_order_rejected": true,
+  "raw_TRAIN_query_feature_and_weight_equivalence_bitwise": true,
+  "numeric_parser_model_predictions_bitwise": true,
+  "energy_weight_oracle_bitwise": true,
+  "physical_pooling_max_abs": {
+    "numeric": 4.708373890771611e-08,
+    "INNER": 1.1094736840355779e-07,
+    "Test_inference_only": 1.0509036929562399e-07
+  },
+  "INNER_known_target_pooling_max_abs": 1.7096852145126462e-07,
+  "INNER_CPU2_metrics": {
+    "n": 3000,
+    "RMSE": 0.09080814708083197,
+    "MAE": 0.04821762880724176,
+    "bias_pred_minus_truth": -0.009386678048307659,
+    "addition_presence_AUC": 0.9967208333333333
+  },
+  "archived_INNER_CPU4_metrics": {
+    "n": 3000,
+    "RMSE": 0.09080814708083197,
+    "MAE": 0.04821762880724176,
+    "bias_pred_minus_truth": -0.009386678048307659,
+    "addition_presence_AUC": 0.9967208333333333
+  },
+  "archived_INNER_GPU_BF16_metrics": {
+    "n": 3000,
+    "RMSE": 0.09084926102040936,
+    "MAE": 0.04826713485212046,
+    "bias_pred_minus_truth": -0.0092049442021768,
+    "addition_presence_AUC": 0.9967107638888888
+  },
+  "INNER_CPU2_vs_archived_CPU4": {
+    "share": {
+      "shape": [
+        3000
+      ],
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "difference_vector_RMSE": 0.0,
+      "different_element_count": 0,
+      "within_predeclared_atol": true
+    },
+    "score": {
+      "shape": [
+        3000
+      ],
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "difference_vector_RMSE": 0.0,
+      "different_element_count": 0,
+      "within_predeclared_atol": true
+    },
+    "cell_mask": {
+      "shape": [
+        3000,
+        15,
+        25
+      ],
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "difference_vector_RMSE": 0.0,
+      "different_element_count": 0,
+      "within_predeclared_atol": true
+    }
+  },
+  "INNER_CPU2_vs_archived_GPU_BF16": {
+    "share": {
+      "shape": [
+        3000
+      ],
+      "bitwise_equal": false,
+      "max_absolute_difference": 0.006063938140869141,
+      "difference_vector_RMSE": 0.0005843654598217476,
+      "different_element_count": 3000,
+      "within_predeclared_atol": false
+    },
+    "score": {
+      "shape": [
+        3000
+      ],
+      "bitwise_equal": false,
+      "max_absolute_difference": 0.01104310154914856,
+      "difference_vector_RMSE": 0.0011731587168514262,
+      "different_element_count": 3000,
+      "within_predeclared_atol": false
+    },
+    "cell_mask": {
+      "shape": [
+        3000,
+        15,
+        25
+      ],
+      "bitwise_equal": false,
+      "max_absolute_difference": 0.03281274437904358,
+      "difference_vector_RMSE": 0.0012863864430400827,
+      "different_element_count": 1124997,
+      "within_predeclared_atol": false
+    }
+  },
+  "INNER_id_order_sha256": "d71a4fc2fb1291de1ba111cd7345d3685e3f6600ac9b7da8d9aabeab42abface",
+  "Test_id_order_sha256": "09407eb36b4c327f87f902c2fccf176ce54b0ad0ee4f793fa70b9a47376ba771",
+  "Test_query_schema_receipt": {
+    "raw_query_csv_sha256": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "rows": 1500,
+    "canonical_features": 375,
+    "ID_order_preserved": true,
+    "NaN_kept_missing": true
+  },
+  "Test_CPU2_vs_archived_CPU4_ID_keyed_numeric_replay_only": {
+    "share": {
+      "shape": [
+        1500
+      ],
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "difference_vector_RMSE": 0.0,
+      "different_element_count": 0,
+      "within_predeclared_atol": true
+    },
+    "score": {
+      "shape": [
+        1500
+      ],
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "difference_vector_RMSE": 0.0,
+      "different_element_count": 0,
+      "within_predeclared_atol": true
+    },
+    "cell_mask": {
+      "shape": [
+        1500,
+        15,
+        25
+      ],
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0,
+      "difference_vector_RMSE": 0.0,
+      "different_element_count": 0,
+      "within_predeclared_atol": true
+    }
+  },
+  "archived_Test_raw_to_submission_CSV_byte_reproduction": true,
+  "local_handoff_csv_sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+  "local_handoff_copies": {
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/delivery/r5_cnn_pilot_repro_r1/reproduced_submission/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "/Users/hongtaeyang/Desktop/French_Embassy_Underwater_Vessel_Noise/SUBMIT_NOW/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe"
+  },
+  "actual_uploaded_Zindi_bytes_SHA_verified": false,
+  "frozen_calibration": {
+    "candidate": "identity",
+    "coefficients": {
+      "a": 1.0,
+      "b": 0.0
+    },
+    "policy_file_sha256": "4a820595c51ec78a8080091bafedaada35b0fd9a9d164608733c5c5ae677a410",
+    "reselected_or_refit": false
+  },
+  "CPU2_vs_original_CSV": {
+    "share_max_absolute": 0.0,
+    "score_max_absolute": 0.0,
+    "recomputed_CPU2_CSV_would_be_byte_identical": true,
+    "CPU2_in_memory_CSV_sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "no_new_submission_CSV_written": true
+  },
+  "precision": "CPU FP32",
+  "torch_threads": 2,
+  "archived_CPU_threads": 4,
+  "replay_atol": 1e-05,
+  "timing_seconds": {
+    "INNER3000": 16.44225341733545,
+    "Test1500_inference_only": 8.473806041292846,
+    "total": 27.471193791367114
+  },
+  "loaded_np_arrays": [
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/validation.npz",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_MAC_INFERENCE_PROFILE/inner_cpu_predictions.npz",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/inner_predictions.npz",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/raw_test_predictions.npz"
+  ],
+  "opened_FoldData_roles": [
+    "inner"
+  ],
+  "Test_opened_after_plan_and_checkpoint_policy_freeze_utc": "2026-10-25T21:29:11.600323+00:00",
+  "no_Test_distribution_analysis_fit_tuning_source_matching_or_label_recovery": true,
+  "no_training_OUTER_old_cross_GPU_SSH_external_or_official_submission": true,
+  "limitations": [
+    "INNER already used for original epoch selection; not independent neural OOF.",
+    "Local handoff SHA does not prove actual uploaded Zindi bytes.",
+    "CPU2/CPU4 numeric equality is distinct from archived raw-to-CSV exact byte reproduction.",
+    "Implementation replay cannot prove hidden generator similarity or identify the cause of the official generalization gap."
+  ],
+  "evidence_sha256": {
+    "inner_cpu2_replay.npz": "f4f486b758f54692b49878aa37c08d6b9788714d6a781af9d97e51ef497d5556",
+    "numeric_mapping.csv": "346f4be489366c5111d9153d403852be6104f71ae385743a87426aa78b874296",
+    "test_cpu2_inference_replay.npz": "6f029c7bce2438b9291e8d6f80281a5eedc30d391e2099502ec81e5b866386aa",
+    "numeric_bad_header.csv": "08fe92b3584a64502d708706bd607172e625a09fc3ec5fab4825ecefdba56382"
+  }
+}

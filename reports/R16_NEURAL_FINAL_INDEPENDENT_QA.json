@@ -1,0 +1,78 @@
+{
+  "status": "passed_readonly_final_audit",
+  "created_utc": "2026-10-27T17:03:42.467773+00:00",
+  "production_start_blocker_found": false,
+  "checks": {
+    "preflight_passed": true,
+    "preflight_actual_train_not_synthetic": true,
+    "source_closure_current": true,
+    "config_sha_current": true,
+    "manifest_sha_current": true,
+    "fold_zero_identity": true,
+    "all_four_models_100_epochs": true,
+    "Adam_no_early_stopping": true,
+    "regression_loss_1_and_025_cell": true,
+    "contrast_BCE_absent": true,
+    "PCA_LF_q0_absolute_highshare_forbidden": true,
+    "separate_best_regression_classifier_and_atomic_latest": true,
+    "decoupled_gradients_and_clipping_source_review": true,
+    "explicit_pause_only_resume": true,
+    "cache_train": true,
+    "cache_selection": true,
+    "CPU_and_MPS_resume_fixture_pass": true,
+    "all_selected_batches_memory_safe": true
+  },
+  "current_source_closure": {
+    "pipeline/models.py": true,
+    "pipeline/models_r9.py": true,
+    "pipeline/grid_models_r5.py": true,
+    "pipeline/hybrid_models_r5.py": true,
+    "pipeline/relative_grid_r6.py": true,
+    "pipeline/relative_grid_r6_v2.py": true,
+    "pipeline/relative_models_r6_v2.py": true,
+    "pipeline/models_r16_production.py": true,
+    "pipeline/training_r16_production.py": true,
+    "ops/train_r16_production_nn.py": true,
+    "pipeline/r16_production_data.py": true,
+    "ops/r16_forward_data.py": true
+  },
+  "roles": {
+    "train": {
+      "n": 61446,
+      "all_array_SHA_match": true,
+      "source_code_matches_preflight": true,
+      "source_manifest_matches_preflight": true,
+      "schema_masks_finiteness_label_bounds_all_rows": true,
+      "raw_q_vs_quantized_w_pool_max_gap": 0.0017985907100802612,
+      "weight_sum_max_gap": 2.384185791015625e-07,
+      "sqrt_weight_channel_max_gap": 0.0,
+      "sample_ids_unique": true
+    },
+    "selection": {
+      "n": 2400,
+      "all_array_SHA_match": true,
+      "source_code_matches_preflight": true,
+      "source_manifest_matches_preflight": true,
+      "schema_masks_finiteness_label_bounds_all_rows": true,
+      "raw_q_vs_quantized_w_pool_max_gap": 0.0017854104520567682,
+      "weight_sum_max_gap": 1.1920928955078125e-07,
+      "sqrt_weight_channel_max_gap": 0.0,
+      "sample_ids_unique": true
+    }
+  },
+  "capability_preflight_SHA": "1df0a93cce1b1b4d14e91bf26d52c6275039d80c2d7fe4064953a5f0d1ed71d7",
+  "source_semantic_review": {
+    "regressor": "R9RelativeMaskAdapter _cell_mask only; mask q[0,1] with missing cells zero; sum(w*q)",
+    "classifier": "IndependentTemporalClassifier3745 parameters, temporal channels0/1/2/3/6/5 only; no share or profile/sqrtw",
+    "loss": "ShareMSE+.25 weightedcellMSE plus independentBCE; no contrastBCE",
+    "gradients": "Regressor and classifier parameters disjoint, independently clipped, no shared learned layer",
+    "fresh_initialization": "make_r16_model no prior weights; latest resume requires PAUSED.json and rejects FAILED.json",
+    "epochs": "range(start_epoch,101), all train rows shuffled deterministically each epoch, no early stopping",
+    "device": "CNN/FDY/TF MPS and iTransformer CPU, float32, fallback must explicitly0"
+  },
+  "current_MPS_availability_rechecked": false,
+  "limitation": "Read-only audit trusts SHA-pinned existing actual CPU/MPS parity/resume fixtures; parent must verify live MPS device under approved execution context. No new training or query data read. Does not establish generalization or performance.",
+  "new_training_started": false,
+  "Test_or_stress_opened": false,
+  "seconds": 0.6273954575881362
+}

@@ -1,0 +1,187 @@
+{
+  "format": "r11_asymmetric_eq_plan_v1",
+  "created_utc": "2026-10-26T14:50:15.786734+00:00",
+  "seed": 2026102612,
+  "n": 1000,
+  "source": "Fold0selectionmetadata; complete15minutesafterminuteQC; uniqueindices; noTestmatching",
+  "conditions": [
+    {
+      "name": "lf10_hf10",
+      "LF_EQ_db": -10.0,
+      "mid_high_full_native_peak_SNR_db": 10.0
+    },
+    {
+      "name": "lf15_hf10",
+      "LF_EQ_db": -15.0,
+      "mid_high_full_native_peak_SNR_db": 10.0
+    },
+    {
+      "name": "lf10_hf20",
+      "LF_EQ_db": -10.0,
+      "mid_high_full_native_peak_SNR_db": 20.0
+    },
+    {
+      "name": "lf15_hf20",
+      "LF_EQ_db": -15.0,
+      "mid_high_full_native_peak_SNR_db": 20.0
+    }
+  ],
+  "reference_policy": "all509admittedwhole-recordingreference; cycles independentofclass/modelerror",
+  "families": [
+    "native_inside",
+    "native_short",
+    "native_edge"
+  ],
+  "family_probabilities": [
+    0.5,
+    0.25,
+    0.25
+  ],
+  "no_source_fraction": 0.2,
+  "placement": "nativeR9geometry;notimewarp;fullnativepeakbeforecrop",
+  "EQ_definition": "indices0..8 gain LFfactor; index9 halfgain; indices10..24 zeroEQ; alpha anchors reference10..24peak to medianbackground10..24 power",
+  "band_centres_Hz": [
+    31.622776601683793,
+    39.810717055349734,
+    50.11872336272722,
+    63.09573444801933,
+    79.43282347242814,
+    100.0,
+    125.89254117941675,
+    158.48931924611142,
+    199.52623149688787,
+    251.18864315095797,
+    316.22776601683796,
+    398.1071705534973,
+    501.18723362727246,
+    630.957344480193,
+    794.3282347242822,
+    1000.0,
+    1258.9254117941675,
+    1584.893192461114,
+    1995.2623149688789,
+    2511.886431509582,
+    3162.2776601683795,
+    3981.0717055349733,
+    5011.872336272725,
+    6309.573444801937,
+    7943.282347242822
+  ],
+  "region_indices": {
+    "low_le200": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mid300to3k": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "mid_high300to8k": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "high3kto8k": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "safe1kto5k": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "bump_definition": "10log10(sum linearbandenergy per minute): max over15 - median over15; measured on raw mixture; all andpositive separately",
+  "model_free_target_checks": {
+    "bump_high_median_goal": 16,
+    "report_tolerance_db": 2,
+    "actual_y_RMS_interval": [
+      0.15,
+      0.2
+    ]
+  },
+  "matched_controls": "ForEACHasymcondition,sameB/ref/nativegeometry withR9smoothEQ6; alpha solvedtoSAMErawphysicaltarget. ThiscontrolisnotstandardR9SNRdistribution.",
+  "selection_policy": "evaluateallfourpredeclaredconditionsandallfourpairedcontrols;nonechosenusingmodeloutputs",
+  "code_and_source_pins": {
+    "ops/infer_r9_fold0_all5_pilot.py": "200e465d3fe429a5b1ff865ded305aec3e0f98851d6f33676e7086e27b8c446f",
+    "ops/r11_asymmetric_eq_audit.py": "4724e4917e0a83e5f362db232c6b08aca75eea028fdeb336f991bb4caab62776",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "data.nosync/versions/background_cv_r9/fold_00/selection_manifest.parquet": "b29d30027d28fe849600bdf618049ced18fef373841b037e36f2865333fd05ce",
+    "data.nosync/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+    "configs/r9_full_training_v1.json": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a"
+  },
+  "source_identity": {
+    "version": "r9_minute_full_dataset_v1",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+    "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+    "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+    "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+    "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+    "code_sha256": {
+      "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+      "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+      "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+      "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+      "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+      "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+      "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+    },
+    "reference_count": 509,
+    "reference_independent_CV": false
+  },
+  "model_weights": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.6
+  ],
+  "model_threads": 2,
+  "tree_threads": 4,
+  "not_Test_distribution_estimate": true,
+  "no_fitting_or_production_changes": true
+}

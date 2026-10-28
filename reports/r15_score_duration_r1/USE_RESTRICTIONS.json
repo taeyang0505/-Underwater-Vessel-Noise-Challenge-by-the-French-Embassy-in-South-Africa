@@ -1,0 +1,17 @@
+{
+  "status": "descriptive_observation_only",
+  "allowed": "Describe existing input/score distributions and implementation consistency",
+  "not_allowed": [
+    "No Test-label/positive-negative inference",
+    "No generator/distribution parameter selection or acceptance using these Test tables",
+    "No adversarial-validation tuning against Test",
+    "No public-score or per-site target/score matching",
+    "No new weights, calibration, thresholds or submission selected from this audit"
+  ],
+  "fixed_analysis_thresholds": {
+    "HF_gt_db": 15,
+    "LF_near_zero_le_db": 3,
+    "LF_joint_gt_db": 6,
+    "corr_gt": 0.5
+  }
+}

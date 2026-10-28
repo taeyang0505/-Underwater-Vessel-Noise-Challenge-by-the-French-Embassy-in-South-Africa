@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "feature_schema": "physics_features13_r5_v1",
+  "feature_names": [
+    "bump_high_db",
+    "corr_low_high",
+    "peak_mid_excess_fraction_316p2hz",
+    "peak_mid_excess_fraction_398p1hz",
+    "peak_mid_excess_fraction_501p2hz",
+    "peak_mid_excess_fraction_631hz",
+    "peak_mid_excess_fraction_794p3hz",
+    "peak_mid_excess_fraction_1000hz",
+    "peak_mid_excess_fraction_1258p9hz",
+    "peak_mid_excess_fraction_1584p9hz",
+    "peak_mid_excess_fraction_1995p3hz",
+    "peak_mid_excess_fraction_2511p9hz",
+    "pca3_shape_residual_rms_db"
+  ],
+  "fixed_features": 12,
+  "total_features": 13,
+  "existing_feature_mapping": {
+    "bump_high_db": "Not the existing upper-two-band temporal ranges or adjacent-frequency jumps.",
+    "corr_low_high": "Not present in existing physics45/fixed features; historical EDA used a different <=520Hz low band.",
+    "peak_mid_excess_fraction": "Reuses per_band_baseline_db(.2). Existing baseline_excess_spectrum sums excess over all minutes/all25bands; retrieval applies TRAIN prototype similarities to that sum. This family selects one MID-power peak minute and emits10 explicit normalized values.",
+    "pca3_shape_residual_rms_db": "New fold-TRAIN window-spectrum fit. Historical EDA PCA on observation rows is neither loaded nor reused."
+  },
+  "low_band_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "high_band_indices": [
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "mid_band_indices": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "checks": {
+    "constant_fixed_features_zero": true,
+    "analytic_high_power_bump_db": 10.0,
+    "pair_mask_correlation_analytic": [
+      1.0,
+      -1.0
+    ],
+    "fewer_than_three_pairs_uses_zero_placeholder": true,
+    "analytic_peak_mid_excess_fraction": {
+      "actual": 0.0234375,
+      "expected": 0.0234375
+    },
+    "fixed_feature_common_gain_max_error": 0.0,
+    "PCA_reconstruction_residual_known_subspace": {
+      "training_family_max_rms_db": 2.0268792013666825e-06,
+      "orthogonal_shape_rms_db": 0.7999993562698364,
+      "effective_rank": 14,
+      "nominal_shape_dimensions_before_float32_rounding": 3,
+      "effective_rank_includes_float32_rounding": true
+    },
+    "missing_constant_input_safe_and_nonmutation": true,
+    "query_chunk_max_abs_error": 0.0,
+    "changed_query_companions_max_abs_error": 0.0,
+    "rank_zero_TRAIN_PCA_safe": true,
+    "all_missing_TRAIN_fit_rejected": true,
+    "unobserved_TRAIN_band_has_explicit_zero_shape_mean": true,
+    "infinite_input_rejected": true,
+    "all_13_common_gain_max_error": 0.0,
+    "nonTRAIN_fit_rejected": true,
+    "labels_dictionary_rejected": true,
+    "partial_TRAIN_row_binding_rejected": true,
+    "raw_rounded_preprocessing_binding_mismatch_rejected": true,
+    "preprocessing_policy_SHA_mismatch_rejected": true,
+    "undeclared_label_binding_rejected": true,
+    "payload_mutation_rejected": true,
+    "JSON_state_reload_bitwise_equal": true,
+    "fitted_state_overwrite_rejected": true,
+    "file_SHA_whitespace_mutation_rejected": true
+  },
+  "PCA_fit_uses_labels_or_recipes": false,
+  "PCA_fit_split": "generated TRAIN fixture only",
+  "PCA_target": "25-dimensional log10 observed-time MEAN LINEAR POWER per band, converted to dB and centered by that window observed-band dB mean",
+  "quantization_is_callers_responsibility": true,
+  "PCA_payload_sha256": "2c51c3d69cbcde64d083cb668f9cc613db3aaa9452ceb200829e7be5fc65c4c6",
+  "real_project_datasets_opened": false,
+  "Test_or_calibration_or_sealed_or_R4_history_opened": false,
+  "GPU_used": false,
+  "actual_fold_training_executed": false,
+  "limits": [
+    "Historical EDA KS is train-versus-Test discrimination, not target-performance evidence.",
+    "New feature definitions are not a claimed reproduction of historical EDA KS numbers.",
+    "Quantile excess and PCA residual are diagnostic features, not measured vessel-only truth.",
+    "No competition RMSE improvement or independent source expansion is established by this numerical fixture."
+  ],
+  "code_sha256": {
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "ops/verify_physics_features_r5.py": "92440772ebe930accec3c69f4c9b58e84940706798ba899dbd291a7ae24bf253"
+  }
+}

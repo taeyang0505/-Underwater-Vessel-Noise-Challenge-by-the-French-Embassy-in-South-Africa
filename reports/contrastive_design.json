@@ -1,0 +1,121 @@
+{
+  "status": "implemented optional ablation; CPU numerical and gradient fixture passed; performance unmeasured",
+  "retrieved_date": "2026-10-24",
+  "default_weight": 0.0,
+  "name": "Training-only two-view identity-projection NT-Xent regularizer",
+  "implementation": "pipeline/contrastive.py",
+  "fixture": "verify_contrastive_fixture.py",
+  "interface": "contrastive_regularizer(model, kind, batch_db, device, temperature=0.2, seed=0, source_groups=None) -> scalar Tensor",
+  "supported_kinds": ["cnn", "fdy", "itransformer"],
+  "unsupported_kinds": ["tabm", "lightgbm", "tabicl", "kumo"],
+  "verified_device": "CPU",
+  "cuda_implementation_present_but_not_executed": true,
+  "mps_supported": false,
+  "input": {
+    "shape": "N x 15 x 25 dB",
+    "missingness": "NaN only; each window must contain at least one observed cell; infinities rejected",
+    "encoder_input": "pipeline.mixtures.cnn_channels(view)[0], float32 N x 4 x 15 x 25",
+    "representation": "model.representation(x), pooled hidden features with gradients connected",
+    "source_boundary": "Caller must supply training-source examples only. Function reads no dataset, model file, population statistics or target."
+  },
+  "view_design": {
+    "transformation": "Independent per-window scalar gains, uniform [-3,+3] dB, one for each of two views",
+    "target_invariance": "If the same g>0 multiplies both background B and added component R under the same mask O, sum(O*g*R)/sum(O*g*(B+R)) equals the original fraction exactly.",
+    "preserved": ["All observed cells", "NaN locations", "Time order", "Frequency positions", "Relative dB pattern", "Normalized linear-energy weights"],
+    "changed": "Absolute dB channel only, apart from floating-point roundoff; stochastic encoder dropout provides another source of view variation.",
+    "excluded": ["SpecAugment/time-frequency masking", "Random crop", "Frequency response changes", "Arbitrary additive noise", "Mixup", "Time-frequency permutation"],
+    "reason_for_exclusions": "These operations can remove/reweight component energy or change the observed-mask target, so retaining the original target would be unjustified without known-component recomputation."
+  },
+  "loss": {
+    "construction": "Concatenate the 2N hidden representations, L2 normalize, compute cosine similarity / temperature, exclude self similarities, retain counterpart view as the positive, and apply cross_entropy averaged over both view directions.",
+    "projection": "Identity. No trainable head is created dynamically and no extra parameters can be omitted from an already-created optimizer.",
+    "simclr_difference": "SimCLR uses a learned nonlinear projection head and its own image augmentations. This implementation borrows the NT-Xent form and two-view structure only; it is not a SimCLR reproduction or an underwater SOTA claim.",
+    "combined_objective": "Existing supervised energy-fraction MSE + existing auxiliary losses + lambda * NT-Xent; lambda defaults to zero.",
+    "temperature": 0.2,
+    "temperature_status": "Starting ablation value, not a validated optimum",
+    "no_negative_policy": "Return a gradient-connected scalar zero when fewer than two unique instances remain or no eligible negative is available."
+  },
+  "false_negative_controls": {
+    "batch_duplicates": "Keep one input per observed mask and canonical relative dB grid rounded to 1 mdB. This avoids many identical/common-gain copies as false negatives, but quantization boundaries can miss floating-point-near equivalents.",
+    "optional_source_groups": "When nonmissing group IDs are provided, same-group candidates are removed from the negative set. Their paired views remain positive.",
+    "current_caller_limitation": "The agreed training caller passes batch_db without source_groups. Repeated reference/background sources and semantically related windows can therefore remain false negatives.",
+    "remaining_risk": "Different source groups are not certified different semantic classes. Source masking does not implement the Debiased Contrastive Learning estimator or remove every false negative.",
+    "future_gate": "Carry frozen training recipe source IDs into a group-aware sampler or mask, check effective unique negative counts, and compare with the zero-weight baseline using locked validation only."
+  },
+  "reproducibility": {
+    "numpy_rng": "Local Generator, caller NumPy RNG unchanged",
+    "torch_rng": "fork_rng restores CPU and target CUDA streams; a local CPU generator and target-device CUDA seed supply stochastic encoder views",
+    "seed_policy": "Caller changes seed per training epoch and batch and records it; fixed seed reproduces the CPU fixture.",
+    "state": "Input batch is not modified, no parameters are created, and eval-mode use is rejected."
+  },
+  "verification": {
+    "real_data_read": false,
+    "training_performed": false,
+    "gpu_used": false,
+    "tests": ["Known-component fraction invariant under common gain", "Missing mask and original inputs preserved", "Relative/energy-weight channels invariant within numerical tolerance", "Independent hand-computed two-instance NT-Xent agrees", "All three real encoder implementations return finite loss with finite nonzero gradients", "CPU RNG restored and repeated seed produces equal loss", "Duplicate-only, singleton and same-group-only batches return differentiable zero", "Unsupported kind, eval mode, all-missing input, infinity and invalid temperature rejected"],
+    "manual_two_instance_loss": 0.013385903090238571,
+    "tiny_fixture_width": 8,
+    "tiny_fixture_batch": 4,
+    "cnn": {"loss": 1.9473509788513184, "gradient_l1": 43.823829650878906},
+    "fdy": {"loss": 1.9501476287841797, "gradient_l1": 76.42985534667969},
+    "itransformer": {"loss": 1.9395556449890137, "gradient_l1": 3.017677068710327},
+    "result_meaning": "These values establish interface/autograd/numerical behavior only. They do not measure learning progress, competition RMSE or generalization."
+  },
+  "selection_policy": {
+    "default": "Disabled, lambda=0",
+    "enabled_experiment": "Use a new run tag and freeze baseline/ablation seeds, data version and training budget. Evaluate supervised RMSE on existing locked validation; preserve identical preprocessing and ensemble procedures.",
+    "do_not_use": ["Challenge Test inputs/statistics", "Calibration for contrastive fitting or ablation selection", "Sealed holdout", "Previous OC02_02 assessment", "Public leaderboard score"],
+    "adoption": "Only a reproducible supervised validation improvement can justify enabling this regularizer. Do not use decreasing contrastive loss alone as evidence."
+  },
+  "limitations": [
+    "Only common gain changes the input, so augmentation diversity is deliberately weak and may add little useful supervision.",
+    "Instance discrimination can encode source or sensor signatures and push similar vessel/background events apart.",
+    "Identity projection directly constrains features needed by the regression objective; auxiliary gradients may conflict with supervised MSE.",
+    "The original SimCLR evidence is from image classification and SimCSE evidence is from sentence embeddings, not this energy-share task.",
+    "A small source pool cannot be made independent by increasing synthetic combinations or contrastive batch size.",
+    "The 2N x 2N similarity matrix uses quadratic batch memory, and two extra encoder views increase compute; batch size must be benchmarked on the rented GPU.",
+    "CUDA numerical behavior, actual training stability, effective group-aware negatives and performance remain unmeasured."
+  ],
+  "primary_sources": [
+    {
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+      "authors": "Chen, Kornblith, Norouzi and Hinton",
+      "venue": "ICML 2020, PMLR 119:1597-1607",
+      "url": "https://proceedings.mlr.press/v119/chen20j.html",
+      "paper_url": "https://proceedings.mlr.press/v119/chen20j/chen20j.pdf",
+      "verified_claim": "Two stochastic views, cosine normalization, temperature-scaled cross entropy, projection-head and batch-size effects. These establish the borrowed method components, not superiority on this competition."
+    },
+    {
+      "title": "Debiased Contrastive Learning",
+      "authors": "Chuang, Robinson, Lin, Torralba and Jegelka",
+      "venue": "NeurIPS 2020",
+      "url": "https://proceedings.neurips.cc/paper/2020/hash/63c3ddcc7b23daa1e42dc41f9a44a873-Abstract.html",
+      "verified_claim": "Random negatives can share the semantic label and bias learning. Its proposed debiasing estimator is not implemented here."
+    },
+    {
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+      "authors": "Gao, Yao and Chen",
+      "venue": "EMNLP 2021:6894-6910",
+      "doi": "10.18653/v1/2021.emnlp-main.552",
+      "url": "https://aclanthology.org/2021.emnlp-main.552/",
+      "verified_claim": "Dropout can form positive views without input deletion in sentence representation learning. Applying this idea to an energy grid is an unvalidated inference."
+    },
+    {
+      "title": "PyTorch functional.normalize",
+      "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.functional.normalize.html",
+      "verified_claim": "Differentiable L2 normalization with an epsilon floor; no out= tensor is used."
+    },
+    {
+      "title": "PyTorch functional.cross_entropy",
+      "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.functional.cross_entropy.html",
+      "verified_claim": "Cross entropy accepts unnormalized logits and integer class targets."
+    },
+    {
+      "title": "PyTorch random and CUDA seeding",
+      "url": "https://docs.pytorch.org/docs/2.14/random.html",
+      "cuda_url": "https://docs.pytorch.org/docs/2.14/generated/torch.cuda.manual_seed.html",
+      "generator_url": "https://docs.pytorch.org/docs/2.14/generated/torch.Generator.html",
+      "verified_claim": "RNG forking/state restoration and explicit generators support isolated reproducible views; CUDA manual_seed applies to the current GPU."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "metrics": {
+    "n": 1024,
+    "rmse": 0.07468684306305406,
+    "site_macro_rmse": 0.07074524585479393,
+    "mae": 0.037072639735080765,
+    "bias": 0.015105826914836036,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 851,
+        "rmse": 0.07650950180077441,
+        "mae": 0.03576719313040384,
+        "bias": 0.015534725047941988,
+        "presence_auc": 0.8801691203503893,
+        "presence_auc_share_only": 0.8182995252481657,
+        "site_macro_rmse": 0.07650950180077441
+      },
+      "5 St Croix Island": {
+        "n": 173,
+        "rmse": 0.06498098990881344,
+        "mae": 0.04349422968063022,
+        "bias": 0.012996044768748376,
+        "presence_auc": 0.9059459459459459,
+        "presence_auc_share_only": 0.8567567567567568,
+        "site_macro_rmse": 0.06498098990881344
+      }
+    },
+    "presence_auc": 0.8853178723895233,
+    "presence_auc_share_only": 0.8249394254067152,
+    "family_slices": {
+      "edge_straddling": {
+        "n": 408,
+        "rmse": 0.07841712212722865,
+        "mae": 0.03930988041792919,
+        "bias": -0.004758704884509203,
+        "presence_auc": 0.886104149262044,
+        "presence_auc_share_only": 0.8847117794486216,
+        "site_macro_rmse": 0.07579839263313769
+      },
+      "two_second_first_no_warp": {
+        "n": 411,
+        "rmse": 0.0782308560414635,
+        "mae": 0.043009151553653674,
+        "bias": 0.03202610161561053,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.07142202040237303
+      },
+      "zero": {
+        "n": 205,
+        "rmse": 0.057921733060052834,
+        "mae": 0.020718002876370385,
+        "bias": 0.020718002876370385,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.05747651049555037
+      }
+    },
+    "target_slices": {
+      "zero": {
+        "n": 214,
+        "rmse": 0.05670210676596932,
+        "mae": 0.019944288232494233,
+        "bias": 0.019944288232494233,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.056783322985962184
+      },
+      "positive_low_to_.1": {
+        "n": 476,
+        "rmse": 0.061727039157089485,
+        "mae": 0.027335322837798118,
+        "bias": 0.014927945428317995,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.0512970078431531
+      },
+      ".1_to_.4": {
+        "n": 249,
+        "rmse": 0.10465019607540198,
+        "mae": 0.06508391275165157,
+        "bias": 0.011637275343329326,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.09921993696966298
+      },
+      ".4_to_1": {
+        "n": 85,
+        "rmse": 0.07540708987657632,
+        "mae": 0.05266820542371512,
+        "bias": 0.014081241113764317,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.06974302763699841
+      }
+    }
+  },
+  "predictions_path": "models/r7_fixed100_transfer_v1/r4law_legacy8_global/cross_generator_predictions.npz",
+  "predictions_sha256": "a32c001716477ac4084904f0a805b7ff5bb51b772f98b8a95673d185728d66e4",
+  "checkpoint_sha256": "02b321359ac44f2bdaba4eab54f3176b7586207bc680f7a239dee077cd34e383",
+  "epoch": 24,
+  "input_npz_sha256": "bab8e5ed0f70a16d000862ccea768fd38891bf53e4dedba3c371e9946cb996c2",
+  "query_identity": {
+    "examples": 1024,
+    "db_sha256": "ba192e77e141a0d7550a386f33fac08cd1196e98264fd5728683b6d2ade1f076",
+    "base_window_index_order_sha256": "e7cb799a54c4a78d8f74c528c1152e2b6b97d3529b40fbf9aeac9aa990b1fb40",
+    "site_order_sha256": "afcf3dcc3172b1388c77fca851e20992156aa34ff76e74c809e0cc9fb7393611"
+  },
+  "target_identity": {
+    "share_sha256": "28feda5b6956936c46809a96b671ce244e33bcced54848e701bc90171d3cb842",
+    "presence_sha256": "e8a1833a5cfa82999aa87d7d6708f67a9213d4738f17801a57968100f766dcf4"
+  },
+  "maximum_predicted_physical_pooling_error": 8.940696716308594e-08,
+  "elapsed_seconds": 3.7035187082365155,
+  "old_ES_checkpoint_metrics": {
+    "n": 1024,
+    "rmse": 0.07522830476865468,
+    "site_macro_rmse": 0.06766498571266763,
+    "mae": 0.035724538184060996,
+    "bias": 0.014608257881011786,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 851,
+        "rmse": 0.07843253586441623,
+        "mae": 0.035533218140402056,
+        "bias": 0.01638519122295992
+      },
+      "5 St Croix Island": {
+        "n": 173,
+        "rmse": 0.05689743556091904,
+        "mae": 0.036665655855469985,
+        "bias": 0.00586738924518597
+      }
+    },
+    "presence_auc": 0.8853467174339449,
+    "presence_auc_share_only": 0.8333737163955233,
+    "family_slices": {
+      "edge_straddling": {
+        "n": 408,
+        "rmse": 0.07990468984126364,
+        "mae": 0.03827487943636145,
+        "bias": -0.003251106993773023
+      },
+      "two_second_first_no_warp": {
+        "n": 411,
+        "rmse": 0.07804438385521988,
+        "mae": 0.041189248501941174,
+        "bias": 0.029801247122798767
+      },
+      "zero": {
+        "n": 205,
+        "rmse": 0.057879968415080967,
+        "mae": 0.01969265929826911,
+        "bias": 0.01969265929826911
+      }
+    },
+    "target_slices": {
+      "zero": {
+        "n": 214,
+        "rmse": 0.056667395805679026,
+        "mae": 0.01897680076538385,
+        "bias": 0.01897680076538385
+      },
+      "positive_low_to_.1": {
+        "n": 476,
+        "rmse": 0.06540588166965258,
+        "mae": 0.026892391638598735,
+        "bias": 0.01496635074628037
+      },
+      ".1_to_.4": {
+        "n": 249,
+        "rmse": 0.10284952806129607,
+        "mae": 0.06270458768712169,
+        "bias": 0.010966293522679017
+      },
+      ".4_to_1": {
+        "n": 85,
+        "rmse": 0.07175963312526998,
+        "mae": 0.04831377626611791,
+        "bias": 0.012273301929263425
+      }
+    }
+  },
+  "RMSE_difference_from_old_ES": -0.0005414617056006127
+}

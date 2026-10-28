@@ -1,0 +1,24 @@
+{
+  "arm": "control",
+  "regressor_features": 466,
+  "classifier_features": 700,
+  "regressor_best_iteration": 562,
+  "classifier_best_iteration": 141,
+  "metrics": {
+    "n": 2400,
+    "rmse": 0.1284736128912886,
+    "mae": 0.07540191490033173,
+    "bias": -0.020010875974927116,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.1511600465413093,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.223233481217229,
+    "auc_share": 0.8669010416666667,
+    "auc_classifier": 0.9172591145833332,
+    "auc_75share_25clf": 0.9151171874999999,
+    "auc_25share_75clf": 0.9183658854166667,
+    "classifier_ge099_fraction": 0.34541666666666665,
+    "classifier_le001_fraction": 0.0
+  },
+  "elapsed_seconds": 34.84792245738208
+}

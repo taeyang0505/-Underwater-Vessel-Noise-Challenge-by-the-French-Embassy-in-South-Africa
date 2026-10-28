@@ -1,0 +1,31 @@
+{
+  "version": "r7_integration_audit_v1",
+  "purpose": "Explain R5 submission failure versus fixed100 R6 results and execute the three user-requested checks",
+  "scope": {
+    "task1": "Replay archived R5 checkpoint, INNER predictions and ID-keyed submitted CSV using frozen preprocessing and policy; Test inference only",
+    "task2": "Evaluate every predeclared fixed100 best-window checkpoint on the same three existing source/generator transfer panels",
+    "task3": "Compare fixed constants, TRAIN mean, one fixed-alpha Ridge fit, frozen LightGBM and frozen CNNs on common panels"
+  },
+  "interpretation": {
+    "r6_fixed100_five_arms": "five tiny CNN ablation arms, not the five production backbone architectures",
+    "own_inner": "checkpoint development selection; not blind OOF or official Test",
+    "existing_cross_panels": "previously inspected development diagnostics; not a fresh blind holdout",
+    "not_a_pure_causal_comparison": "source subsets, sampling, target law, inputs, architecture and selection differ from original R5",
+    "all_results_required": true,
+    "report_unfavorable_results": true,
+    "numerical_replay_pass_is_not_generalization_success": true
+  },
+  "prohibitions": {
+    "Test_fit_or_statistics_tuning": true,
+    "cross_metric_hyperparameter_or_checkpoint_selection": true,
+    "new_GPU_or_SSH_run": true,
+    "official_submission": true,
+    "external_consultation": true,
+    "frozen_input_mutation_or_failed_partial_reuse": true
+  },
+  "result_paths": {
+    "task1": "reports/R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+    "task2": "reports/R7_FIXED100_TRANSFER_RESULTS.json",
+    "task3": "reports/R7_SMALL_MODEL_CONTROLS_RESULTS.json"
+  }
+}

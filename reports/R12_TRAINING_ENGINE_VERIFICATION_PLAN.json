@@ -1,0 +1,20 @@
+{
+  "format": "r12_numeric_training_engine_plan_v1",
+  "source_sha256": {
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "ops/train_r12_cnn.py": "2ca0ac74cf119c154ea8045997e1b3f97cbea8935b06ef797f646a5c63176611",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf"
+  },
+  "scope": [
+    "nine settings one Adam step each",
+    "pure/legacy gradient decomposition",
+    "six objective finite counterexamples",
+    "actual tiny100epoch loop",
+    "scripted equal-min checkpoint tie"
+  ],
+  "temporary_only_numeric_models": true,
+  "no_real_data_Test_or_heldout_read": true
+}

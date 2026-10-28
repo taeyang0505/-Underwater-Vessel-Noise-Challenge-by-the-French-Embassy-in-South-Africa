@@ -1,0 +1,30 @@
+{
+  "format": "r13_prospective_cpu_correction_v1",
+  "created_before_new_model_fitting": true,
+  "seed": 2026102712,
+  "basis_data": "strict R12 site/sensor/recorder/mask matched L1HM1P1",
+  "training_arms": ["baselineP0", "baselineP1", "highshareP0", "highshareP1"],
+  "highshare_policy": "Replace alpha only for exactly25percent of positives in each long/standard stratum by fixed Latin-hypercube target Uniform(.25,.85); original20percent zero and30percent long among positives preserved",
+  "CNN": {
+    "architecture": "pipeline.training_r12.R12MaskCNN,26953 parameters,11 channels (P0 padded3zero)",
+    "examples": 6000,
+    "subset": "unchanged original R12 cnn_subset_indices.npy",
+    "epochs":100,"early_stopping":false,"optimizer":"Adam","dropout":0.1,
+    "loss":"Share MSE +.25 energy-weighted cell MSE",
+    "learning_rate":0.001,"scheduler":"cosine100 to1e-5","batch_size":128,
+    "baselineP1": "reuse completed models/r12_mask_matched_control_r2/cnn; identical source arrays,subset,seed,features,loss and100epoch policy verified; never reuse interrupted r1",
+    "new_fits":["baselineP0","highshareP0","highshareP1"]
+  },
+  "tree":{"fresh_fits":4,"examples":12000,"maximum_trees":1500,"early_stopping":40,"regressor_and_independent_classifier":true},
+  "fixed_regression_blend":{"CNN":0.5,"tree":0.5},
+  "regression_selection":"minimum validation_gate500 blend RMSE among four arms, first canonical tie; all fits frozen before numeric gate read",
+  "score_candidates_classifier_weight":[0,0.25,0.5,1],
+  "score_selection":"for selected regression arm, choose highest validation_gate AUC of (1-lambda)*blend_share+lambda*independent_tree_classifier; first canonical tie. Score does not change regression or q.",
+  "fit_validation":"unchanged R12 validation_fit1000,checkpoint/boosting stopping only",
+  "locked_evaluation":"unchanged R12 eval500 and high_snr_long500 after durable policy SHA",
+  "development_evaluation":"same17 R12/R9/R10/R11 panels; exposure/sharedreferences explicitly acknowledged",
+  "primary_reports":["RMSE","bias","y>.2 RMSE/bias/SSE","shareAUC","classifierAUC","scoreAUC","Brier","saturation","site_macro"],
+  "fullscale_decision":"Report per-panel benefit and downside. Do not declare all-gap solved or infer hidden Test loss. Fullscale setup and GPU timing require independent actual data/CUDA preflight.",
+  "Test_or_LB_used_for_selection": false,
+  "original_R9_R10_R11_R12_changed":false
+}

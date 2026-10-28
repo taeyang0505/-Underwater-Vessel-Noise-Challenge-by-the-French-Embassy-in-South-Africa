@@ -1,0 +1,186 @@
+{
+  "official_download_bytes": 97806656,
+  "official_rows": 1715779,
+  "common_band_float32_bytes": 171577900,
+  "all_aligned_windows": 133641,
+  "cv_background_windows": 100965,
+  "cv_background_groups": 258,
+  "cv_reference_clips": 1171,
+  "cv_reference_components": 26,
+  "reference_by_source": {
+    "HearMyShip_V1": {
+      "clips": 945,
+      "seconds": 18974.027541666666,
+      "native_long_clips": 0,
+      "connected_components": 19
+    },
+    "NOAA_SanctSound_extension_v1": {
+      "clips": 8,
+      "seconds": 7200.0,
+      "native_long_clips": 8,
+      "connected_components": 4
+    },
+    "VTUAD_v1.3.2": {
+      "clips": 218,
+      "seconds": 51534.0,
+      "native_long_clips": 3,
+      "connected_components": 3
+    }
+  },
+  "canonical_npz_bytes": 461390519,
+  "canonical_array_payload_bytes": 895893696,
+  "synthetic_examples_total": 297837,
+  "train_examples_total": 267837,
+  "version": "group_cv_physics_v2_r1",
+  "cv_source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "cv_directory_logical_file_bytes_including_aliases": 2125217640,
+  "observed_minute_counts_background": {
+    "3": 14,
+    "4": 18,
+    "5": 19842,
+    "6": 12,
+    "7": 18,
+    "8": 14,
+    "9": 21,
+    "10": 15,
+    "11": 23,
+    "12": 40,
+    "13": 2534,
+    "14": 10696,
+    "15": 67718
+  },
+  "fold_partitions": [
+    {
+      "fold": 0,
+      "train_examples": 53244,
+      "zero_target_fraction": 0.2016189617609496,
+      "observed_minute_counts_train": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 119,
+        "4": 1814,
+        "5": 12789,
+        "6": 15,
+        "7": 14,
+        "8": 20,
+        "9": 11,
+        "10": 10,
+        "11": 22,
+        "12": 117,
+        "13": 1432,
+        "14": 8524,
+        "15": 28357
+      }
+    },
+    {
+      "fold": 1,
+      "train_examples": 53315,
+      "zero_target_fraction": 0.1990621776235581,
+      "observed_minute_counts_train": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 97,
+        "4": 1953,
+        "5": 13441,
+        "6": 5,
+        "7": 4,
+        "8": 6,
+        "9": 8,
+        "10": 5,
+        "11": 13,
+        "12": 121,
+        "13": 1435,
+        "14": 8277,
+        "15": 27950
+      }
+    },
+    {
+      "fold": 2,
+      "train_examples": 53522,
+      "zero_target_fraction": 0.19881544037965695,
+      "observed_minute_counts_train": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 59,
+        "4": 2002,
+        "5": 13871,
+        "6": 3,
+        "7": 2,
+        "8": 5,
+        "9": 10,
+        "10": 7,
+        "11": 10,
+        "12": 63,
+        "13": 1164,
+        "14": 8362,
+        "15": 27964
+      }
+    },
+    {
+      "fold": 3,
+      "train_examples": 52998,
+      "zero_target_fraction": 0.19679987924072606,
+      "observed_minute_counts_train": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 64,
+        "4": 1754,
+        "5": 13308,
+        "6": 12,
+        "7": 7,
+        "8": 5,
+        "9": 8,
+        "10": 9,
+        "11": 8,
+        "12": 44,
+        "13": 900,
+        "14": 8248,
+        "15": 28631
+      }
+    },
+    {
+      "fold": 4,
+      "train_examples": 54758,
+      "zero_target_fraction": 0.19856459330143542,
+      "observed_minute_counts_train": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 106,
+        "4": 1843,
+        "5": 13359,
+        "6": 11,
+        "7": 18,
+        "8": 11,
+        "9": 11,
+        "10": 12,
+        "11": 15,
+        "12": 116,
+        "13": 1256,
+        "14": 8381,
+        "15": 29619
+      }
+    }
+  ],
+  "challenge_Test_read": false,
+  "calibration_or_sealed_arrays_read": false,
+  "example": {
+    "split": "fold_00/train.npz",
+    "index": 9,
+    "share": 0.46555086970329285,
+    "recovered_share": 0.4655508282052317,
+    "observed_minutes": 14,
+    "component_origin": "Reconstructed known components E*(1-q), E*q; not a learned separation output",
+    "unweighted_mean_cell_fraction": 0.42960998643056625
+  },
+  "figure_sha256": {
+    "01_dataset_scale.png": "9b4562c20488e6acb094b6d3e2fc290d0b034e79d92b94de6efd2600753f6755",
+    "02_nested_group_cv.png": "643f72ecf02ac5f89dcae96176d2046e21f3c460d07f0144127952e959d53acf",
+    "03_training_distributions.png": "f39fc8fa5b120ae33f12ad8fe5775b0ffafe95205b93de28078b0671e665c1ea",
+    "04_known_component_example.png": "c9c81b614b48840c0d9a0aaf285251e0e50729c423afa96f69b4e6d790e0afd3"
+  }
+}

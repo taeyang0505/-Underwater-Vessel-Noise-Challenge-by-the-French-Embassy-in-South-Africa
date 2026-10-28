@@ -1,0 +1,11 @@
+External data declaration: VTUAD (rebuilt) v1.3.2
+
+Dataset: VTUAD (rebuilt), version 1.3.2, by Hao Yuan, Wenbo Wang, Tian Li, Guici Chen, Lingjiang Zeng and Sixian Liu.
+Public source and download instructions: https://doi.org/10.5281/zenodo.23037895
+https://zenodo.org/records/23037895
+Licence: CC BY 4.0. Attribution to the dataset authors and upstream Ocean Networks Canada recordings: https://data.oceannetworks.ca/ and https://doi.org/10.17616/R3RW43 .
+Access: anonymous public HTTPS; no payment or account required. Accessed 24 October 2026. The public deposit includes strict-interval vessel/background WAV archives, metadata, documentation and checksums. Follow its instructions for the split archive files.
+
+Preprocessing: convert strict recorded intervals to the challenge's 25 frequency-band energy summaries using Hann-window PSD integration and linear-energy temporal averaging. Training augmentation includes temporal-envelope/retiming and smooth spectral-response variation, with synthetic additions to the released South African backgrounds in linear energy. Original recording groups are partitioned before augmentation. Reference recordings can include ambient sound; synthetic targets describe the known added reference energy.
+
+No external audio or challenge data are redistributed by this declaration. Test.csv is used only for fixed inference, with no test fitting or hidden-label recovery.

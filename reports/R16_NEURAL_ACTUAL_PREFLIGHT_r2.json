@@ -1,0 +1,553 @@
+{
+  "status": "passed",
+  "format": "r16_neural_capability_v1",
+  "config_sha256": "e117702a3f01bca99a8332be8f9981d835a1712910d89635714ccec56264fd4b",
+  "data_manifest_sha256": "7ea98290fd08204e4966554b19ab50520d5262acf0bc2f9c152d44b6540e3728",
+  "source_code_sha256": {
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/training_r16_production.py": "28726cdef79dee79479b426ef0c9a7233071ee4096db1daccba0de669c8e156c",
+    "ops/train_r16_production_nn.py": "cd9f65ecfe5e484d52fdf88a11039136dff3fefdacb82e45cc07fff4f30b7d5a",
+    "pipeline/r16_production_data.py": "81853811a1820d15e935141795f6611d035843f5d249fb80da246cbdadb84067",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda"
+  },
+  "models": {
+    "bg_cnn": {
+      "selected_batch_size": 128,
+      "device": "mps",
+      "options": [
+        {
+          "batch_size": 64,
+          "device": "mps",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "bg_cnn",
+            "settings": {
+              "width": 128,
+              "blocks": 5,
+              "dropout": 0.1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 1487873,
+            "classification_parameters": 3745,
+            "total_parameters": 1491618,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.06102495826780796,
+          "step_seconds": [
+            0.06139970850199461,
+            0.06101237516850233,
+            0.06102495826780796
+          ],
+          "examples_per_second": 1048.7512292779631,
+          "CPU_device_max_abs": 7.152557373046875e-07,
+          "pool_max_abs": 1.7881393432617188e-07,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 1.1920928955078125e-07,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 1166884864,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        },
+        {
+          "batch_size": 128,
+          "device": "mps",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "bg_cnn",
+            "settings": {
+              "width": 128,
+              "blocks": 5,
+              "dropout": 0.1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 1487873,
+            "classification_parameters": 3745,
+            "total_parameters": 1491618,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.10903645772486925,
+          "step_seconds": [
+            0.1084059588611126,
+            0.1091714994981885,
+            0.10903645772486925
+          ],
+          "examples_per_second": 1173.9192804940647,
+          "CPU_device_max_abs": 7.152557373046875e-07,
+          "pool_max_abs": 1.7881393432617188e-07,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 2.086162567138672e-07,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 1210925056,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        }
+      ]
+    },
+    "fdy": {
+      "selected_batch_size": 128,
+      "device": "mps",
+      "options": [
+        {
+          "batch_size": 64,
+          "device": "mps",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "fdy",
+            "settings": {
+              "width": 32,
+              "blocks": 3,
+              "dropout": 0.1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 129901,
+            "classification_parameters": 3745,
+            "total_parameters": 133646,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.02642158232629299,
+          "step_seconds": [
+            0.027721666730940342,
+            0.02617320790886879,
+            0.02642158232629299
+          ],
+          "examples_per_second": 2422.262194959894,
+          "CPU_device_max_abs": 1.7881393432617188e-07,
+          "pool_max_abs": 2.9802322387695312e-08,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 8.940696716308594e-08,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 1237204992,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        },
+        {
+          "batch_size": 128,
+          "device": "mps",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "fdy",
+            "settings": {
+              "width": 32,
+              "blocks": 3,
+              "dropout": 0.1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 129901,
+            "classification_parameters": 3745,
+            "total_parameters": 133646,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.040596457198262215,
+          "step_seconds": [
+            0.04205545876175165,
+            0.040596457198262215,
+            0.040406959131360054
+          ],
+          "examples_per_second": 3152.984492584718,
+          "CPU_device_max_abs": 1.7881393432617188e-07,
+          "pool_max_abs": 2.9802322387695312e-08,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 8.940696716308594e-08,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 1239302144,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        }
+      ]
+    },
+    "itransformer": {
+      "selected_batch_size": 128,
+      "device": "cpu",
+      "options": [
+        {
+          "batch_size": 64,
+          "device": "cpu",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "itransformer",
+            "settings": {
+              "width": 96,
+              "blocks": 3,
+              "dropout": 0.1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 295599,
+            "classification_parameters": 3745,
+            "total_parameters": 299344,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.03220120817422867,
+          "step_seconds": [
+            0.03220120817422867,
+            0.032022750005126,
+            0.03227383363991976
+          ],
+          "examples_per_second": 1987.5030667706624,
+          "CPU_device_max_abs": 0.0,
+          "pool_max_abs": 0.0,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 0.0,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 0,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        },
+        {
+          "batch_size": 128,
+          "device": "cpu",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "itransformer",
+            "settings": {
+              "width": 96,
+              "blocks": 3,
+              "dropout": 0.1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 295599,
+            "classification_parameters": 3745,
+            "total_parameters": 299344,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.05888345930725336,
+          "step_seconds": [
+            0.05888345930725336,
+            0.058271707966923714,
+            0.05980024952441454
+          ],
+          "examples_per_second": 2173.785329630468,
+          "CPU_device_max_abs": 0.0,
+          "pool_max_abs": 0.0,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 0.0,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 0,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        }
+      ]
+    },
+    "tfgrid_fdy_conformer": {
+      "selected_batch_size": 64,
+      "device": "mps",
+      "options": [
+        {
+          "batch_size": 64,
+          "device": "mps",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "tfgrid_fdy_conformer",
+            "settings": {
+              "embed_dim": 64,
+              "hidden_size": 128,
+              "grid_blocks": 5,
+              "dropout": 0.1,
+              "conformer_blocks": 1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 2562085,
+            "classification_parameters": 3745,
+            "total_parameters": 2565830,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.30279500037431717,
+          "step_seconds": [
+            0.30480841640383005,
+            0.30279500037431717,
+            0.3013097085058689
+          ],
+          "examples_per_second": 211.36412398118455,
+          "CPU_device_max_abs": 5.364418029785156e-07,
+          "pool_max_abs": 0.0,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 4.470348358154297e-07,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 5711626240,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": true
+        },
+        {
+          "batch_size": 128,
+          "device": "mps",
+          "parameters": {
+            "format": "r16_relative8_decoupled_mask_v1",
+            "architecture_version": 16,
+            "kind": "tfgrid_fdy_conformer",
+            "settings": {
+              "embed_dim": 64,
+              "hidden_size": 128,
+              "grid_blocks": 5,
+              "dropout": 0.1,
+              "conformer_blocks": 1
+            },
+            "input_channels": 8,
+            "feature_names": [
+              "band_temporal_median_relative_div10",
+              "band_temporal_q20_relative_div15",
+              "adjacent_observed_delta_div10",
+              "positive_mid_high_delta_times_smooth_low_band_co_rise",
+              "band_median_minus_window_median_div20",
+              "observed_mask",
+              "band_temporal_q05_relative_div15",
+              "sqrt_rounded_energy_weight"
+            ],
+            "input_policy": "r16_relative8_quantized_weights_noPCA_noLFanchor_v1",
+            "score_policy": "independent_temporal_classifier_sigmoid_v1",
+            "classifier_input_channels": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              5
+            ],
+            "regression_parameters": 2562085,
+            "classification_parameters": 3745,
+            "total_parameters": 2565830,
+            "shared_regression_classifier_parameters": 0,
+            "pretrained": false,
+            "requires_background_prior": false
+          },
+          "median_step_seconds": 0.6300064995884895,
+          "step_seconds": [
+            0.6134227504953742,
+            0.6300064995884895,
+            0.6829430405050516
+          ],
+          "examples_per_second": 203.17250708303425,
+          "CPU_device_max_abs": 5.364418029785156e-07,
+          "pool_max_abs": 0.0,
+          "classifier_profile_energy_invariance_max_abs": 0.0,
+          "cross_parameter_gradients": false,
+          "checkpoint_CPU_portability_max_abs": 4.172325134277344e-07,
+          "finite_loss_grad_optimizer": true,
+          "sampled_MPS_driver_bytes": 9536831488,
+          "memory_measurement_is_true_peak": false,
+          "within_memory_limit": false
+        }
+      ]
+    }
+  },
+  "synthetic_only": false,
+  "data_source_validation": {
+    "status": "passed",
+    "fold": 0,
+    "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_00/manifest.json",
+    "manifest_sha256": "7ea98290fd08204e4966554b19ab50520d5262acf0bc2f9c152d44b6540e3728",
+    "data_hash": "19afb3a38af0ce5f09b4cfb14b96da4162595c29d523bb5cc275ee621e52f605",
+    "roles": {
+      "selection": 2400,
+      "cv_validation": 1000,
+      "ensemble_fit": 500,
+      "ensemble_gate": 500,
+      "report": 1000,
+      "train": 61446
+    },
+    "Test_accessed": false
+  },
+  "elapsed_seconds": 13.902166292071342,
+  "benchmark_weights_discarded": true,
+  "production_training_started": false,
+  "Test_used": false,
+  "resume_fixture": [
+    {
+      "status": "passed",
+      "device": "cpu",
+      "checkpoint_epoch": 1,
+      "replayed_epoch2_step_max_state_abs": 0.0,
+      "loss_abs_difference": 0.0,
+      "next_learning_rate_exact": true,
+      "optimizer_scheduler_CPU_torch_MPS_numpy_python_RNG_restored": true,
+      "production_steps": 0
+    },
+    {
+      "status": "passed",
+      "device": "mps",
+      "checkpoint_epoch": 1,
+      "replayed_epoch2_step_max_state_abs": 0.0,
+      "loss_abs_difference": 0.0,
+      "next_learning_rate_exact": true,
+      "optimizer_scheduler_CPU_torch_MPS_numpy_python_RNG_restored": true,
+      "production_steps": 0
+    }
+  ],
+  "runtime": {
+    "Python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "torch": "2.14.1"
+  }
+}

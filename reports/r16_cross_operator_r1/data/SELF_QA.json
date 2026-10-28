@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "source_code_sha256": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda",
+  "data_manifest_sha256": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1",
+  "checks": {
+    "train_control": {
+      "n": 4000,
+      "zero": 800,
+      "unique_backgrounds": 4000
+    },
+    "train_mixed": {
+      "n": 4000,
+      "zero": 800,
+      "unique_backgrounds": 4000
+    },
+    "local_fit": {
+      "n_each": 400,
+      "operators": 6,
+      "zero_each": 80,
+      "paired_identity": true,
+      "all_component_checks": true
+    },
+    "local_gate": {
+      "n_each": 400,
+      "operators": 6,
+      "zero_each": 80,
+      "paired_identity": true,
+      "all_component_checks": true
+    },
+    "local_report": {
+      "n_each": 400,
+      "operators": 6,
+      "zero_each": 80,
+      "paired_identity": true,
+      "all_component_checks": true,
+      "unfrozen_loader_rejected": true
+    },
+    "domain_holdout": {
+      "n_each": 400,
+      "operators": 6,
+      "zero_each": 80,
+      "paired_identity": true,
+      "all_component_checks": true,
+      "unfrozen_loader_rejected": true
+    }
+  },
+  "training_same_paired_backgrounds": true,
+  "no_addition_training_input_bitwise_equal": true,
+  "max_saved_q_recomputation_error": 0.0,
+  "all_file_and_source_SHA_valid": true,
+  "Test_or_model_opened": false,
+  "source_reading_scope": "numeric component QA of new data only, no performance metrics"
+}

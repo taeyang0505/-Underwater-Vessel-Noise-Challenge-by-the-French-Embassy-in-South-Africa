@@ -1,0 +1,698 @@
+{
+  "passed": true,
+  "scope": "Independent local data-only QA; overlap oracle and sampler powers are synthetic. Production-size schedules only.",
+  "source_hash": "694cf18c9daabc69a77807f6e0ede33ca451443fbfb17d754ac191f0206463ef",
+  "frozen_file_sha256_before_and_after": {
+    "data/versions/vtuad_reference_r4_v1/manifest.json": "0fcf298fde1486f60269497a60f04745e41ba5fff4bc1f46de81553e67752479",
+    "configs/group_cv_passage_r4_data.json": "a0be9c9957db117a30b43379d9e5097098897a3b551bde7dff4c1b78acdff70d",
+    "pipeline/passage_sampler_r4.py": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+    "data/versions/vtuad_reference_r4_v1/excluded_manifest.parquet": "c8e0a7d3ac1631d78e0bc8f7e59b7509b0b7064ddf933d11d6f24811720f1d29",
+    "data/versions/vtuad_reference_r4_v1/fold_03_reference_manifest.parquet": "f37dbbba08ae77fe8675b9cd57c69aba0e45230682f2dde74bd7ee5291885f89",
+    "data/versions/vtuad_reference_r4_v1/fold_04_reference_manifest.parquet": "9eb890fca65e5bd26696c5eee384f620d45112ad4b32c6e98050465edf440a72",
+    "data/versions/vtuad_reference_r4_v1/reference_manifest.parquet": "49ae1e7c99fb7cc166d272aca3e9b1467ecd61953928ee243def5e98602c5f1e",
+    "data/versions/vtuad_reference_r4_v1/fold_02_reference_manifest.parquet": "4b322b6afb912d14c3eed5125713d457c4dd8e6b9c122617a1711b3c4d32ab47",
+    "data/versions/vtuad_reference_r4_v1/fold_00_reference_manifest.parquet": "80b957d397a95844c74006f809060bf1464a3d922053665359fb07907b522d06",
+    "data/versions/vtuad_reference_r4_v1/fold_01_reference_manifest.parquet": "dcdcc11386433692b016ef9ec1324e4eee3b9adbaf4b2cac05a47235872b36c6",
+    "data/versions/vtuad_reference_r4_v1/component_manifest.parquet": "4c88d918eab881e7a4fc57876e00355f3a793f39b2406129d7bf6150eec952ab"
+  },
+  "frozen_source_metadata_unchanged": true,
+  "numeric_timewarp_oracle": {
+    "passed": true,
+    "oracle_cases": 117,
+    "invalid_inputs_rejected": 5,
+    "max_overlap_oracle_scaled_absolute_error": 1.6064927166326015e-13,
+    "max_band_mean_scaled_absolute_error": 7.993605777301127e-15,
+    "fade_integral_max_absolute_error": 1.4210854715202004e-14,
+    "input_readonly_bytes_unchanged": true,
+    "energy_scope": "Band mean power conserved before fade/EQ; integrated power x derived duration changes by M/K."
+  },
+  "production_size_fixed_schedules": {
+    "passed": true,
+    "scope": "Schedule only: no background/reference power arrays read or dataset generated.",
+    "seed_attempts_per_split": 1,
+    "predeclared_tolerances": {
+      "mean_share_difference": 0.03,
+      "zero_fraction_difference": 0.03,
+      "coarse_duration_total_variation": 0.1,
+      "fine_duration_total_variation": 0.1,
+      "rendered_duration_KS_statistic": 0.03,
+      "rendered_duration_mean_difference_seconds": 2.0,
+      "maximum_conditional_mean_difference": 0.05
+    },
+    "maximum_conditional_mean_difference": 0.015179569730761566,
+    "folds": [
+      {
+        "fold": 0,
+        "splits": {
+          "train": {
+            "examples": 53244,
+            "schedule_seed": 20431028,
+            "positive_examples": 42595,
+            "zero_count": 10649,
+            "zero_fraction": 0.20000375629178874,
+            "share_mean": 0.3819982210601035,
+            "positive_share_mean": 0.477500018361877,
+            "conditional_positive_share_means": [
+              0.47879668292552635,
+              0.4771123357848889
+            ],
+            "rendered_duration_mean_seconds": 510.00079821575304,
+            "coarse_fractions": [
+              0.2301678600774739,
+              0.7698321399225261
+            ],
+            "fine_fractions": [
+              0.2301678600774739,
+              0.38363657706303556,
+              0.38363657706303556,
+              0.002558985796454983
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "validation": {
+            "examples": 3000,
+            "schedule_seed": 21431031,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199884043156906,
+            "positive_share_mean": 0.47749855053946133,
+            "conditional_positive_share_means": [
+              0.46965591067693857,
+              0.4798411572516434
+            ],
+            "rendered_duration_mean_seconds": 510.00083333333333,
+            "coarse_fractions": [
+              0.23,
+              0.77
+            ],
+            "fine_fractions": [
+              0.23,
+              0.38375,
+              0.38375,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "schedule_seed": 22431034,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38200096969049163,
+            "positive_share_mean": 0.47750121211311447,
+            "conditional_positive_share_means": [
+              0.4671993553877802,
+              0.4805856337531307
+            ],
+            "rendered_duration_mean_seconds": 510.005,
+            "coarse_fractions": [
+              0.23041666666666666,
+              0.7695833333333333
+            ],
+            "fine_fractions": [
+              0.23041666666666666,
+              0.38333333333333336,
+              0.38333333333333336,
+              0.002916666666666667
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          }
+        },
+        "comparison_to_train": {
+          "validation": {
+            "mean_share_difference": 6.193714655600147e-07,
+            "zero_fraction_difference": 3.7562917887257186e-06,
+            "coarse_duration_total_variation": 0.00016786007747390808,
+            "fine_duration_total_variation": 0.0002268458739288562,
+            "rendered_duration_KS_statistic": 0.0004068357005909684,
+            "rendered_duration_mean_difference_seconds": 3.51175802961734e-05,
+            "maximum_conditional_mean_difference": 0.00914077224858778,
+            "gates_passed": true
+          },
+          "outer_validation": {
+            "mean_share_difference": 2.7486303881274488e-06,
+            "zero_fraction_difference": 3.7562917887257186e-06,
+            "coarse_duration_total_variation": 0.0002488065891927821,
+            "fine_duration_total_variation": 0.0006064874594044222,
+            "rendered_duration_KS_statistic": 0.0003902062057361544,
+            "rendered_duration_mean_difference_seconds": 0.0042017842469590505,
+            "maximum_conditional_mean_difference": 0.011597327537746172,
+            "gates_passed": true
+          }
+        }
+      },
+      {
+        "fold": 1,
+        "splits": {
+          "train": {
+            "examples": 53315,
+            "schedule_seed": 20441035,
+            "positive_examples": 42652,
+            "zero_count": 10663,
+            "zero_fraction": 0.2,
+            "share_mean": 0.3819999806272242,
+            "positive_share_mean": 0.47749997578403014,
+            "conditional_positive_share_means": [
+              0.4748913418634,
+              0.4782800076970699
+            ],
+            "rendered_duration_mean_seconds": 510.0002344555941,
+            "coarse_fractions": [
+              0.23018850229766483,
+              0.7698114977023351
+            ],
+            "fine_fractions": [
+              0.23018850229766483,
+              0.38361624308355996,
+              0.38363968864297104,
+              0.0025555659758041828
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "validation": {
+            "examples": 3000,
+            "schedule_seed": 21441038,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.3820015845742625,
+            "positive_share_mean": 0.47750198071782807,
+            "conditional_positive_share_means": [
+              0.49007091159416155,
+              0.4737476247417804
+            ],
+            "rendered_duration_mean_seconds": 510.0,
+            "coarse_fractions": [
+              0.23,
+              0.77
+            ],
+            "fine_fractions": [
+              0.23,
+              0.38416666666666666,
+              0.38333333333333336,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "schedule_seed": 22441041,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199837916962454,
+            "positive_share_mean": 0.47749797396203064,
+            "conditional_positive_share_means": [
+              0.48097783993307325,
+              0.4764560866409767
+            ],
+            "rendered_duration_mean_seconds": 509.99583333333334,
+            "coarse_fractions": [
+              0.23041666666666666,
+              0.7695833333333333
+            ],
+            "fine_fractions": [
+              0.23041666666666666,
+              0.38333333333333336,
+              0.38375,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          }
+        },
+        "comparison_to_train": {
+          "validation": {
+            "mean_share_difference": 1.6039470382978038e-06,
+            "zero_fraction_difference": 0.0,
+            "coarse_duration_total_variation": 0.00018850229766484428,
+            "fine_duration_total_variation": 0.0005504235831066901,
+            "rendered_duration_KS_statistic": 0.0004124073900403265,
+            "rendered_duration_mean_difference_seconds": 0.00023445559412493822,
+            "maximum_conditional_mean_difference": 0.015179569730761566,
+            "gates_passed": true
+          },
+          "outer_validation": {
+            "mean_share_difference": 1.6014575996425862e-06,
+            "zero_fraction_difference": 0.0,
+            "coarse_duration_total_variation": 0.0002281643690018459,
+            "fine_duration_total_variation": 0.00033847572603077584,
+            "rendered_duration_KS_statistic": 0.0003997858638907781,
+            "rendered_duration_mean_difference_seconds": 0.004401122260787815,
+            "maximum_conditional_mean_difference": 0.006086498069673263,
+            "gates_passed": true
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "splits": {
+          "train": {
+            "examples": 53522,
+            "schedule_seed": 20451042,
+            "positive_examples": 42818,
+            "zero_count": 10704,
+            "zero_fraction": 0.19999252643772655,
+            "share_mean": 0.3820036021690639,
+            "positive_share_mean": 0.4775000419284562,
+            "conditional_positive_share_means": [
+              0.47615302393119535,
+              0.4779027620195586
+            ],
+            "rendered_duration_mean_seconds": 510.00023354663927,
+            "coarse_fractions": [
+              0.230160212994535,
+              0.769839787005465
+            ],
+            "fine_fractions": [
+              0.230160212994535,
+              0.38367041898267085,
+              0.38362370965481807,
+              0.0025456583679760846
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "validation": {
+            "examples": 3000,
+            "schedule_seed": 21451045,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199821750078705,
+            "positive_share_mean": 0.4774977718759838,
+            "conditional_positive_share_means": [
+              0.4794524469367593,
+              0.47691390789679117
+            ],
+            "rendered_duration_mean_seconds": 509.99,
+            "coarse_fractions": [
+              0.23,
+              0.77
+            ],
+            "fine_fractions": [
+              0.23,
+              0.38375,
+              0.38375,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "schedule_seed": 22451048,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199920230958134,
+            "positive_share_mean": 0.4774990028869767,
+            "conditional_positive_share_means": [
+              0.474030304624682,
+              0.47853510756272716
+            ],
+            "rendered_duration_mean_seconds": 509.9891666666667,
+            "coarse_fractions": [
+              0.23,
+              0.77
+            ],
+            "fine_fractions": [
+              0.23,
+              0.38416666666666666,
+              0.38333333333333336,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          }
+        },
+        "comparison_to_train": {
+          "validation": {
+            "mean_share_difference": 5.384668276875448e-06,
+            "zero_fraction_difference": 7.473562273457857e-06,
+            "coarse_duration_total_variation": 0.00016021299453503057,
+            "fine_duration_total_variation": 0.00020587136251106635,
+            "rendered_duration_KS_statistic": 0.0003977688511062061,
+            "rendered_duration_mean_difference_seconds": 0.01023354663925602,
+            "maximum_conditional_mean_difference": 0.0032994230055639617,
+            "gates_passed": true
+          },
+          "outer_validation": {
+            "mean_share_difference": 4.399859482584478e-06,
+            "zero_fraction_difference": 7.473562273457857e-06,
+            "coarse_duration_total_variation": 0.00016021299453503057,
+            "fine_duration_total_variation": 0.0004962476839958029,
+            "rendered_duration_KS_statistic": 0.0003823936973546896,
+            "rendered_duration_mean_difference_seconds": 0.011066879972588595,
+            "maximum_conditional_mean_difference": 0.0021227193065133654,
+            "gates_passed": true
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "splits": {
+          "train": {
+            "examples": 52998,
+            "schedule_seed": 20461049,
+            "positive_examples": 42398,
+            "zero_count": 10600,
+            "zero_fraction": 0.20000754745462093,
+            "share_mean": 0.3819963872252981,
+            "positive_share_mean": 0.477499988918495,
+            "conditional_positive_share_means": [
+              0.47710306413810266,
+              0.47761866868600766
+            ],
+            "rendered_duration_mean_seconds": 509.99962262370866,
+            "coarse_fractions": [
+              0.2301759516958347,
+              0.7698240483041653
+            ],
+            "fine_fractions": [
+              0.2301759516958347,
+              0.3836501721779329,
+              0.3836265861597245,
+              0.002547289966507854
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "validation": {
+            "examples": 3000,
+            "schedule_seed": 21461052,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199975922115853,
+            "positive_share_mean": 0.4774996990264482,
+            "conditional_positive_share_means": [
+              0.480858979605623,
+              0.4764939155070742
+            ],
+            "rendered_duration_mean_seconds": 509.99833333333333,
+            "coarse_fractions": [
+              0.23041666666666666,
+              0.7695833333333333
+            ],
+            "fine_fractions": [
+              0.23041666666666666,
+              0.38333333333333336,
+              0.38375,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "schedule_seed": 22461055,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38200170652631044,
+            "positive_share_mean": 0.47750213315788803,
+            "conditional_positive_share_means": [
+              0.47106204554845194,
+              0.4794303239797711
+            ],
+            "rendered_duration_mean_seconds": 510.0075,
+            "coarse_fractions": [
+              0.23041666666666666,
+              0.7695833333333333
+            ],
+            "fine_fractions": [
+              0.23041666666666666,
+              0.38333333333333336,
+              0.38375,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          }
+        },
+        "comparison_to_train": {
+          "validation": {
+            "mean_share_difference": 3.3719958604239153e-06,
+            "zero_fraction_difference": 7.547454620920879e-06,
+            "coarse_duration_total_variation": 0.00024071497083197335,
+            "fine_duration_total_variation": 0.0003641288111074098,
+            "rendered_duration_KS_statistic": 0.00039653993112886976,
+            "rendered_duration_mean_difference_seconds": 0.0012892903753254359,
+            "maximum_conditional_mean_difference": 0.0037559154675203543,
+            "gates_passed": true
+          },
+          "outer_validation": {
+            "mean_share_difference": 5.319301012329802e-06,
+            "zero_fraction_difference": 7.547454620920879e-06,
+            "coarse_duration_total_variation": 0.00024071497083197335,
+            "fine_duration_total_variation": 0.0003641288111074098,
+            "rendered_duration_KS_statistic": 0.000394751324748005,
+            "rendered_duration_mean_difference_seconds": 0.007877376291332894,
+            "maximum_conditional_mean_difference": 0.006041018589650726,
+            "gates_passed": true
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "splits": {
+          "train": {
+            "examples": 54758,
+            "schedule_seed": 20471056,
+            "positive_examples": 43806,
+            "zero_count": 10952,
+            "zero_fraction": 0.20000730486869497,
+            "share_mean": 0.3819964780783138,
+            "positive_share_mean": 0.47749995769100817,
+            "conditional_positive_share_means": [
+              0.48080642393063105,
+              0.47651134163982306
+            ],
+            "rendered_duration_mean_seconds": 510.0004565584623,
+            "coarse_fractions": [
+              0.23017394877414052,
+              0.7698260512258595
+            ],
+            "fine_fractions": [
+              0.23017394877414052,
+              0.3836460758800164,
+              0.3836232479569009,
+              0.002556727388942154
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "validation": {
+            "examples": 3000,
+            "schedule_seed": 21471059,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199740146110056,
+            "positive_share_mean": 0.4774967518263756,
+            "conditional_positive_share_means": [
+              0.4773020710117818,
+              0.47755490323852706
+            ],
+            "rendered_duration_mean_seconds": 509.99,
+            "coarse_fractions": [
+              0.23,
+              0.77
+            ],
+            "fine_fractions": [
+              0.23,
+              0.38416666666666666,
+              0.38333333333333336,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "schedule_seed": 22471062,
+            "positive_examples": 2400,
+            "zero_count": 600,
+            "zero_fraction": 0.2,
+            "share_mean": 0.38199949412223283,
+            "positive_share_mean": 0.47749936765279094,
+            "conditional_positive_share_means": [
+              0.4689516732927789,
+              0.48005257505902826
+            ],
+            "rendered_duration_mean_seconds": 509.9866666666667,
+            "coarse_fractions": [
+              0.23,
+              0.77
+            ],
+            "fine_fractions": [
+              0.23,
+              0.38416666666666666,
+              0.38333333333333336,
+              0.0025
+            ],
+            "LHS_positive_share_rank_strata_complete": true,
+            "exact_replay": true
+          }
+        },
+        "comparison_to_train": {
+          "validation": {
+            "mean_share_difference": 9.233827867882738e-07,
+            "zero_fraction_difference": 7.304868694962829e-06,
+            "coarse_duration_total_variation": 0.00017394877414053656,
+            "fine_duration_total_variation": 0.0005205907866502142,
+            "rendered_duration_KS_statistic": 0.0003832808291102108,
+            "rendered_duration_mean_difference_seconds": 0.010456558462294652,
+            "maximum_conditional_mean_difference": 0.003504352918849263,
+            "gates_passed": true
+          },
+          "outer_validation": {
+            "mean_share_difference": 3.0160439190574095e-06,
+            "zero_fraction_difference": 7.304868694962829e-06,
+            "coarse_duration_total_variation": 0.00017394877414053656,
+            "fine_duration_total_variation": 0.0005205907866502142,
+            "rendered_duration_KS_statistic": 0.00042619732456739,
+            "rendered_duration_mean_difference_seconds": 0.013789891795624953,
+            "maximum_conditional_mean_difference": 0.01185475063785213,
+            "gates_passed": true
+          }
+        }
+      }
+    ]
+  },
+  "sampler_fixtures": {
+    "passed": true,
+    "synthetic_examples": 720,
+    "positive_examples": 570,
+    "all_15_fold_role_pools": [
+      {
+        "fold": 0,
+        "split": "train",
+        "clips": 69,
+        "components": 12,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 0,
+        "split": "validation",
+        "clips": 25,
+        "components": 5,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 0,
+        "split": "outer_validation",
+        "clips": 25,
+        "components": 5,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 1,
+        "split": "train",
+        "clips": 71,
+        "components": 13,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 1,
+        "split": "validation",
+        "clips": 23,
+        "components": 4,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 1,
+        "split": "outer_validation",
+        "clips": 25,
+        "components": 5,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 2,
+        "split": "train",
+        "clips": 73,
+        "components": 14,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 2,
+        "split": "validation",
+        "clips": 23,
+        "components": 4,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 2,
+        "split": "outer_validation",
+        "clips": 23,
+        "components": 4,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 3,
+        "split": "train",
+        "clips": 73,
+        "components": 14,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 3,
+        "split": "validation",
+        "clips": 23,
+        "components": 4,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 3,
+        "split": "outer_validation",
+        "clips": 23,
+        "components": 4,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 4,
+        "split": "train",
+        "clips": 71,
+        "components": 13,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 4,
+        "split": "validation",
+        "clips": 25,
+        "components": 5,
+        "all_391_rendered_lengths_have_eligible_source": true
+      },
+      {
+        "fold": 4,
+        "split": "outer_validation",
+        "clips": 23,
+        "components": 4,
+        "all_391_rendered_lengths_have_eligible_source": true
+      }
+    ],
+    "max_saved_float32_target_reconstruction_error": 6.682784914335826e-08,
+    "original_source_metadata_and_fixture_power_bytes_unchanged": true,
+    "chunked_exact_replay": true,
+    "no_positive_to_zero": true,
+    "deliberate_overlap_failure_reference_calls": 1,
+    "failed_rows_not_retried_or_relabelled": true
+  },
+  "draw_reference_while_or_continue_nodes": {
+    "_reference": [],
+    "draw": []
+  },
+  "real_acoustic_arrays_read": false,
+  "Test_calibration_sealed_arrays_read": false,
+  "full_dataset_generated": false,
+  "model_training_executed": false,
+  "limitation": "Band-power timewarp does not generate waveform phase or Doppler and does not increase independent hull/day/source count. Fade/EQ deliberately alter power, with alpha and cell/overall targets recomputed."
+}

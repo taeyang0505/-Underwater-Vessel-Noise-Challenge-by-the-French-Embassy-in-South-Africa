@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-27T07:08:18.941584+00:00",
+  "scope": "Static model/training contract inspection and numeric feature-only tests; no model construction, forward, backward, fit, actual source/query/heldout arrays",
+  "source_sha256": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+  "plan_sha256": "ee27cbc3e9e936dcfdd6ead6b3054993ca884418df647a58557581133e55095a",
+  "numeric_windows": 8,
+  "regression_input_channels": 8,
+  "classifier_tree_temporal_features": 700,
+  "classifier_NN_input_indices": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    5
+  ],
+  "static_per_band_quantization_commuting_offset_feature_max_error": 0.0,
+  "common_gain_feature_max_error": 0.0,
+  "classifier_NN_input_channel_max_error": 0.0,
+  "regression_profile_energy_weight_not_band_offset_invariant_confirmed": true,
+  "no_PCA_anchor_independent_classifier_input": true,
+  "separate_reg_and_clf_grad_clipping_confirmed": true,
+  "regression_physical_pool_and_share_plus_quarter_cell_loss_source_confirmed": true,
+  "actual_mini_regression_weights": {
+    "tree_family": 0.6,
+    "single_NN": 0.4
+  },
+  "individual_NN_cap04_and_tree_family_floor04_satisfied": true,
+  "current100epoch_Adam_noES_source_plan_match": true,
+  "source_unchanged": true,
+  "limits": [
+    "Feature invariance tested at0.1dB-grid offsets; arbitrary pre-rounding offsets can change quantization.",
+    "Static per-band mixture gain invariance is not invariance to physical background-only changes.",
+    "No new neural forward/gradient/checkpoint parity was run by this verifier; producer fixtures cover those."
+  ]
+}

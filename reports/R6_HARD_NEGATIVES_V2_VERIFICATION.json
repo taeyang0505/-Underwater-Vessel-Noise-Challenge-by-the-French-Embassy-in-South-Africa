@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "candidate_manifest_sha256": "a235908778511e78a8a912ea494755e00ed5d0bd0bd29eef874cd57b7abad375",
+  "fixture": {
+    "status": "PASS",
+    "synthetic_only": true,
+    "LF_transient_selected_broadband_HF_rejected": true,
+    "missing_constant_gain_chunk_safe": true,
+    "deterministic_equal_site_draw": true,
+    "label_or_model_fit": false,
+    "fixture_threshold_db": 20.0
+  },
+  "deterministic_schedule_replayed": true,
+  "hard_negatives_all_explicit_zero": true,
+  "candidate_role_train_only": true,
+  "draw_audit": {
+    "candidate_version_hash": "a335d4cfaa07c0b98a46cdec6070eb8e13a617f32d543fc03fbc1d6c8458229b",
+    "seed": 20261026,
+    "n": 8192,
+    "explicit_zero_count": 1638,
+    "hard_negative_count": 819,
+    "baseline_source_draw_count": 7373,
+    "hard_negative_unique_windows": 428,
+    "hard_negative_site_draw_counts": {
+      "1 Richards Bay": 137,
+      "2 Durban": 137,
+      "3 Cape_Recife": 137,
+      "4 Bird Island": 136,
+      "5 St Croix Island": 136,
+      "6 Riy_Banks": 136
+    },
+    "sites_without_candidates": [],
+    "sampling": "equal-site candidates among eligible sites; baseline equal-site all TRAIN; cycle only when site pool exhausted",
+    "index_order_sha256": "7b4ff85e7b2bb3a241535307426810bcd68ac0781b9baf7d3efa0db8d90f378f",
+    "source_role": "train",
+    "artificial_no_addition_hard_negative_target": 0,
+    "natural_ship_absence_claimed": false
+  },
+  "real_model_fitting_executed": false,
+  "nontrain_numeric_values_loaded": false,
+  "limitation": "equal-site cycling reuses small eligible site pools; count of scheduled rows is not an independent-source count"
+}

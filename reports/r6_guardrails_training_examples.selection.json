@@ -1,0 +1,96 @@
+{
+  "format": "r6_train_first_stored_evidence_figure_v1",
+  "status": "completed",
+  "scope": "TRAIN-only descriptive evidence",
+  "selection_rule": "first stored hard_negative; first presence>0 and not no_source R6; same first-positive rule R4",
+  "selection_not_based_on_predictions_errors_or_appearance": true,
+  "selected": [
+    {
+      "case": "hard_negative",
+      "TRAIN_file": "train_r6.npz",
+      "stored_row_index": 29,
+      "base_window_index": 76424,
+      "site": "5 St Croix Island",
+      "reference_group": "zero",
+      "family": "zero",
+      "share": 0.0,
+      "presence": 0,
+      "no_source": true,
+      "hard_negative": true,
+      "max_known_q": 0.0,
+      "observed_cells": 375,
+      "regional_mixture_bumps_db": {
+        "LF <=200 Hz": 16.069216891877048,
+        "MF 316--2512 Hz": 6.155762983376903,
+        "HF 3162--7943 Hz": 0.22440017063915718
+      }
+    },
+    {
+      "case": "R6_positive",
+      "TRAIN_file": "train_r6.npz",
+      "stored_row_index": 0,
+      "base_window_index": 56305,
+      "site": "1 Richards Bay",
+      "reference_group": "VT_R4_REF_f3ab2b61352f174d3ffe",
+      "family": "minute_first",
+      "share": 0.1394418453882269,
+      "presence": 1,
+      "no_source": false,
+      "hard_negative": false,
+      "max_known_q": 0.99888676404953,
+      "observed_cells": 350,
+      "regional_mixture_bumps_db": {
+        "LF <=200 Hz": 9.74016247725794,
+        "MF 316--2512 Hz": 8.689523361420726,
+        "HF 3162--7943 Hz": 24.22243339619945
+      }
+    },
+    {
+      "case": "R4_positive",
+      "TRAIN_file": "train_r4.npz",
+      "stored_row_index": 0,
+      "base_window_index": 56305,
+      "site": "1 Richards Bay",
+      "reference_group": "VT_R4_REF_de02fbd6bbb753c153bd",
+      "family": "r4_whole_timewarp",
+      "share": 0.48122820258140564,
+      "presence": 1,
+      "no_source": false,
+      "hard_negative": false,
+      "max_known_q": 0.9994075894355774,
+      "observed_cells": 350,
+      "regional_mixture_bumps_db": {
+        "LF <=200 Hz": 8.525362244241563,
+        "MF 316--2512 Hz": 15.529454647651889,
+        "HF 3162--7943 Hz": 5.77958378831805
+      }
+    }
+  ],
+  "dataset_version": "data.nosync/synthetic/r6_cpu_guardrails_v3_schemafix",
+  "dataset_manifest_sha256": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+  "TRAIN_array_sha256": {
+    "train_r6.npz": "4b76f3bdf0238e90c89a452662ad35031b5fabed887cc2c8c800af5f8619674e",
+    "train_r4.npz": "78a6ddba3a07e86faa2ec8be0f8b6bceb7e1415eb9d73463af65c5278f6cbbd7"
+  },
+  "source_version": "data/versions/source_split_r6_guardrails_v2",
+  "source_manifest_sha256": "894783ab9aa9cfd17db4fb46e00762fd876a2bca16c824274699cb0db4099cf2",
+  "source_hash": "422a4272fc1515c4edf589e082202f1db79eda3bec26c6ad5192dc31b3809afa",
+  "hard_negative_manifest_sha256": "a235908778511e78a8a912ea494755e00ed5d0bd0bd29eef874cd57b7abad375",
+  "script_sha256": "cfa6bbe293dbfe503d6e390205a384f9c4b9903d505880c3ef4efdb001d0addb",
+  "feature_code_sha256": {
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+  },
+  "figures_sha256": {
+    "r6_guardrails_training_examples.png": "872067605707976e1c76e25cec7851f20049f72550681be2d69bcf11b74507fd",
+    "r6_guardrails_training_examples.svg": "77f0f82d07118f361eb299a5762d041f86a8c8a137be3dc584959525bc559e0b"
+  },
+  "source_arrays_unchanged": true,
+  "heatmap_interpolation": "nearest;15minute bins x25physical band indices",
+  "missing_color": "#bfc3c8",
+  "region_bump_formula": "max(observed complete-region sum-power dB) minus median of same temporal levels",
+  "model_predictions_or_performance_used": false,
+  "heldout_INNER_OUTER_Test_or_GPU_SSH_used": false,
+  "q05_is_not_certified_background": true,
+  "A0_does_not_certify_natural_ship_absence": true
+}

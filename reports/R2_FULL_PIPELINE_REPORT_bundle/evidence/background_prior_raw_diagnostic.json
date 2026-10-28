@@ -1,0 +1,71 @@
+{
+  "status": "raw prior diagnosis completed; raw map not adopted as a strong prediction prior",
+  "helper_sha256": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+  "training_rows": 53244,
+  "clusters": 32,
+  "minimum_cluster_members": 28,
+  "prior_fit_seconds": 23.289,
+  "fit_and_inner_diagnostics_total_seconds": 51.51019420847297,
+  "prior_json": "ops/background_prior_fold0_train_seed42_k32.json",
+  "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+  "raw_map": {
+    "all_RMSE": 0.5547448206919496,
+    "native_only_RMSE": 0.46276818123587954,
+    "native_only_mean_pred": 0.844278275482807,
+    "native_only_mean_true": 0.48415490984916687,
+    "zero_RMSE": 0.8390123293832884,
+    "zero_mean_pred": 0.8127267253877696
+  },
+  "branches_all_native_zero_RMSE": {
+    "q10_all": [
+      0.45549511909484863,
+      0.3400207459926605,
+      0.7011643648147583
+    ],
+    "q10_mid_high": [
+      0.5330159068107605,
+      0.42314499616622925,
+      0.8005573153495789
+    ],
+    "q10_high": [
+      0.58730548620224,
+      0.4850963056087494,
+      0.8654549717903137
+    ],
+    "q20_all": [
+      0.44183021783828735,
+      0.33161765336990356,
+      0.6785637736320496
+    ],
+    "q20_mid_high": [
+      0.5209764838218689,
+      0.4095098078250885,
+      0.7828317880630493
+    ],
+    "q20_high": [
+      0.5803949236869812,
+      0.47625812888145447,
+      0.8577166199684143
+    ],
+    "q50_all": [
+      0.4123745560646057,
+      0.3432901203632355,
+      0.6144432425498962
+    ],
+    "q50_mid_high": [
+      0.4997207820415497,
+      0.40139999985694885,
+      0.7446250915527344
+    ],
+    "q50_high": [
+      0.5634539723396301,
+      0.4548551142215729,
+      0.8406326770782471
+    ]
+  },
+  "metric_scope": "Fold0 fixed inner validation only. Prior fitted on TRAIN known B; no query labels used in features. These are uncalibrated raw feature estimates, not supervised booster results.",
+  "known_component_label_implementation": "Separate numerical conservation/target fixtures passed; failed raw-prior performance does not invalidate that arithmetic.",
+  "actual_model_training_executed": false,
+  "outer_Test_calibration_sealed_accessed": false,
+  "followup_experiments_started": false
+}

@@ -1,0 +1,108 @@
+{
+  "format": "r11_all_feasible_models_plan_v1",
+  "created_utc": "2026-10-26T15:00:52.452563+00:00",
+  "seed": 2026102612,
+  "n_each": 1000,
+  "feasible_manifest_sha256": "65481f8fc719d54898068633366bc8d03700e576661644fbba09fa29d33eddf9",
+  "allfour_feasible_conditions_evaluated": true,
+  "condition_names": [
+    "lf15_mid20_hf15",
+    "lf25_mid10_hf15",
+    "lf25_mid20_hf15",
+    "lf35_mid10_hf15"
+  ],
+  "condition_selection_uses_model_outputs": false,
+  "physical_assumption_change": "LF-15/-25/-35 andmid316..1995attenuationup to-20; STRICTHFanchor3162..7943ratherthanmidhigh316..7943; beyondoriginalLF-10..-15onlyhypothesis",
+  "original4factorial_result_unchanged": true,
+  "new_production_or_Test_claim": false,
+  "baseline": "sameB/ref/nativegeometry/physicaly withR9smoothEQ6 andalpha solvedfortarget; notoriginalR9SNRlaw",
+  "region_indices": {
+    "low_le200": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mid300to3k": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "mid_high300to8k": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "high3kto8k": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "safe1kto5k": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "weights": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.6
+  ],
+  "NNthreads": 2,
+  "treethreads": 4,
+  "code_and_source_pins": {
+    "ops/infer_r9_fold0_all5_pilot.py": "200e465d3fe429a5b1ff865ded305aec3e0f98851d6f33676e7086e27b8c446f",
+    "ops/r11_asymmetric_eq_audit.py": "4724e4917e0a83e5f362db232c6b08aca75eea028fdeb336f991bb4caab62776",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "data.nosync/versions/background_cv_r9/fold_00/selection_manifest.parquet": "b29d30027d28fe849600bdf618049ced18fef373841b037e36f2865333fd05ce",
+    "data.nosync/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+    "configs/r9_full_training_v1.json": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "reports/r11_diagnostics/asymmetric_forward_feasibility_r1/RESULTS.json": "5aba79d36502a76144fa3438024d0098153e905d7544e29e338afbd97c09a1ec",
+    "reports/r11_diagnostics/asymmetric_forward_feasibility_r1/predeclared_plan.json": "dbfd533264d8f0ddf32d1805655b482a81d726f940d10f22e91a83393d4f0617",
+    "reports/r11_diagnostics/asymmetric_eq_r1/shared_specs.json": "4f05add31ffb4c0d47fbd72b0048af618bcca8a594c750adf3288391fb81f530",
+    "reports/r11_diagnostics/asymmetric_eq_r1/background_source_manifest.parquet": "2f2b1ad762b53b0cd7b98994b1faf8b50bdda3ecbbc3a91aa1a71bf97e667fee",
+    "ops/r11_asymmetric_feasible_models.py": "bc9f8402ac34307c0e16d24ddaf6cf6e06489563fa54a6ad392b4df4adb5a17c",
+    "ops/r11_asymmetric_forward_feasibility.py": "f3394a26bc746731b6d0509016cdb65cfa02ec6d0729e379f21c066bb86d2cbd"
+  },
+  "no_fitting_production_change_or_Test": true
+}

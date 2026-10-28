@@ -1,0 +1,39 @@
+{
+  "status": "running",
+  "supervisor_pid": 5892,
+  "started_unix": 1792938463.993097,
+  "run_directory": "/workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1",
+  "ops_directory": "/workspace/underwater_vessel_noise_r5_r1/ops/group_cv_r5_gpu_r1",
+  "command": [
+    "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python",
+    "-u",
+    "-m",
+    "pipeline.runner_r5",
+    "fit",
+    "--config",
+    "/workspace/underwater_vessel_noise_r5_r1/project/configs/r5_training_gpu_r1.json",
+    "--output",
+    "/workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1",
+    "--preflight-report",
+    "/workspace/underwater_vessel_noise_r5_r1/project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json",
+    "--folds",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "config_sha256": "c6979cbe66e9da0ff840f30477a824d3f7e28fd1bc2e83295924e968fea8d75a",
+  "requested_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "automatic_restart": false,
+  "automatic_hyperparameter_change": false,
+  "official_submission": false,
+  "pid": 5896,
+  "process_start_ticks": "66960523"
+}

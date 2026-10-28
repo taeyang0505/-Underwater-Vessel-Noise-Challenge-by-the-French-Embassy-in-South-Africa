@@ -1,0 +1,42 @@
+{
+  "status": "user_reported_public_result_and_local_saved_artifact_review",
+  "recorded_KST": "2026-10-27T13:41:10.936676+09:00",
+  "source": "User-provided Zindi screenshot; no independent server fetch",
+  "reported_candidate": "R14 step1",
+  "local_candidate_path": "submissions/r14_main_r2/submission_r14_step1.csv",
+  "local_candidate_sha256": "947c71dcc52d50fa2e3f63a6bbc3859cca9413169847697a509199c4d5da70a4",
+  "uploaded_bytes_independently_verified": false,
+  "current": {
+    "submission_id": "2bYLCv2z",
+    "public_score": 0.705436197,
+    "RMSE": 0.294563802,
+    "AUC": 0.497866666
+  },
+  "prior": {
+    "candidate": "R9 Fold0 all5",
+    "public_score": 0.782464193,
+    "RMSE": 0.217535806,
+    "AUC": 0.555066666
+  },
+  "comparison": {
+    "RMSE_increase": 0.07702799599999999,
+    "RMSE_percent_increase": 35.409341301725746,
+    "MSE_percent_increase": 83.35689711767252,
+    "AUC_change": -0.05719999999999997
+  },
+  "benchmark_RMSE": 0.246132175,
+  "source_audit": "reports/r14_production_r2/HYBRID_fast3_QUERY_DISTRIBUTION_AUDIT.json",
+  "hidden_Test_labels_accessed": false,
+  "new_training_or_inference": false,
+  "training_or_frozen_policy_modified": false,
+  "official_submission_performed": false,
+  "findings": {
+    "simple_local_CSV_ID_schema_roundtrip_error_found": false,
+    "minute_major_layout_error_found": false,
+    "local_improvement_did_not_transfer_to_reported_public_result": true,
+    "CNN_only_causal_failure_isolated": false,
+    "actual_Test_bias_measured": false,
+    "TFGrid_in_this_CSV": false,
+    "TimeMoE_or_Dasheng_in_this_CSV": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "claim": "Known-energy controlled additions support source-isolated regression and frozen inference.",
+  "width_mm": 280,
+  "ncol": 1,
+  "row_heights_mm": [
+    118,
+    77
+  ],
+  "panels": [
+    {
+      "letter": "a",
+      "role": "schematic",
+      "row": 0,
+      "col": 0,
+      "colspan": 1,
+      "chart_family": "flow diagram",
+      "message": "Split sources before constructing mixtures and optimize window MSE.",
+      "ask": "Show data collection, quality checks, exact targets, models and validation."
+    },
+    {
+      "letter": "b",
+      "role": "schematic",
+      "row": 1,
+      "col": 0,
+      "colspan": 1,
+      "chart_family": "flow diagram",
+      "message": "All inference transformations and postprocessing are frozen on development data.",
+      "ask": "Show per-window inference, ensemble, permitted postprocessing and submission checks."
+    }
+  ]
+}

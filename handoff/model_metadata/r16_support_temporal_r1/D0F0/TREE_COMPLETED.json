@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "feature_mode": 0,
+  "regression_features": 466,
+  "classification_features": 700,
+  "additional_feature_names": [],
+  "best_iteration_regression": 586,
+  "best_iteration_classifier": 163,
+  "fit_metrics": {
+    "n": 2400,
+    "rmse": 0.11594418650088391,
+    "mae": 0.06873952084363169,
+    "bias": -0.015477116034036882,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.15569380648219955,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.22209784444643155,
+    "auc_share": 0.8561393229166667,
+    "auc_classifier": 0.9216861979166668,
+    "auc_75share_25clf": 0.9141276041666667,
+    "auc_25share_75clf": 0.9189713541666666,
+    "classifier_ge099_fraction": 0.34541666666666665,
+    "classifier_le001_fraction": 0.0
+  },
+  "fixture_only": false
+}

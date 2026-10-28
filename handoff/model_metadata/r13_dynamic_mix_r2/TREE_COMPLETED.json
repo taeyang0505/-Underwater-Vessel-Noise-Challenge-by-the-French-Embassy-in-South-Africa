@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "summary_sha256": "ff3a30f0fa51bed4386c509f8459f3e74168812720d02282816f4d7d4f90c38c",
+  "binding": {
+    "format": "r13_dynamic_mix_24k_tree_binding_v1",
+    "plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c",
+    "data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+    "baseline_TRAIN_sha256": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+    "highshare_TRAIN_sha256": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+    "validation_fit_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "two_augmentation_variants_same_source": true,
+    "independent_source_rows": 12000,
+    "augmentation_rows": 24000,
+    "execution_source_sha256": "fb87bdd170f6c5d296735896072c2e8f09f57f9add68f0418c455b79b2e2df87",
+    "execution_source_path": "ops/train_r13_dynamic_mix_tree_static.py",
+    "static_import_correction_receipt_sha256": "7ba3086ea65c574f924f27db306a48405625d4ab23e22edeeb9e023179aec06b",
+    "development_not_blind": true
+  }
+}

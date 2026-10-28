@@ -1,0 +1,39 @@
+{
+  "source_separation": {
+    "base_index_overlap": 0,
+    "background_group_overlap": 0,
+    "minimum_shared_sensor_support_gap_seconds": 86400.0,
+    "required_minimum_seconds": 86400,
+    "source_group_and_24h_support_purge_passed": true
+  },
+  "all_complete_observation": true,
+  "sampling": "unique random within each existing role; no Test matching",
+  "counts": {
+    "train": 16000,
+    "early": 1000,
+    "compare": 1000
+  },
+  "site_counts": {
+    "train": {
+      "1 Richards Bay": 10533,
+      "5 St Croix Island": 3138,
+      "7 St_Francis": 902,
+      "2 Durban": 839,
+      "4 Bird Island": 588
+    },
+    "early": {
+      "1 Richards Bay": 588,
+      "5 St Croix Island": 198,
+      "2 Durban": 97,
+      "4 Bird Island": 60,
+      "7 St_Francis": 57
+    },
+    "compare": {
+      "1 Richards Bay": 626,
+      "5 St Croix Island": 177,
+      "2 Durban": 86,
+      "4 Bird Island": 65,
+      "7 St_Francis": 46
+    }
+  }
+}

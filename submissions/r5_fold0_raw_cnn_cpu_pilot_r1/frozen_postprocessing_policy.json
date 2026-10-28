@@ -1,0 +1,68 @@
+{
+  "format": "r5_single_cnn_frozen_calibration_v1",
+  "created_at_utc": "2026-10-25T17:46:12.247357+00:00",
+  "candidate": "identity",
+  "coefficients": {
+    "a": 1.0,
+    "b": 0.0
+  },
+  "application": "clip(a*p+b,0,1)",
+  "checkpoint_sha256": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+  "checkpoint_epoch": 19,
+  "CPU_predictions_sha256": "6a44209a9c160b158ac01ac681a69f8fcfd4fcba2ac56a8fecc9fccc52f7278e",
+  "CPU_profile_sha256": "9f91a8bf85c2b7ba33ea85368269073a2f6d5c53a499c87dc23f0f3b67ccce80",
+  "specification_sha256": "580728c8531382b04148c492e13483e7acd06db7a1cf96642ac1ca914dbeafaa",
+  "calibration_code_sha256": "e33351265033954999fdd374a605823c80aaefb01a3d878360ce057923627e0a",
+  "training_binding": {
+    "data_package_hash": "4759dffad3a9abb57c28f40519284792607762a0501666a04f139fdd8eba38df",
+    "fold": 0,
+    "seed": 42,
+    "source_hash": "6a36a6e3a8cbdb5873ddfc6359674e397cc06e39f672f39b6fbf25079fbe913d",
+    "train_examples": 53244,
+    "train_npz_sha256": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c"
+  },
+  "fit_scope": "INNER_only",
+  "frozen_before_Test": true,
+  "no_OUTER_or_Test_fitting": true,
+  "all_admission_gates_passed": false,
+  "admission_diagnostics_sha256": "17f8945bc96382389f967c4f21bb2b4e0d4076f6bb7cfd977574dbf717fbac8e",
+  "source_core_code_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "ops/profile_r5_cnn_mac_inference.py": "ffe99271e38957130a15fde15aa3951fd3c6fe367ee7c11ca60c90fd8c12f4ff"
+  },
+  "raw_inference_policy": {
+    "device": "cpu",
+    "dtype": "float32",
+    "batch_size": 128,
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "observation_policy": {
+      "quantization_decimals": null,
+      "endpoint_dropout_probability": 0.0
+    }
+  },
+  "limitations": [
+    "Base CNN already used the full INNER labels for early stopping and preprocessing development; these are calibrator-crossfitted diagnostics, not independent neural OOF estimates.",
+    "Synthetic generator/source representativeness is unproven for the challenge Test; no LB estimate is made.",
+    "Only five positive reference components; 3000 windows are not 3000 independent sources.",
+    "Scalar calibration changes the final share independently of the saved cell mask; the original mask explains the original physical pooling, not a transformed scalar."
+  ],
+  "score_presence_modified": false,
+  "policy_sha256": "dc0c9e14a2b2c9d0485cf0cf55f08539ee87af5b1db070329f94eed68da8c440"
+}

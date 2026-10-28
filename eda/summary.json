@@ -1,0 +1,91 @@
+{
+  "analysis_date": "2026-10-24",
+  "training": {
+    "rows": 1715779,
+    "tol_missing_cells": 27102411,
+    "tol_total_cells": 106378298,
+    "common_missing_cells": 0,
+    "common_cells": 42894475,
+    "duration_not60": 36234,
+    "duration_lt55": 16896,
+    "duration_gt60": 28,
+    "spread_lt6": 4974,
+    "exact_flat_rows": 653,
+    "sentinel_rows": 653,
+    "negative_rows": 654,
+    "raw_candidate_windows15": 1269356,
+    "base_candidate_windows15": 1259260,
+    "stricter_candidate_windows15": 1253096,
+    "qc_duration_mismatch": 0,
+    "qc_finite_mismatch": 0,
+    "qc_spread_mismatch": 0
+  },
+  "training_shape": [
+    1715779,
+    74
+  ],
+  "training_tol_columns": 62,
+  "training_common_shape": [
+    1715779,
+    25
+  ],
+  "site_count": 10,
+  "recorder_groups": 17,
+  "unique_recorder_ids": 12,
+  "global_first_t": "2015-04-21 00:00:00",
+  "global_last_t": "2025-12-06 23:59:00",
+  "test": {
+    "shape": [
+      1500,
+      376
+    ],
+    "array_shape": [
+      1500,
+      15,
+      25
+    ],
+    "missing_cells": 18350,
+    "total_cells": 562500,
+    "missing_fraction": 0.03262222222222222,
+    "windows_with_missing": 725,
+    "complete_windows": 775,
+    "whole_missing_minutes": 734,
+    "partial_missing_minutes": 0,
+    "all_missing_windows": 0,
+    "duplicate_IDs": 0,
+    "duplicate_acoustic_rows": 0,
+    "infinite_cells": 0,
+    "min_db": 29.299999237060547,
+    "max_db": 152.89999389648438
+  },
+  "sample": {
+    "shape": [
+      1500,
+      3
+    ],
+    "ID_set_matches": true,
+    "ID_order_matches": true,
+    "placeholder_values": {
+      "share_added_vessel": [
+        0.0
+      ],
+      "score_added_vessel": [
+        0.5
+      ]
+    }
+  },
+  "sizes": {
+    "raw_bytes": 97806656,
+    "extracted_bytes": 96002006,
+    "common_float32_bytes": 171577900,
+    "test_float32_bytes": 2250000
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.11.2"
+  },
+  "scope": "Descriptive EDA only. No model fitting, calibration, pseudo-labels, or training examples from test inputs."
+}

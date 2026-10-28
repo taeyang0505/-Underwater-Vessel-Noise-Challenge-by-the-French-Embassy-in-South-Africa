@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "source": "independent csv module + NumPy arithmetic check",
+  "official_upload": false,
+  "outputs": {
+    "r9_lightgbm_5fold_cpu_r1": {
+      "csv_sha256": "d6011245ff1b6cf2e17fb1509336afcb1317477cfd2775bb6cf0a24e070a5f6b",
+      "rows": 1500,
+      "ID_order_matches_Test": true,
+      "all_finite_unit_interval": true,
+      "independent_member_combination_max_abs": 0.0,
+      "share_mean": 0.26415312878059216,
+      "share_rms": 0.3256304543971546
+    },
+    "r9_fold0_all5_cpu_r1": {
+      "csv_sha256": "f016265ae9a1702dbb7121bfb0c852f5900f85a17194881056316768300fb39d",
+      "rows": 1500,
+      "ID_order_matches_Test": true,
+      "all_finite_unit_interval": true,
+      "independent_member_combination_max_abs": 0.0,
+      "share_mean": 0.2647436056410273,
+      "share_rms": 0.3269821730549918
+    }
+  }
+}

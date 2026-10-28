@@ -1,0 +1,43 @@
+{
+  "status": "frozen_before_fit",
+  "arms": [
+    "D0F0",
+    "D0F1",
+    "D1F0",
+    "D1F1"
+  ],
+  "training_rows_per_arm": 4000,
+  "epochs": 100,
+  "NN_early_stopping": false,
+  "optimizer": "Adam",
+  "Tree_maximum_trees": 600,
+  "Tree_early_stopping_patience": 40,
+  "manifest": "reports/r16_support_temporal_r1/data/manifest.json",
+  "manifest_sha256": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80",
+  "code_sha256": {
+    "ops/r16_support_temporal_models.py": "7c2534091c37998954506b93dffca67908a68601d39821c40fbd58338fc75f8a",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "ops/r16_clean_models.py": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "ops/r16_support_temporal_data.py": "1a76749e54335dc0e824a95eeca2e898c646c63fcdddf64d971293fed40b8cee"
+  },
+  "selection_role": "local_fit",
+  "locked_roles_used_for_fit": false,
+  "fixed_ensemble": {
+    "regression_tree": 0.6,
+    "regression_NN": 0.4,
+    "classification_tree": 0.5,
+    "classification_NN": 0.5
+  },
+  "common_initial_weights_equal_and_extra_input_weights_zero": true,
+  "Test_used": false,
+  "seed": 2026102817,
+  "CPU_processes": 4,
+  "CPU_threads_per_process": 2,
+  "process_start_method": "spawn",
+  "audit_blocked_locked_panel_paths": 26,
+  "failure_policy": "Drain all started workers to terminal state; no partial reuse"
+}

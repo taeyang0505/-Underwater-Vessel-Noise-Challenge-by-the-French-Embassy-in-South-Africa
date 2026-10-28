@@ -1,0 +1,55 @@
+{
+  "status": "passed_with_documented_guard_limits",
+  "fixture_only": true,
+  "source_sha256": {
+    "ops/evaluate_r13_cpu.py": "14ba4d5d09c73d85a2054c8b2a8f1262fda20ecdff109903a7c2e8f24a7457c1",
+    "ops/train_r13_cnn.py": "044224beec1eaf565183bec627f9785c3d1f3669ab4027133081b9d214f9e8e2",
+    "ops/train_r13_lightgbm.py": "7789ecf7f0eca751b6d856935ff94b70c83c0d7d635dd7046343ebbd4ea94bfd",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/dataset_r13.py": "13c47d9208ea8c4578617ee9434be38f0240558e070c5a043e384bffad8939af"
+  },
+  "numeric": {
+    "exact_production_policy_AST_executed_on_numeric_arrays": true,
+    "regression_winner": "highshareP1",
+    "score_weight_first_best": 0.25,
+    "mixture_gate_and_report_float64_then_float32_bitwise_same": true,
+    "rank_AUC_pairwise_oracle": true,
+    "score_selection_does_not_change_regression": true,
+    "canonical_tie_baselineP0_and_lambda0": true,
+    "paired_sensor_week_CI_joint_row_permutation_invariance": true,
+    "identical_output_CI_zero": true
+  },
+  "static_role_order": {
+    "global_freeze_line": 88,
+    "gate_line": 101,
+    "policy_write_line": 110,
+    "locked_loop_line": 115,
+    "R13_policy_SHA_check_immediately_before_locked_loader": true
+  },
+  "unseen_metadata_only": {
+    "rows": 1000,
+    "known_source_ID_unique": 1000,
+    "sensor_week_clusters": 20,
+    "baseID_order_sha256": "e576ba2c04adc4dcb96bcea899b4a70cb0c508a8b01977655395651e54b85d15",
+    "grouping_preserves_row_order": true,
+    "original_producer_order_is_immutable_hash_bound": true
+  },
+  "reuse_provenance": {
+    "completed_strict_v2_control_only": true,
+    "old_training_engine_SHA_equals_current": true,
+    "control_parent_basis_SHA_current_exact": true,
+    "R13_builder_already_verified_baseline_keys_dtypes_bytes_equal": true,
+    "same_26953param11channel_architecture": true
+  },
+  "review_limits": [
+    "Policy order was checked statically; the full evaluator was not run on actual held-out panels.",
+    "Unseen row/source-group alignment relies on the original frozen R10 sample/source-manifest order; no source-ID join exists because sample IDs are generated row IDs.",
+    "The evaluator verifies tree data/feature binding and CNN shape/hash but does not explicitly compare checkpoint epoch/arm to summary or reject colliding source-pin values before dict.update; current trusted producers supply the correct mappings.",
+    "TRAIN driver reuse checks actual array equality and source/basis metadata; its full previous code/seed contract follows unchanged training_r12 SHA, confirmed in this metadata review."
+  ],
+  "actual_acoustic_arrays_labels_checkpoints_fit_or_model_inference_read": false,
+  "Test_or_locked_values_read": false,
+  "only_old_exposed_source_ID_metadata_read": true,
+  "source_edits": false
+}

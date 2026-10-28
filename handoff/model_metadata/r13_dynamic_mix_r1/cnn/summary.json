@@ -1,0 +1,114 @@
+{
+  "format": "r13_dynamic_mix_cnn_v1",
+  "status": "completed",
+  "arm": {
+    "name": "R13_dynamic_mixP1",
+    "shape": true,
+    "legacy_control": false,
+    "paired_epoch_mixture": true
+  },
+  "epochs_run": 100,
+  "best_epoch": 59,
+  "early_stopping": false,
+  "optimizer": "Adam",
+  "dropout": 0.1,
+  "parameters": 26953,
+  "loss": "shareMSE+.25weightedCellMSE",
+  "learning_rate_schedule": "cosine .001->.00001 fixed100",
+  "plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c",
+  "score": "share",
+  "validation_fit_metrics": {
+    "n": 1000,
+    "rmse": 0.08115707517381664,
+    "mae": 0.045688429344200816,
+    "bias": 0.006354691526142233,
+    "prediction_mean": 0.19871631660114508,
+    "prediction_rms": 0.30165722332149447,
+    "target_mean": 0.19236162507500285,
+    "target_rms": 0.3029674449657959,
+    "zero_n": 200,
+    "zero_prediction_mean": 0.021358577056962532,
+    "auc_share": 0.90920625,
+    "auc_score": 0.90920625,
+    "auc_legacy_score": 0.92123125,
+    "contrast_ge099_fraction": 0.052,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 512,
+        "rmse": 0.08345578548781533,
+        "bias": 0.012199223760296363
+      },
+      "2 Durban": {
+        "n": 119,
+        "rmse": 0.05692356282211304,
+        "bias": -0.009491817615808872
+      },
+      "4 Bird Island": {
+        "n": 73,
+        "rmse": 0.03807822344633737,
+        "bias": 0.009810893025332168
+      },
+      "5 St Croix Island": {
+        "n": 108,
+        "rmse": 0.08701741614901035,
+        "bias": -0.007335826209142666
+      },
+      "7 St_Francis": {
+        "n": 188,
+        "rmse": 0.0954061271836677,
+        "bias": 0.0069909005153718645
+      }
+    },
+    "site_macro_rmse": 0.07217622301778877,
+    "target_slices": {
+      "zero": {
+        "n": 200,
+        "rmse": 0.04655151136788446,
+        "bias": 0.021358577056962532,
+        "SSE": 0.4334086421268552
+      },
+      "positive_to_.2": {
+        "n": 466,
+        "rmse": 0.06552293128129275,
+        "bias": 0.015412324237688794,
+        "SSE": 2.000656608040943
+      },
+      "above_.2": {
+        "n": 334,
+        "rmse": 0.11150045783586254,
+        "bias": -0.015266967006027699,
+        "SSE": 4.152405600600725
+      }
+    }
+  },
+  "checkpoint_sha256": "72de43e8996e3efb8c88f22776fda6171d371952fff12492150bb5f8999d2345",
+  "elapsed_seconds": 522.7494352916256,
+  "Test_gate_eval_read": false,
+  "source_pins": {
+    "ops/train_r13_dynamic_mix.py": "fbb86c20c7146d3f314dc215029773a06de7b272a80b263e594c0d9177cf557d",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/dataset_r13.py": "13c47d9208ea8c4578617ee9434be38f0240558e070c5a043e384bffad8939af",
+    "pipeline/dataset_r12.py": "4ad08edb149745f1b5c04c2672cf588c47ba0e80b5e1dcf7bd35ef01f634cd14",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "models/r12_shared_basis_v1/basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "data/synthetic/r13_cpu_correction_v1/manifest.json": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+    "data/synthetic/r13_cpu_correction_v1/readiness.json": "4a54a88ac6bafa5b43ecb380de73781300785dd836b53e7076876b1c3b281aa9",
+    "data/synthetic/r12_cpu_ablation_v3/cnn_subset_indices.npy": "59dc2135ea685d27e626ca2ce6cf5d1ad62b263642d7afd0f780263902eeeae6",
+    "data/synthetic/r12_cpu_ablation_v3/validation_fit.npz": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "data/synthetic/r12_mask_matched_control_v2/train.npz": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+    "data/synthetic/r12_mask_matched_control_v2/train_metadata.parquet": "88164569513021caeb3612ab3e2ada37afda49c47a20ca8d2dc36c04a0859039",
+    "data/synthetic/r12_mask_matched_control_v2/train_recipes.json": "daccc5ec3a1bddc280341999c6c0192fbd2e9c856b65dd2f0414276bdfc4a52e",
+    "data/synthetic/r13_cpu_correction_v1/highshare_train.npz": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+    "data/synthetic/r13_cpu_correction_v1/highshare_train_metadata.parquet": "d03404de3130114bb587c61280efb2a206968d8becc159ef60c7f6f2333a3089",
+    "data/synthetic/r13_cpu_correction_v1/highshare_train_recipes.json": "ba2f72a065c1bb2e121cb2ec42e6831dd1a9bbab5cd5ec20bb6bf0a1a6d161c1",
+    "ops/evaluate_r13_cpu.py": "14ba4d5d09c73d85a2054c8b2a8f1262fda20ecdff109903a7c2e8f24a7457c1",
+    "ops/evaluate_r12_ablation.py": "ba3bc6f312b1747d88eb9ca841f0f3432e6982e9ee37351dd2878cd4216f1e08",
+    "ops/verify_r12_evaluation.py": "c9b40df2b4b894d027218cdfef95974f6b9964e8afb1d2cc42d1992ffbe66815",
+    "reports/r13_cpu_correction_r1/RESULTS.json": "824e45a021aa6394084468d8d54d2d9b5ee62fa01c3a0ce428ca2c2e2d136618",
+    "reports/r13_cpu_correction_r1/selected_policy.json": "2929222af6dd07450eecdcdb31f99ab2d093e254ce5ca123ce1c4aac66cc47ed"
+  }
+}

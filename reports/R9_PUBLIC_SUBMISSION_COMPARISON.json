@@ -1,0 +1,51 @@
+{
+  "status": "recorded_user_reported_results",
+  "results": [
+    {
+      "candidate": "R5 CNN",
+      "RMSE": 0.348008679,
+      "AUC": 0.539533333
+    },
+    {
+      "candidate": "R9 LightGBM5fold",
+      "RMSE": 0.231871324,
+      "AUC": 0.548088888
+    },
+    {
+      "candidate": "R9 Fold0 all5",
+      "RMSE": 0.217535806,
+      "AUC": 0.555066666
+    }
+  ],
+  "last_observation": {
+    "format": "r9_user_reported_public_result_v1",
+    "source": "User-provided Zindi screenshot, not independently fetched",
+    "recorded_utc": "2026-10-26T11:59:48.367939+00:00",
+    "submission_id": "xNErRzFT",
+    "candidate": "R9 Fold0 all5 pilot; four neural members10%each, Fold0 LightGBM60%",
+    "csv_sha256": "f016265ae9a1702dbb7121bfb0c852f5900f85a17194881056316768300fb39d",
+    "frozen_policy_file_sha256": "46ec3b14cafb5d07e79d77ff35849e46ec68a6b575bb1ff1781b43fe46f28af9",
+    "public_score": 0.782464193,
+    "public_share_RMSE": 0.217535806,
+    "public_diagnostic_AUC": 0.555066666,
+    "comparison_to_LightGBM5fold": {
+      "submission_id": "hUeqnRRS",
+      "public_score": 0.768128675,
+      "public_share_RMSE": 0.231871324,
+      "public_diagnostic_AUC": 0.548088888,
+      "RMSE_absolute_reduction": 0.014335517999999992,
+      "RMSE_percent_reduction": 6.182531652771339,
+      "AUC_absolute_increase": 0.00697777799999999,
+      "same_fold_coverage": false,
+      "causal_effect_of_neural_addition_isolated": false
+    },
+    "local_Fold0_gate500": {
+      "all5_rmse": 0.038135234807417207,
+      "Fold0_tree_only_rmse": 0.03660291194474782,
+      "used_for_refitting_after_public_result": false
+    },
+    "hidden_labels_available": false,
+    "used_to_change_weights_or_Test_calibration": false,
+    "GPU_training_resumed": false
+  }
+}

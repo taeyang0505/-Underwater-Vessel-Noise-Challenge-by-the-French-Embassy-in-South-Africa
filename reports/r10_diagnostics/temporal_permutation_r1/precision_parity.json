@@ -1,0 +1,149 @@
+{
+  "bg_cnn": {
+    "CPU_FP32": {
+      "n": 1000,
+      "rmse": 0.09037231624393785,
+      "mae": 0.048908118856863095,
+      "bias": 0.017375509806817378,
+      "addition_presence_auc": 0.9300895669112158
+    },
+    "saved_GPU_BF16": {
+      "n": 1000,
+      "rmse": 0.09036093202136652,
+      "mae": 0.04888602393105941,
+      "bias": 0.017295231852854726,
+      "addition_presence_auc": 0.9300668110902768
+    },
+    "CPU_minus_GPU_share": {
+      "mean": 8.027795396264991e-05,
+      "MAE": 0.00011628107123760855,
+      "RMS": 0.00021458903966828399,
+      "max_absolute": 0.0017325282096862793
+    },
+    "CPU_minus_GPU_score": {
+      "mean": 9.353497752454132e-05,
+      "MAE": 0.00048388602246996013,
+      "RMS": 0.0006459145746638664,
+      "max_absolute": 0.0037179887294769287
+    },
+    "ID_keyed_alignment": true,
+    "exact_float_equality_required": false,
+    "interpretation": "Different device/precision execution; a nonzero delta alone is not CSV or feature mapping failure."
+  },
+  "tfgrid_fdy_conformer": {
+    "CPU_FP32": {
+      "n": 1000,
+      "rmse": 0.07941411358917493,
+      "mae": 0.03951429615636357,
+      "bias": 0.012115934020848955,
+      "addition_presence_auc": 0.9421592543372596
+    },
+    "saved_GPU_BF16": {
+      "n": 1000,
+      "rmse": 0.07941507932041383,
+      "mae": 0.03960204607575201,
+      "bias": 0.012293372634341949,
+      "addition_presence_auc": 0.9419681054413719
+    },
+    "CPU_minus_GPU_share": {
+      "mean": -0.0001774386134929955,
+      "MAE": 0.0002565404330380261,
+      "RMS": 0.00041146830679795223,
+      "max_absolute": 0.003968715667724609
+    },
+    "CPU_minus_GPU_score": {
+      "mean": -0.0004559336919337511,
+      "MAE": 0.000927877601236105,
+      "RMS": 0.0015465962459776947,
+      "max_absolute": 0.017613127827644348
+    },
+    "ID_keyed_alignment": true,
+    "exact_float_equality_required": false,
+    "interpretation": "Different device/precision execution; a nonzero delta alone is not CSV or feature mapping failure."
+  },
+  "fdy": {
+    "CPU_FP32": {
+      "n": 1000,
+      "rmse": 0.08108581185090502,
+      "mae": 0.04455436713010772,
+      "bias": 0.009606919620137206,
+      "addition_presence_auc": 0.9326382188563834
+    },
+    "saved_GPU_BF16": {
+      "n": 1000,
+      "rmse": 0.08103366363575992,
+      "mae": 0.04453146510059946,
+      "bias": 0.009616925661461436,
+      "addition_presence_auc": 0.9327565491252663
+    },
+    "CPU_minus_GPU_share": {
+      "mean": -1.0006041324231774e-05,
+      "MAE": 0.00013591598375933245,
+      "RMS": 0.00024817343856519536,
+      "max_absolute": 0.0018516182899475098
+    },
+    "CPU_minus_GPU_score": {
+      "mean": -1.566906413063407e-05,
+      "MAE": 0.000625210830476135,
+      "RMS": 0.0008917547946297085,
+      "max_absolute": 0.006718084216117859
+    },
+    "ID_keyed_alignment": true,
+    "exact_float_equality_required": false,
+    "interpretation": "Different device/precision execution; a nonzero delta alone is not CSV or feature mapping failure."
+  },
+  "itransformer": {
+    "CPU_FP32": {
+      "n": 1000,
+      "rmse": 0.09651464262666032,
+      "mae": 0.05606233573822306,
+      "bias": 0.016069666347708563,
+      "addition_presence_auc": 0.9077479019133093
+    },
+    "saved_GPU_BF16": {
+      "n": 1000,
+      "rmse": 0.09652330534360902,
+      "mae": 0.05607582857786679,
+      "bias": 0.016118970253979795,
+      "addition_presence_auc": 0.9078389251970653
+    },
+    "CPU_minus_GPU_share": {
+      "mean": -4.9303906271234157e-05,
+      "MAE": 0.0001322926839347929,
+      "RMS": 0.00022640000716108596,
+      "max_absolute": 0.0019851326942443848
+    },
+    "CPU_minus_GPU_score": {
+      "mean": -7.087196968495846e-05,
+      "MAE": 0.0006081219632178545,
+      "RMS": 0.0008423626966347768,
+      "max_absolute": 0.004701703786849976
+    },
+    "ID_keyed_alignment": true,
+    "exact_float_equality_required": false,
+    "interpretation": "Different device/precision execution; a nonzero delta alone is not CSV or feature mapping failure."
+  },
+  "frozen_all5": {
+    "CPU_FP32": {
+      "n": 1000,
+      "rmse": 0.06195257923255357,
+      "mae": 0.03379229429109023,
+      "bias": 0.007889280180688957,
+      "addition_presence_auc": 0.9559674864830424
+    },
+    "GPU_NN_plus_same_CPU_tree_reference": {
+      "n": 1000,
+      "rmse": 0.0619498975360659,
+      "mae": 0.033797779654162016,
+      "bias": 0.007904927488425756,
+      "addition_presence_auc": 0.9559674864830423
+    },
+    "CPU_minus_reference_share": {
+      "mean": -1.564730773679912e-05,
+      "MAE": 3.353237989358604e-05,
+      "RMS": 5.4728645083970136e-05,
+      "max_absolute": 0.00045374780893325806
+    },
+    "reference_is_not_a_separately_trained_GPU_ensemble": true
+  }
+}

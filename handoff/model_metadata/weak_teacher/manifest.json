@@ -1,0 +1,54 @@
+{
+  "kind": "AIS-scenario weak proxy, NOT verified natural-vessel labels",
+  "fit_rows": 1129,
+  "fit_source": "VTUAD only; positive AIS classes vs dedicated ambient controls",
+  "external_manifest": {
+    "clips": 1466,
+    "segment_shape": [
+      85114,
+      25
+    ],
+    "complete_minute_shape": [
+      2511,
+      25
+    ],
+    "sources": {
+      "HearMyShip_V1": 941,
+      "VTUAD_v1.3.2": 525
+    },
+    "split_counts": "{('HearMyShip_V1', 'calibration'): 115, ('HearMyShip_V1', 'domain_holdout'): 44, ('HearMyShip_V1', 'train'): 635, ('HearMyShip_V1', 'validation'): 147, ('VTUAD_v1.3.2', 'calibration'): 6, ('VTUAD_v1.3.2', 'domain_holdout'): 15, ('VTUAD_v1.3.2', 'excluded_cross_day_conflict'): 1, ('VTUAD_v1.3.2', 'excluded_hull_day_conflict'): 260, ('VTUAD_v1.3.2', 'train'): 237, ('VTUAD_v1.3.2', 'validation'): 6}",
+    "split_policy": "HMS by recording day (unknown hull recurrence); VTUAD hull/day intersection, conflicting clips excluded; byte-duplicate conflicts excluded",
+    "vtuad_download_complete": true,
+    "failures": [],
+    "test_accessed": false,
+    "source_hash": "33884703cd01db8c7ab4c8e06a219122f3314a89eb32f05632c8c70e969bc564",
+    "day_split_salt": 34,
+    "day_split_selection": "First integer salt with at least 5 AIS-positive clips and 1 ambient recording per fold, selected using registry metadata only, no acoustic features or outcomes",
+    "limitations": "AIS classes are weak; short CPA spectra are not measured 15-minute trajectories. No acoustic absence calibration."
+  },
+  "metrics": {
+    "validation": {
+      "n_minutes": 50,
+      "groups": 3,
+      "auc": 0.3493761140819964,
+      "balanced_accuracy": 0.47147950089126556,
+      "brier": 0.44656346540768693
+    },
+    "domain_holdout": {
+      "n_minutes": 176,
+      "groups": 9,
+      "auc": 0.5442460317460318,
+      "balanced_accuracy": 0.5595238095238095,
+      "brier": 0.42601893486664083
+    }
+  },
+  "test_accessed": false,
+  "all_rows_scored": 1715779,
+  "invalid_measurements_kept": 653,
+  "weak_label_counts": {
+    "uncertain_teacher_failed_validation": 1715126,
+    "invalid_measurement": 653
+  },
+  "warning": "These are uncalibrated cross-domain model proxies. Do not use as evaluation truth or as share_added_vessel labels.",
+  "approved_for_pseudo_label_training": false
+}

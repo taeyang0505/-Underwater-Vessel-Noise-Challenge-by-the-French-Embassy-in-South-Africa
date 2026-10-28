@@ -1,0 +1,304 @@
+{
+  "train_edge_masked_rows": 12643,
+  "train_rows": 1715779,
+  "train_good_rows": 1678051,
+  "train_offgrid_rows": 21082,
+  "train_sentinel_rows": 654,
+  "train_aligned_windows": 102414,
+  "energy_share_le200Hz": {
+    "01 Richards Bay": 0.839,
+    "02 Durban": 0.849,
+    "03 Cape Recife": 0.822,
+    "04 Bird Island": 0.791,
+    "05 St Croix": 0.804,
+    "06 Riy Banks": 0.352,
+    "07 St Francis": 0.436,
+    "09 Fish Hoek": 0.747,
+    "10 Sea Point": 0.957,
+    "13 Saldanha Bay": 0.826,
+    "TEST windows": 0.575
+  },
+  "energy_share_le500Hz": {
+    "01 Richards Bay": 0.948,
+    "02 Durban": 0.962,
+    "03 Cape Recife": 0.871,
+    "04 Bird Island": 0.823,
+    "05 St Croix": 0.957,
+    "06 Riy Banks": 0.423,
+    "07 St Francis": 0.71,
+    "09 Fish Hoek": 0.873,
+    "10 Sea Point": 0.985,
+    "13 Saldanha Bay": 0.945,
+    "TEST windows": 0.78
+  },
+  "pca_explained_variance_top5": [
+    0.743,
+    0.119,
+    0.067,
+    0.022,
+    0.014
+  ],
+  "abs_step_quantiles": {
+    "train": {
+      "p50": 1.0909875165183394,
+      "p90": 4.579296507350436,
+      "p99": 12.876016598935864
+    },
+    "test": {
+      "p50": 1.7793693800880845,
+      "p90": 7.857124313041837,
+      "p99": 17.32887085225654
+    }
+  },
+  "test_missing_patterns": {
+    "none": 775,
+    "1": 620,
+    "15": 97,
+    "1,2": 3,
+    "14,15": 2,
+    "13,14": 1,
+    "8,9": 1,
+    "1,14,15": 1
+  },
+  "bump_low_p90_train_db": 10.158477595353956,
+  "test_share_windows_above_train_bump_p90": 0.2806666666666667,
+  "test_share_windows_above_train_bump_p99": 0.0006666666666666666,
+  "domain_probe": {
+    "cv_balanced_accuracy_week_grouped": 0.705,
+    "test_pred_site_share": {
+      "07 St Francis": 0.325,
+      "01 Richards Bay": 0.282,
+      "13 Saldanha Bay": 0.189,
+      "05 St Croix": 0.157,
+      "02 Durban": 0.021,
+      "04 Bird Island": 0.011,
+      "09 Fish Hoek": 0.01,
+      "10 Sea Point": 0.005
+    },
+    "train_oof_nn_rms_db_p50_p99": [
+      1.702,
+      4.319
+    ],
+    "test_nn_rms_db_p50": 1.822,
+    "test_share_beyond_train_p99": 0.011
+  },
+  "natural_events": {
+    "n": 5725,
+    "per_recorded_day": {
+      "01 Richards Bay": 5.96,
+      "02 Durban": 4.26,
+      "03 Cape Recife": 1.05,
+      "04 Bird Island": 7.25,
+      "05 St Croix": 2.99,
+      "06 Riy Banks": 0.0,
+      "07 St Francis": 1.15,
+      "09 Fish Hoek": 0.85,
+      "10 Sea Point": 3.15,
+      "13 Saldanha Bay": 6.81
+    },
+    "rejected_edge_or_glitch": {
+      "01 Richards Bay": 535,
+      "03 Cape Recife": 5,
+      "04 Bird Island": 3,
+      "05 St Croix": 2,
+      "06 Riy Banks": 3,
+      "07 St Francis": 347,
+      "09 Fish Hoek": 488,
+      "13 Saldanha Bay": 33
+    },
+    "duration_median_min": 4.0,
+    "duration_p90_min": 9.0
+  },
+  "test_d7943_5012_quantiles": {
+    "p01": -5.5,
+    "p05": -4.799999237060547,
+    "p50": -2.5999984741210938,
+    "p95": 0.14999790191650392,
+    "p99": 0.7504961776733394
+  },
+  "site_matched_bump_high": {
+    "07 St Francis": {
+      "train_p50": 0.862,
+      "test_p50": 10.634,
+      "test_share_above_train_p99": 0.415,
+      "ks": 0.614
+    },
+    "01 Richards Bay": {
+      "train_p50": 1.148,
+      "test_p50": 17.346,
+      "test_share_above_train_p99": 0.478,
+      "ks": 0.668
+    },
+    "13 Saldanha Bay": {
+      "train_p50": 0.951,
+      "test_p50": 19.836,
+      "test_share_above_train_p99": 0.377,
+      "ks": 0.787
+    },
+    "05 St Croix": {
+      "train_p50": 0.772,
+      "test_p50": 20.196,
+      "test_share_above_train_p99": 0.754,
+      "ks": 0.896
+    }
+  },
+  "share_bump_high_gt5db": {
+    "test": 0.839,
+    "train": 0.185
+  },
+  "peak_pos_low_complete_windows": {
+    "test": {
+      "1": 0.0477,
+      "2": 0.0723,
+      "3": 0.0826,
+      "4": 0.0594,
+      "5": 0.0619,
+      "6": 0.0594,
+      "7": 0.0813,
+      "8": 0.0748,
+      "9": 0.0594,
+      "10": 0.0684,
+      "11": 0.0606,
+      "12": 0.0645,
+      "13": 0.0735,
+      "14": 0.0632,
+      "15": 0.071
+    },
+    "train": {
+      "1": 0.1108,
+      "2": 0.0705,
+      "3": 0.0629,
+      "4": 0.0615,
+      "5": 0.0587,
+      "6": 0.0576,
+      "7": 0.0571,
+      "8": 0.0573,
+      "9": 0.0575,
+      "10": 0.0587,
+      "11": 0.0602,
+      "12": 0.0601,
+      "13": 0.0624,
+      "14": 0.0671,
+      "15": 0.0977
+    }
+  },
+  "top_band_631Hz_share": {
+    "test": 0.0827,
+    "train": 0.0104
+  },
+  "test": {
+    "windows": 1500,
+    "cells": 562500,
+    "missing_cells": 18350,
+    "missing_minutes": 734,
+    "partial_minutes": 0,
+    "db_min": 29.299999237060547,
+    "db_max": 152.89999389648438,
+    "all_on_0p1_grid": true,
+    "top_band_hz_share": {
+      "31.6": 0.452,
+      "631.0": 0.0827,
+      "251.2": 0.0613,
+      "316.2": 0.058,
+      "63.1": 0.0547,
+      "50.1": 0.0393
+    },
+    "peak_pos_low_share": {
+      "1": 0.028,
+      "2": 0.0713,
+      "3": 0.0827,
+      "4": 0.0667,
+      "5": 0.07,
+      "6": 0.064,
+      "7": 0.0807,
+      "8": 0.0747,
+      "9": 0.064,
+      "10": 0.0713,
+      "11": 0.0633,
+      "12": 0.068,
+      "13": 0.0753,
+      "14": 0.0647,
+      "15": 0.0553
+    }
+  },
+  "train_windows_peak_pos_low_share": {
+    "1": 0.0963,
+    "2": 0.0749,
+    "3": 0.0657,
+    "4": 0.0628,
+    "5": 0.06,
+    "6": 0.0593,
+    "7": 0.0591,
+    "8": 0.0585,
+    "9": 0.059,
+    "10": 0.0594,
+    "11": 0.0616,
+    "12": 0.0615,
+    "13": 0.0655,
+    "14": 0.0706,
+    "15": 0.086
+  },
+  "train_top_band_hz_share": {
+    "31.6": 0.5859,
+    "50.1": 0.0845,
+    "63.1": 0.0533,
+    "39.8": 0.0469,
+    "316.2": 0.0379,
+    "125.9": 0.0336
+  },
+  "benchmark": {
+    "public_score": 0.753867825,
+    "rmse": 0.246132,
+    "if_all_zero_then_E[y^2]": 0.06058
+  },
+  "feature_ks": {
+    "level_db": {
+      "ks_test_vs_train": 0.214,
+      "ks_test_vs_trainbal": 0.216
+    },
+    "bump_low_db": {
+      "ks_test_vs_train": 0.318,
+      "ks_test_vs_trainbal": 0.272
+    },
+    "range_low_db": {
+      "ks_test_vs_train": 0.318,
+      "ks_test_vs_trainbal": 0.246
+    },
+    "bump_high_db": {
+      "ks_test_vs_train": 0.655,
+      "ks_test_vs_trainbal": 0.745
+    },
+    "std_broadband_db": {
+      "ks_test_vs_train": 0.386,
+      "ks_test_vs_trainbal": 0.31
+    },
+    "mean_abs_step_db": {
+      "ks_test_vs_train": 0.344,
+      "ks_test_vs_trainbal": 0.288
+    },
+    "tilt_db": {
+      "ks_test_vs_train": 0.269,
+      "ks_test_vs_trainbal": 0.172
+    },
+    "centroid_hz": {
+      "ks_test_vs_train": 0.419,
+      "ks_test_vs_trainbal": 0.333
+    },
+    "max_minute_share": {
+      "ks_test_vs_train": 0.376,
+      "ks_test_vs_trainbal": 0.337
+    },
+    "corr_low_high": {
+      "ks_test_vs_train": 0.354,
+      "ks_test_vs_trainbal": 0.351
+    },
+    "lag1_acf_broadband": {
+      "ks_test_vs_train": 0.205,
+      "ks_test_vs_trainbal": 0.193
+    },
+    "naive_share_q20": {
+      "ks_test_vs_train": 0.382,
+      "ks_test_vs_trainbal": 0.326
+    }
+  }
+}

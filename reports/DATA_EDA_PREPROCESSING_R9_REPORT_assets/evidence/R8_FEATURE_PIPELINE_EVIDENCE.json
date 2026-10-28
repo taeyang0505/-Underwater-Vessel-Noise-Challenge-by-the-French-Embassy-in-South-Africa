@@ -1,0 +1,3296 @@
+{
+  "status": "read_only_feature_version_split_audit_completed",
+  "created_utc": "2026-10-26T05:01:54.348450+00:00",
+  "scope": "source schemas and array headers/metadata only; no Test, acoustic array values, cross-array moments, fitting or frozen mutations",
+  "raw_schema": {
+    "total_rows": 1715779,
+    "per_file_footer": [
+      {
+        "file": "01_Richards_Bay.parquet",
+        "rows_from_footer": 1001174,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "02_Durban.parquet",
+        "rows_from_footer": 44640,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "03_Cape_Recife.parquet",
+        "rows_from_footer": 5928,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "04_Bird_Island.parquet",
+        "rows_from_footer": 47552,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "05_St_Croix_Island.parquet",
+        "rows_from_footer": 250717,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "06_Riy_Banks.parquet",
+        "rows_from_footer": 4121,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "07_St_Francis.parquet",
+        "rows_from_footer": 169488,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "09_Fish_Hoek.parquet",
+        "rows_from_footer": 53767,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "10_Sea_Point.parquet",
+        "rows_from_footer": 3660,
+        "columns": 74,
+        "TOL_columns": 62
+      },
+      {
+        "file": "13_Saldhana_Bay.parquet",
+        "rows_from_footer": 134732,
+        "columns": 74,
+        "TOL_columns": 62
+      }
+    ],
+    "common_full_schema": [
+      {
+        "name": "site",
+        "dtype": "string"
+      },
+      {
+        "name": "recorder",
+        "dtype": "string"
+      },
+      {
+        "name": "station_token",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_rate_hz",
+        "dtype": "int32"
+      },
+      {
+        "name": "file_kind",
+        "dtype": "string"
+      },
+      {
+        "name": "src_file",
+        "dtype": "string"
+      },
+      {
+        "name": "file_date",
+        "dtype": "string"
+      },
+      {
+        "name": "t",
+        "dtype": "timestamp[ms]"
+      },
+      {
+        "name": "dur",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_0.8",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1.6",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_2",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_2.5",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_3.2",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_4",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_5",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_6.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_7.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_10",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_12.6",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_15.8",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_20",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_25.1",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_31.6",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_39.8",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_50.1",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_63.1",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_79.4",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_100",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_125.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_158.5",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_199.5",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_251.2",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_316.2",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_398.1",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_501.2",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_631",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_794.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1258.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1584.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_1995.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_2511.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_3162.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_3981.1",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_5011.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_6309.6",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_7943.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_10000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_12000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_12589.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_15848.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_19952.6",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_24000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_25118.9",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_31622.8",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_39810.7",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_48000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_50118.7",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_63095.7",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_72000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_79432.8",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_100000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_125892.5",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_158489.3",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_192000",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_199526.2",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_251188.6",
+        "dtype": "float"
+      },
+      {
+        "name": "TOL_288000",
+        "dtype": "float"
+      },
+      {
+        "name": "qc_duration_ge55",
+        "dtype": "bool"
+      },
+      {
+        "name": "qc_25band_finite",
+        "dtype": "bool"
+      },
+      {
+        "name": "qc_25band_spread_ge6",
+        "dtype": "bool"
+      }
+    ],
+    "model_band_count": 25,
+    "raw_TOL_columns": 62,
+    "metadata_QC_columns": 12,
+    "unused_raw_TOL_columns": 37,
+    "metadata_ID_fields_are_not_model_features": true
+  },
+  "bands": [
+    {
+      "zero_based_index": 0,
+      "raw_TOL_column": "TOL_31.6",
+      "nominal_centre_hz": 31.622776601683793,
+      "audio_integration_lower_inclusive_hz": 28.18382931264454,
+      "audio_integration_upper_exclusive_hz": 35.48133892335754
+    },
+    {
+      "zero_based_index": 1,
+      "raw_TOL_column": "TOL_39.8",
+      "nominal_centre_hz": 39.810717055349734,
+      "audio_integration_lower_inclusive_hz": 35.481338923357555,
+      "audio_integration_upper_exclusive_hz": 44.66835921509632
+    },
+    {
+      "zero_based_index": 2,
+      "raw_TOL_column": "TOL_50.1",
+      "nominal_centre_hz": 50.11872336272722,
+      "audio_integration_lower_inclusive_hz": 44.66835921509631,
+      "audio_integration_upper_exclusive_hz": 56.2341325190349
+    },
+    {
+      "zero_based_index": 3,
+      "raw_TOL_column": "TOL_63.1",
+      "nominal_centre_hz": 63.09573444801933,
+      "audio_integration_lower_inclusive_hz": 56.234132519034915,
+      "audio_integration_upper_exclusive_hz": 70.7945784384138
+    },
+    {
+      "zero_based_index": 4,
+      "raw_TOL_column": "TOL_79.4",
+      "nominal_centre_hz": 79.43282347242814,
+      "audio_integration_lower_inclusive_hz": 70.7945784384138,
+      "audio_integration_upper_exclusive_hz": 89.12509381337453
+    },
+    {
+      "zero_based_index": 5,
+      "raw_TOL_column": "TOL_100",
+      "nominal_centre_hz": 100.0,
+      "audio_integration_lower_inclusive_hz": 89.12509381337456,
+      "audio_integration_upper_exclusive_hz": 112.20184543019633
+    },
+    {
+      "zero_based_index": 6,
+      "raw_TOL_column": "TOL_125.9",
+      "nominal_centre_hz": 125.89254117941675,
+      "audio_integration_lower_inclusive_hz": 112.20184543019639,
+      "audio_integration_upper_exclusive_hz": 141.25375446227545
+    },
+    {
+      "zero_based_index": 7,
+      "raw_TOL_column": "TOL_158.5",
+      "nominal_centre_hz": 158.48931924611142,
+      "audio_integration_lower_inclusive_hz": 141.2537544622755,
+      "audio_integration_upper_exclusive_hz": 177.82794100389233
+    },
+    {
+      "zero_based_index": 8,
+      "raw_TOL_column": "TOL_199.5",
+      "nominal_centre_hz": 199.52623149688787,
+      "audio_integration_lower_inclusive_hz": 177.82794100389222,
+      "audio_integration_upper_exclusive_hz": 223.87211385683383
+    },
+    {
+      "zero_based_index": 9,
+      "raw_TOL_column": "TOL_251.2",
+      "nominal_centre_hz": 251.18864315095797,
+      "audio_integration_lower_inclusive_hz": 223.87211385683395,
+      "audio_integration_upper_exclusive_hz": 281.8382931264453
+    },
+    {
+      "zero_based_index": 10,
+      "raw_TOL_column": "TOL_316.2",
+      "nominal_centre_hz": 316.22776601683796,
+      "audio_integration_lower_inclusive_hz": 281.8382931264454,
+      "audio_integration_upper_exclusive_hz": 354.81338923357544
+    },
+    {
+      "zero_based_index": 11,
+      "raw_TOL_column": "TOL_398.1",
+      "nominal_centre_hz": 398.1071705534973,
+      "audio_integration_lower_inclusive_hz": 354.81338923357555,
+      "audio_integration_upper_exclusive_hz": 446.6835921509632
+    },
+    {
+      "zero_based_index": 12,
+      "raw_TOL_column": "TOL_501.2",
+      "nominal_centre_hz": 501.18723362727246,
+      "audio_integration_lower_inclusive_hz": 446.6835921509633,
+      "audio_integration_upper_exclusive_hz": 562.3413251903493
+    },
+    {
+      "zero_based_index": 13,
+      "raw_TOL_column": "TOL_631",
+      "nominal_centre_hz": 630.957344480193,
+      "audio_integration_lower_inclusive_hz": 562.3413251903489,
+      "audio_integration_upper_exclusive_hz": 707.9457843841376
+    },
+    {
+      "zero_based_index": 14,
+      "raw_TOL_column": "TOL_794.3",
+      "nominal_centre_hz": 794.3282347242822,
+      "audio_integration_lower_inclusive_hz": 707.9457843841386,
+      "audio_integration_upper_exclusive_hz": 891.2509381337462
+    },
+    {
+      "zero_based_index": 15,
+      "raw_TOL_column": "TOL_1000",
+      "nominal_centre_hz": 1000.0,
+      "audio_integration_lower_inclusive_hz": 891.2509381337456,
+      "audio_integration_upper_exclusive_hz": 1122.0184543019634
+    },
+    {
+      "zero_based_index": 16,
+      "raw_TOL_column": "TOL_1258.9",
+      "nominal_centre_hz": 1258.9254117941675,
+      "audio_integration_lower_inclusive_hz": 1122.0184543019639,
+      "audio_integration_upper_exclusive_hz": 1412.5375446227545
+    },
+    {
+      "zero_based_index": 17,
+      "raw_TOL_column": "TOL_1584.9",
+      "nominal_centre_hz": 1584.893192461114,
+      "audio_integration_lower_inclusive_hz": 1412.537544622755,
+      "audio_integration_upper_exclusive_hz": 1778.2794100389233
+    },
+    {
+      "zero_based_index": 18,
+      "raw_TOL_column": "TOL_1995.3",
+      "nominal_centre_hz": 1995.2623149688789,
+      "audio_integration_lower_inclusive_hz": 1778.2794100389224,
+      "audio_integration_upper_exclusive_hz": 2238.7211385683386
+    },
+    {
+      "zero_based_index": 19,
+      "raw_TOL_column": "TOL_2511.9",
+      "nominal_centre_hz": 2511.886431509582,
+      "audio_integration_lower_inclusive_hz": 2238.7211385683418,
+      "audio_integration_upper_exclusive_hz": 2818.3829312644557
+    },
+    {
+      "zero_based_index": 20,
+      "raw_TOL_column": "TOL_3162.3",
+      "nominal_centre_hz": 3162.2776601683795,
+      "audio_integration_lower_inclusive_hz": 2818.3829312644543,
+      "audio_integration_upper_exclusive_hz": 3548.1338923357544
+    },
+    {
+      "zero_based_index": 21,
+      "raw_TOL_column": "TOL_3981.1",
+      "nominal_centre_hz": 3981.0717055349733,
+      "audio_integration_lower_inclusive_hz": 3548.1338923357557,
+      "audio_integration_upper_exclusive_hz": 4466.835921509632
+    },
+    {
+      "zero_based_index": 22,
+      "raw_TOL_column": "TOL_5011.9",
+      "nominal_centre_hz": 5011.872336272725,
+      "audio_integration_lower_inclusive_hz": 4466.835921509633,
+      "audio_integration_upper_exclusive_hz": 5623.413251903493
+    },
+    {
+      "zero_based_index": 23,
+      "raw_TOL_column": "TOL_6309.6",
+      "nominal_centre_hz": 6309.573444801937,
+      "audio_integration_lower_inclusive_hz": 5623.413251903495,
+      "audio_integration_upper_exclusive_hz": 7079.457843841383
+    },
+    {
+      "zero_based_index": 24,
+      "raw_TOL_column": "TOL_7943.3",
+      "nominal_centre_hz": 7943.282347242822,
+      "audio_integration_lower_inclusive_hz": 7079.4578438413855,
+      "audio_integration_upper_exclusive_hz": 8912.509381337462
+    }
+  ],
+  "physical_group_indices": {
+    "low": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mid": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "high": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "safe": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "other_index_groups": {
+    "low_co_rise_and_hardneg": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "R6CNN_score_contrast": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "R6_global_context": [
+      [
+        10,
+        20
+      ],
+      [
+        20,
+        25
+      ],
+      [
+        15,
+        23
+      ]
+    ],
+    "local_alignment_AV_LF_different_definition": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "R5_prior_high_anchor_actual": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "R5_prior_mid_high_anchor_actual": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  "SA_prepare": {
+    "rows_preserved": 1715779,
+    "eligible_rows": 1698224,
+    "rows_in_windows": 1698184,
+    "window_shape": [
+      133641,
+      15,
+      25
+    ],
+    "window_split_counts": {
+      "train": 92954,
+      "domain_holdout": 16048,
+      "calibration": 13379,
+      "validation": 11260
+    },
+    "sensor_groups": {
+      "1 Richards Bay": 0,
+      "10 Sea Point": 5,
+      "13 Saldhana Bay": 5,
+      "2 Durban": 1,
+      "3 Cape_Recife": 2,
+      "4 Bird Island": 3,
+      "5 St Croix Island": 3,
+      "6 Riy_Banks": 1,
+      "7 St_Francis": 4,
+      "9 Fish Hoek": 5
+    },
+    "clock": "original export clock; timezone unverified",
+    "window_rule": "15-minute fixed bins; >=3 observed full-ish minutes; gaps remain NaN; no interpolation",
+    "semantic_labels": "none; model outputs are weak pseudo-scores, never verified natural-vessel labels"
+  },
+  "SA_selection_policy": {
+    "usable": "all25finite AND no -156.5sentinel AND55<=dur<=65 ANDtimestampsecond<=5",
+    "raw_rows_retained": true,
+    "qc_spread_flag_not_used_as_ship_label_or_hard_filter": true,
+    "duplicate_minute": "duration closest60 then timestamp then local index",
+    "window": "export-clock floor15min, at least3 fully observed minutes; no interpolation",
+    "R6_extra_mask": "actual selected original row_id join, not first/last heuristic; preserve originalNaNs;>=3minutes"
+  },
+  "external_conversion": {
+    "sources_from_preparation_manifest": {
+      "HearMyShip_V1": 1145,
+      "VTUAD_v1.3.2": 525
+    },
+    "clips": 1670,
+    "bank_segment_shape": [
+      87163,
+      25
+    ],
+    "complete_minute_shape": [
+      2511,
+      25
+    ],
+    "active_R4_R6_reference_source": "VTUAD_v1.3.2 only,119 selectedclips22components R4;94/17 R6 admittedoldTRAIN+INNER",
+    "algorithm": [
+      "native audio header, selectchannel0",
+      "complete nonoverlap2s frames, drop less-than2s tail",
+      "scipy periodogram:Hann,detrendconstant,onesided,PSDdensity",
+      "sum PSD bins times deltaf in [c/10^.05,c*10^.05); reject unsupported bands",
+      "save2s×25float32powers; average30completeframes to fullminute"
+    ],
+    "units": "uncalibrated digital mean-square band power, not verified uPa^2",
+    "HMS_short_excerpt_not_complete_minute": true,
+    "conversion_is_not_current_split_assignment": true
+  },
+  "R5_legacy8": {
+    "x": "input raw featuredb for actual rawR5; x float32 in cnn_channels;O=isfinite",
+    "channels_zero_based": [
+      {
+        "index": 0,
+        "name": "window_mean_relative",
+        "formula": "O*(x-nanmean_all_cells(x))/20"
+      },
+      {
+        "index": 1,
+        "name": "absolute_level",
+        "formula": "O*x/100"
+      },
+      {
+        "index": 2,
+        "name": "sqrt_raw_energy_weight",
+        "formula": "sqrt(w_raw)"
+      },
+      {
+        "index": 3,
+        "name": "observed_mask",
+        "formula": "O"
+      },
+      {
+        "index": 4,
+        "name": "signed_band_q20_relative",
+        "formula": "O*(x-quantile_observed_time_0.20(x))/20"
+      },
+      {
+        "index": 5,
+        "name": "adjacent_delta",
+        "formula": "O[t]O[t-1]*(x[t]-x[t-1])/20;first=0"
+      },
+      {
+        "index": 6,
+        "name": "TRAIN_template_q0",
+        "formula": "O*clip(1-Bhat/E,0,1)"
+      },
+      {
+        "index": 7,
+        "name": "TRAIN_template_raw_background_ratio",
+        "formula": "O*log1p(clip(Bhat/E,0,10))/log(11)"
+      }
+    ],
+    "prior": "TRAIN-only32aggregate knownB=(1-q)E spectral templates; querydb only; high>=2000Hzanchor andwindowq20; counterfactual feature, not natural truth",
+    "query_inputs": "db plus frozenTRAINprior only; noq/y/site/recipe",
+    "pool_weights": "raw observed energy normalized over15x25",
+    "invariance_limits": "absolute x/100 breaks common-gain invariance of whole representation; band/static response also matters"
+  },
+  "R6_current_relative8": {
+    "Q": "round(db.astypefloat64,1)",
+    "channels_zero_based": [
+      {
+        "index": 0,
+        "name": "band_median_relative",
+        "formula": "O*(Q-med_time_band(Q))/10"
+      },
+      {
+        "index": 1,
+        "name": "band_q20_relative",
+        "formula": "O*(Q-q20_time_band(Q))/15"
+      },
+      {
+        "index": 2,
+        "name": "adjacent_observed_delta",
+        "formula": "O[t]O[t-1]*(Q[t]-Q[t-1])/10;first=0"
+      },
+      {
+        "index": 3,
+        "name": "mid_high_delta_low_co_rise",
+        "formula": "1[f>=index10]*relu(channel2)*tanh(mean_observed_low0..8(relu(delta_db))/3)"
+      },
+      {
+        "index": 4,
+        "name": "band_profile_relative",
+        "formula": "O*(med_time_band(Q)-med_all_observed_cells(Q))/20"
+      },
+      {
+        "index": 5,
+        "name": "observed_mask",
+        "formula": "O"
+      },
+      {
+        "index": 6,
+        "name": "band_q05_relative",
+        "formula": "O*(Q-q05_time_band(Q))/15"
+      },
+      {
+        "index": 7,
+        "name": "sqrt_rounded_energy_weight",
+        "formula": "sqrt(w_Q)"
+      }
+    ],
+    "query_inputs": "db only; no fittedprior",
+    "missing": "allchannelszero exceptmask0outsideobservation;adjacentonlyvalidpairs;whollymissingbandprofilefilled0",
+    "output": "x8float32[N,8,15,25],wfloat32[N,15,25]",
+    "pool_weights": "O*10^((Q-max_observed_Q)/10), normalizedsum1",
+    "invariance_limits": [
+      "Common additive dBgain invariant afterquantization;pre-roundarbitrarygain cancrossroundingties",
+      "Static perband offsets cancel in channels0..3and6 whenroundingcommutes, notprofilechannel4 orweights/sqrtw",
+      "q05/q20 are localwindowstatistics,notcertifiedbackgroundtruth"
+    ],
+    "rounding_raw_target_mismatch_bound": "nominal max|pooled(q,w_Q)-pooled(q,w_raw)|<=tanh(ln10*0.05/20)≈0.0057564, plus float32 storage tolerance"
+  },
+  "physics27": {
+    "schema": "r6_physics_bandpower_v2_27",
+    "feature_count": 27,
+    "feature_names": [
+      "bump_low_db",
+      "bump_mid_db",
+      "bump_high_db",
+      "bump_safe_db",
+      "corr_low_mid",
+      "corr_low_high",
+      "corr_low_safe",
+      "std_broadband_db",
+      "tilt_median_high_minus_low_db",
+      "bump_low_db_defined",
+      "bump_mid_db_defined",
+      "bump_high_db_defined",
+      "bump_safe_db_defined",
+      "corr_low_mid_defined",
+      "corr_low_high_defined",
+      "corr_low_safe_defined",
+      "std_broadband_db_defined",
+      "tilt_median_high_minus_low_db_defined",
+      "bump_low_db_valid_minutes",
+      "bump_mid_db_valid_minutes",
+      "bump_high_db_valid_minutes",
+      "bump_safe_db_valid_minutes",
+      "corr_low_mid_valid_minutes",
+      "corr_low_high_valid_minutes",
+      "corr_low_safe_valid_minutes",
+      "std_broadband_db_valid_minutes",
+      "tilt_median_high_minus_low_db_valid_minutes"
+    ],
+    "signal_names": [
+      "bump_low_db",
+      "bump_mid_db",
+      "bump_high_db",
+      "bump_safe_db",
+      "corr_low_mid",
+      "corr_low_high",
+      "corr_low_safe",
+      "std_broadband_db",
+      "tilt_median_high_minus_low_db"
+    ],
+    "groups_zero_based": {
+      "low": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mid": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "high": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "safe": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "safe_band_upper_actual_centre_hz": 5011.9,
+    "quantization_decimals": 1,
+    "query_inputs": [
+      "db"
+    ],
+    "learned_state": false,
+    "definitions": {
+      "group_level_db": "10log10(sum linear powers); all group frequencies observed in the minute",
+      "bump": "max(group_level_db)-median(group_level_db), >=2 complete minutes",
+      "correlation": "Pearson of paired complete group dB levels; >=3 pairs and both nonconstant",
+      "broadband_std": "population std(ddof=0) of all25-band summed-power dB; >=2 complete minutes",
+      "tilt": "median(high_level_db-low_level_db) over >=1 paired complete minute",
+      "missing": "undefined value=0 plus explicit defined mask and integer valid-minute count",
+      "constant_tolerance": "centered sum of squares >1e-20 for each Pearson series"
+    },
+    "common_offset_invariance": "exact mathematically on quantized input; pre-round arbitrary gain can change quantization",
+    "per_band_offset_invariance_guaranteed": false
+  },
+  "LightGBM_features": {
+    "R6_actual": 3827,
+    "R6_decomposition": {
+      "flatten_grid8x15x25": 3000,
+      "four_time_statistics_per_channel_and_band_4x8x25": 800,
+      "physics_summary_values_masks_counts": 27
+    },
+    "statistics": "mean/std(ddof0)/max/min along15timepositions ofzero-filledgrid;notobserved-onlynanstatistics;maskchannelalsoincluded",
+    "R6_PCA_or_prototypes": false,
+    "R5_separate_pipeline": {
+      "total": 1324,
+      "fixed_features_v3": 1258,
+      "physics_v1": 45,
+      "TRAIN_prototype_similarity": 8,
+      "new_R5_physics_fixed12_plus_TRAIN_PCA_residual1": 13
+    },
+    "R7_Ridge_input": "onlyphysics27 withTRAIN-onlyimputer/scaler;not3827or1324"
+  },
+  "labels_fields": {
+    "db": "modelinputmixturelevels;NaNmissing;R6rounded.1",
+    "unrounded_db": "R6truefloat64beforequantization;R4controlfloat64castofoldfloat32outputcannotrecoveroriginalprecision",
+    "share": "supervised knownaddedlinearenergy/sumobservedmixtureenergy;unroundedcomponentbasis",
+    "cell_share": "q=A/(B+A),zerosoutsideobserved;supervisionnotqueryinput",
+    "presence": "1[observedshare>0],notnaturallyshipfree",
+    "no_source": "explicitrequestA=0,maydifferfromobservedpresence0aftermissingcrop",
+    "hard_negative": "TRAIN-onlysource-selectionauditflag;nevermodelinput",
+    "score": "diagnosticoutputnotgroundtruthlabel;CNN.5predshare+.5qcontrastoverbands10..22;tree.5predshare+.5TRAINclassifierprobability",
+    "weights": "db-derivednormalizedobservedlinearenergy;rawR5versusroundedR6;notlabelandnotrawdbsum",
+    "recipe_and_IDs": "audit/sourceisolation/joins/groupCV/metrics only;notpredictors"
+  },
+  "generators": {
+    "R4": "20%explicitzero;positiveLHSrequestedshare.005..95;rendered120..900s;nativepowerboundedtimewarp1/3..3,fade30s,EQ<=4dB;observedanchorplacement;solvealpha=u*sumB/((1-u)*sumR)",
+    "R5": "sameR4lawfreshseed/schedule/backgroundpermutationeachTRAINepoch;fixedINNER",
+    "R6_current_config": {
+      "training_families": [
+        "minute_first",
+        "short_passage"
+      ],
+      "training_family_probabilities": [
+        0.5,
+        0.5
+      ],
+      "cross_generator_families": [
+        "edge_straddling",
+        "two_second_first_no_warp"
+      ],
+      "cross_generator_family_probabilities": [
+        0.5,
+        0.5
+      ],
+      "snr_definition": "full transformed reference trajectory peak-minute broadband power BEFORE window crop/masking relative to background median observed-minute broadband power; never renormalize an outside-CPA tail",
+      "snr_db_uniform": [
+        -10.0,
+        10.0
+      ],
+      "reference_smooth_eq_max_db": 6.0,
+      "lowpass_probability": 0.0,
+      "time_stretch": false,
+      "feature_quantization_decimals": 1,
+      "pooling_weights_from_quantized_db": true,
+      "physical_labels_from_unrounded_known_components": true,
+      "no_target_moment_or_summary_matching": true,
+      "zero_fraction_semantics": "explicit no-source requests; observed y-zero can be greater when a source meets only unobserved cells"
+    },
+    "R6_law": "selectfamily/ref/SNRbeforeoutcome;nativecomplete-minuteorcontiguousshortpassage;geometryindependentofobservedmask;alpha=10^(SNR/10)*median_observed_background_broadband/max_full_transformed_reference_minute;noinverserequestedshare",
+    "common": "linearcomponentaddition,observedmask,knownq/y/presence,notisolatednaturalvesselGT",
+    "all_versions_transform_identical": false
+  },
+  "R4_storage": {
+    "canonical_counts": {
+      "train": 267837,
+      "validation": 15000,
+      "outer_validation": 15000
+    },
+    "sum_across5fold_roles": 297837,
+    "not_independent_unique_source_count": true,
+    "folds": [
+      {
+        "fold": 0,
+        "canonical_roles": {
+          "train": {
+            "examples": 53244,
+            "disk_bytes": 77834987,
+            "uncompressed_npy_member_bytes": 160158464,
+            "fields": {
+              "db": {
+                "shape": [
+                  53244,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 79866128
+              },
+              "share": {
+                "shape": [
+                  53244
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 213104
+              },
+              "presence": {
+                "shape": [
+                  53244
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 213104
+              },
+              "cell_share": {
+                "shape": [
+                  53244,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 79866128
+              }
+            }
+          },
+          "validation": {
+            "examples": 3000,
+            "disk_bytes": 4367586,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "disk_bytes": 4370003,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          }
+        },
+        "validation_is_INNER": true,
+        "inner_validation_alias_same_inode": true
+      },
+      {
+        "fold": 1,
+        "canonical_roles": {
+          "train": {
+            "examples": 53315,
+            "disk_bytes": 77532448,
+            "uncompressed_npy_member_bytes": 160372032,
+            "fields": {
+              "db": {
+                "shape": [
+                  53315,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 79972628
+              },
+              "share": {
+                "shape": [
+                  53315
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 213388
+              },
+              "presence": {
+                "shape": [
+                  53315
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 213388
+              },
+              "cell_share": {
+                "shape": [
+                  53315,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 79972628
+              }
+            }
+          },
+          "validation": {
+            "examples": 3000,
+            "disk_bytes": 4434692,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "disk_bytes": 4392157,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          }
+        },
+        "validation_is_INNER": true,
+        "inner_validation_alias_same_inode": true
+      },
+      {
+        "fold": 2,
+        "canonical_roles": {
+          "train": {
+            "examples": 53522,
+            "disk_bytes": 77565947,
+            "uncompressed_npy_member_bytes": 160994688,
+            "fields": {
+              "db": {
+                "shape": [
+                  53522,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 80283128
+              },
+              "share": {
+                "shape": [
+                  53522
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 214216
+              },
+              "presence": {
+                "shape": [
+                  53522
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 214216
+              },
+              "cell_share": {
+                "shape": [
+                  53522,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 80283128
+              }
+            }
+          },
+          "validation": {
+            "examples": 3000,
+            "disk_bytes": 4417127,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "disk_bytes": 4446186,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          }
+        },
+        "validation_is_INNER": true,
+        "inner_validation_alias_same_inode": true
+      },
+      {
+        "fold": 3,
+        "canonical_roles": {
+          "train": {
+            "examples": 52998,
+            "disk_bytes": 77332737,
+            "uncompressed_npy_member_bytes": 159418496,
+            "fields": {
+              "db": {
+                "shape": [
+                  52998,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 79497128
+              },
+              "share": {
+                "shape": [
+                  52998
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 212120
+              },
+              "presence": {
+                "shape": [
+                  52998
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 212120
+              },
+              "cell_share": {
+                "shape": [
+                  52998,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 79497128
+              }
+            }
+          },
+          "validation": {
+            "examples": 3000,
+            "disk_bytes": 4388333,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "disk_bytes": 4406033,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          }
+        },
+        "validation_is_INNER": true,
+        "inner_validation_alias_same_inode": true
+      },
+      {
+        "fold": 4,
+        "canonical_roles": {
+          "train": {
+            "examples": 54758,
+            "disk_bytes": 80072209,
+            "uncompressed_npy_member_bytes": 164712576,
+            "fields": {
+              "db": {
+                "shape": [
+                  54758,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 82137128
+              },
+              "share": {
+                "shape": [
+                  54758
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 219160
+              },
+              "presence": {
+                "shape": [
+                  54758
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 219160
+              },
+              "cell_share": {
+                "shape": [
+                  54758,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 82137128
+              }
+            }
+          },
+          "validation": {
+            "examples": 3000,
+            "disk_bytes": 4408178,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          },
+          "outer_validation": {
+            "examples": 3000,
+            "disk_bytes": 4361659,
+            "uncompressed_npy_member_bytes": 9024512,
+            "fields": {
+              "db": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              },
+              "share": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "presence": {
+                "shape": [
+                  3000
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 12128
+              },
+              "cell_share": {
+                "shape": [
+                  3000,
+                  15,
+                  25
+                ],
+                "dtype": "float32",
+                "uncompressed_npy_bytes": 4500128
+              }
+            }
+          }
+        },
+        "validation_is_INNER": true,
+        "inner_validation_alias_same_inode": true
+      }
+    ],
+    "aliases_not_extra_examples": "inner_validation.npz ishardlinkofvalidation.npz;validation.npz=INNERbutlegacyvalidation_metadata.parquet=OUTERmetadata",
+    "canonical_disk_bytes": 434330282,
+    "canonical_uncompressed_npy_member_bytes": 895901376
+  },
+  "R6_storage": {
+    "files": {
+      "cross_generator.npz": {
+        "disk_bytes": 2101848,
+        "uncompressed_npy_member_bytes": 6464000,
+        "fields": {
+          "db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "unrounded_db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 3072128
+          },
+          "share": {
+            "shape": [
+              1024
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "presence": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "cell_share": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "site": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 69760
+          },
+          "base_window_index": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "reference_group": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 123008
+          },
+          "family": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U24",
+            "uncompressed_npy_bytes": 98432
+          },
+          "no_source": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "hard_negative": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          }
+        }
+      },
+      "cross_sensor.npz": {
+        "disk_bytes": 907904,
+        "uncompressed_npy_member_bytes": 6398464,
+        "fields": {
+          "db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "unrounded_db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 3072128
+          },
+          "share": {
+            "shape": [
+              1024
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "presence": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "cell_share": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "site": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U12",
+            "uncompressed_npy_bytes": 49280
+          },
+          "base_window_index": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "reference_group": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 123008
+          },
+          "family": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U13",
+            "uncompressed_npy_bytes": 53376
+          },
+          "no_source": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "hard_negative": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          }
+        }
+      },
+      "cross_sensor_generator.npz": {
+        "disk_bytes": 956781,
+        "uncompressed_npy_member_bytes": 6443520,
+        "fields": {
+          "db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "unrounded_db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 3072128
+          },
+          "share": {
+            "shape": [
+              1024
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "presence": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "cell_share": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "site": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U12",
+            "uncompressed_npy_bytes": 49280
+          },
+          "base_window_index": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "reference_group": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 123008
+          },
+          "family": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U24",
+            "uncompressed_npy_bytes": 98432
+          },
+          "no_source": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "hard_negative": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          }
+        }
+      },
+      "inner_r4.npz": {
+        "disk_bytes": 2426108,
+        "uncompressed_npy_member_bytes": 6431232,
+        "fields": {
+          "db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "unrounded_db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 3072128
+          },
+          "share": {
+            "shape": [
+              1024
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "presence": {
+            "shape": [
+              1024
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 4224
+          },
+          "cell_share": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "site": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 69760
+          },
+          "base_window_index": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "reference_group": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 123008
+          },
+          "family": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 69760
+          },
+          "no_source": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "hard_negative": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          }
+        }
+      },
+      "inner_r6.npz": {
+        "disk_bytes": 2135233,
+        "uncompressed_npy_member_bytes": 6418944,
+        "fields": {
+          "db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "unrounded_db": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 3072128
+          },
+          "share": {
+            "shape": [
+              1024
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "presence": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "cell_share": {
+            "shape": [
+              1024,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 1536128
+          },
+          "site": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 69760
+          },
+          "base_window_index": {
+            "shape": [
+              1024
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 8320
+          },
+          "reference_group": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 123008
+          },
+          "family": {
+            "shape": [
+              1024
+            ],
+            "dtype": "<U13",
+            "uncompressed_npy_bytes": 53376
+          },
+          "no_source": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "hard_negative": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              1024
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 1152
+          }
+        }
+      },
+      "train_r4.npz": {
+        "disk_bytes": 18660065,
+        "uncompressed_npy_member_bytes": 51439104,
+        "fields": {
+          "db": {
+            "shape": [
+              8192,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 12288128
+          },
+          "unrounded_db": {
+            "shape": [
+              8192,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 24576128
+          },
+          "share": {
+            "shape": [
+              8192
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 65664
+          },
+          "presence": {
+            "shape": [
+              8192
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 32896
+          },
+          "cell_share": {
+            "shape": [
+              8192,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 12288128
+          },
+          "site": {
+            "shape": [
+              8192
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 557184
+          },
+          "base_window_index": {
+            "shape": [
+              8192
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 65664
+          },
+          "reference_group": {
+            "shape": [
+              8192
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 983168
+          },
+          "family": {
+            "shape": [
+              8192
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 557184
+          },
+          "no_source": {
+            "shape": [
+              8192
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 8320
+          },
+          "hard_negative": {
+            "shape": [
+              8192
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 8320
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              8192
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 8320
+          }
+        }
+      },
+      "train_r6.npz": {
+        "disk_bytes": 15704034,
+        "uncompressed_npy_member_bytes": 51340800,
+        "fields": {
+          "db": {
+            "shape": [
+              8192,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 12288128
+          },
+          "unrounded_db": {
+            "shape": [
+              8192,
+              15,
+              25
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 24576128
+          },
+          "share": {
+            "shape": [
+              8192
+            ],
+            "dtype": "float64",
+            "uncompressed_npy_bytes": 65664
+          },
+          "presence": {
+            "shape": [
+              8192
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 65664
+          },
+          "cell_share": {
+            "shape": [
+              8192,
+              15,
+              25
+            ],
+            "dtype": "float32",
+            "uncompressed_npy_bytes": 12288128
+          },
+          "site": {
+            "shape": [
+              8192
+            ],
+            "dtype": "<U17",
+            "uncompressed_npy_bytes": 557184
+          },
+          "base_window_index": {
+            "shape": [
+              8192
+            ],
+            "dtype": "int64",
+            "uncompressed_npy_bytes": 65664
+          },
+          "reference_group": {
+            "shape": [
+              8192
+            ],
+            "dtype": "<U30",
+            "uncompressed_npy_bytes": 983168
+          },
+          "family": {
+            "shape": [
+              8192
+            ],
+            "dtype": "<U13",
+            "uncompressed_npy_bytes": 426112
+          },
+          "no_source": {
+            "shape": [
+              8192
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 8320
+          },
+          "hard_negative": {
+            "shape": [
+              8192
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 8320
+          },
+          "source_present_but_unobserved": {
+            "shape": [
+              8192
+            ],
+            "dtype": "bool",
+            "uncompressed_npy_bytes": 8320
+          }
+        }
+      }
+    },
+    "stored_rows_total": 21504,
+    "counts": "2*(8192TRAIN+1024INNER)+3*1024cross",
+    "R4_R6_control_primary_indices_shared": true,
+    "cross_sensor_and_joint_primary_draws_shared": true,
+    "not21504independentrecordings": true,
+    "fixed_arrays_reused_each_epoch": true
+  },
+  "splits": {
+    "R4": "source-firstnested5:SAunits=sensor_group×export-clockMondayweek,load-balancedmetadatahashassignment;forouterf,INNER=(f+1)%5,other3foldsTRAIN;24hsupportpurge;refsconnectedhull/day/UTC/bytescomponents",
+    "R4_not_random_row_Kfold": true,
+    "R4_ideal_3_1_1_source_units_not_exact_row_ratio": true,
+    "R6": "singlefresh4-rolemetadatahashsplit ofoldFold0TRAIN+INNERonly,oldOUTER/calibration/domain/sealedexcluded;strictsensor_group4holdout",
+    "R6_background_counts": {
+      "train": 44034,
+      "inner": 11825,
+      "cross_generator": 3167,
+      "cross_sensor": 17380
+    },
+    "R6_reference_counts": {
+      "train": {
+        "clips": 51,
+        "groups": 9
+      },
+      "inner": {
+        "clips": 18,
+        "groups": 3
+      },
+      "cross_generator": {
+        "clips": 18,
+        "groups": 3
+      },
+      "cross_sensor": {
+        "clips": 7,
+        "groups": 2
+      }
+    },
+    "R6_support_gap_hours": 24.0,
+    "R6_source_QC_audit": {
+      "admitted_windows": 76503,
+      "forbidden_old_source_rows_not_numerically_used": 24462,
+      "global_boundary_candidate_rows": 12643,
+      "global_candidate_rows_selected_into_original_windows": 6777,
+      "admitted_flagged_selected_minutes": 4356,
+      "admitted_windows_with_flagged_minutes": 4356,
+      "minute_positions_masked": {
+        "0": 3974,
+        "1": 64,
+        "2": 1,
+        "3": 1,
+        "6": 1,
+        "8": 1,
+        "11": 1,
+        "12": 1,
+        "13": 26,
+        "14": 286
+      },
+      "actual_original_row_id_join_not_first_last_heuristic": true,
+      "boundary_physical_cause_verified": false,
+      "requested_candidate_minute_masking_authorized": true,
+      "numeric_background_windows_read": 76503,
+      "reference_values_read_during_build": false,
+      "global_bank_hash_read_is_integrity_only": true
+    },
+    "R6_sensor_metadata_selection": {
+      "eligible_sensor_metadata": [
+        {
+          "sensor_group": 0,
+          "windows": 44635,
+          "weeks": 100
+        },
+        {
+          "sensor_group": 1,
+          "windows": 2508,
+          "weeks": 6
+        },
+        {
+          "sensor_group": 2,
+          "windows": 240,
+          "weeks": 2
+        },
+        {
+          "sensor_group": 3,
+          "windows": 11740,
+          "weeks": 39
+        },
+        {
+          "sensor_group": 4,
+          "windows": 17380,
+          "weeks": 59
+        }
+      ],
+      "minimum_windows": 200,
+      "minimum_weeks": 2,
+      "selection_rule": "minimum SHA256(R6|cross_sensor|seed=SEED|sensor_group=G)",
+      "selected_sensor_group": 4,
+      "seed": 20261026,
+      "model_results_used": false
+    },
+    "R6_roles_not_80_20randomrows": true,
+    "source_before_synthesis": true,
+    "reference_independence_limit": "conditional retainedhull/day/UTC/bytesgroups;VTcorpussharesreceiver;notnewindependentphysicalsites"
+  },
+  "hard_negative": {
+    "candidate_policy": {
+      "lf_quantile": 0.9,
+      "lf_excess_over_safe_high_db": 3.0,
+      "minimum_observed_minutes_per_region": 3,
+      "safe_high_definition": "max(safe_mid_high_bump_db,high_bump_db)",
+      "bump_definition": "max-minute regional broadband power dB minus temporal median regional broadband power dB",
+      "broadband_definition": "sum linear powers of every band in the declared region; complete regional minutes only",
+      "quantile_scope": "all eligible TRAIN windows, pooled; no site/Test population matching",
+      "input_db_basis": "admitted raw SA window dB after actual-minute QC; no extra rounding for candidate selection",
+      "quantile_method": "linear",
+      "threshold_ties": "LF >= TRAIN 90th quantile; ties included and counted",
+      "source_role": "train",
+      "natural_ship_ground_truth": false,
+      "known_added_component_A": 0
+    },
+    "candidate_counts": {
+      "train_windows_examined": 44034,
+      "eligible_train_windows": 44034,
+      "candidate_count": 4035,
+      "unique_candidate_windows": 4035,
+      "lf_train_q90_threshold_db": 14.595269803858438,
+      "lf_exact_threshold_tie_count": 0,
+      "candidate_site_counts": {
+        "1 Richards Bay": 3724,
+        "2 Durban": 27,
+        "3 Cape_Recife": 7,
+        "4 Bird Island": 156,
+        "5 St Croix Island": 111,
+        "6 Riy_Banks": 10
+      },
+      "sites_without_candidates": [],
+      "train_site_counts": {
+        "1 Richards Bay": 33204,
+        "2 Durban": 1632,
+        "3 Cape_Recife": 240,
+        "4 Bird Island": 1872,
+        "5 St Croix Island": 6882,
+        "6 Riy_Banks": 204
+      },
+      "references_or_nontrain_values_read": false,
+      "model_fitting_executed": false,
+      "known_A_zero_is_exact_artificial_target": true,
+      "natural_ship_absence_claimed": false,
+      "historical_EDA_5725_count_reused": false,
+      "challenge_Test_statistics_used": false
+    },
+    "draw_schedule": {
+      "candidate_version_hash": "a335d4cfaa07c0b98a46cdec6070eb8e13a617f32d543fc03fbc1d6c8458229b",
+      "seed": 20261026,
+      "n": 8192,
+      "explicit_zero_count": 1638,
+      "hard_negative_count": 819,
+      "baseline_source_draw_count": 7373,
+      "hard_negative_unique_windows": 428,
+      "hard_negative_site_draw_counts": {
+        "1 Richards Bay": 137,
+        "2 Durban": 137,
+        "3 Cape_Recife": 137,
+        "4 Bird Island": 136,
+        "5 St Croix Island": 136,
+        "6 Riy_Banks": 136
+      },
+      "sites_without_candidates": [],
+      "sampling": "equal-site candidates among eligible sites; baseline equal-site all TRAIN; cycle only when site pool exhausted",
+      "index_order_sha256": "7b4ff85e7b2bb3a241535307426810bcd68ac0781b9baf7d3efa0db8d90f378f",
+      "source_role": "train",
+      "artificial_no_addition_hard_negative_target": 0,
+      "natural_ship_absence_claimed": false
+    },
+    "stage": "afterTRAINroleisolationandbeforegeneration;harddrawsexplicitA0;baselineotherssitebalanced",
+    "not_natural_ship_absence_truth": true
+  },
+  "code_evidence": {
+    "pipeline/audio.py": {
+      "sha256": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+      "definitions": {
+        "audio_band_power": {
+          "line": 10,
+          "end_line": 40
+        },
+        "MultipartReader": {
+          "line": 42,
+          "end_line": 68
+        },
+        "__init__": {
+          "line": 44,
+          "end_line": 47
+        },
+        "readable": {
+          "line": 48,
+          "end_line": 48
+        },
+        "seekable": {
+          "line": 49,
+          "end_line": 49
+        },
+        "tell": {
+          "line": 50,
+          "end_line": 50
+        },
+        "seek": {
+          "line": 51,
+          "end_line": 54
+        },
+        "read": {
+          "line": 55,
+          "end_line": 65
+        },
+        "close": {
+          "line": 66,
+          "end_line": 68
+        }
+      }
+    },
+    "pipeline/prepare_external.py": {
+      "sha256": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7",
+      "definitions": {
+        "split_key": {
+          "line": 9,
+          "end_line": 11
+        },
+        "main": {
+          "line": 13,
+          "end_line": 102
+        },
+        "add": {
+          "line": 16,
+          "end_line": 32
+        }
+      }
+    },
+    "pipeline/prepare_sa.py": {
+      "sha256": "3e18f6b6077dfecb0d2800879ff7196c11b051bc32a31bf3189219c2019f4400",
+      "definitions": {
+        "connected_sensor_groups": {
+          "line": 12,
+          "end_line": 24
+        },
+        "main": {
+          "line": 26,
+          "end_line": 106
+        },
+        "find": {
+          "line": 15,
+          "end_line": 18
+        }
+      }
+    },
+    "pipeline/passage_sampler_r4.py": {
+      "sha256": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+      "definitions": {
+        "PassageConfigR4": {
+          "line": 12,
+          "end_line": 34
+        },
+        "PassageReference": {
+          "line": 38,
+          "end_line": 53
+        },
+        "duration_bin": {
+          "line": 56,
+          "end_line": 59
+        },
+        "warp_band_power": {
+          "line": 62,
+          "end_line": 83
+        },
+        "make_passage_schedule": {
+          "line": 86,
+          "end_line": 102
+        },
+        "schedule_slice": {
+          "line": 105,
+          "end_line": 107
+        },
+        "raised_cosine_power_weights": {
+          "line": 110,
+          "end_line": 125
+        },
+        "smooth_eq": {
+          "line": 128,
+          "end_line": 131
+        },
+        "PassageSamplerR4": {
+          "line": 134,
+          "end_line": 223
+        },
+        "__post_init__": {
+          "line": 24,
+          "end_line": 32
+        },
+        "to_dict": {
+          "line": 34,
+          "end_line": 34
+        },
+        "validate": {
+          "line": 42,
+          "end_line": 53
+        },
+        "__init__": {
+          "line": 135,
+          "end_line": 151
+        },
+        "_reference": {
+          "line": 153,
+          "end_line": 178
+        },
+        "draw": {
+          "line": 180,
+          "end_line": 223
+        }
+      }
+    },
+    "pipeline/robust_sampler_r6.py": {
+      "sha256": "59a8bafbbad9c42c7628d2283ac5f9fb3550a6945686958ea207ebeb61b0722b",
+      "definitions": {
+        "_serial": {
+          "line": 16,
+          "end_line": 21
+        },
+        "_rng": {
+          "line": 23,
+          "end_line": 26
+        },
+        "energy_weights": {
+          "line": 28,
+          "end_line": 33
+        },
+        "rounding_share_gap_bound": {
+          "line": 35,
+          "end_line": 45
+        },
+        "_reference": {
+          "line": 47,
+          "end_line": 50
+        },
+        "_channel": {
+          "line": 52,
+          "end_line": 61
+        },
+        "_geometric_starts": {
+          "line": 63,
+          "end_line": 66
+        },
+        "_place_2s": {
+          "line": 68,
+          "end_line": 70
+        },
+        "_native_minute_peak": {
+          "line": 72,
+          "end_line": 77
+        },
+        "_trajectory": {
+          "line": 79,
+          "end_line": 113
+        },
+        "synthesize": {
+          "line": 115,
+          "end_line": 152
+        }
+      }
+    },
+    "pipeline/mixtures.py": {
+      "sha256": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+      "definitions": {
+        "MixtureSampler": {
+          "line": 8,
+          "end_line": 76
+        },
+        "high_frequency_anomaly_features": {
+          "line": 78,
+          "end_line": 92
+        },
+        "per_band_baseline_db": {
+          "line": 94,
+          "end_line": 102
+        },
+        "baseline_excess_spectrum": {
+          "line": 104,
+          "end_line": 118
+        },
+        "retrieval_features": {
+          "line": 120,
+          "end_line": 135
+        },
+        "fixed_features": {
+          "line": 137,
+          "end_line": 155
+        },
+        "cnn_channels": {
+          "line": 157,
+          "end_line": 175
+        },
+        "hybrid_cnn_channels": {
+          "line": 177,
+          "end_line": 193
+        },
+        "physics_features": {
+          "line": 195,
+          "end_line": 210
+        },
+        "row_features": {
+          "line": 212,
+          "end_line": 217
+        },
+        "foundation_features": {
+          "line": 219,
+          "end_line": 225
+        },
+        "__init__": {
+          "line": 9,
+          "end_line": 19
+        },
+        "draw": {
+          "line": 20,
+          "end_line": 76
+        }
+      }
+    },
+    "pipeline/background_prior_features.py": {
+      "sha256": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+      "definitions": {
+        "_input": {
+          "line": 17,
+          "end_line": 26
+        },
+        "_nanquantile": {
+          "line": 28,
+          "end_line": 31
+        },
+        "_shape": {
+          "line": 33,
+          "end_line": 39
+        },
+        "_distances": {
+          "line": 41,
+          "end_line": 42
+        },
+        "fit_background_prior": {
+          "line": 44,
+          "end_line": 85
+        },
+        "_prior": {
+          "line": 87,
+          "end_line": 91
+        },
+        "_anchor": {
+          "line": 93,
+          "end_line": 97
+        },
+        "_fit_templates": {
+          "line": 99,
+          "end_line": 115
+        },
+        "_minute_scale": {
+          "line": 117,
+          "end_line": 123
+        },
+        "transform_background_prior": {
+          "line": 125,
+          "end_line": 142
+        },
+        "background_prior_maps": {
+          "line": 144,
+          "end_line": 170
+        },
+        "numerical_fixture": {
+          "line": 172,
+          "end_line": 195
+        }
+      }
+    },
+    "pipeline/grid_inputs_r5.py": {
+      "sha256": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+      "definitions": {
+        "file_sha256": {
+          "line": 23,
+          "end_line": 27
+        },
+        "canonical_sha256": {
+          "line": 29,
+          "end_line": 30
+        },
+        "_binding": {
+          "line": 32,
+          "end_line": 47
+        },
+        "binding_from_fold": {
+          "line": 49,
+          "end_line": 63
+        },
+        "_array_fingerprint": {
+          "line": 65,
+          "end_line": 70
+        },
+        "fit_shared_prior": {
+          "line": 72,
+          "end_line": 97
+        },
+        "prior_payload_sha256": {
+          "line": 99,
+          "end_line": 100
+        },
+        "validate_shared_prior": {
+          "line": 102,
+          "end_line": 115
+        },
+        "shared_grid_inputs": {
+          "line": 117,
+          "end_line": 126
+        },
+        "save_shared_prior": {
+          "line": 128,
+          "end_line": 134
+        },
+        "load_shared_prior": {
+          "line": 136,
+          "end_line": 140
+        }
+      }
+    },
+    "pipeline/relative_grid_r6.py": {
+      "sha256": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+      "definitions": {
+        "quantization_pooling_bound": {
+          "line": 55,
+          "end_line": 66
+        },
+        "quantized_db": {
+          "line": 69,
+          "end_line": 79
+        },
+        "relative_grid": {
+          "line": 82,
+          "end_line": 124
+        }
+      }
+    },
+    "pipeline/relative_grid_r6_v2.py": {
+      "sha256": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+      "definitions": {
+        "relative_grid_v2": {
+          "line": 30,
+          "end_line": 43
+        }
+      }
+    },
+    "pipeline/physics_features_r6_v2.py": {
+      "sha256": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+      "definitions": {
+        "feature_specification": {
+          "line": 46,
+          "end_line": 69
+        },
+        "_quantized": {
+          "line": 72,
+          "end_line": 84
+        },
+        "_levels": {
+          "line": 87,
+          "end_line": 96
+        },
+        "_median": {
+          "line": 99,
+          "end_line": 108
+        },
+        "_correlation": {
+          "line": 111,
+          "end_line": 126
+        },
+        "physics_features_r6_v2": {
+          "line": 129,
+          "end_line": 189
+        }
+      }
+    },
+    "pipeline/cpu_ablation_r6_v2.py": {
+      "sha256": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+      "definitions": {
+        "sha": {
+          "line": 9,
+          "end_line": 13
+        },
+        "save_json": {
+          "line": 16,
+          "end_line": 18
+        },
+        "metrics": {
+          "line": 21,
+          "end_line": 37
+        },
+        "grid": {
+          "line": 40,
+          "end_line": 48
+        },
+        "prior_for": {
+          "line": 51,
+          "end_line": 55
+        },
+        "predict_cnn": {
+          "line": 58,
+          "end_line": 65
+        },
+        "fit_cnn": {
+          "line": 68,
+          "end_line": 114
+        },
+        "tree_features": {
+          "line": 117,
+          "end_line": 124
+        },
+        "fit_tree": {
+          "line": 127,
+          "end_line": 156
+        },
+        "evaluate_frozen": {
+          "line": 159,
+          "end_line": 180
+        },
+        "macro_metric": {
+          "line": 136,
+          "end_line": 138
+        }
+      }
+    },
+    "pipeline/source_split_r6.py": {
+      "sha256": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+      "definitions": {
+        "sha": {
+          "line": 16,
+          "end_line": 20
+        },
+        "canonical_sha": {
+          "line": 22,
+          "end_line": 22
+        },
+        "resolve": {
+          "line": 23,
+          "end_line": 24
+        },
+        "relative": {
+          "line": 25,
+          "end_line": 25
+        },
+        "write_new": {
+          "line": 26,
+          "end_line": 28
+        },
+        "rank": {
+          "line": 29,
+          "end_line": 29
+        },
+        "apply_minute_qc": {
+          "line": 31,
+          "end_line": 37
+        },
+        "nearest_gap": {
+          "line": 39,
+          "end_line": 42
+        },
+        "role_gaps": {
+          "line": 44,
+          "end_line": 51
+        },
+        "assign_background_roles": {
+          "line": 53,
+          "end_line": 65
+        },
+        "reference_coverage": {
+          "line": 67,
+          "end_line": 70
+        },
+        "assign_reference_roles": {
+          "line": 72,
+          "end_line": 91
+        },
+        "minute_masks": {
+          "line": 93,
+          "end_line": 109
+        },
+        "build_source_split_r6": {
+          "line": 111,
+          "end_line": 226
+        },
+        "SourceSplitR6": {
+          "line": 228,
+          "end_line": 274
+        },
+        "source_split_fixture": {
+          "line": 276,
+          "end_line": 305
+        },
+        "__init__": {
+          "line": 229,
+          "end_line": 242
+        },
+        "_role": {
+          "line": 243,
+          "end_line": 245
+        },
+        "pick_indices": {
+          "line": 246,
+          "end_line": 255
+        },
+        "load_backgrounds": {
+          "line": 256,
+          "end_line": 264
+        },
+        "load_references": {
+          "line": 265,
+          "end_line": 274
+        }
+      }
+    },
+    "pipeline/hard_negatives_r6_v2.py": {
+      "sha256": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+      "definitions": {
+        "transient_features": {
+          "line": 30,
+          "end_line": 49
+        },
+        "candidate_mask": {
+          "line": 52,
+          "end_line": 58
+        },
+        "candidates": {
+          "line": 61,
+          "end_line": 106
+        },
+        "_load": {
+          "line": 109,
+          "end_line": 125
+        },
+        "load_candidate_indices": {
+          "line": 128,
+          "end_line": 130
+        },
+        "_balanced": {
+          "line": 133,
+          "end_line": 140
+        },
+        "draw_training_indices": {
+          "line": 143,
+          "end_line": 166
+        },
+        "fixture": {
+          "line": 169,
+          "end_line": 185
+        }
+      }
+    },
+    "pipeline/group_cv.py": {
+      "sha256": "eb652428cc36904ad4a7ec511bdc896bccb3d5228de25c014f25d87f7798fee5",
+      "definitions": {
+        "digest": {
+          "line": 19,
+          "end_line": 20
+        },
+        "connected_references": {
+          "line": 22,
+          "end_line": 49
+        },
+        "allocate_reference_folds": {
+          "line": 51,
+          "end_line": 69
+        },
+        "allocate_background_folds": {
+          "line": 71,
+          "end_line": 85
+        },
+        "fold_background": {
+          "line": 87,
+          "end_line": 109
+        },
+        "sample_metadata": {
+          "line": 111,
+          "end_line": 125
+        },
+        "main": {
+          "line": 127,
+          "end_line": 228
+        },
+        "find": {
+          "line": 26,
+          "end_line": 29
+        },
+        "join": {
+          "line": 30,
+          "end_line": 30
+        }
+      }
+    },
+    "pipeline/build_passage_cv_r4.py": {
+      "sha256": "bc06844a826476872848521eecd6281369323464f8ce8072f0d3760172426ccb",
+      "definitions": {
+        "digest": {
+          "line": 16,
+          "end_line": 16
+        },
+        "write": {
+          "line": 17,
+          "end_line": 17
+        },
+        "load_records": {
+          "line": 19,
+          "end_line": 28
+        },
+        "records_for_source": {
+          "line": 30,
+          "end_line": 35
+        },
+        "materialize": {
+          "line": 37,
+          "end_line": 86
+        },
+        "main": {
+          "line": 88,
+          "end_line": 187
+        }
+      }
+    },
+    "pipeline/dynamic_passage_r5.py": {
+      "sha256": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+      "definitions": {
+        "_resolve": {
+          "line": 21,
+          "end_line": 22
+        },
+        "DynamicPassageEpochSource": {
+          "line": 24,
+          "end_line": 150
+        },
+        "_make_numeric_fixture": {
+          "line": 153,
+          "end_line": 206
+        },
+        "run_cpu_fixtures": {
+          "line": 209,
+          "end_line": 318
+        },
+        "__init__": {
+          "line": 25,
+          "end_line": 107
+        },
+        "n_examples": {
+          "line": 110,
+          "end_line": 110
+        },
+        "verify_source_integrity": {
+          "line": 112,
+          "end_line": 118
+        },
+        "epoch_plan": {
+          "line": 120,
+          "end_line": 131
+        },
+        "iter_batches": {
+          "line": 133,
+          "end_line": 150
+        },
+        "rejected": {
+          "line": 230,
+          "end_line": 233
+        },
+        "train_only_load": {
+          "line": 244,
+          "end_line": 248
+        },
+        "collect": {
+          "line": 252,
+          "end_line": 254
+        },
+        "prefix": {
+          "line": 283,
+          "end_line": 285
+        }
+      }
+    },
+    "pipeline/lgbm_r5.py": {
+      "sha256": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+      "definitions": {
+        "feature_binding": {
+          "line": 14,
+          "end_line": 16
+        },
+        "transform": {
+          "line": 19,
+          "end_line": 26
+        },
+        "fit_tree": {
+          "line": 29,
+          "end_line": 65
+        },
+        "predict_tree": {
+          "line": 68,
+          "end_line": 93
+        },
+        "main": {
+          "line": 96,
+          "end_line": 119
+        }
+      }
+    },
+    "pipeline/fixed100_r6.py": {
+      "sha256": "4621ee60c525e45f7a52a0bc3591818826cf2b19a970fbdbbed4d0b6fe3373b0",
+      "definitions": {
+        "fit_fixed100": {
+          "line": 8,
+          "end_line": 88
+        }
+      }
+    },
+    "ops/run_r6_cpu_guardrails_v2.py": {
+      "sha256": "1181c62e24182273b832b325d3f8c9d8932aecb6c1c8625372e7e8e098c14b60",
+      "definitions": {
+        "load_npz": {
+          "line": 30,
+          "end_line": 31
+        },
+        "describe": {
+          "line": 34,
+          "end_line": 60
+        },
+        "materialize_r6": {
+          "line": 63,
+          "end_line": 90
+        },
+        "materialize_r4": {
+          "line": 93,
+          "end_line": 123
+        },
+        "prepare": {
+          "line": 126,
+          "end_line": 168
+        },
+        "check_freeze": {
+          "line": 171,
+          "end_line": 179
+        },
+        "fit_all": {
+          "line": 182,
+          "end_line": 221
+        },
+        "main": {
+          "line": 224,
+          "end_line": 247
+        },
+        "progress": {
+          "line": 236,
+          "end_line": 236
+        }
+      }
+    }
+  },
+  "metadata_file_sha256": {
+    "data/extracted/README.md": "bd00be769c484a667acc144f2082ca08d86cd02a06b4191f41e53f185fd553dc",
+    "data/extracted/DATA_DICTIONARY.md": "162088ac6ff6565034e31ce60f244a41d1e584fec9f71850c2c722059c4fbe04",
+    "data/processed/sa_preparation_manifest.json": "710762a5c8ed30db61a007612abb3722bc6d6521a537452094ac42877ed2bc5e",
+    "data/processed/external_preparation_manifest.json": "5b59b02b19fea6fa91c192ca2fea93edc76186412c3d82790689a374f445309b",
+    "data/synthetic/group_cv_passage_r4_v1/cv_manifest.json": "0e31975b45677a61f4573122c8cfbc40f449dd75842464ead82dd89f9d216ac7",
+    "data/synthetic/r6_cpu_guardrails_v3_schemafix/manifest.json": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+    "data/versions/source_split_r6_guardrails_v2/manifest.json": "894783ab9aa9cfd17db4fb46e00762fd876a2bca16c824274699cb0db4099cf2",
+    "configs/r6_cpu_guardrails_v2.json": "ff1aaef4671013801fd79ac39222a70acf40d63acfcbc92e6493e873be23709e",
+    "configs/r6_fixed100_v1.json": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259"
+  },
+  "restrictions": {
+    "Test_arrays_opened": false,
+    "cross_array_value_statistics_computed": false,
+    "training_executed": false,
+    "frozen_files_modified": false,
+    "NPZ_inspection": "ZIPentrysizeandNPYheaderonly,noarraypayloaddecoded"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "format": "r13_runner_numeric_fixture_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "code_sha256": {
+    "pipeline/runner_r13.py": "f54469680ef01ef967544b00b2e2cc5b5e97b66cc61cdda0e89a76ed2758a703",
+    "ops/run_r13_training.py": "964fb38eda6ed5e4e60d828ea7465300c00ec5760db01c8c6a7dfc33111cde54",
+    "ops/prepare_r13_training.py": "b9580685168972f49d4b63bf3f7759e27e5ab564c64cb8a7cc7384f5f0d41dfd",
+    "pipeline/runtime_policy_r13.py": "a27281c982526003efb7d759f9c225b4d3d03ce479fc263e7eb429ec9c30f1d4",
+    "ops/benchmark_r13_cuda_epoch.py": "9d28dfb91505a2aa3edba98ed0ee39aa40bafbb1374ee16441ee7c2e7ad2d690",
+    "pipeline/full_data_r13.py": "1ab10cc3ab1a00c8cada4c7f781d729f4896fc9df483ab6e952e4abf2f363d16",
+    "pipeline/dataset_r13.py": "13c47d9208ea8c4578617ee9434be38f0240558e070c5a043e384bffad8939af",
+    "pipeline/dataset_r12.py": "4ad08edb149745f1b5c04c2672cf588c47ba0e80b5e1dcf7bd35ef01f634cd14",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/background_cv_r9.py": "0d2562bc41fc9f823bc2b5eee90cd7e80e0eac9c715788894487714eb58d2e52",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/models_r13.py": "e3ea69d969dfc02e81f091e3e2c03482891291ced18c5414fdff2085b7c7f2c3",
+    "pipeline/training_r13.py": "2962af0f91be7c74708298138feb0c561a21fc3255d0fe8aaaddd44c09041523",
+    "pipeline/trees_ensemble_r13.py": "d65b1f865cb1531c2a9fbc7e3980263d3b105751f4d99bbcbdc7591ff2c8e29e",
+    "pipeline/inference_r13.py": "64d2f90661839746998aaed49f19edb438a71c3e4e6f7bd9c2cc1f3337fb977a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c"
+  },
+  "actual_Adam_steps_per_model_per_fold": 1,
+  "actual_neural_models": [
+    "bg_cnn",
+    "tfgrid_fdy_conformer",
+    "fdy",
+    "itransformer"
+  ],
+  "actual_tree_max_rounds": 4,
+  "numeric_folds": [
+    0,
+    1
+  ],
+  "completed_stage_order": [
+    "context",
+    "train/bg_cnn",
+    "train/tfgrid_fdy_conformer",
+    "train/fdy",
+    "train/itransformer",
+    "neural_completed",
+    "train/lgbm_physics",
+    "ensemble_frozen",
+    "report_completed"
+  ],
+  "report_opened_exactly_once_per_fold_after_global_policy_freeze": true,
+  "ungated_report_rejected": true,
+  "fresh_output_reuse_rejected": true,
+  "production_CPU_neural_fit_rejected_before_output_creation": true,
+  "global_all_fold_model_and_policy_freeze_before_report": true,
+  "explicit_separate_tree_job_and_import_replay": true,
+  "duplicate_report_rejected_before_dataset_open": true,
+  "changed_ledger_artifact_rejected": true,
+  "verification": {
+    "status": "verified",
+    "fixture_only": true,
+    "folds": [
+      0,
+      1
+    ],
+    "artifact_entries_verified": 138,
+    "fold_ledger_sha256": {
+      "0": "2fbc68c76c75b30a191097eab07cd76fb4f3f6658c98442dac285fc3b9c67ec2",
+      "1": "294f60cbcdd1961acb64686fb61ebf98ece40031e15482a9e5bb5d2c95b07818"
+    },
+    "results_sha256": "fcbf9dbd47399453f2a1224b2a331c548e168b445cdeb44997de7d5f9c38ce66",
+    "config_sha256": "2243362bc0ede9f11b2bce25f9178c1c838101bff81823ddfad4f09ffd0bf271",
+    "model_or_dataset_fitting_performed": false,
+    "Test_accessed": false
+  },
+  "source_data_Test_OUTER_GPU_SSH_accessed": false,
+  "production100_training_executed": false,
+  "temporary_outputs_must_never_be_used_as_trained_models": "/private/tmp/r13-runner-numeric-fmndy166",
+  "elapsed_seconds": 9.103595208376646
+}

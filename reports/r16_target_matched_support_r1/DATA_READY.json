@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "source_sha256": {
+    "reports/r16_support_temporal_r1/data/train/D0.npz": "417343a89eb47042be4def0f64de06c1338d62b44319dc994d13eeeeaf8040ec",
+    "reports/r16_clean_support_r1/data/S1_H0_F1.npz": "8142f8ecf20e7c717f3edaa21ace21fb86162e455bc070d1e228632dba31cda2",
+    "reports/r16_support_temporal_r1/data/manifest.json": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80",
+    "ops/r16_target_matched_support.py": "8b42290abba27a75bd95291468e09653ce60ca345cac17495d87d6f2a346f176",
+    "reports/r16_target_matched_support_r1/PROTOCOL.md": "69dcfe75ac5cac29f2427126e50b97b883e749c6118a8c71b54f3e34eaab4635",
+    "reports/r16_target_matched_support_r1/data/S1_TM_H0_F1.npz": "dd3e173bd61b9fe9aa333c493620d65745962e53e6e1dd4e6d9e5ab82b0c8acd"
+  },
+  "statistics": {
+    "rows": 4000,
+    "positive": 3200,
+    "zero": 800,
+    "HF_replaced": 0,
+    "target_mean": 0.14579891511277876,
+    "target_rms": 0.2354316886479365,
+    "target_difference_from_D0_max": 3.3306690738754696e-16,
+    "active_positive_median": 5.0,
+    "active_ge12": 500,
+    "scale_quantiles": [
+      0.08075140019399055,
+      0.2621090422830714,
+      0.6825287580739994,
+      1.0000000000000002,
+      16.89584598262954
+    ],
+    "all_negative_arrays_unchanged": true,
+    "all_positive_support_unchanged": true,
+    "physical_labels_recomputed": true
+  },
+  "Test_used": false,
+  "method": "per-pair exact D0 y, alpha = y/(1-y)*sum(OB)/sum(OA); natural support unchanged"
+}

@@ -1,0 +1,40 @@
+{
+  "version": "r4",
+  "phase": "matched_passage_data_preparation",
+  "updated_KST": "2026-10-25T20:12:51.309119+09:00",
+  "dataset_dir": "data/synthetic/group_cv_passage_r4_v1",
+  "model_run": "models/group_cv_passage_r4_adam",
+  "reference_manifest": "data/versions/vtuad_reference_r4_v1/manifest.json",
+  "reference_components": 22,
+  "reference_clips": 119,
+  "excluded_bridge_clips": 99,
+  "original_R2_preserved": true,
+  "new_architecture": 5,
+  "models": [
+    "lgbm_retrieval",
+    "cnn",
+    "fdy",
+    "itransformer"
+  ],
+  "full_training_started": false,
+  "official_submission_authorized": false,
+  "recurring_automation_created": false,
+  "external_consultation": false,
+  "server_probe": {
+    "host": "103.196.86.97",
+    "port": 13475,
+    "status": "Connection refused",
+    "latest_SSH_requested": true
+  },
+  "local_runtime": {
+    "device": "CPU",
+    "MPS_available": false
+  },
+  "data_gate": "fade-only pilot exposed fine-duration mismatch; bounded passage timewarp and stratified target schedule in progress",
+  "fixtures": [
+    "reports/R4_ARCHITECTURE_FIXTURE.json",
+    "reports/R4_ENSEMBLE_SAFETY_FIXTURE.json",
+    "reports/R4_DATA_BUILDER_FIXTURE.json"
+  ],
+  "training_fixture": "fresh CPU CLI integration fixture v2; performance numbers are not R4 OOF"
+}

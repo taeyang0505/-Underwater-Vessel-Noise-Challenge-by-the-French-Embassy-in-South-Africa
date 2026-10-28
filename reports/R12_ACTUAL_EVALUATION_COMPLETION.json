@@ -1,0 +1,28 @@
+{
+  "format": "r12_actual_evaluation_completion_v1",
+  "status": "completed",
+  "production_fit_or_Test_access": false,
+  "condition_9_CNN_fixed100_and8trees_frozen_verified": true,
+  "source_plan_sha256": "6e3f7982667de535d3be6b39212a66e2831140c33cec38fb1877de2070851203",
+  "frozen_original_inputs_current_exact": 179,
+  "models_summary_count": 17,
+  "model_artifacts_current_exact": 93,
+  "result_output_files_current_exact": 21,
+  "reports": {
+    "reports/R12_ALL17_GLOBAL_FREEZE.json": "d4c049181e3eded7f588ec561cdae9d74510adbc2d8602425d61b0743f969917",
+    "reports/r12_cpu_ablation_r1/STARTED.json": "0d733bb3fe06b757d87f120ca9ac547fdee6cb1a8ecceb6608fb056bb2256310",
+    "reports/r12_cpu_ablation_r1/selected_policy.json": "8dd82dd2feacaa42e06be450c2615d6872082b71fdff54e5f879bc6cde6c7b63",
+    "reports/r12_cpu_ablation_r1/RESULTS.json": "73288fd6fe2d7b3fe97908a2360b5d21143ec2941a6e6d2537fab3e1b4e34ff1",
+    "reports/r12_cpu_ablation_r1/results.csv": "7420e29204e05bb411d04b7c40e9cc7f609cc33a6267f7bc9e2364835860ddc9",
+    "reports/r12_cpu_ablation_r1/paired_cluster_CI.csv": "3a59058d82e313c8c75cb920ccd974cd78ea8632ebcefd1c67a559c6927bcd94",
+    "ops/r12_evaluation_r1.log": "125968c59ea487f6a9b2489d14f1606ae1ba5c9b74a1e82cc678132d8048fbea"
+  },
+  "selected_arm": "L1H1P1",
+  "additional_mask_matched_models_included": false,
+  "independent_numeric_results_QA": "delegated to scale_models; separate report pending",
+  "limitations": [
+    "H1 TRAIN site/mask confounding remains; fixed original policy not retrospectively changed.",
+    "Some normal/unseen RMSE or AUC comparisons deteriorate; no universal improvement or GPU/LB guarantee.",
+    "New CNN contrast per-row arrays are not saved, so independent postflight contrast coverage is limited to CSV and fit predictions."
+  ]
+}

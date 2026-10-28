@@ -1,0 +1,74 @@
+{
+  "format": "r5_explicit_user_data_audit_pause_v1",
+  "requested_reason": "User asked to resolve training/validation-to-competition gap before further GPU learning after actual LB RMSE .348008679 versus INNER .090808",
+  "created_at_utc": "2026-10-25T18:12:52.502913+00:00",
+  "before": {
+    "5892": {
+      "pid": 5892,
+      "state": "S",
+      "ppid": 5890,
+      "start_ticks": "66960509",
+      "cmd": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python -u /workspace/underwater_vessel_noise_r5_r1/project/ops/runpod_train_r5.py --base /workspace/underwater_vessel_noise_r5_r1 --config project/configs/r5_training_gpu_r1.json --preflight-report project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json --run-name group_cv_r5_gpu_r1 --folds 0 1 2 3 4 "
+    },
+    "5896": {
+      "pid": 5896,
+      "state": "S",
+      "ppid": 5892,
+      "start_ticks": "66960523",
+      "cmd": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python -u -m pipeline.runner_r5 fit --config /workspace/underwater_vessel_noise_r5_r1/project/configs/r5_training_gpu_r1.json --output /workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1 --preflight-report /workspace/underwater_vessel_noise_r5_r1/project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json --folds 0 1 2 3 4 "
+    },
+    "24953": {
+      "pid": 24953,
+      "state": "R",
+      "ppid": 5896,
+      "start_ticks": "68169802",
+      "cmd": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python -m pipeline.neural_r5 fit --context /workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1/fold_00/context.json --observation raw --output /workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1/fold_00/models/tfgrid_fdy_conformer --kind tfgrid_fdy_conformer "
+    }
+  },
+  "signal": "SIGSTOP",
+  "Pod_stopped_or_deleted": false,
+  "source_config_dataset_modified": false,
+  "automatic_resume_allowed": false,
+  "actions": [
+    {
+      "pid": 5896,
+      "state": "T",
+      "start_ticks": "66960523"
+    },
+    {
+      "pid": 24953,
+      "state": "T",
+      "start_ticks": "68169802"
+    },
+    {
+      "pid": 5892,
+      "state": "T",
+      "start_ticks": "66960509"
+    }
+  ],
+  "status": "paused",
+  "after": {
+    "5892": {
+      "pid": 5892,
+      "state": "T",
+      "ppid": 5890,
+      "start_ticks": "66960509",
+      "cmd": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python -u /workspace/underwater_vessel_noise_r5_r1/project/ops/runpod_train_r5.py --base /workspace/underwater_vessel_noise_r5_r1 --config project/configs/r5_training_gpu_r1.json --preflight-report project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json --run-name group_cv_r5_gpu_r1 --folds 0 1 2 3 4 "
+    },
+    "5896": {
+      "pid": 5896,
+      "state": "T",
+      "ppid": 5892,
+      "start_ticks": "66960523",
+      "cmd": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python -u -m pipeline.runner_r5 fit --config /workspace/underwater_vessel_noise_r5_r1/project/configs/r5_training_gpu_r1.json --output /workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1 --preflight-report /workspace/underwater_vessel_noise_r5_r1/project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json --folds 0 1 2 3 4 "
+    },
+    "24953": {
+      "pid": 24953,
+      "state": "T",
+      "ppid": 5896,
+      "start_ticks": "68169802",
+      "cmd": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python -m pipeline.neural_r5 fit --context /workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1/fold_00/context.json --observation raw --output /workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1/fold_00/models/tfgrid_fdy_conformer --kind tfgrid_fdy_conformer "
+    }
+  },
+  "current_partial_training_policy": "Existing process memory retained while Pod lives; no partial checkpoint is certified as a completed model. No optimizer/checkpoint resume or new fit was executed."
+}

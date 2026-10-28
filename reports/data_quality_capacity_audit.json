@@ -1,0 +1,222 @@
+{
+  "challenge_test_accessed": false,
+  "sealed_NOAA_accessed": false,
+  "partitions": {
+    "train": {
+      "examples": 16000,
+      "unique_background_windows": 14738,
+      "background_sites": 7,
+      "background_sensor_groups": 5,
+      "background_site_recorder_days": 1291,
+      "unique_external_clips": 995,
+      "external_source_group_count": 107,
+      "external_sources_by_reference_usage": {
+        "HearMyShip_V1": 15982,
+        "VTUAD_v1.3.2": 4778
+      },
+      "external_recording_days_by_source": {
+        "HearMyShip_V1": 16,
+        "VTUAD_v1.3.2": 20
+      },
+      "reference_modes": {
+        "short_CPA_spectral_profile_with_surrogate_envelope": 10279,
+        "measured_2s_reference_placed_and_time_rescaled": 10481
+      },
+      "ambiguous_AIS_class_reference_usages": 300,
+      "zero_target_examples": 3926,
+      "positive_draw_becoming_zero_target": 693,
+      "zero_by_coverage": [
+        {
+          "observed_minutes": "3-5",
+          "n": 3235,
+          "zero_target_fraction": 0.3996908809891808,
+          "positive_draw_but_unobserved_reference_fraction": 0.19721792890262752
+        },
+        {
+          "observed_minutes": "6-11",
+          "n": 8,
+          "zero_target_fraction": 0.25,
+          "positive_draw_but_unobserved_reference_fraction": 0.125
+        },
+        {
+          "observed_minutes": "12-15",
+          "n": 12757,
+          "zero_target_fraction": 0.20623971153092419,
+          "positive_draw_but_unobserved_reference_fraction": 0.0042329701340440545
+        }
+      ],
+      "max_saved_cell_energy_target_error": 4.143259899613838e-07,
+      "all_recipe_sources_in_partition": true,
+      "first_frozen_batch_exactly_replayed": true
+    },
+    "validation": {
+      "examples": 3000,
+      "unique_background_windows": 2590,
+      "background_sites": 6,
+      "background_sensor_groups": 5,
+      "background_site_recorder_days": 159,
+      "unique_external_clips": 183,
+      "external_source_group_count": 5,
+      "external_sources_by_reference_usage": {
+        "HearMyShip_V1": 3785,
+        "VTUAD_v1.3.2": 122
+      },
+      "external_recording_days_by_source": {
+        "HearMyShip_V1": 3,
+        "VTUAD_v1.3.2": 3
+      },
+      "reference_modes": {
+        "measured_2s_reference_placed_and_time_rescaled": 1439,
+        "short_CPA_spectral_profile_with_surrogate_envelope": 2468
+      },
+      "ambiguous_AIS_class_reference_usages": 0,
+      "zero_target_examples": 683,
+      "positive_draw_becoming_zero_target": 95,
+      "zero_by_coverage": [
+        {
+          "observed_minutes": "3-5",
+          "n": 476,
+          "zero_target_fraction": 0.3697478991596639,
+          "positive_draw_but_unobserved_reference_fraction": 0.18277310924369747
+        },
+        {
+          "observed_minutes": "6-11",
+          "n": 3,
+          "zero_target_fraction": 0.6666666666666666,
+          "positive_draw_but_unobserved_reference_fraction": 0.6666666666666666
+        },
+        {
+          "observed_minutes": "12-15",
+          "n": 2521,
+          "zero_target_fraction": 0.20031733439111463,
+          "positive_draw_but_unobserved_reference_fraction": 0.002380007933359778
+        }
+      ],
+      "max_saved_cell_energy_target_error": 2.613314867283556e-07,
+      "all_recipe_sources_in_partition": true,
+      "first_frozen_batch_exactly_replayed": true
+    },
+    "calibration": {
+      "examples": 3000,
+      "unique_background_windows": 2697,
+      "background_sites": 7,
+      "background_sensor_groups": 5,
+      "background_site_recorder_days": 187,
+      "unique_external_clips": 149,
+      "external_source_group_count": 7,
+      "external_sources_by_reference_usage": {
+        "HearMyShip_V1": 3825,
+        "VTUAD_v1.3.2": 122
+      },
+      "external_recording_days_by_source": {
+        "HearMyShip_V1": 3,
+        "VTUAD_v1.3.2": 3
+      },
+      "reference_modes": {
+        "short_CPA_spectral_profile_with_surrogate_envelope": 2469,
+        "measured_2s_reference_placed_and_time_rescaled": 1478
+      },
+      "ambiguous_AIS_class_reference_usages": 0,
+      "zero_target_examples": 727,
+      "positive_draw_becoming_zero_target": 115,
+      "zero_by_coverage": [
+        {
+          "observed_minutes": "3-5",
+          "n": 681,
+          "zero_target_fraction": 0.3509544787077827,
+          "positive_draw_but_unobserved_reference_fraction": 0.15712187958883994
+        },
+        {
+          "observed_minutes": "6-11",
+          "n": 1,
+          "zero_target_fraction": 0.0,
+          "positive_draw_but_unobserved_reference_fraction": 0.0
+        },
+        {
+          "observed_minutes": "12-15",
+          "n": 2318,
+          "zero_target_fraction": 0.21052631578947367,
+          "positive_draw_but_unobserved_reference_fraction": 0.003451251078515962
+        }
+      ],
+      "max_saved_cell_energy_target_error": 5.675458183418414e-07,
+      "all_recipe_sources_in_partition": true,
+      "first_frozen_batch_exactly_replayed": true
+    },
+    "domain_holdout": {
+      "examples": 3000,
+      "unique_background_windows": 2730,
+      "background_sites": 3,
+      "background_sensor_groups": 1,
+      "background_site_recorder_days": 178,
+      "unique_external_clips": 67,
+      "external_source_group_count": 7,
+      "external_sources_by_reference_usage": {
+        "HearMyShip_V1": 3340,
+        "VTUAD_v1.3.2": 620
+      },
+      "external_recording_days_by_source": {
+        "HearMyShip_V1": 1,
+        "VTUAD_v1.3.2": 3
+      },
+      "reference_modes": {
+        "short_CPA_spectral_profile_with_surrogate_envelope": 2118,
+        "measured_2s_reference_placed_and_time_rescaled": 1842
+      },
+      "ambiguous_AIS_class_reference_usages": 0,
+      "zero_target_examples": 720,
+      "positive_draw_becoming_zero_target": 155,
+      "zero_by_coverage": [
+        {
+          "observed_minutes": "3-5",
+          "n": 587,
+          "zero_target_fraction": 0.3747870528109029,
+          "positive_draw_but_unobserved_reference_fraction": 0.18228279386712096
+        },
+        {
+          "observed_minutes": "6-11",
+          "n": 657,
+          "zero_target_fraction": 0.2526636225266362,
+          "positive_draw_but_unobserved_reference_fraction": 0.0730593607305936
+        },
+        {
+          "observed_minutes": "12-15",
+          "n": 1756,
+          "zero_target_fraction": 0.19020501138952164,
+          "positive_draw_but_unobserved_reference_fraction": 0.0
+        }
+      ],
+      "max_saved_cell_energy_target_error": 2.3130397169834893e-07,
+      "all_recipe_sources_in_partition": true,
+      "first_frozen_batch_exactly_replayed": true
+    }
+  },
+  "interpretation": [
+    "Do not use a context model to predict the same labelled rows already in its context as a train-error measure.",
+    "For frozen foundation models, use fresh train-source mixtures or leave-context-out evaluation to measure fitting on the training domain.",
+    "Random per-sample calibration crossfit does not make a new source-independent calibration sample.",
+    "The effective sample counts below are descriptive; unknown physical hull recurrence remains possible."
+  ],
+  "paired_prefix_foundation_context_learning_curve": {
+    "1024": {
+      "validation": {
+        "paired_prefix_n": 256,
+        "rmse": 0.10108541697263718
+      },
+      "calibration": {
+        "paired_prefix_n": 256,
+        "rmse": 0.12954777479171753
+      }
+    },
+    "16000": {
+      "validation": {
+        "paired_prefix_n": 256,
+        "rmse": 0.0683097094297409
+      },
+      "calibration": {
+        "paired_prefix_n": 256,
+        "rmse": 0.08240906149148941
+      }
+    }
+  }
+}

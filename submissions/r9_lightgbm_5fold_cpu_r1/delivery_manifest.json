@@ -1,0 +1,18 @@
+{
+  "status": "verified_local_candidate",
+  "files_sha256": {
+    "submission.csv": "d6011245ff1b6cf2e17fb1509336afcb1317477cfd2775bb6cf0a24e070a5f6b",
+    "verification.json": "5ae654602c228eaca0c0ebcec204b1e4e84cd8b23e820dfe6f3238b22c636955",
+    "frozen_policy.json": "f16961e5253f998dc44405c85e0056478791220ebca500d90a6da2564f14a24e",
+    "frozen_fold_predictions.npz": "d4ed19323591fea10b2a1f007516ad21746d977683757c1f7158707c3614d78a",
+    "inference_stdout.log": "f41190b4a2047c5ae4d08abf6fec2aeac597a4188cc86385fc3f39e9ff8d57d5"
+  },
+  "inference_code": "ops/infer_r9_lightgbm_pilot.py",
+  "inference_code_sha256": "eae87c4a66441c7e5e88ce93454716935b78412dc16a879d8911be69b27b5dfd",
+  "rows": 1500,
+  "strict_completed_models": 5,
+  "max_batch_replay_delta": 0.0,
+  "official_upload": false,
+  "new_fit_or_calibration": false,
+  "R9_full_pipeline_or_OOF": false
+}

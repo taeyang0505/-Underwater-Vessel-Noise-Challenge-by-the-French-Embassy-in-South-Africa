@@ -1,0 +1,1176 @@
+{
+  "fold": 0,
+  "roles": {
+    "train": {
+      "windows": 78869,
+      "background_groups": 206,
+      "sites": {
+        "1 Richards Bay": 45969,
+        "7 St_Francis": 17956,
+        "5 St Croix Island": 10132,
+        "2 Durban": 2496,
+        "4 Bird Island": 1872,
+        "3 Cape_Recife": 240,
+        "6 Riy_Banks": 204
+      }
+    },
+    "selection": {
+      "windows": 9417,
+      "background_groups": 25,
+      "sites": {
+        "1 Richards Bay": 4927,
+        "7 St_Francis": 2660,
+        "5 St Croix Island": 990,
+        "2 Durban": 480,
+        "4 Bird Island": 360
+      }
+    },
+    "ensemble_fit": {
+      "windows": 3417,
+      "background_groups": 10,
+      "sites": {
+        "1 Richards Bay": 1365,
+        "7 St_Francis": 1332,
+        "5 St Croix Island": 576,
+        "3 Cape_Recife": 144
+      }
+    },
+    "ensemble_gate": {
+      "windows": 3511,
+      "background_groups": 8,
+      "sites": {
+        "1 Richards Bay": 2390,
+        "7 St_Francis": 432,
+        "4 Bird Island": 288,
+        "5 St Croix Island": 288,
+        "6 Riy_Banks": 113
+      }
+    },
+    "report": {
+      "windows": 3584,
+      "background_groups": 8,
+      "sites": {
+        "1 Richards Bay": 2840,
+        "5 St Croix Island": 576,
+        "7 St_Francis": 168
+      }
+    }
+  },
+  "minimum_original_cross_role_support_gap_hours": 24.0,
+  "source_role_ID_and_group_overlaps": 0,
+  "TRAIN_strata": [
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",1023]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 1.7599493635509098
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",127]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.22413763287174504
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",15]",
+      "source_rows": 3,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 1.1031986891800245
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",16383]",
+      "source_rows": 3335,
+      "HF_candidates": 334,
+      "TRAIN_q90_db": 9.397259140588071
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",20479]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.9685687241625942
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",24703]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 24.320121306618447
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",255]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 25.69489973141995
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",29695]",
+      "source_rows": 120,
+      "HF_candidates": 12,
+      "TRAIN_q90_db": 9.80432189150854
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",30720]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 38.970008272195365
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32512]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 11.166526056485793
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32575]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 32.54305973210907
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32704]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.6699467728322333
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32719]",
+      "source_rows": 214,
+      "HF_candidates": 22,
+      "TRAIN_q90_db": 11.571798549674032
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32735]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 31.408621902666226
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32736]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 37.91995682247473
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32743]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 38.34043042248737
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32751]",
+      "source_rows": 3,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 38.39051949820464
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32760]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 2.7494502034613717
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32766]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 5.387179629184222
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32767]",
+      "source_rows": 16962,
+      "HF_candidates": 1697,
+      "TRAIN_q90_db": 16.056797024482886
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",4095]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 12.336051162933423
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",511]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 24.270715497068522
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",7]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 10.005396819168439
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",8191]",
+      "source_rows": 25,
+      "HF_candidates": 3,
+      "TRAIN_q90_db": 6.749977943096239
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",1015]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 6.4806339668529915
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",1023]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 7.908954338815306
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",111]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.47192433065386297
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",12287]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 11.538946462399196
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",127]",
+      "source_rows": 6,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 1.6497588292865188
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",15]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 0.45174562599065665
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",16061]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.6305643753885022
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",16383]",
+      "source_rows": 1083,
+      "HF_candidates": 109,
+      "TRAIN_q90_db": 11.632922552817618
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",18431]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.242318339387026
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",19191]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 13.296264824963743
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",20479]",
+      "source_rows": 32,
+      "HF_candidates": 4,
+      "TRAIN_q90_db": 12.82686799392527
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",2047]",
+      "source_rows": 7,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 5.844780667112534
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",21502]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.8481016170914017
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",2228]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.7743562392348764
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",22527]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.5587215402880048
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",23679]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 15.763713771987426
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24057]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 8.025981992179737
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24167]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 7.133321558589913
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24439]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 13.87086381933814
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24559]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.546033034100077
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24575]",
+      "source_rows": 6,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 15.69888398412656
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24607]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 3.470381237295797
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",25599]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 9.969549293207947
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",255]",
+      "source_rows": 7,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 7.455285002600207
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",26623]",
+      "source_rows": 57,
+      "HF_candidates": 6,
+      "TRAIN_q90_db": 10.790134547496152
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",27135]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.0520473653450892
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28287]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.3135674342206869
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28371]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.8226001338934452
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28663]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.5412457633729275
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28668]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.11923402945676287
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28671]",
+      "source_rows": 20,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 15.405802316543243
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28672]",
+      "source_rows": 4,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 3.647896123658088
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28687]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.3593987344865326
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28926]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 11.000717505764044
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",29694]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.8950352319453572
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",29695]",
+      "source_rows": 162,
+      "HF_candidates": 17,
+      "TRAIN_q90_db": 11.802185696281148
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30175]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.42547495875463426
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30335]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 12.849854098932823
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30719]",
+      "source_rows": 12,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 17.333269895884158
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30720]",
+      "source_rows": 8,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 7.591257007890841
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30975]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.6244097963579804
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31231]",
+      "source_rows": 39,
+      "HF_candidates": 4,
+      "TRAIN_q90_db": 13.322842951496696
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31295]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 2.709115005206357
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31487]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 7.508103086922517
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31611]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.5931768755658595
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31726]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 10.129414664619748
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31731]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.4741036918486543
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31743]",
+      "source_rows": 60,
+      "HF_candidates": 6,
+      "TRAIN_q90_db": 16.91839287662572
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31744]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 2.155441213199535
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31871]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 3.1768368261161584
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31995]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.9418886761988432
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31999]",
+      "source_rows": 15,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 9.427756762266053
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31]",
+      "source_rows": 6,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 9.768392397496129
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32255]",
+      "source_rows": 15,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 17.702294132888614
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32256]",
+      "source_rows": 4,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 7.1166622192625075
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32257]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.7043036312376927
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32319]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 14.387318639133992
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32383]",
+      "source_rows": 30,
+      "HF_candidates": 3,
+      "TRAIN_q90_db": 15.00722122308601
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32499]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 20.42810261431093
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32503]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 10.063210886592518
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32505]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.6458096989913713
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32507]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.5654400603682177
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32509]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.6643736779610236
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32511]",
+      "source_rows": 30,
+      "HF_candidates": 3,
+      "TRAIN_q90_db": 15.957334943317544
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32512]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 8.050096743941683
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32575]",
+      "source_rows": 32,
+      "HF_candidates": 4,
+      "TRAIN_q90_db": 12.822101333407383
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32639]",
+      "source_rows": 52,
+      "HF_candidates": 6,
+      "TRAIN_q90_db": 15.932696679294342
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32640]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 12.844826956361937
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32644]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.6267622744563823
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32655]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 1.7230826236580215
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32671]",
+      "source_rows": 169,
+      "HF_candidates": 17,
+      "TRAIN_q90_db": 10.507328241213976
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32679]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.3376145251697409
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32687]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 13.242212368925678
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32703]",
+      "source_rows": 17,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 17.34861088587952
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32704]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 13.071541916140617
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32707]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.9814660245068296
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32711]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.39607765465096634
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32713]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 24.338162397557426
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32719]",
+      "source_rows": 17,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 12.052914526739832
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32732]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 7.019674410000647
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32735]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 9.928827136586497
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32736]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 7.291441433162276
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32739]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 11.736242884556193
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32743]",
+      "source_rows": 38,
+      "HF_candidates": 4,
+      "TRAIN_q90_db": 7.749123489164534
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32745]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.5557472657826565
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32747]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 16.25553772022448
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32751]",
+      "source_rows": 2,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 26.65848394817672
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32752]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 9.351431950697568
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32755]",
+      "source_rows": 54,
+      "HF_candidates": 6,
+      "TRAIN_q90_db": 10.678263996764409
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32757]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 2.774884580517295
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32758]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.474442556415923
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32759]",
+      "source_rows": 74,
+      "HF_candidates": 8,
+      "TRAIN_q90_db": 12.787286933884781
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32760]",
+      "source_rows": 3,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 11.07204980084667
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32761]",
+      "source_rows": 132,
+      "HF_candidates": 14,
+      "TRAIN_q90_db": 9.576893507719412
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32762]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.4802743103068252
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32763]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 14.589780912211301
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32764]",
+      "source_rows": 42,
+      "HF_candidates": 5,
+      "TRAIN_q90_db": 7.250698651175082
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32765]",
+      "source_rows": 14,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 11.642768907927325
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32766]",
+      "source_rows": 124,
+      "HF_candidates": 13,
+      "TRAIN_q90_db": 12.099459664930306
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32767]",
+      "source_rows": 7245,
+      "HF_candidates": 725,
+      "TRAIN_q90_db": 15.474901691883723
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",4095]",
+      "source_rows": 4,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 8.618163898578064
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",4983]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.3286973579944572
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",511]",
+      "source_rows": 6,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 12.52704298449904
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",59]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.43307639638372564
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",63]",
+      "source_rows": 6,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 6.098322727783355
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",7567]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 13.951379290230534
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",767]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 13.913148495111827
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",7]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 1.7738100654959028
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",8167]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.7381013347482366
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",8188]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 10.801946337976219
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",8191]",
+      "source_rows": 20,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 13.121292605679967
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",15]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 5.5237595332589535
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",16383]",
+      "source_rows": 3499,
+      "HF_candidates": 350,
+      "TRAIN_q90_db": 9.048450401913207
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",24575]",
+      "source_rows": 120,
+      "HF_candidates": 12,
+      "TRAIN_q90_db": 13.96439105545691
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",28671]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 18.38379524000034
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32764]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.03975225012482042
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32765]",
+      "source_rows": 58,
+      "HF_candidates": 6,
+      "TRAIN_q90_db": 14.35869129207429
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32766]",
+      "source_rows": 3560,
+      "HF_candidates": 356,
+      "TRAIN_q90_db": 8.83688897171155
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32767]",
+      "source_rows": 8018,
+      "HF_candidates": 802,
+      "TRAIN_q90_db": 9.046746909624332
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",4095]",
+      "source_rows": 258,
+      "HF_candidates": 26,
+      "TRAIN_q90_db": 4.9385751833509675
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",7166]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 63.21664612855626
+    },
+    {
+      "key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",7]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 3.778338437105873
+    },
+    {
+      "key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",24575]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 1.3375077349414255
+    },
+    {
+      "key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",30719]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.5836010400971787
+    },
+    {
+      "key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",32766]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.7337252394794405
+    },
+    {
+      "key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",32767]",
+      "source_rows": 2493,
+      "HF_candidates": 250,
+      "TRAIN_q90_db": 5.083138931950373
+    },
+    {
+      "key": "[\"3 Cape_Recife\",2,\"8210_ST600_8210.1.48000\",8190]",
+      "source_rows": 240,
+      "HF_candidates": 24,
+      "TRAIN_q90_db": 1.3737499151074402
+    },
+    {
+      "key": "[\"4 Bird Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32766]",
+      "source_rows": 22,
+      "HF_candidates": 3,
+      "TRAIN_q90_db": 1.4205241903197647
+    },
+    {
+      "key": "[\"4 Bird Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32767]",
+      "source_rows": 1850,
+      "HF_candidates": 185,
+      "TRAIN_q90_db": 0.6996865617409583
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32765]",
+      "source_rows": 5,
+      "HF_candidates": 1,
+      "TRAIN_q90_db": 21.86892697331188
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32766]",
+      "source_rows": 19,
+      "HF_candidates": 2,
+      "TRAIN_q90_db": 3.122082552942555
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32767]",
+      "source_rows": 2024,
+      "HF_candidates": 203,
+      "TRAIN_q90_db": 4.341852200597858
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",511]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 7.437070376765931
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.StCroix.2022_6509.1.24000\",32766]",
+      "source_rows": 24,
+      "HF_candidates": 3,
+      "TRAIN_q90_db": 3.347025025500166
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.StCroix.2022_6509.1.24000\",32767]",
+      "source_rows": 2081,
+      "HF_candidates": 208,
+      "TRAIN_q90_db": 4.331900940625573
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN.StCroix.2022_6509.1.24000\",4095]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.7501704785503875
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",2047]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.7566967019209727
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",32767]",
+      "source_rows": 5974,
+      "HF_candidates": 598,
+      "TRAIN_q90_db": 4.1617126430118185
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",7]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 0.09815150680358897
+    },
+    {
+      "key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",8191]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 6.555589203669001
+    },
+    {
+      "key": "[\"6 Riy_Banks\",1,\"8230_ST600_8230.1.48000\",8190]",
+      "source_rows": 204,
+      "HF_candidates": 21,
+      "TRAIN_q90_db": 0.9506224504571738
+    },
+    {
+      "key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",31744]",
+      "source_rows": 5069,
+      "HF_candidates": 507,
+      "TRAIN_q90_db": 1.4702243126121257
+    },
+    {
+      "key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",31]",
+      "source_rows": 5072,
+      "HF_candidates": 508,
+      "TRAIN_q90_db": 1.3782827957132051
+    },
+    {
+      "key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",32767]",
+      "source_rows": 2744,
+      "HF_candidates": 275,
+      "TRAIN_q90_db": 12.065610380793606
+    },
+    {
+      "key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",4095]",
+      "source_rows": 1,
+      "HF_candidates": 0,
+      "TRAIN_q90_db": 4.044345709391806
+    },
+    {
+      "key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",992]",
+      "source_rows": 5070,
+      "HF_candidates": 507,
+      "TRAIN_q90_db": 1.4432441920336332
+    }
+  ],
+  "HF_candidate_total": 7919,
+  "first5epoch_actual_schedules": [
+    {
+      "epoch": 1,
+      "examples": 78869,
+      "zero_count": 15774,
+      "zero_fraction": 0.2000025358505877,
+      "exact20percent_this_epoch": false,
+      "exact20percent_every5and100epochs": true,
+      "primary_once": true,
+      "zero_count_policy": "floor/ceil predeclared5epoch cycle",
+      "stratum_zero_quota_exact": true,
+      "HF_priority_actual": 7775,
+      "HF_priority_shortfall": 102,
+      "HF_assignment_is_not_small12k_replacement": true,
+      "highshare_positive_count": 15774,
+      "long_positive_count": 18928,
+      "baseline_mask_class_quotas_preserved_not_positive_background_IDs": true
+    },
+    {
+      "epoch": 2,
+      "examples": 78869,
+      "zero_count": 15774,
+      "zero_fraction": 0.2000025358505877,
+      "exact20percent_this_epoch": false,
+      "exact20percent_every5and100epochs": true,
+      "primary_once": true,
+      "zero_count_policy": "floor/ceil predeclared5epoch cycle",
+      "stratum_zero_quota_exact": true,
+      "HF_priority_actual": 7767,
+      "HF_priority_shortfall": 102,
+      "HF_assignment_is_not_small12k_replacement": true,
+      "highshare_positive_count": 15774,
+      "long_positive_count": 18928,
+      "baseline_mask_class_quotas_preserved_not_positive_background_IDs": true
+    },
+    {
+      "epoch": 3,
+      "examples": 78869,
+      "zero_count": 15774,
+      "zero_fraction": 0.2000025358505877,
+      "exact20percent_this_epoch": false,
+      "exact20percent_every5and100epochs": true,
+      "primary_once": true,
+      "zero_count_policy": "floor/ceil predeclared5epoch cycle",
+      "stratum_zero_quota_exact": true,
+      "HF_priority_actual": 7758,
+      "HF_priority_shortfall": 117,
+      "HF_assignment_is_not_small12k_replacement": true,
+      "highshare_positive_count": 15774,
+      "long_positive_count": 18928,
+      "baseline_mask_class_quotas_preserved_not_positive_background_IDs": true
+    },
+    {
+      "epoch": 4,
+      "examples": 78869,
+      "zero_count": 15774,
+      "zero_fraction": 0.2000025358505877,
+      "exact20percent_this_epoch": false,
+      "exact20percent_every5and100epochs": true,
+      "primary_once": true,
+      "zero_count_policy": "floor/ceil predeclared5epoch cycle",
+      "stratum_zero_quota_exact": true,
+      "HF_priority_actual": 7763,
+      "HF_priority_shortfall": 114,
+      "HF_assignment_is_not_small12k_replacement": true,
+      "highshare_positive_count": 15774,
+      "long_positive_count": 18928,
+      "baseline_mask_class_quotas_preserved_not_positive_background_IDs": true
+    },
+    {
+      "epoch": 5,
+      "examples": 78869,
+      "zero_count": 15773,
+      "zero_fraction": 0.19998985659764926,
+      "exact20percent_this_epoch": false,
+      "exact20percent_every5and100epochs": true,
+      "primary_once": true,
+      "zero_count_policy": "floor/ceil predeclared5epoch cycle",
+      "stratum_zero_quota_exact": true,
+      "HF_priority_actual": 7796,
+      "HF_priority_shortfall": 78,
+      "HF_assignment_is_not_small12k_replacement": true,
+      "highshare_positive_count": 15774,
+      "long_positive_count": 18929,
+      "baseline_mask_class_quotas_preserved_not_positive_background_IDs": true
+    }
+  ],
+  "exact_zero20percent_over5and100epochs": true,
+  "all_primary_once_each_epoch": true,
+  "per_epoch_exact20percent_impossible_when_N_not_divisible5": true,
+  "HF_assignment_not_equivalent_to_12k_outside_primary_replacement": true,
+  "reference_independent_validation": false
+}

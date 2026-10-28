@@ -1,0 +1,112 @@
+{
+  "status": "passed_hardened_numeric_and_fit_source_contract",
+  "source_code_sha256": "ef29b306b83956a0e5fd496efb90164ae74a04aab1611106d20488d483e1d073",
+  "fixture": {
+    "status": "passed",
+    "weights_when_CNN_perfect": [
+      0.5,
+      0.24999999999999992,
+      0.06755782075745109,
+      0.08670769195175669,
+      0.09573448729079236
+    ],
+    "score_independent_of_regression": true,
+    "Tree_family_floor": 0.5,
+    "NN_architecture_cap": 0.25,
+    "ridge": 0.0001
+  },
+  "independent_fixture_weights": [
+    0.5,
+    0.25,
+    0.07547416446796872,
+    0.10922431448693233,
+    0.06530152104509902
+  ],
+  "independent_classifier_weights": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "Tree5_family_weight": 0.5,
+  "maximum_NN_architecture_weight": 0.25,
+  "score_share_weight": 0.0,
+  "score_regression_intervention_gap": 0.0,
+  "regression_classifier_intervention_gap": 0.0,
+  "QP_Hessian_min_eigenvalue": 0.004098171251482343,
+  "QP_KKT_max_violation": 2.42861286636753e-17,
+  "required_negative_tests": {
+    "fit_role_train": true,
+    "fit_role_ensemble_gate": true,
+    "fit_role_local_report": true,
+    "fit_role_domain_holdout": true,
+    "fit_role_Test": true,
+    "fit_query_used": true,
+    "duplicate_IDs": true,
+    "missing_member": true,
+    "legacy_highshare_member": true,
+    "regression_weights__[0.49, 0.25, 0.2, 0.03, 0.03]": true,
+    "regression_weights__[0.5, 0.26, 0.24, 0, 0]": true,
+    "score_share_weight__0.25": true,
+    "classifier_weights__[1.1, -0.1, 0, 0, 0]": true,
+    "bytes_tamper": true
+  },
+  "all_required_negative_tests_passed": true,
+  "additional_hardening_tests": {
+    "rehash_wrong_member_order_rejected": true,
+    "unbound_nonfixture_fit_rejected": true,
+    "fixture_policy_forbidden_in_production": true,
+    "fixture_fit_requires_explicit_opt_in": true,
+    "rehash_invalid_tree5_family_minimum": true,
+    "rehash_invalid_each_NN_architecture_maximum": true,
+    "rehash_invalid_ridge_to_prior": true,
+    "rehash_invalid_regression_prior": true,
+    "rehash_invalid_classifier_weights": true,
+    "nonfinite_regression_weights": true,
+    "nonfinite_classifier_weights": true,
+    "fixed_ID_order_change_rejected": true,
+    "fixed_labels_change_rejected": true,
+    "foreign_binding_data_manifest_sha256": true,
+    "rehash_foreign_policy_data_manifest_sha256": true,
+    "foreign_binding_target_share_sha256": true,
+    "rehash_foreign_policy_target_share_sha256": true,
+    "foreign_binding_sample_ids_sha256": true,
+    "rehash_foreign_policy_sample_ids_sha256": true,
+    "foreign_binding_fit_source_verified": true,
+    "rehash_foreign_policy_fit_source_verified": true
+  },
+  "fixed_fit_source_contract": {
+    "role": "local_fit",
+    "Test_used": false,
+    "fixture": false,
+    "data_manifest_path": "reports/r16_cross_operator_r1/data/manifest.json",
+    "data_manifest_sha256": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1",
+    "operator_order": [
+      "control_eq6",
+      "mfhf_shelf6",
+      "mfhf_shelf12",
+      "mfhf_shelf12_lfminus6",
+      "alpha_preEQ_inserted",
+      "independent_subband_snr"
+    ],
+    "panel_sha256": {
+      "reports/r16_cross_operator_r1/data/local_fit/control_eq6.npz": "681c016e80d2eba8783cec77f4fd1eaeb18bd8283d5817485bffb8b8d29447a5",
+      "reports/r16_cross_operator_r1/data/local_fit/mfhf_shelf6.npz": "292601265ec6f24e13b6369627f4f24a6c42968f875025abae8f5bc2d5f7526b",
+      "reports/r16_cross_operator_r1/data/local_fit/mfhf_shelf12.npz": "56b0d2f4f8592f02b10d89a449916b62dbf94cfbff3c99268badec9eedc7b558",
+      "reports/r16_cross_operator_r1/data/local_fit/mfhf_shelf12_lfminus6.npz": "1986ed5ca02c5edeb136687f8c419b8235e5d8b5f7699d38267028b546881f41",
+      "reports/r16_cross_operator_r1/data/local_fit/alpha_preEQ_inserted.npz": "82bf904cf194af63871c13c90a7bd60f90fb8b77fd687a9e39e40f652b23a051",
+      "reports/r16_cross_operator_r1/data/local_fit/independent_subband_snr.npz": "cb3cd493f35cf4cba4fa674e3ccd057c1612569a27dc8a1eba1c336eeab66880"
+    },
+    "n": 2400,
+    "sample_ids_sha256": "4e649374628abebd5f7fe7ecd422b299b34db4eb52eebb41d1f5b595360088d8",
+    "target_share_sha256": "539969524a67e252a23d0eee8bd4643ab0be9a7f72e5ea74a72ab309e0fc2f3c",
+    "fit_source_verified": true
+  },
+  "fixed_fit_labels_IDs_verified": true,
+  "actual_fit_predictions_reviewed": false,
+  "Test_or_signal_matrices_accessed": false,
+  "scope": "Synthetic model outputs for numeric QA; actual fixed local_fit IDs/labels and panel bytes verified; no trained prediction claim",
+  "verifier_code_sha256": "d4843106b19da9ae2cb5d2f22fa66e7b1546bbdff86c441fc3ad7322fa46b532",
+  "elapsed_seconds": 0.126715624704957
+}

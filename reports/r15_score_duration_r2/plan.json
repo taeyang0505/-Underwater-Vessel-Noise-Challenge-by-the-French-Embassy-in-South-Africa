@@ -1,0 +1,86 @@
+{
+  "version": "r15_score_duration_descriptive_v2_headerclarification",
+  "created_unix": 1793081252.169869,
+  "input_sha256": {
+    "ops/r15_score_duration_audit.py": "fea76a47e170ff1da02baf8d886e72f3937af0f041cd07ebdb75ed860db8f598",
+    "reports/r15_descriptive_audit_r1/joined1500.csv": "df83b2a631c0384c52bc82b6ea186ca357e9cea54f7225480ee37e8a42a99ab5",
+    "reports/r15_band_comparison_r1/R14_TRAIN_source.json": "4f62d8b4a6b25531d4bb23583dc6656431d85ded23d38d1164c628a4a460cc89",
+    "reports/r15_band_comparison_r1/R9_TRAIN_source.json": "dacb791d6b1dd5c478b30768a64e0b66ed1d9928e7f42ab24482c3c867bc07ea",
+    "data/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "models/r14_production_nn_fold0_r1/raw_cache/epoch_038.npz": "3e1ed800140d089caecb1ad208e22e78d4c99776562f16cf4cdd15031618024b",
+    "models/r14_production_nn_fold0_r1/raw_cache/epoch_038.json": "b505bc0beb86335c4cb7c353f5fff2a86f56a66968e58b37dfa9449c2dbbe66e",
+    "models/r9_mac_trees_r2/fold_00/tree_epoch1_train.npz": "8e430c0fc5319739a219c3d7dcd34951148fbcb805be379764f3d742bdf761f0",
+    "models/r9_mac_trees_r2/fold_00/tree_epoch1_manifest.json": "5796473744a28f9a925efb4266d78f1997d80363f40c7ad882379fedb874afa1",
+    "data/processed/sa_windows_db.npy": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "data/versions/background_cv_r9/manifest.json": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "data/synthetic/group_cv_physics_r13_variants_v2/fold_00/TRAIN_pool.parquet": "bfb6899fd3aa447566402d84892573aa8884bf9e388409d00265e9dd459d8b3f",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492"
+  },
+  "regions_zero_based": {
+    "HF3162_7943": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "LF31_200": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "LF_historical31_501": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_level": "10log10(sum of measured linear band powers), complete regional frequency support; historical LF13/HF5 require complete25 minute",
+  "bump": "max_observed_t(region_level)-median_observed_t(region_level)",
+  "quantiles": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "active_minutes": "strict level>within-window regional median+3,+6,+10dB, no gap imputation; count plus count/Nobs and longest observed consecutive run",
+  "fixed_query_groups": {
+    "HF_high": "HFbump>15dB",
+    "LF_near_zero": "LF<=3dB",
+    "joint_rise": "LF>6dB AND LF-HF Pearson>.5"
+  },
+  "fraction_of_HFgt15_intersection": "n(condition AND HF>15)/n(HF>15), even if row n describes an unconditional LF condition",
+  "SF": "historical probe_site==07 St Francis (notactualsiteGT); restnonSF",
+  "rankprob": "P(score_SF>score_nonSF)+0.5tie, both directions; NOT label-AUC. KS empirical CDFdistance only, no iid p-value claims.",
+  "SA_scope": "Only78869 unique Fold0TRAIN originalB window indices; before-existing-minute-QC and after-QC separately, NOT whole1715779 released records.",
+  "observation_strata": [
+    "all",
+    "Nobs5",
+    "Nobs13plus",
+    "Nobs15"
+  ],
+  "model_fit_inference_calibration_or_submission": false,
+  "hidden_Test_or_actual_site_labels_available": false
+}

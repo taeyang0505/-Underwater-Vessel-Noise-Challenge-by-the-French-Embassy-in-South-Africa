@@ -1,0 +1,17 @@
+{
+  "kind": "lgbm_retrieval",
+  "max_trees": 800,
+  "best_iteration": 27,
+  "feature_version": 3,
+  "preprocessing_version": 3,
+  "n_features": 1311,
+  "prototype_feature_mode": "per_band20db_excess_shape_v3",
+  "selection_metric": "validation_l2",
+  "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+  "evaluation_splits": [
+    "validation"
+  ],
+  "cv_mode": true,
+  "test_accessed": false,
+  "sealed_holdout_accessed": false
+}

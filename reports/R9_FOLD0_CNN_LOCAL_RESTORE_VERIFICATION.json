@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "source": "completed Fold0 CNN only",
+  "all_42_tar_entries_sha256_verified": true,
+  "local_CPU_strict_restore_checkpoints": [
+    {
+      "checkpoint": "best_macro.pt",
+      "sha256": "3cdcabc1dab665a69079a47d4ee86709b5abd58b80c6caae15c85183307f2ab9",
+      "epoch": 36,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "best_window.pt",
+      "sha256": "322f2284a9d33633a9fc370dba8787a1bbda2b20b7ce3ad2d8d3f04d501e1a5a",
+      "epoch": 5,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_010.pt",
+      "sha256": "157af99bd0f1b0471ce43e6aa51e240212126a9e0bcf6602e8f5caa5159e14da",
+      "epoch": 10,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_020.pt",
+      "sha256": "96b9f9e475d06be45538b2de32c0047f730dc5ebe8223a1ec060581808594931",
+      "epoch": 20,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_030.pt",
+      "sha256": "8e897dc6256fd88cac2b721730d67f963e1c723cfbbd40d3853d251f73683e51",
+      "epoch": 30,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_040.pt",
+      "sha256": "98e2573530c603735376b51a35cc1125b3b8879cb613f3a0425edaeba44a0c28",
+      "epoch": 40,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_050.pt",
+      "sha256": "f1844f8710a6021ec09e7c57b06d30e27e31ba3098beadb653238f675a5e0471",
+      "epoch": 50,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_060.pt",
+      "sha256": "59dc776865df62efd106fc2a26c317633010bfe0d5544ec1bda7d5508dcc68f5",
+      "epoch": 60,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_070.pt",
+      "sha256": "f39e00d30847898c5160e1e899aa9c0afb5e483335feee3f0b79ce61fcc26cb3",
+      "epoch": 70,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_080.pt",
+      "sha256": "114df420c227d87f8dfc3ad76d9ca0636c5b1e4db393698df3236590cf237aa5",
+      "epoch": 80,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_090.pt",
+      "sha256": "9f0d78627f7daca3377901871edce314240543957fce2fe2aae4e74d0ec8df69",
+      "epoch": 90,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_100.pt",
+      "sha256": "a991bab267ed256008d5a549701419bf46447c5540d5fecffea7649eb96f14d6",
+      "epoch": 100,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "last.pt",
+      "sha256": "c57d8cc356b2e17c13fb8dc878733e569aa36cdd706d927b00eef72649154684",
+      "epoch": 100,
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    }
+  ],
+  "local_default_parameters": 1487873,
+  "best_window_epoch": 5,
+  "best_window_rmse_recomputed_from_stored_predictions": 0.09036093202136652,
+  "best_macro_epoch": 36,
+  "best_macro_rmse": 0.05953350716665464,
+  "last_epoch": 100,
+  "last_rmse": 0.0999112708793573,
+  "last_optimizer_steps": 61700,
+  "fixed_validation_input_hash_unchanged_all100epochs": true,
+  "summary_sha256": "24d238e5e33d828cc0595d9456c2c1f69ae5b2933ce300e7515001e01c1a20b9",
+  "context_sha256": "150ccf37dc89597ea157891cd2a6cf492f25182f5b8720bc14667d3436bff9e6",
+  "ledger_snapshot_sha256": "203ddefdea58605643418e7da710f72930326355019bd95b1590e8fad1d83458",
+  "best_window_prediction_sha256": "9e5770239d020f8deb3b77c2887ccf9cd36fe6796a7da18e8afec06fda7434bf",
+  "active_models_or_source_arrays_or_Test_or_report_read": false,
+  "training_or_new_predictions_performed": false,
+  "code_source_changed": false,
+  "torch_local": "2.14.1",
+  "torch_producer": "2.8.0+cu128",
+  "elapsed_seconds": 1.4609775831922889
+}

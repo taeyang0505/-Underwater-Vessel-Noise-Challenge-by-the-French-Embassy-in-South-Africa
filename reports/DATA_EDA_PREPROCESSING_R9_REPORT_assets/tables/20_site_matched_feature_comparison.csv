@@ -1,0 +1,21 @@
+probe_site,feature,train_windows,test_windows,train_p50,train_p99,test_p50,test_share_above_train_p99,ks
+07 St Francis,bump_high_db,3371,487,0.8619,12.533,10.6345,0.4148,0.6138
+07 St Francis,corr_low_high,3371,487,0.3865,0.909,0.6279,0.0575,0.3072
+07 St Francis,lag1_acf_broadband,3371,487,0.053,0.7836,0.2773,0.0123,0.2929
+07 St Francis,naive_share_q20,3371,487,0.7415,0.9965,0.8146,0.0082,0.1852
+07 St Francis,mean_abs_step_db,3371,487,4.1493,14.2483,4.126,0.0021,0.1014
+01 Richards Bay,bump_high_db,66673,423,1.1475,18.2014,17.3465,0.4775,0.6678
+01 Richards Bay,corr_low_high,66673,423,0.1802,0.9828,0.5798,0.0071,0.3244
+01 Richards Bay,lag1_acf_broadband,66673,423,0.1874,0.9356,0.4,0.0,0.2461
+01 Richards Bay,naive_share_q20,66673,423,0.4426,0.9929,0.5907,0.0047,0.2496
+01 Richards Bay,mean_abs_step_db,66673,423,1.7354,7.2606,2.2443,0.0071,0.2251
+13 Saldanha Bay,bump_high_db,8978,284,0.9509,23.93,19.836,0.3768,0.7866
+13 Saldanha Bay,corr_low_high,8978,284,0.3568,0.9759,0.6529,0.0106,0.2268
+13 Saldanha Bay,lag1_acf_broadband,8978,284,0.2911,0.9904,0.4746,0.0,0.2387
+13 Saldanha Bay,naive_share_q20,8978,284,0.4226,0.9906,0.6786,0.0,0.3429
+13 Saldanha Bay,mean_abs_step_db,8978,284,1.44,5.3261,2.2898,0.0282,0.3056
+05 St Croix,bump_high_db,16704,236,0.7721,13.4025,20.1958,0.7542,0.8963
+05 St Croix,corr_low_high,16704,236,0.2105,0.9486,0.666,0.0466,0.4197
+05 St Croix,lag1_acf_broadband,16704,236,0.4159,0.9522,0.4687,0.0042,0.1798
+05 St Croix,naive_share_q20,16704,236,0.2623,0.9098,0.6314,0.089,0.5061
+05 St Croix,mean_abs_step_db,16704,236,0.6865,5.0918,2.0813,0.0763,0.5225

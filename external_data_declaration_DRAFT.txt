@@ -1,0 +1,110 @@
+External acoustic data declaration — controlled-energy training and independent assessment
+
+1. VTUAD (rebuilt), version 1.3.2
+Hao Yuan, Wenbo Wang, Tian Li, Guici Chen, Lingjiang Zeng and Sixian Liu.
+Source: https://doi.org/10.5281/zenodo.23037895
+Public files: https://zenodo.org/records/23037895
+Licence: CC BY 4.0. Upstream recordings: Ocean Networks Canada, Oceans 3.0,
+https://data.oceannetworks.ca/ and https://doi.org/10.17616/R3RW43.
+Accessed 24 October 2026, anonymous public HTTPS without payment or credentials.
+Files: vtuad_strict_wav_vessel.zip.part01–03 and vtuad_strict_wav_background.zip,
+registry_anonymized.csv, strict_interval_wav_SHA256SUMS.txt, dataset card and
+licence evidence. All four archive objects pass the public MD5 hashes; every
+one of the 525 decoded WAV members passes its provider SHA-256. Strict intervals
+are used, avoiding the older wrap-around container view. Archive role and AIS
+class remain separate: neither proves vessel-only sound or acoustic absence.
+
+2. HearMyShip, V1 / ScienceDB metadata version 1.0.0
+Mark Shipton, Juraj Obradovic, Fausto Ferreira, Nikola Miskovic, Tomislav Bulat,
+Neven Cukrov and Roee Diamant. Source: https://doi.org/10.57760/sciencedb.13099
+Article: https://doi.org/10.1038/s41597-025-04584-x
+Licence: CC0-1.0, verified in the original ScienceDB deposit and DataCite metadata.
+Public deposit: https://www.scidb.cn/detail?dataSetId=bc4abdddec4344fe913558479d5f8a7b
+Project mirror: https://hearmyship.fer.hr/
+Accessed 24 October 2026, anonymous public HTTPS. All 1,146 deposit WAV entries
+were acquired and verified against their original deposit size and MD5, using
+the original distribution URLs where mirror bytes were missing or different.
+One byte-identical duplicate is collapsed, leaving 1,145 unique waveform objects.
+No unverified mirror object is used. Per-file URLs, checksums and dates are
+retained in the acquisition manifest. These approximately 20-second CPA excerpts
+contain ambient sound. They are not represented as measured 15-minute passages.
+Long synthetic envelopes are explicitly declared modelling assumptions.
+Acknowledgement: data kindly shared by the UWIN-LABUST Project, EU Horizon 2020
+Research and Innovation grant 101086340, with ANL/University of Haifa and
+LABUST/University of Zagreb.
+
+3. NOAA / U.S. Navy SanctSound OC02_02 — independent assessment only
+Raw audio DOI: https://doi.org/10.25921/saca-sp25
+Licence evidence: https://www.fisheries.noaa.gov/inport/item/80342
+The current official catalog explicitly declares CC0-1.0. NOAA/NCEI warranty
+limitations apply; no government endorsement is claimed. Credit NOAA ONMS,
+U.S. Navy and NCEI. Public anonymous Google Cloud HTTPS, accessed 24 October 2026.
+Objects: SanctSound_OC02_02_671117349_190712015109.flac,
+_190713015100.flac and _190714015052.flac under
+https://storage.googleapis.com/noaa-passive-bioacoustic/sanctsound/audio/oc02/sanctsound_oc02_02/audio/
+Three native contiguous 15-minute excerpts begin at 2019-07-12 01:53 UTC,
+2019-07-13 02:07 UTC and 2019-07-14 01:52 UTC, respectively. Public object
+generations are pinned; acquired excerpt SHA-256 values are recorded. Only byte
+ranges needed to decode the excerpts were acquired, so a full-source MD5 check
+is NOT claimed. Ship-event annotation coverage is verified using the public
+SanctSound_OC02_02_ships.csv. A ship event does not establish isolated ship energy
+or independent hull identity. These references are excluded from fitting,
+calibration and candidate selection; they assess a frozen model only.
+
+4. Pretrained tabular model — TabICLv2 regression
+Jingang Qu, David Holzmüller, Gaël Varoquaux and Marine Le Morvan,
+TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model,
+ICML 2026, https://proceedings.mlr.press/v306/qu26a.html
+Official package: tabicl 2.2.0, https://github.com/soda-inria/tabicl
+Weights: https://huggingface.co/jingang/TabICL, BSD-3-Clause model card.
+Checkpoint tabicl-regressor-v2-20260212.ckpt, pinned repository revision
+4dcd344ece2c00be9e831fdd35bed57b5ad83e19, SHA-256
+0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a.
+Public anonymous download, accessed 24 October 2026. No hosted prediction API.
+The estimator receives only synthetic training context for fitting its scalers,
+encoders and in-context targets. We audited training-only feature preprocessing
+and default training-only column attention, and checked query batch independence
+on our own validation data. No AutoML or automatic hyperparameter search tool is
+used. It is a fixed pretrained estimator with explicitly chosen context size and
+feature views. Natural South African observations and challenge Test examples
+are not supplied as labelled context.
+
+5. Pretrained NVIDIA Kumo Tabular Large regression
+NVIDIA Kumo Tabular, release v1.0.1, official implementation
+https://github.com/NVIDIA/structured-data-models (structured-data-models 0.2.1,
+Apache-2.0 code); weights https://huggingface.co/nvidia/Kumo-Tabular under
+OpenMDW-1.1, https://openmdw.ai/license/1-1/ .
+Pinned repository revision 3c3e10bbdb590ace29e7026847f92db3c603096d,
+large/regressor.pt SHA-256
+745e0e5d97e4256d8a24cb61c2eecbd1128da6c83938c196b7589ea6f62e7421.
+Public anonymous download, accessed 24 October 2026. No hosted prediction API.
+The frozen pretrained estimator uses known synthetic training targets as context.
+Feature/target preprocessing is fitted on that context only; queries attend only
+to the context. Query batch independence was checked on our validation data.
+It is a fixed estimator with explicitly chosen settings, not an AutoML search.
+
+Processing and evaluation
+One actual waveform channel and native sample rate are used. Complete 2-second
+Hann periodograms with constant detrending are integrated over the organizer's
+25 base-10 deci-decade bands, centres 10^(1.5+0.1*k), k=0..24. Thirty segment
+powers are averaged in linear units for complete measured minutes. Digital gain
+is not treated as calibrated pressure. Short excerpts retain their actual length;
+surrogate envelopes, retiming, zero extension and smooth channel variation in
+the simulator are assumptions, not additional recorded observations.
+Synthetic mixtures use released South African observations and permitted
+reference energies: E=B+alpha*R. Target share is sum(O*alpha*R)/sum(O*E), with
+O marking observed cells. Missing cells never count as silence or target energy.
+Backgrounds may contain natural ships. Zero controlled addition is not equivalent
+to no naturally present ship. Reference energy includes its recorded ambience.
+Reference hull/day and recording-day partitions are formed before mixture
+generation, with conflict exclusions and checksum duplicate checks. HearMyShip
+has no reliable hull identity, so hull isolation is not claimed for that source.
+Optional spectral prototypes aggregate at least three training source groups;
+they do not index individual clips or identify challenge examples.
+Every South African row is preserved. External weak-teacher scores are recorded
+for all 1,715,779 rows, but failed held-out validation and are NOT used as labels.
+Test.csv is used only for frozen per-window prediction; no test fitting,
+test-distribution tuning, adversarial validation, pseudo-labelling, source-clip
+matching, leaderboard probing or hidden-target reconstruction is used.
+No raw source audio or challenge recordings are redistributed by this declaration.
+This is a draft, not yet posted. No additional organizer approval is claimed.

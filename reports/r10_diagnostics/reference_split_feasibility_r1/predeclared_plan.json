@@ -1,0 +1,44 @@
+{
+  "format": "r10_reference_split_feasibility_plan_v1",
+  "created_utc": "2026-10-26T14:10:20.147659+00:00",
+  "source": "data/versions/vtuad_full_r9/reference_manifest.parquet",
+  "source_sha256": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+  "columns_read": [
+    "reference_row_index",
+    "clip_id",
+    "hull_id",
+    "recording_day",
+    "utc_begin",
+    "utc_end",
+    "duration_seconds",
+    "native_complete_minute_count",
+    "sha256"
+  ],
+  "partition_families": [
+    "chronologicalclosesthalf",
+    "alternatingdays",
+    "earliestyear",
+    "12fixedhashgreedy",
+    "spectraldayaffinity"
+  ],
+  "hash_seeds": [
+    2026102601,
+    2026102602,
+    2026102603,
+    2026102611,
+    2026102612,
+    2026102613,
+    2026102621,
+    2026102622,
+    2026102623,
+    2026102631,
+    2026102632,
+    2026102633
+  ],
+  "primary_balance_constraint": "eachretainedside45%-55%",
+  "secondary_balance_constraint": "abs(retainedA-retainedB)<=1",
+  "optimization": "exactclipretentionDPforeachFIXEDdaypartition;notglobalminbalancedseparator",
+  "temporal_crossday_policy": "conservativelyexcludeUTCmidnightstraddlingclipsbeforeDP",
+  "labels_model_results_acoustic_Test_report_read": false,
+  "production_pool_modified": false
+}

@@ -1,0 +1,90 @@
+{
+  "format": "r12_compact_tree_fit_plan_v1",
+  "created_utc": "2026-10-26T18:55:31.129939+00:00",
+  "training_binding": {
+    "format": "r13_dynamic_mix_24k_tree_binding_v1",
+    "plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c",
+    "data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+    "baseline_TRAIN_sha256": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+    "highshare_TRAIN_sha256": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+    "validation_fit_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "two_augmentation_variants_same_source": true,
+    "independent_source_rows": 12000,
+    "augmentation_rows": 24000,
+    "execution_source_sha256": "fb87bdd170f6c5d296735896072c2e8f09f57f9add68f0418c455b79b2e2df87",
+    "execution_source_path": "ops/train_r13_dynamic_mix_tree_static.py",
+    "static_import_correction_receipt_sha256": "7ba3086ea65c574f924f27db306a48405625d4ab23e22edeeb9e023179aec06b",
+    "development_not_blind": true
+  },
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102712,
+  "include_shape": true,
+  "basis_file_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+  "basis_training_binding": {
+    "version": "r12_cpu_data_ablation_v1",
+    "role": "train",
+    "fold": 0,
+    "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+    "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+    "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+    "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+    "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+    "raw_SA_no_added_recording": true,
+    "unique_source_IDs": 2000
+  },
+  "feature_fit_on_synthetic_train": false,
+  "scaler": "none;fixedrelativefeatures",
+  "PCA": "sharedTRAIN-onlypureSAbackgroundbasis;loadedfrozen",
+  "input_identity": {
+    "train": {
+      "db": "1d480506d433a509b72b28f262fbb2eb524589aedd120dac7f1a92bc30c094f9",
+      "unrounded_db": "908cb7edbe45fbe8a99a7aad449ad9e34853493d1d4241c9d959b1c45ae75af8",
+      "cell_share": "ffc56e3d90fb92e881efd0e3f0fd880f439ddc114ac622b598a2a2e447a38146",
+      "share": "49ed4eeff98611f15da213e69290400e0538f517ea911a1905b232edde41184c",
+      "presence": "170c109ece3ba39f2a6dcf8839e7158a82da4d3dfd62009b1dfda1b738e4df5b",
+      "site": "b2a18ae4224d10c8fef79dc6bda0f48f95017942b90dd69fcf032f8bab7a8581",
+      "source_id": "496d447f642dcf3e9fc30cda21ba013566434ff3cf8414b0e88ca97faa0544a3",
+      "sample_id": "0a7f89d32550f7ef6e5e19d7ff395512515fbf5a3f3264f3550367ed350954c8",
+      "family": "e8884d3b21a8ab5e8cdac22eae867ce4e2efac032fa949fa0fd779eb08cdd123",
+      "base_window_index": "ebc3ec5af031026a2b312755984ef9a3b5539957f9c8711502c284b5c7f796d7",
+      "background_group": "834d134b545f3b2c884756a924f478bda8ae84dc5836b82a2eef4cd091d58856",
+      "reference_index": "14e7a1c8eb8524a799bd5725eb39b85e018d7515d1f5b3b611fcaeb84c37f57b",
+      "explicit_no_source": "be1a3b43c25f6b949c9f7db0e12a832e9cdcd22e7c92a7909a446b5c546c2185",
+      "paired_original_sample_id": "53cd43e52db77546b5de39f982eb1931ed1a083345a5a363805d5630de9d67bc",
+      "augmentation_variant": "14b288bb26edd2267da4cd4530af96ada7c5fe907724c90dedf1df8d39d0a5e3"
+    },
+    "validation_fit": {
+      "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+      "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+      "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+      "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+      "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+      "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+      "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+      "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+      "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+      "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+      "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+      "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+      "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+    }
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "fixture_only": false,
+  "gate_eval_Test_used_for_ES": false
+}

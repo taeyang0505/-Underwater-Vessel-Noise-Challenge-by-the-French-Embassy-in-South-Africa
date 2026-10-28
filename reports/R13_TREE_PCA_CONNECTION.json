@@ -1,0 +1,59 @@
+{
+  "format": "r13_full_tree_PCA_numeric_fixture_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "train_rows": 64,
+  "selection_rows": 16,
+  "maximum_boosting_rounds": 4,
+  "features": 5252,
+  "actual_fold_TRAIN_PCA_sha256": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+  "basis_training_binding": {
+    "version": "r13_full_background_cv_data_v1",
+    "role": "train",
+    "fold": 0,
+    "source_identity": {
+      "version": "r9_minute_full_dataset_v1",
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+      "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+      "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+      "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+      "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+      "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+      "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+      "code_sha256": {
+        "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+        "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+        "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+        "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+        "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+        "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+        "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+      },
+      "reference_count": 509,
+      "reference_independent_CV": false
+    },
+    "source_ids_sha256": "c8b0f5bd9df754216e70af17fc2ad5ad16c33cf2cff71ebd530440e25e71c4f7",
+    "background_npz_sha256": "b5a948b3ec549bafceecc54d8f209643df7be995913263322c69192e5e63566c",
+    "TRAIN_pool_sha256": "bfb6899fd3aa447566402d84892573aa8884bf9e388409d00265e9dd459d8b3f",
+    "config_sha256": "d65abe4c4cde8277b53db8dd4c3a8d42055eb7abbaa54f38f6f773e5061bf1d8",
+    "no_added_component": true,
+    "site_counts": {
+      "1 Richards Bay": 312,
+      "2 Durban": 311,
+      "3 Cape_Recife": 240,
+      "4 Bird Island": 311,
+      "5 St Croix Island": 311,
+      "6 Riy_Banks": 204,
+      "7 St_Francis": 311
+    }
+  },
+  "strict_restore_and_batch1_vs7_max_abs_error": 0.0,
+  "production_fixture_rejected": true,
+  "code_sha256": {
+    "pipeline/trees_ensemble_r13.py": "d65b1f865cb1531c2a9fbc7e3980263d3b105751f4d99bbcbdc7591ff2c8e29e",
+    "ops/verify_r13_tree_pca.py": "a229f5b93cf8bf2a685a8be5ff77857504e992ecd91eb969c8fc58a270462e7f"
+  },
+  "Test_or_report_arrays_or_real_source_model_fit": false,
+  "temporary_fixture_model": "/private/tmp/r13-PCA-tree-ne9e_wr5/model"
+}

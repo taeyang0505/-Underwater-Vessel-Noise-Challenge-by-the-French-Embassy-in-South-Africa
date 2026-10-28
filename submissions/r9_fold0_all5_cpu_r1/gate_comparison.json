@@ -1,0 +1,110 @@
+{
+  "format": "r9_fold0_all5_gate_comparison_v1",
+  "metrics": {
+    "all5_frozen": {
+      "n": 500,
+      "rmse": 0.038135234807417207,
+      "mae": 0.021414881933554966,
+      "bias": 0.002265688482746441
+    },
+    "tree_only": {
+      "n": 500,
+      "rmse": 0.03660291194474782,
+      "mae": 0.020048470608443607,
+      "bias": 0.0005368373546988323
+    },
+    "neural_only_equal": {
+      "n": 500,
+      "rmse": 0.05077673016715222,
+      "mae": 0.028798640432609206,
+      "bias": 0.004858964997185353
+    }
+  },
+  "gate_identity": {
+    "version": "r9_minute_full_dataset_v1",
+    "data_bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+    "role": "ensemble_gate",
+    "fold": 0,
+    "rows": 500,
+    "npz_sha256": "5f464a525eaf0b815565bd54d2e0e8170e46313965167bac29ba0bf56431bb51",
+    "metadata_sha256": "a793c168ef4db5f47cae79b13bdab578496951a57e16d71fe2a44834db6d5814",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "report_access_gate_sha256": null
+  },
+  "all5_worse_than_tree": true,
+  "all5_worse_than_neural_mean": false,
+  "weights_changed_after_gate": false,
+  "all5_positive_retained_even_if_worse": true,
+  "gate_used_for_candidate_selection": false,
+  "fit_timings": {
+    "bg_cnn": {
+      "seconds": 1.349487374536693,
+      "physical_pool_max_abs": 8.378427018840284e-08,
+      "best_window_epoch": 5,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "tfgrid_fdy_conformer": {
+      "seconds": 5.390070832334459,
+      "physical_pool_max_abs": 6.607251978874018e-08,
+      "best_window_epoch": 17,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "fdy": {
+      "seconds": 0.285007500089705,
+      "physical_pool_max_abs": 5.787148138480802e-08,
+      "best_window_epoch": 16,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "itransformer": {
+      "seconds": 0.04116841685026884,
+      "physical_pool_max_abs": 6.65487573936474e-08,
+      "best_window_epoch": 16,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "lgbm_physics": {
+      "seconds": 0.45869954116642475,
+      "examples": 500,
+      "device": "Mac CPU"
+    }
+  },
+  "gate_timings": {
+    "bg_cnn": {
+      "seconds": 1.3311866661533713,
+      "physical_pool_max_abs": 5.8914681577704187e-08,
+      "best_window_epoch": 5,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "tfgrid_fdy_conformer": {
+      "seconds": 5.525102250277996,
+      "physical_pool_max_abs": 6.110912564860627e-08,
+      "best_window_epoch": 17,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "fdy": {
+      "seconds": 0.30335141718387604,
+      "physical_pool_max_abs": 4.0274167667497807e-08,
+      "best_window_epoch": 16,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "itransformer": {
+      "seconds": 0.04127791617065668,
+      "physical_pool_max_abs": 4.262064001725463e-08,
+      "best_window_epoch": 16,
+      "examples": 500,
+      "device": "cpu FP32"
+    },
+    "lgbm_physics": {
+      "seconds": 0.4548363331705332,
+      "examples": 500,
+      "device": "Mac CPU"
+    }
+  },
+  "report_accessed": false
+}

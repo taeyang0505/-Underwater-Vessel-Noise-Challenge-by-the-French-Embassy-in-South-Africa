@@ -1,0 +1,170 @@
+{
+  "run": "fullsources_cpu_a6d7f3a5_seed42",
+  "arguments": {
+    "tag": "fullsources_cpu",
+    "n_train": 16000,
+    "n_val": 3000,
+    "epochs": 8,
+    "models": [
+      "lgbm",
+      "lgbm_physics",
+      "lgbm_retrieval",
+      "tabm",
+      "cnn",
+      "fdy",
+      "itransformer"
+    ],
+    "device": "cpu",
+    "batch": 128,
+    "width": 256,
+    "k": 16,
+    "seed": 42,
+    "trees": 800,
+    "threads": 4
+  },
+  "external_manifest": {
+    "clips": 1670,
+    "segment_shape": [
+      87163,
+      25
+    ],
+    "complete_minute_shape": [
+      2511,
+      25
+    ],
+    "sources": {
+      "HearMyShip_V1": 1145,
+      "VTUAD_v1.3.2": 525
+    },
+    "split_counts": "{('HearMyShip_V1', 'calibration'): 144, ('HearMyShip_V1', 'domain_holdout'): 56, ('HearMyShip_V1', 'train'): 767, ('HearMyShip_V1', 'validation'): 178, ('VTUAD_v1.3.2', 'calibration'): 6, ('VTUAD_v1.3.2', 'domain_holdout'): 15, ('VTUAD_v1.3.2', 'excluded_cross_day_conflict'): 1, ('VTUAD_v1.3.2', 'excluded_hull_day_conflict'): 260, ('VTUAD_v1.3.2', 'train'): 237, ('VTUAD_v1.3.2', 'validation'): 6}",
+    "split_policy": "HMS by recording day (unknown hull recurrence); VTUAD hull/day intersection, conflicting clips excluded; byte-duplicate conflicts excluded",
+    "vtuad_download_complete": true,
+    "failures": [],
+    "test_accessed": false,
+    "source_hash": "a6d7f3a536d0d38b09b41c31999a2384ff238f2ed80402c86f5d97348f1886e1",
+    "day_split_salt": 34,
+    "day_split_selection": "First integer salt with at least 5 AIS-positive clips and 1 ambient recording per fold, selected using registry metadata only, no acoustic features or outcomes",
+    "limitations": "AIS classes are weak; short CPA spectra are not measured 15-minute trajectories. No acoustic absence calibration."
+  },
+  "results": {
+    "constant_validation": {
+      "rmse": 0.3193986480821981
+    },
+    "constant_calibration": {
+      "rmse": 0.32690899760903636
+    },
+    "constant_domain_holdout": {
+      "rmse": 0.32236182365758126
+    },
+    "lgbm_validation": {
+      "rmse": 0.12375266000386126,
+      "score_1_minus_rmse": 0.8762473399961388,
+      "addition_auc": 0.9888708514506376
+    },
+    "lgbm_physics_validation": {
+      "rmse": 0.10328648651434029,
+      "score_1_minus_rmse": 0.8967135134856598,
+      "addition_auc": 0.9891615287350294
+    },
+    "lgbm_retrieval_validation": {
+      "rmse": 0.1023560668770758,
+      "score_1_minus_rmse": 0.8976439331229242,
+      "addition_auc": 0.9885934442161856
+    },
+    "tabm_validation": {
+      "rmse": 0.1452609470656833,
+      "score_1_minus_rmse": 0.8547390529343167,
+      "addition_auc": 0.9771969989466108
+    },
+    "cnn_validation": {
+      "rmse": 0.10541778675371362,
+      "score_1_minus_rmse": 0.8945822132462864,
+      "addition_auc": 0.9809972884864624
+    },
+    "fdy_validation": {
+      "rmse": 0.10987581817302802,
+      "score_1_minus_rmse": 0.890124181826972,
+      "addition_auc": 0.9740134507753816
+    },
+    "itransformer_validation": {
+      "rmse": 0.12003378182119358,
+      "score_1_minus_rmse": 0.8799662181788064,
+      "addition_auc": 0.9761518245370806
+    },
+    "lgbm_calibration": {
+      "rmse": 0.13665227672098149,
+      "score_1_minus_rmse": 0.8633477232790185,
+      "addition_auc": 0.9860052006964115
+    },
+    "lgbm_physics_calibration": {
+      "rmse": 0.11902798677408741,
+      "score_1_minus_rmse": 0.8809720132259126,
+      "addition_auc": 0.9869837352667611
+    },
+    "lgbm_retrieval_calibration": {
+      "rmse": 0.11899678023819567,
+      "score_1_minus_rmse": 0.8810032197618043,
+      "addition_auc": 0.9869873661928106
+    },
+    "tabm_calibration": {
+      "rmse": 0.16741429904097,
+      "score_1_minus_rmse": 0.8325857009590301,
+      "addition_auc": 0.9682735733335109
+    },
+    "cnn_calibration": {
+      "rmse": 0.11102150637720366,
+      "score_1_minus_rmse": 0.8889784936227964,
+      "addition_auc": 0.975671585159437
+    },
+    "fdy_calibration": {
+      "rmse": 0.11155973986008186,
+      "score_1_minus_rmse": 0.8884402601399182,
+      "addition_auc": 0.9669652296469952
+    },
+    "itransformer_calibration": {
+      "rmse": 0.13666985863741726,
+      "score_1_minus_rmse": 0.8633301413625827,
+      "addition_auc": 0.9656841179058514
+    },
+    "lgbm_domain_holdout": {
+      "rmse": 0.14754916639193763,
+      "score_1_minus_rmse": 0.8524508336080624,
+      "addition_auc": 0.9824208089668616
+    },
+    "lgbm_physics_domain_holdout": {
+      "rmse": 0.12544061130000947,
+      "score_1_minus_rmse": 0.8745593886999905,
+      "addition_auc": 0.9860776072124757
+    },
+    "lgbm_retrieval_domain_holdout": {
+      "rmse": 0.1270268182642902,
+      "score_1_minus_rmse": 0.8729731817357098,
+      "addition_auc": 0.9859764863547759
+    },
+    "tabm_domain_holdout": {
+      "rmse": 0.15414314216727792,
+      "score_1_minus_rmse": 0.8458568578327221,
+      "addition_auc": 0.9690302144249513
+    },
+    "cnn_domain_holdout": {
+      "rmse": 0.14816161920296458,
+      "score_1_minus_rmse": 0.8518383807970354,
+      "addition_auc": 0.9729946393762183
+    },
+    "fdy_domain_holdout": {
+      "rmse": 0.12944519922308034,
+      "score_1_minus_rmse": 0.8705548007769197,
+      "addition_auc": 0.9752107699805067
+    },
+    "itransformer_domain_holdout": {
+      "rmse": 0.13100194281809968,
+      "score_1_minus_rmse": 0.8689980571819003,
+      "addition_auc": 0.960235745614035
+    }
+  },
+  "elapsed_seconds": 452.4310019016266,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "test_accessed": false,
+  "data_folder": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/synthetic/fullsources_cpu_a6d7f3a5_seed42",
+  "status": "source-disjoint synthetic experiment; not an official leaderboard result"
+}

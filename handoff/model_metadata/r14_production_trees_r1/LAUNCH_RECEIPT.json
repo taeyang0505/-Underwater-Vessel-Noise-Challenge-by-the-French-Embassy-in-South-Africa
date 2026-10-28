@@ -1,0 +1,18 @@
+{
+  "format": "r14_production_tree_launch_receipt_v1",
+  "status": "launched_not_completed",
+  "driver_pid": 78479,
+  "launch_time_unix_from_lock_mtime": 1793046401.7543623,
+  "recorded_unix": 1793047739.8058019,
+  "run_root": "models/r14_production_trees_r1",
+  "source_sha256": "11afc5d6f6fc2763b49275019859eca1751e007f2cf645cfeb6747ac9460ad43",
+  "plan_sha256": "aaf91d74932e13d693db391e3d836a775a7908b30d1f24bb11f3da898fd01a4e",
+  "plan_file_sha256": "abd50538884c238d3e0852b962e2b9e090595203b58ef1de27b2874614909b40",
+  "config_sha256": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+  "approval_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+  "CPU_threads_per_worker": 2,
+  "new_learners": 8,
+  "completion_barrier": "models/r14_production_trees_r1/ALL_FIVEFOLD_TREES_FROZEN.json",
+  "failure_marker": "models/r14_production_trees_r1/FAILED.json",
+  "no_automatic_restart": true
+}

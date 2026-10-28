@@ -1,0 +1,12 @@
+{
+  "version": "matched_target_transfer_v1",
+  "script_sha256": "758b7789978b8e2f8df996f79a7f8fbfbe111219bb1f137972519eed9c75d361",
+  "purpose": "separate changed reference morphology from target-scale distribution change",
+  "development_followup_after_initial_factorial": true,
+  "n_per_domain": 1000,
+  "source": "same paired source rows, schedule and native R9 references as factorial_transfer_r2",
+  "baseline_target": "float64 physical share reconstructed from r9_complete; compare stored float32 target",
+  "comparison": "combined_stress reference shape, alpha solved to EXACT same per-window share",
+  "interpretation": "scale-only alpha variation disappears at fixed y; complete observations/explicit20%zero remain common",
+  "no_Test_report_training_GPU_weight_fitting": true
+}

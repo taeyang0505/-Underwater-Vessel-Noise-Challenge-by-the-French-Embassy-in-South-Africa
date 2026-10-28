@@ -1,0 +1,21 @@
+{
+  "format": "r13_dynamic_mix_single_condition_policy_v1",
+  "condition": "R13_dynamic_mixP1",
+  "regression_weights": {
+    "CNN": 0.5,
+    "tree": 0.5
+  },
+  "score_classifier_weight": 1.0,
+  "gate_score_AUC": {
+    "0.0": 0.8765,
+    "0.25": 0.907775,
+    "0.5": 0.91235,
+    "1.0": 0.91555
+  },
+  "selection": "Only classifier lambda highest gate AUC, first canonical tie; one recipe, no recipe reranking",
+  "freeze_sha256": "0a11a8c59028d4c100cde85b77b095458c9c1f9143b0334c106db9a89fc496c9",
+  "plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c",
+  "development_not_blind": true,
+  "Test_or_LB_used": false,
+  "policy_sha256": "447ac25b07c12afcd86890297505378ea718c3656ac2c14b703018afb00e010c"
+}

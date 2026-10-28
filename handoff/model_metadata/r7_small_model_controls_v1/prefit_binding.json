@@ -1,0 +1,70 @@
+{
+  "config_sha256": "a878c6b913ca888f70685a7fd85dab41e3c2fa8a3aca562226502645f0888bc9",
+  "declared_config": {
+    "version": "r7_small_model_controls_v1",
+    "status": "predeclared_before_new_Ridge_fit",
+    "threads": 2,
+    "seed": 20261026,
+    "data_version": "data/synthetic/r6_cpu_guardrails_v3_schemafix",
+    "panels": {
+      "inner": "inner_r6.npz",
+      "cross_generator": "cross_generator.npz",
+      "cross_sensor": "cross_sensor.npz",
+      "cross_sensor_generator": "cross_sensor_generator.npz"
+    },
+    "fit_scope": "TRAIN only; no search/early stopping/validation fit",
+    "controls": [
+      "constant0",
+      "constant0_1",
+      "TRAIN_mean",
+      "Ridge27_alpha10",
+      "frozen_R6_relative_LightGBM",
+      "frozen_fixed100_R6_relative_global_CNN"
+    ],
+    "Ridge": {
+      "alpha": 10.0,
+      "solver": "svd",
+      "fit_intercept": true,
+      "features": "existing physics_features_r6_v2(db),27values/masks/counts",
+      "imputer": "mean fitted TRAIN only, keep_empty_features=True",
+      "scaler": "StandardScaler fitted TRAIN only",
+      "prediction_clip": [
+        0.0,
+        1.0
+      ],
+      "score": "predicted share diagnostic proxy; no calibrated presence classifier"
+    },
+    "CNN_policy": "preselected r6law_relative8_global/best_window.pt by own INNER window RMSE; no cross-panel selection",
+    "CNN_transfer_report": "reports/R7_FIXED100_TRANSFER_RESULTS.json",
+    "already_seen_development_panels_not_blind": true,
+    "code_sha256": {
+      "ops/run_r7_small_model_controls.py": "927696218878ccc8abedfebcd88555cef279c0d5d03727cfe787856690c3ad20",
+      "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+      "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+      "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+      "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf"
+    },
+    "input_sha256": {
+      "data/synthetic/r6_cpu_guardrails_v3_schemafix/train_r6.npz": "4b76f3bdf0238e90c89a452662ad35031b5fabed887cc2c8c800af5f8619674e",
+      "data/synthetic/r6_cpu_guardrails_v3_schemafix/inner_r6.npz": "d49f9fd3f87a2b24f6e0cf710a37da537ed07824f2bd80fe825ab571331c9d9d",
+      "data/synthetic/r6_cpu_guardrails_v3_schemafix/cross_generator.npz": "bab8e5ed0f70a16d000862ccea768fd38891bf53e4dedba3c371e9946cb996c2",
+      "data/synthetic/r6_cpu_guardrails_v3_schemafix/cross_sensor.npz": "d21c6433dde6701ff9d4cb566a481fc7a55d19c4165b21283919cf29abb32aca",
+      "data/synthetic/r6_cpu_guardrails_v3_schemafix/cross_sensor_generator.npz": "0be715b11057f4e9a3b20f90d6074ef71026af28d8b8b84bd1a535112cb19eed",
+      "data/synthetic/r6_cpu_guardrails_v3_schemafix/manifest.json": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+      "models/r6_fixed100_v1/r6law_relative8_global/summary.json": "6c370f1315f4bf0f70f54412f6c4c4cc5b270349f32dc1c96e082d1ba771ee34",
+      "models/r6_fixed100_v1/r6law_relative8_global/best_window.pt": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+      "models/r6_fixed100_v1/r6law_relative8_global/window_inner_predictions.npz": "42b6306b8403c5d970d304d44ea2594ab83743116d4d3a777f578b1a1eaffb34",
+      "models/r6_cpu_guardrails_v2/r6law_relative_tree/summary.json": "8dc7c1aab87dd41a2a5c6aa9dfbc4a9ad81581a4323d38af9c6fc74e5e6e10d4",
+      "models/r6_cpu_guardrails_v2/r6law_relative_tree/share.txt": "40d450ed529ade2f70bb5e9b6ee05743c24f4afc729b7684125341944ba754fa",
+      "models/r6_cpu_guardrails_v2/r6law_relative_tree/presence.txt": "a52e0bf77e666e23a940e9a60d877c88f5bea9debad7f8c3bcf6b5764a5c5a91",
+      "models/r6_cpu_guardrails_v2/r6law_relative_tree/inner_predictions.npz": "6f0e39f36ab2d3268f1ea705ec082c7de24c734391401ab7d9f729e64a1424a7",
+      "configs/r6_fixed100_v1.json": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259",
+      "models/r6_fixed100_v1/all_models_frozen.json": "bfa1db940f9d8bb8becb1fa39c21974efb85ded7e007a7248a58c9f467da16cb",
+      "reports/R7_FIXED100_TRANSFER_RESULTS.json": "827851362b87c8f2557de50017b2ba3b2f0f38206f0eda14242c69589c6e626a",
+      "ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/summary.json": "901a29899e35cd7330b3697bd9e42f6d390ae0aabc24b2f67fa7d91dc842cd8c",
+      "configs/r5_training_gpu_r1.json": "05bc0144b514a55c5cc39b504a49458d5705e37c105f6d92819d9b5cd8bbb665"
+    },
+    "Test_old_OUTER_GPU_SSH_or_submission": false,
+    "generator_or_existing_model_mutation": false
+  }
+}

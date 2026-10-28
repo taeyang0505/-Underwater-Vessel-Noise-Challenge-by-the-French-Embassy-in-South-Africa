@@ -1,0 +1,15 @@
+{
+  "arm": {
+    "name": "L0H0P1",
+    "long": false,
+    "HF": false,
+    "shape": true,
+    "legacy_control": false
+  },
+  "epochs": 100,
+  "optimizer": "Adam",
+  "early_stopping": false,
+  "parameters": 26953,
+  "score": "share_only_except_legacy_control",
+  "fixture": false
+}

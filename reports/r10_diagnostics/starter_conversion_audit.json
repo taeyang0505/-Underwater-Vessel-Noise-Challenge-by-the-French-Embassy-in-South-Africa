@@ -1,0 +1,1298 @@
+{
+  "format": "r10_starter_conversion_audit_v1",
+  "created_utc": "2026-10-26T13:57:47.175451+00:00",
+  "status": "completed_no_original_implementation_modified",
+  "notebook_helper_provenance": {
+    "notebook_file": "data/raw/maritime_starter_notebook.ipynb",
+    "notebook_sha256": "08242f4771c38de43ab9022d460b537b5eaa90a687bb1ddb532061b512dd6b83",
+    "reviewed_cell_index": 11,
+    "helper_sha256": "38241ef029c3605119f260678f6e518fcfc81d87110cabdf2ceed5dc6380dde3",
+    "other_notebook_cells_executed": false,
+    "global_dependency": "NumPy only; local scipy.signal.periodogram import"
+  },
+  "source_sha256_before_and_after_identical": {
+    "data/raw/maritime_starter_notebook.ipynb": "08242f4771c38de43ab9022d460b537b5eaa90a687bb1ddb532061b512dd6b83",
+    "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+    "pipeline/prepare_external.py": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "data/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+    "data/processed/external_segments_power.npy": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52"
+  },
+  "code_sha256": "94f84848448da100df2900d325335b48cd4d0573ea3e0f2b53fcff26a0f4086e",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "soundfile": "0.14.0"
+  },
+  "synthetic_case_count": 23,
+  "actual_source_case_count": 1,
+  "cases": [
+    {
+      "case": "tone100_60s",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "3aecbfaae1fec4f4b6bb9275239e135511e5a7f92ae0184a30ce61670f3b90e1",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.2407709219110294e-25,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 5.573622466337191e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 1,
+        "significant_max_relative_error": 6.967028075186452e-08,
+        "significant_ratio_min": 1.0000000696702807,
+        "significant_ratio_max": 1.0000000696702807,
+        "significant_max_abs_db_error": 3.0257417387418484e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.0800000000888202
+    },
+    {
+      "case": "tone100_120s",
+      "sample_rate_hz": 32000,
+      "frames": 3840000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 120.0,
+      "WAV_sha256": "72d664ec7f4be27b00814f3000a177f49ffa7e59795cf29c9f6c81c0d80b6295",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 2,
+      "complete_2s_expected": 60,
+      "official_status": "returned",
+      "official_shape": [
+        2,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 3840000,
+        "duration_seconds": 120.0,
+        "complete_2s_segments": 60,
+        "complete_minutes": 2,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.2407709219110294e-25,
+      "comparison": {
+        "shape": [
+          2,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 5.573622466337191e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 2,
+        "significant_max_relative_error": 6.967028075186452e-08,
+        "significant_ratio_min": 1.0000000696702807,
+        "significant_ratio_max": 1.0000000696702807,
+        "significant_max_abs_db_error": 3.0257417387418484e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.0800000000888202
+    },
+    {
+      "case": "tone100_125p5s",
+      "sample_rate_hz": 32000,
+      "frames": 4016000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 125.5,
+      "WAV_sha256": "50229b36b7f71c6f2c3386c794f44e06d0b153c2bf08731eedbe1a2a4d1509c0",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 2,
+      "complete_2s_expected": 62,
+      "official_status": "returned",
+      "official_shape": [
+        2,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 4016000,
+        "duration_seconds": 125.5,
+        "complete_2s_segments": 62,
+        "complete_minutes": 2,
+        "trailing_seconds_dropped": 1.5,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.2407709219110294e-25,
+      "comparison": {
+        "shape": [
+          2,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 5.573622466337191e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 2,
+        "significant_max_relative_error": 6.967028075186452e-08,
+        "significant_ratio_min": 1.0000000696702807,
+        "significant_ratio_max": 1.0000000696702807,
+        "significant_max_abs_db_error": 3.0257417387418484e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.0800000000888202
+    },
+    {
+      "case": "noise_119p9s",
+      "sample_rate_hz": 32000,
+      "frames": 3836800,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 119.9,
+      "WAV_sha256": "91cbaa4a26289bf7df86abbfcdf0c7fe8663d6394bfaa79287d69858fc26d2d5",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 59,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 3836800,
+        "duration_seconds": 119.9,
+        "complete_2s_segments": 59,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 1.9000000000000057,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 2.7163574991759254e-11,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 1.548844767718105e-10,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 1.5781205709366464e-07,
+        "significant_ratio_min": 0.9999998421879429,
+        "significant_ratio_max": 1.0000001354708397,
+        "significant_max_abs_db_error": 6.853691097947218e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.009925341046471983
+    },
+    {
+      "case": "noise_61p25s",
+      "sample_rate_hz": 32000,
+      "frames": 1960000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 61.25,
+      "WAV_sha256": "7261f26c4ff3bb8ef694a1eb065552a5937f2eedbfc1fdc8c4e470846d7697f3",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1960000,
+        "duration_seconds": 61.25,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 1.25,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 3.492459663481662e-11,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 6.227131657543516e-11,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 1.9056351604700258e-07,
+        "significant_ratio_min": 0.9999998997599157,
+        "significant_ratio_max": 1.000000190563516,
+        "significant_max_abs_db_error": 8.276067559924283e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.009977281103621397
+    },
+    {
+      "case": "noise_59p9s",
+      "sample_rate_hz": 32000,
+      "frames": 1916800,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 59.9,
+      "WAV_sha256": "4e7167f6809b631784b1140ca34efa28d4083b3986cd938b1d0bd3bb7c601d1b",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 0,
+      "complete_2s_expected": 29,
+      "official_status": "rejected",
+      "official_error": "ValueError: At least one complete minute is needed.",
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1916800,
+        "duration_seconds": 59.9,
+        "complete_2s_segments": 29,
+        "complete_minutes": 0,
+        "trailing_seconds_dropped": 1.8999999999999986,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "rejected",
+      "R9_native_error": "ValueError: No complete native minute; never pad/repeat short audio",
+      "first_2s_mean_square": 0.009883363532183385
+    },
+    {
+      "case": "noise_20s",
+      "sample_rate_hz": 32000,
+      "frames": 640000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 20.0,
+      "WAV_sha256": "115c1a3551d565d74dc81287bff23849751322be51d8f8602e5afb717b9c6c91",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 0,
+      "complete_2s_expected": 10,
+      "official_status": "rejected",
+      "official_error": "ValueError: At least one complete minute is needed.",
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 640000,
+        "duration_seconds": 20.0,
+        "complete_2s_segments": 10,
+        "complete_minutes": 0,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "rejected",
+      "R9_native_error": "ValueError: No complete native minute; never pad/repeat short audio",
+      "first_2s_mean_square": 0.01004871547743531
+    },
+    {
+      "case": "noise_1p5s",
+      "sample_rate_hz": 32000,
+      "frames": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 1.5,
+      "WAV_sha256": "17022933ff81ca84c91f2b84d64e64bff52ff4fce7a77ab8f765275914656a2f",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 0,
+      "complete_2s_expected": 0,
+      "official_status": "rejected",
+      "official_error": "ValueError: At least one complete minute is needed.",
+      "external_status": "rejected",
+      "external_error": "ValueError: Less than two seconds of observed audio",
+      "first_2s_mean_square": 0.010013354672929773
+    },
+    {
+      "case": "white_noise_32k",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "a40cfd386add4f8d64a432c766d4538ee7f2558776fdb2df25b1b4393ec9273e",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.746229831740831e-11,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 7.413734058082933e-11,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 1.0700552966304756e-07,
+        "significant_ratio_min": 0.9999999338831538,
+        "significant_ratio_max": 1.0000001070055298,
+        "significant_max_abs_db_error": 4.647190862598969e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.009974928400584834
+    },
+    {
+      "case": "white_noise_48k",
+      "sample_rate_hz": 48000,
+      "frames": 2880000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "79c016d8ffcd8343bd8cc6dc373c5d73d6bf77e2f6c5d6d69812b12b7a5d4293",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 2880000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.940255367396254e-11,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 1.0193068698122199e-10,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 1.3387962396788225e-07,
+        "significant_ratio_min": 0.9999999030228035,
+        "significant_ratio_max": 1.000000133879624,
+        "significant_max_abs_db_error": 5.814317807363857e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.009948787859331901
+    },
+    {
+      "case": "white_noise_96k",
+      "sample_rate_hz": 96000,
+      "frames": 5760000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "44fa1aa8e8befc73fa63dec8cdf21dae18c9e12d4732fac84cf3036c2182e0fb",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 96000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 5760000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 6.7908937479398135e-12,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 7.423367649750379e-11,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 2.4516068494271696e-07,
+        "significant_ratio_min": 0.999999944265308,
+        "significant_ratio_max": 1.0000002451606849,
+        "significant_max_abs_db_error": 1.0647191956475074e-06,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.010059383421005753
+    },
+    {
+      "case": "unsupported_16k",
+      "sample_rate_hz": 16000,
+      "frames": 960000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "f9284e1702675a9bf039b20a41b0292ce74c745368d6fc431a4112e3a93dd96e",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [
+        24
+      ],
+      "external_status": "rejected",
+      "external_error": "ValueError: Does not support all 25 target bands",
+      "first_2s_mean_square": 0.009923777519779105
+    },
+    {
+      "case": "nyquist_17825",
+      "sample_rate_hz": 17825,
+      "frames": 1069500,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "08d02bc42ae4079c23971e00918abee3263820a2dd8415582590ebc557a69adc",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [
+        24
+      ],
+      "external_status": "rejected",
+      "external_error": "ValueError: Does not support all 25 target bands",
+      "first_2s_mean_square": 0.00989040613034285
+    },
+    {
+      "case": "nyquist_17826",
+      "sample_rate_hz": 17826,
+      "frames": 1069560,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "db73d1e6aba65f1fc309a9185965c3d521ea2006a3dd6972c5bbde4741536946",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 17826,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1069560,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.0477378947076899e-10,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 2.4596255934761224e-10,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 1.392825609735088e-07,
+        "significant_ratio_min": 0.999999879135304,
+        "significant_ratio_max": 1.000000139282561,
+        "significant_max_abs_db_error": 6.048964347254974e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.009873862169530997
+    },
+    {
+      "case": "below_first_edge_28Hz",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "990ddf657f30cd93294c81577641efa1acc4c6f3fd6f4134d812fe54d9338349",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.7922246615587226e-25,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 3.285019808257905e-10,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 1,
+        "significant_max_relative_error": 2.463764857236246e-08,
+        "significant_ratio_min": 1.0000000246376486,
+        "significant_ratio_max": 1.0000000246376486,
+        "significant_max_abs_db_error": 1.0699994697009007e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.07999999996585709
+    },
+    {
+      "case": "inside_first_edge_28p5Hz",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "2a54bf1fff77e478030d15ff44172c8b98aa29e89d36a98792bc3070a97d0947",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.7922246615587226e-25,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 3.570603493430191e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 1,
+        "significant_max_relative_error": 5.3559052476702705e-08,
+        "significant_ratio_min": 1.0000000535590525,
+        "significant_ratio_max": 1.0000000535590525,
+        "significant_max_abs_db_error": 2.3260400345259013e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.07999999990273236
+    },
+    {
+      "case": "inside_first_high_35Hz",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "5f540936dd15f9e797a33bd791af92c27787a0acc34223966f1b1be7c776497f",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.930088096470646e-25,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 3.386494362711545e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 2,
+        "significant_max_relative_error": 5.079741537175893e-08,
+        "significant_ratio_min": 1.0000000228577857,
+        "significant_ratio_max": 1.0000000507974154,
+        "significant_max_abs_db_error": 2.20610366364014e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.0800000001082706
+    },
+    {
+      "case": "above_first_high_35p5Hz",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "5ffa6ed90753a2da532d49db619d3c6bf489c75f001aaa30b7b1f5eaba822a43",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.930088096470646e-25,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 3.553251567978144e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 2,
+        "significant_max_relative_error": 5.3298773580683765e-08,
+        "significant_ratio_min": 1.0000000246622345,
+        "significant_ratio_max": 1.0000000532987736,
+        "significant_max_abs_db_error": 2.314736265713109e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.07999999990273236
+    },
+    {
+      "case": "outside_all_bands_12k",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "7fd28a4d93ce5216b0a907ae049f3026ab3d180efbe6f716b60e1805fefb8f7e",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 5.514537396476932e-26,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 3.0407010412064828e-24,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 20,
+        "significant_max_relative_error": 7.760663965188612e-07,
+        "significant_ratio_min": 0.9999992239336035,
+        "significant_ratio_max": 1.000000093061673,
+        "significant_max_abs_db_error": 3.3704148436490556e-06,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.08000000488057313
+    },
+    {
+      "case": "DC_plus_noise",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "c92ce46b68ee5bf8cb13ccf3d07592e129ded31efc13723acb980e938caefec4",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.0671404515258387e-11,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 6.44091679405552e-11,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 25,
+        "significant_max_relative_error": 2.242362969026824e-07,
+        "significant_ratio_min": 0.9999997757637031,
+        "significant_ratio_max": 1.0000000603044341,
+        "significant_max_abs_db_error": 9.738459728906952e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.06493129535356788
+    },
+    {
+      "case": "linear_then_log",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "53fb42248c1a2bf155f00231701d41d0ee48abd6c0dff31fd5d58bd0f43362be",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 2.561137080192566e-09,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 1.323800236097128e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 1,
+        "significant_max_relative_error": 6.457562061253292e-09,
+        "significant_ratio_min": 0.999999993542438,
+        "significant_ratio_max": 0.999999993542438,
+        "significant_max_abs_db_error": 2.8044835698579168e-08,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.005000000005551263
+    },
+    {
+      "case": "stereo_first_channel",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 2,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "a869447b0f024617abaa579977de5581817407698ce1d51dc401ed762f94655b",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 2,
+        "selected_channel": 0,
+        "frames": 1920000,
+        "duration_seconds": 60.0,
+        "complete_2s_segments": 30,
+        "complete_minutes": 1,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.2407709219110294e-25,
+      "comparison": {
+        "shape": [
+          1,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 5.573622466337191e-09,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 1,
+        "significant_max_relative_error": 6.967028075186452e-08,
+        "significant_ratio_min": 1.0000000696702807,
+        "significant_ratio_max": 1.0000000696702807,
+        "significant_max_abs_db_error": 3.0257417387418484e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.0800000000888202,
+      "official_direct_stereo_rejected": "ValueError: Use one channel with finite samples.",
+      "channel1_total_band_power": 0.004999999974702993,
+      "channel0_total_band_power": 0.0800000000888188
+    },
+    {
+      "case": "silence_60s",
+      "sample_rate_hz": 32000,
+      "frames": 1920000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "duration_seconds": 60.0,
+      "WAV_sha256": "8d89577fdc4dff1b2114cfbdf94ea1c65c7790cfc9dd38f5cb69c2d8c89984fd",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 1,
+      "complete_2s_expected": 30,
+      "official_status": "returned",
+      "official_shape": [
+        1,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "rejected",
+      "external_error": "ValueError: Zero-power audio segment",
+      "first_2s_mean_square": 0.0
+    },
+    {
+      "case": "actual_VTUAD_original_TRAIN_120s",
+      "sample_rate_hz": 32000,
+      "frames": 3840000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "duration_seconds": 120.0,
+      "WAV_sha256": "046492f97124201ab60fb6afbe111b5de3d7340b7ed919a8e87264f2b1982974",
+      "official_input_channel": 0,
+      "complete_minutes_expected": 2,
+      "complete_2s_expected": 60,
+      "official_status": "returned",
+      "official_shape": [
+        2,
+        25
+      ],
+      "official_unsupported_band_indices": [],
+      "external_status": "returned",
+      "external_audit": {
+        "sample_rate_hz": 32000,
+        "channels": 1,
+        "selected_channel": 0,
+        "frames": 3840000,
+        "duration_seconds": 120.0,
+        "complete_2s_segments": 60,
+        "complete_minutes": 2,
+        "trailing_seconds_dropped": 0.0,
+        "units": "uncalibrated digital mean-square band power"
+      },
+      "R9_native_status": "returned",
+      "direct_minutes_vs_R9_native_max_abs": 1.3618735751088734e-15,
+      "comparison": {
+        "shape": [
+          2,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 2.5653912106771174e-15,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 50,
+        "significant_max_relative_error": 1.8839246707901678e-07,
+        "significant_ratio_min": 0.9999998421615011,
+        "significant_ratio_max": 1.0000001883924672,
+        "significant_max_abs_db_error": 8.181780122232816e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      },
+      "first_2s_mean_square": 0.0009218310312135145,
+      "source_clip_id": "046492f97124201a",
+      "source_WAV_sha256": "046492f97124201ab60fb6afbe111b5de3d7340b7ed919a8e87264f2b1982974",
+      "archive_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/357.wav",
+      "original_split": "train",
+      "weak_class": "cargo",
+      "preselection_candidates": 177,
+      "current_reference_index": 5,
+      "existing_cache_segments_bitwise_equal": true,
+      "existing_cache_segments_max_abs": 0.0,
+      "official_vs_existing_R9_cache": {
+        "shape": [
+          2,
+          25
+        ],
+        "finite_mask_equal": true,
+        "max_absolute_power_error": 2.5653912106771174e-15,
+        "significance_rule": "official band power > max(1e-8*minute maximum,1e-25)",
+        "significant_cells": 50,
+        "significant_max_relative_error": 1.8839246707901678e-07,
+        "significant_ratio_min": 0.9999998421615011,
+        "significant_ratio_max": 1.0000001883924672,
+        "significant_max_abs_db_error": 8.181780122232816e-07,
+        "all_cells_including_numerical_leakage_note": "Near-zero out-of-band FFT leakage is not a stable relative-error denominator."
+      }
+    }
+  ],
+  "independent_fft_arithmetic": {
+    "segment_samples": 64000,
+    "nfft": 64000,
+    "df_hz": 0.5,
+    "rfftfreq_equal": true,
+    "Hann_sum_w2_over_N": 0.375,
+    "manual_Hann_vs_scipy_window_max_abs": 5.551115123125783e-16,
+    "manual_density_vs_periodogram_max_abs": 1.3721933745519665e-19,
+    "integral_all_frequency": 0.009976788031780488,
+    "window_weighted_detrended_mean_square": 0.009976788031780487,
+    "PSD_float32_input_dtype": "float32",
+    "PSD_float64_input_dtype": "float64"
+  },
+  "band_bounds": [
+    {
+      "band": 0,
+      "centre_hz": 31.622776601683793,
+      "low_inclusive_hz": 28.18382931264454,
+      "high_exclusive_hz": 35.48133892335754,
+      "bins_at_df0p5": 14,
+      "sum_PSD_times_df_div_mean_PSD": 7.0
+    },
+    {
+      "band": 1,
+      "centre_hz": 39.810717055349734,
+      "low_inclusive_hz": 35.481338923357555,
+      "high_exclusive_hz": 44.66835921509632,
+      "bins_at_df0p5": 19,
+      "sum_PSD_times_df_div_mean_PSD": 9.5
+    },
+    {
+      "band": 2,
+      "centre_hz": 50.11872336272722,
+      "low_inclusive_hz": 44.66835921509631,
+      "high_exclusive_hz": 56.2341325190349,
+      "bins_at_df0p5": 23,
+      "sum_PSD_times_df_div_mean_PSD": 11.5
+    },
+    {
+      "band": 3,
+      "centre_hz": 63.09573444801933,
+      "low_inclusive_hz": 56.234132519034915,
+      "high_exclusive_hz": 70.7945784384138,
+      "bins_at_df0p5": 29,
+      "sum_PSD_times_df_div_mean_PSD": 14.5
+    },
+    {
+      "band": 4,
+      "centre_hz": 79.43282347242814,
+      "low_inclusive_hz": 70.7945784384138,
+      "high_exclusive_hz": 89.12509381337453,
+      "bins_at_df0p5": 37,
+      "sum_PSD_times_df_div_mean_PSD": 18.5
+    },
+    {
+      "band": 5,
+      "centre_hz": 100.0,
+      "low_inclusive_hz": 89.12509381337456,
+      "high_exclusive_hz": 112.20184543019633,
+      "bins_at_df0p5": 46,
+      "sum_PSD_times_df_div_mean_PSD": 23.0
+    },
+    {
+      "band": 6,
+      "centre_hz": 125.89254117941675,
+      "low_inclusive_hz": 112.20184543019639,
+      "high_exclusive_hz": 141.25375446227545,
+      "bins_at_df0p5": 58,
+      "sum_PSD_times_df_div_mean_PSD": 29.0
+    },
+    {
+      "band": 7,
+      "centre_hz": 158.48931924611142,
+      "low_inclusive_hz": 141.2537544622755,
+      "high_exclusive_hz": 177.82794100389233,
+      "bins_at_df0p5": 73,
+      "sum_PSD_times_df_div_mean_PSD": 36.5
+    },
+    {
+      "band": 8,
+      "centre_hz": 199.52623149688787,
+      "low_inclusive_hz": 177.82794100389222,
+      "high_exclusive_hz": 223.87211385683383,
+      "bins_at_df0p5": 92,
+      "sum_PSD_times_df_div_mean_PSD": 46.0
+    },
+    {
+      "band": 9,
+      "centre_hz": 251.18864315095797,
+      "low_inclusive_hz": 223.87211385683395,
+      "high_exclusive_hz": 281.8382931264453,
+      "bins_at_df0p5": 116,
+      "sum_PSD_times_df_div_mean_PSD": 58.0
+    },
+    {
+      "band": 10,
+      "centre_hz": 316.22776601683796,
+      "low_inclusive_hz": 281.8382931264454,
+      "high_exclusive_hz": 354.81338923357544,
+      "bins_at_df0p5": 146,
+      "sum_PSD_times_df_div_mean_PSD": 73.0
+    },
+    {
+      "band": 11,
+      "centre_hz": 398.1071705534973,
+      "low_inclusive_hz": 354.81338923357555,
+      "high_exclusive_hz": 446.6835921509632,
+      "bins_at_df0p5": 184,
+      "sum_PSD_times_df_div_mean_PSD": 92.0
+    },
+    {
+      "band": 12,
+      "centre_hz": 501.18723362727246,
+      "low_inclusive_hz": 446.6835921509633,
+      "high_exclusive_hz": 562.3413251903493,
+      "bins_at_df0p5": 231,
+      "sum_PSD_times_df_div_mean_PSD": 115.5
+    },
+    {
+      "band": 13,
+      "centre_hz": 630.957344480193,
+      "low_inclusive_hz": 562.3413251903489,
+      "high_exclusive_hz": 707.9457843841376,
+      "bins_at_df0p5": 291,
+      "sum_PSD_times_df_div_mean_PSD": 145.5
+    },
+    {
+      "band": 14,
+      "centre_hz": 794.3282347242822,
+      "low_inclusive_hz": 707.9457843841386,
+      "high_exclusive_hz": 891.2509381337462,
+      "bins_at_df0p5": 367,
+      "sum_PSD_times_df_div_mean_PSD": 183.5
+    },
+    {
+      "band": 15,
+      "centre_hz": 1000.0,
+      "low_inclusive_hz": 891.2509381337456,
+      "high_exclusive_hz": 1122.0184543019634,
+      "bins_at_df0p5": 462,
+      "sum_PSD_times_df_div_mean_PSD": 231.0
+    },
+    {
+      "band": 16,
+      "centre_hz": 1258.9254117941675,
+      "low_inclusive_hz": 1122.0184543019639,
+      "high_exclusive_hz": 1412.5375446227545,
+      "bins_at_df0p5": 581,
+      "sum_PSD_times_df_div_mean_PSD": 290.5
+    },
+    {
+      "band": 17,
+      "centre_hz": 1584.893192461114,
+      "low_inclusive_hz": 1412.537544622755,
+      "high_exclusive_hz": 1778.2794100389233,
+      "bins_at_df0p5": 731,
+      "sum_PSD_times_df_div_mean_PSD": 365.5
+    },
+    {
+      "band": 18,
+      "centre_hz": 1995.2623149688789,
+      "low_inclusive_hz": 1778.2794100389224,
+      "high_exclusive_hz": 2238.7211385683386,
+      "bins_at_df0p5": 921,
+      "sum_PSD_times_df_div_mean_PSD": 460.5
+    },
+    {
+      "band": 19,
+      "centre_hz": 2511.886431509582,
+      "low_inclusive_hz": 2238.7211385683418,
+      "high_exclusive_hz": 2818.3829312644557,
+      "bins_at_df0p5": 1159,
+      "sum_PSD_times_df_div_mean_PSD": 579.5
+    },
+    {
+      "band": 20,
+      "centre_hz": 3162.2776601683795,
+      "low_inclusive_hz": 2818.3829312644543,
+      "high_exclusive_hz": 3548.1338923357544,
+      "bins_at_df0p5": 1460,
+      "sum_PSD_times_df_div_mean_PSD": 730.0
+    },
+    {
+      "band": 21,
+      "centre_hz": 3981.0717055349733,
+      "low_inclusive_hz": 3548.1338923357557,
+      "high_exclusive_hz": 4466.835921509632,
+      "bins_at_df0p5": 1837,
+      "sum_PSD_times_df_div_mean_PSD": 918.5
+    },
+    {
+      "band": 22,
+      "centre_hz": 5011.872336272725,
+      "low_inclusive_hz": 4466.835921509633,
+      "high_exclusive_hz": 5623.413251903493,
+      "bins_at_df0p5": 2313,
+      "sum_PSD_times_df_div_mean_PSD": 1156.5
+    },
+    {
+      "band": 23,
+      "centre_hz": 6309.573444801937,
+      "low_inclusive_hz": 5623.413251903495,
+      "high_exclusive_hz": 7079.457843841383,
+      "bins_at_df0p5": 2912,
+      "sum_PSD_times_df_div_mean_PSD": 1456.0
+    },
+    {
+      "band": 24,
+      "centre_hz": 7943.282347242822,
+      "low_inclusive_hz": 7079.4578438413855,
+      "high_exclusive_hz": 8912.509381337462,
+      "bins_at_df0p5": 3667,
+      "sum_PSD_times_df_div_mean_PSD": 1833.5
+    }
+  ],
+  "conversion_equations": {
+    "PSD": "abs(rfft((x-mean(x))*periodic_Hann))^2/(fs*sum(Hann^2)); double interior one-sided bins",
+    "band_energy": "sum(PSD bins with low<=f<high)*df",
+    "minute": "mean of30 complete2s band-energy rows in linear units",
+    "band_grid": "10^(1.5+.1*j), edges centre*10^(+/- .05)",
+    "nfft": "2*actual integer fs; no zero padding or resampling",
+    "log": "not taken inside either helper; linear averaging precedes downstream logarithm"
+  },
+  "expected_policy_differences": [
+    "Official helper accepts one channel only; our WAV reader explicitly chooses channel0.",
+    "Official helper emits NaN for unsupported bands; ours rejects a WAV lacking any of25 bands.",
+    "Official helper rejects <60s; external extraction retains complete2s rows but R9 native_minutes rejects <30rows.",
+    "Official helper returns zero for silence; ours rejects zero-power segments/minutes.",
+    "Official helper computes fromfloat64 samples; ours decodesfloat32, FFT PSD isfloat32 and storedbandpower isfloat32."
+  ],
+  "no_model_fit_Test_report_network_or_external_transmission": true,
+  "source_audio_archives_numeric_bank_and_existing_cache_unchanged": true,
+  "scope": "Parity with optional starter conversion does not verify SA export calibration or the hidden synthesis generator.",
+  "elapsed_seconds": 1.5652849171310663
+}

@@ -1,0 +1,45 @@
+{
+  "models": [
+    "cnn",
+    "fdy",
+    "itransformer",
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm"
+  ],
+  "weights": [
+    0.3871615848763976,
+    0.03544407174054002,
+    0.10663490938265406,
+    7.921100591673017e-18,
+    0.14485611700819456,
+    0.3259033169922138,
+    0.0
+  ],
+  "affine": [
+    1.0638792757593076,
+    -0.025002652224323994
+  ],
+  "affine_selected_by_calibration_crossfit": true,
+  "calibration_cv_rmse": 0.10312226712097015,
+  "results": {
+    "validation": {
+      "ensemble_rmse": 0.09324966576015413,
+      "calibrated_rmse": 0.09247017007672834,
+      "zero_addition_mean": 0.033021122291013956
+    },
+    "calibration": {
+      "ensemble_rmse": 0.10444883171029727,
+      "calibrated_rmse": 0.1030746405830774,
+      "zero_addition_mean": 0.03327359954299082
+    },
+    "domain_holdout": {
+      "ensemble_rmse": 0.12038682091416106,
+      "calibrated_rmse": 0.1188299240907172,
+      "zero_addition_mean": 0.07136776537559773
+    }
+  },
+  "test_accessed": false,
+  "policy": "weights from validation; affine from calibration; domain holdout reported once, not used to choose weights"
+}

@@ -1,0 +1,133 @@
+{
+  "run": "pilot_hms150_96a9d93a_seed42",
+  "arguments": {
+    "tag": "pilot_hms150",
+    "n_train": 8000,
+    "n_val": 1500,
+    "epochs": 4,
+    "models": [
+      "lgbm",
+      "tabm",
+      "cnn",
+      "fdy",
+      "itransformer"
+    ],
+    "device": "cpu",
+    "batch": 128,
+    "width": 128,
+    "k": 8,
+    "seed": 42,
+    "trees": 400,
+    "threads": 4
+  },
+  "external_manifest": {
+    "clips": 150,
+    "segment_shape": [
+      1500,
+      25
+    ],
+    "complete_minute_shape": [
+      0,
+      25
+    ],
+    "sources": {
+      "HearMyShip_V1": 150
+    },
+    "vtuad_download_complete": false,
+    "failures": [],
+    "test_accessed": false,
+    "source_hash": "96a9d93a45b067e618cee597ddf74c7c6925a224f6afff401e1f155ac1e1b7da",
+    "limitations": "AIS classes are weak; short CPA spectra are not measured 15-minute trajectories. No acoustic absence calibration."
+  },
+  "results": {
+    "constant_validation": {
+      "rmse": 0.3210838553719208
+    },
+    "constant_calibration": {
+      "rmse": 0.32219371814586856
+    },
+    "constant_domain_holdout": {
+      "rmse": 0.3220705684324863
+    },
+    "lgbm_validation": {
+      "rmse": 0.12068428857743006,
+      "score_1_minus_rmse": 0.8793157114225699,
+      "addition_auc": 0.9900389863547758
+    },
+    "tabm_validation": {
+      "rmse": 0.16828949931972456,
+      "score_1_minus_rmse": 0.8317105006802754,
+      "addition_auc": 0.9572782651072125
+    },
+    "cnn_validation": {
+      "rmse": 0.117804452977977,
+      "score_1_minus_rmse": 0.882195547022023,
+      "addition_auc": 0.9584819688109162
+    },
+    "fdy_validation": {
+      "rmse": 0.12354162448037485,
+      "score_1_minus_rmse": 0.8764583755196251,
+      "addition_auc": 0.9585526315789473
+    },
+    "itransformer_validation": {
+      "rmse": 0.13673241410774498,
+      "score_1_minus_rmse": 0.863267585892255,
+      "addition_auc": 0.966917641325536
+    },
+    "lgbm_calibration": {
+      "rmse": 0.13564592866306613,
+      "score_1_minus_rmse": 0.8643540713369339,
+      "addition_auc": 0.9881572876258181
+    },
+    "tabm_calibration": {
+      "rmse": 0.18510745367252657,
+      "score_1_minus_rmse": 0.8148925463274734,
+      "addition_auc": 0.9433620022508722
+    },
+    "cnn_calibration": {
+      "rmse": 0.12687174316040847,
+      "score_1_minus_rmse": 0.8731282568395915,
+      "addition_auc": 0.946669954274582
+    },
+    "fdy_calibration": {
+      "rmse": 0.12709147910553095,
+      "score_1_minus_rmse": 0.872908520894469,
+      "addition_auc": 0.9318610708975902
+    },
+    "itransformer_calibration": {
+      "rmse": 0.1421067467038046,
+      "score_1_minus_rmse": 0.8578932532961954,
+      "addition_auc": 0.9594232689401615
+    },
+    "lgbm_domain_holdout": {
+      "rmse": 0.14743275101413134,
+      "score_1_minus_rmse": 0.8525672489858687,
+      "addition_auc": 0.9859820656871219
+    },
+    "tabm_domain_holdout": {
+      "rmse": 0.16962413901930679,
+      "score_1_minus_rmse": 0.8303758609806933,
+      "addition_auc": 0.9769044158089102
+    },
+    "cnn_domain_holdout": {
+      "rmse": 0.13542414531475033,
+      "score_1_minus_rmse": 0.8645758546852497,
+      "addition_auc": 0.9560702640056574
+    },
+    "fdy_domain_holdout": {
+      "rmse": 0.15746055984357146,
+      "score_1_minus_rmse": 0.8425394401564286,
+      "addition_auc": 0.9532956509782353
+    },
+    "itransformer_domain_holdout": {
+      "rmse": 0.15514008175603716,
+      "score_1_minus_rmse": 0.8448599182439629,
+      "addition_auc": 0.9636108273748724
+    }
+  },
+  "elapsed_seconds": 102.97152209281921,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "test_accessed": false,
+  "data_folder": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/synthetic/pilot_hms150_96a9d93a_seed42",
+  "status": "source-disjoint synthetic experiment; not an official leaderboard result"
+}

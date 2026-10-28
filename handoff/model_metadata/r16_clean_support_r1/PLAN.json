@@ -1,0 +1,41 @@
+{
+  "status": "fixed_before_training",
+  "arms": [
+    "S1_H0_F1",
+    "S1_H15_F1"
+  ],
+  "source_sha256": {
+    "reports/r16_support_temporal_r1/data/manifest.json": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80",
+    "ops/r16_clean_support_check.py": "44fe8d417cc1a3ed5f5f4ffb3d4036ebae1e45e2e9b0b1119f26385e9347b258",
+    "reports/r16_clean_support_r1/PROTOCOL.md": "81479d7c5b5fb234fc1d1f3844e76884cdce6bf7ec0fbc71cb71b7d22878165c",
+    "reports/r16_support_temporal_r1/data/train/D0.npz": "417343a89eb47042be4def0f64de06c1338d62b44319dc994d13eeeeaf8040ec",
+    "reports/r16_support_temporal_r1/data/train/D1.npz": "560f54c00d2e7955ffc2ee70af266bb40e684e982ca704aa1ef855c70758ec99",
+    "reports/r16_support_temporal_r1/data/HF_SWAP_RECEIPTS.json": "b53432ffdf40e606e64391b1cdc54f3e0608d3e5897e9f648a45fefb272a9648",
+    "reports/r16_clean_support_r1/data/S1_H0_F1.npz": "8142f8ecf20e7c717f3edaa21ace21fb86162e455bc070d1e228632dba31cda2",
+    "reports/r16_clean_support_r1/data/S1_H15_F1.npz": "46ff1a035fd875b174dd0aeecddd1ccf7b9ac15a3df1d3ea04a307bcd032a305",
+    "ops/r16_support_temporal_models.py": "7c2534091c37998954506b93dffca67908a68601d39821c40fbd58338fc75f8a",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "ops/r16_clean_models.py": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb"
+  },
+  "seed": 2026102817,
+  "epochs": 100,
+  "Adam": true,
+  "early_stopping_NN": false,
+  "CPU_processes": 2,
+  "CPU_threads_each": 2,
+  "fixed_regression": {
+    "Tree": 0.6,
+    "NN": 0.4
+  },
+  "fixed_score": {
+    "Tree_classifier": 0.5,
+    "NN_classifier": 0.5,
+    "share": 0
+  },
+  "extra_score_candidate": "D0F1 classifier unchanged; no fitting weights on locked panels",
+  "Test_used": false
+}

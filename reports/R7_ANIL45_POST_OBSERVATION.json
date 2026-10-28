@@ -1,0 +1,36 @@
+{
+  "source_url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/discussions/35531",
+  "observed_date_Asia_Seoul": "2026-10-26",
+  "method": "Root directly read complete native accessibility tree in logged-in NAVER Whale after the web reader could not open the page",
+  "title": "External data declaration: VTUAD (rebuilt) v1.3.2 (Ocean Networks Canada)",
+  "author_handle": "Anil45",
+  "displayed_publication_date": "24 Oct 2026, 04:16",
+  "dataset": {
+    "name": "VTUAD (rebuilt)",
+    "version": "v1.3.2",
+    "authors_attribution": "Yuan et al.",
+    "DOI": "10.5281/zenodo.23037895",
+    "licence_declared": "CC BY 4.0",
+    "upstream": "Ocean Networks Canada",
+    "upstream_DOI": "10.17616/R3RW43"
+  },
+  "declared_files": [
+    "vtuad_strict_wav_vessel.zip.part01–03",
+    "vtuad_strict_wav_background.zip",
+    "12 per-class archives named vtuad_wav_<class>.zip from the same record"
+  ],
+  "declared_access": "Free Zenodo download without account",
+  "declared_preprocessing_paraphrase": "Use the starter notebook minute_band_power conversion to the 25 bands; uncalibrated",
+  "Test_use_declared": "inference only",
+  "displayed_answer_count": 0,
+  "not_disclosed_in_this_post": [
+    "training model architecture and optimizer",
+    "synthesis recipe and reference scaling",
+    "which exact clips or groups were actually used",
+    "training/validation split",
+    "ensemble or postprocessing",
+    "number of local experiments"
+  ],
+  "external_communication_or_new_submission": false,
+  "interpretation": "This is a source declaration. It does not establish the hidden Test reference origin or the author's complete solution."
+}

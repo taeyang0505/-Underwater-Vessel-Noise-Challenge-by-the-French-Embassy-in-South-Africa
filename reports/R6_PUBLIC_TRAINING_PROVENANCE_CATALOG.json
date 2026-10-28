@@ -1,0 +1,349 @@
+{
+  "status": "bounded_public_provenance_search_completed",
+  "date_accessed": "2026-10-26",
+  "created_utc": "2026-10-25T21:00:40.389226+00:00",
+  "scope": "Released SouthAfrican TRAIN archive origin only; no hidden Test origin, timestamps, identities or backgrounds sought",
+  "conclusion": "Official provider attribution and related research are confirmed; no independent preexisting public catalogue/download/dataset DOI matching the exact ten-site1,715,779-record archive was verified. Not finding a record does not prove it does not exist.",
+  "local_metadata": {
+    "stations": 10,
+    "station_row_count_sum": 1715779,
+    "recorder_metadata_rows": 17,
+    "recorder_row_count_sum": 1715779,
+    "first_released_export_timestamp": "2015-04-21 00:00:00",
+    "last_released_export_timestamp": "2025-12-06 23:59:00",
+    "station_roster": [
+      {
+        "site": "1 Richards Bay",
+        "records": 1001174,
+        "first": "2017-05-09 00:00:02",
+        "last": "2024-05-25 23:59:00"
+      },
+      {
+        "site": "10 Sea Point",
+        "records": 3660,
+        "first": "2018-10-11 10:00:02",
+        "last": "2018-10-13 23:59:00"
+      },
+      {
+        "site": "13 Saldhana Bay",
+        "records": 134732,
+        "first": "2022-03-22 00:00:00",
+        "last": "2023-05-29 04:34:00"
+      },
+      {
+        "site": "2 Durban",
+        "records": 44640,
+        "first": "2025-10-28 00:00:00",
+        "last": "2025-12-06 23:59:00"
+      },
+      {
+        "site": "3 Cape_Recife",
+        "records": 5928,
+        "first": "2024-03-05 00:00:00",
+        "last": "2024-03-23 23:12:00"
+      },
+      {
+        "site": "4 Bird Island",
+        "records": 47552,
+        "first": "2022-03-21 05:59:58",
+        "last": "2024-06-29 23:59:00"
+      },
+      {
+        "site": "5 St Croix Island",
+        "records": 250717,
+        "first": "2022-04-05 00:00:00",
+        "last": "2025-09-20 06:00:00"
+      },
+      {
+        "site": "6 Riy_Banks",
+        "records": 4121,
+        "first": "2024-03-05 00:00:00",
+        "last": "2024-04-05 23:12:00"
+      },
+      {
+        "site": "7 St_Francis",
+        "records": 169488,
+        "first": "2015-04-21 00:00:00",
+        "last": "2018-02-28 14:24:00"
+      },
+      {
+        "site": "9 Fish Hoek",
+        "records": 53767,
+        "first": "2016-09-13 00:00:02",
+        "last": "2021-09-28 12:45:00"
+      }
+    ],
+    "documentation_sha256": {
+      "data/extracted/README.md": "bd00be769c484a667acc144f2082ca08d86cd02a06b4191f41e53f185fd553dc",
+      "data/extracted/DATA_DICTIONARY.md": "162088ac6ff6565034e31ce60f244a41d1e584fec9f71850c2c722059c4fbe04",
+      "data/extracted/stations.csv": "8037b5d3a521f01f069c849c6bb1bcac139eaa283e9253d48c6fd59b408cb563",
+      "data/extracted/recorders.csv": "781606b5716ee8e2c8aa2c417aa437e5c4d94cb486550dce5631942d8bef5053"
+    }
+  },
+  "catalogue_entries": [
+    {
+      "id": "official_challenge",
+      "classification": "confirmed_release_and_provider_attribution",
+      "title": "Zindi official released South African training package",
+      "url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/data",
+      "secondary_url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge",
+      "doi": null,
+      "publication_date": "challenge began2026-10-16; exact archive publication version not stated",
+      "access": "Official challenge page and download listing; no additional archive downloaded in this audit",
+      "license": "Challenge-use terms; no unrestricted CC licence inferred",
+      "matches": [
+        "1,715,779 unlabelled records",
+        "ten sites",
+        "minute frequency-band summaries, not original audio",
+        "SAEON/SANBI/SA URN attribution on official main page"
+      ],
+      "discrepancies_or_missing": [
+        "No independent external dataset DOI or catalogue accession identified for the exact full archive"
+      ],
+      "exact_full_release_match": true,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "local_package_metadata",
+      "classification": "confirmed_local_release_metadata",
+      "title": "Released README/data dictionary/station/recorder metadata",
+      "url": null,
+      "local_paths": [
+        "data/extracted/README.md",
+        "data/extracted/DATA_DICTIONARY.md",
+        "data/extracted/stations.csv",
+        "data/extracted/recorders.csv"
+      ],
+      "doi": null,
+      "publication_date": "not provided in these local files",
+      "access": "Permitted released TRAIN metadata only, four small files",
+      "license": "README explicitly grants no new redistribution licence; organiser terms remain authoritative",
+      "matches": [
+        "Station row-count sum1,715,779 across10 sites",
+        "Recorder rows sum1,715,779",
+        "StFrancis SM2M filename token and2015–2018 source coverage"
+      ],
+      "discrepancies_or_missing": [
+        "Export-clock timezone and absolute pressure calibration unverified",
+        "Filename-derived sample rates unverified",
+        "Working site coordinates are not certified deployments",
+        "No DOI field or repository accession in inspected documentation"
+      ],
+      "exact_full_release_match": true,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "saeon_odp",
+      "classification": "provider_catalogue_confirmed_exact_record_not_found",
+      "title": "SAEON Open Data Platform catalogue and policy",
+      "url": "https://catalogue.saeon.ac.za/",
+      "secondary_url": "https://odpwiki.saeon.ac.za/start",
+      "policy_url": "https://odpwiki.saeon.ac.za/saeon_data_policy",
+      "doi": null,
+      "publication_date": "live catalogue; metadata may change",
+      "access": "Catalogue returned JavaScript-only shell; wiki and policy readable; index searches performed",
+      "license": "SAEON recommends CC BY-SA4.0 but provider may choose other CC/custom terms, embargo or no access. No matching record licence established.",
+      "matches": [
+        "Official provider data discovery infrastructure"
+      ],
+      "discrepancies_or_missing": [
+        "No verified catalogue record/download/DOI binding all10 sites and exact1,715,779 records",
+        "JS shell prevents claiming exhaustive enumeration"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "saeon_observations",
+      "classification": "provider_portal_confirmed_exact_record_not_found",
+      "title": "SAEON Observations Database",
+      "url": "https://observations.saeon.ac.za/",
+      "doi": null,
+      "publication_date": "live portal",
+      "access": "Indexed primary landing page readable; direct fetch timed out",
+      "license": "Landing footer states CC BY-SA4.0; no licence transfer to the unmatched challenge files assumed",
+      "matches": [
+        "SAEON environmental observations portal"
+      ],
+      "discrepancies_or_missing": [
+        "No identified hydrophone/TOL record with the exact released station roster, schema, count and file checksums"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "mims",
+      "classification": "provider_catalogue_confirmed_exact_record_not_found",
+      "title": "Marine Information Management System",
+      "url": "https://data.ocean.gov.za/",
+      "catalogue_url": "https://data.ocean.gov.za/mims/catalog/",
+      "doi": null,
+      "publication_date": "live catalogue",
+      "access": "Public catalogue and visible filters inspected; attempted acoustic/sound queries were not retrievable by the browser tool",
+      "license": "Catalogue includes CC BY-SA4.0, CC BY-NC-SA4.0 and embargoed records; record-specific licence required",
+      "matches": [
+        "South African DFFE marine data archive and SAEON-linked discovery portal"
+      ],
+      "discrepancies_or_missing": [
+        "No verified exact dataset record or download identified",
+        "Hydrographic/echo-sounder/telemetry records must not be equated with ambient hydrophone band-level data",
+        "Not an exhaustive all-record scan"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "sanbi_soundseas",
+      "classification": "related_programme_only",
+      "title": "SANBI National Biodiversity Assessment marine pressures: Sound Seas project",
+      "url": "https://nba.sanbi.org.za/content/marine/marine_pressures.html",
+      "doi": null,
+      "publication_date": "2025 assessment page; live indexing2026",
+      "access": "Primary indexed article text readable; direct HTML403",
+      "license": "No raw acoustic dataset licence verified",
+      "matches": [
+        "SoundSeas marine soundscape/ACEP programme, South African institutional research context"
+      ],
+      "discrepancies_or_missing": [
+        "Programme description is not a release manifest",
+        "No10-site/1,715,779-record data DOI or exact file download identified"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "chatter_2022",
+      "classification": "related_partial_geographic_and_instrument_lineage_not_exact",
+      "title": "Underwater Chatter for the Win: A First Assessment of Underwater Soundscapes in Two Bays along the Eastern Cape Coast of South Africa",
+      "url": "https://www.mdpi.com/2077-1312/10/6/746",
+      "author_institution_url": "https://cmst.curtin.edu.au/research/marine-soundscapes/",
+      "doi": "10.3390/jmse10060746",
+      "doi_type": "research_article_not_verified_dataset_PID",
+      "publication_date": "2022-05-27",
+      "access": "Primary publisher indexed text and author-institution publication list verified; direct publisher fetch429",
+      "license": "Article marked open access; underlying acoustic data licence and dataset DOI not independently verified here",
+      "matches": [
+        "StFrancis/Algoa Bay research geography",
+        "Related published source research; StFrancis local TRAIN recorder has SM2M/48000 filename token and2015-04-21..2018-02-28 coverage"
+      ],
+      "discrepancies_or_missing": [
+        "Two bays/four study deployment labels are not the exact ten-site release roster",
+        "The challenge metadata includes records through2025, after the2022 paper",
+        "No raw-file hash, full row mapping, export-code lineage or exact archive count is supplied by the inspected publication metadata",
+        "Temporal/instrument resemblance does not prove equality of the169,488 released StFrancis rows"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "inshore_2026",
+      "classification": "related_programme_paper_no_exact_dataset_binding",
+      "title": "Baseline characterization of inshore reef soundscapes and noise dynamics along the southeast coast of South Africa",
+      "url": "https://www.nature.com/articles/s41598-026-64663-w",
+      "doi": "10.1038/s41598-026-64663-w",
+      "doi_type": "research_article_not_verified_dataset_PID",
+      "publication_date": "2026-08-03",
+      "access": "Primary indexed publication text/abstract/rights accessible; direct page redirected to inaccessible publisher authentication middleware",
+      "license": "Article CC BY-NC-ND4.0; underlying recordings/data reuse licence not established",
+      "matches": [
+        "Four broader Algoa Bay sites",
+        "ACEP SoundSeas/DFFE support; SAEON mooring assistance"
+      ],
+      "discrepancies_or_missing": [
+        "Not an exact ten-site release description",
+        "No exact1,715,779-record dataset DOI/download/file manifest verified",
+        "Do not treat article rights as a raw-data licence"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "dryad_prince_edward",
+      "classification": "public_related_acoustic_dataset_but_different_location_resolution",
+      "title": "Underwater soundscape indicates low anthropogenic influence around two sub-Antarctic islands",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.9s4mw6mtf",
+      "doi": "10.5061/dryad.9s4mw6mtf",
+      "doi_type": "dataset_PID",
+      "publication_date": "2025-11-06",
+      "access": "Public dataset file listing and README metadata read; no files downloaded",
+      "license": "Not independently located in fetched record text; do not assume a licence solely from repository defaults",
+      "matches": [
+        "South African DFFE/University of Pretoria acoustic research and SoundTrap recordings"
+      ],
+      "discrepancies_or_missing": [
+        "PrinceEdward/Marion Islands, not the released mainland10 sites",
+        "2021–2022 and hourly processed products",
+        "Noise bands are broad low/medium/high regions, not this minute25TOL archive"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "id": "biosoundscape",
+      "classification": "public_dataset_rejected_as_origin",
+      "title": "BioSCape: BioSoundSCape Acoustic Recordings, South Africa,2023",
+      "url": "https://doi.org/10.3334/ORNLDAAC/2372",
+      "paper_url": "https://www.nature.com/articles/s41597-025-05685-3",
+      "doi": "10.3334/ORNLDAAC/2372",
+      "doi_type": "dataset_PID",
+      "publication_date": "2025; recording year2023",
+      "access": "NASA dataset and primary data-paper metadata only",
+      "license": "NASA page states openly shared without restriction under EOSDIS citation guidance; not a licence for challenge data",
+      "matches": [
+        "SouthAfrica and SAEON-related collaborative context only"
+      ],
+      "discrepancies_or_missing": [
+        "Terrestrial Fynbos ARU recordings at521 sites",
+        "825,832 one-minute WAV recordings",
+        "Bird/frog/insect and terrestrial biodiversity study, not marine10-site TOL exports"
+      ],
+      "exact_full_release_match": false,
+      "separate_preexisting_public_dataset_verified": false,
+      "date_accessed": "2026-10-26"
+    }
+  ],
+  "search_log": [
+    "site:saeon.ac.za underwater acoustic noise data SouthAfrica hydrophone dataset",
+    "site:sanbi.org SouthAfrican underwater radiated noise consortium acoustic dataset",
+    "\"Underwater Chatter for the Win\" dataset DOI",
+    "\"South African\" \"1,715,779\" acoustics",
+    "\"SA URN\" acoustics data",
+    "site:catalogue.saeon.ac.za acoustic/hydrophone/soundscape",
+    "site:catalogue.saeon.ac.za underwater",
+    "site:metadata.saeon.ac.za acoustic/noise/hydrophone",
+    "site:data.ocean.gov.za acoustic",
+    "\"Sound Seas\" data SAEON",
+    "\"St. Francis Bay\" soundscape data repository",
+    "site:datadryad.org \"St Francis\" sound",
+    "site:zenodo.org \"South Africa\" hydrophone",
+    "site:figshare.com \"South Africa\" soundscape",
+    "site:pangaea.de \"South Africa\" acoustic soundscape",
+    "publisher-title data-availability searches for10.3390/jmse10060746 and10.1038/s41598-026-64663-w"
+  ],
+  "restrictions": {
+    "Test_acoustic_data_opened": false,
+    "hidden_Test_origin_inferred": false,
+    "new_raw_data_downloaded": false,
+    "providers_contacted": false,
+    "external_messages_sent": false,
+    "GPU_or_training_executed": false
+  },
+  "remaining_evidence_required_for_exact_match": [
+    "Provider release/accession statement identifying this permitted station roster and recording periods",
+    "Dataset version/DOI plus file list and checksum or row-level export lineage",
+    "Verified acquisition/export/calibration conventions and explicit source-data reuse licence"
+  ],
+  "next_steps_not_executed": [
+    "If a provider metadata record later becomes available, compare only the permitted released TRAIN metadata and checksums; do not retrieve excluded/background periods",
+    "Do not relabel the archive as a standard open dataset or assume article/portal CC terms apply to the source recordings"
+  ]
+}

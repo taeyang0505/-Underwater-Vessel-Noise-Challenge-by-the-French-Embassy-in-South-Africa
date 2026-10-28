@@ -1,0 +1,72 @@
+{
+  "format": "r9_training_packaging_plan_v1",
+  "config": "configs/r9_full_training_v1.json",
+  "config_file_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "code_files": [
+    "pipeline/runner_r9.py",
+    "ops/run_r9_training.py",
+    "pipeline/dataset_r9.py",
+    "pipeline/sampler_r9.py",
+    "pipeline/reference_pool_r9.py",
+    "pipeline/background_cv_r9.py",
+    "pipeline/source_split_r6.py",
+    "pipeline/robust_sampler_r6.py",
+    "pipeline/hard_negatives_r6_v2.py",
+    "pipeline/models_r9.py",
+    "pipeline/training_r9.py",
+    "pipeline/trees_ensemble_r9.py",
+    "pipeline/cpu_ablation_r6_v2.py",
+    "pipeline/relative_grid_r6.py",
+    "pipeline/relative_grid_r6_v2.py",
+    "pipeline/physics_features_r6_v2.py",
+    "pipeline/relative_models_r6_v2.py",
+    "pipeline/hybrid_models_r5.py",
+    "pipeline/grid_models_r5.py",
+    "pipeline/models.py"
+  ],
+  "prepared_bundle": "data/synthetic/group_cv_minute_full_r9_v1",
+  "background_version": "data/versions/background_cv_r9",
+  "reference_version": "data/versions/vtuad_full_r9",
+  "required_banks": [
+    "data/processed/sa_windows_db.npy",
+    "data/processed/external_segments_power.npy"
+  ],
+  "dependency_policy": "install the project-pinned Python packages for the target Linux CUDA host; no Mac runtime copy",
+  "required_packages": [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "torch",
+    "scikit-learn",
+    "lightgbm"
+  ],
+  "excluded": [
+    "Test.csv",
+    "official submission files",
+    "old fitted checkpoints",
+    "raw WAV archives",
+    "credentials",
+    "SSH keys"
+  ],
+  "fresh_output": "models/group_cv_minute_full_r9_v1",
+  "GPU_default": "CUDA; production CPU100-epoch fitting rejected",
+  "explicit_stages": [
+    "fit: all requested CUDA neural models, then exit awaiting Mac trees",
+    "tree --executor mac_cpu: separate fresh Mac jobs; no transport or server fitting",
+    "import-tree: completed receipt/artifact/source pins and selection prediction replay, no fit",
+    "ensemble: all folds fit/gate policies then global immutable freeze",
+    "report: all requested folds frozen before any report labels or predictions open"
+  ],
+  "Mac_tree_parallelism": "needs source/config/prepared bundle, not CUDA model weights; may run while later CUDA folds fit",
+  "Mac_transport": "explicit file transfer is a later operator action; this tool performs none",
+  "tree_cpu": {
+    "maximum_trees": 1500,
+    "ES_rounds": 40,
+    "features": 3827,
+    "maximum_training_rows": 100000
+  },
+  "ensemble": "all singles plus equal-all/equal-neural on fit; one gate candidate; report after global freeze",
+  "frozen_inference": "equal average of all five completed frozen fold policies, no query-cohort fitting; runner has no Test reader",
+  "no_download_or_copy_executed": true,
+  "no_Test_reader": true
+}

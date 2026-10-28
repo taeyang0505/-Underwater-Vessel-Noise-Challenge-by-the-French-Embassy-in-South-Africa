@@ -1,0 +1,51 @@
+{
+  "version": "prospective_r12_ablation_from_r11_v1",
+  "status": "plan_only_not_training_or_deployed",
+  "locked_after_R11_diagnostics_before_new_training": true,
+  "preserve_original_R9": "all source files,data,checkpoints,policy,submittedCSVremainunchanged",
+  "first_stage": "same small mask CNN across all arms, no GPU full-model scaling until improvement measured",
+  "factorial_axes": {
+    "long_support_examples": [
+      "off_original",
+      "on_support13_15_native_and_explicit_statistical_challenges"
+    ],
+    "HF_natural_A0_examples": [
+      "off_original",
+      "on_TRAIN_only_highHF_backgrounds"
+    ],
+    "contrast_BCE_into_mask": [
+      "on_legacy_005",
+      "off_primary_share_and_weighted_cell_only"
+    ]
+  },
+  "arms": 8,
+  "training_contract": {
+    "maximum_epochs": 100,
+    "early_stopping": false,
+    "optimizer": "Adam",
+    "dropout": 0.1,
+    "best_checkpoint": "selection_window_RMSE only"
+  },
+  "data_contract": [
+    "split_before_synthesis",
+    "900sec support plus24h same-sensor purge",
+    "same source identities/schedules across paired arms; finite-support infeasibility declared",
+    "whole added recording physical y/q kept; rounded0.1dbweights",
+    "native long recordings and stretched statistical probes labeled separately",
+    "do not infer target priors or calibrate from Test output saturation"
+  ],
+  "evaluation": [
+    "R11knownfailure panels remain development tests, not blind or claimed Test-equivalent",
+    "freeze fresh heldout source groups and generation seeds before fitting",
+    "RMSE,MAE,bias,site_macro,support_bins,HF-A0errors and share/scoreAUC",
+    "compare withsource-ID/group clustereduncertainty; no winnerpickedonPublic",
+    "after selection/policy freeze use untouchedreport accordingtoitsaccessgate,once"
+  ],
+  "score_candidate": "monotone share diagnostic or independent detached classifier; never impose max-min contrast as correctness of cell mask",
+  "claims_not_made": [
+    "performance improvement proven",
+    "official failure cause uniquely identified",
+    "stationary additions uniquely identifiable from a single window"
+  ],
+  "new_training_executed_this_report": false
+}

@@ -1,0 +1,259 @@
+{
+  "format": "r14_decoupled_predeclared_plan_v1",
+  "created_unix": 1793042785.496584,
+  "source_file_sha256": {
+    "ops/analyze_r14_decoupled.py": "5f297dda3d7c844af0d1bc1a051562f300e201a52f9b67c229f36b73a8cf5dfc",
+    "reports/r13_cpu_correction_r1/RESULTS.json": "824e45a021aa6394084468d8d54d2d9b5ee62fa01c3a0ce428ca2c2e2d136618",
+    "reports/r13_cpu_correction_r1/results.csv": "256c89e08179bf42f09f8cba487e01c92b3cfb8576388a424e4321130f3af9a4",
+    "reports/r13_cpu_correction_r1/selected_policy.json": "2929222af6dd07450eecdcdb31f99ab2d093e254ce5ca123ce1c4aac66cc47ed",
+    "reports/r13_cpu_correction_r1/FROZEN_BEFORE_GATE.json": "b2ac793bf3bab78bd1a0576b57fc3d24c5c9f37d496d4d25cba881db3465e7c1",
+    "reports/r12_cpu_ablation_r1/RESULTS.json": "73288fd6fe2d7b3fe97908a2360b5d21143ec2941a6e6d2537fab3e1b4e34ff1",
+    "reports/r12_cpu_ablation_r1/results.csv": "7420e29204e05bb411d04b7c40e9cc7f609cc33a6267f7bc9e2364835860ddc9",
+    "reports/r12_mask_matched_evaluation_r2/RESULTS.json": "aad90cec3e77a9697fdbcf6474ee1f2c3a60ffd6207daa41fe6dd9a3d5cf55ac",
+    "reports/r12_mask_matched_evaluation_r2/results.csv": "3adb80756d9449a71a9eddc4803b8ae9792b6deadb7353b9236e5c729122a4d4",
+    "reports/R12_TRAIN_MASK_PROVENANCE_AUDIT.json": "0b7425d2aa09d6e93e372ec69143e51023ceeaeb2eabb89f30bef565bc325d40",
+    "data/synthetic/r12_mask_matched_control_v2/audit.json": "c575b41cd34882ed3d53533ab5f80e6c7c83767cc76abfdb901cc554e24074a8",
+    "data/synthetic/r13_cpu_correction_v1/manifest.json": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+    "models/r13_cpu_cnn_r1/PRE_FIT_FREEZE.json": "72db92ed0d084349020c22d088f2d093d8b783cdf6c14d285497ff454431ec8a",
+    "models/r13_cpu_cnn_r1/ALL_CNN_FROZEN.json": "e4c509df85e458ce6e41c17b4b66af721a55676ca0345a2ca921959edad98642",
+    "models/r13_compact_trees_v1/ALL_TREES_FROZEN.json": "88142cd71fecbf7723e0be306de75ad8e73e65519d6c46b4da4f52efa874940d",
+    "models/r12_mask_matched_control_r2/ALL_CONTROL_FROZEN.json": "dd353b1aecfe8b0038d15d6a6017d2e2907f45ade9f479910722329944d32ef8",
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "ops/evaluate_r13_cpu.py": "14ba4d5d09c73d85a2054c8b2a8f1262fda20ecdff109903a7c2e8f24a7457c1",
+    "reports/r13_cpu_correction_r1/predictions/R12_high_snr_long.npz": "e47cbce23fa6ff52ee4b931f7c62b56200b2d303881162bca7627f5f1160eda3",
+    "reports/r13_cpu_correction_r1/predictions/R11_full_smooth15_VS_st_francis_dense.npz": "e3fd8b10ce9c481752231582d7deeb237327b70bb210f9e1b3eb976ad0cae41e",
+    "reports/r13_cpu_correction_r1/predictions/R11_full_smooth12_VS_st_francis_dense.npz": "3a63a8cc877719033f2bd8d6dde456eae2f99fce43582f72895903de0c690fb9",
+    "reports/r13_cpu_correction_r1/predictions/R12_eval.npz": "5bc3bfa7b229859af941a4fdc0ed07ac249ccc2d3f70225140263ca2af6f3230",
+    "reports/r13_cpu_correction_r1/predictions/R11_native_long15_VS_hf_high.npz": "112de5acf0e45e4e9a0e441cfb19eda5e3072bbd1be395d539e590b88df95821",
+    "reports/r13_cpu_correction_r1/predictions/R9_ensemble_gate.npz": "872fec40e366b535062e40fd3a529b0c0dd797ad25f4d4c6f3a987752341285d",
+    "reports/r13_cpu_correction_r1/predictions/R10_seen__combined_stress.npz": "ba4983934a843adb54d1d93d84b778a9941cafd13f5e742917476fbaac5115ea",
+    "reports/r13_cpu_correction_r1/predictions/R12_validation_gate.npz": "3b167066dde095122ff0ad843a2bea0fe742fba5f5a54d1d8748dbbcddaa2e17",
+    "reports/r13_cpu_correction_r1/predictions/R11_full_smooth13_VS_hf_high.npz": "e0304bce7172c2e60ba930abef71f44e77da7cf0ea1db767d3a8af8c8650baa4",
+    "reports/r13_cpu_correction_r1/predictions/R10_unseen__r9_complete.npz": "be9f1bd24645137da5a108f07b97672679130a540b1f2e2419ba23a6922500a8",
+    "reports/r13_cpu_correction_r1/predictions/R11_full_smooth12_VS_hf_high.npz": "b68040a60dab67e43c5e4b11a8db84f8013c8cbe3cb3ebd1d1f5b030121b1c4f",
+    "reports/r13_cpu_correction_r1/predictions/R9_selection.npz": "90a1e2d664ab19862fe626a91c720dbc8a171d8ff71050001b43a8ba37df66c3",
+    "reports/r13_cpu_correction_r1/predictions/R11_native_long15_VS_st_francis_dense.npz": "51c07874f5e475f9dc3909f75130ccc6995cb11c2f79a155414e97927e1ed2b5",
+    "reports/r13_cpu_correction_r1/predictions/R11_full_smooth15_VS_hf_high.npz": "f3cbe747e46cd041f840955d809d2154c153c63bc09f97520204686fbcdfe583",
+    "reports/r13_cpu_correction_r1/predictions/R10_unseen__combined_stress.npz": "d5d5e285529f6b8e5995dc3e077edb052b604e4c06a37fe847d1cc0da6ad78cd",
+    "reports/r13_cpu_correction_r1/predictions/R10_seen__mean_scale_only.npz": "dd30bfcdf1da0edc5b731a388f69aa31b0da5fa917dc16729ea58cc728161bc9",
+    "reports/r13_cpu_correction_r1/predictions/R11_full_smooth13_VS_st_francis_dense.npz": "4c9d11718c32e72c09c7de1fc3109d7a75204b450080cb2b917ff0fa0bc2a06a",
+    "models/r12_mask_matched_control_r2/cnn/summary.json": "64164f1849ed05a4e046d257affe528fa3dc9c9898c3731656eeddf212ba2b45",
+    "models/r12_mask_matched_control_r2/cnn/validation_fit_predictions.npz": "3038798251e8c6aacafa449280cff69159a26b9f5eaaae67a7157fd11490f10e",
+    "models/r13_cpu_cnn_r1/highshareP1/summary.json": "3a4e5120d37bd0040a4f31983c6a1458dce97c7bec458f157a36f88ee53afdd9",
+    "models/r13_cpu_cnn_r1/highshareP1/validation_fit_predictions.npz": "06e824be06995d9a96fe6c475965f2391062550a02595dcefc90a15321b0bd11",
+    "models/r13_compact_trees_v1/baselineP1/summary.json": "d57d0e96f2f69ca8ef6058749a3bbc0a8c6adfe1ed1e117e6903b2bca3c28a43",
+    "models/r13_compact_trees_v1/baselineP1/validation_fit_predictions.npz": "f54d60f937c45f06d549ebee197d84d8e553d9fc76a134c7171632b86c3a257a",
+    "models/r13_compact_trees_v1/highshareP1/summary.json": "dd3c029af665c2d244d0cad01f780f8440656ac2831b0d458be1c52d3ed53cb7",
+    "models/r13_compact_trees_v1/highshareP1/validation_fit_predictions.npz": "f2a029fd749e579d696eb59b62e902a268a8cc06313dab31af052f2aa77acdbf",
+    "models/r12_compact_trees_v1/L1H0P1/summary.json": "d392e644aa64af45fbb3644f5a2325931bdf3f0cd7901ac71ceb6d9a690e7274",
+    "models/r12_compact_trees_v1/L1H0P1/fit_plan.json": "9e01b3a61ab16fde13583aea9cd784262e27d58c814d30ef64a6f37f4d63f4dc",
+    "models/r12_compact_trees_v1/L1H1P1/summary.json": "b8dd6d772c1703abf29afc7e9971d642f8d682ef953fe16cfdaf3f5d39b686dd",
+    "models/r12_compact_trees_v1/L1H1P1/fit_plan.json": "ba2d6b16c9f66fc2da33df98b60746bf8dfa872a8732a3ae194e7e8060ef2c51",
+    "models/r12_mask_matched_control_r2/tree/summary.json": "6d43a97adb0a4423bd6671177e47a08565623387ae9019264f71d0c4951695a6",
+    "models/r12_mask_matched_control_r2/tree/fit_plan.json": "617364fe2c34ebf8be3a13d143423213cc874c5882df02c1f2705db264f6c88b",
+    "models/r13_compact_trees_v1/baselineP1/fit_plan.json": "8340e2f0f5ef86e8e063c71d4a555a220bff755fd61cfec9b94bec1afa1f49ce",
+    "models/r13_compact_trees_v1/highshareP1/fit_plan.json": "9bfb21c925e793d094866ade67a9ee8ac3322b7efe0957f40d65f676f0d4a0a4"
+  },
+  "regression_candidates": [
+    {
+      "name": "linear_high0.0",
+      "kind": "linear",
+      "high_weight": 0.0
+    },
+    {
+      "name": "linear_high0.25",
+      "kind": "linear",
+      "high_weight": 0.25
+    },
+    {
+      "name": "linear_high0.5",
+      "kind": "linear",
+      "high_weight": 0.5
+    },
+    {
+      "name": "linear_high0.75",
+      "kind": "linear",
+      "high_weight": 0.75
+    },
+    {
+      "name": "linear_high1.0",
+      "kind": "linear",
+      "high_weight": 1.0
+    },
+    {
+      "name": "smooth_low0.0_high0.5_width0.03",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.03,
+      "low": 0.0,
+      "high": 0.5
+    },
+    {
+      "name": "smooth_low0.0_high0.5_width0.05",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.05,
+      "low": 0.0,
+      "high": 0.5
+    },
+    {
+      "name": "smooth_low0.0_high0.5_width0.1",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.1,
+      "low": 0.0,
+      "high": 0.5
+    },
+    {
+      "name": "smooth_low0.0_high0.75_width0.03",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.03,
+      "low": 0.0,
+      "high": 0.75
+    },
+    {
+      "name": "smooth_low0.0_high0.75_width0.05",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.05,
+      "low": 0.0,
+      "high": 0.75
+    },
+    {
+      "name": "smooth_low0.0_high0.75_width0.1",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.1,
+      "low": 0.0,
+      "high": 0.75
+    },
+    {
+      "name": "smooth_low0.0_high1.0_width0.03",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.03,
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "smooth_low0.0_high1.0_width0.05",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.05,
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "smooth_low0.0_high1.0_width0.1",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.1,
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "smooth_low0.25_high0.5_width0.03",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.03,
+      "low": 0.25,
+      "high": 0.5
+    },
+    {
+      "name": "smooth_low0.25_high0.5_width0.05",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.05,
+      "low": 0.25,
+      "high": 0.5
+    },
+    {
+      "name": "smooth_low0.25_high0.5_width0.1",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.1,
+      "low": 0.25,
+      "high": 0.5
+    },
+    {
+      "name": "smooth_low0.25_high0.75_width0.03",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.03,
+      "low": 0.25,
+      "high": 0.75
+    },
+    {
+      "name": "smooth_low0.25_high0.75_width0.05",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.05,
+      "low": 0.25,
+      "high": 0.75
+    },
+    {
+      "name": "smooth_low0.25_high0.75_width0.1",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.1,
+      "low": 0.25,
+      "high": 0.75
+    },
+    {
+      "name": "smooth_low0.25_high1.0_width0.03",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.03,
+      "low": 0.25,
+      "high": 1.0
+    },
+    {
+      "name": "smooth_low0.25_high1.0_width0.05",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.05,
+      "low": 0.25,
+      "high": 1.0
+    },
+    {
+      "name": "smooth_low0.25_high1.0_width0.1",
+      "kind": "smooth",
+      "threshold": 0.2,
+      "width": 0.1,
+      "low": 0.25,
+      "high": 1.0
+    }
+  ],
+  "classifier_candidates": [
+    "base",
+    "high",
+    "avg"
+  ],
+  "score_classifier_weights": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "fitting_role": "original validation_fit1000 only; no gate or 17-panel parameter fitting",
+  "regression_selection": "minimum fit RMSE; first canonical tie",
+  "score_selection": "maximum fit AUC; classifier base/high/avg then lambda0/.25/.5/1 first tie",
+  "panels": "all existing R13 fixed17 prediction panels, without new inference or panel selection",
+  "targets": {
+    "high_snr_rmse_lt": 0.145,
+    "unseen_rmse_le": 0.0527,
+    "unseen_score_auc_ge": 0.92,
+    "full15_sf_score_auc_ge": 0.82,
+    "native15_sf_score_auc_ge": 0.8
+  },
+  "prior_inspection": "Schema/dtype/model_order inspected before this plan; no numeric panel summary or labels used to choose candidates.",
+  "inference": 0,
+  "model_fit": 0,
+  "Test": false,
+  "network": false,
+  "production_approved": false,
+  "development_not_blind": true,
+  "plan_sha256": "04b549636d9e718854c29926648269bef2ab3352231b06545610b451108fa3d2"
+}

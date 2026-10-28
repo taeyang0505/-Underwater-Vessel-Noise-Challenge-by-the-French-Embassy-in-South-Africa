@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-26T06:08:14.038179+00:00",
+  "fixture_only": true,
+  "model_training_or_GPU_or_Test_or_waveform_access": false,
+  "source_acoustic_values_read": [
+    "fold0 TRAIN backgrounds",
+    "509 admitted VTUAD2s slices"
+  ],
+  "prepared_nonreport_roles_read_for_integrity": false,
+  "source_identity": {
+    "version": "r9_minute_full_dataset_v1",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+    "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+    "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+    "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+    "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+    "code_sha256": {
+      "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+      "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+      "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+      "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+      "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+      "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+      "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+    },
+    "reference_count": 509,
+    "reference_independent_CV": false
+  },
+  "code_sha256": {
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "ops/prepare_r9_training.py": "62df29d4077879691b4c26f785717dd873348a2846c8d7bc58d766f7f24dd82a",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+  },
+  "synthetic_schedule": {
+    "examples": 1000,
+    "primary_once": true,
+    "explicit_no_source_count": 200,
+    "hard_negative_candidate_count": 59,
+    "explicit_hard_negative_count": 59,
+    "hard_negative_desired_count": 100,
+    "hard_negative_shortfall_without_duplicate_primary": 41,
+    "positive_request_count": 800,
+    "unique_references": 509,
+    "reference_use_min": 1,
+    "reference_use_max": 2,
+    "reference_count": 509,
+    "schedule_sha256": "02308e547fe6ce47da8f32063f8059f6ccdffaf16b6a86d9000f6db84032581f"
+  },
+  "direct_cached_parity": {
+    "passed": true,
+    "reference_count": 509,
+    "families": 3,
+    "cases": 1527,
+    "db_q_y_presence_recipe_bitwise_equal": true
+  },
+  "actual_dynamic": {
+    "examples": 78869,
+    "primary_once": true,
+    "explicit_no_source_count": 15774,
+    "hard_negative_candidate_count": 6947,
+    "explicit_hard_negative_count": 6947,
+    "hard_negative_desired_count": 7887,
+    "hard_negative_shortfall_without_duplicate_primary": 940,
+    "positive_request_count": 63095,
+    "unique_references": 509,
+    "reference_use_min": 123,
+    "reference_use_max": 124,
+    "reference_count": 509,
+    "schedule_sha256": "6a8b74eaca5ef9f63e053c41e94dbbecb30b9d4017202bf396dd911ecab1e232",
+    "epoch": 1,
+    "fold": 0,
+    "no_source_policy": "explicit request; natural background ships are not labelled",
+    "coverage_kind": "scheduled, not proof a partially consumed iterator completed"
+  },
+  "pickle_replay": true,
+  "spawned_cpu_workers": 4,
+  "worker_examples": 8,
+  "spawn4_outputs_bitwise_equal": true,
+  "same_epoch_replay": true,
+  "different_epoch_changes": true,
+  "batch_and_access_order_independent": true,
+  "immutable_dataset_identity": true,
+  "known_A_zero_hard_negative_verified": true,
+  "bundle_verification": null,
+  "elapsed_seconds": 2.3949739579111338
+}

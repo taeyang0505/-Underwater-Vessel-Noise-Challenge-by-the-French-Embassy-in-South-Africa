@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "CPU generated-array eight-tree integration fixture only",
+  "generated_train_examples": 96,
+  "generated_inner_examples": 24,
+  "settings": {
+    "maximum_trees": 8,
+    "patience": 3,
+    "threads": 2
+  },
+  "policy": {
+    "quantization_decimals": 1,
+    "endpoint_dropout_probability": 0.0
+  },
+  "checks": {
+    "feature_count_1324": {
+      "fixed": 1258,
+      "existing_physics": 45,
+      "TRAIN_retrieval": 8,
+      "new_physics": 13
+    },
+    "TRAIN_positive_excess_prototype_count": 8,
+    "maximum_trees_and_patience": {
+      "maximum_trees": 8,
+      "patience": 3,
+      "threads": 2
+    },
+    "saved_restore_and_batch_1_7_256_bitwise_equal": true,
+    "feature_chunk_max_abs_error": 0.0,
+    "TRAIN_PCA_rows_and_targets_policy": {
+      "train_rows": 96,
+      "target_used": false,
+      "quantization_decimals": 1
+    },
+    "changing_query_labels_does_not_change_predictions": true,
+    "query_labels_not_in_predict_signature": true,
+    "query_labelled_dictionary_rejected": true,
+    "fixture_artifact_rejected_by_production_default": true,
+    "changed_TRAIN_binding_rejected": true,
+    "changed_quantization_policy_rejected": true,
+    "output_overwrite_rejected": true,
+    "TRAIN_and_inner_arrays_unchanged": true,
+    "PCA_file_tampering_rejected": true,
+    "Torch_not_imported": true
+  },
+  "smoke_metrics_not_performance_evidence": {
+    "tiny_inner_rmse_smoke_only": 0.2025957554578781,
+    "best_iteration": 8
+  },
+  "real_datasets_opened": false,
+  "Test_outer_calibration_sealed_or_history_opened": false,
+  "GPU_used": false,
+  "actual_fold_training_executed": false,
+  "code_sha256": {
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "pipeline/train_lgbm.py": "704b77a00c89c636ada7881facb6deaf36afceaec35e7c4742b75478e650e42d",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/prototypes.py": "6349bd51e42b2c68986d44148644f63c9cfea5eae42a117dc86c5ca6da7b481a",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "ops/verify_lgbm_runner_r5.py": "9e9ff436f72a6b562bea853ffb6030a3b3517d70554f9bb95699a6d7de51c26d"
+  }
+}

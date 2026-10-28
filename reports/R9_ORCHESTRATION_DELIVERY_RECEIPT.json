@@ -1,0 +1,20 @@
+{
+  "format": "r9_orchestration_delivery_v1",
+  "status": "source_final",
+  "created_utc": "2026-10-26T06:25:01.669616+00:00",
+  "files_sha256": {
+    "pipeline/runner_r9.py": "f2c194d6c32d1cac8b8d4e9c352f979d01e72e14e9fa18bb4e6029c9dd24c32d",
+    "ops/run_r9_training.py": "f4f0c2488d3ceffe1bc3e493b0e764f3f2cfd3d8380c1721eec83a53025f8c2a",
+    "reports/R9_RUNNER_VERIFICATION.json": "7330e53d328d40ae17acd2a87c75fb270e294782183edbbfd6ea5b071415f627",
+    "reports/R9_TRAINING_STRUCTURAL_PREFLIGHT.json": "2b8a43e9882abf8e543625389acdcc3f5f17d1413a7ff5c1eaaca83ec32e877e",
+    "reports/R9_TRAINING_PACKAGING_PLAN.json": "7b741d8368b885fe8c80e96f03cb79db00e1fed9527280b530a848d0b6ece5f5",
+    "reports/R9_TRAINING_ORCHESTRATION.md": "61affc97603d30f1a2aabe5f3497376ca25340bbed25ca4092bee8935b67d836"
+  },
+  "config_file_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+  "documentation_relative_links_checked": 4,
+  "additional_provenance_file_count": 18,
+  "production_CUDA_or_100epoch_training_executed": false,
+  "Mac_tree_stage_authorized_but_not_yet_started": true,
+  "source_old_data_unchanged": true
+}

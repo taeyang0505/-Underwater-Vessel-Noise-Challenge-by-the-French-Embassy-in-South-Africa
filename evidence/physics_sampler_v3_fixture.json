@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "synthetic_fixture_only": true,
+  "actual_data_read": false,
+  "model_training_executed": false,
+  "checks": [
+    "legacy four-argument numerical equivalence",
+    "single-short support cap",
+    "reference EQ inverse and alpha recomputation",
+    "positive overlap rejection",
+    "clean explicit primary full pass",
+    "same-clean-train secondary only",
+    "energy/q/y/SNR identity",
+    "dispersed multi or native high-share route",
+    "unique reference clips without repetition",
+    "first-batch exact replay",
+    "reject boundary/foreign/reused explicit primary",
+    "zero-overlap blend skipped",
+    "blend mask intersection, not imputation",
+    "60dB extreme bounded to20dB in every minute",
+    "minute SNR list matches final reversed/gained outputs",
+    "zero minute background and positive-to-float32-zero explicitly rejected"
+  ],
+  "single_minute_cap_for_15_observed": 0.29866666666666664,
+  "extreme_uncapped_minute_snr_db": 60.0,
+  "extreme_capped_minute_snr_db": 19.999999999999996,
+  "extreme_capped_effective_share": 0.00010713137112942387,
+  "routes": [
+    "high_share_dispersed_multi",
+    "high_share_dispersed_multi",
+    "high_share_native",
+    "high_share_native",
+    "high_share_dispersed_multi",
+    "high_share_dispersed_multi"
+  ],
+  "legacy_code_sha256": {
+    "pipeline/native_sampler_v2.py": "1ad2faa92d7b5183796c4887c31a0a6dbf77bcd7b3d7082698f4010ff943c39f",
+    "pipeline/augmentation_v2.py": "20b9beff2f4ba31fa25e34080e395d5141fd62c7313bd57e50e969c7c3463e49"
+  }
+}

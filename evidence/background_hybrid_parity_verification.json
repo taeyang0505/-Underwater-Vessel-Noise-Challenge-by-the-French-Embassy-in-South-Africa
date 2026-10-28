@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "fixture_only": true,
+  "actual_train_or_heldout_data_opened": false,
+  "ops_hybrid_output_loss_gradient_bitwise_equal": true,
+  "checkpoint_and_prior_reload_bitwise_equal": true,
+  "eight_channel_transform_matches_OPS_bitwise": true,
+  "missing_prior_and_wrong_architecture_rejected": true,
+  "immutable_r1_regression": [
+    {
+      "architecture_version": 1,
+      "kind": "tabm",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 1,
+      "kind": "cnn",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 1,
+      "kind": "fdy",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 1,
+      "kind": "itransformer",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 2,
+      "kind": "tabm",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 2,
+      "kind": "cnn",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 2,
+      "kind": "fdy",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 2,
+      "kind": "itransformer",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 3,
+      "kind": "tabm",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 3,
+      "kind": "cnn",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 3,
+      "kind": "fdy",
+      "state_and_output_bitwise_equal": true
+    },
+    {
+      "architecture_version": 3,
+      "kind": "itransformer",
+      "state_and_output_bitwise_equal": true
+    }
+  ],
+  "hybrid_parameters": 58274,
+  "architecture": {
+    "architecture_version": 4,
+    "input_channels": 8,
+    "model_width": 32,
+    "dropout": 0.1,
+    "prior_clip": 0.01,
+    "prior_strength": 0.5
+  },
+  "residual_loss": "0.001 * mean(sum(energy_weights * residual_logits**2))",
+  "prior_fitted_on": "generated numerical fixture only",
+  "files_sha256": {
+    "pipeline/models.py": "a11c9dda847b4a2aeedaf1e892c4c32298ee03e73758568b96a565fd539c21f9",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "ops/train_background_hybrid_pilot.py": "fee6478f19f293e1924c88b7f073c474abc0095cad9a18a7c5d68a25285d25a8",
+    "verify_background_hybrid_parity.py": "08923ca759d02fb7987db9431fa39e3cb7dcfb241e02ccef0a60570553984408"
+  },
+  "immutable_r1_archive_sha256": "565933fc2df2a616cd91a6d5bf6ef07ff52766655b5f3e34b1497b99e5059079"
+}

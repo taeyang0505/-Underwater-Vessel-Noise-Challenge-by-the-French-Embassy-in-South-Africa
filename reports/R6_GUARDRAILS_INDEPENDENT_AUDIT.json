@@ -1,0 +1,209 @@
+{
+  "status": "PASS_WITH_DECLARED_LIMITATIONS",
+  "scope": "independent TRAIN/INNER integration and source metadata audit; no model results or locked arrays/recipes loaded",
+  "data_version": "data/synthetic/r6_cpu_guardrails_v3_schemafix",
+  "dataset_manifest_sha256": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+  "preflight_receipt_matches_current_dataset": true,
+  "code_config_and_source_pins_verified": true,
+  "roles": {
+    "train": {
+      "rows": 8192,
+      "unique_primary_windows": 5639,
+      "site_draw_counts": {
+        "1 Richards Bay": {
+          "draws": 1366,
+          "unique_windows": 1366
+        },
+        "2 Durban": {
+          "draws": 1366,
+          "unique_windows": 1231
+        },
+        "3 Cape_Recife": {
+          "draws": 1366,
+          "unique_windows": 240
+        },
+        "4 Bird Island": {
+          "draws": 1365,
+          "unique_windows": 1279
+        },
+        "5 St Croix Island": {
+          "draws": 1365,
+          "unique_windows": 1319
+        },
+        "6 Riy_Banks": {
+          "draws": 1364,
+          "unique_windows": 204
+        }
+      },
+      "no_source_count_r4": 1638,
+      "no_source_count_r6": 1638,
+      "hard_negative_count": 819,
+      "shared_source_index_order": true,
+      "shared_no_source_positions": true,
+      "no_source_position_difference_count": 0,
+      "hard_negative_site_draw_counts": {
+        "1 Richards Bay": {
+          "draws": 137,
+          "unique_windows": 137
+        },
+        "2 Durban": {
+          "draws": 137,
+          "unique_windows": 27
+        },
+        "3 Cape_Recife": {
+          "draws": 137,
+          "unique_windows": 7
+        },
+        "4 Bird Island": {
+          "draws": 136,
+          "unique_windows": 136
+        },
+        "5 St Croix Island": {
+          "draws": 136,
+          "unique_windows": 111
+        },
+        "6 Riy_Banks": {
+          "draws": 136,
+          "unique_windows": 10
+        }
+      },
+      "baseline_source_draw_counts": {
+        "1 Richards Bay": {
+          "draws": 1229,
+          "unique_windows": 1229
+        },
+        "2 Durban": {
+          "draws": 1229,
+          "unique_windows": 1229
+        },
+        "3 Cape_Recife": {
+          "draws": 1229,
+          "unique_windows": 240
+        },
+        "4 Bird Island": {
+          "draws": 1229,
+          "unique_windows": 1229
+        },
+        "5 St Croix Island": {
+          "draws": 1229,
+          "unique_windows": 1229
+        },
+        "6 Riy_Banks": {
+          "draws": 1228,
+          "unique_windows": 204
+        }
+      }
+    },
+    "inner": {
+      "rows": 1024,
+      "unique_primary_windows": 1024,
+      "site_draw_counts": {
+        "1 Richards Bay": {
+          "draws": 772,
+          "unique_windows": 772
+        },
+        "2 Durban": {
+          "draws": 55,
+          "unique_windows": 55
+        },
+        "5 St Croix Island": {
+          "draws": 197,
+          "unique_windows": 197
+        }
+      },
+      "no_source_count_r4": 205,
+      "no_source_count_r6": 205,
+      "hard_negative_count": 0,
+      "shared_source_index_order": true,
+      "shared_no_source_positions": false,
+      "no_source_position_difference_count": 316,
+      "hard_negative_site_draw_counts": {
+        "1 Richards Bay": {
+          "draws": 0,
+          "unique_windows": 0
+        },
+        "2 Durban": {
+          "draws": 0,
+          "unique_windows": 0
+        },
+        "5 St Croix Island": {
+          "draws": 0,
+          "unique_windows": 0
+        }
+      },
+      "baseline_source_draw_counts": {
+        "1 Richards Bay": {
+          "draws": 772,
+          "unique_windows": 772
+        },
+        "2 Durban": {
+          "draws": 55,
+          "unique_windows": 55
+        },
+        "5 St Croix Island": {
+          "draws": 197,
+          "unique_windows": 197
+        }
+      }
+    }
+  },
+  "boundary_mask_checks": {
+    "train": {
+      "sampled_rows_from_restored_boundary_windows": 2860,
+      "sampled_unique_restored_windows": 571,
+      "sampled_candidate_minute_masks_with_repeats": 2860,
+      "full_original_NaN_and_actual_minute_mask_preserved_R4_and_R6": true,
+      "minimum_observed_minutes_after_QC": 3
+    },
+    "inner": {
+      "sampled_rows_from_restored_boundary_windows": 0,
+      "sampled_unique_restored_windows": 0,
+      "sampled_candidate_minute_masks_with_repeats": 68,
+      "full_original_NaN_and_actual_minute_mask_preserved_R4_and_R6": true,
+      "minimum_observed_minutes_after_QC": 9
+    }
+  },
+  "reference_usage": {
+    "train": {
+      "permitted_source_clips": 51,
+      "permitted_source_groups": 9,
+      "used_clips_across_both_laws": 51,
+      "every_used_clip_matches_same_role": true
+    },
+    "inner": {
+      "permitted_source_clips": 18,
+      "permitted_source_groups": 3,
+      "used_clips_across_both_laws": 18,
+      "every_used_clip_matches_same_role": true
+    }
+  },
+  "reference_lineage": {
+    "original_clips": 119,
+    "original_groups": 22,
+    "admitted_clips": 94,
+    "admitted_groups": 17,
+    "excluded_old_outer_clips": 25,
+    "excluded_old_outer_groups": 5,
+    "excluded_rows_all_original_outer_validation": true,
+    "all_admitted_rows_exact_original_train_or_validation": true
+  },
+  "source_metadata_ref_isolation": {
+    "reference_component": true,
+    "hull_id": true,
+    "recording_day": true,
+    "sha256": true
+  },
+  "training_hard_negative_targets_exact_zero": true,
+  "training_shared_R4_R6_source_no_source_hard_schedule_exact": true,
+  "old_OUTER_numeric_values_loaded_by_this_audit": false,
+  "locked_arrays_or_recipes_loaded_by_this_audit": false,
+  "model_results_read_by_this_audit": false,
+  "reference_numeric_slices_loaded_by_this_audit": false,
+  "limitations": [
+    "TRAIN hard-negative819 scheduled rows reuse428 unique windows, by fixed equal-site cycling; not819 independent sources.",
+    "INNER shares background index order across R4/R6 but uses independently generated no-source positions; both laws have205 explicit no-source rows.",
+    "Own-law INNER targets differ by construction, so compare representations within the same generator and use common frozen panels for cross-generator claims.",
+    "Static loader paths and saved recipes prove admitted source usage; this is not an operating-system syscall trace.",
+    "An initial manifest display included pre-existing locked descriptive fields; they were not used for candidate selection, fitting, tuning or this audit verdict."
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "status": "completed",
+  "version": "safe_local_alignment_audit_v1",
+  "plan_sha256": "1f084d747338c1c1438cdf828cce6f42dee1a45ef8c48bf54bca9d057ec0d175",
+  "script_sha256": "b1318b960431c56bf36f1e2f366c863ba6f2fc093dd92bdd9a774fd82effd0e0",
+  "fixture": {
+    "status": "PASS",
+    "synthetic_only": true,
+    "fixed_feature_count": 858,
+    "gain_chunk_invariance": true,
+    "constant_and_undefined_safe": true,
+    "MSE_identity_verified": true,
+    "Test_paths_refused_before_open": true
+  },
+  "constants": {
+    "R5_original_fold0_INNER": {
+      "TRAIN_examples": 53244,
+      "INNER_examples": 3000,
+      "INNER_mean": 0.3819988403866688,
+      "INNER_population_variance": 0.09601590150071058,
+      "constants": {
+        "constant0": {
+          "value": 0.0,
+          "RMSE": 0.4918729668903042,
+          "MSE": 0.2419390155574703,
+          "MSE_identity_error": 2.7755575615628914e-17,
+          "fitted_on_INNER": false
+        },
+        "constant0_1": {
+          "value": 0.1,
+          "RMSE": 0.41897404153495776,
+          "MSE": 0.17553924748013652,
+          "MSE_identity_error": 2.7755575615628914e-17,
+          "fitted_on_INNER": false
+        },
+        "TRAIN_mean": {
+          "value": 0.38199822101381875,
+          "RMSE": 0.3098643275711068,
+          "MSE": 0.0960159015010942,
+          "MSE_identity_error": 1.3877787807814457e-17,
+          "fitted_on_INNER": false
+        },
+        "oracle_INNER_mean_diagnostic_only": {
+          "value": 0.3819988403866688,
+          "RMSE": 0.3098643275704878,
+          "MSE": 0.09601590150071058,
+          "MSE_identity_error": 0.0,
+          "fitted_on_INNER": true
+        }
+      },
+      "identity": "MSE(c)=Var_population(INNER_share)+(c-mean(INNER_share))^2",
+      "label_status": "known synthetic added-component share; not natural observational vessel ground truth"
+    },
+    "R6_guardrails_INNER": {
+      "TRAIN_examples": 8192,
+      "INNER_examples": 1024,
+      "INNER_mean": 0.11995560972124913,
+      "INNER_population_variance": 0.025240222984184893,
+      "constants": {
+        "constant0": {
+          "value": 0.0,
+          "RMSE": 0.19907177421166852,
+          "MSE": 0.03962957128778154,
+          "MSE_identity_error": 0.0,
+          "fitted_on_INNER": false
+        },
+        "constant0_1": {
+          "value": 0.1,
+          "RMSE": 0.16012010911666189,
+          "MSE": 0.025638449343531707,
+          "MSE_identity_error": 0.0,
+          "fitted_on_INNER": false
+        },
+        "TRAIN_mean": {
+          "value": 0.12957071012686278,
+          "RMSE": 0.15916241120313215,
+          "MSE": 0.025332673139994925,
+          "MSE_identity_error": 0.0,
+          "fitted_on_INNER": false
+        },
+        "oracle_INNER_mean_diagnostic_only": {
+          "value": 0.11995560972124913,
+          "RMSE": 0.15887171864175478,
+          "MSE": 0.025240222984184893,
+          "MSE_identity_error": 0.0,
+          "fitted_on_INNER": true
+        }
+      },
+      "identity": "MSE(c)=Var_population(INNER_share)+(c-mean(INNER_share))^2",
+      "label_status": "known synthetic added-component share; not natural observational vessel ground truth"
+    }
+  },
+  "R6_TRAIN_vs_INNER_physical_KS": {
+    "lf_31p6_to_501p2_bump_db": {
+      "TRAIN_total": 8192,
+      "TRAIN_finite": 8192,
+      "TRAIN_undefined": 0,
+      "INNER_total": 1024,
+      "INNER_finite": 1024,
+      "INNER_undefined": 0,
+      "TRAIN_median": 4.92384710722078,
+      "INNER_median": 4.602042119841762,
+      "KS_statistic": 0.078857421875,
+      "KS_pvalue_descriptive": 2.3012873792548807e-05
+    },
+    "high_3162_to_7943_bump_db": {
+      "TRAIN_total": 8192,
+      "TRAIN_finite": 8192,
+      "TRAIN_undefined": 0,
+      "INNER_total": 1024,
+      "INNER_finite": 1024,
+      "INNER_undefined": 0,
+      "TRAIN_median": 4.716397546025071,
+      "INNER_median": 8.802791916249824,
+      "KS_statistic": 0.201904296875,
+      "KS_pvalue_descriptive": 5.829745069728076e-33
+    },
+    "low_high_broadband_db_pearson": {
+      "TRAIN_total": 8192,
+      "TRAIN_finite": 8192,
+      "TRAIN_undefined": 0,
+      "INNER_total": 1024,
+      "INNER_finite": 1024,
+      "INNER_undefined": 0,
+      "TRAIN_median": 0.3371115947385095,
+      "INNER_median": 0.4289715591459478,
+      "KS_statistic": 0.0899658203125,
+      "KS_pvalue_descriptive": 7.462645340227481e-07
+    },
+    "all25_broadband_db_population_std": {
+      "TRAIN_total": 8192,
+      "TRAIN_finite": 8192,
+      "TRAIN_undefined": 0,
+      "INNER_total": 1024,
+      "INNER_finite": 1024,
+      "INNER_undefined": 0,
+      "TRAIN_median": 2.3422789541033016,
+      "INNER_median": 2.2640402399115156,
+      "KS_statistic": 0.0745849609375,
+      "KS_pvalue_descriptive": 7.626700585014195e-05
+    }
+  },
+  "R6_TRAIN_vs_INNER_grouped_AV": {
+    "domain": "new R6 TRAIN=0 vs INNER=1 only",
+    "OOF_AUC": 0.9030650854110718,
+    "folds": [
+      {
+        "fold": 0,
+        "fit_rows": 7373,
+        "held_rows": 1843,
+        "fit_unique_groups": 5330,
+        "held_unique_groups": 1333,
+        "held_class_counts": {
+          "0": 1638,
+          "1": 205
+        },
+        "group_overlap": 0,
+        "AUC": 0.9137854015902794
+      },
+      {
+        "fold": 1,
+        "fit_rows": 7373,
+        "held_rows": 1843,
+        "fit_unique_groups": 5331,
+        "held_unique_groups": 1332,
+        "held_class_counts": {
+          "0": 1638,
+          "1": 205
+        },
+        "group_overlap": 0,
+        "AUC": 0.9171148634563268
+      },
+      {
+        "fold": 2,
+        "fit_rows": 7373,
+        "held_rows": 1843,
+        "fit_unique_groups": 5331,
+        "held_unique_groups": 1332,
+        "held_class_counts": {
+          "0": 1638,
+          "1": 205
+        },
+        "group_overlap": 0,
+        "AUC": 0.8979630125971589
+      },
+      {
+        "fold": 3,
+        "fit_rows": 7372,
+        "held_rows": 1844,
+        "fit_unique_groups": 5330,
+        "held_unique_groups": 1333,
+        "held_class_counts": {
+          "0": 1639,
+          "1": 205
+        },
+        "group_overlap": 0,
+        "AUC": 0.9012723403622078
+      },
+      {
+        "fold": 4,
+        "fit_rows": 7373,
+        "held_rows": 1843,
+        "fit_unique_groups": 5330,
+        "held_unique_groups": 1333,
+        "held_class_counts": {
+          "0": 1639,
+          "1": 204
+        },
+        "group_overlap": 0,
+        "AUC": 0.8857594898850327
+      }
+    ],
+    "n_features": 858,
+    "TRAIN_rows": 8192,
+    "INNER_rows": 1024,
+    "TRAIN_unique_primary_sources": 5639,
+    "INNER_unique_primary_sources": 1024,
+    "one_fixed_fit_no_tuning": true,
+    "OOF_probabilities_sha256": "e34e3de927f56baf2f58a797bf5e0b70d0f6532d7e5c006f9abc21349b513baa"
+  },
+  "definitions": {
+    "LF_band_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "high_band_indices": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "regional_power": "sum linear band powers, expressed in dB using stable logsumexp; complete regional minutes only",
+    "bump": "maximum regional minute dB minus median regional minute dB, >=3 observed minutes",
+    "correlation": "Pearson between LF and high regional minute dB, >=3 paired minutes and nonconstant series",
+    "broadband_std": "population standard deviation of all25 regional minute dB, >=3 complete minutes",
+    "AV_features": "4 physical values +4 defined flags +375 window-median-relative db/20 +375 observed mask +25 bandmedian-windowmedian/20 +25 temporal band std/20 +25 band q90-q10 span/20 +25 observed fraction",
+    "undefined_AV_feature_fill": 0.0,
+    "number_of_features": 858,
+    "raw_absolute_db_site_target_ref_tags_in_features": false,
+    "source_id_used_only_for_CV_groups": true,
+    "KS_scope": "R6 TRAIN versus R6 INNER only; physical values with defined masks",
+    "domain_labels": {
+      "TRAIN": 0,
+      "INNER": 1
+    },
+    "classifier": {
+      "family": "LightGBM binary classifier",
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_jobs": 2,
+      "random_state": 20261026,
+      "min_child_samples": 20,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "early_stopping": false,
+      "hyperparameter_search": false
+    },
+    "CV": {
+      "folds": 5,
+      "kind": "StratifiedGroupKFold",
+      "shuffle": true,
+      "random_state": 20261026,
+      "group": "original primary background base_window_index"
+    },
+    "constants": [
+      0.0,
+      0.1,
+      "same_version_TRAIN_mean",
+      "oracle_same_INNER_mean_diagnostic_only"
+    ],
+    "no_Test_or_Benchmark_moment_fitting": true,
+    "limitations": [
+      "Source-domain AV is not a Test-domain AV or a leaderboard-gap measurement.",
+      "Source-separated groups can still share sensors/recorder footprints. Reused TRAIN windows are grouped together.",
+      "AUC near .5 does not establish distribution equality; .85 is not an automatic fix threshold.",
+      "R5 INNER labels come from the old R4 synthetic generator, not natural observational vessel labels.",
+      "Oracle INNER mean is the best constant fitted to that INNER truth; it is a descriptive lower bound, not a deployable fit.",
+      "The unknown public Benchmark score is not a target-moment equation; no .24-.27 interval is fitted."
+    ]
+  },
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0"
+  },
+  "elapsed_seconds": 17.62082516681403,
+  "Test_or_locked_arrays_or_model_outputs_opened": false,
+  "generator_or_regression_model_changed": false,
+  "Benchmark_moment_matching_or_LB_forecast_performed": false
+}

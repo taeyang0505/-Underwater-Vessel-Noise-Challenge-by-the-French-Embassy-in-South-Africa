@@ -1,0 +1,137 @@
+{
+  "format": "r6_physics_features_v2_numeric_fixture_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "code_sha256": {
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "ops/verify_physics_features_r6_v2.py": "dff7e28af08da4a9098eb8063becc8f87a5225afebe5dc0704253cdeca107456"
+  },
+  "specification": {
+    "schema": "r6_physics_bandpower_v2_27",
+    "feature_count": 27,
+    "feature_names": [
+      "bump_low_db",
+      "bump_mid_db",
+      "bump_high_db",
+      "bump_safe_db",
+      "corr_low_mid",
+      "corr_low_high",
+      "corr_low_safe",
+      "std_broadband_db",
+      "tilt_median_high_minus_low_db",
+      "bump_low_db_defined",
+      "bump_mid_db_defined",
+      "bump_high_db_defined",
+      "bump_safe_db_defined",
+      "corr_low_mid_defined",
+      "corr_low_high_defined",
+      "corr_low_safe_defined",
+      "std_broadband_db_defined",
+      "tilt_median_high_minus_low_db_defined",
+      "bump_low_db_valid_minutes",
+      "bump_mid_db_valid_minutes",
+      "bump_high_db_valid_minutes",
+      "bump_safe_db_valid_minutes",
+      "corr_low_mid_valid_minutes",
+      "corr_low_high_valid_minutes",
+      "corr_low_safe_valid_minutes",
+      "std_broadband_db_valid_minutes",
+      "tilt_median_high_minus_low_db_valid_minutes"
+    ],
+    "signal_names": [
+      "bump_low_db",
+      "bump_mid_db",
+      "bump_high_db",
+      "bump_safe_db",
+      "corr_low_mid",
+      "corr_low_high",
+      "corr_low_safe",
+      "std_broadband_db",
+      "tilt_median_high_minus_low_db"
+    ],
+    "groups_zero_based": {
+      "low": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "mid": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "high": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "safe": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "safe_band_upper_actual_centre_hz": 5011.9,
+    "quantization_decimals": 1,
+    "query_inputs": [
+      "db"
+    ],
+    "learned_state": false,
+    "definitions": {
+      "group_level_db": "10log10(sum linear powers); all group frequencies observed in the minute",
+      "bump": "max(group_level_db)-median(group_level_db), >=2 complete minutes",
+      "correlation": "Pearson of paired complete group dB levels; >=3 pairs and both nonconstant",
+      "broadband_std": "population std(ddof=0) of all25-band summed-power dB; >=2 complete minutes",
+      "tilt": "median(high_level_db-low_level_db) over >=1 paired complete minute",
+      "missing": "undefined value=0 plus explicit defined mask and integer valid-minute count",
+      "constant_tolerance": "centered sum of squares >1e-20 for each Pearson series"
+    },
+    "common_offset_invariance": "exact mathematically on quantized input; pre-round arbitrary gain can change quantization",
+    "per_band_offset_invariance_guaranteed": false
+  },
+  "independent_scalar_oracle_max_abs": 0.0,
+  "common_decimal_grid_gain_max_abs": {
+    "-12.0": 2.842170943040401e-14,
+    "-6.0": 2.842170943040401e-14,
+    "0.1": 4.263256414560601e-14,
+    "6.0": 0.0,
+    "12.0": 0.0
+  },
+  "nongrid_pre_round_gain_0p037_max_signal_change": 0.08407974243164062,
+  "per_band_static_offset_max_signal_change": 9.09178352355957,
+  "all_nan_single_minute_constant_and_partial_band_safe": true,
+  "safe_group_valid_when_7943Hz_missing": true,
+  "input_unchanged_and_readonly_supported": true,
+  "chunk_permutation_bitwise": true,
+  "hand_computed_ramp_and_negative_correlation": true,
+  "no_Torch_import_probe": {
+    "torch_loaded": false,
+    "shape": [
+      1,
+      27
+    ]
+  },
+  "source_datasets_Test_OUTER_or_TRAIN_opened": false,
+  "model_fit_GPU_SSH_network_submission": false,
+  "no_performance_or_AUC_improvement_claim": true
+}

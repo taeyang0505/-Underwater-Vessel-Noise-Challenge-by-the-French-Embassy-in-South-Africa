@@ -1,0 +1,146 @@
+{
+  "host": "103.196.86.97",
+  "port": 13475,
+  "user": "root",
+  "remote_base": "/workspace/underwater_vessel_noise_r2",
+  "remote_project": "/workspace/underwater_vessel_noise_r2/project",
+  "remote_python": "/workspace/underwater_vessel_noise_r1/venv/bin/python",
+  "phase": "r2_full_pipeline_and_first_r3_improvement_complete",
+  "server_torch": "2.8.0+cu128",
+  "archive_sha256": "565933fc2df2a616cd91a6d5bf6ef07ff52766655b5f3e34b1497b99e5059079",
+  "data_version": "group_cv_physics_v2_r1",
+  "model_run": "models/group_cv_physics_v2_r2_adam",
+  "trained": true,
+  "official_submission_authorized_for_this_run": false,
+  "server_cpu_fixture": "passed",
+  "neural_cuda_probe": "passed",
+  "tabicl_16k_cuda_probe": "passed",
+  "kumo_fp16_query_batch_difference": 0.0002071857452392578,
+  "strict_query_tolerance": 3e-05,
+  "full_training_started": true,
+  "monitor_automation_id": null,
+  "monitor_interval_minutes": 5,
+  "server_health_interval_seconds": 30,
+  "started_server_unix": 1792869909.5714338,
+  "tmux_session": "underwater_train_r2",
+  "runtime_manifest": "delivery/r2_full_pipeline_code_v2_manifest.json",
+  "kumo_precision": "fp32",
+  "query_tolerance": 3e-05,
+  "backup_script": "/workspace/underwater_vessel_noise_r1/ops/backup_completed_training.py",
+  "local_backup_dir": "ops/server_backups",
+  "full_training_status": "completed",
+  "verified_backup": {
+    "path": "ops/server_backups/snapshot_20261024T180856_204764Z_56e064fd.zip",
+    "sha256": "ab19f4b688b07d732a2e2bf0fd453fa260ee5842503afc6bc7be6e13814808f7",
+    "files": 37
+  },
+  "restart_authorized_automatically": false,
+  "precision_diagnostic": {
+    "status": "completed",
+    "report": "ops/tabicl_inner_precision_external.json",
+    "auto_max_batch_delta": 0.0006561875343322754,
+    "fp32_max_batch_delta": 1.3709068298339844e-06,
+    "fp32_strict_checks_pass": true
+  },
+  "last_notified_state": "User requested immediate fixes; automation deleted; deterministic augmentation and FP32 fix implementation underway",
+  "monitor_automation_deleted": true,
+  "requested_training_policy": {
+    "epochs": 100,
+    "patience": 7,
+    "optimizer": "adam",
+    "neural_models": [
+      "tabm",
+      "cnn",
+      "fdy",
+      "itransformer"
+    ],
+    "foundation_weight_training": false,
+    "all_models_refit_after_validated_training_data_change": true
+  },
+  "gemini_consultation": {
+    "destination": "Whale Gemini Argon conversation",
+    "status": "cancelled_by_user_no_external_transmission",
+    "draft": "ops/GEMINI_CONSULTATION_DRAFT.md",
+    "no_message_sent": true
+  },
+  "latest_pilots": {
+    "common_response_CNN_inner_rmse": 0.32037196872004264,
+    "reference_smooth_CNN_inner_rmse": 0.31994955175251316,
+    "augmented_LGBM_inner_rmse": 0.28979273918463805,
+    "result": "insufficient improvement; not promoted to full CV",
+    "full_CV_restarted": false
+  },
+  "active_experiments": [
+    "training-only background spectral prior + LightGBM",
+    "background prior residual-mask CNN"
+  ],
+  "remote_r2_base": "/workspace/underwater_vessel_noise_r2",
+  "remote_r2_project": "/workspace/underwater_vessel_noise_r2/project",
+  "remote_r2_run": "models/group_cv_physics_v2_r2_adam",
+  "remote_r2_config": "configs/group_cv_physics_training_r2.json",
+  "r2_code_deployed_and_cli_validated": true,
+  "priority": "Finish current pilots; freeze full 5-fold pipeline and measure all-model OOF before any further improvement",
+  "new_improvement_experiments_allowed_before_full_oof": false,
+  "r2_config_sha256": "92bcf84892839fdf9e1963d4448229923cf34a80a4dbe9ecd9eb6ae27a5452f4",
+  "backup_command_arguments": {
+    "run_dir": "/workspace/underwater_vessel_noise_r2/project/models/group_cv_physics_v2_r2_adam",
+    "backup_dir": "/workspace/underwater_vessel_noise_r2/ops/backups"
+  },
+  "no_further_optimization_until_full_oof": true,
+  "previous_r1_failure": {
+    "reason": "TabICL outer query-batch numerical invariance gate rejected; no complete CV fold report",
+    "finished_unix": 1792865295.9897542,
+    "backup": {
+      "path": "ops/server_backups/snapshot_20261024T180856_204764Z_56e064fd.zip",
+      "sha256": "ab19f4b688b07d732a2e2bf0fd453fa260ee5842503afc6bc7be6e13814808f7",
+      "files": 37
+    }
+  },
+  "started_KST": "2026-10-25T04:25:09.571434+09:00",
+  "training_pid": 23981,
+  "supervisor_pid": 23980,
+  "local_progress_dir": "ops/r2_progress",
+  "frozen_model_candidates": [
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm",
+    "cnn",
+    "fdy",
+    "itransformer",
+    "tabicl",
+    "kumo_large"
+  ],
+  "ordered_user_request": "Finish current complete 5-fold pipeline, measure full OOF RMSE, then start RMSE improvement; no new improvement before full measurement.",
+  "post_oof_improvement_requested": true,
+  "completed_full_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "final_oof_measured": true,
+  "finished_server_unix": 1792874179.9887373,
+  "elapsed_training_seconds": 4270.417303562164,
+  "independent_oof_verification": "passed",
+  "baseline_ensemble_oof_rmse": 0.24558482854226693,
+  "baseline_boundary_excluded_rmse": 0.24799516586599005,
+  "best_single_model": "cnn",
+  "best_single_model_oof_rmse": 0.23854461484414052,
+  "first_improvement": {
+    "experiment": "ensemble_shrinkage_r3",
+    "lambda": 0.05,
+    "oof_rmse": 0.24032800878689142,
+    "boundary_excluded_rmse": 0.24282205252206596,
+    "independent_verification": "reports/R3_SHRINKAGE_INDEPENDENT_VERIFICATION.json",
+    "promoted": false,
+    "reason": "Does not beat best single CNN"
+  },
+  "GPU_training_active": false,
+  "all_backups_verified": true,
+  "reference_coverage_audit": "completed: reports/R3_REFERENCE_COVERAGE_AUDIT.md",
+  "no_recurring_automation": true,
+  "no_additional_GPU_job_running": true,
+  "r4_data_or_training_executed": false
+}

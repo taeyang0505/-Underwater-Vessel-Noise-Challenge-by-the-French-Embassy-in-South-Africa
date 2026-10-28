@@ -1,0 +1,1795 @@
+{
+  "format": "r12_mask_matched_followup_evaluation_v2",
+  "status": "completed",
+  "plan_file_sha256": "e00898217e1c7d714f9c384a39f7ef325a1db8fcf245bdf5239fef60e1f5b75b",
+  "original_selected_arm_unchanged": "L1H1P1",
+  "original_selected_policy_sha256": "8dd82dd2feacaa42e06be450c2615d6872082b71fdff54e5f879bc6cde6c7b63",
+  "additional_control_not_in_original8_selector": true,
+  "no_refit_reweight_or_Test": true,
+  "development_not_blind": true,
+  "panels": 17,
+  "metric_rows": 118,
+  "CI_rows": 201,
+  "metrics_csv": "results.csv",
+  "CI_csv": "paired_cluster_CI.csv",
+  "source_pins": {
+    "ops/evaluate_r12_mask_matched_control.py": "ded5e72aeaf9c08fdaaea9c959647724eb9ecd231cf36990642e45544b979413",
+    "ops/evaluate_r12_ablation.py": "ba3bc6f312b1747d88eb9ca841f0f3432e6982e9ee37351dd2878cd4216f1e08",
+    "ops/verify_r12_evaluation.py": "c9b40df2b4b894d027218cdfef95974f6b9964e8afb1d2cc42d1992ffbe66815",
+    "ops/train_r12_mask_matched_control_v2.py": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb",
+    "ops/build_r12_mask_matched_control_v2.py": "8d108c47f24dffe93524467fed1368a453015676c8397df0299b3106db98f91d",
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/manifest.json": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/readiness.json": "22ed0f3fc84b4c11c43c91556b60389c9fab56aed7c2399a42dd55febd04fd57",
+    "reports/R12_EVALUATION_PREDECLARED_PLAN.json": "f5fdb2d62d76548a72dbe9c9f49d75c4feb82b3067c3bc4cbf63d1a089c226b0"
+  },
+  "barrier_sha256": {
+    "reports/r12_cpu_ablation_r1/RESULTS.json": "73288fd6fe2d7b3fe97908a2360b5d21143ec2941a6e6d2537fab3e1b4e34ff1",
+    "reports/R12_ALL17_GLOBAL_FREEZE.json": "d4c049181e3eded7f588ec561cdae9d74510adbc2d8602425d61b0743f969917",
+    "reports/r12_cpu_ablation_r1/selected_policy.json": "8dd82dd2feacaa42e06be450c2615d6872082b71fdff54e5f879bc6cde6c7b63",
+    "models/r12_mask_matched_control_r2/ALL_CONTROL_FROZEN.json": "dd353b1aecfe8b0038d15d6a6017d2e2907f45ade9f479910722329944d32ef8",
+    "models/r12_mask_matched_control_r2/PRE_FIT_FREEZE.json": "aca76740342a0ebb22d5d6599044ac31a7f5dc64c049ef020be702cfa6d8ccfd",
+    "models/r12_mask_matched_control_r2/cnn/best.pt": "e74d9b3af5e1c79934ecd809f38f14b284d80ce3e0705cff7787104e5bfd45b6",
+    "models/r12_mask_matched_control_r2/cnn/epochs.jsonl": "0837cab8a1d90233c1b9662d02f4215cb88990e88493a1062b1a1256074873ff",
+    "models/r12_mask_matched_control_r2/cnn/summary.json": "64164f1849ed05a4e046d257affe528fa3dc9c9898c3731656eeddf212ba2b45",
+    "models/r12_mask_matched_control_r2/tree/summary.json": "6d43a97adb0a4423bd6671177e47a08565623387ae9019264f71d0c4951695a6"
+  },
+  "per_panel_input_proofs": {
+    "R12_validation_gate": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "bd99f32fda4f3cb50f765d6ce12e9efc2f3dadab68d1d6e5b17ada8bb679b77b",
+      "input_db_shape": [
+        500,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "0cdc692c1c2bc699d4cef51c6ac40d1939e5e5e15f21c708c92d3e0700672110",
+      "n": 500,
+      "sample_ID_order_sha256": "53cae691004cb5bb77ee67fa705ae36bee39af6484f69b505858942ad66ae0bb",
+      "target_share_sha256": "729555bafb4a6c108ab2498122abf930a9446205c2ea5ba84ceea9ac9dae07b8",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R12_eval": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "9ada02ad248d49844a6639e758528ee31c52f43f77ccdfbdb6860cc19da44822",
+      "input_db_shape": [
+        500,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "9aaa49e67a4c2bd3aaa0b325cce679e18a1c4c02e02c507b924060150476accf",
+      "n": 500,
+      "sample_ID_order_sha256": "b3d8436c25b3d5374e9eaa20a21cc2f0b3aab46e9103ef2368ced1fbbe1e7278",
+      "target_share_sha256": "f53573124609e396bce50ecb5cbedb22fffc85b268fd4d3bc7a1aac2de4fb014",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R12_high_snr_long": {
+      "physical_pool_max_error": 1.7881393432617188e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "cd141ad96eca3b26c04cd19d947163d8adebb05ec82c448193c9fd02656fabd7",
+      "input_db_shape": [
+        500,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "23e89849787d220084b35bb0ab80de49ce65e46c6a059494c63f9a4789b3c156",
+      "n": 500,
+      "sample_ID_order_sha256": "7aaa3dd2eac8343e9f5411ee2cc9c3ac7468d27a726f6c09ba38f598969729e4",
+      "target_share_sha256": "dee04f09347448ea5eecdd26b253308d80008e441660de1678c32aba3821f61f",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R9_selection": {
+      "physical_pool_max_error": 5.960464477539063e-08,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "4911283f6ba1b0403d227955498ff8793af642c42a45dfbfe4249d9ce7e7fc13",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "cfd4e9fd43edf20f96e7747507afd1d3656d09d19619d5d544ad8657db5e3ee4",
+      "n": 1000,
+      "sample_ID_order_sha256": "aa28e5b96cdcfec2989d617a21ee354d68a96e66112bf70040f333d1d0647a62",
+      "target_share_sha256": "822bff4311fd6a7e79712a5a6d72b7e5d4321e696113729e6cb3bb15ef62c916",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R9_ensemble_gate": {
+      "physical_pool_max_error": 5.960464477539063e-08,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "8278f725270f550706209c7f60f680190229707eae84d1ed880394bffceb893c",
+      "input_db_shape": [
+        500,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "5251523b36ec86d2aa074e832bcb439f452c965b03629d0f29394e66278b0aef",
+      "n": 500,
+      "sample_ID_order_sha256": "ce33342b7431ae98db88330c306637d3f6b3aecc95268cbc0d0cd11ec7b56c29",
+      "target_share_sha256": "ca2322a64554387898e2ae33965e62175007493a400a2a4444932d2cd78d2868",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R10_unseen__r9_complete": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "37096828db4d219e3dbdcf749c562e58ea68d3c6f6739f709fe928612c1e093a",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "8b37c4219c00b865ee3eae060a3d4726b1558b1ee53cb735ada0b613f9424f27",
+      "n": 1000,
+      "sample_ID_order_sha256": "440b9f9d73f838781a7b11ac9b07c80c5d35d999d5fe25debf0b5a1f6f99865c",
+      "target_share_sha256": "65d75060cf6a6d9047f477931da6501ebeef0f57e3aff9a958e895a68b5f7e22",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R10_seen__mean_scale_only": {
+      "physical_pool_max_error": 1.7881393432617188e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "8fa003a291f9d7712d9487aca499215f5062ee99a94f7a0b0bb35cd9beddb736",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "fc5a12f3135561c1759b9219cc4b237c2bb2f0549525ef4c403adc8e83b8b4e1",
+      "n": 1000,
+      "sample_ID_order_sha256": "0dcf45f135437b7d143255181caf73a5fafab8b9805cc51970febd2e5714d39c",
+      "target_share_sha256": "b5a76451ec9550afcbd6265c7ea223e6fb343629c3824f3e3f86096f85b958ea",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R10_unseen__combined_stress": {
+      "physical_pool_max_error": 1.7881393432617188e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "a650f616e1cd6b83cda56fada8512d3a8491fb2198b0fc5330a33c732dec701e",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "3ee479a5ef57dcc5afc8e9dd32f611bdaf2347b4e9e0204a7d968a3b1dbe699b",
+      "n": 1000,
+      "sample_ID_order_sha256": "2c486a28d2244c70f311b553dbca9b14ad0acb009450790b9d10dd7220051547",
+      "target_share_sha256": "b5a76451ec9550afcbd6265c7ea223e6fb343629c3824f3e3f86096f85b958ea",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R10_seen__combined_stress": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "23973c8fd47a4c87c2b64b8259a0f8d7709b0751c8e50f9f64ab85a9905f8e2c",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "60db2d7e0076ef36ad7cd24286d5c95044c703359123ca68b3e46e6ec6942c71",
+      "n": 1000,
+      "sample_ID_order_sha256": "43354e633c0d7fc8c338a2ee0cd11a131dc386178ff8fd4e48bd6a794d765506",
+      "target_share_sha256": "b5a76451ec9550afcbd6265c7ea223e6fb343629c3824f3e3f86096f85b958ea",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_full_smooth12_VS_st_francis_dense": {
+      "physical_pool_max_error": 5.960464477539063e-08,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "e1b9210dac68da3e7ea3012eac094434ef3adbae83edba2b5e8bf8f5dad05ff9",
+      "input_db_shape": [
+        812,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "cc20e9866ccb7bb1e9f0f6e24eb33321c7d4e8481ecbe8a2b043e8c8014f4cb4",
+      "n": 812,
+      "sample_ID_order_sha256": "6a22a02982e1a2547ddf0111f4c748b1555b8e57ca8ea8bd25eba098435d8544",
+      "target_share_sha256": "4d75cce4473ef75e790656162fd71b3b09f670f94563ff6c86c2c3c0d3038a9b",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_full_smooth12_VS_hf_high": {
+      "physical_pool_max_error": 8.940696716308594e-08,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "ef7f786973e5ce0d3ecd2f7612acce4e8b9ce5ecfc325242ceacc9bcc8f5e9d1",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "10505ef6be2c0fab83c6896530369cab9177959debafcc1f9517328981ad9b12",
+      "n": 1000,
+      "sample_ID_order_sha256": "240a8d5e36da3d1bc4eaeac8868e7058023dfb098f97ca5a5c15355bfb297f87",
+      "target_share_sha256": "0f5e55803bc980ee3039f6db73387cd591f3cc9fb950efc6c8a6bcb5dda8d029",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_full_smooth13_VS_st_francis_dense": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "ceee7dafafa88822d696c68633bab0affff953e71bb79e94840b3914d79e8375",
+      "input_db_shape": [
+        812,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "6f97d28eb9f144dfc5439ebea4805b48e1e22bf76ff12e7e70da2ba8f272bfc0",
+      "n": 812,
+      "sample_ID_order_sha256": "dc485b7b6ba0d890a83581bbd47f5faf5af59a6f4fcc265cd80adc6b4199ed21",
+      "target_share_sha256": "4d75cce4473ef75e790656162fd71b3b09f670f94563ff6c86c2c3c0d3038a9b",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_full_smooth13_VS_hf_high": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "f19d6c744e0c76566e65f0d2fdf4615a4f9414d15754250ba1f90ac46c9eee3b",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "3a3909e652d74d4c0c46c8121e02e6ce32f9bdbbf68e52bcb5402667a6f860a1",
+      "n": 1000,
+      "sample_ID_order_sha256": "705f06e14442df667695ae5244c041bd3e9c451a8cb75815b34054237426ea1e",
+      "target_share_sha256": "0f5e55803bc980ee3039f6db73387cd591f3cc9fb950efc6c8a6bcb5dda8d029",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_full_smooth15_VS_st_francis_dense": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "3fa409d4fd0d3b160514b5cbc7b7888d81994a776a5dd6d0ff986f3d57c6066f",
+      "input_db_shape": [
+        812,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "64f4749b1288403baeeb7ba444460f575e57f0dd22830671f6ef3c97e31fb9ec",
+      "n": 812,
+      "sample_ID_order_sha256": "61fd4a8c786c0c8e82fcb59441cb3b0928f746bbd5d4058e5443b98c866b4927",
+      "target_share_sha256": "4d75cce4473ef75e790656162fd71b3b09f670f94563ff6c86c2c3c0d3038a9b",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_full_smooth15_VS_hf_high": {
+      "physical_pool_max_error": 1.1920928955078125e-07,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "92130afb5f216320f5b1a7969d20d5de22357af37900a1324c8d7f1fdeddcc14",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "eacd2f1c51822740935a9dd7cc5a91c25b5d9846c03d2321ad4b17597d274036",
+      "n": 1000,
+      "sample_ID_order_sha256": "5fd73e1361d6aff4f806e633172c0be6b32fe434a8428e07c5b2d40da485a668",
+      "target_share_sha256": "0f5e55803bc980ee3039f6db73387cd591f3cc9fb950efc6c8a6bcb5dda8d029",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_native_long15_VS_st_francis_dense": {
+      "physical_pool_max_error": 5.960464477539063e-08,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "5f781e30b00842bd48feab9b47e2fabefd1dfb37726a3f95ed3193e6ef80ef2a",
+      "input_db_shape": [
+        812,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "03aef00d996fea59de292c9a7d1bd61190a68053c38a88e28634b698f30b6cbe",
+      "n": 812,
+      "sample_ID_order_sha256": "d6c6164d66df3ab7af207479f043794bf846c33da891581f319ce20462e732f6",
+      "target_share_sha256": "4d75cce4473ef75e790656162fd71b3b09f670f94563ff6c86c2c3c0d3038a9b",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    },
+    "R11_native_long15_VS_hf_high": {
+      "physical_pool_max_error": 8.940696716308594e-08,
+      "input_fields": [
+        "db"
+      ],
+      "input_db_typed_sha256": "95f50751f5771b348bb2f70d598df2caa524469b0f3379e102050872f5969acb",
+      "input_db_shape": [
+        1000,
+        15,
+        25
+      ],
+      "label_fields_passed_to_model": [],
+      "original_saved_prediction_sha256": "4c9cfad8c2fb85817e824c7c4194088048e09ce3d054482b8a5a14562471516b",
+      "n": 1000,
+      "sample_ID_order_sha256": "f0acd383560fa57e4381bc8ed3c23cdef18a5e16fd96aac40050701b2ba60fb8",
+      "target_share_sha256": "0f5e55803bc980ee3039f6db73387cd591f3cc9fb950efc6c8a6bcb5dda8d029",
+      "target_ID_order_exact": true,
+      "baseline_predictions_reused_not_reinferred": true
+    }
+  },
+  "control_source_audit": {
+    "status": "passed",
+    "requested_replacements": 1200,
+    "actual_replacements": 1199,
+    "shortfall": 1,
+    "requested_CNN_replacements": 600,
+    "actual_CNN_replacements": 599,
+    "positive_common_field_bytes_unchanged": true,
+    "positive_field_sha256": {
+      "db": "82982db4f45cf323de418bce1813b4937555d8eb39272021319fa07e2d6e5eab",
+      "unrounded_db": "ef5e7e146331291f52cae7fd76db1ace00072dd895c0ea6fd7900bc886c4c434",
+      "cell_share": "9226bccab7bf7b40bb06e5e82f05dee2ee8578ea228ee12acbd1286da613d872",
+      "share": "f7a24f8dc69cd6ee0866cdc0fda82beb3ffab52de19b295b3767d1db41b52e04",
+      "presence": "1a4eded5707ebf20a320b19209acd260ed844b845e0b0c4185e587d3fb5f2e1c",
+      "site": "a63bc8f379d9c08d0cffbfe26b02f615e1e9d3fd9623667e3ae556f1b9ba37ef",
+      "source_id": "9b23f43b0007e840cf7dd5b4cdcd361d98ff2a410a9a6e44f0dd34af33596964",
+      "sample_id": "589bcadfc366485a31ae5c92831652fb2897af4fddcc8919e9c7cf09c0c2a305",
+      "family": "6bd0d6c32f24dba413f1ac75f86a06c691bb71d6f4b4143b784f8b0c6d4733bc",
+      "base_window_index": "c2d7070bd7d437a11d1937900f85a2194328b609ec589ceabafba5bb8bcb2cea",
+      "background_group": "4cabfe407b287eaa87dea689d743748f81e4f63c7f8b3a22ffad12a8ff05b1a5",
+      "reference_index": "bb4a22bce974f30215c05646830bf36b934b99e8a7a7a071c653e508ec5c9144",
+      "explicit_no_source": "1a67da976b202f03008289c9b866d90c8f666162ac829a677c1fa05c30184bc6"
+    },
+    "all_rows_site_and_exact_mask_and_targets_unchanged": true,
+    "all_rows_sensor_and_recorder_unchanged": true,
+    "source_primary_unique_count": 12000,
+    "new_replacements_overlap_original_baseIDs": 0,
+    "known_zero_energy_q_and_share_exact": true,
+    "before_after": {
+      "TRAIN12000": {
+        "rows": 12000,
+        "zero_count": 2400,
+        "site_effective_mask_presence_table_before_after_identical": true,
+        "conditional_table_sha256": "b61e84542bda7cd0a248e59466312307bd6018e3553d95af61a66e378b17fdbe",
+        "conditional_table": [
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 7,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 15,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 15,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 63,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 255,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 511,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 2047,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 4095,
+            "presence": 0,
+            "n": 11
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 4095,
+            "presence": 1,
+            "n": 37
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 8191,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 8191,
+            "presence": 1,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 16383,
+            "presence": 0,
+            "n": 216
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 16383,
+            "presence": 1,
+            "n": 936
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 18431,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 20479,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 20479,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 22527,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 24575,
+            "presence": 0,
+            "n": 5
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 24575,
+            "presence": 1,
+            "n": 13
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 24703,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 26623,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 26623,
+            "presence": 1,
+            "n": 9
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 27135,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 28671,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 28671,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 28672,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 29695,
+            "presence": 0,
+            "n": 7
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 29695,
+            "presence": 1,
+            "n": 39
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 30719,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31231,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31295,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31743,
+            "presence": 1,
+            "n": 14
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31744,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31999,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32255,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32256,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32319,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32383,
+            "presence": 1,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32503,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32511,
+            "presence": 1,
+            "n": 5
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32512,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32575,
+            "presence": 1,
+            "n": 6
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32639,
+            "presence": 1,
+            "n": 5
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32644,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32671,
+            "presence": 0,
+            "n": 6
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32671,
+            "presence": 1,
+            "n": 23
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32703,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32719,
+            "presence": 0,
+            "n": 10
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32719,
+            "presence": 1,
+            "n": 43
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32735,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32736,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32743,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32743,
+            "presence": 1,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32752,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32755,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32755,
+            "presence": 1,
+            "n": 8
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32759,
+            "presence": 0,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32759,
+            "presence": 1,
+            "n": 8
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32760,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32761,
+            "presence": 0,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32761,
+            "presence": 1,
+            "n": 12
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32763,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32764,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32764,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32765,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32765,
+            "presence": 1,
+            "n": 9
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32766,
+            "presence": 0,
+            "n": 119
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 451
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 966
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 3951
+          },
+          {
+            "site": "2 Durban",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "2 Durban",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 83
+          },
+          {
+            "site": "2 Durban",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 285
+          },
+          {
+            "site": "3 Cape_Recife",
+            "effective_mask_bits": 8190,
+            "presence": 0,
+            "n": 4
+          },
+          {
+            "site": "3 Cape_Recife",
+            "effective_mask_bits": 8190,
+            "presence": 1,
+            "n": 27
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32766,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 64
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 226
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 4095,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32765,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32766,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 5
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 326
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 1235
+          },
+          {
+            "site": "6 Riy_Banks",
+            "effective_mask_bits": 8190,
+            "presence": 0,
+            "n": 4
+          },
+          {
+            "site": "6 Riy_Banks",
+            "effective_mask_bits": 8190,
+            "presence": 1,
+            "n": 21
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31,
+            "presence": 0,
+            "n": 152
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31,
+            "presence": 1,
+            "n": 604
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 992,
+            "presence": 0,
+            "n": 151
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 992,
+            "presence": 1,
+            "n": 614
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31744,
+            "presence": 0,
+            "n": 158
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31744,
+            "presence": 1,
+            "n": 630
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 85
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 326
+          }
+        ],
+        "AUC_negative_Nobs_before": 0.5031543402777777,
+        "AUC_negative_Nobs_after": 0.5031543402777777,
+        "AUC_delta": 0.0,
+        "AUC_positive_Nobs_before": 0.4968456597222223,
+        "AUC_positive_Nobs_after": 0.4968456597222223
+      },
+      "CNN6000": {
+        "rows": 6000,
+        "zero_count": 1200,
+        "site_effective_mask_presence_table_before_after_identical": true,
+        "conditional_table_sha256": "0e4bb643206d6e1804e3ea64b479b684c9cf4bf1977becae99e613f2c93e23ad",
+        "conditional_table": [
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 63,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 255,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 511,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 2047,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 4095,
+            "presence": 0,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 4095,
+            "presence": 1,
+            "n": 21
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 8191,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 8191,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 16383,
+            "presence": 0,
+            "n": 116
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 16383,
+            "presence": 1,
+            "n": 457
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 20479,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 24575,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 24575,
+            "presence": 1,
+            "n": 7
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 26623,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 26623,
+            "presence": 1,
+            "n": 5
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 28671,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 28672,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 29695,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 29695,
+            "presence": 1,
+            "n": 15
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 30719,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31295,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31743,
+            "presence": 1,
+            "n": 5
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 31744,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32319,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32383,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32503,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32511,
+            "presence": 1,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32512,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32575,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32639,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32644,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32671,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32671,
+            "presence": 1,
+            "n": 16
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32719,
+            "presence": 0,
+            "n": 7
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32719,
+            "presence": 1,
+            "n": 23
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32735,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32743,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32743,
+            "presence": 1,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32752,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32755,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32755,
+            "presence": 1,
+            "n": 4
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32759,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32759,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32760,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32761,
+            "presence": 0,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32761,
+            "presence": 1,
+            "n": 5
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32764,
+            "presence": 0,
+            "n": 1
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32765,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32766,
+            "presence": 0,
+            "n": 61
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 225
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 481
+          },
+          {
+            "site": "1 Richards Bay",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 2000
+          },
+          {
+            "site": "2 Durban",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 39
+          },
+          {
+            "site": "2 Durban",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 153
+          },
+          {
+            "site": "3 Cape_Recife",
+            "effective_mask_bits": 8190,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "3 Cape_Recife",
+            "effective_mask_bits": 8190,
+            "presence": 1,
+            "n": 17
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 34
+          },
+          {
+            "site": "4 Bird Island",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 110
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32765,
+            "presence": 1,
+            "n": 1
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32766,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32766,
+            "presence": 1,
+            "n": 3
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 141
+          },
+          {
+            "site": "5 St Croix Island",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 599
+          },
+          {
+            "site": "6 Riy_Banks",
+            "effective_mask_bits": 8190,
+            "presence": 0,
+            "n": 2
+          },
+          {
+            "site": "6 Riy_Banks",
+            "effective_mask_bits": 8190,
+            "presence": 1,
+            "n": 11
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31,
+            "presence": 0,
+            "n": 75
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31,
+            "presence": 1,
+            "n": 306
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 992,
+            "presence": 0,
+            "n": 81
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 992,
+            "presence": 1,
+            "n": 304
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31744,
+            "presence": 0,
+            "n": 77
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 31744,
+            "presence": 1,
+            "n": 318
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 32767,
+            "presence": 0,
+            "n": 51
+          },
+          {
+            "site": "7 St_Francis",
+            "effective_mask_bits": 32767,
+            "presence": 1,
+            "n": 163
+          }
+        ],
+        "AUC_negative_Nobs_before": 0.49637109375,
+        "AUC_negative_Nobs_after": 0.49637109375,
+        "AUC_delta": 0.0,
+        "AUC_positive_Nobs_before": 0.50362890625,
+        "AUC_positive_Nobs_after": 0.50362890625
+      }
+    },
+    "HF_candidate_truth": "high natural HF variation only, not naturally ship-absent truth",
+    "remaining_limit": "site/mask class ratios are controlled, but new background texture/source-group distributions can differ; this is a follow-up TRAIN control, not new independent validation"
+  },
+  "extra_model_summaries": {
+    "CNN": {
+      "format": "r12_small_physics_cnn_v1",
+      "status": "completed",
+      "arm": {
+        "name": "L1HM1P1",
+        "long": true,
+        "HF": true,
+        "shape": true,
+        "legacy_control": false
+      },
+      "epochs_run": 100,
+      "best_epoch": 89,
+      "early_stopping": false,
+      "optimizer": "Adam",
+      "dropout": 0.1,
+      "learning_rate_schedule": "cosine .001->.00001, fixed100",
+      "parameters": 26953,
+      "validation_fit_metrics": {
+        "n": 1000,
+        "rmse": 0.0715652602052133,
+        "mae": 0.039647928459819924,
+        "bias": 0.0035334710605848156,
+        "prediction_mean": 0.19589509613558767,
+        "prediction_rms": 0.30161939904683505,
+        "target_mean": 0.19236162507500285,
+        "target_rms": 0.3029674449657959,
+        "zero_n": 200,
+        "zero_prediction_mean": 0.018246319118188695,
+        "auc_share": 0.90898125,
+        "auc_score": 0.90898125,
+        "auc_legacy_score": 0.9372999999999998,
+        "contrast_ge099_fraction": 0.047,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 512,
+            "rmse": 0.0771500307455621,
+            "bias": 0.009997058893395305
+          },
+          "2 Durban": {
+            "n": 119,
+            "rmse": 0.0500974497872246,
+            "bias": -0.0068046248154988625
+          },
+          "4 Bird Island": {
+            "n": 73,
+            "rmse": 0.03567152249526544,
+            "bias": 0.0010130841951587633
+          },
+          "5 St Croix Island": {
+            "n": 108,
+            "rmse": 0.06666320968431488,
+            "bias": 0.00010152472747938225
+          },
+          "7 St_Francis": {
+            "n": 188,
+            "rmse": 0.07997994819343612,
+            "bias": -0.004575492322359462
+          }
+        },
+        "site_macro_rmse": 0.061912432181160625,
+        "target_slices": {
+          "zero": {
+            "n": 200,
+            "rmse": 0.03769726244876276,
+            "bias": 0.018246319118188695,
+            "SSE": 0.28421671922617975
+          },
+          "positive_to_.2": {
+            "n": 466,
+            "rmse": 0.04941443688604951,
+            "bias": 0.008535423622625618,
+            "SSE": 1.1378725429086627
+          },
+          "above_.2": {
+            "n": 334,
+            "rmse": 0.10524418720496757,
+            "bias": -0.012255389734121139,
+            "SSE": 3.6994972061050433
+          }
+        }
+      },
+      "checkpoint_sha256": "e74d9b3af5e1c79934ecd809f38f14b284d80ce3e0705cff7787104e5bfd45b6",
+      "elapsed_seconds": 471.31002391688526,
+      "device": "Mac CPU FP32",
+      "Test_read": false,
+      "gate_or_eval_read": false,
+      "score": "share",
+      "code_sha256": {
+        "training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d"
+      }
+    },
+    "tree": {
+      "format": "r12_compact_physics_lgbm_v1",
+      "kind": "lgbm_physics_compact",
+      "status": "completed",
+      "fixture_only": false,
+      "settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 4,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "feature_batch_size": 512
+      },
+      "seed": 2026102712,
+      "include_shape": true,
+      "feature_count": 673,
+      "feature_schema_sha256": "7a0acfa3da805b85356abed4c577cc344b9ef1399e8198d4aa10ed72b4bcebda",
+      "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+      "basis_training_binding": {
+        "version": "r12_cpu_data_ablation_v1",
+        "role": "train",
+        "fold": 0,
+        "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+        "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+        "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+        "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+        "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+        "raw_SA_no_added_recording": true,
+        "unique_source_IDs": 2000
+      },
+      "training_binding": {
+        "scope": "additional metadata-matched HF control; not part of original8recipe selector",
+        "control_manifest_sha256": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+        "original_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+        "original_data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+        "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+        "script_sha256": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb"
+      },
+      "fit_plan_sha256": "617364fe2c34ebf8be3a13d143423213cc874c5882df02c1f2705db264f6c88b",
+      "best_iteration": 1417,
+      "classifier_best_iteration": 370,
+      "validation_fit_metrics": {
+        "n": 1000,
+        "rmse": 0.08314200367090718,
+        "mae": 0.052178031528365865,
+        "bias": 0.0069823452064474625,
+        "target_mean": 0.19236162507500285,
+        "target_rms": 0.3029674449657959,
+        "prediction_mean": 0.19934397028145032,
+        "prediction_rms": 0.29516225980040234,
+        "share_auc": 0.850703125,
+        "classifier_auc": 0.94298125,
+        "hybrid_auc": 0.9209875000000001,
+        "share_saturation_le001": 0.141,
+        "share_saturation_ge099": 0.0,
+        "classifier_saturation_le001": 0.001,
+        "classifier_saturation_ge099": 0.435,
+        "raw_share_clipped_fraction": 0.08,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 512,
+            "rmse": 0.08603884701253782,
+            "bias": 0.014272706643373212,
+            "target_mean": 0.1727538639805406,
+            "prediction_mean": 0.1870265706239138,
+            "share_auc": 0.8314955357142857,
+            "classifier_auc": 0.93109375
+          },
+          "2 Durban": {
+            "n": 119,
+            "rmse": 0.06501298972269126,
+            "bias": -0.0008329066453783327,
+            "target_mean": 0.21525530240345872,
+            "prediction_mean": 0.2144223957580804,
+            "share_auc": 0.9506382978723403,
+            "classifier_auc": 0.9906382978723405
+          },
+          "4 Bird Island": {
+            "n": 73,
+            "rmse": 0.04024795958285139,
+            "bias": 0.002381727817047336,
+            "target_mean": 0.16110139389917866,
+            "prediction_mean": 0.163483121716226,
+            "share_auc": 0.9496527777777779,
+            "classifier_auc": 0.9965277777777777
+          },
+          "5 St Croix Island": {
+            "n": 108,
+            "rmse": 0.0884751323229428,
+            "bias": -0.006845560839994707,
+            "target_mean": 0.2420805071499975,
+            "prediction_mean": 0.23523494631000277,
+            "share_auc": 0.8648097826086956,
+            "classifier_auc": 0.9476902173913043
+          },
+          "7 St_Francis": {
+            "n": 188,
+            "rmse": 0.09384750925610992,
+            "bias": 0.0018047326378477242,
+            "target_mean": 0.2148466447027378,
+            "prediction_mean": 0.2166513773405855,
+            "share_auc": 0.8189473684210526,
+            "classifier_auc": 0.9185964912280703
+          }
+        },
+        "family_slices": {
+          "long_native": {
+            "n": 100,
+            "rmse": 0.08903401734555255,
+            "bias": -0.005765891000628472,
+            "target_mean": 0.2999085525725968,
+            "prediction_mean": 0.29414266157196833,
+            "share_auc": null,
+            "classifier_auc": null
+          },
+          "long_smooth_bell": {
+            "n": 300,
+            "rmse": 0.10694053719706055,
+            "bias": -0.0037104081063686557,
+            "target_mean": 0.3390889455090898,
+            "prediction_mean": 0.3353785374027211,
+            "share_auc": null,
+            "classifier_auc": null
+          },
+          "native_edge": {
+            "n": 90,
+            "rmse": 0.05411894194990381,
+            "bias": 0.002468453396593557,
+            "target_mean": 0.10463190881119873,
+            "prediction_mean": 0.10710036220779229,
+            "share_auc": null,
+            "classifier_auc": null
+          },
+          "native_inside": {
+            "n": 220,
+            "rmse": 0.06515327290363775,
+            "bias": -0.0032636038482781837,
+            "target_mean": 0.192696348331149,
+            "prediction_mean": 0.1894327444828708,
+            "share_auc": null,
+            "classifier_auc": null
+          },
+          "native_short": {
+            "n": 90,
+            "rmse": 0.059954629676770094,
+            "bias": 0.013691697352573504,
+            "target_mean": 0.09815575265728411,
+            "prediction_mean": 0.11184745000985762,
+            "share_auc": null,
+            "classifier_auc": null
+          },
+          "no_source": {
+            "n": 200,
+            "rmse": 0.07642012997117484,
+            "bias": 0.03967818008808535,
+            "target_mean": 0.0,
+            "prediction_mean": 0.03967818008808535,
+            "share_auc": null,
+            "classifier_auc": null
+          }
+        },
+        "site_macro_rmse": 0.07472448757942664,
+        "protected_slices": {
+          "zero": {
+            "n": 200,
+            "rmse": 0.07642012997117484,
+            "bias": 0.03967818008808535,
+            "prediction_mean": 0.03967818008808535,
+            "SSE": 1.168007252962251
+          },
+          "positive_to020": {
+            "n": 466,
+            "rmse": 0.06086163288974722,
+            "bias": 0.015783805195506585,
+            "prediction_mean": 0.08795200135057209,
+            "SSE": 1.726128474830964
+          },
+          "above020": {
+            "n": 334,
+            "rmse": 0.10968732161382262,
+            "bias": -0.02487588033615472,
+            "prediction_mean": 0.4503673701630738,
+            "SSE": 4.018457046619929
+          },
+          "long_positive": {
+            "n": 400,
+            "rmse": 0.10275686319253306,
+            "bias": -0.004224278829933609,
+            "prediction_mean": 0.32506956844503293,
+            "SSE": 4.223589173267582
+          },
+          "standard_positive": {
+            "n": 400,
+            "rmse": 0.061664340347223984,
+            "bias": 0.0018410518020095879,
+            "prediction_mean": 0.15345126721455016,
+            "SSE": 1.5209963481833102
+          },
+          "SF_dense_zero": {
+            "n": 0,
+            "rmse": null,
+            "bias": null,
+            "prediction_mean": null,
+            "SSE": 0.0
+          }
+        }
+      },
+      "train_rows": 12000,
+      "validation_fit_rows": 1000,
+      "feature_matrix_bytes": {
+        "train": 32304000,
+        "validation_fit": 2692000
+      },
+      "lightgbm_version": "4.7.0",
+      "score_policy": ".5clipped_share+.5presence_classifier; no calibration",
+      "NN_epoch_policy_applicable": false,
+      "artifact_sha256": {
+        "share.txt": "87a7230ec57b1aad1eb4a3b77c08e933499b973472cf0d0bc9797dfbb750b034",
+        "presence.txt": "b860c85f2ccfab1c271d32db57837f5df6ea038f1345d62c981e61f79ae8c4af",
+        "feature_schema.json": "e6f3f54bb1ab231e8887f4bc29fa9bbf3a3922a18e55eb8aafac06d16543d8ce",
+        "validation_fit_predictions.npz": "f54d60f937c45f06d549ebee197d84d8e553d9fc76a134c7171632b86c3a257a",
+        "fit_plan.json": "617364fe2c34ebf8be3a13d143423213cc874c5882df02c1f2705db264f6c88b",
+        "spectral_basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113"
+      },
+      "source_code_sha256": {
+        "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+        "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+        "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+        "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+        "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+      },
+      "elapsed_seconds": 27.744811249896884,
+      "gate_eval_Test_used_for_fitting": false
+    }
+  },
+  "elapsed_seconds": 31.058619500137866,
+  "limitations": [
+    "Follow-upafterdiscoveringmask/classassociation;notanoriginalpreregisteredeighthcandidate.",
+    "Exactsite/sensor/recorder/maskmarginalsheldfixed,butbackgroundtextures/sourcegroupdistributionscanstillchange.",
+    "Sharedreferencesanddevelopment-exposedpanels;notblindOOForanofficialTestscore.",
+    "ConditionalclusterCIsdonotadjustmultiplecomparisonsorfollowupselection.",
+    "R9derivedscoreandnewshare-onlyscorearenotthesamescoredefinition."
+  ],
+  "output_sha256": {
+    "FROZEN_BEFORE_EXTRA_PREDICTIONS.json": "0d48213dc73a518aeb5bc906acda7922304998f9936966f61e4f94ade4a2d80a",
+    "paired_cluster_CI.csv": "9bead59f702c21a0beeac762ca2d14e3289d7f6e5765d34238d02744fd2a7ea1",
+    "results.csv": "3adb80756d9449a71a9eddc4803b8ae9792b6deadb7353b9236e5c729122a4d4",
+    "predictions/R12_high_snr_long.npz": "afbe65f34ef409901f862cadcb629a57c265587f08f5724f59494d9b5545b819",
+    "predictions/R11_full_smooth15_VS_st_francis_dense.npz": "5c07d0f7f0a0e32c3af4f6fd44424cb4b89306d5278ddbe6bb271a41febfe0ef",
+    "predictions/R11_full_smooth12_VS_st_francis_dense.npz": "3c670cbf5260a00ac8d976579ea15ddaf515df843b397e32d3d4f35e19bea5ad",
+    "predictions/R12_eval.npz": "f8de1f28983e83ee8e11cf886127c1dc004aa223d4daf39a0e821b414d2426ad",
+    "predictions/R11_native_long15_VS_hf_high.npz": "983cd51839a1c80a3178162d557daca63d14f28637a9e2c2e2bed2c96751351b",
+    "predictions/R9_ensemble_gate.npz": "c53039f2ef9f2c1a07ddc20642efea72af6b1ee3cb0988adfa080ef8dd40a79f",
+    "predictions/R10_seen__combined_stress.npz": "ce69c288bcac1b1c8a6eeb5b549dc02e2d368f1a21dcf53d3a2add430466b660",
+    "predictions/R12_validation_gate.npz": "d67e9504897eb32882283d1002cff0b6a07fd3315d3229afe60ffa9e710fe1a5",
+    "predictions/R11_full_smooth13_VS_hf_high.npz": "afd18edcd89b8eadcffd8e6299d34f26c21fcb0cb1f9ed84ed49e2011edda554",
+    "predictions/R10_unseen__r9_complete.npz": "c1d8256222d499c9d17dc9c1829a55c5d5ed5f727379485a7b31b8f337c232fa",
+    "predictions/R11_full_smooth12_VS_hf_high.npz": "989b17d9aff661e1e4630d4e01a0b20c3ffaebfde695d7a79d75d9297fdb8b75",
+    "predictions/R9_selection.npz": "0d62ab1c75209c729ea25a191b42b612b85a259e46609a25495336654eaff82a",
+    "predictions/R11_native_long15_VS_st_francis_dense.npz": "4e55cffdf5ed9c757c8c3d217a0a3fe834653f89eb91dde1dc1aa2cf95ec296d",
+    "predictions/R11_full_smooth15_VS_hf_high.npz": "56950cd6bb7ddafd44bf21f71e04b019716cc0fac210dff05501e8557dc3a192",
+    "predictions/R10_unseen__combined_stress.npz": "1afa678919ba1e8a5e007e492c121fd2a6e1018a7e52fb8310cf3240c9c04614",
+    "predictions/R10_seen__mean_scale_only.npz": "842dafaf4e4023cf9c060f1dabc658bbdf5cb759ebbd2c3e672118fbb09a2651",
+    "predictions/R11_full_smooth13_VS_st_francis_dense.npz": "ccc82b17ea467c6d90b6157b5c6b70d7697b52fff06aa5e7c623c501dc271884"
+  }
+}

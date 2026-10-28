@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "arm": "mixed",
+  "epochs": 100,
+  "early_stopping": false,
+  "optimizer": "Adam",
+  "dropout": 0.1,
+  "parameters_total": 30050,
+  "regression_parameters": 26305,
+  "classification_parameters": 3745,
+  "best_regression_epoch": 82,
+  "best_classifier_epoch": 92,
+  "fit_nn_metrics": {
+    "n": 2400,
+    "rmse": 0.0999166206713771,
+    "mae": 0.04787678854616388,
+    "bias": -0.01017420552167702,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.1609967169945594,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.2408385413754824,
+    "auc_share": 0.8783138020833333,
+    "auc_classifier": 0.9057486979166667,
+    "auc_75share_25clf": 0.91244140625,
+    "auc_25share_75clf": 0.91,
+    "classifier_ge099_fraction": 0.31833333333333336,
+    "classifier_le001_fraction": 0.0
+  },
+  "fit_tree_metrics": {
+    "n": 2400,
+    "rmse": 0.12207371112787534,
+    "mae": 0.06905871614109058,
+    "bias": -0.024159749012112333,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.14701117350412407,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.22004171310853318,
+    "auc_share": 0.8755664062499999,
+    "auc_classifier": 0.9139583333333333,
+    "auc_75share_25clf": 0.9182942708333335,
+    "auc_25share_75clf": 0.9153580729166667,
+    "classifier_ge099_fraction": 0.26958333333333334,
+    "classifier_le001_fraction": 0.0
+  },
+  "fit_fixed60tree40nn_metrics": {
+    "n": 2400,
+    "rmse": 0.10648586235411266,
+    "mae": 0.0578186487974301,
+    "bias": -0.01856553048622938,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.15260539203000703,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.22507111595430263,
+    "auc_share": 0.8884309895833333,
+    "auc_classifier": 0.9244596354166666,
+    "auc_75share_25clf": 0.9251953125,
+    "auc_25share_75clf": 0.9279947916666668,
+    "classifier_ge099_fraction": 0.27541666666666664,
+    "classifier_le001_fraction": 0.0
+  },
+  "elapsed_seconds": 555.6754074580967,
+  "Test_used": false,
+  "report_or_gate_read": false,
+  "checkpoint_sha256": {
+    "best_regression.pt": "a30d18025e845b43c38a1f1579e399b59e1cf41dae7a22ef507821eb301d343b",
+    "best_classifier.pt": "ffbf460758e35d70ae1474727a3b649c07e53f5f702abf7b1c86865de27353f8"
+  },
+  "tree_sha256": {
+    "tree_regressor.txt": "e1cc5462a79936e8c04c88b73db3d7f76f76cb0a07e668924f1bf8aa0938ef4a",
+    "tree_classifier.txt": "0a5c859231e655403a119faae8de32c9787ba61c2029a4228ce00d1cbb7a4f65"
+  }
+}

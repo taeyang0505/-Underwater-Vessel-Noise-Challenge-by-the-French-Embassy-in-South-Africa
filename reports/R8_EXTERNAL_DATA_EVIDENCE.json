@@ -1,0 +1,1585 @@
+{
+  "format": "r8_external_dataset_evidence_v1",
+  "status": "completed_read_only_metadata_audit",
+  "created_utc": "2026-10-26T05:03:59.824478+00:00",
+  "scope": "Actual acquisition/preprocessing/reference metadata; no waveform or band/synthetic arrays loaded; no source restoration/ingestion/training",
+  "denominator_rules": [
+    "Download entry != unique audio bytes != admitted reference clip != synthetic example != independent hull/source.",
+    "Durations are summed clip-header seconds unless explicitly crop seconds; overlaps/repeated ship/day not deduplicated.",
+    "Historical R2 CV and current R4/R5/R6 pools are separate versions; excluded/reserved data remain excluded."
+  ],
+  "inventory_counts": {
+    "original_conversion_bank": {
+      "clips": 1670,
+      "VTUAD": 525,
+      "HMS_unique": 1145
+    },
+    "quality_v2_native_inventory": {
+      "clips": 1682,
+      "NOAA_primary_added": 12,
+      "quarantine_PM_not_in_1682": 1
+    },
+    "historical_R2_CV": {
+      "clips": 1171,
+      "source_counts": {
+        "HearMyShip_V1": 945,
+        "VTUAD_v1.3.2": 218,
+        "NOAA_SanctSound_extension_v1": 8
+      },
+      "summed_clip_hours": 21.58556320601852,
+      "components": 26
+    },
+    "R4_R5_selected_allfold": {
+      "clips": 119,
+      "groups": 22
+    },
+    "current_R6_allroles": {
+      "clips": 94,
+      "groups": 17,
+      "source_counts": {
+        "VTUAD_v1.3.2": 94
+      }
+    }
+  },
+  "VTUAD": {
+    "primary_sources": [
+      {
+        "url": "https://zenodo.org/records/23037895",
+        "DOI": "10.5281/zenodo.23037895",
+        "rights": "CC BY4.0",
+        "checked_date": "2026-10-26"
+      },
+      {
+        "url": "https://www.oceannetworks.ca/data/data-policy/",
+        "note": "ONC-owned data CC BY4.0; partner data may differ"
+      }
+    ],
+    "origin": "ONC ICLISTENAF2523 hydrophone/AIS automatic scenario intervals, Strait of Georgia Canada; upstream metadata retained",
+    "RAW_schema": {
+      "WAV": "mono native fs/channels/frames;uncalibrated digital samples in this pipeline",
+      "registry_columns": [
+        "clip_uid",
+        "label",
+        "duration_sec",
+        "path",
+        "utc_begin",
+        "hull_id",
+        "utc_end",
+        "sample_rate",
+        "class_code",
+        "date",
+        "length",
+        "beam",
+        "t1",
+        "c1",
+        "p1",
+        "sal",
+        "sv",
+        "t1_norm",
+        "c1_norm",
+        "p1_norm",
+        "sal_norm",
+        "sv_norm"
+      ],
+      "registry_rows": 525,
+      "registry_missing_counts": {
+        "clip_uid": 0,
+        "label": 0,
+        "duration_sec": 0,
+        "path": 0,
+        "utc_begin": 0,
+        "hull_id": 16,
+        "utc_end": 0,
+        "sample_rate": 0,
+        "class_code": 0,
+        "date": 0,
+        "length": 0,
+        "beam": 0,
+        "t1": 10,
+        "c1": 10,
+        "p1": 10,
+        "sal": 10,
+        "sv": 10,
+        "t1_norm": 10,
+        "c1_norm": 10,
+        "p1_norm": 10,
+        "sal_norm": 10,
+        "sv_norm": 10
+      },
+      "role_vs_class": "509vessel archive roles include22weak-classbackground;16dedicated ambient recordings are separate"
+    },
+    "archives_downloaded": [
+      {
+        "file": "README_vtuad_strict_wav_vessel_parts.txt",
+        "bytes": 1152,
+        "md5": "43bab1eba183cdfac74130cdfa135620",
+        "verified": true
+      },
+      {
+        "file": "vtuad_strict_wav_vessel.zip.part01",
+        "bytes": 1237445900,
+        "md5": "6e3fe8245218faa4f94868531e272344",
+        "verified": true
+      },
+      {
+        "file": "vtuad_strict_wav_vessel.zip.part02",
+        "bytes": 1237445900,
+        "md5": "af6408581f6981f45ffdbce811e9f558",
+        "verified": true
+      },
+      {
+        "file": "vtuad_strict_wav_vessel.zip.part03",
+        "bytes": 1237445899,
+        "md5": "dfa59398483a651765a6265df76febad",
+        "verified": true
+      },
+      {
+        "file": "vtuad_strict_wav_background.zip",
+        "bytes": 926037631,
+        "md5": "d28ad0fb6ccc98341ba4f7e953d9c68f",
+        "verified": true
+      }
+    ],
+    "compressed_bytes": 4638376482,
+    "per_class_archives_downloaded_or_currently_used": 0,
+    "precomputed_logmel_currently_used": false,
+    "strict_vs_class_view": "Same525scenarios;strict is AIS-interval recut, older12class archives contain archive-aligned containers. They are not an extra independent corpus.",
+    "strict_local_stats": {
+      "denominator_clips": 525,
+      "sum_clip_seconds": 151368.0,
+      "sum_clip_hours": 42.04666666666667,
+      "duration_seconds_quantiles": {
+        "0.0": 119.0,
+        "0.25": 120.0,
+        "0.5": 180.0,
+        "0.75": 299.0,
+        "0.9": 456.00000000000136,
+        "1.0": 2220.0
+      },
+      "sample_rate_hz_counts": {
+        "32000": 525
+      },
+      "channels_counts": {
+        "1": 525
+      },
+      "class_counts_raw_strings": {
+        "tug": 188,
+        "cargo": 97,
+        "passengership": 71,
+        "other": 40,
+        "background": 38,
+        "fishing": 34,
+        "pleasurecraft": 32,
+        "dredger": 8,
+        "sailing": 6,
+        "tanker": 5,
+        "rescue": 4,
+        "pilotvessel": 2
+      },
+      "recording_days": 33,
+      "unique_sha256": 525,
+      "complete_2s_segments": 75678,
+      "complete_measured_minutes": 2511,
+      "source_component_count": null,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 151356,
+      "complete_measured_minute_seconds": 150660
+    },
+    "archive_role_stats": {
+      "ambient_control": {
+        "denominator_clips": 16,
+        "sum_clip_seconds": 31980.0,
+        "sum_clip_hours": 8.883333333333333,
+        "duration_seconds_quantiles": {
+          "0.0": 1800.0,
+          "0.25": 1965.0,
+          "0.5": 1980.0,
+          "0.75": 2100.0,
+          "0.9": 2130.0,
+          "1.0": 2220.0
+        },
+        "sample_rate_hz_counts": {
+          "32000": 16
+        },
+        "channels_counts": {
+          "1": 16
+        },
+        "class_counts_raw_strings": {
+          "background": 16
+        },
+        "recording_days": 11,
+        "unique_sha256": 16,
+        "complete_2s_segments": 15990,
+        "complete_measured_minutes": 533,
+        "source_component_count": null,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 31980,
+        "complete_measured_minute_seconds": 31980
+      },
+      "vessel_passage": {
+        "denominator_clips": 509,
+        "sum_clip_seconds": 119388.0,
+        "sum_clip_hours": 33.163333333333334,
+        "duration_seconds_quantiles": {
+          "0.0": 119.0,
+          "0.25": 120.0,
+          "0.5": 180.0,
+          "0.75": 240.0,
+          "0.9": 360.0,
+          "1.0": 1380.0
+        },
+        "sample_rate_hz_counts": {
+          "32000": 509
+        },
+        "channels_counts": {
+          "1": 509
+        },
+        "class_counts_raw_strings": {
+          "tug": 188,
+          "cargo": 97,
+          "passengership": 71,
+          "other": 40,
+          "fishing": 34,
+          "pleasurecraft": 32,
+          "background": 22,
+          "dredger": 8,
+          "sailing": 6,
+          "tanker": 5,
+          "rescue": 4,
+          "pilotvessel": 2
+        },
+        "recording_days": 33,
+        "unique_sha256": 509,
+        "complete_2s_segments": 59688,
+        "complete_measured_minutes": 1978,
+        "source_component_count": null,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 119376,
+        "complete_measured_minute_seconds": 118680
+      }
+    },
+    "public_duration_caveat": "Official public description about56h is not the actual151368s strict-header sum. Exact reconciliation has not been independently proven; do not attribute entire difference to view choice.",
+    "historical_CV_stats": {
+      "denominator_clips": 218,
+      "sum_clip_seconds": 51534.0,
+      "sum_clip_hours": 14.315,
+      "duration_seconds_quantiles": {
+        "0.0": 120.0,
+        "0.25": 120.0,
+        "0.5": 180.0,
+        "0.75": 240.0,
+        "0.9": 360.0,
+        "1.0": 1380.0
+      },
+      "sample_rate_hz_counts": {
+        "32000": 218
+      },
+      "channels_counts": null,
+      "class_counts_raw_strings": {
+        "tug": 86,
+        "cargo": 49,
+        "other": 21,
+        "passengership": 19,
+        "fishing": 17,
+        "pleasurecraft": 16,
+        "sailing": 3,
+        "dredger": 3,
+        "tanker": 2,
+        "rescue": 1,
+        "pilotvessel": 1
+      },
+      "recording_days": 23,
+      "unique_sha256": 218,
+      "complete_2s_segments": 25764,
+      "complete_measured_minutes": 853,
+      "source_component_count": 3,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 51528,
+      "complete_measured_minute_seconds": 51180
+    },
+    "R4_R5_allfold_stats": {
+      "denominator_clips": 119,
+      "sum_clip_seconds": 31075.0,
+      "sum_clip_hours": 8.631944444444445,
+      "duration_seconds_quantiles": {
+        "0.0": 120.0,
+        "0.25": 180.0,
+        "0.5": 180.0,
+        "0.75": 300.0,
+        "0.9": 371.8000000000002,
+        "1.0": 1380.0
+      },
+      "sample_rate_hz_counts": {
+        "32000": 119
+      },
+      "channels_counts": null,
+      "class_counts_raw_strings": {
+        "tug": 47,
+        "cargo": 25,
+        "fishing": 13,
+        "pleasurecraft": 11,
+        "passengership": 8,
+        "other": 6,
+        "sailing": 3,
+        "tanker": 2,
+        "dredger": 2,
+        "pilotvessel": 1,
+        "rescue": 1
+      },
+      "recording_days": 22,
+      "unique_sha256": 119,
+      "complete_2s_segments": 15535,
+      "complete_measured_minutes": 513,
+      "source_component_count": 22,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 31070,
+      "complete_measured_minute_seconds": 30780
+    },
+    "R4_R5_fold0_roles": {
+      "outer_validation": {
+        "clips": 25,
+        "groups": 5,
+        "seconds": 5699.0
+      },
+      "train": {
+        "clips": 69,
+        "groups": 12,
+        "seconds": 19676.0
+      },
+      "validation": {
+        "clips": 25,
+        "groups": 5,
+        "seconds": 5700.0
+      }
+    },
+    "R6_allrole_stats": {
+      "denominator_clips": 94,
+      "sum_clip_seconds": 25376.0,
+      "sum_clip_hours": 7.0488888888888885,
+      "duration_seconds_quantiles": {
+        "0.0": 120.0,
+        "0.25": 180.0,
+        "0.5": 180.0,
+        "0.75": 300.0,
+        "0.9": 402.00000000000017,
+        "1.0": 1380.0
+      },
+      "sample_rate_hz_counts": {
+        "32000": 94
+      },
+      "channels_counts": null,
+      "class_counts_raw_strings": {
+        "tug": 36,
+        "cargo": 18,
+        "fishing": 12,
+        "pleasurecraft": 11,
+        "passengership": 7,
+        "other": 5,
+        "dredger": 2,
+        "rescue": 1,
+        "sailing": 1,
+        "tanker": 1
+      },
+      "recording_days": 17,
+      "unique_sha256": 94,
+      "complete_2s_segments": 12686,
+      "complete_measured_minutes": 419,
+      "source_component_count": 17,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 25372,
+      "complete_measured_minute_seconds": 25140
+    },
+    "R6_roles": {
+      "cross_generator": {
+        "denominator_clips": 18,
+        "sum_clip_seconds": 4140.0,
+        "sum_clip_hours": 1.15,
+        "duration_seconds_quantiles": {
+          "0.0": 120.0,
+          "0.25": 180.0,
+          "0.5": 180.0,
+          "0.75": 240.0,
+          "0.9": 360.0,
+          "1.0": 480.0
+        },
+        "sample_rate_hz_counts": {
+          "32000": 18
+        },
+        "channels_counts": null,
+        "class_counts_raw_strings": {
+          "tug": 6,
+          "cargo": 5,
+          "other": 2,
+          "passengership": 2,
+          "fishing": 1,
+          "rescue": 1,
+          "sailing": 1
+        },
+        "recording_days": 3,
+        "unique_sha256": 18,
+        "complete_2s_segments": 2070,
+        "complete_measured_minutes": 69,
+        "source_component_count": 3,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 4140,
+        "complete_measured_minute_seconds": 4140
+      },
+      "cross_sensor": {
+        "denominator_clips": 7,
+        "sum_clip_seconds": 1560.0,
+        "sum_clip_hours": 0.43333333333333335,
+        "duration_seconds_quantiles": {
+          "0.0": 120.0,
+          "0.25": 150.0,
+          "0.5": 240.0,
+          "0.75": 240.0,
+          "0.9": 312.00000000000006,
+          "1.0": 420.0
+        },
+        "sample_rate_hz_counts": {
+          "32000": 7
+        },
+        "channels_counts": null,
+        "class_counts_raw_strings": {
+          "cargo": 2,
+          "pleasurecraft": 2,
+          "tug": 1,
+          "passengership": 1,
+          "fishing": 1
+        },
+        "recording_days": 2,
+        "unique_sha256": 7,
+        "complete_2s_segments": 780,
+        "complete_measured_minutes": 26,
+        "source_component_count": 2,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 1560,
+        "complete_measured_minute_seconds": 1560
+      },
+      "inner": {
+        "denominator_clips": 18,
+        "sum_clip_seconds": 4798.0,
+        "sum_clip_hours": 1.3327777777777778,
+        "duration_seconds_quantiles": {
+          "0.0": 180.0,
+          "0.25": 180.0,
+          "0.5": 240.0,
+          "0.75": 344.25,
+          "0.9": 378.00000000000006,
+          "1.0": 480.0
+        },
+        "sample_rate_hz_counts": {
+          "32000": 18
+        },
+        "channels_counts": null,
+        "class_counts_raw_strings": {
+          "tug": 10,
+          "pleasurecraft": 5,
+          "cargo": 2,
+          "fishing": 1
+        },
+        "recording_days": 3,
+        "unique_sha256": 18,
+        "complete_2s_segments": 2398,
+        "complete_measured_minutes": 78,
+        "source_component_count": 3,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 4796,
+        "complete_measured_minute_seconds": 4680
+      },
+      "train": {
+        "denominator_clips": 51,
+        "sum_clip_seconds": 14878.0,
+        "sum_clip_hours": 4.132777777777778,
+        "duration_seconds_quantiles": {
+          "0.0": 120.0,
+          "0.25": 180.0,
+          "0.5": 180.0,
+          "0.75": 300.0,
+          "0.9": 420.0,
+          "1.0": 1380.0
+        },
+        "sample_rate_hz_counts": {
+          "32000": 51
+        },
+        "channels_counts": null,
+        "class_counts_raw_strings": {
+          "tug": 19,
+          "fishing": 9,
+          "cargo": 9,
+          "passengership": 4,
+          "pleasurecraft": 4,
+          "other": 3,
+          "dredger": 2,
+          "tanker": 1
+        },
+        "recording_days": 9,
+        "unique_sha256": 51,
+        "complete_2s_segments": 7438,
+        "complete_measured_minutes": 246,
+        "source_component_count": 9,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 14876,
+        "complete_measured_minute_seconds": 14760
+      }
+    },
+    "dedicated_ambient_positive_in_R4_R5_R6": 0,
+    "selection_chain": {
+      "old_R2_CV_eligible_VT": {
+        "clips": 218,
+        "exclusion_from_full525": 307,
+        "excluded_split_counts": [
+          {
+            "split": "calibration",
+            "clips": 6
+          },
+          {
+            "split": "domain_holdout",
+            "clips": 15
+          },
+          {
+            "split": "excluded_cross_day_conflict",
+            "clips": 1
+          },
+          {
+            "split": "excluded_hull_day_conflict",
+            "clips": 260
+          },
+          {
+            "split": "train",
+            "clips": 24
+          },
+          {
+            "split": "validation",
+            "clips": 1
+          }
+        ],
+        "ineligible_train_validation_25_includes_10_dedicated_ambient_and15_vessel_role_nonpositive": true
+      },
+      "R4_R5_allfold_selected_pool": {
+        "clips": 119,
+        "groups": 22,
+        "source_roles": {
+          "vessel_passage": 119
+        },
+        "dedicated_ambient_used_as_positive": 0,
+        "excluded_within_eligible_pool": 99,
+        "fold0_train": {
+          "clips": 69,
+          "groups": 12
+        },
+        "fold0_inner": {
+          "clips": 25,
+          "groups": 5
+        },
+        "fold0_old_outer": {
+          "clips": 25,
+          "groups": 5
+        }
+      },
+      "R6_guardrails": {
+        "clips": 94,
+        "groups": 17,
+        "roles": {
+          "cross_generator": {
+            "clips": 18,
+            "groups": 3
+          },
+          "cross_sensor": {
+            "clips": 7,
+            "groups": 2
+          },
+          "inner": {
+            "clips": 18,
+            "groups": 3
+          },
+          "train": {
+            "clips": 51,
+            "groups": 9
+          }
+        },
+        "dedicated_ambient_used_as_positive": 0,
+        "old_outer_excluded": {
+          "clips": 25,
+          "groups": 5
+        }
+      },
+      "all_525_corpus_graph": 1,
+      "selected_22_groups_are_not_22_new_sensors_or_independent_oceans": true
+    },
+    "QC": {
+      "metadata_rows": 525,
+      "verified_counts": {
+        "True": 525
+      },
+      "measured_counts": {
+        "True": 525
+      },
+      "quality_evidence_counts": {
+        "25 finite bands/header Nyquist and waveform QC; sensor transfer calibration remains unverified": 525
+      },
+      "quality_review_flags_counts": {
+        "['large_DC_fraction_review']": 525
+      },
+      "reference_eligible_counts": {
+        "False": 291,
+        "True": 234
+      }
+    },
+    "label_limit": "AIS scenario/type weak label and waveform/header/hash validity do not isolate vessel-only energy or certify an acoustic energy mask."
+  },
+  "HearMyShip": {
+    "primary_sources": [
+      {
+        "url": "https://doi.org/10.57760/sciencedb.13099",
+        "rights": "CC0-1.0 from saved ScienceDBdeposit license"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41597-025-04584-x",
+        "DOI": "10.1038/s41597-025-04584-x",
+        "type": "Primary Scientific Data2025 paper"
+      },
+      {
+        "url": "https://hearmyship.fer.hr/",
+        "type": "project mirror"
+      }
+    ],
+    "origin": "Sibenik canal Croatia acoustic+optical vessel-of-opportunity CPA observations;48kHz excerpts",
+    "RAW_schema": {
+      "download_fields": [
+        "name",
+        "expected_md5",
+        "bytes",
+        "url",
+        "deposit_url",
+        "mirror_id",
+        "time",
+        "category",
+        "length",
+        "speed",
+        "local_file",
+        "sha256",
+        "verified"
+      ],
+      "metadata_entry_denominator": 1146,
+      "missing_metadata_counts": {
+        "mirror_id": 9,
+        "length": 9,
+        "speed": 9,
+        "sha256": 1
+      },
+      "paper_public_transits": 1148,
+      "public_1148_vs_download_1146_reconciliation": "Not independently resolved; do not call1146uniquehulls",
+      "labels": "Raw mirror category/time/length/speed where available; no verified recurring hull isolation"
+    },
+    "downloaded_WAV_entries": 1146,
+    "verified_entries": 1146,
+    "unique_MD5": 1145,
+    "duplicate_MD5_entry": {
+      "MD5": "4330091f8160acc349ef0a1416baa4a6",
+      "entries": 2,
+      "one_reuses_same_local_WAV_without_repeated_SHAfield": true
+    },
+    "unique_WAV_bytes": 3315250540,
+    "all_unique_stats": {
+      "denominator_clips": 1145,
+      "sum_clip_seconds": 22977.636833333334,
+      "sum_clip_hours": 6.382676898148148,
+      "duration_seconds_quantiles": {
+        "0.0": 10.0,
+        "0.25": 20.0,
+        "0.5": 20.0,
+        "0.75": 20.0,
+        "0.9": 20.0201875,
+        "1.0": 30.0
+      },
+      "sample_rate_hz_counts": {
+        "48000": 1145
+      },
+      "channels_counts": {
+        "1": 1145
+      },
+      "class_counts_raw_strings": {
+        "Motorboat": 709,
+        "Sailboat": 191,
+        "Yacht": 123,
+        "Tour boat": 59,
+        "Ferry": 51,
+        "TourBoat": 5,
+        "Fishing Vessel": 2,
+        "Cargo Ship": 2,
+        "Tourboat": 2,
+        "Auxiliary ship": 1
+      },
+      "recording_days": 23,
+      "unique_sha256": 1145,
+      "complete_2s_segments": 11485,
+      "complete_measured_minutes": 0,
+      "source_component_count": null,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 22970,
+      "complete_measured_minute_seconds": 0
+    },
+    "historical_CV_stats": {
+      "denominator_clips": 945,
+      "sum_clip_seconds": 18974.02754166667,
+      "sum_clip_hours": 5.27056320601852,
+      "duration_seconds_quantiles": {
+        "0.0": 10.0,
+        "0.25": 20.0,
+        "0.5": 20.0,
+        "0.75": 20.0,
+        "0.9": 20.0,
+        "1.0": 30.0
+      },
+      "sample_rate_hz_counts": {
+        "48000": 945
+      },
+      "channels_counts": null,
+      "class_counts_raw_strings": {
+        "Motorboat": 596,
+        "Sailboat": 154,
+        "Yacht": 102,
+        "Tour boat": 46,
+        "Ferry": 40,
+        "TourBoat": 3,
+        "Tourboat": 2,
+        "Fishing Vessel": 1,
+        "Cargo Ship": 1
+      },
+      "recording_days": 19,
+      "unique_sha256": 945,
+      "complete_2s_segments": 9485,
+      "complete_measured_minutes": 0,
+      "source_component_count": 19,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 18970,
+      "complete_measured_minute_seconds": 0
+    },
+    "original_splits": {
+      "calibration": {
+        "denominator_clips": 144,
+        "sum_clip_seconds": 2881.044770833333,
+        "sum_clip_hours": 0.8002902141203703,
+        "duration_seconds_quantiles": {
+          "0.0": 20.0,
+          "0.25": 20.0,
+          "0.5": 20.0,
+          "0.75": 20.0,
+          "0.9": 20.025895833333333,
+          "1.0": 20.088625
+        },
+        "sample_rate_hz_counts": {
+          "48000": 144
+        },
+        "channels_counts": {
+          "1": 144
+        },
+        "class_counts_raw_strings": {
+          "Motorboat": 77,
+          "Sailboat": 27,
+          "Yacht": 16,
+          "Tour boat": 11,
+          "Ferry": 10,
+          "Fishing Vessel": 1,
+          "Cargo Ship": 1,
+          "TourBoat": 1
+        },
+        "recording_days": 3,
+        "unique_sha256": 144,
+        "complete_2s_segments": 1440,
+        "complete_measured_minutes": 0,
+        "source_component_count": null,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 2880,
+        "complete_measured_minute_seconds": 0
+      },
+      "domain_holdout": {
+        "denominator_clips": 56,
+        "sum_clip_seconds": 1122.5645208333333,
+        "sum_clip_hours": 0.31182347800925925,
+        "duration_seconds_quantiles": {
+          "0.0": 20.0,
+          "0.25": 20.015546875,
+          "0.5": 20.043458333333334,
+          "0.75": 20.09015625,
+          "0.9": 20.093708333333332,
+          "1.0": 20.099145833333335
+        },
+        "sample_rate_hz_counts": {
+          "48000": 56
+        },
+        "channels_counts": {
+          "1": 56
+        },
+        "class_counts_raw_strings": {
+          "Motorboat": 36,
+          "Sailboat": 10,
+          "Yacht": 5,
+          "Tour boat": 2,
+          "Ferry": 1,
+          "Auxiliary ship": 1,
+          "TourBoat": 1
+        },
+        "recording_days": 1,
+        "unique_sha256": 56,
+        "complete_2s_segments": 560,
+        "complete_measured_minutes": 0,
+        "source_component_count": null,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 1120,
+        "complete_measured_minute_seconds": 0
+      },
+      "train": {
+        "denominator_clips": 767,
+        "sum_clip_seconds": 15407.790958333333,
+        "sum_clip_hours": 4.27994193287037,
+        "duration_seconds_quantiles": {
+          "0.0": 10.0,
+          "0.25": 20.0,
+          "0.5": 20.0,
+          "0.75": 20.0,
+          "0.9": 20.0,
+          "1.0": 30.0
+        },
+        "sample_rate_hz_counts": {
+          "48000": 767
+        },
+        "channels_counts": {
+          "1": 767
+        },
+        "class_counts_raw_strings": {
+          "Motorboat": 495,
+          "Sailboat": 124,
+          "Yacht": 83,
+          "Tour boat": 32,
+          "Ferry": 27,
+          "Tourboat": 2,
+          "TourBoat": 2,
+          "Fishing Vessel": 1,
+          "Cargo Ship": 1
+        },
+        "recording_days": 16,
+        "unique_sha256": 767,
+        "complete_2s_segments": 7702,
+        "complete_measured_minutes": 0,
+        "source_component_count": null,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 15404,
+        "complete_measured_minute_seconds": 0
+      },
+      "validation": {
+        "denominator_clips": 178,
+        "sum_clip_seconds": 3566.2365833333333,
+        "sum_clip_hours": 0.9906212731481482,
+        "duration_seconds_quantiles": {
+          "0.0": 18.090041666666668,
+          "0.25": 20.0,
+          "0.5": 20.0,
+          "0.75": 20.0,
+          "0.9": 20.0,
+          "1.0": 30.0
+        },
+        "sample_rate_hz_counts": {
+          "48000": 178
+        },
+        "channels_counts": {
+          "1": 178
+        },
+        "class_counts_raw_strings": {
+          "Motorboat": 101,
+          "Sailboat": 30,
+          "Yacht": 19,
+          "Tour boat": 14,
+          "Ferry": 13,
+          "TourBoat": 1
+        },
+        "recording_days": 3,
+        "unique_sha256": 178,
+        "complete_2s_segments": 1783,
+        "complete_measured_minutes": 0,
+        "source_component_count": null,
+        "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+        "usable_complete2s_seconds": 3566,
+        "complete_measured_minute_seconds": 0
+      }
+    },
+    "raw_category_aliases": "Tour boat/TourBoat/Tourboat are retained as separate rawstrings, not asserted independent physical classes",
+    "current_R4_R5_R6_references": 0,
+    "QC": {
+      "metadata_rows": 1145,
+      "verified_counts": {
+        "True": 1145
+      },
+      "measured_counts": {
+        "True": 1145
+      },
+      "quality_evidence_counts": {
+        "25 finite bands/header Nyquist and waveform QC; sensor transfer calibration remains unverified": 1145
+      },
+      "quality_review_flags_counts": {
+        "[]": 1145
+      },
+      "reference_eligible_counts": {
+        "True": 1145
+      }
+    },
+    "duration_limit": "Every unique WAV is10–30s and yields0measuredcomplete minutes.945historicalCV=5.270563h;all1145=6.382677h. Never repeat short audio into a claimed native15min observation.",
+    "calibration_limit": "Source paper used a calibrated measurement system; our WAV-to-power pipeline did not apply hydrophone sensitivity/gain/propagation calibration and does not claim pressure units."
+  },
+  "NOAA_SanctSound": {
+    "primary_sources": [
+      {
+        "url": "https://www.fisheries.noaa.gov/inport/item/80342",
+        "DOI": "10.25921/saca-sp25",
+        "rights": "CC0-1.0 verified2026-10-26 AccessInformation"
+      },
+      {
+        "url": "https://www.fisheries.noaa.gov/inport/item/80343",
+        "DOI": "10.25921/PF0H-SQ72",
+        "rights": "CC0-1.0 verified2026-10-26 AccessInformation"
+      }
+    ],
+    "RAW_schema": "Native FLAC/WAV object+generation+Content-Range byte SHA;exactcrop frames/fs/UTC;station/deployment/instrument;Ship/NoShipannotation start/end;frequency-bounded Good quality start/end;excerpt/derived-array SHA",
+    "acquired_expansion_rows": 13,
+    "primary_ship_clips": 12,
+    "primary_crop_seconds": 10800,
+    "primary_hours": 3.0,
+    "primary_station_deployments": 6,
+    "primary_recording_days": 12,
+    "native_fs_primary_counts": {
+      "48000": 10,
+      "96000": 2
+    },
+    "prospective_roles": {
+      "ambient_control_quarantine": {
+        "clips": 1,
+        "sum_crop_seconds": 900.0,
+        "sum_crop_hours": 0.25
+      },
+      "calibration": {
+        "clips": 2,
+        "sum_crop_seconds": 1800.0,
+        "sum_crop_hours": 0.5
+      },
+      "new_sealed_holdout": {
+        "clips": 2,
+        "sum_crop_seconds": 1800.0,
+        "sum_crop_hours": 0.5
+      },
+      "train": {
+        "clips": 6,
+        "sum_crop_seconds": 5400.0,
+        "sum_crop_hours": 1.5
+      },
+      "validation": {
+        "clips": 2,
+        "sum_crop_seconds": 1800.0,
+        "sum_crop_hours": 0.5
+      }
+    },
+    "historical_CV_stats": {
+      "denominator_clips": 8,
+      "sum_clip_seconds": 7200.0,
+      "sum_clip_hours": 2.0,
+      "duration_seconds_quantiles": {
+        "0.0": 900.0,
+        "0.25": 900.0,
+        "0.5": 900.0,
+        "0.75": 900.0,
+        "0.9": 900.0,
+        "1.0": 900.0
+      },
+      "sample_rate_hz_counts": {
+        "48000": 6,
+        "96000": 2
+      },
+      "channels_counts": null,
+      "class_counts_raw_strings": {
+        "ship": 8
+      },
+      "recording_days": 8,
+      "unique_sha256": 8,
+      "complete_2s_segments": 3600,
+      "complete_measured_minutes": 120,
+      "source_component_count": 4,
+      "hours_semantics": "sum of header clip durations; not deduplicated non-overlapping field-recording hours or independent hulls",
+      "usable_complete2s_seconds": 7200,
+      "complete_measured_minute_seconds": 7200
+    },
+    "current_R4_R5_R6_references": 0,
+    "old_OC02_assessment": {
+      "clips": 3,
+      "sum_crop_seconds": 2700.0,
+      "hours": 0.75,
+      "already_evaluated_historical_holdout": "not used for fit,calibration or repeatedmodelselection",
+      "metadata_source": "external/noaa_sanctsound_holdout/manifest.json"
+    },
+    "expansion_crop_records_metadata_only": [
+      {
+        "clip_id": "fk01_01_20190326T144500Z",
+        "prospective_split": "train",
+        "deployment": "fk01_01",
+        "station": "fk01",
+        "recording_day": "20190326",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2019-03-26 14:45:00+00:00",
+        "quality_end": "2019-04-19 00:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 6.82638888888889e-05,
+        "source_object": "sanctsound/audio/fk01/sanctsound_fk01_01/audio/SanctSound_FK01_01_671359016_20190326T113254Z.flac",
+        "source_generation": "1676060743607965",
+        "source_md5_base64": "hLSy9kFjVkjQPhd3fjI37A==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/train/fk01_01_20190326T144500Z.flac",
+        "crop_sha256": "c246479504985e08ea26b9eaa1cabc5af1d0e4cee0db3ab4d340b5f8707dde84",
+        "band_power_relative_path": "native_15min/train/fk01_01_20190326T144500Z_band_power.npz"
+      },
+      {
+        "clip_id": "ci01_01_20181106T205858Z",
+        "prospective_split": "train",
+        "deployment": "ci01_01",
+        "station": "ci01",
+        "recording_day": "20181106",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-10-31 22:00:09+00:00",
+        "quality_end": "2018-12-15 10:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 96000,
+        "frames": 86400000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 3.1898148148148146e-05,
+        "source_object": "sanctsound/audio/ci01/sanctsound_ci01_01/audio/SanctSound_CI01_01_671379494_20181106T205858Z.flac",
+        "source_generation": "1674254614540654",
+        "source_md5_base64": "VVvKAyoNLgnhP8pgIKvt5A==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/train/ci01_01_20181106T205858Z.flac",
+        "crop_sha256": "d90ee09888e630d812b5e426f87eeb9cf89856d66aa8c657c7b5d159c6e5ee91",
+        "band_power_relative_path": "native_15min/train/ci01_01_20181106T205858Z_band_power.npz"
+      },
+      {
+        "clip_id": "fk01_01_20190418T145700Z",
+        "prospective_split": "train",
+        "deployment": "fk01_01",
+        "station": "fk01",
+        "recording_day": "20190418",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2019-03-26 14:45:00+00:00",
+        "quality_end": "2019-04-19 00:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 2.8518518518518517e-05,
+        "source_object": "sanctsound/audio/fk01/sanctsound_fk01_01/audio/SanctSound_FK01_01_671359016_20190418T112932Z.flac",
+        "source_generation": "1676060744755910",
+        "source_md5_base64": "zDzfvWpB9yKq7MRE6hLRuw==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/train/fk01_01_20190418T145700Z.flac",
+        "crop_sha256": "5c6cd53963a88c3376f460630db2698fc6dfea14482f38e064911d90127607b2",
+        "band_power_relative_path": "native_15min/train/fk01_01_20190418T145700Z_band_power.npz"
+      },
+      {
+        "clip_id": "gr01_01_20181214T022700Z",
+        "prospective_split": "train",
+        "deployment": "gr01_01",
+        "station": "gr01",
+        "recording_day": "20181214",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-12-13 00:00:00+00:00",
+        "quality_end": "2019-05-01 00:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.000934537037037037,
+        "source_object": "sanctsound/audio/gr01/sanctsound_gr01_01/audio/SanctSound_GR01_01_671363112_20181214T000420Z.flac",
+        "source_generation": "1676061664059949",
+        "source_md5_base64": "tqunODosPH6Ot2l9wnwn+A==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/train/gr01_01_20181214T022700Z.flac",
+        "crop_sha256": "225f8190441c6f7c3f53880ab6eb78f727034e77279e1c8dbe0b4725302ae6de",
+        "band_power_relative_path": "native_15min/train/gr01_01_20181214T022700Z_band_power.npz"
+      },
+      {
+        "clip_id": "gr01_01_20190407T135000Z",
+        "prospective_split": "train",
+        "deployment": "gr01_01",
+        "station": "gr01",
+        "recording_day": "20190407",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-12-13 00:00:00+00:00",
+        "quality_end": "2019-05-01 00:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.0005676388888888889,
+        "source_object": "sanctsound/audio/gr01/sanctsound_gr01_01/audio/SanctSound_GR01_01_671363112_20190407T092020Z.flac",
+        "source_generation": "1676061671158352",
+        "source_md5_base64": "oOjO/kbTJKeLuIo2nb/cOQ==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/train/gr01_01_20190407T135000Z.flac",
+        "crop_sha256": "d32bde9c0ab0725892893a56f6ed31b1704650a150c749d96ea4bea4d64ff8be",
+        "band_power_relative_path": "native_15min/train/gr01_01_20190407T135000Z_band_power.npz"
+      },
+      {
+        "clip_id": "hi01_01_20181130T074500Z",
+        "prospective_split": "validation",
+        "deployment": "hi01_01",
+        "station": "hi01",
+        "recording_day": "20181130",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-11-29 23:31:00+00:00",
+        "quality_end": "2019-05-08 18:22:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.00011613425925925925,
+        "source_object": "sanctsound/audio/hi01/sanctsound_hi01_01/audio/SanctSound_HI01_01_671129638_20181130T050952Z.flac",
+        "source_generation": "1676062539184765",
+        "source_md5_base64": "/tiDWHgqdsJhAStVCYxekw==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/validation/hi01_01_20181130T074500Z.flac",
+        "crop_sha256": "d4b175993bfd5f3225be7b82f14b673b7faf2f620f76b8a874eaa7983667bebf",
+        "band_power_relative_path": "native_15min/validation/hi01_01_20181130T074500Z_band_power.npz"
+      },
+      {
+        "clip_id": "hi01_01_20190331T055400Z",
+        "prospective_split": "validation",
+        "deployment": "hi01_01",
+        "station": "hi01",
+        "recording_day": "20190331",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-11-29 23:31:00+00:00",
+        "quality_end": "2019-05-08 18:22:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.0020983796296296297,
+        "source_object": "sanctsound/audio/hi01/sanctsound_hi01_01/audio/SanctSound_HI01_01_671129638_20190331T032902Z.flac",
+        "source_generation": "1676062545158644",
+        "source_md5_base64": "EyB0QHW+izHS6nf9HPNotA==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/validation/hi01_01_20190331T055400Z.flac",
+        "crop_sha256": "58283b20081bdfc151fcd5fc4cf98ce428e9e080a20600e7e4bc7779bb0a2db7",
+        "band_power_relative_path": "native_15min/validation/hi01_01_20190331T055400Z_band_power.npz"
+      },
+      {
+        "clip_id": "pm01_01_20200331T110927Z",
+        "prospective_split": "ambient_control_quarantine",
+        "deployment": "pm01_01",
+        "station": "pm01",
+        "recording_day": "20200331",
+        "annotation": "NoShip",
+        "quality_label": "Good",
+        "quality_start": "2020-03-31 10:39:46+00:00",
+        "quality_end": "2020-06-05 12:20:46+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.0026148148148148146,
+        "source_object": "sanctsound/audio/pm01/sanctsound_pm01_01/audio/SanctSound_PM01_01_671895593_200331110927.flac",
+        "source_generation": "1676325899130345",
+        "source_md5_base64": "N5cQQi7g6yJAossuLQivWQ==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/ambient_control_quarantine/pm01_01_20200331T110927Z.flac",
+        "crop_sha256": "8ebe00f703b401ea7b2a2421559ee84c2f7c8bb5b44d7515d6f87f40b97ab342",
+        "band_power_relative_path": "native_15min/ambient_control_quarantine/pm01_01_20200331T110927Z_band_power.npz"
+      },
+      {
+        "clip_id": "sb01_01_20181112T190100Z",
+        "prospective_split": "new_sealed_holdout",
+        "deployment": "sb01_01",
+        "station": "sb01",
+        "recording_day": "20181112",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-11-12 00:00:00+00:00",
+        "quality_end": "2019-01-28 00:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.0,
+        "source_object": "sanctsound/audio/sb01/sanctsound_sb01_01/audio/SanctSound_SB01_01_1678032935_20181112T190000Z_Post-Deployment.flac",
+        "source_generation": "1676327750279816",
+        "source_md5_base64": "ueA9pkoMQ8QHIImWxu53Ig==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/new_sealed_holdout/sb01_01_20181112T190100Z.flac",
+        "crop_sha256": "0d7f9fdf3fbd8f1af83782849f61bff52a19e04f868bba33bf584c41df31945c",
+        "band_power_relative_path": "native_15min/new_sealed_holdout/sb01_01_20181112T190100Z_band_power.npz"
+      },
+      {
+        "clip_id": "sb01_01_20190127T225600Z",
+        "prospective_split": "new_sealed_holdout",
+        "deployment": "sb01_01",
+        "station": "sb01",
+        "recording_day": "20190127",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-11-12 00:00:00+00:00",
+        "quality_end": "2019-01-28 00:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.0,
+        "source_object": "sanctsound/audio/sb01/sanctsound_sb01_01/audio/SanctSound_SB01_01_1678032935_20190127T202619Z.flac",
+        "source_generation": "1676327754240352",
+        "source_md5_base64": "taE5EOlDiLP1fdjslaL0FQ==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/new_sealed_holdout/sb01_01_20190127T225600Z.flac",
+        "crop_sha256": "0d8587560152f3ad0a0042e12647c9ac2c176ca6e8ef58e70a4fcaf82a343f75",
+        "band_power_relative_path": "native_15min/new_sealed_holdout/sb01_01_20190127T225600Z_band_power.npz"
+      },
+      {
+        "clip_id": "ci01_01_20181204T010600Z",
+        "prospective_split": "train",
+        "deployment": "ci01_01",
+        "station": "ci01",
+        "recording_day": "20181204",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2018-10-31 22:00:09+00:00",
+        "quality_end": "2018-12-15 10:00:00+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 96000,
+        "frames": 86400000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 4.2268518518518516e-05,
+        "source_object": "sanctsound/audio/ci01/sanctsound_ci01_01/audio/SanctSound_CI01_01_671379494_20181203T235444Z.flac",
+        "source_generation": "1674254617416445",
+        "source_md5_base64": "KfU/oV9nW9DXvGgAlsNVRw==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/train/ci01_01_20181204T010600Z.flac",
+        "crop_sha256": "b75fe87a6c0c376770f7cf8870fbe24d0b127b3416dad24f13bf442310fdbea0",
+        "band_power_relative_path": "native_15min/train/ci01_01_20181204T010600Z_band_power.npz"
+      },
+      {
+        "clip_id": "oc03_02_20191108T010700Z",
+        "prospective_split": "calibration",
+        "deployment": "oc03_02",
+        "station": "oc03",
+        "recording_day": "20191108",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2019-11-08 00:00:00+00:00",
+        "quality_end": "2020-03-06 09:00:09+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 1.1574074074074074e-07,
+        "source_object": "sanctsound/audio/oc03/sanctsound_oc03_02/audio/SanctSound_OC03_02_671617061_191107235837.flac",
+        "source_generation": "1676325556645950",
+        "source_md5_base64": "gn4uBxpiuwkryO4kXBIU6Q==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/calibration/oc03_02_20191108T010700Z.flac",
+        "crop_sha256": "d9d73900fc94991b5bf4b404fcff8a099d97f3c3c0b65d61ab67438106749bc8",
+        "band_power_relative_path": "native_15min/calibration/oc03_02_20191108T010700Z_band_power.npz"
+      },
+      {
+        "clip_id": "oc03_02_20200306T042200Z",
+        "prospective_split": "calibration",
+        "deployment": "oc03_02",
+        "station": "oc03",
+        "recording_day": "20200306",
+        "annotation": "ship",
+        "quality_label": "Good",
+        "quality_start": "2019-11-08 00:00:00+00:00",
+        "quality_end": "2020-03-06 09:00:09+00:00",
+        "quality_low_hz": 28.18382931264454,
+        "quality_high_hz": 8912.509381337453,
+        "sample_rate_hz": 48000,
+        "frames": 43200000,
+        "duration_seconds": 900.0,
+        "complete_2s_segments": 450,
+        "complete_minutes": 15,
+        "clip_digital_rail_fraction": 0.0,
+        "zero_sample_fraction": 0.00018122685185185185,
+        "source_object": "sanctsound/audio/oc03/sanctsound_oc03_02/audio/SanctSound_OC03_02_671617061_200306003346.flac",
+        "source_generation": "1676325562608994",
+        "source_md5_base64": "GmxBkkIIW584U3c6khwEkA==",
+        "full_source_md5_verified": false,
+        "crop_relative_path": "native_15min/calibration/oc03_02_20200306T042200Z.flac",
+        "crop_sha256": "d373de413d47e34d511caff5a41aba8c9d7b97fa0c4c514dfa0c3588c7e325c3",
+        "band_power_relative_path": "native_15min/calibration/oc03_02_20200306T042200Z_band_power.npz"
+      }
+    ],
+    "original_and_new_sealed_audio_not_opened_this_audit": true,
+    "source_QC": "Exact annotation ship + full25band Good interval + native900fs frames; recorded no>=1szerogap and<=0.1%digitalrails;some individual zero samples are not proof of long missinggaps",
+    "all_primary_digital_rail_fractions": {
+      "0.0": 12
+    },
+    "integrity_limit": "Generation-pinned acquired byte ranges/content-range/rangeSHA/excerptSHA/arraySHA verified historically. Provider whole-objectMD5 NOT recomputed. No claim of full-source-file acquisition.",
+    "unit_limit": "Provider metadata describe calibrated equipment; this pipeline uses uncalibrated digital mean-square after no sensitivity calibration. Ship event is not isolated vessel energy or independent hull identity.",
+    "quarantine": "PMNoShip1×900s excluded, not a verified naturally ship-absent example",
+    "excluded_deployment_reasons": [
+      {
+        "source": "OC01_01",
+        "reason": "Official all-band amplitude drift, Compromised; excluded."
+      },
+      {
+        "source": "MB01_01",
+        "reason": "Below50Hz Compromised overlaps target bands; excluded from full25band primary pool."
+      },
+      {
+        "source": "FK01_01",
+        "reason": "2018-12-20T20:00 to2019-03-26T14:45 seafloor contact excluded; only laterGood intervals selected."
+      },
+      {
+        "source": "OC03_02",
+        "reason": "First weekNov2019 high-frequency noise-floor warning excluded; acquired2 positive clips are reserved calibration and not in CV."
+      },
+      {
+        "source": "PM01_01",
+        "reason": "Filename_ships.csv contains NoShip labels; one crop quarantined, not used as positive reference or certified vessel absence."
+      },
+      {
+        "source": "PORTIA/VLIZ/MBARI/Vulcano",
+        "reason": "Researched candidates only; no audio admitted to current CV. Metadata/licence checked, but native duration/coverage/continuity gates remain pending where relevant.",
+        "catalogue": "reports/external_expansion_catalog.json"
+      }
+    ]
+  },
+  "searched_vs_acquired": {
+    "DeepShip": {
+      "official_url": "https://github.com/irfankamboh/DeepShip",
+      "official_README": "47h04/265ships/4classes,partial public repo,remaining by email",
+      "downloaded_local_audio_archives_matching_name": 0,
+      "processed_or_active_clips": 0,
+      "rights": "No explicit reusable data licence was established from the inspected project page; public access does not by itself establish challenge-compliant licence. No request/contact made.",
+      "quality_judgment": "not evaluated; not declared badquality"
+    },
+    "ShipsEar": {
+      "official_url": "https://underwaternoise.atlanttic.uvigo.es/",
+      "primary_paper": "https://www.sciencedirect.com/science/article/pii/S0003682X16301566",
+      "official_access": "Sample audio links;fullaccess request to authors",
+      "downloaded_local_audio_archives_matching_name": 0,
+      "processed_or_active_clips": 0,
+      "rights": "No explicit reusable dataset licence established from the inspected officialpage. Paper licence is not automatically dataset licence.",
+      "quality_judgment": "not evaluated; not declared badquality"
+    },
+    "ONC_direct": {
+      "official_policy": "https://www.oceannetworks.ca/data/data-policy/",
+      "status": "Upstream source used throughVTUADrebuild,not a separately newlydownloaded or independent current source. Directarchive searched only;ONC-owned/partnerlicence distinctions retained."
+    },
+    "local_inventory_name_matches": [],
+    "other_candidates": [
+      {
+        "name": "PORTIA",
+        "licence": "CC-BY-4.0",
+        "source_urls": [
+          "https://zenodo.org/records/21409381",
+          "https://www.nature.com/articles/s41597-026-08384-9"
+        ],
+        "evidence": [
+          {
+            "file": "external/expansion_research/other_sources/19204539_latest.json",
+            "sha256": "a5ba265912ed8a2825f5c9c3936133d0c032a05422d0a6009f81ba7ff423f112"
+          }
+        ],
+        "pinned_record": "21409381",
+        "status": "four metadata archives downloaded and full MD5 verified; audio not acquired",
+        "public_metadata_counts": {
+          "pinned_record": "21409381",
+          "downloaded_audio": false,
+          "verified_metadata_archives": 4,
+          "unique_public_windows": 95022,
+          "recording_days": 19,
+          "first_utc": "2025-05-16 16:32:21+00:00",
+          "last_utc": "2025-06-12 15:21:59+00:00",
+          "unique_nonnull_primary_MMSI": 196,
+          "provided_split_isolation_claim_not_independent_station_split": true,
+          "native_fs_frames_continuity": "not yet verified from audio headers; do not treat these 3-second windows as real 15-minute passages"
+        },
+        "audio_archive_bytes": 74746816056,
+        "native_15min_continuity_verified": false,
+        "next_gate": "Audit original audio headers, sample rate, gaps and interval continuity. Do not concatenate short windows into a claimed measured passage."
+      },
+      {
+        "name": "VLIZ AIS-annotated North Sea hydrophone recordings",
+        "licence": "CC-BY-4.0",
+        "source_urls": [
+          "https://zenodo.org/records/17233667",
+          "https://doi.org/10.14284/723"
+        ],
+        "evidence": [
+          {
+            "file": "external/expansion_research/other_sources/17233667_latest.json",
+            "sha256": "d2ea2842ec5163b48c83c107d42923d212b0bbe36c7c92030eceb17285b479cd"
+          }
+        ],
+        "status": "official metadata and licence verified; audio not acquired",
+        "advertised_10sec_segments": 27524,
+        "advertised_recording_days": 116,
+        "advertised_stations": 2,
+        "archive_bytes": 26005892324,
+        "native_15min_continuity_verified": false,
+        "next_gate": "Confirm native fs, actual frame length, timestamp spacing, vessel provenance and all 25-band support before use."
+      },
+      {
+        "name": "MBARI Pacific Sound",
+        "licence": "CC-BY-4.0 for data",
+        "source_urls": [
+          "https://www.mbari.org/data/passive-acoustic-data/",
+          "https://docs.mbari.org/pacific-sound/quickstart/"
+        ],
+        "evidence": [
+          {
+            "file": "external/expansion_research/other_sources/mbari_licence.html",
+            "sha256": "af5d19238e73dabaa56b2026aea3c428b9fa80e40ebd7d94077d4ac55d105b84"
+          }
+        ],
+        "status": "official licence and access documentation verified; audio not acquired",
+        "documented_raw_fs_hz": 256000,
+        "approx_raw_bytes_per_10min": 460800000,
+        "native_15min_continuity_verified": false,
+        "next_gate": "Join only header/timestamp-verified adjacent raw files; 16kHz and 2kHz decimated views cannot cover the complete 25 target bands."
+      },
+      {
+        "name": "Vulcano Island hydrothermal field",
+        "licence": "CC-BY-4.0",
+        "source_urls": [
+          "https://zenodo.org/records/21561423"
+        ],
+        "evidence": [
+          {
+            "file": "external/expansion_research/other_sources/21561423.json",
+            "sha256": "0b46da0d3ea1000d83eecfb3496d48b05638d52ecff77cd7ba8f57060dfbb761"
+          }
+        ],
+        "status": "official licence and metadata verified; audio not acquired",
+        "documented_fs_hz": 32000,
+        "example_raw_archive_bytes": 170728055,
+        "native_15min_continuity_verified": false,
+        "next_gate": "Environmental diversity only; audit example native duration and gaps, and do not assert ship-positive or verified ship-absent truth."
+      }
+    ],
+    "PORTIA_metadata_only": "4metadataarchivesMD5verified;audio0/currentreference0. Other publicrecord metadata is not ingested waveform data."
+  },
+  "common_processing": {
+    "code": "pipeline/audio.py:audio_band_power",
+    "one_channel": "Nativefs/channel0;allcurrentconvertedVT/HMSandNOAAexcerptmetadata mono",
+    "blocks": "Complete nonoverlapping2s;Hann periodogram,detrend constant,density;df=.5Hz",
+    "bands": "c_j=10^(1.5+.1j),j0..24;[c/10^.05,c*10^.05);sumPSD*df",
+    "centres_hz": [
+      31.622776601683793,
+      7943.282347242814
+    ],
+    "outer_edges_hz": [
+      28.183829312644534,
+      8912.509381337459
+    ],
+    "Nyquist": "Require nativefs/2>=8912.509Hz to supportfull25;no upsampling to invent high-band observations",
+    "minutes": "Complete30×2s bins linear-power mean;then optionaldB;nevermeanofdB",
+    "tail": "Incomplete<2s dropped;remainingcomplete2s kept even ifunder60s;0measuredminute forHMS",
+    "units": "uncalibrated digital mean-square bandpower,notuPa² or absolute SL",
+    "before_model": "Source metadata/hull/day/checksum/QC guards first;only allowedreference trajectories enter mixtures;metadata IDs/covariates notacoustic modeltargets",
+    "target": "Known added recording A=alphaR;E=B+A;q=A/E;y=sum(OA)/sum(OE),presence=(observedy>0). This is controlledadded-reference energy,not naturalship energyGT. No model creates trusted labels forSAobservations."
+  },
+  "active_phase_processing": "R4/R5native2s bank→boundedtimewarp/fade/EQ→minuteaverage;R6minute_first/realshortcrop no timewarp,EQ6/nolowpass/fixedCPASNR. OriginalsourceUTC/duration/hash preserved;sourcepoolhours do not increase with derivedsynthetic repetitions.",
+  "access_scope": {
+    "metadata_only": true,
+    "waveform_or_band_array_or_synthetic_array_loads": false,
+    "Test_or_heldout_array_loads": false,
+    "new_download_ingestion_restoration_fit": false,
+    "old_files_modified": false,
+    "external_publication": "No posting/contact/submission;source declaration drafts remain aspreviouslydirected"
+  },
+  "input_sha256": {
+    "data/processed/external_clip_manifest.parquet": "aa4affc7bd61afdea226bfec6f34d5b6c6e519cd23af55a463531bd8a67c624f",
+    "data/processed/external_preparation_manifest.json": "5b59b02b19fea6fa91c192ca2fea93edc76186412c3d82790689a374f445309b",
+    "data/versions/quality_v2_native/reference_manifest.parquet": "0693b2af999b94c8b99bd34433bec190290495bea4eb97b79d733aeb762b02e4",
+    "data/synthetic/group_cv_nested5_pilot_v1/reference_outer_assignment.parquet": "3218d6001ce9567b3de3e9655f097d6bc5441a4f22d09457b79705eebd72140e",
+    "data/versions/vtuad_reference_r4_v1/reference_manifest.parquet": "49ae1e7c99fb7cc166d272aca3e9b1467ecd61953928ee243def5e98602c5f1e",
+    "data/versions/vtuad_reference_r4_v1/fold_00_reference_manifest.parquet": "80b957d397a95844c74006f809060bf1464a3d922053665359fb07907b522d06",
+    "data/versions/vtuad_reference_r4_v1/manifest.json": "0fcf298fde1486f60269497a60f04745e41ba5fff4bc1f46de81553e67752479",
+    "data/versions/source_split_r6_guardrails_v2/reference_manifest.parquet": "df343d732340dcc0ba034730675a58913b407fac24dd1ae99ea12922f8b173cf",
+    "data/versions/source_split_r6_guardrails_v2/manifest.json": "894783ab9aa9cfd17db4fb46e00762fd876a2bca16c824274699cb0db4099cf2",
+    "external/vtuad_v1.3.2/download_manifest.json": "77c0017f119c31d81466f59651c3cd87ffb934d940cff02c47efe57ecef589de",
+    "external/vtuad_v1.3.2/registry_anonymized.csv": "92a1cba9ca73891121cf79f648dcf45173ff39bbf4db24a118eaa3d18d9c9015",
+    "external/vtuad_v1.3.2/strict_interval_wav_SHA256SUMS.txt": "5d0f163b45d27e7e083e1302a2c4f2b056b9677d38b3e10e4cc2f3c753307c86",
+    "external/vtuad_v1.3.2/license_evidence_v131.md": "fa7fd9aca83346c1a1e381f45804fa97b33fbd421e72bb72c239bc418fe92624",
+    "external/hearmyship_v1/download_manifest.json": "221c4774d9b41f2b5bb52b63dc09bce89e32fad3722893b5eba3b87ea44d24b8",
+    "external/hearmyship_v1/deposit_manifest.json": "902463462664bac7d09204a52b9f0e81532682a097d6efb9165e9b0e300bab7f",
+    "external/noaa_sanctsound_holdout/manifest.json": "972ca86de7ac7a07e9c2ff6458082fc4d5a2f482a9f3a9d3adae3d39e130d08a",
+    "external/expansion_research/native_15min_manifest.json": "c015fdc3c889fb181379038f61f976bafaa557d4cb2fd9ab90f6f899d202a885",
+    "external/expansion_research/native_reference_adapter.parquet": "702bddb028983136888eba33f1c767e572c736edc17246f3aebde62051adef58",
+    "external/expansion_research/native_reference_final_summary.json": "03cd7971362d820c8279654c1c780b1b6a1b89309c13ffbaac7cb18dc126acdb",
+    "reports/external_expansion_catalog.json": "1dbfebcd4903391385203fca16a68813dd0043578880fc9f07757df03fda7ead",
+    "external/expansion_research/other_sources/portia_metadata/manifest.json": "22ffed56aa8cc1e322a5d4b1f44c1d72b411ee8029b8507ed4e70e8c2a8516b4",
+    "reports/dataset_document_external_facts.json": "3df29ae93d5ec19ea8f9505cf17ba3e40754c0c1cc2709b424c81f96d782d0bd",
+    "reports/R7_ANIL45_SOURCE_COMPARISON.json": "ccc6ef61e035ca84413313178dcdabcea7b5c417ab3432b1f859fc67b21f011b",
+    "reports/R7_ANIL45_SOURCE_COMPARISON.md": "a7ff24590c6135b94bf3b662f590adc42fa79177391623f5400e3d11652c8927",
+    "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+    "pipeline/prepare_external.py": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7",
+    "pipeline/native_sampler_v2.py": "1ad2faa92d7b5183796c4887c31a0a6dbf77bcd7b3d7082698f4010ff943c39f",
+    "pipeline/passage_sampler_r4.py": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+    "pipeline/robust_sampler_r6.py": "59a8bafbbad9c42c7628d2283ac5f9fb3550a6945686958ea207ebeb61b0722b",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492"
+  },
+  "time_scope": "This inventory describes completed R2/R4/R5/R6/R7 data versions. Newly authorized R9expandedproduction has a separate newmanifest and does not rewrite thesehistorical counts."
+}

@@ -1,0 +1,88 @@
+{
+  "version": "r9_full_training_v1",
+  "seed": 20261026,
+  "scope": "new production training; old R5/R6/R7 source, models and diagnostics preserved",
+  "background_version": "data/versions/background_cv_r9",
+  "reference_version": "data/versions/vtuad_full_r9",
+  "data_output": "data/synthetic/group_cv_minute_full_r9_v1",
+  "run_output": "models/group_cv_minute_full_r9_v1",
+  "folds": [0, 1, 2, 3, 4],
+  "reference_cv_semantics": "all admitted509 vessel-role references shared in every background TRAIN fold; no reference-independent CV claim",
+  "background_cv_semantics": "original allowed100965 public SA window pool; source-group5fold, other4buckets TRAIN before24h support purge; heldout groups separate selection/ensemble_fit/ensemble_gate/report",
+  "model_order": ["bg_cnn", "tfgrid_fdy_conformer", "fdy", "itransformer", "lgbm_physics"],
+  "fixed_examples": {"selection": 1000, "ensemble_fit": 500, "ensemble_gate": 500, "report": 1000},
+  "generator": {
+    "minute_first_fraction": 1.0,
+    "family_names": ["native_inside", "native_short", "native_edge"],
+    "family_probabilities": [0.5, 0.25, 0.25],
+    "explicit_no_source_fraction": 0.2,
+    "hard_negative_policy": {
+      "definition": "TRAIN-only R6 low0..8 bump >=TRAIN q90 and low >max(safe15..22,high20..24)+3dB; heuristic, not natural-vessel truth",
+      "requested_fraction_of_all_primary_windows": 0.1,
+      "selection": "prefer candidates for half of no-source requests without primary duplication; if candidates insufficient use all, fill remaining zero slots deterministically",
+      "metadata_frozen_before_training": true
+    },
+    "snr_db_uniform": [-10.0, 10.0],
+    "smooth_eq_max_db": 6.0,
+    "time_warp": false,
+    "force_boundary_fade": false,
+    "waveform_repeat_or_gap_fill": false,
+    "quantization_decimals": 1,
+    "labels_from_unrounded_components": true,
+    "model_weights_from_rounded_observations": true,
+    "placement_conditioning": "native minute geometry only, independent of background observation mask",
+    "scale_reference": "whole EQ-transformed native complete-minute trajectory peak before crop and masking",
+    "ambient_controls": "separate analysis panel; known ambient-added energy is not relabelled as vessel-only energy or automatic zero target",
+    "parameters_from_Test_statistics": false
+  },
+  "training": {
+    "epochs": 100,
+    "early_stopping": false,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "dropout": 0.1,
+    "batch_size": 128,
+    "num_workers": 4,
+    "threads": 4,
+    "gradient_clip": 1.0,
+    "cell_loss_weight": 0.25,
+    "presence_loss_weight": 0.05,
+    "site_balanced_loss": true,
+    "monitor": "window_rmse",
+    "mixed_precision": "CUDA BF16 with FP32 pooling; CPU only for explicit fixtures",
+    "checkpoint_policy": "strict best-window, best-macro, last, every10epochs; full epoch log"
+  },
+  "tree": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 4,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "maximum_training_rows": 100000,
+    "feature_batch_size": 512
+  },
+  "ensemble": {
+    "fallback": "best single neural member on ensemble_fit groups",
+    "candidates": ["every single model", "all-model equal average", "neural-only equal average"],
+    "admission": "choose one candidate on ensemble_fit, evaluate once versus fallback on separate ensemble_gate groups",
+    "epsilon_rmse": 0.0001,
+    "report_role_for_selection": false
+  },
+  "inference": {
+    "execution_status": "after production checkpoints and every fold policy are frozen",
+    "fold_aggregation": "equal arithmetic mean over all five complete fold policies",
+    "share": "same-policy nonnegative simplex member average, then equal fold mean",
+    "score": "same frozen member weights for diagnostic scores, then equal fold mean",
+    "additional_postprocessing": "none; numerical clipping to [0,1] only",
+    "Test_fitting_or_calibration": false
+  },
+  "execution": {
+    "neural_executor": "user-provided CUDA server after preflight",
+    "tree_executor": "Mac CPU in separately verified stage; no implicit server tree fitting",
+    "report_access": "only after every requested fold checkpoint and ensemble policy is frozen"
+  },
+  "local_R6_pilot_upload": false,
+  "official_submission": false
+}

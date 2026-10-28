@@ -1,0 +1,1292 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>R15 직접 대조 진단</title><style>body{font:16px/1.7 -apple-system,BlinkMacSystemFont,sans-serif;max-width:1280px;margin:32px auto;padding:0 24px;background:#f7f8fa;color:#172334}h1,h2{line-height:1.3}table{border-collapse:collapse;width:100%;font-size:13px;background:white;display:block;overflow:auto}th,td{padding:8px 10px;border-bottom:1px solid #dae0e8;text-align:right;white-space:nowrap}th{background:#e9eff4}img{max-width:100%;height:auto;background:white;margin:20px 0}a{color:#146b9a}details{margin:16px 0}summary{cursor:pointer;font-weight:bold}p{max-width:1050px}</style><body><h1>R15 직접 대조 진단</h1><small>2026-10-27T14:27:18+09:00</small><p>TFGrid 일시 정지 · 추가 Fold 보류 · 새 제출 CSV 생성 보류</p><p>1,500개 Test 창과 저장 예측57열을 직접 대조했습니다. 새 학습·모델 추론·정답 역산·보정은 없습니다.</p><p><strong>중요:</strong> 시간 변화를 무시했다거나 정적 PCA/LF 특징이 단독 원인이라는 주장은 현재 기술통계로 확정되지 않습니다. TRAIN–Test의 HF 시간 돌출 분포 차이는 실제로 확인됐습니다.</p><ul><li><a href="r15_review_r1/R15_DIRECT_COMPARISON_DIAGNOSTICS.md">상세 Markdown 보고서</a></li><li><a href="r15_review_r1/model_distribution_comparison.csv">모델별 평균·RMS·중앙값·상관</a></li><li><a href="r15_review_r1/site_share_comparison.csv">추정 사이트별 모델 비교</a></li><li><a href="r15_review_r1/band25_max_minus_median_comparison.csv">25개 대역 p50·p90 비교</a></li><li><a href="r15_descriptive_audit_r1/feature_prediction_correlations.csv">물리 특징–출력 상관 전체</a></li><li><a href="r15_static_channel_audit_r1/feature_prediction_correlations.csv">실제 PCA·LF 채널–출력 상관</a></li><li><a href="r15_descriptive_audit_r1/joined1500.csv">1,500개 창 통합표</a></li><li><a href="r15_static_channel_audit_r1/FINDINGS.md">실제 정적14채널 FE 검산</a></li><li><a href="r15_member_audit_r1/CLAIM_CHECK.md">인과 주장·수식 점검</a></li></ul><h2>개별 모델 분포</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>모델</th>
+      <th>출력</th>
+      <th>평균</th>
+      <th>RMS</th>
+      <th>중앙값</th>
+      <th>&gt;=0.90 비율</th>
+      <th>R9 Pearson</th>
+      <th>R9 Spearman</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R5 CNN</td>
+      <td>share</td>
+      <td>0.35466</td>
+      <td>0.44523</td>
+      <td>0.30689</td>
+      <td>0.00067</td>
+      <td>0.88290</td>
+      <td>0.90151</td>
+    </tr>
+    <tr>
+      <td>R5 CNN</td>
+      <td>score</td>
+      <td>0.92009</td>
+      <td>0.94344</td>
+      <td>0.99615</td>
+      <td>0.86133</td>
+      <td>0.52292</td>
+      <td>0.79116</td>
+    </tr>
+    <tr>
+      <td>R9 Tree5</td>
+      <td>share</td>
+      <td>0.26415</td>
+      <td>0.32563</td>
+      <td>0.24611</td>
+      <td>0.00000</td>
+      <td>0.98328</td>
+      <td>0.98675</td>
+    </tr>
+    <tr>
+      <td>R9 Tree5</td>
+      <td>score</td>
+      <td>0.59212</td>
+      <td>0.60551</td>
+      <td>0.59181</td>
+      <td>0.00000</td>
+      <td>0.98061</td>
+      <td>0.98390</td>
+    </tr>
+    <tr>
+      <td>R9 All5</td>
+      <td>share</td>
+      <td>0.26474</td>
+      <td>0.32698</td>
+      <td>0.23273</td>
+      <td>0.00000</td>
+      <td>1.00000</td>
+      <td>1.00000</td>
+    </tr>
+    <tr>
+      <td>R9 All5</td>
+      <td>score</td>
+      <td>0.60768</td>
+      <td>0.61964</td>
+      <td>0.59960</td>
+      <td>0.00000</td>
+      <td>1.00000</td>
+      <td>1.00000</td>
+    </tr>
+    <tr>
+      <td>R14 Step1</td>
+      <td>share</td>
+      <td>0.30333</td>
+      <td>0.38690</td>
+      <td>0.24816</td>
+      <td>0.00000</td>
+      <td>0.92120</td>
+      <td>0.93602</td>
+    </tr>
+    <tr>
+      <td>R14 Step1</td>
+      <td>score</td>
+      <td>0.45932</td>
+      <td>0.50040</td>
+      <td>0.43002</td>
+      <td>0.00067</td>
+      <td>0.87146</td>
+      <td>0.89442</td>
+    </tr>
+    <tr>
+      <td>R14 Wide CNN</td>
+      <td>share</td>
+      <td>0.30982</td>
+      <td>0.40033</td>
+      <td>0.24732</td>
+      <td>0.00067</td>
+      <td>0.90136</td>
+      <td>0.91650</td>
+    </tr>
+    <tr>
+      <td>R14 Wide CNN</td>
+      <td>score</td>
+      <td>0.30982</td>
+      <td>0.40033</td>
+      <td>0.24732</td>
+      <td>0.00067</td>
+      <td>0.82828</td>
+      <td>0.87268</td>
+    </tr>
+    <tr>
+      <td>R14 FDY</td>
+      <td>share</td>
+      <td>0.26251</td>
+      <td>0.34613</td>
+      <td>0.19133</td>
+      <td>0.00000</td>
+      <td>0.91112</td>
+      <td>0.92890</td>
+    </tr>
+    <tr>
+      <td>R14 FDY</td>
+      <td>score</td>
+      <td>0.26251</td>
+      <td>0.34613</td>
+      <td>0.19133</td>
+      <td>0.00000</td>
+      <td>0.84535</td>
+      <td>0.89912</td>
+    </tr>
+    <tr>
+      <td>R14 iTransformer</td>
+      <td>share</td>
+      <td>0.25187</td>
+      <td>0.32817</td>
+      <td>0.19120</td>
+      <td>0.00000</td>
+      <td>0.89307</td>
+      <td>0.90326</td>
+    </tr>
+    <tr>
+      <td>R14 iTransformer</td>
+      <td>score</td>
+      <td>0.25187</td>
+      <td>0.32817</td>
+      <td>0.19120</td>
+      <td>0.00000</td>
+      <td>0.85187</td>
+      <td>0.90456</td>
+    </tr>
+    <tr>
+      <td>R14 Tree baseline5</td>
+      <td>share</td>
+      <td>0.26835</td>
+      <td>0.32920</td>
+      <td>0.25235</td>
+      <td>0.00000</td>
+      <td>0.97143</td>
+      <td>0.97397</td>
+    </tr>
+    <tr>
+      <td>R14 Tree highshare5</td>
+      <td>share</td>
+      <td>0.32935</td>
+      <td>0.41148</td>
+      <td>0.29469</td>
+      <td>0.00000</td>
+      <td>0.92049</td>
+      <td>0.93627</td>
+    </tr>
+  </tbody>
+</table><p>R14 NN score=share. R14 각 Tree raw classifier는 미저장입니다.</p><h2>시간 특징–출력 상관</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>series</th>
+      <th>Pearson</th>
+      <th>Spearman</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bump_high_db</td>
+      <td>R9_all5.share</td>
+      <td>0.57019</td>
+      <td>0.60136</td>
+    </tr>
+    <tr>
+      <td>bump_low_db</td>
+      <td>R9_all5.share</td>
+      <td>0.41019</td>
+      <td>0.50233</td>
+    </tr>
+    <tr>
+      <td>corr_low_high</td>
+      <td>R9_all5.share</td>
+      <td>0.66810</td>
+      <td>0.72159</td>
+    </tr>
+    <tr>
+      <td>naive_share_q20</td>
+      <td>R9_all5.share</td>
+      <td>0.55716</td>
+      <td>0.55502</td>
+    </tr>
+    <tr>
+      <td>S_phys_safe_mid_db</td>
+      <td>R9_all5.share</td>
+      <td>0.67112</td>
+      <td>0.72792</td>
+    </tr>
+    <tr>
+      <td>bump_high_db</td>
+      <td>R9_all5.score</td>
+      <td>0.63356</td>
+      <td>0.68398</td>
+    </tr>
+    <tr>
+      <td>bump_low_db</td>
+      <td>R9_all5.score</td>
+      <td>0.31587</td>
+      <td>0.41536</td>
+    </tr>
+    <tr>
+      <td>corr_low_high</td>
+      <td>R9_all5.score</td>
+      <td>0.61444</td>
+      <td>0.66255</td>
+    </tr>
+    <tr>
+      <td>naive_share_q20</td>
+      <td>R9_all5.score</td>
+      <td>0.47447</td>
+      <td>0.48086</td>
+    </tr>
+    <tr>
+      <td>S_phys_safe_mid_db</td>
+      <td>R9_all5.score</td>
+      <td>0.69771</td>
+      <td>0.76511</td>
+    </tr>
+    <tr>
+      <td>bump_high_db</td>
+      <td>R14_step1.share</td>
+      <td>0.51369</td>
+      <td>0.56174</td>
+    </tr>
+    <tr>
+      <td>bump_low_db</td>
+      <td>R14_step1.share</td>
+      <td>0.55400</td>
+      <td>0.59236</td>
+    </tr>
+    <tr>
+      <td>corr_low_high</td>
+      <td>R14_step1.share</td>
+      <td>0.68833</td>
+      <td>0.73927</td>
+    </tr>
+    <tr>
+      <td>naive_share_q20</td>
+      <td>R14_step1.share</td>
+      <td>0.60044</td>
+      <td>0.58690</td>
+    </tr>
+    <tr>
+      <td>S_phys_safe_mid_db</td>
+      <td>R14_step1.share</td>
+      <td>0.63015</td>
+      <td>0.69572</td>
+    </tr>
+    <tr>
+      <td>bump_high_db</td>
+      <td>R14_step1.score</td>
+      <td>0.53393</td>
+      <td>0.57607</td>
+    </tr>
+    <tr>
+      <td>bump_low_db</td>
+      <td>R14_step1.score</td>
+      <td>0.52488</td>
+      <td>0.57377</td>
+    </tr>
+    <tr>
+      <td>corr_low_high</td>
+      <td>R14_step1.score</td>
+      <td>0.66674</td>
+      <td>0.71594</td>
+    </tr>
+    <tr>
+      <td>naive_share_q20</td>
+      <td>R14_step1.score</td>
+      <td>0.57155</td>
+      <td>0.56578</td>
+    </tr>
+    <tr>
+      <td>S_phys_safe_mid_db</td>
+      <td>R14_step1.score</td>
+      <td>0.63731</td>
+      <td>0.69616</td>
+    </tr>
+  </tbody>
+</table><h2>실제 PCA·LF 채널–출력 상관</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>series</th>
+      <th>Pearson</th>
+      <th>Spearman</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PCA_positive_residual_RMS_db</td>
+      <td>R9_all5.share</td>
+      <td>0.03744</td>
+      <td>0.09096</td>
+    </tr>
+    <tr>
+      <td>PCA_positive_residual_RMS_db</td>
+      <td>R14_step1.share</td>
+      <td>0.03803</td>
+      <td>0.09109</td>
+    </tr>
+    <tr>
+      <td>PCA_positive_residual_RMS_db</td>
+      <td>R14_step1.score</td>
+      <td>0.03984</td>
+      <td>0.08039</td>
+    </tr>
+    <tr>
+      <td>MF_minus_LF_mean_db</td>
+      <td>R9_all5.share</td>
+      <td>0.17645</td>
+      <td>0.20792</td>
+    </tr>
+    <tr>
+      <td>MF_minus_LF_mean_db</td>
+      <td>R14_step1.share</td>
+      <td>0.13665</td>
+      <td>0.15966</td>
+    </tr>
+    <tr>
+      <td>MF_minus_LF_mean_db</td>
+      <td>R14_step1.score</td>
+      <td>0.12961</td>
+      <td>0.13777</td>
+    </tr>
+    <tr>
+      <td>LF_anchor_residual_RMS_db</td>
+      <td>R9_all5.share</td>
+      <td>0.21206</td>
+      <td>0.26735</td>
+    </tr>
+    <tr>
+      <td>LF_anchor_residual_RMS_db</td>
+      <td>R14_step1.share</td>
+      <td>0.16470</td>
+      <td>0.22399</td>
+    </tr>
+    <tr>
+      <td>LF_anchor_residual_RMS_db</td>
+      <td>R14_step1.score</td>
+      <td>0.16871</td>
+      <td>0.21395</td>
+    </tr>
+  </tbody>
+</table><h2>낮은 시간변화×높은 정적 채널</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>group</th>
+      <th>series</th>
+      <th>n</th>
+      <th>mean</th>
+      <th>median</th>
+      <th>rms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>low_temporal_predeclared</td>
+      <td>R9_all5.share</td>
+      <td>138</td>
+      <td>0.05535</td>
+      <td>0.04163</td>
+      <td>0.07225</td>
+    </tr>
+    <tr>
+      <td>low_temporal_predeclared</td>
+      <td>R14_step1.share</td>
+      <td>138</td>
+      <td>0.05236</td>
+      <td>0.03417</td>
+      <td>0.07425</td>
+    </tr>
+    <tr>
+      <td>low_temporal_predeclared</td>
+      <td>R14.nn_bg_cnn.share</td>
+      <td>138</td>
+      <td>0.05068</td>
+      <td>0.03008</td>
+      <td>0.07401</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_PCA_positive_residual_RMS_db</td>
+      <td>R9_all5.share</td>
+      <td>10</td>
+      <td>0.07625</td>
+      <td>0.07354</td>
+      <td>0.09415</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_PCA_positive_residual_RMS_db</td>
+      <td>R14_step1.share</td>
+      <td>10</td>
+      <td>0.09047</td>
+      <td>0.07947</td>
+      <td>0.11567</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_PCA_positive_residual_RMS_db</td>
+      <td>R14.nn_bg_cnn.share</td>
+      <td>10</td>
+      <td>0.08493</td>
+      <td>0.07694</td>
+      <td>0.11207</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_MF_minus_LF_mean_db</td>
+      <td>R9_all5.share</td>
+      <td>19</td>
+      <td>0.08078</td>
+      <td>0.07779</td>
+      <td>0.09372</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_MF_minus_LF_mean_db</td>
+      <td>R14_step1.share</td>
+      <td>19</td>
+      <td>0.07031</td>
+      <td>0.04300</td>
+      <td>0.09621</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_MF_minus_LF_mean_db</td>
+      <td>R14.nn_bg_cnn.share</td>
+      <td>19</td>
+      <td>0.06113</td>
+      <td>0.02805</td>
+      <td>0.09322</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_LF_anchor_residual_RMS_db</td>
+      <td>R9_all5.share</td>
+      <td>8</td>
+      <td>0.07695</td>
+      <td>0.05612</td>
+      <td>0.09126</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_LF_anchor_residual_RMS_db</td>
+      <td>R14_step1.share</td>
+      <td>8</td>
+      <td>0.06296</td>
+      <td>0.04370</td>
+      <td>0.08442</td>
+    </tr>
+    <tr>
+      <td>low_temporal_AND_high_LF_anchor_residual_RMS_db</td>
+      <td>R14.nn_bg_cnn.share</td>
+      <td>8</td>
+      <td>0.05123</td>
+      <td>0.02089</td>
+      <td>0.07691</td>
+    </tr>
+  </tbody>
+</table><h2>25개 대역 max−median (dB)</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>band_index</th>
+      <th>frequency_hz</th>
+      <th>Test p50</th>
+      <th>Test p90</th>
+      <th>R9 TRAIN p50</th>
+      <th>R9 TRAIN p90</th>
+      <th>R14 TRAIN p50</th>
+      <th>R14 TRAIN p90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>31.6</td>
+      <td>5.800</td>
+      <td>15.000</td>
+      <td>4.50</td>
+      <td>14.9</td>
+      <td>4.40</td>
+      <td>14.60</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>39.8</td>
+      <td>5.900</td>
+      <td>14.210</td>
+      <td>4.60</td>
+      <td>14.7</td>
+      <td>4.50</td>
+      <td>14.40</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>50.1</td>
+      <td>6.300</td>
+      <td>15.800</td>
+      <td>4.70</td>
+      <td>14.7</td>
+      <td>4.50</td>
+      <td>14.40</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>63.1</td>
+      <td>7.000</td>
+      <td>16.305</td>
+      <td>4.80</td>
+      <td>15.3</td>
+      <td>4.60</td>
+      <td>15.00</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>79.4</td>
+      <td>7.250</td>
+      <td>16.210</td>
+      <td>4.90</td>
+      <td>15.6</td>
+      <td>4.55</td>
+      <td>15.20</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>100.0</td>
+      <td>8.025</td>
+      <td>16.200</td>
+      <td>5.00</td>
+      <td>15.4</td>
+      <td>4.60</td>
+      <td>14.96</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>125.9</td>
+      <td>7.925</td>
+      <td>16.855</td>
+      <td>5.10</td>
+      <td>15.5</td>
+      <td>4.65</td>
+      <td>15.00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>158.5</td>
+      <td>8.000</td>
+      <td>16.510</td>
+      <td>5.15</td>
+      <td>16.0</td>
+      <td>4.70</td>
+      <td>15.20</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>199.5</td>
+      <td>8.250</td>
+      <td>17.100</td>
+      <td>5.35</td>
+      <td>16.9</td>
+      <td>4.70</td>
+      <td>16.05</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>251.2</td>
+      <td>10.500</td>
+      <td>22.300</td>
+      <td>6.10</td>
+      <td>18.6</td>
+      <td>5.40</td>
+      <td>17.55</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>316.2</td>
+      <td>10.700</td>
+      <td>21.955</td>
+      <td>6.25</td>
+      <td>18.8</td>
+      <td>5.40</td>
+      <td>17.50</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>398.1</td>
+      <td>12.200</td>
+      <td>23.855</td>
+      <td>6.70</td>
+      <td>20.1</td>
+      <td>5.60</td>
+      <td>18.40</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>501.2</td>
+      <td>12.475</td>
+      <td>23.900</td>
+      <td>7.10</td>
+      <td>20.5</td>
+      <td>5.80</td>
+      <td>18.70</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>631.0</td>
+      <td>12.350</td>
+      <td>24.210</td>
+      <td>7.20</td>
+      <td>20.3</td>
+      <td>5.85</td>
+      <td>18.70</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>794.3</td>
+      <td>14.925</td>
+      <td>26.705</td>
+      <td>8.60</td>
+      <td>22.7</td>
+      <td>6.75</td>
+      <td>20.80</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1000.0</td>
+      <td>15.400</td>
+      <td>28.400</td>
+      <td>9.35</td>
+      <td>24.4</td>
+      <td>6.70</td>
+      <td>22.60</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>1258.9</td>
+      <td>16.125</td>
+      <td>29.500</td>
+      <td>9.50</td>
+      <td>24.1</td>
+      <td>6.50</td>
+      <td>22.55</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>1584.9</td>
+      <td>15.000</td>
+      <td>28.400</td>
+      <td>8.10</td>
+      <td>22.0</td>
+      <td>5.60</td>
+      <td>20.50</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>1995.3</td>
+      <td>15.775</td>
+      <td>29.755</td>
+      <td>8.40</td>
+      <td>22.6</td>
+      <td>5.80</td>
+      <td>21.00</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>2511.9</td>
+      <td>17.700</td>
+      <td>32.305</td>
+      <td>8.65</td>
+      <td>23.3</td>
+      <td>6.00</td>
+      <td>21.20</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>3162.3</td>
+      <td>18.150</td>
+      <td>33.655</td>
+      <td>8.50</td>
+      <td>24.1</td>
+      <td>5.60</td>
+      <td>21.60</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>3981.1</td>
+      <td>16.800</td>
+      <td>32.700</td>
+      <td>8.30</td>
+      <td>24.2</td>
+      <td>5.10</td>
+      <td>21.50</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>5011.9</td>
+      <td>15.300</td>
+      <td>32.000</td>
+      <td>7.40</td>
+      <td>24.0</td>
+      <td>4.20</td>
+      <td>21.10</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>6309.6</td>
+      <td>15.300</td>
+      <td>32.510</td>
+      <td>7.70</td>
+      <td>25.0</td>
+      <td>4.15</td>
+      <td>22.10</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>7943.3</td>
+      <td>15.300</td>
+      <td>32.855</td>
+      <td>8.60</td>
+      <td>26.4</td>
+      <td>4.20</td>
+      <td>23.40</td>
+    </tr>
+  </tbody>
+</table><h2>기존 EDA 정의 대역 파워합의 시간 돌출</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>dataset</th>
+      <th>group</th>
+      <th>n_rows</th>
+      <th>p10</th>
+      <th>p50</th>
+      <th>p90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R14_TRAIN</td>
+      <td>MF_300_3000</td>
+      <td>78869</td>
+      <td>0.971</td>
+      <td>5.437</td>
+      <td>17.948</td>
+    </tr>
+    <tr>
+      <td>R14_TRAIN</td>
+      <td>HF_3000_8000</td>
+      <td>78869</td>
+      <td>0.409</td>
+      <td>4.663</td>
+      <td>21.481</td>
+    </tr>
+    <tr>
+      <td>R14_TRAIN</td>
+      <td>LF_EDA_le520</td>
+      <td>78869</td>
+      <td>1.192</td>
+      <td>4.063</td>
+      <td>12.509</td>
+    </tr>
+    <tr>
+      <td>R9_TRAIN</td>
+      <td>MF_300_3000</td>
+      <td>78869</td>
+      <td>1.132</td>
+      <td>6.901</td>
+      <td>19.630</td>
+    </tr>
+    <tr>
+      <td>R9_TRAIN</td>
+      <td>HF_3000_8000</td>
+      <td>78869</td>
+      <td>0.362</td>
+      <td>8.126</td>
+      <td>24.252</td>
+    </tr>
+    <tr>
+      <td>R9_TRAIN</td>
+      <td>LF_EDA_le520</td>
+      <td>78869</td>
+      <td>1.301</td>
+      <td>4.337</td>
+      <td>12.775</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>MF_300_3000</td>
+      <td>1500</td>
+      <td>4.591</td>
+      <td>12.420</td>
+      <td>23.422</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>HF_3000_8000</td>
+      <td>1500</td>
+      <td>2.632</td>
+      <td>16.246</td>
+      <td>32.313</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>LF_EDA_le520</td>
+      <td>1500</td>
+      <td>2.349</td>
+      <td>6.806</td>
+      <td>13.703</td>
+    </tr>
+  </tbody>
+</table><h2>입력–출력 비교</h2><img src="r15_review_r1/figures/01_input_output_comparison.png"><img src="r15_review_r1/figures/02_input_histograms.png"><h2>추정 사이트별 비교</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>추정 사이트</th>
+      <th>N</th>
+      <th>모델</th>
+      <th>share 평균</th>
+      <th>share RMS</th>
+      <th>R9 대비 평균차</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R9 All5</td>
+      <td>0.25806</td>
+      <td>0.33070</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R14 Step1</td>
+      <td>0.28694</td>
+      <td>0.37831</td>
+      <td>0.02888</td>
+    </tr>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R14 Wide CNN</td>
+      <td>0.29220</td>
+      <td>0.38886</td>
+      <td>0.03414</td>
+    </tr>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.25905</td>
+      <td>0.33208</td>
+      <td>0.00099</td>
+    </tr>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.30474</td>
+      <td>0.39847</td>
+      <td>0.04669</td>
+    </tr>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R14 FDY</td>
+      <td>0.26364</td>
+      <td>0.35417</td>
+      <td>0.00558</td>
+    </tr>
+    <tr>
+      <td>01 Richards Bay</td>
+      <td>423</td>
+      <td>R14 iTransformer</td>
+      <td>0.27227</td>
+      <td>0.35276</td>
+      <td>0.01422</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R9 All5</td>
+      <td>0.26941</td>
+      <td>0.33707</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R14 Step1</td>
+      <td>0.30852</td>
+      <td>0.39590</td>
+      <td>0.03911</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R14 Wide CNN</td>
+      <td>0.31521</td>
+      <td>0.40919</td>
+      <td>0.04580</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.27224</td>
+      <td>0.34101</td>
+      <td>0.00283</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.33718</td>
+      <td>0.42526</td>
+      <td>0.06777</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R14 FDY</td>
+      <td>0.29235</td>
+      <td>0.38142</td>
+      <td>0.02295</td>
+    </tr>
+    <tr>
+      <td>02 Durban</td>
+      <td>32</td>
+      <td>R14 iTransformer</td>
+      <td>0.28438</td>
+      <td>0.36244</td>
+      <td>0.01497</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R9 All5</td>
+      <td>0.17480</td>
+      <td>0.26343</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R14 Step1</td>
+      <td>0.20707</td>
+      <td>0.32061</td>
+      <td>0.03227</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R14 Wide CNN</td>
+      <td>0.21235</td>
+      <td>0.33391</td>
+      <td>0.03755</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.18026</td>
+      <td>0.26275</td>
+      <td>0.00545</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.21641</td>
+      <td>0.33050</td>
+      <td>0.04161</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R14 FDY</td>
+      <td>0.20246</td>
+      <td>0.32529</td>
+      <td>0.02765</td>
+    </tr>
+    <tr>
+      <td>04 Bird Island</td>
+      <td>16</td>
+      <td>R14 iTransformer</td>
+      <td>0.18040</td>
+      <td>0.27343</td>
+      <td>0.00560</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R9 All5</td>
+      <td>0.26040</td>
+      <td>0.32369</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R14 Step1</td>
+      <td>0.29955</td>
+      <td>0.37970</td>
+      <td>0.03915</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R14 Wide CNN</td>
+      <td>0.30705</td>
+      <td>0.39213</td>
+      <td>0.04664</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.26176</td>
+      <td>0.32581</td>
+      <td>0.00135</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.31043</td>
+      <td>0.39661</td>
+      <td>0.05003</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R14 FDY</td>
+      <td>0.27408</td>
+      <td>0.35436</td>
+      <td>0.01368</td>
+    </tr>
+    <tr>
+      <td>05 St Croix</td>
+      <td>236</td>
+      <td>R14 iTransformer</td>
+      <td>0.26342</td>
+      <td>0.33486</td>
+      <td>0.00302</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R9 All5</td>
+      <td>0.27759</td>
+      <td>0.32389</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R14 Step1</td>
+      <td>0.32457</td>
+      <td>0.39676</td>
+      <td>0.04698</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R14 Wide CNN</td>
+      <td>0.33100</td>
+      <td>0.41265</td>
+      <td>0.05341</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.28666</td>
+      <td>0.32933</td>
+      <td>0.00907</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.37495</td>
+      <td>0.43687</td>
+      <td>0.09736</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R14 FDY</td>
+      <td>0.24752</td>
+      <td>0.31915</td>
+      <td>-0.03006</td>
+    </tr>
+    <tr>
+      <td>07 St Francis</td>
+      <td>487</td>
+      <td>R14 iTransformer</td>
+      <td>0.21568</td>
+      <td>0.28480</td>
+      <td>-0.06191</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R9 All5</td>
+      <td>0.29778</td>
+      <td>0.37396</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R14 Step1</td>
+      <td>0.29787</td>
+      <td>0.39416</td>
+      <td>0.00009</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R14 Wide CNN</td>
+      <td>0.30022</td>
+      <td>0.40538</td>
+      <td>0.00244</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.27928</td>
+      <td>0.34010</td>
+      <td>-0.01849</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.35167</td>
+      <td>0.43290</td>
+      <td>0.05390</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R14 FDY</td>
+      <td>0.28221</td>
+      <td>0.37688</td>
+      <td>-0.01557</td>
+    </tr>
+    <tr>
+      <td>09 Fish Hoek</td>
+      <td>15</td>
+      <td>R14 iTransformer</td>
+      <td>0.28606</td>
+      <td>0.34791</td>
+      <td>-0.01171</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R9 All5</td>
+      <td>0.27124</td>
+      <td>0.33930</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R14 Step1</td>
+      <td>0.31151</td>
+      <td>0.40914</td>
+      <td>0.04027</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R14 Wide CNN</td>
+      <td>0.32397</td>
+      <td>0.42813</td>
+      <td>0.05273</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.25421</td>
+      <td>0.32593</td>
+      <td>-0.01704</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.28821</td>
+      <td>0.38849</td>
+      <td>0.01696</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R14 FDY</td>
+      <td>0.30485</td>
+      <td>0.40502</td>
+      <td>0.03360</td>
+    </tr>
+    <tr>
+      <td>10 Sea Point</td>
+      <td>7</td>
+      <td>R14 iTransformer</td>
+      <td>0.28406</td>
+      <td>0.36702</td>
+      <td>0.01281</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R9 All5</td>
+      <td>0.25892</td>
+      <td>0.32853</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R14 Step1</td>
+      <td>0.29937</td>
+      <td>0.38977</td>
+      <td>0.04045</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R14 Wide CNN</td>
+      <td>0.30711</td>
+      <td>0.40387</td>
+      <td>0.04819</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R14 Tree baseline5</td>
+      <td>0.26058</td>
+      <td>0.32898</td>
+      <td>0.00165</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R14 Tree highshare5</td>
+      <td>0.30882</td>
+      <td>0.39959</td>
+      <td>0.04990</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R14 FDY</td>
+      <td>0.27486</td>
+      <td>0.36472</td>
+      <td>0.01594</td>
+    </tr>
+    <tr>
+      <td>13 Saldanha Bay</td>
+      <td>284</td>
+      <td>R14 iTransformer</td>
+      <td>0.27170</td>
+      <td>0.34998</td>
+      <td>0.01277</td>
+    </tr>
+  </tbody>
+</table><h2>상위50 변화 창</h2><details><summary>상위 변화 창 1–10</summary><img loading="lazy" src="r15_review_r1/figures/top50_page_01.png"></details><details><summary>상위 변화 창 11–20</summary><img loading="lazy" src="r15_review_r1/figures/top50_page_02.png"></details><details><summary>상위 변화 창 21–30</summary><img loading="lazy" src="r15_review_r1/figures/top50_page_03.png"></details><details><summary>상위 변화 창 31–40</summary><img loading="lazy" src="r15_review_r1/figures/top50_page_04.png"></details><details><summary>상위 변화 창 41–50</summary><img loading="lazy" src="r15_review_r1/figures/top50_page_05.png"></details></body></html>

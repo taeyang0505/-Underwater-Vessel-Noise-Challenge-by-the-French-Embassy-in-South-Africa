@@ -1,0 +1,33 @@
+{
+  "version": "r11_full_support_hf_v1",
+  "seed": 2026102611,
+  "positive_per_mode": 500,
+  "max_negative_per_panel": 500,
+  "positive_modes": [
+    "r9_original",
+    "full_smooth12",
+    "full_smooth13",
+    "full_smooth15",
+    "stationary15_control",
+    "native_long15",
+    "full_smooth15_share030"
+  ],
+  "source_role": "Fold0 selection only, existing TRAIN group split+24h purge",
+  "negative_panels": [
+    "HF2..8k above selection Nobs>=13 q90",
+    "actual StFrancis Nobs>=13 all up to N",
+    "original edge-candidate minute restored beforeQC",
+    "paired same-background edge QC control",
+    "HF quiet below q50"
+  ],
+  "positive_background": "complete15min, unique, excludes union of negative background IDs",
+  "share_policy": "same per-row share from positive R9 original baseline in each paired long mode; extra fixed .30 probe is explicitly separate",
+  "long_curve": "whole source minute matrix linearly resampled, envelope .6+.4sin², no repeat waveform; native_long uses only actual>=15min clips",
+  "support_policy": "13/15min main arms have <=2 pure-B minutes;12min arm has3 and is separately reported",
+  "stationary_control": "native mean spectral vector constant15min; idealized observability counterexample, not claimed real passing ship",
+  "negative_truth": "A=0 controlled-addition target, not proof of natural vessel absence or artifact status",
+  "crossing": "each positive mode vs each negative panel; AUCshare/score,strict neg>pos pairwise rate,ties,raw/class-balancedRMSE",
+  "do_not_select_by_public_or_model_errors": true,
+  "Test_report_training_GPU_network_or_policy_changes": false,
+  "script_sha256": "0627dedd7e4f4cd1876cf82b288ba099d8f7acdef5377824cc3b396e74f3c553"
+}

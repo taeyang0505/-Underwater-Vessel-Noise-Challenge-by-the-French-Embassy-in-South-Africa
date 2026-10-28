@@ -1,0 +1,37 @@
+{
+  "active_dataset": "group_cv_passage_r4_v1",
+  "scope": "Frozen materialized R4 data; R5 dynamic epochs are not counted as already stored independent samples",
+  "roles": {
+    "train": {
+      "samples": 267837,
+      "nominal_15minute_window_hours": 66959.25,
+      "observed_minute_grid_hours": 57023.53333333333,
+      "npz_bytes": 390338328
+    },
+    "validation": {
+      "samples": 15000,
+      "nominal_15minute_window_hours": 3750.0,
+      "observed_minute_grid_hours": 3219.983333333333,
+      "npz_bytes": 22015916
+    },
+    "outer_validation": {
+      "samples": 15000,
+      "nominal_15minute_window_hours": 3750.0,
+      "observed_minute_grid_hours": 3210.7166666666667,
+      "npz_bytes": 21976038
+    }
+  },
+  "samples_total": 297837,
+  "nominal_window_hours_total": 74459.25,
+  "npz_bytes": 434330282,
+  "uncompressed_array_payload_bytes": 895893696,
+  "original_SA_rows": 1715779,
+  "original_SA_recorded_duration_sum_hours": 28358.330833333333,
+  "original_SA_duration_scope": "Sum of row duration metadata across recorders/sites; not distinct global clock hours or raw WAV availability",
+  "selected_VTUAD_clips": 119,
+  "selected_VTUAD_components": 22,
+  "selected_VTUAD_clip_duration_sum_hours": 8.631944444444445,
+  "unique_primary_train_background_windows": 94711,
+  "readiness": "CPU integration/preflight passed; GPU training/OOF pending",
+  "synthetic_hours_are_not_new_independent_measured_audio": true
+}

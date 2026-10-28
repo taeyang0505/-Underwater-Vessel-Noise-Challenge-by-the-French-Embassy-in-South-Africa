@@ -1,0 +1,111 @@
+# R15 정방향 채널 민감도 실험과 점수 진단
+
+작성: 2026-10-27T15:15:03+09:00
+
+**완료:** Mac CPU에서 4,000개 배경의 고정 물리 후보 4종(16,000개 짝지은 관측)을 생성·검증했고, 저장된 1,500개 Test 예측의 점수·LF/HF 동조·관측활동을 감사했다. **TFGrid는 정지 상태를 유지한다. 새 본학습·모델 추론·제출 CSV 생성은 하지 않았다.**
+
+## 1. 규정에 따른 실행 범위
+
+[대회 공식 규정](https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge)은 Test를 추론 전용으로 제한한다. [주최 측 답변35368](https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/discussions/35368)은 Test 분포에 맞춘 생성기 튜닝과 Test 행을 사용한 적대적 검증을 진단 목적에도 금지한다. 답변 전문은 기존 [공개 토론 보관본](../../scratch/discussions/thread_bodies.json)에 보존돼 있다.
+
+따라서 요청의 **Test25개 대역 p50/p90를 목적함수로 최적화하는 작업과 Test 상대 AV 학습은 수행하지 않았다.** 이번 4개 후보는 TRAIN의 물리적 민감도 비교다. Test와 가까운 후보를 고르거나 대회용 레시피로 채택하지 않았다. 앞서 Test 통계를 보았으므로 이번 생성 전 후보를 고정했다는 사실을 진정한 blind 검증이라고 부르지 않는다.
+
+기존 Test 입력·출력의 기술 감사표는 숨은 정답을 만들거나 새 생성 파라미터·후보 선택에 사용하지 않는다. Test의 실제 share 평균·중앙값이0.08이라고 알 수 없으며, 입력 분위수 일치만으로 Public RMSE 개선을 보장할 수도 없다.
+
+## 2. 실제 구현과 데이터 경로
+
+- 새 [생성 스크립트](../../ops/r15_forward_prototype.py)는 기존 R9의 검증된 minute-power cache와 Fold0 TRAIN 원천만 읽는다. 생산 R14 생성기·모델·가중치·정책을 수정하지 않았다.
+- TRAIN 78,869개 중 서로 다른 배경4,000개를 무복원 추출했다. 검증 역할의 배경 ID·그룹과 교집합0, 900초 support 기준 최소24시간 purge를 재확인했다.
+- VTUAD509개 참조를 모두 사용했다. 양성3,200개에 각 참조6–7회, 명시적 무추가800개다. **4개 후보를 합한16,000개는 독립 배경16,000개가 아니라 동일4,000개 배경의 짝지은 실험이다.** 참조는 Fold 간 공유되므로 이 실험을 참조 독립 CV라고 부르지 않는다.
+- 자연 minute-first 궤적에서 broadband peak가 포함된 연속1–6분을 잘랐다. 강제 시간 신축·반복·평탄15분·highshare 할당·PCA/LF 앵커 입력을 생성하지 않았다. 실제 원천이 짧으면 가능한 완전 분만 사용했다.
+- 관측 마스크와 겹치는 합법적 배치 위치를 열거해 한 번 추출했다. 이 관측 support 조건부 배치는 원래 R9의 mask-independent 배치와 다르다. 별도 누수 방지 검증을 대체하지 않는다.
+- 같은 배경·참조·crop·위치·SNR·smooth EQ±6dB를 공유하고 추가 reference 채널만 control / MF·HF+6dB / +12dB / +12dB와LF−6dB로 바꿨다. 200→500Hz 사이의 완만한 shelf이며 각 대역에 독립 잡음을 넣지 않았다.
+
+전체 native 궤적의 EQ 이후 broadband peak를 기준으로 각 후보의 α를 다시 계산한다. 이 때문에 HF boost를 α 고정 상태의 단순 에너지 증폭과 혼동하면 안 된다. 후보별 정답은 실제 A, B로 다시 계산했다.
+
+```text
+공개 SA TRAIN 배경 + VTUAD native minute-power
+  → 기존 원천 분리·24h purge → 4,000개 배경/참조/위치 고정
+  → 자연 peaked 1–6분 crop → 사전 고정된 4개 채널 가설
+  → reference 채널 적용 → α 계산 → A 생성 → E=B+A
+  → 연속 에너지 q=A/E, y=ΣOA/ΣOE 저장
+  → 관측 db만0.1dB 반올림 → 수식·source·지원 구간 검증
+```
+
+## 3. TRAIN 전용 후보 수치
+
+| 후보 | N | y 평균 | y 중앙값 | y RMS | y p90 | HF p50 dB | HF p90 dB | HF15–20 N | HF15–20 y 중앙값 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| control_eq6 | 4000 | 0.120252 | 0.044104 | 0.200788 | 0.370541 | 8.586130 | 24.605968 | 478 | 0.093654 |
+| mfhf_shelf6 | 4000 | 0.120453 | 0.044397 | 0.201094 | 0.370668 | 9.687309 | 26.040854 | 517 | 0.088067 |
+| mfhf_shelf12 | 4000 | 0.120312 | 0.044204 | 0.200838 | 0.369591 | 10.332385 | 26.703073 | 530 | 0.087629 |
+| mfhf_shelf12_lfminus6 | 4000 | 0.120258 | 0.043917 | 0.200750 | 0.368789 | 10.700649 | 26.969527 | 540 | 0.083971 |
+
+
+HF는3,162.3–7,943.3Hz5개 대역의 선형 power합을 dB로 바꾼 후 시간 max−median이다. HF15–20의 알려진 share는 이 **합성 TRAIN 집단**의 값이며 Test 정답 추정치가 아니다. 후보의 HF p50이 증가했지만 이로부터 gap 해결이나 최적 채널을 선언하지 않는다.
+
+![TRAIN 채널 감도](figures/TRAIN_channel_sensitivity.png)
+
+[25대역 p50/p90 전수표](TRAIN_band25_p50_p90.csv) · [후보별 평균·중앙값·RMS](TRAIN_candidate_summary.csv) · [전체 p10/p50/p90·양성/무추가별 원표](../r15_forward_prototype_r1/band25_TRAIN_sensitivity.csv)
+
+## 4. 정답 무결성과 반올림 한계
+
+각 후보의 q/y는 연속 선형 에너지 기준이며 특정 share 범위로 재라벨링하지 않았다. raw 에너지 가중 pooling 항등식의 최대 오차는 5.55e-16다. 관측 db를0.1dB로 반올림하면 가중치가 조금 바뀌므로 원래 q/y와 rounded pooling을 동시에 완전히 일치시킬 수 없다. 그 차이는 별도로 기록하며, 정답을 덮어쓰지 않는다. 최대 rounded pooling 차이는 0.001670다.
+
+원천과 무추가 입력은 후보 간 동일하다. 공통 scalar gain에는 share가 불변이지만 reference만 주파수 EQ를 바꾸면 q/y가 바뀐다. 실제로 계산된 새 q/y를 저장했다. 첫 dtype 불일치 산출물은 실패본으로 보존하고 공통B의 float64 계산을 일치시킨 뒤 같은seed로 새로 검증했다.
+
+## 5. R9 score와 Test 관측 특징: 기술 감사
+
+LF를 구분해야 한다. 요청의≤200Hz는31.6–199.5Hz9대역, 기존 EDA bump_low는31.6–501.2Hz13대역이다. 아래 near-zero≤3dB, 공동상승>6dB·상관>.5는 이번 감사 전에 고정한 기술 조건이다.
+
+| group | n | fraction_of_all1500 | fraction_of_HFgt15_intersection |
+| --- | --- | --- | --- |
+| HF_gt15 | 801 | 0.534000 | 1.000000 |
+| HF_gt15_AND_LF_le3 | 120 | 0.080000 | 0.149813 |
+| HF_gt15_AND_LF_gt6_corr_gt05 | 364 | 0.242667 | 0.454432 |
+
+
+HF>15dB 801개 중 LF≤200이≤3dB인 창120개(14.98%), LF>6dB이며 동조상관>.5인 창364개(45.44%)다. 나머지도 별도 중간 유형이므로 두 조건의 합을100%로 강제하지 않는다. 어느 조건도 양성·음성 정답으로 지정하지 않았다.
+
+R9 All5의 score와 자체 share 상관은 Pearson **0.937497**, Spearman **0.967879**다. 두 출력의 순위가 비슷하다는 사실이며 정답에 대한 AUC는 아니다.
+
+| feature | Pearson | Spearman |
+| --- | --- | --- |
+| HF3162_7943__bump | 0.570194 | 0.601358 |
+| LF31_200__bump | 0.273497 | 0.368464 |
+| LF31_200__corr_with_HF | 0.609143 | 0.651450 |
+| LF_historical31_501__bump | 0.410186 | 0.502333 |
+| LF_historical31_501__corr_with_HF | 0.668104 | 0.721593 |
+
+
+추정 SF487개와 nonSF1,013개의 전체 순위확률은 다음과 같다. 0.5에 가까울수록 이 두 **추정 도메인**의 점수 순위가 섞여 있다는 뜻이며, 대회 presence AUC가 아니다.
+
+| prediction | P_SF_greater_plus_half_ties | empirical_KS_D |
+| --- | --- | --- |
+| R9_all5.share | 0.550634 | 0.157428 |
+| R9_all5.score | 0.490105 | 0.076839 |
+| R14_step1.share | 0.547294 | 0.104315 |
+| R14_step1.score | 0.530887 | 0.095305 |
+
+
+R9 score의 SF/nonSF 순위확률은0.490105다. R9의 Public AUC0.555를 ‘SF 전체 점수가 일괄 높기 때문’이라고 현재 표로 확정할 수 없다. 사이트는 기존 kNN 추정이며 실제 site 라벨도 아니다. [전체 점수·지속활동 진단](../r15_score_duration_r3/FINDINGS.md)에 score/share 자체 상관, 세밀한 분위수, 관측분수별 표와 수치 QA를 수록했다.
+
+## 6. 첨부 해석 중 바로잡은 내용
+
+1. **R14 최종 score에 classifier가 빠졌다는 것은 사실과 다르다.** 개별NN은score=share이지만 제출된 최종 Step1은 `0.75 × ensemble_share + 0.25 × highshare Tree5 classifier 확률`이다. raw 확률을 파일에 따로 저장하지 않은 점과 계산에서 누락한 점은 다르다. [정책·함수 독립 검산](../r15_validation_checks_r1/FINDINGS.md).
+2. **TRAIN의 조건부 share 중앙값을 Test 정답으로 이전할 수 없다.** 같은 관측E에도 여러 비음수A/B 분해가 가능하다. 배경·참조 분포의 추가 가정이 필요하다. 실제 Test 라벨을 알지 못한다.
+3. **max−median이 크다고 8분 이상 추가 에너지가0이어야 하는 것은 아니다.** 모든15분에서A>0이면서 몇 분만 강한 peaked 궤적도 가능하다. 관측된 활동 분수는 알려진 reference support가 아니다.
+4. **dB 숫자를 나눈3.5배는 선형 에너지 배수가 아니다.** dB 차이를 지수로 환산해야 하며, 서로 다른 집단의 중앙값을 동일 사건의 추가 에너지로 간주할 수도 없다.
+5. R9→R14에서 데이터·입력·모델·배합이 함께 달라졌다. HF 분포 차이는 실측이지만 이것 하나가 Public 악화의 유일 원인이라고 확정되지 않았다.
+
+## 7. 현재 상태와 다음 실행 조건
+
+TFGrid 마지막 완료/최적epoch37, selection RMSE0.0587053382에서 계속 정지돼 있다. Fold1–4는 시작하지 않았다. 이 결과물은 데이터 생성의 내부 물리 정합성 검증까지이며, 새 모델의 RMSE/AUC·일반화 개선은 아직 측정하지 않았다.
+
+새 production 후보를 고르려면 Test가 아닌 독립 원천·센서·참조·생성 연산자의 로컬 검증으로 회귀 오차, bias, 무추가 오탐과 장·단기 사례를 함께 평가해야 한다. 회귀와 독립 분류 출력은 별도로 저장·검증하고 ensemble 제한도 로컬검증으로 비교할 수 있다. 이번에는 사용자가 정한 본학습 대기를 유지했다.
+
+## 재현 자료
+
+- [생성 계획과 구성](../r15_forward_prototype_r1/plan.json), [입력·component SHA/결과](../r15_forward_prototype_r1/manifest.json), [생성 설명](../r15_forward_prototype_r1/README.md)
+- [점수·활동 감사 스크립트](../../ops/r15_score_duration_audit.py), [TRAIN 프로토타입 스크립트](../../ops/r15_forward_prototype.py), [이 보고서 생성기](../../ops/r15_build_forward_review.py)
+- [정지·정책·규정 QA](../r15_validation_checks_r1/POLICY_PAUSE_RULES_VERIFICATION.json), [프로토타입 독립 전수 QA](../r15_validation_checks_r1/PROTOTYPE_INDEPENDENT_QA.json)

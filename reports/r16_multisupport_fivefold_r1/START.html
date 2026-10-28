@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="30"><title>R16 전체5Fold 후속 실행</title><style>body{font:16px/1.7 system-ui;max-width:1100px;margin:36px auto}pre{white-space:pre-wrap}</style><h1>R16 Fold0 CSV → Fold1~4 전체 학습</h1><p>현재 Fold0 실행을 변경하지 않고, 첫 CSV 검증 후 신경망32회(4모델×2조건×4Fold)를 순차 학습합니다. 각100epoch/Adam/noES, 독립 초기화. 공식 업로드 없음.</p><pre>{
+  &quot;phase&quot;: &quot;waiting_for_fold0_CSV&quot;,
+  &quot;PID&quot;: 23279,
+  &quot;parent&quot;: {
+    &quot;phase&quot;: &quot;neural&quot;,
+    &quot;PID&quot;: 12773,
+    &quot;child_PID&quot;: 21489,
+    &quot;elapsed_seconds&quot;: 8567.668576955795,
+    &quot;progress&quot;: {
+      &quot;stage&quot;: &quot;neural&quot;,
+      &quot;regime&quot;: &quot;D0&quot;,
+      &quot;kind&quot;: &quot;bg_cnn&quot;,
+      &quot;epoch&quot;: 29,
+      &quot;rows_seen&quot;: 12288,
+      &quot;total_rows&quot;: 61446,
+      &quot;optimizer_steps&quot;: 27100,
+      &quot;elapsed_seconds&quot;: 2066.1810602080077
+    },
+    &quot;official_upload&quot;: false
+  },
+  &quot;updated_kst&quot;: &quot;2026-10-28T14:55:10.711078+09:00&quot;,
+  &quot;official_upload&quot;: false
+}</pre><p><a href="../../submissions/r16_multisupport_full_r1/submission_r16.csv">첫 Fold0 CSV (완료 후)</a> · <a href="../../submissions/r16_multisupport_fivefold_r1/submission_r16_5fold.csv">전체5Fold CSV (완료 후)</a></p>

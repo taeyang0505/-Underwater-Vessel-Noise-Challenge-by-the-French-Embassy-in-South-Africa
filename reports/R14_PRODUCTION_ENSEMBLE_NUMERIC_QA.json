@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "synthetic_fixture_only": true,
+  "source_sha256": {
+    "ops/verify_r14_production_ensemble.py": "242ed3e581f9cbc5251fdb2ab0126aad2d00fbcc69cdb9d1849dbe32662eb2c0",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26"
+  },
+  "simplex_objective": 0.000501896475122432,
+  "dense_grid_minimum": 0.0005018965014561426,
+  "AUC_max_abs_error": 5.551115123125783e-17,
+  "rejected_cases": [
+    "tampered_policy",
+    "missing_member",
+    "NaN_prediction",
+    "classifier_mean_tamper",
+    "wrong_production_rows",
+    "single_class_targets",
+    "fixture_policy_production"
+  ],
+  "regression_gate_fallback_test": true,
+  "real_TRAIN_Test_or_report_read": false,
+  "actual_model_fitting": false
+}

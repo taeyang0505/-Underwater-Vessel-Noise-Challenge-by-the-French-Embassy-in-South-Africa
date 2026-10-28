@@ -1,0 +1,31 @@
+{
+  "supervisor_PID": 91028,
+  "training_PID": 91029,
+  "command": [
+    "/Users/hongtaeyang/Documents/Codex/2026-10-27/new-chat/.venv/bin/python",
+    "-m",
+    "ops.train_r16_production_nn",
+    "train",
+    "--config",
+    "configs/r16_neural_mac_v1.json",
+    "--manifest",
+    "data/synthetic/r16_production_v1/fold_00/manifest.json",
+    "--fold",
+    "0",
+    "--preflight",
+    "reports/R16_NEURAL_ACTUAL_PREFLIGHT_r3.json",
+    "--cache-root",
+    "models/r16_production_feature_cache_r2",
+    "--output",
+    "models/r16_production_nn_fold0_r1"
+  ],
+  "started_unix": 1793120902.808413,
+  "fold": 0,
+  "architectures": 4,
+  "epochs_each": 100,
+  "NN_Fold1_to4_authorized_for_this_execution": false,
+  "official_upload": false,
+  "phase": "paused",
+  "exit_code": 0,
+  "no_automatic_retry": true
+}

@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "numeric_fixture_only": true,
+  "actual_Test_or_models_or_TRAIN_or_report_read": false,
+  "fit_candidates_exact": {
+    "equal_all5": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "tree60_nn10_each": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.6
+    ],
+    "tree40_nn15_each": [
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.4
+    ]
+  },
+  "chosen_candidate": "tree60_nn10_each",
+  "fit_scores": {
+    "equal_all5": 0.019999995728338098,
+    "tree60_nn10_each": 0.00999998291335451,
+    "tree40_nn15_each": 0.01499999801318351
+  },
+  "all5_positive": true,
+  "weighted_share_oracle_exact": true,
+  "gate_did_not_change_weights": true,
+  "ID_order_and_375column_NaN_roundtrip_exact": true,
+  "invalid_weights_rejected": 2,
+  "wrong_public_header_rejected": true,
+  "tiny_actual_adapter_physical_pool_passed": true,
+  "source_sha256": "200e465d3fe429a5b1ff865ded305aec3e0f98851d6f33676e7086e27b8c446f"
+}

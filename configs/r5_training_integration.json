@@ -1,0 +1,53 @@
+{
+  "version": "r5_training_integration_v1",
+  "status": "CPU integration under validation; no GPU launch authorized by this file",
+  "dataset": "data/synthetic/group_cv_passage_r4_v1",
+  "protocol": "source_group_nested5_vtuad_passage_r4",
+  "seed": 42,
+  "core_models": ["bg_cnn", "tfgrid_fdy_conformer", "lgbm_physics", "timemoe_public", "dasheng"],
+  "comparisons": ["fdy", "itransformer"],
+  "model_settings": {
+    "bg_cnn": {"width": 128, "blocks": 5, "dropout": 0.1},
+    "tfgrid_fdy_conformer": {"embed_dim": 64, "hidden_size": 128, "grid_blocks": 5, "dropout": 0.1, "conformer_blocks": 1},
+    "fdy": {"width": 32, "dropout": 0.1},
+    "itransformer": {"width": 96, "dropout": 0.1},
+    "timemoe_public": {},
+    "dasheng": {}
+  },
+  "observation_candidates": {
+    "raw": {"quantization_decimals": null, "endpoint_dropout_probability": 0.0},
+    "resolution_01": {"quantization_decimals": 1, "endpoint_dropout_probability": 0.0},
+    "resolution_01_endpoint": {"quantization_decimals": 1, "endpoint_dropout_probability": 0.2}
+  },
+  "observation_selection": "Train the same CNN with each predeclared candidate on this fold TRAIN; choose by this fold INNER only; freeze before OUTER. Never match Test statistics.",
+  "site_policy": "diagnostic slices and macro-site RMSE; no Test site-proportion fitting; no weighted resampling",
+  "training": {
+    "epochs": 100,
+    "patience": 7,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "effective_batch": 128,
+    "microbatch": 128,
+    "evaluation_batch": 128,
+    "gradient_clip": 1.0,
+    "minimum_improvement": 0.00001,
+    "cell_loss_weight": 0.25,
+    "presence_loss_weight": 0.05,
+    "contrastive_weight": 0.0
+  },
+  "foundation_training_overrides": {
+    "learning_rate": 0.0001,
+    "effective_batch": 32,
+    "microbatch": 2,
+    "evaluation_batch": 2
+  },
+  "tree": {"maximum_trees": 1500, "patience": 40, "threads": 4},
+  "ensemble": {"fit_split": "inner", "ridge": 0.05, "epsilon_rmse": 0.0001, "enable_logit_mask_candidate": true},
+  "input_policy": "Quantize feature_db only; compute physical pooling weights from raw observed db; exact R4 q/y remain unchanged unless a TRAIN-only observation mask is added.",
+  "heldout_metadata": {"inner": "inner_validation_metadata.parquet", "outer": "outer_validation_metadata.parquet"},
+  "no_automatic_gpu_rental": true,
+  "no_Test_fitting": true,
+  "no_official_submission": true,
+  "global_minimum_guaranteed": false
+}

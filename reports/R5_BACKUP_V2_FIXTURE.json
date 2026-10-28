@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "synthetic_fixture_only": true,
+  "checks": [
+    "absent noop",
+    "completed-model roundtrip",
+    "raw-observation exact-artifact whitelist roundtrip",
+    "completed-fold artifact ledger and changed-ledger rejection",
+    "SHA and ZIP CRC",
+    "deduplication",
+    "unrecorded partial exclusion",
+    "changed checkpoint rejection",
+    "path/source/vendor/Test exclusion"
+  ],
+  "server_or_training_access": false
+}

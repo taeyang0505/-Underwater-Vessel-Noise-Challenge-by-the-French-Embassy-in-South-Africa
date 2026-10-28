@@ -1,0 +1,19 @@
+{
+  "format": "r9_mac_openmp_environment_v1",
+  "version": "r1",
+  "DYLD_LIBRARY_PATH": "/opt/homebrew/opt/libomp/lib",
+  "resolved_libomp_path": "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib",
+  "libomp_sha256": "b6d9b621ca10f9e097de32b77b1bd50ca0b6e606168a0d7368e82fd279dbfb4f",
+  "required_loaded_libomp_count": 1,
+  "threads": 4,
+  "package_versions": {
+    "numpy": "2.3.5",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "sklearn": "1.9.1"
+  },
+  "KMP_DUPLICATE_LIB_OK_used": false,
+  "package_downgrade_or_binary_rewrite": false,
+  "training_policy_or_source_change": false,
+  "reproducer_code_sha256": "d66171e7482a0db8b4cec8f2e9d1d7a832c66708bd3710bcd5118bba81f412d2"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "TRAIN_only": true,
+  "Test_used": false,
+  "no_model_fitting": true,
+  "rows": {
+    "S1_H0_F1": {
+      "positive_background_HF_median": 1.0043442256129558,
+      "negative_background_HF_median": 0.9003466504147812,
+      "positive_background_HF_p90": 10.931387539022467,
+      "negative_background_HF_p90": 11.732860382835218,
+      "background_HF_KS_by_label": 0.03937500000000005,
+      "finite_sample_population_equality_claim": false,
+      "site_fraction_difference": {
+        "1 Richards Bay": 0.005624999999999991,
+        "2 Durban": -0.0028125000000000025,
+        "3 Cape_Recife": -0.0012499999999999998,
+        "4 Bird Island": 0.005312500000000001,
+        "5 St Croix Island": 0.010624999999999996,
+        "6 Riy_Banks": -0.00125,
+        "7 St_Francis": -0.016249999999999987
+      }
+    },
+    "S1_H15_F1": {
+      "positive_background_HF_median": 1.0043442256129558,
+      "negative_background_HF_median": 1.352549093686667,
+      "positive_background_HF_p90": 10.931387539022467,
+      "negative_background_HF_p90": 15.151556086215967,
+      "background_HF_KS_by_label": 0.08906249999999993,
+      "finite_sample_population_equality_claim": false,
+      "site_fraction_difference": {
+        "1 Richards Bay": 0.005624999999999991,
+        "2 Durban": -0.0028125000000000025,
+        "3 Cape_Recife": -0.0012499999999999998,
+        "4 Bird Island": 0.005312500000000001,
+        "5 St Croix Island": 0.010624999999999996,
+        "6 Riy_Banks": -0.00125,
+        "7 St_Francis": -0.016249999999999987
+      }
+    }
+  },
+  "old_D1_reference": {
+    "HF_KS_positive_vs_zero": 0.5549999999999999,
+    "positive_background_HF_median": 1.0043442256129558,
+    "negative_background_HF_median": 12.077686681757509
+  }
+}

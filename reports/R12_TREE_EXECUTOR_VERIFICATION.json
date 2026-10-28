@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "scope": "tiny generated numeric fixture; no actual source/TRAIN/Test/model artifacts read",
+  "train_rows": 128,
+  "validation_fit_rows": 48,
+  "query_rows": 32,
+  "maximum_trees": 10,
+  "threads": 2,
+  "cases": [
+    {
+      "include_shape": false,
+      "features": 466,
+      "replay1_7_32_exact": true,
+      "labelled_query_rejected": true,
+      "allmissing_inf_integer_query_rejected": true,
+      "fixture_production_reuse_rejected": true,
+      "query_metrics": {
+        "n": 32,
+        "rmse": 0.16097274782713422,
+        "mae": 0.11832906678318977,
+        "bias": 0.015289811417460442,
+        "target_mean": 0.4317172151058912,
+        "target_rms": 0.4828222708813296,
+        "prediction_mean": 0.44700702652335167,
+        "prediction_rms": 0.4510722651924665,
+        "share_auc": 1.0,
+        "classifier_auc": 1.0,
+        "hybrid_auc": 1.0,
+        "share_saturation_le001": 0.0,
+        "share_saturation_ge099": 0.0,
+        "classifier_saturation_le001": 0.0,
+        "classifier_saturation_ge099": 0.0,
+        "raw_share_clipped_fraction": 0.0,
+        "site_slices": {
+          "synthetic_0": {
+            "n": 16,
+            "rmse": 0.1569046458902176,
+            "bias": 0.02924460545182228,
+            "target_mean": 0.4166375230997801,
+            "prediction_mean": 0.44588212855160236,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          },
+          "synthetic_1": {
+            "n": 16,
+            "rmse": 0.16494054439131,
+            "bias": 0.0013350173830986023,
+            "target_mean": 0.4467969071120024,
+            "prediction_mean": 0.448131924495101,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          }
+        },
+        "site_macro_rmse": 0.1609225951407638,
+        "protected_slices": {
+          "zero": {
+            "n": 6,
+            "rmse": 0.324078037489244,
+            "bias": 0.3237874706586202,
+            "prediction_mean": 0.3237874706586202,
+            "SSE": 0.630159446297279
+          },
+          "positive_to020": {
+            "n": 0,
+            "rmse": null,
+            "bias": null,
+            "prediction_mean": null,
+            "SSE": 0.0
+          },
+          "above020": {
+            "n": 26,
+            "rmse": 0.08749324613039952,
+            "bias": -0.05590195609973027,
+            "prediction_mean": 0.475442308645982,
+            "SSE": 0.19903177107930148
+          },
+          "SF_dense_zero": {
+            "n": 0,
+            "rmse": null,
+            "bias": null,
+            "prediction_mean": null,
+            "SSE": 0.0
+          }
+        }
+      }
+    },
+    {
+      "include_shape": true,
+      "features": 673,
+      "replay1_7_32_exact": true,
+      "labelled_query_rejected": true,
+      "allmissing_inf_integer_query_rejected": true,
+      "fixture_production_reuse_rejected": true,
+      "query_metrics": {
+        "n": 32,
+        "rmse": 0.16073213444423684,
+        "mae": 0.1180489994585514,
+        "bias": 0.010088270530104637,
+        "target_mean": 0.4317172151058912,
+        "target_rms": 0.4828222708813296,
+        "prediction_mean": 0.44180548563599586,
+        "prediction_rms": 0.44574534403989235,
+        "share_auc": 1.0,
+        "classifier_auc": 0.9999999999999999,
+        "hybrid_auc": 1.0,
+        "share_saturation_le001": 0.0,
+        "share_saturation_ge099": 0.0,
+        "classifier_saturation_le001": 0.0,
+        "classifier_saturation_ge099": 0.0,
+        "raw_share_clipped_fraction": 0.0,
+        "site_slices": {
+          "synthetic_0": {
+            "n": 16,
+            "rmse": 0.15606449565730832,
+            "bias": 0.02468728832900524,
+            "target_mean": 0.4166375230997801,
+            "prediction_mean": 0.4413248114287853,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          },
+          "synthetic_1": {
+            "n": 16,
+            "rmse": 0.1652679983579109,
+            "bias": -0.004510747268795967,
+            "target_mean": 0.4467969071120024,
+            "prediction_mean": 0.4422861598432064,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          }
+        },
+        "site_macro_rmse": 0.16066624700760962,
+        "protected_slices": {
+          "zero": {
+            "n": 6,
+            "rmse": 0.3209142033066368,
+            "bias": 0.3208243449529012,
+            "prediction_mean": 0.3208243449529012,
+            "SSE": 0.6179155553036004
+          },
+          "positive_to020": {
+            "n": 0,
+            "rmse": null,
+            "bias": null,
+            "prediction_mean": null,
+            "SSE": 0.0
+          },
+          "above020": {
+            "n": 26,
+            "rmse": 0.08961427042789187,
+            "bias": -0.06162005433669457,
+            "prediction_mean": 0.4697242104090177,
+            "SSE": 0.20879865407240672
+          },
+          "SF_dense_zero": {
+            "n": 0,
+            "rmse": null,
+            "bias": null,
+            "prediction_mean": null,
+            "SSE": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "code_sha256": {
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "final_script_sha256": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+  "fixture_artifact_verification_sha256": "42325f23254497213957985f051515c86841573afe1db7e41134fc602962b14b",
+  "actual_12000row_training_executed": false,
+  "actual_gate_or_eval_arrays_opened": false,
+  "two_phase_contract": "fit only TRAIN/validation_fit; evaluate requires approved data_hash and immutable17summary globalfreeze before gate/eval"
+}

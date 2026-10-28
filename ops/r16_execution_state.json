@@ -1,0 +1,60 @@
+{
+  "phase": "r16_multisupport_full_training",
+  "current_run_state": "ops/r16_multisupport_full_r1/state.json",
+  "current_run_start": "ops/r16_multisupport_full_r1/STARTED.json",
+  "report": "reports/r16_multisupport_full_r1/START.html",
+  "user_authorized_disclosed_native12_HF_miss": true,
+  "regime_share_and_score_blend": [
+    0.5,
+    0.5
+  ],
+  "Tree_folds_each_regime": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "NN_folds": [
+    0
+  ],
+  "NN_epochs_each": 100,
+  "legacy_run_preserved_paused": {
+    "phase": "r16_paused_for_known_failure_review",
+    "updated_kst": "2026-10-28T05:18:25+09:00",
+    "R11_stress": "completed_with_failures_not_a_recipe_gate",
+    "Tree5": "completed",
+    "NN_fold0_progress": {
+      "status": "training",
+      "kind": "bg_cnn",
+      "epoch": 27,
+      "maximum_epochs": 100,
+      "rows_seen": 50432,
+      "rows_total": 61446,
+      "steps": 12900,
+      "elapsed_seconds": 1481.2721177088097
+    },
+    "pause_receipt": {
+      "status": "paused_at_complete_epoch",
+      "kind": "bg_cnn",
+      "epoch": 27,
+      "latest_sha256": "7a18526d645ec99bbab9df63f9514b3390bcdcdcadc7dbdc24e1cf7011ba150d",
+      "identity_sha256": "8f0db573f4b3c2325c47eeeb2e763d28765cbce861c0dd30968a37d1728e5de1",
+      "explicit_resume_required": true
+    },
+    "NN_Fold1_to4": "not_started",
+    "known_failure": {
+      "native15_hf_tree5_classifier_auc": 0.2592,
+      "train_positive_rows": 49157,
+      "positive_support_ge12_minutes": 0,
+      "report": "reports/r16_problem_gate_r1/FEATURE_FAILURE_REVIEW.md"
+    },
+    "ensemble_contract": "tree5>=.5 eachNN<=.25 score_share0; not fitted until all complete",
+    "submission_r16_csv": "not_yet_created",
+    "Test_used_for_training_or_policy": false,
+    "report": "reports/R16_PRODUCTION_START.html",
+    "execution_state": "ops/r16_production_neural_r1/state.json"
+  },
+  "submission_r16_csv": "not_yet_created",
+  "official_upload": false
+}

@@ -1,0 +1,43 @@
+{
+  "scope": "first fold inner-development only; no outer or Test",
+  "results": [
+    {
+      "experiment": "native_pilot_common_v1",
+      "inner_rmse": 0.32037196872004264,
+      "native_only": {
+        "n": 997,
+        "rmse": 0.4717607221096973,
+        "mean_true": 0.48415490984916687,
+        "mean_prediction": 0.08536513894796371
+      },
+      "status": "completed isolated CNN pilot; inner-development evidence only",
+      "epochs": 14
+    },
+    {
+      "experiment": "native_pilot_reference_v1",
+      "inner_rmse": 0.31994955175251316,
+      "native_only": {
+        "n": 997,
+        "rmse": 0.4647468415560095,
+        "mean_true": 0.48415490984916687,
+        "mean_prediction": 0.092281274497509
+      },
+      "status": "completed isolated CNN pilot; inner-development evidence only",
+      "epochs": 13
+    },
+    {
+      "experiment": "tree_pilot_reference_v1",
+      "inner_rmse": 0.28979273918463805,
+      "native_only": {
+        "n": 997,
+        "rmse": 0.3756795141844819,
+        "mean_prediction": 0.2335309396020687
+      },
+      "status": "completed inner-only tree pilot",
+      "epochs": null
+    }
+  ],
+  "promoted_to_full_cv": false,
+  "reason": "improvement insufficient; tree variant worsened; background-prior modeling experiments underway",
+  "backup_verified": "ops/server_backups/pilot_v1_results_20261024T185104Z.zip"
+}

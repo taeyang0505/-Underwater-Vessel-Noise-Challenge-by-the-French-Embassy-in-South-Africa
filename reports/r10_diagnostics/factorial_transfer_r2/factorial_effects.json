@@ -1,0 +1,634 @@
+{
+  "mean_scale_only": {
+    "bg_cnn": {
+      "mse": {
+        "background_contrast": -0.005027867396256131,
+        "generator_contrast": 0.03207038546074598,
+        "interaction": -0.0010426669172458308,
+        "combined_contrast": 0.02599985114724402
+      },
+      "rmse": {
+        "background_contrast": -0.03079134526674633,
+        "generator_contrast": 0.10664402372601611,
+        "interaction": 0.015300419719302447,
+        "combined_contrast": 0.09115309817857223
+      },
+      "auc_score": {
+        "background_contrast": 0.057825000000000126,
+        "generator_contrast": 0.07221250000000012,
+        "interaction": -0.03558125000000001,
+        "combined_contrast": 0.09445625000000024
+      },
+      "auc_share": {
+        "background_contrast": 0.07526874999999977,
+        "generator_contrast": 0.1369625000000001,
+        "interaction": -0.048643749999999986,
+        "combined_contrast": 0.16358749999999989
+      }
+    },
+    "tfgrid_fdy_conformer": {
+      "mse": {
+        "background_contrast": -0.003773968876463327,
+        "generator_contrast": 0.020855965422945582,
+        "interaction": -0.004525582204121535,
+        "combined_contrast": 0.012556414342360721
+      },
+      "rmse": {
+        "background_contrast": -0.029798570406920667,
+        "generator_contrast": 0.08601658102611133,
+        "interaction": 0.0022160097642568294,
+        "combined_contrast": 0.058434020383447485
+      },
+      "auc_score": {
+        "background_contrast": 0.0425437500000001,
+        "generator_contrast": 0.07083750000000011,
+        "interaction": -0.029818750000000116,
+        "combined_contrast": 0.0835625000000001
+      },
+      "auc_share": {
+        "background_contrast": 0.05439999999999989,
+        "generator_contrast": 0.12386874999999997,
+        "interaction": -0.029268749999999955,
+        "combined_contrast": 0.1489999999999999
+      }
+    },
+    "fdy": {
+      "mse": {
+        "background_contrast": -0.00330801406690862,
+        "generator_contrast": 0.029327427167904437,
+        "interaction": -0.00048822865270323375,
+        "combined_contrast": 0.025531184448292582
+      },
+      "rmse": {
+        "background_contrast": -0.021272186206569593,
+        "generator_contrast": 0.10432768725184456,
+        "interaction": 0.011157552451918101,
+        "combined_contrast": 0.09421305349719307
+      },
+      "auc_score": {
+        "background_contrast": 0.06959375000000001,
+        "generator_contrast": 0.07622499999999988,
+        "interaction": -0.05113124999999996,
+        "combined_contrast": 0.09468749999999992
+      },
+      "auc_share": {
+        "background_contrast": 0.08406249999999993,
+        "generator_contrast": 0.13831249999999995,
+        "interaction": -0.058599999999999985,
+        "combined_contrast": 0.1637749999999999
+      }
+    },
+    "itransformer": {
+      "mse": {
+        "background_contrast": -0.0033094559143306192,
+        "generator_contrast": 0.02505785634190616,
+        "interaction": 0.00120528878421893,
+        "combined_contrast": 0.02295368921179447
+      },
+      "rmse": {
+        "background_contrast": -0.017627475110379,
+        "generator_contrast": 0.08599971841447411,
+        "interaction": 0.011966703816669352,
+        "combined_contrast": 0.08033894712076446
+      },
+      "auc_score": {
+        "background_contrast": 0.052918750000000125,
+        "generator_contrast": 0.09823750000000009,
+        "interaction": -0.03381250000000002,
+        "combined_contrast": 0.11734375000000019
+      },
+      "auc_share": {
+        "background_contrast": 0.06936874999999998,
+        "generator_contrast": 0.13049374999999996,
+        "interaction": -0.05126249999999999,
+        "combined_contrast": 0.14859999999999995
+      }
+    },
+    "lgbm_physics": {
+      "mse": {
+        "background_contrast": -0.000535258854985992,
+        "generator_contrast": 0.0409071951208109,
+        "interaction": -0.002612329346888811,
+        "combined_contrast": 0.0377596069189361
+      },
+      "rmse": {
+        "background_contrast": -0.0054299878170091034,
+        "generator_contrast": 0.15683121473006933,
+        "interaction": -0.002247247995675189,
+        "combined_contrast": 0.14915397891738505
+      },
+      "auc_score": {
+        "background_contrast": 0.05453437499999991,
+        "generator_contrast": 0.06803437500000009,
+        "interaction": -0.045465624999999954,
+        "combined_contrast": 0.07710312500000005
+      },
+      "auc_share": {
+        "background_contrast": 0.0014781249999999968,
+        "generator_contrast": 0.12741875000000003,
+        "interaction": 0.002065625000000071,
+        "combined_contrast": 0.1309625000000001
+      }
+    },
+    "frozen_all5": {
+      "mse": {
+        "background_contrast": -0.001216043841398797,
+        "generator_contrast": 0.03166901521769666,
+        "interaction": -0.0016602160975897418,
+        "combined_contrast": 0.028792755278708122
+      },
+      "rmse": {
+        "background_contrast": -0.011242352087277828,
+        "generator_contrast": 0.12800187881627673,
+        "interaction": 0.0034176625424370347,
+        "combined_contrast": 0.12017718927143595
+      },
+      "auc_score": {
+        "background_contrast": 0.04983750000000009,
+        "generator_contrast": 0.059506250000000094,
+        "interaction": -0.039956250000000026,
+        "combined_contrast": 0.06938750000000016
+      },
+      "auc_share": {
+        "background_contrast": 0.04075624999999994,
+        "generator_contrast": 0.1294875000000001,
+        "interaction": -0.03178124999999987,
+        "combined_contrast": 0.13846250000000015
+      }
+    }
+  },
+  "smooth_trajectory_only": {
+    "bg_cnn": {
+      "mse": {
+        "background_contrast": -0.005027867396256131,
+        "generator_contrast": -0.0005141356405986026,
+        "interaction": -0.000583015615421385,
+        "combined_contrast": -0.00612501865227612
+      },
+      "rmse": {
+        "background_contrast": -0.03079134526674633,
+        "generator_contrast": -0.0026862767487689093,
+        "interaction": -0.0061887766498928826,
+        "combined_contrast": -0.03966639866540812
+      },
+      "auc_score": {
+        "background_contrast": 0.057825000000000126,
+        "generator_contrast": -0.025599999999999845,
+        "interaction": 0.004212499999999841,
+        "combined_contrast": 0.03643750000000012
+      },
+      "auc_share": {
+        "background_contrast": 0.07526874999999977,
+        "generator_contrast": -0.02923750000000014,
+        "interaction": -0.004462499999999703,
+        "combined_contrast": 0.04156874999999993
+      }
+    },
+    "tfgrid_fdy_conformer": {
+      "mse": {
+        "background_contrast": -0.003773968876463327,
+        "generator_contrast": -0.00031417429674330047,
+        "interaction": -0.00019265543384194925,
+        "combined_contrast": -0.004280798607048577
+      },
+      "rmse": {
+        "background_contrast": -0.029798570406920667,
+        "generator_contrast": -0.002034632830052077,
+        "interaction": -0.003516656199153992,
+        "combined_contrast": -0.03534985943612673
+      },
+      "auc_score": {
+        "background_contrast": 0.0425437500000001,
+        "generator_contrast": -0.02507500000000007,
+        "interaction": 0.005518749999999906,
+        "combined_contrast": 0.02298749999999994
+      },
+      "auc_share": {
+        "background_contrast": 0.05439999999999989,
+        "generator_contrast": -0.03448125000000013,
+        "interaction": -0.0067749999999999755,
+        "combined_contrast": 0.013143749999999788
+      }
+    },
+    "fdy": {
+      "mse": {
+        "background_contrast": -0.00330801406690862,
+        "generator_contrast": -0.00028243736515857955,
+        "interaction": -0.000519036982862495,
+        "combined_contrast": -0.0041094884149296945
+      },
+      "rmse": {
+        "background_contrast": -0.021272186206569593,
+        "generator_contrast": -0.0016123734465857409,
+        "interaction": -0.004650421481893138,
+        "combined_contrast": -0.027534981135048472
+      },
+      "auc_score": {
+        "background_contrast": 0.06959375000000001,
+        "generator_contrast": -0.029393749999999996,
+        "interaction": 0.00958749999999986,
+        "combined_contrast": 0.049787499999999874
+      },
+      "auc_share": {
+        "background_contrast": 0.08406249999999993,
+        "generator_contrast": -0.04267500000000002,
+        "interaction": -0.005881250000000171,
+        "combined_contrast": 0.03550624999999974
+      }
+    },
+    "itransformer": {
+      "mse": {
+        "background_contrast": -0.0033094559143306192,
+        "generator_contrast": -0.001680651883973719,
+        "interaction": -5.0569540099808935e-05,
+        "combined_contrast": -0.005040677338404147
+      },
+      "rmse": {
+        "background_contrast": -0.017627475110379,
+        "generator_contrast": -0.008538457315739573,
+        "interaction": -0.002332956049356877,
+        "combined_contrast": -0.02849888847547545
+      },
+      "auc_score": {
+        "background_contrast": 0.052918750000000125,
+        "generator_contrast": -0.01924999999999988,
+        "interaction": -0.007256250000000075,
+        "combined_contrast": 0.026412500000000172
+      },
+      "auc_share": {
+        "background_contrast": 0.06936874999999998,
+        "generator_contrast": -0.025174999999999947,
+        "interaction": -0.0037437500000000457,
+        "combined_contrast": 0.040449999999999986
+      }
+    },
+    "lgbm_physics": {
+      "mse": {
+        "background_contrast": -0.000535258854985992,
+        "generator_contrast": -5.168413215059448e-05,
+        "interaction": -1.2115221330551151e-05,
+        "combined_contrast": -0.0005990582084671376
+      },
+      "rmse": {
+        "background_contrast": -0.0054299878170091034,
+        "generator_contrast": -0.0004993382887987924,
+        "interaction": -0.0001907235420600048,
+        "combined_contrast": -0.006120049647867901
+      },
+      "auc_score": {
+        "background_contrast": 0.05453437499999991,
+        "generator_contrast": -0.026028124999999958,
+        "interaction": 0.00801562499999997,
+        "combined_contrast": 0.036521874999999926
+      },
+      "auc_share": {
+        "background_contrast": 0.0014781249999999968,
+        "generator_contrast": -0.04001874999999999,
+        "interaction": -0.007515624999999915,
+        "combined_contrast": -0.04605624999999991
+      }
+    },
+    "frozen_all5": {
+      "mse": {
+        "background_contrast": -0.001216043841398797,
+        "generator_contrast": -0.0002189053622805412,
+        "interaction": -7.554778660937012e-05,
+        "combined_contrast": -0.0015104969902887083
+      },
+      "rmse": {
+        "background_contrast": -0.011242352087277828,
+        "generator_contrast": -0.001862289242552606,
+        "interaction": -0.0012773962643912312,
+        "combined_contrast": -0.014382037594221665
+      },
+      "auc_score": {
+        "background_contrast": 0.04983750000000009,
+        "generator_contrast": -0.021412499999999834,
+        "interaction": 0.005543749999999958,
+        "combined_contrast": 0.033968750000000214
+      },
+      "auc_share": {
+        "background_contrast": 0.04075624999999994,
+        "generator_contrast": -0.03680624999999971,
+        "interaction": -0.006300000000000083,
+        "combined_contrast": -0.002349999999999852
+      }
+    }
+  },
+  "eq12_only": {
+    "bg_cnn": {
+      "mse": {
+        "background_contrast": -0.005027867396256131,
+        "generator_contrast": 0.0009263107923565463,
+        "interaction": -4.734449296942694e-06,
+        "combined_contrast": -0.004106291053196528
+      },
+      "rmse": {
+        "background_contrast": -0.03079134526674633,
+        "generator_contrast": 0.004660904118204967,
+        "interaction": 0.001963362988972553,
+        "combined_contrast": -0.02416707815956881
+      },
+      "auc_score": {
+        "background_contrast": 0.057825000000000126,
+        "generator_contrast": -0.009374999999999911,
+        "interaction": -0.0025125000000001396,
+        "combined_contrast": 0.045937500000000075
+      },
+      "auc_share": {
+        "background_contrast": 0.07526874999999977,
+        "generator_contrast": -0.007606250000000148,
+        "interaction": -0.0034312499999995527,
+        "combined_contrast": 0.06423125000000007
+      }
+    },
+    "tfgrid_fdy_conformer": {
+      "mse": {
+        "background_contrast": -0.003773968876463327,
+        "generator_contrast": 0.0008689395979923371,
+        "interaction": 0.00016960727880485464,
+        "combined_contrast": -0.0027354219996661355
+      },
+      "rmse": {
+        "background_contrast": -0.029798570406920667,
+        "generator_contrast": 0.0053698653664848855,
+        "interaction": 0.004373168242415987,
+        "combined_contrast": -0.020055536798019795
+      },
+      "auc_score": {
+        "background_contrast": 0.0425437500000001,
+        "generator_contrast": -0.00898124999999994,
+        "interaction": -0.0025562500000000377,
+        "combined_contrast": 0.031006250000000124
+      },
+      "auc_share": {
+        "background_contrast": 0.05439999999999989,
+        "generator_contrast": -0.0082937500000001,
+        "interaction": -0.0027374999999999483,
+        "combined_contrast": 0.043368749999999845
+      }
+    },
+    "fdy": {
+      "mse": {
+        "background_contrast": -0.00330801406690862,
+        "generator_contrast": 0.0008651241413546919,
+        "interaction": 0.00011919498484397675,
+        "combined_contrast": -0.002323694940709951
+      },
+      "rmse": {
+        "background_contrast": -0.021272186206569593,
+        "generator_contrast": 0.004765306410536907,
+        "interaction": 0.002205425145424267,
+        "combined_contrast": -0.01430145465060842
+      },
+      "auc_score": {
+        "background_contrast": 0.06959375000000001,
+        "generator_contrast": -0.0078062500000000146,
+        "interaction": -0.005662500000000015,
+        "combined_contrast": 0.05612499999999998
+      },
+      "auc_share": {
+        "background_contrast": 0.08406249999999993,
+        "generator_contrast": -0.0061500000000001,
+        "interaction": -0.004918750000000083,
+        "combined_contrast": 0.07299374999999975
+      }
+    },
+    "itransformer": {
+      "mse": {
+        "background_contrast": -0.0033094559143306192,
+        "generator_contrast": 0.0014080183738333588,
+        "interaction": 0.00035160446542803134,
+        "combined_contrast": -0.001549833075069229
+      },
+      "rmse": {
+        "background_contrast": -0.017627475110379,
+        "generator_contrast": 0.006641193505864285,
+        "interaction": 0.003140035078438491,
+        "combined_contrast": -0.007846246526076225
+      },
+      "auc_score": {
+        "background_contrast": 0.052918750000000125,
+        "generator_contrast": -0.012768749999999995,
+        "interaction": -0.009306250000000071,
+        "combined_contrast": 0.03084375000000006
+      },
+      "auc_share": {
+        "background_contrast": 0.06936874999999998,
+        "generator_contrast": -0.009874999999999967,
+        "interaction": -0.008512500000000034,
+        "combined_contrast": 0.05098124999999998
+      }
+    },
+    "lgbm_physics": {
+      "mse": {
+        "background_contrast": -0.000535258854985992,
+        "generator_contrast": 0.0010502239252684702,
+        "interaction": 0.0002818002225545707,
+        "combined_contrast": 0.0007967652928370489
+      },
+      "rmse": {
+        "background_contrast": -0.0054299878170091034,
+        "generator_contrast": 0.009271375270973894,
+        "interaction": 0.0033256003107726,
+        "combined_contrast": 0.007166987764737391
+      },
+      "auc_score": {
+        "background_contrast": 0.05453437499999991,
+        "generator_contrast": -0.01084375000000004,
+        "interaction": -0.002587499999999743,
+        "combined_contrast": 0.04110312500000013
+      },
+      "auc_share": {
+        "background_contrast": 0.0014781249999999968,
+        "generator_contrast": -0.009212499999999846,
+        "interaction": -0.0033218750000001407,
+        "combined_contrast": -0.01105624999999999
+      }
+    },
+    "frozen_all5": {
+      "mse": {
+        "background_contrast": -0.001216043841398797,
+        "generator_contrast": 0.000999008527837725,
+        "interaction": 0.0002100553923846029,
+        "combined_contrast": -6.979921176469145e-06
+      },
+      "rmse": {
+        "background_contrast": -0.011242352087277828,
+        "generator_contrast": 0.007850206946800643,
+        "interaction": 0.0033336624411633084,
+        "combined_contrast": -5.848269931387623e-05
+      },
+      "auc_score": {
+        "background_contrast": 0.04983750000000009,
+        "generator_contrast": -0.010056249999999878,
+        "interaction": -0.002643750000000167,
+        "combined_contrast": 0.037137500000000045
+      },
+      "auc_share": {
+        "background_contrast": 0.04075624999999994,
+        "generator_contrast": -0.007818749999999985,
+        "interaction": -0.00396249999999998,
+        "combined_contrast": 0.028974999999999973
+      }
+    }
+  },
+  "combined_stress": {
+    "bg_cnn": {
+      "mse": {
+        "background_contrast": -0.005027867396256131,
+        "generator_contrast": 0.04842502863846306,
+        "interaction": -0.0011135451123767317,
+        "combined_contrast": 0.0422836161298302
+      },
+      "rmse": {
+        "background_contrast": -0.03079134526674633,
+        "generator_contrast": 0.14346329851491363,
+        "interaction": 0.017665310009248758,
+        "combined_contrast": 0.13033726325741607
+      },
+      "auc_score": {
+        "background_contrast": 0.057825000000000126,
+        "generator_contrast": 0.06329375000000015,
+        "interaction": -0.032837500000000075,
+        "combined_contrast": 0.0882812500000002
+      },
+      "auc_share": {
+        "background_contrast": 0.07526874999999977,
+        "generator_contrast": 0.12426874999999982,
+        "interaction": -0.0425687499999996,
+        "combined_contrast": 0.15696875
+      }
+    },
+    "tfgrid_fdy_conformer": {
+      "mse": {
+        "background_contrast": -0.003773968876463327,
+        "generator_contrast": 0.037876409053968524,
+        "interaction": -0.005602075004710882,
+        "combined_contrast": 0.028500365172794313
+      },
+      "rmse": {
+        "background_contrast": -0.029798570406920667,
+        "generator_contrast": 0.13152684451048624,
+        "interaction": 0.006110539087593139,
+        "combined_contrast": 0.10783881319115869
+      },
+      "auc_score": {
+        "background_contrast": 0.0425437500000001,
+        "generator_contrast": 0.06251249999999997,
+        "interaction": -0.024656250000000046,
+        "combined_contrast": 0.08040000000000003
+      },
+      "auc_share": {
+        "background_contrast": 0.05439999999999989,
+        "generator_contrast": 0.11381249999999987,
+        "interaction": -0.02267499999999978,
+        "combined_contrast": 0.1455375
+      }
+    },
+    "fdy": {
+      "mse": {
+        "background_contrast": -0.00330801406690862,
+        "generator_contrast": 0.04917115120957591,
+        "interaction": -0.0017583261955115437,
+        "combined_contrast": 0.044104810947155744
+      },
+      "rmse": {
+        "background_contrast": -0.021272186206569593,
+        "generator_contrast": 0.15032275943429635,
+        "interaction": 0.010413443505824863,
+        "combined_contrast": 0.13946401673355158
+      },
+      "auc_score": {
+        "background_contrast": 0.06959375000000001,
+        "generator_contrast": 0.06411250000000013,
+        "interaction": -0.043243750000000136,
+        "combined_contrast": 0.0904625
+      },
+      "auc_share": {
+        "background_contrast": 0.08406249999999993,
+        "generator_contrast": 0.12353749999999986,
+        "interaction": -0.04958124999999991,
+        "combined_contrast": 0.15801874999999987
+      }
+    },
+    "itransformer": {
+      "mse": {
+        "background_contrast": -0.0033094559143306192,
+        "generator_contrast": 0.030785984119409047,
+        "interaction": 0.0020434319520248687,
+        "combined_contrast": 0.029519960157103294
+      },
+      "rmse": {
+        "background_contrast": -0.017627475110379,
+        "generator_contrast": 0.10061287630292588,
+        "interaction": 0.01448955421871613,
+        "combined_contrast": 0.09747495541126301
+      },
+      "auc_score": {
+        "background_contrast": 0.052918750000000125,
+        "generator_contrast": 0.09141250000000012,
+        "interaction": -0.0326375000000001,
+        "combined_contrast": 0.11169375000000015
+      },
+      "auc_share": {
+        "background_contrast": 0.06936874999999998,
+        "generator_contrast": 0.12507500000000005,
+        "interaction": -0.05026249999999999,
+        "combined_contrast": 0.14418125000000004
+      }
+    },
+    "lgbm_physics": {
+      "mse": {
+        "background_contrast": -0.000535258854985992,
+        "generator_contrast": 0.052079025056139865,
+        "interaction": -0.0016764803172104586,
+        "combined_contrast": 0.049867285883943416
+      },
+      "rmse": {
+        "background_contrast": -0.0054299878170091034,
+        "generator_contrast": 0.1820559560383845,
+        "interaction": 0.0006565502249578636,
+        "combined_contrast": 0.17728251844633328
+      },
+      "auc_score": {
+        "background_contrast": 0.05453437499999991,
+        "generator_contrast": 0.05748437500000003,
+        "interaction": -0.03842187499999983,
+        "combined_contrast": 0.07359687500000012
+      },
+      "auc_share": {
+        "background_contrast": 0.0014781249999999968,
+        "generator_contrast": 0.12262812500000009,
+        "interaction": 0.004249999999999976,
+        "combined_contrast": 0.12835625000000006
+      }
+    },
+    "frozen_all5": {
+      "mse": {
+        "background_contrast": -0.001216043841398797,
+        "generator_contrast": 0.04401546895139284,
+        "interaction": -0.001127912208765459,
+        "combined_contrast": 0.041671512901228586
+      },
+      "rmse": {
+        "background_contrast": -0.011242352087277828,
+        "generator_contrast": 0.15842424269669245,
+        "interaction": 0.0058016216300407555,
+        "combined_contrast": 0.15298351223945536
+      },
+      "auc_score": {
+        "background_contrast": 0.04983750000000009,
+        "generator_contrast": 0.05154375000000011,
+        "interaction": -0.03460625000000006,
+        "combined_contrast": 0.06677500000000014
+      },
+      "auc_share": {
+        "background_contrast": 0.04075624999999994,
+        "generator_contrast": 0.12420000000000009,
+        "interaction": -0.028406249999999855,
+        "combined_contrast": 0.13655000000000017
+      }
+    }
+  }
+}

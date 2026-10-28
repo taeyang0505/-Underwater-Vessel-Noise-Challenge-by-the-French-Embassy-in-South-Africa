@@ -1,0 +1,24 @@
+{
+  "regression": "Blend50_c0",
+  "classifier_weight": 1.0,
+  "fit_rmse": {
+    "CNN_c0": 0.0773273124772353,
+    "Tree_c0": 0.08017140801335051,
+    "Blend50_c0": 0.07055248060403523,
+    "CNN_c2": 0.07199166750286788,
+    "Tree_c2": 0.08431131721898681,
+    "Blend50_c2": 0.07055372220255347
+  },
+  "fit_auc": {
+    "0.0": 0.8859875,
+    "0.25": 0.92768125,
+    "0.5": 0.93114375,
+    "0.75": 0.93355,
+    "1.0": 0.940875
+  },
+  "selection_data": "R12 validation_fit1000 only",
+  "models_freeze_sha256": "6611e81558b8fdb4d8e4bde676efcbfc559e233c1aa8a484b605b9089f6d1b28",
+  "source_sha256": "e2537c01f4a600d1f0909b3701afd8bfc0acdbe0a49d1e55a7399862843310e2",
+  "Test_read": false,
+  "development_exposed": true
+}

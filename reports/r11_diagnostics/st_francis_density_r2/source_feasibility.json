@@ -1,0 +1,90 @@
+{
+  "source_scopes": {
+    "original": {
+      "windows": 27154,
+      "Nobs_counts": {
+        "5": 23782,
+        "12": 1,
+        "15": 3371
+      },
+      "recorders": [
+        "SM2M_Cape_StFrancis_SM2M.1.48000"
+      ],
+      "sensor_groups": [
+        4
+      ]
+    },
+    "R9_allowed_pool": {
+      "windows": 23172,
+      "Nobs_counts": {
+        "5": 19827,
+        "12": 1,
+        "15": 3344
+      },
+      "recorders": [
+        "SM2M_Cape_StFrancis_SM2M.1.48000"
+      ],
+      "sensor_groups": [
+        4
+      ]
+    },
+    "selection": {
+      "windows": 2660,
+      "Nobs_counts": {
+        "5": 2348,
+        "15": 312
+      },
+      "recorders": [
+        "SM2M_Cape_StFrancis_SM2M.1.48000"
+      ],
+      "sensor_groups": [
+        4
+      ]
+    }
+  },
+  "selection_regimes": {
+    "sparse": {
+      "windows": 2348,
+      "groups": 6,
+      "clock_range": [
+        "2016-10-11 00:00:00",
+        "2018-02-28 14:15:00"
+      ],
+      "recording_days": 33,
+      "observed_minute_patterns": {
+        "0,1,2,3,4": 783,
+        "5,6,7,8,9": 783,
+        "10,11,12,13,14": 782
+      },
+      "top_observed_minute_start_gaps_minutes": {
+        "1.0": 9392,
+        "16.0": 2343,
+        "263536.0": 1,
+        "211696.0": 1,
+        "174256.0": 1,
+        "31696.0": 1
+      }
+    },
+    "dense": {
+      "windows": 312,
+      "groups": 2,
+      "clock_range": [
+        "2015-04-27 00:00:00",
+        "2015-11-08 23:00:00"
+      ],
+      "recording_days": 13,
+      "observed_minute_patterns": {
+        "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14": 312
+      },
+      "top_observed_minute_start_gaps_minutes": {
+        "1.0": 4368,
+        "46.0": 310,
+        "263566.0": 1
+      }
+    }
+  },
+  "TRAIN_group_or_window_overlap": 0,
+  "independent_minimum_TRAIN_support_gap_hours": 24.25,
+  "clock_basis": "source export clock, not independently verified UTC",
+  "cadence_note": "Sparse mask is a contiguous5-minute block rotating within15-minute bins; gaps1/16minutes match5-minute blocks every20minutes. Dense gaps1/46match15-minute blocks every60minutes. Deployment configuration itself was not supplied."
+}

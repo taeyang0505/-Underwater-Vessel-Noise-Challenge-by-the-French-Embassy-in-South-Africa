@@ -1,0 +1,68 @@
+{
+  "format": "r13_real_fullsize_one_step_connection_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "actual_TRAIN_indices": [
+    7,
+    1,
+    0,
+    5
+  ],
+  "scenarios": [
+    "knownA0",
+    "ordinary dense positive",
+    "highshare long",
+    "highshare standard"
+  ],
+  "model_checks": [
+    {
+      "kind": "bg_cnn",
+      "parameters": 1491329,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 1.3001813888549805,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "parameters": 2563813,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 5.129709243774414,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    },
+    {
+      "kind": "fdy",
+      "parameters": 130765,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 0.9871596693992615,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    },
+    {
+      "kind": "itransformer",
+      "parameters": 299919,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 1.5434801578521729,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    }
+  ],
+  "code_sha256": {
+    "pipeline/models_r13.py": "e3ea69d969dfc02e81f091e3e2c03482891291ced18c5414fdff2085b7c7f2c3",
+    "pipeline/training_r13.py": "2962af0f91be7c74708298138feb0c561a21fc3255d0fe8aaaddd44c09041523",
+    "pipeline/full_data_r13.py": "1ab10cc3ab1a00c8cada4c7f781d729f4896fc9df483ab6e952e4abf2f363d16"
+  },
+  "fixture_weights_never_production": "/private/tmp/r13-real-one-step-rqebqn8d",
+  "CUDA_SSH_Test_new_validation_gate_report_or_full100training": false,
+  "original_sources_unchanged": true
+}

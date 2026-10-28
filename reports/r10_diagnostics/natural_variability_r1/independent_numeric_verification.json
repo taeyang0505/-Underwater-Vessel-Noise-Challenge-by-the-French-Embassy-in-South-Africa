@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-26T14:17:45.359058+00:00",
+  "results_file_sha256": "460ca7f10f787df30e2af699cac6398d7a1ab662b3338aa27adbd61d53dce458",
+  "maximum_metric_recomputation_error": 0.0,
+  "AUC_oracle": "direct positive-negative pair comparison, half-credit exact ties; independent of rank implementation",
+  "checks": {
+    "natural_high": {
+      "rows": 499,
+      "direct_pairwise_AUC_verified": true,
+      "allmetrics_from_savedpred_verified": true
+    },
+    "natural_control": {
+      "rows": 499,
+      "direct_pairwise_AUC_verified": true,
+      "allmetrics_from_savedpred_verified": true
+    }
+  },
+  "duplicate_windows_cross_panels": 0,
+  "all_original_model_config_source_pins_still_match": true,
+  "code_sha256": "16b9aaee751c702c82fe44332821c7be6a8953e4be6b7a2dc3d3e303f619e396",
+  "no_model_predict_fit_Test_report_or_network_performed_by_this_check": true
+}

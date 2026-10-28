@@ -1,0 +1,60 @@
+{
+  "status": "passed_static_and_synthetic_fixture",
+  "created_utc": "2026-10-27T17:18:03.949568+00:00",
+  "production_finalization_blocker_found": false,
+  "checks": {
+    "finalizer_final_SHA_match": true,
+    "fixture_matches_final_source": true,
+    "fixture_pass": true,
+    "Tree_registry_exact_folds_0_to_4": true,
+    "Tree_registry_model_dir_keys_resolve": true,
+    "Tree_registry_artifact_SHA_all_current": true,
+    "training_source_closure_unchanged": true,
+    "prerequisites_before_output_labels_query": true,
+    "separate_regression_classifier_checkpoints_loaded": true,
+    "saved_selection_exact_IDS_y_and_presence_match_required": true,
+    "fit_only_fixed_2400_local_fit": true,
+    "Tree5_floor050_each_NN_cap025": true,
+    "score_independent_probability_only_share_weight0": true,
+    "global_freeze_schema_matches_prediction_and_panel_loader": true,
+    "source_and_model_policy_artifacts_SHA_pinned": true,
+    "all4_NN100_epochs_completion_required": true,
+    "global_freeze_before_gate_report_domain": true,
+    "query_only_after_frozen_cross_evaluation": true,
+    "raw_Test_db_only_predict_1500_unique_IDS": true,
+    "Test_SHA_and_CSV_schema_readback": true,
+    "no_post_query_or_locked_panel_policy_refit": true,
+    "historical_prediction_comparison_after_freeze_only": true,
+    "CPU312_torch2141_fixture_load_runtime_available": true
+  },
+  "CODE_FILES_SHA256": {
+    "ops/finalize_r16_production.py": "799ca7a118036d784929796d5d2b33503efc27c0612fa8f250c1b4a5508ead17",
+    "ops/predict_r16_production_nn.py": "63a4127466207fa9fb942e0429ad5d3405fa672c90b95a0fe51d006115de9a06",
+    "pipeline/ensemble_r16_production.py": "ef29b306b83956a0e5fd496efb90164ae74a04aab1611106d20488d483e1d073",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/training_r16_production.py": "66fe465baef76c6372c9be3d3189e46ccc4ac25ce30ac599d65da73a92e0dfa7",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/r16_production_data.py": "81853811a1820d15e935141795f6611d035843f5d249fb80da246cbdadb84067",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda"
+  },
+  "prediction_script_sha256": "63a4127466207fa9fb942e0429ad5d3405fa672c90b95a0fe51d006115de9a06",
+  "fixture_receipt_path": "reports/R16_FINALIZER_INDEPENDENT_FIXTURE.json",
+  "fixture_receipt_sha256": "1737f00f2805cc3f11b742bbcab93d1bcb0ecf4e5fdc4d8ca14c4fd42c48b36b",
+  "Tree_registry_sha256": "bdd50a94792691bb8a927b0089b4123858f1d5f8b033a28f13d05875c9484614",
+  "historical_comparison_inputs_exist": {
+    "submissions/r9_fold0_all5_cpu_r1/submission.csv": true,
+    "submissions/r14_main_r2/submission_r14_step1.csv": true
+  },
+  "runtime_Python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "actual_completed_R16_prediction_and_policyfit": "not_measured_until_all_four_NN_finish100epochs",
+  "full_hybrid_5fold_OOF_claimed": false,
+  "scope_limitations": [
+    "This review does not infer official leaderboard performance.",
+    "Static gate/source review and synthetic numerical fixture passed; completed production checkpoint inference remains unmeasured.",
+    "Cannot verify live MPS availability from this CPU-only review."
+  ],
+  "new_training_performed": false,
+  "official_Test_opened": false,
+  "learner_source_modified": false,
+  "finalizer_source_modified": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "actual_MPS_short_Adam_steps_passed",
+  "measured_conditions": 12,
+  "failures": 0,
+  "FP64_frontend_on_MPS": false,
+  "explicit_CPU_FP64_frontend_MPS_FP32_backbone": true,
+  "source_code_sha256": {
+    "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+    "pipeline/raw_frontend_r14.py": "244d03fc85e962b5722ebdf50751a9e6349737818f47ecccdea2c5fab49a516c",
+    "ops/verify_r14_torch_frontend.py": "12ca5b96ed3c094c627acea0723808945295349044928641e703e4f38ddecdf5",
+    "ops/benchmark_r14_full_epoch.py": "e76b7480a4304265125d9bd79c672544ae67b49fdab5a23950c1a4161d650988",
+    "ops/benchmark_r14_mps.py": "a1c4c37bc0ced55f775d2580b4ea597473a2b2f956ce5b128b1fa846ee4935c4",
+    "ops/build_r14_frontend_reports.py": "8ac5965bd6ef816d37170b6242c979e0e9260998bbc310bcd400fddf0161e289",
+    "ops/r14_runtime_py/tabm.py": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade",
+    "ops/r14_runtime_py/rtdl_num_embeddings.py": "48dfc019d447e0cd225deb8b8145b3efa8b42cde9aa314772d6e234753e1cee1",
+    "ops/r14_runtime_py/receipt.json": "61a4ee20dad3fbedcc99c75f8622229892746494df957c9203450626f3715b8b"
+  },
+  "evidence_sha256": {
+    "reports/R14_MPS_BENCHMARK_r2/RESULTS.json": "78aa817dd218cd8fdd4c65fc648a45f3e8e82ff71d8ed2b647c1469e74bf6d98"
+  },
+  "raw_result": "reports/R14_MPS_BENCHMARK_r2/RESULTS.json",
+  "original_R13_frozen_sources_unchanged": true,
+  "production_launch_authorized": false,
+  "full_epoch_or_100epoch_elapsed_time_measured": false,
+  "total_training_time_estimated": false
+}

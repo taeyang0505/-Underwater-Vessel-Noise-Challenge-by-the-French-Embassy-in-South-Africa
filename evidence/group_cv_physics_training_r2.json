@@ -1,0 +1,130 @@
+{
+  "protocol": "source_group_nested5_week24h_v1",
+  "cv_dir": "data/synthetic/group_cv_physics_v2_r1",
+  "output_dir": "models/group_cv_physics_v2_r2_adam",
+  "status": "Frozen R2 full-five-fold measurement run; no further optimization until full OOF is available",
+  "seeds": [
+    42
+  ],
+  "models": [
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm",
+    "cnn",
+    "fdy",
+    "itransformer"
+  ],
+  "foundation_models": {
+    "tabicl": {
+      "context": 16000,
+      "members": 4,
+      "precision": "fp32"
+    },
+    "kumo_large": {
+      "context": 4096,
+      "members": 4,
+      "precision": "fp32"
+    }
+  },
+  "training": {
+    "epochs": 100,
+    "patience": 7,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "dropout": 0.1,
+    "scheduler": "plateau",
+    "batch": 128,
+    "width": 256,
+    "k": 16,
+    "trees": 800,
+    "threads": 4,
+    "contrastive_weight": 0.0,
+    "contrastive_temperature": 0.1,
+    "feature_version": 3,
+    "epoch_policy": "User maximum100 epochs / early-stopping7 / Adam; CNN includes a fold-train-only background prior and a trained residual mask. Epoch0 prior state remains an eligible best state as in the validated pilot.",
+    "domain_augmentation": "none",
+    "augmentation_probability": 0.75,
+    "augmentation_strength_db": 12.0,
+    "cnn_background_prior": true,
+    "cnn_prior_strength": 0.5,
+    "cnn_prior_clip": 0.01,
+    "cnn_prior_residual_weight": 0.001,
+    "cnn_prior_clusters": 32
+  },
+  "explicit_ablation_candidates": [
+    {
+      "name": "nadam",
+      "optimizer": "nadam",
+      "dropout": 0.1,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "sgd_nesterov",
+      "optimizer": "sgd_nesterov",
+      "learning_rate": 0.01,
+      "dropout": 0.1,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "dropout_005",
+      "optimizer": "adam",
+      "dropout": 0.05,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "dropout_020",
+      "optimizer": "adam",
+      "dropout": 0.2,
+      "contrastive_weight": 0.0
+    },
+    {
+      "name": "contrastive_001",
+      "optimizer": "adam",
+      "dropout": 0.1,
+      "contrastive_weight": 0.01
+    }
+  ],
+  "experiment_policy": "Existing development pilots are finished or quarantined. Execute the frozen complete pipeline; resume improvement only after full 5-fold OOF measurement.",
+  "selection_metric": "inner validation RMSE",
+  "loss": "share MSE + explicitly logged auxiliary losses",
+  "ensemble": "Fit nonnegative sum-to-one weights on inner predictions only, freeze before outer evaluation. No outer-fitted affine calibration.",
+  "final_assessment": "Calibration and sealed sources remain outside this CV. Outer CV becomes development evidence after model comparison; it is not an endlessly reusable final holdout.",
+  "global_minimum_guaranteed": false,
+  "gpu": {
+    "recommended": "RTX 4090 24GB x1",
+    "ram_GB": 31,
+    "free_SSD_GB": 100,
+    "CUDA_memory_and_throughput_measured": true,
+    "ram_note": "Actual pod cgroup memory limit 61,999,996,928 bytes; sequential models, RTX4090 24GB validated."
+  },
+  "dataset_policy": "Original inner/outer NPZ frozen byte for byte; train support cap, reference-only EQ and clean-pool blending; evaluate full and boundary-excluded OOF. Reference support cap plus maximum synthetic added/background minute SNR 20dB; requested/effective targets recorded.",
+  "release_policy": "Run all seven model families / nine candidates in fresh R2. Background-prior residual CNN is included; slow exploratory background-feature tree is excluded. No settings change based on that exploration or outer results before complete OOF.",
+  "foundation_precision_policy": {
+    "default": "fp32 for both candidates; explicit fp16 is an ablation only",
+    "atol": 3e-05,
+    "rtol": 1e-05,
+    "query_check_pair_starts": [
+      0,
+      16,
+      128,
+      512,
+      1024,
+      2048
+    ],
+    "include_last_two": true,
+    "outer_inputs_or_scores_used_to_choose_precision": false
+  },
+  "cnn_policy": {
+    "architecture_version": 4,
+    "input_channels": 8,
+    "base_feature_version": 3,
+    "background_prior_fit_split": "current fold train only",
+    "reuse_fold0_prior_or_task_weights": false,
+    "raw_prior_is_not_a_ground_truth_target": true,
+    "observed_first_fold_inner_CNN_RMSE": 0.28835373,
+    "observed_baseline_CNN_RMSE": 0.3211546,
+    "pilot_is_development_evidence": true
+  }
+}

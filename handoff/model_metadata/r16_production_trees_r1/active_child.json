@@ -1,0 +1,15 @@
+{
+  "PID": 80022,
+  "fold": 4,
+  "command": [
+    "/Users/hongtaeyang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "ops/train_r16_production_trees.py",
+    "worker",
+    "--manifest",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data/synthetic/r16_production_v1/fold_04/manifest.json",
+    "--fold",
+    "4",
+    "--output",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r16_production_trees_r1"
+  ]
+}

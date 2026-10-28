@@ -1,0 +1,57 @@
+{
+  "kind": "frozen_r2_all_model_code_release",
+  "training_executed_by_packager": false,
+  "frozen_data": "group_cv_physics_v2_r1",
+  "seven_model_families_nine_candidates": true,
+  "source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "files": {
+    "pipeline/models.py": {
+      "sha256": "a11c9dda847b4a2aeedaf1e892c4c32298ee03e73758568b96a565fd539c21f9",
+      "bytes": 8957
+    },
+    "pipeline/mixtures.py": {
+      "sha256": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+      "bytes": 13245
+    },
+    "pipeline/train.py": {
+      "sha256": "addd233b936c2c0b5497ffe81c7462acc1dec5e82d469ecd77cc85178fa79c0b",
+      "bytes": 32510
+    },
+    "pipeline/train_group_cv.py": {
+      "sha256": "19d35e976618b622ce6dcf3201c25139bfa8f71242c6cb255516bc89d6620ab6",
+      "bytes": 20625
+    },
+    "pipeline/cv_foundations.py": {
+      "sha256": "238ae433ea2bf2fbc747cefdf6b8fe3c337b9a4606a9072965c219600478c60a",
+      "bytes": 23410
+    },
+    "pipeline/background_prior_features.py": {
+      "sha256": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+      "bytes": 12598
+    },
+    "pipeline/checkpoint_prior.py": {
+      "sha256": "3f45c5b7b71c088f7658e288aeb78b9f7cea7ddfa50fec3c294ae8949ae1a55e",
+      "bytes": 1893
+    },
+    "pipeline/evaluate_cv_outer.py": {
+      "sha256": "1fcd4cfe541edcee286e1d10fb7310902e4543cc8a8af2fffcb1097a130fc11c",
+      "bytes": 10733
+    },
+    "pipeline/infer.py": {
+      "sha256": "0c941abeab0249c0be80c06b154c5bcd52c56f2ec140c465782a494724f885fa",
+      "bytes": 4909
+    },
+    "pipeline/energy_domain_augmentation.py": {
+      "sha256": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5",
+      "bytes": 11957
+    },
+    "pipeline/build_domain_cv_r2.py": {
+      "sha256": "2cffdc4c8d3c937e054c3d62deec318ad7030d638f05c955ee4f61bca2e66c42",
+      "bytes": 17181
+    },
+    "configs/group_cv_physics_training_r2.json": {
+      "sha256": "92bcf84892839fdf9e1963d4448229923cf34a80a4dbe9ecd9eb6ae27a5452f4",
+      "bytes": 4433
+    }
+  }
+}

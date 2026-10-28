@@ -1,0 +1,75 @@
+{
+  "format": "r16_relative8_decoupled_physics_tree_v1",
+  "status": "completed",
+  "binding": {
+    "fold": 0,
+    "manifest_sha256": "7ea98290fd08204e4966554b19ab50520d5262acf0bc2f9c152d44b6540e3728",
+    "recipe": "R16_improved_mixed6_unchanged",
+    "source_refs": "A only; B/C protected"
+  },
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "max_bin": 127,
+    "threads": 2,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102718,
+  "train_rows": 61446,
+  "selection_rows": 2400,
+  "feature_counts": {
+    "regression": 3827,
+    "classification": 700
+  },
+  "iterations": {
+    "regression": 1306,
+    "classification": 422
+  },
+  "selection_metrics": {
+    "n": 2400,
+    "rmse": 0.09628834926888487,
+    "mae": 0.05042780108133444,
+    "bias": -0.015555246062564816,
+    "share_auc": 0.8995800781250001,
+    "classifier_auc": 0.95751953125,
+    "prediction_mean": 0.1556156765420093,
+    "prediction_rms": 0.23262845379263192
+  },
+  "input_sha256": {
+    "train_db": "6c6ab0bff7c8bd54fb5d1729fa059e679c67b32cae5327bbe39570d721c12dd5",
+    "train_y": "563aded160cd082eadcae54b0415c0ee966e65b01cb5f44a5a4280b14d848e07",
+    "selection_db": "f68b4a8a3dd2c892822142c7ef7bb92db71cb8256cd28abb0bc8df4efc95d879",
+    "selection_y": "87c1455926cab4a14db19f98058be8754afcaebfc91fd27b5606669fad5de387"
+  },
+  "feature_memory": {
+    "regression": {
+      "train_feature_bytes": 940615368,
+      "selection_feature_bytes": 36739200
+    },
+    "classification": {
+      "train_feature_bytes": 172048800,
+      "selection_feature_bytes": 6720000
+    }
+  },
+  "artifact_sha256": {
+    "share.txt": "0bcc549e94fa30bb5288ec5b3db18a9ed5032b98b5400aa50df9a838edd9d397",
+    "presence.txt": "c0567cc9ff647a61b3079423141d40b37ac4597fe413297b32a5a98bba45e6d9",
+    "selection_predictions.npz": "089a4e75de9e7fe236cb6161d7b06bac473f33ff44358fe5c5157172ebd5f7d8",
+    "feature_schema.json": "146365f7cf0fba5185fa038f8a8890998912af21ea6c5eeaa54f8464b1198b89",
+    "boosting_history.json": "45cf161eecf58729e78098cefe75986e6c893125dc7121955240ac8a6b58939c"
+  },
+  "code_sha256": {
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "elapsed_seconds": 365.47398495674133,
+  "PCA_LFanchor_highshare": false,
+  "score_is_independent_classifier_probability": true,
+  "Test_used": false,
+  "early_stopping_uses_shared_development_selection_not_OOF": true
+}

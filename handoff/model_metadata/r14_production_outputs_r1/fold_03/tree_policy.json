@@ -1,0 +1,164 @@
+{
+  "version": "r14_production_fit_gate_ensemble_v1",
+  "binding": {
+    "fold": 3,
+    "scope": "tree_only",
+    "fit": {
+      "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_03/baseline_ensemble_fit.npz",
+      "sha256": "f3f28371aa475404643aa6d1b218288859d835d01fb5f79dff9e45f645bb6d72",
+      "role": "ensemble_fit",
+      "fold": 3,
+      "baseline_common_observations": true
+    },
+    "gate": {
+      "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_03/baseline_ensemble_gate.npz",
+      "sha256": "9a1b314b8796a7ea55c783b5ec3c7671c1a82d9f2f22a1cc484e71fe46d2fd14",
+      "role": "ensemble_gate",
+      "fold": 3,
+      "baseline_common_observations": true
+    },
+    "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+    "source_pins": {
+      "configs/r14_production_mac_v1.json": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+      "configs/r14_production_ensemble_protocol_v1.json": "a34fb6f8c5c6c6d1599da059842cd38b847987b41ae8bcbfc540df4c4bcd9430",
+      "ops/r14_production_approval.json": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+      "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+      "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0",
+      "models/r14_production_trees_r1/ALL_FIVEFOLD_TREES_FROZEN.json": "be37991e063375b80e7ff3fa501c6aef619408d1a59166c48487da1f6b5574cb",
+      "data/synthetic/group_cv_physics_r13_variants_v2/manifest.json": "ac592fcaa1ab8f7c8b0175988b4bdb27ab22392dbc26d6848f8bf447c17aa96b"
+    },
+    "refs_shared": true
+  },
+  "member_order": [
+    "tree_baseline",
+    "tree_highshare"
+  ],
+  "regression_weights": [
+    0.6307688784921528,
+    0.36923112150784715
+  ],
+  "proposed_regression_weights": [
+    0.6307688784921528,
+    0.36923112150784715
+  ],
+  "fit_single_RMSE": {
+    "tree_baseline": 0.055932019334159366,
+    "tree_highshare": 0.058064510054948844
+  },
+  "fit_best_single": "tree_baseline",
+  "gate_proposed_RMSE": 0.0640283373544417,
+  "gate_single_RMSE": 0.06628553905872439,
+  "regression_accepted_on_gate": true,
+  "ridge_to_uniform": 1e-06,
+  "safety_epsilon": 0.0001,
+  "score_policy": {
+    "classifier": "baseline",
+    "lambda": 1.0,
+    "fit_selected_candidate": {
+      "classifier": "baseline",
+      "lambda": 1.0,
+      "fit_AUC": 0.977575
+    },
+    "gate_candidate_AUC": 0.96215,
+    "gate_share_AUC": 0.8257875,
+    "candidate_accepted_on_gate": true
+  },
+  "score_fit_candidates": [
+    {
+      "classifier": "baseline",
+      "lambda": 0.0,
+      "fit_AUC": 0.89035
+    },
+    {
+      "classifier": "baseline",
+      "lambda": 0.25,
+      "fit_AUC": 0.9711
+    },
+    {
+      "classifier": "baseline",
+      "lambda": 0.5,
+      "fit_AUC": 0.972975
+    },
+    {
+      "classifier": "baseline",
+      "lambda": 0.75,
+      "fit_AUC": 0.9734
+    },
+    {
+      "classifier": "baseline",
+      "lambda": 0.85,
+      "fit_AUC": 0.973525
+    },
+    {
+      "classifier": "baseline",
+      "lambda": 1.0,
+      "fit_AUC": 0.977575
+    },
+    {
+      "classifier": "highshare",
+      "lambda": 0.0,
+      "fit_AUC": 0.89035
+    },
+    {
+      "classifier": "highshare",
+      "lambda": 0.25,
+      "fit_AUC": 0.9696
+    },
+    {
+      "classifier": "highshare",
+      "lambda": 0.5,
+      "fit_AUC": 0.972325
+    },
+    {
+      "classifier": "highshare",
+      "lambda": 0.75,
+      "fit_AUC": 0.9725
+    },
+    {
+      "classifier": "highshare",
+      "lambda": 0.85,
+      "fit_AUC": 0.972475
+    },
+    {
+      "classifier": "highshare",
+      "lambda": 1.0,
+      "fit_AUC": 0.975625
+    },
+    {
+      "classifier": "mean",
+      "lambda": 0.0,
+      "fit_AUC": 0.89035
+    },
+    {
+      "classifier": "mean",
+      "lambda": 0.25,
+      "fit_AUC": 0.970675
+    },
+    {
+      "classifier": "mean",
+      "lambda": 0.5,
+      "fit_AUC": 0.9733
+    },
+    {
+      "classifier": "mean",
+      "lambda": 0.75,
+      "fit_AUC": 0.973775
+    },
+    {
+      "classifier": "mean",
+      "lambda": 0.85,
+      "fit_AUC": 0.9737
+    },
+    {
+      "classifier": "mean",
+      "lambda": 1.0,
+      "fit_AUC": 0.977425
+    }
+  ],
+  "fit_role": "same_fold_baseline_ensemble_fit",
+  "gate_role": "same_fold_baseline_ensemble_gate",
+  "report_Test_for_fitting": false,
+  "fixture_only": false,
+  "postprocessing": "numericalclip[0,1] only",
+  "policy_sha256": "da323cd10366891278318852e686091d7648196e8cbf55b517fd6a5010cfc866"
+}

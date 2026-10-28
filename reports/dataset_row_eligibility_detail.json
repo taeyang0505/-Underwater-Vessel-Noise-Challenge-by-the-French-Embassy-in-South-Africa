@@ -1,0 +1,17 @@
+{
+  "exclusion_patterns_before_windowing": {
+    "dur_below55": 9220,
+    "dur_below55+timestamp_second_gt5": 7660,
+    "sentinel": 637,
+    "dur_above65": 15,
+    "sentinel+dur_below55": 11,
+    "dur_above65+timestamp_second_gt5": 7,
+    "sentinel+dur_below55+timestamp_second_gt5": 5
+  },
+  "eligible_rows_not_selected_due_same_recorder_minute_duplicate": 0,
+  "unique_minute_rows_in_windows_under3_observations": 40,
+  "total_eligible_not_in_windows": 40,
+  "document_modified": false,
+  "source_arrays_opened": false,
+  "metadata_only": true
+}

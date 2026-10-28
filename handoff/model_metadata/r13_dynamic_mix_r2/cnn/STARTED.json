@@ -1,0 +1,13 @@
+{
+  "arm": {
+    "name": "R13_dynamic_mixP1",
+    "shape": true,
+    "legacy_control": false,
+    "paired_epoch_mixture": true
+  },
+  "epochs": 100,
+  "optimizer": "Adam",
+  "early_stopping": false,
+  "parameters": 26953,
+  "plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c"
+}

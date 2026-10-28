@@ -1,0 +1,89 @@
+{
+  "format": "r6_guardrails_report_render_v1",
+  "scope": "completed JSON/history rendering only; no fit or raw data arrays",
+  "input_sha256": {
+    "models/r6_cpu_guardrails_v2/all_checkpoints_frozen_before_heldout.json": "21c63e12e662285d294c85b5c3c7fb138c9058b0b83d4283e3e210e1f59054c4",
+    "models/r6_cpu_guardrails_v2/r4law_legacy8_global/summary.json": "3a36c1bc8c502edd5d28ce47db434bb6e3adfa44c2e18b3910728442cade651b",
+    "models/r6_cpu_guardrails_v2/r4law_relative8_global/summary.json": "6d045773ff662a8f6c7b007fab5813c737e15c898d6cb5229ede70db175e8870",
+    "models/r6_cpu_guardrails_v2/r6law_legacy8_global/summary.json": "e111094b8542bd4f29f3114a5a8bd7af1c89479b46a0b38c9a6251c6651109f0",
+    "models/r6_cpu_guardrails_v2/r6law_relative8_global/summary.json": "6b547752da44d931fac19f3ac1fcf7dca7831966ea03df3a5b206f25dae609f4",
+    "models/r6_cpu_guardrails_v2/r6law_relative8_local/summary.json": "8bab5e3f260b42d1c249d302a2abda5d114198a5b1caa1873bdb859a4295fed4",
+    "models/r6_cpu_guardrails_v2/r6law_legacy_tree/summary.json": "90c2e7b9f941ffa15ace13ad3f43eeab738781ca60f784d9de20e62104edae90",
+    "models/r6_cpu_guardrails_v2/r6law_relative_tree/summary.json": "8dc7c1aab87dd41a2a5c6aa9dfbc4a9ad81581a4323d38af9c6fc74e5e6e10d4",
+    "reports/r6_guardrails_training_examples.png": "872067605707976e1c76e25cec7851f20049f72550681be2d69bcf11b74507fd",
+    "reports/r6_guardrails_training_examples.svg": "77f0f82d07118f361eb299a5762d041f86a8c8a137be3dc584959525bc559e0b",
+    "models/r6_cpu_guardrails_v2/r4law_legacy8_global/epochs.jsonl": "fa37fc5a27951953583395ea63f50f3fa5dd5f65f5af11f2a5fc5f8b4c4dfc88",
+    "models/r6_cpu_guardrails_v2/r4law_relative8_global/epochs.jsonl": "21055cf07533c7518eff5b2928fca574d12094021923403d189bf12e115e7d38",
+    "models/r6_cpu_guardrails_v2/r6law_legacy8_global/epochs.jsonl": "d53b1df1674502422c7a03df35bd0f0224b8d2a28b13ed52a8eccd562dd7e213",
+    "models/r6_cpu_guardrails_v2/r6law_relative8_global/epochs.jsonl": "5157d8fd6574e503c5de0bc6039ad6e5a85def294953caf55329c442218af7f4",
+    "models/r6_cpu_guardrails_v2/r6law_relative8_local/epochs.jsonl": "ebcedb2821f8829789c5ba72390957e988440eac2382f46082666c5b4b321978",
+    "configs/r6_cpu_guardrails_v2.json": "ff1aaef4671013801fd79ac39222a70acf40d63acfcbc92e6493e873be23709e",
+    "reports/R6V2_SOURCE_SPLIT_AUDIT.json": "38cc83eddd13b7451438cc1095812551c0b3b2dd192da38f64bce545087f4db3",
+    "reports/R6V2_DATASET_AUDIT.json": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+    "reports/R6V2_CPU_ABLATION_RESULTS.json": "2debe9cc55ceef61bd1d92fff4ed7fd7407265821aa5bcb7ac7b1a48b1cb0d3e",
+    "data/versions/hard_negatives_r6_v2/manifest.json": "a235908778511e78a8a912ea494755e00ed5d0bd0bd29eef874cd57b7abad375",
+    "reports/R6_GUARDRAILS_INDEPENDENT_AUDIT.json": "b7556f51bb6f105fbd64d857ec1aba9e5e72775f833b3231fd517b7ff7e08df6",
+    "reports/r6_guardrails_training_examples.selection.json": "3057b7bb75026b589e365ee2184df5a2252116e05d35c63e23959b092a8a2043",
+    "ops/plot_r6_train_evidence.py": "cfa6bbe293dbfe503d6e390205a384f9c4b9903d505880c3ef4efdb001d0addb",
+    "ops/build_r6_guardrails_report.py": "234901222bf07cb760ec406c68b1eae91e466a725b8e529b8516800c5515342d"
+  },
+  "report": "reports/R6_GUARDRAILS_AND_CPU_ABLATION_REPORT.md",
+  "report_sha256": "9e03983918092b4b8a7f0e4388f9f128caea8db2726adb4e5231bb4260976a28",
+  "figure_sha256": {
+    "reports/r6_guardrails_v2_figures/01_cpu_curves.png": "ac12052b506fdbed782a652d15e05ec13371da79758773b501aca139f303a4d5",
+    "reports/r6_guardrails_v2_figures/02_locked_panels.png": "2f07f2d9781991847377babbafceb6c7be8200423cd2c38d4eab53e2a258b63d",
+    "reports/r6_guardrails_v2_figures/03_target_scale_controls.png": "5bb65c32b3a655887dfec49ad822dd666cd1d5eae479af3df016e2f8a8182861"
+  },
+  "final_verification": {
+    "status": "passed",
+    "checked_at_utc": "2026-10-25T20:17:31.230386+00:00",
+    "verified_input_sha256_count": 24,
+    "all_recorded_source_and_artifact_hashes_unchanged": true,
+    "relative_links_resolved": [
+      "../configs/r6_cpu_guardrails_v2.json",
+      "R6_GUARDRAILS_EXECUTION_PLAN.md",
+      "R6V2_SOURCE_SPLIT_AUDIT.md",
+      "R6_GUARDRAILS_INDEPENDENT_AUDIT.md",
+      "R6_PREFIT_SUPPORT_CORRECTION.md",
+      "R6_PHYSICS_FEATURES_V2_FIXTURE.json",
+      "../data/versions/hard_negatives_r6_v2/manifest.json",
+      "r6_guardrails_training_examples.png",
+      "r6_guardrails_training_examples.selection.json",
+      "r6_guardrails_training_examples.svg",
+      "../ops/plot_r6_train_evidence.py",
+      "r6_guardrails_v2_figures/03_target_scale_controls.png",
+      "r6_guardrails_v2_figures/01_cpu_curves.png",
+      "r6_guardrails_v2_figures/02_locked_panels.png",
+      "R6V2_CPU_ABLATION_RESULTS.json",
+      "R6V2_DATASET_AUDIT.json",
+      "R6V2_SOURCE_SPLIT_AUDIT.json",
+      "R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+      "../configs/r6_cpu_guardrails_v2.json"
+    ],
+    "relative_link_count": 19,
+    "PNG_dimensions_width_height": {
+      "reports/r6_guardrails_v2_figures/01_cpu_curves.png": [
+        2520,
+        1260
+      ],
+      "reports/r6_guardrails_v2_figures/02_locked_panels.png": [
+        2880,
+        1080
+      ],
+      "reports/r6_guardrails_v2_figures/03_target_scale_controls.png": [
+        1800,
+        720
+      ]
+    },
+    "visual_QA": {
+      "all_three_PNGs_opened_and_inspected": true,
+      "all_five_actual_CNN_histories_visible": true,
+      "all_seven_arms_and_four_controls_visible": true,
+      "no_label_clipping_or_overlap_observed": true,
+      "target_population_scale_caveat_visible": true
+    },
+    "all_adverse_results_retained": true,
+    "reporter_fit_or_hyperparameter_selection_performed": false,
+    "reporter_raw_arrays_Test_OUTER_GPU_SSH_or_submission_used": false
+  }
+}

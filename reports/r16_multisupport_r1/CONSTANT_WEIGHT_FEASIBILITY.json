@@ -1,0 +1,118 @@
+{
+  "analysis_only_not_weight_selection": true,
+  "Test_used": false,
+  "results": {
+    "S1_H0_F1": {
+      "RMSE_and_negative_share_feasible": false,
+      "intersection_bounds": [
+        0.6773740009654262,
+        0.5224536500792947
+      ],
+      "constraints": [
+        {
+          "panel": "local_gate",
+          "allowed_S1_weight_for_RMSE": [
+            0.0,
+            0.7360368965971488
+          ],
+          "threshold": 0.0782020107146591
+        },
+        {
+          "panel": "local_report",
+          "allowed_S1_weight_for_RMSE": [
+            0.0,
+            0.5224536500792947
+          ],
+          "threshold": 0.07879076211340352
+        },
+        {
+          "panel": "domain_holdout",
+          "allowed_S1_weight_for_RMSE": [
+            0.0,
+            1.0
+          ],
+          "threshold": 0.09508545644244942
+        },
+        {
+          "panel": "native12_VS_hf_high_negative",
+          "allowed_S1_weight_for_RMSE": [
+            0.6773740009654262,
+            1.0
+          ],
+          "threshold": 0.11
+        },
+        {
+          "panel": "native12_VS_st_francis_dense_negative",
+          "allowed_S1_weight_for_RMSE": [
+            0.42525428893211903,
+            1.0
+          ],
+          "threshold": 0.12
+        },
+        {
+          "panel": "SF negative share preservation",
+          "allowed_S1_weight": [
+            0.0,
+            0.5380684897347627
+          ]
+        }
+      ]
+    },
+    "S1_H15_F1": {
+      "RMSE_and_negative_share_feasible": false,
+      "intersection_bounds": [
+        0.6524272073669356,
+        0.3668402088598894
+      ],
+      "constraints": [
+        {
+          "panel": "local_gate",
+          "allowed_S1_weight_for_RMSE": [
+            0.0,
+            0.4513169710899454
+          ],
+          "threshold": 0.0782020107146591
+        },
+        {
+          "panel": "local_report",
+          "allowed_S1_weight_for_RMSE": [
+            0.0,
+            0.3668402088598894
+          ],
+          "threshold": 0.07879076211340352
+        },
+        {
+          "panel": "domain_holdout",
+          "allowed_S1_weight_for_RMSE": [
+            0.0,
+            0.8378913313313376
+          ],
+          "threshold": 0.09508545644244942
+        },
+        {
+          "panel": "native12_VS_hf_high_negative",
+          "allowed_S1_weight_for_RMSE": [
+            0.6524272073669356,
+            1.0
+          ],
+          "threshold": 0.11
+        },
+        {
+          "panel": "native12_VS_st_francis_dense_negative",
+          "allowed_S1_weight_for_RMSE": [
+            0.4338177087163275,
+            1.0
+          ],
+          "threshold": 0.12
+        },
+        {
+          "panel": "SF negative share preservation",
+          "allowed_S1_weight": [
+            0.0,
+            0.5943514898604683
+          ]
+        }
+      ]
+    }
+  }
+}

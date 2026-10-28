@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "epochs_run": 100,
+  "original8policy_changed": false,
+  "binding": {
+    "scope": "additional metadata-matched HF control; not part of original8recipe selector",
+    "control_manifest_sha256": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+    "original_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+    "original_data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "script_sha256": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb"
+  },
+  "model_summary_sha256": {
+    "models/r12_mask_matched_control_r2/cnn/summary.json": "64164f1849ed05a4e046d257affe528fa3dc9c9898c3731656eeddf212ba2b45",
+    "models/r12_mask_matched_control_r2/tree/summary.json": "6d43a97adb0a4423bd6671177e47a08565623387ae9019264f71d0c4951695a6"
+  },
+  "CNN_checkpoint_sha256": "e74d9b3af5e1c79934ecd809f38f14b284d80ce3e0705cff7787104e5bfd45b6",
+  "tree_booster_sha256": {
+    "share.txt": "87a7230ec57b1aad1eb4a3b77c08e933499b973472cf0d0bc9797dfbb750b034",
+    "presence.txt": "b860c85f2ccfab1c271d32db57837f5df6ea038f1345d62c981e61f79ae8c4af"
+  }
+}

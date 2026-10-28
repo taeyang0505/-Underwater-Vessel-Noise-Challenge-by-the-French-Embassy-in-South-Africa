@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "source_summary_sha256": "cb873094849a788951d576ab18c09a6ae9016ebedf8c059237a0a2e66dd98dd2",
+  "all_input_bytes_still_unchanged": true,
+  "SSE_fractions_sum_to_one_for_disjoint_partitions": true,
+  "AUC_both_signs_sum_to_one_with_ties": true,
+  "Nobs_only_conditional_AUC_is_half": true,
+  "source_role_numeric_QA": [
+    {
+      "role": "selection",
+      "raw_energy_q_y_max_error": 3.246515567489894e-08,
+      "zero_targets_have_all_zero_q": true,
+      "recipe_support_and_reference_indices_match": true,
+      "exact_role_hard_negative_flags": []
+    },
+    {
+      "role": "ensemble_fit",
+      "raw_energy_q_y_max_error": 2.7591902984624994e-08,
+      "zero_targets_have_all_zero_q": true,
+      "recipe_support_and_reference_indices_match": true,
+      "exact_role_hard_negative_flags": []
+    },
+    {
+      "role": "ensemble_gate",
+      "raw_energy_q_y_max_error": 2.862410963810902e-08,
+      "zero_targets_have_all_zero_q": true,
+      "recipe_support_and_reference_indices_match": true,
+      "exact_role_hard_negative_flags": []
+    }
+  ],
+  "new_models_predictions_policies_or_Test_report_used": false
+}

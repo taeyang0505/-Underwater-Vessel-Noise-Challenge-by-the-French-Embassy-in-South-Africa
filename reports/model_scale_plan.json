@@ -1,0 +1,208 @@
+{
+  "status": "data/model planning; GPU not benchmarked; no challenge Test or sealed NOAA used",
+  "current_synthetic_source_audit": [
+    {
+      "split": "train",
+      "synthetic_examples": 16000,
+      "array_payload_bytes": 48128000,
+      "compressed_npz_bytes": 24045126,
+      "unique_background_windows_sampled": 14738,
+      "background_sites_sampled": 7,
+      "background_sensor_groups_sampled": 5,
+      "background_site_days_sampled": 1291,
+      "unique_added_reference_clips_sampled": 995,
+      "reference_source_groups_sampled": 107,
+      "reference_source_group_counts": {
+        "HearMyShip_V1": 16,
+        "VTUAD_v1.3.2": 91
+      },
+      "reference_modes": {
+        "short_CPA_spectral_profile_with_surrogate_envelope": 8184,
+        "measured_2s_reference_placed_and_time_rescaled": 7648
+      }
+    },
+    {
+      "split": "validation",
+      "synthetic_examples": 3000,
+      "array_payload_bytes": 9024000,
+      "compressed_npz_bytes": 4970350,
+      "unique_background_windows_sampled": 2590,
+      "background_sites_sampled": 6,
+      "background_sensor_groups_sampled": 5,
+      "background_site_days_sampled": 159,
+      "unique_added_reference_clips_sampled": 183,
+      "reference_source_groups_sampled": 5,
+      "reference_source_group_counts": {
+        "HearMyShip_V1": 3,
+        "VTUAD_v1.3.2": 2
+      },
+      "reference_modes": {
+        "measured_2s_reference_placed_and_time_rescaled": 1057,
+        "short_CPA_spectral_profile_with_surrogate_envelope": 1971
+      }
+    },
+    {
+      "split": "calibration",
+      "synthetic_examples": 3000,
+      "array_payload_bytes": 9024000,
+      "compressed_npz_bytes": 4718399,
+      "unique_background_windows_sampled": 2697,
+      "background_sites_sampled": 7,
+      "background_sensor_groups_sampled": 5,
+      "background_site_days_sampled": 187,
+      "unique_added_reference_clips_sampled": 149,
+      "reference_source_groups_sampled": 7,
+      "reference_source_group_counts": {
+        "HearMyShip_V1": 3,
+        "VTUAD_v1.3.2": 4
+      },
+      "reference_modes": {
+        "short_CPA_spectral_profile_with_surrogate_envelope": 1969,
+        "measured_2s_reference_placed_and_time_rescaled": 1042
+      }
+    },
+    {
+      "split": "domain_holdout",
+      "synthetic_examples": 3000,
+      "array_payload_bytes": 9024000,
+      "compressed_npz_bytes": 4317198,
+      "unique_background_windows_sampled": 2730,
+      "background_sites_sampled": 3,
+      "background_sensor_groups_sampled": 1,
+      "background_site_days_sampled": 178,
+      "unique_added_reference_clips_sampled": 67,
+      "reference_source_groups_sampled": 7,
+      "reference_source_group_counts": {
+        "HearMyShip_V1": 1,
+        "VTUAD_v1.3.2": 6
+      },
+      "reference_modes": {
+        "short_CPA_spectral_profile_with_surrogate_envelope": 1724,
+        "measured_2s_reference_placed_and_time_rescaled": 1319
+      }
+    }
+  ],
+  "compression_ratio_measured": 0.5059983111702128,
+  "forecasts": [
+    {
+      "synthetic_examples": 25000,
+      "input_db_float32_bytes": 37500000,
+      "cell_target_float32_bytes": 37500000,
+      "all_four_arrays_bytes": 75200000,
+      "compressed_bytes_if_current_ratio_persists": 38051073,
+      "tabm_1254_feature_CPU_bytes": 125400000,
+      "cnn_channels_plus_weights_CPU_bytes": 187500000,
+      "foundation_96_feature_CPU_bytes": 9600000,
+      "expected_unique_backgrounds_under_uniform_sampling": 21920.395563844915
+    },
+    {
+      "synthetic_examples": 100000,
+      "input_db_float32_bytes": 150000000,
+      "cell_target_float32_bytes": 150000000,
+      "all_four_arrays_bytes": 300800000,
+      "compressed_bytes_if_current_ratio_persists": 152204292,
+      "tabm_1254_feature_CPU_bytes": 501600000,
+      "cnn_channels_plus_weights_CPU_bytes": 750000000,
+      "foundation_96_feature_CPU_bytes": 38400000,
+      "expected_unique_backgrounds_under_uniform_sampling": 61254.591336665755
+    },
+    {
+      "synthetic_examples": 200000,
+      "input_db_float32_bytes": 300000000,
+      "cell_target_float32_bytes": 300000000,
+      "all_four_arrays_bytes": 601600000,
+      "compressed_bytes_if_current_ratio_persists": 304408584,
+      "tabm_1254_feature_CPU_bytes": 1003200000,
+      "cnn_channels_plus_weights_CPU_bytes": 1500000000,
+      "foundation_96_feature_CPU_bytes": 76800000,
+      "expected_unique_backgrounds_under_uniform_sampling": 82143.78731840405
+    },
+    {
+      "synthetic_examples": 500000,
+      "input_db_float32_bytes": 750000000,
+      "cell_target_float32_bytes": 750000000,
+      "all_four_arrays_bytes": 1504000000,
+      "compressed_bytes_if_current_ratio_persists": 761021460,
+      "tabm_1254_feature_CPU_bytes": 2508000000,
+      "cnn_channels_plus_weights_CPU_bytes": 3750000000,
+      "foundation_96_feature_CPU_bytes": 192000000,
+      "expected_unique_backgrounds_under_uniform_sampling": 92525.27039739984
+    },
+    {
+      "synthetic_examples": 1000000,
+      "input_db_float32_bytes": 1500000000,
+      "cell_target_float32_bytes": 1500000000,
+      "all_four_arrays_bytes": 3008000000,
+      "compressed_bytes_if_current_ratio_persists": 1522042920,
+      "tabm_1254_feature_CPU_bytes": 5016000000,
+      "cnn_channels_plus_weights_CPU_bytes": 7500000000,
+      "foundation_96_feature_CPU_bytes": 384000000,
+      "expected_unique_backgrounds_under_uniform_sampling": 92952.02258028545
+    },
+    {
+      "synthetic_examples": 5000000,
+      "input_db_float32_bytes": 7500000000,
+      "cell_target_float32_bytes": 7500000000,
+      "all_four_arrays_bytes": 15040000000,
+      "compressed_bytes_if_current_ratio_persists": 7610214600,
+      "tabm_1254_feature_CPU_bytes": 25080000000,
+      "cnn_channels_plus_weights_CPU_bytes": 37500000000,
+      "foundation_96_feature_CPU_bytes": 1920000000,
+      "expected_unique_backgrounds_under_uniform_sampling": 92954.0
+    }
+  ],
+  "forecast_warning": "Compressed bytes depend on source entropy and masks. Repeated mixtures are not independent recordings. Derived feature arrays are usually CPU resident, not all GPU resident.",
+  "native_recording_extension_examples": [
+    {
+      "added_hours": 10,
+      "maximum_nonoverlapping_15min_windows": 40,
+      "uncompressed_48k_mono_PCM16_bytes": 3456000000,
+      "2s_25band_float32_bank_bytes": 1800000
+    },
+    {
+      "added_hours": 50,
+      "maximum_nonoverlapping_15min_windows": 200,
+      "uncompressed_48k_mono_PCM16_bytes": 17280000000,
+      "2s_25band_float32_bank_bytes": 9000000
+    },
+    {
+      "added_hours": 100,
+      "maximum_nonoverlapping_15min_windows": 400,
+      "uncompressed_48k_mono_PCM16_bytes": 34560000000,
+      "2s_25band_float32_bank_bytes": 18000000
+    }
+  ],
+  "GPU_recommendation": {
+    "initial": "1 x RTX 4090 / 24GB, estimator_batch_size=1, frozen foundation weights",
+    "CPU_RAM": "64GB preferred; 32GB minimum for sequential preparation and model runs",
+    "CPU": "8+ cores",
+    "free_SSD": "100GB preferred, 50GB for initial bounded pilot",
+    "CUDA_VRAM_measured": false,
+    "first_server_action": "Benchmark 4k then 8k/16k training context with own validation queries; record torch.cuda.max_memory_allocated/reserved and synchronized runtime before larger jobs",
+    "48GB_condition": "Context/caching/batching expansion exceeds the measured 24GB budget, or gradient fine-tuning with a larger context is justified by independent validation",
+    "80GB_condition": "Large-context/full-fine-tuning experiments require it after profiling; not justified by the current dataset file size alone"
+  },
+  "GPU_training_prep_ETA": {
+    "current_v1_candidate": "Model/data artifacts already exist; no new GPU training required for one frozen local candidate",
+    "v2_expansion_and_quality_freeze": "Planning range 1-3 hours after bounded source acquisition begins; depends on external source availability, quality exclusions and integration",
+    "confidence": "Estimate, not a measured completion deadline; external-data and quality agents own remaining critical-path evidence"
+  },
+  "primary_sources": [
+    {
+      "title": "RTX4090 official hardware specification",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/"
+    },
+    {
+      "title": "TabICLv2 official code",
+      "url": "https://github.com/soda-inria/tabicl"
+    },
+    {
+      "title": "Kumo Tabular official release",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+    },
+    {
+      "title": "Kumo Tabular official weights/license",
+      "url": "https://huggingface.co/nvidia/Kumo-Tabular"
+    }
+  ]
+}

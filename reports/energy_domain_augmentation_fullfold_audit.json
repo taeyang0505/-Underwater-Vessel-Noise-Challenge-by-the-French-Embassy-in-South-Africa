@@ -1,0 +1,59 @@
+{
+  "numeric_fixtures_passed": true,
+  "actual_train_arrays_only": true,
+  "model_training_executed": false,
+  "outer_Test_or_inner_accessed": false,
+  "modes": {
+    "reference_smooth": {
+      "audit_sums": {
+        "examples": 53244,
+        "selected_count": 39902,
+        "augmented_count": 31857,
+        "positive_examples": 42509,
+        "zero_examples": 10735,
+        "cap_count": 1655,
+        "support_cap_count": 119,
+        "minute_snr_cap_count": 1536,
+        "common_backtrack_count": 0,
+        "common_identity_fallback_count": 0,
+        "preexisting_support_cap_violation_count": 0,
+        "preexisting_support_cap_identity_count": 0,
+        "new_support_cap_violation_count": 0,
+        "input_float_rounding_excess_rows": 0,
+        "reference_share_restored_count": 31857,
+        "positive_became_zero_count": 0
+      },
+      "max_reconstruction_error": 3.129042975280605e-07,
+      "max_float64_minute_snr_db": 20.000009443556614,
+      "strength_db": 12.0,
+      "seconds": 0.54146783426404,
+      "source_RAM_hash_unchanged": true
+    },
+    "common_response": {
+      "audit_sums": {
+        "examples": 53244,
+        "selected_count": 39902,
+        "augmented_count": 39141,
+        "positive_examples": 42509,
+        "zero_examples": 10735,
+        "cap_count": 1825,
+        "support_cap_count": 0,
+        "minute_snr_cap_count": 0,
+        "common_backtrack_count": 1825,
+        "common_identity_fallback_count": 761,
+        "preexisting_support_cap_violation_count": 10,
+        "preexisting_support_cap_identity_count": 5,
+        "new_support_cap_violation_count": 0,
+        "input_float_rounding_excess_rows": 1382,
+        "reference_share_restored_count": 0,
+        "positive_became_zero_count": 0
+      },
+      "max_reconstruction_error": 3.480409525025152e-07,
+      "max_float64_minute_snr_db": 20.00001049366418,
+      "strength_db": 4.0,
+      "seconds": 2.3081485414877534,
+      "source_RAM_hash_unchanged": true
+    }
+  },
+  "module_sha256": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5"
+}

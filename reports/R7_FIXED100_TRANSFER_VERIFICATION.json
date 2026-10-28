@@ -1,0 +1,102 @@
+{
+  "format": "r7_fixed100_transfer_independent_verification_v1",
+  "status": "passed",
+  "verified_at_utc": "2026-10-25T21:30:15.194094+00:00",
+  "protocol_sha256": "723e0eec8efb2a8cca6dc42030101995a417cf7b646efd1d698c9ef4050d5f1f",
+  "result_sha256": "827851362b87c8f2557de50017b2ba3b2f0f38206f0eda14242c69589c6e626a",
+  "report_sha256": "2281432d984007dcf49e9605b75664602d86ec06f4d8bd6f2dd9f81b5a2c80e9",
+  "script_sha256": "76df011dac05c1b74b80b99cf25773620865ab3f92f1ae1ffeb2c8f0a24b0be3",
+  "original_input_hash_count": 59,
+  "all_original_inputs_unchanged_after_evaluation_and_QA": true,
+  "prediction_ZIP_CRC_and_row_order": [
+    {
+      "path": "models/r7_fixed100_transfer_v1/r4law_legacy8_global/cross_generator_predictions.npz",
+      "sha256": "a32c001716477ac4084904f0a805b7ff5bb51b772f98b8a95673d185728d66e4",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r4law_relative8_global/cross_generator_predictions.npz",
+      "sha256": "9844a2b02d34c444d907dcf0be73ac088e877a8292cc28153f0f66afe3256b93",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_legacy8_global/cross_generator_predictions.npz",
+      "sha256": "7c2f806c567f2fe07686afbbac05cf7c9e8c1c52625bc0aeb7c0a6d309bf3e82",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_relative8_global/cross_generator_predictions.npz",
+      "sha256": "ed523294d113b93b467dcc901ee1edd641620d790ad5dead73f8a54c21e5a10f",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_relative8_local/cross_generator_predictions.npz",
+      "sha256": "cdfe9e38c6a6b1438e35c86328e68c680ed26dfd46b836516093939cd63e5f1b",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r4law_legacy8_global/cross_sensor_predictions.npz",
+      "sha256": "5ee95c61682e28d4a677fa468da47ff1dd1a315bb00e03e5814679af7e51b611",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r4law_relative8_global/cross_sensor_predictions.npz",
+      "sha256": "4ed68e3dc1a0d444239fe439a9bbd3da9c83cc066e66a8243da27179a9fa33b7",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_legacy8_global/cross_sensor_predictions.npz",
+      "sha256": "b0f7c962b87dffff4c2e67ed61800df130c3ec739101c18a9789c5b52c58567c",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_relative8_global/cross_sensor_predictions.npz",
+      "sha256": "7f6fd09063cc89f203117b2579e19d19dd4d92bb739fbfcbf7dffa67f533928f",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_relative8_local/cross_sensor_predictions.npz",
+      "sha256": "390899faef710697d8acbafee4a368da26fd0ee257ef67a3716fcc2d77a680a3",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r4law_legacy8_global/cross_sensor_generator_predictions.npz",
+      "sha256": "c1970b7f7f8dd00b683580b2ca7acd5b620554eeed4a87b1a2150156e57f8a20",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r4law_relative8_global/cross_sensor_generator_predictions.npz",
+      "sha256": "eb862702b0dbbd4879616fd3615d463e9dd60c7bc176d3f0c18d4c9e5e5b3a66",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_legacy8_global/cross_sensor_generator_predictions.npz",
+      "sha256": "5ceafffcd5e4800e394695919039816723effb48f495f39d866f86153330d9d2",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_relative8_global/cross_sensor_generator_predictions.npz",
+      "sha256": "eeb53b2f5f9b9b35cefbb8dc7bd0d7b5bf722e3b5bb9007caf47177647b121ae",
+      "ZIP_CRC": "passed"
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1/r6law_relative8_local/cross_sensor_generator_predictions.npz",
+      "sha256": "d70a69c8d8c206705c7fca52f03beeb8a1da3840fe2e24d60139c34c4e5d2b61",
+      "ZIP_CRC": "passed"
+    }
+  ],
+  "models_times_panels": 15,
+  "models_and_controls_times_panels": 27,
+  "independently_checked_metric_slices": 252,
+  "independent_rmse_mae_bias_macro_and_MannWhitney_tie_AUC_max_abs_difference": 2.220446049250313e-16,
+  "independent_float64_energy_pooling_max_abs": 1.158481577334669e-07,
+  "relative_links_resolved": [
+    "R7_FIXED100_TRANSFER_RESULTS.json",
+    "../configs/r7_transfer_audit_v1.json",
+    "../models/r7_fixed100_transfer_v1/row_bindings.json",
+    "../models/r7_fixed100_transfer_v1/results.json"
+  ],
+  "verification_reinference_or_fit_performed": false,
+  "Test_OUTER_GPU_SSH_submission": false,
+  "interpretation": "Already-seen development transfer comparison; no checkpoint/weight selection from cross results"
+}

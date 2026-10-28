@@ -1,0 +1,305 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "source_sha256": {
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "ops/train_r12_cnn.py": "2ca0ac74cf119c154ea8045997e1b3f97cbea8935b06ef797f646a5c63176611",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf"
+  },
+  "script_sha256": "f47dafd06eea882c18cf0b4154578b79b7ce344170eebfe5938ddccc0d1dda63",
+  "nine_arm_real_Adam_steps": [
+    {
+      "arm": {
+        "name": "legacy_contrast_control",
+        "long": false,
+        "HF": false,
+        "shape": false,
+        "legacy_control": true
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L0H0P0",
+        "long": false,
+        "HF": false,
+        "shape": false,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L0H0P1",
+        "long": false,
+        "HF": false,
+        "shape": true,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L0H1P0",
+        "long": false,
+        "HF": true,
+        "shape": false,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L0H1P1",
+        "long": false,
+        "HF": true,
+        "shape": true,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L1H0P0",
+        "long": true,
+        "HF": false,
+        "shape": false,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L1H0P1",
+        "long": true,
+        "HF": false,
+        "shape": true,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L1H1P0",
+        "long": true,
+        "HF": true,
+        "shape": false,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    },
+    {
+      "arm": {
+        "name": "L1H1P1",
+        "long": true,
+        "HF": true,
+        "shape": true,
+        "legacy_control": false
+      },
+      "parameters": 26953,
+      "one_Adam_step_all_gradients_finite": true,
+      "channels": [
+        4,
+        11,
+        15,
+        25
+      ],
+      "physical_pool_and_missing_q": true,
+      "score_share_identity_unless_legacy_control": true
+    }
+  ],
+  "pure_objective_gradient": {
+    "max_formula_error": 0.0,
+    "fixed_contrast_function_not_called": true,
+    "pure_gradient_restores_truth_while_legacy_distorts_tested_cells": true
+  },
+  "six_counterexamples_pure_vs_legacy": [
+    {
+      "weights": "uniform375",
+      "target": 0.05,
+      "values": {
+        "correct": {
+          "pure_loss": 1.3877787807814457e-17,
+          "legacy_loss": 0.18444396555423737
+        },
+        "wrong": {
+          "pure_loss": 0.0006089599919505417,
+          "legacy_loss": 0.03272216022014618
+        }
+      }
+    },
+    {
+      "weights": "uniform375",
+      "target": 0.2,
+      "values": {
+        "correct": {
+          "pure_loss": 2.220446049250313e-16,
+          "legacy_loss": 0.1151292473077774
+        },
+        "wrong": {
+          "pure_loss": 0.0004557600477710366,
+          "legacy_loss": 0.025938740000128746
+        }
+      }
+    },
+    {
+      "weights": "uniform375",
+      "target": 0.5,
+      "values": {
+        "correct": {
+          "pure_loss": 0.0,
+          "legacy_loss": 0.06931471824645996
+        },
+        "wrong": {
+          "pure_loss": 0.0003332000342197716,
+          "legacy_loss": 0.014723973348736763
+        }
+      }
+    },
+    {
+      "weights": "LF_dominant",
+      "target": 0.05,
+      "values": {
+        "correct": {
+          "pure_loss": 1.3877787807814457e-17,
+          "legacy_loss": 0.18444396555423737
+        },
+        "wrong": {
+          "pure_loss": 2.215560783724868e-07,
+          "legacy_loss": 0.03222755342721939
+        }
+      }
+    },
+    {
+      "weights": "LF_dominant",
+      "target": 0.2,
+      "values": {
+        "correct": {
+          "pure_loss": 2.220446049250313e-16,
+          "legacy_loss": 0.1151292473077774
+        },
+        "wrong": {
+          "pure_loss": 1.6646069411763165e-07,
+          "legacy_loss": 0.02554975636303425
+        }
+      }
+    },
+    {
+      "weights": "LF_dominant",
+      "target": 0.5,
+      "values": {
+        "correct": {
+          "pure_loss": 0.0,
+          "legacy_loss": 0.06931471824645996
+        },
+        "wrong": {
+          "pure_loss": 1.2238433555467054e-07,
+          "legacy_loss": 0.014390895143151283
+        }
+      }
+    }
+  ],
+  "actual_numeric100epoch_loop": {
+    "actual_epochs": 100,
+    "actual_Adam_steps": 200,
+    "train_rows": 4,
+    "batch3_unequal_last_batch": true,
+    "scripted_fit_validation_first_strict_min_epoch": 3,
+    "saved_best_state_equals_captured_epoch3_bitwise": true,
+    "validation_gate_or_eval_not_supplied": true,
+    "no_early_stop_on_plateau": true,
+    "saved_validation_predictions_best_checkpoint_exact": true,
+    "batch1_vs3_max_error": 0.0,
+    "first_lr": 0.001,
+    "epoch100_lr": 1.024425261896286e-05,
+    "checkpoint_removed_with_tempdir": true,
+    "warning": "Mock validation RMSE tests checkpoint selection only; it is not predictive performance."
+  },
+  "actual_acoustic_data_heldout_Test_fit_inference": false,
+  "input_arrays_and_frozen_source_unchanged": true,
+  "limits": [
+    "Numeric fixture tests implementation, not model quality or Public-score improvement.",
+    "Long/HF flags here test all9 model/loss configurations; acoustic factorial source construction is tested elsewhere.",
+    "No production weights are saved or reused. The temporary core STARTED fixture:false field is not evidence of a real-data run."
+  ],
+  "review": [
+    "Pure loss is MSE+.25 weighted cell MSE, with no presence BCE.",
+    "All nine arms use identical11channel26953parameter architecture; shape-off maps are three zero channels.",
+    "Checkpoint selection only uses validation_fit; gate/eval arrays are not accepted by fit."
+  ]
+}

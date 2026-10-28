@@ -1,0 +1,198 @@
+{
+  "status": "passed",
+  "actual_competition_training_executed": false,
+  "GPU_used": false,
+  "challenge_Test_read": false,
+  "sealed_NOAA_read": false,
+  "checks": {
+    "prebuilt_train_val_cal_without_domain": "passed",
+    "defaults_and_100_epoch_ceiling": "passed",
+    "validate_only_creates_no_run": "passed",
+    "existing_run_refused": "passed",
+    "false_readiness_and_changed_array_rejected": "passed",
+    "energy_target_mismatch_rejected_even_with_valid_hash": "passed",
+    "optional_domain_supported": "passed",
+    "cv_reads_only_train_inner_validation_never_outer_bytes": "passed",
+    "controlled_curve_early_stop_best_state_and_three_optimizers": "passed",
+    "actual_tiny_CLI_four_candidates_metrics_contrastive_checkpoint_reload": "passed",
+    "actual_tiny_CV_CLI_inner_only_outer_canary_unread": "passed",
+    "legacy_V1_checkpoint_shapes_and_predictions_unchanged": {
+      "tabm": 5.960464477539063e-08,
+      "cnn": 1.4901161193847656e-07,
+      "fdy": 1.1920928955078125e-07,
+      "itransformer": 0.0
+    },
+    "V1_model_policy_audit_and_synthetic_array_hashes_unchanged": true,
+    "GPU_runner_shell_syntax": "passed"
+  },
+  "controlled_training_summaries_and_fixture": [
+    {
+      "max_epochs": 100,
+      "epochs_run": 4,
+      "best_epoch": 2,
+      "best_validation_rmse": 0.1000000128522507,
+      "restored_validation_rmse": 0.1000000128522507,
+      "last_validation_rmse": 0.20000000707805143,
+      "stop_reason": "early_stopping_patience_reached",
+      "early_stopping_patience": 2,
+      "min_delta": 0.0,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "momentum": null,
+      "nesterov": false,
+      "scheduler": "none",
+      "dropout": 0.1,
+      "architecture": {
+        "architecture_version": 2,
+        "dropout": 0.1,
+        "model_width": 256
+      },
+      "contrastive_weight": 0.0,
+      "contrastive_temperature": 0.2,
+      "contrastive_source_groups_available": false,
+      "contrastive_limit": "Optional identity-projection ablation; source-level false negatives cannot all be excluded without batch source IDs.",
+      "selection_metric": "validation_rmse",
+      "best_checkpoint_restored": true,
+      "convergence_claim": "Stopping by patience or epoch budget does not prove a global optimum or sufficient training.",
+      "feature_version": 1,
+      "input_shape": [
+        1254
+      ],
+      "loss_components": {
+        "share_MSE": 1.0,
+        "presence_BCE": 0.03,
+        "energy_weighted_cell_MSE": 0.0
+      },
+      "spectrum_share_is_energy_weighted_sigmoid_cell_mask": false
+    },
+    {
+      "max_epochs": 1,
+      "epochs_run": 1,
+      "best_epoch": 1,
+      "best_validation_rmse": 0.1000000128522507,
+      "restored_validation_rmse": 0.1000000128522507,
+      "last_validation_rmse": 0.1000000128522507,
+      "stop_reason": "max_epochs_reached",
+      "early_stopping_patience": 2,
+      "min_delta": 0.0,
+      "optimizer": "NAdam",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "momentum": null,
+      "nesterov": false,
+      "scheduler": "cosine",
+      "dropout": 0.1,
+      "architecture": {
+        "architecture_version": 2,
+        "dropout": 0.1,
+        "model_width": 256
+      },
+      "contrastive_weight": 0.0,
+      "contrastive_temperature": 0.2,
+      "contrastive_source_groups_available": false,
+      "contrastive_limit": "Optional identity-projection ablation; source-level false negatives cannot all be excluded without batch source IDs.",
+      "selection_metric": "validation_rmse",
+      "best_checkpoint_restored": true,
+      "convergence_claim": "Stopping by patience or epoch budget does not prove a global optimum or sufficient training.",
+      "feature_version": 1,
+      "input_shape": [
+        1254
+      ],
+      "loss_components": {
+        "share_MSE": 1.0,
+        "presence_BCE": 0.03,
+        "energy_weighted_cell_MSE": 0.0
+      },
+      "spectrum_share_is_energy_weighted_sigmoid_cell_mask": false
+    },
+    {
+      "max_epochs": 1,
+      "epochs_run": 1,
+      "best_epoch": 1,
+      "best_validation_rmse": 0.1000000128522507,
+      "restored_validation_rmse": 0.1000000128522507,
+      "last_validation_rmse": 0.1000000128522507,
+      "stop_reason": "max_epochs_reached",
+      "early_stopping_patience": 2,
+      "min_delta": 0.0,
+      "optimizer": "SGD",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "momentum": 0.9,
+      "nesterov": true,
+      "scheduler": "plateau",
+      "dropout": 0.1,
+      "architecture": {
+        "architecture_version": 2,
+        "dropout": 0.1,
+        "model_width": 256
+      },
+      "contrastive_weight": 0.0,
+      "contrastive_temperature": 0.2,
+      "contrastive_source_groups_available": false,
+      "contrastive_limit": "Optional identity-projection ablation; source-level false negatives cannot all be excluded without batch source IDs.",
+      "selection_metric": "validation_rmse",
+      "best_checkpoint_restored": true,
+      "convergence_claim": "Stopping by patience or epoch budget does not prove a global optimum or sufficient training.",
+      "feature_version": 1,
+      "input_shape": [
+        1254
+      ],
+      "loss_components": {
+        "share_MSE": 1.0,
+        "presence_BCE": 0.03,
+        "energy_weighted_cell_MSE": 0.0
+      },
+      "spectrum_share_is_energy_weighted_sigmoid_cell_mask": false
+    },
+    {
+      "actual_CLI_examples": {
+        "train": 24,
+        "validation": 12,
+        "calibration": 12
+      },
+      "CNN_epochs": 1,
+      "LightGBM_trees": 2,
+      "contrastive_weight": 0.05,
+      "result_keys": [
+        "cnn_calibration",
+        "cnn_validation",
+        "constant_calibration",
+        "constant_validation",
+        "lgbm_calibration",
+        "lgbm_physics_calibration",
+        "lgbm_physics_validation",
+        "lgbm_retrieval_calibration",
+        "lgbm_retrieval_validation",
+        "lgbm_validation"
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "pipeline/train.py": "436c76ab9f36aeb22fac9987c65d6dc4cc553addd92049d49bde6e026f6884b0",
+    "pipeline/train_lgbm.py": "4081faea1b62a0ff65ddda6461e289c5b840f60526ee42e713a7d3e77da30bba",
+    "pipeline/models.py": "3f140bc5f014f104d89bc6859732e8fd9f9edd9de88941ee414d5b2fa59eb187",
+    "run_gpu.sh": "a01f636d2fb655b719dac8943c4aff05844072dce90860c0db6bf1c3d24b6661"
+  },
+  "immutable_V1_hashes": {
+    "models/fullsources_cpu_a6d7f3a5_seed42/tabm.pt": "7dea4b3c96f2ee35c48f8ee894297f41ed7d6541379eab18c0c389dbf0fa908b",
+    "models/fullsources_cpu_a6d7f3a5_seed42/fdy.pt": "c5f8b76251e1d6ac0c31ce46248505d3f5a87bd2ef86df981f7cfbed7acd683c",
+    "models/fullsources_cpu_a6d7f3a5_seed42/itransformer.pt": "a12809b5582b777f3ff7322450ef91cfe060c97b0853c39ca48955dc8e72c391",
+    "models/fullsources_cpu_a6d7f3a5_seed42/cnn.pt": "707012bf64c559ad47d83d1be3b7a39ee916997515dc125dc5766c9fc22d7a44",
+    "models/fullsources_cpu_a6d7f3a5_seed42/lgbm_retrieval_presence.txt": "b1ecb35831f84c6153d346d669f0e82d34b6a9eca3ce4fdb0126bdf3d311fbd1",
+    "models/fullsources_cpu_a6d7f3a5_seed42/lgbm_physics_share.txt": "9dd09af574af9913c85e8c85c8c6720002e93adf0906d827fe4c80280f695390",
+    "models/fullsources_cpu_a6d7f3a5_seed42/lgbm_physics_presence.txt": "396ae007086c8c429421f2127927c9eac3ac0f2e004ae02a71eb5fb0211ae6ef",
+    "models/fullsources_cpu_a6d7f3a5_seed42/lgbm_share.txt": "e76c8cb8fb6015b559cab7d8f4ea13ef7a63c496c0242134281b3218bd5c5126",
+    "models/fullsources_cpu_a6d7f3a5_seed42/lgbm_presence.txt": "98fee4e16a6d38d402779e21eb69b8abd9f2e276492c44295715686e82477a98",
+    "models/fullsources_cpu_a6d7f3a5_seed42/lgbm_retrieval_share.txt": "9be67b60e1689c175900f41d72037f821f3c8f5670029bb60c7d188741084d7c",
+    "models/fullsources_cpu_a6d7f3a5_seed42/prototypes.npz": "7384413023f50ebc4a442d35b20ee7257c7593ea3863cb13ff6c55e6475c08be",
+    "models/ensemble_foundation/postprocess.json": "3b6d902c2c96ecd74aaea56de865da00cc1c8b870720d1e1590f66bebe3ec0f5",
+    "reports/frozen_inference_audit.json": "ed85df7879772047f5ceb45d6ac5692c6fa93d7ed05e4418be97f522ea928d62",
+    "data/synthetic/fullsources_cpu_a6d7f3a5_seed42/train.npz": "85c0af3e5a2626dd6dcfa7d1b37ee2682fe341dc9f49dd0277e13744f0b2b05b",
+    "data/synthetic/fullsources_cpu_a6d7f3a5_seed42/validation.npz": "0e47f6b249bd6c4a15f966138f7e96c9368797f4fefb901c4fd188a16e6872ed",
+    "data/synthetic/fullsources_cpu_a6d7f3a5_seed42/calibration.npz": "6a8656b047cdc73ac94938b3e78fab1a6b2237563fcc82fff9c9df26579cb4ae",
+    "data/synthetic/fullsources_cpu_a6d7f3a5_seed42/domain_holdout.npz": "2af0480e5977f399dd939f3382a8cccd1b35ff617acdd19d80c827a7506cd7b7"
+  },
+  "limits": "Tiny development fixtures validate execution and isolation, not convergence, GPU memory, real-data generalization or a global optimum."
+}

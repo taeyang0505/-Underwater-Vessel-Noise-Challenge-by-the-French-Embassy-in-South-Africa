@@ -1,0 +1,92 @@
+{
+  "status": "passed_numeric_loader_preflight",
+  "scope": "numeric32windows, noactualsourcepanels/Test/fit",
+  "CPUthreads": 2,
+  "individual_model_catalog_count": 23,
+  "strict_catalog_pinned_files": 1840,
+  "model_timings": [
+    {
+      "name": "R9_bg_cnn",
+      "load_s": 3.230932750739157,
+      "infer32_s": 0.19769937545061111,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R9_tfgrid_fdy_conformer",
+      "load_s": 0.1579025834798813,
+      "infer32_s": 0.6176267499104142,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R9_fdy",
+      "load_s": 0.01883724983781576,
+      "infer32_s": 0.030747000128030777,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R9_itransformer",
+      "load_s": 0.025821125134825706,
+      "infer32_s": 0.004026499576866627,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R14_itransformer",
+      "load_s": 0.3499393742531538,
+      "infer32_s": 0.004299040883779526,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R14_fdy",
+      "load_s": 0.14744291733950377,
+      "infer32_s": 0.029942291788756847,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R14_bg_cnn",
+      "load_s": 0.21056745946407318,
+      "infer32_s": 0.18802504148334265,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R14_tfgrid_fdy_conformer",
+      "load_s": 0.14542729128152132,
+      "infer32_s": 0.6020118333399296,
+      "finite": true,
+      "pool_gap": 0.0
+    },
+    {
+      "name": "R9_tree",
+      "load_s": 0.05662900023162365,
+      "infer32_s": 0.0447372505441308,
+      "finite": true,
+      "threads_override_runtime_only": 2
+    },
+    {
+      "name": "R14_tree",
+      "load_s": 0.03863570839166641,
+      "infer32_s": 0.04689158406108618,
+      "finite": true,
+      "threads_override_runtime_only": 2
+    }
+  ],
+  "pooling_and_missing_q_fixture_max": 0,
+  "all8NNfull_load_and_numeric_forward": true,
+  "tree_representatives_R9_R14_load_forward": true,
+  "production_training_process_signals_or_modification": false,
+  "TF37_incomplete_budget_diagnostic": true,
+  "estimated_9600rows_full23models_minutes": [
+    12,
+    20
+  ],
+  "runtime_only_R9tree_threads_override": 2,
+  "source_sha256": {
+    "ops/r16_evaluate_frozen.py": "5aca7edc5458bd26c0def06eb5c2478ae1f7dbd3895d77b03119ef622de6a37b"
+  }
+}

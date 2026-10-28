@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "kind": "bg_cnn",
+  "scope": "Synthetic two-microbatch-update CUDA smoke only",
+  "production_training_executed": false,
+  "actual_TRAIN_INNER_OUTER_Test_calibration_sealed_opened": false,
+  "synthetic_known_q_y_used_as_supervision_only": true,
+  "one_live_neural_object": true,
+  "automatic_resize_retry_or_precision_fallback": false,
+  "GPU_execution_attempted": true,
+  "GPU_used": false,
+  "script_sha256": "c982b7229dd3d8a6ab5384203e9cf90f98a68f9a0edcfbb43deadec6376afe42",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "torch": "2.8.0+cu128",
+  "CUDA_available": true,
+  "error_type": "ValueError",
+  "error": "Expected a torch.device with a specified index or an integer, but got:cuda",
+  "OOM": false,
+  "memory_at_failure": {
+    "allocated_bytes": 0,
+    "reserved_bytes": 0,
+    "peak_allocated_bytes": 0,
+    "peak_reserved_bytes": 0
+  }
+}

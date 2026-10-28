@@ -1,0 +1,21 @@
+{
+  "status": "complete_verified_diagnostic_only",
+  "files_sha256": {
+    "README.md": "9662a8d4439091f21615b2164ba4450939591ced560a76c1b0e7c01589902dc2",
+    "independent_numeric_verification.json": "7cd08a91c6b67167386f771d96a5bd722622580a4f52c06d42a3bae51a534128",
+    "metrics.csv": "cc155ca5324d90f5a1aebbf7724c66f263e87464e9b6bc6e08d8ae2202739d0c",
+    "natural_control_membership.parquet": "b547defd8f3b732b9ea835a8538b2118c62a7cef0f77e585f191097402820312",
+    "natural_control_predictions.npz": "e9a0f94794aefa0ff0215aa8747efd8766b8c91d61d132d1c0042a067f1361b2",
+    "natural_high_membership.parquet": "e92124dfccbfee3a2e0c1e37ff1a6ae2b05c200e7b812ed7b75fde697d358e76",
+    "natural_high_predictions.npz": "429739357bdbe72639536a0d4339ebe15d8b86d5a36235d444d98080d2218b5d",
+    "panel_selection.json": "9af2bf18cf7ac3a50eb33aae21cd9ab80c977aa5f0f6d01d2fafe3a472aa4aa1",
+    "plan.json": "78db16aa4525a78c684963fb6a0d8c53abafc27581ec8762d0bb9391d5146d22",
+    "results.json": "460ca7f10f787df30e2af699cac6398d7a1ab662b3338aa27adbd61d53dce458",
+    "synthetic_positive_membership.parquet": "159d71e5ed5111093e7229a0658cc66a4352734eb8343d5552a5cd1e55bd8988",
+    "synthetic_positive_predictions.npz": "d436f6dc73af4fd7ab8e186e5061bf0139c5b58f168d45206a5853a74b8e5bcb"
+  },
+  "code_file": "ops/r10_natural_variability_audit.py",
+  "code_sha256": "16b9aaee751c702c82fe44332821c7be6a8953e4be6b7a2dc3d3e303f619e396",
+  "source_model_policy_unchanged": true,
+  "no_Test_report_fit_network_external_transmission": true
+}

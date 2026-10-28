@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "real_proc_or_PID_accessed": false,
+  "real_signals_sent": false,
+  "cases": {
+    "success": {
+      "passed": true,
+      "signals": 2,
+      "ledger_incomplete_honestly_recorded": true
+    },
+    "pid_reused_arm": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    },
+    "summary_exists_arm": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    },
+    "later_fold_exists_arm": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    },
+    "config_tamper_trigger": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    },
+    "code_tamper_after_pause": {
+      "passed": true,
+      "signals": 2,
+      "status": "failed_after_pause"
+    },
+    "later_fold_race": {
+      "passed": true,
+      "signals": 2,
+      "status": "failed_after_pause"
+    },
+    "incomplete_summary_after_pause": {
+      "passed": true,
+      "signals": 2,
+      "status": "failed_after_pause"
+    },
+    "duplicate_claim": {
+      "passed": true,
+      "signals": 0,
+      "status": "preflight_passed"
+    },
+    "driver_exit_health": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    },
+    "FAILED_health": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    },
+    "timeout_health": {
+      "passed": true,
+      "signals": 0,
+      "status": "failed_before_pause"
+    }
+  },
+  "guard_source_sha256": "04985407f260200abc7fc5102dfed63e7fbf77a6070ad728a661da3166d4113c"
+}

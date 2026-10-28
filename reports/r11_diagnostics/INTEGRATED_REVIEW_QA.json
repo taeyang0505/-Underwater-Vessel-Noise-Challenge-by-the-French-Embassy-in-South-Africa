@@ -1,0 +1,180 @@
+{
+  "format": "r11_integrated_readonly_fact_review_v1",
+  "status": "passed_with_minor_clarifications",
+  "created_utc": "2026-10-26T15:31:54.613400+00:00",
+  "reviewed_input_sha256": {
+    "reports/R11_PINPOINT_DIAGNOSTICS.md": "a6c5b4329d712bbe2c173a5c8938fd8768e16f4a32476538802fa5605d2a2b33",
+    "reports/R11_IMPROVEMENT_ABLATION_PLAN.json": "ff294ad2a57d00e906b9dfe00e9976d35e3ca62d5479d0231ebd897fc6fb0c45",
+    "reports/r11_diagnostics/st_francis_density_r2/results.json": "4eb7731ccaab1e7e46c2dd968093c17ecc213a25eebd5a21b8dba0d89cb8dd2a",
+    "reports/r11_diagnostics/asymmetric_feasible_models_r1/RESULTS.json": "b2f892e8c9ca9a7e51aad89b18e76f040f7ecca153192a017a578865ff7eeea1",
+    "reports/r11_diagnostics/saved_query_audit_r1/RESULTS.json": "4103016d571f3de86e8295c37fddd651941edf42714cba767cd11479b2d597e8",
+    "reports/r11_diagnostics/full_support_hf_r1/crossing_metrics.csv": "082a90dc6dd0464e65c47b2b571ae3ea1d3b359ce49fe857d38c50081c7c11b5",
+    "reports/r11_diagnostics/saved_query_audit_r1/distribution_summary.csv": "81eeb653b247f8b850e4029d9ea31bb286c3d0e14d53425ba9a0c01cf7f0e763"
+  },
+  "checks": [
+    {
+      "check": "R11-4 table sparse",
+      "passed": true
+    },
+    {
+      "check": "R11-4 table dense",
+      "passed": true
+    },
+    {
+      "check": "R11-4 table dense_mask5",
+      "passed": true
+    },
+    {
+      "check": "R11-3 predicted moments CNN",
+      "passed": true
+    },
+    {
+      "check": "R11-2 table CNN",
+      "passed": true
+    },
+    {
+      "check": "R11-3 predicted moments TFGrid",
+      "passed": true
+    },
+    {
+      "check": "R11-2 table TFGrid",
+      "passed": true
+    },
+    {
+      "check": "R11-3 predicted moments FDY",
+      "passed": true
+    },
+    {
+      "check": "R11-2 table FDY",
+      "passed": true
+    },
+    {
+      "check": "R11-3 predicted moments iTransformer",
+      "passed": true
+    },
+    {
+      "check": "R11-2 table iTransformer",
+      "passed": true
+    },
+    {
+      "check": "R11-3 predicted moments LightGBM",
+      "passed": true
+    },
+    {
+      "check": "R11-2 table LightGBM",
+      "passed": true
+    },
+    {
+      "check": "R11-3 predicted moments all5",
+      "passed": true
+    },
+    {
+      "check": "R11-2 table all5",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table r9_original/hf_high",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table r9_original/st_francis_dense",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table full_smooth12/hf_high",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table full_smooth12/st_francis_dense",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table full_smooth13/hf_high",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table full_smooth13/st_francis_dense",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table full_smooth15/hf_high",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table full_smooth15/st_francis_dense",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table native_long15/hf_high",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table native_long15/st_francis_dense",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table stationary15_control/hf_high",
+      "passed": true
+    },
+    {
+      "check": "R11-1 table stationary15_control/st_francis_dense",
+      "passed": true
+    },
+    {
+      "check": "R11-1 210 combinations",
+      "passed": true
+    },
+    {
+      "check": "R11-4 source counts and periods",
+      "passed": true
+    },
+    {
+      "check": "R11-4 fiveview and exact20percent",
+      "passed": true
+    },
+    {
+      "check": "R11-4 label change disclosed",
+      "passed": true
+    },
+    {
+      "check": "R11-3 query truth unknown",
+      "passed": true
+    },
+    {
+      "check": "R11-2 extension declared",
+      "passed": true
+    },
+    {
+      "check": "8 improvement arms remain plan-only",
+      "passed": true
+    }
+  ],
+  "blocking_factual_errors": [],
+  "minor_clarifications": [
+    {
+      "severity": "wording",
+      "location": "MD section3",
+      "current": "관측q",
+      "recommended": "관측셀에서 모델이 예측한 마스크 q_hat",
+      "reason": "Predicted mask, not Test ground truth."
+    },
+    {
+      "severity": "wording",
+      "location": "MD section1",
+      "current": "순수배경 분",
+      "recommended": "추가성분 A=0인 분",
+      "reason": "No controlled addition does not establish natural-vessel absence."
+    },
+    {
+      "severity": "minor_rounding",
+      "location": "MD section4 CI lower bound",
+      "actual": 0.04444461767819633,
+      "five_decimal_rounding": 0.04444,
+      "printed": 0.04445,
+      "conclusion_affected": false
+    }
+  ],
+  "new_inference_training_model_load_Test_source_arrays_network_submission": false,
+  "original_code_model_policy_data_modified": false,
+  "scope": "Read-only saved JSON/CSV/MD comparison; no new experiment."
+}

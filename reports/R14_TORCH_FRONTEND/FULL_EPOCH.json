@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "fold": 0,
+  "epoch": 1,
+  "actual_primary_rows": 78869,
+  "observed_zero_rows": 15774,
+  "CPU_threads": 2,
+  "batch_size": 128,
+  "raw_synthesis_collation_seconds": 12.95713016577065,
+  "batched_Torch_features_seconds": 2.3216030756011605,
+  "total_seconds_including_stream_hash": 15.817272250540555,
+  "feature_stream_sha256": "3ace481bd41d3e01e25b22463d9a3af703bb169fb38aa227826ba3c6c72d7678",
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "code_sha256": {
+    "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+    "pipeline/raw_frontend_r14.py": "244d03fc85e962b5722ebdf50751a9e6349737818f47ecccdea2c5fab49a516c",
+    "ops/benchmark_r14_full_epoch.py": "0356181b41edf5e71ace4b3bbfca0b45a39251c4342c0a5cb3e249bbfcde7612"
+  },
+  "DataLoader_multiprocessing_backbone_optimizer_GPU_steps": false,
+  "concurrent_MPS_diagnostic_CPU_load_present": true,
+  "not_a_GPU_epoch_or_fulltraining_estimate": true,
+  "original_sources_unchanged": true,
+  "Test_report_newfit_or_network": false
+}

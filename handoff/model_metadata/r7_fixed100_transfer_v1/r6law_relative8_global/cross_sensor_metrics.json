@@ -1,0 +1,170 @@
+{
+  "metrics": {
+    "n": 1024,
+    "rmse": 0.0950611310111758,
+    "site_macro_rmse": 0.0950611310111758,
+    "mae": 0.047728332468852386,
+    "bias": 0.028549318721334163,
+    "site_slices": {
+      "7 St_Francis": {
+        "n": 1024,
+        "rmse": 0.0950611310111758,
+        "mae": 0.047728332468852386,
+        "bias": 0.028549318721334163,
+        "presence_auc": 0.9196256601429016,
+        "presence_auc_share_only": 0.8913482447965206,
+        "site_macro_rmse": 0.0950611310111758
+      }
+    },
+    "presence_auc": 0.9196256601429016,
+    "presence_auc_share_only": 0.8913482447965206,
+    "family_slices": {
+      "minute_first": {
+        "n": 404,
+        "rmse": 0.1037802481047539,
+        "mae": 0.06006456821888825,
+        "bias": 0.03156056713037089,
+        "presence_auc": 0.9322656734947238,
+        "presence_auc_share_only": 0.8986219739292365,
+        "site_macro_rmse": 0.1037802481047539
+      },
+      "short_passage": {
+        "n": 415,
+        "rmse": 0.09241045007733542,
+        "mae": 0.043552973355908936,
+        "bias": 0.023977807963866397,
+        "presence_auc": 0.9233994967850153,
+        "presence_auc_share_only": 0.8910399776348896,
+        "site_macro_rmse": 0.09241045007733542
+      },
+      "zero": {
+        "n": 205,
+        "rmse": 0.08139959475274387,
+        "mae": 0.031869477780350194,
+        "bias": 0.031869477780350194,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.08139959475274387
+      }
+    },
+    "target_slices": {
+      "zero": {
+        "n": 580,
+        "rmse": 0.07850754604674086,
+        "mae": 0.029204603990448396,
+        "bias": 0.029204603990448396,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.07850754604674086
+      },
+      "positive_low_to_.1": {
+        "n": 200,
+        "rmse": 0.1096986410530051,
+        "mae": 0.061112682202051974,
+        "bias": 0.04419822145016578,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.1096986410530051
+      },
+      ".1_to_.4": {
+        "n": 144,
+        "rmse": 0.1078451720755941,
+        "mae": 0.07572772893368089,
+        "bias": 0.018282629116023946,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.1078451720755941
+      },
+      ".4_to_1": {
+        "n": 100,
+        "rmse": 0.12637813284910265,
+        "mae": 0.08807812726784336,
+        "bias": 0.008234891734455097,
+        "presence_auc": null,
+        "presence_auc_share_only": null,
+        "site_macro_rmse": 0.12637813284910265
+      }
+    }
+  },
+  "predictions_path": "models/r7_fixed100_transfer_v1/r6law_relative8_global/cross_sensor_predictions.npz",
+  "predictions_sha256": "7f6fd09063cc89f203117b2579e19d19dd4d92bb739fbfcbf7dffa67f533928f",
+  "checkpoint_sha256": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+  "epoch": 31,
+  "input_npz_sha256": "d21c6433dde6701ff9d4cb566a481fc7a55d19c4165b21283919cf29abb32aca",
+  "query_identity": {
+    "examples": 1024,
+    "db_sha256": "73f39f8926c26fb359af61d386c6873354ab8b8bb76b2e20376d3e2b480f46df",
+    "base_window_index_order_sha256": "0195063a121ca5b568c8262878cf36e8e3a3e7d054f15e15fd40dde2f05cf6b1",
+    "site_order_sha256": "d1423abb5585c8df91769a71830410286862eb4a40d2344171d007a1b5365005"
+  },
+  "target_identity": {
+    "share_sha256": "e795ad75995b1c9a2c8b11c3f2b0c87e005812369d19f5d7f6a60466e0d8e1d6",
+    "presence_sha256": "57249d802bfeb5d588854f9e2518a8817f859503943ff297c0a1fd26b940eac1"
+  },
+  "maximum_predicted_physical_pooling_error": 1.1920928955078125e-07,
+  "elapsed_seconds": 1.229879416525364,
+  "old_ES_checkpoint_metrics": {
+    "n": 1024,
+    "rmse": 0.11556979479633751,
+    "site_macro_rmse": 0.11556979479633751,
+    "mae": 0.06722326483811719,
+    "bias": 0.05557163004720202,
+    "site_slices": {
+      "7 St_Francis": {
+        "n": 1024,
+        "rmse": 0.11556979479633751,
+        "mae": 0.06722326483811719,
+        "bias": 0.05557163004720202
+      }
+    },
+    "presence_auc": 0.9015998757378066,
+    "presence_auc_share_only": 0.8596808014911463,
+    "family_slices": {
+      "minute_first": {
+        "n": 404,
+        "rmse": 0.12512422845615012,
+        "mae": 0.07915887174100504,
+        "bias": 0.06056071378107278
+      },
+      "short_passage": {
+        "n": 415,
+        "rmse": 0.10959039440154053,
+        "mae": 0.06289950978728079,
+        "bias": 0.05225464663045067
+      },
+      "zero": {
+        "n": 205,
+        "rmse": 0.10746989557906489,
+        "mae": 0.052454353410460654,
+        "bias": 0.052454353410460654
+      }
+    },
+    "target_slices": {
+      "zero": {
+        "n": 580,
+        "rmse": 0.10526746022204693,
+        "mae": 0.0531530891885707,
+        "bias": 0.0531530891885707
+      },
+      "positive_low_to_.1": {
+        "n": 200,
+        "rmse": 0.13325604867227034,
+        "mae": 0.0820926160622445,
+        "bias": 0.07357211986341636
+      },
+      ".1_to_.4": {
+        "n": 144,
+        "rmse": 0.1251381497944327,
+        "mae": 0.08883103703640266,
+        "bias": 0.05137494479018838
+      },
+      ".4_to_1": {
+        "n": 100,
+        "rmse": 0.12014163894172221,
+        "mae": 0.08797638919170112,
+        "bias": 0.03964141416493463
+      }
+    }
+  },
+  "RMSE_difference_from_old_ES": -0.02050866378516171
+}

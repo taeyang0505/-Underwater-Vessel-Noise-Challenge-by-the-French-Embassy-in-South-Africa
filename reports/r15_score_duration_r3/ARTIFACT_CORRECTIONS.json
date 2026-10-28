@@ -1,0 +1,22 @@
+{
+  "status": "passed_final_safe_artifacts",
+  "final_version": "r3",
+  "historical_versions_preserved": [
+    "r15_score_duration_r1",
+    "r15_score_duration_r2"
+  ],
+  "header_clarification": "fraction_of_HFgt15_intersection=n(condition AND HF>15)/n(HF>15); unconditional n is separate",
+  "source_id_fix": "pandas window_id.astype(str).to_numpy() hadobjectdtype; final explicit np.asarray(ids,dtype=str) is Unicode; never enable pickle",
+  "numeric_derived_arrays_bitwise_equivalent_to_r2": 180,
+  "derived_NPZ_files_all_fields_loadable_without_pickle": 5,
+  "all_source_ID_arrays_unique_Unicode": true,
+  "SA_QC_source_IDs_exact_original_TRAIN_metadata_order": true,
+  "all7_CSV_bytes_identical_to_r2": true,
+  "R9_score_vs_own_share": {
+    "n": 1500,
+    "Pearson": 0.937496965416487,
+    "Spearman": 0.9678788203620347,
+    "label_AUC_claimed": false
+  },
+  "physical_statistics_thresholds_or_models_changed": false
+}

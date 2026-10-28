@@ -1,0 +1,19 @@
+{
+  "version": "pipeline_r2_completed_v1",
+  "generator": "built-in image_gen",
+  "style_reference": "user-provided image (2).png",
+  "output": "pipeline_r2_completed_v1.png",
+  "sha256": "cd9288d91185804ba52d713fec37bd356f48339a7317b4e5d85dced085ffb7cb",
+  "prompt_file": "pipeline_r2_completed_v1_prompt.md",
+  "prompt_sha256": "ce096b8c6bc582b6458af56f68f02e578569860f58565193e61c644aca2a5a2a",
+  "code_config": "configs/group_cv_physics_training_r2.json",
+  "config_sha256": "92bcf84892839fdf9e1963d4448229923cf34a80a4dbe9ecd9eb6ae27a5452f4",
+  "dataset_version": "group_cv_physics_v2_r1",
+  "training_state": "R2 full five-fold completed",
+  "inference_panel": "frozen inference specification; Test execution pending",
+  "R2_officially_submitted": false,
+  "R3": "separate completed shrinkage experiment, not promoted",
+  "spectrograms": "schematic, not source measurements",
+  "reported_RMSE": "measured own-synthetic OOF, not public score",
+  "caption_review": "Compared labels to saved R2 configuration and full-pipeline report; mask branches use energy-weighted scalar pooling."
+}

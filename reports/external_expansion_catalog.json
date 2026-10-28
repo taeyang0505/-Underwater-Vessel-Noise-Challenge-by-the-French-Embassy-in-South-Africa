@@ -1,0 +1,128 @@
+{
+  "retrieved_date": "2026-10-24",
+  "public_declaration_status": "draft only; not posted",
+  "challenge_test_used": false,
+  "previous_OC02_02_used": false,
+  "sources": [
+    {
+      "name": "NOAA SanctSound additional deployments",
+      "licence": "CC0-1.0",
+      "source_urls": [
+        "https://www.fisheries.noaa.gov/inport/item/80342",
+        "https://www.fisheries.noaa.gov/inport/item/80343"
+      ],
+      "evidence": [
+        {
+          "file": "external/expansion_research/other_sources/noaa_raw_licence.html",
+          "sha256": "5b16f024c1477034086b0203b26ad4438ab89f72a7c501be78db56c892ae2b6c"
+        },
+        {
+          "file": "external/expansion_research/other_sources/noaa_products_licence.html",
+          "sha256": "276d57591d025072e46c6628ffb621bd3036425037a5181d7041dcee145f1420"
+        }
+      ],
+      "status": "12 primary native 15-minute references verified; one NoShip control quarantined",
+      "actual_clips": 12,
+      "actual_minutes": 180,
+      "actual_stations": 6,
+      "actual_recording_days": 12,
+      "header_fs_hz": [
+        48000,
+        96000
+      ],
+      "native_15min_continuity_verified": true,
+      "transfer_bytes_including_probes": 523966748,
+      "adapter_manifest": "external/expansion_research/native_reference_adapter.parquet",
+      "limitation": "Ship annotation is not isolated vessel sound or a verified hull identity. Only pinned source ranges, not full-file provider checksum, verified."
+    },
+    {
+      "name": "PORTIA",
+      "licence": "CC-BY-4.0",
+      "source_urls": [
+        "https://zenodo.org/records/21409381",
+        "https://www.nature.com/articles/s41597-026-08384-9"
+      ],
+      "evidence": [
+        {
+          "file": "external/expansion_research/other_sources/19204539_latest.json",
+          "sha256": "a5ba265912ed8a2825f5c9c3936133d0c032a05422d0a6009f81ba7ff423f112"
+        }
+      ],
+      "pinned_record": "21409381",
+      "status": "four metadata archives downloaded and full MD5 verified; audio not acquired",
+      "public_metadata_counts": {
+        "pinned_record": "21409381",
+        "downloaded_audio": false,
+        "verified_metadata_archives": 4,
+        "unique_public_windows": 95022,
+        "recording_days": 19,
+        "first_utc": "2025-05-16 16:32:21+00:00",
+        "last_utc": "2025-06-12 15:21:59+00:00",
+        "unique_nonnull_primary_MMSI": 196,
+        "provided_split_isolation_claim_not_independent_station_split": true,
+        "native_fs_frames_continuity": "not yet verified from audio headers; do not treat these 3-second windows as real 15-minute passages"
+      },
+      "audio_archive_bytes": 74746816056,
+      "native_15min_continuity_verified": false,
+      "next_gate": "Audit original audio headers, sample rate, gaps and interval continuity. Do not concatenate short windows into a claimed measured passage."
+    },
+    {
+      "name": "VLIZ AIS-annotated North Sea hydrophone recordings",
+      "licence": "CC-BY-4.0",
+      "source_urls": [
+        "https://zenodo.org/records/17233667",
+        "https://doi.org/10.14284/723"
+      ],
+      "evidence": [
+        {
+          "file": "external/expansion_research/other_sources/17233667_latest.json",
+          "sha256": "d2ea2842ec5163b48c83c107d42923d212b0bbe36c7c92030eceb17285b479cd"
+        }
+      ],
+      "status": "official metadata and licence verified; audio not acquired",
+      "advertised_10sec_segments": 27524,
+      "advertised_recording_days": 116,
+      "advertised_stations": 2,
+      "archive_bytes": 26005892324,
+      "native_15min_continuity_verified": false,
+      "next_gate": "Confirm native fs, actual frame length, timestamp spacing, vessel provenance and all 25-band support before use."
+    },
+    {
+      "name": "MBARI Pacific Sound",
+      "licence": "CC-BY-4.0 for data",
+      "source_urls": [
+        "https://www.mbari.org/data/passive-acoustic-data/",
+        "https://docs.mbari.org/pacific-sound/quickstart/"
+      ],
+      "evidence": [
+        {
+          "file": "external/expansion_research/other_sources/mbari_licence.html",
+          "sha256": "af5d19238e73dabaa56b2026aea3c428b9fa80e40ebd7d94077d4ac55d105b84"
+        }
+      ],
+      "status": "official licence and access documentation verified; audio not acquired",
+      "documented_raw_fs_hz": 256000,
+      "approx_raw_bytes_per_10min": 460800000,
+      "native_15min_continuity_verified": false,
+      "next_gate": "Join only header/timestamp-verified adjacent raw files; 16kHz and 2kHz decimated views cannot cover the complete 25 target bands."
+    },
+    {
+      "name": "Vulcano Island hydrothermal field",
+      "licence": "CC-BY-4.0",
+      "source_urls": [
+        "https://zenodo.org/records/21561423"
+      ],
+      "evidence": [
+        {
+          "file": "external/expansion_research/other_sources/21561423.json",
+          "sha256": "0b46da0d3ea1000d83eecfb3496d48b05638d52ecff77cd7ba8f57060dfbb761"
+        }
+      ],
+      "status": "official licence and metadata verified; audio not acquired",
+      "documented_fs_hz": 32000,
+      "example_raw_archive_bytes": 170728055,
+      "native_15min_continuity_verified": false,
+      "next_gate": "Environmental diversity only; audit example native duration and gaps, and do not assert ship-positive or verified ship-absent truth."
+    }
+  ]
+}

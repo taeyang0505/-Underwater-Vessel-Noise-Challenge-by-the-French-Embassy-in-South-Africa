@@ -1,0 +1,13 @@
+{
+  "phase": "cpu_ready_awaiting_gpu_pilot",
+  "preflight": "reports/R5_TRAINING_PREFLIGHT.json",
+  "config_sha256": "2c371c556dcb084fc892dab6fbdc069e895e1df9a1d053797f734d496b30e7dd",
+  "real_GPU_training_executed": false,
+  "new_OOF_RMSE": null,
+  "model_status": "5 core candidates plus2 light controls; CPU synthetic wiring passed",
+  "outlier_policy": "audit completed; retain existing clean TRAIN; no additional high-dB/share exclusion; Cape_Recife/Riy_Banks have zero TRAIN support under current whole-window boundary exclusion",
+  "GPU_rented_started_or_contacted": false,
+  "Test_accessed": false,
+  "official_submission": false,
+  "outlier_audit": "reports/R5_OUTLIER_AUDIT.md"
+}

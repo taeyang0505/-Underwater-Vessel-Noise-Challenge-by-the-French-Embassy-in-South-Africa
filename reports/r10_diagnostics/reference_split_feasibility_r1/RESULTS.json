@@ -1,0 +1,4558 @@
+{
+  "format": "r10_reference_split_feasibility_results_v1",
+  "status": "completed",
+  "created_utc": "2026-10-26T14:10:22.871999+00:00",
+  "predeclared_plan_sha256": "5263f2be228532916f74fc8e12d29a694baa2c01a8f9185289a3d3b5db7b8e48",
+  "source_sha256": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+  "graph": {
+    "clips": 509,
+    "unique_hulls": 178,
+    "recording_days": 33,
+    "distinct_hull_day_pairs": 381,
+    "bipartite_nodes": 211,
+    "bipartite_components": 1,
+    "clip_union_graph_components": 1,
+    "clip_union_graph_edges": 5932,
+    "clip_graph_edge_criteria_counts": {
+      "same_hull": 2157,
+      "same_recording_day": 3924,
+      "same_original_WAV_bytes": 0,
+      "UTC_interval_overlap": 0
+    },
+    "hull_articulation_nodes": [],
+    "day_articulation_nodes": [
+      "2016-05-14",
+      "2017-01-28",
+      "2016-06-05",
+      "2016-07-30",
+      "2017-04-04",
+      "2016-08-28",
+      "2016-08-29",
+      "2016-07-08",
+      "2016-09-08",
+      "2016-05-25",
+      "2016-07-07",
+      "2016-07-12",
+      "2016-07-10",
+      "2016-07-13",
+      "2016-11-10",
+      "2017-01-12",
+      "2016-09-27",
+      "2016-09-06",
+      "2016-07-06",
+      "2017-05-23",
+      "2016-08-14",
+      "2016-05-09",
+      "2016-07-14",
+      "2016-06-25",
+      "2016-07-09",
+      "2016-07-24",
+      "2016-11-11",
+      "2016-08-13",
+      "2016-06-04",
+      "2016-09-04",
+      "2016-07-11",
+      "2016-06-01",
+      "2017-05-28"
+    ],
+    "simple_graph_bridge_pair_count": 117,
+    "bridge_pair_details": [
+      {
+        "hull": "H033",
+        "day": "2017-05-28",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H116",
+        "day": "2017-05-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H074",
+        "day": "2017-05-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H019",
+        "day": "2017-05-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H064",
+        "day": "2017-05-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H043",
+        "day": "2017-05-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H004",
+        "day": "2017-05-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 17,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H067",
+        "day": "2016-09-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H017",
+        "day": "2016-09-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H107",
+        "day": "2016-09-04",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H071",
+        "day": "2017-01-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H101",
+        "day": "2017-01-28",
+        "clips_at_pair": 3,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          506
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H080",
+        "day": "2017-01-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H169",
+        "day": "2017-01-28",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H158",
+        "day": "2017-01-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H044",
+        "day": "2017-01-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H063",
+        "day": "2016-07-24",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H138",
+        "day": "2016-07-24",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H170",
+        "day": "2016-07-24",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H079",
+        "day": "2016-09-08",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 10,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H175",
+        "day": "2016-09-08",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 10,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H008",
+        "day": "2017-01-12",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H084",
+        "day": "2017-01-12",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H165",
+        "day": "2017-01-12",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H147",
+        "day": "2017-01-12",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H032",
+        "day": "2016-08-14",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H025",
+        "day": "2016-08-14",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H059",
+        "day": "2016-08-14",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H026",
+        "day": "2017-05-23",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H117",
+        "day": "2017-05-23",
+        "clips_at_pair": 3,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          506
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H037",
+        "day": "2017-05-23",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H159",
+        "day": "2017-05-23",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H021",
+        "day": "2017-05-23",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H086",
+        "day": "2017-05-23",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H176",
+        "day": "2016-07-12",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 16,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H103",
+        "day": "2016-07-12",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 16,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H173",
+        "day": "2016-07-12",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 16,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H040",
+        "day": "2016-07-12",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 16,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H104",
+        "day": "2016-07-14",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 8,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H003",
+        "day": "2016-09-27",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H028",
+        "day": "2016-09-27",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H054",
+        "day": "2016-09-27",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H105",
+        "day": "2016-07-11",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H174",
+        "day": "2016-07-11",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H069",
+        "day": "2016-06-25",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 10,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H155",
+        "day": "2016-06-25",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 10,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H137",
+        "day": "2016-05-25",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H018",
+        "day": "2016-05-25",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H133",
+        "day": "2016-05-25",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H106",
+        "day": "2016-05-25",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H023",
+        "day": "2016-09-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 13,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H171",
+        "day": "2016-09-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 13,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H012",
+        "day": "2016-08-29",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H058",
+        "day": "2016-08-29",
+        "clips_at_pair": 3,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          506
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H118",
+        "day": "2016-08-29",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H056",
+        "day": "2016-08-29",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H041",
+        "day": "2016-08-29",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H115",
+        "day": "2016-08-29",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H130",
+        "day": "2016-08-29",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H047",
+        "day": "2017-04-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H087",
+        "day": "2017-04-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H178",
+        "day": "2017-04-04",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H078",
+        "day": "2017-04-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H081",
+        "day": "2017-04-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H152",
+        "day": "2016-06-01",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H027",
+        "day": "2016-06-01",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H144",
+        "day": "2016-06-01",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H172",
+        "day": "2016-08-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H011",
+        "day": "2016-08-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H082",
+        "day": "2016-08-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H022",
+        "day": "2016-08-28",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 14,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H095",
+        "day": "2016-07-30",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H060",
+        "day": "2016-05-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H073",
+        "day": "2016-05-09",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H123",
+        "day": "2016-05-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H125",
+        "day": "2016-05-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H146",
+        "day": "2016-06-05",
+        "clips_at_pair": 3,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          506
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H005",
+        "day": "2016-06-05",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H050",
+        "day": "2016-08-13",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H156",
+        "day": "2016-08-13",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H007",
+        "day": "2016-08-13",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H090",
+        "day": "2016-08-13",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H098",
+        "day": "2016-08-13",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H110",
+        "day": "2016-06-04",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H136",
+        "day": "2016-06-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H049",
+        "day": "2016-06-04",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H048",
+        "day": "2016-07-08",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H016",
+        "day": "2016-07-08",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 9,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H145",
+        "day": "2016-11-11",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H068",
+        "day": "2016-11-11",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H046",
+        "day": "2016-07-09",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H045",
+        "day": "2016-07-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H151",
+        "day": "2016-07-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H006",
+        "day": "2016-07-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H141",
+        "day": "2016-07-09",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 7,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H085",
+        "day": "2016-07-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 8,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H097",
+        "day": "2016-07-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 8,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H131",
+        "day": "2016-07-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 8,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H094",
+        "day": "2016-07-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 8,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H029",
+        "day": "2016-07-06",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 8,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H140",
+        "day": "2016-07-13",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 10,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H112",
+        "day": "2016-07-13",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 10,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H075",
+        "day": "2016-07-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H072",
+        "day": "2016-07-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H153",
+        "day": "2016-07-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H108",
+        "day": "2016-07-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 12,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H042",
+        "day": "2016-11-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 13,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H113",
+        "day": "2016-11-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 13,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H066",
+        "day": "2016-11-10",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 13,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H129",
+        "day": "2016-07-07",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H014",
+        "day": "2016-07-07",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H119",
+        "day": "2016-07-07",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 11,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H128",
+        "day": "2016-05-14",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H036",
+        "day": "2016-05-14",
+        "clips_at_pair": 2,
+        "single_clip_multigraph_bridge": false,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          507
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H077",
+        "day": "2016-05-14",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H121",
+        "day": "2016-05-14",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      },
+      {
+        "hull": "H015",
+        "day": "2016-05-14",
+        "clips_at_pair": 1,
+        "single_clip_multigraph_bridge": true,
+        "hull_degree": 1,
+        "day_degree": 15,
+        "remaining_nonempty_clip_component_sizes": [
+          508
+        ],
+        "meaningful_two_source_split": false
+      }
+    ],
+    "bridge_pairs_hull_degree1": 117,
+    "bridge_pairs_whose_deletion_leaves_two_nonempty_clip_components": 0,
+    "single_clip_articulation_count": 0,
+    "single_clip_articulation_details": [],
+    "duplicate_original_WAV_bytes": 0
+  },
+  "conservative_midnight_exclusions": [],
+  "tested_partitions": 16,
+  "trials": [
+    {
+      "name": "chronological_closest_raw_clip_half",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-07-30"
+        ],
+        "B": [
+          "2016-08-13",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-08-29",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-09-27",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-23",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 253,
+        "B": 256
+      },
+      "cross_partition_hulls_before_exclusion": 42,
+      "fixed_partition_max_retained_without_balance": 385,
+      "fixed_partition_min_exclusions_without_balance": 124,
+      "optimal_retained_45_55": {
+        "retained": 385,
+        "A_clips": 203,
+        "B_clips": 182
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 384,
+        "A_clips": 192,
+        "B_clips": 192
+      },
+      "excluded_clips": 124,
+      "retained_fraction": 0.756385068762279,
+      "A_summary": {
+        "clips": 203,
+        "hulls": 82,
+        "days": 18,
+        "header_hours": 12.831666666666667,
+        "native_complete_minutes": 764,
+        "native_complete_minute_hours": 12.733333333333333,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 203
+        },
+        "day_clip_counts": {
+          "2016-05-09": 10,
+          "2016-05-14": 13,
+          "2016-05-25": 11,
+          "2016-06-01": 16,
+          "2016-06-04": 14,
+          "2016-06-05": 8,
+          "2016-06-25": 8,
+          "2016-07-06": 7,
+          "2016-07-07": 13,
+          "2016-07-08": 9,
+          "2016-07-09": 8,
+          "2016-07-10": 14,
+          "2016-07-11": 14,
+          "2016-07-12": 16,
+          "2016-07-13": 13,
+          "2016-07-14": 9,
+          "2016-07-24": 12,
+          "2016-07-30": 8
+        }
+      },
+      "B_summary": {
+        "clips": 182,
+        "hulls": 96,
+        "days": 15,
+        "header_hours": 12.66611111111111,
+        "native_complete_minutes": 758,
+        "native_complete_minute_hours": 12.633333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 118,
+          "2017": 64
+        },
+        "day_clip_counts": {
+          "2016-08-13": 9,
+          "2016-08-14": 11,
+          "2016-08-28": 13,
+          "2016-08-29": 19,
+          "2016-09-04": 12,
+          "2016-09-06": 11,
+          "2016-09-08": 11,
+          "2016-09-27": 12,
+          "2016-11-10": 11,
+          "2016-11-11": 9,
+          "2017-01-12": 6,
+          "2017-01-28": 14,
+          "2017-04-04": 10,
+          "2017-05-23": 20,
+          "2017-05-28": 14
+        }
+      },
+      "excluded_summary": {
+        "clips": 124,
+        "hulls": 42,
+        "days": 32,
+        "header_hours": 7.665555555555556,
+        "native_complete_minutes": 456,
+        "native_complete_minute_hours": 7.6,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 96,
+          "2017": 28
+        },
+        "day_clip_counts": {
+          "2016-05-09": 5,
+          "2016-05-14": 3,
+          "2016-05-25": 4,
+          "2016-06-01": 5,
+          "2016-06-04": 1,
+          "2016-06-05": 5,
+          "2016-06-25": 5,
+          "2016-07-06": 1,
+          "2016-07-07": 2,
+          "2016-07-08": 3,
+          "2016-07-10": 2,
+          "2016-07-11": 2,
+          "2016-07-12": 3,
+          "2016-07-13": 2,
+          "2016-07-14": 3,
+          "2016-07-24": 2,
+          "2016-07-30": 2,
+          "2016-08-13": 3,
+          "2016-08-14": 7,
+          "2016-08-28": 5,
+          "2016-08-29": 5,
+          "2016-09-04": 2,
+          "2016-09-06": 7,
+          "2016-09-08": 2,
+          "2016-09-27": 4,
+          "2016-11-10": 5,
+          "2016-11-11": 6,
+          "2017-01-12": 4,
+          "2017-01-28": 4,
+          "2017-04-04": 7,
+          "2017-05-23": 4,
+          "2017-05-28": 9
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "chronological_closest_raw_clip_half.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "chronological_alternating_days",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-25",
+          "2016-06-04",
+          "2016-06-25",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-11",
+          "2016-07-13",
+          "2016-07-24",
+          "2016-08-13",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-08",
+          "2016-11-10",
+          "2017-01-12",
+          "2017-04-04",
+          "2017-05-28"
+        ],
+        "B": [
+          "2016-05-14",
+          "2016-06-01",
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-10",
+          "2016-07-12",
+          "2016-07-14",
+          "2016-07-30",
+          "2016-08-14",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-27",
+          "2016-11-11",
+          "2017-01-28",
+          "2017-05-23"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 249,
+        "B": 260
+      },
+      "cross_partition_hulls_before_exclusion": 51,
+      "fixed_partition_max_retained_without_balance": 386,
+      "fixed_partition_min_exclusions_without_balance": 123,
+      "optimal_retained_45_55": {
+        "retained": 386,
+        "A_clips": 193,
+        "B_clips": 193
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 386,
+        "A_clips": 193,
+        "B_clips": 193
+      },
+      "excluded_clips": 123,
+      "retained_fraction": 0.7583497053045186,
+      "A_summary": {
+        "clips": 193,
+        "hulls": 95,
+        "days": 17,
+        "header_hours": 12.747777777777777,
+        "native_complete_minutes": 757,
+        "native_complete_minute_hours": 12.616666666666667,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 154,
+          "2017": 39
+        },
+        "day_clip_counts": {
+          "2016-05-09": 15,
+          "2016-05-25": 11,
+          "2016-06-04": 13,
+          "2016-06-25": 9,
+          "2016-07-07": 10,
+          "2016-07-09": 7,
+          "2016-07-11": 14,
+          "2016-07-13": 12,
+          "2016-07-24": 12,
+          "2016-08-13": 11,
+          "2016-08-28": 10,
+          "2016-09-04": 10,
+          "2016-09-08": 9,
+          "2016-11-10": 11,
+          "2017-01-12": 7,
+          "2017-04-04": 12,
+          "2017-05-28": 20
+        }
+      },
+      "B_summary": {
+        "clips": 193,
+        "hulls": 83,
+        "days": 16,
+        "header_hours": 13.215833333333334,
+        "native_complete_minutes": 790,
+        "native_complete_minute_hours": 13.166666666666666,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 162,
+          "2017": 31
+        },
+        "day_clip_counts": {
+          "2016-05-14": 11,
+          "2016-06-01": 14,
+          "2016-06-05": 11,
+          "2016-07-06": 7,
+          "2016-07-08": 7,
+          "2016-07-10": 12,
+          "2016-07-12": 13,
+          "2016-07-14": 9,
+          "2016-07-30": 6,
+          "2016-08-14": 16,
+          "2016-08-29": 19,
+          "2016-09-06": 12,
+          "2016-09-27": 12,
+          "2016-11-11": 13,
+          "2017-01-28": 17,
+          "2017-05-23": 14
+        }
+      },
+      "excluded_summary": {
+        "clips": 123,
+        "hulls": 51,
+        "days": 32,
+        "header_hours": 7.199722222222222,
+        "native_complete_minutes": 431,
+        "native_complete_minute_hours": 7.183333333333334,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          540.0
+        ],
+        "year_counts": {
+          "2016": 101,
+          "2017": 22
+        },
+        "day_clip_counts": {
+          "2016-05-14": 5,
+          "2016-05-25": 4,
+          "2016-06-01": 7,
+          "2016-06-04": 2,
+          "2016-06-05": 2,
+          "2016-06-25": 4,
+          "2016-07-06": 1,
+          "2016-07-07": 5,
+          "2016-07-08": 5,
+          "2016-07-09": 1,
+          "2016-07-10": 4,
+          "2016-07-11": 2,
+          "2016-07-12": 6,
+          "2016-07-13": 3,
+          "2016-07-14": 3,
+          "2016-07-24": 2,
+          "2016-07-30": 4,
+          "2016-08-13": 1,
+          "2016-08-14": 2,
+          "2016-08-28": 8,
+          "2016-08-29": 5,
+          "2016-09-04": 4,
+          "2016-09-06": 6,
+          "2016-09-08": 4,
+          "2016-09-27": 4,
+          "2016-11-10": 5,
+          "2016-11-11": 2,
+          "2017-01-12": 3,
+          "2017-01-28": 1,
+          "2017-04-04": 5,
+          "2017-05-23": 10,
+          "2017-05-28": 3
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "chronological_alternating_days.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "earliest_year_vs_later_years",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-08-29",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-09-27",
+          "2016-11-10",
+          "2016-11-11"
+        ],
+        "B": [
+          "2017-01-12",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-23",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 417,
+        "B": 92
+      },
+      "cross_partition_hulls_before_exclusion": 31,
+      "fixed_partition_max_retained_without_balance": 457,
+      "fixed_partition_min_exclusions_without_balance": 52,
+      "optimal_retained_45_55": {
+        "retained": 204,
+        "A_clips": 112,
+        "B_clips": 92
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 185,
+        "A_clips": 93,
+        "B_clips": 92
+      },
+      "excluded_clips": 305,
+      "retained_fraction": 0.40078585461689586,
+      "A_summary": {
+        "clips": 112,
+        "hulls": 67,
+        "days": 28,
+        "header_hours": 8.748055555555556,
+        "native_complete_minutes": 518,
+        "native_complete_minute_hours": 8.633333333333333,
+        "duration_seconds_min_median_max": [
+          119.0,
+          240.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 112
+        },
+        "day_clip_counts": {
+          "2016-05-09": 8,
+          "2016-05-14": 6,
+          "2016-05-25": 3,
+          "2016-06-01": 6,
+          "2016-06-04": 4,
+          "2016-06-05": 3,
+          "2016-06-25": 5,
+          "2016-07-06": 4,
+          "2016-07-07": 2,
+          "2016-07-08": 2,
+          "2016-07-09": 3,
+          "2016-07-10": 3,
+          "2016-07-11": 5,
+          "2016-07-12": 5,
+          "2016-07-13": 5,
+          "2016-07-14": 3,
+          "2016-07-24": 6,
+          "2016-07-30": 2,
+          "2016-08-13": 3,
+          "2016-08-14": 2,
+          "2016-08-28": 3,
+          "2016-08-29": 3,
+          "2016-09-04": 5,
+          "2016-09-06": 3,
+          "2016-09-08": 3,
+          "2016-09-27": 7,
+          "2016-11-10": 3,
+          "2016-11-11": 5
+        }
+      },
+      "B_summary": {
+        "clips": 92,
+        "hulls": 59,
+        "days": 5,
+        "header_hours": 5.283333333333333,
+        "native_complete_minutes": 317,
+        "native_complete_minute_hours": 5.283333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2017": 92
+        },
+        "day_clip_counts": {
+          "2017-01-12": 10,
+          "2017-01-28": 18,
+          "2017-04-04": 17,
+          "2017-05-23": 24,
+          "2017-05-28": 23
+        }
+      },
+      "excluded_summary": {
+        "clips": 305,
+        "hulls": 83,
+        "days": 28,
+        "header_hours": 19.131944444444443,
+        "native_complete_minutes": 1143,
+        "native_complete_minute_hours": 19.05,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1200.0
+        ],
+        "year_counts": {
+          "2016": 305
+        },
+        "day_clip_counts": {
+          "2016-05-09": 7,
+          "2016-05-14": 10,
+          "2016-05-25": 12,
+          "2016-06-01": 15,
+          "2016-06-04": 11,
+          "2016-06-05": 10,
+          "2016-06-25": 8,
+          "2016-07-06": 4,
+          "2016-07-07": 13,
+          "2016-07-08": 10,
+          "2016-07-09": 5,
+          "2016-07-10": 13,
+          "2016-07-11": 11,
+          "2016-07-12": 14,
+          "2016-07-13": 10,
+          "2016-07-14": 9,
+          "2016-07-24": 8,
+          "2016-07-30": 8,
+          "2016-08-13": 9,
+          "2016-08-14": 16,
+          "2016-08-28": 15,
+          "2016-08-29": 21,
+          "2016-09-04": 9,
+          "2016-09-06": 15,
+          "2016-09-08": 10,
+          "2016-09-27": 9,
+          "2016-11-10": 13,
+          "2016-11-11": 10
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 10,
+      "metadata_assignment_file": "earliest_year_vs_later_years.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102601",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-06-04",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-14",
+          "2016-08-13",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-08-29",
+          "2016-09-27",
+          "2016-11-10",
+          "2017-01-28",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-05",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-13",
+          "2016-07-24",
+          "2016-07-30",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-04-04",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 259,
+        "B": 250
+      },
+      "cross_partition_hulls_before_exclusion": 45,
+      "fixed_partition_max_retained_without_balance": 391,
+      "fixed_partition_min_exclusions_without_balance": 118,
+      "optimal_retained_45_55": {
+        "retained": 391,
+        "A_clips": 195,
+        "B_clips": 196
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 391,
+        "A_clips": 195,
+        "B_clips": 196
+      },
+      "excluded_clips": 118,
+      "retained_fraction": 0.768172888015717,
+      "A_summary": {
+        "clips": 195,
+        "hulls": 89,
+        "days": 16,
+        "header_hours": 13.331388888888888,
+        "native_complete_minutes": 793,
+        "native_complete_minute_hours": 13.216666666666667,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 160,
+          "2017": 35
+        },
+        "day_clip_counts": {
+          "2016-05-09": 12,
+          "2016-06-04": 8,
+          "2016-07-08": 12,
+          "2016-07-09": 6,
+          "2016-07-10": 10,
+          "2016-07-11": 11,
+          "2016-07-12": 13,
+          "2016-07-14": 9,
+          "2016-08-13": 10,
+          "2016-08-14": 14,
+          "2016-08-28": 13,
+          "2016-08-29": 19,
+          "2016-09-27": 12,
+          "2016-11-10": 11,
+          "2017-01-28": 16,
+          "2017-05-23": 19
+        }
+      },
+      "B_summary": {
+        "clips": 196,
+        "hulls": 89,
+        "days": 17,
+        "header_hours": 12.565555555555555,
+        "native_complete_minutes": 750,
+        "native_complete_minute_hours": 12.5,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 152,
+          "2017": 44
+        },
+        "day_clip_counts": {
+          "2016-05-14": 14,
+          "2016-05-25": 12,
+          "2016-06-01": 14,
+          "2016-06-05": 10,
+          "2016-06-25": 10,
+          "2016-07-06": 8,
+          "2016-07-07": 10,
+          "2016-07-13": 13,
+          "2016-07-24": 9,
+          "2016-07-30": 9,
+          "2016-09-04": 13,
+          "2016-09-06": 12,
+          "2016-09-08": 7,
+          "2016-11-11": 11,
+          "2017-01-12": 10,
+          "2017-04-04": 16,
+          "2017-05-28": 18
+        }
+      },
+      "excluded_summary": {
+        "clips": 118,
+        "hulls": 45,
+        "days": 30,
+        "header_hours": 7.266388888888889,
+        "native_complete_minutes": 435,
+        "native_complete_minute_hours": 7.25,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          660.0
+        ],
+        "year_counts": {
+          "2016": 105,
+          "2017": 13
+        },
+        "day_clip_counts": {
+          "2016-05-09": 3,
+          "2016-05-14": 2,
+          "2016-05-25": 3,
+          "2016-06-01": 7,
+          "2016-06-04": 7,
+          "2016-06-05": 3,
+          "2016-06-25": 3,
+          "2016-07-07": 5,
+          "2016-07-09": 2,
+          "2016-07-10": 6,
+          "2016-07-11": 5,
+          "2016-07-12": 6,
+          "2016-07-13": 2,
+          "2016-07-14": 3,
+          "2016-07-24": 5,
+          "2016-07-30": 1,
+          "2016-08-13": 2,
+          "2016-08-14": 4,
+          "2016-08-28": 5,
+          "2016-08-29": 5,
+          "2016-09-04": 1,
+          "2016-09-06": 6,
+          "2016-09-08": 6,
+          "2016-09-27": 4,
+          "2016-11-10": 5,
+          "2016-11-11": 4,
+          "2017-01-28": 2,
+          "2017-04-04": 1,
+          "2017-05-23": 5,
+          "2017-05-28": 5
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 3,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102601.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102602",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-14",
+          "2016-08-13",
+          "2016-08-28",
+          "2016-09-08",
+          "2016-11-11",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-05-09",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-07-07",
+          "2016-07-10",
+          "2016-07-13",
+          "2016-07-24",
+          "2016-07-30",
+          "2016-08-14",
+          "2016-08-29",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-27",
+          "2016-11-10",
+          "2017-01-12",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 257,
+        "B": 252
+      },
+      "cross_partition_hulls_before_exclusion": 46,
+      "fixed_partition_max_retained_without_balance": 378,
+      "fixed_partition_min_exclusions_without_balance": 131,
+      "optimal_retained_45_55": {
+        "retained": 378,
+        "A_clips": 189,
+        "B_clips": 189
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 378,
+        "A_clips": 189,
+        "B_clips": 189
+      },
+      "excluded_clips": 131,
+      "retained_fraction": 0.7426326129666012,
+      "A_summary": {
+        "clips": 189,
+        "hulls": 87,
+        "days": 17,
+        "header_hours": 11.348888888888888,
+        "native_complete_minutes": 677,
+        "native_complete_minute_hours": 11.283333333333333,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 140,
+          "2017": 49
+        },
+        "day_clip_counts": {
+          "2016-05-14": 10,
+          "2016-05-25": 9,
+          "2016-06-01": 15,
+          "2016-06-25": 7,
+          "2016-07-06": 5,
+          "2016-07-08": 10,
+          "2016-07-09": 7,
+          "2016-07-11": 13,
+          "2016-07-12": 11,
+          "2016-07-14": 10,
+          "2016-08-13": 7,
+          "2016-08-28": 13,
+          "2016-09-08": 10,
+          "2016-11-11": 13,
+          "2017-01-28": 14,
+          "2017-04-04": 13,
+          "2017-05-23": 22
+        }
+      },
+      "B_summary": {
+        "clips": 189,
+        "hulls": 91,
+        "days": 16,
+        "header_hours": 13.715,
+        "native_complete_minutes": 817,
+        "native_complete_minute_hours": 13.616666666666667,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 162,
+          "2017": 27
+        },
+        "day_clip_counts": {
+          "2016-05-09": 13,
+          "2016-06-04": 11,
+          "2016-06-05": 11,
+          "2016-07-07": 6,
+          "2016-07-10": 12,
+          "2016-07-13": 12,
+          "2016-07-24": 11,
+          "2016-07-30": 6,
+          "2016-08-14": 14,
+          "2016-08-29": 17,
+          "2016-09-04": 10,
+          "2016-09-06": 13,
+          "2016-09-27": 14,
+          "2016-11-10": 12,
+          "2017-01-12": 10,
+          "2017-05-28": 17
+        }
+      },
+      "excluded_summary": {
+        "clips": 131,
+        "hulls": 46,
+        "days": 32,
+        "header_hours": 8.099444444444444,
+        "native_complete_minutes": 484,
+        "native_complete_minute_hours": 8.066666666666666,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 115,
+          "2017": 16
+        },
+        "day_clip_counts": {
+          "2016-05-09": 2,
+          "2016-05-14": 6,
+          "2016-05-25": 6,
+          "2016-06-01": 6,
+          "2016-06-04": 4,
+          "2016-06-05": 2,
+          "2016-06-25": 6,
+          "2016-07-06": 3,
+          "2016-07-07": 9,
+          "2016-07-08": 2,
+          "2016-07-09": 1,
+          "2016-07-10": 4,
+          "2016-07-11": 3,
+          "2016-07-12": 8,
+          "2016-07-13": 3,
+          "2016-07-14": 2,
+          "2016-07-24": 3,
+          "2016-07-30": 4,
+          "2016-08-13": 5,
+          "2016-08-14": 4,
+          "2016-08-28": 5,
+          "2016-08-29": 7,
+          "2016-09-04": 4,
+          "2016-09-06": 5,
+          "2016-09-08": 3,
+          "2016-09-27": 2,
+          "2016-11-10": 4,
+          "2016-11-11": 2,
+          "2017-01-28": 4,
+          "2017-04-04": 4,
+          "2017-05-23": 2,
+          "2017-05-28": 6
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 3,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102602.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102603",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-05",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-08-13",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-08",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-01-28",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-06-04",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-13",
+          "2016-07-30",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-27",
+          "2017-01-12",
+          "2017-04-04",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 258,
+        "B": 251
+      },
+      "cross_partition_hulls_before_exclusion": 41,
+      "fixed_partition_max_retained_without_balance": 394,
+      "fixed_partition_min_exclusions_without_balance": 115,
+      "optimal_retained_45_55": {
+        "retained": 394,
+        "A_clips": 204,
+        "B_clips": 190
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 392,
+        "A_clips": 196,
+        "B_clips": 196
+      },
+      "excluded_clips": 115,
+      "retained_fraction": 0.7740667976424361,
+      "A_summary": {
+        "clips": 204,
+        "hulls": 81,
+        "days": 16,
+        "header_hours": 12.881666666666666,
+        "native_complete_minutes": 767,
+        "native_complete_minute_hours": 12.783333333333333,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 166,
+          "2017": 38
+        },
+        "day_clip_counts": {
+          "2016-05-25": 11,
+          "2016-06-01": 14,
+          "2016-06-05": 12,
+          "2016-07-11": 11,
+          "2016-07-12": 13,
+          "2016-07-14": 10,
+          "2016-07-24": 9,
+          "2016-08-13": 10,
+          "2016-08-14": 14,
+          "2016-08-28": 13,
+          "2016-09-04": 11,
+          "2016-09-08": 12,
+          "2016-11-10": 13,
+          "2016-11-11": 13,
+          "2017-01-28": 17,
+          "2017-05-23": 21
+        }
+      },
+      "B_summary": {
+        "clips": 190,
+        "hulls": 97,
+        "days": 17,
+        "header_hours": 13.2825,
+        "native_complete_minutes": 794,
+        "native_complete_minute_hours": 13.233333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 149,
+          "2017": 41
+        },
+        "day_clip_counts": {
+          "2016-05-09": 14,
+          "2016-05-14": 12,
+          "2016-06-04": 11,
+          "2016-06-25": 11,
+          "2016-07-06": 7,
+          "2016-07-07": 8,
+          "2016-07-08": 7,
+          "2016-07-09": 8,
+          "2016-07-10": 10,
+          "2016-07-13": 13,
+          "2016-07-30": 8,
+          "2016-08-29": 18,
+          "2016-09-06": 10,
+          "2016-09-27": 12,
+          "2017-01-12": 10,
+          "2017-04-04": 13,
+          "2017-05-28": 18
+        }
+      },
+      "excluded_summary": {
+        "clips": 115,
+        "hulls": 41,
+        "days": 31,
+        "header_hours": 6.9991666666666665,
+        "native_complete_minutes": 417,
+        "native_complete_minute_hours": 6.95,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 102,
+          "2017": 13
+        },
+        "day_clip_counts": {
+          "2016-05-09": 1,
+          "2016-05-14": 4,
+          "2016-05-25": 4,
+          "2016-06-01": 7,
+          "2016-06-04": 4,
+          "2016-06-05": 1,
+          "2016-06-25": 2,
+          "2016-07-06": 1,
+          "2016-07-07": 7,
+          "2016-07-08": 5,
+          "2016-07-10": 6,
+          "2016-07-11": 5,
+          "2016-07-12": 6,
+          "2016-07-13": 2,
+          "2016-07-14": 2,
+          "2016-07-24": 5,
+          "2016-07-30": 2,
+          "2016-08-13": 2,
+          "2016-08-14": 4,
+          "2016-08-28": 5,
+          "2016-08-29": 6,
+          "2016-09-04": 3,
+          "2016-09-06": 8,
+          "2016-09-08": 1,
+          "2016-09-27": 4,
+          "2016-11-10": 3,
+          "2016-11-11": 2,
+          "2017-01-28": 1,
+          "2017-04-04": 4,
+          "2017-05-23": 3,
+          "2017-05-28": 5
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102603.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102611",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-05",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-14",
+          "2016-08-29",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-08",
+          "2017-01-12",
+          "2017-05-28"
+        ],
+        "B": [
+          "2016-05-09",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-07-07",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-08-28",
+          "2016-09-27",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-23"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 258,
+        "B": 251
+      },
+      "cross_partition_hulls_before_exclusion": 42,
+      "fixed_partition_max_retained_without_balance": 391,
+      "fixed_partition_min_exclusions_without_balance": 118,
+      "optimal_retained_45_55": {
+        "retained": 391,
+        "A_clips": 195,
+        "B_clips": 196
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 391,
+        "A_clips": 195,
+        "B_clips": 196
+      },
+      "excluded_clips": 118,
+      "retained_fraction": 0.768172888015717,
+      "A_summary": {
+        "clips": 195,
+        "hulls": 91,
+        "days": 17,
+        "header_hours": 11.982222222222223,
+        "native_complete_minutes": 715,
+        "native_complete_minute_hours": 11.916666666666666,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 168,
+          "2017": 27
+        },
+        "day_clip_counts": {
+          "2016-05-14": 13,
+          "2016-05-25": 8,
+          "2016-06-05": 11,
+          "2016-06-25": 9,
+          "2016-07-06": 6,
+          "2016-07-10": 12,
+          "2016-07-11": 11,
+          "2016-07-12": 11,
+          "2016-07-30": 7,
+          "2016-08-13": 9,
+          "2016-08-14": 14,
+          "2016-08-29": 22,
+          "2016-09-04": 13,
+          "2016-09-06": 11,
+          "2016-09-08": 11,
+          "2017-01-12": 7,
+          "2017-05-28": 20
+        }
+      },
+      "B_summary": {
+        "clips": 196,
+        "hulls": 87,
+        "days": 16,
+        "header_hours": 14.18138888888889,
+        "native_complete_minutes": 844,
+        "native_complete_minute_hours": 14.066666666666666,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 148,
+          "2017": 48
+        },
+        "day_clip_counts": {
+          "2016-05-09": 13,
+          "2016-06-01": 16,
+          "2016-06-04": 12,
+          "2016-07-07": 13,
+          "2016-07-08": 11,
+          "2016-07-09": 6,
+          "2016-07-13": 12,
+          "2016-07-14": 9,
+          "2016-07-24": 11,
+          "2016-08-28": 10,
+          "2016-09-27": 15,
+          "2016-11-10": 12,
+          "2016-11-11": 8,
+          "2017-01-28": 16,
+          "2017-04-04": 13,
+          "2017-05-23": 19
+        }
+      },
+      "excluded_summary": {
+        "clips": 118,
+        "hulls": 42,
+        "days": 33,
+        "header_hours": 6.999722222222222,
+        "native_complete_minutes": 419,
+        "native_complete_minute_hours": 6.983333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 101,
+          "2017": 17
+        },
+        "day_clip_counts": {
+          "2016-05-09": 2,
+          "2016-05-14": 3,
+          "2016-05-25": 7,
+          "2016-06-01": 5,
+          "2016-06-04": 3,
+          "2016-06-05": 2,
+          "2016-06-25": 4,
+          "2016-07-06": 2,
+          "2016-07-07": 2,
+          "2016-07-08": 1,
+          "2016-07-09": 2,
+          "2016-07-10": 4,
+          "2016-07-11": 5,
+          "2016-07-12": 8,
+          "2016-07-13": 3,
+          "2016-07-14": 3,
+          "2016-07-24": 3,
+          "2016-07-30": 3,
+          "2016-08-13": 3,
+          "2016-08-14": 4,
+          "2016-08-28": 8,
+          "2016-08-29": 2,
+          "2016-09-04": 1,
+          "2016-09-06": 7,
+          "2016-09-08": 2,
+          "2016-09-27": 1,
+          "2016-11-10": 4,
+          "2016-11-11": 7,
+          "2017-01-12": 3,
+          "2017-01-28": 2,
+          "2017-04-04": 4,
+          "2017-05-23": 5,
+          "2017-05-28": 3
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 3,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102611.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102612",
+      "proposed_day_sets": {
+        "A": [
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-12",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-08-14",
+          "2016-08-29",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-09-27",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-25",
+          "2016-07-08",
+          "2016-07-11",
+          "2016-07-13",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-28",
+          "2016-11-10",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 257,
+        "B": 252
+      },
+      "cross_partition_hulls_before_exclusion": 49,
+      "fixed_partition_max_retained_without_balance": 387,
+      "fixed_partition_min_exclusions_without_balance": 122,
+      "optimal_retained_45_55": {
+        "retained": 387,
+        "A_clips": 193,
+        "B_clips": 194
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 387,
+        "A_clips": 193,
+        "B_clips": 194
+      },
+      "excluded_clips": 122,
+      "retained_fraction": 0.7603143418467584,
+      "A_summary": {
+        "clips": 193,
+        "hulls": 91,
+        "days": 17,
+        "header_hours": 13.231666666666667,
+        "native_complete_minutes": 788,
+        "native_complete_minute_hours": 13.133333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 166,
+          "2017": 27
+        },
+        "day_clip_counts": {
+          "2016-06-05": 11,
+          "2016-07-06": 7,
+          "2016-07-07": 6,
+          "2016-07-09": 7,
+          "2016-07-10": 15,
+          "2016-07-12": 11,
+          "2016-07-14": 7,
+          "2016-07-24": 13,
+          "2016-08-14": 14,
+          "2016-08-29": 18,
+          "2016-09-04": 11,
+          "2016-09-06": 10,
+          "2016-09-08": 11,
+          "2016-09-27": 13,
+          "2016-11-11": 12,
+          "2017-01-12": 8,
+          "2017-05-23": 19
+        }
+      },
+      "B_summary": {
+        "clips": 194,
+        "hulls": 87,
+        "days": 16,
+        "header_hours": 12.548333333333334,
+        "native_complete_minutes": 747,
+        "native_complete_minute_hours": 12.45,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 149,
+          "2017": 45
+        },
+        "day_clip_counts": {
+          "2016-05-09": 13,
+          "2016-05-14": 11,
+          "2016-05-25": 12,
+          "2016-06-01": 17,
+          "2016-06-04": 15,
+          "2016-06-25": 10,
+          "2016-07-08": 8,
+          "2016-07-11": 12,
+          "2016-07-13": 13,
+          "2016-07-30": 4,
+          "2016-08-13": 11,
+          "2016-08-28": 11,
+          "2016-11-10": 12,
+          "2017-01-28": 13,
+          "2017-04-04": 13,
+          "2017-05-28": 19
+        }
+      },
+      "excluded_summary": {
+        "clips": 122,
+        "hulls": 49,
+        "days": 32,
+        "header_hours": 7.383333333333334,
+        "native_complete_minutes": 443,
+        "native_complete_minute_hours": 7.383333333333334,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 102,
+          "2017": 20
+        },
+        "day_clip_counts": {
+          "2016-05-09": 2,
+          "2016-05-14": 5,
+          "2016-05-25": 3,
+          "2016-06-01": 4,
+          "2016-06-05": 2,
+          "2016-06-25": 3,
+          "2016-07-06": 1,
+          "2016-07-07": 9,
+          "2016-07-08": 4,
+          "2016-07-09": 1,
+          "2016-07-10": 1,
+          "2016-07-11": 4,
+          "2016-07-12": 8,
+          "2016-07-13": 2,
+          "2016-07-14": 5,
+          "2016-07-24": 1,
+          "2016-07-30": 6,
+          "2016-08-13": 1,
+          "2016-08-14": 4,
+          "2016-08-28": 7,
+          "2016-08-29": 6,
+          "2016-09-04": 3,
+          "2016-09-06": 8,
+          "2016-09-08": 2,
+          "2016-09-27": 3,
+          "2016-11-10": 4,
+          "2016-11-11": 3,
+          "2017-01-12": 2,
+          "2017-01-28": 5,
+          "2017-04-04": 4,
+          "2017-05-23": 5,
+          "2017-05-28": 4
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102612.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102613",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-30",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-27",
+          "2016-11-10",
+          "2017-01-12",
+          "2017-04-04",
+          "2017-05-28"
+        ],
+        "B": [
+          "2016-05-09",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-25",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-08-13",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-11-11",
+          "2017-01-28",
+          "2017-05-23"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 257,
+        "B": 252
+      },
+      "cross_partition_hulls_before_exclusion": 38,
+      "fixed_partition_max_retained_without_balance": 397,
+      "fixed_partition_min_exclusions_without_balance": 112,
+      "optimal_retained_45_55": {
+        "retained": 397,
+        "A_clips": 205,
+        "B_clips": 192
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 395,
+        "A_clips": 197,
+        "B_clips": 198
+      },
+      "excluded_clips": 112,
+      "retained_fraction": 0.7799607072691552,
+      "A_summary": {
+        "clips": 205,
+        "hulls": 87,
+        "days": 17,
+        "header_hours": 13.098333333333333,
+        "native_complete_minutes": 780,
+        "native_complete_minute_hours": 13.0,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 166,
+          "2017": 39
+        },
+        "day_clip_counts": {
+          "2016-05-14": 12,
+          "2016-05-25": 10,
+          "2016-06-05": 11,
+          "2016-07-06": 7,
+          "2016-07-08": 9,
+          "2016-07-10": 16,
+          "2016-07-11": 12,
+          "2016-07-12": 14,
+          "2016-07-30": 8,
+          "2016-08-14": 15,
+          "2016-08-28": 16,
+          "2016-09-04": 13,
+          "2016-09-27": 13,
+          "2016-11-10": 10,
+          "2017-01-12": 8,
+          "2017-04-04": 11,
+          "2017-05-28": 20
+        }
+      },
+      "B_summary": {
+        "clips": 192,
+        "hulls": 91,
+        "days": 16,
+        "header_hours": 13.365277777777777,
+        "native_complete_minutes": 797,
+        "native_complete_minute_hours": 13.283333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 158,
+          "2017": 34
+        },
+        "day_clip_counts": {
+          "2016-05-09": 14,
+          "2016-06-01": 14,
+          "2016-06-04": 13,
+          "2016-06-25": 9,
+          "2016-07-07": 12,
+          "2016-07-09": 7,
+          "2016-07-13": 11,
+          "2016-07-14": 10,
+          "2016-07-24": 7,
+          "2016-08-13": 11,
+          "2016-08-29": 19,
+          "2016-09-06": 11,
+          "2016-09-08": 11,
+          "2016-11-11": 9,
+          "2017-01-28": 13,
+          "2017-05-23": 21
+        }
+      },
+      "excluded_summary": {
+        "clips": 112,
+        "hulls": 38,
+        "days": 32,
+        "header_hours": 6.699722222222222,
+        "native_complete_minutes": 401,
+        "native_complete_minute_hours": 6.683333333333334,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 93,
+          "2017": 19
+        },
+        "day_clip_counts": {
+          "2016-05-09": 1,
+          "2016-05-14": 4,
+          "2016-05-25": 5,
+          "2016-06-01": 7,
+          "2016-06-04": 2,
+          "2016-06-05": 2,
+          "2016-06-25": 4,
+          "2016-07-06": 1,
+          "2016-07-07": 3,
+          "2016-07-08": 3,
+          "2016-07-09": 1,
+          "2016-07-11": 4,
+          "2016-07-12": 5,
+          "2016-07-13": 4,
+          "2016-07-14": 2,
+          "2016-07-24": 7,
+          "2016-07-30": 2,
+          "2016-08-13": 1,
+          "2016-08-14": 3,
+          "2016-08-28": 2,
+          "2016-08-29": 5,
+          "2016-09-04": 1,
+          "2016-09-06": 7,
+          "2016-09-08": 2,
+          "2016-09-27": 3,
+          "2016-11-10": 6,
+          "2016-11-11": 6,
+          "2017-01-12": 2,
+          "2017-01-28": 5,
+          "2017-04-04": 6,
+          "2017-05-23": 3,
+          "2017-05-28": 3
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102613.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102621",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-12",
+          "2016-07-24",
+          "2016-07-30",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-08",
+          "2016-11-10",
+          "2017-01-12",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-06-04",
+          "2016-06-05",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-08-13",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-27",
+          "2016-11-11",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 256,
+        "B": 253
+      },
+      "cross_partition_hulls_before_exclusion": 47,
+      "fixed_partition_max_retained_without_balance": 375,
+      "fixed_partition_min_exclusions_without_balance": 134,
+      "optimal_retained_45_55": {
+        "retained": 375,
+        "A_clips": 187,
+        "B_clips": 188
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 375,
+        "A_clips": 187,
+        "B_clips": 188
+      },
+      "excluded_clips": 134,
+      "retained_fraction": 0.7367387033398821,
+      "A_summary": {
+        "clips": 187,
+        "hulls": 93,
+        "days": 17,
+        "header_hours": 12.03111111111111,
+        "native_complete_minutes": 714,
+        "native_complete_minute_hours": 11.9,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 160,
+          "2017": 27
+        },
+        "day_clip_counts": {
+          "2016-05-09": 14,
+          "2016-05-14": 13,
+          "2016-05-25": 11,
+          "2016-06-01": 14,
+          "2016-06-25": 6,
+          "2016-07-06": 6,
+          "2016-07-08": 8,
+          "2016-07-12": 14,
+          "2016-07-24": 12,
+          "2016-07-30": 7,
+          "2016-08-14": 15,
+          "2016-08-28": 13,
+          "2016-09-04": 10,
+          "2016-09-08": 8,
+          "2016-11-10": 9,
+          "2017-01-12": 7,
+          "2017-05-23": 20
+        }
+      },
+      "B_summary": {
+        "clips": 188,
+        "hulls": 85,
+        "days": 16,
+        "header_hours": 12.715833333333334,
+        "native_complete_minutes": 760,
+        "native_complete_minute_hours": 12.666666666666666,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 149,
+          "2017": 39
+        },
+        "day_clip_counts": {
+          "2016-06-04": 11,
+          "2016-06-05": 10,
+          "2016-07-07": 13,
+          "2016-07-09": 6,
+          "2016-07-10": 8,
+          "2016-07-11": 11,
+          "2016-07-13": 13,
+          "2016-07-14": 11,
+          "2016-08-13": 11,
+          "2016-08-29": 21,
+          "2016-09-06": 12,
+          "2016-09-27": 11,
+          "2016-11-11": 11,
+          "2017-01-28": 13,
+          "2017-04-04": 12,
+          "2017-05-28": 14
+        }
+      },
+      "excluded_summary": {
+        "clips": 134,
+        "hulls": 47,
+        "days": 33,
+        "header_hours": 8.41638888888889,
+        "native_complete_minutes": 504,
+        "native_complete_minute_hours": 8.4,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 108,
+          "2017": 26
+        },
+        "day_clip_counts": {
+          "2016-05-09": 1,
+          "2016-05-14": 3,
+          "2016-05-25": 4,
+          "2016-06-01": 7,
+          "2016-06-04": 4,
+          "2016-06-05": 3,
+          "2016-06-25": 7,
+          "2016-07-06": 2,
+          "2016-07-07": 2,
+          "2016-07-08": 4,
+          "2016-07-09": 2,
+          "2016-07-10": 8,
+          "2016-07-11": 5,
+          "2016-07-12": 5,
+          "2016-07-13": 2,
+          "2016-07-14": 1,
+          "2016-07-24": 2,
+          "2016-07-30": 3,
+          "2016-08-13": 1,
+          "2016-08-14": 3,
+          "2016-08-28": 5,
+          "2016-08-29": 3,
+          "2016-09-04": 4,
+          "2016-09-06": 6,
+          "2016-09-08": 5,
+          "2016-09-27": 5,
+          "2016-11-10": 7,
+          "2016-11-11": 4,
+          "2017-01-12": 3,
+          "2017-01-28": 5,
+          "2017-04-04": 5,
+          "2017-05-23": 4,
+          "2017-05-28": 9
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 3,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102621.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102622",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-06-25",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-14",
+          "2016-07-30",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-27",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-01-28",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-13",
+          "2016-07-24",
+          "2016-08-13",
+          "2016-08-29",
+          "2016-09-08",
+          "2017-04-04",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 256,
+        "B": 253
+      },
+      "cross_partition_hulls_before_exclusion": 41,
+      "fixed_partition_max_retained_without_balance": 394,
+      "fixed_partition_min_exclusions_without_balance": 115,
+      "optimal_retained_45_55": {
+        "retained": 394,
+        "A_clips": 197,
+        "B_clips": 197
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 394,
+        "A_clips": 197,
+        "B_clips": 197
+      },
+      "excluded_clips": 115,
+      "retained_fraction": 0.7740667976424361,
+      "A_summary": {
+        "clips": 197,
+        "hulls": 88,
+        "days": 17,
+        "header_hours": 13.465,
+        "native_complete_minutes": 802,
+        "native_complete_minute_hours": 13.366666666666667,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 153,
+          "2017": 44
+        },
+        "day_clip_counts": {
+          "2016-05-09": 14,
+          "2016-06-25": 8,
+          "2016-07-07": 7,
+          "2016-07-09": 8,
+          "2016-07-10": 14,
+          "2016-07-14": 8,
+          "2016-07-30": 8,
+          "2016-08-14": 15,
+          "2016-08-28": 14,
+          "2016-09-04": 12,
+          "2016-09-06": 11,
+          "2016-09-27": 13,
+          "2016-11-10": 9,
+          "2016-11-11": 12,
+          "2017-01-12": 8,
+          "2017-01-28": 18,
+          "2017-05-23": 18
+        }
+      },
+      "B_summary": {
+        "clips": 197,
+        "hulls": 90,
+        "days": 16,
+        "header_hours": 12.831944444444444,
+        "native_complete_minutes": 765,
+        "native_complete_minute_hours": 12.75,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 162,
+          "2017": 35
+        },
+        "day_clip_counts": {
+          "2016-05-14": 10,
+          "2016-05-25": 10,
+          "2016-06-01": 17,
+          "2016-06-04": 14,
+          "2016-06-05": 8,
+          "2016-07-06": 7,
+          "2016-07-08": 7,
+          "2016-07-11": 14,
+          "2016-07-12": 14,
+          "2016-07-13": 13,
+          "2016-07-24": 10,
+          "2016-08-13": 11,
+          "2016-08-29": 20,
+          "2016-09-08": 7,
+          "2017-04-04": 14,
+          "2017-05-28": 21
+        }
+      },
+      "excluded_summary": {
+        "clips": 115,
+        "hulls": 41,
+        "days": 31,
+        "header_hours": 6.866388888888889,
+        "native_complete_minutes": 411,
+        "native_complete_minute_hours": 6.85,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 102,
+          "2017": 13
+        },
+        "day_clip_counts": {
+          "2016-05-09": 1,
+          "2016-05-14": 6,
+          "2016-05-25": 5,
+          "2016-06-01": 4,
+          "2016-06-04": 1,
+          "2016-06-05": 5,
+          "2016-06-25": 5,
+          "2016-07-06": 1,
+          "2016-07-07": 8,
+          "2016-07-08": 5,
+          "2016-07-10": 2,
+          "2016-07-11": 2,
+          "2016-07-12": 5,
+          "2016-07-13": 2,
+          "2016-07-14": 4,
+          "2016-07-24": 4,
+          "2016-07-30": 2,
+          "2016-08-13": 1,
+          "2016-08-14": 3,
+          "2016-08-28": 4,
+          "2016-08-29": 4,
+          "2016-09-04": 2,
+          "2016-09-06": 7,
+          "2016-09-08": 6,
+          "2016-09-27": 3,
+          "2016-11-10": 7,
+          "2016-11-11": 3,
+          "2017-01-12": 2,
+          "2017-04-04": 3,
+          "2017-05-23": 6,
+          "2017-05-28": 2
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102622.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102623",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-06-01",
+          "2016-07-09",
+          "2016-07-13",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-28",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-09-27",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-01-28",
+          "2017-05-28"
+        ],
+        "B": [
+          "2016-05-25",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-08",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-12",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-08-14",
+          "2016-09-04",
+          "2016-11-10",
+          "2017-04-04",
+          "2017-05-23"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 252,
+        "B": 257
+      },
+      "cross_partition_hulls_before_exclusion": 48,
+      "fixed_partition_max_retained_without_balance": 375,
+      "fixed_partition_min_exclusions_without_balance": 134,
+      "optimal_retained_45_55": {
+        "retained": 375,
+        "A_clips": 187,
+        "B_clips": 188
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 375,
+        "A_clips": 187,
+        "B_clips": 188
+      },
+      "excluded_clips": 134,
+      "retained_fraction": 0.7367387033398821,
+      "A_summary": {
+        "clips": 187,
+        "hulls": 95,
+        "days": 16,
+        "header_hours": 12.715555555555556,
+        "native_complete_minutes": 759,
+        "native_complete_minute_hours": 12.65,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 150,
+          "2017": 37
+        },
+        "day_clip_counts": {
+          "2016-05-09": 13,
+          "2016-05-14": 12,
+          "2016-06-01": 12,
+          "2016-07-09": 7,
+          "2016-07-13": 10,
+          "2016-07-30": 9,
+          "2016-08-13": 11,
+          "2016-08-28": 12,
+          "2016-08-29": 22,
+          "2016-09-06": 12,
+          "2016-09-08": 10,
+          "2016-09-27": 11,
+          "2016-11-11": 9,
+          "2017-01-12": 10,
+          "2017-01-28": 11,
+          "2017-05-28": 16
+        }
+      },
+      "B_summary": {
+        "clips": 188,
+        "hulls": 83,
+        "days": 17,
+        "header_hours": 12.131666666666666,
+        "native_complete_minutes": 722,
+        "native_complete_minute_hours": 12.033333333333333,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 155,
+          "2017": 33
+        },
+        "day_clip_counts": {
+          "2016-05-25": 11,
+          "2016-06-04": 7,
+          "2016-06-05": 11,
+          "2016-06-25": 7,
+          "2016-07-06": 7,
+          "2016-07-07": 11,
+          "2016-07-08": 8,
+          "2016-07-10": 13,
+          "2016-07-11": 12,
+          "2016-07-12": 13,
+          "2016-07-14": 10,
+          "2016-07-24": 11,
+          "2016-08-14": 13,
+          "2016-09-04": 10,
+          "2016-11-10": 11,
+          "2017-04-04": 12,
+          "2017-05-23": 21
+        }
+      },
+      "excluded_summary": {
+        "clips": 134,
+        "hulls": 48,
+        "days": 32,
+        "header_hours": 8.31611111111111,
+        "native_complete_minutes": 497,
+        "native_complete_minute_hours": 8.283333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 112,
+          "2017": 22
+        },
+        "day_clip_counts": {
+          "2016-05-09": 2,
+          "2016-05-14": 4,
+          "2016-05-25": 4,
+          "2016-06-01": 9,
+          "2016-06-04": 8,
+          "2016-06-05": 2,
+          "2016-06-25": 6,
+          "2016-07-06": 1,
+          "2016-07-07": 4,
+          "2016-07-08": 4,
+          "2016-07-09": 1,
+          "2016-07-10": 3,
+          "2016-07-11": 4,
+          "2016-07-12": 6,
+          "2016-07-13": 5,
+          "2016-07-14": 2,
+          "2016-07-24": 3,
+          "2016-07-30": 1,
+          "2016-08-13": 1,
+          "2016-08-14": 5,
+          "2016-08-28": 6,
+          "2016-08-29": 2,
+          "2016-09-04": 4,
+          "2016-09-06": 6,
+          "2016-09-08": 3,
+          "2016-09-27": 5,
+          "2016-11-10": 5,
+          "2016-11-11": 6,
+          "2017-01-28": 7,
+          "2017-04-04": 5,
+          "2017-05-23": 3,
+          "2017-05-28": 7
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102623.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102631",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-06-25",
+          "2016-07-06",
+          "2016-07-07",
+          "2016-07-08",
+          "2016-07-10",
+          "2016-07-12",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-28",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-27"
+        ],
+        "B": [
+          "2016-05-25",
+          "2016-07-09",
+          "2016-07-11",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-07-24",
+          "2016-08-14",
+          "2016-09-04",
+          "2016-09-08",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-01-28",
+          "2017-04-04",
+          "2017-05-23",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 261,
+        "B": 248
+      },
+      "cross_partition_hulls_before_exclusion": 43,
+      "fixed_partition_max_retained_without_balance": 385,
+      "fixed_partition_min_exclusions_without_balance": 124,
+      "optimal_retained_45_55": {
+        "retained": 385,
+        "A_clips": 208,
+        "B_clips": 177
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 382,
+        "A_clips": 191,
+        "B_clips": 191
+      },
+      "excluded_clips": 124,
+      "retained_fraction": 0.756385068762279,
+      "A_summary": {
+        "clips": 208,
+        "hulls": 84,
+        "days": 17,
+        "header_hours": 14.0825,
+        "native_complete_minutes": 842,
+        "native_complete_minute_hours": 14.033333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 208
+        },
+        "day_clip_counts": {
+          "2016-05-09": 11,
+          "2016-05-14": 12,
+          "2016-06-01": 16,
+          "2016-06-04": 14,
+          "2016-06-05": 8,
+          "2016-06-25": 10,
+          "2016-07-06": 8,
+          "2016-07-07": 12,
+          "2016-07-08": 10,
+          "2016-07-10": 11,
+          "2016-07-12": 14,
+          "2016-07-30": 5,
+          "2016-08-13": 12,
+          "2016-08-28": 14,
+          "2016-08-29": 24,
+          "2016-09-06": 14,
+          "2016-09-27": 13
+        }
+      },
+      "B_summary": {
+        "clips": 177,
+        "hulls": 94,
+        "days": 16,
+        "header_hours": 12.048333333333334,
+        "native_complete_minutes": 717,
+        "native_complete_minute_hours": 11.95,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 107,
+          "2017": 70
+        },
+        "day_clip_counts": {
+          "2016-05-25": 10,
+          "2016-07-09": 7,
+          "2016-07-11": 9,
+          "2016-07-13": 10,
+          "2016-07-14": 8,
+          "2016-07-24": 13,
+          "2016-08-14": 11,
+          "2016-09-04": 12,
+          "2016-09-08": 8,
+          "2016-11-10": 10,
+          "2016-11-11": 9,
+          "2017-01-12": 8,
+          "2017-01-28": 13,
+          "2017-04-04": 10,
+          "2017-05-23": 21,
+          "2017-05-28": 18
+        }
+      },
+      "excluded_summary": {
+        "clips": 124,
+        "hulls": 43,
+        "days": 30,
+        "header_hours": 7.0325,
+        "native_complete_minutes": 419,
+        "native_complete_minute_hours": 6.983333333333333,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          720.0
+        ],
+        "year_counts": {
+          "2016": 102,
+          "2017": 22
+        },
+        "day_clip_counts": {
+          "2016-05-09": 4,
+          "2016-05-14": 4,
+          "2016-05-25": 5,
+          "2016-06-01": 5,
+          "2016-06-04": 1,
+          "2016-06-05": 5,
+          "2016-06-25": 3,
+          "2016-07-07": 3,
+          "2016-07-08": 2,
+          "2016-07-09": 1,
+          "2016-07-10": 5,
+          "2016-07-11": 7,
+          "2016-07-12": 5,
+          "2016-07-13": 5,
+          "2016-07-14": 4,
+          "2016-07-24": 1,
+          "2016-07-30": 5,
+          "2016-08-14": 7,
+          "2016-08-28": 4,
+          "2016-09-04": 2,
+          "2016-09-06": 4,
+          "2016-09-08": 5,
+          "2016-09-27": 3,
+          "2016-11-10": 6,
+          "2016-11-11": 6,
+          "2017-01-12": 2,
+          "2017-01-28": 5,
+          "2017-04-04": 7,
+          "2017-05-23": 3,
+          "2017-05-28": 5
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102631.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102632",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-06-01",
+          "2016-06-25",
+          "2016-07-07",
+          "2016-07-12",
+          "2016-07-24",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-29",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-04-04",
+          "2017-05-23"
+        ],
+        "B": [
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-08-14",
+          "2016-08-28",
+          "2016-09-08",
+          "2016-09-27",
+          "2017-01-12",
+          "2017-01-28",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 247,
+        "B": 262
+      },
+      "cross_partition_hulls_before_exclusion": 45,
+      "fixed_partition_max_retained_without_balance": 384,
+      "fixed_partition_min_exclusions_without_balance": 125,
+      "optimal_retained_45_55": {
+        "retained": 384,
+        "A_clips": 192,
+        "B_clips": 192
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 384,
+        "A_clips": 192,
+        "B_clips": 192
+      },
+      "excluded_clips": 125,
+      "retained_fraction": 0.7544204322200393,
+      "A_summary": {
+        "clips": 192,
+        "hulls": 84,
+        "days": 15,
+        "header_hours": 12.64861111111111,
+        "native_complete_minutes": 754,
+        "native_complete_minute_hours": 12.566666666666666,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 153,
+          "2017": 39
+        },
+        "day_clip_counts": {
+          "2016-05-09": 15,
+          "2016-06-01": 13,
+          "2016-06-25": 9,
+          "2016-07-07": 12,
+          "2016-07-12": 11,
+          "2016-07-24": 10,
+          "2016-07-30": 6,
+          "2016-08-13": 8,
+          "2016-08-29": 24,
+          "2016-09-04": 9,
+          "2016-09-06": 12,
+          "2016-11-10": 13,
+          "2016-11-11": 11,
+          "2017-04-04": 15,
+          "2017-05-23": 24
+        }
+      },
+      "B_summary": {
+        "clips": 192,
+        "hulls": 94,
+        "days": 18,
+        "header_hours": 13.281944444444445,
+        "native_complete_minutes": 792,
+        "native_complete_minute_hours": 13.2,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 152,
+          "2017": 40
+        },
+        "day_clip_counts": {
+          "2016-05-14": 12,
+          "2016-05-25": 10,
+          "2016-06-04": 11,
+          "2016-06-05": 12,
+          "2016-07-06": 7,
+          "2016-07-08": 8,
+          "2016-07-09": 7,
+          "2016-07-10": 13,
+          "2016-07-11": 6,
+          "2016-07-13": 14,
+          "2016-07-14": 7,
+          "2016-08-14": 15,
+          "2016-08-28": 11,
+          "2016-09-08": 6,
+          "2016-09-27": 13,
+          "2017-01-12": 10,
+          "2017-01-28": 14,
+          "2017-05-28": 16
+        }
+      },
+      "excluded_summary": {
+        "clips": 125,
+        "hulls": 45,
+        "days": 29,
+        "header_hours": 7.232777777777778,
+        "native_complete_minutes": 432,
+        "native_complete_minute_hours": 7.2,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 112,
+          "2017": 13
+        },
+        "day_clip_counts": {
+          "2016-05-14": 4,
+          "2016-05-25": 5,
+          "2016-06-01": 8,
+          "2016-06-04": 4,
+          "2016-06-05": 1,
+          "2016-06-25": 4,
+          "2016-07-06": 1,
+          "2016-07-07": 3,
+          "2016-07-08": 4,
+          "2016-07-09": 1,
+          "2016-07-10": 3,
+          "2016-07-11": 10,
+          "2016-07-12": 8,
+          "2016-07-13": 1,
+          "2016-07-14": 5,
+          "2016-07-24": 4,
+          "2016-07-30": 4,
+          "2016-08-13": 4,
+          "2016-08-14": 3,
+          "2016-08-28": 7,
+          "2016-09-04": 5,
+          "2016-09-06": 6,
+          "2016-09-08": 7,
+          "2016-09-27": 3,
+          "2016-11-10": 3,
+          "2016-11-11": 4,
+          "2017-01-28": 4,
+          "2017-04-04": 2,
+          "2017-05-28": 7
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102632.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "hash_greedy_raw_clip_balance_seed2026102633",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-09",
+          "2016-05-14",
+          "2016-05-25",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-12",
+          "2016-07-13",
+          "2016-07-14",
+          "2016-07-30",
+          "2016-08-13",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-06",
+          "2016-09-08",
+          "2016-11-10",
+          "2017-01-28"
+        ],
+        "B": [
+          "2016-06-01",
+          "2016-06-25",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-11",
+          "2016-07-24",
+          "2016-08-14",
+          "2016-08-29",
+          "2016-09-27",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-04-04",
+          "2017-05-23",
+          "2017-05-28"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 259,
+        "B": 250
+      },
+      "cross_partition_hulls_before_exclusion": 43,
+      "fixed_partition_max_retained_without_balance": 398,
+      "fixed_partition_min_exclusions_without_balance": 111,
+      "optimal_retained_45_55": {
+        "retained": 398,
+        "A_clips": 199,
+        "B_clips": 199
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 398,
+        "A_clips": 199,
+        "B_clips": 199
+      },
+      "excluded_clips": 111,
+      "retained_fraction": 0.7819253438113949,
+      "A_summary": {
+        "clips": 199,
+        "hulls": 84,
+        "days": 18,
+        "header_hours": 12.781666666666666,
+        "native_complete_minutes": 761,
+        "native_complete_minute_hours": 12.683333333333334,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 181,
+          "2017": 18
+        },
+        "day_clip_counts": {
+          "2016-05-09": 13,
+          "2016-05-14": 12,
+          "2016-05-25": 12,
+          "2016-06-04": 11,
+          "2016-06-05": 12,
+          "2016-07-06": 7,
+          "2016-07-08": 10,
+          "2016-07-12": 12,
+          "2016-07-13": 12,
+          "2016-07-14": 7,
+          "2016-07-30": 4,
+          "2016-08-13": 12,
+          "2016-08-28": 13,
+          "2016-09-04": 11,
+          "2016-09-06": 12,
+          "2016-09-08": 9,
+          "2016-11-10": 12,
+          "2017-01-28": 18
+        }
+      },
+      "B_summary": {
+        "clips": 199,
+        "hulls": 94,
+        "days": 15,
+        "header_hours": 13.465,
+        "native_complete_minutes": 802,
+        "native_complete_minute_hours": 13.366666666666667,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 134,
+          "2017": 65
+        },
+        "day_clip_counts": {
+          "2016-06-01": 18,
+          "2016-06-25": 12,
+          "2016-07-07": 9,
+          "2016-07-09": 8,
+          "2016-07-10": 11,
+          "2016-07-11": 13,
+          "2016-07-24": 11,
+          "2016-08-14": 9,
+          "2016-08-29": 20,
+          "2016-09-27": 12,
+          "2016-11-11": 11,
+          "2017-01-12": 8,
+          "2017-04-04": 15,
+          "2017-05-23": 22,
+          "2017-05-28": 20
+        }
+      },
+      "excluded_summary": {
+        "clips": 111,
+        "hulls": 43,
+        "days": 30,
+        "header_hours": 6.916666666666667,
+        "native_complete_minutes": 415,
+        "native_complete_minute_hours": 6.916666666666667,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          840.0
+        ],
+        "year_counts": {
+          "2016": 102,
+          "2017": 9
+        },
+        "day_clip_counts": {
+          "2016-05-09": 2,
+          "2016-05-14": 4,
+          "2016-05-25": 3,
+          "2016-06-01": 3,
+          "2016-06-04": 4,
+          "2016-06-05": 1,
+          "2016-06-25": 1,
+          "2016-07-06": 1,
+          "2016-07-07": 6,
+          "2016-07-08": 2,
+          "2016-07-10": 5,
+          "2016-07-11": 3,
+          "2016-07-12": 7,
+          "2016-07-13": 3,
+          "2016-07-14": 5,
+          "2016-07-24": 3,
+          "2016-07-30": 6,
+          "2016-08-14": 9,
+          "2016-08-28": 5,
+          "2016-08-29": 4,
+          "2016-09-04": 3,
+          "2016-09-06": 6,
+          "2016-09-08": 4,
+          "2016-09-27": 4,
+          "2016-11-10": 4,
+          "2016-11-11": 4,
+          "2017-01-12": 2,
+          "2017-04-04": 2,
+          "2017-05-23": 2,
+          "2017-05-28": 3
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "hash_greedy_raw_clip_balance_seed2026102633.csv",
+      "not_applied_to_production": true
+    },
+    {
+      "name": "spectral_day_affinity_closest_raw_clip_half",
+      "proposed_day_sets": {
+        "A": [
+          "2016-05-14",
+          "2016-06-25",
+          "2016-07-07",
+          "2016-07-09",
+          "2016-07-10",
+          "2016-07-12",
+          "2016-07-13",
+          "2016-07-24",
+          "2016-07-30",
+          "2016-08-28",
+          "2016-09-04",
+          "2016-09-27",
+          "2016-11-10",
+          "2016-11-11",
+          "2017-01-12",
+          "2017-04-04",
+          "2017-05-28"
+        ],
+        "B": [
+          "2016-05-09",
+          "2016-05-25",
+          "2016-06-01",
+          "2016-06-04",
+          "2016-06-05",
+          "2016-07-06",
+          "2016-07-08",
+          "2016-07-11",
+          "2016-07-14",
+          "2016-08-13",
+          "2016-08-14",
+          "2016-08-29",
+          "2016-09-06",
+          "2016-09-08",
+          "2017-01-28",
+          "2017-05-23"
+        ]
+      },
+      "raw_day_partition_clips": {
+        "A": 255,
+        "B": 254
+      },
+      "cross_partition_hulls_before_exclusion": 35,
+      "fixed_partition_max_retained_without_balance": 408,
+      "fixed_partition_min_exclusions_without_balance": 101,
+      "optimal_retained_45_55": {
+        "retained": 408,
+        "A_clips": 211,
+        "B_clips": 197
+      },
+      "optimal_retained_exact_balance_pm1": {
+        "retained": 407,
+        "A_clips": 203,
+        "B_clips": 204
+      },
+      "excluded_clips": 101,
+      "retained_fraction": 0.8015717092337917,
+      "A_summary": {
+        "clips": 211,
+        "hulls": 88,
+        "days": 17,
+        "header_hours": 13.598611111111111,
+        "native_complete_minutes": 811,
+        "native_complete_minute_hours": 13.516666666666667,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 171,
+          "2017": 40
+        },
+        "day_clip_counts": {
+          "2016-05-14": 13,
+          "2016-06-25": 11,
+          "2016-07-07": 11,
+          "2016-07-09": 8,
+          "2016-07-10": 15,
+          "2016-07-12": 16,
+          "2016-07-13": 14,
+          "2016-07-24": 12,
+          "2016-07-30": 9,
+          "2016-08-28": 14,
+          "2016-09-04": 13,
+          "2016-09-27": 13,
+          "2016-11-10": 10,
+          "2016-11-11": 12,
+          "2017-01-12": 10,
+          "2017-04-04": 13,
+          "2017-05-28": 17
+        }
+      },
+      "B_summary": {
+        "clips": 197,
+        "hulls": 90,
+        "days": 16,
+        "header_hours": 13.198333333333334,
+        "native_complete_minutes": 786,
+        "native_complete_minute_hours": 13.1,
+        "duration_seconds_min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ],
+        "year_counts": {
+          "2016": 162,
+          "2017": 35
+        },
+        "day_clip_counts": {
+          "2016-05-09": 14,
+          "2016-05-25": 9,
+          "2016-06-01": 13,
+          "2016-06-04": 11,
+          "2016-06-05": 11,
+          "2016-07-06": 8,
+          "2016-07-08": 8,
+          "2016-07-11": 11,
+          "2016-07-14": 10,
+          "2016-08-13": 10,
+          "2016-08-14": 11,
+          "2016-08-29": 21,
+          "2016-09-06": 13,
+          "2016-09-08": 12,
+          "2017-01-28": 13,
+          "2017-05-23": 22
+        }
+      },
+      "excluded_summary": {
+        "clips": 101,
+        "hulls": 35,
+        "days": 30,
+        "header_hours": 6.366388888888889,
+        "native_complete_minutes": 381,
+        "native_complete_minute_hours": 6.35,
+        "duration_seconds_min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ],
+        "year_counts": {
+          "2016": 84,
+          "2017": 17
+        },
+        "day_clip_counts": {
+          "2016-05-09": 1,
+          "2016-05-14": 3,
+          "2016-05-25": 6,
+          "2016-06-01": 8,
+          "2016-06-04": 4,
+          "2016-06-05": 2,
+          "2016-06-25": 2,
+          "2016-07-07": 4,
+          "2016-07-08": 4,
+          "2016-07-10": 1,
+          "2016-07-11": 5,
+          "2016-07-12": 3,
+          "2016-07-13": 1,
+          "2016-07-14": 2,
+          "2016-07-24": 2,
+          "2016-07-30": 1,
+          "2016-08-13": 2,
+          "2016-08-14": 7,
+          "2016-08-28": 4,
+          "2016-08-29": 3,
+          "2016-09-04": 1,
+          "2016-09-06": 5,
+          "2016-09-08": 1,
+          "2016-09-27": 3,
+          "2016-11-10": 6,
+          "2016-11-11": 3,
+          "2017-01-28": 5,
+          "2017-04-04": 4,
+          "2017-05-23": 2,
+          "2017-05-28": 6
+        }
+      },
+      "cross_hull_day_bytes_interval_overlap_violations": 0,
+      "both_sides_at_least250": false,
+      "retained_graph_components": 2,
+      "metadata_assignment_file": "spectral_day_affinity_closest_raw_clip_half.csv",
+      "not_applied_to_production": true
+    }
+  ],
+  "best_tested_45_55": {
+    "name": "spectral_day_affinity_closest_raw_clip_half",
+    "retained": 408,
+    "excluded": 101,
+    "A": {
+      "clips": 211,
+      "hulls": 88,
+      "days": 17,
+      "header_hours": 13.598611111111111,
+      "native_complete_minutes": 811,
+      "native_complete_minute_hours": 13.516666666666667,
+      "duration_seconds_min_median_max": [
+        120.0,
+        180.0,
+        1380.0
+      ],
+      "year_counts": {
+        "2016": 171,
+        "2017": 40
+      },
+      "day_clip_counts": {
+        "2016-05-14": 13,
+        "2016-06-25": 11,
+        "2016-07-07": 11,
+        "2016-07-09": 8,
+        "2016-07-10": 15,
+        "2016-07-12": 16,
+        "2016-07-13": 14,
+        "2016-07-24": 12,
+        "2016-07-30": 9,
+        "2016-08-28": 14,
+        "2016-09-04": 13,
+        "2016-09-27": 13,
+        "2016-11-10": 10,
+        "2016-11-11": 12,
+        "2017-01-12": 10,
+        "2017-04-04": 13,
+        "2017-05-28": 17
+      }
+    },
+    "B": {
+      "clips": 197,
+      "hulls": 90,
+      "days": 16,
+      "header_hours": 13.198333333333334,
+      "native_complete_minutes": 786,
+      "native_complete_minute_hours": 13.1,
+      "duration_seconds_min_median_max": [
+        119.0,
+        180.0,
+        1080.0
+      ],
+      "year_counts": {
+        "2016": 162,
+        "2017": 35
+      },
+      "day_clip_counts": {
+        "2016-05-09": 14,
+        "2016-05-25": 9,
+        "2016-06-01": 13,
+        "2016-06-04": 11,
+        "2016-06-05": 11,
+        "2016-07-06": 8,
+        "2016-07-08": 8,
+        "2016-07-11": 11,
+        "2016-07-14": 10,
+        "2016-08-13": 10,
+        "2016-08-14": 11,
+        "2016-08-29": 21,
+        "2016-09-06": 13,
+        "2016-09-08": 12,
+        "2017-01-28": 13,
+        "2017-05-23": 22
+      }
+    }
+  },
+  "best_tested_exact_balance_pm1": {
+    "name": "spectral_day_affinity_closest_raw_clip_half",
+    "retained": 407,
+    "A_clips": 203,
+    "B_clips": 204
+  },
+  "any_tested_250_250": false,
+  "source_model_data_pool_unchanged": true,
+  "model_fitting_or_predictions_executed": false,
+  "labels_acoustic_Test_report_model_performance_read": false,
+  "limitations": [
+    "Exactmaximumisconditionaloneachfixeddaypartition,notaglobalbalancedseparatorproof.",
+    "Hull/day/UTC/byteisolationisconditionalonretainedclips;allrecordingsstillshareprovider/receivercorpus.",
+    "Articulationdayremovaldeletesmanyclips;simplebipartitebridgepairswithparallelclipsarenotsinglebridgeclips.",
+    "Arbitraryclip250/250splitdoesnotguaranteeunseenhullsordays.",
+    "MetadatafeasibilitydoesnotdemonstrateimprovedRMSE/AUCandhasnotalteredR9."
+  ],
+  "elapsed_seconds": 2.724341041408479,
+  "script_sha256": "030700ddf1290a323ca992c0097b2de21e8d51de5c951fb39e5db7a918f91f31"
+}

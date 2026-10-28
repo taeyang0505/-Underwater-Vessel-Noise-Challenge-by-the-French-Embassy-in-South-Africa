@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "scope": "synthetic CPU hardware fixture, not source training or validation performance",
+  "sequential_fresh_processes": true,
+  "settings": {
+    "input_shape": [
+      128,
+      8,
+      15,
+      25
+    ],
+    "width": 32,
+    "blocks": 3,
+    "global_context": true,
+    "dropout": 0.1,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "gradient_clip": 1.0,
+    "loss_weights": {
+      "share": 1.0,
+      "cell": 0.25,
+      "presence": 0.05
+    },
+    "seed": 20261026
+  },
+  "measurements": [
+    {
+      "threads": 1,
+      "torch_threads": 1,
+      "interop_threads": 1,
+      "warmup_updates": 2,
+      "timed_updates": 8,
+      "batch_size": 128,
+      "median_step_seconds": 0.2012786869890988,
+      "mean_step_seconds": 0.2019105728249997,
+      "minimum_step_seconds": 0.20039433240890503,
+      "maximum_step_seconds": 0.20361024979501963,
+      "all_step_seconds": [
+        0.20359504222869873,
+        0.20094683300703764,
+        0.2033792082220316,
+        0.20082037523388863,
+        0.20161054097115993,
+        0.20092800073325634,
+        0.20039433240890503,
+        0.20361024979501963
+      ],
+      "examples_per_second_from_median": 635.9341960876983,
+      "peak_process_RSS_bytes": 434929664,
+      "parameters": 64449,
+      "torch_version": "2.14.1",
+      "numpy_version": "2.3.5",
+      "all_losses_and_gradients_finite": true,
+      "no_dataset_or_checkpoint_opened": true,
+      "no_weights_saved": true
+    },
+    {
+      "threads": 2,
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "warmup_updates": 2,
+      "timed_updates": 8,
+      "batch_size": 128,
+      "median_step_seconds": 0.15386466635391116,
+      "mean_step_seconds": 0.1543791617732495,
+      "minimum_step_seconds": 0.15137437544763088,
+      "maximum_step_seconds": 0.1585169592872262,
+      "all_step_seconds": [
+        0.1585169592872262,
+        0.1568562500178814,
+        0.15710208378732204,
+        0.15565408300608397,
+        0.15207524970173836,
+        0.1517722923308611,
+        0.15168200060725212,
+        0.15137437544763088
+      ],
+      "examples_per_second_from_median": 831.8998964036443,
+      "peak_process_RSS_bytes": 439255040,
+      "parameters": 64449,
+      "torch_version": "2.14.1",
+      "numpy_version": "2.3.5",
+      "all_losses_and_gradients_finite": true,
+      "no_dataset_or_checkpoint_opened": true,
+      "no_weights_saved": true
+    },
+    {
+      "threads": 4,
+      "torch_threads": 4,
+      "interop_threads": 1,
+      "warmup_updates": 2,
+      "timed_updates": 8,
+      "batch_size": 128,
+      "median_step_seconds": 0.13026589527726173,
+      "mean_step_seconds": 0.13041699456516653,
+      "minimum_step_seconds": 0.12981733307242393,
+      "maximum_step_seconds": 0.13148104213178158,
+      "all_step_seconds": [
+        0.13148104213178158,
+        0.12994833290576935,
+        0.13015795778483152,
+        0.1308826245367527,
+        0.13037383276969194,
+        0.13076329231262207,
+        0.12991154100745916,
+        0.12981733307242393
+      ],
+      "examples_per_second_from_median": 982.6056139065491,
+      "peak_process_RSS_bytes": 434962432,
+      "parameters": 64449,
+      "torch_version": "2.14.1",
+      "numpy_version": "2.3.5",
+      "all_losses_and_gradients_finite": true,
+      "no_dataset_or_checkpoint_opened": true,
+      "no_weights_saved": true
+    }
+  ],
+  "fastest_single_process_threads": 4,
+  "concurrency_not_measured": true,
+  "data_or_model_performance_read": false,
+  "limitations": [
+    "Eight timed updates are a short operational sample, not an epoch or full training benchmark.",
+    "No concurrent two-worker speedup is measured. CPU contention, system memory pressure and thermal state can change timings.",
+    "Synthetic repeated batch excludes input preparation, real INNER evaluation, hashing and checkpoint overhead.",
+    "Thread changes can change floating-point trajectories; no bitwise-prefix claim relative to previous runs."
+  ],
+  "source_sha256": {
+    "ops/benchmark_r6_cpu_threads.py": "b1a2fb830fa905833945063fbb6df9c1f7914a1d28eebd0259b4b8dfafc4ff54",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb"
+  }
+}

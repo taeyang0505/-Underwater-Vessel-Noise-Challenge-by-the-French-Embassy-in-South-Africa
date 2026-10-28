@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": {
+    "symmetric_correlation_matrices_valid": [
+      "selection_pearson_share5x5",
+      "selection_pearson_component5x5",
+      "selection_pearson_all15x15",
+      "selection_spearman_share5x5",
+      "selection_spearman_component5x5",
+      "selection_spearman_all15x15",
+      "query_pearson_share5x5",
+      "query_pearson_component5x5",
+      "query_pearson_all15x15",
+      "query_spearman_share5x5",
+      "query_spearman_component5x5",
+      "query_spearman_all15x15"
+    ],
+    "threshold_groups_monotonic_and_inclusive_identity": 972,
+    "quantile_groups_monotonic": 972,
+    "all_input_pins_current_exact": 115,
+    "all_result_outputs_exact": 26,
+    "numeric_recovery_no_range_clipping": true,
+    "inference_fit_model_load_performed": false,
+    "RESULTS_sha256": "4103016d571f3de86e8295c37fddd651941edf42714cba767cd11479b2d597e8"
+  }
+}

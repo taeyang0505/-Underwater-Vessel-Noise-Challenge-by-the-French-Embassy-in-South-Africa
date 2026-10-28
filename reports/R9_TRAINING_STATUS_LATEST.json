@@ -1,0 +1,62 @@
+{
+  "captured_utc": "2026-10-26T11:10:54.238374+00:00",
+  "run_state": {
+    "status": "running",
+    "stage": "nn"
+  },
+  "members": [
+    {
+      "fold": "fold_00",
+      "model": "bg_cnn",
+      "epoch": 100,
+      "train_rmse": 0.07010201251975225,
+      "latest_validation_rmse": 0.0999112708793573,
+      "best_epoch": 5,
+      "best_rmse": 0.09036093202136652,
+      "lr": 1e-06,
+      "elapsed_seconds": 4544.023014706094,
+      "summary_exists": true,
+      "logged_epochs": 100
+    },
+    {
+      "fold": "fold_00",
+      "model": "fdy",
+      "epoch": 100,
+      "train_rmse": 0.07560135572428395,
+      "latest_validation_rmse": 0.08997010266423368,
+      "best_epoch": 16,
+      "best_rmse": 0.08103366363575992,
+      "lr": 1e-06,
+      "elapsed_seconds": 4561.980151618016,
+      "summary_exists": true,
+      "logged_epochs": 100
+    },
+    {
+      "fold": "fold_00",
+      "model": "itransformer",
+      "epoch": 59,
+      "train_rmse": 0.09194530626456486,
+      "latest_validation_rmse": 0.10224406761270105,
+      "best_epoch": 16,
+      "best_rmse": 0.09652330534360902,
+      "lr": 1e-06,
+      "elapsed_seconds": 2760.038598819985,
+      "summary_exists": false,
+      "logged_epochs": 59
+    },
+    {
+      "fold": "fold_00",
+      "model": "tfgrid_fdy_conformer",
+      "epoch": 100,
+      "train_rmse": 0.057163279243033924,
+      "latest_validation_rmse": 0.08351954573479155,
+      "best_epoch": 17,
+      "best_rmse": 0.07941507932041383,
+      "lr": 1e-06,
+      "elapsed_seconds": 4588.824980142992,
+      "summary_exists": true,
+      "logged_epochs": 100
+    }
+  ],
+  "training_errors": []
+}

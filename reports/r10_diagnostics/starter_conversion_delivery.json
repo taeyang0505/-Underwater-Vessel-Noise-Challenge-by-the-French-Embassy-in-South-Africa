@@ -1,0 +1,24 @@
+{
+  "status": "completed_source_unchanged",
+  "files_sha256": {
+    "starter_conversion_audit.json": "28d1790e75ddbd747a5dd3fb6630743e55b9ad9a2be3bb93064d66c30d730b97",
+    "starter_conversion_audit.md": "1bdbc9e78aba39520281f190eb54bbf440e9276854b2b6ca5289c8b95160bd12",
+    "starter_conversion_summary.json": "ee85db515898a7e97cd834515233ab611ff89903f782af99e05e3a89e40097e2",
+    "starter_conversion_cases.csv": "cc49fd08ef948a145398833e30bba441473c68ddcd0768367144dc2ed106dc53",
+    "starter_conversion_band_bounds.csv": "1d0623fc05856e819f155f26313c18c22c58c777d74c26a6b16c702d6a342a0a",
+    "starter_conversion_artifacts/official_helper_reviewed.py": "38241ef029c3605119f260678f6e518fcfc81d87110cabdf2ceed5dc6380dde3"
+  },
+  "audit_code": "ops/r10_starter_conversion_audit.py",
+  "audit_code_sha256": "94f84848448da100df2900d325335b48cd4d0573ea3e0f2b53fcff26a0f4086e",
+  "source_pins": {
+    "data/raw/maritime_starter_notebook.ipynb": "08242f4771c38de43ab9022d460b537b5eaa90a687bb1ddb532061b512dd6b83",
+    "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+    "pipeline/prepare_external.py": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "data/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+    "data/processed/external_segments_power.npy": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52"
+  },
+  "all_source_pins_still_match": true,
+  "case_count": 24,
+  "network_Test_report_model_fit": false
+}

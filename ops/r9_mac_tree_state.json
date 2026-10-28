@@ -1,0 +1,53 @@
+{
+  "format": "r9_mac_tree_managed_process_v1",
+  "status": "failed",
+  "created_utc": "2026-10-26T06:26:02.578974+00:00",
+  "command": [
+    "/Users/hongtaeyang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-m",
+    "ops.run_r9_training",
+    "tree",
+    "--executor",
+    "mac_cpu",
+    "--output",
+    "models/r9_mac_trees_r1"
+  ],
+  "cwd": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync",
+  "output": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/models/r9_mac_trees_r1",
+  "log": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/r9_mac_trees_r1.log",
+  "supervisor_pid": 2678,
+  "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+  "code_sha256": {
+    "pipeline/runner_r9.py": "f2c194d6c32d1cac8b8d4e9c352f979d01e72e14e9fa18bb4e6029c9dd24c32d",
+    "ops/run_r9_training.py": "f4f0c2488d3ceffe1bc3e493b0e764f3f2cfd3d8380c1721eec83a53025f8c2a"
+  },
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "threads": 4,
+  "sequential_folds": true,
+  "maximum_trees": 1500,
+  "early_stopping_patience": 40,
+  "no_GPU_SSH_Test_report_or_submission": true,
+  "automatic_restart": false,
+  "peak_observed_child_rss_bytes": 0,
+  "pid": 2679,
+  "started_utc": "2026-10-26T06:26:02.581215+00:00",
+  "last_checked_utc": "2026-10-26T06:27:32.629327+00:00",
+  "progress": {
+    "status": "running",
+    "executor": "mac_cpu",
+    "fold": 0,
+    "completed_folds": [],
+    "threads": 4
+  },
+  "return_code": -11,
+  "finished_utc": "2026-10-26T06:27:33.598903+00:00",
+  "source_code_sha256_unchanged": true,
+  "config_sha256_unchanged": true
+}

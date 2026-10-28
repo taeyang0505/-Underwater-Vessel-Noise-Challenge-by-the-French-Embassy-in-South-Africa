@@ -1,0 +1,59 @@
+{
+  "format": "r12_matched_control_followup_eval_plan_v1",
+  "created_unix": 1793034545.4022698,
+  "control_data": "data.nosync/synthetic/r12_mask_matched_control_v2",
+  "control_root": "models/r12_mask_matched_control_r2",
+  "main_results": "reports/r12_cpu_ablation_r1/RESULTS.json",
+  "global_freeze": "reports/R12_ALL17_GLOBAL_FREEZE.json",
+  "source_pins": {
+    "ops/evaluate_r12_mask_matched_control.py": "ded5e72aeaf9c08fdaaea9c959647724eb9ecd231cf36990642e45544b979413",
+    "ops/evaluate_r12_ablation.py": "ba3bc6f312b1747d88eb9ca841f0f3432e6982e9ee37351dd2878cd4216f1e08",
+    "ops/verify_r12_evaluation.py": "c9b40df2b4b894d027218cdfef95974f6b9964e8afb1d2cc42d1992ffbe66815",
+    "ops/train_r12_mask_matched_control_v2.py": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb",
+    "ops/build_r12_mask_matched_control_v2.py": "8d108c47f24dffe93524467fed1368a453015676c8397df0299b3106db98f91d",
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/manifest.json": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/readiness.json": "22ed0f3fc84b4c11c43c91556b60389c9fab56aed7c2399a42dd55febd04fd57",
+    "reports/R12_EVALUATION_PREDECLARED_PLAN.json": "f5fdb2d62d76548a72dbe9c9f49d75c4feb82b3067c3bc4cbf63d1a089c226b0"
+  },
+  "required_control_manifest_sha256": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+  "execution_barrier": "completed original17evaluation AND complete strictv2 CNN+tree receipt",
+  "models": [
+    "CNN_L1HM1P1",
+    "Tree_L1HM1P1",
+    "Blend50_L1HM1P1"
+  ],
+  "fixed_blend_weights": {
+    "CNN": 0.5,
+    "tree": 0.5
+  },
+  "extra_CNN_and_blend_score": "share",
+  "comparators": [
+    "R9_frozen_all5",
+    "Blend50_L1H0P1",
+    "Blend50_L1H1P1",
+    "original_selected_Blend50"
+  ],
+  "panel_protocol": "exact17originalevaluationpanels; verify target/ID/order against original stored predictions",
+  "policy": "followup report only; excluded from original8candidate gate selection; no reweight/retrain",
+  "metrics": [
+    "RMSE",
+    "MAE",
+    "bias",
+    "mean_RMS",
+    "share_and_score_and_classifier_AUC",
+    "zero_bias",
+    "contrast_ge099",
+    "high_y_SSE"
+  ],
+  "CI": {
+    "repetitions": 500,
+    "unit": "same original known background_group/source_id fallback",
+    "method": "independent weighted cluster bootstrap"
+  },
+  "no_Test_inference_fitting_original_artifact_mutation": true,
+  "development_not_blind": true,
+  "plan_sha256": "d3aba9f74603fac32feea8e9fcb3e1b32258490b424e13eb9b1b186d5ded6b44"
+}

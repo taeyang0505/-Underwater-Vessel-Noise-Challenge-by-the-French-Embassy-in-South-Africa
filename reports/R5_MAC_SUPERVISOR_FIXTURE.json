@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scope": "local synthetic numeric/JSON/cgroup/handoff fixture only",
+  "GPU_or_training_started": false,
+  "child_module": "ops.runner_r5_mac",
+  "backup_helper": "backup_r5_completed_v2",
+  "checks": [
+    "cgroup v1/v2 counters and unlimited bound",
+    "OOM/NaN/Inf error detection",
+    "finite epoch parse and gap",
+    "startup source/config/training-contract/fold guards",
+    "Mac executor/source fixture pins",
+    "live legacy process and unapproved handoff rejected",
+    "Mac-only child command",
+    "venv executable symlink spelling preserved",
+    "no remote access"
+  ],
+  "code_sha256": {
+    "ops/runpod_train_r5_mac.py": "68f215255359ded518b87341572758d6bdd605971ded78219a112ee5ed5dd344",
+    "ops/backup_r5_completed_v2.py": "fa7a5c842beb774efb1d4a4e9ab15b05479648b5011d3499f3986f53297b237d"
+  }
+}

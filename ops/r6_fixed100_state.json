@@ -1,0 +1,20 @@
+{
+  "phase": "completed",
+  "run": "models/r6_fixed100_v1",
+  "config": "configs/r6_fixed100_v1.json",
+  "data": "data/synthetic/r6_cpu_guardrails_v3_schemafix",
+  "epochs_each": 100,
+  "early_stopping_enabled": false,
+  "models": 5,
+  "threads_each": 2,
+  "maximum_parallel_arms": 5,
+  "monitoring": "completed; no recurring automation created",
+  "GPU_Test_SSH_submission": false,
+  "state_created_utc": "2026-10-25T20:37:41.033832+00:00",
+  "completed_at_utc": "2026-10-25T21:07:32.559919+00:00",
+  "completed_models": 5,
+  "completed_epochs_total": 500,
+  "checkpoint_verification": "reports/R6_FIXED100_COMPLETION_VERIFICATION.json",
+  "report": "reports/R6_FIXED100_TRAINING_REPORT.md",
+  "public_training_provenance_report": "reports/R6_PUBLIC_TRAINING_PROVENANCE_REVIEW.md"
+}

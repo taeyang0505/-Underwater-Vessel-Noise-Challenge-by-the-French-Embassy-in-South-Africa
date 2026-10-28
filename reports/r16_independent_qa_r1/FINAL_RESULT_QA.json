@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-27T08:26:53.817544+00:00",
+  "scope": "Completed locked result audit; source-ID/labels, every stored row metric, frozen policies and aggregate/CI reproduction. No model fit or forward.",
+  "numerical_evidence_sha256": {
+    "reports/r16_locked_comparison_r1/small_locked/RESULTS.json": "fc2d198887f9707396344b3a7cead70939a6a363d532bde7b16e9cce29419e5a",
+    "reports/r16_locked_comparison_r1/old_policy_audit/RESULTS.json": "992bf9ecdbe83757cbb7c537e66d3b74cf80573765bc34b1582e77fef2565623",
+    "reports/r16_frozen_evaluation_r1/development/RESULTS.json": "37184ff5d0f10fef1af916a94ae4f809d45bfc9056ce39cf5e0dd3ccc679804c",
+    "reports/r16_frozen_evaluation_r1/locked/RESULTS.json": "5a1f43a3af45525f7a918e471b4b25d0aa5a17cae14d54d17070400cc69c71b2",
+    "reports/r16_review_r1/RESULTS.json": "e2ededfe044a1617fd77019e3d7af18eb8c0a99828d5df43f48410ae2c176c12"
+  },
+  "global_freeze_sha256": "46cffc361b852bd510cef2d2b9f2234fda545a5d13b135931d9da0a8f5665329",
+  "frozen_artifact_count": 1874,
+  "old_frozen_source_pin_checks": 3751,
+  "all_frozen_original_artifacts_unchanged": true,
+  "verified_small_saved_prediction_files": 48,
+  "verified_old_saved_prediction_files": 24,
+  "small_metric_rows_recomputed": 144,
+  "old_individual_and_policy_rows_recomputed": 840,
+  "review_aggregate_rows_recomputed": 80,
+  "numeric_metric_values_recomputed": 71132,
+  "max_metric_error": 3.3306690738754696e-16,
+  "old_arithmetic_and_frozen_aggregate_prediction_max_error": 0.0,
+  "source_summaries": {
+    "local_fit": {
+      "saved_operator_rows": 2400,
+      "unique_background_ids": 400,
+      "background_source_groups": 10,
+      "source_ID_target_order_exact": true
+    },
+    "local_gate": {
+      "saved_operator_rows": 2400,
+      "unique_background_ids": 400,
+      "background_source_groups": 8,
+      "source_ID_target_order_exact": true
+    },
+    "local_report": {
+      "saved_operator_rows": 2400,
+      "unique_background_ids": 400,
+      "background_source_groups": 8,
+      "source_ID_target_order_exact": true
+    },
+    "domain_holdout": {
+      "saved_operator_rows": 2400,
+      "unique_background_ids": 400,
+      "background_source_groups": 32,
+      "source_ID_target_order_exact": true
+    }
+  },
+  "all_ID_target_presence_site_reference_orders_match": true,
+  "frozen_policy_score_lambda_applied_exactly": true,
+  "no_post_gate_policy_change": true,
+  "paired_bootstrap_reproduction_max_error": 0.0,
+  "paired_small_CNN_differences": {
+    "local_gate": {
+      "RMSE_mixed_minus_control": -0.021251524556593696,
+      "paired_background_bootstrap_p025": -0.031322297811433704,
+      "paired_background_bootstrap_p975": -0.011906464533679327,
+      "background_source_groups": 8
+    },
+    "local_report": {
+      "RMSE_mixed_minus_control": -0.024540049050070505,
+      "paired_background_bootstrap_p025": -0.03337806777418876,
+      "paired_background_bootstrap_p975": -0.015813053472596202,
+      "background_source_groups": 8
+    },
+    "domain_holdout": {
+      "RMSE_mixed_minus_control": -0.017544008568061695,
+      "paired_background_bootstrap_p025": -0.029412627095484197,
+      "paired_background_bootstrap_p975": -0.006208815666218746,
+      "background_source_groups": 32
+    }
+  },
+  "Test_or_Test_statistics_opened": false,
+  "new_fit_inference_or_model_resume": false,
+  "document_review_notes": [
+    "Mixed smallCNN aggregate RMSE improves on the three locked roles; this is not universal per-operator or all-metric superiority.",
+    "Background-unit bootstrap retains6operators but does not cluster source-week/recorder groups (gate8/report8/domain32); intervals condition on sampled sources and may understate population dependence.",
+    "Saturation probability>=.99 does not identify whether examples are truly easy or classifier overconfident without calibration evidence.",
+    "Existing old models already saw509references and domain sites were development-exposed; full5fold OOF/Test or causal gap closure is not established."
+  ],
+  "document_MD_not_modified_by_auditor": true,
+  "auditor_source_sha256": "599fd776177e0992a7c5c164b4224be072f235d351eb6232e391faece1954d91"
+}

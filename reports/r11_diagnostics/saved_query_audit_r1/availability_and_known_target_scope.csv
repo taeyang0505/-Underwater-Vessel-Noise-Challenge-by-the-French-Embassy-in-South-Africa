@@ -1,0 +1,55 @@
+role,dimension,slice,n,known_synthetic_target_mean,known_synthetic_target_RMS,query_true_share_known
+selection,all,all,1000,0.09886674958792514,0.18393510544512573,
+selection,Nobs_exact,5,262,0.0912871748177452,0.19915896219558163,
+selection,Nobs_exact,12,14,0.14820871309244207,0.24834168634996018,
+selection,Nobs_exact,13,17,0.08433507301144265,0.13780559424540959,
+selection,Nobs_exact,14,139,0.09927605976905043,0.18469510395736535,
+selection,Nobs_exact,15,568,0.10148154798114291,0.17558857029991798,
+selection,Nobs_group,>=13,724,0.10065550801433938,0.17658769966886237,
+selection,endpoint_pattern,first_missing=False;last_missing=False,590,0.10025854840390516,0.17387889055091343,
+selection,endpoint_pattern,first_missing=False;last_missing=True,196,0.09959434430181448,0.19279687049849406,
+selection,endpoint_pattern,first_missing=True;last_missing=False,130,0.09501429564432136,0.19870074019556316,
+selection,endpoint_pattern,first_missing=True;last_missing=True,84,0.09335542991313905,0.2063295587279979,
+selection,missing_pattern,1,43,0.09638652428280735,0.1998684225203917,
+selection,missing_pattern,"1,11",1,1.0561963108557393e-06,1.0561963108557393e-06,
+selection,missing_pattern,"1,2,3,4,5,11,12,13,14,15",84,0.09335542991313905,0.2063295587279979,
+selection,missing_pattern,"1,2,3,4,5,6,7,8,9,10",86,0.09543298643493894,0.19926960608680952,
+selection,missing_pattern,"13,14,15",14,0.14820871309244207,0.24834168634996018,
+selection,missing_pattern,15,90,0.10641580715245154,0.18320990010518193,
+selection,missing_pattern,2,6,0.012888186669442803,0.022141332787832802,
+selection,missing_pattern,"4,5",1,0.08320222049951553,0.08320222049951553,
+selection,missing_pattern,"5,6",14,0.09646378317847848,0.1502174331697348,
+selection,missing_pattern,"6,7,8,9,10,11,12,13,14,15",92,0.0855233353928349,0.19227148329417293,
+selection,missing_pattern,"9,10",1,0.0,0.0,
+selection,missing_pattern,none,568,0.10148154798114291,0.17558857029991798,
+selection,released_source_site_metadata,1 Richards Bay,522,0.09762633351586807,0.1755349193203682,
+selection,released_source_site_metadata,2 Durban,47,0.13614148583183897,0.22171151498617275,
+selection,released_source_site_metadata,4 Bird Island,33,0.07840695075521414,0.13487494755467033,
+selection,released_source_site_metadata,5 St Croix Island,104,0.11921247932388304,0.1930131714630093,
+selection,released_source_site_metadata,7 St_Francis,294,0.09020961372088324,0.19310324696522949,
+query,all,all,1500,,,False
+query,Nobs_exact,12,1,,,False
+query,Nobs_exact,13,7,,,False
+query,Nobs_exact,14,717,,,False
+query,Nobs_exact,15,775,,,False
+query,Nobs_group,>=13,1499,,,False
+query,endpoint_pattern,first_missing=False;last_missing=False,777,,,False
+query,endpoint_pattern,first_missing=False;last_missing=True,99,,,False
+query,endpoint_pattern,first_missing=True;last_missing=False,623,,,False
+query,endpoint_pattern,first_missing=True;last_missing=True,1,,,False
+query,missing_pattern,1,620,,,False
+query,missing_pattern,"1,14,15",1,,,False
+query,missing_pattern,"1,2",3,,,False
+query,missing_pattern,"13,14",1,,,False
+query,missing_pattern,"14,15",2,,,False
+query,missing_pattern,15,97,,,False
+query,missing_pattern,"8,9",1,,,False
+query,missing_pattern,none,775,,,False
+query,historical_inferred_type_NOT_site_GT,01 Richards Bay,423,,,False
+query,historical_inferred_type_NOT_site_GT,02 Durban,32,,,False
+query,historical_inferred_type_NOT_site_GT,04 Bird Island,16,,,False
+query,historical_inferred_type_NOT_site_GT,05 St Croix,236,,,False
+query,historical_inferred_type_NOT_site_GT,07 St Francis,487,,,False
+query,historical_inferred_type_NOT_site_GT,09 Fish Hoek,15,,,False
+query,historical_inferred_type_NOT_site_GT,10 Sea Point,7,,,False
+query,historical_inferred_type_NOT_site_GT,13 Saldanha Bay,284,,,False

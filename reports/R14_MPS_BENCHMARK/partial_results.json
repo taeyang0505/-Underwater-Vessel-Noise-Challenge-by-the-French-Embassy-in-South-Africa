@@ -1,0 +1,89 @@
+{
+  "completed": [],
+  "failures": [
+    {
+      "kind": "bg_cnn",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "bg_cnn",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "bg_cnn",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "status": "passed six CUDA model smoke probes",
+  "config_sha256": "c6979cbe66e9da0ff840f30477a824d3f7e28fd1bc2e83295924e968fea8d75a",
+  "production_training_executed_at_probe": false,
+  "proof": {
+    "bg_cnn": {
+      "file": "probe_bg_cnn_b128_cuda0.json",
+      "sha256": "478f2881b56e4c99c3d0244851487d6e0e42b65f4c1e39578f2e30aedd018314",
+      "memory": {
+        "allocated_bytes": 25108480,
+        "reserved_bytes": 819986432,
+        "peak_allocated_bytes": 745079808,
+        "peak_reserved_bytes": 819986432
+      },
+      "microbatch": 128,
+      "steps": [
+        {
+          "step": 1,
+          "microbatch_examples": 128,
+          "seconds": 0.6664146980037913,
+          "examples_per_second": 192.07259441218358,
+          "loss_smoke_only": 0.17300158739089966,
+          "share_mse": 0.10379751026630402,
+          "weighted_cell_mse": 0.16197949647903442,
+          "presence_bce": 0.5741839408874512,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 2.2308154106140137,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 42872320,
+          "reserved_bytes": 819986432,
+          "peak_allocated_bytes": 733173248,
+          "peak_reserved_bytes": 819986432
+        },
+        {
+          "step": 2,
+          "microbatch_examples": 128,
+          "seconds": 0.014301527990028262,
+          "examples_per_second": 8950.092611729879,
+          "loss_smoke_only": 0.5953594446182251,
+          "share_mse": 0.4452032148838043,
+          "weighted_cell_mse": 0.48941367864608765,
+          "presence_bce": 0.5560560822486877,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 1.792458176612854,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 42872320,
+          "reserved_bytes": 819986432,
+          "peak_allocated_bytes": 745079808,
+          "peak_reserved_bytes": 819986432
+        }
+      ]
+    },
+    "tfgrid_fdy_conformer": {
+      "file": "probe_tfgrid_b128_cuda0.json",
+      "sha256": "3bc501f63333b4ac37ab6e528c3db6f318f6a7a176b7035f51a4262575c9af4a",
+      "memory": {
+        "allocated_bytes": 29485056,
+        "reserved_bytes": 3871342592,
+        "peak_allocated_bytes": 3155121152,
+        "peak_reserved_bytes": 3871342592
+      },
+      "microbatch": 128,
+      "steps": [
+        {
+          "step": 1,
+          "microbatch_examples": 128,
+          "seconds": 0.9459762659389526,
+          "examples_per_second": 135.3099486834909,
+          "loss_smoke_only": 0.2542533278465271,
+          "share_mse": 0.16347312927246094,
+          "weighted_cell_mse": 0.21877142786979675,
+          "presence_bce": 0.7217468023300171,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 3.886889934539795,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 60378624,
+          "reserved_bytes": 3858759680,
+          "peak_allocated_bytes": 3137466368,
+          "peak_reserved_bytes": 3858759680
+        },
+        {
+          "step": 2,
+          "microbatch_examples": 128,
+          "seconds": 0.07215941196773201,
+          "examples_per_second": 1773.8503752946128,
+          "loss_smoke_only": 0.216070294380188,
+          "share_mse": 0.13958710432052612,
+          "weighted_cell_mse": 0.18487121164798737,
+          "presence_bce": 0.6053073406219482,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.815567672252655,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 60378624,
+          "reserved_bytes": 3871342592,
+          "peak_allocated_bytes": 3155121152,
+          "peak_reserved_bytes": 3871342592
+        }
+      ]
+    },
+    "fdy": {
+      "file": "probe_fdy_default_cuda0.json",
+      "sha256": "b01bcba4aca5f8992754c66d2901ea25e6e342e738d11102b54c3ff188935264",
+      "memory": {
+        "allocated_bytes": 19683328,
+        "reserved_bytes": 293601280,
+        "peak_allocated_bytes": 278146560,
+        "peak_reserved_bytes": 293601280
+      },
+      "microbatch": 128,
+      "steps": [
+        {
+          "step": 1,
+          "microbatch_examples": 128,
+          "seconds": 0.9170187489362434,
+          "examples_per_second": 139.58275133249137,
+          "loss_smoke_only": 0.16327516734600067,
+          "share_mse": 0.09240474551916122,
+          "weighted_cell_mse": 0.14358799159526825,
+          "presence_bce": 0.6994682550430298,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.4542456865310669,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 21173248,
+          "reserved_bytes": 291504128,
+          "peak_allocated_bytes": 276499456,
+          "peak_reserved_bytes": 291504128
+        },
+        {
+          "step": 2,
+          "microbatch_examples": 128,
+          "seconds": 0.015031294082291424,
+          "examples_per_second": 8515.567541905695,
+          "loss_smoke_only": 0.1575479805469513,
+          "share_mse": 0.08666418492794037,
+          "weighted_cell_mse": 0.1334775686264038,
+          "presence_bce": 0.7502881288528442,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.33001813292503357,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 21173248,
+          "reserved_bytes": 293601280,
+          "peak_allocated_bytes": 278146560,
+          "peak_reserved_bytes": 293601280
+        }
+      ]
+    },
+    "itransformer": {
+      "file": "probe_itransformer_default_cuda0.json",
+      "sha256": "758e6cec1054ca5353e20dda2c38b5b08ef7dd11afe3c67a30cd0af37ddf62a7",
+      "memory": {
+        "allocated_bytes": 20344832,
+        "reserved_bytes": 81788928,
+        "peak_allocated_bytes": 66632192,
+        "peak_reserved_bytes": 81788928
+      },
+      "microbatch": 128,
+      "steps": [
+        {
+          "step": 1,
+          "microbatch_examples": 128,
+          "seconds": 0.4710647609317675,
+          "examples_per_second": 271.7248468062345,
+          "loss_smoke_only": 0.17525175213813782,
+          "share_mse": 0.09920051693916321,
+          "weighted_cell_mse": 0.16147467494010925,
+          "presence_bce": 0.7136514186859131,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.35088175535202026,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 23817728,
+          "reserved_bytes": 79691776,
+          "peak_allocated_bytes": 65169408,
+          "peak_reserved_bytes": 79691776
+        },
+        {
+          "step": 2,
+          "microbatch_examples": 128,
+          "seconds": 0.01412764610722661,
+          "examples_per_second": 9060.24960057041,
+          "loss_smoke_only": 0.15272676944732666,
+          "share_mse": 0.08454887568950653,
+          "weighted_cell_mse": 0.1413617581129074,
+          "presence_bce": 0.6567490100860596,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.24533303081989288,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 23817728,
+          "reserved_bytes": 81788928,
+          "peak_allocated_bytes": 66632192,
+          "peak_reserved_bytes": 81788928
+        }
+      ]
+    },
+    "timemoe_public": {
+      "file": "probe_timemoe_b8_cuda0.json",
+      "sha256": "422c3c1185068d0a9c5e87756f86a11711b32a96a3da1d7c8ee6cbc4ee8a43c7",
+      "memory": {
+        "allocated_bytes": 1857916416,
+        "reserved_bytes": 3114270720,
+        "peak_allocated_bytes": 2911774208,
+        "peak_reserved_bytes": 3114270720
+      },
+      "microbatch": 8,
+      "steps": [
+        {
+          "step": 1,
+          "microbatch_examples": 8,
+          "seconds": 0.757302202982828,
+          "examples_per_second": 10.563814509570893,
+          "loss_smoke_only": 0.20282341539859772,
+          "share_mse": 0.12534376978874207,
+          "weighted_cell_mse": 0.1797500103712082,
+          "presence_bce": 0.6508429050445557,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.7995215058326721,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 1867222528,
+          "reserved_bytes": 3107979264,
+          "peak_allocated_bytes": 2904852480,
+          "peak_reserved_bytes": 3107979264
+        },
+        {
+          "step": 2,
+          "microbatch_examples": 8,
+          "seconds": 0.13351980899460614,
+          "examples_per_second": 59.91620314797769,
+          "loss_smoke_only": 0.19923096895217896,
+          "share_mse": 0.12384369224309921,
+          "weighted_cell_mse": 0.17642700672149658,
+          "presence_bce": 0.6256105899810791,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 0.7627565264701843,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 1867222528,
+          "reserved_bytes": 3114270720,
+          "peak_allocated_bytes": 2911774208,
+          "peak_reserved_bytes": 3114270720
+        }
+      ]
+    },
+    "dasheng": {
+      "file": "probe_dasheng_b8_cuda0.json",
+      "sha256": "2bf52363c83d02896f10183b57745d5489f950eeee0474a8caa77bc0e36ce9db",
+      "memory": {
+        "allocated_bytes": 4604955648,
+        "reserved_bytes": 18991808512,
+        "peak_allocated_bytes": 18187729408,
+        "peak_reserved_bytes": 18991808512
+      },
+      "microbatch": 8,
+      "steps": [
+        {
+          "step": 1,
+          "microbatch_examples": 8,
+          "seconds": 0.8537068360019475,
+          "examples_per_second": 9.37089837240304,
+          "loss_smoke_only": 0.3025306463241577,
+          "share_mse": 0.2122044712305069,
+          "weighted_cell_mse": 0.24449871480464935,
+          "presence_bce": 0.5840301513671875,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 7.748460292816162,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 4630666240,
+          "reserved_bytes": 18991808512,
+          "peak_allocated_bytes": 18178143744,
+          "peak_reserved_bytes": 18991808512
+        },
+        {
+          "step": 2,
+          "microbatch_examples": 8,
+          "seconds": 0.248608801048249,
+          "examples_per_second": 32.17906995355081,
+          "loss_smoke_only": 0.25711411237716675,
+          "share_mse": 0.1761050522327423,
+          "weighted_cell_mse": 0.20841526985168457,
+          "presence_bce": 0.5781049132347107,
+          "maximum_pool_reconstruction_error": 0.0,
+          "unclipped_gradient_norm": 6.924867153167725,
+          "all_trainable_gradients_finite_and_present": true,
+          "frozen_gradients_absent": true,
+          "allocated_bytes": 4630666240,
+          "reserved_bytes": 18991808512,
+          "peak_allocated_bytes": 18187729408,
+          "peak_reserved_bytes": 18991808512
+        }
+      ]
+    }
+  },
+  "known_setup_failures_resolved": [
+    "cuda index omitted in initial smoke invocation; explicit cuda:0 used",
+    "einops0.8.1 dependency installed before Dasheng success"
+  ],
+  "training_microbatch": 8,
+  "foundation_effective_batch": 32,
+  "foundation_evaluation_batch": 2,
+  "maximum_epochs": 100,
+  "patience": 7,
+  "optimizer": "adam",
+  "no_Test_fitting": true
+}

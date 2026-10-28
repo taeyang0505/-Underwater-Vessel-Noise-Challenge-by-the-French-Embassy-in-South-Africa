@@ -1,0 +1,23 @@
+{
+  "status": "Mac hardware ready; running R5 has no external tree artifact handoff",
+  "created_at_utc": "2026-10-25T15:48:44.774953+00:00",
+  "user_request": "문제가 없다면 LightGBM은 맥 cpu로 하자",
+  "Mac_CPU_training_technically_possible": true,
+  "Mac_CPU_speed_report": "reports/R5_LIGHTGBM_MAC_SPEED_PROFILE.json",
+  "current_run": "group_cv_r5_gpu_r1",
+  "current_run_changed": false,
+  "Mac_production_training_started": false,
+  "existing_GPU_training_interrupted": false,
+  "source_or_config_hotpatch_performed": false,
+  "current_remote_tree_device": "CPU",
+  "blocking_interface_facts": [
+    "runner always launches local pipeline.lgbm_r5 fit after selecting preprocessing",
+    "fit_tree requires a fresh output directory and refuses prepopulated artifacts",
+    "runtime verifies source SHA snapshot after every model call"
+  ],
+  "safe_required_change": "A new explicitly versioned runner with a verified Mac job/receipt importer; no hidden module/interpreter replacement or copying into the live run output",
+  "source_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d"
+  }
+}

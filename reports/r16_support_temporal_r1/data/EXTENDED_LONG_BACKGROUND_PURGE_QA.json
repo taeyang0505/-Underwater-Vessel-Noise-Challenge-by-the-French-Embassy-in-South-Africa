@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "pairs": [
+    {
+      "a": "train",
+      "b": "local_fit",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 24.0,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "local_gate",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 29.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "local_report",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 24.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_fit",
+      "b": "local_gate",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 114.25,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_fit",
+      "b": "local_report",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 337.25,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_fit",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_gate",
+      "b": "local_report",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 558.5,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_gate",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_report",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    }
+  ],
+  "report_and_all_extra_long_negative_backgrounds_checked": true
+}

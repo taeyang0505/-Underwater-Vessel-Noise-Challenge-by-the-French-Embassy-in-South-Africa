@@ -1,0 +1,45 @@
+{
+  "status": "frozen_before_fit",
+  "arm": "S1_H15_F1",
+  "feature_mode": 1,
+  "epochs": 100,
+  "NN_early_stopping": false,
+  "optimizer": "Adam",
+  "dropout": 0.1,
+  "seed": 2026102817,
+  "source_binding": {
+    "Test_used": false,
+    "selection_role": "local_fit",
+    "locked_roles_used_for_fit": false,
+    "data_arm": "S1_H15_F1",
+    "clean_data_sha256": "46ff1a035fd875b174dd0aeecddd1ccf7b9ac15a3df1d3ea04a307bcd032a305",
+    "parent_manifest_sha256": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80",
+    "new_wrapper_sha256": "44fe8d417cc1a3ed5f5f4ffb3d4036ebae1e45e2e9b0b1119f26385e9347b258"
+  },
+  "source_code_sha256": {
+    "ops/r16_support_temporal_models.py": "7c2534091c37998954506b93dffca67908a68601d39821c40fbd58338fc75f8a",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "ops/r16_clean_models.py": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb"
+  },
+  "train_rows": 4000,
+  "fit_rows": 2400,
+  "new_channels": [
+    "temporal_zscore",
+    "rolling_mean2_relative_div10",
+    "rolling_mean4_relative_div10",
+    "rolling_mean8_relative_div10",
+    "observed_contiguous_lag1_div10",
+    "observed_contiguous_lag2_div10",
+    "observed_contiguous_lag3_div10",
+    "rolling4_persistence_above_q20_plus3dB",
+    "local3_arch_curvature_div10"
+  ],
+  "regression_loss": "Share MSE + .25 energyweighted cell MSE",
+  "classifier": "separate parameters and best checkpoint; temporal only; no sqrtw/profile/share",
+  "fixture_only": false,
+  "Test_used": false
+}

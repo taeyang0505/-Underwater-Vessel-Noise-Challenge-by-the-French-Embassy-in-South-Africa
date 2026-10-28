@@ -1,0 +1,9 @@
+{
+  "scope": "saved model evaluation only; match actual sklearn float32 StandardScaler/Ridge arithmetic",
+  "before_script_sha256": "927696218878ccc8abedfebcd88555cef279c0d5d03727cfe787856690c3ad20",
+  "after_script_sha256": "6426e91f0f668ca6ab40f0ee3583cdd65fda2d5f2b321ac17f2de7fb70943f91",
+  "saved_ridge_sha256": "4eb31023835e536376dcc29fa002180999b4ac1a50842579c547eef0568e2592",
+  "additional_fit_allowed": false,
+  "alpha_or_coefficients_or_training_data_changed": false,
+  "cause": "Independent replay originally used float64 instead of the fitted float32 transform; no cross-panel scores evaluated before failure."
+}

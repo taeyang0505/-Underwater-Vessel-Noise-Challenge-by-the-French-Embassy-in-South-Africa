@@ -1,0 +1,33 @@
+{
+  "source_summary_sha256": "cb873094849a788951d576ab18c09a6ae9016ebedf8c059237a0a2e66dd98dd2",
+  "source_csv_sha256": {
+    "component_recovery_checks.csv": "b5b60b038bde7d66c23720d0fc915863a805323c54c77c0b31cc1967fc447295",
+    "positive_vs_explicit_zero_auc.csv": "2de1e06032f355ad81a2d1138f681741dcc3ef158ba5878551a12eceb1a2ec2d",
+    "Nobs_by_site_counts.csv": "965daa02ebc64b03e48e178b3e2b84203e5c1681e30e0cac3d06cb84234070a9",
+    "selection_contrast_AUC_roundoff_sensitivity.csv": "7895cc916401171de91850e00e3d54a2dfa66fc061e6af8a17bd68b603ca16a4",
+    "background_group_bootstrap_CI.csv": "c61f2ae32dfec0769b7c04cec673631171475e6b6fc070f88608ca839189998a",
+    "overall_metrics.csv": "a27c2a66bc247cb130e38c8d89194add667e71e1900190a5b9410e2a0f0b382a",
+    "feature_only_auc.csv": "089cb8c2bdf88c45f40de9d13e8baad2f882c5003961b04e1a24342d600e981f",
+    "aligned_rows_and_saved_prediction_decomposition.csv": "11e53a9e75c7d13033c123899ebacfc8fa1d562411f667cc60618f836def3e6a",
+    "slice_metrics.csv": "5244ee8097752415e73b6646c10293628f134322afacca9791cad51f9ed2ae90",
+    "weak_class_positive_vs_explicit_zero_auc.csv": "5c9886b81973b17516d47c59bf5132e5b6507edc65fc07dbb4dff5a1dd80bcb7"
+  },
+  "findings_sha256": "d41334a79769460f03ef8aa12dc6bffc4ee533e0906ff45ddcc0c141dc462370",
+  "precision_scope_not_mixed_for_comparisons": true,
+  "no_new_source_or_model_or_Test_read": true,
+  "Nobs5_site_counts": {
+    "ensemble_fit": {
+      "7 St_Francis": 196
+    },
+    "ensemble_gate": {
+      "7 St_Francis": 63
+    },
+    "selection": {
+      "7 St_Francis": 262
+    }
+  },
+  "previous_findings_sha256": "528b7d96879b24702bff27dcac77c5deccf608406fef712020df1ade5d92bf35",
+  "revision": "Added requested all5 low-positive two-bin AUC, Nobs15 RMSE/AUC and weak-background error/SSE tables; no data/model/policy rerun",
+  "previous_findings_sha256_before_final_QA": "8439f30135c9a7f8809c6c6fb495ae309bf68f7ba680f657d28bbc71b1e67f62",
+  "diagnostic_sanity_verification_sha256": "75894cf746207f95f64f46e36db642f2825c20cf5f1f895d01244419cbbc9967"
+}

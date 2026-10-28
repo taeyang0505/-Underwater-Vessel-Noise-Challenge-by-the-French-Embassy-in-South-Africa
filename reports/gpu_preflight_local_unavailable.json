@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "not executed: real CUDA unavailable or a CPU device was requested",
+  "CUDA_measured": false,
+  "full_training_executed": false,
+  "model_saved": false,
+  "test_accessed": false,
+  "outer_validation_accessed": false,
+  "calibration_accessed": false,
+  "sealed_accessed": false,
+  "data_package_verified": false,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "torch_version": "2.14.1",
+  "requested_settings": {
+    "batch": 128,
+    "warmup": 3,
+    "measured_steps": 20,
+    "optimizer": "Adam",
+    "dropout": 0.1,
+    "contrastive_weight": 0.0,
+    "max_epochs_for_estimate": 100
+  },
+  "models": [],
+  "foundation": {
+    "status": "skipped; --foundation not enabled; no pinned weights opened"
+  },
+  "limitations": [
+    "A measurement-derived planning upper allowance is not a guaranteed wall-clock upper bound.",
+    "100 epochs assumes no early stopping; real runs may stop earlier.",
+    "Per-step wall time includes NumPy batch indexing, synchronous CPU-to-device transfer, forward, backward, gradient clipping and Adam step.",
+    "Full train plus inner-validation prediction every epoch is estimated from sampled evaluation batches; full-dataset prediction was not executed.",
+    "CPU feature preparation is measured once; OS cache, CPU contention, memory pressure, loading, checkpoint IO, scheduling, other jobs and long-run thermal effects can change timing.",
+    "No estimate here proves convergence, generalization or a global optimum; contrastive training is disabled in this baseline.",
+    "Summed neural allowance covers one fold and one seed only; LightGBM, optional foundation context preparation and CV orchestration are separate."
+  ],
+  "exit_code": 2
+}

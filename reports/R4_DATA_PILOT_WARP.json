@@ -1,0 +1,832 @@
+{
+  "scope": "Data-only fixed-seed bounded whole-source power timewarp + fade/EQ + full-split LHS pilot; no model performance or parameter search",
+  "examples_per_split_per_fold": 1024,
+  "reference_source_hash": "694cf18c9daabc69a77807f6e0ede33ca451443fbfb17d754ac191f0206463ef",
+  "reference_manifest_sha256": "0fcf298fde1486f60269497a60f04745e41ba5fff4bc1f46de81553e67752479",
+  "config_sha256": "a0be9c9957db117a30b43379d9e5097098897a3b551bde7dff4c1b78acdff70d",
+  "folds": [
+    {
+      "fold": 0,
+      "splits": {
+        "train": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.5368839473284268e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38190627098083496,
+          "natural_observed_minutes_counts": {
+            "4": 2,
+            "5": 219,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "13": 23,
+            "14": 110,
+            "15": 667
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 344.0683760683761,
+          "source_duration_min_max_seconds": [
+            120,
+            1380
+          ],
+          "rendered_duration_mean_seconds": 510.002442002442,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.3833943833943834,
+            0.38461538461538464,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.4590964590964591,
+            0.4542124542124542,
+            0.04884004884004884,
+            0.03785103785103785
+          ],
+          "positive_share_mean": 0.4774994509416668,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.48351915792542205,
+            0.4757059407785194
+          ],
+          "observed_active_minutes_mean_positive": 8.175824175824175,
+          "observed_support_coverage_mean_positive": 0.6747469665052083
+        },
+        "validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.612359596947499e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38189929723739624,
+          "natural_observed_minutes_counts": {
+            "5": 195,
+            "13": 16,
+            "14": 125,
+            "15": 688
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 287.98534798534797,
+          "source_duration_min_max_seconds": [
+            120,
+            480
+          ],
+          "rendered_duration_mean_seconds": 509.99023199023196,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.38461538461538464,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.5470085470085471,
+            0.452991452991453,
+            0.0,
+            0.0
+          ],
+          "positive_share_mean": 0.4774907079348224,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4773573649142329,
+            0.47753043612479207
+          ],
+          "observed_active_minutes_mean_positive": 8.411477411477412,
+          "observed_support_coverage_mean_positive": 0.669517905781642
+        },
+        "outer_validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.3389934161445183e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38191574811935425,
+          "natural_observed_minutes_counts": {
+            "5": 207,
+            "13": 25,
+            "14": 109,
+            "15": 683
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 282.44444444444446,
+          "source_duration_min_max_seconds": [
+            120,
+            660
+          ],
+          "rendered_duration_mean_seconds": 510.02442002442,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.38217338217338215,
+            0.38461538461538464,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.4822954822954823,
+            0.463980463980464,
+            0.05372405372405373,
+            0.0
+          ],
+          "positive_share_mean": 0.4775112747440366,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.5066681079095898,
+            0.4687642247943706
+          ],
+          "observed_active_minutes_mean_positive": 8.235653235653235,
+          "observed_support_coverage_mean_positive": 0.6702254603353505
+        }
+      },
+      "comparison_to_train": {
+        "validation": {
+          "mean_share_difference": 6.973743438720703e-06,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0012210012210012167,
+          "source_measured_fine_duration_TV_nonblocking": 0.08791208791208795,
+          "source_duration_KS_statistic": 0.14896214896214904,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.012210012210061905,
+          "maximum_conditional_mean_difference": 0.006161793011189132,
+          "predeclared_coarse_target_gates_passed": true
+        },
+        "outer_validation": {
+          "mean_share_difference": 9.47713851928711e-06,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0012210012210012305,
+          "fine_duration_total_variation": 0.0012210012210012583,
+          "source_measured_fine_duration_TV_nonblocking": 0.037851037851037876,
+          "source_duration_KS_statistic": 0.22344322344322343,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.021978021977986373,
+          "maximum_conditional_mean_difference": 0.023148949984167777,
+          "predeclared_coarse_target_gates_passed": true
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "splits": {
+        "train": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.0292777186116098e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38191360235214233,
+          "natural_observed_minutes_counts": {
+            "5": 226,
+            "12": 1,
+            "13": 22,
+            "14": 109,
+            "15": 666
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 291.5995115995116,
+          "source_duration_min_max_seconds": [
+            120,
+            660
+          ],
+          "rendered_duration_mean_seconds": 510.017094017094,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.38461538461538464,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.4603174603174603,
+            0.514041514041514,
+            0.02564102564102564,
+            0.0
+          ],
+          "positive_share_mean": 0.47750857576695277,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4997123574939821,
+            0.47089318596555574
+          ],
+          "observed_active_minutes_mean_positive": 8.196581196581196,
+          "observed_support_coverage_mean_positive": 0.6782883172993063
+        },
+        "validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.1497976604157856e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.3819105625152588,
+          "natural_observed_minutes_counts": {
+            "5": 183,
+            "7": 1,
+            "10": 2,
+            "11": 1,
+            "12": 1,
+            "13": 11,
+            "14": 122,
+            "15": 703
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 425.9340659340659,
+          "source_duration_min_max_seconds": [
+            120,
+            1380
+          ],
+          "rendered_duration_mean_seconds": 510.019536019536,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.38461538461538464,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.4590964590964591,
+            0.33821733821733824,
+            0.08424908424908426,
+            0.11843711843711843
+          ],
+          "positive_share_mean": 0.4775047482217654,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.5223859899600727,
+            0.4641328410160574
+          ],
+          "observed_active_minutes_mean_positive": 8.388278388278389,
+          "observed_support_coverage_mean_positive": 0.6650694238606326
+        },
+        "outer_validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.1840828861853225e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38190045952796936,
+          "natural_observed_minutes_counts": {
+            "5": 210,
+            "13": 13,
+            "14": 107,
+            "15": 694
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 288.93772893772893,
+          "source_duration_min_max_seconds": [
+            120,
+            480
+          ],
+          "rendered_duration_mean_seconds": 509.997557997558,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.3833943833943834,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.5238095238095238,
+            0.47619047619047616,
+            0.0,
+            0.0
+          ],
+          "positive_share_mean": 0.4774921359204668,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.48122373734308677,
+            0.4763726554936807
+          ],
+          "observed_active_minutes_mean_positive": 8.246642246642246,
+          "observed_support_coverage_mean_positive": 0.6682477067092452
+        }
+      },
+      "comparison_to_train": {
+        "validation": {
+          "mean_share_difference": 3.039836883544922e-06,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0,
+          "source_measured_fine_duration_TV_nonblocking": 0.17704517704517703,
+          "source_duration_KS_statistic": 0.2832722832722834,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.0024420024420237496,
+          "maximum_conditional_mean_difference": 0.02267363246609061,
+          "predeclared_coarse_target_gates_passed": true
+        },
+        "outer_validation": {
+          "mean_share_difference": 1.3142824172973633e-05,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0012210012210012305,
+          "fine_duration_total_variation": 0.0012210012210012305,
+          "source_measured_fine_duration_TV_nonblocking": 0.0634920634920635,
+          "source_duration_KS_statistic": 0.11233211233211238,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.019536019536019467,
+          "maximum_conditional_mean_difference": 0.018488620150895307,
+          "predeclared_coarse_target_gates_passed": true
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "splits": {
+        "train": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.3873646720341526e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.3819071054458618,
+          "natural_observed_minutes_counts": {
+            "5": 219,
+            "11": 1,
+            "13": 12,
+            "14": 119,
+            "15": 673
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 286.64957264957263,
+          "source_duration_min_max_seconds": [
+            120,
+            660
+          ],
+          "rendered_duration_mean_seconds": 510.02442002442,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.3833943833943834,
+            0.38461538461538464,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.5470085470085471,
+            0.4371184371184371,
+            0.015873015873015872,
+            0.0
+          ],
+          "positive_share_mean": 0.4775004375903397,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4177743128379482,
+            0.4952952259476291
+          ],
+          "observed_active_minutes_mean_positive": 8.324786324786325,
+          "observed_support_coverage_mean_positive": 0.6790106921975054
+        },
+        "validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.5665986097257445e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.3818969130516052,
+          "natural_observed_minutes_counts": {
+            "5": 195,
+            "10": 3,
+            "13": 41,
+            "14": 92,
+            "15": 693
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 307.83882783882785,
+          "source_duration_min_max_seconds": [
+            120,
+            600
+          ],
+          "rendered_duration_mean_seconds": 509.97557997558,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.38461538461538464,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.35775335775335776,
+            0.5885225885225885,
+            0.05372405372405373,
+            0.0
+          ],
+          "positive_share_mean": 0.4774877049945388,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.48942042124268487,
+            0.47393247416307843
+          ],
+          "observed_active_minutes_mean_positive": 8.219780219780219,
+          "observed_support_coverage_mean_positive": 0.6690880954617219
+        },
+        "outer_validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.805314449043749e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.3819183111190796,
+          "natural_observed_minutes_counts": {
+            "5": 203,
+            "9": 2,
+            "10": 1,
+            "13": 15,
+            "14": 123,
+            "15": 680
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 406.0805860805861,
+          "source_duration_min_max_seconds": [
+            120,
+            1380
+          ],
+          "rendered_duration_mean_seconds": 510.002442002442,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.38461538461538464,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.46886446886446886,
+            0.34798534798534797,
+            0.08302808302808302,
+            0.10012210012210013
+          ],
+          "positive_share_mean": 0.47751446112385615,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.44979695878801895,
+            0.48577260762011193
+          ],
+          "observed_active_minutes_mean_positive": 8.274725274725276,
+          "observed_support_coverage_mean_positive": 0.6665645438539213
+        }
+      },
+      "comparison_to_train": {
+        "validation": {
+          "mean_share_difference": 1.0192394256591797e-05,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0012210012210012167,
+          "source_measured_fine_duration_TV_nonblocking": 0.1892551892551893,
+          "source_duration_KS_statistic": 0.192918192918193,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.048840048840020245,
+          "maximum_conditional_mean_difference": 0.07164610840473667,
+          "predeclared_coarse_target_gates_passed": false
+        },
+        "outer_validation": {
+          "mean_share_difference": 1.1205673217773438e-05,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0012210012210012167,
+          "source_measured_fine_duration_TV_nonblocking": 0.1672771672771673,
+          "source_duration_KS_statistic": 0.2356532356532357,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.021978021977986373,
+          "maximum_conditional_mean_difference": 0.03202264595007076,
+          "predeclared_coarse_target_gates_passed": true
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "splits": {
+        "train": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.3767382112117588e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38191235065460205,
+          "natural_observed_minutes_counts": {
+            "5": 204,
+            "13": 7,
+            "14": 127,
+            "15": 686
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 333.3040293040293,
+          "source_duration_min_max_seconds": [
+            120,
+            1380
+          ],
+          "rendered_duration_mean_seconds": 509.995115995116,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.3833943833943834,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.503052503052503,
+            0.4126984126984127,
+            0.03907203907203907,
+            0.045177045177045176
+          ],
+          "positive_share_mean": 0.47750702016672986,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4755771668371306,
+            0.4780859761656096
+          ],
+          "observed_active_minutes_mean_positive": 8.274725274725276,
+          "observed_support_coverage_mean_positive": 0.6730431554607378
+        },
+        "validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.4022838146221517e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38191303610801697,
+          "natural_observed_minutes_counts": {
+            "3": 1,
+            "5": 191,
+            "9": 1,
+            "13": 30,
+            "14": 137,
+            "15": 664
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 299.3626373626374,
+          "source_duration_min_max_seconds": [
+            120,
+            480
+          ],
+          "rendered_duration_mean_seconds": 510.03418803418805,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.38217338217338215,
+            0.3833943833943834,
+            0.003663003663003663
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.5592185592185592,
+            0.44078144078144077,
+            0.0,
+            0.0
+          ],
+          "positive_share_mean": 0.4775078676262732,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4913397480157077,
+            0.47335830350944275
+          ],
+          "observed_active_minutes_mean_positive": 8.2991452991453,
+          "observed_support_coverage_mean_positive": 0.6735624164195593
+        },
+        "outer_validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.4447822871410665e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.3819076120853424,
+          "natural_observed_minutes_counts": {
+            "5": 183,
+            "8": 1,
+            "13": 42,
+            "14": 98,
+            "15": 700
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 312.55189255189254,
+          "source_duration_min_max_seconds": [
+            120,
+            600
+          ],
+          "rendered_duration_mean_seconds": 510.01221001221,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.3833943833943834,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.3443223443223443,
+            0.5824175824175825,
+            0.07326007326007326,
+            0.0
+          ],
+          "positive_share_mean": 0.47750109949891956,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4976984407098373,
+            0.47144189713564416
+          ],
+          "observed_active_minutes_mean_positive": 8.36874236874237,
+          "observed_support_coverage_mean_positive": 0.6715216000930289
+        }
+      },
+      "comparison_to_train": {
+        "validation": {
+          "mean_share_difference": 6.854534149169922e-07,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0012210012210012466,
+          "source_measured_fine_duration_TV_nonblocking": 0.08424908424908427,
+          "source_duration_KS_statistic": 0.11599511599511597,
+          "rendered_duration_KS_statistic": 0.0012210012210012722,
+          "rendered_duration_mean_difference_seconds": 0.03907203907203893,
+          "maximum_conditional_mean_difference": 0.015762581178577095,
+          "predeclared_coarse_target_gates_passed": true
+        },
+        "outer_validation": {
+          "mean_share_difference": 4.738569259643555e-06,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0,
+          "source_measured_fine_duration_TV_nonblocking": 0.20390720390720393,
+          "source_duration_KS_statistic": 0.15873015873015872,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.017094017093995717,
+          "maximum_conditional_mean_difference": 0.022121273872706737,
+          "predeclared_coarse_target_gates_passed": true
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "splits": {
+        "train": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.5329455355095334e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.381896048784256,
+          "natural_observed_minutes_counts": {
+            "5": 196,
+            "13": 14,
+            "14": 112,
+            "15": 702
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 331.37973137973137,
+          "source_duration_min_max_seconds": [
+            120,
+            1380
+          ],
+          "rendered_duration_mean_seconds": 510.002442002442,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.3833943833943834,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.4542124542124542,
+            0.47985347985347987,
+            0.030525030525030524,
+            0.03540903540903541
+          ],
+          "positive_share_mean": 0.47748663424647575,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.500912265572855,
+            0.47045894484856193
+          ],
+          "observed_active_minutes_mean_positive": 8.239316239316238,
+          "observed_support_coverage_mean_positive": 0.6643753885512128
+        },
+        "validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.540194197735545e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.3819006681442261,
+          "natural_observed_minutes_counts": {
+            "5": 206,
+            "13": 25,
+            "14": 117,
+            "15": 676
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 284.11965811965814,
+          "source_duration_min_max_seconds": [
+            120,
+            660
+          ],
+          "rendered_duration_mean_seconds": 509.997557997558,
+          "coarse_duration_fractions": [
+            0.22954822954822954,
+            0.7704517704517705
+          ],
+          "fine_rendered_duration_fractions": [
+            0.22954822954822954,
+            0.3833943833943834,
+            0.38461538461538464,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.46886446886446886,
+            0.47741147741147744,
+            0.05372405372405373,
+            0.0
+          ],
+          "positive_share_mean": 0.47749243947254455,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.4757652358760524,
+            0.47800704212886874
+          ],
+          "observed_active_minutes_mean_positive": 8.317460317460318,
+          "observed_support_coverage_mean_positive": 0.6726339187877649
+        },
+        "outer_validation": {
+          "examples": 1024,
+          "max_saved_energy_target_error": 1.139719175702325e-07,
+          "zero_fraction": 0.2001953125,
+          "share_mean": 0.38191065192222595,
+          "natural_observed_minutes_counts": {
+            "5": 205,
+            "12": 1,
+            "13": 32,
+            "14": 127,
+            "15": 659
+          },
+          "positive_examples": 819,
+          "source_duration_mean_seconds": 295.87545787545787,
+          "source_duration_min_max_seconds": [
+            120,
+            480
+          ],
+          "rendered_duration_mean_seconds": 510.0,
+          "coarse_duration_fractions": [
+            0.23076923076923078,
+            0.7692307692307693
+          ],
+          "fine_rendered_duration_fractions": [
+            0.23076923076923078,
+            0.3833943833943834,
+            0.3833943833943834,
+            0.002442002442002442
+          ],
+          "fine_measured_source_duration_fractions": [
+            0.5897435897435898,
+            0.41025641025641024,
+            0.0,
+            0.0
+          ],
+          "positive_share_mean": 0.47750487777469264,
+          "exact_scheduled_zero_count": 205,
+          "conditional_positive_share_means": [
+            0.48862169963955054,
+            0.4741698312152352
+          ],
+          "observed_active_minutes_mean_positive": 8.27960927960928,
+          "observed_support_coverage_mean_positive": 0.6696632630698565
+        }
+      },
+      "comparison_to_train": {
+        "validation": {
+          "mean_share_difference": 4.6193599700927734e-06,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0012210012210012305,
+          "fine_duration_total_variation": 0.0012210012210012305,
+          "source_measured_fine_duration_TV_nonblocking": 0.03785103785103785,
+          "source_duration_KS_statistic": 0.22710622710622708,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.004884004884047499,
+          "maximum_conditional_mean_difference": 0.025147029696802548,
+          "predeclared_coarse_target_gates_passed": true
+        },
+        "outer_validation": {
+          "mean_share_difference": 1.4603137969970703e-05,
+          "zero_fraction_difference": 0.0,
+          "coarse_duration_total_variation": 0.0,
+          "fine_duration_total_variation": 0.0,
+          "source_measured_fine_duration_TV_nonblocking": 0.13553113553113555,
+          "source_duration_KS_statistic": 0.13553113553113555,
+          "rendered_duration_KS_statistic": 0.0012210012210013277,
+          "rendered_duration_mean_difference_seconds": 0.0024420024420237496,
+          "maximum_conditional_mean_difference": 0.01229056593330441,
+          "predeclared_coarse_target_gates_passed": true
+        }
+      }
+    }
+  ],
+  "full_R4_dataset_generated": false,
+  "model_training_executed": false,
+  "Test_calibration_sealed_accessed": false,
+  "timewarp_used": true,
+  "pilot_background_sampling": "Uniform in each eligible split with replacement; production TRAIN remains the frozen full one-pass order.",
+  "interpretation": "Coarse stratification does not equalize fine durations. KS/TV are descriptive synthetic-draw diagnostics, not independent-field p-values."
+}

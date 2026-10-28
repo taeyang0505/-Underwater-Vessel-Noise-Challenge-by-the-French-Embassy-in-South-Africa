@@ -1,0 +1,55 @@
+{
+  "format": "r12_compact_tree_fit_plan_v1",
+  "created_utc": "2026-10-26T16:10:41.211544+00:00",
+  "training_binding": {
+    "fixture_only": true,
+    "case": "physical_compactFalse"
+  },
+  "settings": {
+    "maximum_trees": 10,
+    "early_stopping_patience": 3,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 5,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102712,
+  "include_shape": false,
+  "basis_file_sha256": null,
+  "basis_training_binding": null,
+  "feature_fit_on_synthetic_train": false,
+  "scaler": "none;fixedrelativefeatures",
+  "PCA": "disabled",
+  "input_identity": {
+    "train": {
+      "db": "f3c700cc9ea7c7d8ba355cfadac198b570f3d07111fc4974bdade77c1dbadff4",
+      "share": "85279de4a907df3d9fd576f0f124083fe1f16802d0afefd8f314501e5309f230",
+      "presence": "77a7aa7d71ba88f5bee38f45c47e92c7b32ea9f11f7d10006beb41995336cacb",
+      "cell_share": "4708d3e5c2344dcf98c8ac52006a6d6ff66829fe352d387ce7f2e9aebfa8ff40",
+      "sample_id": "8413b00455a296d7bb5ce60813674998ea87be4dcbc30a074cad704ced1f3fc8",
+      "site": "916a30aa1123de505101a041f6771c5bc9e86d4de13965710687074a58fe9850",
+      "source_id": "92f06b2ae47beea971747499f5d7682a99985c09b685c69c60f82ebc5a89f156",
+      "background_group": "bc191b08fff0c30eeaa6c9700d279069a6664fe263015ece12ddc16be8ccd8b5"
+    },
+    "validation_fit": {
+      "db": "b72da20179a1822e1e96fd6dd5570880b563ab97f11f44271ef88bd8c8be296e",
+      "share": "5bb51969053b4667e466a96916ef6dfd8e205a3a3429b61bcb8e9ed212c75cd9",
+      "presence": "88a2c1a158502f74b470dd51adc56658132b464731203019cb918703ef554e71",
+      "cell_share": "b4c2ce7fede9f729ffe1c7b4e0d80d1bd5a19d6eaf002d68ec7e2e2283e15d13",
+      "sample_id": "1bc11de8023bbb2fd3d5a96e69930ae1c15c88df119e9f3e66a130bbc44bfef5",
+      "site": "f12d4872f875007d972253e50a660f979a7f1e70caa95761469ce10d7d599ac6",
+      "source_id": "b425bfd160370d40d0e6656d4f3ab1b3ac4fd865fafb357bc6901421e16b80d5",
+      "background_group": "41910893edc4b22e6217297d992ef9246fe7d6c5d3cadcb368e71d0426cdd9cb"
+    }
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "fixture_only": true,
+  "gate_eval_Test_used_for_ES": false
+}

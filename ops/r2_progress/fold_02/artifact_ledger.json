@@ -1,0 +1,56 @@
+{
+  "task_inner_seed_42": {
+    "seed_42/run_manifest.json": "b2986a37b08b350844b62aa6ffef42aef22b45073bf0f2af77c6a0252cebaede",
+    "seed_42/lgbm_share.txt": "100e57e0f9ccecbc0e70d02f356c77a8bd97996bd25f86c429125fed89959651",
+    "seed_42/lgbm_presence.txt": "367d8b9f6c2915649cbf3ac4ac2afc692cb6a31b6fe3fb20d8a0aae76882190f",
+    "seed_42/lgbm_validation.npz": "471cb789e9d4a63af8ffc8361cbffa43247a2b59af6cd7a96cf2f8ce47e8d600",
+    "seed_42/lgbm_training_summary.json": "340d05d76bd6aeedc8dba96db2a58ab2c72800fa6df756414f08800d8631b922",
+    "seed_42/lgbm_physics_share.txt": "a7869cb817802233626e1d75d03eee5319d992e343011e7fec2c079b202d94b0",
+    "seed_42/lgbm_physics_presence.txt": "dc266a0eab1d168e2fe5d3a70f2a6b83cae940e37c87bec77ddf8c6a6cdc1e8f",
+    "seed_42/lgbm_physics_validation.npz": "95759ace60f81184abf2a81af4e9501a4259c6f1d1ee46f124093d13d6e12ba7",
+    "seed_42/lgbm_physics_training_summary.json": "ea992d6c5403f52dd7cac519bb8df992fc46bc15414dd5be660899608089a47c",
+    "seed_42/prototypes.npz": "a040548ded00236b5b4c5a5ae551ab68ae51b3b47c5804f5e5e15af581e7bff4",
+    "seed_42/prototype_manifest.json": "a3c6ef3f3c1f5e818d9dfa38d85b7e1d1b2c9c34ad74ae141fa0ee42f6a3da86",
+    "seed_42/lgbm_retrieval_share.txt": "e8220830f35605d6e1eec72df7c5fda51a6f50a07cc6e6b5b3569fb042dce31f",
+    "seed_42/lgbm_retrieval_presence.txt": "0304aa3729f6d2ef4d0e4e8754cdcc5dbc74f1c9fc331b26703dfc93fcc8dea1",
+    "seed_42/lgbm_retrieval_validation.npz": "8938f8c83fa517be636ec893886ce889d20ca5b947a3339e8777b1d8f75c9b96",
+    "seed_42/lgbm_retrieval_training_summary.json": "a1dbe2673a7a575566d5a686a51166d3526305f5c8373bb03d8291b4f296e4f2",
+    "seed_42/tabm.pt": "f2705eb4311fb66d5e85e45576fd6932bfd12400b82468bc751b8bcf52f217c4",
+    "seed_42/tabm_history.json": "d5a317bb252474f75ac07ed84ec1f78afb38ba736232946c93d25152ab749663",
+    "seed_42/tabm_training_summary.json": "89f06c04e52a87674c4ab3953f66b6b799f6fa9868e77baef74b475e74442ec3",
+    "seed_42/cnn_background_prior.json": "97221833dd6023492a787879a6a9a8e069fafbb6095879a572d1a2e5e892432c",
+    "seed_42/cnn.pt": "1aa0c7e64f5c53566c0bcb7dc6ec1fd52ee1fe22dfe44d06a61df3bc78e58800",
+    "seed_42/cnn_history.json": "27559b9163b5590117f58b5763bd62927e41c6c2c018f8167fc208e1f07b8977",
+    "seed_42/cnn_training_summary.json": "dce7a2b836860d921998e42b6ee42b20265233fd15edbf60c6483250cf0950b2",
+    "seed_42/fdy.pt": "25ed0396861143eb3ee02c02c28ad833e1cc1b3bbbc646cfde58af731b5cadab",
+    "seed_42/fdy_history.json": "5ef05bc170644944782935ef0122151ef2db9bcf10ab30e57a5a89593cd2aabc",
+    "seed_42/fdy_training_summary.json": "a5e2f6b80ef8b0c5a532d67f2c35ef8302ddea10560cb3fe3b7bd808b97c0ac4",
+    "seed_42/itransformer.pt": "6f8f1e290700b8099fc77aa3cdb69a96d684abf4814ca302a2df1c2181fcf219",
+    "seed_42/itransformer_history.json": "5c836d552d381c9fbfe36f53a1923f0991ca7ec9e77d9f538294f19ba4a91f44",
+    "seed_42/itransformer_training_summary.json": "fcf023ede1f09b8a215cc9d1028040073db2b57aab55e16b23f547f0d464b6fa",
+    "seed_42/validation_predictions.npz": "c9a3a40a4644217d67b9ad0adf597b164cef5fc211e2701b0cee59e740333318"
+  },
+  "tabicl_inner_seed_42": {
+    "tabicl_seed_42_inner/validation_predictions.npz": "0eff9b5b8fb92973ef569a411076afeeb53165df2461a3750561e475fedbd014",
+    "tabicl_seed_42_inner/manifest.json": "cd6bb9ba1a8c197db30662f4e3ce270302d9544b3ea84810edc2915c165cf61a"
+  },
+  "kumo_large_inner_seed_42": {
+    "kumo_large_seed_42_inner/validation_predictions.npz": "24738857eb923047621182c47d6ad897b21eeb1765391750bb31cbb76a56aded",
+    "kumo_large_seed_42_inner/manifest.json": "f1d9968b243fae2b9437bf47c96234f508b9f05d67049d99e5e054df0a3d1c39"
+  },
+  "frozen_inner_policy": {
+    "ensemble_policy.json": "da54363d0906a7e94f2279d988f5f812c1c7e83779c4d4e1d5541313a0187a4f"
+  },
+  "task_outer_seed_42": {
+    "seed_42/outer_validation_predictions.npz": "c3ecab4e0894445cd996026b43ea3196338be775d2157abf99b9cace48f30ff7",
+    "seed_42/outer_validation_predictions.metrics.json": "2864552ef40a51dd48bfe9a19f399109cd30de46350bf5662a59f4a102c3414f"
+  },
+  "tabicl_outer_seed_42": {
+    "tabicl_seed_42_outer/outer_validation_predictions.npz": "a2877b937f4bb40ec50f7d0a5db5443edc7865e73467a02a68905ac771d3f113",
+    "tabicl_seed_42_outer/manifest.json": "509f4f8bf2cca1f02609a2a43978f72fc6d196dc7111758a8f90d8dfb583d8df"
+  },
+  "kumo_large_outer_seed_42": {
+    "kumo_large_seed_42_outer/outer_validation_predictions.npz": "617ef8fd7a9f1f8ae89d482f537a20c3deeb676ac5d1c24bd5c48863dd37d7f2",
+    "kumo_large_seed_42_outer/manifest.json": "411320b5ecb4bd636fdaadd3059a5334b7dd191aef7819b69cf0dcaf87b52eaa"
+  }
+}

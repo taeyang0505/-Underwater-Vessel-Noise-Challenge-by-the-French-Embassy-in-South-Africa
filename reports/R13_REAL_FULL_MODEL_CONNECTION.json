@@ -1,0 +1,68 @@
+{
+  "format": "r13_real_fullsize_one_step_connection_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "data_hash": "b494861c21a9af935c77b0979c2d8a5dc904dba05699095bc9a742f305547c91",
+  "actual_TRAIN_indices": [
+    7,
+    1,
+    0,
+    5
+  ],
+  "scenarios": [
+    "knownA0",
+    "ordinary dense positive",
+    "highshare long",
+    "highshare standard"
+  ],
+  "model_checks": [
+    {
+      "kind": "bg_cnn",
+      "parameters": 1491329,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 3.745692253112793,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "parameters": 2563813,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 4.896700382232666,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    },
+    {
+      "kind": "fdy",
+      "parameters": 130765,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 0.8572338819503784,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    },
+    {
+      "kind": "itransformer",
+      "parameters": 299919,
+      "actual_Adam_steps": 1,
+      "real_P1_stem_gradient_L1": 1.6895694732666016,
+      "strict_reload_bitwise": true,
+      "physical_share_score_identical": true,
+      "physical_pool_max_error": 0.0,
+      "no_presence_head": true
+    }
+  ],
+  "code_sha256": {
+    "pipeline/models_r13.py": "e3ea69d969dfc02e81f091e3e2c03482891291ced18c5414fdff2085b7c7f2c3",
+    "pipeline/training_r13.py": "d47ed84e3d86c584fc2d76abc3c6df820e95ecbcca9fc23e7736f452c139d0b0",
+    "pipeline/full_data_r13.py": "c0000f7ff1398c8a44a5c1e20790853da833a485cf3d9d20e7c10baa0549af92"
+  },
+  "fixture_weights_never_production": "/private/tmp/r13-real-one-step-zge64p3f",
+  "CUDA_SSH_Test_new_validation_gate_report_or_full100training": false,
+  "original_sources_unchanged": true
+}

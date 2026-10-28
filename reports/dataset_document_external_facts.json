@@ -1,0 +1,273 @@
+{
+  "verified_at": "2026-10-24",
+  "scope": "Counts are recordings/reference clips, not labelled SA observations, synthetic examples or independent ships.",
+  "count_identity": {
+    "old_all_external_clips": 1670,
+    "old_all_breakdown": {
+      "VTUAD_v1.3.2": 525,
+      "HearMyShip_V1_unique_audio": 1145
+    },
+    "v2_inventory_clips_including_reserved": 1682,
+    "new_NOAA_primary_clips": 12,
+    "new_NOAA_PM_quarantine_extra_clips": 1,
+    "cv_legacy_clips": 1163,
+    "cv_NOAA_added_clips": 8,
+    "cv_total_clips": 1171,
+    "cv_source_breakdown": {
+      "VTUAD_v1.3.2": 218,
+      "HearMyShip_V1": 945,
+      "NOAA_SanctSound_extension_v1": 8
+    },
+    "formula": "(525 + 1145) original external inventory; 218 + 945 = 1163 legacy CV clips; 1163 + 8 NOAA = 1171 total CV clips. Do not add NOAA 8 a second time.",
+    "cv_exclusions_from_v2_inventory": 511,
+    "cv_native_positive_clips": 11,
+    "cv_native_positive_components": 5,
+    "cv_all_reference_components": 26,
+    "per_fold_native_component_roles": {
+      "training": 3,
+      "inner_validation": 1,
+      "outer_validation": 1
+    },
+    "duration_note": "Summed clip duration may share recording days/hulls or overlapping source support; it is not independent field-recording hours."
+  },
+  "sources": [
+    {
+      "source": "VTUAD_v1.3.2",
+      "licence": "CC-BY-4.0",
+      "official_citations": [
+        "https://doi.org/10.5281/zenodo.23037895",
+        "https://zenodo.org/records/23037895"
+      ],
+      "origin": "ONC icListen ICLISTENAF2523, Strait of Georgia, Canada; AIS automatic weak scenarios.",
+      "acquired_view": "All 525 strict AIS-interval WAV clips, 509 vessel scenarios + 16 dedicated ambient recordings; not the older archive-aligned or 16kHz log-mel view.",
+      "original_inventory": {
+        "clips": 525,
+        "sample_rates_hz": [
+          32000
+        ],
+        "sum_clip_seconds": 151368.0,
+        "clip_duration_min_max_seconds": [
+          119.0,
+          2220.0
+        ],
+        "complete_2s_segments": 75678,
+        "complete_measured_minutes": 2511,
+        "under_60s_clips": 0,
+        "at_least_900s_clips": 23
+      },
+      "compressed_strict_archives_bytes": 4638375330,
+      "cv_admitted": {
+        "clips": 218,
+        "sample_rates_hz": [
+          32000
+        ],
+        "sum_clip_seconds": 51534.0,
+        "clip_duration_min_max_seconds": [
+          120.0,
+          1380.0
+        ],
+        "complete_2s_segments": 25764,
+        "complete_measured_minutes": 853,
+        "under_60s_clips": 0,
+        "at_least_900s_clips": 3,
+        "reference_components": 3,
+        "original_groups": 88,
+        "recording_days": 23,
+        "native_positive_clips": 3,
+        "native_positive_components": 1
+      },
+      "cv_exclusion_detail": "525 -> prior train/validation 243 (other reserved/conflicting partitions 282) -> 218 positive references (10 dedicated ambient and 15 vessel-scenario clips labelled background removed).",
+      "integrity": "Every acquired strict WAV verified against provider per-WAV SHA256 ledger.",
+      "quality_limit": "CV metadata retain a large_DC_fraction_review flag. Constant detrending removes the mean before PSD; that does not establish pressure calibration or eliminate all sensor-domain differences.",
+      "label_limit": "AIS inclusion/exclusion predicates do not establish pure vessel energy. Native long CV clips are 3 recordings in 1 connected hull/day component.",
+      "publication_duration_caution": "Public landing reports about56h; exact reconciliation against151368s of local strict WAV headers has not been verified. Strict and archive-aligned views exist, but the discrepancy must not be attributed entirely to view choice without a complete corresponding-header comparison."
+    },
+    {
+      "source": "HearMyShip_V1",
+      "licence": "CC0-1.0",
+      "official_citations": [
+        "https://doi.org/10.57760/sciencedb.13099",
+        "https://hearmyship.fer.hr/"
+      ],
+      "official_licence_evidence": "external/hearmyship_v1/datacite.json rightsList and deposit_manifest.json license",
+      "origin": "Croatian Sibenik coastal canal, small-vessel acoustic/visual CPA excerpts.",
+      "public_WAV_entries_acquired": 1146,
+      "verified_entries": 1146,
+      "unique_audio_md5": 1145,
+      "unique_WAV_bytes": 3315250540,
+      "original_inventory": {
+        "clips": 1145,
+        "sample_rates_hz": [
+          48000
+        ],
+        "sum_clip_seconds": 22977.636833333334,
+        "clip_duration_min_max_seconds": [
+          10.0,
+          30.0
+        ],
+        "complete_2s_segments": 11485,
+        "complete_measured_minutes": 0,
+        "under_60s_clips": 1145,
+        "at_least_900s_clips": 0
+      },
+      "cv_admitted": {
+        "clips": 945,
+        "sample_rates_hz": [
+          48000
+        ],
+        "sum_clip_seconds": 18974.02754166667,
+        "clip_duration_min_max_seconds": [
+          10.0,
+          30.0
+        ],
+        "complete_2s_segments": 9485,
+        "complete_measured_minutes": 0,
+        "under_60s_clips": 945,
+        "at_least_900s_clips": 0,
+        "reference_components": 19,
+        "original_groups": 19,
+        "recording_days": 19,
+        "native_positive_clips": 0,
+        "native_positive_components": 0
+      },
+      "cv_exclusion_detail": "1145 -> 945 prior train/validation days; calibration 144 + previous domain_holdout 56 remain outside CV.",
+      "integrity": "Public mirror WAVs matched the ScienceDB deposit MD5; one repeated-MD5 entry is counted once.",
+      "duration_limit": "Actual headers are 10-30s, usually about20s; all1145 have zero measured complete minutes. Do not call them 1145 measured15min recordings.",
+      "identity_limit": "Day grouping is available; recurring hull identities are not verified."
+    },
+    {
+      "source": "NOAA_SanctSound_extension_v1",
+      "licence": "CC0-1.0",
+      "official_citations": [
+        "https://www.fisheries.noaa.gov/inport/item/80342",
+        "https://doi.org/10.25921/saca-sp25",
+        "https://www.fisheries.noaa.gov/inport/item/80343",
+        "https://doi.org/10.25921/PF0H-SQ72"
+      ],
+      "acquired_primary_clips": 12,
+      "acquired_primary_minutes": 180,
+      "stations_and_deployments": 6,
+      "distinct_recording_days": 12,
+      "native_header_rates_hz": [
+        48000,
+        96000
+      ],
+      "frames_per_crop": "exactly900 * native_fs, mono, no resampling",
+      "cv_admitted": {
+        "clips": 8,
+        "sample_rates_hz": [
+          48000,
+          96000
+        ],
+        "sum_clip_seconds": 7200.0,
+        "clip_duration_min_max_seconds": [
+          900.0,
+          900.0
+        ],
+        "complete_2s_segments": 3600,
+        "complete_measured_minutes": 120,
+        "under_60s_clips": 0,
+        "at_least_900s_clips": 8,
+        "reference_components": 4,
+        "original_groups": 4,
+        "recording_days": 8,
+        "native_positive_clips": 8,
+        "native_positive_components": 4
+      },
+      "cv_station_roles": "CI01_01/FK01_01/GR01_01 prior training (6 clips) + HI01_01 prior validation (2 clips); regrouped only inside nested CV.",
+      "reserved_primary_not_in_CV": {
+        "OC03_02_calibration": 2,
+        "SB01_01_new_sealed": 2
+      },
+      "quarantine_not_in_primary_12": "PM01_01 one15min crop labelled NoShip; not a verified natural ship-absent example.",
+      "quality_gate": "Explicit normalized Ship event AND full25band official Good interval AND actual900s native frame support; no >=1s zero gap; <=0.1% digital rails.",
+      "network_range_bytes_including_probes": 523966748,
+      "crop_bytes_including_quarantine_and_reserved": 433444147,
+      "integrity_limit": "Only exact generation-pinned HTTPS206 ranges acquired. Content-Range/length and rangeSHA256, excerptSHA256, derived-arraySHA256 checked. Provider full-object MD5 was NOT recomputed.",
+      "physical_limit": "Ship annotation and Good QC do not isolate vessel-only energy or verify independent physical hulls; absolute pressure calibration was not applied.",
+      "old_sealed_exclusion": "Existing OC02_02 assessment is not part of this expansion or CV."
+    }
+  ],
+  "preprocessing_current_code": {
+    "implementation": [
+      "pipeline/audio.py:audio_band_power",
+      "pipeline/native_sampler_v2.py:NativeFirstSampler._placed_reference",
+      "pipeline/augmentation_v2.py:place_measured_segments/average_complete_minutes"
+    ],
+    "waveform": "Decode native sample rate, retain selected channel0; all acquired sources here are mono. No upsampling to claim additional observed bands.",
+    "PSD": "Non-overlapping complete2s blocks; scipy.signal.periodogram(window=hann,detrend=constant,return_onesided=True,scaling=density). Frequency spacing0.5Hz.",
+    "bands": "25 base10 deci-decade centres c_j=10^(1.5+0.1*j), j=0..24. Integrate bins c/10^0.05 <= f < c*10^0.05 using sum(PSD)*df.",
+    "centre_range_hz": [
+      31.622776601683793,
+      7943.282347242814
+    ],
+    "outer_edge_range_hz": [
+      28.183829312644534,
+      8912.509381337459
+    ],
+    "Nyquist_gate": "Every upper band edge must be <= native_fs/2; otherwise reject rather than fill unsupported bands.",
+    "minute_mean": "Only complete30-block groups form a measured1min row by linear band-power mean. Average power before dB; do not average dB.",
+    "tails": "Discard only incomplete<2s waveform tail at segment conversion. Remaining complete2s blocks that do not finish a measured minute stay in the segment bank.",
+    "units": "Uncalibrated digital mean-square band power. Different hardware transfer functions remain a domain limitation.",
+    "short_under60": "Produces zero measured-minute rows but retains complete2s segments. NativeFirstSampler inserts the measured sequence once onto a450-block controlled added-component support and averages30blocks/minute.",
+    "short_support_semantics": "Zero outside the once-placed added component is an explicit synthetic support choice, not an assertion that unobserved natural audio was silent. Placement may crop an event edge; no repetition, cycling or interpolation creates fictitious observations.",
+    "native_at_least900": "Crop an actual contiguous450-block15min sequence from the measured reference.",
+    "level_normalization": "One scalar digital normalization of a reference preserves its observed time/frequency energy ratios; alpha is solved from known components under the actual observed-cell mask.",
+    "target": "y=sum(O*alpha*R)/sum(O*(B+alpha*R)); q=alpha*R/(B+alpha*R). R includes measured ambient sound, so y is controlled added-reference share, not verified natural vessel-only share.",
+    "native_draw_probability": 0.5,
+    "native_probability_caution": "Default0.5 applies to each reference-pool choice before corpus/group/clip hierarchy and fallback; it is not a promise that exactly50% of synthetic examples are independent native sources."
+  },
+  "excluded_or_not_admitted": [
+    {
+      "source": "OC01_01",
+      "reason": "Official all-band amplitude drift, Compromised; excluded."
+    },
+    {
+      "source": "MB01_01",
+      "reason": "Below50Hz Compromised overlaps target bands; excluded from full25band primary pool."
+    },
+    {
+      "source": "FK01_01",
+      "reason": "2018-12-20T20:00 to2019-03-26T14:45 seafloor contact excluded; only laterGood intervals selected."
+    },
+    {
+      "source": "OC03_02",
+      "reason": "First weekNov2019 high-frequency noise-floor warning excluded; acquired2 positive clips are reserved calibration and not in CV."
+    },
+    {
+      "source": "PM01_01",
+      "reason": "Filename_ships.csv contains NoShip labels; one crop quarantined, not used as positive reference or certified vessel absence."
+    },
+    {
+      "source": "PORTIA/VLIZ/MBARI/Vulcano",
+      "reason": "Researched candidates only; no audio admitted to current CV. Metadata/licence checked, but native duration/coverage/continuity gates remain pending where relevant.",
+      "catalogue": "reports/external_expansion_catalog.json"
+    }
+  ],
+  "provenance": {
+    "old_source_hash": "a6d7f3a536d0d38b09b41c31999a2384ff238f2ed80402c86f5d97348f1886e1",
+    "quality_v2_native_source_hash": "f75c459add93cbc44a08b93a690a883c2463cbc97398339793a7659e34897223",
+    "cv_source_hash": "f8e78e5add5d3131d0d11e362fec72928e999987e479815d3c5c5c6fa114498d",
+    "cv_protocol": "source_group_nested5_week24h_v1",
+    "manifest_sha256": {
+      "data/processed/external_clip_manifest.parquet": "aa4affc7bd61afdea226bfec6f34d5b6c6e519cd23af55a463531bd8a67c624f",
+      "data/versions/quality_v2_native/reference_manifest.parquet": "0693b2af999b94c8b99bd34433bec190290495bea4eb97b79d733aeb762b02e4",
+      "data/synthetic/group_cv_nested5_pilot_v1/reference_outer_assignment.parquet": "3218d6001ce9567b3de3e9655f097d6bc5441a4f22d09457b79705eebd72140e",
+      "external/expansion_research/native_reference_adapter.json": "a54d14753e2ff7fd4466a7f74268660d94971f9161079ce4b71e6219f94fde25"
+    },
+    "code_sha256": {
+      "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+      "pipeline/native_sampler_v2.py": "1ad2faa92d7b5183796c4887c31a0a6dbf77bcd7b3d7082698f4010ff943c39f",
+      "pipeline/augmentation_v2.py": "20b9beff2f4ba31fa25e34080e395d5141fd62c7313bd57e50e969c7c3463e49"
+    }
+  },
+  "access_and_status": {
+    "read_this_task": "Metadata manifests and source code only; no WAV/FLAC/band arrays opened.",
+    "challenge_Test_arrays_read": false,
+    "calibration_arrays_read": false,
+    "sealed_arrays_read": false,
+    "actual_training_executed": false,
+    "external_declaration_status": "Draft only, not posted."
+  },
+  "review_note": "MD source audit: local strict151368s is confirmed; the exact cause of the public~56h difference remains unverified."
+}

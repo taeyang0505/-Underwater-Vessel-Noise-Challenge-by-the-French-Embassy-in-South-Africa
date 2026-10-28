@@ -1,0 +1,40 @@
+{
+  "status": "ready",
+  "command": [
+    "/Users/hongtaeyang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "ops/finalize_r16_production.py",
+    "run",
+    "--output",
+    "models/r16_production_final_r1",
+    "--nn-root",
+    "models/r16_production_nn_fold0_r1",
+    "--tree-registry",
+    "models/r16_production_trees_r1/ALL_FIVEFOLD_TREES_FROZEN.json",
+    "--submission",
+    "submissions/r16_main_r1/submission_r16.csv",
+    "--expected-ready",
+    "ops/r16_production_neural_r1/FINALIZER_READY.json"
+  ],
+  "cwd": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync",
+  "script_sha256": "799ca7a118036d784929796d5d2b33503efc27c0612fa8f250c1b4a5508ead17",
+  "artifact_sha256": {
+    "ops/finalize_r16_production.py": "799ca7a118036d784929796d5d2b33503efc27c0612fa8f250c1b4a5508ead17",
+    "ops/predict_r16_production_nn.py": "63a4127466207fa9fb942e0429ad5d3405fa672c90b95a0fe51d006115de9a06",
+    "pipeline/ensemble_r16_production.py": "ef29b306b83956a0e5fd496efb90164ae74a04aab1611106d20488d483e1d073",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/training_r16_production.py": "66fe465baef76c6372c9be3d3189e46ccc4ac25ce30ac599d65da73a92e0dfa7",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/r16_production_data.py": "81853811a1820d15e935141795f6611d035843f5d249fb80da246cbdadb84067",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda"
+  },
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": ".:/private/tmp/underwater-ml-deps:/private/tmp/underwater-eda-deps",
+    "DYLD_LIBRARY_PATH": "/opt/homebrew/opt/libomp/lib",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "minimum_prerequisites": "Tree5 frozen plus NN4 Fold0 each100epochs ALL_COMPLETED; incomplete models rejected",
+  "no_actual_prediction_policyfit_or_Test_access_performed_by_ready": true,
+  "official_upload": false
+}

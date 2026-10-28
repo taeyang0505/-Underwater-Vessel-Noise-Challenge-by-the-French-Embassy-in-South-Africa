@@ -1,0 +1,54 @@
+{
+  "experiment": "ensemble_shrinkage_r3",
+  "candidate_count": 1,
+  "lambda": 0.05,
+  "objective": "mean((P@w-y)**2) + 0.05*sum((w-uniform9)**2)",
+  "constraints": "w>=0; sum(w)=1",
+  "affine": [
+    1.0,
+    0.0
+  ],
+  "models": [
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm",
+    "cnn",
+    "fdy",
+    "itransformer",
+    "tabicl",
+    "kumo_large"
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    42
+  ],
+  "fit_split": "each fold INNER validation only",
+  "outer_used_for_fit": false,
+  "lambda_search": false,
+  "GPU_used": false,
+  "R2_or_dataset_modifications": false,
+  "comparison_scope": "post-baseline development OOF comparison; not a new untouched holdout",
+  "fold": 2,
+  "weights": [
+    0.20701722646887832,
+    0.024429089163580192,
+    0.027939649553036884,
+    0.19440206923129427,
+    0.18365922375932453,
+    0.08736748883942631,
+    0.2709233270478968,
+    0.0,
+    0.004261925936562676
+  ],
+  "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+  "source_hash": "6b9e24f6302799e5e2f0cf3a4774a53e200f73c8f48b95b75da0f09ba6e8f0d6",
+  "baseline_policy_sha256": "da54363d0906a7e94f2279d988f5f812c1c7e83779c4d4e1d5541313a0187a4f",
+  "protocol": "source_group_nested5_week24h_v1"
+}

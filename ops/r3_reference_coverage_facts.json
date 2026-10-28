@@ -1,0 +1,3116 @@
+{
+  "status": "audit complete; no dataset generation or model training",
+  "Test_or_Test_statistics_used": false,
+  "GPU_used": false,
+  "network_used": false,
+  "R2_frozen_modified": false,
+  "calibration_sealed_audio_or_arrays_opened": false,
+  "inputs_sha256": {
+    "data/processed/external_clip_manifest.parquet": "aa4affc7bd61afdea226bfec6f34d5b6c6e519cd23af55a463531bd8a67c624f",
+    "data/versions/quality_v2_native/reference_manifest.parquet": "0693b2af999b94c8b99bd34433bec190290495bea4eb97b79d733aeb762b02e4",
+    "data/synthetic/group_cv_physics_v2_r1/fold_00/sources/reference_manifest.parquet": "65cad52303800b7ffca2813a8b57375de039b72e371b32a593529bfa5264d0f5",
+    "data/synthetic/group_cv_physics_v2_r1/fold_01/sources/reference_manifest.parquet": "7abc376002ecf9cde9f539b2e90bd8ba79a7bf1fc8d4813b74164fdac8d37f44",
+    "data/synthetic/group_cv_physics_v2_r1/fold_02/sources/reference_manifest.parquet": "80ce75d5437a438c046f0cf74dab0020d53e99f61ff5465ff0182fcc5cb80a46",
+    "data/synthetic/group_cv_physics_v2_r1/fold_03/sources/reference_manifest.parquet": "9377c813417fe3dc86a213bff5c07762714e43a0b61f540c07d0f048f936923e",
+    "data/synthetic/group_cv_physics_v2_r1/fold_04/sources/reference_manifest.parquet": "8dc5ce51fa30f504f6ed6c63b2088d28da9b6a3aa6288e470af12db660e359ed",
+    "data/raw/maritime_starter_notebook.ipynb": "08242f4771c38de43ab9022d460b537b5eaa90a687bb1ddb532061b512dd6b83",
+    "pipeline/group_cv.py": "eb652428cc36904ad4a7ec511bdc896bccb3d5228de25c014f25d87f7798fee5",
+    "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1"
+  },
+  "CV_pool": {
+    "clips": 1171,
+    "components": 26,
+    "measured_native_clips": 11,
+    "measured_native_components": 5,
+    "source_counts": [
+      {
+        "source": "HearMyShip_V1",
+        "clips": 945,
+        "components": 19,
+        "native_clips": 0
+      },
+      {
+        "source": "NOAA_SanctSound_extension_v1",
+        "clips": 8,
+        "components": 4,
+        "native_clips": 8
+      },
+      {
+        "source": "VTUAD_v1.3.2",
+        "clips": 218,
+        "components": 3,
+        "native_clips": 3
+      }
+    ]
+  },
+  "VTUAD_candidates": {
+    "all_raw_clips": 525,
+    "CV_clips": 218,
+    "CV_components": 3,
+    "at_least_5min_clips": 47,
+    "native_existing_clips": 3,
+    "warp_candidates_5_to_under15min": 44,
+    "warped_duration_seconds": 900,
+    "max_stretch": 3,
+    "minimum_measured_duration_seconds": 300,
+    "all47_in_fold00_TRAIN": true,
+    "new_independent_recordings_or_physical_source_groups": 0,
+    "maximum_additional_native_capable_current_CV_components": 2,
+    "component_summary": [
+      {
+        "reference_component": "REF_61e16af34294aaca010c",
+        "clips": 1,
+        "hulls": 1,
+        "days": 1,
+        "native": 0,
+        "warp_candidates": 1,
+        "outer_fold": 4
+      },
+      {
+        "reference_component": "REF_8d0211ada01d043634eb",
+        "clips": 1,
+        "hulls": 1,
+        "days": 1,
+        "native": 0,
+        "warp_candidates": 1,
+        "outer_fold": 3
+      },
+      {
+        "reference_component": "REF_eca948a5584d1f14fbea",
+        "clips": 45,
+        "hulls": 33,
+        "days": 18,
+        "native": 3,
+        "warp_candidates": 42,
+        "outer_fold": 4
+      }
+    ],
+    "candidate_records": [
+      {
+        "clip_id": "a724debe30d41a56",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/0.wav",
+        "wav_sha256": "a724debe30d41a564f853e53c826d6a518e92386c521d4024f449137083e058b",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H123",
+        "recording_day": "2016-05-09",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "1e4d60efb18641af",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/1.wav",
+        "wav_sha256": "1e4d60efb18641afb64f83c752cfc19f7f8bf4b7ccdef79328b2af5b58071353",
+        "duration_seconds": 420.0,
+        "used_2s_duration_seconds": 420,
+        "segments": 210,
+        "warp_candidate": true,
+        "stretch_to900": 2.142857142857143,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H149",
+        "recording_day": "2016-05-09",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "e18fdfa0d71c0ee1",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/111.wav",
+        "wav_sha256": "e18fdfa0d71c0ee1c0eb224eee10f156e0bb26d9ca2ed132e054b7e813d20852",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_61e16af34294aaca010c",
+        "original_hull_group": "VTUAD_HULL_H094",
+        "recording_day": "2016-07-06",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 9.375e-05
+      },
+      {
+        "clip_id": "f43765e97c635009",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/131.wav",
+        "wav_sha256": "f43765e97c635009879c0b662139f8b2ff62a46c54c1e59cf472bea6204eab2e",
+        "duration_seconds": 480.0,
+        "used_2s_duration_seconds": 480,
+        "segments": 240,
+        "warp_candidate": true,
+        "stretch_to900": 1.875,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H161",
+        "recording_day": "2016-07-08",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "b6c3118e6bad9c70",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/136.wav",
+        "wav_sha256": "b6c3118e6bad9c70b65eb78a56ea7e9635bd125d4bfa4f2106843012af110a91",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H099",
+        "recording_day": "2016-07-08",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "64504c9245bb0294",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/138.wav",
+        "wav_sha256": "64504c9245bb02940efd35fb77c66bbcc84b0cef93038f7a5facfc5ddf755eea",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H016",
+        "recording_day": "2016-07-08",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "69247ec5b68e3f3c",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/158.wav",
+        "wav_sha256": "69247ec5b68e3f3c4258855a233840c7566bf15ab7b51ce6795ee0d99083b6e7",
+        "duration_seconds": 480.0,
+        "used_2s_duration_seconds": 480,
+        "segments": 240,
+        "warp_candidate": true,
+        "stretch_to900": 1.875,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H150",
+        "recording_day": "2016-07-10",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "f5e2475ae4d98d60",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/16.wav",
+        "wav_sha256": "f5e2475ae4d98d6016a3fa2ac7efa4e4122add2223ccade99d54b90f84625986",
+        "duration_seconds": 420.0,
+        "used_2s_duration_seconds": 420,
+        "segments": 210,
+        "warp_candidate": true,
+        "stretch_to900": 2.142857142857143,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H089",
+        "recording_day": "2016-05-14",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "21caea63b531efb3",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/176.wav",
+        "wav_sha256": "21caea63b531efb3680ff3759e0f5e55a524418c62e83124565dbfe39080bd9c",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H162",
+        "recording_day": "2016-07-11",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "600076d781fb0ef0",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/177.wav",
+        "wav_sha256": "600076d781fb0ef034d9a80e13be5799454df3bf93790a96a89005bb3287934f",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H109",
+        "recording_day": "2016-07-11",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "f78cdd75c4868e88",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/183.wav",
+        "wav_sha256": "f78cdd75c4868e88faf10eda72e41b949fe7f8cd68f4aa66b0104b092dfc2a93",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H150",
+        "recording_day": "2016-07-12",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "f85decf4453d9a02",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/187.wav",
+        "wav_sha256": "f85decf4453d9a024319a97f902d5754d5bd9121a1defa2fc4b266edee0e04ae",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H057",
+        "recording_day": "2016-07-12",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "33f42958d243e7bd",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/196.wav",
+        "wav_sha256": "33f42958d243e7bd3777b8cefd0db4a1d64622b868d5efd71363119c9a70cfcc",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H102",
+        "recording_day": "2016-07-12",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "35bea19ab9650873",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/201.wav",
+        "wav_sha256": "35bea19ab96508738990693f3d0609fe3cf5e2a949792c7b78adb95e68853ca9",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H103",
+        "recording_day": "2016-07-12",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "a367c52bb07e0799",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/220.wav",
+        "wav_sha256": "a367c52bb07e0799e7d7711c6bdc15072aa82a1e0b2a6e5786e15dfa3db8d2fd",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H096",
+        "recording_day": "2016-07-14",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "b6071409aada8f51",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/223.wav",
+        "wav_sha256": "b6071409aada8f511688e3c446b985d6e18ff4b846ed3b287f31caa9eeeb8a4e",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H001",
+        "recording_day": "2016-07-14",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "915b84396d5312c6",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/227.wav",
+        "wav_sha256": "915b84396d5312c65167a928b07a912f030bd38fff2337a3f047a7a49fb1a09c",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H038",
+        "recording_day": "2016-07-14",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "4a50acbf3a79badb",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/259.wav",
+        "wav_sha256": "4a50acbf3a79badb5788428878f61d26d2b6b3a3c7b929871394c87f5df1be79",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H156",
+        "recording_day": "2016-08-13",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "7952735c6c95ebd7",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/27.wav",
+        "wav_sha256": "7952735c6c95ebd7ab5166cddb1d94eae25fdaebacb94202f1b8c8e579be3303",
+        "duration_seconds": 540.0,
+        "used_2s_duration_seconds": 540,
+        "segments": 270,
+        "warp_candidate": true,
+        "stretch_to900": 1.6666666666666667,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H150",
+        "recording_day": "2016-05-14",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "6c930497d3077f7f",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/307.wav",
+        "wav_sha256": "6c930497d3077f7fff4e02890c24b5ac454353f7805cc78c3b3da3c1fa7c4103",
+        "duration_seconds": 660.0,
+        "used_2s_duration_seconds": 660,
+        "segments": 330,
+        "warp_candidate": true,
+        "stretch_to900": 1.3636363636363635,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H126",
+        "recording_day": "2016-08-29",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "c3c481cc082084e3",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/312.wav",
+        "wav_sha256": "c3c481cc082084e301d4b2341e7b80b7e1fd51fa4ac5ae39f901462bace10d0b",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H055",
+        "recording_day": "2016-08-29",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "7caa5396268166d3",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/340.wav",
+        "wav_sha256": "7caa5396268166d345e4749636d160001f291894476bc6faea65d5f19580e613",
+        "duration_seconds": 720.0,
+        "used_2s_duration_seconds": 720,
+        "segments": 360,
+        "warp_candidate": true,
+        "stretch_to900": 1.25,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H051",
+        "recording_day": "2016-09-06",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "69ddf7e72b850b09",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/352.wav",
+        "wav_sha256": "69ddf7e72b850b094419e183dacaf15ddd13a54a67e7635d90819383b5a7b3ac",
+        "duration_seconds": 840.0,
+        "used_2s_duration_seconds": 840,
+        "segments": 420,
+        "warp_candidate": true,
+        "stretch_to900": 1.0714285714285714,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H096",
+        "recording_day": "2016-09-06",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "37b3041ff97290b7",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/356.wav",
+        "wav_sha256": "37b3041ff97290b778a30f0bb375cef389af2d2fb3b3c439ad67bf8bd331f50e",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H023",
+        "recording_day": "2016-09-06",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "51569f2f51e33a21",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/361.wav",
+        "wav_sha256": "51569f2f51e33a211c6c32e49798a784f536deff42988ee5e01b297d6e76a0c3",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H055",
+        "recording_day": "2016-09-08",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "678d2a9e02577226",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/369.wav",
+        "wav_sha256": "678d2a9e025772260429af03f4973f35d18b03780e34efd345a89f5fed7e0ad6",
+        "duration_seconds": 420.0,
+        "used_2s_duration_seconds": 420,
+        "segments": 210,
+        "warp_candidate": true,
+        "stretch_to900": 2.142857142857143,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H163",
+        "recording_day": "2016-09-08",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "e85757bad3931975",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/379.wav",
+        "wav_sha256": "e85757bad3931975299fa6fe3a11cdbdcebde3bd41bf82de74f33da637395cb6",
+        "duration_seconds": 1140.0,
+        "used_2s_duration_seconds": 1140,
+        "segments": 570,
+        "warp_candidate": false,
+        "stretch_to900": null,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H124",
+        "recording_day": "2016-09-27",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "0a3c6b70a809cbe3",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/380.wav",
+        "wav_sha256": "0a3c6b70a809cbe3b6d5f6c9ebe01bce8e626f0a7db5514dac8e9f748cc0c4e3",
+        "duration_seconds": 1380.0,
+        "used_2s_duration_seconds": 1380,
+        "segments": 690,
+        "warp_candidate": false,
+        "stretch_to900": null,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H124",
+        "recording_day": "2016-09-27",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "62ca2f37bf6fc937",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/384.wav",
+        "wav_sha256": "62ca2f37bf6fc937ae7c67dc402a57442c1e6daf18013be493bd204f75da0cbd",
+        "duration_seconds": 1200.0,
+        "used_2s_duration_seconds": 1200,
+        "segments": 600,
+        "warp_candidate": false,
+        "stretch_to900": null,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H003",
+        "recording_day": "2016-09-27",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "595437c742858b8e",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/400.wav",
+        "wav_sha256": "595437c742858b8e3cd6e5cb5ccdf4f48e8d34709fa0694787b6952cbc13443b",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_8d0211ada01d043634eb",
+        "original_hull_group": "VTUAD_HULL_H177",
+        "recording_day": "2016-11-10",
+        "outer_fold": 3,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "73f6e0c3e171a315",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/403.wav",
+        "wav_sha256": "73f6e0c3e171a31562d1abf1c987d54396ddf310b3358b9bf0ecf4b1a9019ab6",
+        "duration_seconds": 540.0,
+        "used_2s_duration_seconds": 540,
+        "segments": 270,
+        "warp_candidate": true,
+        "stretch_to900": 1.6666666666666667,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H038",
+        "recording_day": "2016-11-11",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "d96a8dd4dbc0afc4",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/407.wav",
+        "wav_sha256": "d96a8dd4dbc0afc421b8a8203282a1386dc396e41264253859146eb2988c15a1",
+        "duration_seconds": 600.0,
+        "used_2s_duration_seconds": 600,
+        "segments": 300,
+        "warp_candidate": true,
+        "stretch_to900": 1.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H134",
+        "recording_day": "2016-11-11",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "e3a46cc5261eb023",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/408.wav",
+        "wav_sha256": "e3a46cc5261eb0236c2ec31bbb8e9653fd4f0a1a2d26e0fa1cc6bd1959f2d883",
+        "duration_seconds": 480.0,
+        "used_2s_duration_seconds": 480,
+        "segments": 240,
+        "warp_candidate": true,
+        "stretch_to900": 1.875,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H154",
+        "recording_day": "2016-11-11",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "f0f43a849a71794b",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/409.wav",
+        "wav_sha256": "f0f43a849a71794bf23e9c346cfbe4b52c4e46f0a5cef078eba21995d50770b6",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H154",
+        "recording_day": "2016-11-11",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "c5e7a4e35c1360a9",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/421.wav",
+        "wav_sha256": "c5e7a4e35c1360a97a46f0dbfbe8f1962f965ae698154f8e3ae83f83a1d3c8d1",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H030",
+        "recording_day": "2017-01-12",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 9.375e-05
+      },
+      {
+        "clip_id": "7027087d9c924062",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/445.wav",
+        "wav_sha256": "7027087d9c9240621ff311115f693a5dcd43c966d895921bbcf7586693c73efc",
+        "duration_seconds": 480.0,
+        "used_2s_duration_seconds": 480,
+        "segments": 240,
+        "warp_candidate": true,
+        "stretch_to900": 1.875,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H096",
+        "recording_day": "2017-04-04",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "0acd58144196dcd4",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/456.wav",
+        "wav_sha256": "0acd58144196dcd4b0105520b2a260cb755976e930d5304d51073adcc050d210",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H102",
+        "recording_day": "2017-04-04",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "7623d71fcf92f62b",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/459.wav",
+        "wav_sha256": "7623d71fcf92f62ba527b1c2d50e89071094c156fec27178968f2147f06a700d",
+        "duration_seconds": 600.0,
+        "used_2s_duration_seconds": 600,
+        "segments": 300,
+        "warp_candidate": true,
+        "stretch_to900": 1.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H157",
+        "recording_day": "2017-04-04",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 6.25e-05
+      },
+      {
+        "clip_id": "ed7ad8a65a7e400b",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/463.wav",
+        "wav_sha256": "ed7ad8a65a7e400b1988d2a0b6ece631a114b04391f26afefaeaf2be402334bf",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H081",
+        "recording_day": "2017-04-04",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "c8034160b6138ff7",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/5.wav",
+        "wav_sha256": "c8034160b6138ff73e13e6e297fb6b82030ea95d146e0ff1f8f42f8360df748b",
+        "duration_seconds": 359.0,
+        "used_2s_duration_seconds": 358,
+        "segments": 179,
+        "warp_candidate": true,
+        "stretch_to900": 2.5139664804469275,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H132",
+        "recording_day": "2016-05-09",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "715ee413b10789fc",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/59.wav",
+        "wav_sha256": "715ee413b10789fc97c988c65b65aa989e60967970ad871b0fe150669be0cdce",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H109",
+        "recording_day": "2016-06-01",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "1d4e2b4d61251d7e",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/62.wav",
+        "wav_sha256": "1d4e2b4d61251d7eb4a0c950789718b4df94ef378a4aa47f221c1805d5527349",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H013",
+        "recording_day": "2016-06-01",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "c0a3d5cc324a0b75",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/65.wav",
+        "wav_sha256": "c0a3d5cc324a0b7580ca85a9ae188852e50f35c498f0d8411bb2ded6fcd5bfeb",
+        "duration_seconds": 419.0,
+        "used_2s_duration_seconds": 418,
+        "segments": 209,
+        "warp_candidate": true,
+        "stretch_to900": 2.15311004784689,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H096",
+        "recording_day": "2016-06-01",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 6.25e-05
+      },
+      {
+        "clip_id": "d835b8b9a272454e",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/67.wav",
+        "wav_sha256": "d835b8b9a272454eb9ea814dc8a5158b85631f2691b08a0e32b4891dc86b5fdf",
+        "duration_seconds": 480.0,
+        "used_2s_duration_seconds": 480,
+        "segments": 240,
+        "warp_candidate": true,
+        "stretch_to900": 1.875,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H109",
+        "recording_day": "2016-06-04",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      },
+      {
+        "clip_id": "2970d856b0968fef",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/78.wav",
+        "wav_sha256": "2970d856b0968fef72e38c4166b18ace3cc5b9268cf49393182b2235cf961e88",
+        "duration_seconds": 360.0,
+        "used_2s_duration_seconds": 360,
+        "segments": 180,
+        "warp_candidate": true,
+        "stretch_to900": 2.5,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H136",
+        "recording_day": "2016-06-04",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 6.25e-05
+      },
+      {
+        "clip_id": "45449827bbd942b7",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/8.wav",
+        "wav_sha256": "45449827bbd942b7550b18e80b490125cd8ec01d431a97692721aec002be9c6b",
+        "duration_seconds": 420.0,
+        "used_2s_duration_seconds": 420,
+        "segments": 210,
+        "warp_candidate": true,
+        "stretch_to900": 2.142857142857143,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H073",
+        "recording_day": "2016-05-09",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 0.0
+      },
+      {
+        "clip_id": "0cc53c2d34fc060c",
+        "wav_member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/90.wav",
+        "wav_sha256": "0cc53c2d34fc060c26fffdddcd630372a3412ce8e0f42ab7a0848b21fd6c0259",
+        "duration_seconds": 300.0,
+        "used_2s_duration_seconds": 300,
+        "segments": 150,
+        "warp_candidate": true,
+        "stretch_to900": 3.0,
+        "component": "REF_eca948a5584d1f14fbea",
+        "original_hull_group": "VTUAD_HULL_H039",
+        "recording_day": "2016-06-05",
+        "outer_fold": 4,
+        "sample_rate_hz": 32000,
+        "large_DC_fraction_review": true,
+        "digital_rail_fraction": 0.0,
+        "longest_digital_zero_seconds": 3.125e-05
+      }
+    ]
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "train_reference_clips": 779,
+      "train_components": 16,
+      "original_measured_native_clips": 7,
+      "original_measured_native_components": 3,
+      "VT_warp_candidates": 44,
+      "VT_warp_components": 3,
+      "additional_native_capable_CV_components": 2,
+      "additional_native_capable_component_ids": [
+        "REF_61e16af34294aaca010c",
+        "REF_8d0211ada01d043634eb"
+      ],
+      "after_warp_native_like_components": 5,
+      "native_like_template_count_if_one_uniform_warp_per_candidate": 51,
+      "eligible_clip_ids": [
+        "0acd58144196dcd4",
+        "0cc53c2d34fc060c",
+        "1d4e2b4d61251d7e",
+        "1e4d60efb18641af",
+        "21caea63b531efb3",
+        "2970d856b0968fef",
+        "33f42958d243e7bd",
+        "35bea19ab9650873",
+        "37b3041ff97290b7",
+        "45449827bbd942b7",
+        "4a50acbf3a79badb",
+        "51569f2f51e33a21",
+        "595437c742858b8e",
+        "600076d781fb0ef0",
+        "64504c9245bb0294",
+        "678d2a9e02577226",
+        "69247ec5b68e3f3c",
+        "69ddf7e72b850b09",
+        "6c930497d3077f7f",
+        "7027087d9c924062",
+        "715ee413b10789fc",
+        "73f6e0c3e171a315",
+        "7623d71fcf92f62b",
+        "7952735c6c95ebd7",
+        "7caa5396268166d3",
+        "915b84396d5312c6",
+        "a367c52bb07e0799",
+        "a724debe30d41a56",
+        "b6071409aada8f51",
+        "b6c3118e6bad9c70",
+        "c0a3d5cc324a0b75",
+        "c3c481cc082084e3",
+        "c5e7a4e35c1360a9",
+        "c8034160b6138ff7",
+        "d835b8b9a272454e",
+        "d96a8dd4dbc0afc4",
+        "e18fdfa0d71c0ee1",
+        "e3a46cc5261eb023",
+        "ed7ad8a65a7e400b",
+        "f0f43a849a71794b",
+        "f43765e97c635009",
+        "f5e2475ae4d98d60",
+        "f78cdd75c4868e88",
+        "f85decf4453d9a02"
+      ],
+      "strict_same_sensor_reference_24h_candidates": 44,
+      "strict24_new_native_capable_CV_components": 2,
+      "strict24_details": [
+        {
+          "clip_id": "a724debe30d41a56",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "1e4d60efb18641af",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "e18fdfa0d71c0ee1",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f43765e97c635009",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "b6c3118e6bad9c70",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "64504c9245bb0294",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "69247ec5b68e3f3c",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f5e2475ae4d98d60",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "21caea63b531efb3",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "600076d781fb0ef0",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f78cdd75c4868e88",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f85decf4453d9a02",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "33f42958d243e7bd",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "35bea19ab9650873",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "a367c52bb07e0799",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "b6071409aada8f51",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "915b84396d5312c6",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "4a50acbf3a79badb",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7952735c6c95ebd7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "6c930497d3077f7f",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c3c481cc082084e3",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7caa5396268166d3",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "69ddf7e72b850b09",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "37b3041ff97290b7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "51569f2f51e33a21",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "678d2a9e02577226",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "595437c742858b8e",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "73f6e0c3e171a315",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "d96a8dd4dbc0afc4",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "e3a46cc5261eb023",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f0f43a849a71794b",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c5e7a4e35c1360a9",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7027087d9c924062",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "0acd58144196dcd4",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7623d71fcf92f62b",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "ed7ad8a65a7e400b",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c8034160b6138ff7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "715ee413b10789fc",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "1d4e2b4d61251d7e",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c0a3d5cc324a0b75",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "d835b8b9a272454e",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "2970d856b0968fef",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "45449827bbd942b7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "0cc53c2d34fc060c",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        }
+      ],
+      "inner_reference_clips": 193,
+      "outer_reference_clips": 199
+    },
+    {
+      "fold": 1,
+      "train_reference_clips": 806,
+      "train_components": 17,
+      "original_measured_native_clips": 7,
+      "original_measured_native_components": 3,
+      "VT_warp_candidates": 44,
+      "VT_warp_components": 3,
+      "additional_native_capable_CV_components": 2,
+      "additional_native_capable_component_ids": [
+        "REF_61e16af34294aaca010c",
+        "REF_8d0211ada01d043634eb"
+      ],
+      "after_warp_native_like_components": 5,
+      "native_like_template_count_if_one_uniform_warp_per_candidate": 51,
+      "eligible_clip_ids": [
+        "0acd58144196dcd4",
+        "0cc53c2d34fc060c",
+        "1d4e2b4d61251d7e",
+        "1e4d60efb18641af",
+        "21caea63b531efb3",
+        "2970d856b0968fef",
+        "33f42958d243e7bd",
+        "35bea19ab9650873",
+        "37b3041ff97290b7",
+        "45449827bbd942b7",
+        "4a50acbf3a79badb",
+        "51569f2f51e33a21",
+        "595437c742858b8e",
+        "600076d781fb0ef0",
+        "64504c9245bb0294",
+        "678d2a9e02577226",
+        "69247ec5b68e3f3c",
+        "69ddf7e72b850b09",
+        "6c930497d3077f7f",
+        "7027087d9c924062",
+        "715ee413b10789fc",
+        "73f6e0c3e171a315",
+        "7623d71fcf92f62b",
+        "7952735c6c95ebd7",
+        "7caa5396268166d3",
+        "915b84396d5312c6",
+        "a367c52bb07e0799",
+        "a724debe30d41a56",
+        "b6071409aada8f51",
+        "b6c3118e6bad9c70",
+        "c0a3d5cc324a0b75",
+        "c3c481cc082084e3",
+        "c5e7a4e35c1360a9",
+        "c8034160b6138ff7",
+        "d835b8b9a272454e",
+        "d96a8dd4dbc0afc4",
+        "e18fdfa0d71c0ee1",
+        "e3a46cc5261eb023",
+        "ed7ad8a65a7e400b",
+        "f0f43a849a71794b",
+        "f43765e97c635009",
+        "f5e2475ae4d98d60",
+        "f78cdd75c4868e88",
+        "f85decf4453d9a02"
+      ],
+      "strict_same_sensor_reference_24h_candidates": 44,
+      "strict24_new_native_capable_CV_components": 2,
+      "strict24_details": [
+        {
+          "clip_id": "a724debe30d41a56",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "1e4d60efb18641af",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "e18fdfa0d71c0ee1",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f43765e97c635009",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "b6c3118e6bad9c70",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "64504c9245bb0294",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "69247ec5b68e3f3c",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f5e2475ae4d98d60",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "21caea63b531efb3",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "600076d781fb0ef0",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f78cdd75c4868e88",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f85decf4453d9a02",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "33f42958d243e7bd",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "35bea19ab9650873",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "a367c52bb07e0799",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "b6071409aada8f51",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "915b84396d5312c6",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "4a50acbf3a79badb",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7952735c6c95ebd7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "6c930497d3077f7f",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c3c481cc082084e3",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7caa5396268166d3",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "69ddf7e72b850b09",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "37b3041ff97290b7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "51569f2f51e33a21",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "678d2a9e02577226",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "595437c742858b8e",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "73f6e0c3e171a315",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "d96a8dd4dbc0afc4",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "e3a46cc5261eb023",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f0f43a849a71794b",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c5e7a4e35c1360a9",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7027087d9c924062",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "0acd58144196dcd4",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7623d71fcf92f62b",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "ed7ad8a65a7e400b",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c8034160b6138ff7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "715ee413b10789fc",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "1d4e2b4d61251d7e",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c0a3d5cc324a0b75",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "d835b8b9a272454e",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "2970d856b0968fef",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "45449827bbd942b7",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "0cc53c2d34fc060c",
+          "nearest_current_heldout_VT_gap_hours": null,
+          "strict24_passed": true
+        }
+      ],
+      "inner_reference_clips": 172,
+      "outer_reference_clips": 193
+    },
+    {
+      "fold": 2,
+      "train_reference_clips": 803,
+      "train_components": 16,
+      "original_measured_native_clips": 7,
+      "original_measured_native_components": 3,
+      "VT_warp_candidates": 43,
+      "VT_warp_components": 2,
+      "additional_native_capable_CV_components": 1,
+      "additional_native_capable_component_ids": [
+        "REF_61e16af34294aaca010c"
+      ],
+      "after_warp_native_like_components": 4,
+      "native_like_template_count_if_one_uniform_warp_per_candidate": 50,
+      "eligible_clip_ids": [
+        "0acd58144196dcd4",
+        "0cc53c2d34fc060c",
+        "1d4e2b4d61251d7e",
+        "1e4d60efb18641af",
+        "21caea63b531efb3",
+        "2970d856b0968fef",
+        "33f42958d243e7bd",
+        "35bea19ab9650873",
+        "37b3041ff97290b7",
+        "45449827bbd942b7",
+        "4a50acbf3a79badb",
+        "51569f2f51e33a21",
+        "600076d781fb0ef0",
+        "64504c9245bb0294",
+        "678d2a9e02577226",
+        "69247ec5b68e3f3c",
+        "69ddf7e72b850b09",
+        "6c930497d3077f7f",
+        "7027087d9c924062",
+        "715ee413b10789fc",
+        "73f6e0c3e171a315",
+        "7623d71fcf92f62b",
+        "7952735c6c95ebd7",
+        "7caa5396268166d3",
+        "915b84396d5312c6",
+        "a367c52bb07e0799",
+        "a724debe30d41a56",
+        "b6071409aada8f51",
+        "b6c3118e6bad9c70",
+        "c0a3d5cc324a0b75",
+        "c3c481cc082084e3",
+        "c5e7a4e35c1360a9",
+        "c8034160b6138ff7",
+        "d835b8b9a272454e",
+        "d96a8dd4dbc0afc4",
+        "e18fdfa0d71c0ee1",
+        "e3a46cc5261eb023",
+        "ed7ad8a65a7e400b",
+        "f0f43a849a71794b",
+        "f43765e97c635009",
+        "f5e2475ae4d98d60",
+        "f78cdd75c4868e88",
+        "f85decf4453d9a02"
+      ],
+      "strict_same_sensor_reference_24h_candidates": 39,
+      "strict24_new_native_capable_CV_components": 1,
+      "strict24_details": [
+        {
+          "clip_id": "a724debe30d41a56",
+          "nearest_current_heldout_VT_gap_hours": 402.7,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "1e4d60efb18641af",
+          "nearest_current_heldout_VT_gap_hours": 401.98333333333335,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "e18fdfa0d71c0ee1",
+          "nearest_current_heldout_VT_gap_hours": 993.7833333333333,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f43765e97c635009",
+          "nearest_current_heldout_VT_gap_hours": 1040.2,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "b6c3118e6bad9c70",
+          "nearest_current_heldout_VT_gap_hours": 1042.95,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "64504c9245bb0294",
+          "nearest_current_heldout_VT_gap_hours": 1055.0333333333333,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "69247ec5b68e3f3c",
+          "nearest_current_heldout_VT_gap_hours": 1093.1333333333334,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f5e2475ae4d98d60",
+          "nearest_current_heldout_VT_gap_hours": 278.95,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "21caea63b531efb3",
+          "nearest_current_heldout_VT_gap_hours": 1127.0666666666666,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "600076d781fb0ef0",
+          "nearest_current_heldout_VT_gap_hours": 1128.6,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f78cdd75c4868e88",
+          "nearest_current_heldout_VT_gap_hours": 1135.4666666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "f85decf4453d9a02",
+          "nearest_current_heldout_VT_gap_hours": 1136.9,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "33f42958d243e7bd",
+          "nearest_current_heldout_VT_gap_hours": 1152.0166666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "35bea19ab9650873",
+          "nearest_current_heldout_VT_gap_hours": 1156.6833333333334,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "a367c52bb07e0799",
+          "nearest_current_heldout_VT_gap_hours": 1184.1833333333334,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "b6071409aada8f51",
+          "nearest_current_heldout_VT_gap_hours": 1193.1333333333334,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "915b84396d5312c6",
+          "nearest_current_heldout_VT_gap_hours": 1198.1166666666666,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "4a50acbf3a79badb",
+          "nearest_current_heldout_VT_gap_hours": 529.5166666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7952735c6c95ebd7",
+          "nearest_current_heldout_VT_gap_hours": 263.51666666666665,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "6c930497d3077f7f",
+          "nearest_current_heldout_VT_gap_hours": 148.0,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c3c481cc082084e3",
+          "nearest_current_heldout_VT_gap_hours": 144.25,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7caa5396268166d3",
+          "nearest_current_heldout_VT_gap_hours": 37.63333333333333,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "69ddf7e72b850b09",
+          "nearest_current_heldout_VT_gap_hours": 49.95,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "37b3041ff97290b7",
+          "nearest_current_heldout_VT_gap_hours": 57.68333333333333,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "51569f2f51e33a21",
+          "nearest_current_heldout_VT_gap_hours": 85.55,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "678d2a9e02577226",
+          "nearest_current_heldout_VT_gap_hours": 100.66666666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "73f6e0c3e171a315",
+          "nearest_current_heldout_VT_gap_hours": 2.216666666666667,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "d96a8dd4dbc0afc4",
+          "nearest_current_heldout_VT_gap_hours": 6.7,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "e3a46cc5261eb023",
+          "nearest_current_heldout_VT_gap_hours": 13.583333333333334,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "f0f43a849a71794b",
+          "nearest_current_heldout_VT_gap_hours": 13.716666666666667,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "c5e7a4e35c1360a9",
+          "nearest_current_heldout_VT_gap_hours": 1499.0,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7027087d9c924062",
+          "nearest_current_heldout_VT_gap_hours": 3459.7166666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "0acd58144196dcd4",
+          "nearest_current_heldout_VT_gap_hours": 3468.7166666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "7623d71fcf92f62b",
+          "nearest_current_heldout_VT_gap_hours": 3472.016666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "ed7ad8a65a7e400b",
+          "nearest_current_heldout_VT_gap_hours": 3480.85,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c8034160b6138ff7",
+          "nearest_current_heldout_VT_gap_hours": 397.4,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "715ee413b10789fc",
+          "nearest_current_heldout_VT_gap_hours": 165.35,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "1d4e2b4d61251d7e",
+          "nearest_current_heldout_VT_gap_hours": 166.15,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "c0a3d5cc324a0b75",
+          "nearest_current_heldout_VT_gap_hours": 171.46666666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "d835b8b9a272454e",
+          "nearest_current_heldout_VT_gap_hours": 223.21666666666667,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "2970d856b0968fef",
+          "nearest_current_heldout_VT_gap_hours": 235.18333333333334,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "45449827bbd942b7",
+          "nearest_current_heldout_VT_gap_hours": 391.06666666666666,
+          "strict24_passed": true
+        },
+        {
+          "clip_id": "0cc53c2d34fc060c",
+          "nearest_current_heldout_VT_gap_hours": 256.26666666666665,
+          "strict24_passed": true
+        }
+      ],
+      "inner_reference_clips": 196,
+      "outer_reference_clips": 172
+    },
+    {
+      "fold": 3,
+      "train_reference_clips": 564,
+      "train_components": 14,
+      "original_measured_native_clips": 6,
+      "original_measured_native_components": 3,
+      "VT_warp_candidates": 0,
+      "VT_warp_components": 0,
+      "additional_native_capable_CV_components": 0,
+      "additional_native_capable_component_ids": [],
+      "after_warp_native_like_components": 3,
+      "native_like_template_count_if_one_uniform_warp_per_candidate": 6,
+      "eligible_clip_ids": [],
+      "strict_same_sensor_reference_24h_candidates": 0,
+      "strict24_new_native_capable_CV_components": 0,
+      "strict24_details": [],
+      "inner_reference_clips": 411,
+      "outer_reference_clips": 196
+    },
+    {
+      "fold": 4,
+      "train_reference_clips": 561,
+      "train_components": 15,
+      "original_measured_native_clips": 6,
+      "original_measured_native_components": 3,
+      "VT_warp_candidates": 1,
+      "VT_warp_components": 1,
+      "additional_native_capable_CV_components": 1,
+      "additional_native_capable_component_ids": [
+        "REF_8d0211ada01d043634eb"
+      ],
+      "after_warp_native_like_components": 4,
+      "native_like_template_count_if_one_uniform_warp_per_candidate": 7,
+      "eligible_clip_ids": [
+        "595437c742858b8e"
+      ],
+      "strict_same_sensor_reference_24h_candidates": 0,
+      "strict24_new_native_capable_CV_components": 0,
+      "strict24_details": [
+        {
+          "clip_id": "595437c742858b8e",
+          "nearest_current_heldout_VT_gap_hours": 1.7166666666666666,
+          "strict24_passed": false
+        }
+      ],
+      "inner_reference_clips": 199,
+      "outer_reference_clips": 411
+    }
+  ],
+  "raw_availability": {
+    "all_parts_present": true,
+    "parts_bytes": {
+      "vtuad_strict_wav_vessel.zip.part01": 1237445900,
+      "vtuad_strict_wav_vessel.zip.part02": 1237445900,
+      "vtuad_strict_wav_vessel.zip.part03": 1237445899
+    },
+    "raw_member_full_SHA_and_CRC_reverified_count": 47,
+    "raw_member_bytes_read": 1393794068,
+    "raw_read_scope": "47 VTUAD clips, all TRAIN in fold00; no HMS short excerpts or reserved NOAA audio read.",
+    "additional_download_needed_for_candidates": false,
+    "members": [
+      {
+        "clip_id": "a724debe30d41a56",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/0.wav",
+        "bytes": 19200044,
+        "sha256": "a724debe30d41a564f853e53c826d6a518e92386c521d4024f449137083e058b",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "1e4d60efb18641af",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/1.wav",
+        "bytes": 26880044,
+        "sha256": "1e4d60efb18641afb64f83c752cfc19f7f8bf4b7ccdef79328b2af5b58071353",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 13440000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 420.0
+      },
+      {
+        "clip_id": "e18fdfa0d71c0ee1",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/111.wav",
+        "bytes": 23040044,
+        "sha256": "e18fdfa0d71c0ee1c0eb224eee10f156e0bb26d9ca2ed132e054b7e813d20852",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "f43765e97c635009",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/131.wav",
+        "bytes": 30720044,
+        "sha256": "f43765e97c635009879c0b662139f8b2ff62a46c54c1e59cf472bea6204eab2e",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 15360000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 480.0
+      },
+      {
+        "clip_id": "b6c3118e6bad9c70",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/136.wav",
+        "bytes": 23040044,
+        "sha256": "b6c3118e6bad9c70b65eb78a56ea7e9635bd125d4bfa4f2106843012af110a91",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "64504c9245bb0294",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/138.wav",
+        "bytes": 19200044,
+        "sha256": "64504c9245bb02940efd35fb77c66bbcc84b0cef93038f7a5facfc5ddf755eea",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "69247ec5b68e3f3c",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/158.wav",
+        "bytes": 30720044,
+        "sha256": "69247ec5b68e3f3c4258855a233840c7566bf15ab7b51ce6795ee0d99083b6e7",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 15360000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 480.0
+      },
+      {
+        "clip_id": "f5e2475ae4d98d60",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/16.wav",
+        "bytes": 26880044,
+        "sha256": "f5e2475ae4d98d6016a3fa2ac7efa4e4122add2223ccade99d54b90f84625986",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 13440000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 420.0
+      },
+      {
+        "clip_id": "21caea63b531efb3",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/176.wav",
+        "bytes": 19200044,
+        "sha256": "21caea63b531efb3680ff3759e0f5e55a524418c62e83124565dbfe39080bd9c",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "600076d781fb0ef0",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/177.wav",
+        "bytes": 23040044,
+        "sha256": "600076d781fb0ef034d9a80e13be5799454df3bf93790a96a89005bb3287934f",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "f78cdd75c4868e88",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/183.wav",
+        "bytes": 23040044,
+        "sha256": "f78cdd75c4868e88faf10eda72e41b949fe7f8cd68f4aa66b0104b092dfc2a93",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "f85decf4453d9a02",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/187.wav",
+        "bytes": 23040044,
+        "sha256": "f85decf4453d9a024319a97f902d5754d5bd9121a1defa2fc4b266edee0e04ae",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "33f42958d243e7bd",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/196.wav",
+        "bytes": 19200044,
+        "sha256": "33f42958d243e7bd3777b8cefd0db4a1d64622b868d5efd71363119c9a70cfcc",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "35bea19ab9650873",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/201.wav",
+        "bytes": 23040044,
+        "sha256": "35bea19ab96508738990693f3d0609fe3cf5e2a949792c7b78adb95e68853ca9",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "a367c52bb07e0799",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/220.wav",
+        "bytes": 23040044,
+        "sha256": "a367c52bb07e0799e7d7711c6bdc15072aa82a1e0b2a6e5786e15dfa3db8d2fd",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "b6071409aada8f51",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/223.wav",
+        "bytes": 19200044,
+        "sha256": "b6071409aada8f511688e3c446b985d6e18ff4b846ed3b287f31caa9eeeb8a4e",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "915b84396d5312c6",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/227.wav",
+        "bytes": 19200044,
+        "sha256": "915b84396d5312c65167a928b07a912f030bd38fff2337a3f047a7a49fb1a09c",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "4a50acbf3a79badb",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/259.wav",
+        "bytes": 23040044,
+        "sha256": "4a50acbf3a79badb5788428878f61d26d2b6b3a3c7b929871394c87f5df1be79",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "7952735c6c95ebd7",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/27.wav",
+        "bytes": 34560044,
+        "sha256": "7952735c6c95ebd7ab5166cddb1d94eae25fdaebacb94202f1b8c8e579be3303",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 17280000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 540.0
+      },
+      {
+        "clip_id": "6c930497d3077f7f",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/307.wav",
+        "bytes": 42240044,
+        "sha256": "6c930497d3077f7fff4e02890c24b5ac454353f7805cc78c3b3da3c1fa7c4103",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 21120000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 660.0
+      },
+      {
+        "clip_id": "c3c481cc082084e3",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/312.wav",
+        "bytes": 19200044,
+        "sha256": "c3c481cc082084e301d4b2341e7b80b7e1fd51fa4ac5ae39f901462bace10d0b",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "7caa5396268166d3",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/340.wav",
+        "bytes": 46080044,
+        "sha256": "7caa5396268166d345e4749636d160001f291894476bc6faea65d5f19580e613",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 23040000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 720.0
+      },
+      {
+        "clip_id": "69ddf7e72b850b09",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/352.wav",
+        "bytes": 53760044,
+        "sha256": "69ddf7e72b850b094419e183dacaf15ddd13a54a67e7635d90819383b5a7b3ac",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 26880000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 840.0
+      },
+      {
+        "clip_id": "37b3041ff97290b7",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/356.wav",
+        "bytes": 23040044,
+        "sha256": "37b3041ff97290b778a30f0bb375cef389af2d2fb3b3c439ad67bf8bd331f50e",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "51569f2f51e33a21",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/361.wav",
+        "bytes": 23040044,
+        "sha256": "51569f2f51e33a211c6c32e49798a784f536deff42988ee5e01b297d6e76a0c3",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "678d2a9e02577226",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/369.wav",
+        "bytes": 26880044,
+        "sha256": "678d2a9e025772260429af03f4973f35d18b03780e34efd345a89f5fed7e0ad6",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 13440000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 420.0
+      },
+      {
+        "clip_id": "e85757bad3931975",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/379.wav",
+        "bytes": 72960044,
+        "sha256": "e85757bad3931975299fa6fe3a11cdbdcebde3bd41bf82de74f33da637395cb6",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 36480000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 1140.0
+      },
+      {
+        "clip_id": "0a3c6b70a809cbe3",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/380.wav",
+        "bytes": 88320044,
+        "sha256": "0a3c6b70a809cbe3b6d5f6c9ebe01bce8e626f0a7db5514dac8e9f748cc0c4e3",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 44160000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 1380.0
+      },
+      {
+        "clip_id": "62ca2f37bf6fc937",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/384.wav",
+        "bytes": 76800044,
+        "sha256": "62ca2f37bf6fc937ae7c67dc402a57442c1e6daf18013be493bd204f75da0cbd",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 38400000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 1200.0
+      },
+      {
+        "clip_id": "595437c742858b8e",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/400.wav",
+        "bytes": 19200044,
+        "sha256": "595437c742858b8e3cd6e5cb5ccdf4f48e8d34709fa0694787b6952cbc13443b",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "73f6e0c3e171a315",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/403.wav",
+        "bytes": 34560044,
+        "sha256": "73f6e0c3e171a31562d1abf1c987d54396ddf310b3358b9bf0ecf4b1a9019ab6",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 17280000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 540.0
+      },
+      {
+        "clip_id": "d96a8dd4dbc0afc4",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/407.wav",
+        "bytes": 38400044,
+        "sha256": "d96a8dd4dbc0afc421b8a8203282a1386dc396e41264253859146eb2988c15a1",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 19200000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 600.0
+      },
+      {
+        "clip_id": "e3a46cc5261eb023",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/408.wav",
+        "bytes": 30720044,
+        "sha256": "e3a46cc5261eb0236c2ec31bbb8e9653fd4f0a1a2d26e0fa1cc6bd1959f2d883",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 15360000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 480.0
+      },
+      {
+        "clip_id": "f0f43a849a71794b",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/409.wav",
+        "bytes": 23040044,
+        "sha256": "f0f43a849a71794bf23e9c346cfbe4b52c4e46f0a5cef078eba21995d50770b6",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "c5e7a4e35c1360a9",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/421.wav",
+        "bytes": 23040044,
+        "sha256": "c5e7a4e35c1360a97a46f0dbfbe8f1962f965ae698154f8e3ae83f83a1d3c8d1",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "7027087d9c924062",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/445.wav",
+        "bytes": 30720044,
+        "sha256": "7027087d9c9240621ff311115f693a5dcd43c966d895921bbcf7586693c73efc",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 15360000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 480.0
+      },
+      {
+        "clip_id": "0acd58144196dcd4",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/456.wav",
+        "bytes": 23040044,
+        "sha256": "0acd58144196dcd4b0105520b2a260cb755976e930d5304d51073adcc050d210",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "7623d71fcf92f62b",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/459.wav",
+        "bytes": 38400044,
+        "sha256": "7623d71fcf92f62ba527b1c2d50e89071094c156fec27178968f2147f06a700d",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 19200000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 600.0
+      },
+      {
+        "clip_id": "ed7ad8a65a7e400b",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/463.wav",
+        "bytes": 23040044,
+        "sha256": "ed7ad8a65a7e400b1988d2a0b6ece631a114b04391f26afefaeaf2be402334bf",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "c8034160b6138ff7",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/5.wav",
+        "bytes": 22976044,
+        "sha256": "c8034160b6138ff73e13e6e297fb6b82030ea95d146e0ff1f8f42f8360df748b",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11488000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 359.0
+      },
+      {
+        "clip_id": "715ee413b10789fc",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/59.wav",
+        "bytes": 19200044,
+        "sha256": "715ee413b10789fc97c988c65b65aa989e60967970ad871b0fe150669be0cdce",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "1d4e2b4d61251d7e",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/62.wav",
+        "bytes": 19200044,
+        "sha256": "1d4e2b4d61251d7eb4a0c950789718b4df94ef378a4aa47f221c1805d5527349",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      },
+      {
+        "clip_id": "c0a3d5cc324a0b75",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/65.wav",
+        "bytes": 26816044,
+        "sha256": "c0a3d5cc324a0b7580ca85a9ae188852e50f35c498f0d8411bb2ded6fcd5bfeb",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 13408000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 419.0
+      },
+      {
+        "clip_id": "d835b8b9a272454e",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/67.wav",
+        "bytes": 30720044,
+        "sha256": "d835b8b9a272454eb9ea814dc8a5158b85631f2691b08a0e32b4891dc86b5fdf",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 15360000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 480.0
+      },
+      {
+        "clip_id": "2970d856b0968fef",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/78.wav",
+        "bytes": 23040044,
+        "sha256": "2970d856b0968fef72e38c4166b18ace3cc5b9268cf49393182b2235cf961e88",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 11520000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 360.0
+      },
+      {
+        "clip_id": "45449827bbd942b7",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/8.wav",
+        "bytes": 26880044,
+        "sha256": "45449827bbd942b7550b18e80b490125cd8ec01d431a97692721aec002be9c6b",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 13440000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 420.0
+      },
+      {
+        "clip_id": "0cc53c2d34fc060c",
+        "member": "strict_interval_wav/inclusion_4000_exclusion_6000/vessel/90.wav",
+        "bytes": 19200044,
+        "sha256": "0cc53c2d34fc060c26fffdddcd630372a3412ce8e0f42ab7a0848b21fd6c0259",
+        "member_CRC_passed": true,
+        "header": {
+          "sample_rate_hz": 32000,
+          "channels": 1,
+          "frames": 9600000,
+          "sample_width_bytes": 2
+        },
+        "duration_seconds": 300.0
+      }
+    ]
+  },
+  "reserved_or_excluded_counts": [
+    {
+      "source": "HearMyShip_V1",
+      "split": "calibration",
+      "clips": 144
+    },
+    {
+      "source": "HearMyShip_V1",
+      "split": "domain_holdout",
+      "clips": 56
+    },
+    {
+      "source": "NOAA_SanctSound_extension_v1",
+      "split": "calibration",
+      "clips": 2
+    },
+    {
+      "source": "NOAA_SanctSound_extension_v1",
+      "split": "sealed_holdout",
+      "clips": 2
+    },
+    {
+      "source": "VTUAD_v1.3.2",
+      "split": "calibration",
+      "clips": 6
+    },
+    {
+      "source": "VTUAD_v1.3.2",
+      "split": "domain_holdout",
+      "clips": 15
+    },
+    {
+      "source": "VTUAD_v1.3.2",
+      "split": "excluded_cross_day_conflict",
+      "clips": 1
+    },
+    {
+      "source": "VTUAD_v1.3.2",
+      "split": "excluded_hull_day_conflict",
+      "clips": 260
+    }
+  ],
+  "VTUAD_outside_CV_counts": [
+    {
+      "split": "calibration",
+      "role": "ambient_control",
+      "clips": 1,
+      "at_least5min": 1
+    },
+    {
+      "split": "calibration",
+      "role": "vessel_passage",
+      "clips": 5,
+      "at_least5min": 0
+    },
+    {
+      "split": "domain_holdout",
+      "role": "ambient_control",
+      "clips": 4,
+      "at_least5min": 4
+    },
+    {
+      "split": "domain_holdout",
+      "role": "vessel_passage",
+      "clips": 11,
+      "at_least5min": 3
+    },
+    {
+      "split": "excluded_cross_day_conflict",
+      "role": "ambient_control",
+      "clips": 1,
+      "at_least5min": 1
+    },
+    {
+      "split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "clips": 260,
+      "at_least5min": 60
+    },
+    {
+      "split": "train",
+      "role": "ambient_control",
+      "clips": 9,
+      "at_least5min": 9
+    },
+    {
+      "split": "train",
+      "role": "vessel_passage",
+      "clips": 15,
+      "at_least5min": 3
+    },
+    {
+      "split": "validation",
+      "role": "ambient_control",
+      "clips": 1,
+      "at_least5min": 1
+    }
+  ],
+  "reserved_NOAA_clip_ids": [
+    {
+      "clip_id": "sb01_01_20181112T190100Z",
+      "group_key": "NOAA_STATION_sb01",
+      "split": "sealed_holdout"
+    },
+    {
+      "clip_id": "sb01_01_20190127T225600Z",
+      "group_key": "NOAA_STATION_sb01",
+      "split": "sealed_holdout"
+    },
+    {
+      "clip_id": "oc03_02_20191108T010700Z",
+      "group_key": "NOAA_STATION_oc03",
+      "split": "calibration"
+    },
+    {
+      "clip_id": "oc03_02_20200306T042200Z",
+      "group_key": "NOAA_STATION_oc03",
+      "split": "calibration"
+    }
+  ],
+  "full_registry_graph_metadata_only": [
+    {
+      "CV_component": "REF_61e16af34294aaca010c",
+      "CV_clips": 5,
+      "CV_outer_fold": 4,
+      "full_registry_components": [
+        "('bytes', '3a99812906d2f63ed612ce44be4ef0eaf7eec491c23ae12700b94facd2f1d89f')"
+      ],
+      "all_registry_clips_connected": 525,
+      "connected_original_split_counts": {
+        "excluded_hull_day_conflict": 260,
+        "train": 237,
+        "domain_holdout": 15,
+        "calibration": 6,
+        "validation": 6,
+        "excluded_cross_day_conflict": 1
+      },
+      "connected_other_CV_components": [
+        "REF_61e16af34294aaca010c",
+        "REF_8d0211ada01d043634eb",
+        "REF_eca948a5584d1f14fbea"
+      ]
+    },
+    {
+      "CV_component": "REF_8d0211ada01d043634eb",
+      "CV_clips": 5,
+      "CV_outer_fold": 3,
+      "full_registry_components": [
+        "('bytes', '3a99812906d2f63ed612ce44be4ef0eaf7eec491c23ae12700b94facd2f1d89f')"
+      ],
+      "all_registry_clips_connected": 525,
+      "connected_original_split_counts": {
+        "excluded_hull_day_conflict": 260,
+        "train": 237,
+        "domain_holdout": 15,
+        "calibration": 6,
+        "validation": 6,
+        "excluded_cross_day_conflict": 1
+      },
+      "connected_other_CV_components": [
+        "REF_61e16af34294aaca010c",
+        "REF_8d0211ada01d043634eb",
+        "REF_eca948a5584d1f14fbea"
+      ]
+    },
+    {
+      "CV_component": "REF_eca948a5584d1f14fbea",
+      "CV_clips": 208,
+      "CV_outer_fold": 4,
+      "full_registry_components": [
+        "('bytes', '3a99812906d2f63ed612ce44be4ef0eaf7eec491c23ae12700b94facd2f1d89f')"
+      ],
+      "all_registry_clips_connected": 525,
+      "connected_original_split_counts": {
+        "excluded_hull_day_conflict": 260,
+        "train": 237,
+        "domain_holdout": 15,
+        "calibration": 6,
+        "validation": 6,
+        "excluded_cross_day_conflict": 1
+      },
+      "connected_other_CV_components": [
+        "REF_61e16af34294aaca010c",
+        "REF_8d0211ada01d043634eb",
+        "REF_eca948a5584d1f14fbea"
+      ]
+    }
+  ],
+  "source_24h_policy_note": "Current group_cv.py applies 24h support purge to South African sensor/week background windows. VT reference folds are hull/day/bytes/interval connected; a same-sensor >=24h reference gap is a separate stricter optional gate reported here, not an existing proven guarantee.",
+  "public_starter_cell9": {
+    "file": "data/raw/maritime_starter_notebook.ipynb",
+    "zero_based_cell": 9,
+    "source": "https://doi.org/10.5281/zenodo.23037895",
+    "licence": "CC BY 4.0",
+    "support": "Documents minute-level band-energy summaries with varied time trajectories, relative acoustic channel and energy; it does not specify warp factor or establish equality to this proposed method."
+  },
+  "full_registry_graph_sensitivity": {
+    "all_525_components": 1,
+    "vessel_archive_only_rows": 509,
+    "vessel_archive_only_components": 1,
+    "nonambiguous_vessel_rows": 487,
+    "nonambiguous_vessel_components": 1,
+    "selected_CV_VT_rows": 218,
+    "selected_CV_VT_components": 3,
+    "interpretation": "Transitive metadata links through unselected recordings are conservative grouping sensitivity, not confirmed direct leakage among the selected R2 references."
+  },
+  "selected_R2_direct_cross_split_audit": [
+    {
+      "fold": 0,
+      "cross_split_original_source_group_count": 0,
+      "cross_split_WAV_SHA_count": 0,
+      "cross_split_VT_hull_count": 0,
+      "cross_split_VT_recording_day_count": 0,
+      "cross_split_VT_overlapping_UTC_pair_count": 0,
+      "cross_split_NOAA_station_count": 0
+    },
+    {
+      "fold": 1,
+      "cross_split_original_source_group_count": 0,
+      "cross_split_WAV_SHA_count": 0,
+      "cross_split_VT_hull_count": 0,
+      "cross_split_VT_recording_day_count": 0,
+      "cross_split_VT_overlapping_UTC_pair_count": 0,
+      "cross_split_NOAA_station_count": 0
+    },
+    {
+      "fold": 2,
+      "cross_split_original_source_group_count": 0,
+      "cross_split_WAV_SHA_count": 0,
+      "cross_split_VT_hull_count": 0,
+      "cross_split_VT_recording_day_count": 0,
+      "cross_split_VT_overlapping_UTC_pair_count": 0,
+      "cross_split_NOAA_station_count": 0
+    },
+    {
+      "fold": 3,
+      "cross_split_original_source_group_count": 0,
+      "cross_split_WAV_SHA_count": 0,
+      "cross_split_VT_hull_count": 0,
+      "cross_split_VT_recording_day_count": 0,
+      "cross_split_VT_overlapping_UTC_pair_count": 0,
+      "cross_split_NOAA_station_count": 0
+    },
+    {
+      "fold": 4,
+      "cross_split_original_source_group_count": 0,
+      "cross_split_WAV_SHA_count": 0,
+      "cross_split_VT_hull_count": 0,
+      "cross_split_VT_recording_day_count": 0,
+      "cross_split_VT_overlapping_UTC_pair_count": 0,
+      "cross_split_NOAA_station_count": 0
+    }
+  ],
+  "selected_R2_direct_cross_split_constraints_passed": true,
+  "unselected_direct_bridge_witness_count": 39,
+  "unselected_direct_bridge_examples": [
+    {
+      "unselected_clip_id": "aaba757ab2c1b3d3",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-07-10",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "9cb988b74c1a9ab3",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "457807170146800a",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "a6378ac22d6a55c6",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-07-11",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "2088c29ff8d0c6e5",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "aa1f94ca166d7906",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "48f7ac546c9d56c3",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-07-11",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "2088c29ff8d0c6e5",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "aa1f94ca166d7906",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "067f6da25d56b9f6",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-07-11",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "2088c29ff8d0c6e5",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "aa1f94ca166d7906",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "51a09b89f53e456a",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-07-11",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "2088c29ff8d0c6e5",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "aa1f94ca166d7906",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "f6d76fab2b535f42",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-07-12",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "f78cdd75c4868e88",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "067f32880cf57996",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "d405b7663df2ea7c",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-05-14",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "f5e2475ae4d98d60",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "69cb4b5bbe5e57db",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "unselected_clip_id": "352418016f1fee0b",
+      "original_split": "excluded_hull_day_conflict",
+      "role": "vessel_passage",
+      "hull": "VTUAD_HULL_H111",
+      "day": "2016-08-28",
+      "connected_selected_components": {
+        "REF_eca948a5584d1f14fbea": [
+          {
+            "selected_clip_id": "b0d93bc119d6fbbd",
+            "links": [
+              "same day"
+            ]
+          },
+          {
+            "selected_clip_id": "c46768c8d60690bd",
+            "links": [
+              "same day"
+            ]
+          }
+        ],
+        "REF_8d0211ada01d043634eb": [
+          {
+            "selected_clip_id": "0d44fb8982fb2827",
+            "links": [
+              "same hull"
+            ]
+          },
+          {
+            "selected_clip_id": "e946fb5975f3904f",
+            "links": [
+              "same hull"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "conclusion": {
+    "feasible_training_shape_augmentation": true,
+    "eligible_original_short_VT_clips": 44,
+    "new_independent_recordings": 0,
+    "new_physical_independent_source_groups": 0,
+    "current_CV_native_capable_subgroup_increase_is_not_physical_independence": true,
+    "recommended_targeted_pilot": "Only propose fold00 TRAIN-only uniform 2-second-power temporal warps from the 44 verified 300–under900s VT references; leave all heldout bytes, original source IDs and SA background 24h purge unchanged.",
+    "R2_baseline_retroactive_leakage_claim": false,
+    "dataset_generation_or_training_executed": false
+  },
+  "per_fold_gap_below24h_records": [
+    {
+      "fold": 2,
+      "clips": [
+        {
+          "clip_id": "73f6e0c3e171a315",
+          "nearest_current_heldout_VT_gap_hours": 2.216666666666667,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "d96a8dd4dbc0afc4",
+          "nearest_current_heldout_VT_gap_hours": 6.7,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "e3a46cc5261eb023",
+          "nearest_current_heldout_VT_gap_hours": 13.583333333333334,
+          "strict24_passed": false
+        },
+        {
+          "clip_id": "f0f43a849a71794b",
+          "nearest_current_heldout_VT_gap_hours": 13.716666666666667,
+          "strict24_passed": false
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "clips": [
+        {
+          "clip_id": "595437c742858b8e",
+          "nearest_current_heldout_VT_gap_hours": 1.7166666666666666,
+          "strict24_passed": false
+        }
+      ]
+    }
+  ]
+}

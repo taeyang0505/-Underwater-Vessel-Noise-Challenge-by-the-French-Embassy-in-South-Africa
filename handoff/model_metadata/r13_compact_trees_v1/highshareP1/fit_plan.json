@@ -1,0 +1,97 @@
+{
+  "format": "r12_compact_tree_fit_plan_v1",
+  "created_utc": "2026-10-26T18:05:11.836130+00:00",
+  "training_binding": {
+    "format": "r13_tree_source_binding_v1",
+    "R13_data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+    "R13_manifest_sha256": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+    "data_arm": "highshare",
+    "include_shape": true,
+    "TRAIN_npz_sha256": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+    "parent_R12_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "parent_R12_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+    "validation_fit_npz_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "basis_training_binding": {
+      "version": "r12_cpu_data_ablation_v1",
+      "role": "train",
+      "fold": 0,
+      "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+      "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+      "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+      "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+      "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+      "raw_SA_no_added_recording": true,
+      "unique_source_IDs": 2000
+    },
+    "four_fresh_fits": true
+  },
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102712,
+  "include_shape": true,
+  "basis_file_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+  "basis_training_binding": {
+    "version": "r12_cpu_data_ablation_v1",
+    "role": "train",
+    "fold": 0,
+    "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+    "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+    "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+    "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+    "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+    "raw_SA_no_added_recording": true,
+    "unique_source_IDs": 2000
+  },
+  "feature_fit_on_synthetic_train": false,
+  "scaler": "none;fixedrelativefeatures",
+  "PCA": "sharedTRAIN-onlypureSAbackgroundbasis;loadedfrozen",
+  "input_identity": {
+    "train": {
+      "db": "1c5563020c19ddce7bfd39dcb77c86175f9f27750b8097065b001ca707d691c3",
+      "unrounded_db": "c2c09e2c8b9324b9d358de05d407ac10f8e18814f34a90420e27cbc193bad112",
+      "cell_share": "08374075e707df2291e4e0b8cc7498cc4ee57b3e1f727ff638f3f7378fab99ed",
+      "share": "017558534fc52ade774789b3d0d74658e96d976db2dfa1996f38aac5d5a5087c",
+      "presence": "8f4a1176a414555802ccaabf45cdfb6de99bf70a2919fde599cf90f4a1e44de0",
+      "site": "144cfeccb2c4d17ea606645b6dc2959a7d4e430ac2b96ceb70dd50d4db371d95",
+      "source_id": "c7c0297c50d8a2fafb37b362dd11a20e7b59feced6429b3939bef9f974e2d567",
+      "sample_id": "3710817ffc326791594ace41c54d2fa5956bf7b12cc899e5058ff1a7b5f6ea06",
+      "family": "a1de3b5b71627361f0b21da40e7589fd00a5e369d1fa872e86af297113544e0f",
+      "base_window_index": "263d428a4a71ef49b62e634c3c89e0a2c18f800b83e3a1c1bc4a98162d7da195",
+      "background_group": "299c1f56ed8ca6be50317409ef7cb8a244363c22f81b902b7897b8dd35be5920",
+      "reference_index": "9279384adcd74288bb86b1f077a37746062c0d2481720404aa85f93fb6cb6c84",
+      "explicit_no_source": "3e11d12b331b59d58d3a83c5e1739e995bcddfa940579283244ae52f48c4492e"
+    },
+    "validation_fit": {
+      "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+      "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+      "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+      "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+      "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+      "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+      "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+      "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+      "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+      "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+      "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+      "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+      "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+    }
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "fixture_only": false,
+  "gate_eval_Test_used_for_ES": false
+}

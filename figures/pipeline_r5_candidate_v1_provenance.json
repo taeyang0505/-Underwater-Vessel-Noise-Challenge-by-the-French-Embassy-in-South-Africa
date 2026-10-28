@@ -1,0 +1,17 @@
+{
+  "generator": "image_gen",
+  "style_reference": "user-provided paper figure",
+  "source_image": "/Users/hongtaeyang/.codex/generated_images/01a16d21-3413-75e1-b6d4-f259cb9d4ef0/exec-c375e595-54fb-4972-8f90-1dfc255c479c.png",
+  "output": "figures/pipeline_r5_candidate_v1.png",
+  "bytes": 2099645,
+  "sha256": "892db752343c56c873b38b0c9f89dfda8dd36366e50ebfa23f6735fba0a93aec",
+  "status": "CPU architecture/integration fixtures; GPU OOF pending",
+  "performance_numbers_shown": false,
+  "R4_counts_are_five_fold_role_totals": true,
+  "scientific_revisions": [
+    "mixture E vs observation O",
+    "q/y supervision only",
+    "PCA separated from background prior",
+    "linear default vs optional logit mask rule"
+  ]
+}

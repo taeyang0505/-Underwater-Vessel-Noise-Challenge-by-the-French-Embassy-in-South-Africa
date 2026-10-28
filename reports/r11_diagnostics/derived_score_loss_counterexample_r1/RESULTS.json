@@ -1,0 +1,170 @@
+{
+  "status": "passed",
+  "counterexamples": [
+    {
+      "weight_kind": "uniform375",
+      "target_share": 0.05,
+      "modified_cell_weight": 0.0026666666381061077,
+      "values": {
+        "perfect_q": {
+          "share": 0.05000000447034836,
+          "score": 0.02500000223517418,
+          "contrast": 0.0,
+          "total_R9_loss": 0.18444398045539856,
+          "share_MSE": 1.3877787807814457e-17,
+          "weighted_cell_MSE": 0.0,
+          "presence_BCE": 3.6888794898986816,
+          "physical_losses_without_presence": 1.3877787807814457e-17
+        },
+        "incorrect_two_cells": {
+          "share": 0.052400000393390656,
+          "score": 0.526199996471405,
+          "contrast": 1.0,
+          "total_R9_loss": 0.03271278738975525,
+          "share_MSE": 5.7599982028477825e-06,
+          "weighted_cell_MSE": 0.002413333160802722,
+          "presence_BCE": 0.6420738697052002,
+          "physical_losses_without_presence": 0.0006090932874940336
+        }
+      }
+    },
+    {
+      "weight_kind": "uniform375",
+      "target_share": 0.2,
+      "modified_cell_weight": 0.0026666666381061077,
+      "values": {
+        "perfect_q": {
+          "share": 0.20000001788139343,
+          "score": 0.10000000894069672,
+          "contrast": 0.0,
+          "total_R9_loss": 0.1151292473077774,
+          "share_MSE": 2.220446049250313e-16,
+          "weighted_cell_MSE": 0.0,
+          "presence_BCE": 2.3025848865509033,
+          "physical_losses_without_presence": 2.220446049250313e-16
+        },
+        "incorrect_two_cells": {
+          "share": 0.20160001516342163,
+          "score": 0.6008000373840332,
+          "contrast": 1.0,
+          "total_R9_loss": 0.025930549949407578,
+          "share_MSE": 2.5600390927138506e-06,
+          "weighted_cell_MSE": 0.0018133334815502167,
+          "presence_BCE": 0.5094931125640869,
+          "physical_losses_without_presence": 0.0004558934015221894
+        }
+      }
+    },
+    {
+      "weight_kind": "uniform375",
+      "target_share": 0.5,
+      "modified_cell_weight": 0.0026666666381061077,
+      "values": {
+        "perfect_q": {
+          "share": 0.5,
+          "score": 0.25,
+          "contrast": 0.0,
+          "total_R9_loss": 0.06931471824645996,
+          "share_MSE": 0.0,
+          "weighted_cell_MSE": 0.0,
+          "presence_BCE": 1.3862943649291992,
+          "physical_losses_without_presence": 0.0
+        },
+        "incorrect_two_cells": {
+          "share": 0.4999999701976776,
+          "score": 0.75,
+          "contrast": 1.0,
+          "total_R9_loss": 0.014717436395585537,
+          "share_MSE": 8.881784197001252e-16,
+          "weighted_cell_MSE": 0.0013333333190530539,
+          "presence_BCE": 0.28768205642700195,
+          "physical_losses_without_presence": 0.00033333332976326346
+        }
+      }
+    },
+    {
+      "weight_kind": "LF_dominant_static_spectrum",
+      "target_share": 0.05,
+      "modified_cell_weight": 9.79466449280153e-07,
+      "values": {
+        "perfect_q": {
+          "share": 0.05000000447034836,
+          "score": 0.02500000223517418,
+          "contrast": 0.0,
+          "total_R9_loss": 0.18444398045539856,
+          "share_MSE": 1.3877787807814457e-17,
+          "weighted_cell_MSE": 0.0,
+          "presence_BCE": 3.6888794898986816,
+          "physical_losses_without_presence": 1.3877787807814457e-17
+        },
+        "incorrect_two_cells": {
+          "share": 0.050000883638858795,
+          "score": 0.5250004529953003,
+          "contrast": 1.0,
+          "total_R9_loss": 0.03221803158521652,
+          "share_MSE": 7.795014633771302e-13,
+          "weighted_cell_MSE": 8.864170695233042e-07,
+          "presence_BCE": 0.6443561911582947,
+          "physical_losses_without_presence": 2.216050489778354e-07
+        }
+      }
+    },
+    {
+      "weight_kind": "LF_dominant_static_spectrum",
+      "target_share": 0.2,
+      "modified_cell_weight": 9.79466449280153e-07,
+      "values": {
+        "perfect_q": {
+          "share": 0.20000001788139343,
+          "score": 0.10000000894069672,
+          "contrast": 0.0,
+          "total_R9_loss": 0.1151292473077774,
+          "share_MSE": 2.220446049250313e-16,
+          "weighted_cell_MSE": 0.0,
+          "presence_BCE": 2.3025848865509033,
+          "physical_losses_without_presence": 2.220446049250313e-16
+        },
+        "incorrect_two_cells": {
+          "share": 0.2000006139278412,
+          "score": 0.6000003218650818,
+          "contrast": 1.0,
+          "total_R9_loss": 0.02554142102599144,
+          "share_MSE": 3.7325698087897763e-13,
+          "weighted_cell_MSE": 6.660372378064494e-07,
+          "presence_BCE": 0.5108250975608826,
+          "physical_losses_without_presence": 1.6650967893383495e-07
+        }
+      }
+    },
+    {
+      "weight_kind": "LF_dominant_static_spectrum",
+      "target_share": 0.5,
+      "modified_cell_weight": 9.79466449280153e-07,
+      "values": {
+        "perfect_q": {
+          "share": 0.5,
+          "score": 0.25,
+          "contrast": 0.0,
+          "total_R9_loss": 0.06931471824645996,
+          "share_MSE": 0.0,
+          "weighted_cell_MSE": 0.0,
+          "presence_BCE": 1.3862943649291992,
+          "physical_losses_without_presence": 0.0
+        },
+        "incorrect_two_cells": {
+          "share": 0.5,
+          "score": 0.75,
+          "contrast": 1.0,
+          "total_R9_loss": 0.014384225010871887,
+          "share_MSE": 0.0,
+          "weighted_cell_MSE": 4.897332246400765e-07,
+          "presence_BCE": 0.28768205642700195,
+          "physical_losses_without_presence": 1.2243330616001913e-07
+        }
+      }
+    }
+  ],
+  "source_SHA_unchanged": true,
+  "causal_limit": "This proves a finite objective incentive to corrupt perfect masks, not how often it occurred in the historical R9 training or the sole Public cause.",
+  "production_loss_weights_or_outputs_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "version": "r14_torch_frontend_CPU_v1",
+  "threads": 2,
+  "feature_atol": 3e-06,
+  "weight_atol": 3e-08,
+  "relative_tolerance": 0.0,
+  "model_prediction_atol": 3e-06,
+  "actual_TRAIN_benchmark_rows": 4096,
+  "benchmark_repetitions": 3,
+  "no_GPU_Test_network_model_performance_selection": true,
+  "frozen_R13_code_data_policy_must_not_change": true
+}

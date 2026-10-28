@@ -1,0 +1,555 @@
+{
+  "status": "passed",
+  "reloaded_synthetic_rows": 624608,
+  "rows": [
+    {
+      "fold": 0,
+      "regime": "D0",
+      "role": "train",
+      "n": 61446,
+      "replayed_sources": 14,
+      "reference_clips": 60,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.5,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 0,
+      "regime": "H0",
+      "role": "train",
+      "n": 61446,
+      "replayed_sources": 14,
+      "reference_clips": 60,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.5,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 0,
+      "regime": "D0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 15,
+      "purge_checks": []
+    },
+    {
+      "fold": 0,
+      "regime": "H0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 15,
+      "purge_checks": []
+    },
+    {
+      "fold": 1,
+      "regime": "D0",
+      "role": "train",
+      "n": 61368,
+      "replayed_sources": 14,
+      "reference_clips": 60,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "regime": "H0",
+      "role": "train",
+      "n": 61368,
+      "replayed_sources": 14,
+      "reference_clips": 60,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "regime": "D0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 15,
+      "purge_checks": []
+    },
+    {
+      "fold": 1,
+      "regime": "H0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 15,
+      "purge_checks": []
+    },
+    {
+      "fold": 2,
+      "regime": "D0",
+      "role": "train",
+      "n": 61259,
+      "replayed_sources": 14,
+      "reference_clips": 59,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "regime": "H0",
+      "role": "train",
+      "n": 61259,
+      "replayed_sources": 14,
+      "reference_clips": 59,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "regime": "D0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 16,
+      "purge_checks": []
+    },
+    {
+      "fold": 2,
+      "regime": "H0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 16,
+      "purge_checks": []
+    },
+    {
+      "fold": 3,
+      "regime": "D0",
+      "role": "train",
+      "n": 61546,
+      "replayed_sources": 14,
+      "reference_clips": 61,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "regime": "H0",
+      "role": "train",
+      "n": 61546,
+      "replayed_sources": 14,
+      "reference_clips": 61,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.25,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "regime": "D0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 14,
+      "purge_checks": []
+    },
+    {
+      "fold": 3,
+      "regime": "H0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 14,
+      "purge_checks": []
+    },
+    {
+      "fold": 4,
+      "regime": "D0",
+      "role": "train",
+      "n": 61685,
+      "replayed_sources": 14,
+      "reference_clips": 60,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "regime": "H0",
+      "role": "train",
+      "n": 61685,
+      "replayed_sources": 14,
+      "reference_clips": 60,
+      "purge_checks": [
+        {
+          "benchmark": "own_cv",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "shared_fit",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 24.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_gate",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "local_report",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": 25.0,
+          "no_shared_sensor": false
+        },
+        {
+          "benchmark": "domain_holdout",
+          "base_window_overlap": 0,
+          "background_group_overlap": 0,
+          "minimum_support_gap_hours": null,
+          "no_shared_sensor": true
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "regime": "D0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 15,
+      "purge_checks": []
+    },
+    {
+      "fold": 4,
+      "regime": "H0",
+      "role": "cv",
+      "n": 1000,
+      "replayed_sources": 14,
+      "reference_clips": 15,
+      "purge_checks": []
+    }
+  ],
+  "every_TRAIN_reference_rotates_four_of_five": true,
+  "maximum_raw_q_vs_rounded_w_pool_gap": 0.002089870011227346,
+  "maximum_replayed_raw_vs_float32_q_gap": 2.98007709620407e-08,
+  "D0_H0_negative_arrays_identical": true,
+  "maximum_source_overlap": 0,
+  "minimum_support_purge_hours_required": 24,
+  "Test_used": false,
+  "training_or_inference": false,
+  "elapsed_seconds": 556.3292296668515
+}

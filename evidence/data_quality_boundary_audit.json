@@ -1,0 +1,198 @@
+{
+  "training_only": true,
+  "challenge_test_accessed": false,
+  "candidate_rows": 12643,
+  "candidate_rows_already_in_frozen_windows": 6777,
+  "affected_windows_by_current_source_split": {
+    "train": 5817,
+    "validation": 437,
+    "purged_temporal_boundary": 296,
+    "calibration": 227
+  },
+  "reproduces_existing_candidate_counts_exactly": true,
+  "rows_excluded_by_this_audit": 0,
+  "instrument_cause_verified": false,
+  "recorder_results": [
+    {
+      "recorder": "201383949_Richards_Bay_201383949.1.24000",
+      "runs": 5941,
+      "median_first_minute_excess_db": 0.0,
+      "median_last_minute_excess_db": 11.169082641601562,
+      "flagged_rows": 5941,
+      "flagged_rows_window_included": 76,
+      "flagged_duration_quantiles": [
+        1.0,
+        2.0,
+        346.0
+      ],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "5708_Richards_Bay_5708.1.24000",
+      "runs": 2592,
+      "median_first_minute_excess_db": 1.389190673828125,
+      "median_last_minute_excess_db": -0.40041351318359375,
+      "flagged_rows": 0,
+      "flagged_rows_window_included": 0,
+      "flagged_duration_quantiles": [],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "7005_Richards_Bay_7005.1.24000",
+      "runs": 5802,
+      "median_first_minute_excess_db": 23.981605529785156,
+      "median_last_minute_excess_db": -0.0147247314453125,
+      "flagged_rows": 5802,
+      "flagged_rows_window_included": 5801,
+      "flagged_duration_quantiles": [
+        60.0,
+        60.0,
+        60.0
+      ],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "8210_ST600_8210.1.48000",
+      "runs": 456,
+      "median_first_minute_excess_db": 28.692466735839844,
+      "median_last_minute_excess_db": 0.0,
+      "flagged_rows": 456,
+      "flagged_rows_window_included": 456,
+      "flagged_duration_quantiles": [
+        60.0,
+        60.0,
+        60.0
+      ],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "8230_ST600_8230.1.48000",
+      "runs": 322,
+      "median_first_minute_excess_db": 30.080615997314453,
+      "median_last_minute_excess_db": -0.027500152587890625,
+      "flagged_rows": 322,
+      "flagged_rows_window_included": 322,
+      "flagged_duration_quantiles": [
+        60.0,
+        60.0,
+        60.0
+      ],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "SM2M_Cape_StFrancis_SM2M.1.48000",
+      "runs": 27154,
+      "median_first_minute_excess_db": 0.0,
+      "median_last_minute_excess_db": 0.0,
+      "flagged_rows": 0,
+      "flagged_rows_window_included": 0,
+      "flagged_duration_quantiles": [],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "ST300_201650217_ST201650217.1.96000",
+      "runs": 9751,
+      "median_first_minute_excess_db": 0.14490509033203125,
+      "median_last_minute_excess_db": 0.0,
+      "flagged_rows": 0,
+      "flagged_rows_window_included": 0,
+      "flagged_duration_quantiles": [],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "ST300_5344_ST5344.1.96000",
+      "runs": 200,
+      "median_first_minute_excess_db": 0.4600372314453125,
+      "median_last_minute_excess_db": -0.1768035888671875,
+      "flagged_rows": 0,
+      "flagged_rows_window_included": 0,
+      "flagged_duration_quantiles": [],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "ST500_5350_ST500_5350.1.48000",
+      "runs": 123,
+      "median_first_minute_excess_db": -0.03955841064453125,
+      "median_last_minute_excess_db": 0.083099365234375,
+      "flagged_rows": 0,
+      "flagged_rows_window_included": 0,
+      "flagged_duration_quantiles": [],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "URN.BirdIsland.2022_6509.1.24000",
+      "runs": 69,
+      "median_first_minute_excess_db": 31.877761840820312,
+      "median_last_minute_excess_db": -2.1018829345703125,
+      "flagged_rows": 69,
+      "flagged_rows_window_included": 69,
+      "flagged_duration_quantiles": [
+        60.0,
+        60.0,
+        60.0
+      ],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "URN.StCroix.2022_6509.1.24000",
+      "runs": 53,
+      "median_first_minute_excess_db": 28.849700927734375,
+      "median_last_minute_excess_db": -0.9305648803710938,
+      "flagged_rows": 53,
+      "flagged_rows_window_included": 53,
+      "flagged_duration_quantiles": [
+        60.0,
+        60.0,
+        60.0
+      ],
+      "verified_instrument_transient": false
+    },
+    {
+      "recorder": "URN_8321_8321.1.12000",
+      "runs": 47,
+      "median_first_minute_excess_db": -1.3480758666992188,
+      "median_last_minute_excess_db": -1.0123062133789062,
+      "flagged_rows": 0,
+      "flagged_rows_window_included": 0,
+      "flagged_duration_quantiles": [],
+      "verified_instrument_transient": false
+    }
+  ],
+  "urn_8321_nominal_rate_warning": {
+    "rows": 136518,
+    "metadata_sample_rate_hz": [
+      12000
+    ],
+    "nominal_nyquist_hz": 6000,
+    "bands_crossing_or_above_nominal_nyquist": [
+      {
+        "centre_hz": 6309.573444801937,
+        "lower_hz": 5623.413251903495,
+        "upper_hz": 7079.457843841383,
+        "level_min_median_max_db": [
+          39.599998474121094,
+          58.099998474121094,
+          99.9000015258789
+        ]
+      },
+      {
+        "centre_hz": 7943.282347242822,
+        "lower_hz": 7079.4578438413855,
+        "upper_hz": 8912.509381337462,
+        "level_min_median_max_db": [
+          38.0,
+          52.599998474121094,
+          94.5999984741211
+        ]
+      }
+    ],
+    "waveform_sampling_rate_verified": false,
+    "correction_applied": false,
+    "interpretation": "Nominal 12k metadata cannot support complete 6.31/7.94k bands; nonzero exported levels require provider provenance clarification, not inferred upsampling or blanket band removal."
+  },
+  "source_sha256": {
+    "sa_rows_db.npy": "defe1dd7a3426a4be8d2c72b95d3c79c4ba6f0dbf02f750749ddabb225b002c7",
+    "sa_row_manifest.parquet": "e05004b977bf7db91f131ffe2d87d944a135de48685591d484aa53294bf29de4"
+  },
+  "recommendation": "Preserve flags and all frozen inputs; compare predeclared edge-retention ablations on inner folds only after obtaining provider acquisition details."
+}

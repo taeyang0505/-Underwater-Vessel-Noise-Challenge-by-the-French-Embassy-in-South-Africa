@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scope": "fivefold SYNTHETIC protocol fixture only; mock NN and mock Mac worker/verifier; no performance claim",
+  "fixture_only": true,
+  "server_LightGBM_fit_calls": 0,
+  "Mac_mock_jobs": 5,
+  "NN_mock_fit_calls": 39,
+  "completed_NN_imports": 1,
+  "source_files_unchanged": true,
+  "matching_zombie_inactive_foreign_reused_PID_rejected": true,
+  "native_verifier_audit_hook_subprocess_isolation_checked": true,
+  "outer_opened_only_after_new_INNER_policy": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "guards_rejected": [
+    "live_legacy_controller",
+    "partial_child_no_resume",
+    "wrong_Mac_request_binding",
+    "partial_or_existing_run_reuse"
+  ],
+  "real_TRAIN_INNER_OUTER_Test_GPU_SSH_accessed": false,
+  "code_sha256": {
+    "ops/runner_r5_mac.py": "5baf50ace2c8f8d98e210a47ba88c9c583c9aac44391aa83163cd160cf16b375"
+  }
+}

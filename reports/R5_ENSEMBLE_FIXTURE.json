@@ -1,0 +1,846 @@
+{
+  "passed": true,
+  "scope": "Synthetic NumPy-only ensemble fixture; no actual model/data/GPU work or RMSE improvement claim",
+  "code_sha256": {
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "ops/verify_ensemble_r5.py": "986a945527b54c697ca396c135fddc4ed73cf3d320ddb062eeacbe9213051eb1"
+  },
+  "fixture_sha256": "986a945527b54c697ca396c135fddc4ed73cf3d320ddb062eeacbe9213051eb1",
+  "all_seven_keys_reported": true,
+  "outer_Test_fit_rejected": true,
+  "outer_Test_query_labels_rejected": true,
+  "unreported_missing_large_rejected": true,
+  "explicit_missing_models_reported": true,
+  "reference_meta_LOO_heldout_labels_do_not_change_heldout_fold_fit": true,
+  "fixed_ridge_simplex_objective_check": true,
+  "linear_mask_share_identity_max_abs_error": 2.220446049250313e-16,
+  "strict_secondary_logit_mode_selected_on_purpose_built_fixture": true,
+  "logit_tree_formula_and_chunk_bitwise_passed": true,
+  "common_energy_weight_mismatch_rejected": true,
+  "zero_single_row_light_fallback_passed": true,
+  "query_checks": {
+    "query_chunk_and_row_permutation_bitwise": true,
+    "JSON_policy_roundtrip_bitwise": true,
+    "policy_not_modified_by_outer_Test_inference": true,
+    "missing_required_branch_rejected": true,
+    "policy_SHA_and_cross_fold_binding_tampering_rejected": true,
+    "query_labels_rejected": true
+  },
+  "simple_fixture_policy": {
+    "Test_used_for_fit": false,
+    "all_predeclared_candidates": [
+      "timemoe_public",
+      "dasheng",
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "available_prediction_keys": [
+      "timemoe_public",
+      "dasheng",
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "best_inner_light": "tfgrid_fdy_conformer",
+    "candidate_full_inner_rmse": {
+      "convex_share_average": 0.010762660292032714
+    },
+    "candidate_gates_passed": {
+      "convex_share_average": true
+    },
+    "candidate_meta_loo_rmse": {
+      "convex_share_average": 0.010762660292032749
+    },
+    "candidate_status": {
+      "bg_cnn": {
+        "final_weight": 0.2024353120243551,
+        "inner_rmse": 0.05656854249492381,
+        "reason": "Both full INNER and reference-group meta-LOO improvement gates passed.",
+        "status": "selected"
+      },
+      "dasheng": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.13,
+        "reason": "Individual INNER RMSE did not beat best light by epsilon.",
+        "status": "excluded_large_individual_gate"
+      },
+      "fdy": {
+        "final_weight": 0.20243531202435044,
+        "inner_rmse": 0.08999999999999998,
+        "reason": "Both full INNER and reference-group meta-LOO improvement gates passed.",
+        "status": "selected"
+      },
+      "itransformer": {
+        "final_weight": 0.2024353120243539,
+        "inner_rmse": 0.08999999999999998,
+        "reason": "Both full INNER and reference-group meta-LOO improvement gates passed.",
+        "status": "selected"
+      },
+      "lgbm_physics": {
+        "final_weight": 0.19025875190258806,
+        "inner_rmse": 0.05656854249492381,
+        "reason": "Both full INNER and reference-group meta-LOO improvement gates passed.",
+        "status": "selected"
+      },
+      "tfgrid_fdy_conformer": {
+        "final_weight": 0.20243531202435258,
+        "inner_rmse": 0.05656854249492381,
+        "reason": "Both full INNER and reference-group meta-LOO improvement gates passed.",
+        "status": "selected"
+      },
+      "timemoe_public": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.13000000000000003,
+        "reason": "Individual INNER RMSE did not beat best light by epsilon.",
+        "status": "excluded_large_individual_gate"
+      }
+    },
+    "epsilon_rmse": 0.0001,
+    "explicit_exclusions": {},
+    "fallback": {
+      "kind": "best_INNER_light_single",
+      "model": "tfgrid_fdy_conformer",
+      "weights": {
+        "tfgrid_fdy_conformer": 1.0
+      }
+    },
+    "fit_objective": "equal-reference-group MSE + .05*||w-uniform||^2 on convex simplex",
+    "fit_split": "inner",
+    "frozen_before_outer": true,
+    "full_INNER_admitted_ridge_weights_including_exact_zeros": {
+      "bg_cnn": 0.2024353120243551,
+      "fdy": 0.20243531202435044,
+      "itransformer": 0.2024353120243539,
+      "lgbm_physics": 0.19025875190258806,
+      "tfgrid_fdy_conformer": 0.20243531202435258
+    },
+    "group_balance_for_weight_fit": true,
+    "inner_branch_rmse": {
+      "bg_cnn": 0.05656854249492381,
+      "dasheng": 0.13,
+      "fdy": 0.08999999999999998,
+      "itransformer": 0.08999999999999998,
+      "lgbm_physics": 0.05656854249492381,
+      "tfgrid_fdy_conformer": 0.05656854249492381,
+      "timemoe_public": 0.13000000000000003
+    },
+    "inner_examples": 240,
+    "large_individual_admission": {
+      "dasheng": {
+        "admitted": false,
+        "available": true,
+        "epsilon_rmse": 0.0001,
+        "individual_inner_rmse": 0.13,
+        "must_beat_best_light": 0.05656854249492381
+      },
+      "timemoe_public": {
+        "admitted": false,
+        "available": true,
+        "epsilon_rmse": 0.0001,
+        "individual_inner_rmse": 0.13000000000000003,
+        "must_beat_best_light": 0.05656854249492381
+      }
+    },
+    "logit_clip": 1e-06,
+    "logit_definition": "Neural total weight s: sigmoid(sum(w_k/s*logit(clip(q_k)))); pool SAME original w; multiply by s; add frozen weighted tree share.",
+    "outer_failure_action": "Report/preserve failure; never refit or switch policy from OUTER values.",
+    "outer_used_for_fit": false,
+    "positive_reference_group_count": 5,
+    "predeclared_fallback_light_candidates": [
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "reference_group_count": 5,
+    "required_prediction_keys": [
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "ridge_anchor": "uniform over admitted candidates",
+    "ridge_lambda": 0.05,
+    "secondary_logit_candidate_requested": false,
+    "secondary_logit_candidate_strict_gate_passed": false,
+    "selected_mode": "convex_share_average",
+    "selection_reason": "Both full INNER and reference-group meta-LOO improvement gates passed.",
+    "silent_missing_branch_renormalization": false,
+    "source_loo_is_meta_level_only": true,
+    "source_meta_loo_available": true,
+    "source_meta_loo_results": [
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn",
+          "lgbm_physics",
+          "fdy",
+          "itransformer"
+        ],
+        "best_meta_train_light": "lgbm_physics",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G0",
+        "heldout_rmse": {
+          "convex_share_average": 0.010762660292032749
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.05656854249492382,
+          "dasheng": 0.13,
+          "fdy": 0.08999999999999998,
+          "itransformer": 0.08999999999999998,
+          "lgbm_physics": 0.0565685424949238,
+          "tfgrid_fdy_conformer": 0.05656854249492382,
+          "timemoe_public": 0.13
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G1",
+          "G2",
+          "G3",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.20243531202435297,
+          "fdy": 0.20243531202435444,
+          "itransformer": 0.20243531202435222,
+          "lgbm_physics": 0.1902587519025884,
+          "tfgrid_fdy_conformer": 0.20243531202435205
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn",
+          "lgbm_physics",
+          "fdy",
+          "itransformer"
+        ],
+        "best_meta_train_light": "lgbm_physics",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G1",
+        "heldout_rmse": {
+          "convex_share_average": 0.010762660292032749
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.05656854249492382,
+          "dasheng": 0.13,
+          "fdy": 0.08999999999999998,
+          "itransformer": 0.08999999999999998,
+          "lgbm_physics": 0.0565685424949238,
+          "tfgrid_fdy_conformer": 0.05656854249492382,
+          "timemoe_public": 0.13
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G2",
+          "G3",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.20243531202435297,
+          "fdy": 0.20243531202435444,
+          "itransformer": 0.20243531202435222,
+          "lgbm_physics": 0.1902587519025884,
+          "tfgrid_fdy_conformer": 0.20243531202435205
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn",
+          "lgbm_physics",
+          "fdy",
+          "itransformer"
+        ],
+        "best_meta_train_light": "lgbm_physics",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G2",
+        "heldout_rmse": {
+          "convex_share_average": 0.010762660292032749
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.05656854249492382,
+          "dasheng": 0.13,
+          "fdy": 0.08999999999999998,
+          "itransformer": 0.08999999999999998,
+          "lgbm_physics": 0.0565685424949238,
+          "tfgrid_fdy_conformer": 0.05656854249492382,
+          "timemoe_public": 0.13
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G1",
+          "G3",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.20243531202435297,
+          "fdy": 0.20243531202435444,
+          "itransformer": 0.20243531202435222,
+          "lgbm_physics": 0.1902587519025884,
+          "tfgrid_fdy_conformer": 0.20243531202435205
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn",
+          "lgbm_physics",
+          "fdy",
+          "itransformer"
+        ],
+        "best_meta_train_light": "lgbm_physics",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G3",
+        "heldout_rmse": {
+          "convex_share_average": 0.010762660292032749
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.05656854249492382,
+          "dasheng": 0.13,
+          "fdy": 0.08999999999999998,
+          "itransformer": 0.08999999999999998,
+          "lgbm_physics": 0.0565685424949238,
+          "tfgrid_fdy_conformer": 0.05656854249492382,
+          "timemoe_public": 0.13
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G1",
+          "G2",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.20243531202435297,
+          "fdy": 0.20243531202435444,
+          "itransformer": 0.20243531202435222,
+          "lgbm_physics": 0.1902587519025884,
+          "tfgrid_fdy_conformer": 0.20243531202435205
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn",
+          "lgbm_physics",
+          "fdy",
+          "itransformer"
+        ],
+        "best_meta_train_light": "lgbm_physics",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G4",
+        "heldout_rmse": {
+          "convex_share_average": 0.010762660292032749
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.05656854249492382,
+          "dasheng": 0.13,
+          "fdy": 0.08999999999999998,
+          "itransformer": 0.08999999999999998,
+          "lgbm_physics": 0.0565685424949238,
+          "tfgrid_fdy_conformer": 0.05656854249492382,
+          "timemoe_public": 0.13
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G1",
+          "G2",
+          "G3"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.20243531202435297,
+          "fdy": 0.20243531202435444,
+          "itransformer": 0.20243531202435222,
+          "lgbm_physics": 0.1902587519025884,
+          "tfgrid_fdy_conformer": 0.20243531202435205
+        }
+      }
+    ],
+    "training_binding": {
+      "data_package_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "fold": 0,
+      "seed": 42,
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "train_examples": 100,
+      "train_npz_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "version": "r5_inner_source_loo_convex_policy_v1",
+    "weights": {
+      "bg_cnn": 0.2024353120243551,
+      "fdy": 0.20243531202435044,
+      "itransformer": 0.2024353120243539,
+      "lgbm_physics": 0.19025875190258806,
+      "tfgrid_fdy_conformer": 0.20243531202435258
+    },
+    "policy_sha256": "eac679b37dc298f80545a43df6858a69e623d343aa6a41c52474801e2572b4d5"
+  },
+  "logit_fixture_policy": {
+    "Test_used_for_fit": false,
+    "all_predeclared_candidates": [
+      "timemoe_public",
+      "dasheng",
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "available_prediction_keys": [
+      "tfgrid_fdy_conformer",
+      "bg_cnn"
+    ],
+    "best_inner_light": "tfgrid_fdy_conformer",
+    "candidate_full_inner_rmse": {
+      "convex_share_average": 0.06447993419572066,
+      "logit_neural_mask_pool_with_tree_share": 6.283684706929364e-16
+    },
+    "candidate_gates_passed": {
+      "convex_share_average": true,
+      "logit_neural_mask_pool_with_tree_share": true
+    },
+    "candidate_meta_loo_rmse": {
+      "convex_share_average": 0.06447993419572065,
+      "logit_neural_mask_pool_with_tree_share": 2.3582713378112806e-16
+    },
+    "candidate_status": {
+      "bg_cnn": {
+        "final_weight": 0.49999999999999883,
+        "inner_rmse": 0.25926227561266324,
+        "reason": "Secondary logit mode strictly beat best light and convex-share mode at both INNER gates.",
+        "status": "selected"
+      },
+      "dasheng": {
+        "final_weight": 0.0,
+        "inner_rmse": null,
+        "prediction_supplied": false,
+        "reason": "fixture deliberately omitted; not an implicit substitute",
+        "status": "explicit_exclusion"
+      },
+      "fdy": {
+        "final_weight": 0.0,
+        "inner_rmse": null,
+        "reason": "Optional comparison not supplied.",
+        "status": "not_requested_comparison"
+      },
+      "itransformer": {
+        "final_weight": 0.0,
+        "inner_rmse": null,
+        "reason": "Optional comparison not supplied.",
+        "status": "not_requested_comparison"
+      },
+      "lgbm_physics": {
+        "final_weight": 0.0,
+        "inner_rmse": null,
+        "prediction_supplied": false,
+        "reason": "fixture deliberately omitted; not an implicit substitute",
+        "status": "explicit_exclusion"
+      },
+      "tfgrid_fdy_conformer": {
+        "final_weight": 0.5000000000000011,
+        "inner_rmse": 0.25926227561266324,
+        "reason": "Secondary logit mode strictly beat best light and convex-share mode at both INNER gates.",
+        "status": "selected"
+      },
+      "timemoe_public": {
+        "final_weight": 0.0,
+        "inner_rmse": null,
+        "prediction_supplied": false,
+        "reason": "fixture deliberately omitted; not an implicit substitute",
+        "status": "explicit_exclusion"
+      }
+    },
+    "epsilon_rmse": 0.0001,
+    "explicit_exclusions": {
+      "dasheng": "fixture deliberately omitted; not an implicit substitute",
+      "lgbm_physics": "fixture deliberately omitted; not an implicit substitute",
+      "timemoe_public": "fixture deliberately omitted; not an implicit substitute"
+    },
+    "fallback": {
+      "kind": "best_INNER_light_single",
+      "model": "tfgrid_fdy_conformer",
+      "weights": {
+        "tfgrid_fdy_conformer": 1.0
+      }
+    },
+    "fit_objective": "equal-reference-group MSE + .05*||w-uniform||^2 on convex simplex",
+    "fit_split": "inner",
+    "frozen_before_outer": true,
+    "full_INNER_admitted_ridge_weights_including_exact_zeros": {
+      "bg_cnn": 0.49999999999999883,
+      "tfgrid_fdy_conformer": 0.5000000000000011
+    },
+    "group_balance_for_weight_fit": true,
+    "inner_branch_rmse": {
+      "bg_cnn": 0.25926227561266324,
+      "tfgrid_fdy_conformer": 0.25926227561266324
+    },
+    "inner_examples": 240,
+    "large_individual_admission": {
+      "dasheng": {
+        "admitted": false,
+        "available": false,
+        "epsilon_rmse": 0.0001,
+        "individual_inner_rmse": null,
+        "must_beat_best_light": 0.25926227561266324
+      },
+      "timemoe_public": {
+        "admitted": false,
+        "available": false,
+        "epsilon_rmse": 0.0001,
+        "individual_inner_rmse": null,
+        "must_beat_best_light": 0.25926227561266324
+      }
+    },
+    "logit_clip": 1e-06,
+    "logit_definition": "Neural total weight s: sigmoid(sum(w_k/s*logit(clip(q_k)))); pool SAME original w; multiply by s; add frozen weighted tree share.",
+    "outer_failure_action": "Report/preserve failure; never refit or switch policy from OUTER values.",
+    "outer_used_for_fit": false,
+    "positive_reference_group_count": 5,
+    "predeclared_fallback_light_candidates": [
+      "tfgrid_fdy_conformer",
+      "bg_cnn"
+    ],
+    "reference_group_count": 5,
+    "required_prediction_keys": [
+      "tfgrid_fdy_conformer",
+      "bg_cnn"
+    ],
+    "ridge_anchor": "uniform over admitted candidates",
+    "ridge_lambda": 0.05,
+    "secondary_logit_candidate_requested": true,
+    "secondary_logit_candidate_strict_gate_passed": true,
+    "selected_mode": "logit_neural_mask_pool_with_tree_share",
+    "selection_reason": "Secondary logit mode strictly beat best light and convex-share mode at both INNER gates.",
+    "silent_missing_branch_renormalization": false,
+    "source_loo_is_meta_level_only": true,
+    "source_meta_loo_available": true,
+    "source_meta_loo_results": [
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn"
+        ],
+        "best_meta_train_light": "tfgrid_fdy_conformer",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G0",
+        "heldout_rmse": {
+          "convex_share_average": 0.06447993419572066,
+          "logit_neural_mask_pool_with_tree_share": 2.658601680564645e-16
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.25926227561266324,
+          "tfgrid_fdy_conformer": 0.2592622756126632
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G1",
+          "G2",
+          "G3",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.49999999999999956,
+          "tfgrid_fdy_conformer": 0.5000000000000004
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn"
+        ],
+        "best_meta_train_light": "tfgrid_fdy_conformer",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G1",
+        "heldout_rmse": {
+          "convex_share_average": 0.06447993419572065,
+          "logit_neural_mask_pool_with_tree_share": 1.4254318964189535e-16
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.25926227561266324,
+          "tfgrid_fdy_conformer": 0.2592622756126632
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G2",
+          "G3",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.49999999999999983,
+          "tfgrid_fdy_conformer": 0.5000000000000002
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn"
+        ],
+        "best_meta_train_light": "tfgrid_fdy_conformer",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G2",
+        "heldout_rmse": {
+          "convex_share_average": 0.06447993419572062,
+          "logit_neural_mask_pool_with_tree_share": 2.3462629344783265e-16
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.25926227561266324,
+          "tfgrid_fdy_conformer": 0.2592622756126632
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G1",
+          "G3",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.49999999999999967,
+          "tfgrid_fdy_conformer": 0.5000000000000004
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn"
+        ],
+        "best_meta_train_light": "tfgrid_fdy_conformer",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G3",
+        "heldout_rmse": {
+          "convex_share_average": 0.06447993419572065,
+          "logit_neural_mask_pool_with_tree_share": 3.0431091254278017e-16
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.25926227561266324,
+          "tfgrid_fdy_conformer": 0.2592622756126632
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G1",
+          "G2",
+          "G4"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.49999999999999944,
+          "tfgrid_fdy_conformer": 0.5000000000000006
+        }
+      },
+      {
+        "admitted_on_meta_train_only": [
+          "tfgrid_fdy_conformer",
+          "bg_cnn"
+        ],
+        "best_meta_train_light": "tfgrid_fdy_conformer",
+        "heldout_examples": 48,
+        "heldout_reference_group": "G4",
+        "heldout_rmse": {
+          "convex_share_average": 0.06447993419572065,
+          "logit_neural_mask_pool_with_tree_share": 1.9853807240709634e-16
+        },
+        "meta_train_branch_rmse": {
+          "bg_cnn": 0.25926227561266324,
+          "tfgrid_fdy_conformer": 0.25926227561266324
+        },
+        "meta_train_examples": 192,
+        "meta_train_group_ids": [
+          "G0",
+          "G1",
+          "G2",
+          "G3"
+        ],
+        "weights_fitted_on_meta_train": {
+          "bg_cnn": 0.49999999999999967,
+          "tfgrid_fdy_conformer": 0.5000000000000003
+        }
+      }
+    ],
+    "training_binding": {
+      "data_package_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "fold": 0,
+      "seed": 42,
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "train_examples": 100,
+      "train_npz_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "version": "r5_inner_source_loo_convex_policy_v1",
+    "weights": {
+      "bg_cnn": 0.49999999999999883,
+      "tfgrid_fdy_conformer": 0.5000000000000011
+    },
+    "policy_sha256": "7270dc017c1e82ec0a0c9623cf05d88d76ce7b8c3ce9647c4af33f234d56b1a0"
+  },
+  "zero_fixture_policy": {
+    "Test_used_for_fit": false,
+    "all_predeclared_candidates": [
+      "timemoe_public",
+      "dasheng",
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "available_prediction_keys": [
+      "timemoe_public",
+      "dasheng",
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "best_inner_light": "tfgrid_fdy_conformer",
+    "candidate_full_inner_rmse": {
+      "convex_share_average": 0.0
+    },
+    "candidate_gates_passed": {
+      "convex_share_average": false
+    },
+    "candidate_meta_loo_rmse": {
+      "convex_share_average": null
+    },
+    "candidate_status": {
+      "bg_cnn": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.0,
+        "reason": "Final weight zero or single-light fallback selected.",
+        "status": "excluded_by_frozen_final_policy"
+      },
+      "dasheng": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.0,
+        "reason": "Individual INNER RMSE did not beat best light by epsilon.",
+        "status": "excluded_large_individual_gate"
+      },
+      "fdy": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.0,
+        "reason": "Final weight zero or single-light fallback selected.",
+        "status": "excluded_by_frozen_final_policy"
+      },
+      "itransformer": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.0,
+        "reason": "Final weight zero or single-light fallback selected.",
+        "status": "excluded_by_frozen_final_policy"
+      },
+      "lgbm_physics": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.0,
+        "reason": "Final weight zero or single-light fallback selected.",
+        "status": "excluded_by_frozen_final_policy"
+      },
+      "tfgrid_fdy_conformer": {
+        "final_weight": 1.0,
+        "inner_rmse": 0.0,
+        "reason": "Fewer than three positive reference groups; use best-INNER-light fallback.",
+        "status": "selected"
+      },
+      "timemoe_public": {
+        "final_weight": 0.0,
+        "inner_rmse": 0.0,
+        "reason": "Individual INNER RMSE did not beat best light by epsilon.",
+        "status": "excluded_large_individual_gate"
+      }
+    },
+    "epsilon_rmse": 0.0001,
+    "explicit_exclusions": {},
+    "fallback": {
+      "kind": "best_INNER_light_single",
+      "model": "tfgrid_fdy_conformer",
+      "weights": {
+        "tfgrid_fdy_conformer": 1.0
+      }
+    },
+    "fit_objective": "equal-reference-group MSE + .05*||w-uniform||^2 on convex simplex",
+    "fit_split": "inner",
+    "frozen_before_outer": true,
+    "full_INNER_admitted_ridge_weights_including_exact_zeros": {
+      "bg_cnn": 0.2,
+      "fdy": 0.2,
+      "itransformer": 0.2,
+      "lgbm_physics": 0.2,
+      "tfgrid_fdy_conformer": 0.2
+    },
+    "group_balance_for_weight_fit": true,
+    "inner_branch_rmse": {
+      "bg_cnn": 0.0,
+      "dasheng": 0.0,
+      "fdy": 0.0,
+      "itransformer": 0.0,
+      "lgbm_physics": 0.0,
+      "tfgrid_fdy_conformer": 0.0,
+      "timemoe_public": 0.0
+    },
+    "inner_examples": 1,
+    "large_individual_admission": {
+      "dasheng": {
+        "admitted": false,
+        "available": true,
+        "epsilon_rmse": 0.0001,
+        "individual_inner_rmse": 0.0,
+        "must_beat_best_light": 0.0
+      },
+      "timemoe_public": {
+        "admitted": false,
+        "available": true,
+        "epsilon_rmse": 0.0001,
+        "individual_inner_rmse": 0.0,
+        "must_beat_best_light": 0.0
+      }
+    },
+    "logit_clip": 1e-06,
+    "logit_definition": "Neural total weight s: sigmoid(sum(w_k/s*logit(clip(q_k)))); pool SAME original w; multiply by s; add frozen weighted tree share.",
+    "outer_failure_action": "Report/preserve failure; never refit or switch policy from OUTER values.",
+    "outer_used_for_fit": false,
+    "positive_reference_group_count": 0,
+    "predeclared_fallback_light_candidates": [
+      "tfgrid_fdy_conformer",
+      "bg_cnn",
+      "lgbm_physics",
+      "fdy",
+      "itransformer"
+    ],
+    "reference_group_count": 1,
+    "required_prediction_keys": [
+      "tfgrid_fdy_conformer"
+    ],
+    "ridge_anchor": "uniform over admitted candidates",
+    "ridge_lambda": 0.05,
+    "secondary_logit_candidate_requested": false,
+    "secondary_logit_candidate_strict_gate_passed": false,
+    "selected_mode": "single_light_fallback",
+    "selection_reason": "Fewer than three positive reference groups; use best-INNER-light fallback.",
+    "silent_missing_branch_renormalization": false,
+    "source_loo_is_meta_level_only": true,
+    "source_meta_loo_available": false,
+    "source_meta_loo_results": [],
+    "training_binding": {
+      "data_package_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "fold": 0,
+      "seed": 42,
+      "source_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "train_examples": 100,
+      "train_npz_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "version": "r5_inner_source_loo_convex_policy_v1",
+    "weights": {
+      "tfgrid_fdy_conformer": 1.0
+    },
+    "policy_sha256": "99c881c697db5b777f3ddf4c2b95da0d03d6a7310ac4acec937ad67b3d7c75c8"
+  },
+  "actual_Fold_training_or_Test_arrays_accessed": false
+}

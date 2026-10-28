@@ -1,0 +1,19 @@
+role,model,formula,range_violation,roundoff_clip_count,interpretation,direct_saved_component_max_abs_delta
+selection,bg_cnn,2*score-share,1.7881393432617188e-07,102,NN contrast,1.7881393432617188e-07
+selection,tfgrid_fdy_conformer,2*score-share,0.0,0,NN contrast,1.7881393432617188e-07
+selection,fdy,2*score-share,0.0,0,NN contrast,1.7881393432617188e-07
+selection,itransformer,2*score-share,0.0,0,NN contrast,1.7881393432617188e-07
+selection,lgbm_physics,2*score-share,0.0,0,tree presence classifier,5.960464477539063e-08
+selection,all5_frozen,2*score-share,0.0,0,frozen weighted NN contrasts plus tree classifier,
+ensemble_fit,bg_cnn,2*score-share,0.0,0,NN contrast,
+ensemble_fit,tfgrid_fdy_conformer,2*score-share,0.0,0,NN contrast,
+ensemble_fit,fdy,2*score-share,0.0,0,NN contrast,
+ensemble_fit,itransformer,2*score-share,0.0,0,NN contrast,
+ensemble_fit,lgbm_physics,2*score-share,0.0,0,tree presence classifier,
+ensemble_fit,all5_frozen,2*score-share,0.0,0,frozen weighted NN contrasts plus tree classifier,
+ensemble_gate,bg_cnn,2*score-share,0.0,0,NN contrast,
+ensemble_gate,tfgrid_fdy_conformer,2*score-share,0.0,0,NN contrast,
+ensemble_gate,fdy,2*score-share,0.0,0,NN contrast,
+ensemble_gate,itransformer,2*score-share,0.0,0,NN contrast,
+ensemble_gate,lgbm_physics,2*score-share,0.0,0,tree presence classifier,
+ensemble_gate,all5_frozen,2*score-share,0.0,0,frozen weighted NN contrasts plus tree classifier,

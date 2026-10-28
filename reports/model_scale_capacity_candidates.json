@@ -1,0 +1,70 @@
+[
+  {
+    "model": "cnn",
+    "width": 32,
+    "parameters": 57122,
+    "status": "current CPU evaluated configuration"
+  },
+  {
+    "model": "cnn",
+    "width": 64,
+    "parameters": 224834,
+    "status": "capacity candidate; not trained"
+  },
+  {
+    "model": "cnn",
+    "width": 128,
+    "parameters": 892034,
+    "status": "capacity candidate; not trained"
+  },
+  {
+    "model": "fdy",
+    "width": 32,
+    "parameters": 128814,
+    "status": "current CPU evaluated configuration"
+  },
+  {
+    "model": "fdy",
+    "width": 64,
+    "parameters": 509518,
+    "status": "capacity candidate; not trained"
+  },
+  {
+    "model": "fdy",
+    "width": 96,
+    "parameters": 1142126,
+    "status": "capacity candidate; not trained"
+  },
+  {
+    "model": "itransformer",
+    "width": 96,
+    "parameters": 289936,
+    "status": "current CPU evaluated configuration"
+  },
+  {
+    "model": "itransformer",
+    "width": 192,
+    "parameters": 1132816,
+    "status": "capacity candidate; not trained"
+  },
+  {
+    "model": "itransformer",
+    "width": 384,
+    "parameters": 4477456,
+    "status": "capacity candidate; not trained"
+  },
+  {
+    "model": "tabm",
+    "width": 256,
+    "members": 16,
+    "parameters": 513152,
+    "status": "current CPU evaluated configuration"
+  },
+  {
+    "model": "tabm",
+    "width": 384,
+    "members": 32,
+    "parameters": 939520,
+    "status": "configuration count only"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "scope": "before model fitting; preserves original mask-conditioned R6 implementation and first failed preparation log; no partial dataset reuse",
+  "files": {
+    "pipeline/robust_sampler_r6.py": {
+      "snapshot": "audit/r6_pre_geometry_support/robust_sampler_r6.py",
+      "sha256": "79b425f97901a8eb674c76a47eed018f26efecae6bf2d53cf7b0324e367587b6"
+    },
+    "ops/verify_robust_sampler_r6.py": {
+      "snapshot": "audit/r6_pre_geometry_support/verify_robust_sampler_r6.py",
+      "sha256": "de8f446e91060177029592a3d697b760cb32cf561836df3155664fb5ddf3784f"
+    },
+    "ops/r6_data_prepare.log": {
+      "snapshot": "audit/r6_pre_geometry_support/r6_data_prepare.log",
+      "sha256": "1e6a233b452fbc8e476dfd53cbffb8d34435a2e0bde7a9f51bf5541fc956f9aa"
+    }
+  }
+}

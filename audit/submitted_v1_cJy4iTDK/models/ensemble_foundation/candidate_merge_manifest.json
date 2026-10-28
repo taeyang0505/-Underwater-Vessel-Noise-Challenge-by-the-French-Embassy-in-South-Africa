@@ -1,0 +1,73 @@
+{
+  "base_run_name": "fullsources_cpu_a6d7f3a5_seed42",
+  "foundation_specs": {
+    "tabicl": {
+      "model_run_name": "tabicl_cpu_context16000",
+      "synthetic_dataset_name": "fullsources_cpu_a6d7f3a5_seed42",
+      "context_rows": 16000,
+      "members": 4
+    },
+    "kumo_large": {
+      "model_run_name": "kumo_large_cpu_context4096",
+      "synthetic_dataset_name": "fullsources_cpu_a6d7f3a5_seed42",
+      "context_rows": 4096,
+      "members": 4
+    }
+  },
+  "splits": {
+    "validation": {
+      "base_predictions_sha256": "96194998fd2e3461a185db469f36c2067c12c567c831c40d01d88876f06b90fb",
+      "source_data_npz_sha256": "0e47f6b249bd6c4a15f966138f7e96c9368797f4fefb901c4fd188a16e6872ed",
+      "n": 3000,
+      "target_order_sha256": "1b98930a406c5aaddd4cf6bca4d9e40edd04b6c020b966c973b97bb06785f85b",
+      "foundation_predictions": {
+        "tabicl": {
+          "file_sha256": "8dd2674e250d7fe99215dc9fec5310527cc6bcc78cd86e1fc7dbed96eed808d8",
+          "targets_match_exactly": true
+        },
+        "kumo_large": {
+          "file_sha256": "7ee52ebac5b78e4a18be5124355710c00cbf2dcb37ab02469790649602b73802",
+          "targets_match_exactly": true
+        }
+      }
+    },
+    "calibration": {
+      "base_predictions_sha256": "83bf9f51b8364c19c87c7181cca869398c9d5af33df3dab0ebfdc3f3630ea602",
+      "source_data_npz_sha256": "6a8656b047cdc73ac94938b3e78fab1a6b2237563fcc82fff9c9df26579cb4ae",
+      "n": 3000,
+      "target_order_sha256": "d8c34ec6264cf9a887d954af9f6a3f76600afabadc59f0416b36c010f4306252",
+      "foundation_predictions": {
+        "tabicl": {
+          "file_sha256": "1d17ced2396714873fdff6016acbc87e2a44f0fa61cfe97d2364d332e10c3673",
+          "targets_match_exactly": true
+        },
+        "kumo_large": {
+          "file_sha256": "36572ccb0c7caa25a742988e6899e06a11f4f236051588d77cc9638abf506689",
+          "targets_match_exactly": true
+        }
+      }
+    },
+    "domain_holdout": {
+      "base_predictions_sha256": "91f35675a2773b46663085f9dd3956f3bb8e7ff93046a4d1398d64cda2bc211a",
+      "source_data_npz_sha256": "2af0480e5977f399dd939f3382a8cccd1b35ff617acdd19d80c827a7506cd7b7",
+      "n": 3000,
+      "target_order_sha256": "1b175f974e6f75b3844443339697390b60861f0b97c71d90cc176513d5e080f9",
+      "foundation_predictions": {
+        "tabicl": {
+          "file_sha256": "bc8d0b8c40126ba6142848df099a860dca57367d249928238f932e4b10818961",
+          "targets_match_exactly": true
+        },
+        "kumo_large": {
+          "file_sha256": "b9d0c79c1afa96620dc29f78b9445d8d9e69afdbcf04466e9a6544bb2674c9be",
+          "targets_match_exactly": true
+        }
+      }
+    }
+  },
+  "source_manifest_sha256": "5b59b02b19fea6fa91c192ca2fea93edc76186412c3d82790689a374f445309b",
+  "source_hash": "a6d7f3a536d0d38b09b41c31999a2384ff238f2ed80402c86f5d97348f1886e1",
+  "challenge_test_accessed": false,
+  "sealed_NOAA_accessed": false,
+  "score_policy": "Foundation score is its bounded share proxy, not calibrated presence probability; ranking uses share RMSE only.",
+  "alignment_limit": "All share targets exactly match the source NPZ in order. Historical foundation manifests do not contain independent example IDs; runner code iterates NPZ rows in order."
+}

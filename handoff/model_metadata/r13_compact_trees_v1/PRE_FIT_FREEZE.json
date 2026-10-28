@@ -1,0 +1,69 @@
+{
+  "format": "r13_four_tree_fit_plan_v1",
+  "created_unix": 1793037735.4223518,
+  "data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+  "data_manifest_sha256": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+  "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+  "source_pins": {
+    "ops/train_r13_lightgbm.py": "7789ecf7f0eca751b6d856935ff94b70c83c0d7d635dd7046343ebbd4ea94bfd",
+    "configs/r13_cpu_correction_v1.json": "c6fe4657a6778093d04eb696149f53791f380db68d26a1a21d3860dad56d3c08",
+    "data.nosync/synthetic/r13_cpu_correction_v1/manifest.json": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+    "data.nosync/synthetic/r13_cpu_correction_v1/readiness.json": "4a54a88ac6bafa5b43ecb380de73781300785dd836b53e7076876b1c3b281aa9",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/manifest.json": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/readiness.json": "1c21fea43a1904485c07b26cf2b14555e163a4d2852ec9f0d4b0e6fad125ba2d",
+    "models/r12_shared_basis_v1/basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "pipeline/dataset_r13.py": "13c47d9208ea8c4578617ee9434be38f0240558e070c5a043e384bffad8939af",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/train.npz": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/train_metadata.parquet": "88164569513021caeb3612ab3e2ada37afda49c47a20ca8d2dc36c04a0859039",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/train_recipes.json": "daccc5ec3a1bddc280341999c6c0192fbd2e9c856b65dd2f0414276bdfc4a52e",
+    "data.nosync/synthetic/r13_cpu_correction_v1/highshare_train.npz": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+    "data.nosync/synthetic/r13_cpu_correction_v1/highshare_train_metadata.parquet": "d03404de3130114bb587c61280efb2a206968d8becc159ef60c7f6f2333a3089",
+    "data.nosync/synthetic/r13_cpu_correction_v1/highshare_train_recipes.json": "ba2f72a065c1bb2e121cb2ec42e6831dd1a9bbab5cd5ec20bb6bf0a1a6d161c1",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/validation_fit.npz": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/validation_fit_metadata.parquet": "18430e47cd44d35794432eafbb2640c1acf5fb90b8aa8ee31822b1f330a43a7f",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/validation_fit_recipes.json": "4b7d2563b35ffc714fef8950ae251d370768133290a9b9f9555e2608c14a9555",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/validation_gate.npz": "3c2a6769329a1a9e255348a22a3fcf2c80e70c17ff1bddf86ff19cce1fa62156",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/validation_gate_metadata.parquet": "980c085f25229f84b54b7e8fa0acabfc4880ccbdd09526827a5073db9d8e4939",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/validation_gate_recipes.json": "0e5fc2108adbcb84f6ebf4964d60a425ae4c23f6c8f2270f83e07d67905b1732",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/eval.npz": "1bd564f0c025c94006a17e969ecebefd8c0a940b158b09469eba99342774ba5f",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/eval_metadata.parquet": "94988c116f6eeb557a3ab4dcc50be88953a8b2e238383eb54bd2902226fb93c4",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/eval_recipes.json": "69aa376c837368593ae7e02cfe582537106d14debbad7a0db0f2aeb79beece68",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/high_snr_long.npz": "86ecea34cfe39565255242b74b546ba60939f08cc70886e3cbb4d3d05dca65be",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/high_snr_long_metadata.parquet": "f9df1a67d234e9873fa0c72ee9b3ce4ced3f92a98265a0c150addc9b09510392",
+    "data.nosync/synthetic/r12_cpu_ablation_v3/high_snr_long_recipes.json": "66f40f048702ae534304dd4585067ed6b68ac22b6acd316e390a9d23e6ba3258"
+  },
+  "models": [
+    {
+      "name": "baselineP0",
+      "data_arm": "baseline",
+      "include_shape": false
+    },
+    {
+      "name": "baselineP1",
+      "data_arm": "baseline",
+      "include_shape": true
+    },
+    {
+      "name": "highshareP0",
+      "data_arm": "highshare",
+      "include_shape": false
+    },
+    {
+      "name": "highshareP1",
+      "data_arm": "highshare",
+      "include_shape": true
+    }
+  ],
+  "fresh_fits": 4,
+  "train_rows_each": 12000,
+  "validation_fit_rows": 1000,
+  "threads": 2,
+  "seed": 2026102712,
+  "boosting_maximum": 1500,
+  "early_stopping": 40,
+  "score_weight_selection_here": false,
+  "score_note": "Importedlearnerreturnslegacyhalfshare/halfclassifierasdiagnosticonly;futureR13gatechooseslambdaafterall8modelsgloballyfreeze.",
+  "gate_eval_R11_Test_values_opened": false
+}

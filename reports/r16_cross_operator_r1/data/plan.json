@@ -1,0 +1,119 @@
+{
+  "version": "r16_cross_operator_v1",
+  "created_utc": "2026-10-27T07:01:21.759447+00:00",
+  "seed": 202610271616,
+  "attachment": "1fc448b5-90b6-4ff8-b790-a20fe8ecf1ee",
+  "code_sha256": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda",
+  "operators": [
+    "control_eq6",
+    "mfhf_shelf6",
+    "mfhf_shelf12",
+    "mfhf_shelf12_lfminus6",
+    "alpha_preEQ_inserted",
+    "independent_subband_snr"
+  ],
+  "training": {
+    "control": 4000,
+    "mixed": 4000,
+    "same_unique_backgrounds": true,
+    "ref_partition": "A",
+    "mixed_equal_positive_operator_cycle": true
+  },
+  "panels": {
+    "local_fit": {
+      "backgrounds": 400,
+      "operators": [
+        "control_eq6",
+        "mfhf_shelf6",
+        "mfhf_shelf12",
+        "mfhf_shelf12_lfminus6",
+        "alpha_preEQ_inserted",
+        "independent_subband_snr"
+      ],
+      "reference_partition": "B"
+    },
+    "local_gate": {
+      "backgrounds": 400,
+      "operators": [
+        "control_eq6",
+        "mfhf_shelf6",
+        "mfhf_shelf12",
+        "mfhf_shelf12_lfminus6",
+        "alpha_preEQ_inserted",
+        "independent_subband_snr"
+      ],
+      "reference_partition": "B"
+    },
+    "local_report": {
+      "backgrounds": 400,
+      "operators": [
+        "control_eq6",
+        "mfhf_shelf6",
+        "mfhf_shelf12",
+        "mfhf_shelf12_lfminus6",
+        "alpha_preEQ_inserted",
+        "independent_subband_snr"
+      ],
+      "reference_partition": "C"
+    },
+    "domain_holdout": {
+      "backgrounds": 400,
+      "operators": [
+        "control_eq6",
+        "mfhf_shelf6",
+        "mfhf_shelf12",
+        "mfhf_shelf12_lfminus6",
+        "alpha_preEQ_inserted",
+        "independent_subband_snr"
+      ],
+      "reference_partition": "C"
+    }
+  },
+  "background_roles": {
+    "local_fit": [
+      "ensemble_fit",
+      "B"
+    ],
+    "local_gate": [
+      "ensemble_gate",
+      "B"
+    ],
+    "local_report": [
+      "report",
+      "C"
+    ],
+    "domain_holdout": [
+      "domain_holdout",
+      "C"
+    ]
+  },
+  "reference_partition_rule": "119 selected/22 direct components;metadataSHAorder12A5B5C",
+  "trajectory": "25percent naturalfull if native<=15; otherwise1..6real contiguousminutes; TRAIN/fit/gate crop includes preEQbroadbandpeak,report/domain uses uniform nativecropbegin; no warp/repeat/bell/highshare/full_smooth15",
+  "zero_fraction": 0.2,
+  "positive_support_conditioning": "enumerate valid insideplacements once, no source/seed/targetretry",
+  "base_EQ_bound": 6.0,
+  "postEQ_mean25_loggain": 0.0,
+  "postEQ_bound": {
+    "train": 6.0,
+    "local_fit": 12.0,
+    "local_gate": 12.0,
+    "local_report": 12.0,
+    "domain_holdout": 12.0
+  },
+  "SNR_uniform_db": [
+    -10.0,
+    10.0
+  ],
+  "new_laws": "inserted-observedpreEQpeakscale thenzero-meanEQ no renormalization; independent <=200/>200 SNR preEQ scales thensameEQ",
+  "legacy_law": "R15whole-native-afterEQ broadbandSNR intentionally retained; alternate law not proved hidden-generator correction",
+  "domain": "oldpublicSA domain_holdout Saldhana/FishHoek/SeaPoint; previously development-exposed, sitesunseen onlyrelative newTRAIN",
+  "report_access": "checkpoint+ensemblepolicyfreeze SHA gate before local_report/domain arrays",
+  "Test_read_or_Test_based_generator_tuning": false,
+  "prior_Test_EDA_exposure_disclosed": true,
+  "blind_experiment_claimed": false,
+  "mask_conditioning_confound": "positive placement and newoperatorpreEQalpha depend on observedO; declare rather than claim purechannelonlycontrast",
+  "training_per_arm_rows": 4000,
+  "training_backgrounds_not_duplicated_within_arm": true,
+  "model_fitting_by_data_builder": false,
+  "natural_ship_GT_claimed": false
+}

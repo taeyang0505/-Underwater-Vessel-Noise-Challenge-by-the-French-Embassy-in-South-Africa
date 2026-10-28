@@ -1,0 +1,101 @@
+{
+  "version": "r5_rmse_notifications_v1",
+  "run": "group_cv_r5_gpu_r1",
+  "remote_base": "/workspace/underwater_vessel_noise_r5_r1",
+  "host": "209.170.80.132",
+  "port": 13914,
+  "last_delivered_epoch_by_log": {
+    "fold_00/preprocessing_pilot/raw/bg_cnn/epochs.jsonl": 26,
+    "fold_00/preprocessing_pilot/resolution_01/bg_cnn/epochs.jsonl": 10,
+    "fold_00/preprocessing_pilot/resolution_01_endpoint/bg_cnn/epochs.jsonl": 11
+  },
+  "last_delivered_completed_models": [
+    "fold_00/preprocessing_pilot/raw/bg_cnn",
+    "fold_00/preprocessing_pilot/resolution_01/bg_cnn"
+  ],
+  "last_delivered_completed_folds": [],
+  "last_delivered_alert_keys": [],
+  "last_delivered_values": {
+    "fold_00/preprocessing_pilot/raw/bg_cnn": {
+      "epoch": 26,
+      "train_rmse": 0.045049123165998343,
+      "inner_rmse": 0.09780509285585316,
+      "best_inner_rmse": 0.09084926102040936,
+      "best_epoch": 19,
+      "patience_used": 7,
+      "learning_rate": 3.125e-05,
+      "elapsed_seconds": 5906.883282467956,
+      "train_examples": 53244,
+      "optimizer_updates": 416,
+      "maximum_unclipped_gradient_norm": 0.6775137186050415
+    },
+    "fold_00/preprocessing_pilot/resolution_01/bg_cnn": {
+      "epoch": 10,
+      "train_rmse": 0.05726443143291138,
+      "inner_rmse": 0.10210848037299397,
+      "best_inner_rmse": 0.09960257457163214,
+      "best_epoch": 3,
+      "patience_used": 7,
+      "learning_rate": 0.00025,
+      "elapsed_seconds": 2245.130783265922,
+      "train_examples": 53244,
+      "optimizer_updates": 416,
+      "maximum_unclipped_gradient_norm": 0.4533703625202179
+    },
+    "fold_00/preprocessing_pilot/resolution_01_endpoint/bg_cnn": {
+      "epoch": 11,
+      "train_rmse": 0.0641654564085215,
+      "inner_rmse": 0.1041540263809519,
+      "best_inner_rmse": 0.0965752769333839,
+      "best_epoch": 10,
+      "patience_used": 1,
+      "learning_rate": 0.0005,
+      "elapsed_seconds": 2483.9973339630524,
+      "train_examples": 53244,
+      "optimizer_updates": 416,
+      "maximum_unclipped_gradient_norm": 0.810011088848114
+    }
+  },
+  "updated_at_utc": "2026-10-25T18:19:47.008350+00:00",
+  "notification_policy": "Every30minutes report model/fold latest TRAIN RMSE, best INNER Val, completed OUTER, progress and anomalies; explicitly indicate unchanged/missing results.",
+  "scheduled_automation_requested_by_user": true,
+  "automation_id": "r5-fold-rmse-30",
+  "automation_status": "DELETED",
+  "notification_interval_minutes": 30,
+  "notification_timezone": "Asia/Seoul",
+  "scheduled_automation_created": false,
+  "automation_user_authorization": "30분마다 모델과 fold 별 RMSE를 알려줘.",
+  "latest_manual_status_snapshot": "ops/training_monitor_snapshots/r5_status_20261025T152111Z.json",
+  "latest_periodic_status_snapshot": "ops/training_monitor_snapshots/r5_status_20261025T172637Z.json",
+  "last_periodic_report_captured_unix": 1792949197.557292,
+  "known_legacy_backup_guard_issue_acknowledged": true,
+  "last_periodic_comparison": {
+    "fold_00/preprocessing_pilot/raw/bg_cnn": {
+      "previous_last_epoch": 26,
+      "latest_epoch": 26,
+      "previous_best_inner_rmse": 0.09084926102040936,
+      "best_inner_rmse": 0.09084926102040936,
+      "best_rmse_delta": 0.0,
+      "new_epoch_count": 0
+    },
+    "fold_00/preprocessing_pilot/resolution_01/bg_cnn": {
+      "previous_last_epoch": 4,
+      "latest_epoch": 10,
+      "previous_best_inner_rmse": 0.09960257457163214,
+      "best_inner_rmse": 0.09960257457163214,
+      "best_rmse_delta": 0.0,
+      "new_epoch_count": 6
+    },
+    "fold_00/preprocessing_pilot/resolution_01_endpoint/bg_cnn": {
+      "previous_last_epoch": null,
+      "latest_epoch": 11,
+      "previous_best_inner_rmse": null,
+      "best_inner_rmse": 0.0965752769333839,
+      "best_rmse_delta": null,
+      "new_epoch_count": 11
+    }
+  },
+  "last_report_contains_OUTER_or_LB_forecast": false,
+  "deleted_reason": "User prioritised data/validation gap audit; GPU learning paused; user will stop Pod",
+  "automatic_resume": false
+}

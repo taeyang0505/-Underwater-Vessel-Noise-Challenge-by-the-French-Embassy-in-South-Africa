@@ -1,0 +1,40 @@
+{
+  "experiment": "ensemble_shrinkage_r3",
+  "candidate_count": 1,
+  "lambda": 0.05,
+  "objective": "mean((P@w-y)**2) + 0.05*sum((w-uniform9)**2)",
+  "constraints": "w>=0; sum(w)=1",
+  "affine": [
+    1.0,
+    0.0
+  ],
+  "models": [
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabm",
+    "cnn",
+    "fdy",
+    "itransformer",
+    "tabicl",
+    "kumo_large"
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    42
+  ],
+  "fit_split": "each fold INNER validation only",
+  "outer_used_for_fit": false,
+  "lambda_search": false,
+  "GPU_used": false,
+  "R2_or_dataset_modifications": false,
+  "comparison_scope": "post-baseline development OOF comparison; not a new untouched holdout",
+  "declared_unix": 1792874661.143114,
+  "code_sha256": "928d52809f561723678bdb63659b1b60f23b1e82de427b5a76c9296375d52dc1"
+}

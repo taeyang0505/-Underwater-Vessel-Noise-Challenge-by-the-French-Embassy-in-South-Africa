@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "status": "completed discard-only CUDA preflight",
+  "CUDA_measured": true,
+  "full_training_executed": false,
+  "model_saved": false,
+  "test_accessed": false,
+  "outer_validation_accessed": false,
+  "calibration_accessed": false,
+  "sealed_accessed": false,
+  "data_package_verified": true,
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "torch_version": "2.8.0+cu128",
+  "requested_settings": {
+    "batch": 128,
+    "warmup": 3,
+    "measured_steps": 20,
+    "optimizer": "Adam",
+    "dropout": 0.1,
+    "feature_version": 3,
+    "contrastive_weight": 0.0,
+    "max_epochs_for_estimate": 100
+  },
+  "models": [
+    {
+      "kind": "tabm",
+      "status": "CUDA microbenchmark completed",
+      "CUDA_measured": true,
+      "random_initialization": true,
+      "discarded_after_benchmark": true,
+      "model_saved": false,
+      "architecture": {
+        "architecture_version": 3,
+        "dropout": 0.1,
+        "model_width": 256,
+        "n_features": 1258
+      },
+      "feature_version": 3,
+      "parameters": 514240,
+      "optimizer": "Adam",
+      "contrastive_weight": 0.0,
+      "batch": 128,
+      "warmup_steps": 3,
+      "measured_training_steps": 20,
+      "measured_eval_steps": 20,
+      "training_step_seconds": {
+        "mean": 0.004560058852075599,
+        "median": 0.00482260700664483,
+        "p95": 0.005006873013917357,
+        "max": 0.005023289006203413
+      },
+      "examples_per_second": 28069.813165182797,
+      "eval_step_seconds_mean": 0.000605029342113994,
+      "peak_allocated_bytes": 62947328,
+      "peak_reserved_bytes": 71303168,
+      "feature_CPU_seconds": {
+        "train": 0.9924885670188814,
+        "inner_validation": 0.047688999969977885
+      },
+      "feature_CPU_bytes": 283019808,
+      "estimated_epoch_training_allowance_seconds": 2.6121102832257748,
+      "estimated_epoch_train_plus_inner_prediction_allowance_seconds": 0.33693330187816173,
+      "estimated_100epoch_per_fold_allowance_seconds": 295.9445360773825,
+      "estimate_method": "100 * (ceil(ntrain/batch)*max_measured_train_step + [ceil(ntrain/batch)+ceil(ninner/batch)]*max_measured_eval_step) * 1.25 + one-time feature CPU time",
+      "estimate_is_guaranteed_upper_bound": false,
+      "development_fixture_estimate_not_for_GPU_rental": false
+    },
+    {
+      "kind": "cnn",
+      "status": "CUDA microbenchmark completed",
+      "CUDA_measured": true,
+      "random_initialization": true,
+      "discarded_after_benchmark": true,
+      "model_saved": false,
+      "architecture": {
+        "architecture_version": 3,
+        "dropout": 0.1,
+        "model_width": 32,
+        "input_channels": 6
+      },
+      "feature_version": 3,
+      "parameters": 57698,
+      "optimizer": "Adam",
+      "contrastive_weight": 0.0,
+      "batch": 128,
+      "warmup_steps": 3,
+      "measured_training_steps": 20,
+      "measured_eval_steps": 20,
+      "training_step_seconds": {
+        "mean": 0.008514309843303636,
+        "median": 0.008934103010687977,
+        "p95": 0.009096445943578146,
+        "max": 0.00913417898118496
+      },
+      "examples_per_second": 15033.514442825906,
+      "eval_step_seconds_mean": 0.0015082618047017604,
+      "peak_allocated_bytes": 238100992,
+      "peak_reserved_bytes": 266338304,
+      "feature_CPU_seconds": {
+        "train": 0.828396512020845,
+        "inner_validation": 0.03879137203330174
+      },
+      "feature_CPU_bytes": 590562000,
+      "estimated_epoch_training_allowance_seconds": 4.749773070216179,
+      "estimated_epoch_train_plus_inner_prediction_allowance_seconds": 1.1286495078820735,
+      "estimated_100epoch_per_fold_allowance_seconds": 588.7094456938794,
+      "estimate_method": "100 * (ceil(ntrain/batch)*max_measured_train_step + [ceil(ntrain/batch)+ceil(ninner/batch)]*max_measured_eval_step) * 1.25 + one-time feature CPU time",
+      "estimate_is_guaranteed_upper_bound": false,
+      "development_fixture_estimate_not_for_GPU_rental": false
+    },
+    {
+      "kind": "fdy",
+      "status": "CUDA microbenchmark completed",
+      "CUDA_measured": true,
+      "random_initialization": true,
+      "discarded_after_benchmark": true,
+      "model_saved": false,
+      "architecture": {
+        "architecture_version": 3,
+        "dropout": 0.1,
+        "model_width": 32,
+        "input_channels": 6
+      },
+      "feature_version": 3,
+      "parameters": 129390,
+      "optimizer": "Adam",
+      "contrastive_weight": 0.0,
+      "batch": 128,
+      "warmup_steps": 3,
+      "measured_training_steps": 20,
+      "measured_eval_steps": 20,
+      "training_step_seconds": {
+        "mean": 0.010529761205543765,
+        "median": 0.010909642500337213,
+        "p95": 0.011158500649617055,
+        "max": 0.011470683035440743
+      },
+      "examples_per_second": 12156.02115768873,
+      "eval_step_seconds_mean": 0.0019422480050707235,
+      "peak_allocated_bytes": 557965824,
+      "peak_reserved_bytes": 725614592,
+      "feature_CPU_seconds": {
+        "train": 0.8611759250052273,
+        "inner_validation": 0.03863925003679469
+      },
+      "feature_CPU_bytes": 590562000,
+      "estimated_epoch_training_allowance_seconds": 5.964755178429186,
+      "estimated_epoch_train_plus_inner_prediction_allowance_seconds": 1.5788179152878001,
+      "estimated_100epoch_per_fold_allowance_seconds": 755.2571245467407,
+      "estimate_method": "100 * (ceil(ntrain/batch)*max_measured_train_step + [ceil(ntrain/batch)+ceil(ninner/batch)]*max_measured_eval_step) * 1.25 + one-time feature CPU time",
+      "estimate_is_guaranteed_upper_bound": false,
+      "development_fixture_estimate_not_for_GPU_rental": false
+    },
+    {
+      "kind": "itransformer",
+      "status": "CUDA microbenchmark completed",
+      "CUDA_measured": true,
+      "random_initialization": true,
+      "discarded_after_benchmark": true,
+      "model_saved": false,
+      "architecture": {
+        "architecture_version": 3,
+        "dropout": 0.1,
+        "model_width": 96,
+        "input_channels": 6
+      },
+      "feature_version": 3,
+      "parameters": 292816,
+      "optimizer": "Adam",
+      "contrastive_weight": 0.0,
+      "batch": 128,
+      "warmup_steps": 3,
+      "measured_training_steps": 20,
+      "measured_eval_steps": 20,
+      "training_step_seconds": {
+        "mean": 0.01326355905912351,
+        "median": 0.013450792524963617,
+        "p95": 0.014384055530535988,
+        "max": 0.014514083042740822
+      },
+      "examples_per_second": 9650.501756687512,
+      "eval_step_seconds_mean": 0.0014426962967263534,
+      "peak_allocated_bytes": 171638784,
+      "peak_reserved_bytes": 199229440,
+      "feature_CPU_seconds": {
+        "train": 0.8241032499936409,
+        "inner_validation": 0.038684831000864506
+      },
+      "feature_CPU_bytes": 590562000,
+      "estimated_epoch_training_allowance_seconds": 7.547323182225227,
+      "estimated_epoch_train_plus_inner_prediction_allowance_seconds": 1.043470442527905,
+      "estimated_100epoch_per_fold_allowance_seconds": 859.9421505563078,
+      "estimate_method": "100 * (ceil(ntrain/batch)*max_measured_train_step + [ceil(ntrain/batch)+ceil(ninner/batch)]*max_measured_eval_step) * 1.25 + one-time feature CPU time",
+      "estimate_is_guaranteed_upper_bound": false,
+      "development_fixture_estimate_not_for_GPU_rental": false
+    }
+  ],
+  "foundation": {
+    "status": "skipped; --foundation not enabled; no pinned weights opened"
+  },
+  "limitations": [
+    "A measurement-derived planning upper allowance is not a guaranteed wall-clock upper bound.",
+    "100 epochs assumes no early stopping; real runs may stop earlier.",
+    "Per-step wall time includes NumPy batch indexing, synchronous CPU-to-device transfer, forward, backward, gradient clipping and Adam step.",
+    "Full train plus inner-validation prediction every epoch is estimated from sampled evaluation batches; full-dataset prediction was not executed.",
+    "CPU feature preparation is measured once; OS cache, CPU contention, memory pressure, loading, checkpoint IO, scheduling, other jobs and long-run thermal effects can change timing.",
+    "No estimate here proves convergence, generalization or a global optimum; contrastive training is disabled in this baseline.",
+    "Summed neural allowance covers one fold and one seed only; LightGBM, optional foundation context preparation and CV orchestration are separate."
+  ],
+  "device": {
+    "name": "NVIDIA GeForce RTX 4090",
+    "total_memory_bytes": 25252724736,
+    "CUDA_runtime": "12.8"
+  },
+  "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+  "fold": 0,
+  "verification": {
+    "readiness_manifest_sha256": "ce60637cc25021f68c2106a92dd04b9513a938c6b226721cbf10ebd49d310d49",
+    "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+    "splits": {
+      "train": {
+        "examples": 53244,
+        "max_cell_target_error": 3.6182728296862976e-07,
+        "npz_sha256": "28b5841227b5b77bf409003ad388b0bd6dee82958ad328587d8b1335c04761e5"
+      },
+      "validation": {
+        "examples": 3000,
+        "max_cell_target_error": 3.1195487021351553e-07,
+        "npz_sha256": "5648b6509b70b0e3c7495fe3ec538c4574d51b8577d53f3884b182f2516823da"
+      }
+    },
+    "unopened_nontraining_entries": [
+      "inner_validation.npz",
+      "inner_validation_metadata.parquet",
+      "inner_validation_metadata_original.parquet",
+      "outer_validation.npz",
+      "outer_validation_recipes.json",
+      "train_metadata.parquet",
+      "training_background_order.npy",
+      "validation_metadata.parquet",
+      "validation_metadata_original.parquet"
+    ]
+  },
+  "examples": {
+    "train": 53244,
+    "validation": 3000
+  },
+  "estimated_100epoch_four_neural_models_per_fold_allowance_seconds": 2499.8532568743103,
+  "exit_code": 0
+}

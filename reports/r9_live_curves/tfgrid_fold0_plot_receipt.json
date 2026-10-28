@@ -1,0 +1,24 @@
+{
+  "source": "reports/R9_TFGRID_FOLD0_TREND_SNAPSHOT.json",
+  "source_sha256": "4a7e446d26ee9a65e48a0b07366f189b7feaea12e46a0d241c8c4c48af1811a4",
+  "plot": "reports/r9_live_curves/tfgrid_fold0_rmse.png",
+  "plot_sha256": "21eb9a1eaee87b9be01d8d67a59749b5c2cec3afde405b748a5fbb1a54af47ff",
+  "epochs": 23,
+  "last": {
+    "epoch": 23,
+    "train_rmse": 0.05985982980025644,
+    "selection_rmse": 0.08193963471607554,
+    "site_macro_rmse": 0.051675074810606444,
+    "learning_rate": 6.25e-05,
+    "elapsed_seconds": 1055.3651742520742
+  },
+  "best_window": {
+    "epoch": 17,
+    "train_rmse": 0.06333327232536201,
+    "selection_rmse": 0.07941507932041383,
+    "site_macro_rmse": 0.05217339884744332,
+    "learning_rate": 0.000125,
+    "elapsed_seconds": 780.8269984930521
+  },
+  "model_or_dataset_modified": false
+}

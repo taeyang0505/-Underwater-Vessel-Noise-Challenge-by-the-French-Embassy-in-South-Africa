@@ -1,0 +1,131 @@
+{
+  "format": "r6_v2_relative_grid_context_fixed_score_fixture_v1",
+  "status": "passed",
+  "fixture_only": true,
+  "formal_training_or_dataset_model_selection_performed": false,
+  "TRAIN_INNER_OUTER_Test_or_other_source_data_opened": false,
+  "GPU_SSH_external_submission_used": false,
+  "code_sha256": {
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/verify_relative_r6_v2.py": "d0752155b0b14a8a7e5600e5bf1588d1ea31b8b70821bdc2c6c20a21726e19b7"
+  },
+  "v1_files_unchanged": {
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_features_r6.py": "01c76386ca03953082b243cbebf89144c17f183f9b5ea312f6d712d5cb66b484"
+  },
+  "fresh_pure_process_probe": {
+    "torch_loaded": false,
+    "shape": [
+      1,
+      8,
+      15,
+      25
+    ]
+  },
+  "feature_names": [
+    "band_temporal_median_relative_div10",
+    "band_temporal_q20_relative_div15",
+    "adjacent_observed_delta_div10",
+    "positive_mid_high_delta_times_smooth_low_band_co_rise",
+    "band_median_minus_window_median_div20",
+    "observed_mask",
+    "band_temporal_q05_relative_div15",
+    "sqrt_rounded_energy_weight"
+  ],
+  "first6_and_weights_bitwise_v1_equal": true,
+  "q05_hand_quantile_check": true,
+  "q05_is_not_verified_background": true,
+  "db_input_unchanged": true,
+  "common_grid_aligned_gain_bitwise": true,
+  "nongrid_common_gain_max_feature_difference": 0.013232588768005371,
+  "nongrid_common_gain_max_weight_difference": 0.0006947815418243408,
+  "static_band_offset_invariant_channels": [
+    0,
+    1,
+    2,
+    3,
+    6
+  ],
+  "static_band_offset_noninvariant_channels": [
+    4,
+    7
+  ],
+  "mask_unchanged": true,
+  "chunk_bitwise": true,
+  "fixed_score_hand_oracles": [
+    {
+      "case": "static_q",
+      "share": 0.40000003576278687,
+      "contrast": 0.0,
+      "score": 0.20000001788139343
+    },
+    {
+      "case": "missing_minutes_excluded_from_min",
+      "share": 0.7000000476837158,
+      "contrast": 0.19999998807907104,
+      "score": 0.45000001788139343
+    }
+  ],
+  "score_safe_bands": "indices10..22 inclusive",
+  "score_formula": ".5*sum(q*w)+.5*max_observed_safe(relu(q-min_observed_time_per_band(q)))",
+  "BCE_logit_epsilon": 1e-06,
+  "score_does_not_guarantee_AUC_improvement": true,
+  "explicit_context": {
+    "band_slices": [
+      [
+        10,
+        20
+      ],
+      [
+        20,
+        25
+      ],
+      [
+        15,
+        23
+      ]
+    ],
+    "formula": "broadcast(GELU(project(concat_band_means))*sigmoid(gate(concat_band_means))))",
+    "high_hidden_gradient_from_low_band_loss": 0.0003495494893286377,
+    "high_perturbation_changes_low_context_output": 0.08627796173095703,
+    "global_context_false_path_high_gradient": 0.0,
+    "isolated_path_test_excludes_GroupNorm_global_statistics": true
+  },
+  "models": [
+    {
+      "global_context": false,
+      "input_channels": 8,
+      "parameters": 58241,
+      "numeric_Adam_steps": 2,
+      "fixture_losses": [
+        0.12173239886760712,
+        0.14436225593090057
+      ],
+      "reload_bitwise": true,
+      "singleton_vs_batch_max_abs": 5.960464477539063e-08,
+      "free_presence_head": false
+    },
+    {
+      "global_context": true,
+      "input_channels": 8,
+      "parameters": 64449,
+      "numeric_Adam_steps": 2,
+      "fixture_losses": [
+        0.13616444170475006,
+        0.1383386254310608
+      ],
+      "reload_bitwise": true,
+      "singleton_vs_batch_max_abs": 5.960464477539063e-08,
+      "free_presence_head": false
+    }
+  ],
+  "same_8channel_architecture_for_legacy_and_relative": true,
+  "v1_body_and_mask_head_equal_when_context_off": true,
+  "environment": {
+    "numpy": "2.3.5",
+    "torch": "2.14.1",
+    "CPU_threads": 4
+  },
+  "elapsed_seconds": 0.6888381252065301
+}

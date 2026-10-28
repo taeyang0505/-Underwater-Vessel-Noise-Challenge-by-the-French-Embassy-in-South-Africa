@@ -1,0 +1,25 @@
+{
+  "status": "frozen",
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_pins": {
+    "ops/run_r16_tree_sequence.py": "900b67f80c8dc469af970fca0966bd34b4b1fae14412f0c3784096139def8f07",
+    "ops/train_r16_production_trees.py": "9f3d5fc6079be8a4f95a6efed6d0712fbfb1c06cffa22cc5995557c91c53f1b2",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "reports/R16_PRODUCTION_DATA_INDEPENDENT_QA.json": "4421610b4569ad90d08169a75ee75f2cfe0605c13a5ce9a987c0abca9045933f",
+    "reports/R16_PRODUCTION_TREE_INDEPENDENT_QA.json": "35b79cbafc4f54e5a84a9c88d45ed1bac07ea4c53956021c7a254b5c44ed500c",
+    "reports/R16_PRODUCTION_TREE_FIXTURE.json": "07b680c0a1751a85f5e58ec3caeee79855a2c8e0dfe6615a64a663353496bf2c"
+  },
+  "CPU_threads": 2,
+  "regression_features": 3827,
+  "classification_features": 700,
+  "maximum_trees": 1500,
+  "ES": 40,
+  "Test_used": false,
+  "started_unix": 1793092145.248694
+}

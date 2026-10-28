@@ -1,0 +1,81 @@
+{
+  "status": "metadata_only",
+  "cohorts": {
+    "native12": {
+      "n": 400,
+      "unique_backgrounds": 400,
+      "site_counts": {
+        "1 Richards Bay": 311,
+        "5 St Croix Island": 68,
+        "7 St_Francis": 21
+      },
+      "qc_observed_minutes_counts": {
+        "14": 121,
+        "15": 279
+      },
+      "sensor_group_counts": {
+        "0": 311,
+        "3": 68,
+        "4": 21
+      },
+      "recorder_counts": {
+        "7005_Richards_Bay_7005.1.24000": 215,
+        "201383949_Richards_Bay_201383949.1.24000": 96,
+        "URN_8321_8321.1.12000": 68,
+        "SM2M_Cape_StFrancis_SM2M.1.48000": 21
+      }
+    },
+    "HF_negative": {
+      "n": 359,
+      "unique_backgrounds": 359,
+      "site_counts": {
+        "1 Richards Bay": 298,
+        "7 St_Francis": 35,
+        "5 St Croix Island": 26
+      },
+      "qc_observed_minutes_counts": {
+        "11": 1,
+        "14": 153,
+        "15": 205
+      },
+      "sensor_group_counts": {
+        "0": 298,
+        "4": 35,
+        "3": 26
+      },
+      "recorder_counts": {
+        "7005_Richards_Bay_7005.1.24000": 205,
+        "201383949_Richards_Bay_201383949.1.24000": 93,
+        "SM2M_Cape_StFrancis_SM2M.1.48000": 35,
+        "URN_8321_8321.1.12000": 26
+      }
+    },
+    "SF_dense_negative": {
+      "n": 168,
+      "unique_backgrounds": 168,
+      "site_counts": {
+        "7 St_Francis": 168
+      },
+      "qc_observed_minutes_counts": {
+        "15": 168
+      },
+      "sensor_group_counts": {
+        "4": 168
+      },
+      "recorder_counts": {
+        "SM2M_Cape_StFrancis_SM2M.1.48000": 168
+      }
+    }
+  },
+  "positive_background_overlap_negative": {
+    "HF_negative": 33,
+    "SF_dense_negative": 21
+  },
+  "numeric_db_or_targets_or_model_metrics_read": false,
+  "limitations": [
+    "HF negatives not matched to positive cohort site and observed-minute composition",
+    "SF negative cohort is one site whereas positive cohort spans multiple sites",
+    "Report weighted class0.5/0.5AUC and also within-site/mask diagnostic when available; no new fits or thresholds"
+  ],
+  "data_manifest_sha256": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80"
+}

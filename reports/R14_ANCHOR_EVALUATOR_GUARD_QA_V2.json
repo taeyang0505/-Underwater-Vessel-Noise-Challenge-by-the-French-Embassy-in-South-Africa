@@ -1,0 +1,27 @@
+{
+  "format": "r14_anchor_evaluator_guard_review_v2",
+  "status": "passed",
+  "checked_unix": 1793043462.114667,
+  "evaluator_sha256": "e2537c01f4a600d1f0909b3701afd8bfc0acdbe0a49d1e55a7399862843310e2",
+  "prior_QA_preserved": "reports/R14_ANCHOR_FULLTREE_STATIC_QA.json",
+  "fixes": {
+    "frozen_summary_SHA_checked": true,
+    "summary_status100_Adam_noES_and_consecutive_history_checked": true,
+    "best_epoch_and_arm_checkpoint_binding_checked": true,
+    "observed_weights_and_each_CNN_cell_mask_saved": true
+  },
+  "numeric_guard_valid100_accepted": true,
+  "invalid_guards_rejected": {
+    "short_history": true,
+    "wrong_epoch": true,
+    "wrong_arm": true,
+    "not_completed": true,
+    "wrong_optimizer": true,
+    "early_stop": true
+  },
+  "core_model_training_data_changed": false,
+  "fit_or_model_inference_or_heldout_values_read": false,
+  "limitations": [
+    "This is static/numeric-guard review. Actual completed summary/history/checkpoint and stored prediction pooling will be independently checked after completion."
+  ]
+}

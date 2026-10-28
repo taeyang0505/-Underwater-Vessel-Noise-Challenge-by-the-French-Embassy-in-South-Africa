@@ -1,0 +1,17 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta http-equiv="refresh" content="30"><title>R16 본체 결합 실행</title><style>body{font:16px/1.7 system-ui;max-width:1100px;margin:40px auto;padding:24px;background:#f6f8fc;color:#203049}pre{background:white;padding:20px;white-space:pre-wrap}a{color:#1259a7}</style><h1>R16 D0F1+H0 본체 실행</h1><p>장시간/HF 파일럿 RMSE0.117553(기준0.11) 미달을 명시한 진행 승인. D0/H0 각각 Tree5-Fold + 신경망4종 Fold0, 각100epoch/Adam/noES. 회귀·독립 분류 전문가 결합은 각각50:50 고정.</p><p>기존 Tree5와 CNN epoch27을 보존하며 새17채널 실행을 사용합니다. 원천 분리·24h purge 유지. 공식 업로드 없음.</p><pre>{
+  &quot;phase&quot;: &quot;neural&quot;,
+  &quot;PID&quot;: 12773,
+  &quot;child_PID&quot;: 21489,
+  &quot;elapsed_seconds&quot;: 8597.67475104332,
+  &quot;progress&quot;: {
+    &quot;stage&quot;: &quot;neural&quot;,
+    &quot;regime&quot;: &quot;D0&quot;,
+    &quot;kind&quot;: &quot;bg_cnn&quot;,
+    &quot;epoch&quot;: 29,
+    &quot;rows_seen&quot;: 44288,
+    &quot;total_rows&quot;: 61446,
+    &quot;optimizer_steps&quot;: 27600,
+    &quot;elapsed_seconds&quot;: 2099.505257625133
+  },
+  &quot;official_upload&quot;: false
+}</pre><p><a href="index.html">완료 시 결과 보고서</a> · <a href="R16_MULTISUPPORT_FULL_RESULTS.md">완료 시 전체 MD</a> · <a href="../../submissions/r16_multisupport_full_r1/submission_r16.csv">완료 시 제출 후보 CSV</a></p></html>

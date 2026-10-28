@@ -1,0 +1,413 @@
+{
+  "status": "provisional_data_checks_passed_runtime_freeze_pending",
+  "bundle": "data/synthetic/group_cv_physics_r13_variants_v2",
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "manifest_sha256": "ac592fcaa1ab8f7c8b0175988b4bdb27ab22392dbc26d6848f8bf447c17aa96b",
+  "readiness_data_flag": true,
+  "data_code_current_matches_preparation": {
+    "pipeline/full_data_r13.py": true,
+    "ops/prepare_r13_training.py": true,
+    "pipeline/dataset_r13.py": true,
+    "pipeline/dataset_r12.py": true,
+    "pipeline/dataset_r9.py": true,
+    "pipeline/sampler_r9.py": true,
+    "pipeline/features_r12.py": true,
+    "pipeline/relative_grid_r6.py": true,
+    "pipeline/relative_grid_r6_v2.py": true
+  },
+  "source_snapshot_sha256": {
+    "pipeline/full_data_r13.py": "1ab10cc3ab1a00c8cada4c7f781d729f4896fc9df483ab6e952e4abf2f363d16",
+    "ops/prepare_r13_training.py": "b9580685168972f49d4b63bf3f7759e27e5ab564c64cb8a7cc7384f5f0d41dfd",
+    "configs/r13_full_training_v1.json": "d65abe4c4cde8277b53db8dd4c3a8d42055eb7abbaa54f38f6f773e5061bf1d8",
+    "pipeline/runner_r13.py": "151fcf3f04f1d90f9f6e9e6b636588678751d0f715fea6e86ef731b5eeeb1410",
+    "ops/run_r13_training.py": "009d3a464e089727219ae0534bfca7b92d561a0c1a174c641b4b37151ebe30dd"
+  },
+  "concurrent_source_changed_during_QA": {
+    "pipeline/full_data_r13.py": false,
+    "ops/prepare_r13_training.py": false,
+    "configs/r13_full_training_v1.json": false,
+    "pipeline/runner_r13.py": false,
+    "ops/run_r13_training.py": false
+  },
+  "folds": {
+    "0": {
+      "TRAIN_rows": 78869,
+      "source_groups": 206,
+      "source_min900s_adjusted_gap_hours_independent": 24.0,
+      "first5zero_counts": [
+        15774,
+        15774,
+        15774,
+        15774,
+        15773
+      ],
+      "zero_total_over5epochs_equals_one_TRAIN_N": 78869,
+      "zero_total100_epochs": 1577380,
+      "paired_geometry_and_item_seeds_identical": true,
+      "HF_stratum_quotas_and_effectiveMask_order_exact": true,
+      "TRAIN_only_HF_threshold_recompute": true,
+      "PCA_TRAIN2000_unique_and_role_disjoint": true,
+      "PCA_basis_sha256": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+      "PCA_independent_fold_binding": 0,
+      "basis_explained_variance_ratio": 0.8487032214269096,
+      "fixed_nonreport_metadata_variant_pairs": {
+        "selection": {
+          "rows": 1000,
+          "source_mask_order_identical": true
+        },
+        "ensemble_fit": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        },
+        "ensemble_gate": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        }
+      },
+      "report_access": "SHA streams only; generated report labels/metadata not parsed",
+      "schedules": [
+        {
+          "epoch": 1,
+          "zero_count": 15774,
+          "HF_priority": 7775,
+          "highshare": 15774,
+          "long": 18928
+        },
+        {
+          "epoch": 2,
+          "zero_count": 15774,
+          "HF_priority": 7767,
+          "highshare": 15774,
+          "long": 18928
+        },
+        {
+          "epoch": 3,
+          "zero_count": 15774,
+          "HF_priority": 7758,
+          "highshare": 15774,
+          "long": 18928
+        },
+        {
+          "epoch": 4,
+          "zero_count": 15774,
+          "HF_priority": 7763,
+          "highshare": 15774,
+          "long": 18928
+        },
+        {
+          "epoch": 5,
+          "zero_count": 15773,
+          "HF_priority": 7796,
+          "highshare": 15774,
+          "long": 18929
+        }
+      ]
+    },
+    "1": {
+      "TRAIN_rows": 78069,
+      "source_groups": 208,
+      "source_min900s_adjusted_gap_hours_independent": 24.0,
+      "first5zero_counts": [
+        15614,
+        15614,
+        15614,
+        15614,
+        15613
+      ],
+      "zero_total_over5epochs_equals_one_TRAIN_N": 78069,
+      "zero_total100_epochs": 1561380,
+      "paired_geometry_and_item_seeds_identical": true,
+      "HF_stratum_quotas_and_effectiveMask_order_exact": true,
+      "TRAIN_only_HF_threshold_recompute": true,
+      "PCA_TRAIN2000_unique_and_role_disjoint": true,
+      "PCA_basis_sha256": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056",
+      "PCA_independent_fold_binding": 1,
+      "basis_explained_variance_ratio": 0.8483868327652732,
+      "fixed_nonreport_metadata_variant_pairs": {
+        "selection": {
+          "rows": 1000,
+          "source_mask_order_identical": true
+        },
+        "ensemble_fit": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        },
+        "ensemble_gate": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        }
+      },
+      "report_access": "SHA streams only; generated report labels/metadata not parsed",
+      "schedules": [
+        {
+          "epoch": 1,
+          "zero_count": 15614,
+          "HF_priority": 7724,
+          "highshare": 15614,
+          "long": 18736
+        },
+        {
+          "epoch": 2,
+          "zero_count": 15614,
+          "HF_priority": 7709,
+          "highshare": 15614,
+          "long": 18736
+        },
+        {
+          "epoch": 3,
+          "zero_count": 15614,
+          "HF_priority": 7695,
+          "highshare": 15614,
+          "long": 18736
+        },
+        {
+          "epoch": 4,
+          "zero_count": 15614,
+          "HF_priority": 7713,
+          "highshare": 15614,
+          "long": 18736
+        },
+        {
+          "epoch": 5,
+          "zero_count": 15613,
+          "HF_priority": 7716,
+          "highshare": 15614,
+          "long": 18737
+        }
+      ]
+    },
+    "2": {
+      "TRAIN_rows": 78362,
+      "source_groups": 207,
+      "source_min900s_adjusted_gap_hours_independent": 24.0,
+      "first5zero_counts": [
+        15673,
+        15673,
+        15672,
+        15672,
+        15672
+      ],
+      "zero_total_over5epochs_equals_one_TRAIN_N": 78362,
+      "zero_total100_epochs": 1567240,
+      "paired_geometry_and_item_seeds_identical": true,
+      "HF_stratum_quotas_and_effectiveMask_order_exact": true,
+      "TRAIN_only_HF_threshold_recompute": true,
+      "PCA_TRAIN2000_unique_and_role_disjoint": true,
+      "PCA_basis_sha256": "07d98440a7e41601849f078988200b0876e29f6972e44727078332900a4b21ca",
+      "PCA_independent_fold_binding": 2,
+      "basis_explained_variance_ratio": 0.8430834487298292,
+      "fixed_nonreport_metadata_variant_pairs": {
+        "selection": {
+          "rows": 1000,
+          "source_mask_order_identical": true
+        },
+        "ensemble_fit": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        },
+        "ensemble_gate": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        }
+      },
+      "report_access": "SHA streams only; generated report labels/metadata not parsed",
+      "schedules": [
+        {
+          "epoch": 1,
+          "zero_count": 15673,
+          "HF_priority": 7699,
+          "highshare": 15672,
+          "long": 18807
+        },
+        {
+          "epoch": 2,
+          "zero_count": 15673,
+          "HF_priority": 7722,
+          "highshare": 15672,
+          "long": 18807
+        },
+        {
+          "epoch": 3,
+          "zero_count": 15672,
+          "HF_priority": 7757,
+          "highshare": 15672,
+          "long": 18807
+        },
+        {
+          "epoch": 4,
+          "zero_count": 15672,
+          "HF_priority": 7739,
+          "highshare": 15672,
+          "long": 18807
+        },
+        {
+          "epoch": 5,
+          "zero_count": 15672,
+          "HF_priority": 7721,
+          "highshare": 15672,
+          "long": 18807
+        }
+      ]
+    },
+    "3": {
+      "TRAIN_rows": 78753,
+      "source_groups": 207,
+      "source_min900s_adjusted_gap_hours_independent": 24.0,
+      "first5zero_counts": [
+        15751,
+        15751,
+        15751,
+        15750,
+        15750
+      ],
+      "zero_total_over5epochs_equals_one_TRAIN_N": 78753,
+      "zero_total100_epochs": 1575060,
+      "paired_geometry_and_item_seeds_identical": true,
+      "HF_stratum_quotas_and_effectiveMask_order_exact": true,
+      "TRAIN_only_HF_threshold_recompute": true,
+      "PCA_TRAIN2000_unique_and_role_disjoint": true,
+      "PCA_basis_sha256": "7f5bd144360c52dbd04de9a5264cb8bd679a9e388aeb044b42eb2c527857193c",
+      "PCA_independent_fold_binding": 3,
+      "basis_explained_variance_ratio": 0.855263161507416,
+      "fixed_nonreport_metadata_variant_pairs": {
+        "selection": {
+          "rows": 1000,
+          "source_mask_order_identical": true
+        },
+        "ensemble_fit": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        },
+        "ensemble_gate": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        }
+      },
+      "report_access": "SHA streams only; generated report labels/metadata not parsed",
+      "schedules": [
+        {
+          "epoch": 1,
+          "zero_count": 15751,
+          "HF_priority": 7782,
+          "highshare": 15750,
+          "long": 18901
+        },
+        {
+          "epoch": 2,
+          "zero_count": 15751,
+          "HF_priority": 7724,
+          "highshare": 15750,
+          "long": 18901
+        },
+        {
+          "epoch": 3,
+          "zero_count": 15751,
+          "HF_priority": 7769,
+          "highshare": 15750,
+          "long": 18901
+        },
+        {
+          "epoch": 4,
+          "zero_count": 15750,
+          "HF_priority": 7787,
+          "highshare": 15751,
+          "long": 18901
+        },
+        {
+          "epoch": 5,
+          "zero_count": 15750,
+          "HF_priority": 7790,
+          "highshare": 15751,
+          "long": 18901
+        }
+      ]
+    },
+    "4": {
+      "TRAIN_rows": 78124,
+      "source_groups": 202,
+      "source_min900s_adjusted_gap_hours_independent": 24.0,
+      "first5zero_counts": [
+        15625,
+        15625,
+        15625,
+        15625,
+        15624
+      ],
+      "zero_total_over5epochs_equals_one_TRAIN_N": 78124,
+      "zero_total100_epochs": 1562480,
+      "paired_geometry_and_item_seeds_identical": true,
+      "HF_stratum_quotas_and_effectiveMask_order_exact": true,
+      "TRAIN_only_HF_threshold_recompute": true,
+      "PCA_TRAIN2000_unique_and_role_disjoint": true,
+      "PCA_basis_sha256": "875b487d50bca396a2a16acf4e6ca5dbaa3dfe33d347a7ebafd0a7e41d934621",
+      "PCA_independent_fold_binding": 4,
+      "basis_explained_variance_ratio": 0.8420905322531987,
+      "fixed_nonreport_metadata_variant_pairs": {
+        "selection": {
+          "rows": 1000,
+          "source_mask_order_identical": true
+        },
+        "ensemble_fit": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        },
+        "ensemble_gate": {
+          "rows": 500,
+          "source_mask_order_identical": true
+        }
+      },
+      "report_access": "SHA streams only; generated report labels/metadata not parsed",
+      "schedules": [
+        {
+          "epoch": 1,
+          "zero_count": 15625,
+          "HF_priority": 7725,
+          "highshare": 15625,
+          "long": 18750
+        },
+        {
+          "epoch": 2,
+          "zero_count": 15625,
+          "HF_priority": 7680,
+          "highshare": 15625,
+          "long": 18750
+        },
+        {
+          "epoch": 3,
+          "zero_count": 15625,
+          "HF_priority": 7709,
+          "highshare": 15625,
+          "long": 18750
+        },
+        {
+          "epoch": 4,
+          "zero_count": 15625,
+          "HF_priority": 7723,
+          "highshare": 15625,
+          "long": 18750
+        },
+        {
+          "epoch": 5,
+          "zero_count": 15624,
+          "HF_priority": 7708,
+          "highshare": 15625,
+          "long": 18750
+        }
+      ]
+    }
+  },
+  "PCA_all5_unique_basis_SHA": true,
+  "production_launch_authorized": false,
+  "CUDA_training_or_model_fit": false,
+  "fixed_report_values_read": false,
+  "Test_read": false,
+  "original_sources_modified": false,
+  "limitations": [
+    "Runtime policy/CLI integration is still under construction; no final production readiness is certified.",
+    "HF law assigns A0 within stratum zero quotas over full primary coverage; it is not byte-identical small12000 outside-primary replacement.",
+    "Baseline/highshare share geometry/source/masks; highshare alters alpha on positive subset only; numerical positive support checked in generator code, not on sealed report labels by this QA.",
+    "All509 reference recordings are shared acrossTRAIN/heldout roles and folds; background time CV is not reference/hull-independent CV.",
+    "Five-epoch aggregate zero fraction is exactly20%; per-epoch fractions differ by an integer row when N is not divisible5.",
+    "PCA basis is TRAIN A0(no controlled addition), not naturally ship-absent data; export-clock purge is not independently certified UTC."
+  ]
+}

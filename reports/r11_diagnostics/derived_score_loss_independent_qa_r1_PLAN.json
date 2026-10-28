@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "pipeline/training_r9.py": "e7df7e3acc5c0358cc3e8cc4558039c6b3985e90be04abb12fdc0c09507bd11a",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "ops/r11_derived_score_loss_counterexample.py": "df6d05342901a16a61b4ed44e4470f9f4e63a1bed2676faa2adc9b4b3894ea18",
+    "reports/r11_diagnostics/derived_score_loss_counterexample_r1/predeclared_plan.json": "636a273caac848e8c8d4c003791fcb29247f20c9f84cf7cda5b9b1547360bd32",
+    "reports/r11_diagnostics/derived_score_loss_counterexample_r1/RESULTS.json": "3a93a081a40a561f58e87249edb0a51f031437898c84ea8df1acb0bc9abbc03b",
+    "reports/r11_diagnostics/derived_score_loss_counterexample_r1/FINDINGS.md": "eea89572ab5bd5f02f3120d47fdbffe791ec2b8bc609a42624b05d4330755d65"
+  },
+  "comparisons": [
+    "all6 scalar hand formulas",
+    "production函数6内部epsilon1e-4反例",
+    "6 symmetric delta.001局部方向"
+  ],
+  "no_models_fit_inference_data_Test_report_access": true
+}

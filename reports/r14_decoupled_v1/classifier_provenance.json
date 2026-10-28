@@ -1,0 +1,732 @@
+{
+  "rounded_quote_matches": {
+    "0.944494": {
+      "model": "Tree_L1H1P1",
+      "panel": "R11_full_smooth15_VS_st_francis_dense",
+      "origin": "R12_original",
+      "output": "independent Tree classifier probability",
+      "classifier_auc": 0.9444935897435898,
+      "share_auc": 0.8757179487179487,
+      "hybrid_score_auc": 0.9425833333333333,
+      "source": "reports/r12_cpu_ablation_r1/results.csv",
+      "absolute_difference_from_rounded_quote": 4.1025641017711223e-07
+    },
+    "0.950814": {
+      "model": "Tree_L1H1P1",
+      "panel": "R11_native_long15_VS_st_francis_dense",
+      "origin": "R12_original",
+      "output": "independent Tree classifier probability",
+      "classifier_auc": 0.9508141025641026,
+      "share_auc": 0.8639743589743589,
+      "hybrid_score_auc": 0.9487115384615384,
+      "source": "reports/r12_cpu_ablation_r1/results.csv",
+      "absolute_difference_from_rounded_quote": 1.0256410254427806e-07
+    },
+    "0.760763": {
+      "model": "Tree_highshareP1",
+      "panel": "R11_full_smooth15_VS_st_francis_dense",
+      "origin": "R13",
+      "output": "independent Tree classifier probability",
+      "classifier_auc": 0.7607628205128205,
+      "share_auc": 0.7767692307692308,
+      "hybrid_score_auc": 0.7547692307692307,
+      "source": "reports/r13_cpu_correction_r1/results.csv",
+      "absolute_difference_from_rounded_quote": 1.794871794524866e-07
+    },
+    "0.770705": {
+      "model": "Tree_L1HM1P1",
+      "panel": "R11_full_smooth15_VS_st_francis_dense",
+      "origin": "R12_strict_matched",
+      "output": "independent Tree classifier probability",
+      "classifier_auc": 0.7707051282051282,
+      "share_auc": 0.813275641025641,
+      "hybrid_score_auc": 0.7706346153846154,
+      "source": "reports/r12_mask_matched_evaluation_r2/results.csv",
+      "absolute_difference_from_rounded_quote": 1.2820512818034757e-07
+    }
+  },
+  "model_provenance": {
+    "R12_L1H1P1": {
+      "summary_path": "models/r12_compact_trees_v1/L1H1P1/summary.json",
+      "summary_sha256": "b8dd6d772c1703abf29afc7e9971d642f8d682ef953fe16cfdaf3f5d39b686dd",
+      "feature_count": 673,
+      "train_rows": 12000,
+      "validation_fit_rows": 1000,
+      "best_regression_iteration": 1484,
+      "best_classifier_iteration": 212,
+      "settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 2,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "feature_batch_size": 512
+      },
+      "training_binding": {
+        "format": "r12_compact_tree_source_binding_v1",
+        "data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+        "data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+        "arm": "L1_H1",
+        "include_shape": true,
+        "TRAIN_npz_sha256": "4be90ff483b760214395ac1ac1c5a4be25767871da0f6f330ff6d418128e01b8",
+        "validation_fit_npz_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+        "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+        "basis_training_binding": {
+          "version": "r12_cpu_data_ablation_v1",
+          "role": "train",
+          "fold": 0,
+          "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+          "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+          "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+          "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+          "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+          "raw_SA_no_added_recording": true,
+          "unique_source_IDs": 2000
+        },
+        "source_group_24h_purge_passed": true,
+        "development_not_blind_or_official": true
+      },
+      "TRAIN_typed_share_sha256": "ad12f76563bc36ea25ea77e01db5e2e5fb25017bad54aca1948072d1b09340a1",
+      "TRAIN_typed_db_sha256": "a3d908d318d1fd134545192e682cfb1cc3bea7f37ad176b47b0af06bf731f4f1",
+      "validation_fit_typed_sha256": {
+        "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+        "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+        "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+        "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+        "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+        "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+        "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+        "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+        "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+        "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+        "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+        "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+        "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+      }
+    },
+    "R12_L1H0P1": {
+      "summary_path": "models/r12_compact_trees_v1/L1H0P1/summary.json",
+      "summary_sha256": "d392e644aa64af45fbb3644f5a2325931bdf3f0cd7901ac71ceb6d9a690e7274",
+      "feature_count": 673,
+      "train_rows": 12000,
+      "validation_fit_rows": 1000,
+      "best_regression_iteration": 1500,
+      "best_classifier_iteration": 199,
+      "settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 2,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "feature_batch_size": 512
+      },
+      "training_binding": {
+        "format": "r12_compact_tree_source_binding_v1",
+        "data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+        "data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+        "arm": "L1_H0",
+        "include_shape": true,
+        "TRAIN_npz_sha256": "c36051c2c06c56a5d59f26883a5399c40b974bf113feaa34ec013984b653c4a1",
+        "validation_fit_npz_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+        "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+        "basis_training_binding": {
+          "version": "r12_cpu_data_ablation_v1",
+          "role": "train",
+          "fold": 0,
+          "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+          "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+          "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+          "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+          "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+          "raw_SA_no_added_recording": true,
+          "unique_source_IDs": 2000
+        },
+        "source_group_24h_purge_passed": true,
+        "development_not_blind_or_official": true
+      },
+      "TRAIN_typed_share_sha256": "ad12f76563bc36ea25ea77e01db5e2e5fb25017bad54aca1948072d1b09340a1",
+      "TRAIN_typed_db_sha256": "62822088a56d4b17dad7dcad8e02d8f823ff46fc11d9a345f47f04e53b27d136",
+      "validation_fit_typed_sha256": {
+        "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+        "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+        "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+        "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+        "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+        "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+        "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+        "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+        "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+        "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+        "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+        "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+        "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+      }
+    },
+    "R12_strict": {
+      "summary_path": "models/r12_mask_matched_control_r2/tree/summary.json",
+      "summary_sha256": "6d43a97adb0a4423bd6671177e47a08565623387ae9019264f71d0c4951695a6",
+      "feature_count": 673,
+      "train_rows": 12000,
+      "validation_fit_rows": 1000,
+      "best_regression_iteration": 1417,
+      "best_classifier_iteration": 370,
+      "settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 4,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "feature_batch_size": 512
+      },
+      "training_binding": {
+        "scope": "additional metadata-matched HF control; not part of original8recipe selector",
+        "control_manifest_sha256": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+        "original_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+        "original_data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+        "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+        "script_sha256": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb"
+      },
+      "TRAIN_typed_share_sha256": "ad12f76563bc36ea25ea77e01db5e2e5fb25017bad54aca1948072d1b09340a1",
+      "TRAIN_typed_db_sha256": "c058de081bdc0ae3c1d941d8445871f2f71e23d7732d8a9ba11c46f47124781f",
+      "validation_fit_typed_sha256": {
+        "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+        "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+        "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+        "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+        "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+        "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+        "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+        "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+        "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+        "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+        "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+        "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+        "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+      }
+    },
+    "R13_baselineP1": {
+      "summary_path": "models/r13_compact_trees_v1/baselineP1/summary.json",
+      "summary_sha256": "d57d0e96f2f69ca8ef6058749a3bbc0a8c6adfe1ed1e117e6903b2bca3c28a43",
+      "feature_count": 673,
+      "train_rows": 12000,
+      "validation_fit_rows": 1000,
+      "best_regression_iteration": 1417,
+      "best_classifier_iteration": 370,
+      "settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 2,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "feature_batch_size": 512
+      },
+      "training_binding": {
+        "format": "r13_tree_source_binding_v1",
+        "R13_data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+        "R13_manifest_sha256": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+        "data_arm": "baseline",
+        "include_shape": true,
+        "TRAIN_npz_sha256": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+        "parent_R12_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+        "parent_R12_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+        "validation_fit_npz_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+        "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+        "basis_training_binding": {
+          "version": "r12_cpu_data_ablation_v1",
+          "role": "train",
+          "fold": 0,
+          "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+          "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+          "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+          "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+          "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+          "raw_SA_no_added_recording": true,
+          "unique_source_IDs": 2000
+        },
+        "four_fresh_fits": true
+      },
+      "TRAIN_typed_share_sha256": "ad12f76563bc36ea25ea77e01db5e2e5fb25017bad54aca1948072d1b09340a1",
+      "TRAIN_typed_db_sha256": "c058de081bdc0ae3c1d941d8445871f2f71e23d7732d8a9ba11c46f47124781f",
+      "validation_fit_typed_sha256": {
+        "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+        "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+        "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+        "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+        "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+        "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+        "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+        "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+        "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+        "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+        "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+        "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+        "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+      }
+    },
+    "R13_highshareP1": {
+      "summary_path": "models/r13_compact_trees_v1/highshareP1/summary.json",
+      "summary_sha256": "dd3c029af665c2d244d0cad01f780f8440656ac2831b0d458be1c52d3ed53cb7",
+      "feature_count": 673,
+      "train_rows": 12000,
+      "validation_fit_rows": 1000,
+      "best_regression_iteration": 1116,
+      "best_classifier_iteration": 217,
+      "settings": {
+        "maximum_trees": 1500,
+        "early_stopping_patience": 40,
+        "threads": 2,
+        "learning_rate": 0.035,
+        "num_leaves": 31,
+        "minimum_leaf_rows": 50,
+        "feature_batch_size": 512
+      },
+      "training_binding": {
+        "format": "r13_tree_source_binding_v1",
+        "R13_data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+        "R13_manifest_sha256": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+        "data_arm": "highshare",
+        "include_shape": true,
+        "TRAIN_npz_sha256": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+        "parent_R12_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+        "parent_R12_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+        "validation_fit_npz_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+        "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+        "basis_training_binding": {
+          "version": "r12_cpu_data_ablation_v1",
+          "role": "train",
+          "fold": 0,
+          "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+          "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+          "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+          "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+          "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+          "raw_SA_no_added_recording": true,
+          "unique_source_IDs": 2000
+        },
+        "four_fresh_fits": true
+      },
+      "TRAIN_typed_share_sha256": "017558534fc52ade774789b3d0d74658e96d976db2dfa1996f38aac5d5a5087c",
+      "TRAIN_typed_db_sha256": "1c5563020c19ddce7bfd39dcb77c86175f9f27750b8097065b001ca707d691c3",
+      "validation_fit_typed_sha256": {
+        "db": "ed62cc9f33f0d8ecc6ab6aeb4ae19fcbc8c2e2e641190c3002819666ede53b49",
+        "unrounded_db": "4706dedddf54600c2844b4643794f9ea842aab6b4ea545d7f8d49babe998a214",
+        "cell_share": "46be500f9cfba7f7b6def540dbc7d6017ce7b5ecf75b273ee8f08274c1071c39",
+        "share": "014d38191a0908be743fbd0043e993c8f467ca98703d10fa963b08228e0d907b",
+        "presence": "1ca051a762ce6e73c65b9a68df5d1625020010e9cb8bfd5f8cba52823a139ea0",
+        "site": "e928da0c0a9511969a88958efe3b58abdbdcc8bdeba9e7f602bfb451073a1cfc",
+        "source_id": "9af2a980ce93f4803c8628aa3929365dc5cb1fe299e380ddc6e7cefc863bf0c5",
+        "sample_id": "c58d5bcc1647c8abf1daf956e721bb2c12471d1efef6d83a2e576f52afd4e087",
+        "family": "e8f53b108fb100cd199664cba321307ecead5b53b933e3db12e270a578347d37",
+        "base_window_index": "8e9f8e296fa375183c87c86e4ff6c373f667a7e459fb6076eadd1fae29a9fb5a",
+        "background_group": "32263e0469b8760166eead0b2e7cbc714d074c3fd892ed1e0dd623ba51b253c9",
+        "reference_index": "97f8d2d2d8ada75cba92eed228c77583f2ab76f08ed86194d68450c2beaea104",
+        "explicit_no_source": "bd378efed1e1d2ead4a9492226091ae63e98899062b32d04262dcc739e8c4b3c"
+      }
+    }
+  },
+  "original_H1_mask_site_confound": {
+    "L1_H0_TRAIN12000": {
+      "AUC_negative_Nobs": 0.5031543402777777,
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 4,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 4,
+          "zero_n": 2,
+          "positive_n": 2,
+          "zero_fraction": 0.5
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 52,
+          "zero_n": 11,
+          "positive_n": 41,
+          "zero_fraction": 0.21153846153846154
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 203,
+          "zero_n": 38,
+          "positive_n": 165,
+          "zero_fraction": 0.18719211822660098
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 1797,
+          "zero_n": 347,
+          "positive_n": 1450,
+          "zero_fraction": 0.1930996104618809
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 4917,
+          "zero_n": 966,
+          "positive_n": 3951,
+          "zero_fraction": 0.19646125686394142
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 368,
+          "zero_n": 83,
+          "positive_n": 285,
+          "zero_fraction": 0.22554347826086957
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 31,
+          "zero_n": 4,
+          "positive_n": 27,
+          "zero_fraction": 0.12903225806451613
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 4,
+          "zero_n": 1,
+          "positive_n": 3,
+          "zero_fraction": 0.25
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 290,
+          "zero_n": 64,
+          "positive_n": 226,
+          "zero_fraction": 0.2206896551724138
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 12,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 9,
+          "zero_n": 3,
+          "positive_n": 6,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 1561,
+          "zero_n": 326,
+          "positive_n": 1235,
+          "zero_fraction": 0.2088404868673927
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 25,
+          "zero_n": 4,
+          "positive_n": 21,
+          "zero_fraction": 0.16
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 2309,
+          "zero_n": 461,
+          "positive_n": 1848,
+          "zero_fraction": 0.1996535296665223
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 411,
+          "zero_n": 85,
+          "positive_n": 326,
+          "zero_fraction": 0.20681265206812652
+        }
+      ]
+    },
+    "L1_H1_TRAIN12000": {
+      "AUC_negative_Nobs": 0.5776848307291667,
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 4,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 50,
+          "zero_n": 9,
+          "positive_n": 41,
+          "zero_fraction": 0.18
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 191,
+          "zero_n": 26,
+          "positive_n": 165,
+          "zero_fraction": 0.13612565445026178
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 1710,
+          "zero_n": 260,
+          "positive_n": 1450,
+          "zero_fraction": 0.15204678362573099
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 4913,
+          "zero_n": 962,
+          "positive_n": 3951,
+          "zero_fraction": 0.19580704254019948
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 328,
+          "zero_n": 43,
+          "positive_n": 285,
+          "zero_fraction": 0.13109756097560976
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 29,
+          "zero_n": 2,
+          "positive_n": 27,
+          "zero_fraction": 0.06896551724137931
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 3,
+          "zero_n": 0,
+          "positive_n": 3,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 254,
+          "zero_n": 28,
+          "positive_n": 226,
+          "zero_fraction": 0.11023622047244094
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 12,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 8,
+          "zero_n": 2,
+          "positive_n": 6,
+          "zero_fraction": 0.25
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 1402,
+          "zero_n": 167,
+          "positive_n": 1235,
+          "zero_fraction": 0.11911554921540657
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 23,
+          "zero_n": 2,
+          "positive_n": 21,
+          "zero_fraction": 0.08695652173913043
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 2081,
+          "zero_n": 233,
+          "positive_n": 1848,
+          "zero_fraction": 0.11196540124939933
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 987,
+          "zero_n": 661,
+          "positive_n": 326,
+          "zero_fraction": 0.6697061803444783
+        }
+      ]
+    }
+  },
+  "strict_matching_preserved_site_effective_mask_target": true,
+  "strict_matching_preserved_sensor_recorder": true,
+  "strict_replacements": 1199,
+  "remaining_limit": "site/mask class ratios are controlled, but new background texture/source-group distributions can differ; this is a follow-up TRAIN control, not new independent validation",
+  "causal_limit": "Same-panel same-output comparisons are descriptive. Highshare manipulation, feature response, random fit variation and known mask/site confounding are not separately identified causes of official errors."
+}

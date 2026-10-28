@@ -1,0 +1,62 @@
+{
+  "status": "environment ready",
+  "verified_utc": "2026-10-25T11:21:43.759171+00:00",
+  "host": "root@209.170.80.132",
+  "ssh_port": 13906,
+  "pod_id": "o8s0b4ht8fkwrk",
+  "pod_name": "valuable_red_minnow",
+  "python_executable": "/workspace/underwater_vessel_noise_r4/venv/bin/python",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "venv_prefix": "/workspace/underwater_vessel_noise_r4/venv",
+  "system_site_packages": true,
+  "torch_version": "2.8.0+cu128",
+  "torch_module_file": "/usr/local/lib/python3.12/dist-packages/torch/__init__.py",
+  "system_CUDA_torch_reused": true,
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "gpu_count": 1,
+  "GPU": "NVIDIA GeForce RTX 4090, 24564 MiB, 595.91.07",
+  "CUDA_public_tensor_matmul_smoke_passed": true,
+  "active_compute_processes_after_environment_smoke": "1341, /workspace/underwater_vessel_noise_r4/venv/bin/python, 478 MiB",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pyarrow": "26.0.0",
+    "lightgbm": "4.7.0",
+    "tabm": "0.0.3",
+    "joblib": "1.6.0"
+  },
+  "all_required_imports_passed": true,
+  "pip_check_exit_code": 0,
+  "pip_check_output": "No broken requirements found.",
+  "public_package_index": "https://pypi.org/simple",
+  "pip_install_report_sha256": "0b64aa356eac93309071fd039eeeff2c6a765177950252f4acbbc2de406c1d62",
+  "workspace_disk": {
+    "total_bytes": 107374182400,
+    "used_bytes": 710832128,
+    "free_bytes": 106663350272
+  },
+  "cgroup_memory": {
+    "memory.limit_in_bytes": "61999996928",
+    "memory.usage_in_bytes": "1394954240"
+  },
+  "available_CPU_affinity_count": 128,
+  "project_or_dataset_deployed_by_this_task": false,
+  "training_started": false,
+  "private_project_data_transmitted": false,
+  "SSH_key_files_read": false,
+  "post_environment_smoke_gpu_processes": "",
+  "cgroup_CPU_quota_us": 1360000,
+  "cgroup_CPU_period_us": 100000,
+  "cgroup_effective_CPU_cores": 13.6,
+  "active_compute_processes_during_receipt_collection_note": "The listed Python process was this environment verification process itself, not training. Post-exit GPU status is recorded separately.",
+  "local_helper_updates": {
+    "supervisor": "ops/runpod_train_r4.py",
+    "collector": "ops/collect_r4_training_backups.py",
+    "remote_python": "/workspace/underwater_vessel_noise_r4/venv/bin/python",
+    "remote_backup_helper_required": "/workspace/underwater_vessel_noise_r4/ops/backup_completed_training.py"
+  }
+}

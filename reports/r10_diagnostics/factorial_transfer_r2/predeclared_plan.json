@@ -1,0 +1,47 @@
+{
+  "version": "r10_factorial_transfer_audit_v1",
+  "created_unix": 1793023598.418858,
+  "seed": 2026102604,
+  "samples_per_factorial_cell": 1000,
+  "ambient_pairs": 500,
+  "arms": [
+    "r9_complete",
+    "mean_scale_only",
+    "smooth_trajectory_only",
+    "eq12_only",
+    "combined_stress"
+  ],
+  "backgrounds": [
+    "Fold0 selection source pool",
+    "original domain_holdout"
+  ],
+  "observation_policy": "all 15 observed AFTER exact original boundary-minute QC; same restriction both backgrounds/all arms",
+  "zero_policy": "exact 20% explicit zero in every arm; complete observations prevent mask-induced zero; not raw R9 population",
+  "reference_policy": "all509 admitted R9 reference clips shared; ambient uses487 non-background vs16 dedicated ambient",
+  "paired_targets": "independent of LB: Uniform(.01,.60); same B/support length/EQ and target for ship/ambient; target is whole added recording",
+  "generator_notes": [
+    "baseline matches R9 on complete observations",
+    "mean scale uses reference/background mean power over ALL observed minutes including zero-added minutes; target scale changes",
+    "trajectory warp .8..1.25 with Gaussian envelope floor.15; stress only, not claimed Test recipe",
+    "EQ12 is diagnostic stress only; production remains EQ6",
+    "same reference index/family/SNR/random draws across backgrounds and related arms"
+  ],
+  "effect_statistics": [
+    "MSE contrast",
+    "RMSE contrast",
+    "AUC difference",
+    "target moments and constant baselines"
+  ],
+  "interpretation": "development stress probes; domain/target-scale changes and bundled changes do not isolate a causal memorization mechanism",
+  "no_operations": [
+    "Test access",
+    "report target access",
+    "model fitting",
+    "weight fitting",
+    "policy edits",
+    "GPU",
+    "SSH",
+    "submission"
+  ],
+  "script_sha256": "df89aac433957cf9036aa7d0475ade444558b8fa8ae71cd249d0f195567bb44f"
+}

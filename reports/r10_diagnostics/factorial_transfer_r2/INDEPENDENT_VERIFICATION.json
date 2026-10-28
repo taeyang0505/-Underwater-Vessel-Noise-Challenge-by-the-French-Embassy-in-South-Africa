@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "script_sha256": "efab9761bc0f65acae879a3846b90042ca85e900da1ad82a83d05287a582b2d3",
+  "panels": [
+    {
+      "panel": "seen__r9_complete",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 2.220446049250313e-16,
+      "rounded_pool_gap_max": 0.0010459096678244462
+    },
+    {
+      "panel": "seen__mean_scale_only",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 3.3306690738754696e-16,
+      "rounded_pool_gap_max": 0.0012646611195795687
+    },
+    {
+      "panel": "seen__smooth_trajectory_only",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 1.6653345369377348e-16,
+      "rounded_pool_gap_max": 0.0009193109290764889
+    },
+    {
+      "panel": "seen__eq12_only",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 3.3306690738754696e-16,
+      "rounded_pool_gap_max": 0.001233366588702156
+    },
+    {
+      "panel": "seen__combined_stress",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 3.3306690738754696e-16,
+      "rounded_pool_gap_max": 0.0012583941488971684
+    },
+    {
+      "panel": "unseen__r9_complete",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 2.220446049250313e-16,
+      "rounded_pool_gap_max": 0.0010873620318421207
+    },
+    {
+      "panel": "unseen__mean_scale_only",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 4.440892098500626e-16,
+      "rounded_pool_gap_max": 0.0013392160923928476
+    },
+    {
+      "panel": "unseen__smooth_trajectory_only",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 2.220446049250313e-16,
+      "rounded_pool_gap_max": 0.0010321863404963438
+    },
+    {
+      "panel": "unseen__eq12_only",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 2.220446049250313e-16,
+      "rounded_pool_gap_max": 0.0013112194694953616
+    },
+    {
+      "panel": "unseen__combined_stress",
+      "n": 1000,
+      "zero_count": 200,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": 4.440892098500626e-16,
+      "rounded_pool_gap_max": 0.0018629711433079121
+    },
+    {
+      "panel": "paired_ship",
+      "n": 500,
+      "zero_count": 0,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": null,
+      "rounded_pool_gap_max": null
+    },
+    {
+      "panel": "paired_ambient",
+      "n": 500,
+      "zero_count": 0,
+      "grid_abs": 0.0,
+      "raw_energy_identity_max": null,
+      "rounded_pool_gap_max": null
+    }
+  ],
+  "metric_oracle": "norm(error)/sqrt(N), independently ranked Mann-Whitney AUC",
+  "mean_scale_oracle": "y=SNR_linear/(1+SNR_linear) on positive observed-window mean-power draws",
+  "production_sources_models_policy_unchanged": true,
+  "results_sha256": "fc8460280606bc9a3197057d0e581ec7ac28d7e1413e7f63bf9b40625967ce9a"
+}

@@ -1,0 +1,122 @@
+{
+  "format": "r12_compact_physics_lgbm_v1",
+  "kind": "lgbm_physics_compact",
+  "status": "completed",
+  "fixture_only": true,
+  "settings": {
+    "maximum_trees": 10,
+    "early_stopping_patience": 3,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 5,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102712,
+  "include_shape": false,
+  "feature_count": 466,
+  "feature_schema_sha256": "2f71a168466a7b4bb5338420b537ed7a07a64f24d8993d1674445fab3bc7f7e1",
+  "basis_sha256": null,
+  "basis_training_binding": null,
+  "training_binding": {
+    "fixture_only": true,
+    "case": "physical_compactFalse"
+  },
+  "fit_plan_sha256": "e1926f9cc5963f2c6fa832b0414787a807c48b0debad79e551477f9efea5d0f8",
+  "best_iteration": 10,
+  "classifier_best_iteration": 10,
+  "validation_fit_metrics": {
+    "n": 48,
+    "rmse": 0.1757538833716046,
+    "mae": 0.1313729832569758,
+    "bias": 0.02472798153758049,
+    "target_mean": 0.4241622102757295,
+    "target_rms": 0.4835014601307952,
+    "prediction_mean": 0.44889019181330997,
+    "prediction_rms": 0.4534153544627625,
+    "share_auc": 1.0,
+    "classifier_auc": 1.0,
+    "hybrid_auc": 1.0,
+    "share_saturation_le001": 0.0,
+    "share_saturation_ge099": 0.0,
+    "classifier_saturation_le001": 0.0,
+    "classifier_saturation_ge099": 0.0,
+    "raw_share_clipped_fraction": 0.0,
+    "site_slices": {
+      "synthetic_0": {
+        "n": 24,
+        "rmse": 0.17029324150246716,
+        "bias": 0.03123971571524938,
+        "target_mean": 0.417920783162117,
+        "prediction_mean": 0.44916049887736637,
+        "share_auc": 1.0,
+        "classifier_auc": 1.0
+      },
+      "synthetic_1": {
+        "n": 24,
+        "rmse": 0.18104990179224506,
+        "bias": 0.018216247359911602,
+        "target_mean": 0.430403637389342,
+        "prediction_mean": 0.4486198847492536,
+        "share_auc": 1.0,
+        "classifier_auc": 1.0
+      }
+    },
+    "site_macro_rmse": 0.1756715716473561,
+    "protected_slices": {
+      "zero": {
+        "n": 10,
+        "rmse": 0.32733058081653893,
+        "bias": 0.32708430886268614,
+        "prediction_mean": 0.32708430886268614,
+        "SSE": 1.0714530913769273
+      },
+      "positive_to020": {
+        "n": 0,
+        "rmse": null,
+        "bias": null,
+        "prediction_mean": null,
+        "SSE": 0.0
+      },
+      "above020": {
+        "n": 38,
+        "rmse": 0.10402927593921935,
+        "bias": -0.05483947302165784,
+        "prediction_mean": 0.48094437153715835,
+        "SSE": 0.41123942959265314
+      },
+      "SF_dense_zero": {
+        "n": 0,
+        "rmse": null,
+        "bias": null,
+        "prediction_mean": null,
+        "SSE": 0.0
+      }
+    }
+  },
+  "train_rows": 128,
+  "validation_fit_rows": 48,
+  "feature_matrix_bytes": {
+    "train": 238592,
+    "validation_fit": 89472
+  },
+  "lightgbm_version": "4.7.0",
+  "score_policy": ".5clipped_share+.5presence_classifier; no calibration",
+  "NN_epoch_policy_applicable": false,
+  "artifact_sha256": {
+    "share.txt": "b6030829a0916c2bc2d9d1a9e0290f2f2e73b2c9357542cff922eb3a66a2fc9a",
+    "presence.txt": "780848bff01d309b2a3c50ffb79ddcbe663a2d852cea7e84cea97e6aaf3ab90d",
+    "feature_schema.json": "4e2e1dd0c6bc9e58c19c03f3ba7cea91e84cbc02555a71ae0dd09755b67969e6",
+    "validation_fit_predictions.npz": "bff4d7e979d8d772f64463ac2598f226ec0540e16f2ab3fa03b0ca5312b52b02",
+    "fit_plan.json": "e1926f9cc5963f2c6fa832b0414787a807c48b0debad79e551477f9efea5d0f8"
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "4cac26e47c3d4913aa3910f3a7f5634f068726c0ff7cd13b704f4fa9f9a845dc",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "elapsed_seconds": 0.19640920870006084,
+  "gate_eval_Test_used_for_fitting": false
+}

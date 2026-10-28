@@ -1,0 +1,13 @@
+{
+  "format": "r14_outputs_QA_harness_assertion_note_v1",
+  "implementation_modified": false,
+  "initial_failure": "QA expected source string sha(old) whereas correct implementation uses sha(oldroot/selected_results.csv).",
+  "correction": "Only the QA assertion was made to match the verified actual path expression; all existing valid/invalid CSV fixtures were preserved and rechecked.",
+  "source_code_sha256": {
+    "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22"
+  },
+  "synthetic_fixture_reused": "ops/r14_outputs_synthetic_only_598hzuuq",
+  "no_real_models_or_Test": true
+}

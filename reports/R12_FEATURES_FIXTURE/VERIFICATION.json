@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "new_acoustic_data_or_Test_or_val_fit_read": false,
+  "new_model_training_inference": false,
+  "script_sha256": "482f09342e1623e6f2e00cc7cbec32338445c644a9f70593f3821dc2d7fc48f0",
+  "module_sha256": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+  "unchanged_frozen_source_sha256": {
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+  },
+  "schema": {
+    "channels_base": 8,
+    "channels_shape": 11,
+    "compact_base": 466,
+    "compact_shape": 673,
+    "channels": [
+      "band_temporal_median_relative_div10",
+      "band_temporal_q20_relative_div15",
+      "adjacent_observed_delta_div10",
+      "positive_mid_high_delta_times_smooth_low_band_co_rise",
+      "band_median_minus_window_median_div20",
+      "observed_mask",
+      "band_temporal_q05_relative_div15",
+      "sqrt_rounded_energy_weight",
+      "train_safe23_rank3_signed_residual_div10",
+      "train_safe23_rank3_positive_residual_div10",
+      "midband_spectral_peak_curvature_div10"
+    ]
+  },
+  "PCA_numeric_fixture": {
+    "TRAIN_windows": 32,
+    "eligible_complete_safe_spectra": 477,
+    "fitted_spectra": 256,
+    "source_inputs_unchanged": true,
+    "repeatfit_state_exact": true,
+    "basis_content_sha256": "0b7f935a32f95c6e671a9063b775154f110301ff0b29cc1428d3ca1923693500",
+    "explained_variance_ratio": [
+      0.38349190539136147,
+      0.32344520487574174,
+      0.29275160791917665
+    ],
+    "fixture_basis_receipt": {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R12_FEATURES_FIXTURE/numeric_fixture_basis_DO_NOT_USE_FOR_TRAINING.npz",
+      "file_sha256": "7a59161e7847bd72bc7071e13aae69517c5c159f7d1c2b1e2394a3b3c5820137",
+      "basis_sha256": "0b7f935a32f95c6e671a9063b775154f110301ff0b29cc1428d3ca1923693500"
+    }
+  },
+  "numeric_checks": {
+    "legacy8_and_w_bitwise_equal": true,
+    "new_missing_cells_all_zero": true,
+    "positive_is_relu_signed_exact": true,
+    "safe_extra_channels_unsafe_band_perturbation_error": 0.0,
+    "chunk_transform_max_error": 0.0,
+    "chunk_compact_max_error": 0.0,
+    "grid_common_gain_max_errors": {
+      "-0.7": 2.842170985392048e-15,
+      "7.4": 2.842170985392048e-15,
+      "80.0": 4.2632565839671906e-15
+    },
+    "grid_common_gain_w_max_errors": {
+      "-0.7": 0.0,
+      "7.4": 0.0,
+      "80.0": 0.0
+    },
+    "arbitrary_prequant_gain_.037_max_feature_change_not_exactly_invariant": 0.019999999552965164,
+    "static_band_offset_extra_feature_change_expected": 0.800000011920929,
+    "fit_common_gain_PCA_projector_error": 7.771561172376096e-16,
+    "TRAIN_manifold_baseline_absolute_residual": 0.002054346725344658,
+    "unseen_spectral_peak_absolute_residual": 0.05074586346745491,
+    "known_raw_label_rounded_pool_gap": 5.838522979260963e-05,
+    "known_raw_label_rounding_theoretical_bound": 0.005756399149621881,
+    "NPZ_reload_channels_weights_bitwise_equal": true
+  },
+  "guards": {
+    "validation_fit_rejected": true,
+    "Test_fit_rejected": true,
+    "synthetic_fit_rejected": true,
+    "duplicate_source_ids_rejected": true,
+    "wrong_component_count_rejected": true,
+    "missing_basis_rejected": true,
+    "query_labels_rejected": true,
+    "query_extra_q_argument_rejected": true,
+    "basis_tamper_rejected": true,
+    "foreign_TRAIN_binding_rejected": true,
+    "file_SHA_mismatch_rejected": true,
+    "basis_overwrite_rejected": true,
+    "infinite_query_rejected": true,
+    "entirely_missing_query_rejected": true
+  },
+  "pure_NumPy_no_torch_import": true,
+  "limits": [
+    "Numerical input alone cannot certify TRAIN/A0 provenance: caller must verify source IDs and binding.",
+    "A0 means no controlled addition, not natural-vessel absence.",
+    "New residuals are not isolated-vessel energy, certified background or presence labels.",
+    "Added maps safe23 protection does not remove unsafe bands from unchanged base8/full25 physical weights.",
+    "Before rounding, arbitrary common gain has quantization error; static band offsets can change new shape maps.",
+    "Numeric fixture basis is never production training state."
+  ]
+}

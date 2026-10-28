@@ -1,0 +1,118 @@
+{
+  "format": "r9_fold0_all5_independent_inference_verification_v1",
+  "status": "passed",
+  "created_utc": "2026-10-26T11:53:40.912428+00:00",
+  "CSV_rows": 1500,
+  "CSV_columns": [
+    "ID",
+    "share_added_vessel",
+    "score_added_vessel"
+  ],
+  "ID_order_exact_and_unique": true,
+  "finite_and_unit_interval": true,
+  "query_indices": [
+    0,
+    1,
+    17,
+    63,
+    127,
+    128,
+    749,
+    1499
+  ],
+  "replay_batch_sizes": [
+    1,
+    7
+  ],
+  "fixed_atol": 3e-06,
+  "rtol": 0,
+  "per_model_replay_actual_errors": {
+    "bg_cnn": {
+      "share_batch1": 5.960464477539063e-08,
+      "score_batch1": 1.1920928955078125e-07,
+      "physical_pool_batch1": 3.2044361386596165e-08,
+      "share_batch7": 5.960464477539063e-08,
+      "score_batch7": 1.1920928955078125e-07,
+      "physical_pool_batch7": 3.2044361386596165e-08
+    },
+    "tfgrid_fdy_conformer": {
+      "share_batch1": 4.76837158203125e-07,
+      "score_batch1": 1.7881393432617188e-07,
+      "physical_pool_batch1": 2.3791623060542832e-08,
+      "share_batch7": 4.76837158203125e-07,
+      "score_batch7": 1.7881393432617188e-07,
+      "physical_pool_batch7": 2.379146823994205e-08
+    },
+    "fdy": {
+      "share_batch1": 1.7881393432617188e-07,
+      "score_batch1": 2.384185791015625e-07,
+      "physical_pool_batch1": 4.790656149555872e-08,
+      "share_batch7": 1.7881393432617188e-07,
+      "score_batch7": 2.384185791015625e-07,
+      "physical_pool_batch7": 4.842846590413785e-08
+    },
+    "itransformer": {
+      "share_batch1": 0.0,
+      "score_batch1": 0.0,
+      "physical_pool_batch1": 2.393826747937311e-08,
+      "share_batch7": 0.0,
+      "score_batch7": 0.0,
+      "physical_pool_batch7": 2.393826747937311e-08
+    },
+    "lgbm_physics": {
+      "share_batch1": 0.0,
+      "score_batch1": 0.0,
+      "share_batch7": 0.0,
+      "score_batch7": 0.0
+    }
+  },
+  "maximum_share_score_replay_error": 4.76837158203125e-07,
+  "fixed_weight_production_expression_exact_saved_and_CSV": true,
+  "independent_math_fsum_rounding_diagnostics": {
+    "share": {
+      "fsum64_vs_BLAS64_max": 1.1102230246251565e-16,
+      "fsum32_vs_stored32_max": 5.960464477539063e-08,
+      "float32_midpoint_different_rows": 9,
+      "within_derived_float64_rounding_bound_and_one_float32_ULP": true,
+      "production_expression_and_CSV_exact": true
+    },
+    "score": {
+      "fsum64_vs_BLAS64_max": 2.220446049250313e-16,
+      "fsum32_vs_stored32_max": 5.960464477539063e-08,
+      "float32_midpoint_different_rows": 13,
+      "within_derived_float64_rounding_bound_and_one_float32_ULP": true,
+      "production_expression_and_CSV_exact": true
+    }
+  },
+  "manual_float64_vs_saved_float32_error": {
+    "share": 2.9802322387695312e-08,
+    "score": 2.9802322387695312e-08
+  },
+  "weights": {
+    "bg_cnn": 0.1,
+    "tfgrid_fdy_conformer": 0.1,
+    "fdy": 0.1,
+    "itransformer": 0.1,
+    "lgbm_physics": 0.6
+  },
+  "strict_completed_best_window_checkpoints": 4,
+  "strict_completed_Mac_tree": 1,
+  "all_model_source_pins_unchanged": true,
+  "all_output_policy_query_SHA_unchanged": true,
+  "original_file_sha256": {
+    "submission.csv": "f016265ae9a1702dbb7121bfb0c852f5900f85a17194881056316768300fb39d",
+    "query_member_predictions.npz": "87f47dee43e02dff265a0f26d79f8a4aff2e45e00489a56dfbcaa3d85b5d66a8",
+    "frozen_policy.json": "46ec3b14cafb5d07e79d77ff35849e46ec68a6b575bb1ff1781b43fe46f28af9",
+    "prequery_plan.json": "3ba6688f382734a29c1b8fe46b3866bba66b84baf7966e03d87b5ef830069f20",
+    "inference_receipt.json": "e87afd28c513bf4044bf5721dce47879a08b2c3e90b4a1d01ce8e4a650ce2e6e"
+  },
+  "raw_query_csv_sha256": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+  "policy_payload_sha256": "7ac138b776d9ca9d6ebf885bbd597c80c485c7748159e0ebed7220fd03e3ced4",
+  "loaded_libomp": [
+    "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+  ],
+  "verification_code_sha256": "11cd7010f178dec5911a039d5d3f347245ee10a81cdc1a2c908a14ebc1c68600",
+  "elapsed_seconds": 3.310080041177571,
+  "new_fit_weight_adjustment_report_access_GPU_SSH_upload": false,
+  "scope": "single Fold0 all-five pilot, not full-fivefold neural pipeline or OOF"
+}

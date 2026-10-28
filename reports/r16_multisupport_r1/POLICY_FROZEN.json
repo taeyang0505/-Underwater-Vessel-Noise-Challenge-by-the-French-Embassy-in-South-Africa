@@ -1,0 +1,190 @@
+{
+  "candidates": [
+    {
+      "arm": "S1_H0_F1",
+      "policy": "fit_only",
+      "ws": 0.0,
+      "wc": 0.1,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09491475080822054,
+        "bias": -0.0066631314687533045,
+        "prediction_mean": 0.16450779104748312,
+        "classifier_mean": 0.7812694942615686,
+        "auc_classifier": 0.9361458333333385,
+        "negative": {
+          "share_mean": 0.044108543043109405,
+          "classifier_mean": 0.39602602942137083
+        },
+        "positive": {
+          "share_mean": 0.19460760304857655,
+          "classifier_mean": 0.8775803604716179
+        }
+      }
+    },
+    {
+      "arm": "S1_H0_F1",
+      "policy": "fixed_60D0_40S1",
+      "ws": 0.4,
+      "wc": 0.5,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09815315808680236,
+        "bias": -0.009651769065815897,
+        "prediction_mean": 0.1615191534504205,
+        "classifier_mean": 0.7740533083900796,
+        "auc_classifier": 0.9272526041666725,
+        "negative": {
+          "share_mean": 0.04605541060078176,
+          "classifier_mean": 0.4302593969132733
+        },
+        "positive": {
+          "share_mean": 0.1903850891628302,
+          "classifier_mean": 0.8600017862592811
+        }
+      }
+    },
+    {
+      "arm": "S1_H0_F1",
+      "policy": "fixed_50D0_50S1",
+      "ws": 0.5,
+      "wc": 0.5,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09958212276503244,
+        "bias": -0.010398928465081548,
+        "prediction_mean": 0.1607719940511549,
+        "classifier_mean": 0.7740533083900796,
+        "auc_classifier": 0.9272526041666725,
+        "negative": {
+          "share_mean": 0.046542127490199856,
+          "classifier_mean": 0.4302593969132733
+        },
+        "positive": {
+          "share_mean": 0.18932946069139361,
+          "classifier_mean": 0.8600017862592811
+        }
+      }
+    },
+    {
+      "arm": "S1_H0_F1",
+      "policy": "fixed_65D0_35S1",
+      "ws": 0.35,
+      "wc": 0.5,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09752795171983937,
+        "bias": -0.009278189366183074,
+        "prediction_mean": 0.16189273315005337,
+        "classifier_mean": 0.7740533083900796,
+        "auc_classifier": 0.9272526041666725,
+        "negative": {
+          "share_mean": 0.04581205215607272,
+          "classifier_mean": 0.4302593969132733
+        },
+        "positive": {
+          "share_mean": 0.1909129033985485,
+          "classifier_mean": 0.8600017862592811
+        }
+      }
+    },
+    {
+      "arm": "S1_H15_F1",
+      "policy": "fit_only",
+      "ws": 0.0,
+      "wc": 0.2,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09491475080822054,
+        "bias": -0.0066631314687533045,
+        "prediction_mean": 0.16450779104748312,
+        "classifier_mean": 0.7771586597980931,
+        "auc_classifier": 0.9395507812500048,
+        "negative": {
+          "share_mean": 0.044108543043109405,
+          "classifier_mean": 0.4008603103652248
+        },
+        "positive": {
+          "share_mean": 0.19460760304857655,
+          "classifier_mean": 0.87123324715631
+        }
+      }
+    },
+    {
+      "arm": "S1_H15_F1",
+      "policy": "fixed_60D0_40S1",
+      "ws": 0.4,
+      "wc": 0.5,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09797808531159613,
+        "bias": -0.010330487999182753,
+        "prediction_mean": 0.16084043451705365,
+        "classifier_mean": 0.7682863384010713,
+        "auc_classifier": 0.9311067708333389,
+        "negative": {
+          "share_mean": 0.04557344992678729,
+          "classifier_mean": 0.42094924459046906
+        },
+        "positive": {
+          "share_mean": 0.18965718066462026,
+          "classifier_mean": 0.8551206118537218
+        }
+      }
+    },
+    {
+      "arm": "S1_H15_F1",
+      "policy": "fixed_50D0_50S1",
+      "ws": 0.5,
+      "wc": 0.5,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09942750331518523,
+        "bias": -0.011247327131790115,
+        "prediction_mean": 0.15992359538444634,
+        "classifier_mean": 0.7682863384010713,
+        "auc_classifier": 0.9311067708333389,
+        "negative": {
+          "share_mean": 0.04593967664770676,
+          "classifier_mean": 0.42094924459046906
+        },
+        "positive": {
+          "share_mean": 0.18841957506863116,
+          "classifier_mean": 0.8551206118537218
+        }
+      }
+    },
+    {
+      "arm": "S1_H15_F1",
+      "policy": "fixed_65D0_35S1",
+      "ws": 0.35,
+      "wc": 0.5,
+      "fit_metrics": {
+        "n": 2400,
+        "rmse": 0.09735195685427182,
+        "bias": -0.009872068432879072,
+        "prediction_mean": 0.16129885408335737,
+        "classifier_mean": 0.7682863384010713,
+        "auc_classifier": 0.9311067708333389,
+        "negative": {
+          "share_mean": 0.045390336566327544,
+          "classifier_mean": 0.42094924459046906
+        },
+        "positive": {
+          "share_mean": 0.1902759834626148,
+          "classifier_mean": 0.8551206118537218
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "reports/r16_clean_support_r1/GLOBAL_FREEZE.json": "61d5905c31b94f9f641192c971abc96e6764aa6be8b08ffba4df156f5a7dfb65",
+    "reports/r16_support_temporal_r1/GLOBAL_FREEZE.json": "b330b2cba968af3ca208ec8b0025d4830de6be15788c6202a4b1ea285a261e21",
+    "ops/r16_multisupport_blend.py": "d7b2b63842442b970dc51faf31f5b4917e9e865affa852a2dda700feea2a10ac",
+    "models/r16_clean_support_r1/S1_H0_F1/fit_nn_predictions.npz": "017baeef65ce0a21fc2f12de11b58575bec0e6aa183285381f565de8c614787d",
+    "models/r16_clean_support_r1/S1_H0_F1/fit_tree_predictions.npz": "c1d6e599f6908624d5b68ac8d217f0425594dbda671d545507ebeccb8c35be93",
+    "models/r16_clean_support_r1/S1_H15_F1/fit_nn_predictions.npz": "2899f12c1668ef91722825c169e0e4170bf458e75a9b20ac14d77cf1a69d46f1",
+    "models/r16_clean_support_r1/S1_H15_F1/fit_tree_predictions.npz": "1a05c267795f21279add5a18ab7315a9744eaa40057cc5cb7e960a791bcde2ed"
+  },
+  "locked_panels_used_for_weight_fit": false
+}

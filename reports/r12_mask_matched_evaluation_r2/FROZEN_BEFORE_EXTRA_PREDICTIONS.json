@@ -1,0 +1,38 @@
+{
+  "plan_file_sha256": "e00898217e1c7d714f9c384a39f7ef325a1db8fcf245bdf5239fef60e1f5b75b",
+  "barrier_sha256": {
+    "reports/r12_cpu_ablation_r1/RESULTS.json": "73288fd6fe2d7b3fe97908a2360b5d21143ec2941a6e6d2537fab3e1b4e34ff1",
+    "reports/R12_ALL17_GLOBAL_FREEZE.json": "d4c049181e3eded7f588ec561cdae9d74510adbc2d8602425d61b0743f969917",
+    "reports/r12_cpu_ablation_r1/selected_policy.json": "8dd82dd2feacaa42e06be450c2615d6872082b71fdff54e5f879bc6cde6c7b63",
+    "models/r12_mask_matched_control_r2/ALL_CONTROL_FROZEN.json": "dd353b1aecfe8b0038d15d6a6017d2e2907f45ade9f479910722329944d32ef8",
+    "models/r12_mask_matched_control_r2/PRE_FIT_FREEZE.json": "aca76740342a0ebb22d5d6599044ac31a7f5dc64c049ef020be702cfa6d8ccfd",
+    "models/r12_mask_matched_control_r2/cnn/best.pt": "e74d9b3af5e1c79934ecd809f38f14b284d80ce3e0705cff7787104e5bfd45b6",
+    "models/r12_mask_matched_control_r2/cnn/epochs.jsonl": "0837cab8a1d90233c1b9662d02f4215cb88990e88493a1062b1a1256074873ff",
+    "models/r12_mask_matched_control_r2/cnn/summary.json": "64164f1849ed05a4e046d257affe528fa3dc9c9898c3731656eeddf212ba2b45",
+    "models/r12_mask_matched_control_r2/tree/summary.json": "6d43a97adb0a4423bd6671177e47a08565623387ae9019264f71d0c4951695a6"
+  },
+  "source_pins": {
+    "ops/evaluate_r12_mask_matched_control.py": "ded5e72aeaf9c08fdaaea9c959647724eb9ecd231cf36990642e45544b979413",
+    "ops/evaluate_r12_ablation.py": "ba3bc6f312b1747d88eb9ca841f0f3432e6982e9ee37351dd2878cd4216f1e08",
+    "ops/verify_r12_evaluation.py": "c9b40df2b4b894d027218cdfef95974f6b9964e8afb1d2cc42d1992ffbe66815",
+    "ops/train_r12_mask_matched_control_v2.py": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb",
+    "ops/build_r12_mask_matched_control_v2.py": "8d108c47f24dffe93524467fed1368a453015676c8397df0299b3106db98f91d",
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/manifest.json": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+    "data.nosync/synthetic/r12_mask_matched_control_v2/readiness.json": "22ed0f3fc84b4c11c43c91556b60389c9fab56aed7c2399a42dd55febd04fd57",
+    "reports/R12_EVALUATION_PREDECLARED_PLAN.json": "f5fdb2d62d76548a72dbe9c9f49d75c4feb82b3067c3bc4cbf63d1a089c226b0"
+  },
+  "original_policy_unchanged": true,
+  "extra_in_original8selector": false,
+  "control_manifest_sha256": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+  "binding": {
+    "scope": "additional metadata-matched HF control; not part of original8recipe selector",
+    "control_manifest_sha256": "ef8a08e159f3abab0fb2b7ff66f01cddaf4b5e2a88984b33a5722f9d2157143e",
+    "original_data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+    "original_data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "script_sha256": "4025398d9f046d96e0ca041374346cff6208047099365010f1c15942c445d4cb"
+  }
+}

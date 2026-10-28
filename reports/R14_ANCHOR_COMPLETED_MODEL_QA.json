@@ -1,0 +1,79 @@
+{
+  "format": "r14_anchor_completed_model_independent_qa_v1",
+  "status": "passed",
+  "checked_unix": 1793044018.590932,
+  "model_freeze_file_sha256": "6611e81558b8fdb4d8e4bde676efcbfc559e233c1aa8a484b605b9089f6d1b28",
+  "evaluator_sha256": "e2537c01f4a600d1f0909b3701afd8bfc0acdbe0a49d1e55a7399862843310e2",
+  "CNN": {
+    "anchor_c0": {
+      "epochs": 100,
+      "history_rows": 100,
+      "best_epoch": 64,
+      "best_fit_rmse": 0.0773273124772353,
+      "parameters": 27601,
+      "strict_state_restore": true,
+      "all_finite_tensors": true
+    },
+    "anchor_c2": {
+      "epochs": 100,
+      "history_rows": 100,
+      "best_epoch": 89,
+      "best_fit_rmse": 0.07199166750286788,
+      "parameters": 27601,
+      "strict_state_restore": true,
+      "all_finite_tensors": true
+    }
+  },
+  "trees": {
+    "tree_c0": {
+      "feature_count": 880,
+      "saved_boosters_trees": 1496,
+      "best_iteration": 1496,
+      "model_sha256": "4e76684a78bbed0ebdb5718cfffab9179c06ee410a120b21d5eb772cbaed8c8f"
+    },
+    "tree_c2": {
+      "feature_count": 880,
+      "saved_boosters_trees": 1499,
+      "best_iteration": 1499,
+      "model_sha256": "2f4963778d21aa0bec2dee3fb2a8c774b2d5accee756462c1d82136ce05ed34a"
+    },
+    "classifier": {
+      "feature_count": 880,
+      "saved_boosters_trees": 302,
+      "best_iteration": 302,
+      "model_sha256": "d2814a19a46a07a9fde841dedd0f3f946b2669f5241e13f64e7ac92a3dfd284e"
+    }
+  },
+  "source_pins": {
+    "ops/train_r14_anchor_cpu.py": "5890012057306e75f5dc5c1886ec5353c7f34510568ce98b35f70aadb9a54f44",
+    "pipeline/features_r14_anchor.py": "6027bc03cf6ae97f1c533d1b1a09835e28689b19908cc636ebaad97f69981fac",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "data/synthetic/r13_cpu_correction_v1/manifest.json": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+    "data/synthetic/r12_cpu_ablation_v3/manifest.json": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "models/r12_shared_basis_v1/basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "data/synthetic/r12_cpu_ablation_v3/cnn_subset_indices.npy": "59dc2135ea685d27e626ca2ce6cf5d1ad62b263642d7afd0f780263902eeeae6"
+  },
+  "completed_artifact_sha256": {
+    "models/r14_anchor_cpu_r1/ALL_MODELS_FROZEN.json": "6611e81558b8fdb4d8e4bde676efcbfc559e233c1aa8a484b605b9089f6d1b28",
+    "models/r14_anchor_cpu_r1/anchor_c0/summary.json": "c0ece747c52bd9704f0093b437066e44f8b1cee49ae259177d2e5de40e0e5669",
+    "models/r14_anchor_cpu_r1/anchor_c0/best.pt": "d42435996bda4d9e6615669d6b0b181071a168b802c0e526c217a9e0e3832e69",
+    "models/r14_anchor_cpu_r1/anchor_c0/epochs.jsonl": "4839289c1115e8838e8ea2d6f808fdee967b4c035286b8b03e9437a953baaea1",
+    "models/r14_anchor_cpu_r1/anchor_c0/validation_fit_predictions.npz": "563e389c618ae9cc49a080bee1ca51e713cafa314e4459dd2146018866e2d4ab",
+    "models/r14_anchor_cpu_r1/anchor_c2/summary.json": "a0bfa2197018224c8116b2f5d7c0294ba84dfe8810e051d942c703086590e5f2",
+    "models/r14_anchor_cpu_r1/anchor_c2/best.pt": "d665e63d0c3bac6fff974891fc5e9fed2de16ce0e7df855c82cae64d9bb5b649",
+    "models/r14_anchor_cpu_r1/anchor_c2/epochs.jsonl": "27f116ae700ae476fb8d5b490ecf36fa9b611e56ca48995382fb2a98123c39b2",
+    "models/r14_anchor_cpu_r1/anchor_c2/validation_fit_predictions.npz": "30ed989a70312a15254765a8f63a8f46ad373453097b395564b449136273ab61",
+    "models/r14_anchor_cpu_r1/tree/share_c0.txt": "4e76684a78bbed0ebdb5718cfffab9179c06ee410a120b21d5eb772cbaed8c8f",
+    "models/r14_anchor_cpu_r1/tree/share_c2.txt": "2f4963778d21aa0bec2dee3fb2a8c774b2d5accee756462c1d82136ce05ed34a",
+    "models/r14_anchor_cpu_r1/tree/presence.txt": "d2814a19a46a07a9fde841dedd0f3f946b2669f5241e13f64e7ac92a3dfd284e"
+  },
+  "raw_source_or_heldout_arrays_read": false,
+  "new_fit_or_prediction": false,
+  "checkpoint_load_and_shape_validation_only": true,
+  "production_approved": false,
+  "limitations": [
+    "The CNN writer persists best weights/history but not optimizer state or all100epoch weights; no independent optimizer-step-state proof is claimed.",
+    "Actual saved prediction point/pooling QA is separate after evaluator completion."
+  ]
+}

@@ -1,0 +1,51 @@
+Additional external source declaration draft — not posted
+
+NOAA / U.S. Navy SanctSound raw passive acoustic data:
+https://doi.org/10.25921/saca-sp25
+Official catalogue and licence: https://www.fisheries.noaa.gov/inport/item/80342
+Data products catalogue: https://www.fisheries.noaa.gov/inport/item/80343
+The current official catalogues explicitly declare CC0-1.0. Credit NOAA Office
+of National Marine Sanctuaries, U.S. Navy and NOAA NCEI. Warranty limitations
+apply and no government endorsement is implied. Anonymous public HTTPS access,
+retrieved 24 October 2026.
+
+New native excerpts: CI01_01, FK01_01 and GR01_01 for training; HI01_01 for
+validation; OC03_02 for calibration; SB01_01 reserved as a new sealed assessment
+source. Each deployment contributes two distinct dates separated by at least
+14 days, for 12 actual contiguous 15-minute excerpts, six stations and 12 dates.
+Selection used only published metadata, data availability and native frame
+coverage, not model performance or challenge Test characteristics. The previous
+OC02_02 independent assessment is not used by this expansion.
+
+Every positive reference is wholly inside a published Good quality interval
+covering the exact 25 deci-decade band edges and an explicitly labelled Ship
+event. Compromised OC01_01 and low-frequency-compromised MB01_01 were excluded.
+The FK01_01 seafloor-contact interval and OC03_02's first-week-November
+high-frequency noise-floor warning were also excluded. PM01_01's event file
+contains NoShip rather than Ship labels; one acquired excerpt was quarantined
+from all positive reference pools. NoShip is not asserted to certify natural
+vessel absence.
+
+The public Google Cloud source object generations are pinned. Only exact byte
+ranges needed for decoding were downloaded (about 524 MB), not complete source
+objects. Therefore a full provider MD5 verification is NOT claimed. Exact range
+Content-Range checks, range SHA-256 values, source generation/MD5 metadata,
+native audio frames/sample rate and excerpt/array SHA-256 values are recorded.
+Native 48/96-kHz mono recordings are retained as genuine 900-second, lossless
+crops. All 25 target frequency bands are supported at their native sample rate.
+Short source audio is never repeated or interpolated to masquerade as a measured
+15-minute passage. Audio conversion uses the released reference convention:
+complete two-second Hann periodograms with constant detrending, base-10 band
+integration and linear averaging over 30 segments per measured minute.
+Digital energies are not claimed to be absolute pressure-calibrated.
+
+Ship annotations indicate events, not isolated-vessel energy or verified hull
+independence. Background sounds remain within each added reference. Known
+controlled additions provide the energy-fraction targets under the same observed
+cell mask. Source station/deployment/day, intervals and byte duplicates are
+isolated across locked partitions. SB01_01 has received only preparation and
+quality auditing, not model prediction or candidate/calibration selection.
+The challenge Test is not used for fitting, distribution tuning, pseudo-labels,
+source matching or hidden-target reconstruction. No source audio is publicly
+redistributed. This document is a draft only; no additional organizer approval
+is claimed.

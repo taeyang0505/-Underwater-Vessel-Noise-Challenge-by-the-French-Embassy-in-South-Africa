@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "source_hash": "1779428a225f1c9c57d3e446ec38c812d6c57a604644939ca55242e11ab7472c",
+  "manifest_sha256": "9abc120a7358acdc1fef71ed8ebca65624fffc460830ee1c4f1115e7a4feb298",
+  "synthetic_fixture": {
+    "status": "PASS",
+    "synthetic_only": true,
+    "actual_interior_minute_mask": true,
+    "unselected_same_minute_flag_ignored": true,
+    "NaN_and_input_preserved": true,
+    "support_gap_24h_not_start_gap": true,
+    "diagnostic_explicit_guard": true
+  },
+  "train_inner_loader_actual_checks": {
+    "train": {
+      "background_draws": 64,
+      "reference_slices_verified": 51,
+      "reference_seconds": 14876
+    },
+    "inner": {
+      "background_draws": 64,
+      "reference_slices_verified": 18,
+      "reference_seconds": 4796
+    }
+  },
+  "restored_train_windows_all_masks_verified": 3545,
+  "diagnostic_roles_read_attempt_refused": true,
+  "diagnostic_values_loaded": false,
+  "old_OUTER_calibration_sealed_Test_values_loaded": false,
+  "all_source_code_pins_checked": true,
+  "source_code_sha256": {
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "ops/build_source_split_r6.py": "b83efe31216e0199114bf2c420bb243d760b3c2dc0f718d3dd60caefe977e933",
+    "pipeline/prepare_sa.py": "3e18f6b6077dfecb0d2800879ff7196c11b051bc32a31bf3189219c2019f4400"
+  },
+  "model_training_executed": false
+}

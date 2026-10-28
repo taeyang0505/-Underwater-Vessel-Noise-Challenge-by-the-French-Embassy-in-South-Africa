@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "scope": "singlefold synthetic/mock backend only; no actual models/training data/public Test read",
+  "code_sha256": {
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "ops/verify_frozen_inference_r5.py": "7a5910d0d9ada44281bbb7825524f303c2ce8b838614fd407fd3829afeeadd7f"
+  },
+  "query_shape": [
+    7,
+    15,
+    25
+  ],
+  "singlefold_fixture_only": true,
+  "production_exactly_fivefold_required": true,
+  "production_fixture_models_rejected": true,
+  "production_backend_injection_rejected": true,
+  "completed_artifact_SHA_policy_SHA_binding_context_prior_checkpoint_checks_exercised": true,
+  "runstate_common_config_SHA_guard_exercised": true,
+  "changed_checkpoint_and_internal_policy_rejected": true,
+  "failed_partial_and_escaping_path_rejected": true,
+  "query_db_only_and_no_label_dictionary": true,
+  "query_chunk_single_row_and_permutation_bitwise": true,
+  "original_query_array_and_NaN_unchanged": true,
+  "selected_positive_weight_models_only": true,
+  "maximum_simultaneous_mock_backbones": 1,
+  "actual_large_backbones_loaded": false,
+  "saved_evaluation_batch_cap_preserved": true,
+  "dynamic_best_epoch_TRAIN_receipt_checks": true,
+  "mock_model_loads_first_query": [
+    "timemoe_public",
+    "dasheng",
+    "bg_cnn"
+  ],
+  "fit_calls": 0,
+  "canonical_375_header_schema_ID_order_unique_and_NaN_CSV_checks": true,
+  "raw_query_CSV_SHA_recorded": true,
+  "public_Test_accessed": false,
+  "GPU_used": false,
+  "production_fivefold_inference_or_numeric_accuracy_proven": false,
+  "real_run_integration_remaining": "Requires completed production fivefold run; parent trainer currently under integration testing."
+}

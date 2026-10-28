@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "full_competition_training_executed": false,
+  "real_GPU_used": false,
+  "test_outer_calibration_sealed_opened": false,
+  "checks": {
+    "six_channels_old_four_exact_mask_conservation_and_gap_aware_derivative": "passed",
+    "signed_per_band_baseline_channel_preserves_bottom_quantile_negatives": "passed",
+    "1258_45_100_feature_counts_analytic_highband_features_and_common_gain": "passed",
+    "three_spectral_architectures_require_bounded_q_energy_pooling_and_v3_contrastive": "passed",
+    "partial_band_observations_allowed_and_wrong_feature_version_rejected": "passed",
+    "seven_candidate_tiny_CLI_checkpoint_reload_and_full_inference_replay": "passed",
+    "train_only_excess_prototypes_same_frozen_query_mode_and_legacy_mismatch_guard": "passed",
+    "GPU_preflight_V3_schema_CPU_fixture_only": "passed"
+  },
+  "details": {
+    "default_width_v3_parameter_counts": {
+      "tabm": 514240,
+      "cnn": 57698,
+      "fdy": 129390,
+      "itransformer": 292816
+    },
+    "V3_full_inference_replay_max_share_error": 4.2574746506041095e-09,
+    "tiny_CLI_epochs": 1,
+    "tiny_CLI_rows": {
+      "train": 24,
+      "validation": 12
+    },
+    "tiny_tree_feature_counts": {
+      "lgbm": 1258,
+      "lgbm_physics": 1303,
+      "lgbm_retrieval": 1309
+    }
+  },
+  "feature_contract": {
+    "fixed": 1258,
+    "physics_only": 45,
+    "foundation": 100,
+    "spectral_channels": 6,
+    "spectral_mask_energy_weights_preserved": true,
+    "prototype_mode": "per_band20db_excess_shape_v3"
+  },
+  "code_sha256": {
+    "mixtures.py": "d2a5fe6107a2fb10b1102ffe5267afa2ce236eb40508a91548336cbc20987ee9",
+    "models.py": "3f140bc5f014f104d89bc6859732e8fd9f9edd9de88941ee414d5b2fa59eb187",
+    "train.py": "436c76ab9f36aeb22fac9987c65d6dc4cc553addd92049d49bde6e026f6884b0",
+    "train_lgbm.py": "4081faea1b62a0ff65ddda6461e289c5b840f60526ee42e713a7d3e77da30bba",
+    "infer.py": "575d418ffba279ef1e1c1c272c8f72aba0c8794c9f4158e4678aaa8f4186df43",
+    "predict_lgbm.py": "a8d2a8570850bf3941860dc7d47eb0d39dbf8398596947a1cf5ee6a283e31582",
+    "contrastive.py": "3d08c28adf13e5b7323f71eb136237447e646dcafe4fc732bdd45f2fe1c00b07",
+    "gpu_preflight.py": "adeff5cfc0723408803f864336a7f28d5f8e345302261fee5802d813d7c306a1"
+  },
+  "runtime": {
+    "torch": "2.8.0+cu128",
+    "target_GPU_torch_2_8_verified": false
+  },
+  "limits": [
+    "Tiny fixtures validate wiring, conservation, versioning and reproducibility, not competition performance.",
+    "Per-band lower-baseline excess is a fixed feature and does not prove a separated natural-vessel component.",
+    "Target Ubuntu/PyTorch 2.8/CUDA 12.8 execution still requires a server smoke test."
+  ]
+}

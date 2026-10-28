@@ -1,0 +1,31 @@
+{
+  "format": "r12_evaluation_postflight_notes_v1",
+  "actual_evaluation_status": "completed",
+  "original_results_csv_unchanged": true,
+  "completion_receipt": "reports/R12_ACTUAL_EVALUATION_COMPLETION.json",
+  "independent_validation_pending": true,
+  "CI_coverage_limitation": {
+    "affected_panels": [
+      "R10_unseen__r9_complete",
+      "R10_unseen__combined_stress"
+    ],
+    "stored_CI": "null,n_clusters=0",
+    "reason_in_implementation": "Panel loader recognizes background_group or arrays.source_id; old unseen metadata has neither under those names.",
+    "actual_source_metadata": "reports/r10_diagnostics/factorial_transfer_r2/unseen_source_manifest.parquet",
+    "actual_source_metadata_sha256": "f37006ef0dc3abe77d3cb633d9c56042903d1034d2d82d87055246abd93ec20c",
+    "known_metadata_fields_available": [
+      "base_window_index",
+      "window_id",
+      "sensor_group",
+      "recording_week_start",
+      "recorder",
+      "site"
+    ],
+    "source_IDs_in_fact_available": true,
+    "not_an_error_in_point_metrics_or_gate_selection": true,
+    "no_source_policy_CSV_modification_or_automatic_reinference": true
+  },
+  "score_attribution": "Selected score=share; old R9 score is different mixed classifier/contrast, so use separate old share AUC comparison.",
+  "H1_mask_confounding": "Known TRAIN site/availability shift remains; original policy not retrospectively changed.",
+  "universal_RMSE_or_AUC_improvement_or_LB_GPU_guaranteed": false
+}

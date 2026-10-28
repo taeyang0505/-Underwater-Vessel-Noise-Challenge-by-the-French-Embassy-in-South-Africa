@@ -1,0 +1,101 @@
+{
+  "format": "r9_mac_tree_openmp_crash_audit_v1",
+  "status": "environment_fix_numeric_verified_awaiting_fresh_full_run_review",
+  "created_utc": "2026-10-26T06:41:31.474422+00:00",
+  "failed_run": "models/r9_mac_trees_r1",
+  "failed_pid": 2679,
+  "failed_return_code": -11,
+  "failed_run_preserved": true,
+  "automatic_retry": false,
+  "crash_extract_sha256": "c954dd1a835091a075c942b19750339d29642095ef3c5cdc318a25a9ba047302",
+  "primary_evidence": "fault stack crosses different libomp images; baseline numeric reproduces; single-runtime-only environment passes three independent processes",
+  "cases": {
+    "r9_omp_baseline_2048": {
+      "status": "native_SIGSEGV",
+      "shell_exit_code": 139,
+      "rows": 2048,
+      "features": 3827,
+      "threads": 4,
+      "libomp_images": [
+        "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib",
+        "/private/tmp/underwater-ml-deps/sklearn/.dylibs/libomp.dylib",
+        "/private/tmp/underwater-ml-deps/torch/lib/libomp.dylib"
+      ]
+    },
+    "r9_omp_homebrew_2048_a": {
+      "status": "passed",
+      "rows": 2048,
+      "feature_count": 3827,
+      "threads": 4,
+      "seconds": 3.3719478342682123,
+      "libomp_images": [
+        "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+      ],
+      "reload_delta": {
+        "share_batch1": 0.0,
+        "score_batch1": 0.0,
+        "share_batch7": 0.0,
+        "score_batch7": 0.0,
+        "share_batch256": 0.0,
+        "score_batch256": 0.0
+      }
+    },
+    "r9_omp_homebrew_2048_b": {
+      "status": "passed",
+      "rows": 2048,
+      "feature_count": 3827,
+      "threads": 4,
+      "seconds": 3.542024500668049,
+      "libomp_images": [
+        "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+      ],
+      "reload_delta": {
+        "share_batch1": 0.0,
+        "score_batch1": 0.0,
+        "share_batch7": 0.0,
+        "score_batch7": 0.0,
+        "share_batch256": 0.0,
+        "score_batch256": 0.0
+      }
+    },
+    "r9_omp_homebrew_8192_c": {
+      "status": "passed",
+      "rows": 8192,
+      "feature_count": 3827,
+      "threads": 4,
+      "seconds": 9.570891249924898,
+      "libomp_images": [
+        "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+      ],
+      "reload_delta": {
+        "share_batch1": 0.0,
+        "score_batch1": 0.0,
+        "share_batch7": 0.0,
+        "score_batch7": 0.0,
+        "share_batch256": 0.0,
+        "score_batch256": 0.0
+      }
+    }
+  },
+  "repeated2048_predictions_bitwise": {
+    "share": true,
+    "score": true,
+    "score_classifier": true
+  },
+  "package_versions_unchanged": true,
+  "source_policy_config_unchanged": true,
+  "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "source_bank_sha256_after_failure": {
+    "data/processed/sa_windows_db.npy": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "data/processed/external_segments_power.npy": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52"
+  },
+  "environment_lock_file": "reports/R9_MAC_TREE_ENVIRONMENT_LOCK.json",
+  "environment_lock_sha256": "505a7524f661ebcb72401b8b11f6ab752f3c4050e63ca414304990c2ac167fa6",
+  "official_sources": [
+    "https://lightgbm.readthedocs.io/en/latest/FAQ.html",
+    "https://github.com/lightgbm-org/LightGBM/issues/6595"
+  ],
+  "full_source_refit_after_failure": false,
+  "Test_GPU_SSH_or_report_accessed": false,
+  "scope_limit": "numeric runtime validation does not prove full79k-row memory/throughput or eliminate every possible native-library failure"
+}

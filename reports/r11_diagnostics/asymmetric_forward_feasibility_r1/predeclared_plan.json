@@ -1,0 +1,46 @@
+{
+  "format": "r11_model_free_forward_extension_plan_v1",
+  "created_utc": "2026-10-26T14:55:16.673522+00:00",
+  "source_run": "reports/r11_diagnostics/asymmetric_eq_r1",
+  "n": 1000,
+  "same_shared_specs_backgrounds_native_support": true,
+  "LF_db": [
+    -15,
+    -25,
+    -35
+  ],
+  "mid316to1995_db": [
+    0,
+    -10,
+    -20
+  ],
+  "high3162to7943_fullnative_peakSNR_db": [
+    15,
+    20
+  ],
+  "grid_count": 18,
+  "HF_scale_anchor": "STRICT highindices20..24; distinct from original midhigh10..24 anchor",
+  "EQ_transition": "LFindices0..8 factor;9 meanLFmid;10..18 midfactor;19 halfmidfactor;20..24zero",
+  "targets": {
+    "all_examples_y_RMS": [
+      0.15,
+      0.2
+    ],
+    "all_examples_high_bump_median": [
+      14,
+      18
+    ]
+  },
+  "all_conditions_preserved": true,
+  "per_site_feasibility_summary": true,
+  "model_outputs_or_errors_used": false,
+  "current_model_results_not_opened_before_plan": true,
+  "no_new_model_predictions_or_training": true,
+  "high_energy_floor": "A_HF/(B_total+A_HF) with fixed HFscale/profile/support gives lowerboundywhenallnonHFaddedenergyremoved",
+  "source_SHA": {
+    "predeclared_plan.json": "ed7ddc7b8a8d72ff04ac943bb8cb51f9cbd36eed909361b3d84f0f3910369a5f",
+    "FORWARD_BEFORE_MODEL.json": "22ff44c6b82fb401dd2af5f5b8f0b4c9b3f89d88354b5f7f345699fef3833b83",
+    "shared_specs.json": "4f05add31ffb4c0d47fbd72b0048af618bcca8a594c750adf3288391fb81f530",
+    "background_source_manifest.parquet": "2f2b1ad762b53b0cd7b98994b1faf8b50bdda3ecbbc3a91aa1a71bf97e667fee"
+  }
+}

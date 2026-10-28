@@ -1,0 +1,48 @@
+{
+  "format": "r9_neural_operator_supervisor_v1",
+  "status": "running",
+  "supervisor_pid": 2256,
+  "supervisor_start_ticks": 86168115,
+  "operator_script_sha256": "782915ace432a9828c281173f286bbedfdae3aa377dece37b1b8efd085184a86",
+  "base": "/workspace/underwater_vessel_noise_r9_r1",
+  "project": "/workspace/underwater_vessel_noise_r9_r1/project",
+  "archive_sha256": "d3d9919bfb27b1fb3e7dfc841efadd0af88c410499d72da78d02e506648450a0",
+  "config_file_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "data_bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+  "CUDA_preflight_sha256": "8d5b2848b07afd7cdd96f6145a52ad8ac16a50aff552a93ebb5d68cc6e3b0df9",
+  "structural_preflight_sha256": "099b2426f81322a280defa51f37046d6194be11513310bb4ef5b59de479e5d34",
+  "environment_sha256": "4e63b75f07201696bdd8bff513c185b5b57ae5ea5c63e05ab6b0a7d4f2ebf431",
+  "requested_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "requested_models": [
+    "bg_cnn",
+    "tfgrid_fdy_conformer",
+    "fdy",
+    "itransformer"
+  ],
+  "epochs": 100,
+  "early_stopping": false,
+  "tree_fit_on_server": false,
+  "retry_or_resume_allowed": false,
+  "started_unix": 1792996573.5342455,
+  "started_utc": "2026-10-26T06:36:13.534248+00:00",
+  "output": "/workspace/underwater_vessel_noise_r9_r1/project/models/group_cv_minute_full_r9_v1",
+  "child_pid": 2257,
+  "child_start_ticks": 86168117,
+  "command": [
+    "/workspace/underwater_vessel_noise_r9_r1/venv/bin/python",
+    "-u",
+    "-m",
+    "ops.run_r9_training",
+    "fit",
+    "--preflight",
+    "reports/R9_GPU_PREFLIGHT.json"
+  ],
+  "stdout_log": "/workspace/underwater_vessel_noise_r9_r1/logs/nn_training.log",
+  "last_alive_unix": 1792996643.5371401
+}

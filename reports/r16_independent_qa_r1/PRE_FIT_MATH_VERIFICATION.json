@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-27T06:58:12.921522+00:00",
+  "scope": "Purely numeric pre-fit checks; no Test or Test-derived input files, models, training, inference or policy fitting",
+  "R15_source_sha256": "595882595fc8fd1cc8da16049739c9ed6c549eee20a922515d798bbb9a892a5a",
+  "source_unchanged": true,
+  "fixed_full_native_post_EQ_peak_SNR_is_valid_conditioning": true,
+  "separable_reference_fixed_total_added_trajectory_max_error": 0.0,
+  "separable_reference_share_control": 0.14772727272727273,
+  "separable_reference_share_EQ": 0.14772727272727273,
+  "relative_HF_LF_added_power_ratio_multiplier": 63.09573444801932,
+  "expected_18dB_relative_multiplier": 63.09573444801933,
+  "original_peak_in_crop_checks": 900,
+  "post_EQ_peak_shift_toy": {
+    "pre_EQ_peak": 1,
+    "post_EQ_peak": 0,
+    "crop_begin": 1,
+    "crop_minutes": 1,
+    "requested_full_native_SNR_dB": 0.0,
+    "actual_inserted_peak_SNR_dB": -0.929988873475598,
+    "interpretation": "Full-native reference level and inserted-crop level differ; neither an absent original peak nor a label identity error."
+  },
+  "perfect_true_share_presence_AUC": 1.0,
+  "perfect_true_share_values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1e-08,
+    0.0001,
+    0.01,
+    0.8
+  ],
+  "rank_correlation_not_pair_agreement_toy": {
+    "Spearman": 0.7999999999999999,
+    "pairwise_order_agreement": 0.8333333333333334
+  },
+  "feasible_cap_examples": {
+    "old_fourNN": {
+      "tree_family": 0.5,
+      "bg_cnn": 0.125,
+      "fdy": 0.125,
+      "itransformer": 0.125,
+      "tfgrid_fdy_conformer": 0.125
+    },
+    "new_twoNN": {
+      "tree_family": 0.5,
+      "cnn_A": 0.25,
+      "cnn_B": 0.25
+    }
+  },
+  "infeasible_cap_example": {
+    "tree_family": 0.5,
+    "single_CNN": 0.5
+  },
+  "classifier_feature_QA_required": "Independent temporal branch only; no profile, normalized energy weight, PCA/anchor or shared regressor encoder if claiming per-band static-offset invariance; test rounding-commuting offsets and state pre-rounding limits.",
+  "fit_gate_report_contract": "Fit/checkpoint/ensemble selection may use only predeclared fit roles; gate evaluates a frozen candidate, report remains locked until all policies frozen.",
+  "limits": [
+    "New scaling/channel priors are admissible experimental alternatives, not a uniquely correct reconstruction of hidden official generation.",
+    "Fixed broadband SNR does not require fixed HF bump; mixture max-minus-median is nonlinear and depends on background and temporal support.",
+    "Independent presence classifier is a useful ablation, but no AUC improvement follows from architecture alone.",
+    "No causal conclusion about earlier public performance is established by these mathematical fixtures."
+  ]
+}

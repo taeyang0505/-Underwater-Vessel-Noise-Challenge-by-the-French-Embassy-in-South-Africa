@@ -1,0 +1,45 @@
+{
+  "raw_query_csv_sha256": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+  "rows": 1500,
+  "canonical_features": 375,
+  "ID_order_preserved": true,
+  "NaN_kept_missing": true,
+  "source_pins": {
+    "configs/r14_production_mac_v1.json": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+    "configs/r14_production_ensemble_protocol_v1.json": "a34fb6f8c5c6c6d1599da059842cd38b847987b41ae8bcbfc540df4c4bcd9430",
+    "ops/r14_production_approval.json": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+    "ops/run_r14_production_outputs_v2.py": "0e348cc7fbf9c11e70e9ac7e189034fca7c2f3fa143ef7d1c036ccd8f3a3a879",
+    "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0",
+    "models/r14_production_trees_r1/ALL_FIVEFOLD_TREES_FROZEN.json": "be37991e063375b80e7ff3fa501c6aef619408d1a59166c48487da1f6b5574cb",
+    "data/synthetic/group_cv_physics_r13_variants_v2/manifest.json": "ac592fcaa1ab8f7c8b0175988b4bdb27ab22392dbc26d6848f8bf447c17aa96b",
+    "models/r14_production_nn_fold0_r1/FAST_MODELS_FROZEN.json": "441602ae273ab82121e52d7008d972816060c8a52571f5fa750577f911450f71",
+    "models/r14_production_nn_fold0_r1/execution_identity.json": "f7c7e59ae0f10a6e092e0c58611284783fab778baf343e1384f20138dbbe4d88",
+    "models/r14_production_nn_fold0_r1/itransformer/summary.json": "c4e853ec513732b332174f9aa66c9460d5c269aca8865f35d4fa928fa4f27db1",
+    "models/r14_production_nn_fold0_r1/itransformer/best.pt": "eb6d0db04b820ee1de46382ebe7d8cc7bfdc14cf9044bfcf0307d6e9a568b8b2",
+    "models/r14_production_nn_fold0_r1/fdy/summary.json": "c37511d5b62f246bc6f319d657a9e3243d62c08c5991bf3d447062d2d30221aa",
+    "models/r14_production_nn_fold0_r1/fdy/best.pt": "573a15b1d0f8841d7d13b149dcdc39e26fb0384621dec5776f4d52648a550829",
+    "models/r14_production_nn_fold0_r1/bg_cnn/summary.json": "a9e9b6e319ce154281e522c534217766ef143ac9a5b046efc0498b55088ff3df",
+    "models/r14_production_nn_fold0_r1/bg_cnn/best.pt": "a36b05856fa24c7983079e17a40b123f2964eeebb02e36d6104e1a989eed9083",
+    "models/r14_production_outputs_r2/hybrid_fast3/policy.json": "f6662d5f82457a7ae67d6a5e942502ed0e2792e1681b7a9fe69e2b6de4b2033c"
+  },
+  "policy_sha256": "f6662d5f82457a7ae67d6a5e942502ed0e2792e1681b7a9fe69e2b6de4b2033c",
+  "neural_members": [
+    "itransformer",
+    "fdy",
+    "bg_cnn"
+  ],
+  "NN_folds": [
+    0
+  ],
+  "full_neural5fold_OOF": false,
+  "score_weight": 0.25,
+  "scope": "exact_Fold0_hybrid",
+  "Tree_folds": [
+    0
+  ],
+  "path": "submissions/R14_r2/submission_r14_fold0.csv",
+  "output_sha256": "81ec7e4f4324f6585c97d3f8e1140b62e401fc37251d833674e565c17fdb9978",
+  "numeric_roundtrip_exact": true,
+  "official_upload": false
+}

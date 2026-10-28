@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "scope": "tree_only_all5_complete",
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tree_registry_sha256": "be37991e063375b80e7ff3fa501c6aef619408d1a59166c48487da1f6b5574cb",
+  "policies": {
+    "0": {
+      "path": "models/r14_production_outputs_r1/fold_00/tree_policy.json",
+      "sha256": "dcafd161b275905c4e014391c750ca89ca421eb05ccfd19e4d06f56a38168bec"
+    },
+    "1": {
+      "path": "models/r14_production_outputs_r1/fold_01/tree_policy.json",
+      "sha256": "2574e839a29da15f3376588bd9d6d0e11bf68d84aa812029dc490045ed6ea43c"
+    },
+    "2": {
+      "path": "models/r14_production_outputs_r1/fold_02/tree_policy.json",
+      "sha256": "1f727532732195fb0c09b9545ed04960ed310891b1b7b1bc4151a2d260e42a6b"
+    },
+    "3": {
+      "path": "models/r14_production_outputs_r1/fold_03/tree_policy.json",
+      "sha256": "b2090190b464b5975d2c5c4032d2e8362e32f0b2bd5fb6381a05a4d839ca1406"
+    },
+    "4": {
+      "path": "models/r14_production_outputs_r1/fold_04/tree_policy.json",
+      "sha256": "00d08a723cdbc54b61847f7c1c1f236d919925f69f23ec02e9954d19cc0ad2b0"
+    }
+  },
+  "production_recipe_approved": true,
+  "approval_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+  "source_pins": {
+    "configs/r14_production_mac_v1.json": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+    "configs/r14_production_ensemble_protocol_v1.json": "a34fb6f8c5c6c6d1599da059842cd38b847987b41ae8bcbfc540df4c4bcd9430",
+    "ops/r14_production_approval.json": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+    "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0",
+    "models/r14_production_trees_r1/ALL_FIVEFOLD_TREES_FROZEN.json": "be37991e063375b80e7ff3fa501c6aef619408d1a59166c48487da1f6b5574cb",
+    "data/synthetic/group_cv_physics_r13_variants_v2/manifest.json": "ac592fcaa1ab8f7c8b0175988b4bdb27ab22392dbc26d6848f8bf447c17aa96b"
+  },
+  "all_neural5folds_completed": false
+}

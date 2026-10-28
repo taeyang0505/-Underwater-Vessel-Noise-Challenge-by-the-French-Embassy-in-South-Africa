@@ -1,0 +1,177 @@
+{
+  "module_file": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise/pipeline/energy_domain_augmentation.py",
+  "module_sha256": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5",
+  "real_competition_data_read": false,
+  "GPU_used": false,
+  "checks": {
+    "none_bitwise_matches_archived_training_for_all_four_NN": "passed",
+    "all_four_NN_both_modes_real_backprop_current_targets_and_checkpoint_reload": "passed",
+    "original_train_and_validation_arrays_unchanged": "passed",
+    "contrastive_receives_current_epoch_augmented_db": "passed",
+    "probability_strength_finite_bounds_and_active_feature3_requirement": "passed",
+    "CV_optional_config_mapping_and_old_command_unchanged": "passed",
+    "canonical_actual_CLI_both_modes_all_four_NN_with_forbidden_file_audit_guard": "passed",
+    "CLI_source_arrays_unchanged_and_only_inner_predictions_written": "passed"
+  },
+  "details": {
+    "tabm_none": {
+      "bitwise_state_and_predictions_match_archived_r1": true,
+      "epochs": 2
+    },
+    "cnn_none": {
+      "bitwise_state_and_predictions_match_archived_r1": true,
+      "epochs": 2
+    },
+    "fdy_none": {
+      "bitwise_state_and_predictions_match_archived_r1": true,
+      "epochs": 2
+    },
+    "itransformer_none": {
+      "bitwise_state_and_predictions_match_archived_r1": true,
+      "epochs": 2
+    },
+    "tabm_reference_smooth": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "cnn_reference_smooth": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "fdy_reference_smooth": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "itransformer_reference_smooth": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "tabm_common_response": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "cnn_common_response": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "fdy_common_response": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    },
+    "itransformer_common_response": {
+      "epochs": 2,
+      "reload_prediction_max_delta": 0.0,
+      "seed_sequence": [
+        1000045,
+        2000048
+      ],
+      "new_view_each_epoch": true,
+      "current_augmented_targets_used": true
+    }
+  },
+  "status": "passed",
+  "limits": "Synthetic tiny CPU fixture verifies wiring and invariants, not competition generalization or GPU memory.",
+  "canonical_CLI": {
+    "reference_smooth": {
+      "models": [
+        "tabm",
+        "cnn",
+        "fdy",
+        "itransformer"
+      ],
+      "epochs": 2,
+      "rows": {
+        "train": 16,
+        "inner_validation": 8
+      },
+      "completed": true,
+      "reload_prediction_max_delta": {
+        "tabm": 0.0,
+        "cnn": 0.0,
+        "fdy": 0.0,
+        "itransformer": 0.0
+      },
+      "outer_canary_never_opened": true,
+      "validation_only_predictions_written": true
+    },
+    "common_response": {
+      "models": [
+        "tabm",
+        "cnn",
+        "fdy",
+        "itransformer"
+      ],
+      "epochs": 2,
+      "rows": {
+        "train": 16,
+        "inner_validation": 8
+      },
+      "completed": true,
+      "reload_prediction_max_delta": {
+        "tabm": 0.0,
+        "cnn": 0.0,
+        "fdy": 0.0,
+        "itransformer": 0.0
+      },
+      "outer_canary_never_opened": true,
+      "validation_only_predictions_written": true
+    }
+  },
+  "code_sha256": {
+    "pipeline/train.py": "75e56b338f620793476c63fd14bf0050678427aeee3172299d74528b8a9b3367",
+    "pipeline/train_group_cv.py": "eeac4678e26dfad1ce3338964986187ffc58bbbfa9018a7693fdb31a68605168",
+    "pipeline/energy_domain_augmentation.py": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5"
+  },
+  "fixture_sha256": {
+    "/private/tmp/verify_dynamic_domain_training.py": "e0a77b0288c113f55b0e802a2d8f7661fca7aa527a1d9e11d1d77648dd2abcde",
+    "/private/tmp/verify_dynamic_domain_cli.py": "15abf2ea0015d6a15c2f2ec8c75041bdf3c4a695db537a142bcc22f98cf2c25e"
+  },
+  "runtime": {
+    "torch": "2.14.1",
+    "device": "cpu"
+  },
+  "full_competition_training_executed": false,
+  "outer_Test_calibration_sealed_values_opened": false
+}

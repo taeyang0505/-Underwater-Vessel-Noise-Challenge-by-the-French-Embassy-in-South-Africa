@@ -1,0 +1,38 @@
+{
+  "bg_cnn": {
+    "ship_minus_ambient_share_mean": 0.007902015000581741,
+    "share_mean_abs_difference": 0.05982266739010811,
+    "ship_minus_ambient_score_mean": 0.009267213754355907,
+    "interpretation": "Equal prediction at equal known y is correct for this target, not proof of equipment memorization."
+  },
+  "tfgrid_fdy_conformer": {
+    "ship_minus_ambient_share_mean": 0.008034677244722843,
+    "share_mean_abs_difference": 0.04808739945292473,
+    "ship_minus_ambient_score_mean": 0.004594920668751001,
+    "interpretation": "Equal prediction at equal known y is correct for this target, not proof of equipment memorization."
+  },
+  "fdy": {
+    "ship_minus_ambient_share_mean": 0.02094177156686783,
+    "share_mean_abs_difference": 0.07947486639022827,
+    "ship_minus_ambient_score_mean": 0.018722793087363243,
+    "interpretation": "Equal prediction at equal known y is correct for this target, not proof of equipment memorization."
+  },
+  "itransformer": {
+    "ship_minus_ambient_share_mean": 0.009017528966069221,
+    "share_mean_abs_difference": 0.07412482053041458,
+    "ship_minus_ambient_score_mean": 0.011177589185535908,
+    "interpretation": "Equal prediction at equal known y is correct for this target, not proof of equipment memorization."
+  },
+  "lgbm_physics": {
+    "ship_minus_ambient_share_mean": 0.0016792368842288852,
+    "share_mean_abs_difference": 0.06430882215499878,
+    "ship_minus_ambient_score_mean": 0.005622416269034147,
+    "interpretation": "Equal prediction at equal known y is correct for this target, not proof of equipment memorization."
+  },
+  "frozen_all5": {
+    "ship_minus_ambient_share_mean": 0.005597141105681658,
+    "share_mean_abs_difference": 0.05933485925197601,
+    "ship_minus_ambient_score_mean": 0.007749701384454966,
+    "interpretation": "Equal prediction at equal known y is correct for this target, not proof of equipment memorization."
+  }
+}

@@ -1,0 +1,1349 @@
+{
+  "format": "r14_production_full_epoch1_materialization_v1",
+  "fold": 1,
+  "variant": "baseline",
+  "rows": 78069,
+  "identity": {
+    "version": "r13_full_background_cv_data_v1",
+    "role": "train",
+    "fold": 1,
+    "rows": 78069,
+    "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+    "TRAIN_pool_sha256": "777f59b544d932ec59aa3c13631f42a6d9882279f3a10069bc4fecc26c65ce62",
+    "basis_sha256": "c4d397bd7350b22457cb55b356a3bfe2b13b573a3c559901d382da887452a056",
+    "dynamic_epoch_seed": 2026102713,
+    "all509_shared_references": true,
+    "reference_independent_CV": false,
+    "data_variant": "baseline",
+    "include_shape": true,
+    "runtime_policy_sha256": "55c6602561aafe975b0d40374a461952eeef0a3fb6558effad6e62d5a958dba1",
+    "epoch_law": "primaryonce/stratumzeroquotaHF/highshare0or25pct; exact20pctover5epochs"
+  },
+  "schedule_audit": {
+    "epoch": 1,
+    "examples": 78069,
+    "zero_count": 15614,
+    "zero_fraction": 0.20000256183632428,
+    "exact20percent_this_epoch": false,
+    "exact20percent_every5and100epochs": true,
+    "primary_once": true,
+    "zero_count_policy": "floor/ceil predeclared5epoch cycle",
+    "stratum_zero_quota_exact": true,
+    "HF_priority_actual": 7724,
+    "HF_priority_shortfall": 76,
+    "HF_assignment_is_not_small12k_replacement": true,
+    "quota_rows": [
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",1023]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",127]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",15]",
+        "source_rows": 3,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",16383]",
+        "source_rows": 3139,
+        "baseline_zero_quota": 631,
+        "HF_priority_desired": 316,
+        "HF_priority_actual": 314,
+        "shortfall": 2
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",20479]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",24703]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",255]",
+        "source_rows": 3,
+        "baseline_zero_quota": 2,
+        "HF_priority_desired": 1,
+        "HF_priority_actual": 1,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",29695]",
+        "source_rows": 120,
+        "baseline_zero_quota": 18,
+        "HF_priority_desired": 9,
+        "HF_priority_actual": 9,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",30719]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",31742]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",31744]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",31999]",
+        "source_rows": 11,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 1,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32512]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32704]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32719]",
+        "source_rows": 392,
+        "baseline_zero_quota": 80,
+        "HF_priority_desired": 40,
+        "HF_priority_actual": 40,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32735]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32736]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32743]",
+        "source_rows": 2,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32751]",
+        "source_rows": 3,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32760]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32763]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32765]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32766]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",32767]",
+        "source_rows": 16640,
+        "baseline_zero_quota": 3304,
+        "HF_priority_desired": 1652,
+        "HF_priority_actual": 1652,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",4095]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",508]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",55]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",7]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"201383949_Richards_Bay_201383949.1.24000\",8191]",
+        "source_rows": 25,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",1023]",
+        "source_rows": 5,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",111]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",12287]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",127]",
+        "source_rows": 6,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",15]",
+        "source_rows": 5,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",16061]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",16383]",
+        "source_rows": 773,
+        "baseline_zero_quota": 152,
+        "HF_priority_desired": 76,
+        "HF_priority_actual": 76,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",19191]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",20479]",
+        "source_rows": 12,
+        "baseline_zero_quota": 5,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",2047]",
+        "source_rows": 7,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 1,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",21502]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",2228]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",22527]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",23679]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24559]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24575]",
+        "source_rows": 4,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",24607]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",25599]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",255]",
+        "source_rows": 7,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",26623]",
+        "source_rows": 47,
+        "baseline_zero_quota": 11,
+        "HF_priority_desired": 6,
+        "HF_priority_actual": 5,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28287]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28668]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28671]",
+        "source_rows": 19,
+        "baseline_zero_quota": 6,
+        "HF_priority_desired": 3,
+        "HF_priority_actual": 2,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28672]",
+        "source_rows": 4,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",28687]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",29694]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",29695]",
+        "source_rows": 162,
+        "baseline_zero_quota": 35,
+        "HF_priority_desired": 18,
+        "HF_priority_actual": 17,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30175]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30335]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30719]",
+        "source_rows": 3,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30720]",
+        "source_rows": 8,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 1,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",30975]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31231]",
+        "source_rows": 36,
+        "baseline_zero_quota": 7,
+        "HF_priority_desired": 4,
+        "HF_priority_actual": 4,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31487]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31611]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31726]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31731]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31743]",
+        "source_rows": 49,
+        "baseline_zero_quota": 12,
+        "HF_priority_desired": 6,
+        "HF_priority_actual": 5,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31744]",
+        "source_rows": 5,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31871]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31999]",
+        "source_rows": 15,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",31]",
+        "source_rows": 6,
+        "baseline_zero_quota": 2,
+        "HF_priority_desired": 1,
+        "HF_priority_actual": 1,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32255]",
+        "source_rows": 15,
+        "baseline_zero_quota": 4,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32256]",
+        "source_rows": 4,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32257]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32319]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32383]",
+        "source_rows": 24,
+        "baseline_zero_quota": 4,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32499]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32503]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32505]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32507]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32509]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32511]",
+        "source_rows": 30,
+        "baseline_zero_quota": 7,
+        "HF_priority_desired": 4,
+        "HF_priority_actual": 3,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32512]",
+        "source_rows": 5,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32575]",
+        "source_rows": 17,
+        "baseline_zero_quota": 5,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32639]",
+        "source_rows": 5,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32640]",
+        "source_rows": 5,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32644]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32655]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32671]",
+        "source_rows": 168,
+        "baseline_zero_quota": 28,
+        "HF_priority_desired": 14,
+        "HF_priority_actual": 14,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32679]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32687]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32703]",
+        "source_rows": 17,
+        "baseline_zero_quota": 4,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32704]",
+        "source_rows": 5,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32707]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32711]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32713]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32719]",
+        "source_rows": 5,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32735]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32736]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32743]",
+        "source_rows": 18,
+        "baseline_zero_quota": 2,
+        "HF_priority_desired": 1,
+        "HF_priority_actual": 1,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32747]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32751]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32752]",
+        "source_rows": 5,
+        "baseline_zero_quota": 2,
+        "HF_priority_desired": 1,
+        "HF_priority_actual": 1,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32755]",
+        "source_rows": 41,
+        "baseline_zero_quota": 7,
+        "HF_priority_desired": 4,
+        "HF_priority_actual": 4,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32758]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32759]",
+        "source_rows": 63,
+        "baseline_zero_quota": 10,
+        "HF_priority_desired": 5,
+        "HF_priority_actual": 5,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32760]",
+        "source_rows": 3,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32761]",
+        "source_rows": 47,
+        "baseline_zero_quota": 11,
+        "HF_priority_desired": 6,
+        "HF_priority_actual": 5,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32762]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32763]",
+        "source_rows": 4,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32764]",
+        "source_rows": 29,
+        "baseline_zero_quota": 6,
+        "HF_priority_desired": 3,
+        "HF_priority_actual": 3,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32765]",
+        "source_rows": 10,
+        "baseline_zero_quota": 4,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 1,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32766]",
+        "source_rows": 82,
+        "baseline_zero_quota": 12,
+        "HF_priority_desired": 6,
+        "HF_priority_actual": 6,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",32767]",
+        "source_rows": 5369,
+        "baseline_zero_quota": 1130,
+        "HF_priority_desired": 565,
+        "HF_priority_actual": 537,
+        "shortfall": 28
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",4095]",
+        "source_rows": 4,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",511]",
+        "source_rows": 5,
+        "baseline_zero_quota": 2,
+        "HF_priority_desired": 1,
+        "HF_priority_actual": 1,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",59]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",63]",
+        "source_rows": 6,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",7]",
+        "source_rows": 5,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",8188]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"5708_Richards_Bay_5708.1.24000\",8191]",
+        "source_rows": 19,
+        "baseline_zero_quota": 4,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",15]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",16383]",
+        "source_rows": 3879,
+        "baseline_zero_quota": 755,
+        "HF_priority_desired": 378,
+        "HF_priority_actual": 378,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",2047]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",24575]",
+        "source_rows": 262,
+        "baseline_zero_quota": 39,
+        "HF_priority_desired": 20,
+        "HF_priority_actual": 20,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",28671]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32764]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32765]",
+        "source_rows": 155,
+        "baseline_zero_quota": 25,
+        "HF_priority_desired": 12,
+        "HF_priority_actual": 12,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32766]",
+        "source_rows": 3988,
+        "baseline_zero_quota": 803,
+        "HF_priority_desired": 402,
+        "HF_priority_actual": 399,
+        "shortfall": 3
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",32767]",
+        "source_rows": 9160,
+        "baseline_zero_quota": 1834,
+        "HF_priority_desired": 917,
+        "HF_priority_actual": 916,
+        "shortfall": 1
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",4095]",
+        "source_rows": 289,
+        "baseline_zero_quota": 55,
+        "HF_priority_desired": 28,
+        "HF_priority_actual": 28,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",7166]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",7]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"1 Richards Bay\",0,\"7005_Richards_Bay_7005.1.24000\",8191]",
+        "source_rows": 2,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",16383]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",24575]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",30719]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",32766]",
+        "source_rows": 2,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"2 Durban\",1,\"8230_ST600_8230.1.48000\",32767]",
+        "source_rows": 2107,
+        "baseline_zero_quota": 415,
+        "HF_priority_desired": 208,
+        "HF_priority_actual": 208,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"3 Cape_Recife\",2,\"8210_ST600_8210.1.48000\",8190]",
+        "source_rows": 408,
+        "baseline_zero_quota": 92,
+        "HF_priority_desired": 46,
+        "HF_priority_actual": 41,
+        "shortfall": 5
+      },
+      {
+        "stratum_key": "[\"4 Bird Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32766]",
+        "source_rows": 29,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"4 Bird Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32767]",
+        "source_rows": 2491,
+        "baseline_zero_quota": 497,
+        "HF_priority_desired": 248,
+        "HF_priority_actual": 248,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"4 Bird Island\",3,\"URN_8321_8321.1.12000\",32767]",
+        "source_rows": 72,
+        "baseline_zero_quota": 9,
+        "HF_priority_desired": 4,
+        "HF_priority_actual": 4,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32765]",
+        "source_rows": 5,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32766]",
+        "source_rows": 15,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",32767]",
+        "source_rows": 1668,
+        "baseline_zero_quota": 324,
+        "HF_priority_desired": 162,
+        "HF_priority_actual": 162,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.BirdIsland.2022_6509.1.24000\",511]",
+        "source_rows": 1,
+        "baseline_zero_quota": 1,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.StCroix.2022_6509.1.24000\",32766]",
+        "source_rows": 30,
+        "baseline_zero_quota": 3,
+        "HF_priority_desired": 2,
+        "HF_priority_actual": 2,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.StCroix.2022_6509.1.24000\",32767]",
+        "source_rows": 2540,
+        "baseline_zero_quota": 518,
+        "HF_priority_desired": 259,
+        "HF_priority_actual": 254,
+        "shortfall": 5
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN.StCroix.2022_6509.1.24000\",7]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",2047]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",32767]",
+        "source_rows": 5120,
+        "baseline_zero_quota": 1010,
+        "HF_priority_desired": 505,
+        "HF_priority_actual": 505,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",63]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",7]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"5 St Croix Island\",3,\"URN_8321_8321.1.12000\",8191]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"6 Riy_Banks\",1,\"8230_ST600_8230.1.48000\",8190]",
+        "source_rows": 317,
+        "baseline_zero_quota": 58,
+        "HF_priority_desired": 29,
+        "HF_priority_actual": 29,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",31744]",
+        "source_rows": 5082,
+        "baseline_zero_quota": 1009,
+        "HF_priority_desired": 504,
+        "HF_priority_actual": 504,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",31]",
+        "source_rows": 5084,
+        "baseline_zero_quota": 1050,
+        "HF_priority_desired": 525,
+        "HF_priority_actual": 509,
+        "shortfall": 16
+      },
+      {
+        "stratum_key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",32767]",
+        "source_rows": 2672,
+        "baseline_zero_quota": 544,
+        "HF_priority_desired": 272,
+        "HF_priority_actual": 268,
+        "shortfall": 4
+      },
+      {
+        "stratum_key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",4095]",
+        "source_rows": 1,
+        "baseline_zero_quota": 0,
+        "HF_priority_desired": 0,
+        "HF_priority_actual": 0,
+        "shortfall": 0
+      },
+      {
+        "stratum_key": "[\"7 St_Francis\",4,\"SM2M_Cape_StFrancis_SM2M.1.48000\",992]",
+        "source_rows": 5084,
+        "baseline_zero_quota": 1022,
+        "HF_priority_desired": 511,
+        "HF_priority_actual": 509,
+        "shortfall": 2
+      }
+    ],
+    "highshare_positive_count": 0,
+    "long_positive_count": 18736,
+    "baseline_mask_class_quotas_preserved_not_positive_background_IDs": true
+  },
+  "typed_SHA": {
+    "db": "20b5215445d9d32bc7c1a7e8779128374c3b41d5d9d339f66c18d520bbb857b0",
+    "cell_share": "1e159ea14e639b8af4d7a1043676a14dbf599a9d161747581e4f80eac4e9eeb7",
+    "share": "b289a72b121063e72ff5c8a6d5a823f70c4fd57972c6cb616eb9e5d23f46b014",
+    "presence": "aff127d192a95262ab69eb5d1b72b1c8e63283171698108c1eeb5305157ad75f",
+    "site": "aa3712bec1ab23389e85fd146526ef40db03504b69d3835a475b17b2ff2416e7",
+    "sample_id": "f5dde610e752a9c8728cefc42a495c201349da4b0157ad61fc2afe99f67ad903",
+    "source_id": "70c05dc3b22c0abee39714c2b6a5179201735e0e5bd2305121ec3d694707c1fe",
+    "background_group": "ef595a4214077d632073bf991b78f7e98a7716afcd7e7a23d8021352b85bab64",
+    "base_window_index": "39ea58c3b94136a92a9914d861dcc662fe1d7b19bd9b0ce7e27860a81444deda",
+    "reference_index": "7ef0f2ba0b4daa2c7e993ef8c1dd610d36c460af7ea89f5895eb1e105b16ad15",
+    "family": "ea7cdfdd5acd25656e7cc39641e4fa6d97a25253d4ff674b720c03ed9552c0aa",
+    "explicit_no_source": "a19af1d1b8dd4e0c55286d38cef12c5e89732c370bb531917ec34e127ae55082",
+    "highshare": "90b05b645c2b91c959a63febdaca7c5c5a73053ea4eafe143ec224a264407c62"
+  },
+  "NPZ_sha256": "2e0bdb22861d0ace889544486fdd6fe503403e680323f18d8cf0424a7de218bd",
+  "max_raw_label_rounded_pool_gap": 0.001955270767211914,
+  "full_primary_once": true,
+  "elapsed_seconds": 80.11641245894134,
+  "peak_RSS_bytes": 986365952
+}

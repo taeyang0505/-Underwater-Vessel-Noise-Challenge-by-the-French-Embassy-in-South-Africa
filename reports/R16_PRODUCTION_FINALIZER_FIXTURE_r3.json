@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "ensemble_fixture": {
+    "status": "passed",
+    "weights_when_CNN_perfect": [
+      0.5,
+      0.24999999999999992,
+      0.06755782075745109,
+      0.08670769195175669,
+      0.09573448729079236
+    ],
+    "score_independent_of_regression": true,
+    "Tree_family_floor": 0.5,
+    "NN_architecture_cap": 0.25,
+    "ridge": 0.0001
+  },
+  "CSV_roundtrip_exact": true,
+  "incomplete_models_rejected_before_labels_query_outputs": true,
+  "actual_completed_R16_inference": "not_measured_until_NN100_all4_complete",
+  "Test_opened": false,
+  "learner_training": false,
+  "script_sha256": "c742c1778fcdac7c20a3e064a268df60ce47e3a87416696f7203fba91cdf8f67"
+}

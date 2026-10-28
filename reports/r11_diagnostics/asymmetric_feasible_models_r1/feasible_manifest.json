@@ -1,0 +1,592 @@
+{
+  "format": "r11_all_physics_feasible_conditions_v1",
+  "selection": "ALL conditions satisfying only model-free panel constraints; no error-based selection",
+  "conditions": [
+    {
+      "name": "lf15_mid20_hf15",
+      "LF_EQ_db": -15,
+      "mid_EQ_db": -20,
+      "strict_HF_peak_SNR_db": 15,
+      "all": {
+        "n": 1000,
+        "y_mean": 0.0728452474780577,
+        "y_rms": 0.16769335445333702,
+        "high_bump_median": 14.859607295821158,
+        "y_quantiles": [
+          0.0,
+          0.0,
+          0.00723193815840144,
+          0.24201895761950246,
+          0.94051738484061
+        ],
+        "high_bump_quantiles": [
+          0.0,
+          0.7534816274721248,
+          14.859607295821158,
+          15.15184884740855,
+          45.17901316929593
+        ],
+        "high_only_energy_floor_RMS": 0.1344084960008235,
+        "fraction_with_high_only_floor_above020": 0.094,
+        "both_panel_targets_met": true
+      },
+      "by_site": {
+        "1 Richards Bay": {
+          "n": 594,
+          "y_mean": 0.07979761560163151,
+          "y_rms": 0.17050752872364602,
+          "high_bump_median": 14.903597375061196,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.008987873227697753,
+            0.2630537943764441,
+            0.94051738484061
+          ],
+          "high_bump_quantiles": [
+            0.061766178366063684,
+            0.8851854054554997,
+            14.903597375061196,
+            15.17583065948473,
+            45.17901316929593
+          ],
+          "high_only_energy_floor_RMS": 0.13050806258422856,
+          "fraction_with_high_only_floor_above020": 0.10101010101010101,
+          "both_panel_targets_met": true
+        },
+        "2 Durban": {
+          "n": 101,
+          "y_mean": 0.005518353982788399,
+          "y_rms": 0.03093121773303646,
+          "high_bump_median": 14.743331128660394,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.00042380249023232856,
+            0.007661803528363917,
+            0.30609663599474146
+          ],
+          "high_bump_quantiles": [
+            0.0,
+            0.88932615837237,
+            14.743331128660394,
+            15.143700204457417,
+            25.96344594404723
+          ],
+          "high_only_energy_floor_RMS": 0.003527531089036671,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "4 Bird Island": {
+          "n": 63,
+          "y_mean": 0.18754549800929463,
+          "y_rms": 0.3200575977435227,
+          "high_bump_median": 14.998181785996128,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.029439630384876497,
+            0.6158852191563162,
+            0.9265318555116894
+          ],
+          "high_bump_quantiles": [
+            0.06668419661938252,
+            0.27503877951212913,
+            14.998181785996128,
+            15.132724851993476,
+            37.12109256301202
+          ],
+          "high_only_energy_floor_RMS": 0.29431498754779667,
+          "fraction_with_high_only_floor_above020": 0.3333333333333333,
+          "both_panel_targets_met": false
+        },
+        "5 St Croix Island": {
+          "n": 193,
+          "y_mean": 0.022102763286340903,
+          "y_rms": 0.04936775889220834,
+          "high_bump_median": 14.64664934213177,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.0077237142849401665,
+            0.048170477678546327,
+            0.3209914963819989
+          ],
+          "high_bump_quantiles": [
+            0.14096288932377377,
+            0.7613381979507325,
+            14.64664934213177,
+            15.140103783957606,
+            17.28492367739008
+          ],
+          "high_only_energy_floor_RMS": 0.01837833199304357,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "7 St_Francis": {
+          "n": 49,
+          "y_mean": 0.17973286468525704,
+          "y_rms": 0.2796236323797123,
+          "high_bump_median": 14.89689471367065,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.09289483969853556,
+            0.5105611260892677,
+            0.8833749997690148
+          ],
+          "high_bump_quantiles": [
+            0.30017496207739924,
+            2.7393946861612055,
+            14.89689471367065,
+            15.140995578767898,
+            15.341124202106775
+          ],
+          "high_only_energy_floor_RMS": 0.22245557078589476,
+          "fraction_with_high_only_floor_above020": 0.2653061224489796,
+          "both_panel_targets_met": false
+        }
+      }
+    },
+    {
+      "name": "lf25_mid10_hf15",
+      "LF_EQ_db": -25,
+      "mid_EQ_db": -10,
+      "strict_HF_peak_SNR_db": 15,
+      "all": {
+        "n": 1000,
+        "y_mean": 0.08853240264311177,
+        "y_rms": 0.19499282494489847,
+        "high_bump_median": 14.859607295821158,
+        "y_quantiles": [
+          0.0,
+          0.0,
+          0.00920857130251038,
+          0.29931393880843143,
+          0.9745401387506709
+        ],
+        "high_bump_quantiles": [
+          0.0,
+          0.7534816274721248,
+          14.859607295821158,
+          15.15184884740855,
+          45.17901316929593
+        ],
+        "high_only_energy_floor_RMS": 0.1344084960008235,
+        "fraction_with_high_only_floor_above020": 0.094,
+        "both_panel_targets_met": true
+      },
+      "by_site": {
+        "1 Richards Bay": {
+          "n": 594,
+          "y_mean": 0.09712938077806514,
+          "y_rms": 0.20016042759041486,
+          "high_bump_median": 14.903597375061196,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.012726642173964733,
+            0.33310095443983,
+            0.9745401387506709
+          ],
+          "high_bump_quantiles": [
+            0.061766178366063684,
+            0.8851854054554997,
+            14.903597375061196,
+            15.17583065948473,
+            45.17901316929593
+          ],
+          "high_only_energy_floor_RMS": 0.13050806258422856,
+          "fraction_with_high_only_floor_above020": 0.10101010101010101,
+          "both_panel_targets_met": false
+        },
+        "2 Durban": {
+          "n": 101,
+          "y_mean": 0.00947462912956771,
+          "y_rms": 0.05757473555637191,
+          "high_bump_median": 14.743331128660394,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.0005823542207096087,
+            0.009279823415478117,
+            0.5717342634904613
+          ],
+          "high_bump_quantiles": [
+            0.0,
+            0.88932615837237,
+            14.743331128660394,
+            15.143700204457417,
+            25.96344594404723
+          ],
+          "high_only_energy_floor_RMS": 0.003527531089036671,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "4 Bird Island": {
+          "n": 63,
+          "y_mean": 0.2118672581781621,
+          "y_rms": 0.35146827603936953,
+          "high_bump_median": 14.998181785996128,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.03366624864623216,
+            0.6751023449368666,
+            0.9677487855005219
+          ],
+          "high_bump_quantiles": [
+            0.06668419661938252,
+            0.27503877951212913,
+            14.998181785996128,
+            15.132724851993476,
+            37.12109256301202
+          ],
+          "high_only_energy_floor_RMS": 0.29431498754779667,
+          "fraction_with_high_only_floor_above020": 0.3333333333333333,
+          "both_panel_targets_met": false
+        },
+        "5 St Croix Island": {
+          "n": 193,
+          "y_mean": 0.03166895211961476,
+          "y_rms": 0.07357649746050653,
+          "high_bump_median": 14.64664934213177,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.009529738588285304,
+            0.061221613220946575,
+            0.43915554222603753
+          ],
+          "high_bump_quantiles": [
+            0.14096288932377377,
+            0.7613381979507325,
+            14.64664934213177,
+            15.140103783957606,
+            17.28492367739008
+          ],
+          "high_only_energy_floor_RMS": 0.01837833199304357,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "7 St_Francis": {
+          "n": 49,
+          "y_mean": 0.2126707733580588,
+          "y_rms": 0.3214151282693111,
+          "high_bump_median": 14.89689471367065,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.13526686164864832,
+            0.5267252944863753,
+            0.9599327534727734
+          ],
+          "high_bump_quantiles": [
+            0.30017496207739924,
+            2.7393946861612055,
+            14.89689471367065,
+            15.140995578767898,
+            15.341124202106775
+          ],
+          "high_only_energy_floor_RMS": 0.22245557078589476,
+          "fraction_with_high_only_floor_above020": 0.2653061224489796,
+          "both_panel_targets_met": false
+        }
+      }
+    },
+    {
+      "name": "lf25_mid20_hf15",
+      "LF_EQ_db": -25,
+      "mid_EQ_db": -20,
+      "strict_HF_peak_SNR_db": 15,
+      "all": {
+        "n": 1000,
+        "y_mean": 0.06455563197823222,
+        "y_rms": 0.1517683147076357,
+        "high_bump_median": 14.859607295821158,
+        "y_quantiles": [
+          0.0,
+          0.0,
+          0.006423235609916157,
+          0.21671302509709015,
+          0.9056246649775178
+        ],
+        "high_bump_quantiles": [
+          0.0,
+          0.7534816274721248,
+          14.859607295821158,
+          15.15184884740855,
+          45.17901316929593
+        ],
+        "high_only_energy_floor_RMS": 0.1344084960008235,
+        "fraction_with_high_only_floor_above020": 0.094,
+        "both_panel_targets_met": true
+      },
+      "by_site": {
+        "1 Richards Bay": {
+          "n": 594,
+          "y_mean": 0.07059848865060966,
+          "y_rms": 0.15146365841096665,
+          "high_bump_median": 14.903597375061196,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.007833590797554874,
+            0.2307015145577193,
+            0.8653817579578935
+          ],
+          "high_bump_quantiles": [
+            0.061766178366063684,
+            0.8851854054554997,
+            14.903597375061196,
+            15.17583065948473,
+            45.17901316929593
+          ],
+          "high_only_energy_floor_RMS": 0.13050806258422856,
+          "fraction_with_high_only_floor_above020": 0.10101010101010101,
+          "both_panel_targets_met": true
+        },
+        "2 Durban": {
+          "n": 101,
+          "y_mean": 0.003651713825823226,
+          "y_rms": 0.017453447769391086,
+          "high_bump_median": 14.743331128660394,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.0003950160373167765,
+            0.007014658762347417,
+            0.1704851361121715
+          ],
+          "high_bump_quantiles": [
+            0.0,
+            0.88932615837237,
+            14.743331128660394,
+            15.143700204457417,
+            25.96344594404723
+          ],
+          "high_only_energy_floor_RMS": 0.003527531089036671,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "4 Bird Island": {
+          "n": 63,
+          "y_mean": 0.17943677977268335,
+          "y_rms": 0.30771663188337006,
+          "high_bump_median": 14.998181785996128,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.025631475687110262,
+            0.5968742016472555,
+            0.9056246649775178
+          ],
+          "high_bump_quantiles": [
+            0.06668419661938252,
+            0.27503877951212913,
+            14.998181785996128,
+            15.132724851993476,
+            37.12109256301202
+          ],
+          "high_only_energy_floor_RMS": 0.29431498754779667,
+          "fraction_with_high_only_floor_above020": 0.3333333333333333,
+          "both_panel_targets_met": false
+        },
+        "5 St Croix Island": {
+          "n": 193,
+          "y_mean": 0.015080375563826824,
+          "y_rms": 0.026797953408279368,
+          "high_bump_median": 14.64664934213177,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.006716650999928104,
+            0.04024159720376223,
+            0.12214093961681252
+          ],
+          "high_bump_quantiles": [
+            0.14096288932377377,
+            0.7613381979507325,
+            14.64664934213177,
+            15.140103783957606,
+            17.28492367739008
+          ],
+          "high_only_energy_floor_RMS": 0.01837833199304357,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "7 St_Francis": {
+          "n": 49,
+          "y_mean": 0.16400565334416953,
+          "y_rms": 0.25839847142602507,
+          "high_bump_median": 14.89689471367065,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.0807426070514791,
+            0.47000912093143676,
+            0.7920406840145928
+          ],
+          "high_bump_quantiles": [
+            0.30017496207739924,
+            2.7393946861612055,
+            14.89689471367065,
+            15.140995578767898,
+            15.341124202106775
+          ],
+          "high_only_energy_floor_RMS": 0.22245557078589476,
+          "fraction_with_high_only_floor_above020": 0.2653061224489796,
+          "both_panel_targets_met": false
+        }
+      }
+    },
+    {
+      "name": "lf35_mid10_hf15",
+      "LF_EQ_db": -35,
+      "mid_EQ_db": -10,
+      "strict_HF_peak_SNR_db": 15,
+      "all": {
+        "n": 1000,
+        "y_mean": 0.08733229622406213,
+        "y_rms": 0.19299479192222924,
+        "high_bump_median": 14.859607295821158,
+        "y_quantiles": [
+          0.0,
+          0.0,
+          0.008849539095686747,
+          0.2911305398363751,
+          0.9708768750238109
+        ],
+        "high_bump_quantiles": [
+          0.0,
+          0.7534816274721248,
+          14.859607295821158,
+          15.15184884740855,
+          45.17901316929593
+        ],
+        "high_only_energy_floor_RMS": 0.1344084960008235,
+        "fraction_with_high_only_floor_above020": 0.094,
+        "both_panel_targets_met": true
+      },
+      "by_site": {
+        "1 Richards Bay": {
+          "n": 594,
+          "y_mean": 0.09588602849458518,
+          "y_rms": 0.19805067109491245,
+          "high_bump_median": 14.903597375061196,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.012316548756062145,
+            0.3314106792158252,
+            0.9708768750238109
+          ],
+          "high_bump_quantiles": [
+            0.061766178366063684,
+            0.8851854054554997,
+            14.903597375061196,
+            15.17583065948473,
+            45.17901316929593
+          ],
+          "high_only_energy_floor_RMS": 0.13050806258422856,
+          "fraction_with_high_only_floor_above020": 0.10101010101010101,
+          "both_panel_targets_met": true
+        },
+        "2 Durban": {
+          "n": 101,
+          "y_mean": 0.008959389113262939,
+          "y_rms": 0.053815575118965904,
+          "high_bump_median": 14.743331128660394,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.0005800966128534647,
+            0.008579009875951114,
+            0.5342631875067811
+          ],
+          "high_bump_quantiles": [
+            0.0,
+            0.88932615837237,
+            14.743331128660394,
+            15.143700204457417,
+            25.96344594404723
+          ],
+          "high_only_energy_floor_RMS": 0.003527531089036671,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "4 Bird Island": {
+          "n": 63,
+          "y_mean": 0.21092468901637224,
+          "y_rms": 0.35022275890643617,
+          "high_bump_median": 14.998181785996128,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.033490648008444146,
+            0.6735421526111831,
+            0.9673400738011477
+          ],
+          "high_bump_quantiles": [
+            0.06668419661938252,
+            0.27503877951212913,
+            14.998181785996128,
+            15.132724851993476,
+            37.12109256301202
+          ],
+          "high_only_energy_floor_RMS": 0.29431498754779667,
+          "fraction_with_high_only_floor_above020": 0.3333333333333333,
+          "both_panel_targets_met": false
+        },
+        "5 St Croix Island": {
+          "n": 193,
+          "y_mean": 0.030371152761328003,
+          "y_rms": 0.0697744200381292,
+          "high_bump_median": 14.64664934213177,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.009417753733225372,
+            0.059663358437763124,
+            0.42135350940648125
+          ],
+          "high_bump_quantiles": [
+            0.14096288932377377,
+            0.7613381979507325,
+            14.64664934213177,
+            15.140103783957606,
+            17.28492367739008
+          ],
+          "high_only_energy_floor_RMS": 0.01837833199304357,
+          "fraction_with_high_only_floor_above020": 0.0,
+          "both_panel_targets_met": false
+        },
+        "7 St_Francis": {
+          "n": 49,
+          "y_mean": 0.21063692054839256,
+          "y_rms": 0.31906892458834923,
+          "high_bump_median": 14.89689471367065,
+          "y_quantiles": [
+            0.0,
+            0.0,
+            0.13462496266694868,
+            0.5158924419818879,
+            0.9557175598303748
+          ],
+          "high_bump_quantiles": [
+            0.30017496207739924,
+            2.7393946861612055,
+            14.89689471367065,
+            15.140995578767898,
+            15.341124202106775
+          ],
+          "high_only_energy_floor_RMS": 0.22245557078589476,
+          "fraction_with_high_only_floor_above020": 0.2653061224489796,
+          "both_panel_targets_met": false
+        }
+      }
+    }
+  ],
+  "extension_results_sha256": "5aba79d36502a76144fa3438024d0098153e905d7544e29e338afbd97c09a1ec",
+  "extension_plan_sha256": "dbfd533264d8f0ddf32d1805655b482a81d726f940d10f22e91a83393d4f0617"
+}

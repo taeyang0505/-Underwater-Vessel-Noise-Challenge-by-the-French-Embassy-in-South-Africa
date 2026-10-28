@@ -1,0 +1,61 @@
+{
+  "version": "r15_descriptive_input_output_v1",
+  "created_unix": 1793078111.1671271,
+  "source_file_sha256": {
+    "eda_deep/tables/test_window_features.csv": "c5b3a24d02053184d1f6baf80148e4e32537dfa304e5ec6c87afb23825a6c35b",
+    "reports/r15_member_audit_r1/aligned_saved_predictions_1500.csv": "c74e79a7436bedf3c7e0733353e60f58a5994b7b00906be5e39fc217793ea9b1",
+    "reports/r15_member_audit_r1/RESULTS.json": "b737e6956381452919eaf6791ea41dab80679a9f5d537128bf345328a421f3b2",
+    "reports/r15_member_audit_r1/distribution_summary.csv": "adc64f2e3041d02103546a4c39db503e4fa742a59bf8c4690c16ef992080a117",
+    "eda_deep/deep_eda.py": "96a15617498c024a8454f69b01c12ca6d46a1c577c06e4e47dd3fb0ab1d542d8",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "data/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "models/r14_production_outputs_r2/hybrid_fast3/policy.json": "f6662d5f82457a7ae67d6a5e942502ed0e2792e1681b7a9fe69e2b6de4b2033c",
+    "models/r14_production_outputs_r2/hybrid_fast3/COMPLETED.json": "3b45dbca13fba7e0e19e68c194d429cd1ff02122b0cbd2878acda7dcb1f99a01",
+    "submissions/r14_main_r2/submission_r14_step1.csv": "947c71dcc52d50fa2e3f63a6bbc3859cca9413169847697a509199c4d5da70a4",
+    "ops/r15_input_output_audit.py": "1afb667ed6c4a5606e2346d9a9508db80980c0ffd248464bf710930d0443e40e"
+  },
+  "hidden_labels_available": false,
+  "fit_inference_calibration_submission": false,
+  "features": [
+    "bump_high_db",
+    "bump_low_db",
+    "corr_low_high",
+    "naive_share_q20",
+    "tilt_db",
+    "level_db",
+    "std_broadband_db",
+    "Nobs",
+    "S_phys_safe_mid_db",
+    "centroid_hz",
+    "mean_abs_step_db",
+    "lag1_acf_broadband",
+    "d7943_5012",
+    "probe_conf",
+    "probe_nn_rms_db"
+  ],
+  "prediction_source": "reports/r15_member_audit_r1/aligned_saved_predictions_1500.csv",
+  "S_phys_formula": "mean_f(max_observed_t db_tf - median_observed_t db_tf), f=10..22 inclusive, Hz316.2..5011.9; unitsdB",
+  "S_phys_policy": "Unlearned descriptive scalar, not a ship probability or share label; no parameters inferred from Test/LB",
+  "group_rules": {
+    "low_temporal": "bump_high_db<=its q25 AND std_broadband_db<=its q25",
+    "high_static_proxy": "tilt_db<=its q25 (LOW-minus-HIGH tilt); proxy only, not PCA/LF-anchor maps",
+    "joint": "intersection of the preceding groups",
+    "historical_low_bump": "bump_high_db<=5dB"
+  },
+  "threshold_scope": "Input-only descriptive quartile summaries; never used for labels, fitting or changing model policy",
+  "top50": "Largest absolute R14_step1.share-R9_all5.share; retain signed delta. Positive-only top50 separately.",
+  "site_semantics": "Historical kNN domain-probe prediction; not actual Test site GT",
+  "outputs": [
+    "joined1500.csv",
+    "model_distribution.csv",
+    "site_model_stats.csv",
+    "feature_prediction_correlations.csv",
+    "model_correlations_pearson.csv",
+    "model_correlations_spearman.csv",
+    "lowtemporal_highstatic_groups.csv",
+    "top50_absdelta.csv",
+    "top50_positive_delta.csv",
+    "RESULTS.json",
+    "README.md"
+  ]
+}

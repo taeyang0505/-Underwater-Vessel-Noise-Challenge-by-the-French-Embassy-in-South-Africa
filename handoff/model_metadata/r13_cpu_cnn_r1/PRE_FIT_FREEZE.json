@@ -1,0 +1,22 @@
+{
+  "data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+  "source_pins": {
+    "ops/train_r13_cnn.py": "044224beec1eaf565183bec627f9785c3d1f3669ab4027133081b9d214f9e8e2",
+    "configs/r13_cpu_correction_v1.json": "c6fe4657a6778093d04eb696149f53791f380db68d26a1a21d3860dad56d3c08",
+    "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/dataset_r13.py": "13c47d9208ea8c4578617ee9434be38f0240558e070c5a043e384bffad8939af",
+    "data/synthetic/r13_cpu_correction_v1/manifest.json": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+    "data/synthetic/r13_cpu_correction_v1/readiness.json": "4a54a88ac6bafa5b43ecb380de73781300785dd836b53e7076876b1c3b281aa9",
+    "models/r12_mask_matched_control_r2/cnn/summary.json": "64164f1849ed05a4e046d257affe528fa3dc9c9898c3731656eeddf212ba2b45",
+    "models/r12_mask_matched_control_r2/cnn/best.pt": "e74d9b3af5e1c79934ecd809f38f14b284d80ce3e0705cff7787104e5bfd45b6",
+    "models/r12_shared_basis_v1/basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "data/synthetic/r12_cpu_ablation_v3/cnn_subset_indices.npy": "59dc2135ea685d27e626ca2ce6cf5d1ad62b263642d7afd0f780263902eeeae6"
+  },
+  "control_reuse": "baselineP1 only; no partial run reuse",
+  "control_path": "models/r12_mask_matched_control_r2/cnn",
+  "subset_examples": 6000,
+  "validation_fit_rows": 1000,
+  "gate_eval_Test_read": false,
+  "created_unix": 1793037682.020881
+}

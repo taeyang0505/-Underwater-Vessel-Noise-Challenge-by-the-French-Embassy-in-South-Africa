@@ -1,0 +1,45 @@
+{
+  "format": "r14_fullTRAIN_vs_R12_validation_fit_metadata_separation_v1",
+  "status": "passed",
+  "TRAIN_rows": 78869,
+  "validation_fit_rows": 1000,
+  "primary_ID_intersection": 0,
+  "background_group_intersection": 0,
+  "same_sensor_rows_checked": 1000,
+  "minimum_900second_support_gap_hours": 24.25,
+  "minimum_required_hours": 24.0,
+  "per_sensor": {
+    "0": {
+      "validation_rows": 512,
+      "TRAIN_rows_same_sensor": 45969,
+      "minimum_support_gap_hours": 26.0
+    },
+    "1": {
+      "validation_rows": 119,
+      "TRAIN_rows_same_sensor": 2700,
+      "minimum_support_gap_hours": 216.0
+    },
+    "3": {
+      "validation_rows": 181,
+      "TRAIN_rows_same_sensor": 12004,
+      "minimum_support_gap_hours": 43.0
+    },
+    "4": {
+      "validation_rows": 188,
+      "TRAIN_rows_same_sensor": 17956,
+      "minimum_support_gap_hours": 24.25
+    }
+  },
+  "time_interpretation": "Same original export-clock per sensor; no independently verified UTC assertion",
+  "files_sha256": {
+    "data/synthetic/group_cv_physics_r13_variants_v2/fold_00/TRAIN_pool.parquet": "bfb6899fd3aa447566402d84892573aa8884bf9e388409d00265e9dd459d8b3f",
+    "data/synthetic/r12_cpu_ablation_v3/validation_fit_metadata.parquet": "18430e47cd44d35794432eafbb2640c1acf5fb90b8aa8ee31822b1f330a43a7f"
+  },
+  "metadata_columns_read": [
+    "base_window_index",
+    "background_group",
+    "sensor_group",
+    "start_export_clock"
+  ],
+  "acoustic_arrays_targets_model_predictions_read": false
+}

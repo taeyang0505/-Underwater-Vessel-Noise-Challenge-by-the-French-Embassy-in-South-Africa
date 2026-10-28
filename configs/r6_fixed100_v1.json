@@ -1,0 +1,122 @@
+{
+  "version": "r6_fixed100_v1",
+  "status": "fixed_before_actual_retraining",
+  "created_utc": "2026-10-25T20:30:08.181234+00:00",
+  "seed": 20261026,
+  "scope": "same five CPU CNN arms only; not original1.488M CNN, not GPUbackbones or full5fold",
+  "CNN_arms": [
+    {
+      "name": "r4law_legacy8_global",
+      "generator": "r4",
+      "channels": "legacy8",
+      "global_context": true
+    },
+    {
+      "name": "r4law_relative8_global",
+      "generator": "r4",
+      "channels": "relative8",
+      "global_context": true
+    },
+    {
+      "name": "r6law_legacy8_global",
+      "generator": "r6",
+      "channels": "legacy8",
+      "global_context": true
+    },
+    {
+      "name": "r6law_relative8_global",
+      "generator": "r6",
+      "channels": "relative8",
+      "global_context": true
+    },
+    {
+      "name": "r6law_relative8_local",
+      "generator": "r6",
+      "channels": "relative8",
+      "global_context": false
+    }
+  ],
+  "neural": {
+    "width": 32,
+    "blocks": 3,
+    "dropout": 0.1,
+    "epochs": 100,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "batch_size": 128,
+    "threads": 2,
+    "gradient_clip": 1.0,
+    "cell_loss_weight": 0.25,
+    "presence_loss_weight": 0.05,
+    "score_policy": "fixed .5*predicted_share+.5*observed temporal q-mask contrast over nominal316..5012Hz; derived logit, no free presence head",
+    "early_stopping_enabled": false
+  },
+  "execution": {
+    "maximum_parallel_arms": 5,
+    "total_Torch_threads": 10,
+    "fresh_subprocess_per_arm": true,
+    "hardware_setting_chosen_without_model_metrics": true,
+    "peak_RSS_fixture_MiB": 419,
+    "source_data_and_grids_MiB_per_arm_approx": 174,
+    "parallel_RSS_not_yet_measured": true,
+    "stop_own_remaining_workers_on_failure": true
+  },
+  "data_manifest_sha256": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+  "used_input_sha256": {
+    "data/synthetic/r6_cpu_guardrails_v3_schemafix/train_r4.npz": "78a6ddba3a07e86faa2ec8be0f8b6bceb7e1415eb9d73463af65c5278f6cbbd7",
+    "data/synthetic/r6_cpu_guardrails_v3_schemafix/inner_r4.npz": "e97b4b6f8886df9adc1adc6ca4b7417a193c4a10e224223da025f705a5b62423",
+    "data/synthetic/r6_cpu_guardrails_v3_schemafix/train_r6.npz": "4b76f3bdf0238e90c89a452662ad35031b5fabed887cc2c8c800af5f8619674e",
+    "data/synthetic/r6_cpu_guardrails_v3_schemafix/inner_r6.npz": "d49f9fd3f87a2b24f6e0cf710a37da537ed07824f2bd80fe825ab571331c9d9d",
+    "data/versions/source_split_r6_guardrails_v2/manifest.json": "894783ab9aa9cfd17db4fb46e00762fd876a2bca16c824274699cb0db4099cf2",
+    "data/versions/hard_negatives_r6_v2/manifest.json": "a235908778511e78a8a912ea494755e00ed5d0bd0bd29eef874cd57b7abad375"
+  },
+  "data_regeneration_or_split_change": false,
+  "prior_fit": "own TRAIN only in legacy8 comparison arms",
+  "scheduler": {
+    "name": "ReduceLROnPlateau",
+    "metric": "INNER_site_macro_rmse",
+    "factor": 0.5,
+    "patience": 2,
+    "min_lr": 1e-06,
+    "changed_from_original": false
+  },
+  "checkpoint_policy": {
+    "primary": "strict lowest own INNER windowRMSE across100 epochs; first exact tie",
+    "secondary": "strict lowest own INNER site-macroRMSE",
+    "keep_every_epoch": true,
+    "last_epoch": 100,
+    "minimum_improvement_for_checkpoints": 0.0,
+    "shadow_ES7": "original macro/min_delta1e-5/patience7, analysis only; never stops run"
+  },
+  "known_comparison_differences": [
+    "CPU threads2vsprior4 may change floating point trajectories; no bitwise-prefix promise.",
+    "Strict minima checkpoint selection differs from prior macro min_delta1e-5.",
+    "Counterfactual ES metrics use the same new trajectory."
+  ],
+  "LightGBM_retrained": false,
+  "LightGBM_reason": "Trees use boosting rounds rather than epochs; unchanged completed tree models retained.",
+  "heldout_policy": "No Test/crosspanel numeric reads, no heldout evaluation or tuning; prior crosspanels alreadyseen are not blind.",
+  "GPU_SSH_external_consultation_or_submission": false,
+  "global_minimum_guaranteed": false,
+  "resume_partial_run": false,
+  "original_frozen_core17_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22"
+  }
+}

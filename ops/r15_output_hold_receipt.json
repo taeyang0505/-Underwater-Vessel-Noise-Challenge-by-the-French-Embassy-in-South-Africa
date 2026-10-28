@@ -1,0 +1,243 @@
+{
+  "status": "output_coordinator_held_by_user_request",
+  "KST": "2026-10-27T14:12:12.552220+09:00",
+  "source_user_attachment": "/Users/hongtaeyang/.codex/attachments/5c62e8e6-310b-40c3-8e88-f4b92b9b6f12/붙여넣은 텍스트.txt",
+  "attachment_sha256": "349126a6722346aa066873214da12333e4cb6663ea1be7ff125d941e79a1328c",
+  "interpretation": "Use last instruction: TFGrid Fold0 may finish, no later Fold expansion; diagnostic audits first; no new submission CSV generation",
+  "output_supervisor_PID": 23490,
+  "training_PID_not_signalled": 80906,
+  "preserved_previous_state": {
+    "status": "running",
+    "updated_KST": "2026-10-27T14:12:04.644830+09:00",
+    "production_recipe_approved": true,
+    "approval_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+    "training_settings": {
+      "Adam": true,
+      "fast3_epochs": 100,
+      "TFGrid_epochs": 50,
+      "early_stopping": false,
+      "input_channels": 14
+    },
+    "tree_progress": {
+      "status": "completed",
+      "completed_new_learners": [
+        {
+          "fold": 1,
+          "variant": "baseline"
+        },
+        {
+          "fold": 1,
+          "variant": "highshare"
+        },
+        {
+          "fold": 2,
+          "variant": "baseline"
+        },
+        {
+          "fold": 2,
+          "variant": "highshare"
+        },
+        {
+          "fold": 3,
+          "variant": "baseline"
+        },
+        {
+          "fold": 3,
+          "variant": "highshare"
+        },
+        {
+          "fold": 4,
+          "variant": "baseline"
+        },
+        {
+          "fold": 4,
+          "variant": "highshare"
+        }
+      ],
+      "freeze_sha256": "084e61cc79ea18859e1118989e3abe4847bd1364d4ec11fe4ba62a885cee2949"
+    },
+    "neural_run_state": {
+      "status": "running",
+      "phase": "TF",
+      "complete_epoch": 37,
+      "elapsed_seconds": 30550.715588499792
+    },
+    "neural_current_batch": {
+      "status": "training",
+      "phase": "TF",
+      "kind": "tfgrid_fdy_conformer",
+      "epoch": 38,
+      "rows_seen": 5056,
+      "total_rows": 78869,
+      "optimizer_steps": 45700,
+      "elapsed_seconds": 30604.132359958254
+    },
+    "neural_models": {
+      "itransformer": {
+        "kind": "itransformer",
+        "epoch": 100,
+        "budget": 100,
+        "train_online_rmse": 0.07287962591637415,
+        "train_cell_mse": 0.026607538362698045,
+        "selection": {
+          "rmse": 0.09551447684635436,
+          "n": 1000
+        },
+        "best_selection_rmse": 0.09551447684635436,
+        "best_epoch": 100,
+        "actual_epoch_seconds_including_validation_checkpoint": 27.891459374688566,
+        "training_and_validation_seconds_before_checkpoint": 27.85272808279842,
+        "raw_cache_materialization_seconds": 10.347565750591457,
+        "raw_epoch_receipt_path": "epoch_receipts/epoch_100_61eda19e5db25ad4.json",
+        "raw_epoch_receipt_sha256": "289225a44b33e4ad5e5e35e68fac88023693bb5e134a14ec612d78f3cfd66f54",
+        "rows": 78869,
+        "optimizer_steps": 61700,
+        "learning_rate": 1.024425261896286e-05,
+        "next_learning_rate": 1e-05,
+        "max_rounded_pool_gap": 0.001785188913345337,
+        "site_or_target_row_weighting": false,
+        "cache_shared_in_phase": [
+          "itransformer",
+          "fdy",
+          "bg_cnn"
+        ],
+        "source_epoch": 100,
+        "memory_driver_bytes_sampled": 1235353600
+      },
+      "fdy": {
+        "kind": "fdy",
+        "epoch": 100,
+        "budget": 100,
+        "train_online_rmse": 0.05403486757171374,
+        "train_cell_mse": 0.015676154022800592,
+        "selection": {
+          "rmse": 0.0760385854794933,
+          "n": 1000
+        },
+        "best_selection_rmse": 0.07445696543578068,
+        "best_epoch": 94,
+        "actual_epoch_seconds_including_validation_checkpoint": 30.52125387545675,
+        "training_and_validation_seconds_before_checkpoint": 30.50032650027424,
+        "raw_cache_materialization_seconds": 10.347565750591457,
+        "raw_epoch_receipt_path": "epoch_receipts/epoch_100_61eda19e5db25ad4.json",
+        "raw_epoch_receipt_sha256": "289225a44b33e4ad5e5e35e68fac88023693bb5e134a14ec612d78f3cfd66f54",
+        "rows": 78869,
+        "optimizer_steps": 61700,
+        "learning_rate": 1.024425261896286e-05,
+        "next_learning_rate": 1e-05,
+        "max_rounded_pool_gap": 0.001785188913345337,
+        "site_or_target_row_weighting": false,
+        "cache_shared_in_phase": [
+          "itransformer",
+          "fdy",
+          "bg_cnn"
+        ],
+        "source_epoch": 100,
+        "memory_driver_bytes_sampled": 1245839360
+      },
+      "bg_cnn": {
+        "kind": "bg_cnn",
+        "epoch": 100,
+        "budget": 100,
+        "train_online_rmse": 0.04223307670217632,
+        "train_cell_mse": 0.010806635411937517,
+        "selection": {
+          "rmse": 0.05020046068285022,
+          "n": 1000
+        },
+        "best_selection_rmse": 0.0494000643657479,
+        "best_epoch": 98,
+        "actual_epoch_seconds_including_validation_checkpoint": 72.8971174582839,
+        "training_and_validation_seconds_before_checkpoint": 72.86516904179007,
+        "raw_cache_materialization_seconds": 10.347565750591457,
+        "raw_epoch_receipt_path": "epoch_receipts/epoch_100_61eda19e5db25ad4.json",
+        "raw_epoch_receipt_sha256": "289225a44b33e4ad5e5e35e68fac88023693bb5e134a14ec612d78f3cfd66f54",
+        "rows": 78869,
+        "optimizer_steps": 61700,
+        "learning_rate": 1.024425261896286e-05,
+        "next_learning_rate": 1e-05,
+        "max_rounded_pool_gap": 0.001785188913345337,
+        "site_or_target_row_weighting": false,
+        "cache_shared_in_phase": [
+          "itransformer",
+          "fdy",
+          "bg_cnn"
+        ],
+        "source_epoch": 100,
+        "memory_driver_bytes_sampled": 1256325120
+      },
+      "tfgrid_fdy_conformer": {
+        "kind": "tfgrid_fdy_conformer",
+        "epoch": 37,
+        "budget": 50,
+        "train_online_rmse": 0.04796883537058982,
+        "train_cell_mse": 0.012637531134320729,
+        "selection": {
+          "rmse": 0.058705338189848084,
+          "n": 1000
+        },
+        "best_selection_rmse": 0.058705338189848084,
+        "best_epoch": 37,
+        "actual_epoch_seconds_including_validation_checkpoint": 644.9580746656284,
+        "training_and_validation_seconds_before_checkpoint": 644.5335820000619,
+        "raw_cache_materialization_seconds": 15.096123417839408,
+        "raw_epoch_receipt_path": "epoch_receipts/epoch_037_59c1b7ffccba60bb.json",
+        "raw_epoch_receipt_sha256": "42e7886df6d8e4ededfffbcda30f53602d4a5c60fd1f553a41f72c840a43e9dc",
+        "rows": 78869,
+        "optimizer_steps": 45621,
+        "learning_rate": 0.00018947512507439847,
+        "next_learning_rate": 0.000166149182565299,
+        "max_rounded_pool_gap": 0.001944214105606079,
+        "site_or_target_row_weighting": false,
+        "cache_shared_in_phase": [
+          "tfgrid_fdy_conformer"
+        ],
+        "source_epoch": 37,
+        "memory_driver_bytes_sampled": 4781768704
+      }
+    },
+    "stages": {
+      "tree-only": {
+        "status": "completed",
+        "receipt": "models/r14_production_outputs_r1/TREE_ONLY_OUTPUTS_COMPLETED.json",
+        "receipt_sha256": "e25cb691ee6a78aa67b2969719fd23293ce3f94d878c6d0f822bf7f3530dc4c4",
+        "reused_completed_R1_Tree_outputs": true
+      },
+      "hybrid-fast3": {
+        "status": "completed",
+        "receipt": "models/r14_production_outputs_r2/hybrid_fast3/COMPLETED.json",
+        "receipt_sha256": "3b45dbca13fba7e0e19e68c194d429cd1ff02122b0cbd2878acda7dcb1f99a01",
+        "completed_KST": "2026-10-27T10:39:11.659634+09:00"
+      }
+    },
+    "active_output": null,
+    "free_disk_GiB": 15.525775909423828,
+    "official_upload": false,
+    "other_neural_folds": "1..4 deferred until first requested local output is available",
+    "old_diagnostic_status_rewritten": false,
+    "recovery_scope": "policy-binding alias bug fix only; frozen training unchanged",
+    "previous_output_failure_state": "ops/r14_production_state.json",
+    "previous_output_failure_state_sha256": "99179a0e5eb608e4a5d2e989803c5a3d35020da0aed2e1535734ad037efd0b27",
+    "started_KST": "2026-10-27T10:36:26.406109+09:00",
+    "output_QA_pins": {
+      "reports/R14_PRODUCTION_OUTPUTS_R2_INDEPENDENT_QA.json": "4a271fc9e04852c33fa0157f2c74e07f0467a003920faaea69051c973a6fd71c",
+      "ops/run_r14_production_outputs_v2.py": "0e348cc7fbf9c11e70e9ac7e189034fca7c2f3fa143ef7d1c036ccd8f3a3a879",
+      "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+      "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22"
+    },
+    "training_processes": {
+      "Tree": {
+        "PID": 78479,
+        "process_alive": false,
+        "all_models_barrier_present": true
+      },
+      "NN": {
+        "PID": 80906,
+        "process_alive": true,
+        "all_models_barrier_present": false
+      }
+    }
+  },
+  "later_neural_folds_started": false,
+  "official_upload": false
+}

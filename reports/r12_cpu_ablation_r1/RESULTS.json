@@ -1,0 +1,104 @@
+{
+  "format": "r12_full_ablation_evaluation_v1",
+  "status": "completed",
+  "selected_policy": {
+    "format": "r12_selected_fixed_recipe_v1",
+    "selected_arm": "L1H1P1",
+    "baseline_arm": "L0H0P0",
+    "weights": {
+      "CNN": 0.5,
+      "tree": 0.5
+    },
+    "score_policy": "share",
+    "gate_role": "R12_validation_gate",
+    "gate_metrics": {
+      "L0H0P0": 0.12664721993506117,
+      "L0H0P1": 0.12127948122593762,
+      "L0H1P0": 0.1266986688884995,
+      "L0H1P1": 0.11804152479195874,
+      "L1H0P0": 0.0952869727916399,
+      "L1H0P1": 0.08638003333863004,
+      "L1H1P0": 0.09208997294460092,
+      "L1H1P1": 0.08404811297608884
+    },
+    "strict_canonical_first_tie": true,
+    "selected_improves_gate_baseline": true,
+    "global_freeze_sha256": "25b5d27c11e8be78a662ad095206c5e3c80d09bac049ea695f230d4e24e8a9ae",
+    "weight_threshold_calibration_fitting": false,
+    "gate_selection_optimism_and_multiple_comparisons": true,
+    "policy_sha256": "20cda9fa8c7a4454ab5dd35f02bd625be884705ea1609d129a324992db4108c9"
+  },
+  "global_freeze_file_sha256": "d4c049181e3eded7f588ec561cdae9d74510adbc2d8602425d61b0743f969917",
+  "results_csv": "results.csv",
+  "paired_cluster_CI_csv": "paired_cluster_CI.csv",
+  "all_models_frozen_before_gate": true,
+  "policy_frozen_before_locked_eval": true,
+  "R9_new_baseline_inference_timing": {
+    "bg_cnn": {
+      "seconds": 4.224105125293136,
+      "physical_pool_max_abs": 8.063981904449236e-08,
+      "best_window_epoch": 5,
+      "examples": 1000,
+      "device": "cpu FP32"
+    },
+    "tfgrid_fdy_conformer": {
+      "seconds": 12.075486082583666,
+      "physical_pool_max_abs": 1.0162705910143899e-07,
+      "best_window_epoch": 17,
+      "examples": 1000,
+      "device": "cpu FP32"
+    },
+    "fdy": {
+      "seconds": 0.545626750215888,
+      "physical_pool_max_abs": 9.75093329413923e-08,
+      "best_window_epoch": 16,
+      "examples": 1000,
+      "device": "cpu FP32"
+    },
+    "itransformer": {
+      "seconds": 0.07346595916897058,
+      "physical_pool_max_abs": 8.7479436583493e-08,
+      "best_window_epoch": 16,
+      "examples": 1000,
+      "device": "cpu FP32"
+    },
+    "lgbm_physics": {
+      "seconds": 0.8858734993264079,
+      "examples": 1000,
+      "device": "Mac CPU"
+    }
+  },
+  "original_sources_models_policy_unchanged": true,
+  "Test_or_training_or_threshold_weight_refit": false,
+  "development_not_blind": true,
+  "performance_or_GPU_or_LB_improvement_guaranteed": false,
+  "limitations": [
+    "Conditional fixed-panel cluster CIs; shared reference recordings remain dependent.",
+    "CI does not adjust17models/8recipes/multiple panels or gate-selection optimism.",
+    "R11/R10 and R9source groups were already development-exposed.",
+    "Compare R9 share AUC separately: replacing derived score with share changes the score definition."
+  ],
+  "output_sha256": {
+    "selected_policy.json": "8dd82dd2feacaa42e06be450c2615d6872082b71fdff54e5f879bc6cde6c7b63",
+    "paired_cluster_CI.csv": "3a59058d82e313c8c75cb920ccd974cd78ea8632ebcefd1c67a559c6927bcd94",
+    "STARTED.json": "0d733bb3fe06b757d87f120ca9ac547fdee6cb1a8ecceb6608fb056bb2256310",
+    "results.csv": "7420e29204e05bb411d04b7c40e9cc7f609cc33a6267f7bc9e2364835860ddc9",
+    "predictions/R12_high_snr_long.npz": "23e89849787d220084b35bb0ab80de49ce65e46c6a059494c63f9a4789b3c156",
+    "predictions/R11_full_smooth15_VS_st_francis_dense.npz": "64f4749b1288403baeeb7ba444460f575e57f0dd22830671f6ef3c97e31fb9ec",
+    "predictions/R11_full_smooth12_VS_st_francis_dense.npz": "cc20e9866ccb7bb1e9f0f6e24eb33321c7d4e8481ecbe8a2b043e8c8014f4cb4",
+    "predictions/R12_eval.npz": "9aaa49e67a4c2bd3aaa0b325cce679e18a1c4c02e02c507b924060150476accf",
+    "predictions/R11_native_long15_VS_hf_high.npz": "4c9cfad8c2fb85817e824c7c4194088048e09ce3d054482b8a5a14562471516b",
+    "predictions/R9_ensemble_gate.npz": "5251523b36ec86d2aa074e832bcb439f452c965b03629d0f29394e66278b0aef",
+    "predictions/R10_seen__combined_stress.npz": "60db2d7e0076ef36ad7cd24286d5c95044c703359123ca68b3e46e6ec6942c71",
+    "predictions/R12_validation_gate.npz": "0cdc692c1c2bc699d4cef51c6ac40d1939e5e5e15f21c708c92d3e0700672110",
+    "predictions/R11_full_smooth13_VS_hf_high.npz": "3a3909e652d74d4c0c46c8121e02e6ce32f9bdbbf68e52bcb5402667a6f860a1",
+    "predictions/R10_unseen__r9_complete.npz": "8b37c4219c00b865ee3eae060a3d4726b1558b1ee53cb735ada0b613f9424f27",
+    "predictions/R11_full_smooth12_VS_hf_high.npz": "10505ef6be2c0fab83c6896530369cab9177959debafcc1f9517328981ad9b12",
+    "predictions/R9_selection.npz": "cfd4e9fd43edf20f96e7747507afd1d3656d09d19619d5d544ad8657db5e3ee4",
+    "predictions/R11_native_long15_VS_st_francis_dense.npz": "03aef00d996fea59de292c9a7d1bd61190a68053c38a88e28634b698f30b6cbe",
+    "predictions/R11_full_smooth15_VS_hf_high.npz": "eacd2f1c51822740935a9dd7cc5a91c25b5d9846c03d2321ad4b17597d274036",
+    "predictions/R10_unseen__combined_stress.npz": "3ee479a5ef57dcc5afc8e9dd32f611bdaf2347b4e9e0204a7d968a3b1dbe699b",
+    "predictions/R10_seen__mean_scale_only.npz": "fc5a12f3135561c1759b9219cc4b237c2bb2f0549525ef4c403adc8e83b8b4e1",
+    "predictions/R11_full_smooth13_VS_st_francis_dense.npz": "6f97d28eb9f144dfc5439ebea4805b48e1e22bf76ff12e7e70da2ba8f272bfc0"
+  }
+}

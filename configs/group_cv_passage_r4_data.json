@@ -1,0 +1,37 @@
+{
+  "version": "quality_v4_vtuad_passage_group_cv_prebuilt",
+  "protocol": "source_group_nested5_vtuad_passage_r4",
+  "augmentation_version": "bounded_monotonic_power_timewarp_LHS_v1",
+  "parent_cv_dir": "data/synthetic/group_cv_physics_v2_r1",
+  "reference_version_dir": "data/versions/vtuad_reference_r4_v1",
+  "output_dir": "data/synthetic/group_cv_passage_r4_v1",
+  "generation_seed": 20261025,
+  "batch_size": 256,
+  "evaluation_examples": 3000,
+  "passage_config": {
+    "zero_probability": 0.2,
+    "minimum_share": 0.005,
+    "maximum_share": 0.95,
+    "reference_eq_max_db": 4.0,
+    "fade_seconds": 30.0,
+    "duration_edges_seconds": [120.0, 300.0, 1380.0],
+    "rendered_minimum_segments": 60,
+    "rendered_maximum_segments": 450,
+    "minimum_stretch": 0.3333333333333333,
+    "maximum_stretch": 3.0
+  },
+  "distribution_tolerances": {
+    "mean_share_difference": 0.03,
+    "zero_fraction_difference": 0.03,
+    "coarse_duration_total_variation": 0.1,
+    "fine_duration_total_variation": 0.1,
+    "rendered_duration_KS_statistic": 0.03,
+    "rendered_duration_mean_difference_seconds": 2.0,
+    "maximum_conditional_mean_difference": 0.05
+  },
+  "same_policy_all_splits": true,
+  "legacy_evaluation_arrays_active": false,
+  "hard_snr_or_support_cap": false,
+  "natural_SA_masks_only": true,
+  "Test_or_leaderboard_tuning": false
+}

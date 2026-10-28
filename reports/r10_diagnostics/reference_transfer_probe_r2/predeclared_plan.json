@@ -1,0 +1,64 @@
+{
+  "format": "r10_reference_transfer_probe_plan_v1",
+  "created_utc": "2026-10-26T14:18:18.617436+00:00",
+  "seed": 2026102604,
+  "reference_partition": "fixed metadata-besttested spectral211/197; no score-based selection",
+  "split_source": "reports/r10_diagnostics/reference_split_feasibility_r1/spectral_day_affinity_closest_raw_clip_half.csv",
+  "source_sha256": {
+    "data/versions/vtuad_full_r9/reference_manifest.parquet": "69398b795e4b1a3b81d75266a12704d4bc2aa0f08965d92f7d1bfbdf9c2acd91",
+    "data/versions/background_cv_r9/fold_00/train_manifest.parquet": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+    "data/versions/background_cv_r9/fold_00/selection_manifest.parquet": "b29d30027d28fe849600bdf618049ced18fef373841b037e36f2865333fd05ce",
+    "configs/r9_full_training_v1.json": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "reports/r10_diagnostics/reference_split_feasibility_r1/spectral_day_affinity_closest_raw_clip_half.csv": "3be04201ef6b958e18d578a11cbd287919f2e00386a2765ac309de738459b9b1"
+  },
+  "code_sha256": {
+    "ops/r10_reference_transfer_probe.py": "871a6d0477c07f1aa22fb3fb0d4ee711f406cedad613b10126fe6a8738f68dc8",
+    "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/trees_ensemble_r9.py": "365a476c7d5cc56e701ec56ab366fd0371d857755f91330644c609f97a52c2bc"
+  },
+  "train_examples": 16000,
+  "early_stop_A_examples": 1000,
+  "paired_comparison_examples_per_reference_pool": 1000,
+  "full_observed_minutes_only": 15,
+  "fold": 0,
+  "TRAIN_background_role": "train",
+  "all_heldout_background_role": "selection",
+  "early_stop_vs_comparison_background_indices_disjoint": true,
+  "paired_A_B_same_background_zero_family_EQ_SNR_rng": true,
+  "continuous_vs_geometry_rng": "independent streams preserve Uniform laws and exact EQ/SNR pairing despite different native lengths",
+  "pairing_limit": "Native source duration controls crop/start RNG range, so time occupancy and true share need not match.",
+  "sampler": "unchanged pipeline.sampler_r9.synthesize minute-first; allwhole-recordingaddedenergy",
+  "no_source_fraction": 0.2,
+  "family_probabilities": [
+    0.5,
+    0.25,
+    0.25
+  ],
+  "snr_db": [
+    -10.0,
+    10.0
+  ],
+  "smooth_eq_max_db": 6.0,
+  "TRAIN_hard_negative_schedule": "existing R9 candidate metadata; requested10% allrows if available; no duplicated primary",
+  "tree_settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 4,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "maximum_training_rows": 100000,
+    "feature_batch_size": 512
+  },
+  "production_mutated": false,
+  "Test_or_unused_report_opened": false,
+  "single_predeclared_probe_no_tuning": true
+}

@@ -1,0 +1,64 @@
+{
+  "format": "r14_production_outputs_independent_QA_v1",
+  "status": "passed",
+  "checked_unix": 1793047760.0876641,
+  "source_code_sha256": {
+    "ops/run_r14_production_outputs.py": "beb6765591dd8f142129038b2d525e8565da896ac3a1b684a8d87fce11056da0",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22"
+  },
+  "production_config_sha256": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+  "approval_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+  "ensemble_protocol_sha256": "a34fb6f8c5c6c6d1599da059842cd38b847987b41ae8bcbfc540df4c4bcd9430",
+  "core_analytic_QA_path": "reports/R14_PRODUCTION_ENSEMBLE_ANALYTIC_INDEPENDENT_QA.json",
+  "core_analytic_QA_sha256": "d69a10018b065d4ecd46d1113da3d018647d4f590926d55b75522223182fa2c9",
+  "synthetic1500_csv_roundtrip_exact": true,
+  "synthetic_fixture_directory": "ops/r14_outputs_synthetic_only_598hzuuq",
+  "negative_fixture_rejections": {
+    "overwrite": true,
+    "duplicate_ID": true,
+    "shape": true,
+    "NaN": true,
+    "bounds": true,
+    "report_missing": true,
+    "report_not_completed": true,
+    "report_wrong_folds": true,
+    "report_missing_policy": true
+  },
+  "constant_Pearson_returns_null": true,
+  "AST_ordering": {
+    "tree_only": {
+      "fit_calls_before_query": [
+        156
+      ],
+      "first_query_line": 180,
+      "policy_freeze_before_query": true,
+      "fit_after_query": false
+    },
+    "hybrid": {
+      "fit_calls_before_query": [
+        244
+      ],
+      "first_query_line": 282,
+      "policy_freeze_before_query": true,
+      "fit_after_query": false
+    }
+  },
+  "samefold_baseline500_fit_gate": true,
+  "tree5_scoped_report_barrier_exact_policy_set": true,
+  "fold0_hybrid_fit_never_uses_Tree5_average": true,
+  "query_only_bagging_extension_explicit_not5fold_hybrid_OOF": true,
+  "historical_comparison_registry_CSV_NPZ_ID_target_pins_present": true,
+  "official_raw_query_expected_SHA_pinned_after_freeze": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+  "R9_uploaded_byte_identity_not_claimed": true,
+  "models_or_actual_Test_or_development_prediction_arrays_read": false,
+  "new_model_fit_or_inference": false,
+  "original_sources_or_models_changed": false,
+  "QA_harness_note_sha256": "d22af907ab52ed4b6c45f9cdb079d5850afd037ed6e90f6d0abadb106faffa4f",
+  "limits": [
+    "Static plus synthetic contract QA, not execution of the yet-unfinished all5Tree/allNN inference path.",
+    "Caller/driver supplies samefold source-disjoint fit/gate inputs. The pure ensemble core does not itself inspect source metadata.",
+    "Synthetic report row count is not the count of independent recordings; shared509 reference recordings remain dependent.",
+    "Stage1 Test-time tree-family bagging extension has not been validated as exact hybrid5fold OOF."
+  ]
+}

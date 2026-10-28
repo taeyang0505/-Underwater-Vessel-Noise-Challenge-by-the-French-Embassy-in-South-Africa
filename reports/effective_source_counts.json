@@ -1,0 +1,82 @@
+[
+  {
+    "source": "HearMyShip_V1",
+    "split": "calibration",
+    "clips": 144,
+    "source_groups": 3,
+    "recording_days": 3,
+    "minutes": 0
+  },
+  {
+    "source": "HearMyShip_V1",
+    "split": "domain_holdout",
+    "clips": 56,
+    "source_groups": 1,
+    "recording_days": 1,
+    "minutes": 0
+  },
+  {
+    "source": "HearMyShip_V1",
+    "split": "train",
+    "clips": 767,
+    "source_groups": 16,
+    "recording_days": 16,
+    "minutes": 0
+  },
+  {
+    "source": "HearMyShip_V1",
+    "split": "validation",
+    "clips": 178,
+    "source_groups": 3,
+    "recording_days": 3,
+    "minutes": 0
+  },
+  {
+    "source": "VTUAD_v1.3.2",
+    "split": "calibration",
+    "clips": 6,
+    "source_groups": 5,
+    "recording_days": 3,
+    "minutes": 51
+  },
+  {
+    "source": "VTUAD_v1.3.2",
+    "split": "domain_holdout",
+    "clips": 15,
+    "source_groups": 9,
+    "recording_days": 4,
+    "minutes": 176
+  },
+  {
+    "source": "VTUAD_v1.3.2",
+    "split": "excluded_cross_day_conflict",
+    "clips": 1,
+    "source_groups": 1,
+    "recording_days": 1,
+    "minutes": 33
+  },
+  {
+    "source": "VTUAD_v1.3.2",
+    "split": "excluded_hull_day_conflict",
+    "clips": 260,
+    "source_groups": 113,
+    "recording_days": 31,
+    "minutes": 1010
+  },
+  {
+    "source": "VTUAD_v1.3.2",
+    "split": "train",
+    "clips": 237,
+    "source_groups": 96,
+    "recording_days": 20,
+    "minutes": 1191
+  },
+  {
+    "source": "VTUAD_v1.3.2",
+    "split": "validation",
+    "clips": 6,
+    "source_groups": 3,
+    "recording_days": 3,
+    "minutes": 50
+  }
+]

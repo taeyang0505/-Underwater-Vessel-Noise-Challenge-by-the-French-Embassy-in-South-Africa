@@ -1,0 +1,741 @@
+site,column,dtype,nullable
+1 Richards Bay,site,string,True
+1 Richards Bay,recorder,string,True
+1 Richards Bay,station_token,string,True
+1 Richards Bay,sample_rate_hz,int32,True
+1 Richards Bay,file_kind,string,True
+1 Richards Bay,src_file,string,True
+1 Richards Bay,file_date,string,True
+1 Richards Bay,t,timestamp[ms],True
+1 Richards Bay,dur,float,True
+1 Richards Bay,TOL_0.8,float,True
+1 Richards Bay,TOL_1,float,True
+1 Richards Bay,TOL_1.3,float,True
+1 Richards Bay,TOL_1.6,float,True
+1 Richards Bay,TOL_2,float,True
+1 Richards Bay,TOL_2.5,float,True
+1 Richards Bay,TOL_3.2,float,True
+1 Richards Bay,TOL_4,float,True
+1 Richards Bay,TOL_5,float,True
+1 Richards Bay,TOL_6.3,float,True
+1 Richards Bay,TOL_7.9,float,True
+1 Richards Bay,TOL_10,float,True
+1 Richards Bay,TOL_12.6,float,True
+1 Richards Bay,TOL_15.8,float,True
+1 Richards Bay,TOL_20,float,True
+1 Richards Bay,TOL_25.1,float,True
+1 Richards Bay,TOL_31.6,float,True
+1 Richards Bay,TOL_39.8,float,True
+1 Richards Bay,TOL_50.1,float,True
+1 Richards Bay,TOL_63.1,float,True
+1 Richards Bay,TOL_79.4,float,True
+1 Richards Bay,TOL_100,float,True
+1 Richards Bay,TOL_125.9,float,True
+1 Richards Bay,TOL_158.5,float,True
+1 Richards Bay,TOL_199.5,float,True
+1 Richards Bay,TOL_251.2,float,True
+1 Richards Bay,TOL_316.2,float,True
+1 Richards Bay,TOL_398.1,float,True
+1 Richards Bay,TOL_501.2,float,True
+1 Richards Bay,TOL_631,float,True
+1 Richards Bay,TOL_794.3,float,True
+1 Richards Bay,TOL_1000,float,True
+1 Richards Bay,TOL_1258.9,float,True
+1 Richards Bay,TOL_1584.9,float,True
+1 Richards Bay,TOL_1995.3,float,True
+1 Richards Bay,TOL_2511.9,float,True
+1 Richards Bay,TOL_3162.3,float,True
+1 Richards Bay,TOL_3981.1,float,True
+1 Richards Bay,TOL_5011.9,float,True
+1 Richards Bay,TOL_6309.6,float,True
+1 Richards Bay,TOL_7943.3,float,True
+1 Richards Bay,TOL_10000,float,True
+1 Richards Bay,TOL_12000,float,True
+1 Richards Bay,TOL_12589.3,float,True
+1 Richards Bay,TOL_15848.9,float,True
+1 Richards Bay,TOL_19952.6,float,True
+1 Richards Bay,TOL_24000,float,True
+1 Richards Bay,TOL_25118.9,float,True
+1 Richards Bay,TOL_31622.8,float,True
+1 Richards Bay,TOL_39810.7,float,True
+1 Richards Bay,TOL_48000,float,True
+1 Richards Bay,TOL_50118.7,float,True
+1 Richards Bay,TOL_63095.7,float,True
+1 Richards Bay,TOL_72000,float,True
+1 Richards Bay,TOL_79432.8,float,True
+1 Richards Bay,TOL_100000,float,True
+1 Richards Bay,TOL_125892.5,float,True
+1 Richards Bay,TOL_158489.3,float,True
+1 Richards Bay,TOL_192000,float,True
+1 Richards Bay,TOL_199526.2,float,True
+1 Richards Bay,TOL_251188.6,float,True
+1 Richards Bay,TOL_288000,float,True
+1 Richards Bay,qc_duration_ge55,bool,True
+1 Richards Bay,qc_25band_finite,bool,True
+1 Richards Bay,qc_25band_spread_ge6,bool,True
+2 Durban,site,string,True
+2 Durban,recorder,string,True
+2 Durban,station_token,string,True
+2 Durban,sample_rate_hz,int32,True
+2 Durban,file_kind,string,True
+2 Durban,src_file,string,True
+2 Durban,file_date,string,True
+2 Durban,t,timestamp[ms],True
+2 Durban,dur,float,True
+2 Durban,TOL_0.8,float,True
+2 Durban,TOL_1,float,True
+2 Durban,TOL_1.3,float,True
+2 Durban,TOL_1.6,float,True
+2 Durban,TOL_2,float,True
+2 Durban,TOL_2.5,float,True
+2 Durban,TOL_3.2,float,True
+2 Durban,TOL_4,float,True
+2 Durban,TOL_5,float,True
+2 Durban,TOL_6.3,float,True
+2 Durban,TOL_7.9,float,True
+2 Durban,TOL_10,float,True
+2 Durban,TOL_12.6,float,True
+2 Durban,TOL_15.8,float,True
+2 Durban,TOL_20,float,True
+2 Durban,TOL_25.1,float,True
+2 Durban,TOL_31.6,float,True
+2 Durban,TOL_39.8,float,True
+2 Durban,TOL_50.1,float,True
+2 Durban,TOL_63.1,float,True
+2 Durban,TOL_79.4,float,True
+2 Durban,TOL_100,float,True
+2 Durban,TOL_125.9,float,True
+2 Durban,TOL_158.5,float,True
+2 Durban,TOL_199.5,float,True
+2 Durban,TOL_251.2,float,True
+2 Durban,TOL_316.2,float,True
+2 Durban,TOL_398.1,float,True
+2 Durban,TOL_501.2,float,True
+2 Durban,TOL_631,float,True
+2 Durban,TOL_794.3,float,True
+2 Durban,TOL_1000,float,True
+2 Durban,TOL_1258.9,float,True
+2 Durban,TOL_1584.9,float,True
+2 Durban,TOL_1995.3,float,True
+2 Durban,TOL_2511.9,float,True
+2 Durban,TOL_3162.3,float,True
+2 Durban,TOL_3981.1,float,True
+2 Durban,TOL_5011.9,float,True
+2 Durban,TOL_6309.6,float,True
+2 Durban,TOL_7943.3,float,True
+2 Durban,TOL_10000,float,True
+2 Durban,TOL_12000,float,True
+2 Durban,TOL_12589.3,float,True
+2 Durban,TOL_15848.9,float,True
+2 Durban,TOL_19952.6,float,True
+2 Durban,TOL_24000,float,True
+2 Durban,TOL_25118.9,float,True
+2 Durban,TOL_31622.8,float,True
+2 Durban,TOL_39810.7,float,True
+2 Durban,TOL_48000,float,True
+2 Durban,TOL_50118.7,float,True
+2 Durban,TOL_63095.7,float,True
+2 Durban,TOL_72000,float,True
+2 Durban,TOL_79432.8,float,True
+2 Durban,TOL_100000,float,True
+2 Durban,TOL_125892.5,float,True
+2 Durban,TOL_158489.3,float,True
+2 Durban,TOL_192000,float,True
+2 Durban,TOL_199526.2,float,True
+2 Durban,TOL_251188.6,float,True
+2 Durban,TOL_288000,float,True
+2 Durban,qc_duration_ge55,bool,True
+2 Durban,qc_25band_finite,bool,True
+2 Durban,qc_25band_spread_ge6,bool,True
+3 Cape_Recife,site,string,True
+3 Cape_Recife,recorder,string,True
+3 Cape_Recife,station_token,string,True
+3 Cape_Recife,sample_rate_hz,int32,True
+3 Cape_Recife,file_kind,string,True
+3 Cape_Recife,src_file,string,True
+3 Cape_Recife,file_date,string,True
+3 Cape_Recife,t,timestamp[ms],True
+3 Cape_Recife,dur,float,True
+3 Cape_Recife,TOL_0.8,float,True
+3 Cape_Recife,TOL_1,float,True
+3 Cape_Recife,TOL_1.3,float,True
+3 Cape_Recife,TOL_1.6,float,True
+3 Cape_Recife,TOL_2,float,True
+3 Cape_Recife,TOL_2.5,float,True
+3 Cape_Recife,TOL_3.2,float,True
+3 Cape_Recife,TOL_4,float,True
+3 Cape_Recife,TOL_5,float,True
+3 Cape_Recife,TOL_6.3,float,True
+3 Cape_Recife,TOL_7.9,float,True
+3 Cape_Recife,TOL_10,float,True
+3 Cape_Recife,TOL_12.6,float,True
+3 Cape_Recife,TOL_15.8,float,True
+3 Cape_Recife,TOL_20,float,True
+3 Cape_Recife,TOL_25.1,float,True
+3 Cape_Recife,TOL_31.6,float,True
+3 Cape_Recife,TOL_39.8,float,True
+3 Cape_Recife,TOL_50.1,float,True
+3 Cape_Recife,TOL_63.1,float,True
+3 Cape_Recife,TOL_79.4,float,True
+3 Cape_Recife,TOL_100,float,True
+3 Cape_Recife,TOL_125.9,float,True
+3 Cape_Recife,TOL_158.5,float,True
+3 Cape_Recife,TOL_199.5,float,True
+3 Cape_Recife,TOL_251.2,float,True
+3 Cape_Recife,TOL_316.2,float,True
+3 Cape_Recife,TOL_398.1,float,True
+3 Cape_Recife,TOL_501.2,float,True
+3 Cape_Recife,TOL_631,float,True
+3 Cape_Recife,TOL_794.3,float,True
+3 Cape_Recife,TOL_1000,float,True
+3 Cape_Recife,TOL_1258.9,float,True
+3 Cape_Recife,TOL_1584.9,float,True
+3 Cape_Recife,TOL_1995.3,float,True
+3 Cape_Recife,TOL_2511.9,float,True
+3 Cape_Recife,TOL_3162.3,float,True
+3 Cape_Recife,TOL_3981.1,float,True
+3 Cape_Recife,TOL_5011.9,float,True
+3 Cape_Recife,TOL_6309.6,float,True
+3 Cape_Recife,TOL_7943.3,float,True
+3 Cape_Recife,TOL_10000,float,True
+3 Cape_Recife,TOL_12000,float,True
+3 Cape_Recife,TOL_12589.3,float,True
+3 Cape_Recife,TOL_15848.9,float,True
+3 Cape_Recife,TOL_19952.6,float,True
+3 Cape_Recife,TOL_24000,float,True
+3 Cape_Recife,TOL_25118.9,float,True
+3 Cape_Recife,TOL_31622.8,float,True
+3 Cape_Recife,TOL_39810.7,float,True
+3 Cape_Recife,TOL_48000,float,True
+3 Cape_Recife,TOL_50118.7,float,True
+3 Cape_Recife,TOL_63095.7,float,True
+3 Cape_Recife,TOL_72000,float,True
+3 Cape_Recife,TOL_79432.8,float,True
+3 Cape_Recife,TOL_100000,float,True
+3 Cape_Recife,TOL_125892.5,float,True
+3 Cape_Recife,TOL_158489.3,float,True
+3 Cape_Recife,TOL_192000,float,True
+3 Cape_Recife,TOL_199526.2,float,True
+3 Cape_Recife,TOL_251188.6,float,True
+3 Cape_Recife,TOL_288000,float,True
+3 Cape_Recife,qc_duration_ge55,bool,True
+3 Cape_Recife,qc_25band_finite,bool,True
+3 Cape_Recife,qc_25band_spread_ge6,bool,True
+4 Bird Island,site,string,True
+4 Bird Island,recorder,string,True
+4 Bird Island,station_token,string,True
+4 Bird Island,sample_rate_hz,int32,True
+4 Bird Island,file_kind,string,True
+4 Bird Island,src_file,string,True
+4 Bird Island,file_date,string,True
+4 Bird Island,t,timestamp[ms],True
+4 Bird Island,dur,float,True
+4 Bird Island,TOL_0.8,float,True
+4 Bird Island,TOL_1,float,True
+4 Bird Island,TOL_1.3,float,True
+4 Bird Island,TOL_1.6,float,True
+4 Bird Island,TOL_2,float,True
+4 Bird Island,TOL_2.5,float,True
+4 Bird Island,TOL_3.2,float,True
+4 Bird Island,TOL_4,float,True
+4 Bird Island,TOL_5,float,True
+4 Bird Island,TOL_6.3,float,True
+4 Bird Island,TOL_7.9,float,True
+4 Bird Island,TOL_10,float,True
+4 Bird Island,TOL_12.6,float,True
+4 Bird Island,TOL_15.8,float,True
+4 Bird Island,TOL_20,float,True
+4 Bird Island,TOL_25.1,float,True
+4 Bird Island,TOL_31.6,float,True
+4 Bird Island,TOL_39.8,float,True
+4 Bird Island,TOL_50.1,float,True
+4 Bird Island,TOL_63.1,float,True
+4 Bird Island,TOL_79.4,float,True
+4 Bird Island,TOL_100,float,True
+4 Bird Island,TOL_125.9,float,True
+4 Bird Island,TOL_158.5,float,True
+4 Bird Island,TOL_199.5,float,True
+4 Bird Island,TOL_251.2,float,True
+4 Bird Island,TOL_316.2,float,True
+4 Bird Island,TOL_398.1,float,True
+4 Bird Island,TOL_501.2,float,True
+4 Bird Island,TOL_631,float,True
+4 Bird Island,TOL_794.3,float,True
+4 Bird Island,TOL_1000,float,True
+4 Bird Island,TOL_1258.9,float,True
+4 Bird Island,TOL_1584.9,float,True
+4 Bird Island,TOL_1995.3,float,True
+4 Bird Island,TOL_2511.9,float,True
+4 Bird Island,TOL_3162.3,float,True
+4 Bird Island,TOL_3981.1,float,True
+4 Bird Island,TOL_5011.9,float,True
+4 Bird Island,TOL_6309.6,float,True
+4 Bird Island,TOL_7943.3,float,True
+4 Bird Island,TOL_10000,float,True
+4 Bird Island,TOL_12000,float,True
+4 Bird Island,TOL_12589.3,float,True
+4 Bird Island,TOL_15848.9,float,True
+4 Bird Island,TOL_19952.6,float,True
+4 Bird Island,TOL_24000,float,True
+4 Bird Island,TOL_25118.9,float,True
+4 Bird Island,TOL_31622.8,float,True
+4 Bird Island,TOL_39810.7,float,True
+4 Bird Island,TOL_48000,float,True
+4 Bird Island,TOL_50118.7,float,True
+4 Bird Island,TOL_63095.7,float,True
+4 Bird Island,TOL_72000,float,True
+4 Bird Island,TOL_79432.8,float,True
+4 Bird Island,TOL_100000,float,True
+4 Bird Island,TOL_125892.5,float,True
+4 Bird Island,TOL_158489.3,float,True
+4 Bird Island,TOL_192000,float,True
+4 Bird Island,TOL_199526.2,float,True
+4 Bird Island,TOL_251188.6,float,True
+4 Bird Island,TOL_288000,float,True
+4 Bird Island,qc_duration_ge55,bool,True
+4 Bird Island,qc_25band_finite,bool,True
+4 Bird Island,qc_25band_spread_ge6,bool,True
+5 St Croix Island,site,string,True
+5 St Croix Island,recorder,string,True
+5 St Croix Island,station_token,string,True
+5 St Croix Island,sample_rate_hz,int32,True
+5 St Croix Island,file_kind,string,True
+5 St Croix Island,src_file,string,True
+5 St Croix Island,file_date,string,True
+5 St Croix Island,t,timestamp[ms],True
+5 St Croix Island,dur,float,True
+5 St Croix Island,TOL_0.8,float,True
+5 St Croix Island,TOL_1,float,True
+5 St Croix Island,TOL_1.3,float,True
+5 St Croix Island,TOL_1.6,float,True
+5 St Croix Island,TOL_2,float,True
+5 St Croix Island,TOL_2.5,float,True
+5 St Croix Island,TOL_3.2,float,True
+5 St Croix Island,TOL_4,float,True
+5 St Croix Island,TOL_5,float,True
+5 St Croix Island,TOL_6.3,float,True
+5 St Croix Island,TOL_7.9,float,True
+5 St Croix Island,TOL_10,float,True
+5 St Croix Island,TOL_12.6,float,True
+5 St Croix Island,TOL_15.8,float,True
+5 St Croix Island,TOL_20,float,True
+5 St Croix Island,TOL_25.1,float,True
+5 St Croix Island,TOL_31.6,float,True
+5 St Croix Island,TOL_39.8,float,True
+5 St Croix Island,TOL_50.1,float,True
+5 St Croix Island,TOL_63.1,float,True
+5 St Croix Island,TOL_79.4,float,True
+5 St Croix Island,TOL_100,float,True
+5 St Croix Island,TOL_125.9,float,True
+5 St Croix Island,TOL_158.5,float,True
+5 St Croix Island,TOL_199.5,float,True
+5 St Croix Island,TOL_251.2,float,True
+5 St Croix Island,TOL_316.2,float,True
+5 St Croix Island,TOL_398.1,float,True
+5 St Croix Island,TOL_501.2,float,True
+5 St Croix Island,TOL_631,float,True
+5 St Croix Island,TOL_794.3,float,True
+5 St Croix Island,TOL_1000,float,True
+5 St Croix Island,TOL_1258.9,float,True
+5 St Croix Island,TOL_1584.9,float,True
+5 St Croix Island,TOL_1995.3,float,True
+5 St Croix Island,TOL_2511.9,float,True
+5 St Croix Island,TOL_3162.3,float,True
+5 St Croix Island,TOL_3981.1,float,True
+5 St Croix Island,TOL_5011.9,float,True
+5 St Croix Island,TOL_6309.6,float,True
+5 St Croix Island,TOL_7943.3,float,True
+5 St Croix Island,TOL_10000,float,True
+5 St Croix Island,TOL_12000,float,True
+5 St Croix Island,TOL_12589.3,float,True
+5 St Croix Island,TOL_15848.9,float,True
+5 St Croix Island,TOL_19952.6,float,True
+5 St Croix Island,TOL_24000,float,True
+5 St Croix Island,TOL_25118.9,float,True
+5 St Croix Island,TOL_31622.8,float,True
+5 St Croix Island,TOL_39810.7,float,True
+5 St Croix Island,TOL_48000,float,True
+5 St Croix Island,TOL_50118.7,float,True
+5 St Croix Island,TOL_63095.7,float,True
+5 St Croix Island,TOL_72000,float,True
+5 St Croix Island,TOL_79432.8,float,True
+5 St Croix Island,TOL_100000,float,True
+5 St Croix Island,TOL_125892.5,float,True
+5 St Croix Island,TOL_158489.3,float,True
+5 St Croix Island,TOL_192000,float,True
+5 St Croix Island,TOL_199526.2,float,True
+5 St Croix Island,TOL_251188.6,float,True
+5 St Croix Island,TOL_288000,float,True
+5 St Croix Island,qc_duration_ge55,bool,True
+5 St Croix Island,qc_25band_finite,bool,True
+5 St Croix Island,qc_25band_spread_ge6,bool,True
+6 Riy_Banks,site,string,True
+6 Riy_Banks,recorder,string,True
+6 Riy_Banks,station_token,string,True
+6 Riy_Banks,sample_rate_hz,int32,True
+6 Riy_Banks,file_kind,string,True
+6 Riy_Banks,src_file,string,True
+6 Riy_Banks,file_date,string,True
+6 Riy_Banks,t,timestamp[ms],True
+6 Riy_Banks,dur,float,True
+6 Riy_Banks,TOL_0.8,float,True
+6 Riy_Banks,TOL_1,float,True
+6 Riy_Banks,TOL_1.3,float,True
+6 Riy_Banks,TOL_1.6,float,True
+6 Riy_Banks,TOL_2,float,True
+6 Riy_Banks,TOL_2.5,float,True
+6 Riy_Banks,TOL_3.2,float,True
+6 Riy_Banks,TOL_4,float,True
+6 Riy_Banks,TOL_5,float,True
+6 Riy_Banks,TOL_6.3,float,True
+6 Riy_Banks,TOL_7.9,float,True
+6 Riy_Banks,TOL_10,float,True
+6 Riy_Banks,TOL_12.6,float,True
+6 Riy_Banks,TOL_15.8,float,True
+6 Riy_Banks,TOL_20,float,True
+6 Riy_Banks,TOL_25.1,float,True
+6 Riy_Banks,TOL_31.6,float,True
+6 Riy_Banks,TOL_39.8,float,True
+6 Riy_Banks,TOL_50.1,float,True
+6 Riy_Banks,TOL_63.1,float,True
+6 Riy_Banks,TOL_79.4,float,True
+6 Riy_Banks,TOL_100,float,True
+6 Riy_Banks,TOL_125.9,float,True
+6 Riy_Banks,TOL_158.5,float,True
+6 Riy_Banks,TOL_199.5,float,True
+6 Riy_Banks,TOL_251.2,float,True
+6 Riy_Banks,TOL_316.2,float,True
+6 Riy_Banks,TOL_398.1,float,True
+6 Riy_Banks,TOL_501.2,float,True
+6 Riy_Banks,TOL_631,float,True
+6 Riy_Banks,TOL_794.3,float,True
+6 Riy_Banks,TOL_1000,float,True
+6 Riy_Banks,TOL_1258.9,float,True
+6 Riy_Banks,TOL_1584.9,float,True
+6 Riy_Banks,TOL_1995.3,float,True
+6 Riy_Banks,TOL_2511.9,float,True
+6 Riy_Banks,TOL_3162.3,float,True
+6 Riy_Banks,TOL_3981.1,float,True
+6 Riy_Banks,TOL_5011.9,float,True
+6 Riy_Banks,TOL_6309.6,float,True
+6 Riy_Banks,TOL_7943.3,float,True
+6 Riy_Banks,TOL_10000,float,True
+6 Riy_Banks,TOL_12000,float,True
+6 Riy_Banks,TOL_12589.3,float,True
+6 Riy_Banks,TOL_15848.9,float,True
+6 Riy_Banks,TOL_19952.6,float,True
+6 Riy_Banks,TOL_24000,float,True
+6 Riy_Banks,TOL_25118.9,float,True
+6 Riy_Banks,TOL_31622.8,float,True
+6 Riy_Banks,TOL_39810.7,float,True
+6 Riy_Banks,TOL_48000,float,True
+6 Riy_Banks,TOL_50118.7,float,True
+6 Riy_Banks,TOL_63095.7,float,True
+6 Riy_Banks,TOL_72000,float,True
+6 Riy_Banks,TOL_79432.8,float,True
+6 Riy_Banks,TOL_100000,float,True
+6 Riy_Banks,TOL_125892.5,float,True
+6 Riy_Banks,TOL_158489.3,float,True
+6 Riy_Banks,TOL_192000,float,True
+6 Riy_Banks,TOL_199526.2,float,True
+6 Riy_Banks,TOL_251188.6,float,True
+6 Riy_Banks,TOL_288000,float,True
+6 Riy_Banks,qc_duration_ge55,bool,True
+6 Riy_Banks,qc_25band_finite,bool,True
+6 Riy_Banks,qc_25band_spread_ge6,bool,True
+7 St_Francis,site,string,True
+7 St_Francis,recorder,string,True
+7 St_Francis,station_token,string,True
+7 St_Francis,sample_rate_hz,int32,True
+7 St_Francis,file_kind,string,True
+7 St_Francis,src_file,string,True
+7 St_Francis,file_date,string,True
+7 St_Francis,t,timestamp[ms],True
+7 St_Francis,dur,float,True
+7 St_Francis,TOL_0.8,float,True
+7 St_Francis,TOL_1,float,True
+7 St_Francis,TOL_1.3,float,True
+7 St_Francis,TOL_1.6,float,True
+7 St_Francis,TOL_2,float,True
+7 St_Francis,TOL_2.5,float,True
+7 St_Francis,TOL_3.2,float,True
+7 St_Francis,TOL_4,float,True
+7 St_Francis,TOL_5,float,True
+7 St_Francis,TOL_6.3,float,True
+7 St_Francis,TOL_7.9,float,True
+7 St_Francis,TOL_10,float,True
+7 St_Francis,TOL_12.6,float,True
+7 St_Francis,TOL_15.8,float,True
+7 St_Francis,TOL_20,float,True
+7 St_Francis,TOL_25.1,float,True
+7 St_Francis,TOL_31.6,float,True
+7 St_Francis,TOL_39.8,float,True
+7 St_Francis,TOL_50.1,float,True
+7 St_Francis,TOL_63.1,float,True
+7 St_Francis,TOL_79.4,float,True
+7 St_Francis,TOL_100,float,True
+7 St_Francis,TOL_125.9,float,True
+7 St_Francis,TOL_158.5,float,True
+7 St_Francis,TOL_199.5,float,True
+7 St_Francis,TOL_251.2,float,True
+7 St_Francis,TOL_316.2,float,True
+7 St_Francis,TOL_398.1,float,True
+7 St_Francis,TOL_501.2,float,True
+7 St_Francis,TOL_631,float,True
+7 St_Francis,TOL_794.3,float,True
+7 St_Francis,TOL_1000,float,True
+7 St_Francis,TOL_1258.9,float,True
+7 St_Francis,TOL_1584.9,float,True
+7 St_Francis,TOL_1995.3,float,True
+7 St_Francis,TOL_2511.9,float,True
+7 St_Francis,TOL_3162.3,float,True
+7 St_Francis,TOL_3981.1,float,True
+7 St_Francis,TOL_5011.9,float,True
+7 St_Francis,TOL_6309.6,float,True
+7 St_Francis,TOL_7943.3,float,True
+7 St_Francis,TOL_10000,float,True
+7 St_Francis,TOL_12000,float,True
+7 St_Francis,TOL_12589.3,float,True
+7 St_Francis,TOL_15848.9,float,True
+7 St_Francis,TOL_19952.6,float,True
+7 St_Francis,TOL_24000,float,True
+7 St_Francis,TOL_25118.9,float,True
+7 St_Francis,TOL_31622.8,float,True
+7 St_Francis,TOL_39810.7,float,True
+7 St_Francis,TOL_48000,float,True
+7 St_Francis,TOL_50118.7,float,True
+7 St_Francis,TOL_63095.7,float,True
+7 St_Francis,TOL_72000,float,True
+7 St_Francis,TOL_79432.8,float,True
+7 St_Francis,TOL_100000,float,True
+7 St_Francis,TOL_125892.5,float,True
+7 St_Francis,TOL_158489.3,float,True
+7 St_Francis,TOL_192000,float,True
+7 St_Francis,TOL_199526.2,float,True
+7 St_Francis,TOL_251188.6,float,True
+7 St_Francis,TOL_288000,float,True
+7 St_Francis,qc_duration_ge55,bool,True
+7 St_Francis,qc_25band_finite,bool,True
+7 St_Francis,qc_25band_spread_ge6,bool,True
+9 Fish Hoek,site,string,True
+9 Fish Hoek,recorder,string,True
+9 Fish Hoek,station_token,string,True
+9 Fish Hoek,sample_rate_hz,int32,True
+9 Fish Hoek,file_kind,string,True
+9 Fish Hoek,src_file,string,True
+9 Fish Hoek,file_date,string,True
+9 Fish Hoek,t,timestamp[ms],True
+9 Fish Hoek,dur,float,True
+9 Fish Hoek,TOL_0.8,float,True
+9 Fish Hoek,TOL_1,float,True
+9 Fish Hoek,TOL_1.3,float,True
+9 Fish Hoek,TOL_1.6,float,True
+9 Fish Hoek,TOL_2,float,True
+9 Fish Hoek,TOL_2.5,float,True
+9 Fish Hoek,TOL_3.2,float,True
+9 Fish Hoek,TOL_4,float,True
+9 Fish Hoek,TOL_5,float,True
+9 Fish Hoek,TOL_6.3,float,True
+9 Fish Hoek,TOL_7.9,float,True
+9 Fish Hoek,TOL_10,float,True
+9 Fish Hoek,TOL_12.6,float,True
+9 Fish Hoek,TOL_15.8,float,True
+9 Fish Hoek,TOL_20,float,True
+9 Fish Hoek,TOL_25.1,float,True
+9 Fish Hoek,TOL_31.6,float,True
+9 Fish Hoek,TOL_39.8,float,True
+9 Fish Hoek,TOL_50.1,float,True
+9 Fish Hoek,TOL_63.1,float,True
+9 Fish Hoek,TOL_79.4,float,True
+9 Fish Hoek,TOL_100,float,True
+9 Fish Hoek,TOL_125.9,float,True
+9 Fish Hoek,TOL_158.5,float,True
+9 Fish Hoek,TOL_199.5,float,True
+9 Fish Hoek,TOL_251.2,float,True
+9 Fish Hoek,TOL_316.2,float,True
+9 Fish Hoek,TOL_398.1,float,True
+9 Fish Hoek,TOL_501.2,float,True
+9 Fish Hoek,TOL_631,float,True
+9 Fish Hoek,TOL_794.3,float,True
+9 Fish Hoek,TOL_1000,float,True
+9 Fish Hoek,TOL_1258.9,float,True
+9 Fish Hoek,TOL_1584.9,float,True
+9 Fish Hoek,TOL_1995.3,float,True
+9 Fish Hoek,TOL_2511.9,float,True
+9 Fish Hoek,TOL_3162.3,float,True
+9 Fish Hoek,TOL_3981.1,float,True
+9 Fish Hoek,TOL_5011.9,float,True
+9 Fish Hoek,TOL_6309.6,float,True
+9 Fish Hoek,TOL_7943.3,float,True
+9 Fish Hoek,TOL_10000,float,True
+9 Fish Hoek,TOL_12000,float,True
+9 Fish Hoek,TOL_12589.3,float,True
+9 Fish Hoek,TOL_15848.9,float,True
+9 Fish Hoek,TOL_19952.6,float,True
+9 Fish Hoek,TOL_24000,float,True
+9 Fish Hoek,TOL_25118.9,float,True
+9 Fish Hoek,TOL_31622.8,float,True
+9 Fish Hoek,TOL_39810.7,float,True
+9 Fish Hoek,TOL_48000,float,True
+9 Fish Hoek,TOL_50118.7,float,True
+9 Fish Hoek,TOL_63095.7,float,True
+9 Fish Hoek,TOL_72000,float,True
+9 Fish Hoek,TOL_79432.8,float,True
+9 Fish Hoek,TOL_100000,float,True
+9 Fish Hoek,TOL_125892.5,float,True
+9 Fish Hoek,TOL_158489.3,float,True
+9 Fish Hoek,TOL_192000,float,True
+9 Fish Hoek,TOL_199526.2,float,True
+9 Fish Hoek,TOL_251188.6,float,True
+9 Fish Hoek,TOL_288000,float,True
+9 Fish Hoek,qc_duration_ge55,bool,True
+9 Fish Hoek,qc_25band_finite,bool,True
+9 Fish Hoek,qc_25band_spread_ge6,bool,True
+10 Sea Point,site,string,True
+10 Sea Point,recorder,string,True
+10 Sea Point,station_token,string,True
+10 Sea Point,sample_rate_hz,int32,True
+10 Sea Point,file_kind,string,True
+10 Sea Point,src_file,string,True
+10 Sea Point,file_date,string,True
+10 Sea Point,t,timestamp[ms],True
+10 Sea Point,dur,float,True
+10 Sea Point,TOL_0.8,float,True
+10 Sea Point,TOL_1,float,True
+10 Sea Point,TOL_1.3,float,True
+10 Sea Point,TOL_1.6,float,True
+10 Sea Point,TOL_2,float,True
+10 Sea Point,TOL_2.5,float,True
+10 Sea Point,TOL_3.2,float,True
+10 Sea Point,TOL_4,float,True
+10 Sea Point,TOL_5,float,True
+10 Sea Point,TOL_6.3,float,True
+10 Sea Point,TOL_7.9,float,True
+10 Sea Point,TOL_10,float,True
+10 Sea Point,TOL_12.6,float,True
+10 Sea Point,TOL_15.8,float,True
+10 Sea Point,TOL_20,float,True
+10 Sea Point,TOL_25.1,float,True
+10 Sea Point,TOL_31.6,float,True
+10 Sea Point,TOL_39.8,float,True
+10 Sea Point,TOL_50.1,float,True
+10 Sea Point,TOL_63.1,float,True
+10 Sea Point,TOL_79.4,float,True
+10 Sea Point,TOL_100,float,True
+10 Sea Point,TOL_125.9,float,True
+10 Sea Point,TOL_158.5,float,True
+10 Sea Point,TOL_199.5,float,True
+10 Sea Point,TOL_251.2,float,True
+10 Sea Point,TOL_316.2,float,True
+10 Sea Point,TOL_398.1,float,True
+10 Sea Point,TOL_501.2,float,True
+10 Sea Point,TOL_631,float,True
+10 Sea Point,TOL_794.3,float,True
+10 Sea Point,TOL_1000,float,True
+10 Sea Point,TOL_1258.9,float,True
+10 Sea Point,TOL_1584.9,float,True
+10 Sea Point,TOL_1995.3,float,True
+10 Sea Point,TOL_2511.9,float,True
+10 Sea Point,TOL_3162.3,float,True
+10 Sea Point,TOL_3981.1,float,True
+10 Sea Point,TOL_5011.9,float,True
+10 Sea Point,TOL_6309.6,float,True
+10 Sea Point,TOL_7943.3,float,True
+10 Sea Point,TOL_10000,float,True
+10 Sea Point,TOL_12000,float,True
+10 Sea Point,TOL_12589.3,float,True
+10 Sea Point,TOL_15848.9,float,True
+10 Sea Point,TOL_19952.6,float,True
+10 Sea Point,TOL_24000,float,True
+10 Sea Point,TOL_25118.9,float,True
+10 Sea Point,TOL_31622.8,float,True
+10 Sea Point,TOL_39810.7,float,True
+10 Sea Point,TOL_48000,float,True
+10 Sea Point,TOL_50118.7,float,True
+10 Sea Point,TOL_63095.7,float,True
+10 Sea Point,TOL_72000,float,True
+10 Sea Point,TOL_79432.8,float,True
+10 Sea Point,TOL_100000,float,True
+10 Sea Point,TOL_125892.5,float,True
+10 Sea Point,TOL_158489.3,float,True
+10 Sea Point,TOL_192000,float,True
+10 Sea Point,TOL_199526.2,float,True
+10 Sea Point,TOL_251188.6,float,True
+10 Sea Point,TOL_288000,float,True
+10 Sea Point,qc_duration_ge55,bool,True
+10 Sea Point,qc_25band_finite,bool,True
+10 Sea Point,qc_25band_spread_ge6,bool,True
+13 Saldhana Bay,site,string,True
+13 Saldhana Bay,recorder,string,True
+13 Saldhana Bay,station_token,string,True
+13 Saldhana Bay,sample_rate_hz,int32,True
+13 Saldhana Bay,file_kind,string,True
+13 Saldhana Bay,src_file,string,True
+13 Saldhana Bay,file_date,string,True
+13 Saldhana Bay,t,timestamp[ms],True
+13 Saldhana Bay,dur,float,True
+13 Saldhana Bay,TOL_0.8,float,True
+13 Saldhana Bay,TOL_1,float,True
+13 Saldhana Bay,TOL_1.3,float,True
+13 Saldhana Bay,TOL_1.6,float,True
+13 Saldhana Bay,TOL_2,float,True
+13 Saldhana Bay,TOL_2.5,float,True
+13 Saldhana Bay,TOL_3.2,float,True
+13 Saldhana Bay,TOL_4,float,True
+13 Saldhana Bay,TOL_5,float,True
+13 Saldhana Bay,TOL_6.3,float,True
+13 Saldhana Bay,TOL_7.9,float,True
+13 Saldhana Bay,TOL_10,float,True
+13 Saldhana Bay,TOL_12.6,float,True
+13 Saldhana Bay,TOL_15.8,float,True
+13 Saldhana Bay,TOL_20,float,True
+13 Saldhana Bay,TOL_25.1,float,True
+13 Saldhana Bay,TOL_31.6,float,True
+13 Saldhana Bay,TOL_39.8,float,True
+13 Saldhana Bay,TOL_50.1,float,True
+13 Saldhana Bay,TOL_63.1,float,True
+13 Saldhana Bay,TOL_79.4,float,True
+13 Saldhana Bay,TOL_100,float,True
+13 Saldhana Bay,TOL_125.9,float,True
+13 Saldhana Bay,TOL_158.5,float,True
+13 Saldhana Bay,TOL_199.5,float,True
+13 Saldhana Bay,TOL_251.2,float,True
+13 Saldhana Bay,TOL_316.2,float,True
+13 Saldhana Bay,TOL_398.1,float,True
+13 Saldhana Bay,TOL_501.2,float,True
+13 Saldhana Bay,TOL_631,float,True
+13 Saldhana Bay,TOL_794.3,float,True
+13 Saldhana Bay,TOL_1000,float,True
+13 Saldhana Bay,TOL_1258.9,float,True
+13 Saldhana Bay,TOL_1584.9,float,True
+13 Saldhana Bay,TOL_1995.3,float,True
+13 Saldhana Bay,TOL_2511.9,float,True
+13 Saldhana Bay,TOL_3162.3,float,True
+13 Saldhana Bay,TOL_3981.1,float,True
+13 Saldhana Bay,TOL_5011.9,float,True
+13 Saldhana Bay,TOL_6309.6,float,True
+13 Saldhana Bay,TOL_7943.3,float,True
+13 Saldhana Bay,TOL_10000,float,True
+13 Saldhana Bay,TOL_12000,float,True
+13 Saldhana Bay,TOL_12589.3,float,True
+13 Saldhana Bay,TOL_15848.9,float,True
+13 Saldhana Bay,TOL_19952.6,float,True
+13 Saldhana Bay,TOL_24000,float,True
+13 Saldhana Bay,TOL_25118.9,float,True
+13 Saldhana Bay,TOL_31622.8,float,True
+13 Saldhana Bay,TOL_39810.7,float,True
+13 Saldhana Bay,TOL_48000,float,True
+13 Saldhana Bay,TOL_50118.7,float,True
+13 Saldhana Bay,TOL_63095.7,float,True
+13 Saldhana Bay,TOL_72000,float,True
+13 Saldhana Bay,TOL_79432.8,float,True
+13 Saldhana Bay,TOL_100000,float,True
+13 Saldhana Bay,TOL_125892.5,float,True
+13 Saldhana Bay,TOL_158489.3,float,True
+13 Saldhana Bay,TOL_192000,float,True
+13 Saldhana Bay,TOL_199526.2,float,True
+13 Saldhana Bay,TOL_251188.6,float,True
+13 Saldhana Bay,TOL_288000,float,True
+13 Saldhana Bay,qc_duration_ge55,bool,True
+13 Saldhana Bay,qc_25band_finite,bool,True
+13 Saldhana Bay,qc_25band_spread_ge6,bool,True

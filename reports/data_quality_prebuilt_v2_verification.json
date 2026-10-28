@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "data_package_hash": "f7e8d077cc87d9286722c78c68a37e85a809141cf86ae9d63b14ead79fc103b8",
+  "source_manifest_sha256": "d46a9fda582aed09a73c6a00fbe206dd1dd7ef39c1d9caab7159f60a097fc7a1",
+  "minimum_cross_split_same_sensor_support_gap_hours": 24.0,
+  "source_and_generator_hashes_verified": true,
+  "challenge_test_accessed": false,
+  "sealed_source_arrays_accessed": false,
+  "partitions": {
+    "train": {
+      "examples": 16000,
+      "max_energy_target_error": 4.044530208524577e-07,
+      "positive_draws_became_zero": 0,
+      "exact_first_batch_replay": true
+    },
+    "validation": {
+      "examples": 3000,
+      "max_energy_target_error": 3.133433588153878e-07,
+      "positive_draws_became_zero": 0,
+      "exact_first_batch_replay": true
+    },
+    "calibration": {
+      "examples": 3000,
+      "max_energy_target_error": 3.8435003835157744e-07,
+      "positive_draws_became_zero": 0,
+      "exact_first_batch_replay": true
+    }
+  }
+}

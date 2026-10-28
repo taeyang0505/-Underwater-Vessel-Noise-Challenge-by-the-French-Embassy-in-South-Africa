@@ -1,0 +1,310 @@
+{
+  "passed": true,
+  "source_hash": "694cf18c9daabc69a77807f6e0ede33ca451443fbfb17d754ac191f0206463ef",
+  "metadata_directory": "data.nosync/versions/vtuad_reference_r4_v1",
+  "candidate_pool_clips": 218,
+  "selected_clips": 119,
+  "excluded_actual_clips": 99,
+  "selected_components": 22,
+  "maximum_matching_bound": 22,
+  "original_native3_retained": true,
+  "retention_optimality_scope": "119 clips is the exact metadata objective optimum under the declared one-retained-day-per-hull and native-retention policy; not a claim of the globally largest arbitrary 22-component subgraph.",
+  "selected_hulls": 88,
+  "selected_days": 22,
+  "measured_seconds": 31075.0,
+  "used_2s_seconds": 31070,
+  "full525_components": 1,
+  "direct_isolation_scope": "Selected pool only; full corpus connectivity is preserved as an explicit limitation, not hidden by relabeling.",
+  "new_physical_sources_added": 0,
+  "deterministic_selection_and_assignment_replay": true,
+  "excluded_absent_from_all_R4_splits": true,
+  "reserved_original_splits_admitted": false,
+  "source_bank_headers": {
+    "data/processed/external_segments_power.npy": {
+      "shape": [
+        87163,
+        25
+      ],
+      "dtype": "float32",
+      "numeric_values_read": false
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "direct_cross_split_violation_counts": {
+        "component": 0,
+        "hull": 0,
+        "day": 0,
+        "SHA": 0,
+        "UTC_overlap_pairs": 0
+      },
+      "partitions": {
+        "outer_validation": {
+          "clips": 25,
+          "components": 5,
+          "native_clips": 0
+        },
+        "train": {
+          "clips": 69,
+          "components": 12,
+          "native_clips": 3
+        },
+        "validation": {
+          "clips": 25,
+          "components": 5,
+          "native_clips": 0
+        }
+      },
+      "coarse_duration_counts": {
+        "outer_validation": {
+          "120_to_under300": 19,
+          "300_to1380": 6
+        },
+        "train": {
+          "120_to_under300": 49,
+          "300_to1380": 20
+        },
+        "validation": {
+          "120_to_under300": 20,
+          "300_to1380": 5
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "direct_cross_split_violation_counts": {
+        "component": 0,
+        "hull": 0,
+        "day": 0,
+        "SHA": 0,
+        "UTC_overlap_pairs": 0
+      },
+      "partitions": {
+        "outer_validation": {
+          "clips": 25,
+          "components": 5,
+          "native_clips": 0
+        },
+        "train": {
+          "clips": 71,
+          "components": 13,
+          "native_clips": 0
+        },
+        "validation": {
+          "clips": 23,
+          "components": 4,
+          "native_clips": 3
+        }
+      },
+      "coarse_duration_counts": {
+        "outer_validation": {
+          "120_to_under300": 20,
+          "300_to1380": 5
+        },
+        "train": {
+          "120_to_under300": 52,
+          "300_to1380": 19
+        },
+        "validation": {
+          "120_to_under300": 16,
+          "300_to1380": 7
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "direct_cross_split_violation_counts": {
+        "component": 0,
+        "hull": 0,
+        "day": 0,
+        "SHA": 0,
+        "UTC_overlap_pairs": 0
+      },
+      "partitions": {
+        "outer_validation": {
+          "clips": 23,
+          "components": 4,
+          "native_clips": 3
+        },
+        "train": {
+          "clips": 73,
+          "components": 14,
+          "native_clips": 0
+        },
+        "validation": {
+          "clips": 23,
+          "components": 4,
+          "native_clips": 0
+        }
+      },
+      "coarse_duration_counts": {
+        "outer_validation": {
+          "120_to_under300": 16,
+          "300_to1380": 7
+        },
+        "train": {
+          "120_to_under300": 58,
+          "300_to1380": 15
+        },
+        "validation": {
+          "120_to_under300": 14,
+          "300_to1380": 9
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "direct_cross_split_violation_counts": {
+        "component": 0,
+        "hull": 0,
+        "day": 0,
+        "SHA": 0,
+        "UTC_overlap_pairs": 0
+      },
+      "partitions": {
+        "outer_validation": {
+          "clips": 23,
+          "components": 4,
+          "native_clips": 0
+        },
+        "train": {
+          "clips": 73,
+          "components": 14,
+          "native_clips": 3
+        },
+        "validation": {
+          "clips": 23,
+          "components": 4,
+          "native_clips": 0
+        }
+      },
+      "coarse_duration_counts": {
+        "outer_validation": {
+          "120_to_under300": 14,
+          "300_to1380": 9
+        },
+        "train": {
+          "120_to_under300": 55,
+          "300_to1380": 18
+        },
+        "validation": {
+          "120_to_under300": 19,
+          "300_to1380": 4
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "direct_cross_split_violation_counts": {
+        "component": 0,
+        "hull": 0,
+        "day": 0,
+        "SHA": 0,
+        "UTC_overlap_pairs": 0
+      },
+      "partitions": {
+        "outer_validation": {
+          "clips": 23,
+          "components": 4,
+          "native_clips": 0
+        },
+        "train": {
+          "clips": 71,
+          "components": 13,
+          "native_clips": 3
+        },
+        "validation": {
+          "clips": 25,
+          "components": 5,
+          "native_clips": 0
+        }
+      },
+      "coarse_duration_counts": {
+        "outer_validation": {
+          "120_to_under300": 19,
+          "300_to1380": 4
+        },
+        "train": {
+          "120_to_under300": 50,
+          "300_to1380": 21
+        },
+        "validation": {
+          "120_to_under300": 19,
+          "300_to1380": 6
+        }
+      }
+    }
+  ],
+  "outer_component_counts": {
+    "0": 5,
+    "1": 5,
+    "2": 4,
+    "3": 4,
+    "4": 4
+  },
+  "outer_coarse_duration_counts": {
+    "0": {
+      "120_to_under300": 19,
+      "300_to1380": 6
+    },
+    "1": {
+      "120_to_under300": 20,
+      "300_to1380": 5
+    },
+    "2": {
+      "120_to_under300": 16,
+      "300_to1380": 7
+    },
+    "3": {
+      "120_to_under300": 14,
+      "300_to1380": 9
+    },
+    "4": {
+      "120_to_under300": 19,
+      "300_to1380": 4
+    }
+  },
+  "outer_fine_duration_counts": {
+    "0": {
+      "120_to_under300": 19,
+      "300_to_under600": 5,
+      "600_to_under900": 1,
+      "900_to1380": 0
+    },
+    "1": {
+      "120_to_under300": 20,
+      "300_to_under600": 5,
+      "600_to_under900": 0,
+      "900_to1380": 0
+    },
+    "2": {
+      "120_to_under300": 16,
+      "300_to_under600": 3,
+      "600_to_under900": 1,
+      "900_to1380": 3
+    },
+    "3": {
+      "120_to_under300": 14,
+      "300_to_under600": 8,
+      "600_to_under900": 1,
+      "900_to1380": 0
+    },
+    "4": {
+      "120_to_under300": 19,
+      "300_to_under600": 4,
+      "600_to_under900": 0,
+      "900_to1380": 0
+    }
+  },
+  "native900bin_cover_all_folds": false,
+  "metadata_only": true,
+  "acoustic_numeric_values_read": false,
+  "Test_accessed": false,
+  "models_or_mixtures_generated": false,
+  "existing_R2_data_models_or_code_modified": false,
+  "SA_assignment_or_24h_purge_modified": false,
+  "NOAA_or_HMS_quality_failure_claim": false,
+  "selector_code_sha256": "2703465f3d8021a4a8cc4d335693ed061110613ccc0482a4acb44ce965388f32",
+  "audit_code_sha256": "7e2eb496ce257eb29c83a1bb91be5de563bcfe080a1f693ecd781418b314eb6f"
+}

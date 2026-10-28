@@ -1,0 +1,40 @@
+{
+  "status": "predeclared_before_policy_fit",
+  "created_unix": 1793088576.438647,
+  "selection_role": "local_fit only, six operators equal row weight",
+  "old_families": [
+    "R9",
+    "R14_baseline"
+  ],
+  "old_candidates": [
+    "fixed50tree_4x12.5NN",
+    "unconstrained_fit",
+    "capped_fit"
+  ],
+  "capped_bounds": {
+    "tree5_family": [
+      0.4,
+      0.8
+    ],
+    "each_of_four_NN": [
+      0.05,
+      0.4
+    ]
+  },
+  "tree5_exception": "family is aggregate, each constituent fold has family_weight/5 <=.16",
+  "highshare_models": "comparison only, excluded from all newly fitted policies",
+  "new_candidates": [
+    "nn",
+    "tree",
+    "fixed60tree40nn"
+  ],
+  "classifier_mix": "new small NN/Tree probabilities equal average, separate from regressor",
+  "new_score_share_lambdas": [
+    0.0,
+    0.25
+  ],
+  "heavy_share_lambda": 0.75,
+  "no_selection_on_gate_report_domain": true,
+  "no_Test_read_or_statistics": true,
+  "TF37": "paused partial-budget diagnostic, no optimizer restart"
+}

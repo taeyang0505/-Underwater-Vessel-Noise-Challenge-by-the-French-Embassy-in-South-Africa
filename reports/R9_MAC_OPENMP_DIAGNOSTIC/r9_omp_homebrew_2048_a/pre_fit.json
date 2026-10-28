@@ -1,0 +1,25 @@
+{
+  "rows": 2048,
+  "features": 3827,
+  "threads": 4,
+  "package_versions": {
+    "numpy": "2.3.5",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "sklearn": "1.9.1"
+  },
+  "libomp_images": [
+    "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+  ],
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libomp",
+      "filepath": "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib",
+      "version": null
+    }
+  ],
+  "source_dataset_or_Test_read": false
+}

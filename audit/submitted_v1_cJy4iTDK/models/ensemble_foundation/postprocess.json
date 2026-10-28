@@ -1,0 +1,65 @@
+{
+  "models": [
+    "cnn",
+    "fdy",
+    "itransformer",
+    "kumo_large",
+    "lgbm",
+    "lgbm_physics",
+    "lgbm_retrieval",
+    "tabicl",
+    "tabm"
+  ],
+  "weights": [
+    0.17132671663122062,
+    0.0,
+    0.008751123044903287,
+    0.28454881093284085,
+    1.4573382324562573e-17,
+    0.0,
+    0.0,
+    0.5353733493910354,
+    1.3519210526810137e-17
+  ],
+  "affine": [
+    1.033167608920691,
+    -0.005960755815019096
+  ],
+  "affine_selected_by_calibration_crossfit": true,
+  "calibration_cv_rmse": 0.09026978850050589,
+  "results": {
+    "validation": {
+      "ensemble_rmse": 0.07948673536772469,
+      "calibrated_rmse": 0.08048359308194714,
+      "zero_addition_mean": 0.02437150648192038
+    },
+    "calibration": {
+      "ensemble_rmse": 0.0910302843869977,
+      "calibrated_rmse": 0.09026543613530862,
+      "zero_addition_mean": 0.02611977336363312
+    },
+    "domain_holdout": {
+      "ensemble_rmse": 0.11456086059608718,
+      "calibrated_rmse": 0.1160811083461101,
+      "zero_addition_mean": 0.0741899530045343
+    }
+  },
+  "test_accessed": false,
+  "policy": "weights from validation; affine from calibration; domain holdout reported once, not used to choose weights",
+  "foundation_specs": {
+    "tabicl": {
+      "model_run_name": "tabicl_cpu_context16000",
+      "synthetic_dataset_name": "fullsources_cpu_a6d7f3a5_seed42",
+      "context_rows": 16000,
+      "members": 4
+    },
+    "kumo_large": {
+      "model_run_name": "kumo_large_cpu_context4096",
+      "synthetic_dataset_name": "fullsources_cpu_a6d7f3a5_seed42",
+      "context_rows": 4096,
+      "members": 4
+    }
+  },
+  "base_run_name": "fullsources_cpu_a6d7f3a5_seed42",
+  "score_policy": "Foundation diagnostic score is bounded share proxy, not calibrated presence probability."
+}

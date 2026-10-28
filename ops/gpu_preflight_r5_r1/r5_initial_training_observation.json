@@ -1,0 +1,146 @@
+{
+  "captured_unix": 1792938947.0919423,
+  "state": {
+    "status": "running",
+    "supervisor_pid": 5892,
+    "started_unix": 1792938463.993097,
+    "run_directory": "/workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1",
+    "ops_directory": "/workspace/underwater_vessel_noise_r5_r1/ops/group_cv_r5_gpu_r1",
+    "command": [
+      "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python",
+      "-u",
+      "-m",
+      "pipeline.runner_r5",
+      "fit",
+      "--config",
+      "/workspace/underwater_vessel_noise_r5_r1/project/configs/r5_training_gpu_r1.json",
+      "--output",
+      "/workspace/underwater_vessel_noise_r5_r1/project/models/group_cv_r5_gpu_r1",
+      "--preflight-report",
+      "/workspace/underwater_vessel_noise_r5_r1/project/reports/R5_TRAINING_PREFLIGHT_GPU_R1.json",
+      "--folds",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "config_sha256": "c6979cbe66e9da0ff840f30477a824d3f7e28fd1bc2e83295924e968fea8d75a",
+    "requested_folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "automatic_restart": false,
+    "automatic_hyperparameter_change": false,
+    "official_submission": false,
+    "pid": 5896,
+    "process_start_ticks": "66960523"
+  },
+  "health": {
+    "unix_time": 1792938944.9267979,
+    "training_pid": 5896,
+    "process_returncode": null,
+    "latest_epochs": {
+      "fold_00/preprocessing_pilot/raw/bg_cnn": {
+        "epoch": 1,
+        "train_examples": 53244,
+        "optimizer_updates": 416,
+        "loss": 0.06659637897452193,
+        "share_mse": 0.03245885420656967,
+        "weighted_cell_mse": 0.07871185571691883,
+        "presence_bce": 0.2891912147235963,
+        "train_rmse": 0.180163409732858,
+        "inner_rmse": 0.1318657404428426,
+        "best_inner_rmse": 0.1318657404428426,
+        "best_epoch": 1,
+        "patience_used": 0,
+        "learning_rate": 0.001,
+        "maximum_unclipped_gradient_norm": 3.470304489135742,
+        "elapsed_seconds": 224.93245847092476,
+        "observation_augmentation": {
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "positive_to_zero_after_removing_known_support": 0
+        },
+        "dynamic_epoch_source_receipt": {
+          "epoch": 1,
+          "examples": 53244,
+          "clean_primary_once": true,
+          "plan_sha256": "d0c7d1710a2f546f2938392aa5c90f55fc8a6aba97e678e718ccec5da020f06c",
+          "schedule_seed": 2599142152,
+          "source_identity_sha256": "30938491a8c6fad68c1dafa4b2bca698aa662d1608aab8f62037f26fc29709cc",
+          "heldout_arrays_opened": false
+        },
+        "inner_minus_train_rmse": -0.04829766929001539
+      }
+    },
+    "completed_summaries": [],
+    "failed_artifacts": [],
+    "new_log_alerts": [],
+    "gpu": {
+      "returncode": 0,
+      "csv": "2026/10/25 14:35:44.949, 0, NVIDIA GeForce RTX 4090, 0, 1274, 24564, 35, 66.92",
+      "stderr": ""
+    },
+    "cgroup_memory": [
+      {
+        "path": "/sys/fs/cgroup/memory",
+        "used_bytes": 9805799424,
+        "limit_bytes": 61999996928,
+        "peak_bytes": 10952990720,
+        "allocation_failure_count": 0
+      }
+    ],
+    "process_tree": {
+      "process_count": 2,
+      "rss_sum_bytes": 2994380800
+    },
+    "backup": {
+      "status": "noop",
+      "reason": "No verified completed models/folds yet",
+      "skipped": []
+    },
+    "automatic_intervention_executed": false
+  },
+  "epochs": {
+    "fold_00/preprocessing_pilot/raw/bg_cnn/epochs.jsonl": [
+      {
+        "epoch": 1,
+        "train_examples": 53244,
+        "optimizer_updates": 416,
+        "loss": 0.06659637897452193,
+        "share_mse": 0.03245885420656967,
+        "weighted_cell_mse": 0.07871185571691883,
+        "presence_bce": 0.2891912147235963,
+        "train_rmse": 0.180163409732858,
+        "inner_rmse": 0.1318657404428426,
+        "best_inner_rmse": 0.1318657404428426,
+        "best_epoch": 1,
+        "patience_used": 0,
+        "learning_rate": 0.001,
+        "maximum_unclipped_gradient_norm": 3.470304489135742,
+        "elapsed_seconds": 224.93245847092476,
+        "observation_augmentation": {
+          "requested_events": 0,
+          "applied_events": 0,
+          "minimum_support_protection_skips": 0,
+          "positive_to_zero_after_removing_known_support": 0
+        },
+        "dynamic_epoch_source_receipt": {
+          "epoch": 1,
+          "examples": 53244,
+          "clean_primary_once": true,
+          "plan_sha256": "d0c7d1710a2f546f2938392aa5c90f55fc8a6aba97e678e718ccec5da020f06c",
+          "schedule_seed": 2599142152,
+          "source_identity_sha256": "30938491a8c6fad68c1dafa4b2bca698aa662d1608aab8f62037f26fc29709cc",
+          "heldout_arrays_opened": false
+        }
+      }
+    ]
+  },
+  "scope": "Intermediate monitoring receipt; not completed-model or OOF evidence"
+}

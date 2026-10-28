@@ -1,0 +1,22 @@
+{
+  "format": "r13_dynamic_mix_saved_prediction_QA_v1",
+  "status": "passed",
+  "panels": 17,
+  "metric_rows": 169,
+  "scalar_numeric_checks": 3876,
+  "exact_formula_checks": 236,
+  "scalar_max_abs_error": 0.0,
+  "physical_q_pool_max_abs_error": 2.384185791015625e-07,
+  "selected_lambda_gate_first_argmax": 1.0,
+  "original_comparator_targets_IDs_predictions_exact": true,
+  "original_source_pins_unchanged": true,
+  "source_RESULT_sha256": "0251eab6f7ab8adbe32fcbbe49fea1a4c9b8bd257f303cb0b54dbc58e02f3be7",
+  "verification_source_sha256": "857cb7e8c17bdaaaf43c63f339e83c39c9da9debf3ad8febf4710eafae2ca496",
+  "tree_fit_count_clarification": "One tree learner.fit call, two booster fits: regressor1 plus independent classifier1; actual_tree_booster_fits:1 in executor receipt denotes learner call, not booster count.",
+  "coverage_limits": [
+    "Point metrics/formulas/IDs/q pooling only; site-macro and bootstrap CI endpoints not independently recalculated here",
+    "R10sensor-week clusters have previously documented short adjacentweek gaps; not independent24h bootstrap blocks",
+    "All17panels development-exposed; no blind result or Test-loss claim"
+  ],
+  "new_model_inference_or_fitting_Test_GPU": false
+}

@@ -1,0 +1,90 @@
+{
+  "format": "r15_exact_static_channel_plan_v1",
+  "created_unix": 1793078438.390334,
+  "source_file_sha256": {
+    "ops/r15_static_channel_audit.py": "18524b0e484dfcbe4980ef461c20d23abf48baa856c4c83a7b4cb8117c962614",
+    "configs/r14_production_mac_v1.json": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+    "data/synthetic/group_cv_physics_r13_variants_v2/manifest.json": "ac592fcaa1ab8f7c8b0175988b4bdb27ab22392dbc26d6848f8bf447c17aa96b",
+    "data/synthetic/group_cv_physics_r13_variants_v2/fold_00/basis.npz": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+    "pipeline/features_r14_production.py": "fd0826ff3771f0fe1ef18af6081eec2709986adc950a2f3b0816b24d9c80e4f4",
+    "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+    "pipeline/features_r14_anchor.py": "6027bc03cf6ae97f1c533d1b1a09835e28689b19908cc636ebaad97f69981fac",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "data/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "reports/r15_member_audit_r1/aligned_saved_predictions_1500.csv": "c74e79a7436bedf3c7e0733353e60f58a5994b7b00906be5e39fc217793ea9b1",
+    "reports/r15_descriptive_audit_r1/RESULTS.json": "a3ec519f6cefaf897ea83ee8f920500afb0e2cb400db074895bd7b27a1c6bd28",
+    "reports/r15_descriptive_audit_r1/joined1500.csv": "df83b2a631c0384c52bc82b6ea186ca357e9cea54f7225480ee37e8a42a99ab5"
+  },
+  "PCA_basis": "data/synthetic/group_cv_physics_r13_variants_v2/fold_00/basis.npz",
+  "basis_file_sha256": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+  "basis_training_binding": {
+    "version": "r13_full_background_cv_data_v1",
+    "role": "train",
+    "fold": 0,
+    "source_identity": {
+      "version": "r9_minute_full_dataset_v1",
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+      "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+      "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+      "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+      "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+      "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+      "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+      "code_sha256": {
+        "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+        "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+        "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+        "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+        "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+        "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+        "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+      },
+      "reference_count": 509,
+      "reference_independent_CV": false
+    },
+    "source_ids_sha256": "c8b0f5bd9df754216e70af17fc2ad5ad16c33cf2cff71ebd530440e25e71c4f7",
+    "background_npz_sha256": "b5a948b3ec549bafceecc54d8f209643df7be995913263322c69192e5e63566c",
+    "TRAIN_pool_sha256": "bfb6899fd3aa447566402d84892573aa8884bf9e388409d00265e9dd459d8b3f",
+    "config_sha256": "d65abe4c4cde8277b53db8dd4c3a8d42055eb7abbaa54f38f6f773e5061bf1d8",
+    "no_added_component": true,
+    "site_counts": {
+      "1 Richards Bay": 312,
+      "2 Durban": 311,
+      "3 Cape_Recife": 240,
+      "4 Bird Island": 311,
+      "5 St Croix Island": 311,
+      "6 Riy_Banks": 204,
+      "7 St_Francis": 311
+    }
+  },
+  "fit_or_backbone_or_checkpoint_load_or_model_prediction": false,
+  "formula_sources": {
+    "base11": "pipeline.features_r12.transform_channels / features_r14_torch.TorchFeatureFrontend",
+    "anchor3": "pipeline.features_r14_anchor.anchor_maps / features_r14_production.ProductionFrontend"
+  },
+  "summary_formula": {
+    "ch8_signedPCA_RMS": "10*sqrt(mean_observed_safe0..22(channel8^2)); units dB",
+    "ch9_positivePCA_RMS": "10*sqrt(mean_observed_safe0..22(channel9^2)); units dB",
+    "ch10_curvature_RMS": "10*sqrt(mean_observed_band10..21(channel10^2)); units dB",
+    "ch11_MF_minus_LF": "20*mean_observed_safe0..22(channel11); MF251.2..3162.3,LF31.6..158.5Hz",
+    "ch12_anchor_residual": "20*mean or RMS observed_safe0..22(channel12); units dB",
+    "ch13_positive_fraction": "mean/p95 observed_safe0..22(channel13); bounded derived feature, NOT true ship fraction"
+  },
+  "summary_regions": "Channels0..7 full25 observed cells; PCA/anchor safe0..22; curvature10..21; mask also fullgrid fraction",
+  "group_law": "Reuse previous declared low-temporal q25(bumpHigh) AND q25(stdBroadband); separately intersect with top-quartile actual PCApositiveRMS, MF-LFmean, anchorRMS. No threshold optimization.",
+  "classification_semantics": "Input-only descriptive groups. No hidden Test labels or actual site GT.",
+  "declared_semantic_features": [
+    "PCA_signed_residual_RMS_db",
+    "PCA_positive_residual_RMS_db",
+    "mid_curvature_RMS_db",
+    "MF_minus_LF_mean_db",
+    "MF_minus_LF_p90_db",
+    "LF_anchor_residual_signed_mean_db",
+    "LF_anchor_residual_RMS_db",
+    "LF_anchor_positive_fraction_mean",
+    "LF_anchor_positive_fraction_p95"
+  ]
+}

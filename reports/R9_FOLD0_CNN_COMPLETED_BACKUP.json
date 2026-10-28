@@ -1,0 +1,29 @@
+{
+  "format": "r9_completed_model_local_backup_verification_v1",
+  "status": "passed",
+  "remote_receipt": {
+    "status": "passed",
+    "archive": "/workspace/underwater_vessel_noise_r9_r1/backups/r9_fold00_bg_cnn_completed_r1/r9_fold00_bg_cnn_completed_r1.tar.gz",
+    "archive_sha256": "85225927b66ec7fa5b6217272bc4446ab1658a2a6e72b38ae9679317715c5784",
+    "archive_bytes": 86051667,
+    "payload_entries": 41,
+    "manifest_sha256": "822a9b36603a1b62d6b8f5eaee246efd52ee95c01c0f00aaeaa1e0b5c5e63fb6",
+    "summary_sha256": "24d238e5e33d828cc0595d9456c2c1f69ae5b2933ce300e7515001e01c1a20b9",
+    "best_window_epoch": 5,
+    "best_window_rmse": 0.09036093202136652,
+    "best_macro_epoch": 36,
+    "last_rmse": 0.0999112708793573
+  },
+  "archive_sha256_verified": true,
+  "all_entry_sha256_verified": true,
+  "entries": 42,
+  "restored": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/server_backups/r9_gpu_r1/fold_00_bg_cnn_completed_r1/restored",
+  "source_summary_sha256": "24d238e5e33d828cc0595d9456c2c1f69ae5b2933ce300e7515001e01c1a20b9",
+  "checkpoint_count": 13,
+  "all_checkpoint_metadata_and_finite_weights_remote_verified": true,
+  "100_epochs_and_strict_best_minima_verified": true,
+  "source_model_and_config_unmodified": true,
+  "active_model_untouched": true,
+  "elapsed_seconds": 43.56579608283937,
+  "transport_log": "/private/tmp/r9_backup_transport_gvr3_prf.stdout"
+}

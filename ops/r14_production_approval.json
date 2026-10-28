@@ -1,0 +1,13 @@
+{
+  "version": "r14_user_production_approval_v1",
+  "production_recipe_approved": true,
+  "authority": "explicit_user_instruction_in_current_conversation",
+  "user_instruction_path": "/Users/hongtaeyang/.codex/attachments/aa675a70-ab73-4ba9-bf20-9dea6a9a792c/붙여넣은 텍스트.txt",
+  "user_instruction_sha256": "54bae81c2c0aa8b5e5fa299cf6aebbbe0af98b69d68f41add3c3b1802a212ba6",
+  "approved_scope": ["new_R14_Mac_CPU_MPS_production_run", "14_channel_full_neural_models", "baseline_and_highshare_full5252_trees_all5folds", "frozen_inference_and_local_submission_CSV_creation"],
+  "user_accepts_threshold_exception": {"metric": "full15_SF_AUC", "observed": 0.8196987179487178, "previous_threshold": 0.82, "historical_numeric_result_rewritten": false},
+  "historical_R13_R14_diagnostics_remain_immutable": true,
+  "external_CUDA_server_authorized_or_needed": false,
+  "official_upload": false,
+  "approval_does_not_assert_official_Test_generalization_or_measured_full_epoch_speed": true
+}

@@ -1,0 +1,113 @@
+{
+  "version": "safe_local_alignment_audit_v1",
+  "status": "predeclared_before_alignment_model_fit",
+  "definitions": {
+    "LF_band_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "high_band_indices": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "regional_power": "sum linear band powers, expressed in dB using stable logsumexp; complete regional minutes only",
+    "bump": "maximum regional minute dB minus median regional minute dB, >=3 observed minutes",
+    "correlation": "Pearson between LF and high regional minute dB, >=3 paired minutes and nonconstant series",
+    "broadband_std": "population standard deviation of all25 regional minute dB, >=3 complete minutes",
+    "AV_features": "4 physical values +4 defined flags +375 window-median-relative db/20 +375 observed mask +25 bandmedian-windowmedian/20 +25 temporal band std/20 +25 band q90-q10 span/20 +25 observed fraction",
+    "undefined_AV_feature_fill": 0.0,
+    "number_of_features": 858,
+    "raw_absolute_db_site_target_ref_tags_in_features": false,
+    "source_id_used_only_for_CV_groups": true,
+    "KS_scope": "R6 TRAIN versus R6 INNER only; physical values with defined masks",
+    "domain_labels": {
+      "TRAIN": 0,
+      "INNER": 1
+    },
+    "classifier": {
+      "family": "LightGBM binary classifier",
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_jobs": 2,
+      "random_state": 20261026,
+      "min_child_samples": 20,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "early_stopping": false,
+      "hyperparameter_search": false
+    },
+    "CV": {
+      "folds": 5,
+      "kind": "StratifiedGroupKFold",
+      "shuffle": true,
+      "random_state": 20261026,
+      "group": "original primary background base_window_index"
+    },
+    "constants": [
+      0.0,
+      0.1,
+      "same_version_TRAIN_mean",
+      "oracle_same_INNER_mean_diagnostic_only"
+    ],
+    "no_Test_or_Benchmark_moment_fitting": true,
+    "limitations": [
+      "Source-domain AV is not a Test-domain AV or a leaderboard-gap measurement.",
+      "Source-separated groups can still share sensors/recorder footprints. Reused TRAIN windows are grouped together.",
+      "AUC near .5 does not establish distribution equality; .85 is not an automatic fix threshold.",
+      "R5 INNER labels come from the old R4 synthetic generator, not natural observational vessel labels.",
+      "Oracle INNER mean is the best constant fitted to that INNER truth; it is a descriptive lower bound, not a deployable fit.",
+      "The unknown public Benchmark score is not a target-moment equation; no .24-.27 interval is fitted."
+    ]
+  },
+  "input_paths": {
+    "R5_TRAIN_share_source": "data/synthetic/group_cv_passage_r4_v1/fold_00/train.npz",
+    "R5_INNER_share_source": "data/synthetic/group_cv_passage_r4_v1/fold_00/validation.npz",
+    "R6_TRAIN": "data/synthetic/r6_cpu_guardrails_v3_schemafix/train_r6.npz",
+    "R6_INNER": "data/synthetic/r6_cpu_guardrails_v3_schemafix/inner_r6.npz",
+    "R6_dataset_manifest": "data/synthetic/r6_cpu_guardrails_v3_schemafix/manifest.json",
+    "R6_source_manifest": "data/versions/source_split_r6_guardrails_v2/manifest.json",
+    "R6_background_metadata": "data/versions/source_split_r6_guardrails_v2/background_manifest.parquet",
+    "all_main_checkpoints_frozen": "models/r6_cpu_guardrails_v2/all_checkpoints_frozen_before_heldout.json"
+  },
+  "input_sha256": {
+    "R5_TRAIN_share_source": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c",
+    "R5_INNER_share_source": "51b8ff0d1c28dba263c8e2261d7a31a35138512f9a1b214f236922face592d57",
+    "R6_TRAIN": "4b76f3bdf0238e90c89a452662ad35031b5fabed887cc2c8c800af5f8619674e",
+    "R6_INNER": "d49f9fd3f87a2b24f6e0cf710a37da537ed07824f2bd80fe825ab571331c9d9d",
+    "R6_dataset_manifest": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+    "R6_source_manifest": "894783ab9aa9cfd17db4fb46e00762fd876a2bca16c824274699cb0db4099cf2",
+    "R6_background_metadata": "fa534e3ba31279a2982be46e80e0a9cdf89be3755f72058747e7fdafda60a714",
+    "all_main_checkpoints_frozen": "21c63e12e662285d294c85b5c3c7fb138c9058b0b83d4283e3e210e1f59054c4"
+  },
+  "script_sha256": "b1318b960431c56bf36f1e2f366c863ba6f2fc093dd92bdd9a774fd82effd0e0",
+  "execution": "one fixed grouped AV run; no Test, model-output or locked-array access",
+  "data_fields": {
+    "R5_TRAIN": [
+      "share"
+    ],
+    "R5_INNER": [
+      "share"
+    ],
+    "R6_TRAIN_INNER": [
+      "db",
+      "share",
+      "base_window_index"
+    ]
+  },
+  "plan_sha256": "1f084d747338c1c1438cdf828cce6f42dee1a45ef8c48bf54bca9d057ec0d175"
+}

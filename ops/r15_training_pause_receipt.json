@@ -1,0 +1,38 @@
+{
+  "status": "paused_by_explicit_user_request",
+  "KST": "2026-10-27T14:20:07.648943+09:00",
+  "method": "SIGSTOP to verified training PID only",
+  "PID": 80906,
+  "process_observation": "PID  PPID STAT  ELAPSED COMMAND\n80906     1 Ts   08:38:40 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m ops.train_r14_production_nn train --config configs/r14_production_mac_v1.json --fold 0 --preflight reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.json --qa reports/R14_PRODUCTION_NN_INDEPENDENT_QA.json --output /Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r14_production_nn_fold0_r1",
+  "current_progress_at_pause": {
+    "status": "training",
+    "phase": "TF",
+    "kind": "tfgrid_fdy_conformer",
+    "epoch": 38,
+    "rows_seen": 49856,
+    "total_rows": 78869,
+    "optimizer_steps": 46400,
+    "elapsed_seconds": 31054.3869388327
+  },
+  "last_complete_epoch": 37,
+  "last_complete_validation_rmse": 0.058705338189848084,
+  "best_selection_rmse": 0.058705338189848084,
+  "best_epoch": 37,
+  "checkpoints": [
+    {
+      "path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/latest.pt",
+      "bytes": 31442721,
+      "sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9"
+    },
+    {
+      "path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/best.pt",
+      "bytes": 31442721,
+      "sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9"
+    }
+  ],
+  "fold1_to4_started": false,
+  "new_CSV_generation": "held by prior explicit request",
+  "training_code_or_data_modified": false,
+  "automatic_resume": false,
+  "scope": "No new model training; saved prediction and public input descriptive audits only"
+}

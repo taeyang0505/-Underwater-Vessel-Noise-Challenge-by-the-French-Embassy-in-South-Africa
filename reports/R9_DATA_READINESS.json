@@ -1,0 +1,296 @@
+{
+  "status": "passed",
+  "data_bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+  "data_manifest_sha256": "76c2089791e512db942cc56ee495d061b6334dac80b1aca00c06cb1c8b2f72d5",
+  "config_file_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "source_identity": {
+    "version": "r9_minute_full_dataset_v1",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+    "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+    "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+    "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+    "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+    "code_sha256": {
+      "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+      "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+      "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+      "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+      "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+      "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+      "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+    },
+    "reference_count": 509,
+    "reference_independent_CV": false
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_backgrounds": 78869,
+      "scheduled_epochs": 100,
+      "explicit_no_source_per_epoch": 15774,
+      "lf_hard_negative_candidates": 6947,
+      "lf_hard_negative_A_zero_per_epoch": 6947,
+      "hard_negative_quota_shortfall": 940,
+      "site_weight_min": 0.2450999617576599,
+      "site_weight_max": 55.23039245605469,
+      "site_weight_mean": 1.0000000160481892,
+      "fixed_roles": {
+        "selection": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 25,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 126
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 10,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 100
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 41
+        },
+        "report": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 14
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "train_backgrounds": 78069,
+      "scheduled_epochs": 100,
+      "explicit_no_source_per_epoch": 15614,
+      "lf_hard_negative_candidates": 6835,
+      "lf_hard_negative_A_zero_per_epoch": 6835,
+      "hard_negative_quota_shortfall": 972,
+      "site_weight_min": 0.24601756036281586,
+      "site_weight_max": 35.182064056396484,
+      "site_weight_mean": 1.000000003993608,
+      "fixed_roles": {
+        "selection": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 25,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 141
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 10,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 112
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 18
+        },
+        "report": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 7,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 17
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_backgrounds": 78362,
+      "scheduled_epochs": 100,
+      "explicit_no_source_per_epoch": 15672,
+      "lf_hard_negative_candidates": 6904,
+      "lf_hard_negative_A_zero_per_epoch": 6904,
+      "hard_negative_quota_shortfall": 932,
+      "site_weight_min": 0.24616438150405884,
+      "site_weight_max": 35.31410598754883,
+      "site_weight_mean": 1.0000000060219236,
+      "fixed_roles": {
+        "selection": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 25,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 82
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 10,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 33
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 103
+        },
+        "report": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 76
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_backgrounds": 78753,
+      "scheduled_epochs": 100,
+      "explicit_no_source_per_epoch": 15751,
+      "lf_hard_negative_candidates": 6877,
+      "lf_hard_negative_A_zero_per_epoch": 6877,
+      "hard_negative_quota_shortfall": 998,
+      "site_weight_min": 0.24476076662540436,
+      "site_weight_max": 54.34989547729492,
+      "site_weight_mean": 0.9999999921251073,
+      "fixed_roles": {
+        "selection": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 25,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 96
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 10,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 50
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 64
+        },
+        "report": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 113
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_backgrounds": 78124,
+      "scheduled_epochs": 100,
+      "explicit_no_source_per_epoch": 15625,
+      "lf_hard_negative_candidates": 6865,
+      "lf_hard_negative_A_zero_per_epoch": 6865,
+      "hard_negative_quota_shortfall": 947,
+      "site_weight_min": 0.24605518579483032,
+      "site_weight_max": 50.04740524291992,
+      "site_weight_mean": 0.9999999959243253,
+      "fixed_roles": {
+        "selection": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 28,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 138
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 11,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 7
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "unique_source_windows": 500,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 100,
+          "positive_request_but_no_observed_addition": 31
+        },
+        "report": {
+          "examples": 1000,
+          "unique_source_windows": 1000,
+          "unique_source_groups": 8,
+          "repeated_background_examples": 0,
+          "zero_requests": 200,
+          "positive_request_but_no_observed_addition": 92
+        }
+      }
+    }
+  ],
+  "total_fixed_examples": 15000,
+  "dynamic_TRAIN_role_sum_per_epoch": 392177,
+  "unique_background_windows_across_roles": 100964,
+  "total_bundle_bytes": 71244935,
+  "total_compressed_npz_bytes": 24707614,
+  "raw_energy_label_max_error": 3.246515567489894e-08,
+  "rounded_weight_fixed_q_max_gap": 0.0016588222127666419,
+  "reference_count": 509,
+  "weak_background_classes_inside_vessel_archive": 22,
+  "separate_ambient_control_files": 16,
+  "direct_cached_parity_cases": 1527,
+  "data_preparation_elapsed_seconds": 24.43636670894921,
+  "actual_training_started_by_this_task": false,
+  "no_Test_or_waveform_access": true,
+  "worker_verification_file": "reports/R9_DATASET_READY_VERIFICATION.json",
+  "worker_verification_sha256": "18b7246a4db6fddad707bf41b5659e0181105847f5ec3cc57561e463ca56eadb",
+  "code_sha256": {
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/prepare_r9_training.py": "62df29d4077879691b4c26f785717dd873348a2846c8d7bc58d766f7f24dd82a"
+  },
+  "cautions": [
+    "All509 references are shared across background folds; no reference-independent CV.",
+    "The recording mixture fraction is known; isolated vessel-only energy and natural ship absence are not certified.",
+    "A positive source request can yield observed y=0 after physical placement meets missing minutes; no retries.",
+    "A schedule is planned coverage, not a receipt that an unfinished training iterator completed.",
+    "TRAIN hard-negative allocation deliberately conditions no-addition draws on TRAIN LF bump candidates; this is not identical conditional sampling to fixed roles.",
+    "Fixed report target moments are generation QA only; model predictions require all requested folds and policies frozen.",
+    "Raw labels are retained; rounded input weights have a bounded discrepancy and do not redefine ground truth.",
+    "Fold role totals and epoch augmentation views are not independent new recordings."
+  ]
+}

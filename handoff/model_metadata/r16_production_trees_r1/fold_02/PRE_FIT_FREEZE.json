@@ -1,0 +1,68 @@
+{
+  "status": "frozen_before_fit",
+  "fold": 2,
+  "manifest": "data.nosync/synthetic/r16_production_v1/fold_02/manifest.json",
+  "manifest_sha256": "c75d712552b151cee5daad8affb798938c2467aee9e089f339cf6307e4c9f847",
+  "source_pins": {
+    "ops/train_r16_production_trees.py": "9f3d5fc6079be8a4f95a6efed6d0712fbfb1c06cffa22cc5995557c91c53f1b2",
+    "pipeline/r16_production_data.py": "81853811a1820d15e935141795f6611d035843f5d249fb80da246cbdadb84067",
+    "data.nosync/synthetic/r16_production_v1/fold_02/manifest.json": "c75d712552b151cee5daad8affb798938c2467aee9e089f339cf6307e4c9f847",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda",
+    "ops/r15_forward_prototype.py": "595882595fc8fd1cc8da16049739c9ed6c549eee20a922515d798bbb9a892a5a",
+    "pipeline/background_cv_r9.py": "0d2562bc41fc9f823bc2b5eee90cd7e80e0eac9c715788894487714eb58d2e52",
+    "pipeline/vtuad_reference_r4.py": "2703465f3d8021a4a8cc4d335693ed061110613ccc0482a4acb44ce965388f32",
+    "data.nosync/synthetic/r16_production_v1/PLAN.json": "14e71a2c4c258d838453b533aa706119449d8310bdad922c604a6547d5a2992f",
+    "data.nosync/synthetic/r16_production_v1/SOURCE_AUDIT.json": "d7ca07950a65fde861579d610883c35eec4b237d08dd80adc3e70cd976442f2b",
+    "data.nosync/synthetic/r16_production_v1/reference_partitions.parquet": "e9867b457d28ab7e6c823c40cb453bcb6a0f7a5815912ec323ca10d2db50f8e6",
+    "data.nosync/synthetic/r16_production_v1/primary_background_pool.parquet": "57c95044267ca37a6774a395acd8b58b50f6c93da2bd6a49f68cc5b25c46b59e",
+    "data.nosync/synthetic/r16_production_v1/primary_reference_pool.parquet": "00e415492be431c2822217962e36c82b68fe37ca53233a72b8dd3e878f1e9830",
+    "reports/r16_cross_operator_r1/data/manifest.json": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1",
+    "data/versions/vtuad_reference_r4_v1/reference_manifest.parquet": "49ae1e7c99fb7cc166d272aca3e9b1467ecd61953928ee243def5e98602c5f1e",
+    "configs/r9_full_training_v1.json": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "data.nosync/versions/background_cv_r9/manifest.json": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "data.nosync/versions/vtuad_full_r9/manifest.json": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da"
+  },
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "max_bin": 127,
+    "threads": 2,
+    "feature_batch_size": 512
+  },
+  "seed": 2026122732,
+  "feature_counts": {
+    "regression": 3827,
+    "classification": 700
+  },
+  "selection": "shared fixed R16 local_fit2400 development; not OOF",
+  "data_validation": {
+    "status": "passed",
+    "fold": 2,
+    "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_02/manifest.json",
+    "manifest_sha256": "c75d712552b151cee5daad8affb798938c2467aee9e089f339cf6307e4c9f847",
+    "data_hash": "d7d982904e38e25e4da246a214f0942508c76ea05e9b2b026b26ff3b3fe60d76",
+    "roles": {
+      "selection": 2400,
+      "cv_validation": 1000,
+      "ensemble_fit": 500,
+      "ensemble_gate": 500,
+      "report": 1000,
+      "train": 61259
+    },
+    "Test_accessed": false
+  },
+  "PCA_LFanchor_highshare": false,
+  "Test_used": false
+}

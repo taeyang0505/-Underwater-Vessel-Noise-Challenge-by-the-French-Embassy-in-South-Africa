@@ -1,0 +1,90 @@
+{
+  "format": "r12_compact_physics_lgbm_v1",
+  "kind": "lgbm_physics_compact",
+  "status": "completed",
+  "fixture_only": true,
+  "settings": {
+    "maximum_trees": 10,
+    "early_stopping_patience": 3,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 5,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102613,
+  "include_shape": false,
+  "feature_count": 466,
+  "feature_schema_sha256": "d647c9d9c862201d7fdb52aef91b258eae224f64a6b13cbd83c21821b249b671",
+  "basis_sha256": null,
+  "basis_training_binding": null,
+  "training_binding": {
+    "fixture_only": true,
+    "case": "physical_compactFalse"
+  },
+  "fit_plan_sha256": "a1b62c2aeabce59eeec5fc02c086261377a908f7d5f377e853f55c7024671d0f",
+  "best_iteration": 10,
+  "classifier_best_iteration": 10,
+  "validation_fit_metrics": {
+    "n": 48,
+    "rmse": 0.17125789055566412,
+    "mae": 0.12877222523093224,
+    "bias": 0.02013963833451271,
+    "target_mean": 0.4241622102757295,
+    "target_rms": 0.4835014601307952,
+    "prediction_mean": 0.4443018486102422,
+    "prediction_rms": 0.44931280429392917,
+    "share_auc": 1.0,
+    "classifier_auc": 1.0,
+    "hybrid_auc": 1.0,
+    "share_saturation_le001": 0.0,
+    "share_saturation_ge099": 0.0,
+    "classifier_saturation_le001": 0.0,
+    "classifier_saturation_ge099": 0.0,
+    "site_slices": {
+      "synthetic_0": {
+        "n": 24,
+        "rmse": 0.16298507071674462,
+        "bias": 0.02624443794290225,
+        "target_mean": 0.417920783162117,
+        "prediction_mean": 0.44416522110501927,
+        "share_auc": 1.0,
+        "classifier_auc": 1.0
+      },
+      "synthetic_1": {
+        "n": 24,
+        "rmse": 0.17914909120229836,
+        "bias": 0.014034838726123175,
+        "target_mean": 0.430403637389342,
+        "prediction_mean": 0.44443847611546516,
+        "share_auc": 1.0,
+        "classifier_auc": 1.0
+      }
+    }
+  },
+  "train_rows": 128,
+  "validation_fit_rows": 48,
+  "feature_matrix_bytes": {
+    "train": 238592,
+    "validation_fit": 89472
+  },
+  "lightgbm_version": "4.7.0",
+  "score_policy": ".5clipped_share+.5presence_classifier; no calibration",
+  "NN_epoch_policy_applicable": false,
+  "artifact_sha256": {
+    "share.txt": "b94b8e593e46642094889321a60c1bbb1f9b890c04f2a0b9f959f178fbc450ee",
+    "presence.txt": "f50eebe5cdf64c0b841a378566bb9b1a684039f6acef9217f869e6660ccfe389",
+    "feature_schema.json": "e0a172b2c37c62cb4d67f95c787b4edebe12aaf42f301d9c5134e30891522a4b",
+    "validation_fit_predictions.npz": "59988c95b83c1c2f44597e11fa44c80dd12538f48ce9597d326403cc9d3d6743",
+    "fit_plan.json": "a1b62c2aeabce59eeec5fc02c086261377a908f7d5f377e853f55c7024671d0f"
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "d059b4cb1d39bf26c985830c07d8de9cd7427cb2bbb9966257f6e3701ef1f882",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "elapsed_seconds": 0.19188970793038607,
+  "gate_eval_Test_used_for_fitting": false
+}

@@ -1,0 +1,62 @@
+{
+  "status": "completed_local_CSV_only",
+  "query": {
+    "raw_query_csv_sha256": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "rows": 1500,
+    "canonical_features": 375,
+    "ID_order_preserved": true,
+    "NaN_kept_missing": true
+  },
+  "ID_order_sha256": "09407eb36b4c327f87f902c2fccf176ce54b0ad0ee4f793fa70b9a47376ba771",
+  "policy_file_sha256": "46ec3b14cafb5d07e79d77ff35849e46ec68a6b575bb1ff1781b43fe46f28af9",
+  "output_sha256": "f016265ae9a1702dbb7121bfb0c852f5900f85a17194881056316768300fb39d",
+  "model_timings": {
+    "bg_cnn": {
+      "seconds": 3.901063750497997,
+      "physical_pool_max_abs": 8.690783881437625e-08,
+      "best_window_epoch": 5,
+      "examples": 1500,
+      "device": "cpu FP32"
+    },
+    "tfgrid_fdy_conformer": {
+      "seconds": 15.366770874708891,
+      "physical_pool_max_abs": 1.1217809714469951e-07,
+      "best_window_epoch": 17,
+      "examples": 1500,
+      "device": "cpu FP32"
+    },
+    "fdy": {
+      "seconds": 0.8219035426154733,
+      "physical_pool_max_abs": 1.2267237514684837e-07,
+      "best_window_epoch": 16,
+      "examples": 1500,
+      "device": "cpu FP32"
+    },
+    "itransformer": {
+      "seconds": 0.11506687570363283,
+      "physical_pool_max_abs": 9.502208031531012e-08,
+      "best_window_epoch": 16,
+      "examples": 1500,
+      "device": "cpu FP32"
+    },
+    "lgbm_physics": {
+      "seconds": 1.3655838333070278,
+      "examples": 1500,
+      "device": "Mac CPU"
+    }
+  },
+  "all5_weights": {
+    "bg_cnn": 0.1,
+    "tfgrid_fdy_conformer": 0.1,
+    "fdy": 0.1,
+    "itransformer": 0.1,
+    "lgbm_physics": 0.6
+  },
+  "all5_positive": true,
+  "report_accessed": false,
+  "training_or_calibration_executed": false,
+  "upload_or_official_submission": false,
+  "single_fold_pilot_not_full5fold_neural_inference": true,
+  "CSV_roundtrip_exact": true,
+  "additional_postprocessing": "[0,1] numerical clipping only"
+}

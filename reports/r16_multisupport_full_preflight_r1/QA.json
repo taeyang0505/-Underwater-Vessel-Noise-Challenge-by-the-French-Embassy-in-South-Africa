@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "AST_files": [
+    "pipeline/r16_multisupport_data.py",
+    "pipeline/training_r16_multisupport.py",
+    "pipeline/models_r16_multisupport.py",
+    "ops/run_r16_multisupport_full.py",
+    "ops/finalize_r16_multisupport_full.py"
+  ],
+  "real_source_rows": 30,
+  "D0": {
+    "path": "reports/r16_multisupport_full_preflight_r1/D0.npz",
+    "sha256": "ed9313dd9fbeb80b9426858d37c0d943fb99992afc6165348f4806301a2bbe57",
+    "n": 30,
+    "zero_count": 6,
+    "positive_support_bins": {
+      "short": 8,
+      "medium": 10,
+      "long": 6
+    },
+    "share_mean": 0.07986374673073977,
+    "share_rms": 0.15274308305060613,
+    "positive_active_median": 2.5,
+    "positive_active_ge12": 0,
+    "max_raw_identity_error": 2.220446049250313e-16,
+    "max_rounded_pool_gap": 0.00039561320010872425,
+    "all_rows_energy_checked": true,
+    "size_bytes": 28602,
+    "seconds": 0.012610500678420067
+  },
+  "H0": {
+    "path": "reports/r16_multisupport_full_preflight_r1/H0.npz",
+    "sha256": "e43beaa9772aed3e4aae824e5000cd313a3f6037ee5ef78265f23c866c5eff3e",
+    "n": 30,
+    "zero_count": 6,
+    "positive_support_bins": {
+      "short": 8,
+      "medium": 10,
+      "long": 6
+    },
+    "share_mean": 0.13799167571638685,
+    "share_rms": 0.2516210153653144,
+    "positive_active_median": 6.0,
+    "positive_active_ge12": 3,
+    "max_raw_identity_error": 1.6653345369377348e-16,
+    "max_rounded_pool_gap": 0.0005420655746509739,
+    "all_rows_energy_checked": true,
+    "size_bytes": 36713,
+    "seconds": 0.009947375394403934
+  },
+  "feature_counts": [
+    5160,
+    2033
+  ],
+  "weighted_AUC_matches_sklearn": true,
+  "capped_two_regime_policy_fixture": true,
+  "code_sha256": {
+    "pipeline/r16_multisupport_data.py": "2a107b3a1ae84e1c07f7cbb41db359dd11b53fbcfac44de694ceb0fb7116cbbd",
+    "pipeline/training_r16_multisupport.py": "d67603c3628472ba7f8bfb59d01810d32ffef78b0e68107a84a3f01c7f3fb49b",
+    "pipeline/models_r16_multisupport.py": "a55cb165bcf999f02e4a2c3a555795cf96ba449f37f63c3ce03fd0a445647264",
+    "ops/run_r16_multisupport_full.py": "018a1dcc6742a87ebf3fd32e23e1fcb35f7c6ad0e1324fa4807d1402208f5409",
+    "ops/finalize_r16_multisupport_full.py": "754f2ccef7583d45e8e7a40d38eb3cd5b13db7009008440f020dc4ef59345c98"
+  },
+  "Test_used": false
+}

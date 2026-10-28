@@ -1,0 +1,27 @@
+{
+  "status": "passed bounded-warp/LHS 5-fold builder E2E and independent package verification",
+  "fixture_root": "/private/tmp/r4_warp_builder_fixture_37bwts1d",
+  "cv_dir": "/private/tmp/r4_warp_builder_fixture_37bwts1d/data/out_warp",
+  "each_fold_train_inner_outer": [
+    72,
+    48,
+    48
+  ],
+  "all_five_packages_verified": [
+    "passed independent R4 package verification",
+    "passed independent R4 package verification",
+    "passed independent R4 package verification",
+    "passed independent R4 package verification",
+    "passed independent R4 package verification"
+  ],
+  "actual_competition_arrays_used": false,
+  "actual_production_R4_generated": false,
+  "fixture_tolerances_widened_only": true,
+  "production_config_unchanged": true,
+  "previous_tiny_fixture_failure_preserved": "/private/tmp/r4_warp_builder_fixture_z0nagbah",
+  "code_sha256": {
+    "pipeline/passage_sampler_r4.py": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+    "pipeline/build_passage_cv_r4.py": "bc06844a826476872848521eecd6281369323464f8ce8072f0d3760172426ccb",
+    "ops/verify_passage_cv_r4.py": "8b9de6be3f396150a176b3331e750dae5aa4f43f5c3104faa72966f319da711e"
+  }
+}

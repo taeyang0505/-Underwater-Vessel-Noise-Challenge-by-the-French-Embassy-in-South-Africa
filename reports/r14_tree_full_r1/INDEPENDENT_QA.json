@@ -1,0 +1,43 @@
+{
+  "format": "r14_full_tree_independent_saved_QA_v1",
+  "status": "passed",
+  "full_models": {
+    "baselineP1": {
+      "full_rows": 78869,
+      "features": 5252,
+      "matrix_bytes": 1656879952,
+      "selection_rows": 1000,
+      "best_round": 1497,
+      "classifier_best_round": 890,
+      "summary_sha256": "03b46eae3b419bdaaf4a4424f22de70633a4d9c7979d7574e1d5fc6ab0ace736",
+      "peak_RSS_bytes": 6562807808
+    },
+    "highshareP1": {
+      "full_rows": 78869,
+      "features": 5252,
+      "matrix_bytes": 1656879952,
+      "selection_rows": 1000,
+      "best_round": 1496,
+      "classifier_best_round": 887,
+      "summary_sha256": "d317fc96599b8c19098a3ea4e03860cd94cf90d7637f269e689fafa30f8f28bc",
+      "peak_RSS_bytes": 6140952576
+    }
+  },
+  "actual_fits_verified": "Two full78869-row learners, each5252features, regressor/classifier separately; no fixture models",
+  "full_paired_geometry_metadata_exact": true,
+  "highshare_changed_full_rows": 15774,
+  "panels": 17,
+  "metric_rows": 118,
+  "scalar_checks": 2682,
+  "scalar_max_error": 0.0,
+  "exact_comparator_checks": 202,
+  "original_sources_unchanged": true,
+  "model_fits_or_inference_Test_GPU": false,
+  "scope_limits": [
+    "Independent point metrics/IDs/model/source bindings; no repeated inference",
+    "Site macro and bootstrap CI endpoints not independently reproduced here",
+    "Development panels already exposed; not official loss or blind generalization"
+  ],
+  "source_RESULTS_sha256": "6a06a05c88e6050531e4620117f2b1167bd0c547aa86242b8ff019542dff75d3",
+  "verification_source_sha256": "16077e7ab11831a982bba742a34b5f7f20a6f04c75784659164562a3b7a0940f"
+}

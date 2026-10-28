@@ -1,0 +1,71 @@
+{
+  "format": "r13_frozen_inference_numeric_verification_v1",
+  "status": "passed",
+  "scope": "Synthetic db-only mock-backend contract fixture; no production model/run verification proof",
+  "examples": 11,
+  "input_shape": [
+    11,
+    15,
+    25
+  ],
+  "five_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checks_passed": 32,
+  "checks": [
+    "fivefold_equal_mean_share_exact",
+    "fivefold_equal_mean_score_exact",
+    "batch1_vs7_share_exact",
+    "batch1_vs7_score_exact",
+    "exact_folds_called_once_and_in_order",
+    "query_missing_mask_unchanged",
+    "query_values_unchanged",
+    "output_float32",
+    "query_only_receipt",
+    "valid_boundary_fold_predictions_arithmetic_mean",
+    "missing_fold_rejected",
+    "duplicate_fold_rejected",
+    "reordered_folds_rejected",
+    "production_backend_injection_rejected",
+    "untrusted_fixture_backend_rejected",
+    "prediction_bounds_rejected",
+    "prediction_nonfinite_rejected",
+    "prediction_length_rejected",
+    "prediction_artifact_change_rejected",
+    "prediction_completion_change_rejected",
+    "query_dictionary_labels_rejected",
+    "query_empty_rejected",
+    "query_wrong_shape_rejected",
+    "query_integer_rejected",
+    "query_all_missing_rejected",
+    "less_than_three_minutes_rejected",
+    "partial_band_minute_rejected",
+    "infinite_query_rejected",
+    "invalid_batch_0_rejected",
+    "invalid_batch_-1_rejected",
+    "invalid_batch_1.0_rejected",
+    "invalid_batch_True_rejected"
+  ],
+  "code_sha256": {
+    "pipeline/inference_r13.py": "94d9bf5d7e113043166ac2d7262059ccbb5de85ab1a18913a607d0fd90bfc265",
+    "ops/verify_r13_frozen_inference.py": "aa512732c80efab6e58d75962bbb872f868769020bd2b98f76f9cfe5d07f1e72"
+  },
+  "production_static_review": {
+    "completed_fivefold_guard": "ProductionBackend.open verifies completed production run before query CSV is opened",
+    "state": "runtime recipe SHA, prepared data hash, fold-specific TRAIN-only PCA SHA/binding, architecture13 and tree5252 checked",
+    "restoration": "strict completed best_window state, code/artifact hashes, one neural loaded at a time",
+    "formula": "Frozen per-fold policy then equal arithmetic mean across folds; numerical clip[0,1] only"
+  },
+  "coverage_limits": [
+    "No real neural/tree restore or GPU exercised by this mock fixture",
+    "No guarantee of CPU/GPU or real-model batch-independence from mock arithmetic",
+    "Production artifact integrity is additionally enforced by verify_run/restore_neural/PhysicsLGBM.load"
+  ],
+  "real_data_or_Test_opened": false,
+  "fitting_or_inference_on_trained_models": false,
+  "GPU_SSH_external_transmission": false
+}

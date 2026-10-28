@@ -1,0 +1,1289 @@
+{
+  "version": "r9_minute_full_dataset_v1",
+  "created_utc": "2026-10-26T06:08:53.156073+00:00",
+  "config_file": "configs/r9_full_training_v1.json",
+  "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "code_sha256": {
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/prepare_r9_training.py": "62df29d4077879691b4c26f785717dd873348a2846c8d7bc58d766f7f24dd82a"
+  },
+  "source_identity": {
+    "version": "r9_minute_full_dataset_v1",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+    "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+    "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+    "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+    "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+    "code_sha256": {
+      "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+      "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+      "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+      "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+      "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+      "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+      "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+    },
+    "reference_count": 509,
+    "reference_independent_CV": false
+  },
+  "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+  "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+  "file_sha256": {
+    "fold_00/ensemble_fit.npz": "817f10df480865e2a0b75ee59026bb7deaae910b4dce7874f25251caeee3b9a6",
+    "fold_00/ensemble_fit_metadata.parquet": "5a23b17b12603266bee3ccc5791d8dca7c41621e7b67f8eb0d7566e1c59f92b5",
+    "fold_00/ensemble_fit_recipes.json": "b7bcc93468f6791e5a4319e37561cf547df157fa58beac3d421653565f5930e5",
+    "fold_00/ensemble_gate.npz": "5f464a525eaf0b815565bd54d2e0e8170e46313965167bac29ba0bf56431bb51",
+    "fold_00/ensemble_gate_metadata.parquet": "a793c168ef4db5f47cae79b13bdab578496951a57e16d71fe2a44834db6d5814",
+    "fold_00/ensemble_gate_recipes.json": "0a294c32d66547f13e11395f31a465597edba30798b4ab9465879cacd8f2b5ad",
+    "fold_00/generation_audit.json": "d0df2e5027a8f121ff2cc8651b0df00d14288c26aeb0196c0cb6e04f033161ea",
+    "fold_00/report.npz": "640dfe9a9368afdb269b40692d0b5e4b719dcb9dfe8ac46086b4b5f3c486c0fd",
+    "fold_00/report_metadata.parquet": "42237b84fac46ade093e79830e97cc5ca3e4a06dc88ef0059198daf0deff4461",
+    "fold_00/report_recipes.json": "0d07e53c3bfc37628ac572b6ee90a42c289e89ff3691c0bd81fe16f2e30ee0c3",
+    "fold_00/selection.npz": "a1bac2fc5eade44d51ddc65138de2e52a79b9fd3492f74e2d25a0164ced15f4a",
+    "fold_00/selection_metadata.parquet": "8ac0e27cb0bc52c5571821060729d7cdb19e85045d0bd00527700d7b420895d4",
+    "fold_00/selection_recipes.json": "4d3bac3af0e00b4b67453458508f96261cc7e331e052a7b15643cfa402d825ae",
+    "fold_00/train_hard_negative_candidates.parquet": "9a19ca799274844182526bca74160169de2e065bd2a985d2a794b153b3e54bf4",
+    "fold_01/ensemble_fit.npz": "6aeeb1b4449253fc91fbaea2da743eac821f6a04b867a25c14cec74ecfee25be",
+    "fold_01/ensemble_fit_metadata.parquet": "ba605b6c3b15c0d717b39fccc77f76ee9322b044ac70e71ca9f799ae55470aa0",
+    "fold_01/ensemble_fit_recipes.json": "b9809536bdd2b9992d69938e2fb02a3617e9471c19eae207b4401130c1ec6f39",
+    "fold_01/ensemble_gate.npz": "661f68950c657cce743b41d4cbb4b99993454294b65bf8f62ca77e0a958c8dfa",
+    "fold_01/ensemble_gate_metadata.parquet": "b0d0f8e21aa8d795624a02edf80f9aedb1fdea1f45fa876eca42deb681079cee",
+    "fold_01/ensemble_gate_recipes.json": "e57a4de71219b357fd92488ac2fd191fc8be9bd26e7dd19ae6db5168b506e593",
+    "fold_01/generation_audit.json": "7a2559f69ba78cc4f814e14fca310b3aa56fd231e6b36509808ff023a0a56176",
+    "fold_01/report.npz": "66a871ba5688322946fb7780a73e845eb2fbf3ee505e4e9b25c3eda8e15218b2",
+    "fold_01/report_metadata.parquet": "f72b0a581769971ae4f9be6f0b4e641fd445375c6efa1a4d025353e88a8744e1",
+    "fold_01/report_recipes.json": "1db7f30bd6aa689f932176f696dd9ef006558e4cc506498b45cc54f78ba1b4b6",
+    "fold_01/selection.npz": "836e8c0987a5fc0ee6e5f56d33656fd4eb47f38d9c33324d11dfc2a613e1126e",
+    "fold_01/selection_metadata.parquet": "53c20f36a2caab23f86fafe5f82e6b8c26edcdbf08be52a938665c417cd6e92c",
+    "fold_01/selection_recipes.json": "f47766ea7cffb5bd3bd07851a413ad13665b29ff02466fe088d037c2709be7c0",
+    "fold_01/train_hard_negative_candidates.parquet": "bff0d0a5a035a5e98594fd3445cba6455094a3a9b1ea3bcbe7a6d9387c8e9036",
+    "fold_02/ensemble_fit.npz": "5a3bc701787a059384b8ffeb85f292c5fff538dd130ac942ec1ffbc3ceedc9cd",
+    "fold_02/ensemble_fit_metadata.parquet": "254c8de13259252b3faa02653daf82d3649c66d7792afdb62e3e284d4f9a8d04",
+    "fold_02/ensemble_fit_recipes.json": "3b8049efb99ad0051e9313392d4a2f63544eba326acc816aa486860381c6ce94",
+    "fold_02/ensemble_gate.npz": "fc5a9e0b5d0a9380ee69414d094417918f53dcd136c490d2f25e734e93df0acb",
+    "fold_02/ensemble_gate_metadata.parquet": "c1602290f7e2a393ecb5028121b0f06e4cb74b9e0d99db4bdbe4506ddda35e2f",
+    "fold_02/ensemble_gate_recipes.json": "4cd433cbc2b9334b8c4f53d48b54c0c79e43af522c9f35942d3286f2906767b2",
+    "fold_02/generation_audit.json": "9f762c78e628216e890916603e286c6ad266d90704a020368ade10779670cce5",
+    "fold_02/report.npz": "4f61937ee6ec9c2fb1bf5e52fcd08086f0916d6c84f865e8f8025499b888e465",
+    "fold_02/report_metadata.parquet": "ec9d222b1f8cde054f3055109298cfe3a9af0c50325fe8a06d8cee07b915e186",
+    "fold_02/report_recipes.json": "15fb789431295f91808b728bdaf0f60b179e8274b965d3f655e8001b69453da7",
+    "fold_02/selection.npz": "1aa18b5eb13aee16c883c0044e30fcba16860fba6585413a65e6f2c7dfacd74c",
+    "fold_02/selection_metadata.parquet": "b8186f8fa9855b05cd0c0668d8a7b1153b7b2a5645f9c562eccc6753aa9aa206",
+    "fold_02/selection_recipes.json": "6dd758c557d359454a1f2088b94832050bd807e1b416ec4e65307d6e0955c2dc",
+    "fold_02/train_hard_negative_candidates.parquet": "50f5c69989a68336f434d4358d09ce893032d0fa828c16ac463ddf67a2138ace",
+    "fold_03/ensemble_fit.npz": "1b57606b26ae3bc3d7536741ae053f6ad176a693b3cda95ff52f697e20379a9e",
+    "fold_03/ensemble_fit_metadata.parquet": "8d9a75ad9022bd9d6133e8b7cdc36def1c2b623ab331bef16cf12919d5b5be7a",
+    "fold_03/ensemble_fit_recipes.json": "d40c11998b5ee509154e6b3e0487aa43a67d03b4b2732111bf0f0a65f80ab042",
+    "fold_03/ensemble_gate.npz": "19b7a958de1fefaa8c17c286075bd48cedda0af1175a05c4c130dce0c02e66f5",
+    "fold_03/ensemble_gate_metadata.parquet": "16a0a884ba576f799620b9424430a1d84884b9b7f9e66697a7b5cdfeb5a499a2",
+    "fold_03/ensemble_gate_recipes.json": "d77d2e2dcf2faff73b578da63820d48ee05b5d0399bb4faf92ee54851909e47a",
+    "fold_03/generation_audit.json": "58dbffbf0386f4cfc208b5c0b065205a5c42ef236228c46f12b047b0eb3636d1",
+    "fold_03/report.npz": "53b213df177df81835984df72f3613ac2632b51c2e97e19133a976c5aecf0926",
+    "fold_03/report_metadata.parquet": "2e563997de7e145af3bdc278192de5d6a6e2a26e231a0082128d361c78833f0a",
+    "fold_03/report_recipes.json": "743073182edbee161e162e09015cd34e07d6966525b22e4c908d9c0dcf9de505",
+    "fold_03/selection.npz": "a7aea8a84097ec8e93bce065158b9f51d78b52394f7f74fb388b3ac093943657",
+    "fold_03/selection_metadata.parquet": "29fcaf1c2c9535a22727de461fa878aea7ae24f2307960e54b638532b0c3e831",
+    "fold_03/selection_recipes.json": "733d1c3ee3058aa6715fc0a15a263172ea9362876df0f0dc675478e004344051",
+    "fold_03/train_hard_negative_candidates.parquet": "d08725f8763fdc4259f8f90824759a61bd703c07a6ceaffd354cfe425914d928",
+    "fold_04/ensemble_fit.npz": "fd5bd72c84ab9fdfeb802f3100c4ec3a5681fa48fe53a0b95594ab98aaddc682",
+    "fold_04/ensemble_fit_metadata.parquet": "67ecb2854fa321f69611ea6c4dbb0f7fbcef769336e483b1f1a1f9592b7fcbf7",
+    "fold_04/ensemble_fit_recipes.json": "93205f26af4041cf538b8c85c0bb5f83888618a3b831181adbbb1b6f6704d026",
+    "fold_04/ensemble_gate.npz": "fc3ab1234353be5e0d51c844805d0d2a1b1441824eb65fc4ee4bfa30ef209207",
+    "fold_04/ensemble_gate_metadata.parquet": "3dbf003580fd17e007b9084eb44dbd71cf1590bbd2dae2c6f176a19b871591c8",
+    "fold_04/ensemble_gate_recipes.json": "1888e039f7a91534c653db0268502897faae19c1f5285f42a69171eb75411ec0",
+    "fold_04/generation_audit.json": "732217f967e7adb923cb02fd78d36fa84b592c9b317b2e591351c08d2ef57139",
+    "fold_04/report.npz": "a447b26860852d4d98a42edcc1896a4e41ab9184819a6aadd858e3bd8fbc562d",
+    "fold_04/report_metadata.parquet": "f83ccaed776c6b93942235eb58d4963c7019067927fc1b2a9c9dfe299ba9b784",
+    "fold_04/report_recipes.json": "f76e8f26b73ac2add08bcd1b1a2d4009694c36b0e8f58db534a0b9944152e9bd",
+    "fold_04/selection.npz": "1c9172cd3ae3bc0172120f3f5c0d9d60ca1c3a12ba32f9970c41ce7a00b86c42",
+    "fold_04/selection_metadata.parquet": "7ae11ca3ad628a8d86ddacb52e0f51484ed88044f2402462a06954e822c8fd74",
+    "fold_04/selection_recipes.json": "028e8c9df8a4c083dbcdc828b2180ea4649cd3e69a234d16d0e64bdb9ecdd158",
+    "fold_04/train_hard_negative_candidates.parquet": "3d42cd1f66e45a7b46e3aeba2bfda67dc504711686109b8c8c25557e9cfe8203",
+    "preparation_plan.json": "d28348748944026d0b2858e06e52e6c8a6e17910ee3b5274adf543a4550d75f2",
+    "source_verification.json": "cff74fd14e8d0c3ddef20a213ae09402ee02cc09185376e06cc102e0fa1c7fd5"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "dynamic_train_rows": 78869,
+      "roles": {
+        "selection": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "1d0c49287761a00cf7549fc4f81297e8f4bac0990c1bfe91b27ba2d4fb7ecb5a",
+          "source_pool_windows": 9417,
+          "source_pool_groups": 25,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 25,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 126,
+            "observed_positive_count": 674,
+            "raw_energy_label_max_error": 3.246515567489894e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0011196370287697155,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 70875,
+            "target_moments_generation_QA_only": {
+              "mean": 0.09886674958792514,
+              "std": 0.1551047673059343,
+              "min": 0.0,
+              "max": 0.8291303515434265
+            },
+            "family_counts": {
+              "native_inside": 494,
+              "native_short": 273,
+              "native_edge": 233
+            },
+            "observed_minute_counts": {
+              "15": 568,
+              "5": 262,
+              "14": 139,
+              "13": 17,
+              "12": 14
+            },
+            "site_counts": {
+              "1 Richards Bay": 522,
+              "7 St_Francis": 294,
+              "5 St Croix Island": 104,
+              "2 Durban": 47,
+              "4 Bird Island": 33
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "1b44b232718676b23fe97af3c390e07d00a8e8801729c9cb99fa03d49511c360",
+          "source_pool_windows": 3417,
+          "source_pool_groups": 10,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 10,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 100,
+            "observed_positive_count": 300,
+            "raw_energy_label_max_error": 2.7591902984624994e-08,
+            "rounded_fixed_q_pool_max_gap": 0.000776655058477127,
+            "maximum_allowed_rounding_bound": 0.005756838318435968,
+            "missing_cells": 51275,
+            "target_moments_generation_QA_only": {
+              "mean": 0.09776810064614984,
+              "std": 0.16176629604620588,
+              "min": 0.0,
+              "max": 0.7961450815200806
+            },
+            "family_counts": {
+              "native_inside": 259,
+              "native_short": 123,
+              "native_edge": 118
+            },
+            "observed_minute_counts": {
+              "15": 251,
+              "5": 196,
+              "14": 34,
+              "12": 19
+            },
+            "site_counts": {
+              "1 Richards Bay": 206,
+              "7 St_Francis": 196,
+              "5 St Croix Island": 79,
+              "3 Cape_Recife": 19
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "a5c75df7572e8ed84b4c915165ee6837de3a3e5ea4e613f70e3947ab4a1d3e46",
+          "source_pool_windows": 3511,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 41,
+            "observed_positive_count": 359,
+            "raw_energy_label_max_error": 2.862410963810902e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0016588222127666419,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 19500,
+            "target_moments_generation_QA_only": {
+              "mean": 0.08803686632604342,
+              "std": 0.14392779523166557,
+              "min": 0.0,
+              "max": 0.7489623427391052
+            },
+            "family_counts": {
+              "native_inside": 255,
+              "native_edge": 125,
+              "native_short": 120
+            },
+            "observed_minute_counts": {
+              "15": 323,
+              "14": 96,
+              "5": 63,
+              "12": 18
+            },
+            "site_counts": {
+              "1 Richards Bay": 340,
+              "7 St_Francis": 63,
+              "4 Bird Island": 47,
+              "5 St Croix Island": 32,
+              "6 Riy_Banks": 18
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "report": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "5d2ebffe22641d565bb3057f5acfec34ada5edc1097f9482e90c9ce4b33443eb",
+          "source_pool_windows": 3584,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 14,
+            "observed_positive_count": 786,
+            "raw_energy_label_max_error": 2.9285883273999502e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0010709116097987748,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 7275,
+            "target_moments_generation_QA_only": {
+              "mean": 0.1017272881084623,
+              "std": 0.1457568988649779,
+              "min": 0.0,
+              "max": 0.8134816288948059
+            },
+            "family_counts": {
+              "native_inside": 493,
+              "native_short": 272,
+              "native_edge": 235
+            },
+            "observed_minute_counts": {
+              "15": 712,
+              "14": 287,
+              "11": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 805,
+              "5 St Croix Island": 154,
+              "7 St_Francis": 41
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "dynamic_train_rows": 78069,
+      "roles": {
+        "selection": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "fa0ed79944fe9a4f948938f1048ed3db61b6716e4bcff0e78d1e39306e64b7b1",
+          "source_pool_windows": 9824,
+          "source_pool_groups": 25,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 25,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 141,
+            "observed_positive_count": 659,
+            "raw_energy_label_max_error": 2.821048084022948e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0009635757775695586,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 73000,
+            "target_moments_generation_QA_only": {
+              "mean": 0.09318131788576454,
+              "std": 0.1546948416189638,
+              "min": 0.0,
+              "max": 0.8332493901252747
+            },
+            "family_counts": {
+              "native_inside": 488,
+              "native_short": 257,
+              "native_edge": 255
+            },
+            "observed_minute_counts": {
+              "15": 606,
+              "5": 278,
+              "14": 104,
+              "12": 12
+            },
+            "site_counts": {
+              "1 Richards Bay": 550,
+              "7 St_Francis": 309,
+              "5 St Croix Island": 141
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "eae1e0035b3e457f0c7115d0909755b977567231a1e33c7678d789b27e080056",
+          "source_pool_windows": 3104,
+          "source_pool_groups": 10,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 10,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 112,
+            "observed_positive_count": 288,
+            "raw_energy_label_max_error": 2.9612096108522223e-08,
+            "rounded_fixed_q_pool_max_gap": 0.001068010186719981,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 59175,
+            "target_moments_generation_QA_only": {
+              "mean": 0.08296098023162841,
+              "std": 0.14437323230116214,
+              "min": 0.0,
+              "max": 0.7339280247688293
+            },
+            "family_counts": {
+              "native_inside": 232,
+              "native_edge": 137,
+              "native_short": 131
+            },
+            "observed_minute_counts": {
+              "5": 233,
+              "15": 230,
+              "14": 37
+            },
+            "site_counts": {
+              "7 St_Francis": 286,
+              "1 Richards Bay": 180,
+              "5 St Croix Island": 34
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "8a42bee4d56fa9707fdfa25d356354237b0013e29af55a12d411bd5169f9e8bc",
+          "source_pool_windows": 3859,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 18,
+            "observed_positive_count": 382,
+            "raw_energy_label_max_error": 2.7404505331674045e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0008435828960724201,
+            "maximum_allowed_rounding_bound": 0.005756838318435968,
+            "missing_cells": 8750,
+            "target_moments_generation_QA_only": {
+              "mean": 0.09981875019074322,
+              "std": 0.14092111626616716,
+              "min": 0.0,
+              "max": 0.8481534123420715
+            },
+            "family_counts": {
+              "native_inside": 256,
+              "native_edge": 124,
+              "native_short": 120
+            },
+            "observed_minute_counts": {
+              "15": 418,
+              "14": 46,
+              "5": 29,
+              "13": 7
+            },
+            "site_counts": {
+              "1 Richards Bay": 283,
+              "5 St Croix Island": 97,
+              "2 Durban": 91,
+              "7 St_Francis": 29
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "report": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "0a5782c95c79ba32d04d18e03ade76c042ccd86754c1ed19278382c34a294e08",
+          "source_pool_windows": 3237,
+          "source_pool_groups": 7,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 7,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 17,
+            "observed_positive_count": 783,
+            "raw_energy_label_max_error": 3.1672978018093545e-08,
+            "rounded_fixed_q_pool_max_gap": 0.001313099858013811,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 8200,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10351575745400532,
+              "std": 0.149257729216586,
+              "min": 0.0,
+              "max": 0.7373812198638916
+            },
+            "family_counts": {
+              "native_inside": 499,
+              "native_edge": 264,
+              "native_short": 237
+            },
+            "observed_minute_counts": {
+              "15": 714,
+              "14": 251,
+              "13": 31,
+              "12": 2,
+              "10": 1,
+              "11": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 859,
+              "5 St Croix Island": 141
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "dynamic_train_rows": 78362,
+      "roles": {
+        "selection": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "7acf2c01e1f1b9b0c912e06b6e5efff68488d25d5e7ceb0b6ca231b51498e271",
+          "source_pool_windows": 10271,
+          "source_pool_groups": 25,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 25,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 82,
+            "observed_positive_count": 718,
+            "raw_energy_label_max_error": 3.009401572384718e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0008485705133330357,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 46250,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10809650630011067,
+              "std": 0.1576570597340881,
+              "min": 0.0,
+              "max": 0.7723590731620789
+            },
+            "family_counts": {
+              "native_inside": 502,
+              "native_edge": 257,
+              "native_short": 241
+            },
+            "observed_minute_counts": {
+              "15": 645,
+              "14": 180,
+              "5": 160,
+              "12": 7,
+              "13": 3,
+              "4": 2,
+              "10": 1,
+              "11": 1,
+              "3": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 638,
+              "7 St_Francis": 186,
+              "2 Durban": 70,
+              "4 Bird Island": 56,
+              "5 St Croix Island": 50
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "44ed0fb85e4aca051ae2117a0e1aadf5c28034c27a325a00390ab85782a64c44",
+          "source_pool_windows": 3432,
+          "source_pool_groups": 10,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 10,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 33,
+            "observed_positive_count": 367,
+            "raw_energy_label_max_error": 2.7651423151198173e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0006956863678324599,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 20400,
+            "target_moments_generation_QA_only": {
+              "mean": 0.08147978218602293,
+              "std": 0.13402724745347536,
+              "min": 0.0,
+              "max": 0.8889901041984558
+            },
+            "family_counts": {
+              "native_inside": 238,
+              "native_edge": 148,
+              "native_short": 114
+            },
+            "observed_minute_counts": {
+              "15": 364,
+              "5": 75,
+              "14": 56,
+              "13": 5
+            },
+            "site_counts": {
+              "1 Richards Bay": 273,
+              "5 St Croix Island": 122,
+              "7 St_Francis": 95,
+              "4 Bird Island": 10
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "f834567e52c5da59a4bb10c619ebb4157d5e1bfa93ab9ea9e1d2fa574573cbc5",
+          "source_pool_windows": 3274,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 103,
+            "observed_positive_count": 297,
+            "raw_energy_label_max_error": 2.915185293161926e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0007854637538004805,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 54025,
+            "target_moments_generation_QA_only": {
+              "mean": 0.08450370311594964,
+              "std": 0.14813604811246459,
+              "min": 0.0,
+              "max": 0.707304835319519
+            },
+            "family_counts": {
+              "native_inside": 260,
+              "native_edge": 123,
+              "native_short": 117
+            },
+            "observed_minute_counts": {
+              "15": 220,
+              "5": 209,
+              "14": 71
+            },
+            "site_counts": {
+              "7 St_Francis": 233,
+              "1 Richards Bay": 191,
+              "4 Bird Island": 38,
+              "5 St Croix Island": 38
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "report": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "5a01d2e380fa620b1da3def8e7b847dbdd05024c9819a0795c839ed191884efd",
+          "source_pool_windows": 2929,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 76,
+            "observed_positive_count": 724,
+            "raw_energy_label_max_error": 3.080644117581244e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0010977276739157493,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 38900,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10200934515119206,
+              "std": 0.14990075912245918,
+              "min": 0.0,
+              "max": 0.8552284240722656
+            },
+            "family_counts": {
+              "native_inside": 502,
+              "native_edge": 255,
+              "native_short": 243
+            },
+            "observed_minute_counts": {
+              "15": 635,
+              "14": 198,
+              "5": 128,
+              "13": 39
+            },
+            "site_counts": {
+              "1 Richards Bay": 678,
+              "7 St_Francis": 216,
+              "4 Bird Island": 106
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "dynamic_train_rows": 78753,
+      "roles": {
+        "selection": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "220eac98c2e05c04f35ecf42852b0f252b55cf2ccdebeb6d881f50b9982dc7d2",
+          "source_pool_windows": 10675,
+          "source_pool_groups": 25,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 25,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 96,
+            "observed_positive_count": 704,
+            "raw_energy_label_max_error": 3.118949121194703e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0010478004286391673,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 48675,
+            "target_moments_generation_QA_only": {
+              "mean": 0.09520844068940118,
+              "std": 0.14829174553741595,
+              "min": 0.0,
+              "max": 0.8048547506332397
+            },
+            "family_counts": {
+              "native_inside": 495,
+              "native_edge": 262,
+              "native_short": 243
+            },
+            "observed_minute_counts": {
+              "15": 631,
+              "5": 165,
+              "14": 149,
+              "13": 38,
+              "12": 13,
+              "3": 1,
+              "9": 1,
+              "4": 1,
+              "11": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 661,
+              "7 St_Francis": 185,
+              "5 St Croix Island": 113,
+              "4 Bird Island": 28,
+              "6 Riy_Banks": 13
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "58e2d70b2290d76fa19aa37b39a9991bfe5c12b69edaf9dc218e3270f50bc656",
+          "source_pool_windows": 3971,
+          "source_pool_groups": 10,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 10,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 50,
+            "observed_positive_count": 350,
+            "raw_energy_label_max_error": 2.9621925246026137e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0011576644068835296,
+            "maximum_allowed_rounding_bound": 0.005756838318435968,
+            "missing_cells": 26575,
+            "target_moments_generation_QA_only": {
+              "mean": 0.1043674815952428,
+              "std": 0.1559581030226989,
+              "min": 0.0,
+              "max": 0.662281334400177
+            },
+            "family_counts": {
+              "native_inside": 244,
+              "native_edge": 134,
+              "native_short": 122
+            },
+            "observed_minute_counts": {
+              "15": 319,
+              "5": 98,
+              "14": 83
+            },
+            "site_counts": {
+              "1 Richards Bay": 277,
+              "7 St_Francis": 119,
+              "5 St Croix Island": 104
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "a2f3800860271219661da15f5dc659f08678465fe489eccc3bb798923259f177",
+          "source_pool_windows": 3195,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 64,
+            "observed_positive_count": 336,
+            "raw_energy_label_max_error": 2.922816855210897e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0010668290450571993,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 32650,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10514062182878843,
+              "std": 0.1619188705688665,
+              "min": 0.0,
+              "max": 0.7976399064064026
+            },
+            "family_counts": {
+              "native_inside": 248,
+              "native_edge": 130,
+              "native_short": 122
+            },
+            "observed_minute_counts": {
+              "15": 326,
+              "5": 124,
+              "14": 40,
+              "13": 8,
+              "8": 1,
+              "12": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 182,
+              "7 St_Francis": 142,
+              "2 Durban": 89,
+              "5 St Croix Island": 87
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "report": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "333b812775e5dc4f4fef46f633cceae2d32b3fa4d68ae94583242f196eaacba5",
+          "source_pool_windows": 2427,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 113,
+            "observed_positive_count": 687,
+            "raw_energy_label_max_error": 2.9699510406544505e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0010527701103245635,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 53875,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10173034622949521,
+              "std": 0.16052165611649674,
+              "min": 0.0,
+              "max": 0.8401345610618591
+            },
+            "family_counts": {
+              "native_inside": 507,
+              "native_edge": 247,
+              "native_short": 246
+            },
+            "observed_minute_counts": {
+              "15": 666,
+              "5": 187,
+              "14": 78,
+              "12": 69
+            },
+            "site_counts": {
+              "1 Richards Bay": 591,
+              "7 St_Francis": 248,
+              "5 St Croix Island": 93,
+              "3 Cape_Recife": 68
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "dynamic_train_rows": 78124,
+      "roles": {
+        "selection": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "6d0ba1f09053deed66b1ea36ac3141d823a2e74acd504cb64e2d228c5e93985c",
+          "source_pool_windows": 10183,
+          "source_pool_groups": 28,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 28,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 138,
+            "observed_positive_count": 662,
+            "raw_energy_label_max_error": 2.8895925874294903e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0011489948845833098,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 81075,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10263778148626952,
+              "std": 0.1650029949412982,
+              "min": 0.0,
+              "max": 0.852369487285614
+            },
+            "family_counts": {
+              "native_inside": 484,
+              "native_edge": 271,
+              "native_short": 245
+            },
+            "observed_minute_counts": {
+              "15": 529,
+              "5": 308,
+              "14": 163
+            },
+            "site_counts": {
+              "1 Richards Bay": 386,
+              "7 St_Francis": 360,
+              "5 St Croix Island": 173,
+              "2 Durban": 63,
+              "4 Bird Island": 18
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_fit": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "be47cebe5e381f62c0d4397a1d438a47a1f01d661ba620caee3651da6147e69d",
+          "source_pool_windows": 3487,
+          "source_pool_groups": 11,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 11,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 7,
+            "observed_positive_count": 393,
+            "raw_energy_label_max_error": 2.8376172078736772e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0009465872101746542,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 6075,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10985888129419982,
+              "std": 0.15463950858608222,
+              "min": 0.0,
+              "max": 0.6992382407188416
+            },
+            "family_counts": {
+              "native_inside": 243,
+              "native_short": 139,
+              "native_edge": 118
+            },
+            "observed_minute_counts": {
+              "15": 375,
+              "13": 47,
+              "14": 46,
+              "12": 29,
+              "9": 2,
+              "11": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 400,
+              "5 St Croix Island": 39,
+              "7 St_Francis": 26,
+              "3 Cape_Recife": 16,
+              "6 Riy_Banks": 13,
+              "4 Bird Island": 6
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "ensemble_gate": {
+          "examples": 500,
+          "primary_once": true,
+          "explicit_no_source_count": 100,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 50,
+          "hard_negative_shortfall_without_duplicate_primary": 50,
+          "positive_request_count": 400,
+          "unique_references": 400,
+          "reference_use_min": 0,
+          "reference_use_max": 1,
+          "reference_count": 509,
+          "schedule_sha256": "73dd046d33837f61e82046eef8099b5a06c67a0d95c4bb5a659c20639f27fb65",
+          "source_pool_windows": 3462,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 500,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 500,
+            "zero_requests": 100,
+            "positive_requests_with_zero_observed_addition": 31,
+            "observed_positive_count": 369,
+            "raw_energy_label_max_error": 2.4377650342799484e-08,
+            "rounded_fixed_q_pool_max_gap": 0.0009459200733563655,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 16625,
+            "target_moments_generation_QA_only": {
+              "mean": 0.10625862249596305,
+              "std": 0.15728542881337726,
+              "min": 0.0,
+              "max": 0.7826091647148132
+            },
+            "family_counts": {
+              "native_inside": 247,
+              "native_short": 129,
+              "native_edge": 124
+            },
+            "observed_minute_counts": {
+              "15": 312,
+              "14": 135,
+              "5": 53
+            },
+            "site_counts": {
+              "1 Richards Bay": 400,
+              "7 St_Francis": 53,
+              "5 St Croix Island": 47
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        },
+        "report": {
+          "examples": 1000,
+          "primary_once": true,
+          "explicit_no_source_count": 200,
+          "hard_negative_candidate_count": 0,
+          "explicit_hard_negative_count": 0,
+          "hard_negative_desired_count": 100,
+          "hard_negative_shortfall_without_duplicate_primary": 100,
+          "positive_request_count": 800,
+          "unique_references": 509,
+          "reference_use_min": 1,
+          "reference_use_max": 2,
+          "reference_count": 509,
+          "schedule_sha256": "327d2d344de05e4757ddd7131a370fba61fb4c2af399259e9d6ec8ddabc4118a",
+          "source_pool_windows": 2889,
+          "source_pool_groups": 8,
+          "unique_primary_backgrounds": 1000,
+          "unique_background_groups": 8,
+          "replacement_examples": 0,
+          "numeric_checks": {
+            "passed": true,
+            "examples": 1000,
+            "zero_requests": 200,
+            "positive_requests_with_zero_observed_addition": 92,
+            "observed_positive_count": 708,
+            "raw_energy_label_max_error": 2.9741836660157617e-08,
+            "rounded_fixed_q_pool_max_gap": 0.001046330496831116,
+            "maximum_allowed_rounding_bound": 0.005757277487132708,
+            "missing_cells": 44150,
+            "target_moments_generation_QA_only": {
+              "mean": 0.09581032038510676,
+              "std": 0.15269779971105915,
+              "min": 0.0,
+              "max": 0.8428118824958801
+            },
+            "family_counts": {
+              "native_inside": 502,
+              "native_short": 255,
+              "native_edge": 243
+            },
+            "observed_minute_counts": {
+              "15": 651,
+              "14": 188,
+              "5": 153,
+              "13": 3,
+              "3": 2,
+              "4": 1,
+              "12": 1,
+              "11": 1
+            },
+            "site_counts": {
+              "1 Richards Bay": 601,
+              "5 St Croix Island": 217,
+              "7 St_Francis": 153,
+              "4 Bird Island": 29
+            }
+          },
+          "exact_replay_examples": 3,
+          "numeric_or_unicode_only": true
+        }
+      }
+    }
+  ],
+  "fixed_examples_total": 15000,
+  "reference_count": 509,
+  "shared_reference_CV_not_independent": true,
+  "weak_background_archive_references_included": 22,
+  "ambient_controls_not_in_TRAIN_reference_pool": 16,
+  "preparation_elapsed_seconds": 24.2993099167943,
+  "model_fit_or_Test_or_waveform_access": false,
+  "old_sources_arrays_models_modified": false,
+  "source_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092"
+}

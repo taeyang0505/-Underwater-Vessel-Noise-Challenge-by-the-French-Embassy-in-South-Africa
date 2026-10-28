@@ -1,0 +1,114 @@
+{
+  "root": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync",
+  "checked_at": "2026-10-28T15:05:18.634616+09:00",
+  "read_only": true,
+  "canonical_mac_root": true,
+  "states": {
+    "ops/r16_multisupport_full_r1/state.json": {
+      "mtime": "2026-10-28T15:05:17.976055+09:00",
+      "value": {
+        "phase": "neural",
+        "PID": 12773,
+        "child_PID": 21489,
+        "elapsed_seconds": 9182.934099912643,
+        "progress": {
+          "stage": "neural",
+          "regime": "D0",
+          "kind": "bg_cnn",
+          "epoch": 38,
+          "rows_seen": 47552,
+          "total_rows": 61446,
+          "optimizer_steps": 36300,
+          "elapsed_seconds": 2684.150399999693
+        },
+        "official_upload": false
+      }
+    },
+    "models/r16_multisupport_full_r1/progress.json": {
+      "mtime": "2026-10-28T15:05:16.987752+09:00",
+      "value": {
+        "stage": "neural",
+        "regime": "D0",
+        "kind": "bg_cnn",
+        "epoch": 38,
+        "rows_seen": 47552,
+        "total_rows": 61446,
+        "optimizer_steps": 36300,
+        "elapsed_seconds": 2684.150399999693
+      }
+    },
+    "ops/r16_multisupport_fivefold_r1/state.json": {
+      "mtime": "2026-10-28T15:05:10.895638+09:00",
+      "value": {
+        "phase": "waiting_for_fold0_CSV",
+        "PID": 23279,
+        "parent": {
+          "phase": "neural",
+          "PID": 12773,
+          "child_PID": 21489,
+          "elapsed_seconds": 9167.924463033676,
+          "progress": {
+            "stage": "neural",
+            "regime": "D0",
+            "kind": "bg_cnn",
+            "epoch": 38,
+            "rows_seen": 28352,
+            "total_rows": 61446,
+            "optimizer_steps": 36000,
+            "elapsed_seconds": 2664.213656041771
+          },
+          "official_upload": false
+        },
+        "updated_kst": "2026-10-28T15:05:10.895411+09:00",
+        "official_upload": false
+      }
+    }
+  },
+  "data": {
+    "data/raw/Test.csv": {
+      "exists": true,
+      "bytes": 2829614,
+      "sha256": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4"
+    },
+    "data/synthetic/r16_multisupport_v1/manifest.json": {
+      "exists": true,
+      "bytes": 27290,
+      "sha256": "cc0b59a7d18bf3d81fe60c4d764384edfd30ace4998bd596e89793a8960bb39c"
+    },
+    "models/r16_multisupport_full_r1/ALL_TREES_COMPLETED.json": {
+      "exists": true,
+      "bytes": 2326,
+      "sha256": "a633154a3a976b45811e475b3b59e1a66a144779761fac8a391f28d8684df0f1"
+    },
+    "submissions/r16_multisupport_tree5_r1/submission_r16_tree5.csv": {
+      "exists": true,
+      "bytes": 99243,
+      "sha256": "589bbee56ce9c8432aabd0da174ad040dd261410a84788293992cafd9d029490"
+    },
+    "submissions/r16_multisupport_full_r1/submission_r16.csv": {
+      "exists": false
+    },
+    "submissions/r16_multisupport_fivefold_r1/submission_r16_5fold.csv": {
+      "exists": false
+    }
+  },
+  "processes": {
+    "12773": {
+      "exists": true,
+      "ps": "12773 89777 02:33:04 /Users/hongtaeyang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 ops/run_r16_multisupport_full.py all",
+      "note": "No output can mean exited or access denied; inspect in an authorized terminal."
+    },
+    "21489": {
+      "exists": true,
+      "ps": "21489 12773 44:46 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/run_r16_multisupport_full.py neural",
+      "note": "No output can mean exited or access denied; inspect in an authorized terminal."
+    },
+    "23279": {
+      "exists": true,
+      "ps": "23279 89777 28:08 /Users/hongtaeyang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 ops/run_r16_multisupport_fivefold.py supervise",
+      "note": "No output can mean exited or access denied; inspect in an authorized terminal."
+    }
+  },
+  "disk_available_bytes": 12102541312,
+  "warning": "State files in a GitHub clone are snapshots, not proof a process is live. Never auto-start or auto-resume."
+}

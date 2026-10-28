@@ -1,0 +1,15 @@
+{
+  "protocol": "source_group_nested5_week24h_v1",
+  "source_version_dir": "data/versions/quality_v2_native",
+  "output_dir": "data/synthetic/group_cv_nested5_pilot_v1",
+  "n_splits": 5,
+  "purge_hours": 24,
+  "split_seed": 20261024,
+  "generation_seed": 42,
+  "evaluation_seed": 20261024,
+  "n_train": 16000,
+  "n_inner_validation": 3000,
+  "n_outer_validation": 3000,
+  "batch_size": 256,
+  "augmentation": {}
+}

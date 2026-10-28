@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "command": [
+    "/workspace/underwater_vessel_noise_r1/venv/bin/python",
+    "-u",
+    "-m",
+    "pipeline.train_group_cv",
+    "--config",
+    "/workspace/underwater_vessel_noise_r1/project/configs/group_cv_physics_training.json",
+    "--device",
+    "cuda",
+    "--execute"
+  ],
+  "project": "/workspace/underwater_vessel_noise_r1/project",
+  "run_directory": "/workspace/underwater_vessel_noise_r1/project/models/group_cv_physics_v2_r1_adam",
+  "started_unix": 1792864815.3313203,
+  "supervisor_pid": 11896,
+  "automatic_hyperparameter_changes": false,
+  "outer_used_for_tuning": false,
+  "pid": 11897,
+  "exit_code": 1,
+  "finished_unix": 1792865295.9897542
+}

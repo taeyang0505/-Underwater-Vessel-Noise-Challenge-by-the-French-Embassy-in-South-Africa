@@ -1,0 +1,15 @@
+{
+  "status": "frozen before one-shot production materialization",
+  "UTC": "2026-10-25T11:27:20.477624+00:00",
+  "file_sha256": {
+    "pipeline/passage_sampler_r4.py": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+    "pipeline/build_passage_cv_r4.py": "bc06844a826476872848521eecd6281369323464f8ce8072f0d3760172426ccb",
+    "ops/verify_passage_cv_r4.py": "8b9de6be3f396150a176b3331e750dae5aa4f43f5c3104faa72966f319da711e",
+    "configs/group_cv_passage_r4_data.json": "a0be9c9957db117a30b43379d9e5097098897a3b551bde7dff4c1b78acdff70d",
+    "data/versions/vtuad_reference_r4_v1/manifest.json": "0fcf298fde1486f60269497a60f04745e41ba5fff4bc1f46de81553e67752479",
+    "reports/R4_TIMEWARP_INDEPENDENT_QA.json": "67924762db59db1ff97939d00316735fc1a037bdddcbcacebe55b593698eec03"
+  },
+  "no_seed_retry": true,
+  "no_legacy_evaluation_reuse": true,
+  "actual_full_generation_started": false
+}

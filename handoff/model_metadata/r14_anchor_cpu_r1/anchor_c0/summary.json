@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "epochs_run": 100,
+  "optimizer": "Adam",
+  "early_stopping": false,
+  "dropout": 0.1,
+  "best_epoch": 64,
+  "best_fit_rmse": 0.0773273124772353,
+  "parameters": 27601,
+  "row_weight_c": 0,
+  "source_binding": {
+    "format": "r14_anchor_cpu_plan_v1",
+    "data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+    "data_arm": "baseline",
+    "TRAIN_npz_sha256": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+    "source_pins": {
+      "ops/train_r14_anchor_cpu.py": "5890012057306e75f5dc5c1886ec5353c7f34510568ce98b35f70aadb9a54f44",
+      "pipeline/features_r14_anchor.py": "6027bc03cf6ae97f1c533d1b1a09835e28689b19908cc636ebaad97f69981fac",
+      "pipeline/training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d",
+      "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+      "data/synthetic/r13_cpu_correction_v1/manifest.json": "5749ba7ebc368d3981c20b05cd4b9617d6c6637ba256e9c8fdedfc705c7e338b",
+      "data/synthetic/r12_cpu_ablation_v3/manifest.json": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+      "models/r12_shared_basis_v1/basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+      "data/synthetic/r12_cpu_ablation_v3/cnn_subset_indices.npy": "59dc2135ea685d27e626ca2ce6cf5d1ad62b263642d7afd0f780263902eeeae6"
+    },
+    "CNN_train_rows": 6000,
+    "Tree_train_rows": 12000,
+    "CNN_epochs": 100,
+    "CNN_early_stopping": false,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "dropout": 0.1,
+    "row_weight_candidates": [
+      0,
+      2
+    ],
+    "loss": "(1+c*y)*(share_MSE+.25*weighted_cell_MSE)",
+    "Tree_features": 880,
+    "Tree_max": 1500,
+    "Tree_ES": 40,
+    "classifier_training": "unweighted baseline only; independent of regressor targets/weights",
+    "validation_role": "validation_fit1000 only",
+    "Test_or_panels_read": false,
+    "development_exposed": true,
+    "anchor_caveat": "Redundant contrasts from existing profile; LF is not certified pure background; additional TRAIN prior can introduce site bias."
+  },
+  "elapsed_seconds": 480.75711316708475
+}

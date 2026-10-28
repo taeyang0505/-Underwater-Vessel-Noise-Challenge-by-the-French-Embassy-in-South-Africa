@@ -1,0 +1,6 @@
+# Install native wheels on the target Linux/Python3.12 host.
+# Keep the host's CUDA-enabled Torch; do not copy Mac runtime binaries.
+transformers==4.40.1
+tokenizers==0.19.1
+huggingface-hub==0.23.5
+safetensors==0.8.0

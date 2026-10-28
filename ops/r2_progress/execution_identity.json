@@ -1,0 +1,193 @@
+{
+  "configuration": {
+    "protocol": "source_group_nested5_week24h_v1",
+    "cv_dir": "data/synthetic/group_cv_physics_v2_r1",
+    "output_dir": "models/group_cv_physics_v2_r2_adam",
+    "status": "Frozen R2 full-five-fold measurement run; no further optimization until full OOF is available",
+    "seeds": [
+      42
+    ],
+    "models": [
+      "lgbm",
+      "lgbm_physics",
+      "lgbm_retrieval",
+      "tabm",
+      "cnn",
+      "fdy",
+      "itransformer"
+    ],
+    "foundation_models": {
+      "tabicl": {
+        "context": 16000,
+        "members": 4,
+        "precision": "fp32"
+      },
+      "kumo_large": {
+        "context": 4096,
+        "members": 4,
+        "precision": "fp32"
+      }
+    },
+    "training": {
+      "epochs": 100,
+      "patience": 7,
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "dropout": 0.1,
+      "scheduler": "plateau",
+      "batch": 128,
+      "width": 256,
+      "k": 16,
+      "trees": 800,
+      "threads": 4,
+      "contrastive_weight": 0.0,
+      "contrastive_temperature": 0.1,
+      "feature_version": 3,
+      "epoch_policy": "User maximum100 epochs / early-stopping7 / Adam; CNN includes a fold-train-only background prior and a trained residual mask. Epoch0 prior state remains an eligible best state as in the validated pilot.",
+      "domain_augmentation": "none",
+      "augmentation_probability": 0.75,
+      "augmentation_strength_db": 12.0,
+      "cnn_background_prior": true,
+      "cnn_prior_strength": 0.5,
+      "cnn_prior_clip": 0.01,
+      "cnn_prior_residual_weight": 0.001,
+      "cnn_prior_clusters": 32
+    },
+    "explicit_ablation_candidates": [
+      {
+        "name": "nadam",
+        "optimizer": "nadam",
+        "dropout": 0.1,
+        "contrastive_weight": 0.0
+      },
+      {
+        "name": "sgd_nesterov",
+        "optimizer": "sgd_nesterov",
+        "learning_rate": 0.01,
+        "dropout": 0.1,
+        "contrastive_weight": 0.0
+      },
+      {
+        "name": "dropout_005",
+        "optimizer": "adam",
+        "dropout": 0.05,
+        "contrastive_weight": 0.0
+      },
+      {
+        "name": "dropout_020",
+        "optimizer": "adam",
+        "dropout": 0.2,
+        "contrastive_weight": 0.0
+      },
+      {
+        "name": "contrastive_001",
+        "optimizer": "adam",
+        "dropout": 0.1,
+        "contrastive_weight": 0.01
+      }
+    ],
+    "experiment_policy": "Existing development pilots are finished or quarantined. Execute the frozen complete pipeline; resume improvement only after full 5-fold OOF measurement.",
+    "selection_metric": "inner validation RMSE",
+    "loss": "share MSE + explicitly logged auxiliary losses",
+    "ensemble": "Fit nonnegative sum-to-one weights on inner predictions only, freeze before outer evaluation. No outer-fitted affine calibration.",
+    "final_assessment": "Calibration and sealed sources remain outside this CV. Outer CV becomes development evidence after model comparison; it is not an endlessly reusable final holdout.",
+    "global_minimum_guaranteed": false,
+    "gpu": {
+      "recommended": "RTX 4090 24GB x1",
+      "ram_GB": 31,
+      "free_SSD_GB": 100,
+      "CUDA_memory_and_throughput_measured": true,
+      "ram_note": "Actual pod cgroup memory limit 61,999,996,928 bytes; sequential models, RTX4090 24GB validated."
+    },
+    "dataset_policy": "Original inner/outer NPZ frozen byte for byte; train support cap, reference-only EQ and clean-pool blending; evaluate full and boundary-excluded OOF. Reference support cap plus maximum synthetic added/background minute SNR 20dB; requested/effective targets recorded.",
+    "release_policy": "Run all seven model families / nine candidates in fresh R2. Background-prior residual CNN is included; slow exploratory background-feature tree is excluded. No settings change based on that exploration or outer results before complete OOF.",
+    "foundation_precision_policy": {
+      "default": "fp32 for both candidates; explicit fp16 is an ablation only",
+      "atol": 3e-05,
+      "rtol": 1e-05,
+      "query_check_pair_starts": [
+        0,
+        16,
+        128,
+        512,
+        1024,
+        2048
+      ],
+      "include_last_two": true,
+      "outer_inputs_or_scores_used_to_choose_precision": false
+    },
+    "cnn_policy": {
+      "architecture_version": 4,
+      "input_channels": 8,
+      "base_feature_version": 3,
+      "background_prior_fit_split": "current fold train only",
+      "reuse_fold0_prior_or_task_weights": false,
+      "raw_prior_is_not_a_ground_truth_target": true,
+      "observed_first_fold_inner_CNN_RMSE": 0.28835373,
+      "observed_baseline_CNN_RMSE": 0.3211546,
+      "pilot_is_development_evidence": true
+    }
+  },
+  "device": "cuda",
+  "cv_manifest_sha256": "76f5954676a2f0552f5dcf6116ddcbb5195fc9f6afb54ebfeaaf9279ba2df067",
+  "fold_readiness_sha256": {
+    "0": "ce60637cc25021f68c2106a92dd04b9513a938c6b226721cbf10ebd49d310d49",
+    "1": "41db3b5943113415dd0826426610e410a94465f20dfb1df2ab192c678334989c",
+    "2": "3746ad88acf7025562a3c015745c6b5361ac4cc1b97b8933d0c534872e94cd6c",
+    "3": "f3987cbc08347dc50875cacfc536661bbb923f87ab3afee8682f429e73f436fa",
+    "4": "cce5f9b0b1dbe1be879a5729f92f63739fde04cf67c2280f1135b8b2aa2c87b3"
+  },
+  "code_sha256": {
+    "__init__.py": "2ef07b1e8e5277e8858d3bf53c43a5c91c5dc2a332a676e8b41285d968f64791",
+    "attach_native_v2.py": "3d263dd8cf1b7ecffbcfe910adddcd833b02353df229c507488c12f82879bccf",
+    "audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+    "audit_frozen_inference.py": "559829edd23e29c0442c0e897f454980ff0a03290b26701e4085c69c75de1a4f",
+    "augmentation_v2.py": "20b9beff2f4ba31fa25e34080e395d5141fd62c7313bd57e50e969c7c3463e49",
+    "boundary_audit_v2.py": "e52a65c8e27e3fb989c53e9d3059512e75520363925303ca422b31f7bc05e85a",
+    "build_physics_cv_v2.py": "f8993b1c40d0da8b0f3003922172f09e9bef2639bc34ff32cf14958ec1a1f582",
+    "build_quality_v2.py": "13fcce7c6f8b8bfbf5d6e509020a620820d0963dffe04f9e049f6320203e0d81",
+    "capacity_audit.py": "70275505c947e61236995c9a44332a889742ae456adae2359635de302498a1a3",
+    "contrastive.py": "3d08c28adf13e5b7323f71eb136237447e646dcafe4fc732bdd45f2fe1c00b07",
+    "cv_foundations.py": "238ae433ea2bf2fbc747cefdf6b8fe3c337b9a4606a9072965c219600478c60a",
+    "evaluate_cv_outer.py": "1fcd4cfe541edcee286e1d10fb7310902e4543cc8a8af2fffcb1097a130fc11c",
+    "evaluate_noaa.py": "f58a3d01b891137ec5fa8cf6390d268435d0995cc84cbeb87f9d8091270f8e28",
+    "foundation_baseline.py": "904d88a37c24ef9328f1e2d89ee1e6524aa8919dd277bc935593939a005e694a",
+    "gpu_preflight.py": "adeff5cfc0723408803f864336a7f28d5f8e345302261fee5802d813d7c306a1",
+    "group_cv.py": "eb652428cc36904ad4a7ec511bdc896bccb3d5228de25c014f25d87f7798fee5",
+    "infer.py": "0c941abeab0249c0be80c06b154c5bcd52c56f2ec140c465782a494724f885fa",
+    "materialize_quality_v2.py": "5d53a600c426d6171d4683f4e8de44fd15bace4b96401ab4035563f9b99120fd",
+    "merge_candidates.py": "dc7fe7bd40854986618b4d8c6475550fdcf6a4f491ea45dea1a4a93843bf84a0",
+    "merge_seeds.py": "95c77fd46378b60af11f3ba73ef7cdfd304c19da918c8b9817740315a7ea1ddb",
+    "metrics.py": "c3f04d379290fec2a3a04bf146c5a795321ebe625891c775afb9aa7d69642f53",
+    "mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "model_scale_audit.py": "c585b6a946cfef82f8f7fab81bc4c63f1186bbe9692760e76ceb8fb2bd68e541",
+    "models.py": "a11c9dda847b4a2aeedaf1e892c4c32298ee03e73758568b96a565fd539c21f9",
+    "native_sampler_v2.py": "1ad2faa92d7b5183796c4887c31a0a6dbf77bcd7b3d7082698f4010ff943c39f",
+    "physics_data_checks.py": "7695ce274b6d9d2293624be7d4ba2739ab78ed4f1df8b2034ed3b370e0e98d85",
+    "physics_sampler_v3.py": "0724d01d3c21f47fcf9d1e44031e74c73f7e5c49b68dbfc4fd424fd851ece670",
+    "postprocess.py": "8cf46d993d69d4c051118da4e563044389af56d6480bda1a36d221ba80ed090f",
+    "predict_foundation.py": "fb4d7d61c7ec7826b7a497f442bd83fe09447b5045d92e8dbf68d9df31a6f95c",
+    "predict_lgbm.py": "a8d2a8570850bf3941860dc7d47eb0d39dbf8398596947a1cf5ee6a283e31582",
+    "prepare_external.py": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7",
+    "prepare_sa.py": "3e18f6b6077dfecb0d2800879ff7196c11b051bc32a31bf3189219c2019f4400",
+    "prototypes.py": "6349bd51e42b2c68986d44148644f63c9cfea5eae42a117dc86c5ca6da7b481a",
+    "train.py": "addd233b936c2c0b5497ffe81c7462acc1dec5e82d469ecd77cc85178fa79c0b",
+    "train_group_cv.py": "19d35e976618b622ce6dcf3201c25139bfa8f71242c6cb255516bc89d6620ab6",
+    "train_kumo.py": "326119af047100089a58e508044fcda58c3cbefb4a62293e19fec8ae75e19799",
+    "train_lgbm.py": "4081faea1b62a0ff65ddda6461e289c5b840f60526ee42e713a7d3e77da30bba",
+    "train_tabicl.py": "cee90279379cdfcdb453ba75cb4236ab1cbb90506a311cc384770b852281a2e2",
+    "verify.py": "594646655aa0bf2f4a569dc8eae3a72af076772dd504cf752782a2c033fe1895",
+    "verify_group_cv.py": "f6435a16c55a7bb366e7135b1844a5616fd66188a25ec7a1e51ebe0942b4d999",
+    "verify_inference.py": "ff844ce3dcf22497c3a65780c7f18e1d1919ad4bca8ed7681597fe13ba075665",
+    "verify_physics_data_v2.py": "677ee75025275658f256cf9a75c20f8ce9b781d7b81bc50078f336435c8d7dfd",
+    "verify_prebuilt_v2.py": "9472bbb2b9c27e0678d51fc9ee5eb6d7a6a0e72e1c983e4e3363b8a7158af223",
+    "verify_quality_v2.py": "ec742adfbb4edf47d145914ae640927c95324a474da45a77d075a4b86d2a77d1",
+    "waveform_qc_v2.py": "216c364e19f64d3ddadc7dcf0cd2da1eb24b3a4eac0b88f175ff36e5ec5fa08d",
+    "weak_teacher.py": "3f342f99ce6bcff31c66e4ed2218cfcf478537de999c50195bfa02b6ae12670d",
+    "energy_domain_augmentation.py": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5",
+    "build_domain_cv_r2.py": "2cffdc4c8d3c937e054c3d62deec318ad7030d638f05c955ee4f61bca2e66c42",
+    "background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "checkpoint_prior.py": "3f45c5b7b71c088f7658e288aeb78b9f7cea7ddfa50fec3c294ae8949ae1a55e"
+  }
+}

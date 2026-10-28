@@ -1,0 +1,20 @@
+{
+  "status": "completed_independent_checks",
+  "created_utc": "2026-10-27T06:14:27.270243+00:00",
+  "scope": "Paused-model integrity, policy arithmetic, archived rules, identifiability counterexample, TRAIN-only forward-component QA, saved descriptive-table QA; no model training/inference/raw Test read or production changes",
+  "code_sha256": {
+    "ops/r15_verify_policy_and_local_rules.py": "68bc012242f6feda8ca38f2784dc9f881c7f948331f4d648e21d4dd16a1ef226",
+    "ops/r15_verify_forward_prototype.py": "f53164caefce2cf85ca2b5b7f888444e9b24edd321145ec0fe00a7ea910a4861",
+    "ops/r15_verify_saved_duration_tables.py": "73f239137f3f1108f06346af92caf33e02d480b96e195013df21fe5a4a4e96cb"
+  },
+  "artifact_sha256": {
+    "SCORE_DURATION_SAVED_TABLE_QA.json": "c06231fbd8599b6d18a587538a7427f7e0266c242f23f38c33101aa867fb09ac",
+    "R9_OWN_SCORE_CORRELATION_QA.json": "0bdff6181146bff1db0223274ac80a7b67716e374116f6ba77eb5522cb02a7f4",
+    "PROCESS_OBSERVATION.json": "bcde54161c8bb94f648d4f0dc961d8fc74ccc2d76837be64cbae91e07c0d802c",
+    "PROTOTYPE_INDEPENDENT_QA.json": "c848ff7971f498268254a4ae93c167526b8040d822b0c4d5d841cc05c4a31d7a",
+    "POLICY_PAUSE_RULES_VERIFICATION.json": "c0f713ab375f1e22038e6a4768198a9b56c0ffeedac31037c58e68367469e642",
+    "FINDINGS.md": "56c61b120cfee0b2c5a66b650aceab02836298a7bbefacd7c299fd8783b3736d"
+  },
+  "FINDINGS_local_links_checked": 10,
+  "broken_links": []
+}

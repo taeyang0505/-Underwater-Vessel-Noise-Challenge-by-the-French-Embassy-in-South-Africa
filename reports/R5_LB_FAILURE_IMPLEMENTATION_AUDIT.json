@@ -1,0 +1,147 @@
+{
+  "status": "completed independent implementation audit; no incident-causing implementation defect reproduced",
+  "created_at_utc": "2026-10-25T18:16:42.093667+00:00",
+  "user_reported_submission": {
+    "ID": "Vz5mjZEr",
+    "CSV_sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "LB_score": 0.65199132,
+    "share_RMSE": 0.348008679,
+    "diagnostic_presence_AUC": 0.539533333,
+    "source": "User screenshot values relayed by parent; no remote leaderboard access in this audit"
+  },
+  "csv_full_row_checks": [
+    {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/submission.csv",
+      "sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+      "rows": 1500,
+      "columns": 3,
+      "IDs_unique_order_matches_sample_and_raw": true,
+      "share_score_exactly_raw": true,
+      "finite_unit_interval": true
+    },
+    {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/delivery/r5_cnn_pilot_repro_r1/reproduced_submission/submission.csv",
+      "sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+      "rows": 1500,
+      "columns": 3,
+      "IDs_unique_order_matches_sample_and_raw": true,
+      "share_score_exactly_raw": true,
+      "finite_unit_interval": true
+    },
+    {
+      "path": "/Users/hongtaeyang/Desktop/French_Embassy_Underwater_Vessel_Noise/SUBMIT_NOW/submission.csv",
+      "sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+      "rows": 1500,
+      "columns": 3,
+      "IDs_unique_order_matches_sample_and_raw": true,
+      "share_score_exactly_raw": true,
+      "finite_unit_interval": true
+    }
+  ],
+  "postprocessing": {
+    "actual_candidate": "identity",
+    "a": 1.0,
+    "b": 0.0,
+    "CSV_all_shares_and_scores_exactly_raw": true,
+    "created_before_Test_boundary_verified": true,
+    "calibration_code_and_spec_hashes_unchanged": true
+  },
+  "query_parser_fixture": {
+    "source": "16 existing INNER windows only, no Test inputs",
+    "minute_major_15_by25_roundtrip_bitwise": true,
+    "NaN_positions_retained": true,
+    "frequency_order_equals_SA_prepare_COMMON": true,
+    "permuted_header_rejected": true,
+    "parsed_vs_direct_8channels_weights_and_predictions_bitwise": true
+  },
+  "train_inference_path_fixture": {
+    "raw_probability0_augmentation_changed_db": false,
+    "TRAIN_vs_predict_grid8_and_physical_weights_bitwise": true,
+    "eval_model_direct_vs_predict_neural_bitwise": true,
+    "original_energy_weights_vs_independent_10_power10_oracle_bitwise": true,
+    "INNER_known_q_target_weight_identity_max_error": 8.98586440811755e-08,
+    "actual_CNN_q_weight_pooling_max_error": 5.9372465610607605e-08,
+    "frozen_prior_and_model_state_unchanged": true
+  },
+  "known_component_math_actual_R4_sampler_fixture": [
+    {
+      "requested_share": 0.0,
+      "oracle_share": 0.0,
+      "saved_share": 0.0,
+      "saved_db_q_weight_identity_error": 0.0
+    },
+    {
+      "requested_share": 0.27,
+      "oracle_share": 0.27,
+      "saved_share": 0.27000001072883606,
+      "saved_db_q_weight_identity_error": 1.4722366992181435e-08
+    },
+    {
+      "requested_share": 0.91,
+      "oracle_share": 0.9100000000000001,
+      "saved_share": 0.9100000262260437,
+      "saved_db_q_weight_identity_error": 2.1235810776509823e-08
+    }
+  ],
+  "precision_comparison": {
+    "INNER_CPU_vs_GPU_prediction_RMSE": 0.0005843654598217476,
+    "INNER_CPU_vs_GPU_prediction_max_abs": 0.006063938140869141,
+    "examples": 3000,
+    "CPU_FP32_RMSE": 0.09080814708083197,
+    "saved_GPU_BF16_RMSE": 0.09084926102040936,
+    "CPU_minus_GPU_RMSE": -4.111393957738352e-05,
+    "CPU_MAE": 0.04821762880724176,
+    "CPU_bias_pred_minus_truth": -0.009386678048307659
+  },
+  "LB_minus_CPU_INNER_RMSE": 0.25720053191916803,
+  "scope_limits": [
+    "No actual Test observation features reread, no cohort distributions, no label reconstruction, no Test-dependent tuning.",
+    "Test physical-pooling residual is the existing inference receipt value, not freshly recomputed from forbidden Test features.",
+    "CPU/GPU differences were measured on the identical INNER only; this is not a new GPU experiment or a universal bound on a different input set.",
+    "Correct controlled-addition labels and inference code do not prove the simulator, source coverage or early-stopping INNER represent the hidden evaluation task.",
+    "The base CNN used all INNER labels for early stopping; calibrator crossfitting is not independent neural OOF validation."
+  ],
+  "existing_Test_inference_receipt_physical_pool_residual": 1.0509036929562399e-07,
+  "wrapper_code_review": {
+    "checkpoint_context_prior_raw_policy_same_as_CPU_profile": true,
+    "eval_and_cpu_FP32_same_predict_neural": true,
+    "after_Test_boundary_only_parse_predict_fixed_transforms_policy_apply_and_export": true,
+    "fit_candidate_fit_shared_prior_fit_tree_or_optimizer_called_after_Test_open": false
+  },
+  "source_file_sha256": {
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/submission.csv": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/raw_test_predictions.npz": "6f029c7bce2438b9291e8d6f80281a5eedc30d391e2099502ec81e5b866386aa",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/inference_receipt.json": "b4f11cbbfd35c1bf47e351a4b7ee757711ab27087d0c07c263c880ed468938f6",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/submissions/r5_fold0_raw_cnn_cpu_pilot_r1/frozen_postprocessing_policy.json": "4a820595c51ec78a8080091bafedaada35b0fd9a9d164608733c5c5ae677a410",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/preprocessing_pilot/raw/bg_cnn/best.pt": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/context.json": "4467ede43c800a93bdf1e0fdafe3e271425cb65fc55923c4cdfc1fdfeef00a90",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/server_backups/r5_gpu_r1/restored_first_cnn_v1/fold_00/shared_background_prior.json": "23fc4019c943c69b0d6353b06b7d9b371e881c62893cc32e71c907a4ffad5d05",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/build_r5_cnn_pilot_submission.py": "214322278baa234713b4e588710a5310d6b1c2f207f16b27953d432abca4812d",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/ops/calibrate_r5_single_cnn.py": "e33351265033954999fdd374a605823c80aaefb01a3d878360ce057923627e0a",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_MAC_INFERENCE_PROFILE.json": "9f91a8bf85c2b7ba33ea85368269073a2f6d5c53a499c87dc23f0f3b67ccce80",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_PILOT_CALIBRATION/specification.json": "580728c8531382b04148c492e13483e7acd06db7a1cf96642ac1ca914dbeafaa",
+    "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/reports/R5_CNN_PILOT_CALIBRATION/metrics.json": "17f8945bc96382389f967c4f21bb2b4e0d4076f6bb7cfd977574dbf717fbac8e"
+  },
+  "original_core17_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22"
+  },
+  "audit_fixture_script_sha256": "574bb92339ea9a9575d224ecd72a8e8ae306c924cc0afb9c3ba572d9b9242ce2",
+  "data_core_GPU_run_or_submission_files_modified": false,
+  "new_Test_inference_GPU_SSH_external_transmission_training_or_submission_performed": false
+}

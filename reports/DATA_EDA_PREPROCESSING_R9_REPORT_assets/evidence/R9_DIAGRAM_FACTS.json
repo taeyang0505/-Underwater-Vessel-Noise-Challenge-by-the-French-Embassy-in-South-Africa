@@ -1,0 +1,614 @@
+{
+  "format": "r9_diagram_facts_v1",
+  "created_utc": "2026-10-26T06:18:02.949291+00:00",
+  "scope": "read-only source/manifests/archive directories; no Test arrays/fitting/GPU",
+  "source_code_and_manifest_sha256": {
+    "configs/r9_full_training_v1.json": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/training_r9.py": "e7df7e3acc5c0358cc3e8cc4558039c6b3985e90be04abb12fdc0c09507bd11a",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/trees_ensemble_r9.py": "365a476c7d5cc56e701ec56ab366fd0371d857755f91330644c609f97a52c2bc",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+    "pipeline/prepare_sa.py": "3e18f6b6077dfecb0d2800879ff7196c11b051bc32a31bf3189219c2019f4400",
+    "data/versions/background_cv_r9/manifest.json": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "data/versions/vtuad_full_r9/manifest.json": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+    "reports/R8_FEATURE_PIPELINE_EVIDENCE.json": "be8a33e0fc76b7324f3828382e8cdceb0164687d8f097107b6765092cb8dded1",
+    "reports/R9_MODEL_ADAPTER_VERIFICATION.json": "70ea2c3e16c21a81ee089aad4ca7ff76baa4e1f05bef453b88b299fa4a862b5b",
+    "reports/R9_TREES_ENSEMBLE_VERIFICATION.json": "52e67817aeb498a8fd12e05fcd0be5bc8ca9fa4454ecca6ff53ecc322c02be66",
+    "reports/R9_TRAINING_ENGINE_VERIFICATION.json": "e7decb1cf6b4266b98f36c049f4a13a7790409b890bda731c6d5a1410c42cd5a",
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "ops/prepare_r9_training.py": "62df29d4077879691b4c26f785717dd873348a2846c8d7bc58d766f7f24dd82a",
+    "data/synthetic/group_cv_minute_full_r9_v1/manifest.json": "76c2089791e512db942cc56ee495d061b6334dac80b1aca00c06cb1c8b2f72d5",
+    "data/synthetic/group_cv_minute_full_r9_v1/readiness.json": "c17408bd9f060449797c5d98dafe73ccfa6edae403f33686d2f8f5cc463c96f2",
+    "reports/R9_DATASET_READY_VERIFICATION.json": "18b7246a4db6fddad707bf41b5659e0181105847f5ec3cc57561e463ca56eadb",
+    "pipeline/runner_r9.py": "b88dd7ece7d10786fbceb1e6dcfa4da94c594f42bdf69cff93f16c5126dba58d",
+    "ops/run_r9_training.py": "70c8349db15035bcabc2582299cc4721244a6f4f0ce938ae11b2d301a233309f",
+    "reports/R9_REAL_DATA_CONNECTION_VERIFICATION.json": "06d82732578465c05767e2b987fa34477d0dc58e05f29fee9af46deb7e55a23f",
+    "reports/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json": "969f13824b2b8821825ca87eaed48894e27804b7f774d3cab67e9ac97b10e052"
+  },
+  "sources": {
+    "SA": {
+      "url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/data",
+      "rows": 1715779,
+      "sites": 10,
+      "schema_columns": 74,
+      "TOL_columns": 62,
+      "model_bands": 25,
+      "acoustic_ground_truth_labels": false,
+      "original_audio_provided": false,
+      "archive_bytes": 94916719,
+      "archive_extracted_member_bytes": 96002006,
+      "archive_extracted_semantics": "Parquet and docs still contain their own compression; not decoded in-memory table size",
+      "summed_export_duration_seconds": 102089991.0,
+      "duration_semantics": "sum of row dur metadata, not independently deduplicated acquisition hours",
+      "base_windows": 133641,
+      "base_shape": [
+        133641,
+        15,
+        25
+      ],
+      "base_dtype": "float32",
+      "base_npy_bytes": 200461628,
+      "R9_allowed_background_windows": 100965,
+      "R9_QC_eligible_windows": 100964,
+      "R9_source_groups": 258,
+      "R9_active_sites": 7,
+      "qc": {
+        "method": "same SourceSplitR6.apply_minute_qc/actual originalrow_id join for allroles",
+        "masked_selected_minutes": 6254,
+        "windows_with_masked_minutes": 6254,
+        "eligible_windows_min3_observed": 100964,
+        "excluded_insufficient_support": 1,
+        "numeric_source_indices_read": 100965,
+        "outside_allowed_source_values_read": 0,
+        "physical_cause_of_boundary_flag_verified": false
+      },
+      "cautions": [
+        "Unverified export clock/timezone and pressure calibration",
+        "Filename sample-rate token is not validated band support",
+        "Keep raw metadata for grouping, never use site/recorder/time/IDs as model predictors"
+      ],
+      "R9_QC_masked_retained_minutes": 6253
+    },
+    "VTUAD": {
+      "url": "https://doi.org/10.5281/zenodo.23037895",
+      "upstream_url": "https://www.oceannetworks.ca/",
+      "licence": "CC BY4.0, attribution/version and original provider caveats retained",
+      "records_total": 525,
+      "reference_records": 509,
+      "ambient_controls": 16,
+      "weak_background_in_reference_archive": 22,
+      "original_hulls": 178,
+      "reference_recording_days": 33,
+      "reference_independent_components_full_graph": 1,
+      "reference_header_seconds": 119388,
+      "reference_complete_2s_seconds": 119376,
+      "reference_native_complete_minutes": 1978,
+      "reference_native_minute_seconds": 118680,
+      "ambient_header_seconds": 31980,
+      "total_header_seconds": 151368,
+      "reference_header_hours": 33.163333333333334,
+      "reference_usable_native_minute_hours": 32.96666666666667,
+      "all525_header_hours": 42.04666666666667,
+      "hours_semantics": "sum of clip durations, not independent non-overlapping field-recording hours",
+      "archive_bytes_reference": 3712337699,
+      "archive_bytes_ambient": 926037631,
+      "archive_bytes_total": 4638375330,
+      "uncompressed_WAV_bytes_reference": 7640854396,
+      "uncompressed_WAV_bytes_ambient": 2046720704,
+      "uncompressed_WAV_bytes_total": 9687575100,
+      "archive_metadata_read_mode": "split ZIP logical reader; 58,390 central-directory bytes, no WAV sample reading",
+      "sample_rate_hz": 32000,
+      "reference_shape_before_minutes": [
+        59688,
+        25
+      ],
+      "reference_shape_after_complete_minutes": [
+        1978,
+        25
+      ],
+      "reference_dtype": "native bank float32, aggregation/mixture float64",
+      "ambient_policy": "separate controls, not auto zero or vessel-absence labels",
+      "shared_across_every_background_fold": true,
+      "old_reference_holdouts_no_longer_independent_for_R9": true,
+      "inactive_sources": [
+        "HearMyShip",
+        "NOAA native holdout",
+        "TimeMoE/Dasheng weights"
+      ]
+    }
+  },
+  "frequencies_hz": [
+    31.622776601683793,
+    39.810717055349734,
+    50.11872336272722,
+    63.09573444801933,
+    79.43282347242814,
+    100.0,
+    125.89254117941675,
+    158.48931924611142,
+    199.52623149688787,
+    251.18864315095797,
+    316.22776601683796,
+    398.1071705534973,
+    501.18723362727246,
+    630.957344480193,
+    794.3282347242822,
+    1000.0,
+    1258.9254117941675,
+    1584.893192461114,
+    1995.2623149688789,
+    2511.886431509582,
+    3162.2776601683795,
+    3981.0717055349733,
+    5011.872336272725,
+    6309.573444801937,
+    7943.282347242822
+  ],
+  "audio_preprocessing": [
+    "channel0; native32k sample rate, no resampling",
+    "complete2s frames, Hann periodogram, constant detrend, one-sided PSD density",
+    "band integral sum(PSD*delta_f), [c/10^.05,c*10^.05)",
+    "30 complete2s linear-power bins average to one native minute; partial-minute tail dropped",
+    "uncalibrated digital mean-square power, not dB averaging or certified pressure"
+  ],
+  "background_split": {
+    "source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+    "reference_shared": true,
+    "CV_name": "background-source development CV, NOT reference-independent CV",
+    "nominal_before_purge": "4 of5 sensor-week buckets TRAIN, one heldout bucket",
+    "heldout_group_fractions": {
+      "selection": 0.5,
+      "ensemble_fit": 0.2,
+      "ensemble_gate": 0.15,
+      "report": 0.15
+    },
+    "gap": "same-sensor 15min support intervals separated >=24h across roles",
+    "min_support_gap_hours": 24,
+    "overlap_violations": 0,
+    "folds": [
+      {
+        "fold": 0,
+        "window_counts": {
+          "train": 78869,
+          "selection": 9417,
+          "ensemble_fit": 3417,
+          "ensemble_gate": 3511,
+          "report": 3584
+        },
+        "source_group_counts": {
+          "train": 206,
+          "selection": 25,
+          "ensemble_fit": 10,
+          "ensemble_gate": 8,
+          "report": 8
+        }
+      },
+      {
+        "fold": 1,
+        "window_counts": {
+          "train": 78069,
+          "selection": 9824,
+          "ensemble_fit": 3104,
+          "ensemble_gate": 3859,
+          "report": 3237
+        },
+        "source_group_counts": {
+          "train": 208,
+          "selection": 25,
+          "ensemble_fit": 10,
+          "ensemble_gate": 8,
+          "report": 7
+        }
+      },
+      {
+        "fold": 2,
+        "window_counts": {
+          "train": 78362,
+          "selection": 10271,
+          "ensemble_fit": 3432,
+          "ensemble_gate": 3274,
+          "report": 2929
+        },
+        "source_group_counts": {
+          "train": 207,
+          "selection": 25,
+          "ensemble_fit": 10,
+          "ensemble_gate": 8,
+          "report": 8
+        }
+      },
+      {
+        "fold": 3,
+        "window_counts": {
+          "train": 78753,
+          "selection": 10675,
+          "ensemble_fit": 3971,
+          "ensemble_gate": 3195,
+          "report": 2427
+        },
+        "source_group_counts": {
+          "train": 207,
+          "selection": 25,
+          "ensemble_fit": 10,
+          "ensemble_gate": 8,
+          "report": 8
+        }
+      },
+      {
+        "fold": 4,
+        "window_counts": {
+          "train": 78124,
+          "selection": 10183,
+          "ensemble_fit": 3487,
+          "ensemble_gate": 3462,
+          "report": 2889
+        },
+        "source_group_counts": {
+          "train": 202,
+          "selection": 28,
+          "ensemble_fit": 11,
+          "ensemble_gate": 8,
+          "report": 8
+        }
+      }
+    ],
+    "fixed_generated_examples_per_fold_planned": {
+      "selection": 1000,
+      "ensemble_fit": 500,
+      "ensemble_gate": 500,
+      "report": 1000
+    },
+    "source_counts_not_equal_generated_example_counts": true
+  },
+  "sampler": {
+    "module": "pipeline/sampler_r9.py",
+    "sha256": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "recipe_version": "minute_first_r9_v1",
+    "config_generator": {
+      "minute_first_fraction": 1.0,
+      "family_names": [
+        "native_inside",
+        "native_short",
+        "native_edge"
+      ],
+      "family_probabilities": [
+        0.5,
+        0.25,
+        0.25
+      ],
+      "explicit_no_source_fraction": 0.2,
+      "hard_negative_policy": {
+        "definition": "TRAIN-only R6 low0..8 bump >=TRAIN q90 and low >max(safe15..22,high20..24)+3dB; heuristic, not natural-vessel truth",
+        "requested_fraction_of_all_primary_windows": 0.1,
+        "selection": "prefer candidates for half of no-source requests without primary duplication; if candidates insufficient use all, fill remaining zero slots deterministically",
+        "metadata_frozen_before_training": true
+      },
+      "snr_db_uniform": [
+        -10.0,
+        10.0
+      ],
+      "smooth_eq_max_db": 6.0,
+      "time_warp": false,
+      "force_boundary_fade": false,
+      "waveform_repeat_or_gap_fill": false,
+      "quantization_decimals": 1,
+      "labels_from_unrounded_components": true,
+      "model_weights_from_rounded_observations": true,
+      "placement_conditioning": "native minute geometry only, independent of background observation mask",
+      "scale_reference": "whole EQ-transformed native complete-minute trajectory peak before crop and masking",
+      "ambient_controls": "separate analysis panel; known ambient-added energy is not relabelled as vessel-only energy or automatic zero target",
+      "parameters_from_Test_statistics": false
+    },
+    "equations": {
+      "background": "B=10^((db-peak)/10) on observed O",
+      "alpha": "10^(snr/10)*median_t(sum_f B)/max_full_native_t(sum_f EQ(S))",
+      "added": "A=O*alpha*placed(EQ(native_minute(S)))",
+      "mixture": "E=B+A",
+      "cell_target": "q=A/E on observed cells; zero missing",
+      "share_target": "y=sum(A)/sum(E), observed cells only",
+      "presence_target": "1[observed added energy>0]",
+      "model_db": "Q=round(raw_mixture_db,1)",
+      "weights": "w=normalized 10^(Q/10), observed only",
+      "pooling": "yhat=sum(w*qhat)"
+    },
+    "full_native_peak_before_crop": true,
+    "no_warp_fade_or_source_repeat": true,
+    "no_source_or_masked_positive_can_have_y0": true,
+    "raw_target_identity_exact_before_float32_save": true,
+    "rounded_pooling_is_not_exact_raw_label_identity": true,
+    "rounding_pool_error_bound_nominal": 0.005756399149621881,
+    "actual_sampler_bound": "tanh(ln(10)*(.05 + float32_half_ULP + 1e-12)/20), plus2e-7 audit tolerance",
+    "source_semantics": "known added whole measured recording, not verified isolated vessel-only source",
+    "applied_dataset_source_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+    "applied_sampler_SHA_matches_dataset": true
+  },
+  "inputs": {
+    "module": "pipeline.relative_grid_r6_v2.relative_grid_v2",
+    "shape": [
+      8,
+      15,
+      25
+    ],
+    "feature_names": [
+      "band_temporal_median_relative_div10",
+      "band_temporal_q20_relative_div15",
+      "adjacent_observed_delta_div10",
+      "positive_mid_high_delta_times_smooth_low_band_co_rise",
+      "band_median_minus_window_median_div20",
+      "observed_mask",
+      "band_temporal_q05_relative_div15",
+      "sqrt_rounded_energy_weight"
+    ],
+    "missing": "NaN in db, all feature channels/w zero missing, channel5 explicit observed mask",
+    "window_local_statistics_only": true,
+    "prior_or_label_or_ID_inputs": false,
+    "tree_features": {
+      "flatten": 3000,
+      "temporal_statistics": 800,
+      "physics": 27,
+      "total": 3827
+    }
+  },
+  "neural_models": {
+    "bg_cnn": {
+      "format": "r9_relative_mask_adapter_v1",
+      "architecture_version": 9,
+      "kind": "bg_cnn",
+      "model_settings": {
+        "width": 128,
+        "blocks": 5,
+        "dropout": 0.1
+      },
+      "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+      "feature_names": [
+        "band_temporal_median_relative_div10",
+        "band_temporal_q20_relative_div15",
+        "adjacent_observed_delta_div10",
+        "positive_mid_high_delta_times_smooth_low_band_co_rise",
+        "band_median_minus_window_median_div20",
+        "observed_mask",
+        "band_temporal_q05_relative_div15",
+        "sqrt_rounded_energy_weight"
+      ],
+      "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+      "pretrained": false,
+      "requires_background_prior": false,
+      "base_total_parameters": 1488002,
+      "removed_presence_parameters": 129,
+      "total_parameters": 1487873,
+      "trainable_parameters": 1487873,
+      "frequency_context_policy": "per_minute_observed_frequency_mean_additive_residual_v1",
+      "frequency_context_new_parameters": 0,
+      "frequency_context_uses_labels_or_prior": false,
+      "body_theoretical_temporal_receptive_field": 23,
+      "body_receptive_field_clipped_to_input": true
+    },
+    "tfgrid_fdy_conformer": {
+      "format": "r9_relative_mask_adapter_v1",
+      "architecture_version": 9,
+      "kind": "tfgrid_fdy_conformer",
+      "model_settings": {
+        "embed_dim": 64,
+        "hidden_size": 128,
+        "grid_blocks": 5,
+        "dropout": 0.1,
+        "conformer_blocks": 1
+      },
+      "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+      "feature_names": [
+        "band_temporal_median_relative_div10",
+        "band_temporal_q20_relative_div15",
+        "adjacent_observed_delta_div10",
+        "positive_mid_high_delta_times_smooth_low_band_co_rise",
+        "band_median_minus_window_median_div20",
+        "observed_mask",
+        "band_temporal_q05_relative_div15",
+        "sqrt_rounded_energy_weight"
+      ],
+      "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+      "pretrained": false,
+      "requires_background_prior": false,
+      "base_total_parameters": 2562150,
+      "removed_presence_parameters": 65,
+      "total_parameters": 2562085,
+      "trainable_parameters": 2562085
+    },
+    "fdy": {
+      "format": "r9_relative_mask_adapter_v1",
+      "architecture_version": 9,
+      "kind": "fdy",
+      "model_settings": {
+        "width": 32,
+        "blocks": 3,
+        "dropout": 0.1
+      },
+      "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+      "feature_names": [
+        "band_temporal_median_relative_div10",
+        "band_temporal_q20_relative_div15",
+        "adjacent_observed_delta_div10",
+        "positive_mid_high_delta_times_smooth_low_band_co_rise",
+        "band_median_minus_window_median_div20",
+        "observed_mask",
+        "band_temporal_q05_relative_div15",
+        "sqrt_rounded_energy_weight"
+      ],
+      "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+      "pretrained": false,
+      "requires_background_prior": false,
+      "base_total_parameters": 129966,
+      "removed_presence_parameters": 65,
+      "total_parameters": 129901,
+      "trainable_parameters": 129901
+    },
+    "itransformer": {
+      "format": "r9_relative_mask_adapter_v1",
+      "architecture_version": 9,
+      "kind": "itransformer",
+      "model_settings": {
+        "width": 96,
+        "blocks": 3,
+        "dropout": 0.1
+      },
+      "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+      "feature_names": [
+        "band_temporal_median_relative_div10",
+        "band_temporal_q20_relative_div15",
+        "adjacent_observed_delta_div10",
+        "positive_mid_high_delta_times_smooth_low_band_co_rise",
+        "band_median_minus_window_median_div20",
+        "observed_mask",
+        "band_temporal_q05_relative_div15",
+        "sqrt_rounded_energy_weight"
+      ],
+      "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+      "pretrained": false,
+      "requires_background_prior": false,
+      "base_total_parameters": 295696,
+      "removed_presence_parameters": 97,
+      "total_parameters": 295599,
+      "trainable_parameters": 295599
+    }
+  },
+  "training": {
+    "config": {
+      "epochs": 100,
+      "early_stopping": false,
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "dropout": 0.1,
+      "batch_size": 128,
+      "num_workers": 4,
+      "threads": 4,
+      "gradient_clip": 1.0,
+      "cell_loss_weight": 0.25,
+      "presence_loss_weight": 0.05,
+      "site_balanced_loss": true,
+      "monitor": "window_rmse",
+      "mixed_precision": "CUDA BF16 with FP32 pooling; CPU only for explicit fixtures",
+      "checkpoint_policy": "strict best-window, best-macro, last, every10epochs; full epoch log"
+    },
+    "loss": "mean(loss_weight*(share_MSE +.25*sum(w*(qhat-q)^2)+.05*BCE_with_logits(derived_score_logit,z)))",
+    "optimizer": "Adam lr.001/wd.0003/dropout.1/gradclip1",
+    "scheduler": "ReduceLROnPlateau factor.5 patience2 min_lr1e-6, selection window RMSE",
+    "production_epochs": 100,
+    "neural_early_stopping": false,
+    "every_train_item_each_epoch": true,
+    "dynamic_TRAIN_fixed_selection": true,
+    "BF16_operators_FP32_pool_loss": true,
+    "site_balanced_loss_requires_dataset_loss_weight": true,
+    "checkpoint_selection": "selection only: strict best_window; also save best_macro,last,every10epochs",
+    "tree_settings": {
+      "maximum_trees": 1500,
+      "early_stopping_patience": 40,
+      "threads": 4,
+      "learning_rate": 0.035,
+      "num_leaves": 31,
+      "minimum_leaf_rows": 50,
+      "maximum_training_rows": 100000,
+      "feature_batch_size": 512
+    },
+    "tree_ES_criterion": "selection clipped-share pooledRMSE / classifier binarylogloss",
+    "site_balance_loader_wired": true
+  },
+  "ensemble": {
+    "function": "fit_safe_ensemble",
+    "fallback": "best single NN on ensemble_fit",
+    "candidates": "all5 equal mean, neural4 equal mean, LightGBM single; other NN singles cannot beat fallback fit",
+    "admission": "freeze one fit-selected candidate, compare once against fallback on source-disjoint gate, improve both byepsilon1e-4 elsefallback",
+    "weights": "nonnegative simplex; affine1,0; same weights for share/diagnostic score",
+    "gate_is_selection_not_untouched_report": true,
+    "report": "only after every checkpoint/policy frozen; not used for candidate/weight choice",
+    "NN_score": ".5share+.5max_observed_band10_22(qhat-min_time(qhat))",
+    "tree_score": ".5share+.5classifier_probability",
+    "score_is_natural_ship_probability": false
+  },
+  "execution_status": {
+    "source_manifests_built_and_audited": true,
+    "sampler_implemented": true,
+    "neural_adapters_CPU_one_update_verified": true,
+    "training_engine_CPU_2epoch_fixture_verified": true,
+    "tree_tiny_synthetic_fixture_verified": true,
+    "production_dynamic_dataset_and_fixed_role_NPZ_exists": true,
+    "R9_production_model_directory_exists": false,
+    "R9_runner_exists": true,
+    "R9_inference_exists": false,
+    "R9_production_CUDA_100epochs_executed": false,
+    "R6_local_pilot_is_R9_training_result": false,
+    "R9_production_data_ready": true,
+    "dataset_worker4_fixture_passed": true,
+    "all509_scheduled_in_each_of500_fold_epochs": true,
+    "R9_frozen_prediction_helpers_implemented": true,
+    "R9_public_CSV_inference_CLI_implemented": false,
+    "R9_actual_full_default_models_CPU_connection_verified": true
+  },
+  "inference_future_contract": {
+    "status": "Runner frozen prediction helpers implemented; public CSV CLI and production execution pending complete actual checkpoints/policies",
+    "column_schema": "ID + m01_TOL_31.6 ... m15_TOL_7943.3 in explicit minute-major/frequency ascending order",
+    "shape": [
+      15,
+      25
+    ],
+    "steps": [
+      "verify complete production receipts/code/data/policy SHA; reject fixture/partial run",
+      "per-window fixedround.1 ->same relative8/sqrtw; no fitting/cohort stats",
+      "eachfold4frozenNN masks+physicalshare; frozenCPUtree",
+      "apply frozen fold policy to shares and diagnostic scores",
+      "equal arithmetic mean over all five complete frozen fold policies, as pinned in current config",
+      "validate ID order, rows, columns, finite/bounded values and save CSV+hashreceipt"
+    ],
+    "output_columns": [
+      "ID",
+      "share_added_vessel",
+      "score_added_vessel"
+    ],
+    "query_labels_or_site_metadata_used": false,
+    "cohort_calibration_or_LB_tuning": false,
+    "fold_aggregation": "equal arithmetic mean over all five complete fold policies"
+  },
+  "sampler_review": {
+    "confirmed_math_bug": false,
+    "review_scope": "source code algebra/geometry/NaN/label/rounding, no new acoustic values",
+    "cautions": [
+      "SNR is full native trajectory peak before crop/mask, not resulting window global share or observed peak",
+      "Known component is whole recording including ambient; weak class neverdefinesq/y",
+      "One-minute edge sources cannot straddle integer minute boundaries, documented interior fallback",
+      "Dataset and ready receipt now verify no-source schedules, all509positive-reference cycles, worker4 parity and site loss weights; production NN/GPU remains unexecuted."
+    ]
+  },
+  "wide_CNN_frequency_context": "h_global=h+sum_f(O*h)/sum_f(O), per channel/minute; all-missing c0; no new parameters; used before q head and representation",
+  "dataset_ready": {
+    "manifest_sha256": "76c2089791e512db942cc56ee495d061b6334dac80b1aca00c06cb1c8b2f72d5",
+    "readiness_sha256": "c17408bd9f060449797c5d98dafe73ccfa6edae403f33686d2f8f5cc463c96f2",
+    "source_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "fixed_examples_total": 15000,
+    "dynamic_train_rows_per_epoch_allfolds": 392177,
+    "dynamic_train_rows_by_fold": [
+      78869,
+      78069,
+      78362,
+      78753,
+      78124
+    ],
+    "fixed_role_examples_per_fold": {
+      "selection": 1000,
+      "ensemble_fit": 500,
+      "ensemble_gate": 500,
+      "report": 1000
+    },
+    "npz_files": 20,
+    "npz_bytes": 24707614,
+    "npz_internal_NPY_member_bytes": 94601160,
+    "bundle_all_file_bytes": 71244935,
+    "raw_q_y_identity_max_saved_error": 3.246515567489894e-08,
+    "rounded_fixed_q_pool_max_gap": 0.0016588222127666419,
+    "report_numeric_arrays_read_for_this_report": false,
+    "model_fit_executed": false
+  }
+}

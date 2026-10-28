@@ -1,0 +1,260 @@
+{
+  "format": "r14_fit_only_monotone_calibration_plan_v1",
+  "created_unix": 1793043568.572124,
+  "source_sha256": {
+    "ops/analyze_r14_fit_calibration.py": "e4782285e6e5bd8e7e6eefa165cc7d2d818b9738261e41bb30e6b6cdc236af06",
+    "ops/analyze_r14_decoupled.py": "5f297dda3d7c844af0d1bc1a051562f300e201a52f9b67c229f36b73a8cf5dfc",
+    "reports/r14_decoupled_v1/predeclared_plan.json": "810978345c8aa549d83b19b60adbba3503eade5ac48a2d774a2731482c47da7c",
+    "reports/r14_decoupled_v1/selected_policy.json": "d22a6b6fc3d442d8518ab082ae22181baff4bdb422980c47b92d65c6bad6b0b5",
+    "reports/r14_decoupled_v1/RESULTS.json": "e8add744b4103d7dc97de250cbedf448169a9cc79ff3759be53aacbeb668b4fb",
+    "reports/r14_decoupled_v1/validation_fit_saved_inputs.npz": "d0c1a3090b9de6cca9eb1b25248537ba0929963215b337d58c2c1cefaa3a5ca5",
+    "reports/r14_decoupled_v1/predictions/R12_high_snr_long.npz": "f86cf181216a36d76ad25b0e6d9f29f4afb629295df9602c8d9e9a37ec9bf8ac",
+    "reports/r14_decoupled_v1/predictions/R11_full_smooth15_VS_st_francis_dense.npz": "4fdff674286a6789dbd12ee990ec3c5c3e1121c09f32273ed2b1066e623e24c1",
+    "reports/r14_decoupled_v1/predictions/R11_full_smooth12_VS_st_francis_dense.npz": "b627156a082cf45c05fbcc7bd0ee6f40fde022b3bf861d884f94412a2b842cb3",
+    "reports/r14_decoupled_v1/predictions/R12_eval.npz": "f9d75ae6a97ab340ebdcdf945d1918e2ada325e26c021744b15d97168a0215bd",
+    "reports/r14_decoupled_v1/predictions/R11_native_long15_VS_hf_high.npz": "7e4ccbf06a5d53827c17bf0a8aabf39e780a97ca5e34344d215611db0d5f93d7",
+    "reports/r14_decoupled_v1/predictions/R9_ensemble_gate.npz": "9af5f9555b70ff6a37b6596024d8c555f091f89150a95ea233939557135f4f9a",
+    "reports/r14_decoupled_v1/predictions/R10_seen__combined_stress.npz": "8a1e144979a34c39cae60eb310b3a8a6c10a2afbc08e0d8d9118be44dee66808",
+    "reports/r14_decoupled_v1/predictions/R12_validation_gate.npz": "9ad804b6173e20c411423121c901515871de216023b3364ed3f0648abb902aac",
+    "reports/r14_decoupled_v1/predictions/R11_full_smooth13_VS_hf_high.npz": "8103dae76217d86b7754141bc1f1184810893b56d5a9d86cedc7dfc87e4c7e34",
+    "reports/r14_decoupled_v1/predictions/R10_unseen__r9_complete.npz": "fcb10fd976ab10ead3f63693d0acd778c933c177aaf85e8c72355af2687e7f9e",
+    "reports/r14_decoupled_v1/predictions/R11_full_smooth12_VS_hf_high.npz": "e804cd0ad7503faa830fa2b852da141775f8ea305b60f62a51f15af29beb7b11",
+    "reports/r14_decoupled_v1/predictions/R9_selection.npz": "7bff22bcde10c1db5d2f874fef70eed7a918264368e1a323512952647011c4ba",
+    "reports/r14_decoupled_v1/predictions/R11_native_long15_VS_st_francis_dense.npz": "08f9d4a9328085e162d4152f8e0e93a6aae605e7e50055760595f7222db5b499",
+    "reports/r14_decoupled_v1/predictions/R11_full_smooth15_VS_hf_high.npz": "712c77b046d01b0b405b0d06314601b7dd75db80aa1d0f851cb485c2f3519b0c",
+    "reports/r14_decoupled_v1/predictions/R10_unseen__combined_stress.npz": "774cb0951467123ad596b57ba1522754eb76c132c602566496f419649e1d5c07",
+    "reports/r14_decoupled_v1/predictions/R10_seen__mean_scale_only.npz": "776bbfe0caa9558d0d1e9cf6510f9a35af8243f0331e58a35f108776e5f1b094",
+    "reports/r14_decoupled_v1/predictions/R11_full_smooth13_VS_st_francis_dense.npz": "e1749d6d573de594dc3435e00a28eb619875cedf7fcc9f21b743329336c83917"
+  },
+  "candidates": [
+    {
+      "name": "identity",
+      "kind": "identity"
+    },
+    {
+      "name": "power0.75",
+      "kind": "power",
+      "gamma": 0.75
+    },
+    {
+      "name": "power0.85",
+      "kind": "power",
+      "gamma": 0.85
+    },
+    {
+      "name": "power0.95",
+      "kind": "power",
+      "gamma": 0.95
+    },
+    {
+      "name": "power1.05",
+      "kind": "power",
+      "gamma": 1.05
+    },
+    {
+      "name": "power1.15",
+      "kind": "power",
+      "gamma": 1.15
+    },
+    {
+      "name": "power1.25",
+      "kind": "power",
+      "gamma": 1.25
+    },
+    {
+      "name": "temperature0.7",
+      "kind": "temperature",
+      "temperature": 0.7
+    },
+    {
+      "name": "temperature0.85",
+      "kind": "temperature",
+      "temperature": 0.85
+    },
+    {
+      "name": "temperature1.15",
+      "kind": "temperature",
+      "temperature": 1.15
+    },
+    {
+      "name": "temperature1.3",
+      "kind": "temperature",
+      "temperature": 1.3
+    },
+    {
+      "name": "logit_a0.75_b-0.25",
+      "kind": "logit",
+      "a": 0.75,
+      "b": -0.25
+    },
+    {
+      "name": "logit_a0.75_b0.0",
+      "kind": "logit",
+      "a": 0.75,
+      "b": 0.0
+    },
+    {
+      "name": "logit_a0.75_b0.25",
+      "kind": "logit",
+      "a": 0.75,
+      "b": 0.25
+    },
+    {
+      "name": "logit_a1.0_b-0.25",
+      "kind": "logit",
+      "a": 1.0,
+      "b": -0.25
+    },
+    {
+      "name": "logit_a1.0_b0.25",
+      "kind": "logit",
+      "a": 1.0,
+      "b": 0.25
+    },
+    {
+      "name": "logit_a1.25_b-0.25",
+      "kind": "logit",
+      "a": 1.25,
+      "b": -0.25
+    },
+    {
+      "name": "logit_a1.25_b0.0",
+      "kind": "logit",
+      "a": 1.25,
+      "b": 0.0
+    },
+    {
+      "name": "logit_a1.25_b0.25",
+      "kind": "logit",
+      "a": 1.25,
+      "b": 0.25
+    },
+    {
+      "name": "piece_low0.75_high0.75",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 0.75,
+      "high_slope": 0.75
+    },
+    {
+      "name": "piece_low0.75_high1.0",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 0.75,
+      "high_slope": 1.0
+    },
+    {
+      "name": "piece_low0.75_high1.25",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 0.75,
+      "high_slope": 1.25
+    },
+    {
+      "name": "piece_low0.75_high1.5",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 0.75,
+      "high_slope": 1.5
+    },
+    {
+      "name": "piece_low0.75_high2.0",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 0.75,
+      "high_slope": 2.0
+    },
+    {
+      "name": "piece_low1.0_high0.75",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.0,
+      "high_slope": 0.75
+    },
+    {
+      "name": "piece_low1.0_high1.0",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.0,
+      "high_slope": 1.0
+    },
+    {
+      "name": "piece_low1.0_high1.25",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.0,
+      "high_slope": 1.25
+    },
+    {
+      "name": "piece_low1.0_high1.5",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.0,
+      "high_slope": 1.5
+    },
+    {
+      "name": "piece_low1.0_high2.0",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.0,
+      "high_slope": 2.0
+    },
+    {
+      "name": "piece_low1.25_high0.75",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.25,
+      "high_slope": 0.75
+    },
+    {
+      "name": "piece_low1.25_high1.0",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.25,
+      "high_slope": 1.0
+    },
+    {
+      "name": "piece_low1.25_high1.25",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.25,
+      "high_slope": 1.25
+    },
+    {
+      "name": "piece_low1.25_high1.5",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.25,
+      "high_slope": 1.5
+    },
+    {
+      "name": "piece_low1.25_high2.0",
+      "kind": "piecewise",
+      "knee": 0.2,
+      "low_slope": 1.25,
+      "high_slope": 2.0
+    }
+  ],
+  "fit_role": "validation_fit1000 saved baseline CNN/Tree50:50 predictions only",
+  "objectives": [
+    "ordinary_MSE",
+    "normalized_weighted_MSE_weights_1plus2y"
+  ],
+  "score_source": "unchanged strict baseline classifier probability",
+  "score_lambda_candidates": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "choice": "Each scalar transform lambda maxfitAUC first tie; scalar calibration chosen minfitobjective first tie",
+  "panel_role": "same17 development panels after all policies frozen; no selection on their labels",
+  "development_exposure": "17 panels known from previous studies; not blind evidence",
+  "physical_limit": "Postprocessed scalar share need not equal original q-weighted pool; no q/y/weights redefinition",
+  "new_fit": "scalar finite-candidate selection only; model fit0",
+  "model_inference": 0,
+  "Test": false,
+  "production_approved": false,
+  "plan_sha256": "bbc8860c226654c1127bfa21dbda84e3d24a3705cbbeb33f5f2ecb0b9f0beb34"
+}

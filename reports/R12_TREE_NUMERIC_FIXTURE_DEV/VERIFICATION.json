@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "scope": "tiny generated numeric fixture; no actual source/TRAIN/Test/model artifacts read",
+  "train_rows": 128,
+  "validation_fit_rows": 48,
+  "query_rows": 32,
+  "maximum_trees": 10,
+  "threads": 2,
+  "cases": [
+    {
+      "include_shape": false,
+      "features": 466,
+      "replay1_7_32_exact": true,
+      "labelled_query_rejected": true,
+      "fixture_production_reuse_rejected": true,
+      "query_metrics": {
+        "n": 32,
+        "rmse": 0.1561998357783639,
+        "mae": 0.11402632296085358,
+        "bias": 0.014214674010872841,
+        "target_mean": 0.4317172151058912,
+        "target_rms": 0.4828222708813296,
+        "prediction_mean": 0.44593188911676407,
+        "prediction_rms": 0.4505435903736782,
+        "share_auc": 0.9999999999999999,
+        "classifier_auc": 1.0,
+        "hybrid_auc": 0.9999999999999999,
+        "share_saturation_le001": 0.0,
+        "share_saturation_ge099": 0.0,
+        "classifier_saturation_le001": 0.0,
+        "classifier_saturation_ge099": 0.0,
+        "site_slices": {
+          "synthetic_0": {
+            "n": 16,
+            "rmse": 0.1488295467517775,
+            "bias": 0.026397187262773514,
+            "target_mean": 0.4166375230997801,
+            "prediction_mean": 0.4430347103625536,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          },
+          "synthetic_1": {
+            "n": 16,
+            "rmse": 0.16323768991270424,
+            "bias": 0.002032160758972168,
+            "target_mean": 0.4467969071120024,
+            "prediction_mean": 0.44882906787097454,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          }
+        }
+      }
+    },
+    {
+      "include_shape": true,
+      "features": 673,
+      "replay1_7_32_exact": true,
+      "labelled_query_rejected": true,
+      "fixture_production_reuse_rejected": true,
+      "query_metrics": {
+        "n": 32,
+        "rmse": 0.16498800805322564,
+        "mae": 0.11991716828197241,
+        "bias": 0.01232393179088831,
+        "target_mean": 0.4317172151058912,
+        "target_rms": 0.4828222708813296,
+        "prediction_mean": 0.44404114689677954,
+        "prediction_rms": 0.4476550551276257,
+        "share_auc": 1.0,
+        "classifier_auc": 1.0,
+        "hybrid_auc": 1.0,
+        "share_saturation_le001": 0.0,
+        "share_saturation_ge099": 0.0,
+        "classifier_saturation_le001": 0.0,
+        "classifier_saturation_ge099": 0.0,
+        "site_slices": {
+          "synthetic_0": {
+            "n": 16,
+            "rmse": 0.1660641040303242,
+            "bias": 0.02882702276110649,
+            "target_mean": 0.4166375230997801,
+            "prediction_mean": 0.4454645458608866,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          },
+          "synthetic_1": {
+            "n": 16,
+            "rmse": 0.1639048472600739,
+            "bias": -0.004179159179329872,
+            "target_mean": 0.4467969071120024,
+            "prediction_mean": 0.4426177479326725,
+            "share_auc": 1.0,
+            "classifier_auc": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "code_sha256": {
+    "ops/train_r12_lightgbm.py": "d059b4cb1d39bf26c985830c07d8de9cd7427cb2bbb9966257f6e3701ef1f882",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  }
+}

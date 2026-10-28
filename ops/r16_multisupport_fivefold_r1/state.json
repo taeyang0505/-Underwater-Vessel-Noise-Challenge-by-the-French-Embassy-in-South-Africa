@@ -1,0 +1,23 @@
+{
+  "phase": "waiting_for_fold0_CSV",
+  "PID": 23279,
+  "parent": {
+    "phase": "neural",
+    "PID": 12773,
+    "child_PID": 21489,
+    "elapsed_seconds": 8567.668576955795,
+    "progress": {
+      "stage": "neural",
+      "regime": "D0",
+      "kind": "bg_cnn",
+      "epoch": 29,
+      "rows_seen": 12288,
+      "total_rows": 61446,
+      "optimizer_steps": 27100,
+      "elapsed_seconds": 2066.1810602080077
+    },
+    "official_upload": false
+  },
+  "updated_kst": "2026-10-28T14:55:10.711078+09:00",
+  "official_upload": false
+}

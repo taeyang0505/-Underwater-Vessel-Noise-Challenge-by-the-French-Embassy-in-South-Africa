@@ -1,0 +1,136 @@
+{
+  "status": "completed",
+  "torch": "2.14.1",
+  "device": "mps",
+  "fallback": false,
+  "CPU_threads": 2,
+  "Test_used": false,
+  "production_sources_modified": false,
+  "production_weights_used": false,
+  "disposable_training_only": true,
+  "concurrent_production_stage": "CPU Trees",
+  "results": [
+    {
+      "kind": "bg_cnn",
+      "mode": "current_fp32",
+      "batch_size": 64,
+      "median_step_seconds": 0.06577002784858148,
+      "block_step_seconds": [
+        0.06656851371129353,
+        0.06567550000424187,
+        0.06577002784858148
+      ],
+      "examples_per_second": 973.0876220296499,
+      "sampled_driver_bytes": 1166884864,
+      "memory_is_peak": false,
+      "FP32_prechecked_eval_max_abs": 0.0,
+      "finite_loss_and_parameters": true,
+      "last_disposable_loss": 0.5645557641983032,
+      "input_transfer_timed": false,
+      "full_epoch_measured": false,
+      "candidate_drops_per_step_host_checks": false
+    },
+    {
+      "kind": "bg_cnn",
+      "mode": "prechecked_deferred_fp32",
+      "batch_size": 64,
+      "median_step_seconds": 0.05781224292392532,
+      "block_step_seconds": [
+        0.05781224292392532,
+        0.059234805715580784,
+        0.05773625678072373
+      ],
+      "examples_per_second": 1107.0319496895684,
+      "sampled_driver_bytes": 1166884864,
+      "memory_is_peak": false,
+      "FP32_prechecked_eval_max_abs": 0.0,
+      "finite_loss_and_parameters": true,
+      "last_disposable_loss": 0.5645557641983032,
+      "input_transfer_timed": false,
+      "full_epoch_measured": false,
+      "candidate_drops_per_step_host_checks": true
+    },
+    {
+      "kind": "bg_cnn",
+      "mode": "prechecked_deferred_bf16",
+      "batch_size": 64,
+      "median_step_seconds": 0.05702556250616908,
+      "block_step_seconds": [
+        0.05702556250616908,
+        0.05662083330874642,
+        0.05832685421531399
+      ],
+      "examples_per_second": 1122.3037035904104,
+      "sampled_driver_bytes": 1176322048,
+      "memory_is_peak": false,
+      "FP32_prechecked_eval_max_abs": 0.0,
+      "finite_loss_and_parameters": true,
+      "last_disposable_loss": 0.5638843178749084,
+      "input_transfer_timed": false,
+      "full_epoch_measured": false,
+      "candidate_drops_per_step_host_checks": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "mode": "current_fp32",
+      "batch_size": 64,
+      "median_step_seconds": 0.32206268049776554,
+      "block_step_seconds": [
+        0.32206268049776554,
+        0.31881643055627745,
+        0.3269636527014275
+      ],
+      "examples_per_second": 198.71908133250486,
+      "sampled_driver_bytes": 5478678528,
+      "memory_is_peak": false,
+      "FP32_prechecked_eval_max_abs": 0.0,
+      "finite_loss_and_parameters": true,
+      "last_disposable_loss": 0.45467790961265564,
+      "input_transfer_timed": false,
+      "full_epoch_measured": false,
+      "candidate_drops_per_step_host_checks": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "mode": "prechecked_deferred_fp32",
+      "batch_size": 64,
+      "median_step_seconds": 0.2997864237986505,
+      "block_step_seconds": [
+        0.301575958263129,
+        0.2966841389425099,
+        0.2997864237986505
+      ],
+      "examples_per_second": 213.485317944168,
+      "sampled_driver_bytes": 7158497280,
+      "memory_is_peak": false,
+      "FP32_prechecked_eval_max_abs": 0.0,
+      "finite_loss_and_parameters": true,
+      "last_disposable_loss": 0.45467790961265564,
+      "input_transfer_timed": false,
+      "full_epoch_measured": false,
+      "candidate_drops_per_step_host_checks": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "mode": "prechecked_deferred_bf16",
+      "batch_size": 64,
+      "median_step_seconds": 0.3127766737403969,
+      "block_step_seconds": [
+        0.3026847013582786,
+        0.3127766737403969,
+        0.32157943754767376
+      ],
+      "examples_per_second": 204.61883948903326,
+      "sampled_driver_bytes": 7154302976,
+      "memory_is_peak": false,
+      "FP32_prechecked_eval_max_abs": 0.0,
+      "finite_loss_and_parameters": true,
+      "last_disposable_loss": 0.454598069190979,
+      "input_transfer_timed": false,
+      "full_epoch_measured": false,
+      "candidate_drops_per_step_host_checks": true
+    }
+  ],
+  "production_source_closure_unchanged_after_benchmark": true,
+  "finished_kst": "2026-10-28T13:07:00.390550+09:00"
+}

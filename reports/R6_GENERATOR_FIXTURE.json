@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "scope": "numeric fixtures only; no challenge data/Test/OUTER/GPU/model fit/SSH/network",
+  "families": [
+    "minute_first",
+    "short_passage",
+    "edge_straddling",
+    "two_second_first_no_warp"
+  ],
+  "random_masked_cases": 48,
+  "checks": [
+    "known full-window CPA-SNR y; high-share >.95 retained",
+    "same peak-SNR produces duration-dependent share, not requested-u inversion",
+    "minute-first uses complete native60s only",
+    "all4 families: masked energy/q/y, EQ bound, default SNR, deterministic replay",
+    "edge left/right/both; outside CPA has no visible-tail renormalization or forced-zero boundary",
+    "all4 families: identical reference shaping and placement under different observation masks",
+    "source wholly outside observed minutes: q/y/presence0, finite full-SNR, null observed/globalSNR, no log0",
+    "lowpass probability override; combined EQ bound; EQ0 ablation off",
+    "caller-owned exact20/100 no-source controls on full observation; no reference/label surrogate required",
+    "20percent no-source does not force total observed-zero fraction to20percent",
+    "independent arbitrary-q rounding bound",
+    "unsupported/incomplete/invalid requests fail explicitly; no padding/retry"
+  ],
+  "predeclared_lower_higher_SNR_numeric_sensitivity": [
+    {
+      "snr_db": -20.0,
+      "share": 0.0099009900990099,
+      "scope": "constant-power whole15min numeric sensitivity only, not real-data representative"
+    },
+    {
+      "snr_db": -10.0,
+      "share": 0.09090909090909091,
+      "scope": "constant-power whole15min numeric sensitivity only, not real-data representative"
+    },
+    {
+      "snr_db": 0.0,
+      "share": 0.5,
+      "scope": "constant-power whole15min numeric sensitivity only, not real-data representative"
+    },
+    {
+      "snr_db": 10.0,
+      "share": 0.9090909090909091,
+      "scope": "constant-power whole15min numeric sensitivity only, not real-data representative"
+    },
+    {
+      "snr_db": 20.0,
+      "share": 0.9900990099009901,
+      "scope": "constant-power whole15min numeric sensitivity only, not real-data representative"
+    }
+  ],
+  "maximum_observed_rounding_pool_gap": 0.00043278798885509895,
+  "maximum_proven_gap_bound": 0.005756838318435967,
+  "nominal_float64_0_1dB_gap_bound": 0.005756399149621881,
+  "full_reference_CPA_peak_not_window_tail": true,
+  "input_arrays_unchanged": true,
+  "source_code_sha256": {
+    "pipeline/robust_sampler_r6.py": "59a8bafbbad9c42c7628d2283ac5f9fb3550a6945686958ea207ebeb61b0722b",
+    "ops/verify_robust_sampler_r6.py": "df7e1afe509c9d1242ad69ef5ee2570fe3825b7a97c42c2d7385cc084aae26a1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "numeric fixture before actual source data/model fit",
+  "issue": "Torch then LightGBM in one process stalled in LGBM_DatasetCreateFromMat OpenMP join barrier; sampled stack recorded in /private/tmp/r6_fixture_sample.txt",
+  "affected_numeric_pid": 63410,
+  "stopped_with": "SIGTERM",
+  "partial_fixture_not_reused": true,
+  "remedy": "Torch-free feature module plus fresh subprocess per CNN/tree fit and evaluation",
+  "real_dataset_model_results_seen": false,
+  "frozen_R4_R5_changed": false
+}

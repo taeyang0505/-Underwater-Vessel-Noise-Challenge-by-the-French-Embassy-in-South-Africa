@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "arm": "control",
+  "epochs": 100,
+  "early_stopping": false,
+  "optimizer": "Adam",
+  "dropout": 0.1,
+  "parameters_total": 30050,
+  "regression_parameters": 26305,
+  "classification_parameters": 3745,
+  "best_regression_epoch": 77,
+  "best_classifier_epoch": 77,
+  "fit_nn_metrics": {
+    "n": 2400,
+    "rmse": 0.11135386696801862,
+    "mae": 0.05338194630636281,
+    "bias": -0.00605143436416256,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.16511948815207386,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.2471022029357315,
+    "auc_share": 0.877109375,
+    "auc_classifier": 0.8993098958333332,
+    "auc_75share_25clf": 0.9072591145833334,
+    "auc_25share_75clf": 0.8998567708333334,
+    "classifier_ge099_fraction": 0.3125,
+    "classifier_le001_fraction": 0.0
+  },
+  "fit_tree_metrics": {
+    "n": 2400,
+    "rmse": 0.1284736128912886,
+    "mae": 0.07540191490033173,
+    "bias": -0.020010875974927116,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.1511600465413093,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.223233481217229,
+    "auc_share": 0.8669010416666667,
+    "auc_classifier": 0.9172591145833332,
+    "auc_75share_25clf": 0.9151171874999999,
+    "auc_25share_75clf": 0.9183658854166667,
+    "classifier_ge099_fraction": 0.34541666666666665,
+    "classifier_le001_fraction": 0.0
+  },
+  "fit_fixed60tree40nn_metrics": {
+    "n": 2400,
+    "rmse": 0.11515435321828353,
+    "mae": 0.0630415100769223,
+    "bias": -0.014427098221399136,
+    "target_mean": 0.17117092251623642,
+    "prediction_mean": 0.15674382429483727,
+    "target_rms": 0.26204396921901035,
+    "prediction_rms": 0.22961071973075614,
+    "auc_share": 0.8811067708333334,
+    "auc_classifier": 0.9188867187499999,
+    "auc_75share_25clf": 0.9183072916666667,
+    "auc_25share_75clf": 0.9180598958333334,
+    "classifier_ge099_fraction": 0.28583333333333333,
+    "classifier_le001_fraction": 0.0
+  },
+  "elapsed_seconds": 573.5106643745676,
+  "Test_used": false,
+  "report_or_gate_read": false,
+  "checkpoint_sha256": {
+    "best_regression.pt": "fa7821e8523c5adb34173186e9406cf94714d14b99294ba1f131ba0f668f1023",
+    "best_classifier.pt": "fa7821e8523c5adb34173186e9406cf94714d14b99294ba1f131ba0f668f1023"
+  },
+  "tree_sha256": {
+    "tree_regressor.txt": "da806e2bb3a03b2c19218f3a2ce5118a4d6fd01ad86c360f2145372ff5435b3b",
+    "tree_classifier.txt": "233ef24876eeeb9f6c7dc46f71035e95753426685ba49923374989a509fa7e9e"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "regression": {
+    "Tree": 0.6,
+    "NN": 0.4
+  },
+  "score": {
+    "Tree_classifier": 0.5,
+    "NN_classifier": 0.5,
+    "share": 0
+  },
+  "fixed_decoupled_comparison": "same new regressor plus unchanged saved D0F1 classifier",
+  "Test_used": false,
+  "selection_scope": "previously exposed local evaluation, not new blind performance",
+  "promotion_rule": "PROTOCOL.md fixed before new training"
+}

@@ -1,0 +1,17 @@
+{
+  "version": "quality_v2_physics_group_cv_prebuilt",
+  "protocol": "source_group_nested5_week24h_v1",
+  "augmentation_version": "physics_aware_v3_minute20db_r1",
+  "parent_cv_dir": "data/synthetic/group_cv_nested5_pilot_v1",
+  "output_dir": "data/synthetic/group_cv_physics_v2_r1",
+  "training_background_policy": "Each clean current-fold training background is primary exactly once; randomized site-interleaved permutation, no replacement.",
+  "boundary_policy": "Exclude training windows containing any flagged original row actually included in the frozen background array. Keep heldout bytes and add diagnostic flags.",
+  "generation_seed": 20261024,
+  "permutation_seed": 3407,
+  "batch_size": 256,
+  "physics_config": {
+    "max_minute_snr_db": 20.0
+  },
+  "challenge_Test_or_leaderboard_tuning": false,
+  "physical_limit_assumption": "Synthetic design limit: for every observed minute, sum(added energy)/sum(background energy) <= 100 (20 dB), for short and native references alike; not inferred from challenge Test or leaderboard."
+}

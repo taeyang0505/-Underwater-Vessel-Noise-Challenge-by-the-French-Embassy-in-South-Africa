@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "synthetic_capability_checkpoints_only": true,
+  "production_model_checkpoint_inference": "unmeasured",
+  "checks": [
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "itransformer",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "itransformer",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "fdy",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "fdy",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "bg_cnn",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    },
+    {
+      "kind": "bg_cnn",
+      "fixture_torch2141_to_CPUtorch": "2.14.1",
+      "pool_gap": 0.0,
+      "finite": true
+    }
+  ],
+  "Test_used": false
+}

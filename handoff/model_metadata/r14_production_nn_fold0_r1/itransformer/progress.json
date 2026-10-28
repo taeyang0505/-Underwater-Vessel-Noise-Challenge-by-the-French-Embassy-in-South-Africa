@@ -1,0 +1,31 @@
+{
+  "kind": "itransformer",
+  "epoch": 100,
+  "budget": 100,
+  "train_online_rmse": 0.07287962591637415,
+  "train_cell_mse": 0.026607538362698045,
+  "selection": {
+    "rmse": 0.09551447684635436,
+    "n": 1000
+  },
+  "best_selection_rmse": 0.09551447684635436,
+  "best_epoch": 100,
+  "actual_epoch_seconds_including_validation_checkpoint": 27.891459374688566,
+  "training_and_validation_seconds_before_checkpoint": 27.85272808279842,
+  "raw_cache_materialization_seconds": 10.347565750591457,
+  "raw_epoch_receipt_path": "epoch_receipts/epoch_100_61eda19e5db25ad4.json",
+  "raw_epoch_receipt_sha256": "289225a44b33e4ad5e5e35e68fac88023693bb5e134a14ec612d78f3cfd66f54",
+  "rows": 78869,
+  "optimizer_steps": 61700,
+  "learning_rate": 1.024425261896286e-05,
+  "next_learning_rate": 1e-05,
+  "max_rounded_pool_gap": 0.001785188913345337,
+  "site_or_target_row_weighting": false,
+  "cache_shared_in_phase": [
+    "itransformer",
+    "fdy",
+    "bg_cnn"
+  ],
+  "source_epoch": 100,
+  "memory_driver_bytes_sampled": 1235353600
+}

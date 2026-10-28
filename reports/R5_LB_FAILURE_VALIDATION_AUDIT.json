@@ -1,0 +1,148 @@
+{
+  "format": "r5_LB_failure_validation_audit_v1",
+  "created_at_utc": "2026-10-25T18:20:43.384433+00:00",
+  "scope": "Own Fold0 TRAIN/INNER and fixed saved CPU predictions only; no Test/OUTER/cohort matching/LB fitting/new model training",
+  "LB_observation_provided_by_user_not_used_to_fit": {
+    "score": 0.65199132,
+    "RMSE": 0.348008679,
+    "AUC": 0.539533333
+  },
+  "fixed_checkpoint_sha256": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+  "source_code_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "pipeline/lgbm_r5.py": "623de7f5cf603e71e174fa3b2f7beef0e38ab171701338f6e520fd3351c7290d",
+    "pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "pipeline/grid_inputs_r5.py": "81cb398b5cd4707df7cc12117c9cc91682312564ca3538d1736f174dbe3714f2",
+    "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "pipeline/physics_features_r5.py": "9cb0855400a16c6082bfdbfcb0f0dcc7389c3a54d08b4d8ff8bce45702de81f1",
+    "pipeline/hierarchical_ensemble_r5.py": "547c57e976fec2616472b73264bf8a78c95e21abbc8697a25adf08825eba0ed2",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/foundation_masks_r5.py": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05",
+    "pipeline/load_foundation_r5.py": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/inference_r5.py": "30f38265db7105cf56d66720b5f439adceb84bd09b9fa400ee7b451b99245f22",
+    "ops/profile_r5_cnn_mac_inference.py": "ffe99271e38957130a15fde15aa3951fd3c6fe367ee7c11ca60c90fd8c12f4ff"
+  },
+  "input_files_sha256": {
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/readiness_manifest.json": "028905299c3d9cfde16ca893ba97928e35dd58c8b11346bc242b721e25ac4f8e",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/sources/manifest.json": "05dccb9a717352469de372593e217be8688e99807a946cff947ddd34d58ed614",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/train.npz": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/validation.npz": "51b8ff0d1c28dba263c8e2261d7a31a35138512f9a1b214f236922face592d57",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/inner_validation_metadata.parquet": "a7fdca7fee3e5aabf180fe3a718f44d037533e863015ce1ef5ac9c4d71626fb8"
+  },
+  "verified_input_dataflow": {
+    "training_grid": "neural_r5.fit_neural: shared_grid_inputs(changed.feature_db, frozen_prior); known share/presence/cell_share passed separately as targets",
+    "inference_grid": "db-only shared_grid_inputs; no query q/y/metadata arguments; label dictionary rejected",
+    "eight_channels": [
+      "window-centred dB",
+      "absolute dB/100",
+      "sqrt(normalized observed energy)",
+      "observed mask",
+      "q20-band excess",
+      "temporal dB delta",
+      "frozen-TRAIN-prior q0(db)",
+      "log1p(frozen-TRAIN-prior Bhat/E)"
+    ],
+    "TRAIN_label_derived_prior": true,
+    "prior_construction": "32 aggregate spectral centres from known TRAIN B=(1-q)E; individual examples/source IDs not saved",
+    "query_oracle_q_y_input_evidence_found": false,
+    "limits": "Code dataflow + db-only rejection + numeric q0 discrepancy do not constitute an exhaustive adversarial proof against every possible pipeline error."
+  },
+  "generator_verified_from_code": {
+    "class": "PassageSamplerR4 used both by dynamic TRAIN and static INNER",
+    "zero_probability": 0.2,
+    "positive_share_prior": [
+      0.005,
+      0.95
+    ],
+    "share_duration_LHS_same_all_roles": true,
+    "rendered_duration_seconds": [
+      120,
+      900
+    ],
+    "reference_source": "AIS-positive whole measured VTUAD passages, not isolated pure-vessel energy",
+    "operations": [
+      "whole-source mean-power-preserving timewarp 1/3..3",
+      "30s raised-cosine power fade",
+      "smooth reference-only EQ bounded4dB",
+      "full R energy counted as known added component",
+      "zero rows are unmodified SA background"
+    ],
+    "same_simulator_family_holdout": true
+  },
+  "own_data_diagnostics": {
+    "TRAIN": {
+      "rows": 53244,
+      "zero_fraction": 0.20000375629178874,
+      "share_mean": 0.38199822101381875,
+      "share_std": 0.3098648623928897,
+      "sites": 5,
+      "sensors": 4,
+      "background_groups": 152,
+      "positive_reference_groups": 12,
+      "positive_warp_outside_0_8_to_1_25_fraction": 0.8363892475642681,
+      "nominal1995Hz_and_above_fraction_presence_AUC": 0.7826577152432663,
+      "LF_le200Hz_energy_fraction_share_Pearson": -0.6031895093817798,
+      "observed_minutes_share_Pearson": 0.0018419903877009674
+    },
+    "INNER": {
+      "rows": 3000,
+      "zero_fraction": 0.2,
+      "share_mean": 0.3819988403866688,
+      "share_std": 0.3098643275704878,
+      "sites": 4,
+      "sensors": 4,
+      "background_groups": 50,
+      "positive_reference_groups": 5,
+      "positive_warp_outside_0_8_to_1_25_fraction": 0.8595833333333334,
+      "nominal1995Hz_and_above_fraction_presence_AUC": 0.8279326388888889,
+      "LF_le200Hz_energy_fraction_share_Pearson": -0.5984780292744476,
+      "observed_minutes_share_Pearson": -0.006241449654602538,
+      "fixed_CNN_presence_AUC": 0.9967208333333333,
+      "fixed_CNN_share_RMSE": 0.09080814708083197
+    },
+    "spectral_feature_definition": "HF diagnostic sums frequency indices18..24, nominal1995.3..7943.3Hz; it is not the strict >=2000Hz threshold of the q0 anchor."
+  },
+  "source_independence_scope": {
+    "TRAIN_INNER_background_group_overlap": 0,
+    "TRAIN_INNER_positive_reference_group_overlap": 0,
+    "all4_INNER_sites_also_in_TRAIN": true,
+    "all4_INNER_sensor_groups_also_in_TRAIN": true,
+    "conclusion": "Recorded source-group/time purge is not a station/instrument-domain holdout and does not make generator families independent."
+  },
+  "frozen_prior_only_diagnostic": {
+    "TRAIN_sample2048": {
+      "sample_rule": "2048 evenly spaced static TRAIN rows",
+      "share_RMSE": 0.5056201735299279,
+      "zero_mean_estimated_share": 0.7402372651840106,
+      "presence_AUC": 0.27003763699912436
+    },
+    "all_INNER3000": {
+      "share_RMSE": 0.5104093470854862,
+      "zero_mean_estimated_share": 0.7390238019909647,
+      "presence_AUC": 0.23892847222222222,
+      "energy_weighted_abs_q0_minus_true_q_mean": 0.5803425744904928
+    },
+    "interpretation": "q0 is not an oracle or a validated separator; it is a poor counterfactual nuisance feature on this dataset. The CNN can learn a correction inside the same simulator without establishing generalization."
+  },
+  "causal_hypotheses_not_confirmed": [
+    "Foreign whole-recording ambient/instrument spectra may make addition-vs-no-addition easier than the intended vessel task.",
+    "Identical warp/fade/EQ and target-prior mechanisms across TRAIN/INNER may reward generator shortcuts.",
+    "Shared site/instrument families and a TRAIN-background manifold may fail under changes outside that family."
+  ],
+  "not_established": [
+    "Which hypothesis caused how much of the reported RMSE difference",
+    "The actual hidden generator/label prior or Test spectrum",
+    "That stronger postprocessing or an additional model would solve the failure",
+    "That direct reference leakage or query q/y leakage explains this submission"
+  ],
+  "selection_bias": "Epoch selection/full INNER reuse and calibration meta-selection are real optimism sources, but no experiment here identifies them as the full explanation of the cross-population ~0.257 RMSE difference. Calibrator crossed diagnostics rejected offset/affine; identity was submitted.",
+  "next_step": "Predeclared CPU physical robustness stress of fixed epoch19, no fit, is separate; it is not a reconstruction of the hidden generator.",
+  "Test_OUTER_GPU_SSH_or_external_actions": false,
+  "core_source_modified": false
+}

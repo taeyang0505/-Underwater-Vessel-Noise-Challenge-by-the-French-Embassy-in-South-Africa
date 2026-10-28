@@ -1,0 +1,101 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R14 검토</title><style>body{font:16px/1.7 system-ui;margin:auto;max-width:1080px;padding:40px;background:#f3f5f1;color:#17231b}main{padding:35px;background:white;border-radius:14px;border:1px solid #d7dfd4}a{color:#21683d}li{margin:13px 0}.box{background:#edf4e9;padding:20px;border-left:5px solid #5b8153}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 system-ui}h1{font-size:32px}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:9px;border-bottom:1px solid #dce4d8;text-align:left;overflow-wrap:anywhere}th{background:#edf3e9}h2{margin-top:36px}h3{margin-top:28px}p{overflow-wrap:anywhere}</style><main><h1>R14 · CPU 개선과 Mac GPU 검토</h1><p class="box">Mac MPS 실제 4본체 학습 step 호환성 검증 완료. 전수 CPU Tree와 성능 진단 결과는 실행 완료와 통계적 통과를 구분해 아래 문서에 기록했습니다.</p><ul><li><a href="R14_MPS_REVIEW_START.html">MacBook GPU 검토 화면·속도표</a></li><li><a href="R14_MPS_BENCHMARK.md">MPS 세부 보고서</a></li><li><a href="R14_CPU_REVIEW_RESULTS.md">R14 전체 실험·17패널 결과 보고서</a></li><li><a href="R14_FULL_TREE_RESULTS.md">본체 5,252특징 Tree 전수 학습</a></li><li><a href="R14_CLASSIFIER_PROVENANCE.md">0.9445 분류기 출처 대조</a></li><li><a href="R14_TORCH_FRONTEND.md">전처리 벡터화와 78,869개 검증</a></li><li><a href="R14_ANCHOR_INDEPENDENT_QA.md">상대 크기 특징·가중 손실 독립 QA</a></li></ul><h2>전체 Markdown 원문</h2><h1>R14 CPU 개선·전수 Tree 실측 및 Mac GPU 검토</h1>
+<h2>1. 실행 범위와 판정 원칙</h2>
+<p>GPU 본학습을 시작하지 않고 요청한 CPU 진단을 실행했다. 별도 최신 요청에 따라 Mac MPS에서는 실제 본체 신경망의 짧은 호환성·속도 검사만 수행했다. Test.csv와 새 제출 CSV를 읽거나 생성하지 않았고, 공식 제출·외부 자문 전송도 하지 않았다.</p>
+<p>수치 검산 통과, 학습 실행 완료, 성능 동시 목표 통과는 서로 다른 판정이다. 아래 17패널은 이미 여러 차례 사용한 개발용 스트레스 패널이며, 새로운 블라인드 OOF 또는 공식 LB가 아니다. 같은 VTUAD 참조가 공유되므로 참조 독립 검증이라고 부르지 않는다.</p>
+<h2>2. 0.9445 분류기 출처 정정</h2>
+<p>원 R12의 full15/SF 분류 AUC <strong>0.944494</strong>와 native15/SF <strong>0.950814</strong>는 원래 L1H1P1 Tree 조건에서 나왔다. 이는 엄격히 마스크·사이트를 맞춘 HM1 대조군과 다르다. 엄격 매칭 baseline Tree 분류기는 이미 full15/SF <strong>0.770705</strong>, native15/SF <strong>0.789269</strong>였다. R13 highshare 분류기의 full15/SF <strong>0.760763</strong>과 공정하게 비교할 차이는 약 −0.00994다. <strong>0.820224는 CNN/Tree 회귀 결합값의 share AUC</strong>이므로 분류기 AUC와 같은 출력처럼 비교하지 않는다.</p>
+<p>원 H1의 St Francis Nobs15 무추가 비율은 20.68%에서 66.97%로 바뀌었다. −Nobs AUC 0.794710의 분모는 St Francis 내부이며 전체 TRAIN 지표가 아니다. 이 교란 때문에 0.9445를 깨끗한 분류기 성능으로 복원하는 접근은 채택하지 않았다. <a href="R14_CLASSIFIER_PROVENANCE.md">출처·동일 출력 대조</a></p>
+<h2>3. 저장 예측의 교차 결합과 fit-only 단조 보정</h2>
+<p>23개 회귀 게이팅 × 3개 분류기 × 4개 score 비중, 총 276개 사전 고정 후보를 저장 예측으로 계산했다. 파라미터 선택에는 validation_fit 1,000개만 사용했다. 동시 목표를 충족한 후보는 0개였다. 선택된 baseline 회귀 + baseline classifier는 미관측 일반 AUC 0.950581을 보였지만 full15/SF 0.770705, native/SF 0.789269와 고SNR RMSE 0.156340이 남았다.</p>
+<p>별도 34개 단조 보정 후보 역시 통과 0개였다. fit MSE가 선택한 p^1.05는 미관측 일반 RMSE를 0.052512로 줄였지만 고SNR RMSE를 0.164706으로 악화시켰다. 가중 MSE 선택은 identity였다. scalar share만 보정하면 원 마스크와 sum(w*q)의 일치가 유지된다는 보장도 없으므로 생산 물리 헤드에 적용하지 않았다.</p>
+<p><a href="r14_decoupled_v1/RESULTS.md">교차 결합 전체 결과</a> · <a href="r14_fit_calibration_v1/RESULTS.md">단조 보정 결과</a></p>
+<h2>4. 깨끗한 baseline의 상대 크기 특징·가중 손실 실험</h2>
+<p>TRAIN 12,000개와 CNN 공통 부분집합 6,000개를 그대로 사용했다. 합성 정답이나 무추가·관측 마스크 분포를 바꾸지 않았다. 원 11채널에 (1) LF 31.6–158.5Hz 대비 251.2–3162.3Hz 상대 레벨, (2) TRAIN 평균 주파수 형태를 LF로 고정한 잔차, (3) 해당 추정 기준 대비 양의 초과 비율 3맵을 추가했다. 새 맵은 5,011.9Hz 이하 안전 23대역만 사용한다.</p>
+<p>이들은 기존 상대 주파수 프로파일에 이미 있는 정보를 명시적으로 제공하는 표현이다. LF가 순수 배경이라는 보증이나 실제 추가 에너지의 새로운 관측값이 아니다. 공통 +20dB gain 시험 오차는 0이었지만 사이트별 대역 응답은 상쇄되지 않는다.</p>
+<p>14채널 CNN 두 조건은 <strong>27,601파라미터</strong>, 각 <strong>100 epoch·Adam·dropout 0.1·early stopping 없음</strong>, validation_fit의 최저 RMSE 체크포인트를 보관했다. 순수 물리 손실 share MSE + 0.25*에너지 가중 cell MSE를 기본으로 두고, c=0 및 행 가중치 1+2*y를 비교했다. Tree는 880특징·12,000행으로 회귀기 2개와 독립 비가중 분류기 1개를 학습했다(max 1500, ES40).</p>
+<p>fit-only 선택은 비가중 CNN/Tree 50:50 회귀 + classifier score였다. 미관측 RMSE와 고SNR RMSE는 개선됐지만 고SNR &lt;0.145 및 장시간/SF AUC 조건은 통과하지 못했다. 이 실험만으로 크기 정보 부족이 유일 원인이었다고 결론 내리지 않는다.</p>
+<div class="tablewrap"><table>
+<tr><th>패널</th><th>모델</th><th>RMSE</th><th>Bias</th><th>Share AUC</th><th>Score AUC</th><th>독립 분류 AUC</th></tr>
+<tr><td>R12_eval</td><td>R14_fit_selected</td><td>0.066015</td><td>-0.002913</td><td>0.936225</td><td>0.969425</td><td>0.969425</td></tr>
+<tr><td>R12_eval</td><td>R12_matched_share_only</td><td>0.062234</td><td>-0.002600</td><td>0.938300</td><td>0.938300</td><td>—</td></tr>
+<tr><td>R12_high_snr_long</td><td>R14_fit_selected</td><td>0.147058</td><td>-0.102723</td><td>0.996400</td><td>0.995300</td><td>0.995300</td></tr>
+<tr><td>R12_high_snr_long</td><td>R12_matched_share_only</td><td>0.156340</td><td>-0.111366</td><td>0.996825</td><td>0.996825</td><td>—</td></tr>
+<tr><td>R9_selection</td><td>R14_fit_selected</td><td>0.054368</td><td>0.010384</td><td>0.823251</td><td>0.925193</td><td>0.925193</td></tr>
+<tr><td>R9_selection</td><td>R12_matched_share_only</td><td>0.055490</td><td>0.011175</td><td>0.814431</td><td>0.814431</td><td>—</td></tr>
+<tr><td>R10_unseen__r9_complete</td><td>R14_fit_selected</td><td>0.049969</td><td>0.006996</td><td>0.850625</td><td>0.948456</td><td>0.948456</td></tr>
+<tr><td>R10_unseen__r9_complete</td><td>R12_matched_share_only</td><td>0.052679</td><td>0.007800</td><td>0.844269</td><td>0.844269</td><td>—</td></tr>
+<tr><td>R10_seen__mean_scale_only</td><td>R14_fit_selected</td><td>0.131432</td><td>-0.060952</td><td>0.988256</td><td>0.983738</td><td>0.983738</td></tr>
+<tr><td>R10_seen__mean_scale_only</td><td>R12_matched_share_only</td><td>0.160046</td><td>-0.074884</td><td>0.984525</td><td>0.984525</td><td>—</td></tr>
+<tr><td>R10_unseen__combined_stress</td><td>R14_fit_selected</td><td>0.170919</td><td>-0.085723</td><td>0.987594</td><td>0.981237</td><td>0.981237</td></tr>
+<tr><td>R10_unseen__combined_stress</td><td>R12_matched_share_only</td><td>0.189233</td><td>-0.095227</td><td>0.984281</td><td>0.984281</td><td>—</td></tr>
+<tr><td>R11_full_smooth15_VS_st_francis_dense</td><td>R14_fit_selected</td><td>0.072777</td><td>0.008828</td><td>0.802071</td><td>0.766365</td><td>0.766365</td></tr>
+<tr><td>R11_full_smooth15_VS_st_francis_dense</td><td>R12_matched_share_only</td><td>0.074042</td><td>0.012865</td><td>0.820224</td><td>0.820224</td><td>—</td></tr>
+<tr><td>R11_native_long15_VS_st_francis_dense</td><td>R14_fit_selected</td><td>0.068816</td><td>0.001723</td><td>0.791571</td><td>0.792135</td><td>0.792135</td></tr>
+<tr><td>R11_native_long15_VS_st_francis_dense</td><td>R12_matched_share_only</td><td>0.069205</td><td>0.007321</td><td>0.806051</td><td>0.806051</td><td>—</td></tr>
+</table></div>
+<p><a href="r14_anchor_cpu_r1/results.csv">전체 17패널 원수치</a> · <a href="R14_ANCHOR_INDEPENDENT_QA.md">153개 결과 행·pooling 독립 QA</a></p>
+<h2>5. 본체 5,252특징 Tree Fold 0 전수 실측</h2>
+<p>baselineP1과 highshareP1 각각 <strong>78,869행 전수</strong>를 실제 적합했다. 64행 fixture 결과가 아니다. 각 조건의 own selection 1,000개만 ES에 사용했고 모든 모델 동결 후 공통 17패널을 평가했다. compact 673특징/12,000행과는 피처 수뿐 아니라 자료량·합성 source·PCA·seed·ES validation이 달라, 피처 수만의 독립 효과로 해석하지 않는다.</p>
+<p>Full Tree의 기본 score는 share이며 아래 분류 AUC는 독립 classifier 확률이다. 두 출력을 구분한다. 17패널 라벨을 보고 새로운 앙상블 비중을 고르지 않았다.</p>
+<div class="tablewrap"><table>
+<tr><th>패널</th><th>모델</th><th>RMSE</th><th>Bias</th><th>Share AUC</th><th>Score AUC</th><th>독립 분류 AUC</th></tr>
+<tr><td>R12_eval</td><td>FullTree_baselineP1</td><td>0.061536</td><td>0.000423</td><td>0.922975</td><td>0.922975</td><td>0.974600</td></tr>
+<tr><td>R12_eval</td><td>FullTree_highshareP1</td><td>0.062795</td><td>0.003036</td><td>0.923575</td><td>0.923575</td><td>0.975000</td></tr>
+<tr><td>R12_eval</td><td>CompactTree_baselineP1</td><td>0.079101</td><td>-0.001436</td><td>0.924200</td><td>0.964700</td><td>0.966675</td></tr>
+<tr><td>R12_eval</td><td>CompactTree_highshareP1</td><td>0.072526</td><td>0.002214</td><td>0.915575</td><td>0.963100</td><td>0.966400</td></tr>
+<tr><td>R12_high_snr_long</td><td>FullTree_baselineP1</td><td>0.134075</td><td>-0.092999</td><td>0.996850</td><td>0.996850</td><td>0.998525</td></tr>
+<tr><td>R12_high_snr_long</td><td>FullTree_highshareP1</td><td>0.113444</td><td>-0.078877</td><td>0.997375</td><td>0.997375</td><td>0.998850</td></tr>
+<tr><td>R12_high_snr_long</td><td>CompactTree_baselineP1</td><td>0.201611</td><td>-0.145219</td><td>0.996275</td><td>0.997825</td><td>0.997050</td></tr>
+<tr><td>R12_high_snr_long</td><td>CompactTree_highshareP1</td><td>0.169629</td><td>-0.122632</td><td>0.996138</td><td>0.998225</td><td>0.997400</td></tr>
+<tr><td>R9_selection</td><td>FullTree_baselineP1</td><td>0.058601</td><td>0.010918</td><td>0.795990</td><td>0.795990</td><td>0.943516</td></tr>
+<tr><td>R9_selection</td><td>FullTree_highshareP1</td><td>0.063907</td><td>0.016214</td><td>0.791962</td><td>0.791962</td><td>0.943729</td></tr>
+<tr><td>R9_selection</td><td>CompactTree_baselineP1</td><td>0.069357</td><td>0.014612</td><td>0.777630</td><td>0.904790</td><td>0.921593</td></tr>
+<tr><td>R9_selection</td><td>CompactTree_highshareP1</td><td>0.071773</td><td>0.022978</td><td>0.782441</td><td>0.910747</td><td>0.920682</td></tr>
+<tr><td>R10_unseen__r9_complete</td><td>FullTree_baselineP1</td><td>0.055690</td><td>0.006768</td><td>0.804850</td><td>0.804850</td><td>0.968662</td></tr>
+<tr><td>R10_unseen__r9_complete</td><td>FullTree_highshareP1</td><td>0.059615</td><td>0.013714</td><td>0.804744</td><td>0.804744</td><td>0.967862</td></tr>
+<tr><td>R10_unseen__r9_complete</td><td>CompactTree_baselineP1</td><td>0.067281</td><td>0.010168</td><td>0.812600</td><td>0.937781</td><td>0.950581</td></tr>
+<tr><td>R10_unseen__r9_complete</td><td>CompactTree_highshareP1</td><td>0.073730</td><td>0.018997</td><td>0.810856</td><td>0.931412</td><td>0.945800</td></tr>
+<tr><td>R10_seen__mean_scale_only</td><td>FullTree_baselineP1</td><td>0.192996</td><td>-0.102330</td><td>0.988278</td><td>0.988278</td><td>0.994094</td></tr>
+<tr><td>R10_seen__mean_scale_only</td><td>FullTree_highshareP1</td><td>0.085257</td><td>-0.016342</td><td>0.990291</td><td>0.990291</td><td>0.996125</td></tr>
+<tr><td>R10_seen__mean_scale_only</td><td>CompactTree_baselineP1</td><td>0.200986</td><td>-0.102550</td><td>0.974900</td><td>0.977812</td><td>0.987537</td></tr>
+<tr><td>R10_seen__mean_scale_only</td><td>CompactTree_highshareP1</td><td>0.119580</td><td>-0.020876</td><td>0.980744</td><td>0.983744</td><td>0.986744</td></tr>
+<tr><td>R10_unseen__combined_stress</td><td>FullTree_baselineP1</td><td>0.212105</td><td>-0.118417</td><td>0.979556</td><td>0.979556</td><td>0.984644</td></tr>
+<tr><td>R10_unseen__combined_stress</td><td>FullTree_highshareP1</td><td>0.133024</td><td>-0.049473</td><td>0.979425</td><td>0.979425</td><td>0.988350</td></tr>
+<tr><td>R10_unseen__combined_stress</td><td>CompactTree_baselineP1</td><td>0.219969</td><td>-0.119552</td><td>0.975247</td><td>0.985575</td><td>0.986962</td></tr>
+<tr><td>R10_unseen__combined_stress</td><td>CompactTree_highshareP1</td><td>0.158005</td><td>-0.055403</td><td>0.972672</td><td>0.983844</td><td>0.986206</td></tr>
+<tr><td>R11_full_smooth15_VS_st_francis_dense</td><td>FullTree_baselineP1</td><td>0.069917</td><td>0.013378</td><td>0.817519</td><td>0.817519</td><td>0.819699</td></tr>
+<tr><td>R11_full_smooth15_VS_st_francis_dense</td><td>FullTree_highshareP1</td><td>0.076674</td><td>0.017894</td><td>0.804744</td><td>0.804744</td><td>0.825256</td></tr>
+<tr><td>R11_full_smooth15_VS_st_francis_dense</td><td>CompactTree_baselineP1</td><td>0.082272</td><td>0.021115</td><td>0.813276</td><td>0.770635</td><td>0.770705</td></tr>
+<tr><td>R11_full_smooth15_VS_st_francis_dense</td><td>CompactTree_highshareP1</td><td>0.095048</td><td>0.029082</td><td>0.776769</td><td>0.754769</td><td>0.760763</td></tr>
+<tr><td>R11_native_long15_VS_st_francis_dense</td><td>FullTree_baselineP1</td><td>0.060407</td><td>0.010955</td><td>0.799051</td><td>0.799051</td><td>0.818006</td></tr>
+<tr><td>R11_native_long15_VS_st_francis_dense</td><td>FullTree_highshareP1</td><td>0.064999</td><td>0.015238</td><td>0.783865</td><td>0.783865</td><td>0.816641</td></tr>
+<tr><td>R11_native_long15_VS_st_francis_dense</td><td>CompactTree_baselineP1</td><td>0.081380</td><td>0.012948</td><td>0.795878</td><td>0.786615</td><td>0.789269</td></tr>
+<tr><td>R11_native_long15_VS_st_francis_dense</td><td>CompactTree_highshareP1</td><td>0.088910</td><td>0.025092</td><td>0.769346</td><td>0.770141</td><td>0.777237</td></tr>
+</table></div>
+<p><a href="R14_FULL_TREE_RESULTS.md">전수 Tree 결과와 학습 시간·메모리</a> · <a href="r14_tree_full_r1/results.csv">전체 17패널 CSV</a></p>
+<h3>5.1 전수 Tree와 소형 CNN의 fit-only 회귀·분류 분리 결합</h3>
+<p>full baseline Tree와 새 비가중 anchor CNN의 회귀 비중 5개, 독립 분류기 3종 × score 비중 5개를 사전 고정했다. TRAIN과 validation_fit의 배경 source 교집합은 0이고 900초 support 기준 최소 간격은 24.25시간이다. 다만 full Tree ES용 selection과 이 fit의 배경 105개는 중복되며 CNN checkpoint도 이 fit으로 선택됐으므로 독립 성능 시험은 아니다.</p>
+<p>fit-only 선택은 <strong>CNN 25% + full Tree 75% 회귀</strong>, <strong>full Tree 독립 분류 확률 100% score</strong>다. 정책 SHA를 먼저 고정하고 17패널을 평가했다.</p>
+<div class="tablewrap"><table>
+<tr><th>사전 고정 조건</th><th>실측</th><th>판정</th></tr>
+<tr><td>고SNR RMSE &lt;0.145</td><td>0.122765</td><td>통과</td></tr>
+<tr><td>미관측 일반 RMSE ≤0.0527</td><td>0.049560</td><td>통과</td></tr>
+<tr><td>미관측 일반 score AUC ≥0.92</td><td>0.968663</td><td>통과</td></tr>
+<tr><td>full15/SF score AUC ≥0.82</td><td>0.819699</td><td>미달</td></tr>
+<tr><td>native15/SF score AUC ≥0.80</td><td>0.818006</td><td>통과</td></tr>
+</table></div>
+<p><strong>4/5 조건을 통과했다.</strong> full15의 0.819699를 반올림해 0.82 통과로 바꾸지 않았다. 모든 75개 가능한 조합을 서술적으로 검산하면 실제 통과 조합은 3개 존재한다. 그러나 17패널 결과를 본 뒤 그것을 선택 정책으로 바꾸지 않았고, 생산 승인은 false로 유지했다. 이 미세한 차이의 실전적 중요성이나 공식 LB 개선을 개발 점수만으로 확정할 수 없다.</p>
+<p><a href="r14_fulltree_decoupled_v1/README.md">결합 원수치·사후 75조합 서술</a> · <a href="r14_fulltree_decoupled_v1/selected_results.csv">선택 정책 17패널</a></p>
+<h2>6. 전처리 병목과 Mac GPU 실행 호환성</h2>
+<p>Torch 벡터화 전처리는 기존 채널 최대 오차 4.55e−13, 가중치 차이 0으로 일치했다. 실제 78,869개 전수 실행은 CPU 2스레드에서 합성/collation 13.047초 + 특징 변환 2.436초, SHA 기록 포함 총 16.030초였다. 이전 115.44초는 1스레드 측정이라 엄격한 동일 조건 속도비가 아니다. 합성 비용 자체는 남아 있다. <a href="R14_TORCH_FRONTEND.md">전수·부분집합 벤치마크</a></p>
+<p>M4 Pro 20코어 GPU·통합 메모리 24GB에서 실제 4본체 × batch8/16/32, 총 12조건의 FP32 forward/backward/Adam이 통과했다. CPU 자동 fallback은 사용하지 않았다. CPU FP64 전처리 후 MPS FP32 본체에 연결했다. batch32 학습 1step 중앙값은 다음과 같다(준비1회+측정3회, 동시 CPU 부하 미통제).</p>
+<div class="tablewrap"><table>
+<tr><th>본체</th><th>파라미터</th><th>CPU 2thread</th><th>MPS</th></tr>
+<tr><td>Wide CNN</td><td>1,491,329</td><td>0.36044초</td><td>0.04095초</td></tr>
+<tr><td>TFGrid–FDY–Conformer</td><td>2,563,813</td><td>1.55572초</td><td>0.19513초</td></tr>
+<tr><td>FDY–CRNN</td><td>130,765</td><td>0.06532초</td><td>0.03138초</td></tr>
+<tr><td>iTransformer</td><td>299,919</td><td>0.01637초</td><td>0.02336초</td></tr>
+</table></div>
+<p>전체 epoch/100epoch 시간과 장시간 수렴은 미측정이며, 기존 CUDA 전용 생산 러너를 MPS로 자동 변경하지 않았다. TimeMoE·Dasheng·이번 14채널 mini CNN은 MPS 검사 대상이 아니다. <a href="R14_MPS_BENCHMARK.md">MPS 상세 검토</a> · <a href="R14_MPS_REVIEW_START.html">브라우저 검토 화면</a></p>
+<h2>7. 최종 해석 범위</h2>
+<p>Mac GPU의 실행 가능성은 확인됐지만 이는 데이터·score의 성능 동시 목표나 공식 LB 일반화 확인과 별개다. 새 official score는 없다. 원 R13 코드·자료·정책을 보존했고 기존 production 승인 false 및 외부 GPU 본학습 보류 상태를 유지했다. 실패한 partial run을 학습 재개에 사용하지 않았다.</p></main></html>

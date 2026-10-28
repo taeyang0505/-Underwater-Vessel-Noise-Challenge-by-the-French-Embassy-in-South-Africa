@@ -1,0 +1,136 @@
+{
+  "format": "r9_independent_boundary_handoff_local_verification_v1",
+  "status": "passed",
+  "remote_receipt": {
+    "status": "passed",
+    "archive": "/workspace/underwater_vessel_noise_r9_r1/backups/r9_fold00_itransformer_boundary_handoff_r1/r9_fold00_itransformer_boundary_handoff_r1.tar.gz",
+    "archive_sha256": "2ab4217a2ee952df54352b306a61f0bbb2799f46ac922de8df1c714f6dba5485",
+    "archive_bytes": 14523929,
+    "payload_entries": 61,
+    "manifest_sha256": "ffd6d861af7e0df91086e47379dbd1db7c5c80ce86784c9f65aef24e07d075ae",
+    "summary_sha256": "ac904482a4c313ec14bff21dde46cfe93a73cf4a72a1c6d2fc5d9f73a2e3df1d",
+    "best_window_epoch": 16,
+    "best_window_rmse": 0.09652330534360902,
+    "best_macro_epoch": 16,
+    "last_rmse": 0.10166312136974842
+  },
+  "archive_and_all_entry_SHA_verified": true,
+  "entries": 62,
+  "restored": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/server_backups/r9_gpu_r1/fold_00_itransformer_boundary_handoff_r1/restored",
+  "local_CPU_strict_restore_checkpoints": [
+    {
+      "checkpoint": "best_macro.pt",
+      "epoch": 16,
+      "sha256": "3ba8d61046f58a4ebbd74fdffb6e013c805fb8f1fa462c195587d30824717301",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "best_window.pt",
+      "epoch": 16,
+      "sha256": "fed6d0b1f05fd78edee4babe82830a30f516a4fef4aec02d002a283a73556c4a",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_010.pt",
+      "epoch": 10,
+      "sha256": "8314ef397614baff1e062e2d2118cb26d35bd905eca6f5fe420d97addeb729c1",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_020.pt",
+      "epoch": 20,
+      "sha256": "fabd7e16a7bfcab36baba0a0769a1768e4e5cdd5951ac40e44d5eb5040a79fbf",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_030.pt",
+      "epoch": 30,
+      "sha256": "f96df8d7b686438430743775106ea1411bb1defb6a153bf44d5bf55d7afcc3e5",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_040.pt",
+      "epoch": 40,
+      "sha256": "e85ff3d32d5896e7bbcf6ee45e832270dd5fd6ff60253d06987991b13708bd64",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_050.pt",
+      "epoch": 50,
+      "sha256": "30fa4d93e9478d26f3ff3e33d2e07868686abb8ffd16794448cb8892ba31e737",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_060.pt",
+      "epoch": 60,
+      "sha256": "4e5d5b07ebc5c230ea56a70ab12f40dbb31a5404b1cd305059a6769cad2693d1",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_070.pt",
+      "epoch": 70,
+      "sha256": "49376048bc48b850e1ce23cd278c5cd9f6a4694bd93b139d89273968f45d2ea2",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_080.pt",
+      "epoch": 80,
+      "sha256": "ec00393e14793683a0f1165d60a431a39397c1fc7119967ce60e6b937cf154d0",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_090.pt",
+      "epoch": 90,
+      "sha256": "9ba92bb72399a80839ccce75c4a909b23ac50ef216760ba61695d0c0708bc0d5",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "checkpoints/epoch_100.pt",
+      "epoch": 100,
+      "sha256": "27dd139b56ef082e185428c5523bb8cc11c50d8f8d31c86ead4afd4fac36f775",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    },
+    {
+      "checkpoint": "last.pt",
+      "epoch": 100,
+      "sha256": "ea122767aad23b3e04ba2c62a1fd0e78a9342721fa90ed34f9194835aa1a0652",
+      "strict_full_model_restore": true,
+      "parameters_finite": true
+    }
+  ],
+  "best_window_epoch": 16,
+  "best_window_rmse": 0.09652330534360902,
+  "best_macro_epoch": 16,
+  "best_macro_rmse": 0.07385480841602862,
+  "last_rmse": 0.10166312136974842,
+  "all4_original_summary_sha256": {
+    "bg_cnn": "24d238e5e33d828cc0595d9456c2c1f69ae5b2933ce300e7515001e01c1a20b9",
+    "tfgrid_fdy_conformer": "ac4a9ebb30685aea27f42196996615662ff5d51911269d11837c0f1cf0f75a57",
+    "fdy": "973b51ab708538b084210ff223e89ee1c850d7a77f1a9a629cbdf057ddb9c15a",
+    "itransformer": "ac904482a4c313ec14bff21dde46cfe93a73cf4a72a1c6d2fc5d9f73a2e3df1d"
+  },
+  "original_train_itransformer_ledger_step_present": false,
+  "original_fold_neural_completed_receipt_exists": false,
+  "original_root_neural_stage_completed_receipt_exists": false,
+  "original_ledger_edited_or_missing_receipts_fabricated": false,
+  "all_four_Fold0_models_completed_independently": true,
+  "all5_fold_run_completed": false,
+  "future_combination_requires_fresh_version_verified_import": true,
+  "previous_three_model_weights_duplicated": false,
+  "signals_sent_by_this_job": false,
+  "source_config_or_processes_changed": false,
+  "model_fit_or_new_predictions_or_Test_report_evaluation": false,
+  "elapsed_seconds": 222.33615404181182
+}

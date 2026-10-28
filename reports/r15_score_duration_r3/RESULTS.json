@@ -1,0 +1,132 @@
+{
+  "status": "passed_descriptive_only",
+  "elapsed_seconds": 6.552465200424194,
+  "input_sha256": {
+    "ops/r15_score_duration_audit.py": "8fc5c0ce37a16d11b7537a7c68ab45fede1cdfc24d0ebe44d527a08199d77158",
+    "reports/r15_descriptive_audit_r1/joined1500.csv": "df83b2a631c0384c52bc82b6ea186ca357e9cea54f7225480ee37e8a42a99ab5",
+    "reports/r15_band_comparison_r1/R14_TRAIN_source.json": "4f62d8b4a6b25531d4bb23583dc6656431d85ded23d38d1164c628a4a460cc89",
+    "reports/r15_band_comparison_r1/R9_TRAIN_source.json": "dacb791d6b1dd5c478b30768a64e0b66ed1d9928e7f42ab24482c3c867bc07ea",
+    "data/raw/Test.csv": "3ef819192c05c4308b66564e6307e6f4f26fe806afe96ec93e2d15f25a3474d4",
+    "models/r14_production_nn_fold0_r1/raw_cache/epoch_038.npz": "3e1ed800140d089caecb1ad208e22e78d4c99776562f16cf4cdd15031618024b",
+    "models/r14_production_nn_fold0_r1/raw_cache/epoch_038.json": "b505bc0beb86335c4cb7c353f5fff2a86f56a66968e58b37dfa9449c2dbbe66e",
+    "models/r9_mac_trees_r2/fold_00/tree_epoch1_train.npz": "8e430c0fc5319739a219c3d7dcd34951148fbcb805be379764f3d742bdf761f0",
+    "models/r9_mac_trees_r2/fold_00/tree_epoch1_manifest.json": "5796473744a28f9a925efb4266d78f1997d80363f40c7ad882379fedb874afa1",
+    "data/processed/sa_windows_db.npy": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "data/versions/background_cv_r9/manifest.json": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+    "data/synthetic/group_cv_physics_r13_variants_v2/fold_00/TRAIN_pool.parquet": "bfb6899fd3aa447566402d84892573aa8884bf9e388409d00265e9dd459d8b3f",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492"
+  },
+  "script_sha256": "8fc5c0ce37a16d11b7537a7c68ab45fede1cdfc24d0ebe44d527a08199d77158",
+  "plan_sha256": "03b589bf7a78ee490e51b04b9dda5566ce6d9be69d053537b934a4f9c3c727f3",
+  "datasets": [
+    "Test",
+    "R9_TRAIN_epoch1",
+    "R14_TRAIN_epoch38",
+    "SA_Fold0TRAIN_original_B_preQC",
+    "SA_Fold0TRAIN_original_B_QC"
+  ],
+  "TRAIN_and_SA_rows_each": 78869,
+  "Test_rows": 1500,
+  "group_counts": [
+    {
+      "LF_definition": "LF31_200",
+      "group": "HF_gt15",
+      "n": 801,
+      "fraction_of_all1500": 0.534,
+      "fraction_of_HFgt15_intersection": 1.0,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF31_200",
+      "group": "HF_gt15_AND_LF_le3",
+      "n": 120,
+      "fraction_of_all1500": 0.08,
+      "fraction_of_HFgt15_intersection": 0.149812734082397,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF31_200",
+      "group": "HF_gt15_AND_LF_gt6_corr_gt05",
+      "n": 364,
+      "fraction_of_all1500": 0.24266666666666667,
+      "fraction_of_HFgt15_intersection": 0.4544319600499376,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF31_200",
+      "group": "LF_le3_all",
+      "n": 279,
+      "fraction_of_all1500": 0.186,
+      "fraction_of_HFgt15_intersection": 0.149812734082397,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF_historical31_501",
+      "group": "HF_gt15",
+      "n": 801,
+      "fraction_of_all1500": 0.534,
+      "fraction_of_HFgt15_intersection": 1.0,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF_historical31_501",
+      "group": "HF_gt15_AND_LF_le3",
+      "n": 87,
+      "fraction_of_all1500": 0.058,
+      "fraction_of_HFgt15_intersection": 0.10861423220973783,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF_historical31_501",
+      "group": "HF_gt15_AND_LF_gt6_corr_gt05",
+      "n": 442,
+      "fraction_of_all1500": 0.2946666666666667,
+      "fraction_of_HFgt15_intersection": 0.5518102372034956,
+      "HFgt15_denominator": 801
+    },
+    {
+      "LF_definition": "LF_historical31_501",
+      "group": "LF_le3_all",
+      "n": 239,
+      "fraction_of_all1500": 0.15933333333333333,
+      "fraction_of_HFgt15_intersection": 0.10861423220973783,
+      "HFgt15_denominator": 801
+    }
+  ],
+  "SF_estimate_count": 487,
+  "nonSF_estimate_count": 1013,
+  "R9_all5_score_vs_own_share": {
+    "n": 1500,
+    "Pearson": 0.937496965416487,
+    "Spearman": 0.9678788203620347,
+    "label_AUC_claimed": false
+  },
+  "all_input_hashes_unchanged": true,
+  "model_fit_inference_calibration_or_submission": false,
+  "known_Test_or_actual_site_labels_available": false,
+  "original_SA_scope_is_only_Fold0TRAIN_not_all_public_rows": true,
+  "limits": [
+    "Observed activity counts are not known vessel passage duration; missing minutes break runs, and counts/fractions are both reported.",
+    "Regional broadband curves sum linear powers before dB. Historical LF13 differs from requested LF9. Per-band and regional quantities must not be pooled.",
+    "SF/nonSF is an old domain-probe estimate, not a label. MannWhitney rank probability and KS compare score distributions, not positive/negative AUC or correctness.",
+    "TRAIN windows are reused backgrounds/refs and not independent rows. No iid significance p-values or causal attribution is claimed.",
+    "OriginalSA comparison is TRAIN-only78869 window sources before/after already-existing QC, not all1715779 released records. No heldout background arrays or report labels read.",
+    "Test features remain unlabeled; no target scale inferred from TRAIN conditional labels, public scores or the input statistics."
+  ],
+  "output_sha256": {
+    "NUMERIC_FIXTURE.json": "8d378cd497121617a885ec0a93a9c95556ad930b91ce478b5dc44e8f580e7a14",
+    "SA_Fold0TRAIN_original_B_QC_derived.npz": "c7d83828b3624d5b3192ddc5a8b6e6881a1be6cdfa43e220e4916c66372880c7",
+    "R14_TRAIN_epoch38_derived.npz": "94310845ba60f9461139ab7f36eceaf715748c2047b600e864afe48289dec921",
+    "Test_derived.npz": "1c393deec98c000c9ec81fa8f906cf86b026f56a17ad72e304a4c684fab99033",
+    "feature_prediction_correlations.csv": "ff17750eaea1196bf917e87c46b19d1181ed6f9c84e4134536f5ad88724d2ea1",
+    "plan.json": "03b589bf7a78ee490e51b04b9dda5566ce6d9be69d053537b934a4f9c3c727f3",
+    "SF_vs_nonSF_rankprob_KS.csv": "c9f98538eabdd48dd92457417160675ade087f59106762a47cff49aee0e8223c",
+    "dataset_bump_duration_quantiles.csv": "26bf31efaa2414449805c1c8a7b9f24c5643c8b37a6882aaf6c08ff40cffe65d",
+    "Test_LF_HF_groups.csv": "0812d49146dc3cb3730383244addbf90a3a3c700a0f7c44177ee42543d200f5b",
+    "SA_Fold0TRAIN_original_B_preQC_derived.npz": "db636927e97d0a46aa4347b7739970077b048ccabc03a41b0f5b3ea26f485e9e",
+    "population_Nobs_counts.csv": "69b12cf4002d5c5ead25a6c0af5e925ccec0fc2b1a5861688e2d7d0c63ca2214",
+    "SF_vs_nonSF_prediction_quantiles.csv": "4f23fb0b6012fe1eda523b62d28b3d93ecca8d870521ac521c7a84f1093968cd",
+    "R9_TRAIN_epoch1_derived.npz": "6ce1dbc602e1c6c6cef683e3f6cbff24e0c1d137b02fc59577e215db09947706",
+    "Test_joined_duration1500.csv": "6020eee36998e5773e0ccc19aa9616a3a265d661ad83ab820ff33e85b67cf7d3"
+  }
+}

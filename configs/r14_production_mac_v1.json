@@ -1,0 +1,31 @@
+{
+  "version": "r14_production_mac_v1",
+  "production_recipe_approved": true,
+  "approval_path": "ops/r14_production_approval.json",
+  "source_config_path": "configs/r13_full_training_v1.json",
+  "bundle_path": "data/synthetic/group_cv_physics_r13_variants_v2",
+  "bundle_data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "source_seed": 2026102713,
+  "folds": [0, 1, 2, 3, 4],
+  "stage1_neural_folds": [0],
+  "later_neural_folds": [1, 2, 3, 4],
+  "input_channels": 14,
+  "neural_data_variant": "baseline",
+  "feature_policy": "relative8_plus_TRAIN_safe23_PCA3_plus_R14_LF_anchor3",
+  "loss": {"share_MSE": 1.0, "energy_weighted_cell_MSE": 0.25, "presence_or_contrast_BCE": 0.0, "target_weight_c": 0.0, "site_balanced_loss": false},
+  "training": {"epochs": 100, "early_stopping": false, "optimizer": "Adam", "learning_rate": 0.001, "weight_decay": 0.0003, "dropout": 0.1, "gradient_clip": 1.0, "scheduler": "cosine_per_model_epoch_budget_eta1e-5", "CPU_threads": 2, "CPU_feature_dtype": "float64", "backbone_dtype": "float32", "batch_candidates": [64, 128], "fallback_batch_candidate": 32, "MPS_unsupported_operator_fallback": false},
+  "models": {
+    "itransformer": {"device": "cpu", "epochs": 100},
+    "fdy": {"device": "mps", "epochs": 100},
+    "bg_cnn": {"device": "mps", "epochs": 100},
+    "tfgrid_fdy_conformer": {"device": "mps", "epochs": 50, "budget_basis": "user_explicitly_permitted_TFGrid_epoch_budget_adjustment_for_first_submission"}
+  },
+  "neural_schedule": "first3_round_robin_shared_epoch_raw_cache_then_TFGrid",
+  "raw_cache_maximum_epochs": 2,
+  "checkpoint_policy": "atomic_best_and_latest_complete_epoch_with_optimizer_scheduler_RNG; no failed_partial_run_reuse",
+  "tree": {"folds": [0, 1, 2, 3, 4], "variants": ["baseline", "highshare"], "regressor_and_classifier_each": true, "reuse_completed_fold0_root": "models/r14_tree_full_r1", "feature_count": 5252, "maximum_trees": 1500, "early_stopping_patience": 40, "threads": 2, "maximum_training_rows": 100000, "feature_batch_size": 512, "executor": "mac_cpu"},
+  "ensemble": {"fit_role": "ensemble_fit", "gate_role": "ensemble_gate", "model_selection_role": "selection", "report_role": "report", "regression": "nonnegative_simplex_fit_only_with_single_best_fallback_on_gate", "classifier_sources": ["baseline", "highshare", "mean"], "score_classifier_weight_candidates": [0.0, 0.25, 0.5, 0.75, 0.85, 1.0], "stress17_for_fitting": false, "Test_for_fitting": false, "step1_hybrid_validation": "Fold0 heldout policy; later-fold Tree bagging extension must be explicitly distinguished from complete neural5fold OOF"},
+  "outputs": ["submissions/r14_main/submission_r14_step1.csv", "submissions/R14/submission_r14_fold0.csv", "submissions/R14/submission_r14_fulltree_5fold.csv"],
+  "official_upload": false,
+  "resource_policy": {"sequential_tree_learners": true, "one_active_MPS_training_process": true, "CPU_and_MPS_memory_shared_GiB": 24, "no_full100epoch_feature_cache": true, "no_automatic_disk_cleanup_of_unrelated_data": true}
+}

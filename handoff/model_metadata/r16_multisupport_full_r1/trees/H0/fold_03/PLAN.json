@@ -1,0 +1,28 @@
+{
+  "status": "fixed_before_fit",
+  "fold": 3,
+  "regime": "H0",
+  "maximum_trees": 1500,
+  "patience": 40,
+  "CPU_threads": 2,
+  "train_n": 61546,
+  "selection_n": 2400,
+  "code_sha256": {
+    "pipeline/r16_multisupport_data.py": "2a107b3a1ae84e1c07f7cbb41db359dd11b53fbcfac44de694ceb0fb7116cbbd",
+    "pipeline/training_r16_multisupport.py": "d67603c3628472ba7f8bfb59d01810d32ffef78b0e68107a84a3f01c7f3fb49b",
+    "pipeline/models_r16_multisupport.py": "a55cb165bcf999f02e4a2c3a555795cf96ba449f37f63c3ce03fd0a445647264",
+    "pipeline/models_r16_f1_preflight.py": "b1f179fa5655fc7133375b63ebf84916e6c62f8496ff94e6e5c0ee9f6ce6724f",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770"
+  },
+  "data_manifest_sha256": "cc0b59a7d18bf3d81fe60c4d764384edfd30ace4998bd596e89793a8960bb39c",
+  "Test_used": false
+}

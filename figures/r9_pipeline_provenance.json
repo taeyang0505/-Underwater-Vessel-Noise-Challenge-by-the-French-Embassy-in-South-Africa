@@ -1,0 +1,40 @@
+{
+  "generator": "image_gen builtin",
+  "status": "schematic R9 architecture; production GPU results pending",
+  "figures": {
+    "preprocessing": {
+      "source": "/Users/hongtaeyang/.codex/generated_images/01a16d21-3413-75e1-b6d4-f259cb9d4ef0/exec-c1b970bb-6654-47bb-82af-0d07774fd8d9.png",
+      "output": "figures/r9_pipeline_preprocessing.png",
+      "sha256": "92340e9c6563709c2f1609a75be03675cbb98d4c00ca8f7c1cdfdab77002228c",
+      "pixels": [
+        1547,
+        1016
+      ]
+    },
+    "training": {
+      "source": "/Users/hongtaeyang/.codex/generated_images/01a16d21-3413-75e1-b6d4-f259cb9d4ef0/exec-89d29faa-d66f-4ffa-b9c9-eca439a3c176.png",
+      "output": "figures/r9_pipeline_training.png",
+      "sha256": "e61c91b9cf3614da3117040e533559891e19005afac64718d03cc6ece32fafbf",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "inference": {
+      "source": "/Users/hongtaeyang/.codex/generated_images/01a16d21-3413-75e1-b6d4-f259cb9d4ef0/exec-26502ba1-7921-45c7-9cba-6ac520e218ba.png",
+      "output": "figures/r9_pipeline_inference.png",
+      "sha256": "1e4f95851f21973d2d632c4e9592145fcaf8289e32fe4a1b557d3b841e3193ca",
+      "pixels": [
+        1546,
+        1017
+      ]
+    }
+  },
+  "qa": {
+    "counts_checked_against_R9_manifests": true,
+    "source_url_corrected": true,
+    "neural_tree_pooling_separated": true,
+    "illustrations_are_schematic_not_source_measurements": true,
+    "exact_formula_and_axis_order_authority": "pipeline/relative_grid_r6_v2.py and companion PDF text"
+  }
+}

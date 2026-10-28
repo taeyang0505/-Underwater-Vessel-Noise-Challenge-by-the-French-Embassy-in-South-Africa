@@ -1,0 +1,39 @@
+{
+  "source_run": "/workspace/underwater_vessel_noise_r2/project/models/group_cv_physics_v2_r2_adam",
+  "fold": {
+    "fold": "fold_01",
+    "completed_steps": [
+      "frozen_inner_policy",
+      "kumo_large_inner_seed_42",
+      "tabicl_inner_seed_42",
+      "task_inner_seed_42",
+      "task_outer_seed_42"
+    ],
+    "ledger_sha256": "3b336d935b3c036982dac57f81db9362c85bd7551d4bb8b70a80ca41cafec27a",
+    "outer_complete": false
+  },
+  "verified_archive": {
+    "archive": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/server_backups/r2_snapshot_20261024T195347_049993Z_d26a2456.zip",
+    "sha256": "9565e1498d8775ed2d0a667fd8f91bbbf6c99d42e8ee419cbd45cf48576358de",
+    "bytes": 11715788,
+    "ZIP_CRC_passed": true,
+    "entry_SHA_and_completed_ledger_passed": true,
+    "entries": 79,
+    "remote": {
+      "status": "completed",
+      "path": "/workspace/underwater_vessel_noise_r2/ops/backups/snapshot_20261024T195347_049993Z_d26a2456.zip",
+      "bytes": 11715788,
+      "sha256": "9565e1498d8775ed2d0a667fd8f91bbbf6c99d42e8ee419cbd45cf48576358de",
+      "files": 79,
+      "completed_steps": 12,
+      "skipped": [],
+      "training_started": false
+    },
+    "verified_unix": 1792871635.1264799,
+    "field_scope": {
+      "remote.training_started": "Whether this backup helper launched training; false does not mean the independent CV job is stopped."
+    }
+  },
+  "stage": "completed_ledger_steps; fold still in progress",
+  "history_summary_source": "Exact files from SHA-verified completed ledger ZIP; original RUN-relative paths retained."
+}

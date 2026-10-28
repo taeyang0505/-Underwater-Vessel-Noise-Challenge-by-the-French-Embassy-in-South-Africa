@@ -1,0 +1,27 @@
+{
+  "format": "r12_selected_fixed_recipe_v1",
+  "selected_arm": "L0H0P0",
+  "baseline_arm": "L0H0P0",
+  "weights": {
+    "CNN": 0.5,
+    "tree": 0.5
+  },
+  "score_policy": "share",
+  "gate_role": "R12_validation_gate",
+  "gate_metrics": {
+    "L0H0P0": 0.0400000035762796,
+    "L0H0P1": 0.019999995330970684,
+    "L0H1P0": 0.06000000064571741,
+    "L0H1P1": 0.06000000064571741,
+    "L1H0P0": 0.06000000064571741,
+    "L1H0P1": 0.06000000064571741,
+    "L1H1P0": 0.06000000064571741,
+    "L1H1P1": 0.06000000064571741
+  },
+  "strict_canonical_first_tie": true,
+  "selected_improves_gate_baseline": true,
+  "global_freeze_sha256": "numeric_freeze17",
+  "weight_threshold_calibration_fitting": false,
+  "gate_selection_optimism_and_multiple_comparisons": true,
+  "policy_sha256": "07fedc604ae79fb6c67d142311a1ec2a48164ba3a3185db6f42dca0ebb545b8d"
+}

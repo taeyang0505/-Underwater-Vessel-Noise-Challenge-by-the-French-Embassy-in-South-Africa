@@ -1,0 +1,46 @@
+{
+  "version": "r6_cpu_ablation_v1",
+  "status": "predeclared_before_new_dataset_and_model_results",
+  "seed": 20261026,
+  "source_scope": "R4 fold0 admitted TRAIN and INNER sources only; old OUTER/calibration/domain/sealed excluded",
+  "source_protocol": "new source-block early-stop split plus separate sensor-group holdout; 24h SA support purge",
+  "samples": {"train": 8192, "inner": 1024, "cross_generator": 1024, "cross_sensor": 1024, "cross_sensor_generator": 1024},
+  "zero_fraction": 0.2,
+  "new_generator": {
+    "training_families": ["minute_first", "short_passage"],
+    "training_family_probabilities": [0.5, 0.5],
+    "cross_generator_families": ["edge_straddling", "two_second_first_no_warp"],
+    "cross_generator_family_probabilities": [0.5, 0.5],
+    "snr_definition": "full transformed reference trajectory peak-minute broadband power BEFORE window crop/masking relative to background median observed-minute broadband power; never renormalize an outside-CPA tail",
+    "snr_db_uniform": [-10.0, 10.0],
+    "reference_smooth_eq_max_db": 12.0,
+    "lowpass_probability": 0.25,
+    "time_stretch": false,
+    "feature_quantization_decimals": 1,
+    "pooling_weights_from_quantized_db": true,
+    "physical_labels_from_unrounded_known_components": true,
+    "no_target_moment_or_summary_matching": true
+  },
+  "CNN_arms": [
+    {"name": "r4law_legacy8", "generator": "r4", "channels": "legacy8"},
+    {"name": "r4law_relative6", "generator": "r4", "channels": "relative6"},
+    {"name": "r6law_legacy8", "generator": "r6", "channels": "legacy8"},
+    {"name": "r6law_relative6", "generator": "r6", "channels": "relative6"}
+  ],
+  "LightGBM_arms": [
+    {"name": "r6law_legacy_tree", "generator": "r6", "channels": "legacy8"},
+    {"name": "r6law_relative_tree", "generator": "r6", "channels": "relative6"}
+  ],
+  "neural": {"width": 32, "blocks": 3, "dropout": 0.1, "epochs": 100, "early_stopping_patience": 7, "optimizer": "adam", "learning_rate": 0.001, "weight_decay": 0.0003, "batch_size": 128, "threads": 4, "gradient_clip": 1.0, "cell_loss_weight": 0.25, "presence_loss_weight": 0.05, "minimum_improvement": 0.00001},
+  "tree": {"maximum_trees": 1500, "early_stopping_patience": 40, "threads": 4, "learning_rate": 0.035, "num_leaves": 15, "minimum_leaf_rows": 40},
+  "checkpoint_selection": "source-isolated same-sensor INNER site-macro RMSE under each arm's own R4/R6 generator; also report window RMSE. Compare arms on common frozen heldout panels, not different INNER target populations.",
+  "heldout_policy": "cross-generator and cross-sensor panels evaluated only after every arm checkpoint is frozen; no tuning, ranking-based retries or ensemble fitting on these panels",
+  "site_sampling": "equal-site TRAIN primary draws, then deterministic within-site shuffle/cycling; no Test site proportions",
+  "report_metrics": ["window_RMSE", "site_macro_RMSE", "MAE", "bias", "presence_AUC", "share_bins", "site_slices", "family_slices", "quantization_target_gap"],
+  "Test_or_LB_statistics_as_fitting_target": false,
+  "benchmark_RMSE_as_target_moment": false,
+  "automatic_hyperparameter_search": false,
+  "GPU_SSH_or_submission": false,
+  "R4_R5_overwrite_or_resume": false,
+  "pilot_limit": "Small CPU ablation, not full 5-fold production, original WideCNN reproduction, task SOTA or official-LB forecast"
+}

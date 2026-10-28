@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_global_component_QA",
+  "original_code_sha256": "0fb8637b5646ce195f7f65026b530b2679828df8f943e18e204cbb67a2c18504",
+  "log": "ops/r15_forward_prototype_r1.log",
+  "cause": "common stored B used float32 exponent, candidate numerical oracle used float64; explicit component identity correctly rejected",
+  "partial_reused": false,
+  "same_seed_and_candidates_for_fresh_regeneration": true,
+  "model_fit_or_Test_access": false
+}

@@ -1,0 +1,272 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "format": "r9_completed_model_local_backup_verification_v1",
+      "status": "passed",
+      "kind": "tfgrid_fdy_conformer",
+      "fold": 0,
+      "remote_receipt": {
+        "status": "passed",
+        "archive": "/workspace/underwater_vessel_noise_r9_r1/backups/r9_fold00_tfgrid_fdy_conformer_completed_r1/r9_fold00_tfgrid_fdy_conformer_completed_r1.tar.gz",
+        "archive_sha256": "0823413f32312185f65e37db927e1276221289543c8af52986a8cb7d5d9b1f96",
+        "archive_bytes": 92883428,
+        "payload_entries": 41,
+        "manifest_sha256": "edf0877d2b5a33baea651c50938e94a14ecbde590abcccced82493907d5abfce",
+        "summary_sha256": "ac4a9ebb30685aea27f42196996615662ff5d51911269d11837c0f1cf0f75a57",
+        "best_window_epoch": 17,
+        "best_window_rmse": 0.07941507932041383,
+        "best_macro_epoch": 23,
+        "last_rmse": 0.08351954573479155
+      },
+      "archive_sha256_verified": true,
+      "all_entry_sha256_verified": true,
+      "entries": 42,
+      "restored": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/server_backups/r9_gpu_r1/fold_00_tfgrid_fdy_conformer_completed_r1/restored",
+      "epochs": 100,
+      "optimizer_steps": 61700,
+      "parameters": 2562085,
+      "local_CPU_strict_restore_checkpoints": [
+        {
+          "checkpoint": "best_macro.pt",
+          "epoch": 23,
+          "sha256": "cd1f32db882497cb918f5015654a5660750e6dd0a74ec8743cd076f089bc4e04",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "best_window.pt",
+          "epoch": 17,
+          "sha256": "e090b5b089346b4ed1ed0471ad3a2263f42671876d37af9d2e3cdf2a236c90e9",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_010.pt",
+          "epoch": 10,
+          "sha256": "213197d97ee986565d19557e8efa4bfa945d3e3bc51ab3ebf4ca86070dd55920",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_020.pt",
+          "epoch": 20,
+          "sha256": "bd72df21684cd5f69c39184286ee0af2662e6eedd81c2ef0cc475e2d1bf426c8",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_030.pt",
+          "epoch": 30,
+          "sha256": "bf328748a5e3e3c774404a9cbb6fd9a13493827953929002fbf17f9f61b443dc",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_040.pt",
+          "epoch": 40,
+          "sha256": "f13991f331b93596e04a278bb7299a405a7fa12e64569a65ca489717234671c1",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_050.pt",
+          "epoch": 50,
+          "sha256": "fb037c3a1ca0742888b9a7c26436012ec094c28c1853cffcf8b335694115a3c4",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_060.pt",
+          "epoch": 60,
+          "sha256": "2b394da3addd9b7ff32047a2879af7e00777967baa4cce31dfc5ab77c53dae9a",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_070.pt",
+          "epoch": 70,
+          "sha256": "7ba05be671d4336cc8b5e36a7a3d4774dd9177902d66224a7560cc9edc2e7255",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_080.pt",
+          "epoch": 80,
+          "sha256": "11de326fce61cfe0ff843b2dedfbe57fe301fde081672ad2236caec79e73398d",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_090.pt",
+          "epoch": 90,
+          "sha256": "6d690bff13c896a630bc5e3d7b5ee7d3353871c181da2ee03125f5ea5d89d591",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_100.pt",
+          "epoch": 100,
+          "sha256": "7234d9d08230c21fe2ad6c39bf6598954fd3251f480ac39de6b574fcb2565cf9",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "last.pt",
+          "epoch": 100,
+          "sha256": "3a5aaf5bfe5ac43d7964fa65ffef46a53ba77cb9a20a7bbd0b52e37b90f8047b",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        }
+      ],
+      "best_window_epoch": 17,
+      "best_window_rmse": 0.07941507932041383,
+      "best_macro_epoch": 23,
+      "best_macro_rmse": 0.051675074810606444,
+      "last_rmse": 0.08351954573479155,
+      "source_summary_sha256": "ac4a9ebb30685aea27f42196996615662ff5d51911269d11837c0f1cf0f75a57",
+      "context_sha256": "150ccf37dc89597ea157891cd2a6cf492f25182f5b8720bc14667d3436bff9e6",
+      "no_active_model_files_or_processes_changed": true,
+      "no_source_or_Test_report_arrays_read": true,
+      "model_training_or_new_predictions_performed": false,
+      "elapsed_seconds": 41.42379783466458,
+      "transport_log": "/private/tmp/r9_tfgrid_fdy_conformer_transport_vb8ocp1b.stdout"
+    },
+    {
+      "format": "r9_completed_model_local_backup_verification_v1",
+      "status": "passed",
+      "kind": "fdy",
+      "fold": 0,
+      "remote_receipt": {
+        "status": "passed",
+        "archive": "/workspace/underwater_vessel_noise_r9_r1/backups/r9_fold00_fdy_completed_r1/r9_fold00_fdy_completed_r1.tar.gz",
+        "archive_sha256": "cec0deb8abac72c786a0230b78f48e60f1650d1d59741378f8fffa88170d86d5",
+        "archive_bytes": 8032191,
+        "payload_entries": 41,
+        "manifest_sha256": "c8439d96afcad978bd7f47ef9f8a4c0dedfdcc7d42b5d89b71f0eeb9571b071a",
+        "summary_sha256": "973b51ab708538b084210ff223e89ee1c850d7a77f1a9a629cbdf057ddb9c15a",
+        "best_window_epoch": 16,
+        "best_window_rmse": 0.08103366363575992,
+        "best_macro_epoch": 16,
+        "last_rmse": 0.08997010266423368
+      },
+      "archive_sha256_verified": true,
+      "all_entry_sha256_verified": true,
+      "entries": 42,
+      "restored": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/ops/server_backups/r9_gpu_r1/fold_00_fdy_completed_r1/restored",
+      "epochs": 100,
+      "optimizer_steps": 61700,
+      "parameters": 129901,
+      "local_CPU_strict_restore_checkpoints": [
+        {
+          "checkpoint": "best_macro.pt",
+          "epoch": 16,
+          "sha256": "ff14650c7a669b0d02695b52251688c568cbce0cd37bb304c59328e5bd719f63",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "best_window.pt",
+          "epoch": 16,
+          "sha256": "3da5240d0bb67d02dc4462477743a64453903f5dbc82f70be5c0cd8c160acebc",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_010.pt",
+          "epoch": 10,
+          "sha256": "93b68d235a10c0774caefa9ee33c146565923615ac82840976a765adc19ebf67",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_020.pt",
+          "epoch": 20,
+          "sha256": "ae9417114c9f4e95463bdaa70d7c8acb7bf2818b89fbe4044dbdd8b3b224f4bc",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_030.pt",
+          "epoch": 30,
+          "sha256": "5332bc0fc842a2514d10a1873efbb78addd296a89c45f5179fa8a5d9eb0cc48f",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_040.pt",
+          "epoch": 40,
+          "sha256": "dcdc8852fa8ecc3197f4258437fa9430a4753c3dc7feccfae6182dede8488cde",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_050.pt",
+          "epoch": 50,
+          "sha256": "619667114b7f6edba91d1bf60da95c8a528d1fe6ef4f369da5a211b074e7a88a",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_060.pt",
+          "epoch": 60,
+          "sha256": "2e79616ee86d0b12f89d58b5663e05c1b6932432cb7aefd7461b7bf7f7a88b29",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_070.pt",
+          "epoch": 70,
+          "sha256": "e3b4f18fb348d10e38547d618fa59077b441ca81928bafae04fb96ba4d867349",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_080.pt",
+          "epoch": 80,
+          "sha256": "a12a612ecfaa531f18bbb45417e57c6c671beebfb47e21101f7eb8fbfd305ebc",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_090.pt",
+          "epoch": 90,
+          "sha256": "da4915407a2fc4cd53f8a71b92bd68a6fdd8e2983b876dcb34c144b02d7b29ef",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "checkpoints/epoch_100.pt",
+          "epoch": 100,
+          "sha256": "947776d9103ae85db051372d13d6a96e7c99278f3f21cb516b6e412e3ec6d763",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        },
+        {
+          "checkpoint": "last.pt",
+          "epoch": 100,
+          "sha256": "1add55618b2914f9d81f48bfa369e65b1d9761324125c138190b6fcad6d761f0",
+          "strict_full_model_restore": true,
+          "parameters_finite": true
+        }
+      ],
+      "best_window_epoch": 16,
+      "best_window_rmse": 0.08103366363575992,
+      "best_macro_epoch": 16,
+      "best_macro_rmse": 0.05925254846980978,
+      "last_rmse": 0.08997010266423368,
+      "source_summary_sha256": "973b51ab708538b084210ff223e89ee1c850d7a77f1a9a629cbdf057ddb9c15a",
+      "context_sha256": "150ccf37dc89597ea157891cd2a6cf492f25182f5b8720bc14667d3436bff9e6",
+      "no_active_model_files_or_processes_changed": true,
+      "no_source_or_Test_report_arrays_read": true,
+      "model_training_or_new_predictions_performed": false,
+      "elapsed_seconds": 8.55944462493062,
+      "transport_log": "/private/tmp/r9_fdy_transport_hjgcftew.stdout"
+    }
+  ],
+  "previous_CNN_backup_modified_or_duplicated": false,
+  "active_iTransformer_files_or_processes_touched": false,
+  "source_or_config_modified": false,
+  "Test_or_report_source_arrays_read": false,
+  "gateway_session_used": "independent subprocesses; root51993 not used"
+}

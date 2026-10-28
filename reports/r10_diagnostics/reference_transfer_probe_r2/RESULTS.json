@@ -1,0 +1,467 @@
+{
+  "format": "r10_reference_transfer_probe_results_v1",
+  "status": "completed",
+  "created_utc": "2026-10-26T14:19:30.503024+00:00",
+  "plan_sha256": "68fbb0e2ea25ec9def43499c8382802f06b962869aef4885887b7608050b9a87",
+  "frozen_before_comparison_sha256": "46a8ae6ebf5acad8bb25435f36e97c52a5e3b366d584602a64df375b68671e67",
+  "reference_metadata": {
+    "A": {
+      "clips": 211,
+      "hulls": 88,
+      "days": 17,
+      "weak_class_counts": {
+        "tug": 72,
+        "cargo": 52,
+        "passengership": 30,
+        "fishing": 13,
+        "other": 11,
+        "pleasurecraft": 11,
+        "dredger": 8,
+        "background": 7,
+        "rescue": 3,
+        "tanker": 2,
+        "sailing": 2
+      },
+      "native_minute_counts": {
+        "2": 72,
+        "3": 58,
+        "4": 40,
+        "5": 13,
+        "6": 11,
+        "7": 2,
+        "8": 4,
+        "9": 1,
+        "10": 3,
+        "13": 3,
+        "16": 1,
+        "19": 1,
+        "20": 1,
+        "23": 1
+      },
+      "duration_seconds": {
+        "sum": 48955.0,
+        "min_median_max": [
+          120.0,
+          180.0,
+          1380.0
+        ]
+      },
+      "year_counts": {
+        "2016": 171,
+        "2017": 40
+      }
+    },
+    "B": {
+      "clips": 197,
+      "hulls": 90,
+      "days": 16,
+      "weak_class_counts": {
+        "tug": 78,
+        "cargo": 24,
+        "other": 23,
+        "passengership": 22,
+        "pleasurecraft": 18,
+        "fishing": 17,
+        "background": 6,
+        "sailing": 4,
+        "tanker": 3,
+        "rescue": 1,
+        "pilotvessel": 1
+      },
+      "native_minute_counts": {
+        "1": 1,
+        "2": 53,
+        "3": 56,
+        "4": 36,
+        "5": 20,
+        "6": 15,
+        "7": 2,
+        "8": 4,
+        "9": 1,
+        "11": 2,
+        "12": 2,
+        "13": 1,
+        "14": 2,
+        "17": 1,
+        "18": 1
+      },
+      "duration_seconds": {
+        "sum": 47514.0,
+        "min_median_max": [
+          119.0,
+          180.0,
+          1080.0
+        ]
+      },
+      "year_counts": {
+        "2016": 162,
+        "2017": 35
+      }
+    },
+    "excluded_clips": 101,
+    "cross_hull_day_bytes_time_overlap": 0,
+    "shared_provider_receiver_corpus": true,
+    "weak_class_is_not_new_natural_vessel_ground_truth": true
+  },
+  "background_metadata": {
+    "source_separation": {
+      "base_index_overlap": 0,
+      "background_group_overlap": 0,
+      "minimum_shared_sensor_support_gap_seconds": 86400.0,
+      "required_minimum_seconds": 86400,
+      "source_group_and_24h_support_purge_passed": true
+    },
+    "all_complete_observation": true,
+    "sampling": "unique random within each existing role; no Test matching",
+    "counts": {
+      "train": 16000,
+      "early": 1000,
+      "compare": 1000
+    },
+    "site_counts": {
+      "train": {
+        "1 Richards Bay": 10533,
+        "5 St Croix Island": 3138,
+        "7 St_Francis": 902,
+        "2 Durban": 839,
+        "4 Bird Island": 588
+      },
+      "early": {
+        "1 Richards Bay": 588,
+        "5 St Croix Island": 198,
+        "2 Durban": 97,
+        "4 Bird Island": 60,
+        "7 St_Francis": 57
+      },
+      "compare": {
+        "1 Richards Bay": 626,
+        "5 St Croix Island": 177,
+        "2 Durban": 86,
+        "4 Bird Island": 65,
+        "7 St_Francis": 46
+      }
+    }
+  },
+  "tree_summary": {
+    "format": "r9_physics_lgbm_v1",
+    "status": "completed",
+    "kind": "lgbm_physics",
+    "fixture_only": false,
+    "training_binding": {
+      "format": "r10_reference_transfer_probe_binding_v1",
+      "plan_sha256": "68fbb0e2ea25ec9def43499c8382802f06b962869aef4885887b7608050b9a87",
+      "reference_split_csv_sha256": "3be04201ef6b958e18d578a11cbd287919f2e00386a2765ac309de738459b9b1",
+      "fit_reference_pool": "A211",
+      "never_fitted_reference_pool": "B197",
+      "source_identity": {
+        "version": "r9_minute_full_dataset_v1",
+        "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+        "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+        "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+        "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+        "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+        "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+        "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+        "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+        "code_sha256": {
+          "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+          "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+          "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+          "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+          "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+          "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+          "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+        },
+        "reference_count": 509,
+        "reference_independent_CV": false
+      },
+      "comparison_not_production": true
+    },
+    "settings": {
+      "maximum_trees": 1500,
+      "early_stopping_patience": 40,
+      "threads": 4,
+      "learning_rate": 0.035,
+      "num_leaves": 31,
+      "minimum_leaf_rows": 50,
+      "maximum_training_rows": 100000,
+      "feature_batch_size": 512
+    },
+    "seed": 2026102604,
+    "n_features": 3827,
+    "feature_schema_sha256": "40923a7fad8f5615988e7222cbf0d301d2d9b116ba819a521e03c6da76630650",
+    "score_policy": "half_clipped_share_half_presence_classifier_v1",
+    "selection": "fixed INNER pooled clipped-share RMSE",
+    "presence_selection": "fixed INNER binary logloss",
+    "best_iteration": 1153,
+    "presence_best_iteration": 85,
+    "train_rows": 16000,
+    "inner_rows": 1000,
+    "feature_matrix_bytes": {
+      "train": 244928000,
+      "inner": 15308000
+    },
+    "input_sha256": {
+      "train": {
+        "db": "6e1b65e52efdbceb6fc6aaae2479f7b8e7061d1e07d2880005e421f1a4ae2fbc",
+        "share": "dfd6849abff1813ef7282953fbc16035f93d5d9c6bc46d80c794a99b1508f89d",
+        "presence": "e140912ab3c9191042a4ae62f6477f88ac8b5056a06c5f41179e2fe289d559e1"
+      },
+      "inner": {
+        "db": "1b18e46cacb3598dc79d02d180710ea37a070553c36a2f325c0d88d9febf0990",
+        "share": "a961fb14be7940254a5094abab616d4788fbd2b37ccc653245d3ac58955c658f",
+        "presence": "c28502da952581c7114de6f01263a0ab96d7e725b3b31272cb6cb37468e12648"
+      }
+    },
+    "best_inner_rmse": 0.05758694972418152,
+    "artifact_sha256": {
+      "share.txt": "d5dbdcbd320ac1893a5258a298e3092d70d55db23e897c1b76cef4dc67aaf59f",
+      "presence.txt": "fdd31580a51dea761268ca00a5c93e66da9214d1f630a6441c61826fa2c62ae1",
+      "feature_schema.json": "5b8a67382dde85e42d98e470da2ac3c91fad87053e74aaac8d23bdf0d70fa781",
+      "inner_predictions.npz": "cef96078f90c9adbc39c2830829b7bea4dce0975a8e92246dea7e1157923e751"
+    },
+    "code_sha256": {
+      "pipeline/trees_ensemble_r9.py": "365a476c7d5cc56e701ec56ab366fd0371d857755f91330644c609f97a52c2bc",
+      "pipeline/cpu_ablation_r6_v2.py": "3076d917ab49769fff8d021e7ba3ed271dca7b0d5d98cef697066150171c2a92",
+      "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+      "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+      "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+    },
+    "lightgbm_version": "4.7.0",
+    "device": "cpu",
+    "elapsed_seconds": 62.749166124500334,
+    "Test_or_outer_accessed": false,
+    "NN_100_epoch_policy_applicable": false
+  },
+  "evaluations": {
+    "A": {
+      "n": 1000,
+      "rmse": 0.06192307378466837,
+      "mae": 0.03529719428837744,
+      "bias": 0.008289935078053177,
+      "mean_true": 0.11165562678764071,
+      "mean_pred": 0.11994556186569388,
+      "true_share_quantiles": {
+        "min": 0.0,
+        "p10": 0.0,
+        "p50": 0.0387493260204792,
+        "p90": 0.3617896139621735,
+        "max": 0.6885272264480591
+      },
+      "controlled_addition_auc": 0.92320625,
+      "known_positive_count": 800,
+      "site_slices": {
+        "1 Richards Bay": {
+          "n": 626,
+          "rmse": 0.06588449584665255,
+          "bias": 0.010327474394537068,
+          "mean_true": 0.10187457244606374,
+          "mean_pred": 0.1122020468406008
+        },
+        "2 Durban": {
+          "n": 86,
+          "rmse": 0.052571882535314814,
+          "bias": 0.0009431122703380276,
+          "mean_true": 0.16535987361025628,
+          "mean_pred": 0.1663029858805943
+        },
+        "4 Bird Island": {
+          "n": 65,
+          "rmse": 0.036027851219195925,
+          "bias": -0.0006734175686618143,
+          "mean_true": 0.10627255307029443,
+          "mean_pred": 0.10559913550163261
+        },
+        "5 St Croix Island": {
+          "n": 177,
+          "rmse": 0.0435551734160114,
+          "bias": 0.005026864673873925,
+          "mean_true": 0.11849744637966377,
+          "mean_pred": 0.1235243110535377
+        },
+        "7 St_Francis": {
+          "n": 46,
+          "rmse": 0.09992510374773267,
+          "bias": 0.019518381445896408,
+          "mean_true": 0.1256398118946337,
+          "mean_pred": 0.1451581933405301
+        }
+      }
+    },
+    "B": {
+      "n": 1000,
+      "rmse": 0.06952908798149691,
+      "mae": 0.03859804880979124,
+      "bias": 0.0033449391260792823,
+      "mean_true": 0.1113129188085158,
+      "mean_pred": 0.11465785793459508,
+      "true_share_quantiles": {
+        "min": 0.0,
+        "p10": 0.0,
+        "p50": 0.038859155029058456,
+        "p90": 0.35109106302261356,
+        "max": 0.7184078097343445
+      },
+      "controlled_addition_auc": 0.9117999999999999,
+      "known_positive_count": 800,
+      "site_slices": {
+        "1 Richards Bay": {
+          "n": 626,
+          "rmse": 0.07020290806878965,
+          "bias": 0.006037965096574078,
+          "mean_true": 0.10157434883138093,
+          "mean_pred": 0.107612313927955
+        },
+        "2 Durban": {
+          "n": 86,
+          "rmse": 0.0759387314063582,
+          "bias": -0.0062720790081711615,
+          "mean_true": 0.16003530815806846,
+          "mean_pred": 0.1537632291498973
+        },
+        "4 Bird Island": {
+          "n": 65,
+          "rmse": 0.04901855576786334,
+          "bias": -0.006742107415024853,
+          "mean_true": 0.11422206836730137,
+          "mean_pred": 0.10747996095227651
+        },
+        "5 St Croix Island": {
+          "n": 177,
+          "rmse": 0.052777016607209244,
+          "bias": 0.0004152333417165456,
+          "mean_true": 0.11727806496615442,
+          "mean_pred": 0.11769329830787097
+        },
+        "7 St_Francis": {
+          "n": 46,
+          "rmse": 0.11458323443386745,
+          "bias": 0.010202444583030781,
+          "mean_true": 0.12568886946942454,
+          "mean_pred": 0.13589131405245533
+        }
+      }
+    },
+    "early_stopping_A": {
+      "n": 1000,
+      "rmse": 0.05758694972418152,
+      "mae": 0.034443902549685164,
+      "bias": 0.008968581817638778,
+      "mean_true": 0.1137520207463865,
+      "mean_pred": 0.12272060256402528,
+      "true_share_quantiles": {
+        "min": 0.0,
+        "p10": 0.0,
+        "p50": 0.03439752571284771,
+        "p90": 0.37185009121894835,
+        "max": 0.764897346496582
+      },
+      "controlled_addition_auc": 0.90100625,
+      "known_positive_count": 800,
+      "site_slices": {
+        "1 Richards Bay": {
+          "n": 588,
+          "rmse": 0.061204977881465665,
+          "bias": 0.010958843447946148,
+          "mean_true": 0.11079611335267231,
+          "mean_pred": 0.12175495680061846
+        },
+        "2 Durban": {
+          "n": 97,
+          "rmse": 0.04135296031140881,
+          "bias": 0.005243618486985593,
+          "mean_true": 0.13406616704749694,
+          "mean_pred": 0.1393097855344825
+        },
+        "4 Bird Island": {
+          "n": 60,
+          "rmse": 0.0703747793780522,
+          "bias": -0.016092082308993363,
+          "mean_true": 0.11962340710354814,
+          "mean_pred": 0.10353132479455478
+        },
+        "5 St Croix Island": {
+          "n": 198,
+          "rmse": 0.04768759288989873,
+          "bias": 0.009741185687992336,
+          "mean_true": 0.11589296226826594,
+          "mean_pred": 0.12563414795625827
+        },
+        "7 St_Francis": {
+          "n": 57,
+          "rmse": 0.05927538833433925,
+          "bias": 0.01847229911098175,
+          "mean_true": 0.09605749010663937,
+          "mean_pred": 0.11452978921762112
+        }
+      }
+    }
+  },
+  "paired_controls": {
+    "background_order_exact": true,
+    "no_source_family_SNR_EQ_exact": true,
+    "paired_samples": 1000,
+    "share_target_B_minus_A_mean": -0.00034270797912490993,
+    "share_target_B_minus_A_RMS": 0.06966123313888642,
+    "squared_error_B_minus_A_mean": 0.0009998270543292165,
+    "B_minus_A_RMSE": 0.007606014196828548,
+    "B_minus_A_AUC": -0.011406250000000062,
+    "source_duration_target_distribution_not_equalized": true
+  },
+  "strict_save_reload_batch1_vs7_exact": true,
+  "train_A_schedule": {
+    "examples": 16000,
+    "primary_once": true,
+    "explicit_no_source_count": 3200,
+    "hard_negative_candidate_count": 1818,
+    "explicit_hard_negative_count": 1600,
+    "hard_negative_desired_count": 1600,
+    "hard_negative_shortfall_without_duplicate_primary": 0,
+    "positive_request_count": 12800,
+    "unique_references": 211,
+    "reference_use_min": 60,
+    "reference_use_max": 61,
+    "reference_count": 211,
+    "schedule_sha256": "0ebf9b6b9e6d7890a1b4f09f99b1f70038751787ef1957a09822daf96b5a98f8"
+  },
+  "early_A_schedule": {
+    "examples": 1000,
+    "primary_once": true,
+    "explicit_no_source_count": 200,
+    "hard_negative_candidate_count": 0,
+    "explicit_hard_negative_count": 0,
+    "hard_negative_desired_count": 100,
+    "hard_negative_shortfall_without_duplicate_primary": 100,
+    "positive_request_count": 800,
+    "unique_references": 211,
+    "reference_use_min": 3,
+    "reference_use_max": 4,
+    "reference_count": 211,
+    "schedule_sha256": "561d709e525f2ea2a3fc63f1ffacca458f1195aec9222671709a359bdb15927a"
+  },
+  "TRAIN_and_selection_input_sha256": {
+    "train": {
+      "db": "6e1b65e52efdbceb6fc6aaae2479f7b8e7061d1e07d2880005e421f1a4ae2fbc",
+      "share": "dfd6849abff1813ef7282953fbc16035f93d5d9c6bc46d80c794a99b1508f89d",
+      "presence": "e140912ab3c9191042a4ae62f6477f88ac8b5056a06c5f41179e2fe289d559e1"
+    },
+    "inner": {
+      "db": "1b18e46cacb3598dc79d02d180710ea37a070553c36a2f325c0d88d9febf0990",
+      "share": "a961fb14be7940254a5094abab616d4788fbd2b37ccc653245d3ac58955c658f",
+      "presence": "c28502da952581c7114de6f01263a0ab96d7e725b3b31272cb6cb37468e12648"
+    }
+  },
+  "all_source_code_data_production_unchanged": true,
+  "Test_oldOUTER_unused_report_opened": false,
+  "production_fullsize_R9_replication": false,
+  "limitations": [
+    "One16000-rowCPUtreeprobe; notfull79000-rowdynamicR9or4NNexperiment.",
+    "AandBdifferentmetadata-derivedday/hull/duration/weak-classdistributions; effectsnotpurehullcausality.",
+    "Bothsidesretainthesamecorpusreceiver/provider; notnew-sensorbenchmark.",
+    "Acomparisonreferencesareseenintraining,butwindows/generatorseedaredifferent;Bonlycomparison.",
+    "Completeminute-onlysubsetremovesmissingnessconfoundbutnarrowsdeploymentcoverage.",
+    "AUCispresenceofknownwholeaddedrecording,notverifiednaturalvesseltruth."
+  ],
+  "elapsed_seconds": 71.88633520808071,
+  "script_sha256": "871a6d0477c07f1aa22fb3fb0d4ee711f406cedad613b10126fe6a8738f68dc8"
+}

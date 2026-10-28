@@ -1,0 +1,146 @@
+[
+  {
+    "path": "pipeline/prepare_sa.py",
+    "sha256": "3e18f6b6077dfecb0d2800879ff7196c11b051bc32a31bf3189219c2019f4400"
+  },
+  {
+    "path": "pipeline/weak_teacher.py",
+    "sha256": "3f342f99ce6bcff31c66e4ed2218cfcf478537de999c50195bfa02b6ae12670d"
+  },
+  {
+    "path": "pipeline/model_scale_audit.py",
+    "sha256": "c585b6a946cfef82f8f7fab81bc4c63f1186bbe9692760e76ceb8fb2bd68e541"
+  },
+  {
+    "path": "pipeline/augmentation_v2.py",
+    "sha256": "20b9beff2f4ba31fa25e34080e395d5141fd62c7313bd57e50e969c7c3463e49"
+  },
+  {
+    "path": "pipeline/build_quality_v2.py",
+    "sha256": "13fcce7c6f8b8bfbf5d6e509020a620820d0963dffe04f9e049f6320203e0d81"
+  },
+  {
+    "path": "pipeline/models.py",
+    "sha256": "11c1f8ded89290470ac3d3229c0d52cab8042b4e44913c89415f87ee38b2d595"
+  },
+  {
+    "path": "pipeline/merge_seeds.py",
+    "sha256": "95c77fd46378b60af11f3ba73ef7cdfd304c19da918c8b9817740315a7ea1ddb"
+  },
+  {
+    "path": "pipeline/verify_quality_v2.py",
+    "sha256": "ec742adfbb4edf47d145914ae640927c95324a474da45a77d075a4b86d2a77d1"
+  },
+  {
+    "path": "pipeline/prototypes.py",
+    "sha256": "6349bd51e42b2c68986d44148644f63c9cfea5eae42a117dc86c5ca6da7b481a"
+  },
+  {
+    "path": "pipeline/merge_candidates.py",
+    "sha256": "dc7fe7bd40854986618b4d8c6475550fdcf6a4f491ea45dea1a4a93843bf84a0"
+  },
+  {
+    "path": "pipeline/postprocess.py",
+    "sha256": "8cf46d993d69d4c051118da4e563044389af56d6480bda1a36d221ba80ed090f"
+  },
+  {
+    "path": "pipeline/__init__.py",
+    "sha256": "2ef07b1e8e5277e8858d3bf53c43a5c91c5dc2a332a676e8b41285d968f64791"
+  },
+  {
+    "path": "pipeline/native_sampler_v2.py",
+    "sha256": "58851c9af35cf262fdb50858f4cf99f0b5e5e931686d4eccddb6440ce25647a9"
+  },
+  {
+    "path": "pipeline/predict_foundation.py",
+    "sha256": "fb4d7d61c7ec7826b7a497f442bd83fe09447b5045d92e8dbf68d9df31a6f95c"
+  },
+  {
+    "path": "pipeline/predict_lgbm.py",
+    "sha256": "b4e451a7c3fc182ccc2e4b09883f9b4e1cd8cb5ef99b2b9d96d84d83fa87ab90"
+  },
+  {
+    "path": "pipeline/capacity_audit.py",
+    "sha256": "70275505c947e61236995c9a44332a889742ae456adae2359635de302498a1a3"
+  },
+  {
+    "path": "pipeline/train_tabicl.py",
+    "sha256": "cee90279379cdfcdb453ba75cb4236ab1cbb90506a311cc384770b852281a2e2"
+  },
+  {
+    "path": "pipeline/train.py",
+    "sha256": "2714bdb7d3227d72c6005f009678fa350f16191987ca4c1a4ae40f04dd3e4cc8"
+  },
+  {
+    "path": "pipeline/infer.py",
+    "sha256": "a6ecdb8912947e53a9e50fd81e599362f0b2a8e968e3302844fe36e3a08312d6"
+  },
+  {
+    "path": "pipeline/prepare_external.py",
+    "sha256": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7"
+  },
+  {
+    "path": "pipeline/audio.py",
+    "sha256": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1"
+  },
+  {
+    "path": "pipeline/evaluate_noaa.py",
+    "sha256": "f58a3d01b891137ec5fa8cf6390d268435d0995cc84cbeb87f9d8091270f8e28"
+  },
+  {
+    "path": "pipeline/audit_frozen_inference.py",
+    "sha256": "559829edd23e29c0442c0e897f454980ff0a03290b26701e4085c69c75de1a4f"
+  },
+  {
+    "path": "pipeline/verify.py",
+    "sha256": "594646655aa0bf2f4a569dc8eae3a72af076772dd504cf752782a2c033fe1895"
+  },
+  {
+    "path": "pipeline/mixtures.py",
+    "sha256": "4b217ad101ad09d4d1120bae178ab117d85dd2c60ef87bdcd0e5ec49072cd437"
+  },
+  {
+    "path": "pipeline/train_lgbm.py",
+    "sha256": "0baeb4c46995f21f2980c6857f15108d1647b4646b46740be92c44d4c34c9f6d"
+  },
+  {
+    "path": "pipeline/foundation_baseline.py",
+    "sha256": "904d88a37c24ef9328f1e2d89ee1e6524aa8919dd277bc935593939a005e694a"
+  },
+  {
+    "path": "pipeline/verify_inference.py",
+    "sha256": "ff844ce3dcf22497c3a65780c7f18e1d1919ad4bca8ed7681597fe13ba075665"
+  },
+  {
+    "path": "pipeline/train_kumo.py",
+    "sha256": "326119af047100089a58e508044fcda58c3cbefb4a62293e19fec8ae75e19799"
+  },
+  {
+    "path": "models/ensemble_foundation/postprocess.json",
+    "sha256": "3b6d902c2c96ecd74aaea56de865da00cc1c8b870720d1e1590f66bebe3ec0f5"
+  },
+  {
+    "path": "models/ensemble_foundation/foundation_specs.json",
+    "sha256": "d0fc2df5074de7a7b4132b3f73e552607983ad0f5b4f97dce02dd3ae33dba33a"
+  },
+  {
+    "path": "models/ensemble_foundation/candidate_merge_manifest.json",
+    "sha256": "196e9705378a6eeba6a2bdfa99cbcd876b8a20b0538fee82297e31b41b413bce"
+  },
+  {
+    "path": "outputs/submission_foundation_candidate.csv",
+    "sha256": "3b61240ef270412afa0329cce623e55d8e9267a39a2516530469627ac2dfb630"
+  },
+  {
+    "path": "outputs/zindi_submission_receipt.json",
+    "sha256": "d95faf3009e48a37a75ecaa49d7bcac4d5602b536f36db4cfdf5c7877e043f0e"
+  },
+  {
+    "path": "outputs/submission_foundation_validation.json",
+    "sha256": "806e750a48a0b9c78330c7a76a99aaea5dc6d4b274056cf95c5d0c31f28a8d44"
+  },
+  {
+    "path": "requirements_tested.json",
+    "sha256": "c42c9b5f544ebb7955905c83240f1a7ddd7bff094744b49006459e79a60463c2"
+  }
+]

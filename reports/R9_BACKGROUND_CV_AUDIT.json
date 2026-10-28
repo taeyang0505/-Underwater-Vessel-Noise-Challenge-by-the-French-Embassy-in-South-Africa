@@ -1,0 +1,632 @@
+{
+  "status": "passed",
+  "source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+  "manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+  "folds": [
+    {
+      "fold": 0,
+      "pairwise_role_gaps": [
+        {
+          "left": "train",
+          "right": "selection",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 222.0
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 192.25
+        },
+        {
+          "left": "selection",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 112.75
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "report",
+          "minimum_support_gap_hours": 336.0
+        },
+        {
+          "left": "ensemble_gate",
+          "right": "report",
+          "minimum_support_gap_hours": 557.0
+        }
+      ],
+      "under24h_violations": 0,
+      "group_or_index_overlap_violations": 0,
+      "roles": {
+        "train": {
+          "windows": 78869,
+          "groups": 206,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 45969,
+            "7 St_Francis": 17956,
+            "5 St Croix Island": 10132,
+            "2 Durban": 2496,
+            "4 Bird Island": 1872,
+            "3 Cape_Recife": 240,
+            "6 Riy_Banks": 204
+          }
+        },
+        "selection": {
+          "windows": 9417,
+          "groups": 25,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 4927,
+            "7 St_Francis": 2660,
+            "5 St Croix Island": 990,
+            "2 Durban": 480,
+            "4 Bird Island": 360
+          }
+        },
+        "ensemble_fit": {
+          "windows": 3417,
+          "groups": 10,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 1365,
+            "7 St_Francis": 1332,
+            "5 St Croix Island": 576,
+            "3 Cape_Recife": 144
+          }
+        },
+        "ensemble_gate": {
+          "windows": 3511,
+          "groups": 8,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 2390,
+            "7 St_Francis": 432,
+            "4 Bird Island": 288,
+            "5 St Croix Island": 288,
+            "6 Riy_Banks": 113
+          }
+        },
+        "report": {
+          "windows": 3584,
+          "groups": 8,
+          "qc_min_observed_minutes": 11,
+          "site_counts": {
+            "1 Richards Bay": 2840,
+            "5 St Croix Island": 576,
+            "7 St_Francis": 168
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "pairwise_role_gaps": [
+        {
+          "left": "train",
+          "right": "selection",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 168.75
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "selection",
+          "right": "report",
+          "minimum_support_gap_hours": 341.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 360.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "report",
+          "minimum_support_gap_hours": 720.0
+        },
+        {
+          "left": "ensemble_gate",
+          "right": "report",
+          "minimum_support_gap_hours": 216.0
+        }
+      ],
+      "under24h_violations": 0,
+      "group_or_index_overlap_violations": 0,
+      "roles": {
+        "train": {
+          "windows": 78069,
+          "groups": 208,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 45333,
+            "7 St_Francis": 17923,
+            "5 St Croix Island": 9384,
+            "4 Bird Island": 2592,
+            "2 Durban": 2112,
+            "3 Cape_Recife": 408,
+            "6 Riy_Banks": 317
+          }
+        },
+        "selection": {
+          "windows": 9824,
+          "groups": 25,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 5662,
+            "7 St_Francis": 2626,
+            "5 St Croix Island": 1536
+          }
+        },
+        "ensemble_fit": {
+          "windows": 3104,
+          "groups": 10,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "7 St_Francis": 1824,
+            "1 Richards Bay": 1016,
+            "5 St Croix Island": 264
+          }
+        },
+        "ensemble_gate": {
+          "windows": 3859,
+          "groups": 8,
+          "qc_min_observed_minutes": 4,
+          "site_counts": {
+            "1 Richards Bay": 2156,
+            "5 St Croix Island": 832,
+            "2 Durban": 672,
+            "7 St_Francis": 199
+          }
+        },
+        "report": {
+          "windows": 3237,
+          "groups": 7,
+          "qc_min_observed_minutes": 9,
+          "site_counts": {
+            "1 Richards Bay": 2787,
+            "5 St Croix Island": 450
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "pairwise_role_gaps": [
+        {
+          "left": "train",
+          "right": "selection",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.25
+        },
+        {
+          "left": "train",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 360.25
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 168.75
+        },
+        {
+          "left": "selection",
+          "right": "report",
+          "minimum_support_gap_hours": 24.75
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "report",
+          "minimum_support_gap_hours": 528.0
+        },
+        {
+          "left": "ensemble_gate",
+          "right": "report",
+          "minimum_support_gap_hours": 42.0
+        }
+      ],
+      "under24h_violations": 0,
+      "group_or_index_overlap_violations": 0,
+      "roles": {
+        "train": {
+          "windows": 78362,
+          "groups": 207,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 45476,
+            "7 St_Francis": 17919,
+            "5 St Croix Island": 10954,
+            "2 Durban": 2112,
+            "4 Bird Island": 1176,
+            "3 Cape_Recife": 408,
+            "6 Riy_Banks": 317
+          }
+        },
+        "selection": {
+          "windows": 10271,
+          "groups": 25,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 6575,
+            "7 St_Francis": 1896,
+            "2 Durban": 672,
+            "4 Bird Island": 648,
+            "5 St Croix Island": 480
+          }
+        },
+        "ensemble_fit": {
+          "windows": 3432,
+          "groups": 10,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 1848,
+            "5 St Croix Island": 936,
+            "7 St_Francis": 576,
+            "4 Bird Island": 72
+          }
+        },
+        "ensemble_gate": {
+          "windows": 3274,
+          "groups": 8,
+          "qc_min_observed_minutes": 4,
+          "site_counts": {
+            "7 St_Francis": 1464,
+            "1 Richards Bay": 1234,
+            "4 Bird Island": 288,
+            "5 St Croix Island": 288
+          }
+        },
+        "report": {
+          "windows": 2929,
+          "groups": 8,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 1972,
+            "7 St_Francis": 645,
+            "4 Bird Island": 312
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "pairwise_role_gaps": [
+        {
+          "left": "train",
+          "right": "selection",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.75
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 216.25
+        },
+        {
+          "left": "selection",
+          "right": "report",
+          "minimum_support_gap_hours": 384.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 48.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "report",
+          "minimum_support_gap_hours": 570.0
+        },
+        {
+          "left": "ensemble_gate",
+          "right": "report",
+          "minimum_support_gap_hours": 24.75
+        }
+      ],
+      "under24h_violations": 0,
+      "group_or_index_overlap_violations": 0,
+      "roles": {
+        "train": {
+          "windows": 78753,
+          "groups": 207,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 45965,
+            "7 St_Francis": 17892,
+            "5 St Croix Island": 9769,
+            "4 Bird Island": 2376,
+            "2 Durban": 2304,
+            "3 Cape_Recife": 240,
+            "6 Riy_Banks": 207
+          }
+        },
+        "selection": {
+          "windows": 10675,
+          "groups": 25,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 7106,
+            "7 St_Francis": 2016,
+            "5 St Croix Island": 1227,
+            "4 Bird Island": 216,
+            "6 Riy_Banks": 110
+          }
+        },
+        "ensemble_fit": {
+          "windows": 3971,
+          "groups": 10,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 2093,
+            "7 St_Francis": 1032,
+            "5 St Croix Island": 846
+          }
+        },
+        "ensemble_gate": {
+          "windows": 3195,
+          "groups": 8,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 1131,
+            "7 St_Francis": 912,
+            "2 Durban": 576,
+            "5 St Croix Island": 576
+          }
+        },
+        "report": {
+          "windows": 2427,
+          "groups": 8,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 1467,
+            "7 St_Francis": 600,
+            "5 St Croix Island": 216,
+            "3 Cape_Recife": 144
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "pairwise_role_gaps": [
+        {
+          "left": "train",
+          "right": "selection",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "train",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_fit",
+          "minimum_support_gap_hours": 24.75
+        },
+        {
+          "left": "selection",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 384.0
+        },
+        {
+          "left": "selection",
+          "right": "report",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "ensemble_gate",
+          "minimum_support_gap_hours": 24.0
+        },
+        {
+          "left": "ensemble_fit",
+          "right": "report",
+          "minimum_support_gap_hours": 510.0
+        },
+        {
+          "left": "ensemble_gate",
+          "right": "report",
+          "minimum_support_gap_hours": 528.25
+        }
+      ],
+      "under24h_violations": 0,
+      "group_or_index_overlap_violations": 0,
+      "roles": {
+        "train": {
+          "windows": 78124,
+          "groups": 202,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 45358,
+            "7 St_Francis": 17878,
+            "5 St Croix Island": 9817,
+            "2 Durban": 2304,
+            "4 Bird Island": 2256,
+            "3 Cape_Recife": 288,
+            "6 Riy_Banks": 223
+          }
+        },
+        "selection": {
+          "windows": 10183,
+          "groups": 28,
+          "qc_min_observed_minutes": 4,
+          "site_counts": {
+            "1 Richards Bay": 4102,
+            "7 St_Francis": 3720,
+            "5 St Croix Island": 1569,
+            "2 Durban": 576,
+            "4 Bird Island": 216
+          }
+        },
+        "ensemble_fit": {
+          "windows": 3487,
+          "groups": 11,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 2793,
+            "5 St Croix Island": 288,
+            "7 St_Francis": 168,
+            "3 Cape_Recife": 120,
+            "6 Riy_Banks": 94,
+            "4 Bird Island": 24
+          }
+        },
+        "ensemble_gate": {
+          "windows": 3462,
+          "groups": 8,
+          "qc_min_observed_minutes": 5,
+          "site_counts": {
+            "1 Richards Bay": 2848,
+            "5 St Croix Island": 312,
+            "7 St_Francis": 302
+          }
+        },
+        "report": {
+          "windows": 2889,
+          "groups": 8,
+          "qc_min_observed_minutes": 3,
+          "site_counts": {
+            "1 Richards Bay": 1785,
+            "5 St Croix Island": 576,
+            "7 St_Francis": 432,
+            "4 Bird Island": 96
+          }
+        }
+      }
+    }
+  ],
+  "roles": [
+    "train",
+    "selection",
+    "ensemble_fit",
+    "ensemble_gate",
+    "report"
+  ],
+  "reference_independent": false,
+  "model_fit_or_Test_accessed": false,
+  "source_pool_windows": 100965,
+  "source_groups": 258,
+  "each_original_background_bucket_heldout_exactly_once_before_QC_purge": true,
+  "original_fold_assignment_and_window_identity_preserved": true,
+  "all_folds_pairwise_under24h_violations": 0,
+  "all_group_or_index_overlaps": 0,
+  "QC": {
+    "method": "same SourceSplitR6.apply_minute_qc/actual originalrow_id join for allroles",
+    "masked_selected_minutes": 6254,
+    "windows_with_masked_minutes": 6254,
+    "eligible_windows_min3_observed": 100964,
+    "excluded_insufficient_support": 1,
+    "numeric_source_indices_read": 100965,
+    "outside_allowed_source_values_read": 0,
+    "physical_cause_of_boundary_flag_verified": false
+  },
+  "input_SHA": {
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/sources/manifest.json": "05dccb9a717352469de372593e217be8688e99807a946cff947ddd34d58ed614",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/sources/background_manifest.parquet": "3f8605fdab1df086c3bda7471e9a7e0ebd4e2d83e63ecd4ebadc33730bd09728",
+    "data/versions/quality_v2_native/manifest.json": "d46a9fda582aed09a73c6a00fbe206dd1dd7ef39c1d9caab7159f60a097fc7a1",
+    "data/versions/quality_v2_native/background_manifest.parquet": "ed8cfe0c749a75f538b80da6205f3ea9a51e506d9edeba6a41002a0b525e197f",
+    "data/processed/sa_window_manifest.parquet": "7a3425d40a160fb31da0b5c5fbcba1641dccefae8fdc8035a7ad84c232d0c413",
+    "data/processed/sa_row_manifest.parquet": "e05004b977bf7db91f131ffe2d87d944a135de48685591d484aa53294bf29de4",
+    "reports/data_quality_boundary_flags.parquet": "2909c1941b6b325b3d78d2bac101190d9d01a73e6e646982849eaa5e2e3c74d7",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/background_cv_r9.py": "0d2562bc41fc9f823bc2b5eee90cd7e80e0eac9c715788894487714eb58d2e52",
+    "ops/build_background_cv_r9.py": "9abaa1e0c5370b91f6cee3f4cdbdccc340518c1824e70d5de4a11b6d1e4652bf",
+    "data/versions/vtuad_full_r9/manifest.json": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+    "data/versions/vtuad_full_r9/readiness.json": "9c730e820f743e0decf5c4ae0bad19551533d27b85ad9d42f2d3a37a87fcb646"
+  },
+  "bank_SHA": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+  "no_synthetic_NPZ_or_model_fitted": true
+}

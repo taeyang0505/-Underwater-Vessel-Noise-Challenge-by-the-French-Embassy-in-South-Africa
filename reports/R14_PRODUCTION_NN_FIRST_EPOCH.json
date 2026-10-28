@@ -1,0 +1,114 @@
+{
+  "status": "all_fast3_actual_epoch1_passed_training_continues",
+  "observed_unix": 1793047638.752896,
+  "PID": 80906,
+  "run_dir": "models/r14_production_nn_fold0_r1",
+  "first_epoch": {
+    "itransformer": {
+      "kind": "itransformer",
+      "epoch": 1,
+      "budget": 100,
+      "train_online_rmse": 0.12912873623235527,
+      "train_cell_mse": 0.05156529640410498,
+      "selection": {
+        "rmse": 0.12293193800450046,
+        "n": 1000
+      },
+      "best_selection_rmse": 0.12293193800450046,
+      "best_epoch": 1,
+      "actual_epoch_seconds_including_validation_checkpoint": 29.14766633324325,
+      "training_and_validation_seconds_before_checkpoint": 29.102798166684806,
+      "raw_cache_materialization_seconds": 10.720324334688485,
+      "raw_epoch_receipt_path": "epoch_receipts/epoch_001_bb0b186d2a4109da.json",
+      "raw_epoch_receipt_sha256": "511f0898ea4b1c5d8e808e80ea4a0ffcaf42bf7654f7cec7162e73926cbb4983",
+      "rows": 78869,
+      "optimizer_steps": 617,
+      "learning_rate": 0.001,
+      "next_learning_rate": 0.0009997557473810372,
+      "max_rounded_pool_gap": 0.00188484787940979,
+      "site_or_target_row_weighting": false,
+      "cache_shared_in_phase": [
+        "itransformer",
+        "fdy",
+        "bg_cnn"
+      ],
+      "source_epoch": 1,
+      "memory_driver_bytes_sampled": 8863744
+    },
+    "fdy": {
+      "kind": "fdy",
+      "epoch": 1,
+      "budget": 100,
+      "train_online_rmse": 0.11976466638823198,
+      "train_cell_mse": 0.0433342468841488,
+      "selection": {
+        "rmse": 0.13011998574034525,
+        "n": 1000
+      },
+      "best_selection_rmse": 0.13011998574034525,
+      "best_epoch": 1,
+      "actual_epoch_seconds_including_validation_checkpoint": 32.83705070801079,
+      "training_and_validation_seconds_before_checkpoint": 32.76443300023675,
+      "raw_cache_materialization_seconds": 10.720324334688485,
+      "raw_epoch_receipt_path": "epoch_receipts/epoch_001_bb0b186d2a4109da.json",
+      "raw_epoch_receipt_sha256": "511f0898ea4b1c5d8e808e80ea4a0ffcaf42bf7654f7cec7162e73926cbb4983",
+      "rows": 78869,
+      "optimizer_steps": 617,
+      "learning_rate": 0.001,
+      "next_learning_rate": 0.0009997557473810372,
+      "max_rounded_pool_gap": 0.00188484787940979,
+      "site_or_target_row_weighting": false,
+      "cache_shared_in_phase": [
+        "itransformer",
+        "fdy",
+        "bg_cnn"
+      ],
+      "source_epoch": 1,
+      "memory_driver_bytes_sampled": 1203732480
+    },
+    "bg_cnn": {
+      "kind": "bg_cnn",
+      "epoch": 1,
+      "budget": 100,
+      "train_online_rmse": 0.12520390824009178,
+      "train_cell_mse": 0.04462407167221247,
+      "selection": {
+        "rmse": 0.1384791376656167,
+        "n": 1000
+      },
+      "best_selection_rmse": 0.1384791376656167,
+      "best_epoch": 1,
+      "actual_epoch_seconds_including_validation_checkpoint": 77.88177387509495,
+      "training_and_validation_seconds_before_checkpoint": 77.74954254180193,
+      "raw_cache_materialization_seconds": 10.720324334688485,
+      "raw_epoch_receipt_path": "epoch_receipts/epoch_001_bb0b186d2a4109da.json",
+      "raw_epoch_receipt_sha256": "511f0898ea4b1c5d8e808e80ea4a0ffcaf42bf7654f7cec7162e73926cbb4983",
+      "rows": 78869,
+      "optimizer_steps": 617,
+      "learning_rate": 0.001,
+      "next_learning_rate": 0.0009997557473810372,
+      "max_rounded_pool_gap": 0.00188484787940979,
+      "site_or_target_row_weighting": false,
+      "cache_shared_in_phase": [
+        "itransformer",
+        "fdy",
+        "bg_cnn"
+      ],
+      "source_epoch": 1,
+      "memory_driver_bytes_sampled": 1214382080
+    }
+  },
+  "observed_first_cycle_seconds_sum": 150.58681525103748,
+  "conditional_fast3_100cycle_hours_if_same_rate": 4.1829670903065965,
+  "ETA_is_extrapolation_not_measured_total": true,
+  "TF50_actual_epoch_not_measured": true,
+  "current_cache_npz_count": 2,
+  "permanent_receipt_count": 3,
+  "production_recipe_approved": true,
+  "approval_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+  "config_sha256": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "feature_count": 14,
+  "original_frozen_diagnostics_rewritten": false,
+  "no_Test_or_stress_evaluation": true
+}

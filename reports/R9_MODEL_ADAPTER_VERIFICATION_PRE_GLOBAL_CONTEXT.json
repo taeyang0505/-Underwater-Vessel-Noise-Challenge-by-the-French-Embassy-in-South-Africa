@@ -1,0 +1,319 @@
+{
+  "format": "r9_model_adapter_verification_v1",
+  "status": "PASS",
+  "scope": "Synthetic CPU operator fixtures; not full training or performance evaluation",
+  "torch_version": "2.14.1",
+  "numpy_version": "2.3.5",
+  "threads": 2,
+  "device": "cpu",
+  "seed": 20261026,
+  "synthetic_examples": 3,
+  "adam_updates_per_kind": 1,
+  "source_datasets_read": false,
+  "Test_read": false,
+  "old_weights_read": false,
+  "GPU_used": false,
+  "pretrained_weights_used": false,
+  "training_policy_expected_in_runner": {
+    "optimizer": "Adam",
+    "epochs": 100,
+    "early_stopping": false,
+    "dropout": 0.1
+  },
+  "models": {
+    "bg_cnn": {
+      "architecture": {
+        "format": "r9_relative_mask_adapter_v1",
+        "architecture_version": 9,
+        "kind": "bg_cnn",
+        "model_settings": {
+          "width": 128,
+          "blocks": 5,
+          "dropout": 0.1
+        },
+        "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+        "feature_names": [
+          "band_temporal_median_relative_div10",
+          "band_temporal_q20_relative_div15",
+          "adjacent_observed_delta_div10",
+          "positive_mid_high_delta_times_smooth_low_band_co_rise",
+          "band_median_minus_window_median_div20",
+          "observed_mask",
+          "band_temporal_q05_relative_div15",
+          "sqrt_rounded_energy_weight"
+        ],
+        "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+        "pretrained": false,
+        "requires_background_prior": false,
+        "base_total_parameters": 1488002,
+        "removed_presence_parameters": 129,
+        "total_parameters": 1487873,
+        "trainable_parameters": 1487873
+      },
+      "one_adam_update": true,
+      "loss_mean": 0.26513078808784485,
+      "loss_components": {
+        "share_mse": 0.17412300407886505,
+        "weighted_cell_mse": 0.23778365552425385,
+        "presence_bce": 0.6312378644943237
+      },
+      "gradient_l2": 13.811858887925226,
+      "parameters_without_gradient": [],
+      "all_gradients_finite": true,
+      "first_parameter_updated": true,
+      "share_shape": [
+        3
+      ],
+      "q_shape": [
+        3,
+        15,
+        25
+      ],
+      "representation_shape": [
+        3,
+        128
+      ],
+      "observed_mask_zero_exact": true,
+      "q_bounded": true,
+      "physical_pool_exact": true,
+      "fixed_score_verified": true,
+      "repeated_batch_exact": true,
+      "batch_independence_max_abs": 0.0,
+      "batch_independence_tolerance": 3e-06,
+      "checkpoint_weights_only_reload_max_abs": 0.0,
+      "in_memory_fixture_checkpoint_sha256": "231f8b1403787a7d17990d1866707b91f2aa4edf753aa9f6e68d5953e007faa7",
+      "contract_rejection_guards": {
+        "legacy_channel_contract": true,
+        "nonbinary_mask": true,
+        "unnormalized_weights": true,
+        "wrong_channels": true,
+        "unknown_settings": true
+      },
+      "elapsed_seconds": 2.416505749337375
+    },
+    "tfgrid_fdy_conformer": {
+      "architecture": {
+        "format": "r9_relative_mask_adapter_v1",
+        "architecture_version": 9,
+        "kind": "tfgrid_fdy_conformer",
+        "model_settings": {
+          "embed_dim": 64,
+          "hidden_size": 128,
+          "grid_blocks": 5,
+          "dropout": 0.1,
+          "conformer_blocks": 1
+        },
+        "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+        "feature_names": [
+          "band_temporal_median_relative_div10",
+          "band_temporal_q20_relative_div15",
+          "adjacent_observed_delta_div10",
+          "positive_mid_high_delta_times_smooth_low_band_co_rise",
+          "band_median_minus_window_median_div20",
+          "observed_mask",
+          "band_temporal_q05_relative_div15",
+          "sqrt_rounded_energy_weight"
+        ],
+        "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+        "pretrained": false,
+        "requires_background_prior": false,
+        "base_total_parameters": 2562150,
+        "removed_presence_parameters": 65,
+        "total_parameters": 2562085,
+        "trainable_parameters": 2562085
+      },
+      "one_adam_update": true,
+      "loss_mean": 0.18148624897003174,
+      "loss_components": {
+        "share_mse": 0.10679633170366287,
+        "weighted_cell_mse": 0.15611188113689423,
+        "presence_bce": 0.7132389545440674
+      },
+      "gradient_l2": 2.9486706990353864,
+      "parameters_without_gradient": [],
+      "all_gradients_finite": true,
+      "first_parameter_updated": true,
+      "share_shape": [
+        3
+      ],
+      "q_shape": [
+        3,
+        15,
+        25
+      ],
+      "representation_shape": [
+        3,
+        64
+      ],
+      "observed_mask_zero_exact": true,
+      "q_bounded": true,
+      "physical_pool_exact": true,
+      "fixed_score_verified": true,
+      "repeated_batch_exact": true,
+      "batch_independence_max_abs": 2.384185791015625e-07,
+      "batch_independence_tolerance": 3e-06,
+      "checkpoint_weights_only_reload_max_abs": 0.0,
+      "in_memory_fixture_checkpoint_sha256": "7dac5eab8be9dc336756ed1b70f50b3ea1e56ed7981252ce7ce4ec5c3af550a9",
+      "contract_rejection_guards": {
+        "legacy_channel_contract": true,
+        "nonbinary_mask": true,
+        "unnormalized_weights": true,
+        "wrong_channels": true,
+        "unknown_settings": true
+      },
+      "elapsed_seconds": 0.6990325003862381
+    },
+    "fdy": {
+      "architecture": {
+        "format": "r9_relative_mask_adapter_v1",
+        "architecture_version": 9,
+        "kind": "fdy",
+        "model_settings": {
+          "width": 32,
+          "blocks": 3,
+          "dropout": 0.1
+        },
+        "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+        "feature_names": [
+          "band_temporal_median_relative_div10",
+          "band_temporal_q20_relative_div15",
+          "adjacent_observed_delta_div10",
+          "positive_mid_high_delta_times_smooth_low_band_co_rise",
+          "band_median_minus_window_median_div20",
+          "observed_mask",
+          "band_temporal_q05_relative_div15",
+          "sqrt_rounded_energy_weight"
+        ],
+        "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+        "pretrained": false,
+        "requires_background_prior": false,
+        "base_total_parameters": 129966,
+        "removed_presence_parameters": 65,
+        "total_parameters": 129901,
+        "trainable_parameters": 129901
+      },
+      "one_adam_update": true,
+      "loss_mean": 0.1526288539171219,
+      "loss_components": {
+        "share_mse": 0.07871974259614944,
+        "weighted_cell_mse": 0.11776535958051682,
+        "presence_bce": 0.8893551230430603
+      },
+      "gradient_l2": 0.8777269898349465,
+      "parameters_without_gradient": [],
+      "all_gradients_finite": true,
+      "first_parameter_updated": true,
+      "share_shape": [
+        3
+      ],
+      "q_shape": [
+        3,
+        15,
+        25
+      ],
+      "representation_shape": [
+        3,
+        64
+      ],
+      "observed_mask_zero_exact": true,
+      "q_bounded": true,
+      "physical_pool_exact": true,
+      "fixed_score_verified": true,
+      "repeated_batch_exact": true,
+      "batch_independence_max_abs": 5.960464477539063e-08,
+      "batch_independence_tolerance": 3e-06,
+      "checkpoint_weights_only_reload_max_abs": 0.0,
+      "in_memory_fixture_checkpoint_sha256": "fabcd17423a12ee00e4bbdfcacd914d4f739251af382c5ddf9f09223a57d3028",
+      "contract_rejection_guards": {
+        "legacy_channel_contract": true,
+        "nonbinary_mask": true,
+        "unnormalized_weights": true,
+        "wrong_channels": true,
+        "unknown_settings": true
+      },
+      "elapsed_seconds": 0.03313375078141689
+    },
+    "itransformer": {
+      "architecture": {
+        "format": "r9_relative_mask_adapter_v1",
+        "architecture_version": 9,
+        "kind": "itransformer",
+        "model_settings": {
+          "width": 96,
+          "blocks": 3,
+          "dropout": 0.1
+        },
+        "input_policy": "r6_relative_grid_v2_8channels_rounded_weights_v1",
+        "feature_names": [
+          "band_temporal_median_relative_div10",
+          "band_temporal_q20_relative_div15",
+          "adjacent_observed_delta_div10",
+          "positive_mid_high_delta_times_smooth_low_band_co_rise",
+          "band_median_minus_window_median_div20",
+          "observed_mask",
+          "band_temporal_q05_relative_div15",
+          "sqrt_rounded_energy_weight"
+        ],
+        "score_policy": "r6_fixed_half_share_half_observed_mask_contrast_bands10_22_v1",
+        "pretrained": false,
+        "requires_background_prior": false,
+        "base_total_parameters": 295696,
+        "removed_presence_parameters": 97,
+        "total_parameters": 295599,
+        "trainable_parameters": 295599
+      },
+      "one_adam_update": true,
+      "loss_mean": 0.12928539514541626,
+      "loss_components": {
+        "share_mse": 0.06447606533765793,
+        "weighted_cell_mse": 0.12331494688987732,
+        "presence_bce": 0.6796121597290039
+      },
+      "gradient_l2": 0.700991187991388,
+      "parameters_without_gradient": [],
+      "all_gradients_finite": true,
+      "first_parameter_updated": true,
+      "share_shape": [
+        3
+      ],
+      "q_shape": [
+        3,
+        15,
+        25
+      ],
+      "representation_shape": [
+        3,
+        96
+      ],
+      "observed_mask_zero_exact": true,
+      "q_bounded": true,
+      "physical_pool_exact": true,
+      "fixed_score_verified": true,
+      "repeated_batch_exact": true,
+      "batch_independence_max_abs": 0.0,
+      "batch_independence_tolerance": 3e-06,
+      "checkpoint_weights_only_reload_max_abs": 0.0,
+      "in_memory_fixture_checkpoint_sha256": "fb1b53450f24a129c25561b45ebaff6f12cbcf47841c38b3b6db26573f5ec9c4",
+      "contract_rejection_guards": {
+        "legacy_channel_contract": true,
+        "nonbinary_mask": true,
+        "unnormalized_weights": true,
+        "wrong_channels": true,
+        "unknown_settings": true
+      },
+      "elapsed_seconds": 0.017304333858191967
+    }
+  },
+  "source_code_sha256": {
+    "pipeline/models_r9.py": "1032989c0464727feeeac171b0d3c48052e03cfd89d908feec00dc18914a2d7b",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/neural_r5.py": "482890f56d7986733cfb46c1ce961641a12523ea38d47b0f8388dbe3ea181e96",
+    "ops/verify_models_r9.py": "50aa8dfb4ef0bc9197d457d4abf480bc0ccc291ff5023f8d42454d02487d3a0b"
+  },
+  "source_code_unchanged": true
+}

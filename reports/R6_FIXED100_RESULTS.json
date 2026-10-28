@@ -1,0 +1,2351 @@
+{
+  "status": "completed",
+  "config_sha256": "a12e75dd5e3d79db0ea99daf5cb87464c8f32f347e2e6b173d254cb38078b259",
+  "data_manifest_sha256": "4c72fb79d4aef20ed05e6bd72be13d206c8622c6a74c48930304b7f559e70369",
+  "former_ES_run": "models/r6_cpu_guardrails_v2",
+  "summaries": [
+    {
+      "status": "completed",
+      "arm": {
+        "name": "r4law_legacy8_global",
+        "generator": "r4",
+        "channels": "legacy8",
+        "global_context": true
+      },
+      "model_config": {
+        "input_channels": 8,
+        "width": 32,
+        "blocks": 3,
+        "dropout": 0.1,
+        "global_context": true
+      },
+      "parameters": 64449,
+      "epochs_run": 100,
+      "optimizer_steps": 6400,
+      "early_stopping_enabled": false,
+      "stop_reason": "completed_100_epochs",
+      "primary_selection": "strict lowest own INNER window RMSE; first exact tie",
+      "best_inner_window": {
+        "epoch": 24,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.08761031538511885,
+          "site_macro_rmse": 0.07459477330604262,
+          "mae": 0.052667859260900673,
+          "bias": 0.012413239445486557,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.09279398983610757,
+              "mae": 0.05575319987241625,
+              "bias": 0.014040268438185628
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.05900580979224421,
+              "mae": 0.03975521612870084,
+              "bias": 0.018637486909177492
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.07198452028977607,
+              "mae": 0.04418213550547412,
+              "bias": 0.004299533897939937
+            }
+          },
+          "presence_auc": 0.9823520652788945,
+          "presence_auc_share_only": 0.9788737008249203,
+          "family_slices": {
+            "r4_whole_timewarp": {
+              "n": 819,
+              "rmse": 0.09199585071551133,
+              "mae": 0.0593053149529909,
+              "bias": 0.008974752448736866
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.06729586096213053,
+              "mae": 0.026150414325184102,
+              "bias": 0.026150414325184102
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 205,
+              "rmse": 0.06729586096213053,
+              "mae": 0.026150414325184102,
+              "bias": 0.026150414325184102
+            },
+            "positive_low_to_.1": {
+              "n": 82,
+              "rmse": 0.08347676101445078,
+              "mae": 0.05370646692874909,
+              "bias": 0.04658183716265939
+            },
+            ".1_to_.4": {
+              "n": 261,
+              "rmse": 0.10244395458071232,
+              "mae": 0.06519898217014426,
+              "bias": 0.033643752978793504
+            },
+            ".4_to_1": {
+              "n": 476,
+              "rmse": 0.08721714262058067,
+              "mae": 0.05703821073935813,
+              "bias": -0.011030268737999331
+            }
+          }
+        },
+        "checkpoint": "best_window.pt"
+      },
+      "best_inner_macro": {
+        "epoch": 25,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.08793228550355293,
+          "site_macro_rmse": 0.07243387113578283,
+          "mae": 0.05173561048090569,
+          "bias": 0.0029195725395272376,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.09360326417699723,
+              "mae": 0.05501361281937812,
+              "bias": 0.0057221296879718985
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.05234330371134074,
+              "mae": 0.03638489000573331,
+              "bias": 0.008886104260719466
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.07135504551901055,
+              "mae": 0.04317556896229537,
+              "bias": -0.009728820167400941
+            }
+          },
+          "presence_auc": 0.9817385866166355,
+          "presence_auc_share_only": 0.9788796569284375,
+          "family_slices": {
+            "r4_whole_timewarp": {
+              "n": 819,
+              "rmse": 0.0928161466320959,
+              "mae": 0.05871360205365197,
+              "bias": -0.002321346483553813
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.06484899355895257,
+              "mae": 0.023857683173202266,
+              "bias": 0.023857683173202266
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 205,
+              "rmse": 0.06484899355895257,
+              "mae": 0.023857683173202266,
+              "bias": 0.023857683173202266
+            },
+            "positive_low_to_.1": {
+              "n": 82,
+              "rmse": 0.06932431976434734,
+              "mae": 0.0463192039424917,
+              "bias": 0.03578801667488112
+            },
+            ".1_to_.4": {
+              "n": 261,
+              "rmse": 0.09755272543539091,
+              "mae": 0.06145256173964661,
+              "bias": 0.022797046107921565
+            },
+            ".4_to_1": {
+              "n": 476,
+              "rmse": 0.09368344136857773,
+              "mae": 0.059346946942455625,
+              "bias": -0.02265930498222343
+            }
+          }
+        },
+        "checkpoint": "best_macro.pt"
+      },
+      "final_epoch": {
+        "epoch": 100,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.09146002364802659,
+          "site_macro_rmse": 0.07545582276251762,
+          "mae": 0.05209894666831616,
+          "bias": -0.014015622698416053,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.09584697988466992,
+              "mae": 0.054130785354328116,
+              "bias": -0.011719255200000235
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.04780250382775623,
+              "mae": 0.03365817592765035,
+              "bias": -0.002697186498500576
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.08271798457512676,
+              "mae": 0.04928505288727752,
+              "bias": -0.026174555184570174
+            }
+          },
+          "presence_auc": 0.9848834092736531,
+          "presence_auc_share_only": 0.9828642901813633,
+          "family_slices": {
+            "r4_whole_timewarp": {
+              "n": 819,
+              "rmse": 0.09973620661473775,
+              "mae": 0.061053260258027674,
+              "bias": -0.02161013294286828
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.045201270903141966,
+              "mae": 0.01632537188795651,
+              "bias": 0.01632537188795651
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 205,
+              "rmse": 0.045201270903141966,
+              "mae": 0.01632537188795651,
+              "bias": 0.01632537188795651
+            },
+            "positive_low_to_.1": {
+              "n": 82,
+              "rmse": 0.05349343493637525,
+              "mae": 0.03559206156471812,
+              "bias": 0.019886922380154406
+            },
+            ".1_to_.4": {
+              "n": 261,
+              "rmse": 0.08976313220785141,
+              "mae": 0.057479225368492336,
+              "bias": 0.0023504635372638017
+            },
+            ".4_to_1": {
+              "n": 476,
+              "rmse": 0.11047276308545377,
+              "mae": 0.06739914555008672,
+              "bias": -0.04189684348446982
+            }
+          }
+        },
+        "checkpoint": "last.pt"
+      },
+      "best_window_TRAIN_eval": {
+        "n": 8192,
+        "rmse": 0.04939750790283375,
+        "site_macro_rmse": 0.0488449087653147,
+        "mae": 0.03222830506175772,
+        "bias": 0.023197027163846584,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 1366,
+            "rmse": 0.06017275090015075,
+            "mae": 0.039054893608159405,
+            "bias": 0.028876173178110084
+          },
+          "2 Durban": {
+            "n": 1366,
+            "rmse": 0.04565985123937402,
+            "mae": 0.029012991526499853,
+            "bias": 0.01831518072221665
+          },
+          "3 Cape_Recife": {
+            "n": 1366,
+            "rmse": 0.040870588690728314,
+            "mae": 0.027105145067231728,
+            "bias": 0.019342580552635793
+          },
+          "4 Bird Island": {
+            "n": 1365,
+            "rmse": 0.04409015454451014,
+            "mae": 0.028027546689005554,
+            "bias": 0.01636362989975102
+          },
+          "5 St Croix Island": {
+            "n": 1365,
+            "rmse": 0.057852601572114935,
+            "mae": 0.03888298598217378,
+            "bias": 0.032446788162739916
+          },
+          "6 Riy_Banks": {
+            "n": 1364,
+            "rmse": 0.04442350564501005,
+            "mae": 0.03128668527417624,
+            "bias": 0.023840521560252396
+          }
+        },
+        "presence_auc": 0.998448691308014,
+        "presence_auc_share_only": 0.9961340239796146,
+        "family_slices": {
+          "r4_whole_timewarp": {
+            "n": 6554,
+            "rmse": 0.05453249971193827,
+            "mae": 0.038728966164698904,
+            "bias": 0.02744055778207943
+          },
+          "zero": {
+            "n": 1638,
+            "rmse": 0.01745689583261925,
+            "mae": 0.0062177233348489815,
+            "bias": 0.0062177233348489815
+          }
+        },
+        "target_slices": {
+          "zero": {
+            "n": 1638,
+            "rmse": 0.01745689583261925,
+            "mae": 0.0062177233348489815,
+            "bias": 0.0062177233348489815
+          },
+          "positive_low_to_.1": {
+            "n": 659,
+            "rmse": 0.04865418448232234,
+            "mae": 0.03173180533765055,
+            "bias": 0.02533797084779425
+          },
+          ".1_to_.4": {
+            "n": 2080,
+            "rmse": 0.063804094020425,
+            "mae": 0.04651232812589464,
+            "bias": 0.03745567372176223
+          },
+          ".4_to_1": {
+            "n": 3815,
+            "rmse": 0.049803379037993985,
+            "mae": 0.03569403460656987,
+            "bias": 0.022343352968227193
+          }
+        }
+      },
+      "shadow_ES7": {
+        "stop_epoch": 32,
+        "best_macro_epoch": 25,
+        "best_macro_rmse": 0.07243387113578283,
+        "stopping_used_for_training": false,
+        "minimum_improvement": 1e-05
+      },
+      "device": "Mac CPU FP32",
+      "threads": 2,
+      "elapsed_seconds": 1349.3095764573663,
+      "process_peak_RSS_bytes": 861487104,
+      "artifact_sha256": {
+        "best_window.pt": "02b321359ac44f2bdaba4eab54f3176b7586207bc680f7a239dee077cd34e383",
+        "best_macro.pt": "1e4130bdb54d266a1ec967184b25f7b779a6c0ee9297b075c8d64bcfd97ee32f",
+        "last.pt": "7f099fef0cd826995994d1307c8244d20979ac89d68b8fc2ba42e1db5d80156c",
+        "final_training_state.pt": "193feaac35155ffcb39a935ae0c2e9fefd6b4bbdb2bf7e7f1f1f734e61da083a",
+        "window_inner_predictions.npz": "9977c979eefe869579a6e8852530055130203f65c33f5a2abe3c052e195ace00",
+        "macro_inner_predictions.npz": "1e2e13d24834dfc8c444675755e175aa20312b6d8c145bc75e1a905a824cb31b",
+        "last_inner_predictions.npz": "c30c70afc9dbe3893b5bd3c3b64ce5ae27a2a2fec5258b7bf2f994fbb0042e14"
+      },
+      "epoch_checkpoint_sha256": {
+        "epoch_001.pt": "fda85a507e08fb44b194d164f28a4dc5b9198fd77e2a7762eb7a3402043ce346",
+        "epoch_002.pt": "bdb2cb6a0dfdcce45aec7584b5d94f670dd524a3f361797971503b25b457df43",
+        "epoch_003.pt": "29b7e262a15929b0860efb49169cd50f801a4b20eb62b0ffbbe5078064ea856b",
+        "epoch_004.pt": "8d83b7c646b0b186161c48292d4aebeba5ec00816b4a11c028f662bbe73921da",
+        "epoch_005.pt": "32e00b50ac855b7ef420137fab641b0478a3c582577d39e8682df09e5f79497d",
+        "epoch_006.pt": "61c42c485cacffca457c2920b6053403a5f41ae3a05dce0a523e8858515d4bb3",
+        "epoch_007.pt": "c7331078eb81cbdbd548fd247dfe166d8bcda9cae033b5c0fa13b5c144e96539",
+        "epoch_008.pt": "4b456d37232a4f2740fd9dbb5d8c040f9ed4b949d5a3bae7fce44660e29f5e6e",
+        "epoch_009.pt": "2325a7f2ef295b264aa34c5669a014f32ec0b911413f589449f8031cb3a8feed",
+        "epoch_010.pt": "1e6b2cb830c38446f542d70a9390988c2798bf1b0c7b6173f2b0a3f1bdf5dbd6",
+        "epoch_011.pt": "edb3fdbd667004e28cc89ff8ddfbe170c0223fa1d4249d18b89e154ee6770c7d",
+        "epoch_012.pt": "5a5c13e701f078f6c2c2caa0af68fac97c0282f8f491d55f5f0fc44e36d54e04",
+        "epoch_013.pt": "2eb225b06a5239d19846b162566fce4e021c8711fa789b56801bcddc3b8ec48b",
+        "epoch_014.pt": "dabe53e82f79d424f7c3bd9e279100a3aa530875c33e6ffb447d928dc6836d81",
+        "epoch_015.pt": "030d60aa3e1dc83f310a6a570befc4e93daea97dbe2d0de5b9acab1cb58125a8",
+        "epoch_016.pt": "119b506786b1933b1f30c6c1ebeecd46f04d9166c5cd32db82d41e6454122bb0",
+        "epoch_017.pt": "3a554942fec72a2d0a4d8358c113e0dc1069191729de5918488bea4532704c5c",
+        "epoch_018.pt": "220286e5fe364be7bc3b2820f8084ef4c136c6f98c0e5203ce58b2a2c69fc098",
+        "epoch_019.pt": "f9702dc083c4f1e3091da8e8b6e1380907ac3fc98800b5208a564b2c09346a08",
+        "epoch_020.pt": "074804ecda2230d1a3f0a6aadf48becc01ebdfd699a6381387cef3717283324c",
+        "epoch_021.pt": "793cac488c20c6159c14fcf7a9576875edc6d41b2f8a8c6114583c0b8a968cc8",
+        "epoch_022.pt": "f25524d1611249d789086d7afed209dd840d1c326da36a4f5ffc1e3d4848f859",
+        "epoch_023.pt": "e08e16216a36275f5b717a0739bb0825c143e410efdcef1fe9101641264000b0",
+        "epoch_024.pt": "02b321359ac44f2bdaba4eab54f3176b7586207bc680f7a239dee077cd34e383",
+        "epoch_025.pt": "1e4130bdb54d266a1ec967184b25f7b779a6c0ee9297b075c8d64bcfd97ee32f",
+        "epoch_026.pt": "8e8787c3e09a527db6980426596aab8d7baa1a21a9dcd7cfeca4b9ef033e2f73",
+        "epoch_027.pt": "ca2fc9246002655563dc48665a32db412bcff9a0b7775d9a03c745a530d0cc11",
+        "epoch_028.pt": "0c1ab3f2ff64d65de13f4b8fdda34df5e58ec88ca07556176aa64c64967e46ea",
+        "epoch_029.pt": "64a6ec69b59cedea25bd43fdfa8c6cf83186077b2f665b5f833814a9d6e8b74c",
+        "epoch_030.pt": "e05ae9d42a4be9e6cf29ee55438a93f42d7891f368abe5e5a1faec819ca0b6c4",
+        "epoch_031.pt": "02b955d1b6d8ecc36a0fe4d80b4d8c45ad551337f13b44ae19d6a3c46b5364ad",
+        "epoch_032.pt": "f8fb56d1a8ca08997f6c224b16162949aecdf89627ad116214981461a19f8545",
+        "epoch_033.pt": "cb8aa05089c76376983b37a082b0bc4b0fe602ade19b697ce840b3a811c10945",
+        "epoch_034.pt": "481a2657780f8a0b6b09e5427c9ce2f17c582fd38596aae9798d90f5a2d5b861",
+        "epoch_035.pt": "95af993bd85b8d969a4bbea9535fabb2e96852c414def1fc034c9be13e83cfff",
+        "epoch_036.pt": "efeab95ce8a16457fd7831141475e4cf6270e8f7a45dc2beb8daefdac15ee698",
+        "epoch_037.pt": "802ba81bb9534b5e0d96528f9ccce9d69258950bdb0abec6578c87f36f659f45",
+        "epoch_038.pt": "09ec3faea6537e4acdd1a963957be28fb4b7c4ad265b5ca65085b31378d0ff0c",
+        "epoch_039.pt": "27d761531591e08a1cec42b61215a42ee5383ca8ab185214af7a5fd58bb4ecd6",
+        "epoch_040.pt": "04b661c00f8daa29d7fed1c92ecef8ab09b5748fb0db2a2fb8a5b64481d4fa56",
+        "epoch_041.pt": "c7438f9e1f1220cc91847d417ba789db6faa8e000bdb23720d2f8634cb7cba98",
+        "epoch_042.pt": "23ea8055db16c67e0b45318e1d66c50396ba0c3fd7bdd3c6a784f0235784de0c",
+        "epoch_043.pt": "18fb037580f1fffeabe655a03bc8c6ac3d908caa810024e70753317db392a566",
+        "epoch_044.pt": "6f4870155b82874b7465f7a39995cfca629da3b9612c74f19f2de3480072e4d0",
+        "epoch_045.pt": "e9b65a4deafbd2d13bd1e549db954e4a45f22ce2b5a1eebc6e58ce3075329f25",
+        "epoch_046.pt": "42f123f44ddaa63c2edcedbcdc18c3197e211bb5b08cdfdde50a78d96fb566a4",
+        "epoch_047.pt": "b88a7e3f26468b43858c2b50e5dd56dff7503345480bc216d1da0431e5f1e9a6",
+        "epoch_048.pt": "f7bcfda88307821bf5432e7e683f4e8bf15311fd1121da2419a7f1b2c2f3e20b",
+        "epoch_049.pt": "b1d9341120c9c56b4df74c4ba8a828e699d12605cb9ccc9c7e0f312b809dc383",
+        "epoch_050.pt": "7a59eda5d045bf75426de2f98a5db2d69521b33ed4046dd58511f5fc6f75ea21",
+        "epoch_051.pt": "79bd71580a19d2607f8f6838f26bf0256b28ab10a8d58abe04e952b3257b9ca9",
+        "epoch_052.pt": "d028012c77446eea9df524c1df4d69e20a11bfde77789a39a60a3a68280506a1",
+        "epoch_053.pt": "7a7c32e0b4348d0f8e4991541d3707004ea405ce7697fb81a48e2a98d6d879d4",
+        "epoch_054.pt": "07e87118c7e69429c2901979be3b2bd2767653a5bd2b2eb5f2924c7faafa4fbc",
+        "epoch_055.pt": "a7ab3ba0265ff2e81274fb1d7477e1bdb59718a776b608e54cfdf354814ee5f7",
+        "epoch_056.pt": "b1b8e90fe0f445be3d5c56a3b42a4030ed4c45cff7e932050cbfbf59a093ff84",
+        "epoch_057.pt": "f562025f0eb7103726f6281852ce349190f65e6e70ca60adc9e5bce4e21f09af",
+        "epoch_058.pt": "2b23e67d409e5f8603b5f5856b12c14e4dd00b83018051feea3398d8bd457f9c",
+        "epoch_059.pt": "da76611c242f2ab3bfd3dbaba353c0ad7f03f701d29c41f199304434988dff84",
+        "epoch_060.pt": "74147f358385c41e9d0c436f63da60e3c9180d1d503753ee6465790e8710b731",
+        "epoch_061.pt": "06054e4faaf69d1c236ebbcc5af973919a16a3d1a2fe6f270e86bfcb75ad9f11",
+        "epoch_062.pt": "aa97be4afa66d2e9edb00c685112ebe67ca04543c26cf4be93d65543c882778b",
+        "epoch_063.pt": "610f0246303971da973bea1d77be0b5f5517a46cc09a3e2a2171bc4eda36343b",
+        "epoch_064.pt": "9ed7c874d9f9c7b4f44050ccf645fc3f35c122334c31c9fda8fd2e9d00c3cdf1",
+        "epoch_065.pt": "c1312ef6dc63e05e20461d2c08b4c219292aba604f3aee5551a561820fa2f866",
+        "epoch_066.pt": "300fd77ed36fa34784756234c93d67300c5a61d4c68550bc172ea07da4d27144",
+        "epoch_067.pt": "443aa1f994be2d979d11bcaea416315f12100ed1e9abfc57f668eb56ef7a610e",
+        "epoch_068.pt": "af0d6bfdbd97ec2ff4efd257fba22ee105b7a79d0e26fb51ed25f5e5dbcc1c9a",
+        "epoch_069.pt": "f5029afd6f85f7692230f0cecd1e844a1f9f768ad1ce7c06e8807397a6edbe0e",
+        "epoch_070.pt": "f019dc109527fc495e92582cdb276efdddfd96a28d112dcbfc928e62a6dbaeec",
+        "epoch_071.pt": "05679e9ce57cea0583859fc32a131ee2409b46532babf5f8cf045f5aabec2339",
+        "epoch_072.pt": "af36680233a5959d2c632853e27c8ea259793c8c7eb0c001bcc4e37cc179e72f",
+        "epoch_073.pt": "bdbccd9ad280df948f851d9dac8983d0d8c05d476ad870df5ec0382c03604cd6",
+        "epoch_074.pt": "802a7c0766e2da74d77052c06cdaf4319a1984155c9186af07beb9c2ff1ad35a",
+        "epoch_075.pt": "7d35cc5bcf621c34d218bb9bea7ffca5bb2fc952013b52111656e1120d5f8371",
+        "epoch_076.pt": "e368b98ef52b0ff13efadafbaf1f7dec3af383275326ddb4a04289ec8e7e1ec8",
+        "epoch_077.pt": "db9a1b6c42c848f5d1e8d2db730ecb7387c9f31e2968e43ba3d8689000e8f1b6",
+        "epoch_078.pt": "0f1d84b22026f6a0ed22afff5eeb53353168b5d36971e2ed1976908d66e110f5",
+        "epoch_079.pt": "dfb327cc9c74e7627ba44c6f304512e0b337a79c785584ab95088b40787bf0c8",
+        "epoch_080.pt": "b3c69bb15196ff25d96c8add1ae8b994e30aac8ec338634e26327205f39eab55",
+        "epoch_081.pt": "9c707b776928a5ac9f4394a72b00f959edf8ce29f62ec075bca38b04376a3977",
+        "epoch_082.pt": "717e6ab5a397d8a05709309f629c805cfd9df2f41c0d815d924ef9df2abb0a24",
+        "epoch_083.pt": "f1051d515dc82f90b45fb89c04f551a2acb4d4fbe4b261b22f8820bc1207c452",
+        "epoch_084.pt": "3cbcb791a770b9af128d261f76a83e3bb19cc092072942d9fbe79a99e5ea58ac",
+        "epoch_085.pt": "db980e0ad3f1daa9c9258356d06278a07c8d9c7390503292d3844a69e28737a8",
+        "epoch_086.pt": "887dd7645548d4780b8f03ab988f0bfd28efca6fe6a8bbba82b22f6f38805484",
+        "epoch_087.pt": "f659aec6617ab810232b18367309cb495c3c36dd28b3cd14131fd8d51b712807",
+        "epoch_088.pt": "caecc0d061a29851edc1e4e8c6d9b896a1e84b1e1f0ae241d98504af38a20443",
+        "epoch_089.pt": "2619b66d2d296f007d7ea0b089b217167b2595c5e0c3bd39ab10708de46b7161",
+        "epoch_090.pt": "2a1dc27ad45c5bc126a7c25176a395842b40b5a638b4229490641ab78fc82fd2",
+        "epoch_091.pt": "2ef4d1e4b36c0a7847d79276b81a58ec105b9cc96b62810fab37e7308551a000",
+        "epoch_092.pt": "1fb009be1e5b4d49edc55682504397b8ea10a5575233160b42b0999757d18779",
+        "epoch_093.pt": "b6296530a6e365056b617c40c51fea0a5ea611de9ccd53838c76fd3b6c13cb98",
+        "epoch_094.pt": "0ec283b0c2e6d01969d061277806bf59d6ce8c2dd5c5ea411b75a09a2c62dbd1",
+        "epoch_095.pt": "0aca683ec3974f54c257d495ba42f88e6fe971051c57292f180700f2de0bdc7e",
+        "epoch_096.pt": "391ec27e9f1105de6b98e31ef7e3035ce6388e799fe0619f3b0870a6816edee3",
+        "epoch_097.pt": "f19e0a5e297584792c451b1c244b81c0295cc312c426de67cf432d7a177f2d6b",
+        "epoch_098.pt": "5ab85e00acc078218e452eec4a46628c388b5e939c2a10acd6a8a12ee7b41211",
+        "epoch_099.pt": "4970d680d9ca8db90f698b57e7667357b5ab5e57fe25ad18cceab4cd1a8df750",
+        "epoch_100.pt": "7f099fef0cd826995994d1307c8244d20979ac89d68b8fc2ba42e1db5d80156c"
+      },
+      "prior_sha256": "187908fe90b34c7a6a14cde32149720c62376cdb53689997bef4d72d00eeed03",
+      "heldout_evaluated": false,
+      "scope": "same source pilot retraining; not full5fold, not global minimum guarantee"
+    },
+    {
+      "status": "completed",
+      "arm": {
+        "name": "r4law_relative8_global",
+        "generator": "r4",
+        "channels": "relative8",
+        "global_context": true
+      },
+      "model_config": {
+        "input_channels": 8,
+        "width": 32,
+        "blocks": 3,
+        "dropout": 0.1,
+        "global_context": true
+      },
+      "parameters": 64449,
+      "epochs_run": 100,
+      "optimizer_steps": 6400,
+      "early_stopping_enabled": false,
+      "stop_reason": "completed_100_epochs",
+      "primary_selection": "strict lowest own INNER window RMSE; first exact tie",
+      "best_inner_window": {
+        "epoch": 34,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.08879133187376817,
+          "site_macro_rmse": 0.07701335149077886,
+          "mae": 0.05067385099477262,
+          "bias": -0.004633889839734895,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.09348237743440375,
+              "mae": 0.05311936822367532,
+              "bias": -0.0012669664619702158
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.062413409659083534,
+              "mae": 0.04112688380383506,
+              "bias": -0.009037439699485813
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.07514426737884927,
+              "mae": 0.04375579969928367,
+              "bias": -0.016598710171450794
+            }
+          },
+          "presence_auc": 0.982757080318056,
+          "presence_auc_share_only": 0.9804580243604635,
+          "family_slices": {
+            "r4_whole_timewarp": {
+              "n": 819,
+              "rmse": 0.09416908225078345,
+              "mae": 0.058352057032620586,
+              "bias": -0.01079950171528624
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.06287319348706387,
+              "mae": 0.01999848150697999,
+              "bias": 0.01999848150697999
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 205,
+              "rmse": 0.06287319348706387,
+              "mae": 0.01999848150697999,
+              "bias": 0.01999848150697999
+            },
+            "positive_low_to_.1": {
+              "n": 82,
+              "rmse": 0.0630867798929251,
+              "mae": 0.04199215139172937,
+              "bias": 0.02989333798993867
+            },
+            ".1_to_.4": {
+              "n": 261,
+              "rmse": 0.09230248136191264,
+              "mae": 0.05930005709044778,
+              "bias": 0.010436165906574535
+            },
+            ".4_to_1": {
+              "n": 476,
+              "rmse": 0.09950224728325546,
+              "mae": 0.06065055335081425,
+              "bias": -0.02945353975128226
+            }
+          }
+        },
+        "checkpoint": "best_window.pt"
+      },
+      "best_inner_macro": {
+        "epoch": 25,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.09092565285320141,
+          "site_macro_rmse": 0.07659991479933594,
+          "mae": 0.052611017456229536,
+          "bias": 0.00369254815279918,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.09698385492607342,
+              "mae": 0.055891331587605786,
+              "bias": 0.00683923865069644
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.06175358094626306,
+              "mae": 0.04198423440419984,
+              "bias": -0.0020436763160184704
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.07106230852567133,
+              "mae": 0.04272305074779891,
+              "bias": -0.007037161078630842
+            }
+          },
+          "presence_auc": 0.9801483069775752,
+          "presence_auc_share_only": 0.9770987819768308,
+          "family_slices": {
+            "r4_whole_timewarp": {
+              "n": 819,
+              "rmse": 0.09520294653784267,
+              "mae": 0.05959010233265952,
+              "bias": -0.0015729166743156792
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.07132216458260943,
+              "mae": 0.02472872226698001,
+              "bias": 0.02472872226698001
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 205,
+              "rmse": 0.07132216458260943,
+              "mae": 0.02472872226698001,
+              "bias": 0.02472872226698001
+            },
+            "positive_low_to_.1": {
+              "n": 82,
+              "rmse": 0.07813823111970948,
+              "mae": 0.04968671965279344,
+              "bias": 0.03982705315049715
+            },
+            ".1_to_.4": {
+              "n": 261,
+              "rmse": 0.0979137252064265,
+              "mae": 0.06288588668622962,
+              "bias": 0.020487435369027987
+            },
+            ".4_to_1": {
+              "n": 476,
+              "rmse": 0.09636457988935637,
+              "mae": 0.05948900498700242,
+              "bias": -0.020800961651095823
+            }
+          }
+        },
+        "checkpoint": "best_macro.pt"
+      },
+      "final_epoch": {
+        "epoch": 100,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.09062776152858436,
+          "site_macro_rmse": 0.08043230171809197,
+          "mae": 0.05069922606935329,
+          "bias": -0.010259499241842107,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.09476879028068587,
+              "mae": 0.05267528474999715,
+              "bias": -0.006961665901575628
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.06766310649431319,
+              "mae": 0.041891139444884505,
+              "bias": -0.015551509128470736
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.07886500837927686,
+              "mae": 0.04541459390127572,
+              "bias": -0.021705523581543363
+            }
+          },
+          "presence_auc": 0.9844069209922869,
+          "presence_auc_share_only": 0.9818398403764257,
+          "family_slices": {
+            "r4_whole_timewarp": {
+              "n": 819,
+              "rmse": 0.09702145113600298,
+              "mae": 0.059055135337505386,
+              "bias": -0.017161878970997767
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.05848213758795109,
+              "mae": 0.01731634952976026,
+              "bias": 0.01731634952976026
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 205,
+              "rmse": 0.05848213758795109,
+              "mae": 0.01731634952976026,
+              "bias": 0.01731634952976026
+            },
+            "positive_low_to_.1": {
+              "n": 82,
+              "rmse": 0.05591985517173662,
+              "mae": 0.037281392244749884,
+              "bias": 0.023341861973366154
+            },
+            ".1_to_.4": {
+              "n": 261,
+              "rmse": 0.09160235885536801,
+              "mae": 0.058014234463716376,
+              "bias": 0.0026836253816825677
+            },
+            ".4_to_1": {
+              "n": 476,
+              "rmse": 0.10515009515080476,
+              "mae": 0.06337682034100305,
+              "bias": -0.03502108778084526
+            }
+          }
+        },
+        "checkpoint": "last.pt"
+      },
+      "best_window_TRAIN_eval": {
+        "n": 8192,
+        "rmse": 0.03902824027453799,
+        "site_macro_rmse": 0.03879502628700804,
+        "mae": 0.024832240740589595,
+        "bias": 0.010931028942394005,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 1366,
+            "rmse": 0.04641693964092923,
+            "mae": 0.029054928710076564,
+            "bias": 0.013049241401538781
+          },
+          "2 Durban": {
+            "n": 1366,
+            "rmse": 0.039308458461552676,
+            "mae": 0.024461061019711166,
+            "bias": 0.008732080437708262
+          },
+          "3 Cape_Recife": {
+            "n": 1366,
+            "rmse": 0.03338016813771539,
+            "mae": 0.021677005322285572,
+            "bias": 0.010263715959044557
+          },
+          "4 Bird Island": {
+            "n": 1365,
+            "rmse": 0.03849932124384829,
+            "mae": 0.023515689431131404,
+            "bias": 0.00800147684449757
+          },
+          "5 St Croix Island": {
+            "n": 1365,
+            "rmse": 0.04056374142938921,
+            "mae": 0.02645762994316101,
+            "bias": 0.013275310264532145
+          },
+          "6 Riy_Banks": {
+            "n": 1364,
+            "rmse": 0.034601528808613405,
+            "mae": 0.02382588266852543,
+            "bias": 0.012265874677272585
+          }
+        },
+        "presence_auc": 0.9991246758869584,
+        "presence_auc_share_only": 0.9976753656948958,
+        "family_slices": {
+          "r4_whole_timewarp": {
+            "n": 6554,
+            "rmse": 0.04333644359337336,
+            "mae": 0.03023017452499888,
+            "bias": 0.01285472029081849
+          },
+          "zero": {
+            "n": 1638,
+            "rmse": 0.010168335981388051,
+            "mae": 0.003233914719210808,
+            "bias": 0.003233914719210808
+          }
+        },
+        "target_slices": {
+          "zero": {
+            "n": 1638,
+            "rmse": 0.010168335981388051,
+            "mae": 0.003233914719210808,
+            "bias": 0.003233914719210808
+          },
+          "positive_low_to_.1": {
+            "n": 659,
+            "rmse": 0.037144258815959105,
+            "mae": 0.023904275818517163,
+            "bias": 0.015133776326529711
+          },
+          ".1_to_.4": {
+            "n": 2080,
+            "rmse": 0.048326928321699526,
+            "mae": 0.03480276090872044,
+            "bias": 0.02081925776437856
+          },
+          ".4_to_1": {
+            "n": 3815,
+            "rmse": 0.041409248896981304,
+            "mae": 0.028829856718820795,
+            "bias": 0.00811864273576249
+          }
+        }
+      },
+      "shadow_ES7": {
+        "stop_epoch": 32,
+        "best_macro_epoch": 25,
+        "best_macro_rmse": 0.07659991479933594,
+        "stopping_used_for_training": false,
+        "minimum_improvement": 1e-05
+      },
+      "device": "Mac CPU FP32",
+      "threads": 2,
+      "elapsed_seconds": 1337.2158500421792,
+      "process_peak_RSS_bytes": 761774080,
+      "artifact_sha256": {
+        "best_window.pt": "16527bd2ecb59bd6097ec72e860f544f477bcb9e6f7e6a3b663b937c461d6c21",
+        "best_macro.pt": "452ab5b2ced79400fd584490e26cd486a89486cab40ba2e6613bdf8f047c70cb",
+        "last.pt": "1284431923c69794e7c83e92b1b270241324ba07d5a4d3344e707c6a3c114af1",
+        "final_training_state.pt": "d4ecd3063e4cd9f877c02b8a69dfbd1797d202cc83cacdfdc1beebe90bcbb5c4",
+        "window_inner_predictions.npz": "055b20018cbb0ac55741c7ccf57cac9db0a3cea946adfdfea6968e9749468b8c",
+        "macro_inner_predictions.npz": "3d27536b677c8018b4a5b59e54c2b1060e78029e8a76d1a4bfc4f3bc980768ce",
+        "last_inner_predictions.npz": "4b362cb17f38023e09dbb74e69994dadf38c4ec61762a29081b8da67e7ed2a64"
+      },
+      "epoch_checkpoint_sha256": {
+        "epoch_001.pt": "8d05ed4af4f38bc4ab4902e660957d1ac5a3099eb88b614f63c8c4ab56f5e371",
+        "epoch_002.pt": "6433baaaf8a97ef035f577c7f4432910a8f8057b0586b05ba3b3c3980f826339",
+        "epoch_003.pt": "7f1342ebf809d530d4919da4f7513e1c8b3561a30d84a783e70c69f660ce3c1f",
+        "epoch_004.pt": "90e2bfe144894bf637f2ba67f72ec48541e4a8009fda10acc47f593ea82e7b38",
+        "epoch_005.pt": "f55c977e139f07eff3da43eb1fbc9c31c178c96cae70f5a1cd5cb4413b627dcc",
+        "epoch_006.pt": "81d26bad70db225de3cbfab470f12f9b9ba445a9bb16fce4374c1ba68c157f0b",
+        "epoch_007.pt": "d917f1b5f1e5bb54e256d2538ae28c750682205e93dda5fb63bb878ab9c30626",
+        "epoch_008.pt": "91cce436a1b621a7ee9cff718fb42f94915379eb11fa43f3108e586e9bdeb984",
+        "epoch_009.pt": "974900a9f82fe52e6ca794bc74b9dfff506498f88a9bf7693e06fbe8e9a1a479",
+        "epoch_010.pt": "85086710dd89f1e49c3dcc7a123f68cafac6dfb7701f62677126098fccc6c0c9",
+        "epoch_011.pt": "8bedf222414ca89b76b26be8181f99321a894c26b4043ad2cebf7e7ed7b2134f",
+        "epoch_012.pt": "c6a9caa25693ea1b663b116e216dcec790736c1e5ef4e552d5d23ef3a2a46804",
+        "epoch_013.pt": "22eb99ec60d66559a97cc59203972cad9b003b6ea2180d32b690e877b8aec8d9",
+        "epoch_014.pt": "fe0e8b6f83f6e2d50605d9649aa2ee99f91caa8b8588ac7e9ca143121ceecdeb",
+        "epoch_015.pt": "53bd7952623cb680b7d9b1483e738478fc436a0615bee17857141f3b0a00d776",
+        "epoch_016.pt": "a255db49626dcadd03f30ddf6f868b195e58d6369001a34837ba7ba849ec64b1",
+        "epoch_017.pt": "c66744f6a630efdd52e2ea26e5f11d5b5b6394ad96ad165d1917321552c0a0de",
+        "epoch_018.pt": "f300f4246bb4d1e48ceb5e30b0a09ac138c60e9d0e2d15f2e1abe6c5a43cffdb",
+        "epoch_019.pt": "eb1dd244c1dcb6b97ce1bf1782e34b09230a11635d21f9cfa6ffd2b481ab2ab1",
+        "epoch_020.pt": "381c572262905ed0b83e959f0110b4cf1fe564add79ab90d246ed8279ef74317",
+        "epoch_021.pt": "9ab584ad77b51873ed949e527b6e550a3887835a21de66de457ac40b52d106a6",
+        "epoch_022.pt": "31e6c6dfbcab66f168b12546681f3a0d405823c7facf54e29b546a9bf0ccdfff",
+        "epoch_023.pt": "1bb88420cd88dba114c2f16d9b24c6425e3f450efb19378d027c1af4c8176076",
+        "epoch_024.pt": "10ae5cf78842c30723c8de13df92acd1172c8e3d54e6a0a37b01ffc7e8c2bfb8",
+        "epoch_025.pt": "452ab5b2ced79400fd584490e26cd486a89486cab40ba2e6613bdf8f047c70cb",
+        "epoch_026.pt": "4cf4ea13d4252d42c0e9d25d4c1717710de6ec32049ae11f60e2a530cb909347",
+        "epoch_027.pt": "58555bbdd8c1dcbd9bd8e954bfd1b125459084e47e3a3e7642d2555209ee5a9f",
+        "epoch_028.pt": "74908e4c18368468731bbf59cf492755145a2f5011973eab2ec33648eef8942b",
+        "epoch_029.pt": "fccba76ee10966d5775104fa079dcb98ea0b3f30f8c0cc44562788bb5ac1e832",
+        "epoch_030.pt": "f51d038171202cb6caf1510c2d6c57f26f52aadf1c110ef29f44130b0beb42ad",
+        "epoch_031.pt": "c9fb26aaea4bdb733b08e2cf36ac3ac1d73e347fd81ae99393d2f8c4a8121e78",
+        "epoch_032.pt": "40de8b6bbdf0d75aefbb4cab269b14e50658ebd6006a07908a47e568ef89fc9b",
+        "epoch_033.pt": "9a53ea28dfa986578ec3dc7d61dbf0871c0f7abb60f5d226d5b15fc65a302266",
+        "epoch_034.pt": "16527bd2ecb59bd6097ec72e860f544f477bcb9e6f7e6a3b663b937c461d6c21",
+        "epoch_035.pt": "1a17b382957e66c82337438fdaa1775417b2ea055efe9261cd245dc396612aeb",
+        "epoch_036.pt": "078f8c849bde34c54cbd35a4c41e9772d68dd514856e06c5fda4dfdd5c479f0c",
+        "epoch_037.pt": "00d8b225a9bebc4f7b033d60aea7965ab0bd2a7c46209b22242e8936d838b8db",
+        "epoch_038.pt": "bdb2cca3f433f632d517897675a7adfd4bb75dd0c32f7075577bfd10c971c3db",
+        "epoch_039.pt": "8fadda8384c624324e84c6ee066af6f3d1cda036267dbe66f870656b279836f3",
+        "epoch_040.pt": "34f7e33a01695f8ec60f6c9f43aa3f7f0e078a497d7016036fd1b338378b1f6c",
+        "epoch_041.pt": "72f215edbd5df97a2f5bf575a5357289f909a8dcb066a464ae6c5826f5fdc337",
+        "epoch_042.pt": "afe4ff467393ad918c465a462ef608381162291ad20c68d1d33c008943a2352b",
+        "epoch_043.pt": "1ed1b0ffd01900e6d3ac26e909202c90e7bcba04c48f53ad4dcd5c14ceece2b8",
+        "epoch_044.pt": "b41618267c4c1067b17f872f8bb970168d8af8de1f98e23e561af3ae06778532",
+        "epoch_045.pt": "baca4b3ddc5d69116bd9b518f26c2a1b5c6d6bcb94b92eb34398250a502af1c5",
+        "epoch_046.pt": "c09dcee3a591e68960b65f85d799ed182fc6bdb3a7ee527b1bfb8f7ca538ec14",
+        "epoch_047.pt": "c404b8fdd64da81206b285c8239e61293d58bd2eb2e58a1985365ccda5db4069",
+        "epoch_048.pt": "d66505d0942ca4f7e831ee53daee186774b7f170ec44c78bb1a30fecc0b8c509",
+        "epoch_049.pt": "eab9b280829b46657fecb1120d9b6d24100c54e8d35b33a0612b0023239f3333",
+        "epoch_050.pt": "5dfeadb7831d26ee32e053d2ef3958d0ebc3e6fe782d4e3d1d96a542ad6c55a6",
+        "epoch_051.pt": "6928a31bafc9a0cf317b23f47261a3d961437ec9226b33327959dba4bc9f1657",
+        "epoch_052.pt": "a33c0f44727e3cc797c34700a97f39f60220ace06340b996ee1c95c821f11ebe",
+        "epoch_053.pt": "ed0e042ac3a53e9c266db3e47ad29838926ba68767c533d599c008189ed319ec",
+        "epoch_054.pt": "3c895ea9925e15cd7bd3fa6d22fb68f0ba58fdeefc0756c1a87757e79f643d4d",
+        "epoch_055.pt": "0b6dadccad394188df56acef4e25f092983f4052b6dba276e2817355aa9fd75b",
+        "epoch_056.pt": "bb94cb325bf0d849ead0b929c62376e376f2dab872f5905b572bf3769a17d605",
+        "epoch_057.pt": "16d72c05bcc340d198f004261d0057fc3a27253573509f93799f532ef2edb6a9",
+        "epoch_058.pt": "f885b23dfe33b9c790c05d8c30cf36cbdb2987fcb546b416294e14207625527e",
+        "epoch_059.pt": "55d6190d0968070e7179c142a58d900682ceae99f06dfe0bc58f84f63fefd015",
+        "epoch_060.pt": "45f12628bbcc41dbe6db04517eee0f21f1eda2da930b633674e74ad8cf10f0b6",
+        "epoch_061.pt": "f684a121809f6137249a9c27bde6d384b736a34bb11312db2f05f36f60e51a54",
+        "epoch_062.pt": "8db453c7250e0a7a16cfd45658df241421876c3d2bbdacf75227e66021a089ec",
+        "epoch_063.pt": "12f73997bd92462943529ff4f452a7d865e166747c71742ddf3dcc1e7cf74cf1",
+        "epoch_064.pt": "ac1a0b9810d8e424536254f9da38ee740dba130ebed9722c5c9e2857084c4d7e",
+        "epoch_065.pt": "13d9d93f33b9dace7babc7486dc0413db4094afe51404d1587f829922be4b598",
+        "epoch_066.pt": "460dd4db5336e8b6d59c4091722bd7c2ec0b9168f818bdcfafc46b49dc58a1d6",
+        "epoch_067.pt": "441080737ea3ee69b79141b840f3216304dbecfa0c6862b0d525dc7e5a52fcbf",
+        "epoch_068.pt": "c8fc88de1ae50cd26659b4847f5f383a391a174ab8a8cf458a06e51e20158f5c",
+        "epoch_069.pt": "55797ea480448d71ce740077eb4335c609819086491dd5196f9cece8cf8d4e72",
+        "epoch_070.pt": "d8f87112301d01804255f9f35572615bd5bd7477e05197a52284414780195193",
+        "epoch_071.pt": "1652fb7923eb0f6b2b31b1d4577e03ac6f4345b780a5b4d1e7a4f5926df5afaa",
+        "epoch_072.pt": "0ababee9c1c1ae25812c61b8ecf3fe3d12396cc170d73b11377f2dd27c7db0ad",
+        "epoch_073.pt": "daedab14196011d0c3b9e4188213173c0a7430a49edc8e3aac70a5acd08b5423",
+        "epoch_074.pt": "bd40dbdead0103a18e208d657205cfa3baec649da5daec4af9c3ff0d9d84ebf5",
+        "epoch_075.pt": "447cafe8f3debbf92182a6cdb33bde7d8717b8d6ec27632320ea1ebe45575443",
+        "epoch_076.pt": "0318091f59b8f41a6f4778ffe45430b166589c2f0990aba342b306ff33c31898",
+        "epoch_077.pt": "a095483c9ba3ead23fdb2393f8aeb59c55547e6cc0ccc54316a880d3a93d482a",
+        "epoch_078.pt": "7ad1b353f4260dbe1076467f7eaffde624405bd1150cdb59f1aac1474d6eeec7",
+        "epoch_079.pt": "c3a9c8de02a655084cbd668a8777d2b2c8a1122b980b1929f215f6c7f0b854bc",
+        "epoch_080.pt": "613a735051d26d513280adc2fa65209ce774134891880d52da8eb40c9b4df2bf",
+        "epoch_081.pt": "e57051e6f882d1fb2649932923f03c0c984f816b81e36f11ffbb3729d7b7761f",
+        "epoch_082.pt": "a0cd0a2b34cd87fefff1974b7f0fac62dc3ffa5ecb08b5fa994c976ee3fb8132",
+        "epoch_083.pt": "d037e68e75404a1a8f3c25aec384bb258d16a57c78751ef07d03a2a010ba0cea",
+        "epoch_084.pt": "bc58c744daa6a0c35ba6636e594d18ed89cd86f3b8f80724a686e0394649c6db",
+        "epoch_085.pt": "fde17c76096ec2431a3626536f8b725c1db4a5659b71ac06b2ec5b701c6b8263",
+        "epoch_086.pt": "f0e47fbd98c0213d0739f1346a803a94fb689190b832478a9f7ecfc8b28b2621",
+        "epoch_087.pt": "d43f84728325dae5d5a674b937e63daf6c6523fac00bdaca55defc790869f9f1",
+        "epoch_088.pt": "2d297bc3a46ff073d926e527e15915e70622eb7f79b56518abc25c4709e75820",
+        "epoch_089.pt": "bc0a0bc5c9379be36d144ac96889f8b79628ed29d7161c537a632f4c0d57bc10",
+        "epoch_090.pt": "4cbb64c62e6a812054768b597170ddeb9cc030bd960d63d8a749ebc9517c32fb",
+        "epoch_091.pt": "f00b143add3cb77a779e0f21a6512a9004b8a40d8603bd1c618bb01d27052515",
+        "epoch_092.pt": "98146f5f7c53690bd824a2107484c74ecf2178ab58e9f6cd6b9271230ea5137f",
+        "epoch_093.pt": "f65df70b7e73a50eaea0ecef4ca375299b48a5df2a4e8510c007d4d757021abd",
+        "epoch_094.pt": "61737754224d2851fa93c87c7d94c8f15803f0165608ab37ee57accae800df20",
+        "epoch_095.pt": "42b77cecb6a139b20de4f88041f7a454b4a619935cd10b1d0e975466e6599f0f",
+        "epoch_096.pt": "b8b5baa3a1382c43fa1780a3330c3da81555d4c7e910ddfde201c5ac8254731d",
+        "epoch_097.pt": "6e32026881b9f558755213187f68a3a95dcd401ed31b905bf488a5b041681a66",
+        "epoch_098.pt": "6168ae9346dd71cd567d517bf77e0b5fa257973d006ff41ddd0dc1336cf47c36",
+        "epoch_099.pt": "1cfa72eccccc6c8cba4513177cd05a2883732a46e7e0b226e12729a960e044a7",
+        "epoch_100.pt": "1284431923c69794e7c83e92b1b270241324ba07d5a4d3344e707c6a3c114af1"
+      },
+      "prior_sha256": null,
+      "heldout_evaluated": false,
+      "scope": "same source pilot retraining; not full5fold, not global minimum guarantee"
+    },
+    {
+      "status": "completed",
+      "arm": {
+        "name": "r6law_legacy8_global",
+        "generator": "r6",
+        "channels": "legacy8",
+        "global_context": true
+      },
+      "model_config": {
+        "input_channels": 8,
+        "width": 32,
+        "blocks": 3,
+        "dropout": 0.1,
+        "global_context": true
+      },
+      "parameters": 64449,
+      "epochs_run": 100,
+      "optimizer_steps": 6400,
+      "early_stopping_enabled": false,
+      "stop_reason": "completed_100_epochs",
+      "primary_selection": "strict lowest own INNER window RMSE; first exact tie",
+      "best_inner_window": {
+        "epoch": 29,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.06190170846312107,
+          "site_macro_rmse": 0.061803786927035524,
+          "mae": 0.03547893434409871,
+          "bias": 0.00874811297819227,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06445710656114381,
+              "mae": 0.0374341248162821,
+              "bias": 0.010915230299442047
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07594148020074085,
+              "mae": 0.03788080675617243,
+              "bias": -0.008407913613584178
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04501277401922191,
+              "mae": 0.027146396135014305,
+              "bias": 0.005045406838816012
+            }
+          },
+          "presence_auc": 0.8901956610434073,
+          "presence_auc_share_only": 0.8399115415772326,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.06997374496079964,
+              "mae": 0.045602836723881025,
+              "bias": -0.0005016897176229597
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.05237761669618018,
+              "mae": 0.028579228431524058,
+              "bias": 0.007747806800004424
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.0624125213811126,
+              "mae": 0.0291629682910109,
+              "bias": 0.0291629682910109
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.062110310730866605,
+              "mae": 0.028886797292427113,
+              "bias": 0.028886797292427113
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.04473704540577968,
+              "mae": 0.0257951278678898,
+              "bias": 0.021177405729649015
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.061662930653302375,
+              "mae": 0.04205069857955447,
+              "bias": -0.0028096259786853216
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.11482019158015519,
+              "mae": 0.07929997889949124,
+              "bias": -0.06499400246290579
+            }
+          }
+        },
+        "checkpoint": "best_window.pt"
+      },
+      "best_inner_macro": {
+        "epoch": 21,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.0665749457459226,
+          "site_macro_rmse": 0.06174345417357386,
+          "mae": 0.03957046272348071,
+          "bias": 0.015556532332514576,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.07051646196227124,
+              "mae": 0.04241848837082892,
+              "bias": 0.018831607288453008
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.06661968078144756,
+              "mae": 0.035766913036438135,
+              "bias": -0.003043459050025227
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04809421977700279,
+              "mae": 0.02947157659675239,
+              "bias": 0.007915119439393872
+            }
+          },
+          "presence_auc": 0.8875702907420218,
+          "presence_auc_share_only": 0.8300545769546888,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07726896304701532,
+              "mae": 0.05145794442251195,
+              "bias": 0.007204466460214547
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.05303917076660218,
+              "mae": 0.0306115711715052,
+              "bias": 0.01471170325974855
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.0679465219094335,
+              "mae": 0.03387295977058895,
+              "bias": 0.03387295977058895
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.06761751337771744,
+              "mae": 0.033551793826087827,
+              "bias": 0.033551793826087827
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.05703839507038951,
+              "mae": 0.03315133522170145,
+              "bias": 0.02825392152135844
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.06353096274177585,
+              "mae": 0.04356313838594515,
+              "bias": 0.005018516329676269
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.10662621536060894,
+              "mae": 0.07365786864853666,
+              "bias": -0.057764683451282585
+            }
+          }
+        },
+        "checkpoint": "best_macro.pt"
+      },
+      "final_epoch": {
+        "epoch": 100,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.062352838293278964,
+          "site_macro_rmse": 0.06383153527241561,
+          "mae": 0.03487668056752022,
+          "bias": 0.004900057094939061,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06439547498678033,
+              "mae": 0.036491708351259554,
+              "bias": 0.006444245047519702
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.08096028341668564,
+              "mae": 0.03964375213052713,
+              "bias": -0.01097871235454983
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04613884741378085,
+              "mae": 0.02721683089740779,
+              "bias": 0.0032818805483889792
+            }
+          },
+          "presence_auc": 0.8955350965887925,
+          "presence_auc_share_only": 0.8440624648915852,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07349860408272342,
+              "mae": 0.04658159686089832,
+              "bias": -0.005347965284908567
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.052207637131652496,
+              "mae": 0.027692269596884037,
+              "bias": 0.00455650054473345
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.056607947280249815,
+              "mae": 0.025984910134511444,
+              "bias": 0.025984910134511444
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.056333835110896166,
+              "mae": 0.02573813517777736,
+              "bias": 0.02573813517777736
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.04184639608491135,
+              "mae": 0.023635911137455185,
+              "bias": 0.018135151240540475
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.06504765292917947,
+              "mae": 0.04372788135883408,
+              "bias": -0.007671244785144199
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.12389521911433982,
+              "mae": 0.0853352734991874,
+              "bias": -0.07135299417862419
+            }
+          }
+        },
+        "checkpoint": "last.pt"
+      },
+      "best_window_TRAIN_eval": {
+        "n": 8192,
+        "rmse": 0.03285029271151969,
+        "site_macro_rmse": 0.032391404900689154,
+        "mae": 0.01995522622431401,
+        "bias": 0.009624196060536844,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 1366,
+            "rmse": 0.04338640241853973,
+            "mae": 0.02650140359076303,
+            "bias": 0.013699427797906354
+          },
+          "2 Durban": {
+            "n": 1366,
+            "rmse": 0.03262181919419146,
+            "mae": 0.020044639841623548,
+            "bias": 0.008468871910810779
+          },
+          "3 Cape_Recife": {
+            "n": 1366,
+            "rmse": 0.029600947914179398,
+            "mae": 0.017841580010251327,
+            "bias": 0.008837776579809912
+          },
+          "4 Bird Island": {
+            "n": 1365,
+            "rmse": 0.028630227159015142,
+            "mae": 0.017538038001299657,
+            "bias": 0.007320083987272732
+          },
+          "5 St Croix Island": {
+            "n": 1365,
+            "rmse": 0.03359915280679821,
+            "mae": 0.020857252015777403,
+            "bias": 0.010775108873457078
+          },
+          "6 Riy_Banks": {
+            "n": 1364,
+            "rmse": 0.02650987991141103,
+            "mae": 0.016942924291515272,
+            "bias": 0.00864162438628571
+          }
+        },
+        "presence_auc": 0.975423049685468,
+        "presence_auc_share_only": 0.9604093781347103,
+        "family_slices": {
+          "minute_first": {
+            "n": 3225,
+            "rmse": 0.0391792738762369,
+            "mae": 0.026580741502071178,
+            "bias": 0.01032460058589646
+          },
+          "short_passage": {
+            "n": 3329,
+            "rmse": 0.03100942236224383,
+            "mae": 0.019686459977280087,
+            "bias": 0.010012159993201061
+          },
+          "zero": {
+            "n": 1638,
+            "rmse": 0.020506260662047835,
+            "mae": 0.00745671344385557,
+            "bias": 0.00745671344385557
+          }
+        },
+        "target_slices": {
+          "zero": {
+            "n": 1681,
+            "rmse": 0.020531451671470052,
+            "mae": 0.007460403517416504,
+            "bias": 0.007460403517416504
+          },
+          "positive_low_to_.1": {
+            "n": 3381,
+            "rmse": 0.029467054643594188,
+            "mae": 0.018520896585682848,
+            "bias": 0.014990145748916753
+          },
+          ".1_to_.4": {
+            "n": 2380,
+            "rmse": 0.03936185118561923,
+            "mae": 0.027662564967283493,
+            "bias": 0.008376425657127227
+          },
+          ".4_to_1": {
+            "n": 750,
+            "rmse": 0.04484799175478962,
+            "mae": 0.029968291917966433,
+            "bias": -0.005756133367879532
+          }
+        }
+      },
+      "shadow_ES7": {
+        "stop_epoch": 28,
+        "best_macro_epoch": 21,
+        "best_macro_rmse": 0.06174345417357386,
+        "stopping_used_for_training": false,
+        "minimum_improvement": 1e-05
+      },
+      "device": "Mac CPU FP32",
+      "threads": 2,
+      "elapsed_seconds": 1352.5085228746757,
+      "process_peak_RSS_bytes": 928186368,
+      "artifact_sha256": {
+        "best_window.pt": "c815aa550d067d3a92f58883f3a1ca460e36f750074cfdc4fa7ea746d478afd7",
+        "best_macro.pt": "8422a128829d0f0c3657d999c27de454565e44ef1a7f019b8fce973e7320b600",
+        "last.pt": "f7c15079c8b1a5e93abf683e7a6e350e9082fc704ae72ef758101b5b8abf2864",
+        "final_training_state.pt": "3ffaccac7edfdbd8aa40025428326845787596c67bd6d908dc7f16c8d93af805",
+        "window_inner_predictions.npz": "6c34c182c5727541f2e6ab12a4af86f85645a2759aa7ca143f36ac2e60bc388d",
+        "macro_inner_predictions.npz": "1e80286311ff86fa2c7c9854046d42fc19188b3305577f581b83185d9b539a21",
+        "last_inner_predictions.npz": "192c6af74ed02a05d8f011408737b6f27104edd8b25aa054403636bf9622905f"
+      },
+      "epoch_checkpoint_sha256": {
+        "epoch_001.pt": "88bc5b4d6997939ca6d01de2c7d2271024c0639965d4be05dbd05b6a8e80066d",
+        "epoch_002.pt": "56a5456be37b92e0a720948fd663dfd9302393f1d73c317e813e1441e46eb420",
+        "epoch_003.pt": "8286f1bf80bb6550bc7b85cf24e1a2382e820a48b012d1691a8c5ad47a7ec207",
+        "epoch_004.pt": "2252dffc2ddaa0598d516ab8f2350c98453714ddf1da44a0503e8c6118377f02",
+        "epoch_005.pt": "107533cbc7dff895b4b32b03ba43872d9884b0d46a7878ce15001cb31df35fee",
+        "epoch_006.pt": "67c2a2e4a25a62a54e4b6c571ca804fe0cbc8e8afea10abc6eb65a553ab9a059",
+        "epoch_007.pt": "c66d887358d11f054d2dbeaf971956f82b2f5c5db5f07296eba99e748731e990",
+        "epoch_008.pt": "ea3db626420e5a86049e4be6a72b017b17faec49cb8904343e29b135f49fe070",
+        "epoch_009.pt": "634bb12f363f1c631360a2b6186e2a37af6387c7a3db6b555cbaf994dc924c34",
+        "epoch_010.pt": "e9d0c278408fbd091f06c996ea549dc8cb03028431a663361db4b9d5d3295ebc",
+        "epoch_011.pt": "620d0b4f10f71996f5a2b308a720507a4934cb928c879bbe9415bd73a086037d",
+        "epoch_012.pt": "8ae5665ad90811fccc76d194698998c09a6f77d79ad0c5c1e2f78788e5f47a96",
+        "epoch_013.pt": "9d5dd3552c3eef97c2a16cf8bd8ee23976778d9d49058fbd6ee8573e5949382c",
+        "epoch_014.pt": "1da00cee6adb3ed7a008e6480126fea7c86ca7c08958b0c57b6f4efd0a80b05f",
+        "epoch_015.pt": "8241e6c035d44645f5313a64647e4486be762d5b4e9fa48839b9467b37f2f02a",
+        "epoch_016.pt": "274a2cd9b856dfae9404fcb74ab91f078a343768e3bddd301c00a12c8bf43fce",
+        "epoch_017.pt": "4c63acdb162cef442406a56303c2584fe5474d98aca30b3a76f331d7347866d1",
+        "epoch_018.pt": "94e5b0244cfab87d589e5d56930e4c04526fdf87559fe45d911a2b3ab7802b96",
+        "epoch_019.pt": "7db246939fe41a3262fd2a8e6f17470122fee2a5f2a08bfece69dcedef95404e",
+        "epoch_020.pt": "6b7a204e2ea0b6e4d9fa62b008d34ae81173bf601f1c74570236566ecf8a7bb9",
+        "epoch_021.pt": "8422a128829d0f0c3657d999c27de454565e44ef1a7f019b8fce973e7320b600",
+        "epoch_022.pt": "fbdedbb2614d5bc1deab54f188d199bc1adc68f126084b810bf6f19298184080",
+        "epoch_023.pt": "7f0862d001fae86d9fcab9ed2dab7b57a3f7153f5e63d3febf6b2b2337d3b533",
+        "epoch_024.pt": "e9cdc631c6d310d5e71c1d15d36e06869ebe5bd6d49d980d0c28539df5bcb757",
+        "epoch_025.pt": "12ef2d2789a6e53cdf3acb127712703bfc87b3489cbfec0c87a75b1ca0468ff7",
+        "epoch_026.pt": "817b9d17873217891d9b212c138d48881d11992600ea408754bc4a618feacbc2",
+        "epoch_027.pt": "111d7e08c76aa64f0e148403fc412cfc73691b16e0b10d15ec818f32edb3b473",
+        "epoch_028.pt": "9d6463a9944808365114692fffb2d1a6e69758af5e08b7ac2537479a500e439d",
+        "epoch_029.pt": "c815aa550d067d3a92f58883f3a1ca460e36f750074cfdc4fa7ea746d478afd7",
+        "epoch_030.pt": "ef9fb70aac832258bdfc7daf65e5ec7a70cfa7c990dcd8287e2f4cedc0ee9554",
+        "epoch_031.pt": "3146adcb80bea6df0496111767cff90cf744325b8ae49ddb73244a446d3afd67",
+        "epoch_032.pt": "a843006a2861e23f80855cf7e546b22ea6b34d0f4da6b215d471acd47a8caa70",
+        "epoch_033.pt": "897b1cd113f50c526a2e6c4f5e5d3926a2d6c9dd084606d34227ab13c97f37e5",
+        "epoch_034.pt": "cc24701258d8069bc29f1d31043ec5d7be2b7d9f436ef2f075c53318ea0d5624",
+        "epoch_035.pt": "35d567013ad8e35a8d0b2308bab5171aa5b531106c66b034abd468984f437318",
+        "epoch_036.pt": "b3c13c6f8220f3dbdb8a3ec8ca4f1c8404d581a6217091db91aee4435c66cd4b",
+        "epoch_037.pt": "43d4c92255f9286787c269e96601d63280e62bb5054008dc1ef6cc222a919292",
+        "epoch_038.pt": "d6564ffce711e5408f1878ff50e1846e90c2973d6d3a240d67bdaad383da90c2",
+        "epoch_039.pt": "f7aae072670bace7cbb7dc3646aab41453d7d1d074cc275955abe21036e9a0bc",
+        "epoch_040.pt": "4b837f0f46006951c93aaa64bf43d77ca1097d583e5f8bc1ff4dea29e41c699a",
+        "epoch_041.pt": "f3c8902853a19707a4aa2362e534b3268e5680fad43e5bfe0f6aded663ddb633",
+        "epoch_042.pt": "da0359fa687174af1fa71113c96975b2cad9407dd91a923b5862e756b35c325d",
+        "epoch_043.pt": "72159a820ee3177e7360d37d9c1adbe396af72bca4f3286f8cfba82a3de9fa78",
+        "epoch_044.pt": "0b7f743b430a98c1fec4d64059c2153bf29457a011ce8c74498717000922042a",
+        "epoch_045.pt": "d92ff60054ae320fb1abffd42b47e5a0554ec09f77af2a14f90e20ca1f74912a",
+        "epoch_046.pt": "b7626a1f5e374aab5e63269f51c853676ee00d862a27bc67c980291c19ba383a",
+        "epoch_047.pt": "945f4dcc1faf7bf1037a146edef3c1cabe6d878526922c7a9c5f2dd2e6a06d4c",
+        "epoch_048.pt": "a4681d220399687cfc085fc4a0e1a7d516ad2012ee41c66b6e3d82ed379b3bdb",
+        "epoch_049.pt": "955d9264257fe4fad43cd5e0f4927bd900323ade5fff66840ae9cd9b8eff4e6c",
+        "epoch_050.pt": "d303fa5ba09ccdac78a444d4526d97230b3ca20d99b507d3b6e6063d893a14e4",
+        "epoch_051.pt": "17872b81942a16b5001ffce56d909e83bc0941efe7bfec8e71dc09afac5c40f0",
+        "epoch_052.pt": "f7f0a3ce47cdde1790432107848aa77d18dc784912e25e3e4a40d67d32679017",
+        "epoch_053.pt": "4720b0430dacd6cb308426b3ff6b38fbde0f4a9757a570df0a2bc77712476e2e",
+        "epoch_054.pt": "2129ff8acd66c0680e6c1707d060a5231c862084701e8103436792639c9ec919",
+        "epoch_055.pt": "5f6a20d490e2b3a17d2fc61d7e1c5d755b2dcb7db96c4aa99073c21113345536",
+        "epoch_056.pt": "64d2506449650667cb959b71ae6e6fbdfc959d7126e556b04c6e7e5721464ab5",
+        "epoch_057.pt": "bd5149eac56859961684333ed62de2543aaa1559190d39ced106c93c826553ee",
+        "epoch_058.pt": "f70fdae4f822b154159ffc7fd126849ba283fdb2b542adddee1f4307fb61ec26",
+        "epoch_059.pt": "c22915fd9f4382a768465654790f90d71b184f7ee83902609469368930833c6e",
+        "epoch_060.pt": "864f3d93eccc0e5feeb7e960050ca2b3bafe20dab63a83e004105b878dfb0086",
+        "epoch_061.pt": "a45f048acd37f4769d40801cce329c675f270d77aaeed3e292d55c773082e10d",
+        "epoch_062.pt": "9b3646dd2d36bcbee8d4abb5254c6ec29fbb255eab44d5b72957dc542d6cbdba",
+        "epoch_063.pt": "e7082bba1275ff3acf75b48a4bba8a47c95bf743eaa75981489fcd7245890cae",
+        "epoch_064.pt": "f4f4bfff1ebd827380456fbb692102c32c4bf01543f394b53d71abac687d0c07",
+        "epoch_065.pt": "a5162bb42d2593946310d5546ed7b119b62e46b3f39e2395a79f5bf0bc742691",
+        "epoch_066.pt": "80c576c3817b90650e600ce720e6a611e0d606e138f652a7c565a5bbe8085bfd",
+        "epoch_067.pt": "67370e0ff25d26987441a49fa490c7a902b121fd6a64b9e233fcdb9240b408a0",
+        "epoch_068.pt": "8aca51a4ed2b42835f464ee91c0ca7909e9e511e3acb4f1672d9699345850f1c",
+        "epoch_069.pt": "e5ca9678b6fd2602cbb1e32017761c84d14e72a708dbc8b49203bf8c226f4c03",
+        "epoch_070.pt": "b3646dbb0dcf1ff537fca672c986bf22374f113347f820d1da96936b63eb0d54",
+        "epoch_071.pt": "395f14e783bf237e50f1324879732d1d0be018fa38850ea42456f550085def7d",
+        "epoch_072.pt": "3fa6a656f41f202bce6f17816cf4a17f8cc26ad1e6b28b5ad7d20da8c6957ae6",
+        "epoch_073.pt": "b5ff9c3871abfbcf4d90766f8d36a509c5a392668ac918899dde2bc50a0026a5",
+        "epoch_074.pt": "ee1759d7e120173dd43f22a9bceac80da86866cf572a91d330b4d7bb6c26537b",
+        "epoch_075.pt": "38631fd6058999b65cf9498841c3b2b75ff485df3e3d5516aa29eddb39c28b36",
+        "epoch_076.pt": "96b9a1e00f52ce8c5d394df5cc3e080926ad047d8d171039afff0349384bd062",
+        "epoch_077.pt": "8e6a8c59832bc9ec6968b8a5dbb9f8b4dd5a4afbee27099c3443df5b1e780242",
+        "epoch_078.pt": "adfca67c39917136f59838a7efbb9358bb471cf08a38f2feed77c5492e1a60c7",
+        "epoch_079.pt": "fa709eb664bf1008c2b94773aced6d0c20ad2011e2253ea8b9e14ce23d949384",
+        "epoch_080.pt": "2da075fa405c996480ec47f018c0b4bc7b21cc8b83855aa1c6ca980cec4db544",
+        "epoch_081.pt": "a48bfb0fa3bd75b71150a59f2266122192f9b5b3f7e678700a5c84ce0d7008d2",
+        "epoch_082.pt": "d475f5bed12e732ff08a2f514b3faaef6287c1dc19261254b70f59ee45a7a952",
+        "epoch_083.pt": "f8c0c97df331f4a63c05025d8b9918a4f72c5e45443963b8a1a9174ecf5e2883",
+        "epoch_084.pt": "71435c12711fd832a33ec2f2af431359915fdeabe63b863a6a7fba29c2f68925",
+        "epoch_085.pt": "42a208a842e0f8a20d3adb66bffb3b870bf7128100b6a5f5b462b1238338bc9f",
+        "epoch_086.pt": "61a0f28e941f45fe0ff7a0433f8a812ee912bb43d10fec554397e00d68b10dcf",
+        "epoch_087.pt": "ecd129fe4fbb58f1562073ac9d931a9517205935f457af5f40f1ead3f58c7041",
+        "epoch_088.pt": "dfa256e262da9e866bfc7410ddbb1b7d41ebb9b8929b78145045675e8b4fba72",
+        "epoch_089.pt": "883a9bb837106136f8cfff2b818117328ce408dd19b137fb578faff7fe9e604a",
+        "epoch_090.pt": "adb924d76bc319ac2dae4343886b831b4af16827738dc404a91f47fcae632f43",
+        "epoch_091.pt": "85627f9dacf7385e2fadc0b7fb1849c7a687c97fe09fc576280d370188b85e55",
+        "epoch_092.pt": "150e428cc9240664332db893d1e4561956fba91c9771292acaf13daeaceb63c0",
+        "epoch_093.pt": "539e84f1fe79c30a924666afb423c507ebe7094b15aa90caed860553acf49223",
+        "epoch_094.pt": "7ca22e3b8b99b4765de2cd09dd0ce096758d4740717811dba50da4ff9c866d4c",
+        "epoch_095.pt": "654c9f17434c9ec26ee45414336a96da1582f1e39efe8fef5c2ae35958b9af48",
+        "epoch_096.pt": "914de150d11afa6f89a9895df86baa8b7350e09b5c8a99ab4be9fc2ae5eb5553",
+        "epoch_097.pt": "6ffe35e208d393160017d32a4fab3a8f2a2f2ccc51a07e376e8743e59fd9e6cc",
+        "epoch_098.pt": "bb1295f14ac6f54246f3622d36a0b48bfdbd6c4ba3be3165980d7bbbc40cbd4e",
+        "epoch_099.pt": "f900d7724cce9c0bb5abe70a1069c4139cf521553d4fa66210de3dfbf028bc94",
+        "epoch_100.pt": "f7c15079c8b1a5e93abf683e7a6e350e9082fc704ae72ef758101b5b8abf2864"
+      },
+      "prior_sha256": "d03c5da3caa04e9470520de4bead2a0755e6179d438eeab2c9c18b50c69df0fe",
+      "heldout_evaluated": false,
+      "scope": "same source pilot retraining; not full5fold, not global minimum guarantee"
+    },
+    {
+      "status": "completed",
+      "arm": {
+        "name": "r6law_relative8_global",
+        "generator": "r6",
+        "channels": "relative8",
+        "global_context": true
+      },
+      "model_config": {
+        "input_channels": 8,
+        "width": 32,
+        "blocks": 3,
+        "dropout": 0.1,
+        "global_context": true
+      },
+      "parameters": 64449,
+      "epochs_run": 100,
+      "optimizer_steps": 6400,
+      "early_stopping_enabled": false,
+      "stop_reason": "completed_100_epochs",
+      "primary_selection": "strict lowest own INNER window RMSE; first exact tie",
+      "best_inner_window": {
+        "epoch": 31,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.0593773076252705,
+          "site_macro_rmse": 0.0604853744565278,
+          "mae": 0.033689560999578615,
+          "bias": 0.006483187979026741,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06117775680145278,
+              "mae": 0.034816933263365074,
+              "bias": 0.00709536367146148
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07421815650909842,
+              "mae": 0.039454525086750576,
+              "bias": -0.0035904714233593216
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04606021005903221,
+              "mae": 0.027662127433905517,
+              "bias": 0.006896648042842049
+            }
+          },
+          "presence_auc": 0.90744978387999,
+          "presence_auc_share_only": 0.8546822060206125,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07149053257777034,
+              "mae": 0.044692689972623066,
+              "bias": -0.0039551099301896354
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.052024287801701735,
+              "mae": 0.028144096821476228,
+              "bias": 0.008652555184742568
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.044865791366043364,
+              "mae": 0.022908630054202725,
+              "bias": 0.022908630054202725
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.04464853275917439,
+              "mae": 0.022690268707445345,
+              "bias": 0.022690268707445345
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.04547171785746759,
+              "mae": 0.025065026073848,
+              "bias": 0.020312866358908714
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.06631568029785963,
+              "mae": 0.04255530035057491,
+              "bias": -0.006219353789968385
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.10847786265984842,
+              "mae": 0.07515970183558934,
+              "bias": -0.061484395974179436
+            }
+          }
+        },
+        "checkpoint": "best_window.pt"
+      },
+      "best_inner_macro": {
+        "epoch": 40,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.059591353035823004,
+          "site_macro_rmse": 0.0603360234166109,
+          "mae": 0.03377340718525243,
+          "bias": 0.007475162480506218,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06149288044529361,
+              "mae": 0.034979706921383275,
+              "bias": 0.008105815028362788
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07321489383575357,
+              "mae": 0.038899572746221946,
+              "bias": -0.0026745144962239888
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04630029596878551,
+              "mae": 0.02761501884948426,
+              "bias": 0.00783743896159702
+            }
+          },
+          "presence_auc": 0.9066988333658548,
+          "presence_auc_share_only": 0.858218177732839,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.0718750624417837,
+              "mae": 0.04503523248072528,
+              "bias": -0.0027014049016180638
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.051738491709783695,
+              "mae": 0.028222771485213207,
+              "bias": 0.010089305486030622
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.04571514278967464,
+              "mae": 0.022487975732390003,
+              "bias": 0.022487975732390003
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.045493768453372045,
+              "mae": 0.02227330474217902,
+              "bias": 0.02227330474217902
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.045820751637507026,
+              "mae": 0.025394453712121182,
+              "bias": 0.020769765185714502
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.06627448681523708,
+              "mae": 0.0429874493766176,
+              "bias": -0.0034932889342384034
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.10835018756263175,
+              "mae": 0.07405916293417723,
+              "bias": -0.05999145811672497
+            }
+          }
+        },
+        "checkpoint": "best_macro.pt"
+      },
+      "final_epoch": {
+        "epoch": 100,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.059620694841389266,
+          "site_macro_rmse": 0.06106421875081739,
+          "mae": 0.03334079015042103,
+          "bias": 0.004661236110123415,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.0612655080341344,
+              "mae": 0.034367320714837654,
+              "bias": 0.004914604434374553
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07509149150904376,
+              "mae": 0.0396810606074627,
+              "bias": -0.004421342620727889
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04683565670927402,
+              "mae": 0.02754791466378689,
+              "bias": 0.006204086282077442
+            }
+          },
+          "presence_auc": 0.91070193177585,
+          "presence_auc_share_only": 0.8620852772308257,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07353719253289202,
+              "mae": 0.0455605449004608,
+              "bias": -0.006110417749184668
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.05114213789101078,
+              "mae": 0.027637803453557337,
+              "bias": 0.0074769504700794446
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.04182490071390105,
+              "mae": 0.020454290610883264,
+              "bias": 0.020454290610883264
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.04162236459636583,
+              "mae": 0.020259014119142525,
+              "bias": 0.020259014119142525
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.04328959620704245,
+              "mae": 0.02363713480814258,
+              "bias": 0.018459902657704006
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.0681158245331833,
+              "mae": 0.04423577452516769,
+              "bias": -0.006928366988056458
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.11371844503421917,
+              "mae": 0.07872345631532543,
+              "bias": -0.06526903878299609
+            }
+          }
+        },
+        "checkpoint": "last.pt"
+      },
+      "best_window_TRAIN_eval": {
+        "n": 8192,
+        "rmse": 0.031102906434661945,
+        "site_macro_rmse": 0.030754904951063783,
+        "mae": 0.018859489825268676,
+        "bias": 0.008520596826351276,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 1366,
+            "rmse": 0.039054163310801,
+            "mae": 0.023469004489686134,
+            "bias": 0.012254103736443209
+          },
+          "2 Durban": {
+            "n": 1366,
+            "rmse": 0.03181851453664556,
+            "mae": 0.019616928948479523,
+            "bias": 0.006555472665423255
+          },
+          "3 Cape_Recife": {
+            "n": 1366,
+            "rmse": 0.027867211197851977,
+            "mae": 0.01657524884315656,
+            "bias": 0.0064847640865075525
+          },
+          "4 Bird Island": {
+            "n": 1365,
+            "rmse": 0.028967987122269778,
+            "mae": 0.01779393614294519,
+            "bias": 0.008521342086602242
+          },
+          "5 St Croix Island": {
+            "n": 1365,
+            "rmse": 0.03265613975857752,
+            "mae": 0.02054652586443197,
+            "bias": 0.010694094079267155
+          },
+          "6 Riy_Banks": {
+            "n": 1364,
+            "rmse": 0.024165413780236903,
+            "mae": 0.01515031892393331,
+            "bias": 0.006612602439837987
+          }
+        },
+        "presence_auc": 0.9826985239183842,
+        "presence_auc_share_only": 0.9635288873238909,
+        "family_slices": {
+          "minute_first": {
+            "n": 3225,
+            "rmse": 0.03597658883312373,
+            "mae": 0.02460441624193651,
+            "bias": 0.00851015713816352
+          },
+          "short_passage": {
+            "n": 3329,
+            "rmse": 0.0305618980341005,
+            "mae": 0.019073809305229193,
+            "bias": 0.009223335938613554
+          },
+          "zero": {
+            "n": 1638,
+            "rmse": 0.019786946242851912,
+            "mae": 0.007112934732141496,
+            "bias": 0.007112934732141496
+          }
+        },
+        "target_slices": {
+          "zero": {
+            "n": 1681,
+            "rmse": 0.0196811586889708,
+            "mae": 0.007081156234184324,
+            "bias": 0.007081156234184324
+          },
+          "positive_low_to_.1": {
+            "n": 3381,
+            "rmse": 0.027737663238080416,
+            "mae": 0.018130569222156917,
+            "bias": 0.014882555063146884
+          },
+          ".1_to_.4": {
+            "n": 2380,
+            "rmse": 0.03721493639021479,
+            "mae": 0.025569829800650964,
+            "bias": 0.005343943595826895
+          },
+          ".4_to_1": {
+            "n": 750,
+            "rmse": 0.042837396495487755,
+            "mae": 0.027250490071033757,
+            "bias": -0.006852265139682435
+          }
+        }
+      },
+      "shadow_ES7": {
+        "stop_epoch": 21,
+        "best_macro_epoch": 14,
+        "best_macro_rmse": 0.06365831938437311,
+        "stopping_used_for_training": false,
+        "minimum_improvement": 1e-05
+      },
+      "device": "Mac CPU FP32",
+      "threads": 2,
+      "elapsed_seconds": 1333.1898997090757,
+      "process_peak_RSS_bytes": 760332288,
+      "artifact_sha256": {
+        "best_window.pt": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+        "best_macro.pt": "0925862665df473fcfc66a02a83fbbde579ee6f5d10b3508fd97617b140fa1ac",
+        "last.pt": "4f5c3816c2c50c9f71ce2c756c9eed339183672c5b5294bcf5e567baa33e0fba",
+        "final_training_state.pt": "0e79ccaf1d35fb9e5ff0a12360c53fc5ea59850c1f300c9290f25a068e4b5c83",
+        "window_inner_predictions.npz": "42b6306b8403c5d970d304d44ea2594ab83743116d4d3a777f578b1a1eaffb34",
+        "macro_inner_predictions.npz": "2eb4b690fd0fbadc69411d3ea8f1397b896ea72519841fd43a21645b193b9116",
+        "last_inner_predictions.npz": "5d9566d71f334e35ef14330239af0a25c2f3227989d639b83cbe544efab5419c"
+      },
+      "epoch_checkpoint_sha256": {
+        "epoch_001.pt": "03a739ef84c3cf0fc07cd4633d38df82d0179ab5b3f27fd45fc00cf6c510f95f",
+        "epoch_002.pt": "2ccaff38c3d1498c557fa5e1195ddefff0c6b4696e8c1d14868959a8c770c9ce",
+        "epoch_003.pt": "125102169821a6319cb61a7335a9503cc7e506eba687f03beeb8a48a4b091e9f",
+        "epoch_004.pt": "0f59d72fcad5a5ac63967e3303a2183b27654257b2719e0e1a6815bcab409a6f",
+        "epoch_005.pt": "5aaa728f10a1001546c81922bae944013d7a78e8600aab0b1d1f444a4cff7bdf",
+        "epoch_006.pt": "19c3af005ac14026a131bb0b3ee7c9510de3cb188c3cc58f85cbbef865c53a88",
+        "epoch_007.pt": "d0600fed30676afb01db2d4cdd81b18d2e9fd667dae8134dc7739cbde2f9a381",
+        "epoch_008.pt": "081900494aa38782f09af91e1548f1e3ce91e5e21423b1f324cf76c13d91b089",
+        "epoch_009.pt": "c3114c477d62a544dd72f0a2506427c39b4fc3d32ccb4061a5820c507a5f794f",
+        "epoch_010.pt": "cd2c7b72a63a583570afa074e754dac5d10c1962593120872f0d887b9b0a7b14",
+        "epoch_011.pt": "1dcce008bdd9ba8d738bb01f1146f445f7747a07197aac79241d64e2a9668896",
+        "epoch_012.pt": "6a5b2c7dc66f12db3151b1a31b710090354c6abf8a49a9d0206b4caca84570ab",
+        "epoch_013.pt": "4f022bcfedea5fbe1ae8e034bcff662c47466f87f1fb63f329843f876165a0ae",
+        "epoch_014.pt": "cc54e54e412fc5bd905e509653b4338cc9b7c1c0872491011d51654590e49cfa",
+        "epoch_015.pt": "c48267cd9a7471f8aa6f5e0c917f90a1e0ead6f4f40fad858c9eafbcb850bf08",
+        "epoch_016.pt": "f32126f5662a2c631948af29cf322825f69c218310709e646d16d0130debfb30",
+        "epoch_017.pt": "a84d98ce45284fcd0b2e088074838d20698de7c6b0cc81b437e9ffa6ac8f92d2",
+        "epoch_018.pt": "3e9fdd9678c06cb8e01a65c05966b55e23c46bc1db1314d077e41df465119933",
+        "epoch_019.pt": "879ac9b5b64ab97ca8ed8555a0a6cd567a003e723ec33d95b455bf8bb982231f",
+        "epoch_020.pt": "74885a29acdeeb5a3a0852a13c3065b615cc737c1e4a36a71a4eac8e760ad5d7",
+        "epoch_021.pt": "641752bd2d758f13667aa827202b5e259924fc8cddfca910f19693e89c742992",
+        "epoch_022.pt": "7c0241b06cbc177d2bc900d3045cd449be64a59372773e89006eee4d06a9b4da",
+        "epoch_023.pt": "d8ae454e132a4222fab898674e44846332882b5d07a056c3ce47c82e8858c0c5",
+        "epoch_024.pt": "30264473b77a5658c9cf887142e15221fd12d6fda552d49c627b90cba360da1e",
+        "epoch_025.pt": "b7a75293c1357d236522f226deb4be8666c722925d1e5fc0d23e2564ef2f5ecc",
+        "epoch_026.pt": "10868b562f61b78b5c0b82be2a043418b77617bef0a8dbb9d2c3d1e5ceaf9461",
+        "epoch_027.pt": "a2a9f5b3bc1cacaa1ce3cacd1929951d6c334913fad0fdacbec7404d0cec8934",
+        "epoch_028.pt": "715f1dd49950b312e24a815cee6c2dd560e45fa055388d678520f6ebe99d587c",
+        "epoch_029.pt": "fc40b7249cdd749cdd8994c620d8253ea1df6afedef1b69213406e6707444770",
+        "epoch_030.pt": "fa350202c5bc371d702dbc8e33000220720735f79b854e82098f75da83b130fb",
+        "epoch_031.pt": "677dad7ac36fa0af5b6b9259f7b0d1cbc4d029848e43a8b2b8d263dbc4e5083a",
+        "epoch_032.pt": "86833bf6229009995cf87b461de63fff838f98fad003783a9339bca468d6a264",
+        "epoch_033.pt": "7bd1cb8fc84befd3789a0f770aad04bee68b8d6124ac8a991f64167bc0370831",
+        "epoch_034.pt": "069b3f0149954df581352d1772fd349b7ddd3741722ff7011f5cb2e2e7de4a09",
+        "epoch_035.pt": "93c68a36a70b3d043c98c2dc062df259cc88ee5336eecfe521973e24085e7c60",
+        "epoch_036.pt": "01521206df4c82d7371cfb0e46406ff7035180d00468c03508d240aa96af1d7d",
+        "epoch_037.pt": "9bd9e8e6e1c105e2afeab282874798d89c7b03d4cae468af0bad2ca4ccdc2ef6",
+        "epoch_038.pt": "d30202b7a975f9bc4380a71a59aa8632a9b6899a0ec5e141353b76b53fa53cb3",
+        "epoch_039.pt": "0cd0adff10950f81d0c95f6388ec51b3e4eeb42be7f9f28b7549084c9ef8f89a",
+        "epoch_040.pt": "0925862665df473fcfc66a02a83fbbde579ee6f5d10b3508fd97617b140fa1ac",
+        "epoch_041.pt": "8bca45929419da7938b619d389d20f00fd4575fbd52690e595b7689b5aa06b4b",
+        "epoch_042.pt": "52f94689417341c8b568cb2dd834caf8c64a1c10d915cdaa3d5b123891a397a0",
+        "epoch_043.pt": "f937b4ff36cddda9b2c1b9a696f5c9dd8e15149dfc37ed544f0b43c5b4bec833",
+        "epoch_044.pt": "fff76f5df02cd78a6d07e11527b0aaaaf77a391e50ff2011ac2a8efc1bf1f402",
+        "epoch_045.pt": "0cdba771b9e0daa41a9df53c4a303a78161d1bd88d5d66edc03ddb7088661803",
+        "epoch_046.pt": "758c0e581ee6dcfe8f5d8eeb4f416b87ea04c9a77d6a54f048fc520718cf31d8",
+        "epoch_047.pt": "da42bb16a7c0a460537d6499b6b42cc9529d2dc987d752ff4da61651349905ae",
+        "epoch_048.pt": "0a3b4993c88fdc0cb833ceebd3c7853bc81d8c44d5c60c739c88400a6e51b328",
+        "epoch_049.pt": "1ffae5c695d5267103d9e8d39c0f1d58b4a2d0a2b6ae095ff8d819eadd686fe2",
+        "epoch_050.pt": "0a387f65da948c34a0bdcf95a6645097252a752ece6c6cbe08cfa093fef2ef75",
+        "epoch_051.pt": "caf13b0af29287a92a6d147ad47e3badfd7b061091c5bcf8546496da1e35e0fa",
+        "epoch_052.pt": "d1f49fb6f90df2f7e0e1a83471147d9f21ce461ce51d4a6c9cb08790446e6a1e",
+        "epoch_053.pt": "3818acc451bbd40d4c92ba8a292b0737f1bce0323f47f32a719db0f790972d8f",
+        "epoch_054.pt": "265afd3f5239c2c7b0e4dcb566a6bb8e61c8442fd825616cea65d7709f90ecb1",
+        "epoch_055.pt": "25acf2324bafd832bb2b40a61d5bff67ba48c5fb19134db0e3ac2c396ace61fc",
+        "epoch_056.pt": "f80937adad6a0878cb85ce4138b24bff5c81eeeaa8308c23f97c3528dc2d9ed7",
+        "epoch_057.pt": "b928bedb0a47f1d191df41327e6205782f0633c89b1135092b41e5fdb625ef06",
+        "epoch_058.pt": "b3f7825d3d1dc3564399e32a469948282238c441f741e2e06ce44c9f6a09d47c",
+        "epoch_059.pt": "af2f5eb9c51646d2a7f2de5ee728ab8ee49f9512fac32475438ce6a455aad378",
+        "epoch_060.pt": "04791c4f0f2a0585a0419eeeaa67da131129e25f0e8e3cf86ba0dfacdf39ed2b",
+        "epoch_061.pt": "3b3c6d8067430a0cbdc5ef20ab0f53749ca74293245ad195839c925c0c213662",
+        "epoch_062.pt": "6de0e73fb27fc64b406ce89f2a521d8abfc9da0f09db28c3c8a778dc22512ff9",
+        "epoch_063.pt": "32bc538556f2b7285d92290d6c33b6aa05874b51efc5284aba671b7c7dd81079",
+        "epoch_064.pt": "1aee2e6029d490bf79f9a228fcf207f1ea3dbafc170f1039aaa2cc0d2574a5db",
+        "epoch_065.pt": "6cfacca471019ff4b639cb812da0c17de5d250743eb36de42807fcb345043916",
+        "epoch_066.pt": "d84b17dfc5b3a68851fa82822b9f5bd26ac74bdc484bab178e5be9ba9307e9d3",
+        "epoch_067.pt": "774c2d05a226a80046840b4056443a1c9c7d1e0173777896c9db3cbec84323a6",
+        "epoch_068.pt": "3a40735948eca097a4c653f86ba9b90b3cf97951867e5d44e4e82a966acd6d83",
+        "epoch_069.pt": "b072a343bb53a1b9b1339c98989e4ef4112fd56a684eca802807d8db93c3d64d",
+        "epoch_070.pt": "f6e279534999b8b8f10151088bc5978a5a2f8f09cf1c36f796afb1bd81664b50",
+        "epoch_071.pt": "5c53e1798a782a383e4dd85d9e693268e8b993de23c38eb5557bf3a81e54dd47",
+        "epoch_072.pt": "4394cca608d65cb99ed5f474b9396350935d905250f6bddf71fff337d2baa46e",
+        "epoch_073.pt": "e40dfff9a11ba46a124a0abd775434b00289dee5055b743bbfad9f68b520f9ea",
+        "epoch_074.pt": "47bff564b9545760e5b3e9b9388324599f91e6bb5f7f1d2105c573cdce96c0de",
+        "epoch_075.pt": "08a3482057abebc0163f02d34353802f6de47a87b1a86e965d531120f96e2491",
+        "epoch_076.pt": "cf90fb02922229a9c41a6908d1497e67f97f62d03d20d8b297bfff6ff9cd7f73",
+        "epoch_077.pt": "757006727dcfbb80dfd562e8198de47e27101d45e5854ffff656010b24173d81",
+        "epoch_078.pt": "045d1353077bffbac21452278b0b6c0c1282d0183d5ebbeeda4c7e3fe02ea53f",
+        "epoch_079.pt": "2281fe493cbdfe61bd3b3dec0044b918edf7e860fcfaec49010c957a526a9dfc",
+        "epoch_080.pt": "101c7ba7c1a4cfb575b6c3ebf85b4c2b759926a8ffccbf9ee9db5973b5443729",
+        "epoch_081.pt": "b35ee513f34187cf37e5e294b53f9ea6e2dd2e286a00e60cdd1127a3d661057a",
+        "epoch_082.pt": "a552cbb119d61a2fa955f2b92658c908494b5c2f29120c846b201bd95f6797ba",
+        "epoch_083.pt": "94c84a3fbbec10eaef2a23813862e48afdbe5eb4f02478be59411f371dd3846b",
+        "epoch_084.pt": "8204af1d92b60d5f8062f2b3c492640a6071b1aa466b2571fb4e7c1d1ac87054",
+        "epoch_085.pt": "b82fc75cf7595e9d9e14c3d4da7d833d4cdb077dd8c72199fb69994a3bcf3dc1",
+        "epoch_086.pt": "4fdc787e388d97377711fdea023732a4384def6fe788cb0b99dc0eaeca1180f6",
+        "epoch_087.pt": "28bd1425940471b7925db40d58e9ec9a4875388d36ffcce074e43d22ee1c45e2",
+        "epoch_088.pt": "f5afff1f4710a682d634426fbb347e87284a22272733f07e52083be50154170e",
+        "epoch_089.pt": "49ad3037ecc451c2ff84c30b0d0b2b37c6c550d0bc1c397dc8681ea9f5068a6b",
+        "epoch_090.pt": "09a40c8fbb1d8da0b02be8e61886aceec32ee70f2b4baeb87ad56c95c55d2576",
+        "epoch_091.pt": "63190d92eb32e8080a190b8bec793a326ecbb2e2901b7cf07feba1cfbcc0d598",
+        "epoch_092.pt": "e9c9be1b0055f5b55b07670b57b6014cf007b3f6c3a3918ea5342f1ffa05620c",
+        "epoch_093.pt": "f11948337c800a47277524567249932ab8171dd109d3e143554c4946fbbb117a",
+        "epoch_094.pt": "cf41fc56422104ce8cefc2843975bdfb0d169b408ce64386c803c9d890f99816",
+        "epoch_095.pt": "2ec40e61070e032c658dba4bd64aa6f1df685dc934124e9a78c07b27ca85b596",
+        "epoch_096.pt": "9e2662e407a022bf05de69d00620b9648e6c64123586cb6c0676b9d75d62e478",
+        "epoch_097.pt": "dbb863e60b932ce74e09455d9e7efa835942878848adcdc561063a4fc008c6f4",
+        "epoch_098.pt": "7da65936a95691c2cdca6512490e5982e37585fa6dc6f9c435582724cef6300f",
+        "epoch_099.pt": "3b3d321c75456a84c33057e70741e7375be4dd94bc2b5cfd1a1467b35a0e8b99",
+        "epoch_100.pt": "4f5c3816c2c50c9f71ce2c756c9eed339183672c5b5294bcf5e567baa33e0fba"
+      },
+      "prior_sha256": null,
+      "heldout_evaluated": false,
+      "scope": "same source pilot retraining; not full5fold, not global minimum guarantee"
+    },
+    {
+      "status": "completed",
+      "arm": {
+        "name": "r6law_relative8_local",
+        "generator": "r6",
+        "channels": "relative8",
+        "global_context": false
+      },
+      "model_config": {
+        "input_channels": 8,
+        "width": 32,
+        "blocks": 3,
+        "dropout": 0.1,
+        "global_context": false
+      },
+      "parameters": 58241,
+      "epochs_run": 100,
+      "optimizer_steps": 6400,
+      "early_stopping_enabled": false,
+      "stop_reason": "completed_100_epochs",
+      "primary_selection": "strict lowest own INNER window RMSE; first exact tie",
+      "best_inner_window": {
+        "epoch": 45,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.06320687013671722,
+          "site_macro_rmse": 0.06325985475424861,
+          "mae": 0.035944551526625915,
+          "bias": 0.004776614860382214,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06562930371856056,
+              "mae": 0.03689315328879889,
+              "bias": 0.004119221325752725
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07682530080997887,
+              "mae": 0.038069689717838036,
+              "bias": -0.004199003787569646
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.047324959734206404,
+              "mae": 0.031633875582899,
+              "bias": 0.009858680009475197
+            }
+          },
+          "presence_auc": 0.8969009987050538,
+          "presence_auc_share_only": 0.8340281103838126,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07580176172126436,
+              "mae": 0.04457075278272858,
+              "bias": -0.007605827983907098
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.0538479622501781,
+              "mae": 0.030674905220843755,
+              "bias": 0.004816213752604846
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.05202832705822585,
+              "mae": 0.029341305278755565,
+              "bias": 0.029341305278755565
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.05178545745970239,
+              "mae": 0.029153105843115423,
+              "bias": 0.029153105843115423
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.04043343840936924,
+              "mae": 0.02287596723632202,
+              "bias": 0.0177849154947537
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.07375785622564153,
+              "mae": 0.048250336151413914,
+              "bias": -0.012551761591569347
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.12035701532659299,
+              "mae": 0.07915625083318716,
+              "bias": -0.0634549593967293
+            }
+          }
+        },
+        "checkpoint": "best_window.pt"
+      },
+      "best_inner_macro": {
+        "epoch": 36,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.06325932774863054,
+          "site_macro_rmse": 0.06320935857558772,
+          "mae": 0.03669035572816938,
+          "bias": 0.006703712293212251,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06574712122810315,
+              "mae": 0.037730215794529245,
+              "bias": 0.006306341405223246
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07684005700606603,
+              "mae": 0.03916609373995188,
+              "bias": -0.002794476331324007
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.047040897492594026,
+              "mae": 0.031924175211022955,
+              "bias": 0.010912700617461019
+            }
+          },
+          "presence_auc": 0.8996741939107965,
+          "presence_auc_share_only": 0.8326976862445971,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07549241650732574,
+              "mae": 0.045037225482187984,
+              "bias": -0.005662940263608628
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.05369191725508977,
+              "mae": 0.03130365456753076,
+              "bias": 0.0069224982339271416
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.05354322236354466,
+              "mae": 0.030877728008085907,
+              "bias": 0.030877728008085907
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.05329457448238117,
+              "mae": 0.03068394471462681,
+              "bias": 0.03068394471462681
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.041618597419134505,
+              "mae": 0.02419037330624474,
+              "bias": 0.019671367067502128
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.07256486021120243,
+              "mae": 0.04759585249072698,
+              "bias": -0.010109723739147997
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.11938314292393325,
+              "mae": 0.07963211271165652,
+              "bias": -0.062033127763849644
+            }
+          }
+        },
+        "checkpoint": "best_macro.pt"
+      },
+      "final_epoch": {
+        "epoch": 100,
+        "metrics": {
+          "n": 1024,
+          "rmse": 0.06344498507438726,
+          "site_macro_rmse": 0.0632636131681067,
+          "mae": 0.036398964531516684,
+          "bias": 0.006265204026852648,
+          "site_slices": {
+            "1 Richards Bay": {
+              "n": 772,
+              "rmse": 0.06595158043244136,
+              "mae": 0.03747350669353683,
+              "bias": 0.0057635587950515925
+            },
+            "2 Durban": {
+              "n": 55,
+              "rmse": 0.07643942290180539,
+              "mae": 0.0381871253755113,
+              "bias": -0.002763127204905124
+            },
+            "5 St Croix Island": {
+              "n": 197,
+              "rmse": 0.04739983617007336,
+              "mae": 0.031688835620352976,
+              "bias": 0.010751642284198294
+            }
+          },
+          "presence_auc": 0.8933591139966532,
+          "presence_auc_share_only": 0.8324848183823226,
+          "family_slices": {
+            "minute_first": {
+              "n": 408,
+              "rmse": 0.07539128433121581,
+              "mae": 0.04471496079283397,
+              "bias": -0.006030888391744606
+            },
+            "short_passage": {
+              "n": 411,
+              "rmse": 0.05407123931218847,
+              "mae": 0.031068115824486202,
+              "bias": 0.006365769621401235
+            },
+            "zero": {
+              "n": 205,
+              "rmse": 0.05415529587127946,
+              "mae": 0.030535805233819525,
+              "bias": 0.030535805233819525
+            }
+          },
+          "target_slices": {
+            "zero": {
+              "n": 207,
+              "rmse": 0.05390227229282068,
+              "mae": 0.03033876096865484,
+              "bias": 0.03033876096865484
+            },
+            "positive_low_to_.1": {
+              "n": 448,
+              "rmse": 0.04171508661804514,
+              "mae": 0.023862426706271877,
+              "bias": 0.019171015117823733
+            },
+            ".1_to_.4": {
+              "n": 281,
+              "rmse": 0.07287878861544574,
+              "mae": 0.04773725986172842,
+              "bias": -0.010653180449360169
+            },
+            ".4_to_1": {
+              "n": 88,
+              "rmse": 0.11910540239068441,
+              "mae": 0.07827135197961423,
+              "bias": -0.06204120072192348
+            }
+          }
+        },
+        "checkpoint": "last.pt"
+      },
+      "best_window_TRAIN_eval": {
+        "n": 8192,
+        "rmse": 0.03337195551063827,
+        "site_macro_rmse": 0.03298242764624438,
+        "mae": 0.021711831031702232,
+        "bias": 0.010857473023254533,
+        "site_slices": {
+          "1 Richards Bay": {
+            "n": 1366,
+            "rmse": 0.042077172210199396,
+            "mae": 0.024926759926258986,
+            "bias": 0.009886774610852135
+          },
+          "2 Durban": {
+            "n": 1366,
+            "rmse": 0.033502686181971775,
+            "mae": 0.021983302206433866,
+            "bias": 0.008622279034783343
+          },
+          "3 Cape_Recife": {
+            "n": 1366,
+            "rmse": 0.028072247570796356,
+            "mae": 0.018872685750158175,
+            "bias": 0.010628366559839978
+          },
+          "4 Bird Island": {
+            "n": 1365,
+            "rmse": 0.030774099866679016,
+            "mae": 0.021081857039479096,
+            "bias": 0.0111874454888743
+          },
+          "5 St Croix Island": {
+            "n": 1365,
+            "rmse": 0.036176824063812514,
+            "mae": 0.024052354541243697,
+            "bias": 0.012725450440601587
+          },
+          "6 Riy_Banks": {
+            "n": 1364,
+            "rmse": 0.027291535984007215,
+            "mae": 0.01935182360413753,
+            "bias": 0.012097947259594637
+          }
+        },
+        "presence_auc": 0.9826195380151523,
+        "presence_auc_share_only": 0.9547288800877041,
+        "family_slices": {
+          "minute_first": {
+            "n": 3225,
+            "rmse": 0.03803560316796249,
+            "mae": 0.026654649057645693,
+            "bias": 0.00962435743517675
+          },
+          "short_passage": {
+            "n": 3329,
+            "rmse": 0.033527987874642194,
+            "mae": 0.02192070993556211,
+            "bias": 0.01170857105819917
+          },
+          "zero": {
+            "n": 1638,
+            "rmse": 0.020899806315669203,
+            "mae": 0.011555575839628256,
+            "bias": 0.011555575839628256
+          }
+        },
+        "target_slices": {
+          "zero": {
+            "n": 1681,
+            "rmse": 0.02075753599105755,
+            "mae": 0.011529614622063743,
+            "bias": 0.011529614622063743
+          },
+          "positive_low_to_.1": {
+            "n": 3381,
+            "rmse": 0.028128676665471166,
+            "mae": 0.019538634041543754,
+            "bias": 0.016530143415809603
+          },
+          ".1_to_.4": {
+            "n": 2380,
+            "rmse": 0.041821799740409,
+            "mae": 0.0295681505178239,
+            "bias": 0.006918738264531166
+          },
+          ".4_to_1": {
+            "n": 750,
+            "rmse": 0.04562357624404314,
+            "mae": 0.029399623606846993,
+            "bias": -0.003722500175499263
+          }
+        }
+      },
+      "shadow_ES7": {
+        "stop_epoch": 43,
+        "best_macro_epoch": 36,
+        "best_macro_rmse": 0.06320935857558772,
+        "stopping_used_for_training": false,
+        "minimum_improvement": 1e-05
+      },
+      "device": "Mac CPU FP32",
+      "threads": 2,
+      "elapsed_seconds": 1247.9469768330455,
+      "process_peak_RSS_bytes": 748027904,
+      "artifact_sha256": {
+        "best_window.pt": "78d39adc6ac026c3664dc982a4303bce5573768663087bb9f3db6eb4f1b4cd1c",
+        "best_macro.pt": "8ad7a9b039b82502c0040d5c0fd764eb0bb11d3817b5d691426fdce25b64df01",
+        "last.pt": "48fc4a2e767465a6f5d40360509d26d61801d7ffe3854cfe4b8fb6b57e695541",
+        "final_training_state.pt": "ab44d6b11191f7e7cc8c7b73e88f5ad108687d734b6e032381ddb1ddae886089",
+        "window_inner_predictions.npz": "ff2a083f17cf6670adf556677b187cd4537bb3626595240dc8d7f363c93a3bc8",
+        "macro_inner_predictions.npz": "676fd5f5353d8193ddcee1e09fb7c0510d38987929b78af112c2172392f78f81",
+        "last_inner_predictions.npz": "140ceb2d300ec897ca5d5110c20f62e9c528ad35d004e69a878380aa25195493"
+      },
+      "epoch_checkpoint_sha256": {
+        "epoch_001.pt": "3c4745fdab39253263e3bca3b85fd4b8488be727692d7059d742f43e4def5d72",
+        "epoch_002.pt": "6677f5b270360e4ad38d7fb5d7dd8a13c87932652282b276676513569c7764c3",
+        "epoch_003.pt": "c26c1ae623260b22511d2e11994ea1816013d62adf1897de865ea7a9c239ec63",
+        "epoch_004.pt": "445a437d7ab23d007fd7cff5cffe007ff9efbce3f684e2ce0a3d517a1215e73d",
+        "epoch_005.pt": "c27d3d78ed8daa9c00e98b49744d6deea8610d87914938f2428d0eed97045596",
+        "epoch_006.pt": "0721978a9a7905fa56dc7eb19c9462e1f988f8fcb237dba4e835629a859b7df8",
+        "epoch_007.pt": "d158f7f018d7b07baf9ebd5f66da01e7fa0a80e0022f69e388388fd134ee4a18",
+        "epoch_008.pt": "a9f6f4506b540ed6410fd480c33aa425ff0c255e64a26d6ec1a99d4e05610132",
+        "epoch_009.pt": "b81a9192b7833c87d5c79d65889628958b762fb46b06731b277e69e38c1d7d12",
+        "epoch_010.pt": "9cbddeabd9e951a8a44756c5e0bb68c9eddaac81c54ef7ef57ac02124b97da0d",
+        "epoch_011.pt": "f19271b40e808ed14135ef36ca089b54a143eecb8ab668d9e19ff3f9b53fe4fc",
+        "epoch_012.pt": "d9161d27f06643ba9f4044129e0faedbc5b5e0fbaea0eb655e854ed8849dbfd7",
+        "epoch_013.pt": "8cfc95a72507e6832f169b808367063aea9ec877208125bfdd691d16c0d1c568",
+        "epoch_014.pt": "71275e9f5bc57438597b241d6a9308bdb9ed896ba4db1438c688db465bfb32d0",
+        "epoch_015.pt": "72f013c75d33b79feb3e8a5f69f28e3aaef50aab7cc99fe5699ff0557db14e60",
+        "epoch_016.pt": "58e30bfeb6ebfd9c107a025c5dddaa2828475b28a0865b69031067e32214597c",
+        "epoch_017.pt": "fe04779400d239bf8b09149ca03302a6134a71043cfdaa0aed6355e7ca6e2ec4",
+        "epoch_018.pt": "129d2053a08ddce094e6db9d08957635ad9d3322a200de7923070a637f5c8788",
+        "epoch_019.pt": "2d275e452f39abac0fcc4d08cd2ccac4c792d7f8196e9987e0da524796c38042",
+        "epoch_020.pt": "97938fa92255b446b428c0e9558e3aba977e3a10eb3864f5d2c16b50a24e69e9",
+        "epoch_021.pt": "7a763395521a1b50a0f1fd25308e245625a61179e6368a0229ac280578508ae8",
+        "epoch_022.pt": "a52258627f63f6cd4a402e97be167ab76b62ad1368ffed3b60bcc35404a532f5",
+        "epoch_023.pt": "2906d952f35bbda356dc7fbbb39e002f8589b96c8c20fb8c37b3842b1e587bee",
+        "epoch_024.pt": "f4d7a63c0df351051e226d957ce979213e58af05b00ce0cf07d73a57d26d2a62",
+        "epoch_025.pt": "fc02f0ca746e8c8a002ca15ac991b067e927e536bc35167cb68ecc4d7d13c57b",
+        "epoch_026.pt": "4c03ec8fd35b310613ac53cb53bf25f700ddbd0c2de4021452d89bf56789e412",
+        "epoch_027.pt": "a4993919210d173c7d0578436bbea1eb072d326cfb569d954548299d35bb4719",
+        "epoch_028.pt": "a6b009105f170c77fd837b238b7be05f4749e93c778e2bff58071b6feaa36525",
+        "epoch_029.pt": "b59214166e14de2cba9bb4f40da5210887786cc38b3feb1fa9f6d64409061619",
+        "epoch_030.pt": "f971979e46c1dc131d7b931330adc0279f515b3b823541e354549c355c1d42bf",
+        "epoch_031.pt": "e83b660e3cbc2e7014c2233e2aec73cf11fc1a2bb6f8d99f29daedce01cfda9a",
+        "epoch_032.pt": "ed33ae1f171d75f5bd0beca3be626e945fd7d0b2f9f21989b1c337c4881ed5f3",
+        "epoch_033.pt": "f7c8dc4ac3d6db63ba91732b7f530828b0dd2681a2c20df898f2ba73956e4760",
+        "epoch_034.pt": "2388dc7eb89f5862330423137754c05a6aa145ce94f6a22f5117ac44f583be4f",
+        "epoch_035.pt": "e7caf7c115164c44669973ed041c9038be65118f2865dce5e12b6aa05cdf24a8",
+        "epoch_036.pt": "8ad7a9b039b82502c0040d5c0fd764eb0bb11d3817b5d691426fdce25b64df01",
+        "epoch_037.pt": "ff4fde2d31db93cb146768a52bb45d86898a95a6c5c1ecb3b6d5b935e831fd5e",
+        "epoch_038.pt": "b12025674f484e06fd18454b2372198380c85f16c46a2900584d2fc1fd3e7dcc",
+        "epoch_039.pt": "ccc782b8d657c1ebd3aa35f4fdd7d05523d6749cdaf297a9e264244da00b8b7d",
+        "epoch_040.pt": "4cf48f7e8578ade5c3b852c9c1d002427d9c8c666cb820102fcedbf95c61ed25",
+        "epoch_041.pt": "12a04d1058b064a87ad774ba912cc3206fd394db551089cfcd6e355092b0cff4",
+        "epoch_042.pt": "c07a288167cb9bca2f587a3d2b27a093b48722ed4d3188bbf1d593e3c7cfecd2",
+        "epoch_043.pt": "f1ad9d7895ab41aec2a789248ca5e9c3f9065aafc080ea8c3eb2ec875c4bc88d",
+        "epoch_044.pt": "06ef18253e1af7c1360be0aad74ced733ec4b750bcb76e0affbd10831cb95900",
+        "epoch_045.pt": "78d39adc6ac026c3664dc982a4303bce5573768663087bb9f3db6eb4f1b4cd1c",
+        "epoch_046.pt": "f5085224e16648b26dc1a3bfcc0e640d7a09b84c4d680688e4a958075c287353",
+        "epoch_047.pt": "7eb076b68639216b42cbb5d2c8d4a209d005ec82f0b38e395b955d98c880a69f",
+        "epoch_048.pt": "f163d105a202e4efa3a159700f4467e821ba8532b4778dd95e0f4301f1e1fcb8",
+        "epoch_049.pt": "4f7cb4c8dfb9f7ed39446e07d95d627e1fa1c61a1822837e4901ece0541e5214",
+        "epoch_050.pt": "ac156400544c4a479c7935bcae0a05ec021606a6cfbfe5aee678b61297c1dfbb",
+        "epoch_051.pt": "c8a4f64b80cc23fcf50299fc20b0d287c5d7c2f4fa89bad154dfb2a36fef3248",
+        "epoch_052.pt": "ff489981379e5e496cb492ac465f5d900aaa58602f7fde33dfd6c9bd56811cbd",
+        "epoch_053.pt": "283d927394be1de14bb1668b239cb8cf7cb89230d39739f8f9f1a7baeed01837",
+        "epoch_054.pt": "b2e229903d85dcce95379b11522ec43e881cd8be48366477b3c5fc8f066e901b",
+        "epoch_055.pt": "4ad9b6fc00505177c15908d14bf107177c358ecdace73ce845e2b1b58bb86002",
+        "epoch_056.pt": "aabd94aaa124fab304bbf11c20dd4313cddf30d652aa626843e3fb005c70b5b1",
+        "epoch_057.pt": "a9770a34de0d58e982dba6379d4d81a7d885313dd9fcd0d7fafeb8febe1879eb",
+        "epoch_058.pt": "e97d523601e5aaac42d35f99e09c5faa98f152d9fc758b2557c99f267c122f3d",
+        "epoch_059.pt": "8ff999fc602f31ff8c791e9b66689f246df6bb914ea532aea4145dae217ef32e",
+        "epoch_060.pt": "f831005e00d6862cc225912310e31ca6e677de3983e956fa77286e1b024c66e2",
+        "epoch_061.pt": "1cd1ad897765c871929580f48c7474ab61b28ee2b4f6f08e3dd31cb0f169c3d3",
+        "epoch_062.pt": "d21e7773719966fd19af3363684171b20f6662bd4fc239c80a1748c7bbc0687a",
+        "epoch_063.pt": "35ef701d1758cbf3a708dbdbd669ffa692dd58a84dc39a9d72d2e7b27d04c9bd",
+        "epoch_064.pt": "b571f438e9fe9e6e805aa6de5290598f89bacb59478abca3e1c526e331715db9",
+        "epoch_065.pt": "d8cbdf53db83f94984ee8a9d0ad50c157b0cfe24487a9e51a419ae15780c4086",
+        "epoch_066.pt": "24881c18df9b48fa62cf95ee9c9b36dc5a3fdabb04a4cf76fb9b0fbba71931cd",
+        "epoch_067.pt": "dc903ab5074794f35fe0809547b1b15b1d67bbd4409434f67b13dd3ada72fced",
+        "epoch_068.pt": "3c38096184f7ebb5a626cae1e425a5ce0a542e21cfc9253f07d09b9fc917b305",
+        "epoch_069.pt": "e59b0764805ee74a0a5727bcd309bc81166b82b278f767d3c73e8e907312f2e2",
+        "epoch_070.pt": "b553562eb8c0913016f5c1c1c539ab9b696aad91d115f0c6f72ef5767dfea467",
+        "epoch_071.pt": "4434d7a48d7a93c71bbf25f315d0bf3e2b5cd366d11f4d53fa3f2b125b953827",
+        "epoch_072.pt": "52e5428cce61a61e8e29c51c6e018dc7b7f9286f8cad9996740c1a6f5bc71e82",
+        "epoch_073.pt": "82a861d54e34e8e8fc126bb60ee6f109b1ef4389f1e5d717e57cf91d151d05f7",
+        "epoch_074.pt": "d5b23b7086647ab405a7d634a128095c776d572dfc3812c629ce9ac329344a7a",
+        "epoch_075.pt": "79ea3cb309a5979ee4f8812fcbbd4d94fcb0e4da543611363025b90f68d64b09",
+        "epoch_076.pt": "ecce3f68bc27386e15c2377a6c4d58b15a3ddd05d05527fef5d05224e9bbcf26",
+        "epoch_077.pt": "b9c5585c304acf6178ba90915c45bf5073287ace67aba2fc605d147e6947329d",
+        "epoch_078.pt": "c2b867403f6982ec5978c86786390bcadacce0c4a879372903d26233e9893146",
+        "epoch_079.pt": "0b32eb153205d0ed7f6a11e032a0b54dad26d60f4dcbe1f866d86cc4f94fb633",
+        "epoch_080.pt": "8c8eceb57d64c19af37ec8f1cb37471ba973ba5caeb42d5e882ffbecbaee6b2a",
+        "epoch_081.pt": "70c1cdfe797de734886ee60371f36b9a12ccff7773306c13eb5d39b5e1932fbf",
+        "epoch_082.pt": "9ba402bad8b1df3ba95a9fc15496ec650e17152fa19d7036b4f53d06daeca259",
+        "epoch_083.pt": "b4738b78309b17858625565c4027d293fa85238c4dba25f13a2f6d7f5b19ae7a",
+        "epoch_084.pt": "76031778f35ed024c334f73cdc7aa9899f6c4f18d1479b9c724d5f590d1b79e2",
+        "epoch_085.pt": "7b1fbbec20d784297bb6a9235650cda75ec9246a312514dd5cd306eeacb27a70",
+        "epoch_086.pt": "f41a8375bd21e9c312758ce5617bdb64cf95a59962063e55111ed01391c0d213",
+        "epoch_087.pt": "269ad847d8619ce6361de8efb9e0bf74199abbc306baf532473d68a141cc4511",
+        "epoch_088.pt": "245a45f88ba9c0707e5ef9080dbe45ed7f451003883b5dcff0e33a78ccc6270e",
+        "epoch_089.pt": "fa198e0f944e59b309b278dc4d6408e1d6e1a1c6bc6dadc69e6dab25454f40c6",
+        "epoch_090.pt": "43c89eb5631394a0e23dcea375dd89fb475bf049f9200679190adf74c4de114f",
+        "epoch_091.pt": "8e8eb89d480bd597b955cab3d32643189e10ccd318ffb7119e8c27de915452e8",
+        "epoch_092.pt": "06f61c211e53daf2cf55c5996015fea0ebfd8c6475255ef43eb8cc8b8e9d42fe",
+        "epoch_093.pt": "6b8ba0b1c2f4e36eb10e171a57679b2117c8504d182be08991dbb5ed23a7378e",
+        "epoch_094.pt": "cec6218cd589abee0e64d4ef92d0ed4b1fcf870f5683ea39d44ef955c0bdc3fe",
+        "epoch_095.pt": "081ead23d9501ada2bc96d79376f719ea3c070e22bef1e2dea44cdcbb3fb5b76",
+        "epoch_096.pt": "a3cb30b2e94f46a920028d3230f4135465fdd17b808ff211353142daf85ed9b0",
+        "epoch_097.pt": "1c60cad2593011dfdd23da6472b71cb557fcbb9bdcdc6ffd1798fc25eef7b63f",
+        "epoch_098.pt": "96fe72ec2e4434e840ccdb9e28cb46de844c476e5142a31781a4e39b70474a93",
+        "epoch_099.pt": "340ed37807cc02bb45f9b34486eb099e13fc3b740cbe43ebef7928acebceda3b",
+        "epoch_100.pt": "48fc4a2e767465a6f5d40360509d26d61801d7ffe3854cfe4b8fb6b57e695541"
+      },
+      "prior_sha256": null,
+      "heldout_evaluated": false,
+      "scope": "same source pilot retraining; not full5fold, not global minimum guarantee"
+    }
+  ],
+  "elapsed_seconds": 1353.8598885415122,
+  "scope": "five fixed CPU CNN arms100epochs each; no global optimum guarantee",
+  "heldout_evaluated": false,
+  "Test_GPU_or_submission_used": false,
+  "old_heldout_panels_already_seen_and_not_blind": true,
+  "training_end_utc": "2026-10-25T20:56:53.472226+00:00"
+}

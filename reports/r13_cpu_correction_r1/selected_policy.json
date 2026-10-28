@@ -1,0 +1,26 @@
+{
+  "format": "r13_cpu_selected_policy_v1",
+  "selected_arm": "highshareP1",
+  "regression_weights": {
+    "CNN": 0.5,
+    "tree": 0.5
+  },
+  "score_classifier_weight": 0.5,
+  "gate_rmse": {
+    "baselineP0": 0.09571417551967994,
+    "baselineP1": 0.09032824500111401,
+    "highshareP0": 0.10091281269532443,
+    "highshareP1": 0.08958635666456598
+  },
+  "selected_arm_gate_score_AUC": {
+    "0.0": 0.88455,
+    "0.25": 0.9056,
+    "0.5": 0.9073875,
+    "1.0": 0.90295
+  },
+  "selection": "regression lowest gate RMSE; selected regression arm score highest gate AUC, first canonical tie",
+  "freeze_sha256": "909469116d48c8f92c460817d4a4a5fc09e9bd014719f83d9dcccaecc866dc32",
+  "development_not_blind": true,
+  "Test_or_LB_tuning": false,
+  "policy_sha256": "23afd37b61331d3b9b51d06614a7d8cc5e2c79a0ebb6a62bf06b96511cfe03ce"
+}

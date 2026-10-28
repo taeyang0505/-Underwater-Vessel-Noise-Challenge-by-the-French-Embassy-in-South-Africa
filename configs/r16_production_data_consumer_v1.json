@@ -1,0 +1,76 @@
+{
+  "version": "r16_production_data_consumer_v1",
+  "data_version": "r16_production_data_v1",
+  "global_manifest": "data/synthetic/r16_production_v1/manifest.json",
+  "global_manifest_sha256": "d1312125505a21e0e01739167949afe9d67243599dec86995b97a0deb882cd0d",
+  "fold_manifests": {
+    "0": {
+      "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_00/manifest.json",
+      "manifest_sha256": "7ea98290fd08204e4966554b19ab50520d5262acf0bc2f9c152d44b6540e3728",
+      "qa_path": "data.nosync/synthetic/r16_production_v1/fold_00/DATA_QA.json",
+      "qa_sha256": "48d0b4ad5fc1e38059034d09637180885b68391e0ae04062aea5272cbb05b487",
+      "train_n": 61446
+    },
+    "1": {
+      "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_01/manifest.json",
+      "manifest_sha256": "19fe88a3623a334c86e8633cd5e146eb686d74f67ed992f72d98828e8d2325b3",
+      "qa_path": "data.nosync/synthetic/r16_production_v1/fold_01/DATA_QA.json",
+      "qa_sha256": "622e59d1c268f7f6e6cb3ebe5577779a536c0ba6f66c3a2878bbc09a922baa4b",
+      "train_n": 61368
+    },
+    "2": {
+      "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_02/manifest.json",
+      "manifest_sha256": "c75d712552b151cee5daad8affb798938c2467aee9e089f339cf6307e4c9f847",
+      "qa_path": "data.nosync/synthetic/r16_production_v1/fold_02/DATA_QA.json",
+      "qa_sha256": "276d3f89cdeeb85b4120df35144f42e5bb245401268fd80cd7e268ff106af731",
+      "train_n": 61259
+    },
+    "3": {
+      "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_03/manifest.json",
+      "manifest_sha256": "a3106034a52f0adf7ca89e11d305c4d3888155f16299ef71b82a71ca10e16056",
+      "qa_path": "data.nosync/synthetic/r16_production_v1/fold_03/DATA_QA.json",
+      "qa_sha256": "ea3538e46d84adcecbbf75e489788d9a4cbc876f72540e0b36a9edcf7fd4dfab",
+      "train_n": 61546
+    },
+    "4": {
+      "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_04/manifest.json",
+      "manifest_sha256": "640a765d36ecfdd05815de380d37984a09847c0c9a5cf7893b89856a24eadf28",
+      "qa_path": "data.nosync/synthetic/r16_production_v1/fold_04/DATA_QA.json",
+      "qa_sha256": "39d24685d0b708db108cb146e71e24ce86ac8478fb0d872c6a9cf9e314da3d18",
+      "train_n": 61685
+    }
+  },
+  "roles": [
+    "train",
+    "selection",
+    "cv_validation",
+    "ensemble_fit",
+    "ensemble_gate",
+    "report"
+  ],
+  "shared_selection": "original R16 local_fit2400; development not OOF",
+  "input_channels": "R16 relative8; no PCA/LFanchor",
+  "forbidden": [
+    "Test tuning",
+    "full_smooth15",
+    "highshare forcing",
+    "R14 q0/PCA/LFanchor input"
+  ],
+  "source_code_sha256": {
+    "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+    "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+    "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+    "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+    "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/r16_production_data.py": "81853811a1820d15e935141795f6611d035843f5d249fb80da246cbdadb84067",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda",
+    "ops/r15_forward_prototype.py": "595882595fc8fd1cc8da16049739c9ed6c549eee20a922515d798bbb9a892a5a",
+    "pipeline/background_cv_r9.py": "0d2562bc41fc9f823bc2b5eee90cd7e80e0eac9c715788894487714eb58d2e52",
+    "pipeline/vtuad_reference_r4.py": "2703465f3d8021a4a8cc4d335693ed061110613ccc0482a4acb44ce965388f32"
+  },
+  "qa_path": "reports/R16_PRODUCTION_DATA_INDEPENDENT_QA.json",
+  "qa_sha256": "4421610b4569ad90d08169a75ee75f2cfe0605c13a5ce9a987c0abca9045933f",
+  "model_training_settings_owned_by_parent": true
+}

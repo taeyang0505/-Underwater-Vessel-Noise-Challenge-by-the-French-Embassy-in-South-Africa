@@ -1,0 +1,179 @@
+{
+  "ready": true,
+  "full_training_executed": false,
+  "n_splits": 5,
+  "oof_examples": 15000,
+  "checks": [
+    {
+      "fold": 0,
+      "data_directory": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_physics_v2_r1/fold_00",
+      "readiness_sha256": "ce60637cc25021f68c2106a92dd04b9513a938c6b226721cbf10ebd49d310d49",
+      "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+      "outer_examples": 3000,
+      "training_verification": {
+        "readiness_manifest_sha256": "ce60637cc25021f68c2106a92dd04b9513a938c6b226721cbf10ebd49d310d49",
+        "data_package_hash": "7328c6a3d0f45081753f02fb0ad0187f8198680b874b9c0d0fb86cf81cbea2f1",
+        "splits": {
+          "train": {
+            "examples": 53244,
+            "max_cell_target_error": 3.6182728296862976e-7,
+            "npz_sha256": "28b5841227b5b77bf409003ad388b0bd6dee82958ad328587d8b1335c04761e5"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.1195487021351553e-7,
+            "npz_sha256": "5648b6509b70b0e3c7495fe3ec538c4574d51b8577d53f3884b182f2516823da"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "inner_validation_metadata_original.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "train_metadata.parquet",
+          "training_background_order.npy",
+          "validation_metadata.parquet",
+          "validation_metadata_original.parquet"
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "data_directory": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_physics_v2_r1/fold_01",
+      "readiness_sha256": "41db3b5943113415dd0826426610e410a94465f20dfb1df2ab192c678334989c",
+      "data_package_hash": "738eadbd0660ee591d3b80317cbe560f5e5bba262285d997ea7c6673d997b095",
+      "outer_examples": 3000,
+      "training_verification": {
+        "readiness_manifest_sha256": "41db3b5943113415dd0826426610e410a94465f20dfb1df2ab192c678334989c",
+        "data_package_hash": "738eadbd0660ee591d3b80317cbe560f5e5bba262285d997ea7c6673d997b095",
+        "splits": {
+          "train": {
+            "examples": 53315,
+            "max_cell_target_error": 3.3501653584622204e-7,
+            "npz_sha256": "3383f623b56a7afffeed66d1b9b576f66189ddfe4c1f95638fd0560dada2f180"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.749328866820001e-7,
+            "npz_sha256": "383315810cad64f7bbe8f778e72eaad8b6ae9157720c0d98df3348bf8f1613e8"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "inner_validation_metadata_original.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "train_metadata.parquet",
+          "training_background_order.npy",
+          "validation_metadata.parquet",
+          "validation_metadata_original.parquet"
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "data_directory": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_physics_v2_r1/fold_02",
+      "readiness_sha256": "3746ad88acf7025562a3c015745c6b5361ac4cc1b97b8933d0c534872e94cd6c",
+      "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+      "outer_examples": 3000,
+      "training_verification": {
+        "readiness_manifest_sha256": "3746ad88acf7025562a3c015745c6b5361ac4cc1b97b8933d0c534872e94cd6c",
+        "data_package_hash": "6c355a33315f72c1fb151d5e227215a0936f38443a88035e059b0e8c9b89df2c",
+        "splits": {
+          "train": {
+            "examples": 53522,
+            "max_cell_target_error": 3.637663491540266e-7,
+            "npz_sha256": "50855b1d4c732e3cfa645a032be2742e852bf03480b529342be45a6c884f9f90"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.151468830342452e-7,
+            "npz_sha256": "eaf4fc9a65c40f2ceb82a1b7fc56b5e9967515c1b64abe3dd531fe0235d3b8e2"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "inner_validation_metadata_original.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "train_metadata.parquet",
+          "training_background_order.npy",
+          "validation_metadata.parquet",
+          "validation_metadata_original.parquet"
+        ]
+      }
+    },
+    {
+      "fold": 3,
+      "data_directory": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_physics_v2_r1/fold_03",
+      "readiness_sha256": "f3987cbc08347dc50875cacfc536661bbb923f87ab3afee8682f429e73f436fa",
+      "data_package_hash": "ea5fb87b41fd258afe92cdd7f768631d7914b54b010cc9d25a311f8e39ff9f93",
+      "outer_examples": 3000,
+      "training_verification": {
+        "readiness_manifest_sha256": "f3987cbc08347dc50875cacfc536661bbb923f87ab3afee8682f429e73f436fa",
+        "data_package_hash": "ea5fb87b41fd258afe92cdd7f768631d7914b54b010cc9d25a311f8e39ff9f93",
+        "splits": {
+          "train": {
+            "examples": 52998,
+            "max_cell_target_error": 3.4134614712577616e-7,
+            "npz_sha256": "f7dd7f26449ca3c0e95c1ca44418ba629bbf811608d79221898d7034f7aa5ec5"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.8921724898610677e-7,
+            "npz_sha256": "5539ad9251292688173137a11112db503b65757962cf8e3c5a413c09b06c9512"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "inner_validation_metadata_original.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "train_metadata.parquet",
+          "training_background_order.npy",
+          "validation_metadata.parquet",
+          "validation_metadata_original.parquet"
+        ]
+      }
+    },
+    {
+      "fold": 4,
+      "data_directory": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/data.nosync/synthetic/group_cv_physics_v2_r1/fold_04",
+      "readiness_sha256": "cce5f9b0b1dbe1be879a5729f92f63739fde04cf67c2280f1135b8b2aa2c87b3",
+      "data_package_hash": "9c7ed6327baa3b82ce4bb92bfa087d326f664c225af34aba05f47cb06679bd5a",
+      "outer_examples": 3000,
+      "training_verification": {
+        "readiness_manifest_sha256": "cce5f9b0b1dbe1be879a5729f92f63739fde04cf67c2280f1135b8b2aa2c87b3",
+        "data_package_hash": "9c7ed6327baa3b82ce4bb92bfa087d326f664c225af34aba05f47cb06679bd5a",
+        "splits": {
+          "train": {
+            "examples": 54758,
+            "max_cell_target_error": 3.142711298975698e-7,
+            "npz_sha256": "04184709009d69f996c18c9ebc9073e0ad01678ea017b691296b100d55edfcdc"
+          },
+          "validation": {
+            "examples": 3000,
+            "max_cell_target_error": 3.138175607708682e-7,
+            "npz_sha256": "2e11d9431fa2b09b2d6059f5104768211ab0f87e75e6515528b594e362ce06f8"
+          }
+        },
+        "unopened_nontraining_entries": [
+          "inner_validation.npz",
+          "inner_validation_metadata.parquet",
+          "inner_validation_metadata_original.parquet",
+          "outer_validation.npz",
+          "outer_validation_recipes.json",
+          "train_metadata.parquet",
+          "training_background_order.npy",
+          "validation_metadata.parquet",
+          "validation_metadata_original.parquet"
+        ]
+      }
+    }
+  ],
+  "cv_manifest_sha256": "76f5954676a2f0552f5dcf6116ddcbb5195fc9f6afb54ebfeaaf9279ba2df067"
+}

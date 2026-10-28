@@ -1,0 +1,289 @@
+{
+  "format": "r7_anil45_local_source_comparison_v1",
+  "status": "completed_read_only",
+  "created_utc": "2026-10-25T21:37:35.502215+00:00",
+  "public_post_evidence": {
+    "method": "Parent complete logged-in Whale accessibility-tree observation; this agent reads saved structured observation",
+    "file": "reports/R7_ANIL45_POST_OBSERVATION.json",
+    "sha256": "af11d05b7f30bd1b51ac0705fd0f682c9ad7dc4ee11ca53ab0c7199fe9616a71",
+    "source_url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/discussions/35531",
+    "author": "Anil45",
+    "declared_files": [
+      "vtuad_strict_wav_vessel.zip.part01–03",
+      "vtuad_strict_wav_background.zip",
+      "12 per-class archives named vtuad_wav_<class>.zip from the same record"
+    ],
+    "comments_displayed": 0,
+    "not_disclosed": [
+      "training model architecture and optimizer",
+      "synthesis recipe and reference scaling",
+      "which exact clips or groups were actually used",
+      "training/validation split",
+      "ensemble or postprocessing",
+      "number of local experiments"
+    ],
+    "rank_score": "User/parent supplied rank2 and score.904607408; not independently verified or converted into an RMSE by this audit"
+  },
+  "independent_primary_web_verification": {
+    "url": "https://zenodo.org/records/23037895",
+    "version": "1.3.2",
+    "DOI": "10.5281/zenodo.23037895",
+    "licence": "CC BY4.0",
+    "strict": {
+      "vessel_scenarios": 509,
+      "dedicated_backgrounds": 16
+    },
+    "per_class_archives": 12,
+    "view_caveat": "Strict interval re-cuts and older archive-aligned class containers describe the same525 scenarios, not extra independent recordings; v1.3.2 documents wrap-around extensions in some older containers",
+    "same_record_does_not_reveal_author_clip_subset_or_training_method": true
+  },
+  "local_downloads": {
+    "WAV_archive_volumes": [
+      {
+        "file": "README_vtuad_strict_wav_vessel_parts.txt",
+        "url": "https://zenodo.org/records/23037895/files/README_vtuad_strict_wav_vessel_parts.txt?download=1",
+        "bytes": 1152,
+        "md5": "43bab1eba183cdfac74130cdfa135620",
+        "verified": true,
+        "current_local_bytes": 1152,
+        "MD5_recomputed_in_this_audit": false
+      },
+      {
+        "file": "vtuad_strict_wav_vessel.zip.part01",
+        "url": "https://zenodo.org/records/23037895/files/vtuad_strict_wav_vessel.zip.part01?download=1",
+        "bytes": 1237445900,
+        "md5": "6e3fe8245218faa4f94868531e272344",
+        "verified": true,
+        "current_local_bytes": 1237445900,
+        "MD5_recomputed_in_this_audit": false
+      },
+      {
+        "file": "vtuad_strict_wav_vessel.zip.part02",
+        "url": "https://zenodo.org/records/23037895/files/vtuad_strict_wav_vessel.zip.part02?download=1",
+        "bytes": 1237445900,
+        "md5": "af6408581f6981f45ffdbce811e9f558",
+        "verified": true,
+        "current_local_bytes": 1237445900,
+        "MD5_recomputed_in_this_audit": false
+      },
+      {
+        "file": "vtuad_strict_wav_vessel.zip.part03",
+        "url": "https://zenodo.org/records/23037895/files/vtuad_strict_wav_vessel.zip.part03?download=1",
+        "bytes": 1237445899,
+        "md5": "dfa59398483a651765a6265df76febad",
+        "verified": true,
+        "current_local_bytes": 1237445899,
+        "MD5_recomputed_in_this_audit": false
+      },
+      {
+        "file": "vtuad_strict_wav_background.zip",
+        "url": "https://zenodo.org/records/23037895/files/vtuad_strict_wav_background.zip?download=1",
+        "bytes": 926037631,
+        "md5": "d28ad0fb6ccc98341ba4f7e953d9c68f",
+        "verified": true,
+        "current_local_bytes": 926037631,
+        "MD5_recomputed_in_this_audit": false
+      }
+    ],
+    "physical_archive_volume_count": 4,
+    "logical_ZIP_streams": 2,
+    "downloaded_archive_bytes": 4638376482,
+    "vtuad_download_complete_recorded": true,
+    "per_class_archive_local_inventory_count": 0,
+    "per_class_archives_in_download_manifest": 0,
+    "per_class_archive_consumption_paths_in_current_prepare_pipeline": 0,
+    "precomputed_logmel_used_by_current_band_pipeline": false,
+    "metadata_csv_present_in_current_project": false,
+    "anonymized_registry_used": true
+  },
+  "conversion_inventory": {
+    "clips": 525,
+    "archive_role_counts": {
+      "vessel_passage": 509,
+      "ambient_control": 16
+    },
+    "all_provider_per_WAV_SHA_verified_recorded": true,
+    "native_header_duration_seconds": 151368.0,
+    "base_split_by_archive_role": [
+      {
+        "archive_role": "ambient_control",
+        "split": "calibration",
+        "clips": 1
+      },
+      {
+        "archive_role": "ambient_control",
+        "split": "domain_holdout",
+        "clips": 4
+      },
+      {
+        "archive_role": "ambient_control",
+        "split": "excluded_cross_day_conflict",
+        "clips": 1
+      },
+      {
+        "archive_role": "ambient_control",
+        "split": "train",
+        "clips": 9
+      },
+      {
+        "archive_role": "ambient_control",
+        "split": "validation",
+        "clips": 1
+      },
+      {
+        "archive_role": "vessel_passage",
+        "split": "calibration",
+        "clips": 5
+      },
+      {
+        "archive_role": "vessel_passage",
+        "split": "domain_holdout",
+        "clips": 11
+      },
+      {
+        "archive_role": "vessel_passage",
+        "split": "excluded_hull_day_conflict",
+        "clips": 260
+      },
+      {
+        "archive_role": "vessel_passage",
+        "split": "train",
+        "clips": 228
+      },
+      {
+        "archive_role": "vessel_passage",
+        "split": "validation",
+        "clips": 5
+      }
+    ],
+    "vessel_archive_weak_background_label_count": 22,
+    "dedicated_backgrounds_are_not_that_weak_label_subset": true,
+    "audio_arrays_or_WAVs_opened_this_audit": false
+  },
+  "actual_admitted_pools": {
+    "old_R2_CV_eligible_VT": {
+      "clips": 218,
+      "exclusion_from_full525": 307,
+      "excluded_split_counts": [
+        {
+          "split": "calibration",
+          "clips": 6
+        },
+        {
+          "split": "domain_holdout",
+          "clips": 15
+        },
+        {
+          "split": "excluded_cross_day_conflict",
+          "clips": 1
+        },
+        {
+          "split": "excluded_hull_day_conflict",
+          "clips": 260
+        },
+        {
+          "split": "train",
+          "clips": 24
+        },
+        {
+          "split": "validation",
+          "clips": 1
+        }
+      ],
+      "ineligible_train_validation_25_includes_10_dedicated_ambient_and15_vessel_role_nonpositive": true
+    },
+    "R4_R5_allfold_selected_pool": {
+      "clips": 119,
+      "groups": 22,
+      "source_roles": {
+        "vessel_passage": 119
+      },
+      "dedicated_ambient_used_as_positive": 0,
+      "excluded_within_eligible_pool": 99,
+      "fold0_train": {
+        "clips": 69,
+        "groups": 12
+      },
+      "fold0_inner": {
+        "clips": 25,
+        "groups": 5
+      },
+      "fold0_old_outer": {
+        "clips": 25,
+        "groups": 5
+      }
+    },
+    "R6_guardrails": {
+      "clips": 94,
+      "groups": 17,
+      "roles": {
+        "cross_generator": {
+          "clips": 18,
+          "groups": 3
+        },
+        "cross_sensor": {
+          "clips": 7,
+          "groups": 2
+        },
+        "inner": {
+          "clips": 18,
+          "groups": 3
+        },
+        "train": {
+          "clips": 51,
+          "groups": 9
+        }
+      },
+      "dedicated_ambient_used_as_positive": 0,
+      "old_outer_excluded": {
+        "clips": 25,
+        "groups": 5
+      }
+    },
+    "all_525_corpus_graph": 1,
+    "selected_22_groups_are_not_22_new_sensors_or_independent_oceans": true
+  },
+  "preprocessing_comparison": {
+    "shared_front_end": "Actual native sample rate; one channel;2s Hann detrended density PSD;25base10band integrated power;30complete2s bins per minute;uncalibrated digital power",
+    "our_frontend": "pipeline.audio.audio_band_power retains complete2s AND complete-minute power, so downstream laws can differ",
+    "R4_R5": "Controlled cumulative-linear-power timewarp on2s trajectories, stretch1/3..3 into120..900s; raised-cosine power fade and EQ<=4dB;place then mean30bins/minute;uniform known-share inversion. Source UTC/native length retained, no waveform repetition",
+    "R6_v2_minute_first": "Complete60s native power means first, then minute-aligned placement;no timewarp;EQ<=6dB/no lowpass;full-trajectory peak-to-background-median SNR Uniform[-10,+10]dB defines alpha;share derived",
+    "R6_v2_short": "Real contiguous1/2/3minute native2s crop;controlled Lorentzian power envelope then2s placement/minute average;no timewarp",
+    "R6_cross": "edge-straddling and whole native2s-first-no-warp, not a claimed reproduction of official generator",
+    "Anil45_post_scope": "Declares starter minute_band_power front-end, but does not disclose synthesis operator,labels,scaling,target prior,group splits,architecture or ensemble; cannot infer equivalence or difference beyond public statement"
+  },
+  "actions_not_taken": [
+    "No new download",
+    "No Test/oldOUTER or reserved numeric access",
+    "No waveform/band array reads",
+    "No excluded307/bridge99/reserved restoration",
+    "No training/inference",
+    "No public posting/contact/submission"
+  ],
+  "input_sha256": {
+    "external/vtuad_v1.3.2/download_manifest.json": "77c0017f119c31d81466f59651c3cd87ffb934d940cff02c47efe57ecef589de",
+    "external/vtuad_v1.3.2/registry_anonymized.csv": "92a1cba9ca73891121cf79f648dcf45173ff39bbf4db24a118eaa3d18d9c9015",
+    "external/vtuad_v1.3.2/strict_interval_wav_SHA256SUMS.txt": "5d0f163b45d27e7e083e1302a2c4f2b056b9677d38b3e10e4cc2f3c753307c86",
+    "external/vtuad_v1.3.2/README_vtuad_strict_wav_vessel_parts.txt": "4e6b6d95177960252a646428366a95846829adadc8c091385a85f1f1f1a29ed2",
+    "external/vtuad_v1.3.2/dataset_card.md": "cace1bffdb03e2af30116f549489b55a15cf944a12409466359a0f23916d1fa5",
+    "external/vtuad_v1.3.2/license_evidence_v131.md": "fa7fd9aca83346c1a1e381f45804fa97b33fbd421e72bb72c239bc418fe92624",
+    "data/processed/external_clip_manifest.parquet": "aa4affc7bd61afdea226bfec6f34d5b6c6e519cd23af55a463531bd8a67c624f",
+    "data/processed/external_preparation_manifest.json": "5b59b02b19fea6fa91c192ca2fea93edc76186412c3d82790689a374f445309b",
+    "data/versions/quality_v2_native/reference_manifest.parquet": "0693b2af999b94c8b99bd34433bec190290495bea4eb97b79d733aeb762b02e4",
+    "data/versions/vtuad_reference_r4_v1/reference_manifest.parquet": "49ae1e7c99fb7cc166d272aca3e9b1467ecd61953928ee243def5e98602c5f1e",
+    "data/versions/vtuad_reference_r4_v1/manifest.json": "0fcf298fde1486f60269497a60f04745e41ba5fff4bc1f46de81553e67752479",
+    "data/versions/source_split_r6_guardrails_v2/reference_manifest.parquet": "df343d732340dcc0ba034730675a58913b407fac24dd1ae99ea12922f8b173cf",
+    "data/versions/source_split_r6_guardrails_v2/manifest.json": "894783ab9aa9cfd17db4fb46e00762fd876a2bca16c824274699cb0db4099cf2",
+    "reports/R7_ANIL45_POST_OBSERVATION.json": "af11d05b7f30bd1b51ac0705fd0f682c9ad7dc4ee11ca53ab0c7199fe9616a71",
+    "reports/r4_reference_selection.md": "c253e1657fbc9c9cb7bdc5b98bf82b647d883c712b5a5830fe04bf9a43c6dfd3",
+    "reports/R3_REFERENCE_COVERAGE_AUDIT.md": "8ed9fdf4a4dd598475a152afcd25de56f1a70a669e87fbf53d0ced1871b91640",
+    "pipeline/audio.py": "86853a4c144ed9077e3523ba4bee092110cf3f8ac217de6426e599168a23eec1",
+    "pipeline/prepare_external.py": "f5aab60442389784b9ac24809437117e63160416892108433e9f2c303b3238f7",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/passage_sampler_r4.py": "d56e8199e5cbee5ee22a96143fbba3186bf5ff0ddff9d0ed34a5c0f6d56a0162",
+    "pipeline/dynamic_passage_r5.py": "619f6bd3229f5d823670abc50576872f5e2de24d864ea0184ff9537dd4d1ce69",
+    "pipeline/robust_sampler_r6.py": "59a8bafbbad9c42c7628d2283ac5f9fb3550a6945686958ea207ebeb61b0722b",
+    "configs/r6_cpu_guardrails_v2.json": "ff1aaef4671013801fd79ac39222a70acf40d63acfcbc92e6493e873be23709e",
+    "data/raw/maritime_starter_notebook.ipynb": "08242f4771c38de43ab9022d460b537b5eaa90a687bb1ddb532061b512dd6b83"
+  }
+}

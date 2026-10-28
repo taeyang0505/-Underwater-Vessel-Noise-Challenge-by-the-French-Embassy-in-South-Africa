@@ -1,0 +1,112 @@
+{
+  "status": "armed",
+  "guard_sha256": "04985407f260200abc7fc5102dfed63e7fbf77a6070ad728a661da3166d4113c",
+  "Linux_fixture_passed": true,
+  "Linux_inotify_fixture_passed": true,
+  "frozen_training_code_changed": false,
+  "command": [
+    "/workspace/underwater_vessel_noise_r9_r1/venv/bin/python",
+    "-u",
+    "/workspace/underwater_vessel_noise_r9_r1/ops/r9_fold_boundary_guard.py",
+    "--base",
+    "/workspace/underwater_vessel_noise_r9_r1",
+    "--project",
+    "/workspace/underwater_vessel_noise_r9_r1/project",
+    "--run",
+    "/workspace/underwater_vessel_noise_r9_r1/project/models/group_cv_minute_full_r9_v1",
+    "--config",
+    "/workspace/underwater_vessel_noise_r9_r1/project/configs/r9_full_training_v1.json",
+    "--output",
+    "/workspace/underwater_vessel_noise_r9_r1/ops/fold0_boundary_pause_r1",
+    "--pid",
+    "2257",
+    "--startticks",
+    "86168117",
+    "--pgid",
+    "2257",
+    "--supervisor",
+    "2256",
+    "--supervisor-startticks",
+    "86168115",
+    "--config-sha256",
+    "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "--data-hash",
+    "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092"
+  ],
+  "guard_pid": 23667,
+  "guard_status": {
+    "format": "r9_fold_boundary_operator_guard_v1",
+    "status": "armed",
+    "started_utc": "2026-10-26T11:31:13.004759+00:00",
+    "operator_owner": {
+      "pid": 23667,
+      "pgid": 23667,
+      "startticks": 87938062
+    },
+    "expected": {
+      "pid": 2257,
+      "startticks": 86168117,
+      "pgid": 2257,
+      "supervisor": 2256,
+      "supervisor_startticks": 86168115,
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "data_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092"
+    },
+    "watch_directory": "/workspace/underwater_vessel_noise_r9_r1/project/models/group_cv_minute_full_r9_v1/fold_00/models/itransformer",
+    "trigger": "summary.json atomic completion",
+    "signals_allowed": [
+      "SIGSTOP"
+    ],
+    "automatic_resume_allowed": false,
+    "original_code_or_ledger_modified": false,
+    "guard_source_sha256": "04985407f260200abc7fc5102dfed63e7fbf77a6070ad728a661da3166d4113c",
+    "updated_utc": "2026-10-26T11:31:13.009783+00:00",
+    "signals_sent": [],
+    "identity_sha256": "771b02d6e7abd9085d9bf77c398c04e09d0d4932192eeb5e070293d8f942951b",
+    "initial_group": [
+      {
+        "pid": 2257,
+        "state": "S",
+        "ppid": 2256,
+        "pgid": 2257,
+        "startticks": 86168117
+      },
+      {
+        "pid": 2269,
+        "state": "S",
+        "ppid": 2257,
+        "pgid": 2257,
+        "startticks": 86168576
+      },
+      {
+        "pid": 23646,
+        "state": "S",
+        "ppid": 2257,
+        "pgid": 2257,
+        "startticks": 87937813
+      },
+      {
+        "pid": 23648,
+        "state": "S",
+        "ppid": 2257,
+        "pgid": 2257,
+        "startticks": 87937894
+      },
+      {
+        "pid": 23650,
+        "state": "S",
+        "ppid": 2257,
+        "pgid": 2257,
+        "startticks": 87937975
+      },
+      {
+        "pid": 23666,
+        "state": "R",
+        "ppid": 2257,
+        "pgid": 2257,
+        "startticks": 87938059
+      }
+    ],
+    "watch_registered": true
+  }
+}

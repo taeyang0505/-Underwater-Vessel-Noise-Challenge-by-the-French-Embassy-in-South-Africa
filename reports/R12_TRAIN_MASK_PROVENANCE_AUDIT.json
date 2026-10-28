@@ -1,0 +1,3013 @@
+{
+  "format": "r12_TRAIN_only_mask_provenance_audit_v1",
+  "status": "completed",
+  "created_utc": "2026-10-26T16:44:38.080414+00:00",
+  "data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+  "input_sha256": {
+    "data/synthetic/r12_cpu_ablation_v3/manifest.json": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "data/synthetic/r12_cpu_ablation_v3/readiness.json": "1c21fea43a1904485c07b26cf2b14555e163a4d2852ec9f0d4b0e6fad125ba2d",
+    "data/synthetic/r12_cpu_ablation_v3/cnn_subset_indices.npy": "59dc2135ea685d27e626ca2ce6cf5d1ad62b263642d7afd0f780263902eeeae6",
+    "data/synthetic/r12_cpu_ablation_v3/train_L0_H0.npz": "3eaaf39d9a90e4db62aa978ccbc760ff7020fb257979843d8566bc540cc2d739",
+    "data/synthetic/r12_cpu_ablation_v3/train_L0_H1.npz": "eb9d56b4da46da5958d8625855687ba04ff34a20d9a5b5f0efa636aa0cc61561",
+    "data/synthetic/r12_cpu_ablation_v3/train_L1_H0.npz": "c36051c2c06c56a5d59f26883a5399c40b974bf113feaa34ec013984b653c4a1",
+    "data/synthetic/r12_cpu_ablation_v3/train_L1_H1.npz": "4be90ff483b760214395ac1ac1c5a4be25767871da0f6f330ff6d418128e01b8"
+  },
+  "fixed_direction": "More missing minutes (=negative Nobs) is the prespecified positive-addition score. Positive Nobs is reported as exact reversed direction; neither is selected by max(AUC,1-AUC) or used as an admission gate.",
+  "presence_semantics": "known observed added-recording energy>0, not natural vessel presence",
+  "records": {
+    "L0_H0_TRAIN12000": {
+      "arm": "L0_H0",
+      "mode": "TRAIN12000",
+      "n": 12000,
+      "zero_n": 2400,
+      "positive_n": 9600,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.5031543402777777,
+      "AUC_positive_Nobs": 0.4968456597222222,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.5031543402777777,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 4,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "Nobs": 5,
+          "n": 2310,
+          "zero_n": 462,
+          "positive_n": 1848,
+          "zero_fraction": 0.2
+        },
+        {
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 4,
+          "zero_n": 2,
+          "positive_n": 2,
+          "zero_fraction": 0.5
+        },
+        {
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 109,
+          "zero_n": 19,
+          "positive_n": 90,
+          "zero_fraction": 0.1743119266055046
+        },
+        {
+          "Nobs": 13,
+          "n": 203,
+          "zero_n": 38,
+          "positive_n": 165,
+          "zero_fraction": 0.18719211822660098
+        },
+        {
+          "Nobs": 14,
+          "n": 1811,
+          "zero_n": 351,
+          "positive_n": 1460,
+          "zero_fraction": 0.19381557150745443
+        },
+        {
+          "Nobs": 15,
+          "n": 7547,
+          "zero_n": 1524,
+          "positive_n": 6023,
+          "zero_fraction": 0.20193454352722937
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6990,
+          "zero_n": 1369,
+          "positive_n": 5621,
+          "zero_fraction": 0.19585121602288985
+        },
+        {
+          "site": "2 Durban",
+          "n": 369,
+          "zero_n": 83,
+          "positive_n": 286,
+          "zero_fraction": 0.22493224932249323
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 31,
+          "zero_n": 4,
+          "positive_n": 27,
+          "zero_fraction": 0.12903225806451613
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 294,
+          "zero_n": 65,
+          "positive_n": 229,
+          "zero_fraction": 0.22108843537414966
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1571,
+          "zero_n": 329,
+          "positive_n": 1242,
+          "zero_fraction": 0.20942075111394018
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 25,
+          "zero_n": 4,
+          "positive_n": 21,
+          "zero_fraction": 0.16
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 2720,
+          "zero_n": 546,
+          "positive_n": 2174,
+          "zero_fraction": 0.20073529411764707
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6990,
+          "AUC_negative_Nobs": 0.5009830868772002,
+          "AUC_positive_Nobs": 0.49901691312279983
+        },
+        {
+          "site": "2 Durban",
+          "n": 369,
+          "AUC_negative_Nobs": 0.5017482517482518,
+          "AUC_positive_Nobs": 0.4982517482517482
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 31,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 294,
+          "AUC_negative_Nobs": 0.49885791064830365,
+          "AUC_positive_Nobs": 0.5011420893516964
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1571,
+          "AUC_negative_Nobs": 0.49826243582025265,
+          "AUC_positive_Nobs": 0.5017375641797474
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 25,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 2720,
+          "AUC_negative_Nobs": 0.5028618269188646,
+          "AUC_positive_Nobs": 0.49713817308113534
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 4,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 4,
+          "zero_n": 2,
+          "positive_n": 2,
+          "zero_fraction": 0.5
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 52,
+          "zero_n": 11,
+          "positive_n": 41,
+          "zero_fraction": 0.21153846153846154
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 203,
+          "zero_n": 38,
+          "positive_n": 165,
+          "zero_fraction": 0.18719211822660098
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 1797,
+          "zero_n": 347,
+          "positive_n": 1450,
+          "zero_fraction": 0.1930996104618809
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 4917,
+          "zero_n": 966,
+          "positive_n": 3951,
+          "zero_fraction": 0.19646125686394142
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 368,
+          "zero_n": 83,
+          "positive_n": 285,
+          "zero_fraction": 0.22554347826086957
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 31,
+          "zero_n": 4,
+          "positive_n": 27,
+          "zero_fraction": 0.12903225806451613
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 4,
+          "zero_n": 1,
+          "positive_n": 3,
+          "zero_fraction": 0.25
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 290,
+          "zero_n": 64,
+          "positive_n": 226,
+          "zero_fraction": 0.2206896551724138
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 12,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 9,
+          "zero_n": 3,
+          "positive_n": 6,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 1561,
+          "zero_n": 326,
+          "positive_n": 1235,
+          "zero_fraction": 0.2088404868673927
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 25,
+          "zero_n": 4,
+          "positive_n": 21,
+          "zero_fraction": 0.16
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 2309,
+          "zero_n": 461,
+          "positive_n": 1848,
+          "zero_fraction": 0.1996535296665223
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 411,
+          "zero_n": 85,
+          "positive_n": 326,
+          "zero_fraction": 0.20681265206812652
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L0_H0_CNN6000": {
+      "arm": "L0_H0",
+      "mode": "CNN6000",
+      "n": 6000,
+      "zero_n": 1200,
+      "positive_n": 4800,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.49637109375,
+      "AUC_positive_Nobs": 0.50362890625,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.49637109375,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 5,
+          "n": 1162,
+          "zero_n": 234,
+          "positive_n": 928,
+          "zero_fraction": 0.20137693631669534
+        },
+        {
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 2,
+          "zero_n": 1,
+          "positive_n": 1,
+          "zero_fraction": 0.5
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 59,
+          "zero_n": 8,
+          "positive_n": 51,
+          "zero_fraction": 0.13559322033898305
+        },
+        {
+          "Nobs": 13,
+          "n": 102,
+          "zero_n": 23,
+          "positive_n": 79,
+          "zero_fraction": 0.22549019607843138
+        },
+        {
+          "Nobs": 14,
+          "n": 896,
+          "zero_n": 185,
+          "positive_n": 711,
+          "zero_fraction": 0.20647321428571427
+        },
+        {
+          "Nobs": 15,
+          "n": 3771,
+          "zero_n": 746,
+          "positive_n": 3025,
+          "zero_fraction": 0.19782551047467514
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3510,
+          "zero_n": 696,
+          "positive_n": 2814,
+          "zero_fraction": 0.19829059829059828
+        },
+        {
+          "site": "2 Durban",
+          "n": 192,
+          "zero_n": 39,
+          "positive_n": 153,
+          "zero_fraction": 0.203125
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 19,
+          "zero_n": 2,
+          "positive_n": 17,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 145,
+          "zero_n": 34,
+          "positive_n": 111,
+          "zero_fraction": 0.23448275862068965
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 746,
+          "zero_n": 143,
+          "positive_n": 603,
+          "zero_fraction": 0.19168900804289543
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 13,
+          "zero_n": 2,
+          "positive_n": 11,
+          "zero_fraction": 0.15384615384615385
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1375,
+          "zero_n": 284,
+          "positive_n": 1091,
+          "zero_fraction": 0.20654545454545453
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3510,
+          "AUC_negative_Nobs": 0.4894268395297731,
+          "AUC_positive_Nobs": 0.5105731604702268
+        },
+        {
+          "site": "2 Durban",
+          "n": 192,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 19,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 145,
+          "AUC_negative_Nobs": 0.5045045045045045,
+          "AUC_positive_Nobs": 0.4954954954954955
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 746,
+          "AUC_negative_Nobs": 0.4963237425923993,
+          "AUC_positive_Nobs": 0.5036762574076007
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 13,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1375,
+          "AUC_negative_Nobs": 0.5150866242367127,
+          "AUC_positive_Nobs": 0.48491337576328736
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 2,
+          "zero_n": 1,
+          "positive_n": 1,
+          "zero_fraction": 0.5
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 27,
+          "zero_n": 4,
+          "positive_n": 23,
+          "zero_fraction": 0.14814814814814814
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 102,
+          "zero_n": 23,
+          "positive_n": 79,
+          "zero_fraction": 0.22549019607843138
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 889,
+          "zero_n": 183,
+          "positive_n": 706,
+          "zero_fraction": 0.20584926884139482
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 2481,
+          "zero_n": 481,
+          "positive_n": 2000,
+          "zero_fraction": 0.19387343812978639
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 192,
+          "zero_n": 39,
+          "positive_n": 153,
+          "zero_fraction": 0.203125
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 19,
+          "zero_n": 2,
+          "positive_n": 17,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 144,
+          "zero_n": 34,
+          "positive_n": 110,
+          "zero_fraction": 0.2361111111111111
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 6,
+          "zero_n": 2,
+          "positive_n": 4,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 740,
+          "zero_n": 141,
+          "positive_n": 599,
+          "zero_fraction": 0.19054054054054054
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 13,
+          "zero_n": 2,
+          "positive_n": 11,
+          "zero_fraction": 0.15384615384615385
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 1161,
+          "zero_n": 233,
+          "positive_n": 928,
+          "zero_fraction": 0.20068906115417742
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 214,
+          "zero_n": 51,
+          "positive_n": 163,
+          "zero_fraction": 0.2383177570093458
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L0_H1_TRAIN12000": {
+      "arm": "L0_H1",
+      "mode": "TRAIN12000",
+      "n": 12000,
+      "zero_n": 2400,
+      "positive_n": 9600,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.5776848307291667,
+      "AUC_positive_Nobs": 0.42231516927083335,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.5776848307291667,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 4,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 5,
+          "n": 2082,
+          "zero_n": 234,
+          "positive_n": 1848,
+          "zero_fraction": 0.11239193083573487
+        },
+        {
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 103,
+          "zero_n": 13,
+          "positive_n": 90,
+          "zero_fraction": 0.1262135922330097
+        },
+        {
+          "Nobs": 13,
+          "n": 191,
+          "zero_n": 26,
+          "positive_n": 165,
+          "zero_fraction": 0.13612565445026178
+        },
+        {
+          "Nobs": 14,
+          "n": 1722,
+          "zero_n": 262,
+          "positive_n": 1460,
+          "zero_fraction": 0.1521486643437863
+        },
+        {
+          "Nobs": 15,
+          "n": 7884,
+          "zero_n": 1861,
+          "positive_n": 6023,
+          "zero_fraction": 0.23604769152714358
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6883,
+          "zero_n": 1262,
+          "positive_n": 5621,
+          "zero_fraction": 0.18335028330669767
+        },
+        {
+          "site": "2 Durban",
+          "n": 329,
+          "zero_n": 43,
+          "positive_n": 286,
+          "zero_fraction": 0.13069908814589665
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 29,
+          "zero_n": 2,
+          "positive_n": 27,
+          "zero_fraction": 0.06896551724137931
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 257,
+          "zero_n": 28,
+          "positive_n": 229,
+          "zero_fraction": 0.10894941634241245
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1411,
+          "zero_n": 169,
+          "positive_n": 1242,
+          "zero_fraction": 0.11977321048901489
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 23,
+          "zero_n": 2,
+          "positive_n": 21,
+          "zero_fraction": 0.08695652173913043
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 3068,
+          "zero_n": 894,
+          "positive_n": 2174,
+          "zero_fraction": 0.29139504563233376
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6883,
+          "AUC_negative_Nobs": 0.5295695392899222,
+          "AUC_positive_Nobs": 0.47043046071007777
+        },
+        {
+          "site": "2 Durban",
+          "n": 329,
+          "AUC_negative_Nobs": 0.5017482517482518,
+          "AUC_positive_Nobs": 0.4982517482517482
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 29,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 257,
+          "AUC_negative_Nobs": 0.5065502183406113,
+          "AUC_positive_Nobs": 0.49344978165938863
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1411,
+          "AUC_negative_Nobs": 0.4969056398822285,
+          "AUC_positive_Nobs": 0.5030943601177715
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 23,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 3068,
+          "AUC_negative_Nobs": 0.7947097999748914,
+          "AUC_positive_Nobs": 0.20529020002510862
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 4,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 50,
+          "zero_n": 9,
+          "positive_n": 41,
+          "zero_fraction": 0.18
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 191,
+          "zero_n": 26,
+          "positive_n": 165,
+          "zero_fraction": 0.13612565445026178
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 1710,
+          "zero_n": 260,
+          "positive_n": 1450,
+          "zero_fraction": 0.15204678362573099
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 4913,
+          "zero_n": 962,
+          "positive_n": 3951,
+          "zero_fraction": 0.19580704254019948
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 328,
+          "zero_n": 43,
+          "positive_n": 285,
+          "zero_fraction": 0.13109756097560976
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 29,
+          "zero_n": 2,
+          "positive_n": 27,
+          "zero_fraction": 0.06896551724137931
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 3,
+          "zero_n": 0,
+          "positive_n": 3,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 254,
+          "zero_n": 28,
+          "positive_n": 226,
+          "zero_fraction": 0.11023622047244094
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 12,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 8,
+          "zero_n": 2,
+          "positive_n": 6,
+          "zero_fraction": 0.25
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 1402,
+          "zero_n": 167,
+          "positive_n": 1235,
+          "zero_fraction": 0.11911554921540657
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 23,
+          "zero_n": 2,
+          "positive_n": 21,
+          "zero_fraction": 0.08695652173913043
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 2081,
+          "zero_n": 233,
+          "positive_n": 1848,
+          "zero_fraction": 0.11196540124939933
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 987,
+          "zero_n": 661,
+          "positive_n": 326,
+          "zero_fraction": 0.6697061803444783
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L0_H1_CNN6000": {
+      "arm": "L0_H1",
+      "mode": "CNN6000",
+      "n": 6000,
+      "zero_n": 1200,
+      "positive_n": 4800,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.5687447048611111,
+      "AUC_positive_Nobs": 0.4312552951388889,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.5687447048611111,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 5,
+          "n": 1058,
+          "zero_n": 130,
+          "positive_n": 928,
+          "zero_fraction": 0.12287334593572778
+        },
+        {
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 57,
+          "zero_n": 6,
+          "positive_n": 51,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "Nobs": 13,
+          "n": 91,
+          "zero_n": 12,
+          "positive_n": 79,
+          "zero_fraction": 0.13186813186813187
+        },
+        {
+          "Nobs": 14,
+          "n": 847,
+          "zero_n": 136,
+          "positive_n": 711,
+          "zero_fraction": 0.16056670602125148
+        },
+        {
+          "Nobs": 15,
+          "n": 3938,
+          "zero_n": 913,
+          "positive_n": 3025,
+          "zero_fraction": 0.23184357541899442
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3447,
+          "zero_n": 633,
+          "positive_n": 2814,
+          "zero_fraction": 0.1836379460400348
+        },
+        {
+          "site": "2 Durban",
+          "n": 171,
+          "zero_n": 18,
+          "positive_n": 153,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 18,
+          "zero_n": 1,
+          "positive_n": 17,
+          "zero_fraction": 0.05555555555555555
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 127,
+          "zero_n": 16,
+          "positive_n": 111,
+          "zero_fraction": 0.12598425196850394
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 667,
+          "zero_n": 64,
+          "positive_n": 603,
+          "zero_fraction": 0.095952023988006
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 12,
+          "zero_n": 1,
+          "positive_n": 11,
+          "zero_fraction": 0.08333333333333333
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1558,
+          "zero_n": 467,
+          "positive_n": 1091,
+          "zero_fraction": 0.29974326059050066
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3447,
+          "AUC_negative_Nobs": 0.5229938100066133,
+          "AUC_positive_Nobs": 0.47700618999338673
+        },
+        {
+          "site": "2 Durban",
+          "n": 171,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 18,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 127,
+          "AUC_negative_Nobs": 0.5045045045045045,
+          "AUC_positive_Nobs": 0.4954954954954955
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 667,
+          "AUC_negative_Nobs": 0.4876917495854063,
+          "AUC_positive_Nobs": 0.5123082504145937
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 12,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1558,
+          "AUC_negative_Nobs": 0.7871822601506977,
+          "AUC_positive_Nobs": 0.21281773984930236
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 27,
+          "zero_n": 4,
+          "positive_n": 23,
+          "zero_fraction": 0.14814814814814814
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 91,
+          "zero_n": 12,
+          "positive_n": 79,
+          "zero_fraction": 0.13186813186813187
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 840,
+          "zero_n": 134,
+          "positive_n": 706,
+          "zero_fraction": 0.1595238095238095
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 2479,
+          "zero_n": 479,
+          "positive_n": 2000,
+          "zero_fraction": 0.19322307382008874
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 171,
+          "zero_n": 18,
+          "positive_n": 153,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 18,
+          "zero_n": 1,
+          "positive_n": 17,
+          "zero_fraction": 0.05555555555555555
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 126,
+          "zero_n": 16,
+          "positive_n": 110,
+          "zero_fraction": 0.12698412698412698
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 6,
+          "zero_n": 2,
+          "positive_n": 4,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 661,
+          "zero_n": 62,
+          "positive_n": 599,
+          "zero_fraction": 0.09379727685325265
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 12,
+          "zero_n": 1,
+          "positive_n": 11,
+          "zero_fraction": 0.08333333333333333
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 1057,
+          "zero_n": 129,
+          "positive_n": 928,
+          "zero_fraction": 0.12204351939451277
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 501,
+          "zero_n": 338,
+          "positive_n": 163,
+          "zero_fraction": 0.6746506986027944
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L1_H0_TRAIN12000": {
+      "arm": "L1_H0",
+      "mode": "TRAIN12000",
+      "n": 12000,
+      "zero_n": 2400,
+      "positive_n": 9600,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.5031543402777777,
+      "AUC_positive_Nobs": 0.4968456597222222,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.5031543402777777,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 4,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "Nobs": 5,
+          "n": 2310,
+          "zero_n": 462,
+          "positive_n": 1848,
+          "zero_fraction": 0.2
+        },
+        {
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 4,
+          "zero_n": 2,
+          "positive_n": 2,
+          "zero_fraction": 0.5
+        },
+        {
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 109,
+          "zero_n": 19,
+          "positive_n": 90,
+          "zero_fraction": 0.1743119266055046
+        },
+        {
+          "Nobs": 13,
+          "n": 203,
+          "zero_n": 38,
+          "positive_n": 165,
+          "zero_fraction": 0.18719211822660098
+        },
+        {
+          "Nobs": 14,
+          "n": 1811,
+          "zero_n": 351,
+          "positive_n": 1460,
+          "zero_fraction": 0.19381557150745443
+        },
+        {
+          "Nobs": 15,
+          "n": 7547,
+          "zero_n": 1524,
+          "positive_n": 6023,
+          "zero_fraction": 0.20193454352722937
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6990,
+          "zero_n": 1369,
+          "positive_n": 5621,
+          "zero_fraction": 0.19585121602288985
+        },
+        {
+          "site": "2 Durban",
+          "n": 369,
+          "zero_n": 83,
+          "positive_n": 286,
+          "zero_fraction": 0.22493224932249323
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 31,
+          "zero_n": 4,
+          "positive_n": 27,
+          "zero_fraction": 0.12903225806451613
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 294,
+          "zero_n": 65,
+          "positive_n": 229,
+          "zero_fraction": 0.22108843537414966
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1571,
+          "zero_n": 329,
+          "positive_n": 1242,
+          "zero_fraction": 0.20942075111394018
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 25,
+          "zero_n": 4,
+          "positive_n": 21,
+          "zero_fraction": 0.16
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 2720,
+          "zero_n": 546,
+          "positive_n": 2174,
+          "zero_fraction": 0.20073529411764707
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6990,
+          "AUC_negative_Nobs": 0.5009830868772002,
+          "AUC_positive_Nobs": 0.49901691312279983
+        },
+        {
+          "site": "2 Durban",
+          "n": 369,
+          "AUC_negative_Nobs": 0.5017482517482518,
+          "AUC_positive_Nobs": 0.4982517482517482
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 31,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 294,
+          "AUC_negative_Nobs": 0.49885791064830365,
+          "AUC_positive_Nobs": 0.5011420893516964
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1571,
+          "AUC_negative_Nobs": 0.49826243582025265,
+          "AUC_positive_Nobs": 0.5017375641797474
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 25,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 2720,
+          "AUC_negative_Nobs": 0.5028618269188646,
+          "AUC_positive_Nobs": 0.49713817308113534
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 4,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 4,
+          "zero_n": 2,
+          "positive_n": 2,
+          "zero_fraction": 0.5
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 52,
+          "zero_n": 11,
+          "positive_n": 41,
+          "zero_fraction": 0.21153846153846154
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 203,
+          "zero_n": 38,
+          "positive_n": 165,
+          "zero_fraction": 0.18719211822660098
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 1797,
+          "zero_n": 347,
+          "positive_n": 1450,
+          "zero_fraction": 0.1930996104618809
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 4917,
+          "zero_n": 966,
+          "positive_n": 3951,
+          "zero_fraction": 0.19646125686394142
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 368,
+          "zero_n": 83,
+          "positive_n": 285,
+          "zero_fraction": 0.22554347826086957
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 31,
+          "zero_n": 4,
+          "positive_n": 27,
+          "zero_fraction": 0.12903225806451613
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 4,
+          "zero_n": 1,
+          "positive_n": 3,
+          "zero_fraction": 0.25
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 290,
+          "zero_n": 64,
+          "positive_n": 226,
+          "zero_fraction": 0.2206896551724138
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 12,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 9,
+          "zero_n": 3,
+          "positive_n": 6,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 1561,
+          "zero_n": 326,
+          "positive_n": 1235,
+          "zero_fraction": 0.2088404868673927
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 25,
+          "zero_n": 4,
+          "positive_n": 21,
+          "zero_fraction": 0.16
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 2309,
+          "zero_n": 461,
+          "positive_n": 1848,
+          "zero_fraction": 0.1996535296665223
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 411,
+          "zero_n": 85,
+          "positive_n": 326,
+          "zero_fraction": 0.20681265206812652
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L1_H0_CNN6000": {
+      "arm": "L1_H0",
+      "mode": "CNN6000",
+      "n": 6000,
+      "zero_n": 1200,
+      "positive_n": 4800,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.49637109375,
+      "AUC_positive_Nobs": 0.50362890625,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.49637109375,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 5,
+          "n": 1162,
+          "zero_n": 234,
+          "positive_n": 928,
+          "zero_fraction": 0.20137693631669534
+        },
+        {
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 2,
+          "zero_n": 1,
+          "positive_n": 1,
+          "zero_fraction": 0.5
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 59,
+          "zero_n": 8,
+          "positive_n": 51,
+          "zero_fraction": 0.13559322033898305
+        },
+        {
+          "Nobs": 13,
+          "n": 102,
+          "zero_n": 23,
+          "positive_n": 79,
+          "zero_fraction": 0.22549019607843138
+        },
+        {
+          "Nobs": 14,
+          "n": 896,
+          "zero_n": 185,
+          "positive_n": 711,
+          "zero_fraction": 0.20647321428571427
+        },
+        {
+          "Nobs": 15,
+          "n": 3771,
+          "zero_n": 746,
+          "positive_n": 3025,
+          "zero_fraction": 0.19782551047467514
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3510,
+          "zero_n": 696,
+          "positive_n": 2814,
+          "zero_fraction": 0.19829059829059828
+        },
+        {
+          "site": "2 Durban",
+          "n": 192,
+          "zero_n": 39,
+          "positive_n": 153,
+          "zero_fraction": 0.203125
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 19,
+          "zero_n": 2,
+          "positive_n": 17,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 145,
+          "zero_n": 34,
+          "positive_n": 111,
+          "zero_fraction": 0.23448275862068965
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 746,
+          "zero_n": 143,
+          "positive_n": 603,
+          "zero_fraction": 0.19168900804289543
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 13,
+          "zero_n": 2,
+          "positive_n": 11,
+          "zero_fraction": 0.15384615384615385
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1375,
+          "zero_n": 284,
+          "positive_n": 1091,
+          "zero_fraction": 0.20654545454545453
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3510,
+          "AUC_negative_Nobs": 0.4894268395297731,
+          "AUC_positive_Nobs": 0.5105731604702268
+        },
+        {
+          "site": "2 Durban",
+          "n": 192,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 19,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 145,
+          "AUC_negative_Nobs": 0.5045045045045045,
+          "AUC_positive_Nobs": 0.4954954954954955
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 746,
+          "AUC_negative_Nobs": 0.4963237425923993,
+          "AUC_positive_Nobs": 0.5036762574076007
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 13,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1375,
+          "AUC_negative_Nobs": 0.5150866242367127,
+          "AUC_positive_Nobs": 0.48491337576328736
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 2,
+          "zero_n": 1,
+          "positive_n": 1,
+          "zero_fraction": 0.5
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 27,
+          "zero_n": 4,
+          "positive_n": 23,
+          "zero_fraction": 0.14814814814814814
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 102,
+          "zero_n": 23,
+          "positive_n": 79,
+          "zero_fraction": 0.22549019607843138
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 889,
+          "zero_n": 183,
+          "positive_n": 706,
+          "zero_fraction": 0.20584926884139482
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 2481,
+          "zero_n": 481,
+          "positive_n": 2000,
+          "zero_fraction": 0.19387343812978639
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 192,
+          "zero_n": 39,
+          "positive_n": 153,
+          "zero_fraction": 0.203125
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 19,
+          "zero_n": 2,
+          "positive_n": 17,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 144,
+          "zero_n": 34,
+          "positive_n": 110,
+          "zero_fraction": 0.2361111111111111
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 6,
+          "zero_n": 2,
+          "positive_n": 4,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 740,
+          "zero_n": 141,
+          "positive_n": 599,
+          "zero_fraction": 0.19054054054054054
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 13,
+          "zero_n": 2,
+          "positive_n": 11,
+          "zero_fraction": 0.15384615384615385
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 1161,
+          "zero_n": 233,
+          "positive_n": 928,
+          "zero_fraction": 0.20068906115417742
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 214,
+          "zero_n": 51,
+          "positive_n": 163,
+          "zero_fraction": 0.2383177570093458
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L1_H1_TRAIN12000": {
+      "arm": "L1_H1",
+      "mode": "TRAIN12000",
+      "n": 12000,
+      "zero_n": 2400,
+      "positive_n": 9600,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.5776848307291667,
+      "AUC_positive_Nobs": 0.42231516927083335,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.5776848307291667,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 4,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 5,
+          "n": 2082,
+          "zero_n": 234,
+          "positive_n": 1848,
+          "zero_fraction": 0.11239193083573487
+        },
+        {
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 103,
+          "zero_n": 13,
+          "positive_n": 90,
+          "zero_fraction": 0.1262135922330097
+        },
+        {
+          "Nobs": 13,
+          "n": 191,
+          "zero_n": 26,
+          "positive_n": 165,
+          "zero_fraction": 0.13612565445026178
+        },
+        {
+          "Nobs": 14,
+          "n": 1722,
+          "zero_n": 262,
+          "positive_n": 1460,
+          "zero_fraction": 0.1521486643437863
+        },
+        {
+          "Nobs": 15,
+          "n": 7884,
+          "zero_n": 1861,
+          "positive_n": 6023,
+          "zero_fraction": 0.23604769152714358
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6883,
+          "zero_n": 1262,
+          "positive_n": 5621,
+          "zero_fraction": 0.18335028330669767
+        },
+        {
+          "site": "2 Durban",
+          "n": 329,
+          "zero_n": 43,
+          "positive_n": 286,
+          "zero_fraction": 0.13069908814589665
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 29,
+          "zero_n": 2,
+          "positive_n": 27,
+          "zero_fraction": 0.06896551724137931
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 257,
+          "zero_n": 28,
+          "positive_n": 229,
+          "zero_fraction": 0.10894941634241245
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1411,
+          "zero_n": 169,
+          "positive_n": 1242,
+          "zero_fraction": 0.11977321048901489
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 23,
+          "zero_n": 2,
+          "positive_n": 21,
+          "zero_fraction": 0.08695652173913043
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 3068,
+          "zero_n": 894,
+          "positive_n": 2174,
+          "zero_fraction": 0.29139504563233376
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 6883,
+          "AUC_negative_Nobs": 0.5295695392899222,
+          "AUC_positive_Nobs": 0.47043046071007777
+        },
+        {
+          "site": "2 Durban",
+          "n": 329,
+          "AUC_negative_Nobs": 0.5017482517482518,
+          "AUC_positive_Nobs": 0.4982517482517482
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 29,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 257,
+          "AUC_negative_Nobs": 0.5065502183406113,
+          "AUC_positive_Nobs": 0.49344978165938863
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 1411,
+          "AUC_negative_Nobs": 0.4969056398822285,
+          "AUC_positive_Nobs": 0.5030943601177715
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 23,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 3068,
+          "AUC_negative_Nobs": 0.7947097999748914,
+          "AUC_positive_Nobs": 0.20529020002510862
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 4,
+          "zero_n": 0,
+          "positive_n": 4,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 4,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 3,
+          "zero_n": 1,
+          "positive_n": 2,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 10,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 50,
+          "zero_n": 9,
+          "positive_n": 41,
+          "zero_fraction": 0.18
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 191,
+          "zero_n": 26,
+          "positive_n": 165,
+          "zero_fraction": 0.13612565445026178
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 1710,
+          "zero_n": 260,
+          "positive_n": 1450,
+          "zero_fraction": 0.15204678362573099
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 4913,
+          "zero_n": 962,
+          "positive_n": 3951,
+          "zero_fraction": 0.19580704254019948
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 328,
+          "zero_n": 43,
+          "positive_n": 285,
+          "zero_fraction": 0.13109756097560976
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 29,
+          "zero_n": 2,
+          "positive_n": 27,
+          "zero_fraction": 0.06896551724137931
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 3,
+          "zero_n": 0,
+          "positive_n": 3,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 254,
+          "zero_n": 28,
+          "positive_n": 226,
+          "zero_fraction": 0.11023622047244094
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 12,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 8,
+          "zero_n": 2,
+          "positive_n": 6,
+          "zero_fraction": 0.25
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 1402,
+          "zero_n": 167,
+          "positive_n": 1235,
+          "zero_fraction": 0.11911554921540657
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 23,
+          "zero_n": 2,
+          "positive_n": 21,
+          "zero_fraction": 0.08695652173913043
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 2081,
+          "zero_n": 233,
+          "positive_n": 1848,
+          "zero_fraction": 0.11196540124939933
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 987,
+          "zero_n": 661,
+          "positive_n": 326,
+          "zero_fraction": 0.6697061803444783
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    },
+    "L1_H1_CNN6000": {
+      "arm": "L1_H1",
+      "mode": "CNN6000",
+      "n": 6000,
+      "zero_n": 1200,
+      "positive_n": 4800,
+      "zero_fraction": 0.2,
+      "AUC_negative_Nobs": 0.5687447048611111,
+      "AUC_positive_Nobs": 0.4312552951388889,
+      "AUC_missing_minutes_equivalent_negative_Nobs": 0.5687447048611111,
+      "Nobs_by_presence": [
+        {
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 5,
+          "n": 1058,
+          "zero_n": 130,
+          "positive_n": 928,
+          "zero_fraction": 0.12287334593572778
+        },
+        {
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "Nobs": 9,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "Nobs": 12,
+          "n": 57,
+          "zero_n": 6,
+          "positive_n": 51,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "Nobs": 13,
+          "n": 91,
+          "zero_n": 12,
+          "positive_n": 79,
+          "zero_fraction": 0.13186813186813187
+        },
+        {
+          "Nobs": 14,
+          "n": 847,
+          "zero_n": 136,
+          "positive_n": 711,
+          "zero_fraction": 0.16056670602125148
+        },
+        {
+          "Nobs": 15,
+          "n": 3938,
+          "zero_n": 913,
+          "positive_n": 3025,
+          "zero_fraction": 0.23184357541899442
+        }
+      ],
+      "site_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3447,
+          "zero_n": 633,
+          "positive_n": 2814,
+          "zero_fraction": 0.1836379460400348
+        },
+        {
+          "site": "2 Durban",
+          "n": 171,
+          "zero_n": 18,
+          "positive_n": 153,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 18,
+          "zero_n": 1,
+          "positive_n": 17,
+          "zero_fraction": 0.05555555555555555
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 127,
+          "zero_n": 16,
+          "positive_n": 111,
+          "zero_fraction": 0.12598425196850394
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 667,
+          "zero_n": 64,
+          "positive_n": 603,
+          "zero_fraction": 0.095952023988006
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 12,
+          "zero_n": 1,
+          "positive_n": 11,
+          "zero_fraction": 0.08333333333333333
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1558,
+          "zero_n": 467,
+          "positive_n": 1091,
+          "zero_fraction": 0.29974326059050066
+        }
+      ],
+      "within_site_Nobs_direction_AUC": [
+        {
+          "site": "1 Richards Bay",
+          "n": 3447,
+          "AUC_negative_Nobs": 0.5229938100066133,
+          "AUC_positive_Nobs": 0.47700618999338673
+        },
+        {
+          "site": "2 Durban",
+          "n": 171,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "3 Cape_Recife",
+          "n": 18,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "4 Bird Island",
+          "n": 127,
+          "AUC_negative_Nobs": 0.5045045045045045,
+          "AUC_positive_Nobs": 0.4954954954954955
+        },
+        {
+          "site": "5 St Croix Island",
+          "n": 667,
+          "AUC_negative_Nobs": 0.4876917495854063,
+          "AUC_positive_Nobs": 0.5123082504145937
+        },
+        {
+          "site": "6 Riy_Banks",
+          "n": 12,
+          "AUC_negative_Nobs": 0.5,
+          "AUC_positive_Nobs": 0.5
+        },
+        {
+          "site": "7 St_Francis",
+          "n": 1558,
+          "AUC_negative_Nobs": 0.7871822601506977,
+          "AUC_positive_Nobs": 0.21281773984930236
+        }
+      ],
+      "site_x_Nobs_by_presence": [
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 3,
+          "n": 2,
+          "zero_n": 0,
+          "positive_n": 2,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 5,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 6,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 7,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 8,
+          "n": 1,
+          "zero_n": 1,
+          "positive_n": 0,
+          "zero_fraction": 1.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 9,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 11,
+          "n": 3,
+          "zero_n": 2,
+          "positive_n": 1,
+          "zero_fraction": 0.6666666666666666
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 12,
+          "n": 27,
+          "zero_n": 4,
+          "positive_n": 23,
+          "zero_fraction": 0.14814814814814814
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 13,
+          "n": 91,
+          "zero_n": 12,
+          "positive_n": 79,
+          "zero_fraction": 0.13186813186813187
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 14,
+          "n": 840,
+          "zero_n": 134,
+          "positive_n": 706,
+          "zero_fraction": 0.1595238095238095
+        },
+        {
+          "site": "1 Richards Bay",
+          "Nobs": 15,
+          "n": 2479,
+          "zero_n": 479,
+          "positive_n": 2000,
+          "zero_fraction": 0.19322307382008874
+        },
+        {
+          "site": "2 Durban",
+          "Nobs": 15,
+          "n": 171,
+          "zero_n": 18,
+          "positive_n": 153,
+          "zero_fraction": 0.10526315789473684
+        },
+        {
+          "site": "3 Cape_Recife",
+          "Nobs": 12,
+          "n": 18,
+          "zero_n": 1,
+          "positive_n": 17,
+          "zero_fraction": 0.05555555555555555
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 14,
+          "n": 1,
+          "zero_n": 0,
+          "positive_n": 1,
+          "zero_fraction": 0.0
+        },
+        {
+          "site": "4 Bird Island",
+          "Nobs": 15,
+          "n": 126,
+          "zero_n": 16,
+          "positive_n": 110,
+          "zero_fraction": 0.12698412698412698
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 14,
+          "n": 6,
+          "zero_n": 2,
+          "positive_n": 4,
+          "zero_fraction": 0.3333333333333333
+        },
+        {
+          "site": "5 St Croix Island",
+          "Nobs": 15,
+          "n": 661,
+          "zero_n": 62,
+          "positive_n": 599,
+          "zero_fraction": 0.09379727685325265
+        },
+        {
+          "site": "6 Riy_Banks",
+          "Nobs": 12,
+          "n": 12,
+          "zero_n": 1,
+          "positive_n": 11,
+          "zero_fraction": 0.08333333333333333
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 5,
+          "n": 1057,
+          "zero_n": 129,
+          "positive_n": 928,
+          "zero_fraction": 0.12204351939451277
+        },
+        {
+          "site": "7 St_Francis",
+          "Nobs": 15,
+          "n": 501,
+          "zero_n": 338,
+          "positive_n": 163,
+          "zero_fraction": 0.6746506986027944
+        }
+      ],
+      "mask_unchanged_by_positive_addition": true
+    }
+  },
+  "paired_positive_provenance": {
+    "L0": {
+      "positive_rows_changed_site_Nobs_source": 0,
+      "all_zero_positions_same": true,
+      "HF_changed_zero_source_rows": 1200
+    },
+    "L1": {
+      "positive_rows_changed_site_Nobs_source": 0,
+      "all_zero_positions_same": true,
+      "HF_changed_zero_source_rows": 1200
+    }
+  },
+  "limitations": [
+    "HF replaces only zero slots by dense SF/HF sources. Its intended negative-source enrichment changes site/mask conditional class ratios while preserving overall20percentzero.",
+    "Long0/Long1 share masks and zero schedules, so identical mask-only AUCs acrossL are expected.",
+    "This is a TRAIN association diagnosis, not measured model reliance, causal attribution, blind/generalization performance, or Test distribution matching.",
+    "No parameter, training policy, mask, label, production file or selection changed. Current8trainingpolicies remain frozen."
+  ],
+  "new_model_training_inference_Test_new_validation_gate_eval_locked_panel_or_network_access": false,
+  "original_inputs_unchanged": true,
+  "independent_QA": {
+    "discrete_Nobs_contingency_AUC_max_error": 0.0,
+    "all_Nobs_site_siteNobs_crosstab_sums_match": true,
+    "all_reverse_direction_AUC_sum_to1": true,
+    "no_max_direction_selection": true
+  }
+}

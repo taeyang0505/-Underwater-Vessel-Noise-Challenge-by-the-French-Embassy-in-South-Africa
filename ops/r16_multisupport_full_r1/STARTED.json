@@ -1,0 +1,29 @@
+{
+  "status": "started",
+  "PID": 12773,
+  "started_kst": "2026-10-28T12:32:15.041759+09:00",
+  "authorization": "User explicitly selected proceed with disclosed native12/HF RMSE miss .117553 vs .11",
+  "regime_blend": {
+    "regression": [
+      0.5,
+      0.5
+    ],
+    "independent_classification": [
+      0.5,
+      0.5
+    ]
+  },
+  "Tree_folds_each_regime": 5,
+  "NN_architectures_each_regime": 4,
+  "NN_folds": [
+    0
+  ],
+  "NN_epochs": 100,
+  "NN_optimizer": "Adam",
+  "NN_early_stopping": false,
+  "Tree_minimum_regression_weight": 0.5,
+  "each_NN_architecture_maximum": 0.25,
+  "old_checkpoint_resume": false,
+  "official_upload": false,
+  "no_automatic_retry": true
+}

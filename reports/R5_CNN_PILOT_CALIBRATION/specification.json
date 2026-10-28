@@ -1,0 +1,90 @@
+{
+  "format": "r5_single_cnn_calibration_specification_v1",
+  "created_at_utc": "2026-10-25 17:39:25 UTC",
+  "scope": "Fold0 INNER-only scalar calibration diagnostic; fixed CPU CNN; no neural training/OUTER/Test/GPU/SSH/submission",
+  "written_before_CPU_prediction_file_open": true,
+  "candidate_and_gate_authority": "Parent's explicit fixed instruction; no candidate/gate changes after results",
+  "cpu_predictions": "reports/R5_CNN_MAC_INFERENCE_PROFILE/inner_cpu_predictions.npz",
+  "expected_cpu_predictions_sha256": "6a44209a9c160b158ac01ac681a69f8fcfd4fcba2ac56a8fecc9fccc52f7278e",
+  "cpu_profile_report": "reports/R5_CNN_MAC_INFERENCE_PROFILE.json",
+  "expected_cpu_profile_report_sha256": "9f91a8bf85c2b7ba33ea85368269073a2f6d5c53a499c87dc23f0f3b67ccce80",
+  "expected_checkpoint_sha256": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+  "dataset_fold": "data/synthetic/group_cv_passage_r4_v1/fold_00",
+  "expected_rows": 3000,
+  "expected_positive_reference_components": 5,
+  "expected_background_groups": 50,
+  "expected_zero_rows": 600,
+  "candidates": [
+    {
+      "name": "identity",
+      "a": 1,
+      "b": 0,
+      "fitted": false
+    },
+    {
+      "name": "offset",
+      "a_bounds": [
+        1,
+        1
+      ],
+      "b_bounds": [
+        -0.05,
+        0.05
+      ],
+      "identity_ridge": 0.01
+    },
+    {
+      "name": "constrained_affine",
+      "a_bounds": [
+        0.75,
+        1.25
+      ],
+      "b_bounds": [
+        -0.05,
+        0.05
+      ],
+      "identity_ridge": 0.01
+    }
+  ],
+  "fit_objective": "mean((a*p+b-y)^2) + 0.01*((a-1)^2+b^2); offset fixes a=1; exact convex box-quadratic minimization via interior/faces/corners",
+  "application": "clip(a*p+b,0,1), same scalar mapping for every query; score/presence unchanged",
+  "crossfit": {
+    "reference_index": "lexicographically sorted five positive reference_group keys",
+    "background_shard": "int(SHA256(str(background_group).encode('utf-8')).hexdigest(),16) % 5",
+    "folds": 25,
+    "held_positive": "reference_index==i AND background_shard==j",
+    "held_zero": "zero AND i==0 AND background_shard==j",
+    "meta_fit": "background_shard!=j AND (zero OR reference_index!=i)",
+    "rows_predicted_exactly_once": true,
+    "assertions": [
+      "no background_group shared between fit and heldout",
+      "positive heldout reference components absent from fit",
+      "all fit/heldout masks disjoint",
+      "each input row heldout exactly once"
+    ],
+    "partition_retry_or_outcome_based_seed_changes": false,
+    "negative_convention": "All zero controls use i=0, grouped by background shard; this convention is fixed and asymmetric, not an additional physical reference source.",
+    "additional_24h_purge": false,
+    "purge_scope": "Original dataset TRAIN/INNER source/time purge remains unchanged. This calibrator only separates recorded background_group; it does not assert new 24h or station/sensor independence."
+  },
+  "admission": {
+    "minimum_crossfitted_RMSE_improvement": 0.0005,
+    "minimum_background_group_fraction_with_strict_paired_MSE_improvement": 0.6,
+    "maximum_RMSE_worsening_each_positive_reference_group_and_zero": 0.003,
+    "comparisons_relative_to": "identity on exact same heldout rows",
+    "all_gates_required": true,
+    "candidate_selection": "lowest crossed RMSE among admitted candidates; fixed candidate order breaks ties",
+    "none_admitted": "identity; no rerun, no gate relaxation, no alternative partitions",
+    "final_fit": "refit the selected nonidentity candidate exactly once on the full INNER; identity has no fit"
+  },
+  "limitations": [
+    "Base CNN already used the full INNER labels for early stopping and preprocessing development; these are calibrator-crossfitted diagnostics, not independent neural OOF estimates.",
+    "Synthetic generator/source representativeness is unproven for the challenge Test; no LB estimate is made.",
+    "Only five positive reference components; 3000 windows are not 3000 independent sources.",
+    "Scalar calibration changes the final share independently of the saved cell mask; the original mask explains the original physical pooling, not a transformed scalar."
+  ],
+  "no_OUTER_or_Test_access": true,
+  "no_Test_distribution_fitting": true,
+  "no_external_transmission": true,
+  "no_official_submission": true
+}

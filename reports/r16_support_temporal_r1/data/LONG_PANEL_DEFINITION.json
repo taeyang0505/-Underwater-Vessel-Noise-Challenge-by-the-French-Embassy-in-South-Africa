@@ -1,0 +1,15 @@
+{
+  "positive": 400,
+  "HF_negative": 359,
+  "SF_dense_negative": 168,
+  "reference_component": "VT_R4_REF_de02fbd6bbb753c153bd",
+  "real_native_minutes": 12,
+  "unseen_ge15_available": false,
+  "hf_threshold_db": 9.703231774385126,
+  "threshold_scope": "heldout report backgrounds only, evaluation definition; never TRAIN augmentation threshold",
+  "threshold_rule": "strictly above report-pool q90; no Test statistics",
+  "long_HF_and_SF_class_weights": "each class has total weight0.5; unequal available counts disclosed",
+  "long_and_negative_sources": "same existing report background role; 900-second/24-hour purged against TRAIN",
+  "previous_development_exposure": true,
+  "independent_for_new_Aprime_models_only": true
+}

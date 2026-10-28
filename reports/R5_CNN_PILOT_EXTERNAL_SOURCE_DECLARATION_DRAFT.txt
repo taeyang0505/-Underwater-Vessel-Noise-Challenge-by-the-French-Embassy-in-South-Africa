@@ -1,0 +1,41 @@
+External acoustic source declaration — R5 single-CNN pilot
+
+Source: VTUAD (rebuilt), version 1.3.2
+Authors: Hao Yuan, Wenbo Wang, Tian Li, Guici Chen, Lingjiang Zeng and Sixian Liu.
+Public dataset and access: https://doi.org/10.5281/zenodo.23037895
+https://zenodo.org/records/23037895
+Licence: CC BY 4.0. Credit the VTUAD authors and the upstream Ocean Networks
+Canada recordings, https://data.oceannetworks.ca/ and
+https://doi.org/10.17616/R3RW43 .
+Accessed 24 October 2026 through anonymous public HTTPS without payment or
+account credentials. The deposit provides the strict vessel/background WAV
+archives, registry, dataset documentation and checksums. Follow the public
+deposit instructions to download the split archives and concatenate them before
+extracting. No private recording source or prediction API is used.
+
+Preprocessing: use a recorded waveform channel at its native sample rate;
+compute complete 2-second Hann periodograms with constant detrending; integrate
+25 base-10 deci-decade bands centred at 10^(1.5+0.1*k) Hz, k=0..24. Average
+powers in linear energy units over minute supports. Strict recorded intervals
+are used. Smooth passage envelopes, bounded retiming and smooth spectral EQ in
+synthetic mixtures are declared simulator assumptions, not new recordings or
+verified vessel-only signals. The selected source pool contains 119 clips in
+22 connected groups; this pilot model uses only its designated fold TRAIN
+subset. Groups and duplicate/overlap exclusions are determined before mixing.
+
+Released South African band summaries form the background component. Synthetic
+labels retain the known-added-energy definition E=B+alpha*R and
+share=sum(O*alpha*R)/sum(O*E), where O is the observed-cell mask. Recorded
+reference ambience remains part of the controlled addition; background can
+contain natural vessels. Missing observations do not count as silence.
+
+The CNN is trained from scratch; this pilot has no pretrained foundation
+weights. The input prior uses only TRAIN data. Any fixed global postprocessing
+is selected on our own INNER validation data. Test.csv is used for fixed
+per-window inference only; no test fitting, distribution matching, source-clip
+matching, pseudo-labelling or hidden-target recovery through leaderboard
+probing is performed. No source audio or challenge data are redistributed by
+this declaration. This describes the current single-CNN pilot; older
+experiments may use other separately documented sources.
+
+DRAFT ONLY — not posted to the competition discussion board.

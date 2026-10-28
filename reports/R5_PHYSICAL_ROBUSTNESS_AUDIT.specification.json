@@ -1,0 +1,107 @@
+{
+  "format": "r5_physical_robustness_specification_v1",
+  "created_at_utc": "2026-10-25 18:22:22 UTC",
+  "frozen_before_scenario_predictions": true,
+  "scope": "Fixed original epoch19 raw CNN on own Fold0 INNER3000; no model/policy fitting, no Test/OUTER/GPU/SSH/submission",
+  "checkpoint_sha256": "aa222697275306cf93e5778a707f7ee5fd75610ae0a0bf643d654854ee96d46f",
+  "CPU_profile_report": "reports/R5_CNN_MAC_INFERENCE_PROFILE.json",
+  "CPU_profile_sha256": "9f91a8bf85c2b7ba33ea85368269073a2f6d5c53a499c87dc23f0f3b67ccce80",
+  "precision": "CPU float32",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "batch_size": 128,
+  "scenarios": [
+    {
+      "name": "identity",
+      "kind": "identity",
+      "known_q": "unchanged",
+      "known_y": "unchanged"
+    },
+    {
+      "name": "common_gain_minus12dB",
+      "kind": "common_gain",
+      "gain_db": -12,
+      "apply_to": "all observed mixture cells",
+      "known_q": "unchanged",
+      "known_y": "unchanged; recomputed identity checked only for float32 rounding error"
+    },
+    {
+      "name": "common_gain_minus6dB",
+      "kind": "common_gain",
+      "gain_db": -6,
+      "apply_to": "all observed mixture cells",
+      "known_q": "unchanged",
+      "known_y": "unchanged; recomputed identity checked only for float32 rounding error"
+    },
+    {
+      "name": "common_gain_plus6dB",
+      "kind": "common_gain",
+      "gain_db": 6,
+      "apply_to": "all observed mixture cells",
+      "known_q": "unchanged",
+      "known_y": "unchanged; recomputed identity checked only for float32 rounding error"
+    },
+    {
+      "name": "common_gain_plus12dB",
+      "kind": "common_gain",
+      "gain_db": 12,
+      "apply_to": "all observed mixture cells",
+      "known_q": "unchanged",
+      "known_y": "unchanged; recomputed identity checked only for float32 rounding error"
+    },
+    {
+      "name": "common_tilt_minus4dB",
+      "kind": "common_tilt",
+      "tilt_db": -4,
+      "band_coordinate": "linspace(-1,1,25)",
+      "apply_to": "entire mixture: same per-band gain for B and added R",
+      "known_q": "unchanged on observed cells",
+      "known_y": "recompute sum(original_q * transformed_observed_energy)/sum(transformed_observed_energy)"
+    },
+    {
+      "name": "common_tilt_plus4dB",
+      "kind": "common_tilt",
+      "tilt_db": 4,
+      "band_coordinate": "linspace(-1,1,25)",
+      "apply_to": "entire mixture: same per-band gain for B and added R",
+      "known_q": "unchanged on observed cells",
+      "known_y": "recompute sum(original_q * transformed_observed_energy)/sum(transformed_observed_energy)"
+    },
+    {
+      "name": "drop_first_minute",
+      "kind": "endpoint_drop",
+      "minute_index": 0,
+      "if_already_missing": "no operation",
+      "support_protection": "skip if removing this observed minute would leave fewer than3 observed minutes",
+      "known_q": "zero in removed cells; unchanged elsewhere",
+      "known_y": "recompute with remaining transformed observed energy"
+    },
+    {
+      "name": "drop_last_minute",
+      "kind": "endpoint_drop",
+      "minute_index": 14,
+      "if_already_missing": "no operation",
+      "support_protection": "skip if removing this observed minute would leave fewer than3 observed minutes",
+      "known_q": "zero in removed cells; unchanged elsewhere",
+      "known_y": "recompute with remaining transformed observed energy"
+    }
+  ],
+  "targets": "Known q/y are used only to derive diagnostic truth after a known physical transform; model receives transformed db and frozen TRAIN prior only",
+  "metrics": [
+    "RMSE",
+    "MAE",
+    "bias_pred_minus_truth",
+    "addition_presence_AUC",
+    "per-reference and per-site RMSE/MAE/bias/AUC",
+    "prediction change vs identity",
+    "target change vs identity",
+    "physical pooling residual",
+    "q/y transformation identity error"
+  ],
+  "all_scenarios_reported": true,
+  "no_failed_or_unfavourable_case_selection_or_deletion": true,
+  "no_outcome_based_parameter_changes": true,
+  "original_input_arrays_or_sources_modified": false,
+  "weights_and_source17_sha_before_after": true,
+  "interpretation": "This is a predeclared nuisance-sensitivity stress diagnostic, not a reconstruction or tuning to the official hidden generator. Robustness/invariance is not claimed before measurement."
+}

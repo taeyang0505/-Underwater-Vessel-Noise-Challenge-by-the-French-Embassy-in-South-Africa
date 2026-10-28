@@ -1,0 +1,23 @@
+{
+  "format": "r13_real_TRAIN_spawn_prefetch_smoke_v1",
+  "status": "passed",
+  "model_fit": false,
+  "actual_TRAIN_rows": 64,
+  "fold": 0,
+  "epoch": 1,
+  "workers": 4,
+  "prefetch_factor": 2,
+  "worker_threads": 1,
+  "zero_vs_four_workers_bitwise_all_numeric_keys": true,
+  "parent_loader_seconds": 0.10476341750472784,
+  "spawn_loader_seconds": 25.06777974963188,
+  "not_a_parallel_full_epoch_benchmark": true,
+  "cannot_extrapolate_linear_speedup": true,
+  "code_sha256": {
+    "pipeline/full_data_r13.py": "1ab10cc3ab1a00c8cada4c7f781d729f4896fc9df483ab6e952e4abf2f363d16",
+    "pipeline/training_r13.py": "2962af0f91be7c74708298138feb0c561a21fc3255d0fe8aaaddd44c09041523",
+    "ops/verify_r13_spawn_loader.py": "92bec984f6c61355100efd8985d924ab854f6c0b3fad17224514bafda6537310"
+  },
+  "source_unchanged": true,
+  "Test_report_arrays_GPU_SSH": false
+}

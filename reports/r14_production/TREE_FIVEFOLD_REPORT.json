@@ -1,0 +1,133 @@
+{
+  "status": "completed",
+  "scope": "tree_only_all5_background_folds",
+  "folds": [
+    {
+      "fold": 0,
+      "n": 1000,
+      "rmse": 0.05669534768444128,
+      "mae": 0.03350096848363134,
+      "bias": 0.003010911496071486,
+      "auc_share": 0.88090625,
+      "auc_score": 0.97519375,
+      "prediction_mean": 0.15513329504490092,
+      "prediction_rms": 0.2449822100698819,
+      "target_mean": 0.15212238354882945,
+      "high_y_n": 274,
+      "high_y_bias": -0.022152288062294034,
+      "score_ge099_fraction": 0.552,
+      "report_identity": {
+        "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_00/baseline_report.npz",
+        "sha256": "7c06cb7068ee7665c2325d01e1d0609ff918dd3ffb4adfb5ae0ea02d5b44757f",
+        "role": "report",
+        "fold": 0,
+        "baseline_common_observations": true
+      }
+    },
+    {
+      "fold": 1,
+      "n": 1000,
+      "rmse": 0.046698183774234264,
+      "mae": 0.02865092783921864,
+      "bias": -0.0015540408580127405,
+      "auc_share": 0.908871875,
+      "auc_score": 0.9836375,
+      "prediction_mean": 0.15583179003093392,
+      "prediction_rms": 0.2510093425567743,
+      "target_mean": 0.15738583088894667,
+      "high_y_n": 278,
+      "high_y_bias": -0.0244307957536025,
+      "score_ge099_fraction": 0.0,
+      "report_identity": {
+        "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_01/baseline_report.npz",
+        "sha256": "8f7200c26978fdbd3aaf0923649c5e665ed34235efee64136f048a4ac1bb732d",
+        "role": "report",
+        "fold": 1,
+        "baseline_common_observations": true
+      }
+    },
+    {
+      "fold": 2,
+      "n": 1000,
+      "rmse": 0.060747893719215705,
+      "mae": 0.037187392203522594,
+      "bias": -0.0006772532976825972,
+      "auc_share": 0.881940625,
+      "auc_score": 0.981575,
+      "prediction_mean": 0.16431846188924829,
+      "prediction_rms": 0.2571661701387674,
+      "target_mean": 0.16499571518693087,
+      "high_y_n": 311,
+      "high_y_bias": -0.03236782224998597,
+      "score_ge099_fraction": 0.0,
+      "report_identity": {
+        "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_02/baseline_report.npz",
+        "sha256": "aca88d0b44b12e418cea57d038fd73e2984691ca5b7340c54fc973ed13ecbd12",
+        "role": "report",
+        "fold": 2,
+        "baseline_common_observations": true
+      }
+    },
+    {
+      "fold": 3,
+      "n": 1000,
+      "rmse": 0.05577088224492745,
+      "mae": 0.036697047658286464,
+      "bias": 0.0007902624860907963,
+      "auc_share": 0.8793625,
+      "auc_score": 0.9679375,
+      "prediction_mean": 0.16896262694744565,
+      "prediction_rms": 0.25977765263347213,
+      "target_mean": 0.16817236446135483,
+      "high_y_n": 311,
+      "high_y_bias": -0.02824103681316713,
+      "score_ge099_fraction": 0.485,
+      "report_identity": {
+        "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_03/baseline_report.npz",
+        "sha256": "e5fa0fa2c99d88358a9c09cd771a482bfbff21cd8c5bac4f7f48fe208f712f35",
+        "role": "report",
+        "fold": 3,
+        "baseline_common_observations": true
+      }
+    },
+    {
+      "fold": 4,
+      "n": 1000,
+      "rmse": 0.05448922885441767,
+      "mae": 0.03545870343782053,
+      "bias": 0.008442885388168633,
+      "auc_share": 0.86575,
+      "auc_score": 0.9681625,
+      "prediction_mean": 0.1747956830503099,
+      "prediction_rms": 0.2693706877916624,
+      "target_mean": 0.16635279766214126,
+      "high_y_n": 294,
+      "high_y_bias": -0.015230328351461968,
+      "score_ge099_fraction": 0.0,
+      "report_identity": {
+        "path": "data/synthetic/group_cv_physics_r13_variants_v2/fold_04/baseline_report.npz",
+        "sha256": "4e88f81269ff3a89b865a7169bc29e63c65b29ddf4122cf51d19380435279e80",
+        "role": "report",
+        "fold": 4,
+        "baseline_common_observations": true
+      }
+    }
+  ],
+  "pooled_OOF": {
+    "n": 5000,
+    "rmse": 0.05507241918732031,
+    "mae": 0.03429900792449592,
+    "bias": 0.0020025530429271157,
+    "auc_share": 0.8817795,
+    "auc_score": 0.9657735,
+    "prediction_mean": 0.16380837139256774,
+    "prediction_rms": 0.2565936120071813,
+    "target_mean": 0.1618058183496406,
+    "high_y_n": 1468,
+    "high_y_bias": -0.024651607528978537,
+    "score_ge099_fraction": 0.2074
+  },
+  "reference_independent_CV": false,
+  "full_neural_5fold_OOF": false,
+  "barrier_sha256": "1fe0a6e1ad5d4cecb05299f3b44244b6bdbe0d710c87c3fb911fc90161bb53d4"
+}

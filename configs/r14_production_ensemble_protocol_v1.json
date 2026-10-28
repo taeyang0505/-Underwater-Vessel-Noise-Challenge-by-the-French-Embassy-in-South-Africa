@@ -1,0 +1,16 @@
+{
+  "version": "r14_production_ensemble_protocol_v1",
+  "primary_config": "configs/r14_production_mac_v1.json",
+  "approval": "ops/r14_production_approval.json",
+  "fit_observations": "same-fold baseline ensemble_fit500 shared db/y for every member; highshare changes training only",
+  "gate_observations": "same-fold baseline ensemble_gate500, TRAIN-excluded with existing24h purge",
+  "regression": {"fit": "nonnegative sum1 least-squares on ensemble_fit only", "ridge_to_uniform": 0.000001, "fallback": "fit-best single member", "gate_acceptance": "ensemble gate RMSE <= fit-best-single gate RMSE - 0.0001"},
+  "score": {"classifier_candidates": ["baseline", "highshare", "mean"], "classifier_weight_candidates": [0.0, 0.25, 0.5, 0.75, 0.85, 1.0], "fit": "highest fit ROC-AUC, first canonical tie", "gate_acceptance": "candidate gate AUC >= share-only gate AUC - 0.0001", "fallback": "share_only"},
+  "tree_only": "own-fold fit/gate policy for baseline/highshare; all5 policies and artifacts freeze before report and Test; Test equal fold average",
+  "fold0_hybrid": "Fold0 NN members plus Fold0 baseline/highshare Tree for fitting and gate; no averaged5fold Tree prediction is used to fit weights on Fold0 data",
+  "step1_bagging_extension": "At Test only, replace each Tree-family Fold0 prediction by that family's arithmetic average over5folds, keeping frozen Fold0 family coefficients. Distinguish this from exactly evaluated Fold0 pipeline and from full-neural5fold OOF.",
+  "development17": "report only after policy freeze; fullTree bagging on panels whose sources overlap other-fold TRAIN is marked not heldout; default17comparison is exactly Fold0 heldout proxy",
+  "Test": "db-only inference after complete model/policy barrier; no target fitting/distribution adjustment/source matching",
+  "postprocessing": "numeric clip[0,1] only",
+  "official_upload": false
+}

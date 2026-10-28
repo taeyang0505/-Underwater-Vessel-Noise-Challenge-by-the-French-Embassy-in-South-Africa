@@ -1,0 +1,31 @@
+{
+  "kind": "bg_cnn",
+  "epoch": 27,
+  "maximum_epochs": 100,
+  "train_online_rmse": 0.05334318717877511,
+  "train_weighted_cell_mse": 0.012747393303773554,
+  "train_classifier_bce": 0.20566384103041865,
+  "selection": {
+    "n": 2400,
+    "rmse": 0.08432042012198919,
+    "mae": 0.04423976734383756,
+    "bias": -0.0033813841850936365,
+    "share_auc": 0.87359375,
+    "classifier_auc": 0.9275651041666667,
+    "classifier_brier": 0.10361492232947457,
+    "share_mean": 0.16778953841948047,
+    "classifier_mean": 0.7094475363165839,
+    "classifier_ge099": 0.3383333333333333
+  },
+  "best_regression_rmse": 0.07549575576895036,
+  "best_regression_epoch": 24,
+  "best_classifier_auc": 0.9300065104166667,
+  "best_classifier_epoch": 21,
+  "rows": 61446,
+  "optimizer_steps": 12987,
+  "learning_rate": 0.0008438508174347012,
+  "next_learning_rate": 0.000832349373335208,
+  "epoch_seconds_including_validation_checkpoint": 55.792327917180955,
+  "MPS_driver_bytes": 1184841728,
+  "device": "mps"
+}

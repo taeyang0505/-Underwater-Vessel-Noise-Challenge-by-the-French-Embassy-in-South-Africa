@@ -1,0 +1,335 @@
+{
+  "format": "r14_frozen_fit_calibration_policies_v1",
+  "plan_sha256": "bbc8860c226654c1127bfa21dbda84e3d24a3705cbbeb33f5f2ecb0b9f0beb34",
+  "all_candidate_settings": [
+    {
+      "calibration": {
+        "name": "identity",
+        "kind": "identity"
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "power0.75",
+        "kind": "power",
+        "gamma": 0.75
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "power0.85",
+        "kind": "power",
+        "gamma": 0.85
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "power0.95",
+        "kind": "power",
+        "gamma": 0.95
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "power1.05",
+        "kind": "power",
+        "gamma": 1.05
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "power1.15",
+        "kind": "power",
+        "gamma": 1.15
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "power1.25",
+        "kind": "power",
+        "gamma": 1.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "temperature0.7",
+        "kind": "temperature",
+        "temperature": 0.7
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "temperature0.85",
+        "kind": "temperature",
+        "temperature": 0.85
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "temperature1.15",
+        "kind": "temperature",
+        "temperature": 1.15
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "temperature1.3",
+        "kind": "temperature",
+        "temperature": 1.3
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a0.75_b-0.25",
+        "kind": "logit",
+        "a": 0.75,
+        "b": -0.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a0.75_b0.0",
+        "kind": "logit",
+        "a": 0.75,
+        "b": 0.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a0.75_b0.25",
+        "kind": "logit",
+        "a": 0.75,
+        "b": 0.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a1.0_b-0.25",
+        "kind": "logit",
+        "a": 1.0,
+        "b": -0.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a1.0_b0.25",
+        "kind": "logit",
+        "a": 1.0,
+        "b": 0.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a1.25_b-0.25",
+        "kind": "logit",
+        "a": 1.25,
+        "b": -0.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a1.25_b0.0",
+        "kind": "logit",
+        "a": 1.25,
+        "b": 0.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "logit_a1.25_b0.25",
+        "kind": "logit",
+        "a": 1.25,
+        "b": 0.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low0.75_high0.75",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 0.75,
+        "high_slope": 0.75
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low0.75_high1.0",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 0.75,
+        "high_slope": 1.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low0.75_high1.25",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 0.75,
+        "high_slope": 1.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low0.75_high1.5",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 0.75,
+        "high_slope": 1.5
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low0.75_high2.0",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 0.75,
+        "high_slope": 2.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.0_high0.75",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.0,
+        "high_slope": 0.75
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.0_high1.0",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.0,
+        "high_slope": 1.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.0_high1.25",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.0,
+        "high_slope": 1.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.0_high1.5",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.0,
+        "high_slope": 1.5
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.0_high2.0",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.0,
+        "high_slope": 2.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.25_high0.75",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.25,
+        "high_slope": 0.75
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.25_high1.0",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.25,
+        "high_slope": 1.0
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.25_high1.25",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.25,
+        "high_slope": 1.25
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.25_high1.5",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.25,
+        "high_slope": 1.5
+      },
+      "classifier_weight": 1.0
+    },
+    {
+      "calibration": {
+        "name": "piece_low1.25_high2.0",
+        "kind": "piecewise",
+        "knee": 0.2,
+        "low_slope": 1.25,
+        "high_slope": 2.0
+      },
+      "classifier_weight": 1.0
+    }
+  ],
+  "primary_ordinary": {
+    "calibration": {
+      "name": "power1.05",
+      "kind": "power",
+      "gamma": 1.05
+    },
+    "classifier_weight": 1.0
+  },
+  "secondary_weighted_1plus2y": {
+    "calibration": {
+      "name": "identity",
+      "kind": "identity"
+    },
+    "classifier_weight": 1.0
+  },
+  "primary_candidate_index": 4,
+  "secondary_candidate_index": 0,
+  "fit_only": true,
+  "panels_used_for_parameter_choice": false,
+  "policy_sha256": "dd05fc991b38089ee3b89db8bd7a503e1db45f53fb6285ccb01aa6b6cbbb54c0"
+}

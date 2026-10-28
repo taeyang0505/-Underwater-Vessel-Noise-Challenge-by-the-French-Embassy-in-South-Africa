@@ -1,0 +1,101 @@
+{
+  "negative_quantile_population": 6920,
+  "HF_band_indices": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "HF_band_centers_hz": [
+    1995.2623149688789,
+    2511.886431509582,
+    3162.2776601683795,
+    3981.0717055349733,
+    5011.872336272725,
+    6309.573444801937,
+    7943.282347242822
+  ],
+  "hf_q90_db": 10.725742095449426,
+  "hf_q50_db": 0.999508465562954,
+  "panel_counts": {
+    "hf_high": 500,
+    "st_francis_dense": 312,
+    "edge_restored": 500,
+    "edge_QC_paired": 500,
+    "hf_quiet": 500
+  },
+  "panel_site_counts": {
+    "hf_high": {
+      "1 Richards Bay": 429,
+      "7 St_Francis": 32,
+      "5 St Croix Island": 28,
+      "2 Durban": 10,
+      "4 Bird Island": 1
+    },
+    "st_francis_dense": {
+      "7 St_Francis": 312
+    },
+    "edge_restored": {
+      "1 Richards Bay": 486,
+      "5 St Croix Island": 9,
+      "4 Bird Island": 3,
+      "2 Durban": 2
+    },
+    "edge_QC_paired": {
+      "1 Richards Bay": 486,
+      "5 St Croix Island": 9,
+      "4 Bird Island": 3,
+      "2 Durban": 2
+    },
+    "hf_quiet": {
+      "1 Richards Bay": 335,
+      "5 St Croix Island": 72,
+      "4 Bird Island": 52,
+      "2 Durban": 32,
+      "7 St_Francis": 9
+    }
+  },
+  "panel_observed_minutes": {
+    "hf_high": {
+      "13": 18,
+      "14": 64,
+      "15": 418
+    },
+    "st_francis_dense": {
+      "15": 312
+    },
+    "edge_restored": {
+      "12": 132,
+      "14": 368
+    },
+    "edge_QC_paired": {
+      "12": 132,
+      "14": 368
+    },
+    "hf_quiet": {
+      "13": 5,
+      "14": 98,
+      "15": 397
+    }
+  },
+  "positive_n": 500,
+  "positive_vs_negative_bg_overlap": 0,
+  "native_ge15_reference_count": 7,
+  "native_ge15_reference_indices": [
+    1,
+    21,
+    94,
+    208,
+    360,
+    430,
+    463
+  ],
+  "reference_minutes_mean": 3.8860510805500983,
+  "all_reference_unique": 509,
+  "negative_panels_can_overlap_each_other": true,
+  "TRAIN_group_and_window_overlap": 0,
+  "minimum_other_role_support_gap_hours": 24.0
+}

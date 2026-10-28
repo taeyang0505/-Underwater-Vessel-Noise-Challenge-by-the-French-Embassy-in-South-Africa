@@ -1,0 +1,92 @@
+{
+  "format": "r12_small_physics_cnn_v1",
+  "status": "completed",
+  "arm": {
+    "name": "highshareP1",
+    "long": true,
+    "HF": true,
+    "shape": true,
+    "legacy_control": false,
+    "highshare": true
+  },
+  "epochs_run": 100,
+  "best_epoch": 78,
+  "early_stopping": false,
+  "optimizer": "Adam",
+  "dropout": 0.1,
+  "learning_rate_schedule": "cosine .001->.00001, fixed100",
+  "parameters": 26953,
+  "validation_fit_metrics": {
+    "n": 1000,
+    "rmse": 0.08271289744676139,
+    "mae": 0.044903745155158506,
+    "bias": 0.011542134847334637,
+    "prediction_mean": 0.20390375992233747,
+    "prediction_rms": 0.30784565145493115,
+    "target_mean": 0.19236162507500285,
+    "target_rms": 0.3029674449657959,
+    "zero_n": 200,
+    "zero_prediction_mean": 0.023441096122842283,
+    "auc_share": 0.90904375,
+    "auc_score": 0.90904375,
+    "auc_legacy_score": 0.93129375,
+    "contrast_ge099_fraction": 0.088,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 512,
+        "rmse": 0.0885112054689602,
+        "bias": 0.022391564251824647
+      },
+      "2 Durban": {
+        "n": 119,
+        "rmse": 0.06574872111947486,
+        "bias": -0.005610171614015209
+      },
+      "4 Bird Island": {
+        "n": 73,
+        "rmse": 0.03403732742739927,
+        "bias": 0.002591834697004867
+      },
+      "5 St Croix Island": {
+        "n": 108,
+        "rmse": 0.08329013235375234,
+        "bias": 0.00015957846793484081
+      },
+      "7 St_Francis": {
+        "n": 188,
+        "rmse": 0.08878840047889339,
+        "bias": 0.002866095558776114
+      }
+    },
+    "site_macro_rmse": 0.07207515736969601,
+    "target_slices": {
+      "zero": {
+        "n": 200,
+        "rmse": 0.061477764389732105,
+        "bias": 0.023441096122842283,
+        "SSE": 0.7559031028718826
+      },
+      "positive_to_.2": {
+        "n": 466,
+        "rmse": 0.0710055505371205,
+        "bias": 0.01812833228690337,
+        "SSE": 2.349473304499081
+      },
+      "above_.2": {
+        "n": 334,
+        "rmse": 0.10576279804874825,
+        "bias": -0.004772117433924518,
+        "SSE": 3.7360469966675023
+      }
+    }
+  },
+  "checkpoint_sha256": "7c5ffe9f392a997f90543aa9503ee11c3416e54714f0a82e790ceef5f81b1fe8",
+  "elapsed_seconds": 404.79589141719043,
+  "device": "Mac CPU FP32",
+  "Test_read": false,
+  "gate_or_eval_read": false,
+  "score": "share",
+  "code_sha256": {
+    "training_r12.py": "1d4107df6e1ee4cfd7a3aa9421a0c9f07f59a581b41e1104aefd28967d6b755d"
+  }
+}

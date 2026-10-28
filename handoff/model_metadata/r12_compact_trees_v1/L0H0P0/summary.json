@@ -1,0 +1,228 @@
+{
+  "format": "r12_compact_physics_lgbm_v1",
+  "kind": "lgbm_physics_compact",
+  "status": "completed",
+  "fixture_only": false,
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102712,
+  "include_shape": false,
+  "feature_count": 466,
+  "feature_schema_sha256": "84ac60fe2a0af7f26032767019f16a77c20aa86eff002132635666591d7b42ea",
+  "basis_sha256": null,
+  "basis_training_binding": null,
+  "training_binding": {
+    "format": "r12_compact_tree_source_binding_v1",
+    "data_hash": "42e51eedf28723335cb75af7c9229d2ffb1796ff549a0ffd8533f30a4c1ddfab",
+    "data_manifest_sha256": "06a8a1c8196a3cb172277f120219975b3c2d251696d7042419ec7155b2548e98",
+    "arm": "L0_H0",
+    "include_shape": false,
+    "TRAIN_npz_sha256": "3eaaf39d9a90e4db62aa978ccbc760ff7020fb257979843d8566bc540cc2d739",
+    "validation_fit_npz_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "basis_sha256": null,
+    "basis_training_binding": null,
+    "source_group_24h_purge_passed": true,
+    "development_not_blind_or_official": true
+  },
+  "fit_plan_sha256": "c9c45fcc22b4f4224149928b8b685e3da85df1fa5d58ca43caae5ed3fa105e7c",
+  "best_iteration": 570,
+  "classifier_best_iteration": 164,
+  "validation_fit_metrics": {
+    "n": 1000,
+    "rmse": 0.11633885260184205,
+    "mae": 0.066046495132784,
+    "bias": -0.02325728326681292,
+    "target_mean": 0.19236162507500285,
+    "target_rms": 0.3029674449657959,
+    "prediction_mean": 0.16910434180818992,
+    "prediction_rms": 0.25559678874993935,
+    "share_auc": 0.836828125,
+    "classifier_auc": 0.8950125,
+    "hybrid_auc": 0.90343125,
+    "share_saturation_le001": 0.163,
+    "share_saturation_ge099": 0.0,
+    "classifier_saturation_le001": 0.0,
+    "classifier_saturation_ge099": 0.246,
+    "raw_share_clipped_fraction": 0.078,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 512,
+        "rmse": 0.10889442872530658,
+        "bias": -0.01615427992035201,
+        "target_mean": 0.1727538639805406,
+        "prediction_mean": 0.1565995840601886,
+        "share_auc": 0.8138169642857143,
+        "classifier_auc": 0.8670982142857142
+      },
+      "2 Durban": {
+        "n": 119,
+        "rmse": 0.10090910969394826,
+        "bias": -0.02269577545611806,
+        "target_mean": 0.21525530240345872,
+        "prediction_mean": 0.19255952694734066,
+        "share_auc": 0.9463829787234043,
+        "classifier_auc": 0.9765957446808511
+      },
+      "4 Bird Island": {
+        "n": 73,
+        "rmse": 0.06967447341092743,
+        "bias": -0.013440285168954152,
+        "target_mean": 0.16110139389917866,
+        "prediction_mean": 0.1476611087302245,
+        "share_auc": 0.9322916666666667,
+        "classifier_auc": 0.9913194444444444
+      },
+      "5 St Croix Island": {
+        "n": 108,
+        "rmse": 0.1513809981942908,
+        "bias": -0.05867056824327274,
+        "target_mean": 0.2420805071499975,
+        "prediction_mean": 0.18340993890672475,
+        "share_auc": 0.8716032608695652,
+        "classifier_auc": 0.9354619565217391
+      },
+      "7 St_Francis": {
+        "n": 188,
+        "rmse": 0.1349225158171959,
+        "bias": -0.026425172769720912,
+        "target_mean": 0.2148466447027378,
+        "prediction_mean": 0.18842147193301687,
+        "share_auc": 0.7880701754385965,
+        "classifier_auc": 0.8471929824561404
+      }
+    },
+    "family_slices": {
+      "long_native": {
+        "n": 100,
+        "rmse": 0.1221300434560537,
+        "bias": -0.04702721777721308,
+        "target_mean": 0.2999085525725968,
+        "prediction_mean": 0.2528813347953837,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "long_smooth_bell": {
+        "n": 300,
+        "rmse": 0.18020254420242163,
+        "bias": -0.08698924330994487,
+        "target_mean": 0.3390889455090898,
+        "prediction_mean": 0.2520997021991449,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "native_edge": {
+        "n": 90,
+        "rmse": 0.048433223122567565,
+        "bias": 0.004784080543726708,
+        "target_mean": 0.10463190881119873,
+        "prediction_mean": 0.10941598935492544,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "native_inside": {
+        "n": 220,
+        "rmse": 0.06903951817255433,
+        "bias": -0.006450620884689587,
+        "target_mean": 0.192696348331149,
+        "prediction_mean": 0.1862457274464594,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "native_short": {
+        "n": 90,
+        "rmse": 0.05206993893605708,
+        "bias": 0.01662642354829384,
+        "target_mean": 0.09815575265728411,
+        "prediction_mean": 0.11478217620557794,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "no_source": {
+        "n": 200,
+        "rmse": 0.06314711668009622,
+        "bias": 0.03517201365120855,
+        "target_mean": 0.0,
+        "prediction_mean": 0.03517201365120855,
+        "share_auc": null,
+        "classifier_auc": null
+      }
+    },
+    "site_macro_rmse": 0.11315630516833379,
+    "protected_slices": {
+      "zero": {
+        "n": 200,
+        "rmse": 0.06314711668009622,
+        "bias": 0.03517201365120855,
+        "prediction_mean": 0.03517201365120855,
+        "SSE": 0.7975116690019373
+      },
+      "positive_to020": {
+        "n": 466,
+        "rmse": 0.05834100291518882,
+        "bias": 0.006153329058680813,
+        "prediction_mean": 0.07832152521374632,
+        "SSE": 1.5861114414559325
+      },
+      "above020": {
+        "n": 334,
+        "rmse": 0.18271984964927615,
+        "bias": -0.09927885430658649,
+        "prediction_mean": 0.37596439619264205,
+        "SSE": 11.151105514255264
+      },
+      "long_positive": {
+        "n": 400,
+        "rmse": 0.16758178475423183,
+        "bias": -0.07699873692676192,
+        "prediction_mean": 0.2522951103482046,
+        "SSE": 11.233461832565474
+      },
+      "standard_positive": {
+        "n": 400,
+        "rmse": 0.06131384678736367,
+        "bias": 0.0012695219341253504,
+        "prediction_mean": 0.15287973734666593,
+        "SSE": 1.5037551231457225
+      },
+      "SF_dense_zero": {
+        "n": 0,
+        "rmse": null,
+        "bias": null,
+        "prediction_mean": null,
+        "SSE": 0.0
+      }
+    }
+  },
+  "train_rows": 12000,
+  "validation_fit_rows": 1000,
+  "feature_matrix_bytes": {
+    "train": 22368000,
+    "validation_fit": 1864000
+  },
+  "lightgbm_version": "4.7.0",
+  "score_policy": ".5clipped_share+.5presence_classifier; no calibration",
+  "NN_epoch_policy_applicable": false,
+  "artifact_sha256": {
+    "share.txt": "4365b8678de4bcb8d02984c2cfb6cfd5a4e21fb0cb11bc3bf15fdb5417f0d0e0",
+    "presence.txt": "1efe2a3247c660c1b39661e648f2a9e3d0008a76a2391be9ceb0a373cd175601",
+    "feature_schema.json": "844f98d74f5dfa6630c588c242e7fb5ac5c2b36f5fb0c6b789f4ce41c814d546",
+    "validation_fit_predictions.npz": "b915e683c1546c5535cac92f2b83ccd7076fae31bbf85b412700bff10b1bb6b2",
+    "fit_plan.json": "c9c45fcc22b4f4224149928b8b685e3da85df1fa5d58ca43caae5ed3fa105e7c"
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "elapsed_seconds": 19.544619084335864,
+  "gate_eval_Test_used_for_fitting": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "quantiles_vs_numpy_max_error": {
+    "max_minus_median": 9.417773014774866e-07,
+    "max_minus_q20": 1.3367545932396752e-06,
+    "median_minus_window_median": 2.2988511716448556e-07,
+    "median_minus_band_median_center": 2.2977630464993126e-07,
+    "max_minus_min": 1.859966829442783e-06
+  },
+  "common_gain_invariance": true,
+  "per_band_static_gain_temporal_bump_invariance": true,
+  "profile_per_band_gain_invariance_claimed": false
+}

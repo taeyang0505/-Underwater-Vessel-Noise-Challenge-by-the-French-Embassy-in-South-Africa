@@ -1,0 +1,23 @@
+{
+  "format": "r12_prospective_small_cpu_improvement_v1",
+  "status": "predeclared_before_actual_model_fitting",
+  "seed": 2026102712,
+  "no_Test_opened_or_fitted": true,
+  "preserve_original_R9_R10_R11": true,
+  "factorial_axes": {"long_support": [false, true], "HF_SF_A0": [false, true], "spectral_residual": [false, true]},
+  "contrast_loss_policy": "removed in all8 candidates; one budget-matched CNN control with legacy005 BCE only",
+  "CNN": {"width": 24, "residual_blocks": 2, "global_context": "safe bands10:20,20:23,15:23", "input_channels": 11, "shape_off": "pad3 zeros; identical parameter budget", "train_examples": 6000, "zero_examples": 1200, "epochs": 100, "early_stopping": false, "optimizer": "Adam", "learning_rate": 0.001, "weight_decay": 0.0003, "dropout": 0.1, "gradient_clip": 1.0, "scheduler": "fixed cosine100 to1e-5", "batch_size": 128, "threads": 4, "best_checkpoint": "validation_fit1000 lowest window RMSE, first tie", "candidate_loss": "share MSE +0.25 weighted cell MSE", "score": "share_hat only; contrast saturation diagnostic only"},
+  "tree": {"train_examples": 12000, "regressor_and_independent_classifier": true, "maximum_trees": 1500, "early_stopping": 40, "features": [466,673], "threads": 2, "score": "report share,classifier,and original half_share_half_classifier independently"},
+  "basis": "unique original TRAIN A0 backgrounds only,3PCA; per-minute safe-band gain centering; no fit on mixtures/val/report/Test",
+  "data": "R9 source role and900sec+24h purge maintained; exactly20percent explicit A0; positive sum(OA)>0; native long plus5-14min statistical long bell passages; actual continuity unproven hence no concat",
+  "fit_sources": "data/synthetic/r12_cpu_ablation_v3",
+  "validation_roles": {"validation_fit":1000,"validation_gate":500,"eval":500},
+  "source_independence_limit": "new validation row IDs exclude previous R11 known rows but share source groups previously used diagnostically; VTUAD references shared across source roles as inR9; not reference-independent or new blind challenge",
+  "evaluation_panels": ["R9 selection and ensemble_gate saved panels","R11 full_smooth12/13/15 and native_long15 vs actualSFdense/HFhighA0","R10 unseen_site r9_complete and combined_stress","R10 seen mean_scale_only and combined_stress","new highSNR+long500 challenge","new R12 validation_gate and eval"],
+  "all_models_frozen_before_gate_or_challenge": true,
+  "policy_selection": "after allfits freeze, select among eight paired CNN+tree recipes by validation_gate RMSE of fixed50/50 share ensemble. If no recipe improves fixed L0H0P0 on gate, retain that comparator. Known R11 panels are development reporting, never called blind. Do not fit weights/thresholds or target moments from Test or Public.",
+  "unseen_eval": "open after recipe SHA frozen; report all predefined diagnostics, never change recipe afterward",
+  "GPU_readiness": "report whether selected recipe improves RMSE and AUC on long+SF/HF and normal/unseen/highSNR panels; failing any goal is reported, no guarantee of0.80 or LB forecast",
+  "metrics": ["RMSE","MAE","bias","prediction_mean_RMS","share_AUC","score_AUC","classifier_AUC","contrast_ge.99","source_cluster_CI","target_gt.2_SSE","site_macro"],
+  "claims_not_made": ["official hidden generator known","all official gap causes proven","global optimization guaranteed","PCA makes stationary decomposition identifiable","statistically generated long clips are new independent audio"]
+}

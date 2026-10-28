@@ -1,0 +1,76 @@
+{
+  "status": "passed observation augmentation CPU fixtures",
+  "scope": "Synthetic CPU observations/known-q fixtures only",
+  "production_candidate_policy": {
+    "probability": 0.2,
+    "max_drop": 2,
+    "min_observed_minutes": 3
+  },
+  "policy_uses_Test_frequencies_or_site_weights": false,
+  "raw_inputs_and_known_q_unchanged": true,
+  "physical_db_readonly_owned_copy": true,
+  "same_epoch_index_seed_and_chunk_bitwise": true,
+  "different_epoch_changes_proposals": true,
+  "proposals_independent_of_observations_and_labels": true,
+  "all_original_and_new_missing_q_zero": true,
+  "raw_energy_weighted_y_and_presence_recomputed": true,
+  "minimum_support_protection_verified": true,
+  "hidden_known_addition_can_become_zero": true,
+  "default_audit_counts": {
+    "scope": "TRAIN-only observation augmentation, no Test-derived policy",
+    "policy": {
+      "probability": 0.2,
+      "max_drop": 2,
+      "min_observed_minutes": 3
+    },
+    "seed": 42,
+    "epoch": 3,
+    "quantization_decimals": 1,
+    "input_windows": 256,
+    "proposal_depends_on_observations_or_labels": false,
+    "resampled_or_retried_proposals": 0,
+    "requested_events": 54,
+    "applied_events": 54,
+    "already_unobserved_skips": 0,
+    "minimum_support_protection_skips": 0,
+    "removed_observed_minutes": 87,
+    "positive_to_zero_after_removing_known_support": 0,
+    "maximum_float32_raw_weight_target_residual": 4.938657527375767e-08,
+    "maximum_feature_weight_vs_raw_target_difference": 0.0026576572345760607,
+    "physical_weights_use_raw_observations": true,
+    "physical_db_is_readonly_owned_copy": true,
+    "known_labels_are_not_p_ship": true
+  },
+  "erased_known_addition_count": 27,
+  "already_unobserved_skip_count": 54,
+  "minimum_support_skip_count": 54,
+  "quantization_counterexample": {
+    "raw_first_cell_db": 0.049,
+    "rounded_first_cell_db": 0.0,
+    "physical_raw_y": 0.002696842550456792,
+    "rounded_feature_energy_aggregate": 0.0026666666666666666,
+    "difference_if_wrongly_pooling_rounded_energy": -3.0175883790125625e-05,
+    "maximum_physical_vs_feature_weight_difference": 3.0175883790125625e-05,
+    "returned_default_physical_weights_remain_raw": true,
+    "quantization_None_control_passed": true
+  },
+  "guards_rejected": {
+    "non_train_split": true,
+    "query_oracle_argument": true,
+    "query_labeled_dict": true,
+    "q_in_missing_cell": true,
+    "nonfinite_q": true,
+    "q_out_of_range": true,
+    "all_observations_missing": true,
+    "insufficient_initial_observations": true,
+    "noninteger_sample_indices": true,
+    "write_physical_copy": true
+  },
+  "R4_or_grid_inputs_modified": false,
+  "actual_training_Test_outer_or_GPU_used_in_these_fixtures": false,
+  "note": "Separate parent-requested R4 metadata alignment check is not an augmentation input or experiment.",
+  "code_sha256": {
+    "pipeline/observation_augmentation_r5.py": "cae9d85c478f6609023cb6751df210ac5444cf710c732921a36fa314826f8764",
+    "ops/verify_observation_augmentation_r5.py": "7c1ecc7deb60298a9652f03ae4782f7cb120d03668cfd2309e4d14abc697d01d"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "source_pool_rows": 9417,
+  "complete15_subset_rows": 5452,
+  "source_pool_groups": 25,
+  "LF_std_q90_db": 5.611784367429738,
+  "LF_std_q50_db": 1.8545690336079597,
+  "high_candidates_after_positive_background_exclusion": 499,
+  "control_candidates_after_positive_background_exclusion": 2489,
+  "negative_panel_rows_each": 499,
+  "eligible_syntheticpositive_rows": 452,
+  "positive_panel_rows": 452,
+  "panels": {
+    "natural_high": {
+      "n": 499,
+      "unique_backgrounds": 499,
+      "source_groups": 18,
+      "site_counts": {
+        "1 Richards Bay": 344,
+        "4 Bird Island": 69,
+        "7 St_Francis": 40,
+        "5 St Croix Island": 25,
+        "2 Durban": 21
+      }
+    },
+    "natural_control": {
+      "n": 499,
+      "unique_backgrounds": 499,
+      "source_groups": 19,
+      "site_counts": {
+        "1 Richards Bay": 299,
+        "5 St Croix Island": 120,
+        "2 Durban": 60,
+        "4 Bird Island": 17,
+        "7 St_Francis": 3
+      }
+    },
+    "synthetic_positive": {
+      "n": 452,
+      "unique_backgrounds": 452,
+      "source_groups": 19,
+      "site_counts": {
+        "1 Richards Bay": 275,
+        "5 St Croix Island": 84,
+        "2 Durban": 39,
+        "7 St_Francis": 27,
+        "4 Bird Island": 27
+      }
+    }
+  },
+  "TRAIN_background_group_and_window_overlap": 0,
+  "cross_panel_base_window_overlap": 0,
+  "purge_inherited_from": "data/versions/background_cv_r9/fold_00 selection/train manifests; recorded sensor/export-clock24h support purge",
+  "source_manifest_sha256": "b29d30027d28fe849600bdf618049ced18fef373841b037e36f2865333fd05ce",
+  "train_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+  "fixed_selection_identity": {
+    "version": "r9_minute_full_dataset_v1",
+    "data_bundle_hash": "9788ec783be139d51a45a49ec3b22539f10a8b9eff85f3acb501127ae82a4092",
+    "role": "selection",
+    "fold": 0,
+    "rows": 1000,
+    "npz_sha256": "a1bac2fc5eade44d51ddc65138de2e52a79b9fd3492f74e2d25a0164ced15f4a",
+    "metadata_sha256": "8ac0e27cb0bc52c5571821060729d7cdb19e85045d0bd00527700d7b420895d4",
+    "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+    "report_access_gate_sha256": null
+  },
+  "numeric_oracle_max_error": 1.7763568394002505e-15,
+  "panel_membership_sha256": {
+    "natural_high": "e92124dfccbfee3a2e0c1e37ff1a6ae2b05c200e7b812ed7b75fde697d358e76",
+    "natural_control": "b547defd8f3b732b9ea835a8538b2118c62a7cef0f77e585f191097402820312",
+    "synthetic_positive": "159d71e5ed5111093e7229a0658cc66a4352734eb8343d5552a5cd1e55bd8988"
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "status": "completed",
+  "selected_policy": {
+    "format": "r14_fulltree_decoupled_frozen_policy_v1",
+    "fit_role": "validation_fit1000_only",
+    "CNN_weight": 0.25,
+    "classifier": "full5252",
+    "classifier_weight": 1.0,
+    "regression_fit_rmse": 0.06386727839226305,
+    "score_fit_AUC": 0.974,
+    "plan_sha256": "5b28ff90e07a6702bbda791fac049d902b7b03c27b3d826aca94f532fff16985",
+    "freeze_sha256": {
+      "full_global_freeze_sha256": "a25811965e0edf8669555db19606be740c72f70e24a1505f867c30e731bdbdfe",
+      "anchor_global_freeze_sha256": "6611e81558b8fdb4d8e4bde676efcbfc559e233c1aa8a484b605b9089f6d1b28"
+    },
+    "production_approved": false,
+    "panel_values_used_for_selection": false,
+    "anchor_fit_order_evidence": "same SHA-pinned validation NPZ, original source-pinned predictor order and exact target vector; anchor NPZ has no per-row IDs",
+    "full_baseline_summary_sha256": "03b46eae3b419bdaaf4a4424f22de70633a4d9c7979d7574e1d5fc6ab0ace736",
+    "strict673_presence_sha256": "b860c85f2ccfab1c271d32db57837f5df6ea038f1345d62c981e61f79ae8c4af",
+    "policy_sha256": "2b519dff77ddad7d91a7b22819e3b8697242acee0ed56420fc829b3400e4119f"
+  },
+  "selected_policy_file_sha256": "cb8c5918a639d35d0b0798abb0e3552a6bec93b727748ec9e8d233228d894d4b",
+  "selected_policy_requirements": {
+    "high_snr": true,
+    "unseen_rmse": true,
+    "unseen_auc": true,
+    "full15_sf": false,
+    "native15_sf": true
+  },
+  "selected_policy_all5_pass": false,
+  "descriptive_all75_pass_count": 3,
+  "no_policy_reselection_from_descriptive75_or17panels": true,
+  "panel_alignment": [
+    {
+      "panel": "R10_seen__combined_stress",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "c066b678650234c8de09ea6926262188597bde26cf7ba6ad48ab3c93894b6080",
+        "anchor": "1dd22c3d4a83af0d14ef16c9bd1b7c197a7c04468d1c7556148dc087434a27b9",
+        "strict": "ce69c288bcac1b1c8a6eeb5b549dc02e2d368f1a21dcf53d3a2add430466b660"
+      }
+    },
+    {
+      "panel": "R10_seen__mean_scale_only",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "efedeb671eab9fd4bef5748f8edc2961128025eb676d722022d0215fa96ed48f",
+        "anchor": "3a0dd72a86a86e1733eff97879b3217990c5291ebcc2be72c2e1c1e781838f9c",
+        "strict": "842dafaf4e4023cf9c060f1dabc658bbdf5cb759ebbd2c3e672118fbb09a2651"
+      }
+    },
+    {
+      "panel": "R10_unseen__combined_stress",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "3b06a849b50662b0943308ca0512b3affc4844ced14f86b7b530edfd0759a2c7",
+        "anchor": "d974e37ce95278a86ea70a81a1a473872d58a19c8aeb607ffe9d5efcd4983218",
+        "strict": "1afa678919ba1e8a5e007e492c121fd2a6e1018a7e52fb8310cf3240c9c04614"
+      }
+    },
+    {
+      "panel": "R10_unseen__r9_complete",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "5c83563d0f69d7d25c48d98d070bf21f0960282a98911a80cf2275fbbac1c21e",
+        "anchor": "e383632cef2920f356ddd269ce2d43bb87b9be2c6b739d6c941e2f55d5432513",
+        "strict": "c1d8256222d499c9d17dc9c1829a55c5d5ed5f727379485a7b31b8f337c232fa"
+      }
+    },
+    {
+      "panel": "R11_full_smooth12_VS_hf_high",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "50c45a04e02a6d8fbcfda15cfc38b4bce2c071b31680fb0031940ae2160b8070",
+        "anchor": "b62a5f4075264d37faa2b629ea25120e4bbad5e9a4a9bbcfe3bd4e18c58531dd",
+        "strict": "989b17d9aff661e1e4630d4e01a0b20c3ffaebfde695d7a79d75d9297fdb8b75"
+      }
+    },
+    {
+      "panel": "R11_full_smooth12_VS_st_francis_dense",
+      "n": 812,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "944f359355f112adf30511efe94574d1a466c4ad721ea22b3aac1a0edae5c262",
+        "anchor": "1adf0427d239a11839189156e83ce104a4308280b60fc7af4ad74e96f2401b85",
+        "strict": "3c670cbf5260a00ac8d976579ea15ddaf515df843b397e32d3d4f35e19bea5ad"
+      }
+    },
+    {
+      "panel": "R11_full_smooth13_VS_hf_high",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "c60c18483a4cd72f1f0a9429a6af517657904dc8450959784ceef70864d31d50",
+        "anchor": "aa65184f7682a5b8a187ac29c3946fcc73172d66602a54b00c1ff801290609ed",
+        "strict": "afd18edcd89b8eadcffd8e6299d34f26c21fcb0cb1f9ed84ed49e2011edda554"
+      }
+    },
+    {
+      "panel": "R11_full_smooth13_VS_st_francis_dense",
+      "n": 812,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "dcfd2e657901c2db10068e8b1a16ad4da8255d56e35b6808db33c7065f295ad5",
+        "anchor": "70b3f06797a77a4c645dd9357d25117a3573e279e447ee50b266c09fcd47a761",
+        "strict": "ccc82b17ea467c6d90b6157b5c6b70d7697b52fff06aa5e7c623c501dc271884"
+      }
+    },
+    {
+      "panel": "R11_full_smooth15_VS_hf_high",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "2c63af99cae9704d15df3e29bc2e4c87da14770084490d469e742bf6a617a452",
+        "anchor": "9cba2aac3d750f5d7b03d18a7d203bbfb1e99d856916a3887ceac086398c169e",
+        "strict": "56950cd6bb7ddafd44bf21f71e04b019716cc0fac210dff05501e8557dc3a192"
+      }
+    },
+    {
+      "panel": "R11_full_smooth15_VS_st_francis_dense",
+      "n": 812,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "16b72515a3f75a6f38cf68bb6e70f647865d8c79105e78ddafe8015eea143e6b",
+        "anchor": "4dec561cf7019d772f84eec0d12ed41cd4235d5fdd9b0a25864108c8aa58cd2a",
+        "strict": "5c07d0f7f0a0e32c3af4f6fd44424cb4b89306d5278ddbe6bb271a41febfe0ef"
+      }
+    },
+    {
+      "panel": "R11_native_long15_VS_hf_high",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "ccc011ba7b924d95bad73de3c3bd7e63ccaf2278d22cdb6c2b1356059620e619",
+        "anchor": "61e1b489fc8fdfda287a87d39dd063a61ba3c2359ff70970dd385eeca3d74697",
+        "strict": "983cd51839a1c80a3178162d557daca63d14f28637a9e2c2e2bed2c96751351b"
+      }
+    },
+    {
+      "panel": "R11_native_long15_VS_st_francis_dense",
+      "n": 812,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "2697b1139e76cf5340cb0d8f613ada5327baaa81e3e6797e91e14b027fabb7e4",
+        "anchor": "a9930b14c920b5ac3ccc23f5cecb6b6611428e588a5092d691ec04d97ce6e03c",
+        "strict": "4e55cffdf5ed9c757c8c3d217a0a3fe834653f89eb91dde1dc1aa2cf95ec296d"
+      }
+    },
+    {
+      "panel": "R12_eval",
+      "n": 500,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "43ca1f7f71d28d98a90d8e3ea321dc32459a1e29d61e52b8f3b12e0315f67b58",
+        "anchor": "1e5a982303320bef73e53f61f6b945435d1f83c297815b10f7cf45d232c7ff53",
+        "strict": "f8de1f28983e83ee8e11cf886127c1dc004aa223d4daf39a0e821b414d2426ad"
+      }
+    },
+    {
+      "panel": "R12_high_snr_long",
+      "n": 500,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "201b92c4b5b5f7a5255aa2ae9f35fad5ea07dd838eeb3ea305e0e222a17df025",
+        "anchor": "26aacf714fd6fbff9c4026f9ea86dddc1aa7604e2f32cc6dc527719c402d8d50",
+        "strict": "afbe65f34ef409901f862cadcb629a57c265587f08f5724f59494d9b5545b819"
+      }
+    },
+    {
+      "panel": "R12_validation_gate",
+      "n": 500,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "aacd768312c6145388b3ad2029272630ec62a22aec0738881627079b0d2a9f00",
+        "anchor": "f7cb01661defb9eddffe885782ad7c4db099f7d4d332d2734c9cb25949d6f6bc",
+        "strict": "d67e9504897eb32882283d1002cff0b6a07fd3315d3229afe60ffa9e710fe1a5"
+      }
+    },
+    {
+      "panel": "R9_ensemble_gate",
+      "n": 500,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "be18c0237607d6775f421cac980180d690adbb937d17cd0ea4e62244e7db7a86",
+        "anchor": "190cabe654019aa36a7d8db47906d9cf270c40d79c7ee5b20e1bf57e72061075",
+        "strict": "c53039f2ef9f2c1a07ddc20642efea72af6b1ee3cb0988adfa080ef8dd40a79f"
+      }
+    },
+    {
+      "panel": "R9_selection",
+      "n": 1000,
+      "ID_and_targets_exact_match": true,
+      "input_sha256": {
+        "full": "12bd07c221e63a10c46a8fb55feca659f8257d2457937c5987c24766b62309cd",
+        "anchor": "135b6ad887cfd4a73e58a53cfeb2a17a7f93ff14602648a2f905533e643cf22c",
+        "strict": "0d62ab1c75209c729ea25a191b42b612b85a259e46609a25495336654eaff82a"
+      }
+    }
+  ],
+  "plan_sha256": "5b28ff90e07a6702bbda791fac049d902b7b03c27b3d826aca94f532fff16985",
+  "production_approved": false,
+  "new_model_fit_calls": 0,
+  "new_panel_inference_calls": 0,
+  "validation_fit_fullTree_inference_rows": 1000,
+  "limitations": [
+    "anchor checkpoint already selected on same validation_fit; fullTree ES source overlaps105 fit background IDs despite different physical mixtures",
+    "Validation_fit is fitting/selection, not independent risk estimation; all17 are development-exposed",
+    "Full and compact models change source law,TRAIN rows,PCA and ES observations; no feature-only causal comparison",
+    "509 reference recordings are shared, no reference-independent OOF or official Test claim"
+  ],
+  "original_models_policy_sources_unchanged": true,
+  "Test_MPS_GPU_network": false,
+  "output_sha256": {
+    "NUMERIC_FIXTURE.json": "db5253c7d0ba8db3c75f58f38490cdf9cbd36926fcea80f968d540d6594e9bc2",
+    "FROZEN_BEFORE_PANELS.json": "f041712e25e0872e03cfbcab9311c4db1752cb8e0a020444908d43db6b4a141a",
+    "plan.json": "e78c8cdd10ee07d0afbfff185886dab79e4623557d1a52971ed72f25d1bc838b",
+    "FROZEN_BEFORE_FIT.json": "63788902a35e8f3906a0c78ffbe0199474fc8c08a389243cafc2be2c9d39d265",
+    "selected_policy.json": "cb8c5918a639d35d0b0798abb0e3552a6bec93b727748ec9e8d233228d894d4b",
+    "selected_results.csv": "2c9e2c572181e5c309844aa0129d74caf60be91071ef7e32c834114d7ca01a0d",
+    "all75_descriptive_results.csv": "c489c525d70b7d7b28f77e1cd813d66e2792f5a5d7be4e50644ecfd452283ca9",
+    "all75_feasibility.csv": "ee8aa3df071e108aec75d847b9a10b9eb5df60805a2ad2f2fd14eb1726e8e826",
+    "fit_regression_candidates.csv": "05a7bdf01ec59f7aa504b8cc44ed027cff339fd58cd867fd0e166f42a3256ec2",
+    "fit_inputs.npz": "83ed4074e01b782da9a1ccd98a09c775ace94ba0599e7885bffe2196279a70e8",
+    "fit_score_candidates.csv": "8002af8323bba53707d490e7b89a39d0da13d02826df28f1504ec8e7c0caaa48",
+    "predictions/R12_high_snr_long.npz": "d43da53bb5f3146e76e57e2ed8653b45a1101b1efb776b892ecc81b0cc6b687e",
+    "predictions/R11_full_smooth15_VS_st_francis_dense.npz": "7335544bc3eaa8b44f1cc225bfea649a438599c43b071a7e2f4e6cdbc04dadca",
+    "predictions/R11_full_smooth12_VS_st_francis_dense.npz": "2e7801bf67b875870565589536f87e7dccffae39b7d657ea87fbc202d1dd301c",
+    "predictions/R12_eval.npz": "9525eec49ef7ea8b9400c1ec9cdcd36915c57e432a499baa18f1d90407b0e84b",
+    "predictions/R11_native_long15_VS_hf_high.npz": "3c52920dcad8042f5e8b415f1fc3d4838f8190546653c4cf7e0a123e58bb6603",
+    "predictions/R9_ensemble_gate.npz": "e2994999818f9cc608d7e82d01613d87107f482c3b7fd4d293b4c35933c2cd56",
+    "predictions/R10_seen__combined_stress.npz": "dbf6b1808295d6331d53d17c95cf731a3c64fc5dbfdc79f2b514ecf8a4e87085",
+    "predictions/R12_validation_gate.npz": "65d76c5c3acbe3b559c1230b064b205eb16efba8c1ad27fae987b4c84776284b",
+    "predictions/R11_full_smooth13_VS_hf_high.npz": "de4e21e39df7d3e973c25d4de18f0e8e493991863deca087655e647c856c7dac",
+    "predictions/R10_unseen__r9_complete.npz": "27a49999628f80823357ca5f0238e3683096a82e466245cf85449308641a811a",
+    "predictions/R11_full_smooth12_VS_hf_high.npz": "167565e10f9fde9cea02ff0f33c558ddbaf942b114a43464d72993ddde2d513c",
+    "predictions/R9_selection.npz": "147f05ffe76258a6bff803a50a55174c58b8ac5ac1d37282445315faee3301b6",
+    "predictions/R11_native_long15_VS_st_francis_dense.npz": "1b44769f6cb7aaf01ef4a970622e17c86f6b6f70bd6c71e99ed0150eb5d78d7e",
+    "predictions/R11_full_smooth15_VS_hf_high.npz": "5f2ecb26dcc6e0a7fb45ec20ae95440aaaa292fa24d837f90b297d0a44252df1",
+    "predictions/R10_unseen__combined_stress.npz": "820cdddabbd96f15f30297813f64174180054b190be7f5600daf824665b4d6b8",
+    "predictions/R10_seen__mean_scale_only.npz": "e39fc87acafebabe14f29319c5e73dca0fcb55653765066e2665687c90e59708",
+    "predictions/R11_full_smooth13_VS_st_francis_dense.npz": "9095ae2ee3e896fcafec3ae0579a095b589f4d58f0ed532b30673bdb5bf82de1"
+  }
+}

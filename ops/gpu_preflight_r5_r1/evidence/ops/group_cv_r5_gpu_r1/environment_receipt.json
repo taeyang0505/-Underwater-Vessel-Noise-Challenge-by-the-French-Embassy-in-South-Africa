@@ -1,0 +1,18 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/workspace/underwater_vessel_noise_r5_r1/venv/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "pandas": "2.2.3",
+    "pyarrow": "26.0.0",
+    "lightgbm": "4.7.0",
+    "safetensors": "0.8.0",
+    "transformers": "4.40.1",
+    "tokenizers": "0.19.1"
+  },
+  "CUDA_probe_scope": "nvidia-smi health only; runner initializes CUDA",
+  "supervisor_platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39"
+}

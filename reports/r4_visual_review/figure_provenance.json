@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-25T13:31:44.970005+00:00",
+  "scope": "Descriptive artifact review; no model fitting or Test/OUTER acoustic reads",
+  "inputs": {
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/train.npz": "74bd5cd8ab2b1e6f9c8b223fac0009d431a5d8ce44d256360c42aeb46244a75c",
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/validation.npz": "51b8ff0d1c28dba263c8e2261d7a31a35138512f9a1b214f236922face592d57"
+  },
+  "outer_usage": "Previously saved R4 structural audit summaries only",
+  "training_example_index": 20,
+  "target": 0.6032722592353821,
+  "pooled_known_mask": 0.6032722837880556,
+  "absolute_reconstruction_error": 2.4552673560940264e-08,
+  "figures": {
+    "01_fold_sizes_and_sources.png": "2af7803fc2836cbfe64ad910ed3a298a6a2061d3de6959bee822fd0d5a4db7ac",
+    "02_matched_share_distributions.png": "11230df7f68b6186a1eeb975c3363a904aace04d41c4c5481f237e9155dae244",
+    "03_actual_training_example.png": "00780ad8c5c37d6a53aa639194841832ba0372ff272ce8f42b740bb981854674"
+  }
+}

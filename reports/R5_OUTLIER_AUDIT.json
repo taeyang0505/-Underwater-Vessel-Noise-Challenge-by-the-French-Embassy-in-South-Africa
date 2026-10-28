@@ -1,0 +1,1563 @@
+{
+  "status": "passed read-only metadata outlier audit",
+  "created_at_utc": "2026-10-25T13:26:59.785968+00:00",
+  "scope": "Original SA row metadata and R4 source metadata only; no numeric observation arrays/predictions/heldout recipes opened",
+  "R4_original_data_and_manifests_modified": false,
+  "Test_or_OUTER_observation_arrays_accessed": false,
+  "new_model_training_or_ablation_performed": false,
+  "performance_gain_from_more_exclusion_measured": false,
+  "schema_audited": true,
+  "source_files": {
+    "data/processed/sa_row_manifest.parquet": {
+      "sha256": "e05004b977bf7db91f131ffe2d87d944a135de48685591d484aa53294bf29de4",
+      "rows": 1715779,
+      "columns": [
+        "site",
+        "recorder",
+        "src_file",
+        "t",
+        "dur",
+        "sample_rate_hz",
+        "qc_duration_ge55",
+        "qc_25band_finite",
+        "qc_25band_spread_ge6",
+        "row_id",
+        "source_row_index",
+        "source_parquet",
+        "sensor_group",
+        "sentinel_like",
+        "negative_level",
+        "eligible_for_minute_window",
+        "label_type",
+        "window_included",
+        "pseudo_label_status"
+      ]
+    },
+    "reports/data_quality_boundary_flags.parquet": {
+      "sha256": "2909c1941b6b325b3d78d2bac101190d9d01a73e6e646982849eaa5e2e3c74d7",
+      "rows": 12643,
+      "columns": [
+        "row_id",
+        "site",
+        "recorder",
+        "t",
+        "dur",
+        "src_file",
+        "window_included",
+        "candidate_reason",
+        "exclusion_authorized"
+      ]
+    },
+    "data/processed/sa_window_manifest.parquet": {
+      "sha256": "7a3425d40a160fb31da0b5c5fbcba1641dccefae8fdc8035a7ad84c232d0c413",
+      "rows": 133641,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes"
+      ]
+    },
+    "data/versions/quality_v2/background_manifest.parquet": {
+      "sha256": "ed8cfe0c749a75f538b80da6205f3ea9a51e506d9edeba6a41002a0b525e197f",
+      "rows": 133641,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes",
+        "base_window_index",
+        "v1_split",
+        "recording_day",
+        "recording_week_start",
+        "proposed_split",
+        "nearest_foreign_fold_support_gap_hours",
+        "quality_tier"
+      ]
+    },
+    "data/synthetic/group_cv_passage_r4_v1/fold_00/sources/background_manifest.parquet": {
+      "sha256": "3f8605fdab1df086c3bda7471e9a7e0ebd4e2d83e63ecd4ebadc33730bd09728",
+      "rows": 100965,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes",
+        "base_window_index",
+        "v1_split",
+        "recording_day",
+        "recording_week_start",
+        "proposed_split",
+        "nearest_foreign_fold_support_gap_hours",
+        "quality_tier",
+        "original_split",
+        "background_group",
+        "outer_fold",
+        "pre_purge_split",
+        "purge_gap_hours",
+        "boundary_candidate_flag",
+        "urn_nominal_band_warning",
+        "boundary_artifact_candidate",
+        "urn_8321_nominal_warning",
+        "parent_split",
+        "boundary_exclusion_applied"
+      ]
+    },
+    "data/synthetic/group_cv_passage_r4_v1/fold_01/sources/background_manifest.parquet": {
+      "sha256": "e85e849fe60c279b59f85c44a657822d43b5e8adfdb5fac5a37b5cd5ed310e90",
+      "rows": 100965,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes",
+        "base_window_index",
+        "v1_split",
+        "recording_day",
+        "recording_week_start",
+        "proposed_split",
+        "nearest_foreign_fold_support_gap_hours",
+        "quality_tier",
+        "original_split",
+        "background_group",
+        "outer_fold",
+        "pre_purge_split",
+        "purge_gap_hours",
+        "boundary_candidate_flag",
+        "urn_nominal_band_warning",
+        "boundary_artifact_candidate",
+        "urn_8321_nominal_warning",
+        "parent_split",
+        "boundary_exclusion_applied"
+      ]
+    },
+    "data/synthetic/group_cv_passage_r4_v1/fold_02/sources/background_manifest.parquet": {
+      "sha256": "f72eb26fa168f00f21343747b48aeb8ebc7d705f168838196502bd0fb29dc3d0",
+      "rows": 100965,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes",
+        "base_window_index",
+        "v1_split",
+        "recording_day",
+        "recording_week_start",
+        "proposed_split",
+        "nearest_foreign_fold_support_gap_hours",
+        "quality_tier",
+        "original_split",
+        "background_group",
+        "outer_fold",
+        "pre_purge_split",
+        "purge_gap_hours",
+        "boundary_candidate_flag",
+        "urn_nominal_band_warning",
+        "boundary_artifact_candidate",
+        "urn_8321_nominal_warning",
+        "parent_split",
+        "boundary_exclusion_applied"
+      ]
+    },
+    "data/synthetic/group_cv_passage_r4_v1/fold_03/sources/background_manifest.parquet": {
+      "sha256": "d4d9c62719c7218d91df92db62e72d04e28e73b756909de02f53c35e87acd096",
+      "rows": 100965,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes",
+        "base_window_index",
+        "v1_split",
+        "recording_day",
+        "recording_week_start",
+        "proposed_split",
+        "nearest_foreign_fold_support_gap_hours",
+        "quality_tier",
+        "original_split",
+        "background_group",
+        "outer_fold",
+        "pre_purge_split",
+        "purge_gap_hours",
+        "boundary_candidate_flag",
+        "urn_nominal_band_warning",
+        "boundary_artifact_candidate",
+        "urn_8321_nominal_warning",
+        "parent_split",
+        "boundary_exclusion_applied"
+      ]
+    },
+    "data/synthetic/group_cv_passage_r4_v1/fold_04/sources/background_manifest.parquet": {
+      "sha256": "a597139480b8b90647dfad64cc64d75fc78f69fef8c2de3ad66022d8b3e18c4c",
+      "rows": 100965,
+      "columns": [
+        "window_id",
+        "site",
+        "recorder",
+        "start_export_clock",
+        "sensor_group",
+        "split",
+        "observed_minutes",
+        "base_window_index",
+        "v1_split",
+        "recording_day",
+        "recording_week_start",
+        "proposed_split",
+        "nearest_foreign_fold_support_gap_hours",
+        "quality_tier",
+        "original_split",
+        "background_group",
+        "outer_fold",
+        "pre_purge_split",
+        "purge_gap_hours",
+        "boundary_candidate_flag",
+        "urn_nominal_band_warning",
+        "boundary_artifact_candidate",
+        "urn_8321_nominal_warning",
+        "parent_split",
+        "boundary_exclusion_applied"
+      ]
+    }
+  },
+  "row_level": {
+    "total_original_rows": 1715779,
+    "all_original_rows_retained": true,
+    "row_ids_exact_dense_range_0_to_N_minus_1": true,
+    "URN_warning_actual_metadata_sample_rate_hz": [
+      12000
+    ],
+    "qc_bool_true_false": {
+      "qc_duration_ge55": {
+        "true": 1698883,
+        "false": 16896,
+        "null": 0
+      },
+      "qc_25band_finite": {
+        "true": 1715779,
+        "false": 0,
+        "null": 0
+      },
+      "qc_25band_spread_ge6": {
+        "true": 1710805,
+        "false": 4974,
+        "null": 0
+      },
+      "sentinel_like": {
+        "true": 653,
+        "false": 1715126,
+        "null": 0
+      },
+      "negative_level": {
+        "true": 654,
+        "false": 1715125,
+        "null": 0
+      },
+      "eligible_for_minute_window": {
+        "true": 1698224,
+        "false": 17555,
+        "null": 0
+      },
+      "window_included": {
+        "true": 1698184,
+        "false": 17595,
+        "null": 0
+      }
+    },
+    "pseudo_label_status_counts": {
+      "pending_external_teacher": 1715126,
+      "invalid_measurement_keep_row": 653
+    },
+    "category_counts": {
+      "invalid_measurement_flag": {
+        "count": 653,
+        "denominator": 1715779,
+        "percent": 0.03805851452896906
+      },
+      "duration_outside_55_65": {
+        "count": 16918,
+        "denominator": 1715779,
+        "percent": 0.9860244238914219
+      },
+      "export_second_gt5": {
+        "count": 7672,
+        "denominator": 1715779,
+        "percent": 0.44714383379211425
+      },
+      "boundary_candidate_all_rows": {
+        "count": 12643,
+        "denominator": 1715779,
+        "percent": 0.7368664612400548
+      },
+      "URN_8321_nominal_rate_warning": {
+        "count": 136518,
+        "denominator": 1715779,
+        "percent": 7.956619121693412
+      },
+      "spread_below6_flag": {
+        "count": 4974,
+        "denominator": 1715779,
+        "percent": 0.28989747514102926
+      },
+      "duration_lt5_descriptive_only": {
+        "count": 10968,
+        "denominator": 1715779,
+        "percent": 0.6392431659322092
+      }
+    },
+    "pairwise_overlap_counts": {
+      "invalid_measurement_flag": {
+        "invalid_measurement_flag": 653,
+        "duration_outside_55_65": 16,
+        "export_second_gt5": 5,
+        "boundary_candidate_all_rows": 0,
+        "URN_8321_nominal_rate_warning": 0,
+        "spread_below6_flag": 653,
+        "duration_lt5_descriptive_only": 2
+      },
+      "duration_outside_55_65": {
+        "invalid_measurement_flag": 16,
+        "duration_outside_55_65": 16918,
+        "export_second_gt5": 7672,
+        "boundary_candidate_all_rows": 5863,
+        "URN_8321_nominal_rate_warning": 44,
+        "spread_below6_flag": 117,
+        "duration_lt5_descriptive_only": 10968
+      },
+      "export_second_gt5": {
+        "invalid_measurement_flag": 5,
+        "duration_outside_55_65": 7672,
+        "export_second_gt5": 7672,
+        "boundary_candidate_all_rows": 0,
+        "URN_8321_nominal_rate_warning": 3,
+        "spread_below6_flag": 106,
+        "duration_lt5_descriptive_only": 5024
+      },
+      "boundary_candidate_all_rows": {
+        "invalid_measurement_flag": 0,
+        "duration_outside_55_65": 5863,
+        "export_second_gt5": 0,
+        "boundary_candidate_all_rows": 12643,
+        "URN_8321_nominal_rate_warning": 0,
+        "spread_below6_flag": 110,
+        "duration_lt5_descriptive_only": 5312
+      },
+      "URN_8321_nominal_rate_warning": {
+        "invalid_measurement_flag": 0,
+        "duration_outside_55_65": 44,
+        "export_second_gt5": 3,
+        "boundary_candidate_all_rows": 0,
+        "URN_8321_nominal_rate_warning": 136518,
+        "spread_below6_flag": 2,
+        "duration_lt5_descriptive_only": 36
+      },
+      "spread_below6_flag": {
+        "invalid_measurement_flag": 653,
+        "duration_outside_55_65": 117,
+        "export_second_gt5": 106,
+        "boundary_candidate_all_rows": 110,
+        "URN_8321_nominal_rate_warning": 2,
+        "spread_below6_flag": 4974,
+        "duration_lt5_descriptive_only": 2
+      },
+      "duration_lt5_descriptive_only": {
+        "invalid_measurement_flag": 2,
+        "duration_outside_55_65": 10968,
+        "export_second_gt5": 5024,
+        "boundary_candidate_all_rows": 5312,
+        "URN_8321_nominal_rate_warning": 36,
+        "spread_below6_flag": 2,
+        "duration_lt5_descriptive_only": 10968
+      }
+    },
+    "union_counts": {
+      "actual_initial_screening_rejection": {
+        "count": 17555,
+        "denominator": 1715779,
+        "percent": 1.0231504173905848,
+        "categories": [
+          "invalid_measurement_flag",
+          "duration_outside_55_65",
+          "export_second_gt5"
+        ],
+        "is_confirmed_outlier_rate": false
+      },
+      "all_boundary_or_nominal_warning": {
+        "count": 149161,
+        "denominator": 1715779,
+        "percent": 8.693485582933466,
+        "categories": [
+          "boundary_candidate_all_rows",
+          "URN_8321_nominal_rate_warning"
+        ],
+        "is_confirmed_outlier_rate": false
+      },
+      "invalid_or_duration_or_boundary_or_nominal_warning": {
+        "count": 160809,
+        "denominator": 1715779,
+        "percent": 9.372360892632443,
+        "categories": [
+          "invalid_measurement_flag",
+          "duration_outside_55_65",
+          "boundary_candidate_all_rows",
+          "URN_8321_nominal_rate_warning"
+        ],
+        "is_confirmed_outlier_rate": false
+      },
+      "all_recorded_candidate_categories": {
+        "count": 164917,
+        "denominator": 1715779,
+        "percent": 9.611785667035207,
+        "categories": [
+          "invalid_measurement_flag",
+          "duration_outside_55_65",
+          "export_second_gt5",
+          "boundary_candidate_all_rows",
+          "URN_8321_nominal_rate_warning",
+          "spread_below6_flag",
+          "duration_lt5_descriptive_only"
+        ],
+        "is_confirmed_outlier_rate": false
+      }
+    },
+    "duration_bins_seconds": {
+      "nonfinite": {
+        "count": 0,
+        "denominator": 1715779,
+        "percent": 0.0
+      },
+      "le0": {
+        "count": 0,
+        "denominator": 1715779,
+        "percent": 0.0
+      },
+      "gt0_lt1": {
+        "count": 0,
+        "denominator": 1715779,
+        "percent": 0.0
+      },
+      "ge1_lt5": {
+        "count": 10968,
+        "denominator": 1715779,
+        "percent": 0.6392431659322092
+      },
+      "ge5_lt30": {
+        "count": 2994,
+        "denominator": 1715779,
+        "percent": 0.17449799770250132
+      },
+      "ge30_lt55": {
+        "count": 2934,
+        "denominator": 1715779,
+        "percent": 0.17100104384072773
+      },
+      "ge55_le65": {
+        "count": 1698861,
+        "denominator": 1715779,
+        "percent": 99.01397557610858
+      },
+      "gt65": {
+        "count": 22,
+        "denominator": 1715779,
+        "percent": 0.0012822164159836437
+      }
+    },
+    "duration_lt55": {
+      "count": 16896,
+      "denominator": 1715779,
+      "percent": 0.9847422074754383
+    },
+    "duration_lt5_descriptive_only": {
+      "count": 10968,
+      "denominator": 1715779,
+      "percent": 0.6392431659322092
+    },
+    "duration_finite_min_max_seconds": [
+      1.0,
+      360.0
+    ],
+    "export_second_nonzero": {
+      "count": 21082,
+      "denominator": 1715779,
+      "percent": 1.2287130218985078
+    },
+    "eligible_rows": {
+      "count": 1698224,
+      "denominator": 1715779,
+      "percent": 98.97684958260942
+    },
+    "rows_already_in_fixed_windows": {
+      "count": 1698184,
+      "denominator": 1715779,
+      "percent": 98.9745182800349
+    },
+    "eligible_not_in_any_kept_window": {
+      "count": 40,
+      "denominator": 1715779,
+      "percent": 0.0023313025745157158
+    },
+    "rows_not_in_fixed_windows_total": {
+      "count": 17595,
+      "denominator": 1715779,
+      "percent": 1.0254817199651003
+    },
+    "boundary_candidates_in_fixed_windows": {
+      "count": 6777,
+      "denominator": 1715779,
+      "percent": 0.3949809386873251
+    },
+    "boundary_candidates_outside_fixed_windows": {
+      "count": 5866,
+      "denominator": 1715779,
+      "percent": 0.3418855225527297
+    },
+    "boundary_in_fixed_windows_fraction_of_candidates": {
+      "count": 6777,
+      "denominator": 12643,
+      "percent": 53.60278414933165
+    },
+    "boundary_or_URN_in_fixed_windows": {
+      "count": 143250,
+      "denominator": 1715779,
+      "percent": 8.348977344984407
+    },
+    "boundary_in_fixed_windows_or_all_URN_warning": {
+      "count": 143295,
+      "denominator": 1715779,
+      "percent": 8.351600060380736
+    },
+    "URN_warning_rows_in_fixed_windows": {
+      "count": 136473,
+      "denominator": 1715779,
+      "percent": 7.953996406297081
+    },
+    "invalid_measurement_in_fixed_windows": 0,
+    "duration_bad_in_fixed_windows": 0,
+    "clock_bad_in_fixed_windows": 0,
+    "negative_non_sentinel_rows": {
+      "count": 1,
+      "denominator": 1715779,
+      "percent": 5.828256436289289e-05
+    },
+    "negative_non_sentinel_metadata": [
+      {
+        "row_id": "633100",
+        "recorder": "5708_Richards_Bay_5708.1.24000",
+        "dur": "40.0",
+        "t": "2021-08-10 05:38:00",
+        "window_included": "False"
+      }
+    ],
+    "qc_flag_not_used_as_hard_rejection": "qc_25band_spread_ge6; negative_level by itself",
+    "new_statistical_db_or_share_thresholds_applied": false
+  },
+  "window_pool_lineage": {
+    "original_fixed_clock_windows": 133641,
+    "original_window_split_counts": {
+      "train": 92954,
+      "domain_holdout": 16048,
+      "calibration": 13379,
+      "validation": 11260
+    },
+    "quality_v2_split_counts": {
+      "train": 91186,
+      "domain_holdout": 16048,
+      "validation": 9779,
+      "calibration": 9049,
+      "purged_temporal_boundary": 7579
+    },
+    "quality_v2_proposed_split_counts": {
+      "train": 94881,
+      "domain_holdout": 16048,
+      "validation": 11743,
+      "calibration": 10969
+    },
+    "quality_v2_quality_tier_counts": {
+      "high_coverage": 103185,
+      "sparse_observed": 30456
+    },
+    "R4_pool_selection_is_not_a_row_outlier_deletion": true,
+    "R4_pool_windows": 100965,
+    "original_fixed_clock_windows_not_in_R4_pool": 32676,
+    "R4_pool_original_split_counts": {
+      "train": 80122,
+      "calibration": 11459,
+      "validation": 9384
+    },
+    "original_windows_not_in_R4_pool_split_counts": {
+      "domain_holdout": 16048,
+      "train": 12832,
+      "calibration": 1920,
+      "validation": 1876
+    },
+    "R4_pool_boundary_candidate_windows": 6254,
+    "R4_pool_URN_warning_windows": 7180,
+    "R4_pool_quality_v2_active_role_counts": {
+      "train": 91186,
+      "validation": 9779
+    },
+    "historical_v1_split_caution": "original_window_split_counts are legacy V1 roles, not current reserved roles; R4 uses only active quality_v2 train+validation source roles."
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "source_pool_windows": 100965,
+      "raw_train_after_temporal_purge": 56789,
+      "clean_train_used": 53244,
+      "boundary_excluded_train_windows": {
+        "count": 3545,
+        "denominator": 56789,
+        "percent": 6.242406099772843
+      },
+      "train_retained_percent": 93.75759390022715,
+      "raw_train_observed_original_rows": 735054,
+      "used_train_observed_original_rows": 683040,
+      "original_rows_omitted_with_entire_boundary_windows": 52014,
+      "flagged_original_boundary_rows_inside_omitted_windows": 3545,
+      "used_train_URN_warning_windows": {
+        "count": 4185,
+        "denominator": 53244,
+        "percent": 7.860040567951319
+      },
+      "used_train_URN_warning_original_rows": 62757,
+      "train_site_counts": [
+        {
+          "site": "1 Richards Bay",
+          "raw_train_windows": 33204,
+          "clean_train_used": 30160,
+          "boundary_excluded": 3044
+        },
+        {
+          "site": "2 Durban",
+          "raw_train_windows": 1632,
+          "clean_train_used": 1629,
+          "boundary_excluded": 3
+        },
+        {
+          "site": "3 Cape_Recife",
+          "raw_train_windows": 240,
+          "clean_train_used": 0,
+          "boundary_excluded": 240
+        },
+        {
+          "site": "4 Bird Island",
+          "raw_train_windows": 1872,
+          "clean_train_used": 1850,
+          "boundary_excluded": 22
+        },
+        {
+          "site": "5 St Croix Island",
+          "raw_train_windows": 6882,
+          "clean_train_used": 6850,
+          "boundary_excluded": 32
+        },
+        {
+          "site": "6 Riy_Banks",
+          "raw_train_windows": 204,
+          "clean_train_used": 0,
+          "boundary_excluded": 204
+        },
+        {
+          "site": "7 St_Francis",
+          "raw_train_windows": 12755,
+          "clean_train_used": 12755,
+          "boundary_excluded": 0
+        }
+      ],
+      "all_source_splits": [
+        {
+          "split": "excluded_boundary_candidate",
+          "windows": 3545,
+          "observed_original_rows": 52014,
+          "boundary_candidate_windows": 3545,
+          "URN_warning_windows": 0,
+          "boundary_or_URN_warning_windows": 3545,
+          "groups": 59,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "split": "outer_validation",
+          "windows": 20121,
+          "observed_original_rows": 257406,
+          "boundary_candidate_windows": 1670,
+          "URN_warning_windows": 1035,
+          "boundary_or_URN_warning_windows": 2705,
+          "groups": 51,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "purged_temporal_boundary",
+          "windows": 4341,
+          "observed_original_rows": 54450,
+          "boundary_candidate_windows": 228,
+          "URN_warning_windows": 360,
+          "boundary_or_URN_warning_windows": 588,
+          "groups": 58,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "train",
+          "windows": 53244,
+          "observed_original_rows": 683040,
+          "boundary_candidate_windows": 0,
+          "URN_warning_windows": 4185,
+          "boundary_or_URN_warning_windows": 4185,
+          "groups": 152,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "validation",
+          "windows": 19714,
+          "observed_original_rows": 252252,
+          "boundary_candidate_windows": 811,
+          "URN_warning_windows": 1600,
+          "boundary_or_URN_warning_windows": 2411,
+          "groups": 50,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      ],
+      "pre_purge_to_parent_to_current_split_counts": [
+        {
+          "pre_purge_split": "outer_validation",
+          "parent_split": "outer_validation",
+          "current_split": "outer_validation",
+          "windows": 20121
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 3934
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "excluded_boundary_candidate",
+          "windows": 3545
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "train",
+          "windows": 53244
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 407
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "validation",
+          "current_split": "validation",
+          "windows": 19714
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "source_pool_windows": 100965,
+      "raw_train_after_temporal_purge": 57095,
+      "clean_train_used": 53315,
+      "boundary_excluded_train_windows": {
+        "count": 3780,
+        "denominator": 57095,
+        "percent": 6.620544706191436
+      },
+      "train_retained_percent": 93.37945529380856,
+      "raw_train_observed_original_rows": 734585,
+      "used_train_observed_original_rows": 679582,
+      "original_rows_omitted_with_entire_boundary_windows": 55003,
+      "flagged_original_boundary_rows_inside_omitted_windows": 3780,
+      "used_train_URN_warning_windows": {
+        "count": 4068,
+        "denominator": 53315,
+        "percent": 7.630122854731314
+      },
+      "used_train_URN_warning_original_rows": 60993,
+      "train_site_counts": [
+        {
+          "site": "1 Richards Bay",
+          "raw_train_windows": 33092,
+          "clean_train_used": 30100,
+          "boundary_excluded": 2992
+        },
+        {
+          "site": "2 Durban",
+          "raw_train_windows": 1440,
+          "clean_train_used": 1435,
+          "boundary_excluded": 5
+        },
+        {
+          "site": "3 Cape_Recife",
+          "raw_train_windows": 408,
+          "clean_train_used": 0,
+          "boundary_excluded": 408
+        },
+        {
+          "site": "4 Bird Island",
+          "raw_train_windows": 1176,
+          "clean_train_used": 1162,
+          "boundary_excluded": 14
+        },
+        {
+          "site": "5 St Croix Island",
+          "raw_train_windows": 7704,
+          "clean_train_used": 7660,
+          "boundary_excluded": 44
+        },
+        {
+          "site": "6 Riy_Banks",
+          "raw_train_windows": 317,
+          "clean_train_used": 0,
+          "boundary_excluded": 317
+        },
+        {
+          "site": "7 St_Francis",
+          "raw_train_windows": 12958,
+          "clean_train_used": 12958,
+          "boundary_excluded": 0
+        }
+      ],
+      "all_source_splits": [
+        {
+          "split": "excluded_boundary_candidate",
+          "windows": 3780,
+          "observed_original_rows": 55003,
+          "boundary_candidate_windows": 3780,
+          "URN_warning_windows": 0,
+          "boundary_or_URN_warning_windows": 3780,
+          "groups": 65,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "split": "outer_validation",
+          "windows": 20121,
+          "observed_original_rows": 258291,
+          "boundary_candidate_windows": 836,
+          "URN_warning_windows": 1696,
+          "boundary_or_URN_warning_windows": 2532,
+          "groups": 50,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "purged_temporal_boundary",
+          "windows": 4391,
+          "observed_original_rows": 56571,
+          "boundary_candidate_windows": 267,
+          "URN_warning_windows": 360,
+          "boundary_or_URN_warning_windows": 627,
+          "groups": 53,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "train",
+          "windows": 53315,
+          "observed_original_rows": 679582,
+          "boundary_candidate_windows": 0,
+          "URN_warning_windows": 4068,
+          "boundary_or_URN_warning_windows": 4068,
+          "groups": 151,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "validation",
+          "windows": 19358,
+          "observed_original_rows": 249715,
+          "boundary_candidate_windows": 1371,
+          "URN_warning_windows": 1056,
+          "boundary_or_URN_warning_windows": 2427,
+          "groups": 51,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      ],
+      "pre_purge_to_parent_to_current_split_counts": [
+        {
+          "pre_purge_split": "outer_validation",
+          "parent_split": "outer_validation",
+          "current_split": "outer_validation",
+          "windows": 20121
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 3579
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "excluded_boundary_candidate",
+          "windows": 3780
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "train",
+          "windows": 53315
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 812
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "validation",
+          "current_split": "validation",
+          "windows": 19358
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "source_pool_windows": 100965,
+      "raw_train_after_temporal_purge": 57360,
+      "clean_train_used": 53522,
+      "boundary_excluded_train_windows": {
+        "count": 3838,
+        "denominator": 57360,
+        "percent": 6.691073919107392
+      },
+      "train_retained_percent": 93.3089260808926,
+      "raw_train_observed_original_rows": 734878,
+      "used_train_observed_original_rows": 678736,
+      "original_rows_omitted_with_entire_boundary_windows": 56142,
+      "flagged_original_boundary_rows_inside_omitted_windows": 3838,
+      "used_train_URN_warning_windows": {
+        "count": 4075,
+        "denominator": 53522,
+        "percent": 7.613691566084975
+      },
+      "used_train_URN_warning_original_rows": 61116,
+      "train_site_counts": [
+        {
+          "site": "1 Richards Bay",
+          "raw_train_windows": 33257,
+          "clean_train_used": 29926,
+          "boundary_excluded": 3331
+        },
+        {
+          "site": "2 Durban",
+          "raw_train_windows": 1632,
+          "clean_train_used": 1629,
+          "boundary_excluded": 3
+        },
+        {
+          "site": "3 Cape_Recife",
+          "raw_train_windows": 240,
+          "clean_train_used": 0,
+          "boundary_excluded": 240
+        },
+        {
+          "site": "4 Bird Island",
+          "raw_train_windows": 960,
+          "clean_train_used": 949,
+          "boundary_excluded": 11
+        },
+        {
+          "site": "5 St Croix Island",
+          "raw_train_windows": 7897,
+          "clean_train_used": 7851,
+          "boundary_excluded": 46
+        },
+        {
+          "site": "6 Riy_Banks",
+          "raw_train_windows": 207,
+          "clean_train_used": 0,
+          "boundary_excluded": 207
+        },
+        {
+          "site": "7 St_Francis",
+          "raw_train_windows": 13167,
+          "clean_train_used": 13167,
+          "boundary_excluded": 0
+        }
+      ],
+      "all_source_splits": [
+        {
+          "split": "excluded_boundary_candidate",
+          "windows": 3838,
+          "observed_original_rows": 56142,
+          "boundary_candidate_windows": 3838,
+          "URN_warning_windows": 0,
+          "boundary_or_URN_warning_windows": 3838,
+          "groups": 67,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "split": "outer_validation",
+          "windows": 20170,
+          "observed_original_rows": 261127,
+          "boundary_candidate_windows": 1396,
+          "URN_warning_windows": 1152,
+          "boundary_or_URN_warning_windows": 2548,
+          "groups": 51,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "purged_temporal_boundary",
+          "windows": 3707,
+          "observed_original_rows": 47154,
+          "boundary_candidate_windows": 219,
+          "URN_warning_windows": 264,
+          "boundary_or_URN_warning_windows": 483,
+          "groups": 48,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "train",
+          "windows": 53522,
+          "observed_original_rows": 678736,
+          "boundary_candidate_windows": 0,
+          "URN_warning_windows": 4075,
+          "boundary_or_URN_warning_windows": 4075,
+          "groups": 152,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "validation",
+          "windows": 19728,
+          "observed_original_rows": 256003,
+          "boundary_candidate_windows": 801,
+          "URN_warning_windows": 1689,
+          "boundary_or_URN_warning_windows": 2490,
+          "groups": 51,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "pre_purge_to_parent_to_current_split_counts": [
+        {
+          "pre_purge_split": "outer_validation",
+          "parent_split": "outer_validation",
+          "current_split": "outer_validation",
+          "windows": 20170
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 3119
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "excluded_boundary_candidate",
+          "windows": 3838
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "train",
+          "windows": 53522
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 588
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "validation",
+          "current_split": "validation",
+          "windows": 19728
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "source_pool_windows": 100965,
+      "raw_train_after_temporal_purge": 56633,
+      "clean_train_used": 52998,
+      "boundary_excluded_train_windows": {
+        "count": 3635,
+        "denominator": 56633,
+        "percent": 6.418519237900164
+      },
+      "train_retained_percent": 93.58148076209983,
+      "raw_train_observed_original_rows": 730974,
+      "used_train_observed_original_rows": 677815,
+      "original_rows_omitted_with_entire_boundary_windows": 53159,
+      "flagged_original_boundary_rows_inside_omitted_windows": 3635,
+      "used_train_URN_warning_windows": {
+        "count": 3739,
+        "denominator": 52998,
+        "percent": 7.054983206913469
+      },
+      "used_train_URN_warning_original_rows": 56076,
+      "train_site_counts": [
+        {
+          "site": "1 Richards Bay",
+          "raw_train_windows": 33034,
+          "clean_train_used": 29692,
+          "boundary_excluded": 3342
+        },
+        {
+          "site": "2 Durban",
+          "raw_train_windows": 1632,
+          "clean_train_used": 1630,
+          "boundary_excluded": 2
+        },
+        {
+          "site": "3 Cape_Recife",
+          "raw_train_windows": 120,
+          "clean_train_used": 0,
+          "boundary_excluded": 120
+        },
+        {
+          "site": "4 Bird Island",
+          "raw_train_windows": 2040,
+          "clean_train_used": 2019,
+          "boundary_excluded": 21
+        },
+        {
+          "site": "5 St Croix Island",
+          "raw_train_windows": 6952,
+          "clean_train_used": 6915,
+          "boundary_excluded": 37
+        },
+        {
+          "site": "6 Riy_Banks",
+          "raw_train_windows": 113,
+          "clean_train_used": 0,
+          "boundary_excluded": 113
+        },
+        {
+          "site": "7 St_Francis",
+          "raw_train_windows": 12742,
+          "clean_train_used": 12742,
+          "boundary_excluded": 0
+        }
+      ],
+      "all_source_splits": [
+        {
+          "split": "excluded_boundary_candidate",
+          "windows": 3635,
+          "observed_original_rows": 53159,
+          "boundary_candidate_windows": 3635,
+          "URN_warning_windows": 0,
+          "boundary_or_URN_warning_windows": 3635,
+          "groups": 65,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "split": "outer_validation",
+          "windows": 20316,
+          "observed_original_rows": 262568,
+          "boundary_candidate_windows": 825,
+          "URN_warning_windows": 1689,
+          "boundary_or_URN_warning_windows": 2514,
+          "groups": 51,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "purged_temporal_boundary",
+          "windows": 4139,
+          "observed_original_rows": 50506,
+          "boundary_candidate_windows": 291,
+          "URN_warning_windows": 240,
+          "boundary_or_URN_warning_windows": 531,
+          "groups": 53,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "train",
+          "windows": 52998,
+          "observed_original_rows": 677815,
+          "boundary_candidate_windows": 0,
+          "URN_warning_windows": 3739,
+          "boundary_or_URN_warning_windows": 3739,
+          "groups": 149,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "validation",
+          "windows": 19877,
+          "observed_original_rows": 255114,
+          "boundary_candidate_windows": 1503,
+          "URN_warning_windows": 1512,
+          "boundary_or_URN_warning_windows": 3015,
+          "groups": 55,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "pre_purge_to_parent_to_current_split_counts": [
+        {
+          "pre_purge_split": "outer_validation",
+          "parent_split": "outer_validation",
+          "current_split": "outer_validation",
+          "windows": 20316
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 3779
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "excluded_boundary_candidate",
+          "windows": 3635
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "train",
+          "windows": 52998
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 360
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "validation",
+          "current_split": "validation",
+          "windows": 19877
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "source_pool_windows": 100965,
+      "raw_train_after_temporal_purge": 57549,
+      "clean_train_used": 54758,
+      "boundary_excluded_train_windows": {
+        "count": 2791,
+        "denominator": 57549,
+        "percent": 4.849780187318633
+      },
+      "train_retained_percent": 95.15021981268137,
+      "raw_train_observed_original_rows": 743079,
+      "used_train_observed_original_rows": 702239,
+      "original_rows_omitted_with_entire_boundary_windows": 40840,
+      "flagged_original_boundary_rows_inside_omitted_windows": 2791,
+      "used_train_URN_warning_windows": {
+        "count": 4225,
+        "denominator": 54758,
+        "percent": 7.715767559078126
+      },
+      "used_train_URN_warning_original_rows": 63357,
+      "train_site_counts": [
+        {
+          "site": "1 Richards Bay",
+          "raw_train_windows": 33454,
+          "clean_train_used": 30946,
+          "boundary_excluded": 2508
+        },
+        {
+          "site": "2 Durban",
+          "raw_train_windows": 1824,
+          "clean_train_used": 1822,
+          "boundary_excluded": 2
+        },
+        {
+          "site": "3 Cape_Recife",
+          "raw_train_windows": 120,
+          "clean_train_used": 0,
+          "boundary_excluded": 120
+        },
+        {
+          "site": "4 Bird Island",
+          "raw_train_windows": 1536,
+          "clean_train_used": 1519,
+          "boundary_excluded": 17
+        },
+        {
+          "site": "5 St Croix Island",
+          "raw_train_windows": 7315,
+          "clean_train_used": 7281,
+          "boundary_excluded": 34
+        },
+        {
+          "site": "6 Riy_Banks",
+          "raw_train_windows": 110,
+          "clean_train_used": 0,
+          "boundary_excluded": 110
+        },
+        {
+          "site": "7 St_Francis",
+          "raw_train_windows": 13190,
+          "clean_train_used": 13190,
+          "boundary_excluded": 0
+        }
+      ],
+      "all_source_splits": [
+        {
+          "split": "excluded_boundary_candidate",
+          "windows": 2791,
+          "observed_original_rows": 40840,
+          "boundary_candidate_windows": 2791,
+          "URN_warning_windows": 0,
+          "boundary_or_URN_warning_windows": 2791,
+          "groups": 52,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "split": "outer_validation",
+          "windows": 20237,
+          "observed_original_rows": 259770,
+          "boundary_candidate_windows": 1527,
+          "URN_warning_windows": 1608,
+          "boundary_or_URN_warning_windows": 3135,
+          "groups": 55,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "purged_temporal_boundary",
+          "windows": 3850,
+          "observed_original_rows": 48483,
+          "boundary_candidate_windows": 338,
+          "URN_warning_windows": 336,
+          "boundary_or_URN_warning_windows": 674,
+          "groups": 52,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "train",
+          "windows": 54758,
+          "observed_original_rows": 702239,
+          "boundary_candidate_windows": 0,
+          "URN_warning_windows": 4225,
+          "boundary_or_URN_warning_windows": 4225,
+          "groups": 149,
+          "sensor_groups": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "split": "validation",
+          "windows": 19329,
+          "observed_original_rows": 247830,
+          "boundary_candidate_windows": 1598,
+          "URN_warning_windows": 1011,
+          "boundary_or_URN_warning_windows": 2609,
+          "groups": 51,
+          "sensor_groups": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "pre_purge_to_parent_to_current_split_counts": [
+        {
+          "pre_purge_split": "outer_validation",
+          "parent_split": "outer_validation",
+          "current_split": "outer_validation",
+          "windows": 20237
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 3058
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "excluded_boundary_candidate",
+          "windows": 2791
+        },
+        {
+          "pre_purge_split": "train",
+          "parent_split": "train",
+          "current_split": "train",
+          "windows": 54758
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "purged_temporal_boundary",
+          "current_split": "purged_temporal_boundary",
+          "windows": 792
+        },
+        {
+          "pre_purge_split": "validation",
+          "parent_split": "validation",
+          "current_split": "validation",
+          "windows": 19329
+        }
+      ]
+    }
+  ],
+  "cross_fold_repeated_counts": {
+    "raw_train_entries": 285426,
+    "used_clean_train_entries": 267837,
+    "boundary_excluded_train_entries": 17589,
+    "unique_used_clean_backgrounds": 94711,
+    "unique_boundary_excluded_backgrounds": 6254,
+    "train_entries_are_independent": false
+  },
+  "semantic_cautions": [
+    "No single confirmed-outlier percentage follows from overlapping screening rules, boundary candidates and nominal hardware warnings.",
+    "653 sentinel rows are marked invalid_measurement_keep_row; incomplete/off-clock rows are unsuitable for full-ish minute alignment, not necessarily corrupted recordings.",
+    "12643 boundary candidates are statistical run-edge flags with unverified physical cause; 6777 are already in original fixed windows.",
+    "136518 URN rows carry a nominal Nyquist metadata warning, not proven measurement failure or deletion authorization.",
+    "Low spectral spread, high dB, high energy fraction and valid high target shares are not automatically errors.",
+    "duration_lt5 is a descriptive bin (1 to under5 seconds here), not a preexisting severe-error flag or a newly adopted rule.",
+    "Whole-window boundary exclusion leaves zero TRAIN windows for Cape_Recife and Riy_Banks in every fold; this may reduce domain support, but a performance cause has not been measured.",
+    "Further exclusion has not been evaluated in this audit; lower RMSE or better official performance is not established.",
+    "Reserved source roles and temporal purge are separation rules, not outlier removal. All original rows remain retained."
+  ],
+  "reproduction_expressions": {
+    "invalid": "(~m.qc_25band_finite | m.sentinel_like).sum()",
+    "screen": "(~m.qc_25band_finite | m.sentinel_like | ~m.dur.between(55,65) | m.t.dt.second.gt(5)).sum()",
+    "boundary_in_windows": "(m.row_id.isin(flags.row_id) & m.window_included).sum()",
+    "train_exclusion": "b.loc[b.parent_split.eq(\"train\"), \"boundary_candidate_flag\"].sum() / b.parent_split.eq(\"train\").sum()",
+    "overlap_union": "(mask_a & mask_b).sum(); (mask_a | mask_b).sum()"
+  },
+  "audit_source_sha256": "15b75c7bf00ca89767e5ab1f0fca93998d6067092cb9104c2322c25b656a9580",
+  "all_opened_source_metadata_sha_unchanged_after_aggregation": true
+}

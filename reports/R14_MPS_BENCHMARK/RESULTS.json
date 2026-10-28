@@ -1,0 +1,114 @@
+{
+  "status": "partial_capability_failures",
+  "torch": "2.14.1",
+  "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "MPS_available": true,
+  "recommended_max_memory_bytes": 19069665280,
+  "MPS_float64_probe": {
+    "supported": false,
+    "error": "Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead."
+  },
+  "CPU_fp64_frontend_plus_MPS_fp32_backbone": true,
+  "MPS_operator_CPU_fallback": false,
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "actual_TRAIN_fixture_sha256": "4423202891186b8e9569be5466542b71f9bf8dd5f8a7af26d20e47352c45a63f",
+  "source_code_sha256": {
+    "pipeline/models_r13.py": "e3ea69d969dfc02e81f091e3e2c03482891291ced18c5414fdff2085b7c7f2c3",
+    "pipeline/training_r13.py": "2962af0f91be7c74708298138feb0c561a21fc3255d0fe8aaaddd44c09041523",
+    "pipeline/features_r14_torch.py": "7fca24808e178236e9469e7ec8ca3edd560e77398943451ac5f96453d1e31784",
+    "ops/benchmark_r14_mps.py": "d55e98e17d00ae370988e29635fbfbee774a05c9389cecaf8716d6507ba521b4"
+  },
+  "plan_sha256": "079f0ad158b014460afcdf2b8d1ef309bbc35fa3e7e9fd94fa9b71ebf5e82c7b",
+  "results": [],
+  "failures": [
+    {
+      "kind": "bg_cnn",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 8,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "bg_cnn",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 16,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "bg_cnn",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 32,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tabm'",
+      "parameters_changed_or_retried": false
+    }
+  ],
+  "full_training_or_production_launch": false,
+  "GPU_epoch_or_100epoch_total_training_time_estimated": false,
+  "fresh_weights_discarded": true,
+  "cannot_claim_CUDA_parity_or_same_throughput": true,
+  "concurrent_CPU_load_uncontrolled": true
+}

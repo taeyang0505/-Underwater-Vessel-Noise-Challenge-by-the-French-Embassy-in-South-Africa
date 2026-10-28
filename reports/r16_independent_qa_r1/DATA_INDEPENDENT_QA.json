@@ -1,0 +1,335 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-27T07:05:47.615434+00:00",
+  "scope": "Components/source/loader QA only; no role target moments, model metrics, Test inputs/statistics, model training or inference",
+  "manifest_sha256": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1",
+  "data_rows_checked": 17600,
+  "role_operator_checks": {
+    "train/control": {
+      "rows": 4000,
+      "zeros": 800,
+      "positive_observed": 3200,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "train/mixed": {
+      "rows": 4000,
+      "zeros": 800,
+      "positive_observed": 3200,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_fit/control_eq6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_fit/mfhf_shelf6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_fit/mfhf_shelf12": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_fit/mfhf_shelf12_lfminus6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_fit/alpha_preEQ_inserted": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_fit/independent_subband_snr": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_gate/control_eq6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_gate/mfhf_shelf6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_gate/mfhf_shelf12": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_gate/mfhf_shelf12_lfminus6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_gate/alpha_preEQ_inserted": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_gate/independent_subband_snr": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_report/control_eq6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_report/mfhf_shelf6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_report/mfhf_shelf12": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_report/mfhf_shelf12_lfminus6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_report/alpha_preEQ_inserted": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "local_report/independent_subband_snr": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "domain_holdout/control_eq6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "domain_holdout/mfhf_shelf6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "domain_holdout/mfhf_shelf12": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "domain_holdout/mfhf_shelf12_lfminus6": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "domain_holdout/alpha_preEQ_inserted": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    },
+    "domain_holdout/independent_subband_snr": {
+      "rows": 400,
+      "zeros": 80,
+      "positive_observed": 320,
+      "physical_q_y_and_support_passed": true,
+      "paired_source_identity_passed": true
+    }
+  },
+  "reference_partition": {
+    "A": {
+      "clips": 66,
+      "components": 12
+    },
+    "B": {
+      "clips": 19,
+      "components": 5
+    },
+    "C": {
+      "clips": 34,
+      "components": 5
+    }
+  },
+  "selected_reference_graph_components_independently_rebuilt": 22,
+  "selected119_original_raw_slices_SHA_verified": true,
+  "source_bank_global_SHA256": {
+    "background": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+    "reference": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52"
+  },
+  "background_all_role_pair_gaps": [
+    {
+      "a": "train",
+      "b": "local_fit",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": 24.0
+    },
+    {
+      "a": "train",
+      "b": "local_gate",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": 29.75
+    },
+    {
+      "a": "train",
+      "b": "local_report",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": 26.75
+    },
+    {
+      "a": "train",
+      "b": "domain_holdout",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": null
+    },
+    {
+      "a": "local_fit",
+      "b": "local_gate",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": 114.25
+    },
+    {
+      "a": "local_fit",
+      "b": "local_report",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": 338.5
+    },
+    {
+      "a": "local_fit",
+      "b": "domain_holdout",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": null
+    },
+    {
+      "a": "local_gate",
+      "b": "local_report",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": 559.75
+    },
+    {
+      "a": "local_gate",
+      "b": "domain_holdout",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": null
+    },
+    {
+      "a": "local_report",
+      "b": "domain_holdout",
+      "ID_group_overlap": 0,
+      "minimum900s_support_gap_hours": null
+    }
+  ],
+  "raw_q_max_error": 0.0,
+  "raw_y_max_error": 0.0,
+  "native_reference_to_A_replay_max_error": 5.329070518200751e-15,
+  "raw_pool_max_error": 4.440892098500626e-16,
+  "max_rounded_pool_gap": 0.0020865957849959815,
+  "individual_actual_quantization_bound_verified": true,
+  "no_PCA_anchor_or_model_features": true,
+  "paired_zero_and_source_exact": true,
+  "report_domain_loader_requires_global_freeze": true,
+  "old_models_already_saw_full509_references": true,
+  "new_mini_only_A_to_B_C_reference_holdout": true,
+  "new_inserted_SNR_mask_conditioning_declared": true,
+  "source_data_unchanged": true,
+  "input_artifact_sha256": {
+    "reports/r16_cross_operator_r1/data/NUMERIC_FIXTURE.json": "2ea23a22820f6f5cdf3df8cba7301a1f2d5df3076fc255ed2d7592ddb4c8b573",
+    "reports/r16_cross_operator_r1/data/train_recipes.json": "6c316cea0f8920bbdc9c022fd8145d08f7e07144c7bfdf812ec593eb0c68ed3a",
+    "reports/r16_cross_operator_r1/data/plan.json": "dd2149a4061b3bdb6b630219294c63f624f782ec340836e030e6942a8c5bdf8f",
+    "reports/r16_cross_operator_r1/data/SOURCE_AUDIT.json": "d7ecd3669a8fdd207fdd6a2d2de9780e7347b6108002c72de2b361b5b8492310",
+    "reports/r16_cross_operator_r1/data/domain_holdout_recipes.json": "470ad43346bce0e326a4d0b60ed3889e13985671f06368cd341296c4028190f4",
+    "reports/r16_cross_operator_r1/data/train_backgrounds.parquet": "df58641b1c15ef76753486707dbec3e05e03e3982846d579c4204b9f81a69ce1",
+    "reports/r16_cross_operator_r1/data/domain_holdout_backgrounds.parquet": "aa94b64be02bbf153081d8545d5aeaff2e8287192dce897400aa857424b697df",
+    "reports/r16_cross_operator_r1/data/local_report_recipes.json": "6789562c2c9ee570ad1e1c3f4ddf946e4be6a0af1b2d7919f996119957392cb6",
+    "reports/r16_cross_operator_r1/data/local_report_backgrounds.parquet": "8068daa7cbecde83524836f43b56f3b54dc9b57bfb67943903c9d82e0d6d48e2",
+    "reports/r16_cross_operator_r1/data/local_fit_backgrounds.parquet": "e8d5098a05c81c6cbe5b51b2867d0e5a88750b7dad27a91c7b9f00d405be466b",
+    "reports/r16_cross_operator_r1/data/local_gate_recipes.json": "69e158370e614f9d7dfd9b1ea26b352d7f94c27a39a0129b2290ecafe911e82c",
+    "reports/r16_cross_operator_r1/data/reference_partitions.parquet": "e9867b457d28ab7e6c823c40cb453bcb6a0f7a5815912ec323ca10d2db50f8e6",
+    "reports/r16_cross_operator_r1/data/local_gate_backgrounds.parquet": "3540952360473497be85fe14c7808f063b1edc81c996d6c1040469c9017b2dbf",
+    "reports/r16_cross_operator_r1/data/local_fit_recipes.json": "4f05eaf30e70edfd7bf7a9ed2955418b9fbbe45edf247115ad006809bca3545a",
+    "reports/r16_cross_operator_r1/data/local_fit/control_eq6.npz": "681c016e80d2eba8783cec77f4fd1eaeb18bd8283d5817485bffb8b8d29447a5",
+    "reports/r16_cross_operator_r1/data/local_fit/independent_subband_snr.npz": "cb3cd493f35cf4cba4fa674e3ccd057c1612569a27dc8a1eba1c336eeab66880",
+    "reports/r16_cross_operator_r1/data/local_fit/mfhf_shelf12_lfminus6.npz": "1986ed5ca02c5edeb136687f8c419b8235e5d8b5f7699d38267028b546881f41",
+    "reports/r16_cross_operator_r1/data/local_fit/mfhf_shelf6.npz": "292601265ec6f24e13b6369627f4f24a6c42968f875025abae8f5bc2d5f7526b",
+    "reports/r16_cross_operator_r1/data/local_fit/mfhf_shelf12.npz": "56b0d2f4f8592f02b10d89a449916b62dbf94cfbff3c99268badec9eedc7b558",
+    "reports/r16_cross_operator_r1/data/local_fit/alpha_preEQ_inserted.npz": "82bf904cf194af63871c13c90a7bd60f90fb8b77fd687a9e39e40f652b23a051",
+    "reports/r16_cross_operator_r1/data/domain_holdout/control_eq6.npz": "5d5283beee7370cbe41f04a71e1c65f928791eb82d7f3c18e28cda57ee9f2c99",
+    "reports/r16_cross_operator_r1/data/domain_holdout/independent_subband_snr.npz": "f99597a30d5f783a329be3d9cf0db2c1e110f429574e1de1937e353cf3783fd0",
+    "reports/r16_cross_operator_r1/data/domain_holdout/mfhf_shelf12_lfminus6.npz": "ddc77ea471ab146275978419b61e0fdd855fb37c438a97b1d7f301809dba3c1e",
+    "reports/r16_cross_operator_r1/data/domain_holdout/mfhf_shelf6.npz": "c436a738320b3cbc9541cec04232fece90daf0ca22cec2d0d396be9b2cdaeba8",
+    "reports/r16_cross_operator_r1/data/domain_holdout/mfhf_shelf12.npz": "896e20fbe5b2265befdd84d74f01d0c8d14d27c668a870ee5d8b4af3f930b529",
+    "reports/r16_cross_operator_r1/data/domain_holdout/alpha_preEQ_inserted.npz": "3257116fa29b3000b8a00aa1ce6f748cc102e5ec0219820342f1a18dc05a3176",
+    "reports/r16_cross_operator_r1/data/local_gate/control_eq6.npz": "c7e54237a459f01316e8613ba2195f3c26782d3d308612b1cfac740aafc5aa1c",
+    "reports/r16_cross_operator_r1/data/local_gate/independent_subband_snr.npz": "5f3c3f777ce7c4d10016197cd7b8b2030c45430d5c2e586d888b5c85b6a37361",
+    "reports/r16_cross_operator_r1/data/local_gate/mfhf_shelf12_lfminus6.npz": "01464e580c556948560c8563d23164d365d4df9f546e35f3080f17e4c65f6a72",
+    "reports/r16_cross_operator_r1/data/local_gate/mfhf_shelf6.npz": "79e5275aa888860eb2881fd89583ba22dbbd1d3e5aec7a50151aea5ee64b337a",
+    "reports/r16_cross_operator_r1/data/local_gate/mfhf_shelf12.npz": "871e6cd1041c1462afe8ee3695930b2d7f88a72e22b391734297badbb1927e5c",
+    "reports/r16_cross_operator_r1/data/local_gate/alpha_preEQ_inserted.npz": "66ffb980324ac0bbf3ccf8690f912d70e5bedbd6b0df5f9f3360fce1bbc27f1b",
+    "reports/r16_cross_operator_r1/data/train/control_eq6.npz": "8f59a36ae1c5f67b7262e8b191cbde925bc96ad2dd1fceed7a57b9894c849415",
+    "reports/r16_cross_operator_r1/data/train/mixed.npz": "2d4066c5df5a326128db2a43203611240fe57ad45d3e0026dd5af5a80594a4a4",
+    "reports/r16_cross_operator_r1/data/local_report/control_eq6.npz": "a45bf9a8a74aa78aceef791bd910c432c028b359ef67f3b5560bf3bbd8a61958",
+    "reports/r16_cross_operator_r1/data/local_report/independent_subband_snr.npz": "4b3fe6880c7c319dda4b4018c1bde38af85c10874f6b2f11f49d4a91dcec1d4e",
+    "reports/r16_cross_operator_r1/data/local_report/mfhf_shelf12_lfminus6.npz": "8fe070aa46640959d6fe546382889924f2e06b1b53bf28d168855abe7ce69219",
+    "reports/r16_cross_operator_r1/data/local_report/mfhf_shelf6.npz": "04eca160ecdcb8e7855ca4aa065169e205f1459b7afc5921e6cb7bf7b1f3d0d5",
+    "reports/r16_cross_operator_r1/data/local_report/mfhf_shelf12.npz": "4999a924a46aeb6cbe6a36a9891ce8325bdf0146c7c793dbce74322b593cac4f",
+    "reports/r16_cross_operator_r1/data/local_report/alpha_preEQ_inserted.npz": "85bb79403fc3d70358dbc305482dbf5b859cc1175a20c0a66eeebce10563ad62",
+    "reports/r16_cross_operator_r1/data/manifest.json": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1"
+  },
+  "limits": [
+    "This is physical/data QA, not a blind model performance evaluation.",
+    "Reference A/B/C independence holds inside selected119/22pool; full corpus has connected bridges not used here.",
+    "Prior domain site panels were development-exposed; not a new blind benchmark.",
+    "Fixed6 operators do not identify hidden official generation; no Test matching or operator selection performed."
+  ]
+}

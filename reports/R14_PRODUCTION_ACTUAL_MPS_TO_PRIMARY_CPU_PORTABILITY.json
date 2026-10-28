@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "cross-Python portability of an actual MPS-trained completed-epoch checkpoint; model remains incomplete and is not used as completed production inference",
+  "kind": "fdy",
+  "checkpoint_epoch": 1,
+  "checkpoint_sha256": "1d8d22f8c920743f765789287ce505fe74a668aef8d80afbac3fa6cb0b177a36",
+  "producer_python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "consumer_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "torch": "2.14.1",
+  "weights_only": true,
+  "strict_restore": true,
+  "CPU_optimizer_state_finite": true,
+  "actual_CPU_query_rows": 7,
+  "physical_pool_error": 0.0,
+  "newfit": false,
+  "MPS_executed": false,
+  "source_modified": false,
+  "Test_or_stress_panel_read": false
+}

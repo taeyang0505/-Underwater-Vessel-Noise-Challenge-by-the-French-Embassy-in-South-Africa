@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic orchestration fixture; all child model training/prediction STUBBED",
+  "actual_model_training": false,
+  "actual_data_Test_outer_or_GPU_accessed": false,
+  "fake_roles": {
+    "train": 72,
+    "inner": 24,
+    "outer": 24
+  },
+  "fit_jobs_stubbed": 9,
+  "model_count": 7,
+  "all_INNER_reads_before_policy_freeze_only_for_selection": true,
+  "OUTER_read_after_all_fits_and_policy_freeze": true,
+  "legacy_validation_metadata_points_to_outer_and_explicit_inner_path_works": true,
+  "OOF_boundary_and_site_columns_preserved": true,
+  "unsafe_source_and_changed_ridge_rejected": true,
+  "code_sha256": {
+    "pipeline/runner_r5.py": "351f085f92ac1635d2ce4d91401d3984d2e158a49c9658d5610e0dd518be80d8",
+    "pipeline/fold_data_r5.py": "e3774c7cd0ba43a59899b6b22c9b37df5b0d3fc462dc51bccf2e607c5c1fb100",
+    "ops/verify_runner_orchestration_r5.py": "679a9351bedeffdfc66864b29c62ce1bf122b5286c137c7f53e2bdc16e416b51"
+  },
+  "fixture_directory": "/var/folders/c1/ff1kv08j2fd06b_058sckl9w0000gn/T/r5_orchestration_fixture_saj66btj"
+}

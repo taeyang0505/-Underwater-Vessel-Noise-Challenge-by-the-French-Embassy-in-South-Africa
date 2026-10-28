@@ -1,0 +1,281 @@
+{
+  "configuration_sha256": "92bcf84892839fdf9e1963d4448229923cf34a80a4dbe9ecd9eb6ae27a5452f4",
+  "source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "launch_unix": 1792869909.5714338,
+  "report_builder_sha256": "d04d652c8bd55639c4e1d6684cd2acad633da52dcd0fab5007ae1919b0b6f441",
+  "launch_KST": "2026-10-25T04:25:09.571434+09:00",
+  "build_KST": "2026-10-25T05:43:37.564905+09:00",
+  "server_polled": false,
+  "actual_histories": [
+    {
+      "kind": "tabm",
+      "fold": 0,
+      "seed": 42,
+      "actual_rows": 9,
+      "history_source": "ops/r2_progress/fold_00/seed_42/tabm_history.json",
+      "history_sha256": "5b2f68decef01191fa9f97facf2e4b2f5dc9b973ddb66df501f3335ea1bb5300",
+      "summary_sha256": "84f96d0516d7f3bb259c0a68aacd489528256777b85c14e1d20c3dc117f298cc",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "cnn",
+      "fold": 0,
+      "seed": 42,
+      "actual_rows": 11,
+      "history_source": "ops/r2_progress/fold_00/seed_42/cnn_history.json",
+      "history_sha256": "26af93e69dae24a85683bd6fbba8ab4c84a8dc3b79e9628fd0b3bb7aeab9d6c2",
+      "summary_sha256": "95c0458ec3b4cc0079b8b472f0517abac35c7367bb7f09a369d0f3cdfb7c6e69",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "fdy",
+      "fold": 0,
+      "seed": 42,
+      "actual_rows": 16,
+      "history_source": "ops/r2_progress/fold_00/seed_42/fdy_history.json",
+      "history_sha256": "7f4bdcccd9bc9bd451fdb565024e2ce8b26c99c3e13bf46e9a94709994d96893",
+      "summary_sha256": "f573ed2b000e7521718465441c33834d205b6dfe43eee56d5ea0a8050812cb02",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "itransformer",
+      "fold": 0,
+      "seed": 42,
+      "actual_rows": 14,
+      "history_source": "ops/r2_progress/fold_00/seed_42/itransformer_history.json",
+      "history_sha256": "b49e2547262c44dc68e803244670997342335959ae3dfefdf6d2c27a8f096a65",
+      "summary_sha256": "a26238a1269e63e32396438eebb8156b1bd1cfb887640c86b6083120b81eaf74",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "tabm",
+      "fold": 1,
+      "seed": 42,
+      "actual_rows": 12,
+      "history_source": "ops/r2_progress/fold_01/seed_42/tabm_history.json",
+      "history_sha256": "65e2ff1f44d0f0f9fd1e906509fc764178bb3f1129eb1660e1f4586865530413",
+      "summary_sha256": "e44c4f4185716325f3a9983a8fb2fc226f884e6e904cac612865f3b27f723b58",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "cnn",
+      "fold": 1,
+      "seed": 42,
+      "actual_rows": 26,
+      "history_source": "ops/r2_progress/fold_01/seed_42/cnn_history.json",
+      "history_sha256": "17f80d2238982b8e64ba830d94c6ab17691199a848c8a797453ef8d04dcdd015",
+      "summary_sha256": "13aacc4834d4d10850da0f73100b8eaacafcd2ef45f98c2799005e43a304ca50",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "fdy",
+      "fold": 1,
+      "seed": 42,
+      "actual_rows": 17,
+      "history_source": "ops/r2_progress/fold_01/seed_42/fdy_history.json",
+      "history_sha256": "5fb4b1628d9721e76db534837a91f56cb8ee4db80805d276e5a3d0f734b5fa23",
+      "summary_sha256": "3eed778ffca93a1559c8a332761b9947d2d7f148431c0c3a721b59482b019a8a",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "itransformer",
+      "fold": 1,
+      "seed": 42,
+      "actual_rows": 15,
+      "history_source": "ops/r2_progress/fold_01/seed_42/itransformer_history.json",
+      "history_sha256": "3ad974204aea232186a04235ff8ef0fa41f092cc2fd5c0dd8f279855a3ca630e",
+      "summary_sha256": "e3ada6552aeaf845eac458a9140a1e29b8c38a2dd0087df21c00f1e16c183cd4",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "tabm",
+      "fold": 2,
+      "seed": 42,
+      "actual_rows": 12,
+      "history_source": "ops/r2_progress/fold_02/seed_42/tabm_history.json",
+      "history_sha256": "d5a317bb252474f75ac07ed84ec1f78afb38ba736232946c93d25152ab749663",
+      "summary_sha256": "89f06c04e52a87674c4ab3953f66b6b799f6fa9868e77baef74b475e74442ec3",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "cnn",
+      "fold": 2,
+      "seed": 42,
+      "actual_rows": 11,
+      "history_source": "ops/r2_progress/fold_02/seed_42/cnn_history.json",
+      "history_sha256": "27559b9163b5590117f58b5763bd62927e41c6c2c018f8167fc208e1f07b8977",
+      "summary_sha256": "dce7a2b836860d921998e42b6ee42b20265233fd15edbf60c6483250cf0950b2",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "fdy",
+      "fold": 2,
+      "seed": 42,
+      "actual_rows": 28,
+      "history_source": "ops/r2_progress/fold_02/seed_42/fdy_history.json",
+      "history_sha256": "5ef05bc170644944782935ef0122151ef2db9bcf10ab30e57a5a89593cd2aabc",
+      "summary_sha256": "a5e2f6b80ef8b0c5a532d67f2c35ef8302ddea10560cb3fe3b7bd808b97c0ac4",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "itransformer",
+      "fold": 2,
+      "seed": 42,
+      "actual_rows": 8,
+      "history_source": "ops/r2_progress/fold_02/seed_42/itransformer_history.json",
+      "history_sha256": "5c836d552d381c9fbfe36f53a1923f0991ca7ec9e77d9f538294f19ba4a91f44",
+      "summary_sha256": "fcf023ede1f09b8a215cc9d1028040073db2b57aab55e16b23f547f0d464b6fa",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "tabm",
+      "fold": 3,
+      "seed": 42,
+      "actual_rows": 8,
+      "history_source": "ops/r2_progress/fold_03/seed_42/tabm_history.json",
+      "history_sha256": "9ea11a81a961ff3046cc9e9b23b4b67ae55e7476ca1b2dc9e12d333a28a60c1a",
+      "summary_sha256": "be2ac7b2e192657bb8e88aec47e981ee712cf7cce995767842032cc8d4a1d043",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "cnn",
+      "fold": 3,
+      "seed": 42,
+      "actual_rows": 13,
+      "history_source": "ops/r2_progress/fold_03/seed_42/cnn_history.json",
+      "history_sha256": "86a372eb49b5e86e4aa0b2e964f2b66209217c03ac62a2f1eba3c99924eb629e",
+      "summary_sha256": "7012d57f6abfdf245fb05f27fb12f04a83c307cd1009096dee43ab86115ffe10",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "fdy",
+      "fold": 3,
+      "seed": 42,
+      "actual_rows": 8,
+      "history_source": "ops/r2_progress/fold_03/seed_42/fdy_history.json",
+      "history_sha256": "3b7e70db9a2707689569afbc0809ec345683f84476e9316ff1ac9bfce2891d41",
+      "summary_sha256": "5a89e8e28d60a82f242c4a8ef9c397fa900242efd94b13e24c523400bb549022",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "itransformer",
+      "fold": 3,
+      "seed": 42,
+      "actual_rows": 8,
+      "history_source": "ops/r2_progress/fold_03/seed_42/itransformer_history.json",
+      "history_sha256": "efa19e6630c5aee381ef98c4b84dcc0c63aabf7b6f68ec3c5e1e68135f7275a3",
+      "summary_sha256": "9d490a83f7f6ab5649c1195831eea21aaa7884885a27128f5fba7cde25ea480f",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "tabm",
+      "fold": 4,
+      "seed": 42,
+      "actual_rows": 8,
+      "history_source": "ops/r2_progress/fold_04/seed_42/tabm_history.json",
+      "history_sha256": "4ffc7f666c427dc794b4ab69e49489a3e1854d6a17e890f6ef7a8da3869d68e5",
+      "summary_sha256": "564de5aa01e4a02d63ab6e9aa3e5a5da7b76ba7dc2954edab18449d0e42c81cc",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "cnn",
+      "fold": 4,
+      "seed": 42,
+      "actual_rows": 17,
+      "history_source": "ops/r2_progress/fold_04/seed_42/cnn_history.json",
+      "history_sha256": "3840c2e990ecaf249d7ae96a4e186ba4e139a42ad1c3aa02757952e4d8065922",
+      "summary_sha256": "e84d804410c011759163d5323fd6d4c0938492c9edafb5e82a92e181a80df469",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "fdy",
+      "fold": 4,
+      "seed": 42,
+      "actual_rows": 20,
+      "history_source": "ops/r2_progress/fold_04/seed_42/fdy_history.json",
+      "history_sha256": "058679ebc43e500193d1e23af361551850d27a835c91f290e9eb21c6631d3068",
+      "summary_sha256": "0d647eb8dc0a5c5999844d18cc84eb817bc4726d1bb981e5ad4e39592c49f4d4",
+      "interpolation_or_smoothing": false
+    },
+    {
+      "kind": "itransformer",
+      "fold": 4,
+      "seed": 42,
+      "actual_rows": 9,
+      "history_source": "ops/r2_progress/fold_04/seed_42/itransformer_history.json",
+      "history_sha256": "8282ea092ed4971f8e3bb4d9bb66be16ca1c00257fd53035e3674e5d437307e0",
+      "summary_sha256": "e0becf092acc4e795f1064d4427adbd2bac9cc8137ffcb0c32e82d5eae481f14",
+      "interpolation_or_smoothing": false
+    }
+  ],
+  "unreadable_history_files": [],
+  "final_report_explicitly_supplied": true,
+  "collection_receipts": [
+    {
+      "path": "ops/r2_progress/fold_00/collection_receipt.json",
+      "sha256": "3edf66b770ca285c5258a930115c6a3f3f6b9d09ff39a628ed03823d4af5150b"
+    },
+    {
+      "path": "ops/r2_progress/fold_01/collection_receipt.json",
+      "sha256": "3c180c8f11998a6d860187c61e23a852f97db52b8242d599c5c1061840163c70"
+    },
+    {
+      "path": "ops/r2_progress/fold_02/collection_receipt.json",
+      "sha256": "4483193c9c962a43f28e4a850825370b7a3a8417d15b1439a779d302eacfa5fd"
+    },
+    {
+      "path": "ops/r2_progress/fold_03/collection_receipt.json",
+      "sha256": "096fba5461cd365fd83b7416568f35d340a33402be45aaefcc823c8efd668d76"
+    },
+    {
+      "path": "ops/r2_progress/fold_04/collection_receipt.json",
+      "sha256": "1e76ba7c0bae1746d8c647d6dbb66043eaccb0a2def328b7cfc49ff1df51f08f"
+    }
+  ],
+  "downloaded_completed_fold_ledgers": 5,
+  "final_report_sha256": "3e16b5823401787687604187879a8a276e8d8610d817a00a4dc7d923d2989c1c",
+  "independent_oof_verification_sha256": "265f7001cbe5a7eba5670422a537ff24433ccca180fd6f339a13c1242b7102f0",
+  "execution_receipt_sha256": "84a788f0223c4aa7e1147c7ed4a379468680bfaeb17eed896a67b7eef661c846",
+  "frozen_inner_policy_sources": [
+    {
+      "fold": 0,
+      "path": "ops/r2_progress/fold_00/ensemble_policy.json",
+      "sha256": "c02b3e5c9b5f74bec3b0f2481d7d2508c8a543cf28c077d353287c97e06beede"
+    },
+    {
+      "fold": 1,
+      "path": "ops/r2_progress/fold_01/ensemble_policy.json",
+      "sha256": "2e4d3e5cea7778652cb592cedbcd84f9c08ab494b453525cccc38f00823eb5ae"
+    },
+    {
+      "fold": 2,
+      "path": "ops/r2_progress/fold_02/ensemble_policy.json",
+      "sha256": "da54363d0906a7e94f2279d988f5f812c1c7e83779c4d4e1d5541313a0187a4f"
+    },
+    {
+      "fold": 3,
+      "path": "ops/r2_progress/fold_03/ensemble_policy.json",
+      "sha256": "153a938c5980b681ad43882cd6fd68544442af1ed91c679fb0cdd3d61fe752ad"
+    },
+    {
+      "fold": 4,
+      "path": "ops/r2_progress/fold_04/ensemble_policy.json",
+      "sha256": "29870fe8564bf83a24569a2db762d453664155db6ac98cbb687a1d8748af7ee3"
+    }
+  ],
+  "figures": {
+    "fold_00_seed_42_learning_curves.png": "1868fa603e9465538842fe2125a7c8dc868678e5a1e1f74c2e29b4d5e15f25f4",
+    "fold_00_seed_42_learning_curves.svg": "1383e85e39feced6135ce024b283dae5561d9d4734ee888bd734fe84736f8163",
+    "fold_01_seed_42_learning_curves.png": "9c0d8e3430246c204773ab66070719ecef10211e2cdb02d582a28b4b194296e2",
+    "fold_01_seed_42_learning_curves.svg": "03e55ad980afbe140c879aea5e23baee0e28a6ddc82da708c398173dc25ef187",
+    "fold_02_seed_42_learning_curves.png": "c7c73677843fb4305327eca5b0e01fa3c9304459bfe6106595771cb257155a48",
+    "fold_02_seed_42_learning_curves.svg": "1b304c6beb744ff0bf80c3e1665046c50fb64b204c06c3ece48423c303635533",
+    "fold_03_seed_42_learning_curves.png": "b87b4645733a680c0daa9dee7c1295666eb71cff7be885cf2725629f4ef09b39",
+    "fold_03_seed_42_learning_curves.svg": "ed02034ff3bee2b5b8a338d8abca1e98be6ed3b4a7024dd7b2058a7b5951bc63",
+    "fold_04_seed_42_learning_curves.png": "87847eaa7709784aaca52b606f250bc7e3842e58431a663a8c68da81eb0d1dc1",
+    "fold_04_seed_42_learning_curves.svg": "798d2b57c4b114ba300ca333b5fdc899b0423de3376668b03ceabc96a75630eb",
+    "completed_oof_rmse.png": "1853636a135a2145a0748762a1e422e3942aae742a1a00c6f474ac38878f56e6",
+    "completed_oof_rmse.svg": "cf43779409b8a75bd9be45933814258177c207741e17a46b7b8477bc7d33bfde"
+  },
+  "fabricated_curves_or_metrics": false
+}

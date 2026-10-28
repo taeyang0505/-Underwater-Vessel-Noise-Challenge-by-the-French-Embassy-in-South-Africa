@@ -1,0 +1,41 @@
+{
+  "rows": 2048,
+  "features": 3827,
+  "threads": 4,
+  "package_versions": {
+    "numpy": "2.3.5",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "sklearn": "1.9.1"
+  },
+  "libomp_images": [
+    "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+  ],
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libomp",
+      "filepath": "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib",
+      "version": null
+    }
+  ],
+  "source_dataset_or_Test_read": false,
+  "status": "passed",
+  "elapsed_seconds": 3.3719478342682123,
+  "libomp_images_after": [
+    "/opt/homebrew/Cellar/libomp/22.1.8/lib/libomp.dylib"
+  ],
+  "reload_batch_replay_max_delta": {
+    "share_batch1": 0.0,
+    "score_batch1": 0.0,
+    "share_batch7": 0.0,
+    "score_batch7": 0.0,
+    "share_batch256": 0.0,
+    "score_batch256": 0.0
+  },
+  "model_summary_sha256": "c76f023ad4603f03368278c5e2743a00dc625fc2eea5e5fb35f06d48a5ef0629",
+  "fixture_code_sha256": "d66171e7482a0db8b4cec8f2e9d1d7a832c66708bd3710bcd5118bba81f412d2",
+  "production_fit": false
+}

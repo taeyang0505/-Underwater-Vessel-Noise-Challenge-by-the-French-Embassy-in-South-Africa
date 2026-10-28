@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "numeric_only": true,
+  "real_source_data_opened": false,
+  "results": [
+    {
+      "kind": "tree",
+      "mode": "relative6",
+      "passed": true
+    },
+    {
+      "kind": "tree",
+      "mode": "legacy8",
+      "passed": true
+    },
+    {
+      "kind": "cnn",
+      "mode": "relative6",
+      "passed": true
+    },
+    {
+      "kind": "cnn",
+      "mode": "legacy8",
+      "passed": true
+    }
+  ],
+  "tampered_prior_rejected": true,
+  "tree_process_torch_not_loaded": true,
+  "code_sha256": "56ed1cdea424e56c2756778ac4751ea1ab619fce65d81f7f47a18869c0413bea"
+}

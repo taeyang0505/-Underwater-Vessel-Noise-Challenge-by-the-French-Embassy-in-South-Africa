@@ -1,0 +1,26 @@
+{
+  "version": "r14_MPS_capability_smoke_v1",
+  "created_utc": "2026-10-26T19:32:22.844792+00:00",
+  "model_kinds": [
+    "bg_cnn",
+    "tfgrid_fdy_conformer",
+    "fdy",
+    "itransformer"
+  ],
+  "batches": [
+    8,
+    16,
+    32
+  ],
+  "CPU_threads": 2,
+  "precision": "FP32 backbone, CPU FP64 frontend",
+  "warmup_Adam_steps": 1,
+  "timed_Adam_steps": 3,
+  "CPU_MPS_prediction_atol": 0.0003,
+  "CPU_MPS_prediction_rtol": 0.0002,
+  "fresh_random_weights_not_production": true,
+  "no_Test_report_or_training_dataset_fit": true,
+  "MPS_operator_CPU_fallback_allowed": false,
+  "full_epoch_or_full_training": false,
+  "CPU_synthesis_excluded_from_step_timing_and_reported_separately": true
+}

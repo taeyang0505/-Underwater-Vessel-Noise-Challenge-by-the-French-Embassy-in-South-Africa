@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "new_models_or_acoustic_panels_loaded": false,
+  "script_sha256": "ba3bc6f312b1747d88eb9ca841f0f3432e6982e9ee37351dd2878cd4216f1e08",
+  "gated_role_event_order": [
+    "gate_loaded_after_numeric_global17_freeze",
+    "policy_written",
+    "locked_numeric_role_allowed"
+  ],
+  "selected_first_arm": "L0H0P1",
+  "exact_tie_retains_baseline": true,
+  "tampered_policy_foreign_global_freeze_rejected": true,
+  "AUC_pairwise_ties_and_missing_class_oracle": true,
+  "paired_background_cluster500_CI_exact_repeat": true,
+  "identical_model_CI_exactzero": true,
+  "metric_high_y_SSE_oracle": true,
+  "CI": [
+    {
+      "comparison": "numeric_selected_minus_base",
+      "metric": "rmse",
+      "point_difference": -0.020000008245308915,
+      "lo95": -0.020000025629997364,
+      "hi95": -0.019999999552965164,
+      "n_clusters": 3,
+      "cluster_key": "numeric_background_group",
+      "repetitions": 500,
+      "valid_repetitions": 500,
+      "reason": null
+    },
+    {
+      "comparison": "numeric_selected_minus_base",
+      "metric": "auc_share",
+      "point_difference": 0.0,
+      "lo95": 0.0,
+      "hi95": 0.0,
+      "n_clusters": 3,
+      "cluster_key": "numeric_background_group",
+      "repetitions": 500,
+      "valid_repetitions": 327,
+      "reason": null
+    },
+    {
+      "comparison": "numeric_selected_minus_base",
+      "metric": "auc_score",
+      "point_difference": 0.0,
+      "lo95": 0.0,
+      "hi95": 0.0,
+      "n_clusters": 3,
+      "cluster_key": "numeric_background_group",
+      "repetitions": 500,
+      "valid_repetitions": 327,
+      "reason": null
+    }
+  ],
+  "locked_loader_tampered_policy_rejected_before_array_access": true,
+  "incomplete_model_global_freeze_rejected": true,
+  "performance_claim": false
+}

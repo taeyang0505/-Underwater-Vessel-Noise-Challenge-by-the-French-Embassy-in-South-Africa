@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "archive_bytes": 772302839,
+  "archive_sha256": "565933fc2df2a616cd91a6d5bf6ef07ff52766655b5f3e34b1497b99e5059079",
+  "delivery_files_verified": 221,
+  "forbidden_payloads": [],
+  "original_source_arrays_present": false,
+  "MD_relative_links_verified": 13,
+  "cv_source_hash": "f69509648c416cc8e8338a209ca10e728ae9430670fd3922696af40d646f9481",
+  "train_examples": 267837,
+  "vendor_weights": {
+    "tabicl-regressor-v2-20260212.ckpt": {
+      "present": true,
+      "sha256_matches": true
+    },
+    "kumo_large_regressor.pt": {
+      "present": true,
+      "sha256_matches": true
+    }
+  },
+  "actual_training_executed": false,
+  "GPU_compute_executed": false,
+  "prebuilt_only": true,
+  "full_cv_preflight_executed": true,
+  "checks": [
+    {
+      "name": "pip_check",
+      "returncode": 0,
+      "log": "reports/server_data_pip_check.log"
+    },
+    {
+      "name": "delivery_verify",
+      "returncode": 0,
+      "log": "reports/server_data_delivery_verify.log"
+    },
+    {
+      "name": "nested5_readonly_preflight",
+      "returncode": 0,
+      "log": "reports/server_data_nested5_readonly_preflight.log"
+    }
+  ],
+  "cv_preflight_summary": {
+    "ready": true,
+    "n_splits": 5,
+    "oof_examples": 15000
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "CUDA_runtime": "12.8",
+    "CUDA_available": true
+  }
+}

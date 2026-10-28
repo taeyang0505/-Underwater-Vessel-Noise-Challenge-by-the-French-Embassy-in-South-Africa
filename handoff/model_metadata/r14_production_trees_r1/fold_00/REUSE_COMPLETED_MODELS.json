@@ -1,0 +1,53 @@
+{
+  "models": {
+    "baselineP1": {
+      "fold": 0,
+      "variant": "baseline",
+      "model_dir": "models/r14_tree_full_r1/baselineP1/model",
+      "reused_completed_Fold0": true,
+      "trained_under_previous_diagnostic_approval": true,
+      "current_user_approved_exact_weight_reuse": true,
+      "completion_path": "models/r14_tree_full_r1/baselineP1/COMPLETED.json",
+      "completion_sha256": "ccf557640f20d7d0cc394dfdc58227a435efce76da0c192c3b238ba79bfc4a78",
+      "summary_sha256": "03b46eae3b419bdaaf4a4424f22de70633a4d9c7979d7574e1d5fc6ab0ace736",
+      "artifact_sha256": {
+        "models/r14_tree_full_r1/baselineP1/model/share.txt": "3d47c1e391d8702035fb777baddd68289a652ca1c9a5772e0af893cb3e41a8b0",
+        "models/r14_tree_full_r1/baselineP1/model/presence.txt": "4d103dabc09331bc06a505f4ecf3e2df7f6e71b51f3a98e23149bc34af054e7c",
+        "models/r14_tree_full_r1/baselineP1/model/feature_schema.json": "1a75b4b8f3fa7495e0ca84c11a6386bd4754f055ec33b150fa3363f7c3cff358",
+        "models/r14_tree_full_r1/baselineP1/model/inner_predictions.npz": "f0556d6a8ece629c5c60dc3902fc60dd6ec009e2e9babfcc4f12f7858e251079",
+        "models/r14_tree_full_r1/baselineP1/model/basis.npz": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+        "models/r14_tree_full_r1/baselineP1/model/summary.json": "03b46eae3b419bdaaf4a4424f22de70633a4d9c7979d7574e1d5fc6ab0ace736"
+      },
+      "TRAIN_rows": 78869,
+      "feature_count": 5252,
+      "selection_rows": 1000,
+      "basis_sha256": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d"
+    },
+    "highshareP1": {
+      "fold": 0,
+      "variant": "highshare",
+      "model_dir": "models/r14_tree_full_r1/highshareP1/model",
+      "reused_completed_Fold0": true,
+      "trained_under_previous_diagnostic_approval": true,
+      "current_user_approved_exact_weight_reuse": true,
+      "completion_path": "models/r14_tree_full_r1/highshareP1/COMPLETED.json",
+      "completion_sha256": "32312fe8d9c6f13be3b240262fb12b7668bedb178856f43e6b8c3b30f5b7d31d",
+      "summary_sha256": "d317fc96599b8c19098a3ea4e03860cd94cf90d7637f269e689fafa30f8f28bc",
+      "artifact_sha256": {
+        "models/r14_tree_full_r1/highshareP1/model/share.txt": "49691291a21706ad31cc64bd27660caddfc1d9410203ba5f3435fa671dff1efe",
+        "models/r14_tree_full_r1/highshareP1/model/presence.txt": "6509de6e2ae680626f553a760bb1397262bf77d58ade5c6a50b43e1bb254d57d",
+        "models/r14_tree_full_r1/highshareP1/model/feature_schema.json": "1a75b4b8f3fa7495e0ca84c11a6386bd4754f055ec33b150fa3363f7c3cff358",
+        "models/r14_tree_full_r1/highshareP1/model/inner_predictions.npz": "56a76dd86703c70ffcdd0ea7aab3a7fcecba34262f953356f7c9f62842c889ef",
+        "models/r14_tree_full_r1/highshareP1/model/basis.npz": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d",
+        "models/r14_tree_full_r1/highshareP1/model/summary.json": "d317fc96599b8c19098a3ea4e03860cd94cf90d7637f269e689fafa30f8f28bc"
+      },
+      "TRAIN_rows": 78869,
+      "feature_count": 5252,
+      "selection_rows": 1000,
+      "basis_sha256": "8cc263b3a43f0715daf755bed142b2e45b4373030a1e89fa7c499d77283d2d8d"
+    }
+  },
+  "original_files_modified": false,
+  "symlinks_or_weight_copies": false,
+  "plan_sha256": "aaf91d74932e13d693db391e3d836a775a7908b30d1f24bb11f3da898fd01a4e"
+}

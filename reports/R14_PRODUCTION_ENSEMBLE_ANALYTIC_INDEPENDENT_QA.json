@@ -1,0 +1,16 @@
+{
+  "format": "r14_production_ensemble_analytic_independent_qa_v1",
+  "status": "passed_core_only_wrapper_review_pending",
+  "checked_unix": 1793047550.5016162,
+  "source_sha256": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+  "analytic_two_member_simplex_weight": 0.5000724397142609,
+  "SLSQP_proposed_weight": 0.500072439714261,
+  "absolute_difference": 1.1102230246251565e-16,
+  "analytic_formula": "clip((ridge-mean((x2-y)*(x1-x2)))/(mean((x1-x2)^2)+2*ridge),0,1)",
+  "gate_regression_fallback_correct": true,
+  "bounded_outputs": true,
+  "default_fixture_rejected": true,
+  "synthetic_only": true,
+  "actual_source_query_Test_model_fit_or_inference": false,
+  "caller_responsibility": "IDs, samefold TRAIN isolation, common baseline role and report/Test barriers are enforced outside this pure math core."
+}

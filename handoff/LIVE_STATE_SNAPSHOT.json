@@ -1,0 +1,56 @@
+{
+  "snapshot_kst": "2026-10-28T14:55:41.460349+09:00",
+  "states": {
+    "ops/r16_multisupport_full_r1/state.json": {
+      "phase": "neural",
+      "PID": 12773,
+      "child_PID": 21489,
+      "elapsed_seconds": 8597.67475104332,
+      "progress": {
+        "stage": "neural",
+        "regime": "D0",
+        "kind": "bg_cnn",
+        "epoch": 29,
+        "rows_seen": 44288,
+        "total_rows": 61446,
+        "optimizer_steps": 27600,
+        "elapsed_seconds": 2099.505257625133
+      },
+      "official_upload": false
+    },
+    "ops/r16_multisupport_fivefold_r1/state.json": {
+      "phase": "waiting_for_fold0_CSV",
+      "PID": 23279,
+      "parent": {
+        "phase": "neural",
+        "PID": 12773,
+        "child_PID": 21489,
+        "elapsed_seconds": 8597.67475104332,
+        "progress": {
+          "stage": "neural",
+          "regime": "D0",
+          "kind": "bg_cnn",
+          "epoch": 29,
+          "rows_seen": 44288,
+          "total_rows": 61446,
+          "optimizer_steps": 27600,
+          "elapsed_seconds": 2099.505257625133
+        },
+        "official_upload": false
+      },
+      "updated_kst": "2026-10-28T14:55:40.716521+09:00",
+      "official_upload": false
+    },
+    "models/r16_multisupport_full_r1/progress.json": {
+      "stage": "neural",
+      "regime": "D0",
+      "kind": "bg_cnn",
+      "epoch": 29,
+      "rows_seen": 50688,
+      "total_rows": 61446,
+      "optimizer_steps": 27700,
+      "elapsed_seconds": 2106.181323291734
+    }
+  },
+  "snapshot_is_not_live": true
+}

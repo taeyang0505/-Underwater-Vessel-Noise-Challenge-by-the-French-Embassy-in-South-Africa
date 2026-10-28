@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": {
+    "actual_CLI_train24_inner12_four_NN_two_epochs_hybrid_CNN_only": "passed",
+    "prior_TRAIN_binding_file_payload_SHA_and_checkpoint_reload_bitwise": "passed",
+    "OPS_trained_class_state_and_prediction_parity": "passed",
+    "gradient_connected_residual_regularizer_and_epoch_zero_eligibility": "passed",
+    "other_three_NN_remain_architecture3": "passed",
+    "missing_changed_wrong_binding_prior_fail_closed": "passed",
+    "config_bool_mapping_feature3_domain_none_contrastive_zero_gates": "passed",
+    "source_bytes_preserved_guarded_outer_canary_unread_inner_outputs_only": "passed"
+  },
+  "full_competition_training_executed": false,
+  "GPU_used": false,
+  "outer_Test_calibration_sealed_values_opened": false,
+  "code_sha256": {
+    "pipeline/train.py": "addd233b936c2c0b5497ffe81c7462acc1dec5e82d469ecd77cc85178fa79c0b",
+    "pipeline/train_group_cv.py": "19d35e976618b622ce6dcf3201c25139bfa8f71242c6cb255516bc89d6620ab6",
+    "pipeline/models.py": "a11c9dda847b4a2aeedaf1e892c4c32298ee03e73758568b96a565fd539c21f9",
+    "pipeline/mixtures.py": "07a860ae2f73db9932ecc5ad1117ef9c19d61470b0f1d694e19e7cc6ef8326bf",
+    "pipeline/background_prior_features.py": "e29523c77eb571d501dbe0979f4d56a17859f88e3bb363ae7d70f41a4e31369a",
+    "pipeline/checkpoint_prior.py": "09bef74e6fde48171f1368c8d1667512f86c0aa2b0b3a69e0e5e64859f9d3d3f"
+  },
+  "limits": "Tiny CPU execution and reconstruction checks do not establish new competition performance."
+}

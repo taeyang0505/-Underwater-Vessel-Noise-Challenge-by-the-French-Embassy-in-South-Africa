@@ -1,0 +1,14 @@
+{
+  "status": "passed CPU guard/schema fixtures only",
+  "real_CUDA_executed": false,
+  "real_source_data_or_checkpoints_opened": false,
+  "test_outer_calibration_sealed_opened": false,
+  "checks": {
+    "no_CUDA_nonzero_and_no_data_open": "passed",
+    "tiny_CPU_forward_backward_eval_schema_only": "passed",
+    "input_arrays_unchanged_and_no_model_saved": "passed",
+    "CPU_timing_explicitly_not_CUDA_or_rental_estimate": "passed"
+  },
+  "code_sha256": "adeff5cfc0723408803f864336a7f28d5f8e345302261fee5802d813d7c306a1",
+  "limits": "This fixture validates schema and control flow. It supplies no usable GPU speed or VRAM measurement."
+}

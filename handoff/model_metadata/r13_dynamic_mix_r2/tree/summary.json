@@ -1,0 +1,243 @@
+{
+  "format": "r12_compact_physics_lgbm_v1",
+  "kind": "lgbm_physics_compact",
+  "status": "completed",
+  "fixture_only": false,
+  "settings": {
+    "maximum_trees": 1500,
+    "early_stopping_patience": 40,
+    "threads": 2,
+    "learning_rate": 0.035,
+    "num_leaves": 31,
+    "minimum_leaf_rows": 50,
+    "feature_batch_size": 512
+  },
+  "seed": 2026102712,
+  "include_shape": true,
+  "feature_count": 673,
+  "feature_schema_sha256": "7a0acfa3da805b85356abed4c577cc344b9ef1399e8198d4aa10ed72b4bcebda",
+  "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+  "basis_training_binding": {
+    "version": "r12_cpu_data_ablation_v1",
+    "role": "train",
+    "fold": 0,
+    "R9_source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+    "background_basis_npz_sha256": "b14d41325241e42e6dbabc124b87eda159b02ee8005a21ec24b152ef08f67ed2",
+    "source_manifest_sha256": "e3988012f83980be4f41fda8a67eb5247b2d2005bbfe1f03f56650554d372478",
+    "background_basis_metadata_sha256": "ec06bf8151fa6984cd6ba042c2c68c8a5cc21357d4103e607c3929fdce1ccbb2",
+    "R12_plan_sha256": "6a77c87aa0a6c9b88a2f7b50b86c371a6fc4fed1894a17d56c825689b8596633",
+    "raw_SA_no_added_recording": true,
+    "unique_source_IDs": 2000
+  },
+  "training_binding": {
+    "format": "r13_dynamic_mix_24k_tree_binding_v1",
+    "plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c",
+    "data_hash": "5c30c3fec031afbae5d97de46d9e1cc4857976410e11a6be780a60b4bc752662",
+    "baseline_TRAIN_sha256": "cf4bee7a67003dda0806e3dfc6cc8b214480a72835793cb5cdd4a22a82b6612e",
+    "highshare_TRAIN_sha256": "bdd96ba7231fdf32cdfcab4805a18af46c6d0bd8d4aaa3a90e86684b444bd475",
+    "validation_fit_sha256": "d25446f1e088a29e9e4a26649813b5be33ee4ca5f1231be9ace554454d2e2562",
+    "basis_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+    "two_augmentation_variants_same_source": true,
+    "independent_source_rows": 12000,
+    "augmentation_rows": 24000,
+    "execution_source_sha256": "fb87bdd170f6c5d296735896072c2e8f09f57f9add68f0418c455b79b2e2df87",
+    "execution_source_path": "ops/train_r13_dynamic_mix_tree_static.py",
+    "static_import_correction_receipt_sha256": "7ba3086ea65c574f924f27db306a48405625d4ab23e22edeeb9e023179aec06b",
+    "development_not_blind": true
+  },
+  "fit_plan_sha256": "1275fb2a75b71802cea2ba0f26a40f5c8ee7a5fecf316d2125d2e95764abdf2e",
+  "best_iteration": 1493,
+  "classifier_best_iteration": 316,
+  "validation_fit_metrics": {
+    "n": 1000,
+    "rmse": 0.08430840309185096,
+    "mae": 0.052996192715260806,
+    "bias": 0.013378377014370016,
+    "target_mean": 0.19236162507500285,
+    "target_rms": 0.3029674449657959,
+    "prediction_mean": 0.20574000208937288,
+    "prediction_rms": 0.30258722297525653,
+    "share_auc": 0.8463874999999998,
+    "classifier_auc": 0.942075,
+    "hybrid_auc": 0.9205937500000001,
+    "share_saturation_le001": 0.131,
+    "share_saturation_ge099": 0.0,
+    "classifier_saturation_le001": 0.001,
+    "classifier_saturation_ge099": 0.409,
+    "raw_share_clipped_fraction": 0.067,
+    "site_slices": {
+      "1 Richards Bay": {
+        "n": 512,
+        "rmse": 0.08536348848728427,
+        "bias": 0.02096233156178151,
+        "target_mean": 0.1727538639805406,
+        "prediction_mean": 0.1937161955423221,
+        "share_auc": 0.8345982142857143,
+        "classifier_auc": 0.9283705357142857
+      },
+      "2 Durban": {
+        "n": 119,
+        "rmse": 0.06214916415789908,
+        "bias": 0.004050979528677876,
+        "target_mean": 0.21525530240345872,
+        "prediction_mean": 0.21930628193213658,
+        "share_auc": 0.9351063829787234,
+        "classifier_auc": 0.9906382978723405
+      },
+      "4 Bird Island": {
+        "n": 73,
+        "rmse": 0.048277756811772446,
+        "bias": 0.012273218204502147,
+        "target_mean": 0.16110139389917866,
+        "prediction_mean": 0.17337461210368083,
+        "share_auc": 0.9270833333333334,
+        "classifier_auc": 1.0
+      },
+      "5 St Croix Island": {
+        "n": 108,
+        "rmse": 0.09891966578334035,
+        "bias": 0.0022788390903130036,
+        "target_mean": 0.2420805071499975,
+        "prediction_mean": 0.24435934624031047,
+        "share_auc": 0.8135190217391304,
+        "classifier_auc": 0.9551630434782609
+      },
+      "7 St_Francis": {
+        "n": 188,
+        "rmse": 0.09482420607280591,
+        "bias": 0.005433708192248695,
+        "target_mean": 0.2148466447027378,
+        "prediction_mean": 0.2202803528949865,
+        "share_auc": 0.8180701754385964,
+        "classifier_auc": 0.912982456140351
+      }
+    },
+    "family_slices": {
+      "long_native": {
+        "n": 100,
+        "rmse": 0.09060263654064424,
+        "bias": 0.012230824399302946,
+        "target_mean": 0.2999085525725968,
+        "prediction_mean": 0.31213937697189975,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "long_smooth_bell": {
+        "n": 300,
+        "rmse": 0.10622421495214755,
+        "bias": 0.00010978167410939932,
+        "target_mean": 0.3390889455090898,
+        "prediction_mean": 0.33919872718319916,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "native_edge": {
+        "n": 90,
+        "rmse": 0.05768500663974145,
+        "bias": 0.010348823408922828,
+        "target_mean": 0.10463190881119873,
+        "prediction_mean": 0.11498073222012156,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "native_inside": {
+        "n": 220,
+        "rmse": 0.06444383561311302,
+        "bias": 0.004096299081257629,
+        "target_mean": 0.192696348331149,
+        "prediction_mean": 0.19679264741240662,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "native_short": {
+        "n": 90,
+        "rmse": 0.06692566389411592,
+        "bias": 0.020616607936638807,
+        "target_mean": 0.09815575265728411,
+        "prediction_mean": 0.11877236059392292,
+        "share_auc": null,
+        "classifier_auc": null
+      },
+      "no_source": {
+        "n": 200,
+        "rmse": 0.08017766997946653,
+        "bias": 0.042171427266148385,
+        "target_mean": 0.0,
+        "prediction_mean": 0.042171427266148385,
+        "share_auc": null,
+        "classifier_auc": null
+      }
+    },
+    "site_macro_rmse": 0.07790685626262041,
+    "protected_slices": {
+      "zero": {
+        "n": 200,
+        "rmse": 0.08017766997946653,
+        "bias": 0.042171427266148385,
+        "prediction_mean": 0.042171427266148385,
+        "SSE": 1.2856917526672498
+      },
+      "positive_to020": {
+        "n": 466,
+        "rmse": 0.0662953511027043,
+        "bias": 0.01962907905486887,
+        "prediction_mean": 0.09179727520993437,
+        "SSE": 2.0481042872691697
+      },
+      "above020": {
+        "n": 334,
+        "rmse": 0.1063002018345435,
+        "bias": -0.012584009815654355,
+        "prediction_mean": 0.46265924068357417,
+        "SSE": 3.774110791961605
+      },
+      "long_positive": {
+        "n": 400,
+        "rmse": 0.1025421733662743,
+        "bias": 0.003140042355407786,
+        "prediction_mean": 0.33243388963037435,
+        "SSE": 4.205958927471622
+      },
+      "standard_positive": {
+        "n": 400,
+        "rmse": 0.06356603164739703,
+        "bias": 0.009220186547443063,
+        "prediction_mean": 0.16083040195998366,
+        "SSE": 1.6162561517591527
+      },
+      "SF_dense_zero": {
+        "n": 0,
+        "rmse": null,
+        "bias": null,
+        "prediction_mean": null,
+        "SSE": 0.0
+      }
+    }
+  },
+  "train_rows": 24000,
+  "validation_fit_rows": 1000,
+  "feature_matrix_bytes": {
+    "train": 64608000,
+    "validation_fit": 2692000
+  },
+  "lightgbm_version": "4.7.0",
+  "score_policy": ".5clipped_share+.5presence_classifier; no calibration",
+  "NN_epoch_policy_applicable": false,
+  "artifact_sha256": {
+    "share.txt": "4e796d290314dbc6869744f2b39e41dd226b7a6ffd13c32b7f449762e9c03381",
+    "presence.txt": "112fd425cc9e5462aeaa5bebc099fa068ff5447d9157355827d0d6f862fd1246",
+    "feature_schema.json": "e6f3f54bb1ab231e8887f4bc29fa9bbf3a3922a18e55eb8aafac06d16543d8ce",
+    "validation_fit_predictions.npz": "25221640132d80f577613d3797528aef759a93592f54fe67548ebf0a6f5a46ba",
+    "fit_plan.json": "1275fb2a75b71802cea2ba0f26a40f5c8ee7a5fecf316d2125d2e95764abdf2e",
+    "spectral_basis.npz": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113"
+  },
+  "source_code_sha256": {
+    "ops/train_r12_lightgbm.py": "f8a19c6510827d79dd6afbd2ed6ad9b41cbd32867cdd35665592ba879da8778f",
+    "pipeline/features_r12.py": "7902346ed9e878bf34a59d66cfd3d37b271f7f344fac7bbdf78712e0b6362de5",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a"
+  },
+  "elapsed_seconds": 95.80392966698855,
+  "gate_eval_Test_used_for_fitting": false
+}

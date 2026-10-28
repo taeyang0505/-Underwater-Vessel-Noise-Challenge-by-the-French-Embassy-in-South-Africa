@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-10-27T07:01:34.836982+00:00",
+  "PID": 80906,
+  "STAT": "Ts",
+  "command": "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m ops.train_r14_production_nn train --config configs/r14_production_mac_v1.json --fold 0 --preflight reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.json --qa reports/R14_PRODUCTION_NN_INDEPENDENT_QA.json --output /Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/models/r14_production_nn_fold0_r1",
+  "checkpoints": [
+    {
+      "path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/latest.pt",
+      "sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9",
+      "bytes": 31442721,
+      "matches_original_pause": true
+    },
+    {
+      "path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/best.pt",
+      "sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9",
+      "bytes": 31442721,
+      "matches_original_pause": true
+    }
+  ],
+  "last_complete_epoch": 37,
+  "best_epoch": 37,
+  "new_signal_or_training": false
+}

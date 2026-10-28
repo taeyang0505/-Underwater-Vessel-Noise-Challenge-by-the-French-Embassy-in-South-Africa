@@ -1,0 +1,51 @@
+{
+  "selection": {
+    "n": 1000,
+    "positive_n": 674,
+    "zero_n": 326,
+    "explicit_no_source_n": 200,
+    "share_mean": 0.09886674958792514,
+    "share_RMS": 0.18393510544512573,
+    "constant0p1_RMSE": 0.15510890721529982,
+    "observed_minutes_mean": 12.165,
+    "observed_minute_hist": {
+      "5": 262,
+      "12": 14,
+      "13": 17,
+      "14": 139,
+      "15": 568
+    }
+  },
+  "ensemble_fit": {
+    "n": 500,
+    "positive_n": 300,
+    "zero_n": 200,
+    "explicit_no_source_n": 100,
+    "share_mean": 0.09776810064614984,
+    "share_RMS": 0.18901570315840005,
+    "constant0p1_RMSE": 0.1617816921386176,
+    "observed_minutes_mean": 10.898,
+    "observed_minute_hist": {
+      "5": 196,
+      "12": 19,
+      "14": 34,
+      "15": 251
+    }
+  },
+  "ensemble_gate": {
+    "n": 500,
+    "positive_n": 359,
+    "zero_n": 141,
+    "explicit_no_source_n": 100,
+    "share_mean": 0.08803686632604342,
+    "share_RMS": 0.16871781196055705,
+    "constant0p1_RMSE": 0.14442412128016985,
+    "observed_minutes_mean": 13.44,
+    "observed_minute_hist": {
+      "5": 63,
+      "12": 18,
+      "14": 96,
+      "15": 323
+    }
+  }
+}

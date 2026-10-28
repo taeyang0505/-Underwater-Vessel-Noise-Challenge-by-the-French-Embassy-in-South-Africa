@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Mock APIs and temporary files only; not native producer fit or SSH",
+  "mock_fit_calls": 1,
+  "mock_verify_calls": 1,
+  "SSH_GPU_real_TRAIN_INNER_OUTER_Test_opened": false,
+  "native_training_executed": false,
+  "seven_file_ZIP_CRC_SHA_completion_LAST": true,
+  "duplicate_PID_guard": true,
+  "unsafe_request_path_rejected": true,
+  "config_change_rejected": true,
+  "ZIP_extra_or_escape_rejected": true,
+  "failed_partial_restart_rejected": true,
+  "data_regeneration_request_rejected": true,
+  "producer_failure_records_local_and_remote_FAILED_then_stops": true,
+  "remote_program_syntax_compiles": true,
+  "worker_sha256": "1a3afc0c783fcdc3ba5e3f54c0015e19834aa15cca50f2f187bdb1fd61250906"
+}

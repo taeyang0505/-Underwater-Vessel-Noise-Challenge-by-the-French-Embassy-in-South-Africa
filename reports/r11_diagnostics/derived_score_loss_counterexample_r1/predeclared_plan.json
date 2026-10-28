@@ -1,0 +1,22 @@
+{
+  "probe": "finite objective counterexample, not a trained model",
+  "targets": [
+    0.05,
+    0.2,
+    0.5
+  ],
+  "weights": [
+    "uniform375",
+    "LF_dominant_static_spectrum"
+  ],
+  "perfect_mask": "all q=true_share; A=y*E,B=(1-y)*E are physically nonnegative",
+  "perturbed_mask": "two incorrect cells at t0/f22=0,t1/f22=1",
+  "settings": "call frozen production physical_multitask_loss and fixed_presence_score",
+  "comparison_without_presence": "algebraically omit .05BCE; candidate diagnostic only, production unchanged",
+  "source_SHA": {
+    "pipeline/training_r9.py": "e7df7e3acc5c0358cc3e8cc4558039c6b3985e90be04abb12fdc0c09507bd11a",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b"
+  },
+  "new_training_Test_models_or_policy_change": false
+}

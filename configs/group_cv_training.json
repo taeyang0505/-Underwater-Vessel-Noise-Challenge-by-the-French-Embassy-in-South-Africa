@@ -1,0 +1,42 @@
+{
+  "protocol": "source_group_nested5_week24h_v1",
+  "cv_dir": "data/synthetic/group_cv_nested5_pilot_v1",
+  "output_dir": "models/group_cv_nested5_adam_v1",
+  "status": "Configuration only; no full CV training has run",
+  "seeds": [42],
+  "models": ["lgbm", "lgbm_physics", "lgbm_retrieval", "tabm", "cnn", "fdy", "itransformer"],
+  "foundation_models": {
+    "tabicl": {"context": 16000, "members": 4},
+    "kumo_large": {"context": 4096, "members": 4}
+  },
+  "training": {
+    "epochs": 100,
+    "patience": 7,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0003,
+    "dropout": 0.1,
+    "scheduler": "plateau",
+    "batch": 128,
+    "width": 256,
+    "k": 16,
+    "trees": 800,
+    "threads": 4,
+    "contrastive_weight": 0.0,
+    "contrastive_temperature": 0.1
+  },
+  "explicit_ablation_candidates": [
+    {"name": "nadam", "optimizer": "nadam", "dropout": 0.1, "contrastive_weight": 0.0},
+    {"name": "sgd_nesterov", "optimizer": "sgd_nesterov", "learning_rate": 0.01, "dropout": 0.1, "contrastive_weight": 0.0},
+    {"name": "dropout_005", "optimizer": "adam", "dropout": 0.05, "contrastive_weight": 0.0},
+    {"name": "dropout_020", "optimizer": "adam", "dropout": 0.2, "contrastive_weight": 0.0},
+    {"name": "contrastive_001", "optimizer": "adam", "dropout": 0.1, "contrastive_weight": 0.01}
+  ],
+  "experiment_policy": "Run the baseline first. Ablations are explicit separate experiments, not an automatic search. Never select by challenge Test or leaderboard fitting.",
+  "selection_metric": "inner validation RMSE",
+  "loss": "share MSE + explicitly logged auxiliary losses",
+  "ensemble": "Fit nonnegative sum-to-one weights on inner predictions only, freeze before outer evaluation. No outer-fitted affine calibration.",
+  "final_assessment": "Calibration and sealed sources remain outside this CV. Outer CV becomes development evidence after model comparison; it is not an endlessly reusable final holdout.",
+  "global_minimum_guaranteed": false,
+  "gpu": {"recommended": "RTX 4090 24GB x1", "ram_GB": 64, "free_SSD_GB": 100, "CUDA_memory_and_throughput_measured": false}
+}

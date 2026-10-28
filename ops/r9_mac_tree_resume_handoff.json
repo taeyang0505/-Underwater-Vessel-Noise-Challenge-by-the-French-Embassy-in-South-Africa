@@ -1,0 +1,55 @@
+{
+  "status": "single_runtime_fix_numeric_verified_pending_controller_review_for_fresh_r2",
+  "created_utc": "2026-10-26T06:45:32.545507+00:00",
+  "current_Mac_tree_process_running": false,
+  "failed_run": "models/r9_mac_trees_r1",
+  "failed_run_reuse_forbidden": true,
+  "fresh_output": "models/r9_mac_trees_r2",
+  "fresh_output_currently_absent": true,
+  "argv": [
+    "/Users/hongtaeyang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-m",
+    "ops.run_r9_training",
+    "tree",
+    "--executor",
+    "mac_cpu",
+    "--output",
+    "models/r9_mac_trees_r2"
+  ],
+  "additional_environment_only": {
+    "DYLD_LIBRARY_PATH": "/opt/homebrew/opt/libomp/lib"
+  },
+  "retained_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "required_PYTHONPATH": [
+    "PROJECT_ROOT",
+    "/private/tmp/underwater-eda-deps",
+    "/private/tmp/underwater-ml-deps"
+  ],
+  "config_file_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+  "code_sha256": {
+    "pipeline/runner_r9.py": "f2c194d6c32d1cac8b8d4e9c352f979d01e72e14e9fa18bb4e6029c9dd24c32d",
+    "ops/run_r9_training.py": "f4f0c2488d3ceffe1bc3e493b0e764f3f2cfd3d8380c1721eec83a53025f8c2a"
+  },
+  "environment_lock_file": "reports/R9_MAC_TREE_ENVIRONMENT_LOCK.json",
+  "environment_lock_sha256": "505a7524f661ebcb72401b8b11f6ab752f3c4050e63ca414304990c2ac167fa6",
+  "diagnosis_file": "reports/R9_MAC_TREE_CRASH_DIAGNOSIS.json",
+  "diagnosis_sha256": "341c5960efdc2d503f390e27c1eb2f0d28b5e9d62d378c2aaaaa4d7af1df4366",
+  "required_checks": [
+    "environmentlocklibrarySHAunchanged",
+    "numericfixturePASSthreeindependentprocesses",
+    "source/config/bundlepinsunchanged",
+    "freshoutput/log/state",
+    "singleloadedlibompruntime",
+    "rootcontrollerreviewexistingauthorization"
+  ],
+  "hyperparameter_or_seed_change": false,
+  "new_human_permission_required": false,
+  "GPU_SSH_Test_report_or_submission_not_in_scope": true
+}

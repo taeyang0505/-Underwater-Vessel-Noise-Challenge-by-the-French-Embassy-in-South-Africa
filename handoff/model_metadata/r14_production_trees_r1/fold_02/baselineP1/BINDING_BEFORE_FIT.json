@@ -1,0 +1,52 @@
+{
+  "format": "r14_approved_full_tree_production_binding_v1",
+  "fold": 2,
+  "variant": "baseline",
+  "include_shape": true,
+  "production_config_sha256": "da33239b31a55e7232ccb518273d7777deab4c7d0c7ca1329300dfc0a919df13",
+  "approval_file_sha256": "b89cc22dac97db24b91a0d0e0edcddd554ddd884f5fafbac3df1b21cbb2e79c3",
+  "user_instruction_sha256": "54bae81c2c0aa8b5e5fa299cf6aebbbe0af98b69d68f41add3c3b1802a212ba6",
+  "plan_sha256": "aaf91d74932e13d693db391e3d836a775a7908b30d1f24bb11f3da898fd01a4e",
+  "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+  "source_hash": "2fe607d54bca2af3afe1ddaf4ac4e0153f0bc5ccb794d5b8721ab37dd273cef8",
+  "TRAIN_identity": {
+    "version": "r13_full_background_cv_data_v1",
+    "role": "train",
+    "fold": 2,
+    "rows": 78362,
+    "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+    "TRAIN_pool_sha256": "c269b095c9f7073746b4fcdc9b569dc78bac3d5b98c8b42496032bd2529fe0ae",
+    "basis_sha256": "07d98440a7e41601849f078988200b0876e29f6972e44727078332900a4b21ca",
+    "dynamic_epoch_seed": 2026102713,
+    "all509_shared_references": true,
+    "reference_independent_CV": false,
+    "data_variant": "baseline",
+    "include_shape": true,
+    "runtime_policy_sha256": "55c6602561aafe975b0d40374a461952eeef0a3fb6558effad6e62d5a958dba1",
+    "epoch_law": "primaryonce/stratumzeroquotaHF/highshare0or25pct; exact20pctover5epochs"
+  },
+  "TRAIN_npz_sha256": "985329156ef4c9f7265d52dd9556d7faf72e138954d66312213982a4b38deafc",
+  "selection_identity": {
+    "version": "r13_full_background_cv_data_v1",
+    "role": "selection",
+    "fold": 2,
+    "rows": 1000,
+    "data_hash": "bb1dc465007a70798968ce14040b59643715538716b9e2c1f11c77e72c27d3c5",
+    "npz_sha256": "4fcd4e2b3faa4d2b2ec47181da54ed2a3f0e7e34cd588bf7def98b668f6fa398",
+    "basis_sha256": "07d98440a7e41601849f078988200b0876e29f6972e44727078332900a4b21ca",
+    "data_variant": "baseline",
+    "include_shape": true
+  },
+  "PCA_sha256": "07d98440a7e41601849f078988200b0876e29f6972e44727078332900a4b21ca",
+  "source_separation": {
+    "primary_ID_intersection": 0,
+    "background_group_intersection": 0,
+    "same_sensor_rows_checked": 1000,
+    "minimum_900second_support_gap_hours": 24.0,
+    "required_hours": 24,
+    "time_basis": "same sensor export clock; independently verified UTC not asserted"
+  },
+  "feature_count": 5252,
+  "executor": "Mac CPU2",
+  "executor_source_sha256": "11afc5d6f6fc2763b49275019859eca1751e007f2cf645cfeb6747ac9460ad43"
+}

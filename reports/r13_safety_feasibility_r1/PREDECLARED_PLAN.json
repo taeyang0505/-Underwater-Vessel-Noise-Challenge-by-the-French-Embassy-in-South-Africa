@@ -1,0 +1,79 @@
+{
+  "format": "r13_fixed30_global_safety_plan_v1",
+  "created_unix": 1793039472.4295318,
+  "source_results_sha256": "824e45a021aa6394084468d8d54d2d9b5ee62fa01c3a0ce428ca2c2e2d136618",
+  "source_policy_sha256": "2929222af6dd07450eecdcdb31f99ab2d093e254ce5ca123ce1c4aac66cc47ed",
+  "source_outputs_sha256": {
+    "selected_policy.json": "2929222af6dd07450eecdcdb31f99ab2d093e254ce5ca123ce1c4aac66cc47ed",
+    "paired_cluster_CI.csv": "e19b98652d48be51d73ce898039c6fb24ab7fbe9323328bca78535728795b8a1",
+    "FROZEN_BEFORE_GATE.json": "b2ac793bf3bab78bd1a0576b57fc3d24c5c9f37d496d4d25cba881db3465e7c1",
+    "results.csv": "256c89e08179bf42f09f8cba487e01c92b3cfb8576388a424e4321130f3af9a4",
+    "predictions/R12_high_snr_long.npz": "e47cbce23fa6ff52ee4b931f7c62b56200b2d303881162bca7627f5f1160eda3",
+    "predictions/R11_full_smooth15_VS_st_francis_dense.npz": "e3fd8b10ce9c481752231582d7deeb237327b70bb210f9e1b3eb976ad0cae41e",
+    "predictions/R11_full_smooth12_VS_st_francis_dense.npz": "3a63a8cc877719033f2bd8d6dde456eae2f99fce43582f72895903de0c690fb9",
+    "predictions/R12_eval.npz": "5bc3bfa7b229859af941a4fdc0ed07ac249ccc2d3f70225140263ca2af6f3230",
+    "predictions/R11_native_long15_VS_hf_high.npz": "112de5acf0e45e4e9a0e441cfb19eda5e3072bbd1be395d539e590b88df95821",
+    "predictions/R9_ensemble_gate.npz": "872fec40e366b535062e40fd3a529b0c0dd797ad25f4d4c6f3a987752341285d",
+    "predictions/R10_seen__combined_stress.npz": "ba4983934a843adb54d1d93d84b778a9941cafd13f5e742917476fbaac5115ea",
+    "predictions/R12_validation_gate.npz": "3b167066dde095122ff0ad843a2bea0fe742fba5f5a54d1d8748dbbcddaa2e17",
+    "predictions/R11_full_smooth13_VS_hf_high.npz": "e0304bce7172c2e60ba930abef71f44e77da7cf0ea1db767d3a8af8c8650baa4",
+    "predictions/R10_unseen__r9_complete.npz": "be9f1bd24645137da5a108f07b97672679130a540b1f2e2419ba23a6922500a8",
+    "predictions/R11_full_smooth12_VS_hf_high.npz": "b68040a60dab67e43c5e4b11a8db84f8013c8cbe3cb3ebd1d1f5b030121b1c4f",
+    "predictions/R9_selection.npz": "90a1e2d664ab19862fe626a91c720dbc8a171d8ff71050001b43a8ba37df66c3",
+    "predictions/R11_native_long15_VS_st_francis_dense.npz": "51c07874f5e475f9dc3909f75130ccc6995cb11c2f79a155414e97927e1ed2b5",
+    "predictions/R11_full_smooth15_VS_hf_high.npz": "f3cbe747e46cd041f840955d809d2154c153c63bc09f97520204686fbcdfe583",
+    "predictions/R10_unseen__combined_stress.npz": "d5d5e285529f6b8e5995dc3e077edb052b604e4c06a37fe847d1cc0da6ad78cd",
+    "predictions/R10_seen__mean_scale_only.npz": "dd30bfcdf1da0edc5b731a388f69aa31b0da5fa917dc16729ea58cc728161bc9",
+    "predictions/R11_full_smooth13_VS_st_francis_dense.npz": "4c9d11718c32e72c09c7de1fc3109d7a75204b450080cb2b917ff0fa0bc2a06a"
+  },
+  "regression_R13_weight": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "score_R13_classifier_weight": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "regression": "(1-b)*storedR12matchedshare+b*storedR13selectedshare;float64arithmeticthenfloat32",
+  "score": "(1-lambda)*thatregression+lambda*R13selectedarmindependenttreeclassifier;float64thenfloat32",
+  "one_global_pair_used_on_every_panel": true,
+  "classifier_arm": "highshareP1",
+  "normal_primary": "R9_selection",
+  "normal_auxiliary": [
+    "R9_ensemble_gate",
+    "R10_unseen__r9_complete"
+  ],
+  "strict_normal_all": [
+    "R9_selection",
+    "R9_ensemble_gate",
+    "R10_unseen__r9_complete"
+  ],
+  "normal_AUC_constraint": ">0.9",
+  "SF_AUC_constraints": {
+    "R11_full_smooth15_VS_st_francis_dense": ">=0.8",
+    "R11_native_long15_VS_st_francis_dense": ">=0.8"
+  },
+  "highSNR_panel": "R12_high_snr_long",
+  "highSNR_RMSE_constraint": "<0.15634",
+  "highSNR_abs_bias_constraint": "<0.11137",
+  "threshold_precision_note": "Literaluser-specifiedroundedthresholds;notastatisticalimprovementtestversusfullprecisionbaseline.",
+  "Pareto_objectives": [
+    "maximizeprimarynormalAUC",
+    "maximizefull15SF_AUC",
+    "maximizenativeSF_AUC",
+    "minimizehighSNR_RMSE",
+    "minimizehighSNR_absbias"
+  ],
+  "no_new_policy_or_selection": true,
+  "no_panel_specific_lambda_or_exceptions": true,
+  "development_exposed_not_blind": true,
+  "new_fitting_inference_Test_or_production_change": false,
+  "script_sha256": "99762c4f135d2f5df9609a50d8ee25c17b11ef287c7a00fc179642a170208af5"
+}

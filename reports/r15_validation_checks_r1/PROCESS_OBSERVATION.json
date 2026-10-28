@@ -1,0 +1,7 @@
+{
+  "observed_utc": "2026-10-27T06:04:30.319405+00:00",
+  "method": "read-only /bin/ps; no signal",
+  "PID": 80906,
+  "STAT": "Ts",
+  "command": "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m ops.train_r14_production_nn train --config configs/r14_production_mac_v1.json --fold 0 --preflight reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.json --qa reports/R14_PRODUCTION_NN_INDEPENDENT_QA.json --output /Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync/models/r14_production_nn_fold0_r1"
+}

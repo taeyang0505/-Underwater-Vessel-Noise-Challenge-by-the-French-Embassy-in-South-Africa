@@ -1,0 +1,17 @@
+{
+  "format": "r13_static_import_correction_before_tree_fit_v1",
+  "created_unix": 1793040903.307294,
+  "source_CNN_directory": "models/r13_dynamic_mix_r1/cnn",
+  "tree_directory": "models/r13_dynamic_mix_r2/tree",
+  "static_executor_source_sha256": "fb87bdd170f6c5d296735896072c2e8f09f57f9add68f0418c455b79b2e2df87",
+  "original_recipe_source_sha256": "fbb86c20c7146d3f314dc215029773a06de7b272a80b263e594c0d9177cf557d",
+  "original_plan_sha256": "6f8075ac16c0ce38ead813b9d5e92dadb9ce388dace5286e9bf10de994d05b8c",
+  "correction": "Explicit collections.abc.Mapping import, literal24k fit method; no runtime namespace injection",
+  "previous_failures": [
+    "original missing import before tree folder/fit",
+    "dynamic helper interrupted during pre-fit data validation before any tree fit"
+  ],
+  "hyperparameters_source_seed_data_unchanged": true,
+  "old_logs_preserved": true,
+  "actual_prior_tree_fits": 0
+}

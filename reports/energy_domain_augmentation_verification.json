@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "common q invariant, weighted share changes by closed-form value, absolute dB level restored",
+    "reference-only response changes q and restores original global share before caps",
+    "one-minute short-support target ceiling applied from known components",
+    "60 dB native-support spike limited to 20 dB and positive target recomputed",
+    "half-ULP allowance accepts a legitimate float32 20 dB input without changing q",
+    "common smooth response preserves q and does not introduce a short-support ceiling breach",
+    "preexisting multi-short support exception stays identity with explicit count",
+    "deterministic replay, exact masks, zero preservation, off/probability-zero identity, no source mutation",
+    "impossible q-preserving repair of a genuinely invalid 60 dB input is rejected"
+  ],
+  "actual_training_executed": false,
+  "outer_or_Test_accessed": false,
+  "module_sha256": "21b6afe20f0e6ed74eddc6e99962c58fae7f7768af73f62a1777840a03d49fa5"
+}

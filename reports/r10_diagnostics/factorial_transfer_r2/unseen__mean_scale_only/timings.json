@@ -1,0 +1,35 @@
+{
+  "bg_cnn": {
+    "seconds": 2.4058571252971888,
+    "physical_pool_max_abs": 1.0558335639121452e-07,
+    "best_window_epoch": 5,
+    "examples": 1000,
+    "device": "cpu FP32"
+  },
+  "tfgrid_fdy_conformer": {
+    "seconds": 8.970693667419255,
+    "physical_pool_max_abs": 9.826443536642415e-08,
+    "best_window_epoch": 17,
+    "examples": 1000,
+    "device": "cpu FP32"
+  },
+  "fdy": {
+    "seconds": 0.40344324987381697,
+    "physical_pool_max_abs": 9.848109583376896e-08,
+    "best_window_epoch": 16,
+    "examples": 1000,
+    "device": "cpu FP32"
+  },
+  "itransformer": {
+    "seconds": 0.06789141613990068,
+    "physical_pool_max_abs": 9.171558856824191e-08,
+    "best_window_epoch": 16,
+    "examples": 1000,
+    "device": "cpu FP32"
+  },
+  "lgbm_physics": {
+    "seconds": 0.8710883753374219,
+    "examples": 1000,
+    "device": "Mac CPU"
+  }
+}

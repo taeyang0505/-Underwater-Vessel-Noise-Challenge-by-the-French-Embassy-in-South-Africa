@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "scope": "synthetic policy-only fixture; no actual model or query inference",
+  "created_at_utc": "2026-10-27T01:22:34.044949+00:00",
+  "code_sha256": {
+    "ops/run_r14_production_outputs_v2.py": "0e348cc7fbf9c11e70e9ac7e189034fca7c2f3fa143ef7d1c036ccd8f3a3a879",
+    "ops/verify_r14_output_policy_repair.py": "085ff5148013a4ec30c6a10bcdb31f6767df66ca20f21d6cbf28888f20694095",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26"
+  },
+  "historical_alias_reproduced": true,
+  "frozen_disk_policy_originally_valid": true,
+  "caller_binding_and_execution_pins_detached": true,
+  "freeze_disk_readback_valid": true,
+  "numerical_prediction_max_abs_difference": {
+    "share": 0.0,
+    "score": 0.0
+  },
+  "legacy_fast3_decision_guard": true,
+  "rejected_cases": [
+    "historical_alias_reproduces_policy_content_changed",
+    "existing_policy_file",
+    "changed_policy_before_freeze",
+    "mismatched_source_map",
+    "changed_execution_source",
+    "changed_frozen_policy_bytes",
+    "partial_R2_scope_reuse",
+    "unknown_scope",
+    "existing_R2_submission",
+    "changed_original_fit_gate_decision"
+  ],
+  "protected_R1_and_completed_fast3_artifact_count": 28,
+  "protected_original_artifacts_unchanged": true,
+  "protected_before_file_sha256": "def375b2f7d47e95272210b04a40b64985ca10f071bd6f5d3af0c3b9bea943e6",
+  "real_data_arrays_opened": false,
+  "Test_or_development_panels_opened": false,
+  "model_load_or_fit_performed": false,
+  "real_hybrid_output_executed": false,
+  "output_paths": {
+    "run": "models/r14_production_outputs_r2",
+    "reports": "reports/r14_production_r2",
+    "exact_fold0_CSV_dir": "submissions/R14_r2",
+    "bagged_Tree_CSV_dir": "submissions/r14_main_r2"
+  },
+  "existing_Tree_only_generation_supported": false
+}

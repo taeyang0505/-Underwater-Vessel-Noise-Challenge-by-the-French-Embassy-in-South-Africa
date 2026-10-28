@@ -1,0 +1,273 @@
+{
+  "status": "PASS",
+  "scope": "generated CPU numerical fixture; no actual project datasets",
+  "torch_version": "2.14.1",
+  "GPU_accessed": false,
+  "pretrained_weights_downloaded": false,
+  "training_dataset_or_Test_or_sealed_accessed": false,
+  "full_training_executed": false,
+  "fixture_backward_is_not_model_training": true,
+  "model_results": [
+    {
+      "kind": "tfgrid_mask",
+      "parameters": 2774914,
+      "config": {
+        "embed_dim": 64,
+        "hidden_size": 128,
+        "blocks": 6,
+        "dropout": 0.1,
+        "input_channels": 8,
+        "n_frames": 15,
+        "n_bands": 25,
+        "attention_heads": 4,
+        "attention_approx_qk_dim": 512
+      },
+      "input_shape": [
+        3,
+        8,
+        15,
+        25
+      ],
+      "encoded_shape": [
+        3,
+        64,
+        15,
+        25
+      ],
+      "share_shape": [
+        3
+      ],
+      "mask_shape": [
+        3,
+        15,
+        25
+      ],
+      "loss": 0.06132969260215759,
+      "all_parameters_have_finite_gradients": true,
+      "operator_path_gradient_norms": {
+        "blocks.0.fullband_frequency.rnn.weight_ih_l0": 0.03702680021524429,
+        "blocks.0.fullband_frequency.rnn.weight_ih_l0_reverse": 0.03609399497509003,
+        "blocks.0.subband_temporal.rnn.weight_ih_l0": 0.03878529742360115,
+        "blocks.0.subband_temporal.rnn.weight_ih_l0_reverse": 0.0361776240170002,
+        "blocks.0.cross_frame_attention.query_projection.weight": 0.029653478413820267,
+        "blocks.1.fullband_frequency.rnn.weight_ih_l0": 0.03535706549882889,
+        "blocks.1.fullband_frequency.rnn.weight_ih_l0_reverse": 0.03795602545142174,
+        "blocks.1.subband_temporal.rnn.weight_ih_l0": 0.03714617341756821,
+        "blocks.1.subband_temporal.rnn.weight_ih_l0_reverse": 0.032778698951005936,
+        "blocks.1.cross_frame_attention.query_projection.weight": 0.016228485852479935,
+        "blocks.2.fullband_frequency.rnn.weight_ih_l0": 0.023532647639513016,
+        "blocks.2.fullband_frequency.rnn.weight_ih_l0_reverse": 0.026665862649679184,
+        "blocks.2.subband_temporal.rnn.weight_ih_l0": 0.02919846586883068,
+        "blocks.2.subband_temporal.rnn.weight_ih_l0_reverse": 0.024550221860408783,
+        "blocks.2.cross_frame_attention.query_projection.weight": 0.010972187854349613,
+        "blocks.3.fullband_frequency.rnn.weight_ih_l0": 0.021975919604301453,
+        "blocks.3.fullband_frequency.rnn.weight_ih_l0_reverse": 0.02012482099235058,
+        "blocks.3.subband_temporal.rnn.weight_ih_l0": 0.021594703197479248,
+        "blocks.3.subband_temporal.rnn.weight_ih_l0_reverse": 0.020478421822190285,
+        "blocks.3.cross_frame_attention.query_projection.weight": 0.008786462247371674,
+        "blocks.4.fullband_frequency.rnn.weight_ih_l0": 0.019305411726236343,
+        "blocks.4.fullband_frequency.rnn.weight_ih_l0_reverse": 0.01961658149957657,
+        "blocks.4.subband_temporal.rnn.weight_ih_l0": 0.01808387041091919,
+        "blocks.4.subband_temporal.rnn.weight_ih_l0_reverse": 0.018372738733887672,
+        "blocks.4.cross_frame_attention.query_projection.weight": 0.007068290840834379,
+        "blocks.5.fullband_frequency.rnn.weight_ih_l0": 0.015783771872520447,
+        "blocks.5.fullband_frequency.rnn.weight_ih_l0_reverse": 0.01651189476251602,
+        "blocks.5.subband_temporal.rnn.weight_ih_l0": 0.016819177195429802,
+        "blocks.5.subband_temporal.rnn.weight_ih_l0_reverse": 0.01732403039932251,
+        "blocks.5.cross_frame_attention.query_projection.weight": 0.006315556820482016
+      },
+      "energy_weighted_pooling_exact": true,
+      "bounded_share_and_cell_mask": true,
+      "eval_single_vs_batch_max_abs_error": 5.960464477539063e-08,
+      "eval_changed_companions_max_abs_error": 0.0,
+      "checkpoint_reload_bitwise_equal": true
+    },
+    {
+      "kind": "bandsplit_mask",
+      "parameters": 2762691,
+      "config": {
+        "embed_dim": 128,
+        "hidden_size": 128,
+        "blocks": 4,
+        "dropout": 0.1,
+        "input_channels": 8,
+        "n_frames": 15,
+        "n_bands": 25
+      },
+      "input_shape": [
+        3,
+        8,
+        15,
+        25
+      ],
+      "encoded_shape": [
+        3,
+        128,
+        15,
+        25
+      ],
+      "share_shape": [
+        3
+      ],
+      "mask_shape": [
+        3,
+        15,
+        25
+      ],
+      "loss": 0.05467577651143074,
+      "all_parameters_have_finite_gradients": true,
+      "operator_path_gradient_norms": {
+        "blocks.0.temporal.rnn.weight_ih_l0": 0.004614155273884535,
+        "blocks.0.temporal.rnn.weight_ih_l0_reverse": 0.0046433801762759686,
+        "blocks.0.band.rnn.weight_ih_l0": 0.004203018732368946,
+        "blocks.0.band.rnn.weight_ih_l0_reverse": 0.0046143787913024426,
+        "blocks.1.temporal.rnn.weight_ih_l0": 0.005583933554589748,
+        "blocks.1.temporal.rnn.weight_ih_l0_reverse": 0.005137208383530378,
+        "blocks.1.band.rnn.weight_ih_l0": 0.005182160064578056,
+        "blocks.1.band.rnn.weight_ih_l0_reverse": 0.004377961624413729,
+        "blocks.2.temporal.rnn.weight_ih_l0": 0.005271296016871929,
+        "blocks.2.temporal.rnn.weight_ih_l0_reverse": 0.004996709059923887,
+        "blocks.2.band.rnn.weight_ih_l0": 0.004591923672705889,
+        "blocks.2.band.rnn.weight_ih_l0_reverse": 0.004451856017112732,
+        "blocks.3.temporal.rnn.weight_ih_l0": 0.004637465346604586,
+        "blocks.3.temporal.rnn.weight_ih_l0_reverse": 0.00477747293189168,
+        "blocks.3.band.rnn.weight_ih_l0": 0.0037523051723837852,
+        "blocks.3.band.rnn.weight_ih_l0_reverse": 0.004248427227139473
+      },
+      "energy_weighted_pooling_exact": true,
+      "bounded_share_and_cell_mask": true,
+      "eval_single_vs_batch_max_abs_error": 1.4901161193847656e-08,
+      "eval_changed_companions_max_abs_error": 0.0,
+      "checkpoint_reload_bitwise_equal": true
+    }
+  ],
+  "band_groups": [
+    {
+      "group": 0,
+      "indices_half_open": [
+        0,
+        5
+      ],
+      "header_centres_hz": [
+        31.6,
+        39.8,
+        50.1,
+        63.1,
+        79.4
+      ],
+      "exact_nominal_centres_hz": [
+        31.622776601683793,
+        39.810717055349734,
+        50.11872336272722,
+        63.09573444801933,
+        79.43282347242814
+      ],
+      "support_edges_hz": [
+        28.183829312644534,
+        89.12509381337455
+      ]
+    },
+    {
+      "group": 1,
+      "indices_half_open": [
+        5,
+        10
+      ],
+      "header_centres_hz": [
+        100.0,
+        125.9,
+        158.5,
+        199.5,
+        251.2
+      ],
+      "exact_nominal_centres_hz": [
+        100.0,
+        125.89254117941675,
+        158.48931924611142,
+        199.52623149688787,
+        251.18864315095797
+      ],
+      "support_edges_hz": [
+        89.12509381337455,
+        281.8382931264452
+      ]
+    },
+    {
+      "group": 2,
+      "indices_half_open": [
+        10,
+        15
+      ],
+      "header_centres_hz": [
+        316.2,
+        398.1,
+        501.2,
+        631.0,
+        794.3
+      ],
+      "exact_nominal_centres_hz": [
+        316.22776601683796,
+        398.1071705534973,
+        501.18723362727246,
+        630.957344480193,
+        794.3282347242822
+      ],
+      "support_edges_hz": [
+        281.8382931264455,
+        891.2509381337459
+      ]
+    },
+    {
+      "group": 3,
+      "indices_half_open": [
+        15,
+        20
+      ],
+      "header_centres_hz": [
+        1000.0,
+        1258.9,
+        1584.9,
+        1995.3,
+        2511.9
+      ],
+      "exact_nominal_centres_hz": [
+        1000.0,
+        1258.9254117941675,
+        1584.893192461114,
+        1995.2623149688789,
+        2511.886431509582
+      ],
+      "support_edges_hz": [
+        891.2509381337459,
+        2818.382931264455
+      ]
+    },
+    {
+      "group": 4,
+      "indices_half_open": [
+        20,
+        25
+      ],
+      "header_centres_hz": [
+        3162.3,
+        3981.1,
+        5011.9,
+        6309.6,
+        7943.3
+      ],
+      "exact_nominal_centres_hz": [
+        3162.2776601683795,
+        3981.0717055349733,
+        5011.872336272725,
+        6309.573444801937,
+        7943.282347242822
+      ],
+      "support_edges_hz": [
+        2818.382931264455,
+        8912.509381337459
+      ]
+    }
+  ],
+  "source_file_sha256": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+  "elapsed_seconds": 0.6431622914969921
+}

@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-27T06:04:37.125219+00:00",
+  "scope": "Pause integrity, source/policy arithmetic using synthetic vectors, archived-rule review, mathematical counterexample; no model training/inference or raw Test read",
+  "process_observation": {
+    "observed_utc": "2026-10-27T06:04:30.319405+00:00",
+    "method": "read-only /bin/ps; no signal",
+    "PID": 80906,
+    "STAT": "Ts",
+    "command": "/opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m ops.train_r14_production_nn train --config configs/r14_production_mac_v1.json --fold 0 --preflight reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.json --qa reports/R14_PRODUCTION_NN_INDEPENDENT_QA.json --output /Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/models/r14_production_nn_fold0_r1"
+  },
+  "process_observation_sha256": "bcde54161c8bb94f648d4f0dc961d8fc74ccc2d76837be64cbae91e07c0d802c",
+  "checkpoints": [
+    {
+      "path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/latest.pt",
+      "bytes": 31442721,
+      "sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9",
+      "matches_pause_receipt": true
+    },
+    {
+      "path": "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/best.pt",
+      "bytes": 31442721,
+      "sha256": "172b81179f9fc7f0355b5ccc40bc4a6d43d627e01908652dfd61e593caf759c9",
+      "matches_pause_receipt": true
+    }
+  ],
+  "last_complete_epoch": 37,
+  "active_incomplete_epoch_at_pause": 38,
+  "best_epoch": 37,
+  "best_selection_rmse": 0.058705338189848084,
+  "final_score_formula": "clip(0.75*unrounded_convex_regression_share + 0.25*Tree_highshare_classifier,0,1), then float32",
+  "main_submission_classifier": "mean of five Tree-highshare classifier vectors; source lines294-301",
+  "NN_score_definition": "score=share; no independent NN classifier head",
+  "raw_R14_classifier_persistence": "not saved; absence of saved raw vectors is not absence from computation",
+  "synthetic_policy_fixture": {
+    "share": [
+      0.3111407160758972,
+      0.671501874923706
+    ],
+    "score": [
+      0.43335554003715515,
+      0.5536264181137085
+    ],
+    "exact_manual_equivalence": true,
+    "score_differs_from_share": true
+  },
+  "counterexample": {
+    "same_observed_energy_different_latent_share": [
+      {
+        "known_toy_share": 0.0,
+        "energy_reconstruction_max_error": 0.0
+      },
+      {
+        "known_toy_share": 0.08,
+        "energy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "known_toy_share": 0.4,
+        "energy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "known_toy_share": 0.8,
+        "energy_reconstruction_max_error": 0.0
+      }
+    ],
+    "limitation": "Demonstrates non-identifiability under nonnegative energy equations; not proof every decomposition belongs to the official generator/reference corpus."
+  },
+  "archived_rules": [
+    {
+      "id": 35368,
+      "url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/discussions/35368",
+      "title": "Clarification on what counts as \"calibrating on test inputs\"",
+      "staff": "daniil_zindi",
+      "timestamp": "20 Oct2026 22:05",
+      "finding": "Explicit prohibition of tuning generators against Test distributions and fitting AV classifiers on Test rows, even for diagnostics"
+    },
+    {
+      "id": 35370,
+      "url": "https://zindi.world/competitions/french-embassy-underwater-vessel-noise-challenge/discussions/35370",
+      "title": "Is training on VTUAD-rebuilt (named in the starter notebook) permitted?",
+      "staff": "daniil_zindi",
+      "timestamp": "20 Oct2026 22:06",
+      "finding": "Global scaling must be calibrated on own training/validation; Test inference-only; leaderboard hidden-target recovery prohibited"
+    }
+  ],
+  "descriptive_audit_permission": "No blanket positive authorization for standalone Test descriptive EDA found in these local archived staff replies; do not equate descriptive inspection with permission to fit generator parameters.",
+  "applicable_AGENTS_search": [
+    {
+      "path": "/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/hongtaeyang/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/hongtaeyang/Documents/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/대회/AGENTS.md",
+      "exists": false
+    },
+    {
+      "path": "/Users/hongtaeyang/Documents/ChatGPT/대회/underwater_vessel_noise.nosync/AGENTS.md",
+      "exists": false
+    }
+  ],
+  "source_sha256": {
+    "ops/r15_training_pause_receipt.json": "db951f13d076fc37550a0d569a0d71cc8e6b57615cf9df72af8cf95fc2d15e94",
+    "models/r14_production_outputs_r2/hybrid_fast3/policy.json": "f6662d5f82457a7ae67d6a5e942502ed0e2792e1681b7a9fe69e2b6de4b2033c",
+    "pipeline/ensemble_r14_production.py": "941a4b009efe8cc799d885cbdd853c68fe700cef2ac95988f602818f42d30d26",
+    "pipeline/models_r14_production.py": "fd04a99e72e29a105f1f2ad8e4c335a9ec51cfc1cd52ff1955e5f96d22010235",
+    "ops/run_r14_production_outputs_v2.py": "0e348cc7fbf9c11e70e9ac7e189034fca7c2f3fa143ef7d1c036ccd8f3a3a879",
+    "models/r14_production_nn_fold0_r1/tfgrid_fdy_conformer/epochs.jsonl": "97b9f197f3acd1830695afc283db8491e6a01ab661d9dc1620bd4e49dad07b7b",
+    "scratch/discussions/thread_bodies.json": "f568d532810a7b74a01e992567e15e6cfca4bdaed8e4b625c6cb936af83909ff",
+    "TASK_EDA_REPORT.md": "127bf693e833e6b3e5f6291806e6dbba72f67e07fbfc2a6836d7c7d3e81966e3"
+  },
+  "sources_unchanged": true,
+  "new_model_fit": false,
+  "new_model_inference": false,
+  "new_Test_input_or_labels_read": false,
+  "production_changed": false
+}

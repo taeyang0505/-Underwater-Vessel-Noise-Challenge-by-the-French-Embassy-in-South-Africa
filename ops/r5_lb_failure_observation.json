@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-10-25T18:19:47.008350+00:00",
+  "submission_id": "Vz5mjZEr",
+  "public_score_user_screenshot": 0.65199132,
+  "public_share_rmse_user_screenshot": 0.348008679,
+  "diagnostic_presence_AUC_user_screenshot": 0.539533333,
+  "local_CPU_INNER_RMSE": 0.09080814708083197,
+  "local_submission_csv_sha256": "e32b04a2b876a66da6046e1ef1fdae6fd7e768eb9365bde5aa7227ad235c83fe",
+  "uploaded_CSV_download_hash_verified": false,
+  "no_LB_parameter_fitting": true,
+  "implementation_audit_status": "Local CSV identity/order/postprocessing and own-fixture parse/energy checks pass so far; hidden generator equivalence unproven",
+  "current_training": "SIGSTOP confirmed on supervisor/launcher/current TFGrid child; no Pod control",
+  "completed_checkpoint_backup": {
+    "path": "ops/server_backups/r5_gpu_r1/r5_snapshot_20261025T181356_426036Z_a349d40f.zip",
+    "sha256": "6e539c915d01482c43d4a9606d5281657ebad11083f96039714214ccc12f2b2b",
+    "verified": true,
+    "CRC_and_entry_SHA_verified": 21,
+    "completed_models": 3,
+    "completed_folds": 0
+  },
+  "Test_cohort_tuning_or_label_recovery_performed": false,
+  "next_scope": "Mac TRAIN/INNER-only simulator/operator robustness and source-domain validation audit"
+}

@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "checked_unix": 1793064906.3883898,
+  "actual_model_fit_predict_Test_or_development_array_read": false,
+  "actual_process_signal_or_PID_probe": false,
+  "fixture_directory": "/private/tmp/r14-outputR2-final-independent-ppl_68d9",
+  "scope_limit": "Synthetic numeric/stdLib and read-only diff/hash inspection. Actual production inference completion remains untested.",
+  "harness_note": "An initial AST assertion checked only expression calls and missed pins=validate_qa(). Corrected to walk assignment expressions inside try. Production source unchanged.",
+  "format": "r14_supervisor_r2_independent_stdlib_qa_v1",
+  "source_code_sha256": {
+    "ops/supervise_r14_production_outputs_v2.py": "fdca6e7c548622e6a8097f74461a9b292bbde9c4e0f094180c8c2c03674f20f6",
+    "ops/render_r14_production_status_v2.py": "c17f7b8b0171662de5cd0eba1b3731eaa77bb52ecf0fa0f6d31a7ae04273d152",
+    "ops/run_r14_production_outputs_v2.py": "0e348cc7fbf9c11e70e9ac7e189034fca7c2f3fa143ef7d1c036ccd8f3a3a879"
+  },
+  "outputs_QA_sha256": "4a271fc9e04852c33fa0157f2c74e07f0467a003920faaea69051c973a6fd71c",
+  "checks": [
+    "validate_qa assignment inside cleanup try",
+    "lock cleanup finally",
+    "legacy tree validated and exact two-task completion",
+    "task completion truth table 0",
+    "task completion truth table 1",
+    "task completion truth table 2",
+    "task completion truth table 3",
+    "task completion truth table 4",
+    "task completion truth table 5",
+    "task completion truth table 6",
+    "task completion truth table 7",
+    "only R2 output process spawned",
+    "separate R2 lock/log and no retry on error",
+    "fake alive process",
+    "fake dead process without completion rejects",
+    "completed process allowed to exit",
+    "extra parser SHA tamper rejects",
+    "R1 single receipt and R2 dual receipts verified",
+    "completed CSV tamper rejects",
+    "isolated renderer HTML escaping",
+    "all source/protected pins unchanged at exit"
+  ],
+  "R1_completed_tree_receipt_checked_before_reuse": true,
+  "completion_uses_two_required_task_keys_not_dictionary_length": true,
+  "synthetic_PID_calls_only": [
+    [
+      11,
+      0
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "supervisor_main_or_any_child_process_executed": false
+}

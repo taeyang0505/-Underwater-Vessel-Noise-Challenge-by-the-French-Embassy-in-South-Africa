@@ -1,0 +1,105 @@
+{
+  "format": "r16_production_neural_run_v1",
+  "config": {
+    "format": "r16_neural_mac_v1",
+    "seed": 2026102716,
+    "input_channels": 8,
+    "input_policy": "relative_grid_v2",
+    "forbidden_features": [
+      "PCA",
+      "LF_anchor",
+      "q0",
+      "absolute_db",
+      "highshare"
+    ],
+    "data_recipe": "R16 fixed mixed six operators; source data manifest separately SHA-pinned",
+    "training": {
+      "epochs": 100,
+      "early_stopping": false,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "weight_decay": 0.0003,
+      "dropout": 0.1,
+      "CPU_threads": 2,
+      "batch_candidates": [
+        64,
+        128
+      ],
+      "scheduler": "cosine100_eta1e-5",
+      "feature_device": "explicit_CPU_FP64_precompute_mmap_once",
+      "backbone_dtype": "float32",
+      "MPS_unsupported_operator_fallback": false
+    },
+    "models": {
+      "bg_cnn": {
+        "device": "mps",
+        "epochs": 100
+      },
+      "fdy": {
+        "device": "mps",
+        "epochs": 100
+      },
+      "itransformer": {
+        "device": "cpu",
+        "epochs": 100
+      },
+      "tfgrid_fdy_conformer": {
+        "device": "mps",
+        "epochs": 100
+      }
+    },
+    "loss": {
+      "share_MSE": 1.0,
+      "energy_weighted_cell_MSE": 0.25,
+      "independent_classifier_BCE": 1.0,
+      "contrast_BCE": 0.0
+    },
+    "checkpoint_policy": "separate_best_regression_best_classifier_and_latest_complete_epoch_optimizer_scheduler_RNG",
+    "query_policy": "db-only frozen inference after global checkpoint/ensemble freeze; no training Test access",
+    "old_R14_TF37": "preserved paused, never resumed or used as R16 initial weights",
+    "pause": "SIGUSR1 or PAUSE_AFTER_EPOCH file stops at next completed atomic epoch; explicit resume only"
+  },
+  "config_sha256": "e117702a3f01bca99a8332be8f9981d835a1712910d89635714ccec56264fd4b",
+  "data_manifest_sha256": "7ea98290fd08204e4966554b19ab50520d5262acf0bc2f9c152d44b6540e3728",
+  "data_manifest_path": "data.nosync/synthetic/r16_production_v1/fold_00/manifest.json",
+  "source_code_sha256": {
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "pipeline/relative_models_r6_v2.py": "71c06993157e56177d43462320912891392cdd6026a14ceee483f8a77bc8affb",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/training_r16_production.py": "66fe465baef76c6372c9be3d3189e46ccc4ac25ce30ac599d65da73a92e0dfa7",
+    "ops/train_r16_production_nn.py": "afe47afc9f37ece1187829d5b5bbd9d1ae92be4258d941298c4ff34a140b2862",
+    "pipeline/r16_production_data.py": "81853811a1820d15e935141795f6611d035843f5d249fb80da246cbdadb84067",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda"
+  },
+  "fold": 0,
+  "started_unix": 1793120903.655334,
+  "PID": 91029,
+  "Python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "torch": "2.14.1",
+  "preflight_sha256": "1df0a93cce1b1b4d14e91bf26d52c6275039d80c2d7fe4064953a5f0d1ed71d7",
+  "Test_or_stress_read": false,
+  "full_epoch_budget": 100,
+  "training_data_static": "deterministic R16 fixed mixed TRAIN; all rows each epoch",
+  "input_features": "precompute relative8 once CPU FP64 to bounded mmap; no per-batch CPUquantile",
+  "data_source_validation": {
+    "status": "passed",
+    "fold": 0,
+    "manifest_path": "data.nosync/synthetic/r16_production_v1/fold_00/manifest.json",
+    "manifest_sha256": "7ea98290fd08204e4966554b19ab50520d5262acf0bc2f9c152d44b6540e3728",
+    "data_hash": "19afb3a38af0ce5f09b4cfb14b96da4162595c29d523bb5cc275ee621e52f605",
+    "roles": {
+      "selection": 2400,
+      "cv_validation": 1000,
+      "ensemble_fit": 500,
+      "ensemble_gate": 500,
+      "report": 1000,
+      "train": 61446
+    },
+    "Test_accessed": false
+  }
+}

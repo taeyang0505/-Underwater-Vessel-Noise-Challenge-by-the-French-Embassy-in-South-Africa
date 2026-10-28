@@ -1,0 +1,617 @@
+{
+  "completed": [
+    {
+      "kind": "bg_cnn",
+      "batch_size": 8,
+      "parameters": 1491329,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        1.7881393432617188e-07,
+        1.7881393432617188e-07,
+        2.086162567138672e-06
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.27277448773384094,
+        "MPS": 0.29324862360954285,
+        "MPS_integrated": 0.10383868217468262
+      },
+      "CPU_frontend_seconds": [
+        0.04116291552782059,
+        0.0009062085300683975,
+        0.0005351249128580093
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.049738166853785515,
+            0.04470441676676273,
+            0.04844770859926939
+          ],
+          "median_step_seconds": 0.04844770859926939,
+          "examples_per_second": 165.12648856463446
+        },
+        "MPS": {
+          "step_seconds": [
+            0.0388604998588562,
+            0.025066958740353584,
+            0.022201083600521088
+          ],
+          "median_step_seconds": 0.025066958740353584,
+          "examples_per_second": 319.14521752977345
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.02363729104399681,
+        0.02427474968135357,
+        0.023314707912504673
+      ],
+      "observed_max_current_tensor_bytes": 24188928,
+      "observed_max_driver_bytes": 118259712,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 605569024
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 8,
+      "parameters": 2563813,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        8.940696716308594e-08,
+        8.940696716308594e-08,
+        6.854534149169922e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.030121389776468277,
+        "MPS": 0.0694250613451004,
+        "MPS_integrated": 0.028003882616758347
+      },
+      "CPU_frontend_seconds": [
+        0.04116291552782059,
+        0.0009062085300683975,
+        0.0005351249128580093
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.40542245749384165,
+            0.38783208280801773,
+            0.40800429228693247
+          ],
+          "median_step_seconds": 0.40542245749384165,
+          "examples_per_second": 19.732503348365995
+        },
+        "MPS": {
+          "step_seconds": [
+            0.12209120858460665,
+            0.08293412532657385,
+            0.08355945721268654
+          ],
+          "median_step_seconds": 0.08355945721268654,
+          "examples_per_second": 95.74021022704044
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.08777979202568531,
+        0.08994500059634447,
+        0.08345145918428898
+      ],
+      "observed_max_current_tensor_bytes": 65321984,
+      "observed_max_driver_bytes": 1540325376,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 1135132672
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 8,
+      "parameters": 130765,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        5.960464477539063e-08,
+        5.960464477539063e-08,
+        1.7881393432617188e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.0774468332529068,
+        "MPS": 0.07013162225484848,
+        "MPS_integrated": 0.045911721885204315
+      },
+      "CPU_frontend_seconds": [
+        0.04116291552782059,
+        0.0009062085300683975,
+        0.0005351249128580093
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.013150166720151901,
+            0.014639250002801418,
+            0.013820124790072441
+          ],
+          "median_step_seconds": 0.013820124790072441,
+          "examples_per_second": 578.8659741876373
+        },
+        "MPS": {
+          "step_seconds": [
+            0.030554458498954773,
+            0.02316362503916025,
+            0.02200466673821211
+          ],
+          "median_step_seconds": 0.02316362503916025,
+          "examples_per_second": 345.36908564506894
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.022933666594326496,
+        0.022227167151868343,
+        0.022609333507716656
+      ],
+      "observed_max_current_tensor_bytes": 43565056,
+      "observed_max_driver_bytes": 456998912,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 1210646528
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 8,
+      "parameters": 299919,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        5.960464477539063e-08,
+        5.960464477539063e-08,
+        1.7881393432617188e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.05571699142456055,
+        "MPS": 0.05558563023805618,
+        "MPS_integrated": 0.03354218229651451
+      },
+      "CPU_frontend_seconds": [
+        0.04116291552782059,
+        0.0009062085300683975,
+        0.0005351249128580093
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.007745667360723019,
+            0.007495708763599396,
+            0.00812616664916277
+          ],
+          "median_step_seconds": 0.007745667360723019,
+          "examples_per_second": 1032.8354714232448
+        },
+        "MPS": {
+          "step_seconds": [
+            0.029734292067587376,
+            0.0184536250308156,
+            0.016300708055496216
+          ],
+          "median_step_seconds": 0.0184536250308156,
+          "examples_per_second": 433.5191587907984
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.019768291153013706,
+        0.019748082384467125,
+        0.01918845809996128
+      ],
+      "observed_max_current_tensor_bytes": 7246848,
+      "observed_max_driver_bytes": 356335616,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 1210646528
+    },
+    {
+      "kind": "bg_cnn",
+      "batch_size": 16,
+      "parameters": 1491329,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        4.172325134277344e-07,
+        4.172325134277344e-07,
+        5.513429641723633e-06
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.24989540874958038,
+        "MPS": 0.2545209527015686,
+        "MPS_integrated": 0.18708446621894836
+      },
+      "CPU_frontend_seconds": [
+        0.0011845417320728302,
+        0.0008536670356988907,
+        0.0008429586887359619
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.19506045896559954,
+            0.1956910826265812,
+            0.19190579187124968
+          ],
+          "median_step_seconds": 0.19506045896559954,
+          "examples_per_second": 82.0258502663614
+        },
+        "MPS": {
+          "step_seconds": [
+            0.057524665258824825,
+            0.03368041664361954,
+            0.02959612477570772
+          ],
+          "median_step_seconds": 0.03368041664361954,
+          "examples_per_second": 475.05350570035364
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.030623375438153744,
+        0.029103833250701427,
+        0.0290903327986598
+      ],
+      "observed_max_current_tensor_bytes": 29171968,
+      "observed_max_driver_bytes": 473726976,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 1259290624
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 16,
+      "parameters": 2563813,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        2.384185791015625e-07,
+        2.384185791015625e-07,
+        9.5367431640625e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.044306665658950806,
+        "MPS": 0.04136065021157265,
+        "MPS_integrated": 0.026002127677202225
+      },
+      "CPU_frontend_seconds": [
+        0.0011845417320728302,
+        0.0008536670356988907,
+        0.0008429586887359619
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.8097323747351766,
+            0.8006337080150843,
+            0.7816495830193162
+          ],
+          "median_step_seconds": 0.8006337080150843,
+          "examples_per_second": 19.984169839247578
+        },
+        "MPS": {
+          "step_seconds": [
+            0.20210700016468763,
+            0.12901295814663172,
+            0.11601866595447063
+          ],
+          "median_step_seconds": 0.12901295814663172,
+          "examples_per_second": 124.01854999569072
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.1183570409193635,
+        0.11590408347547054,
+        0.11945708375424147
+      ],
+      "observed_max_current_tensor_bytes": 65646336,
+      "observed_max_driver_bytes": 1720680448,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2066415616
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 16,
+      "parameters": 130765,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        1.1920928955078125e-07,
+        1.1920928955078125e-07,
+        4.76837158203125e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.09434568136930466,
+        "MPS": 0.08817606419324875,
+        "MPS_integrated": 0.05655098333954811
+      },
+      "CPU_frontend_seconds": [
+        0.0011845417320728302,
+        0.0008536670356988907,
+        0.0008429586887359619
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.03881416656076908,
+            0.03838791698217392,
+            0.035692665725946426
+          ],
+          "median_step_seconds": 0.03838791698217392,
+          "examples_per_second": 416.797817069102
+        },
+        "MPS": {
+          "step_seconds": [
+            0.031018167734146118,
+            0.030563500709831715,
+            0.02926983218640089
+          ],
+          "median_step_seconds": 0.030563500709831715,
+          "examples_per_second": 523.5002414122376
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.032674042508006096,
+        0.03128854185342789,
+        0.03346416633576155
+      ],
+      "observed_max_current_tensor_bytes": 43889408,
+      "observed_max_driver_bytes": 654131200,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2066415616
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 16,
+      "parameters": 299919,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        5.960464477539063e-08,
+        5.960464477539063e-08,
+        1.7881393432617188e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.07051791995763779,
+        "MPS": 0.07055487483739853,
+        "MPS_integrated": 0.03550516068935394
+      },
+      "CPU_frontend_seconds": [
+        0.0011845417320728302,
+        0.0008536670356988907,
+        0.0008429586887359619
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.011879916302859783,
+            0.01033716555684805,
+            0.010404333472251892
+          ],
+          "median_step_seconds": 0.010404333472251892,
+          "examples_per_second": 1537.820759270319
+        },
+        "MPS": {
+          "step_seconds": [
+            0.027220542542636395,
+            0.023361749947071075,
+            0.022143167443573475
+          ],
+          "median_step_seconds": 0.023361749947071075,
+          "examples_per_second": 684.8802010230386
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.02518762554973364,
+        0.02430112473666668,
+        0.024016167037189007
+      ],
+      "observed_max_current_tensor_bytes": 7571200,
+      "observed_max_driver_bytes": 578633728,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2066415616
+    },
+    {
+      "kind": "bg_cnn",
+      "batch_size": 32,
+      "parameters": 1491329,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        5.364418029785156e-07,
+        5.364418029785156e-07,
+        5.513429641723633e-06
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.36676207184791565,
+        "MPS": 0.25047561526298523,
+        "MPS_integrated": 0.23041535913944244
+      },
+      "CPU_frontend_seconds": [
+        0.0017056670039892197,
+        0.0014836257323622704,
+        0.001224292442202568
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.36364012490957975,
+            0.3583395825698972,
+            0.3604418747127056
+          ],
+          "median_step_seconds": 0.3604418747127056,
+          "examples_per_second": 88.77991777594092
+        },
+        "MPS": {
+          "step_seconds": [
+            0.079776082187891,
+            0.04094799980521202,
+            0.03921583294868469
+          ],
+          "median_step_seconds": 0.04094799980521202,
+          "examples_per_second": 781.4789526282775
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.04135454259812832,
+        0.04142316710203886,
+        0.04177291691303253
+      ],
+      "observed_max_current_tensor_bytes": 29664256,
+      "observed_max_driver_bytes": 821854208,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2066415616
+    },
+    {
+      "kind": "tfgrid_fdy_conformer",
+      "batch_size": 32,
+      "parameters": 2563813,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        5.364418029785156e-07,
+        5.364418029785156e-07,
+        1.1920928955078125e-06
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.05885546654462814,
+        "MPS": 0.06319058686494827,
+        "MPS_integrated": 0.039307817816734314
+      },
+      "CPU_frontend_seconds": [
+        0.0017056670039892197,
+        0.0014836257323622704,
+        0.001224292442202568
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            1.7226451663300395,
+            1.5557157089933753,
+            1.402932208031416
+          ],
+          "median_step_seconds": 1.5557157089933753,
+          "examples_per_second": 20.569310841956835
+        },
+        "MPS": {
+          "step_seconds": [
+            0.4874974153935909,
+            0.19324370846152306,
+            0.19512804225087166
+          ],
+          "median_step_seconds": 0.19512804225087166,
+          "examples_per_second": 163.9948806479508
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.2532527921721339,
+        0.18585654068738222,
+        0.1835130825638771
+      ],
+      "observed_max_current_tensor_bytes": 66294528,
+      "observed_max_driver_bytes": 3348070400,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2918121472
+    },
+    {
+      "kind": "fdy",
+      "batch_size": 32,
+      "parameters": 130765,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        1.1920928955078125e-07,
+        1.1920928955078125e-07,
+        5.364418029785156e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.09128420799970627,
+        "MPS": 0.09334352612495422,
+        "MPS_integrated": 0.06768247485160828
+      },
+      "CPU_frontend_seconds": [
+        0.0017056670039892197,
+        0.0014836257323622704,
+        0.001224292442202568
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.06251191720366478,
+            0.06715608388185501,
+            0.06532370764762163
+          ],
+          "median_step_seconds": 0.06532370764762163,
+          "examples_per_second": 489.86809157586276
+        },
+        "MPS": {
+          "step_seconds": [
+            0.045919458381831646,
+            0.03137620911002159,
+            0.0270964577794075
+          ],
+          "median_step_seconds": 0.03137620911002159,
+          "examples_per_second": 1019.8810151918311
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.029132166877388954,
+        0.0283377505838871,
+        0.02891404088586569
+      ],
+      "observed_max_current_tensor_bytes": 44537600,
+      "observed_max_driver_bytes": 1232945152,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2918121472
+    },
+    {
+      "kind": "itransformer",
+      "batch_size": 32,
+      "parameters": 299919,
+      "CPU_MPS_eval_max_abs_errors_share_score_mask": [
+        1.1920928955078125e-07,
+        1.1920928955078125e-07,
+        1.7881393432617188e-07
+      ],
+      "parity_passed": true,
+      "all_Adam_losses_and_gradient_norms_finite": true,
+      "last_fixture_loss": {
+        "CPU": 0.09093456715345383,
+        "MPS": 0.0906943827867508,
+        "MPS_integrated": 0.05059830844402313
+      },
+      "CPU_frontend_seconds": [
+        0.0017056670039892197,
+        0.0014836257323622704,
+        0.001224292442202568
+      ],
+      "backbone_timing": {
+        "CPU": {
+          "step_seconds": [
+            0.016365334391593933,
+            0.016911959275603294,
+            0.01633541751652956
+          ],
+          "median_step_seconds": 0.016365334391593933,
+          "examples_per_second": 1955.3526517879661
+        },
+        "MPS": {
+          "step_seconds": [
+            0.028822625055909157,
+            0.02335804235190153,
+            0.02300312463194132
+          ],
+          "median_step_seconds": 0.02335804235190153,
+          "examples_per_second": 1369.9778225376385
+        }
+      },
+      "MPS_CPUfrontend_transfer_Adam_seconds": [
+        0.025135166943073273,
+        0.025419333949685097,
+        0.024851666763424873
+      ],
+      "observed_max_current_tensor_bytes": 8219392,
+      "observed_max_driver_bytes": 1140670464,
+      "memory_scope": "sampled after synchronized Adam steps, not a true activation peak",
+      "process_lifetime_peak_RSS_bytes": 2918121472
+    }
+  ],
+  "failures": []
+}

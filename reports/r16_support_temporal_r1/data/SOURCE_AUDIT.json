@@ -1,0 +1,233 @@
+{
+  "reference": {
+    "source_manifest": "data/versions/vtuad_reference_r4_v1/reference_manifest.parquet",
+    "source_sha256": "49ae1e7c99fb7cc166d272aca3e9b1467ecd61953928ee243def5e98602c5f1e",
+    "selected_clips": 119,
+    "selected_graph_components": 22,
+    "full525_graph_components": 1,
+    "partition_rule": "Legacy ABC plus predeclared whole component C-to-A; B unchanged",
+    "partition_counts": {
+      "A": {
+        "clips": 75,
+        "components": 13,
+        "native_minutes": {
+          "2": 10,
+          "3": 31,
+          "4": 16,
+          "5": 4,
+          "6": 8,
+          "7": 1,
+          "8": 1,
+          "10": 1,
+          "19": 1,
+          "20": 1,
+          "23": 1
+        }
+      },
+      "B": {
+        "clips": 19,
+        "components": 5,
+        "native_minutes": {
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 2,
+          "6": 2,
+          "7": 1,
+          "8": 1
+        }
+      },
+      "C": {
+        "clips": 25,
+        "components": 4,
+        "native_minutes": {
+          "2": 6,
+          "3": 7,
+          "4": 5,
+          "5": 2,
+          "6": 2,
+          "7": 1,
+          "11": 1,
+          "12": 1
+        }
+      }
+    },
+    "cross_partition_hull_day_bytes_or_UTC_overlaps": 0,
+    "excluded_fullcorpustransitivebridges_unused": true,
+    "new_models_reference_unseen_only": true,
+    "old_R9_R14_models_saw_shared509": true,
+    "conditional_selected_graph_independence_not_new_corpus": true,
+    "version": "r16_support_temporal_data_v1",
+    "moved_component": "VT_R4_REF_474fe510b4e0aa460cad",
+    "independent_native12_component": "VT_R4_REF_de02fbd6bbb753c153bd",
+    "legacy_C_results_no_longer_reference_independent": true,
+    "legacy_R11_native15_reference_seen_diagnostic_only": true,
+    "unseen_native_ge15_components_remaining": 0,
+    "independent_long_generalization_claim_limited_to_native12": true,
+    "full509_native_minute_histogram": {
+      "1": 1,
+      "2": 159,
+      "3": 145,
+      "4": 91,
+      "5": 40,
+      "6": 30,
+      "7": 6,
+      "8": 11,
+      "9": 4,
+      "10": 4,
+      "11": 2,
+      "12": 3,
+      "13": 4,
+      "14": 2,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "23": 2
+    },
+    "selected_long_sources": [
+      {
+        "clip_id": "6c930497d3077f7f",
+        "minute_count": 11,
+        "reference_component": "VT_R4_REF_710315d5f9128f53c337",
+        "recording_day": "2016-08-29",
+        "hull_id": "H126",
+        "legacy_r16_reference_partition": "C",
+        "r16_reference_partition": "C"
+      },
+      {
+        "clip_id": "0a3c6b70a809cbe3",
+        "minute_count": 23,
+        "reference_component": "VT_R4_REF_474fe510b4e0aa460cad",
+        "recording_day": "2016-09-27",
+        "hull_id": "H124",
+        "legacy_r16_reference_partition": "C",
+        "r16_reference_partition": "A"
+      },
+      {
+        "clip_id": "62ca2f37bf6fc937",
+        "minute_count": 20,
+        "reference_component": "VT_R4_REF_474fe510b4e0aa460cad",
+        "recording_day": "2016-09-27",
+        "hull_id": "H003",
+        "legacy_r16_reference_partition": "C",
+        "r16_reference_partition": "A"
+      },
+      {
+        "clip_id": "e85757bad3931975",
+        "minute_count": 19,
+        "reference_component": "VT_R4_REF_474fe510b4e0aa460cad",
+        "recording_day": "2016-09-27",
+        "hull_id": "H124",
+        "legacy_r16_reference_partition": "C",
+        "r16_reference_partition": "A"
+      },
+      {
+        "clip_id": "7caa5396268166d3",
+        "minute_count": 12,
+        "reference_component": "VT_R4_REF_de02fbd6bbb753c153bd",
+        "recording_day": "2016-09-06",
+        "hull_id": "H051",
+        "legacy_r16_reference_partition": "C",
+        "r16_reference_partition": "C"
+      }
+    ]
+  },
+  "HF_negative": {
+    "requested": 800,
+    "replaced": 798,
+    "shortfall": 2,
+    "exact_site_sensor_recorder_effective_mask_preserved": true,
+    "positive_backgrounds_unchanged": true,
+    "replacement_source_ids_unique": true,
+    "replacement_ids_overlap_original_train_rows": 0,
+    "threshold_scope": "Fold0 TRAIN within site/sensor/recorder/effective-mask; strictly above q90",
+    "source_candidates": 7919,
+    "known_A_zero_not_natural_ship_absence": true,
+    "all_source_rows_examined": 78869,
+    "HF_scope_bands": "18..24 = 1.995..7.943 kHz"
+  },
+  "background_crossrole": [
+    {
+      "a": "train",
+      "b": "local_fit",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 24.0,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "local_gate",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 29.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "local_report",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 25.5,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "train",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_fit",
+      "b": "local_gate",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 114.25,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_fit",
+      "b": "local_report",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 338.5,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_fit",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_gate",
+      "b": "local_report",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": 559.75,
+      "no_shared_sensor": false
+    },
+    {
+      "a": "local_gate",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    },
+    {
+      "a": "local_report",
+      "b": "domain_holdout",
+      "source_id_overlap": 0,
+      "group_overlap": 0,
+      "minimum_support_gap_hours": null,
+      "no_shared_sensor": true
+    }
+  ]
+}

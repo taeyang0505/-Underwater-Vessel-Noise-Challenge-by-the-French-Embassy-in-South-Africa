@@ -1,0 +1,277 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-27T08:16:52.392283+00:00",
+  "scope": "Frozen policy and local_fit-only numeric audit; locked outputs metadata only",
+  "code_sha256": {
+    "ops/r16_locked_comparison.py": "c8f2c0788a7b4a710ee30c28f74086c31a18313d08e42f4074629cfbaafdd85f",
+    "ops/r16_clean_models.py": "b7e74ac33ffe1542decb23e6c00794ab9b54390fc145690cc0f001670d033d1f",
+    "ops/r16_forward_data.py": "557307e6c80ad036dfd6fe81df48e2f1d167aab98c9260739979690c7bef4cda",
+    "ops/r16_evaluate_frozen.py": "42b4dcef4db7e663b60bcd6c98d37dd1c01dda69b5a51d58fd60e1e5b5dd3999"
+  },
+  "frozen_policy_and_plan_sha256": {
+    "reports/r16_locked_comparison_r1/PRE_FIT_PLAN.json": "1bc614c195e3d421df96129a44f9bc77df8b8518b023e79be54fcf841095fb9a",
+    "reports/r16_locked_comparison_r1/POLICIES.json": "6905a7cdd8e379b7779053d23fe4308fc2f2e646820751ca95a12f35768e487c",
+    "reports/r16_locked_comparison_r1/GLOBAL_FREEZE.json": "46cffc361b852bd510cef2d2b9f2234fda545a5d13b135931d9da0a8f5665329",
+    "ops/r16_locked_comparison.py": "c8f2c0788a7b4a710ee30c28f74086c31a18313d08e42f4074629cfbaafdd85f"
+  },
+  "data_manifest_sha256": "509a6fa2d1820eb25c551cef0bd343b16b531cae97b19ff16959081f1845b3c1",
+  "verified_frozen_artifacts": 1874,
+  "verified_fit_prediction_files": 10,
+  "policy_count": 12,
+  "local_fit_operator_count": 6,
+  "local_fit_rows": 2400,
+  "raw_dataset_id_target_order_exact": true,
+  "policies": {
+    "R9__fixed50tree_4x12.5NN": {
+      "members": [
+        "R9_tree5",
+        "R9_bg_cnn",
+        "R9_tfgrid_fdy_conformer",
+        "R9_fdy",
+        "R9_itransformer"
+      ],
+      "weights": [
+        0.5,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "sum": 1.0,
+      "constraint_scope": "fixed balanced or unconstrained comparator",
+      "tree_family_weight_divided_by5": 0.1,
+      "highshare_in_new_policy": false,
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true
+    },
+    "R9__unconstrained_fit": {
+      "members": [
+        "R9_tree5",
+        "R9_bg_cnn",
+        "R9_tfgrid_fdy_conformer",
+        "R9_fdy",
+        "R9_itransformer"
+      ],
+      "weights": [
+        0.9268650921906931,
+        0.0,
+        0.07313490780930686,
+        2.2388799558196542e-17,
+        2.6284522616126177e-18
+      ],
+      "sum": 1.0,
+      "constraint_scope": "fixed balanced or unconstrained comparator",
+      "tree_family_weight_divided_by5": 0.18537301843813864,
+      "highshare_in_new_policy": false,
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true
+    },
+    "R9__capped_fit": {
+      "members": [
+        "R9_tree5",
+        "R9_bg_cnn",
+        "R9_tfgrid_fdy_conformer",
+        "R9_fdy",
+        "R9_itransformer"
+      ],
+      "weights": [
+        0.8,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "sum": 1.0000000000000002,
+      "constraint_scope": "named capped candidate",
+      "tree_family_weight_divided_by5": 0.16,
+      "highshare_in_new_policy": false,
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true
+    },
+    "R14_baseline__fixed50tree_4x12.5NN": {
+      "members": [
+        "R14_tree5_baseline",
+        "R14_bg_cnn",
+        "R14_tfgrid_fdy_conformer",
+        "R14_fdy",
+        "R14_itransformer"
+      ],
+      "weights": [
+        0.5,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "sum": 1.0,
+      "constraint_scope": "fixed balanced or unconstrained comparator",
+      "tree_family_weight_divided_by5": 0.1,
+      "highshare_in_new_policy": false,
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true
+    },
+    "R14_baseline__unconstrained_fit": {
+      "members": [
+        "R14_tree5_baseline",
+        "R14_bg_cnn",
+        "R14_tfgrid_fdy_conformer",
+        "R14_fdy",
+        "R14_itransformer"
+      ],
+      "weights": [
+        0.08279748930408175,
+        0.7540864835954144,
+        0.1631160271005037,
+        9.089603732732205e-19,
+        0.0
+      ],
+      "sum": 0.9999999999999998,
+      "constraint_scope": "fixed balanced or unconstrained comparator",
+      "tree_family_weight_divided_by5": 0.016559497860816348,
+      "highshare_in_new_policy": false,
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true
+    },
+    "R14_baseline__capped_fit": {
+      "members": [
+        "R14_tree5_baseline",
+        "R14_bg_cnn",
+        "R14_tfgrid_fdy_conformer",
+        "R14_fdy",
+        "R14_itransformer"
+      ],
+      "weights": [
+        0.4,
+        0.3999999999999999,
+        0.1000000000000001,
+        0.05000000000000017,
+        0.05
+      ],
+      "sum": 1.0000000000000002,
+      "constraint_scope": "named capped candidate",
+      "tree_family_weight_divided_by5": 0.08,
+      "highshare_in_new_policy": false,
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true
+    },
+    "control__nn": {
+      "regression_weights_tree_NN": [
+        0,
+        1
+      ],
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true,
+      "single_model_or_balanced_comparison_explicit": true,
+      "no_highshare_training_forcing": true
+    },
+    "control__tree": {
+      "regression_weights_tree_NN": [
+        1,
+        0
+      ],
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true,
+      "single_model_or_balanced_comparison_explicit": true,
+      "no_highshare_training_forcing": true
+    },
+    "control__fixed60tree40nn": {
+      "regression_weights_tree_NN": [
+        0.6,
+        0.4
+      ],
+      "selected_share_lambda": 0.0,
+      "lambda_recomputed_on_local_fit_only": true,
+      "single_model_or_balanced_comparison_explicit": true,
+      "no_highshare_training_forcing": true
+    },
+    "mixed__nn": {
+      "regression_weights_tree_NN": [
+        0,
+        1
+      ],
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true,
+      "single_model_or_balanced_comparison_explicit": true,
+      "no_highshare_training_forcing": true
+    },
+    "mixed__tree": {
+      "regression_weights_tree_NN": [
+        1,
+        0
+      ],
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true,
+      "single_model_or_balanced_comparison_explicit": true,
+      "no_highshare_training_forcing": true
+    },
+    "mixed__fixed60tree40nn": {
+      "regression_weights_tree_NN": [
+        0.6,
+        0.4
+      ],
+      "selected_share_lambda": 0.25,
+      "lambda_recomputed_on_local_fit_only": true,
+      "single_model_or_balanced_comparison_explicit": true,
+      "no_highshare_training_forcing": true
+    }
+  },
+  "convex_weight_optimality_checks": {
+    "R9__unconstrained_fit": {
+      "convex_simplex_KKT_residual": 8.673617379884035e-19,
+      "objective_MSE": 0.012185970261598452,
+      "no_refit_or_policy_change": true
+    },
+    "R9__capped_fit": {
+      "convex_simplex_KKT_residual": 0.0,
+      "objective_MSE": 0.012475280848925836,
+      "no_refit_or_policy_change": true
+    },
+    "R14_baseline__unconstrained_fit": {
+      "convex_simplex_KKT_residual": 1.4522568481979692e-09,
+      "objective_MSE": 0.008447170008338447,
+      "no_refit_or_policy_change": true
+    },
+    "R14_baseline__capped_fit": {
+      "convex_simplex_KKT_residual": 0.0,
+      "objective_MSE": 0.008983002441680146,
+      "no_refit_or_policy_change": true
+    }
+  },
+  "max_independent_rank_AUC_error": 1.1102230246251565e-16,
+  "timeline_metadata": {
+    "plan_created_unix": 1793088576.438647,
+    "global_freeze_created_unix": 1793088577.0776541,
+    "global_freeze_file_mtime": 1793088577.078599,
+    "old_locked_plan_created_unix": 1793088634.6016881,
+    "old_locked_roles": [
+      "local_gate",
+      "local_report",
+      "domain_holdout"
+    ],
+    "reports/r16_frozen_evaluation_r1/locked/predictions": {
+      "metadata_only_saved_npz_count": 0,
+      "earliest_saved_file_mtime": null,
+      "array_values_opened": false
+    },
+    "reports/r16_locked_comparison_r1/small_locked": {
+      "metadata_only_saved_npz_count": 48,
+      "earliest_saved_file_mtime": 1793088636.2310953,
+      "array_values_opened": false
+    }
+  },
+  "freeze_function_direct_model_inference_or_heldout_loader": false,
+  "gate_report_domain_used_for_policy_fit": false,
+  "gate_report_domain_array_or_metrics_read_in_this_audit": false,
+  "Test_or_Test_statistics_read": false,
+  "new_model_fit_or_new_policy_fit": false,
+  "model_or_production_state_changed": false,
+  "all_protected_policy_bytes_unchanged": true,
+  "limitations": [
+    "Caps apply only to named capped/fixed-balanced candidates; unconstrained and single-NN candidates are explicit comparators.",
+    "local_fit reuses400backgrounds across6operators and also drove small checkpoint/treeES choices; fit scores are development-selected, not independent OOF.",
+    "Frozen scope includes paused TFepoch37 as a diagnostic artifact, not a completed50epoch production model.",
+    "Historical no-heldout-read claim is supported by code separation, later freezeSHA-bound evaluation plan and file timestamps, not a complete syscall trace.",
+    "Existing highshare models remain pinned/evaluated as unchanged comparisons, but are absent from every newly fitted policy member/classifier choice."
+  ],
+  "auditor_source_sha256": "7fa3baee18f4c9f23780b6f9a33ae40d3df528d05abcf35c147c2dcadfb0e7bd"
+}

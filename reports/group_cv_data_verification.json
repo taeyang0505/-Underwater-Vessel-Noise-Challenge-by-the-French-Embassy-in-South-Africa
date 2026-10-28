@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "source_hash": "f8e78e5add5d3131d0d11e362fec72928e999987e479815d3c5c5c6fa114498d",
+  "nested_early_stopping": true,
+  "folds": [
+    {
+      "fold": 0,
+      "minimum_support_gap_hours": 24.0,
+      "partitions": {
+        "train": {
+          "n": 16000,
+          "max_energy_target_error": 5.498045224650028e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.1195487021351553e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "outer_validation": {
+          "n": 3000,
+          "max_energy_target_error": 4.625410647274286e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        }
+      },
+      "native_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      }
+    },
+    {
+      "fold": 1,
+      "minimum_support_gap_hours": 24.0,
+      "partitions": {
+        "train": {
+          "n": 16000,
+          "max_energy_target_error": 5.31763995170742e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.749328866820001e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "outer_validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.4666559312057643e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        }
+      },
+      "native_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      }
+    },
+    {
+      "fold": 2,
+      "minimum_support_gap_hours": 24.0,
+      "partitions": {
+        "train": {
+          "n": 16000,
+          "max_energy_target_error": 3.5136687143166867e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.151468830342452e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "outer_validation": {
+          "n": 3000,
+          "max_energy_target_error": 4.067521576223143e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        }
+      },
+      "native_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      }
+    },
+    {
+      "fold": 3,
+      "minimum_support_gap_hours": 24.0,
+      "partitions": {
+        "train": {
+          "n": 16000,
+          "max_energy_target_error": 4.936092398155623e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.8921724898610677e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "outer_validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.588303488788469e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        }
+      },
+      "native_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      }
+    },
+    {
+      "fold": 4,
+      "minimum_support_gap_hours": 24.0,
+      "partitions": {
+        "train": {
+          "n": 16000,
+          "max_energy_target_error": 4.912508083099176e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.138175607708682e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        },
+        "outer_validation": {
+          "n": 3000,
+          "max_energy_target_error": 3.061153752148549e-07,
+          "positive_became_zero": 0,
+          "exact_replay": true
+        }
+      },
+      "native_components": {
+        "outer_validation": 1,
+        "train": 3,
+        "validation": 1
+      }
+    }
+  ],
+  "outer_oof_examples": 15000,
+  "all_outer_source_units_assigned_once": true,
+  "calibration_or_sealed_arrays_accessed": false,
+  "challenge_test_accessed": false,
+  "model_training_executed": false
+}

@@ -1,0 +1,168 @@
+{
+  "status": "passed_actual_public_backbone_CPU_connection_only",
+  "source_root": "/Users/hongtaeyang/Documents/ChatGPT/\ub300\ud68c/underwater_vessel_noise.nosync",
+  "weight_verification": {
+    "timemoe_public": {
+      "kind": "timemoe_public",
+      "model_id": "Maple728/TimeMoE-200M",
+      "revision": "794591bfeb1225fdf742cec0f4c71f20c3f3b87e",
+      "weight_bytes": 906450104,
+      "weight_sha256": "28d1cbf480c1f63d4ad56d8b7649d9860b9afa9f31abeedff9decea48d9aee57",
+      "source_sha256": {
+        "README.md": "c0ab1a3140946b09c2e10f62194eda89db391bde05576fbfcf664f703829f1f6",
+        "config.json": "cd582cc3dd64decc15c088735d18dcae00ad2bdc013ec6a814af7999e16952bd",
+        "configuration_time_moe.py": "d9b2e91a18fcc79753af7504a93382d43fa87d168318db01eb8431ef8d1b1125",
+        "modeling_time_moe.py": "afd34fc6799799ef7784ae55425da7e58f4dabe49f2873744af201c06ebcfae6",
+        "ts_generation_mixin.py": "b8ed9708bb450dda5443093ce46fa84890ae119823bd897e7f86c4f50dd2814d"
+      },
+      "license": {
+        "repository": "Time-MoE/Time-MoE",
+        "revision": "915bfda4c78a544d62a2bec6ab22948423059236",
+        "url": "https://raw.githubusercontent.com/Time-MoE/Time-MoE/915bfda4c78a544d62a2bec6ab22948423059236/LICENSE",
+        "sha256": "7cd9951c712ed85dc4e03d25fff036a925ee7d1a0fceb5aa42a7e8788b40eac9",
+        "license": "Apache-2.0"
+      },
+      "credential_policy": "anonymous urllib; no HF token lookup; no from_pretrained",
+      "verified": true
+    },
+    "dasheng": {
+      "kind": "dasheng",
+      "model_id": "mispeech/dasheng-1.2B",
+      "revision": "4ae6b990f87bf40579b97bab065f4e47920b28dc",
+      "weight_bytes": 4536241360,
+      "weight_sha256": "b3b9316fe0ea051eefafff51ee2341629914b8db5f78cbe991803dc86f5669df",
+      "source_sha256": {
+        "README.md": "cdc8c6a1b114b22202a2c140c8daae3caf37cab151750082cc1c558036408855",
+        "config.json": "16d0439c565428d2de2bc2cd64b734bbc886a6d367d16652a4080d1b19902913",
+        "configuration_dasheng.py": "7a524b9d37c0e0392b75bbfb0fe5e2d1f60f62a8f2c46917bb186b638580966b",
+        "modeling_dasheng.py": "480d07bf805abae43ebea7f32d1ea321041ab17266329d1eac999da12dec3a8e"
+      },
+      "license": {
+        "repository": "RicherMans/Dasheng",
+        "revision": "91bc15c728f08e8d10f741311d8afc42fb33d497",
+        "url": "https://raw.githubusercontent.com/RicherMans/Dasheng/91bc15c728f08e8d10f741311d8afc42fb33d497/LICENSE",
+        "sha256": "249c4ef6ef22f69a8a1076d4eb04eb8560af2d4fc48440749f51477efacbaa8f",
+        "license": "Apache-2.0"
+      },
+      "credential_policy": "anonymous urllib; no HF token lookup; no from_pretrained",
+      "verified": true
+    }
+  },
+  "sync_artifacts": {
+    "pipeline/foundation_masks_r5.py": {
+      "bytes": 21240,
+      "sha256": "258d38dca9129399cab7b3d01b970241d0df6ff2ea831beece05738195047a05"
+    },
+    "pipeline/load_foundation_r5.py": {
+      "bytes": 19193,
+      "sha256": "eee9f41e23390194822cfa81aae4346031b9ffb52fc8501b1102ae501a9b9f93"
+    },
+    "ops/verify_foundation_masks_r5.py": {
+      "bytes": 12031,
+      "sha256": "bdb2cd9c5094264005c63ee38a1084d6ec7598ecefb933d107c923a26da05051"
+    },
+    "reports/R5_FOUNDATION_ADAPTER_FIXTURE.json": {
+      "bytes": 7354,
+      "sha256": "2219a7c301efee76035745dc3640146d34a77fcb42768d017c28f360c87e7ba5"
+    },
+    "reports/R5_ACTUAL_TIMEMOE_PUBLIC_CPU_R1.json": {
+      "bytes": 7239,
+      "sha256": "9d8099086c1f11fbdd5ca0340c5c9fa5f420fa458739d738cc9478412a8147d1"
+    },
+    "reports/R5_ACTUAL_DASHENG_CPU_R1.json": {
+      "bytes": 8186,
+      "sha256": "4cb73c6c29823f0e96d6b202ff01fe80917c0cf3225e70b88dbace3cecfebdf3"
+    },
+    "reports/R5_MODEL_REFERENCE_FACTCHECK.md": {
+      "bytes": 25594,
+      "sha256": "9d7ee9fca4875a5364fc5c9d3fb26a124920178904990839238cf19a93347c20"
+    },
+    "models/pretrained_r5/README_CPU_VERIFICATION.md": {
+      "bytes": 2781,
+      "sha256": "87ba9de0df5bd6a7df17ee4f5836035dd55ac5e36163b7cddce516573014183b"
+    },
+    "models/pretrained_r5/runtime_receipt.json": {
+      "bytes": 596,
+      "sha256": "c1285033876800925947bfd9b2d5761d801bb0410aa9da7cd01c59b35c94b2d1"
+    },
+    "models/pretrained_r5/runtime_requirements.txt": {
+      "bytes": 246,
+      "sha256": "2d66c58d9c972537c93dee15ac22deb0202756420e1baac3fba7bc80bcf9ed95"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/README.md": {
+      "bytes": 400,
+      "sha256": "c0ab1a3140946b09c2e10f62194eda89db391bde05576fbfcf664f703829f1f6"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/config.json": {
+      "bytes": 892,
+      "sha256": "cd582cc3dd64decc15c088735d18dcae00ad2bdc013ec6a814af7999e16952bd"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/configuration_time_moe.py": {
+      "bytes": 2503,
+      "sha256": "d9b2e91a18fcc79753af7504a93382d43fa87d168318db01eb8431ef8d1b1125"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/modeling_time_moe.py": {
+      "bytes": 51921,
+      "sha256": "afd34fc6799799ef7784ae55425da7e58f4dabe49f2873744af201c06ebcfae6"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/ts_generation_mixin.py": {
+      "bytes": 11529,
+      "sha256": "b8ed9708bb450dda5443093ce46fa84890ae119823bd897e7f86c4f50dd2814d"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/LICENSE": {
+      "bytes": 11410,
+      "sha256": "7cd9951c712ed85dc4e03d25fff036a925ee7d1a0fceb5aa42a7e8788b40eac9"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/license_receipt.json": {
+      "bytes": 317,
+      "sha256": "37fa4901d3e6090143a75bcd521cc5c2ed1e6f08e34fef9ab824ba0366d2dc51"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/weight_receipt.json": {
+      "bytes": 538,
+      "sha256": "51bc81de9e2eb75c441eeff79212c33f19c006ed4c501d617d197e0df75ec0a5"
+    },
+    "models/pretrained_r5/Maple728--TimeMoE-200M/cpu_smoke_adapter_r1.pt": {
+      "bytes": 3122174,
+      "sha256": "d5a973ae703bc07554c7e235c6d2ce460f4c3516bb48d56bc814745fa0f55e1c"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/README.md": {
+      "bytes": 2720,
+      "sha256": "cdc8c6a1b114b22202a2c140c8daae3caf37cab151750082cc1c558036408855"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/config.json": {
+      "bytes": 519,
+      "sha256": "16d0439c565428d2de2bc2cd64b734bbc886a6d367d16652a4080d1b19902913"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/configuration_dasheng.py": {
+      "bytes": 2798,
+      "sha256": "7a524b9d37c0e0392b75bbfb0fe5e2d1f60f62a8f2c46917bb186b638580966b"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/modeling_dasheng.py": {
+      "bytes": 19639,
+      "sha256": "480d07bf805abae43ebea7f32d1ea321041ab17266329d1eac999da12dec3a8e"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/LICENSE": {
+      "bytes": 11353,
+      "sha256": "249c4ef6ef22f69a8a1076d4eb04eb8560af2d4fc48440749f51477efacbaa8f"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/license_receipt.json": {
+      "bytes": 319,
+      "sha256": "a44d0e9aa41c08fa029f971ccc6f760cbbc1a32ae76f52aaef133e778867dad6"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/weight_receipt.json": {
+      "bytes": 539,
+      "sha256": "9b824b2dab9c438d2f09cd6c651baa48183ea3d81aba92b84245221dd9873e3f"
+    },
+    "models/pretrained_r5/mispeech--dasheng-1.2B/cpu_smoke_adapter_r1.pt": {
+      "bytes": 8600411,
+      "sha256": "0980665d27ce8431ee37c3bb90ccff51726197080a4d5ebd366b6ddb35530ddf"
+    }
+  },
+  "include_whole_directory": "models/pretrained_r5 (runtime binaries macOS-only; install native dependencies on Linux)",
+  "partial_or_incomplete_files": [],
+  "Ultra_execution_enabled": false,
+  "real_Fold_training_executed": false,
+  "GPU_used": false,
+  "Fold0_selection_pending": true,
+  "model_weights_downloaded_bytes": 5442691464
+}

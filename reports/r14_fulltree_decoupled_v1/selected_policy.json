@@ -1,0 +1,20 @@
+{
+  "format": "r14_fulltree_decoupled_frozen_policy_v1",
+  "fit_role": "validation_fit1000_only",
+  "CNN_weight": 0.25,
+  "classifier": "full5252",
+  "classifier_weight": 1.0,
+  "regression_fit_rmse": 0.06386727839226305,
+  "score_fit_AUC": 0.974,
+  "plan_sha256": "5b28ff90e07a6702bbda791fac049d902b7b03c27b3d826aca94f532fff16985",
+  "freeze_sha256": {
+    "full_global_freeze_sha256": "a25811965e0edf8669555db19606be740c72f70e24a1505f867c30e731bdbdfe",
+    "anchor_global_freeze_sha256": "6611e81558b8fdb4d8e4bde676efcbfc559e233c1aa8a484b605b9089f6d1b28"
+  },
+  "production_approved": false,
+  "panel_values_used_for_selection": false,
+  "anchor_fit_order_evidence": "same SHA-pinned validation NPZ, original source-pinned predictor order and exact target vector; anchor NPZ has no per-row IDs",
+  "full_baseline_summary_sha256": "03b46eae3b419bdaaf4a4424f22de70633a4d9c7979d7574e1d5fc6ab0ace736",
+  "strict673_presence_sha256": "b860c85f2ccfab1c271d32db57837f5df6ea038f1345d62c981e61f79ae8c4af",
+  "policy_sha256": "2b519dff77ddad7d91a7b22819e3b8697242acee0ed56420fc829b3400e4119f"
+}

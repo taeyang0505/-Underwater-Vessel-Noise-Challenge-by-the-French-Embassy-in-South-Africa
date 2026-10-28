@@ -1,0 +1,61 @@
+{
+  "status": "explicit experiment plan, not executed and not an AutoML search",
+  "data_version_requirement": "Freeze quality_v2 first. Refit all v1-trained neural weights and all v1 context/scaler/cache state. Vendor pretrained weights may remain unchanged.",
+  "initial_gpu": {
+    "count": 1,
+    "class": "RTX4090",
+    "vram_GB": 24,
+    "CPU_RAM_GB_preferred": 64,
+    "CPU_cores_minimum": 8,
+    "free_SSD_GB_preferred": 100,
+    "VRAM_and_throughput_measured": false,
+    "first_step": "Run a CUDA memory preflight with own validation queries, estimator_batch_size=1, then choose context/batch size. Do not begin a long paid reservation before data/quality freeze."
+  },
+  "synthetic_train_examples": [16000, 50000, 200000],
+  "seeds": [42, 43, 44],
+  "future_neural_training": {
+    "max_epochs": 100,
+    "early_stopping_patience": 7,
+    "optimizer": "Adam",
+    "selection_metric": "held-source validation share MSE",
+    "restore_best_checkpoint": true,
+    "applies_to": "Future gradient training and any explicitly supported foundation fine-tuning. These settings do not retroactively change the submitted v1 models.",
+    "historical_v1_small_neural_training": "8 epochs, AdamW; the first submitted candidate has not been retrained under the new settings.",
+    "foundation_fine_tuning_requirement": "A separate supported trainer with Adam, validation, checkpointing and early stopping is required before claiming gradient fine-tuning. Frozen ICL fit alone does not fine-tune weights."
+  },
+  "frozen_ICL_training_semantics": {
+    "gradient_updates": false,
+    "epochs": null,
+    "optimizer": null,
+    "fit_means": "Prepare the labeled training context, feature transformations and inference caches using fixed vendor weights."
+  },
+  "frozen_foundation_candidates": [
+    {"model": "tabicl", "parameters": 28544991, "context_rows": [1024, 4096, 16000], "features": 96, "ensemble_members": 4, "estimator_batch_size": 1, "weights_licence": "BSD-3-Clause"},
+    {"model": "kumo_large", "parameters": 215683191, "context_rows": [1024, 4096, 8192], "features": 96, "ensemble_members": 4, "estimator_batch_size": 1, "weights_licence": "OpenMDW-1.1"}
+  ],
+  "task_adapted_capacity_candidates": [
+    {"model": "cnn", "widths": [32,64,128], "parameter_counts": [57122,224834,892034]},
+    {"model": "fdy", "widths": [32,64,96], "parameter_counts": [128814,509518,1142126]},
+    {"model": "itransformer", "widths": [96,192,384], "parameter_counts": [289936,1132816,4477456]},
+    {"model": "tabm", "width_members": [[256,16],[384,32]], "parameter_counts": [513152,939520]}
+  ],
+  "capacity_candidate_note": "Counts are exact instantiated module counts. Only the original small widths and TabM256/16 have been CPU evaluated. Existing make_model currently hardcodes some small widths, so broader capacity runs require an explicit runner update before execution.",
+  "selection": {
+    "primary_loss": "share MSE",
+    "model_and_ensemble_selection": "source-disjoint validation only",
+    "calibration": "separate calibration with source-group cross-fitting preferred",
+    "final_assessment": "held-out source/deployment; no subsequent tuning on it",
+    "overfit_monitor": "train-source probe versus held-source validation and learning curves, not model-parameter/input-scalar ratios",
+    "foundation_train_error": "Do not predict context rows with their own labels available; use independent training-source mixtures or leave-one-out context",
+    "no_test_population_fitting": true,
+    "no_test_source_identification": true,
+    "sealed_NOAA_OC02_02_never_reused": true
+  },
+  "additional_candidates_on_hold": [
+    {"model": "TabPFN-3.5", "reason": "weights have separate NC/gated terms; competition eligibility and access not resolved; not downloaded"},
+    {"model": "EXAONE-Tabular", "reason": "weights use separate NC licence; not downloaded"},
+    {"model": "Google TabFM", "reason": "weights use TabFM NC licence; not downloaded"},
+    {"model": "Xiaomi-TabLDM", "reason": "official README has distinct/conflicting code-vs-weight licence statements; authoritative weights terms need checking; not downloaded"},
+    {"model": "LimiX-2", "reason": "NC licence explicitly permits some noncommercial competitions but also restricts commercial/competing-FM uses; exact intended ensemble conditions need resolution; not downloaded"}
+  ]
+}

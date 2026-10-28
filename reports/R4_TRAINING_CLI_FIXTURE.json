@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scope": "Small synthetic CLI integration fixture; NOT the new R4 full dataset or performance",
+  "folds": 5,
+  "train_inner_outer_per_fold": [
+    72,
+    48,
+    48
+  ],
+  "neural_fits": 15,
+  "epochs_per_fit": 1,
+  "candidates": [
+    "lgbm_retrieval",
+    "cnn",
+    "fdy",
+    "itransformer"
+  ],
+  "new_architecture_and_loss_verified": true,
+  "policy_and_safety_detail_ledgers_sha_verified": true,
+  "pooled_metrics_independently_recomputed": true,
+  "actual_R4_full_training_executed": false,
+  "Test_accessed": false,
+  "fixture_result_path": "/private/tmp/r4_training_cli_fixture_v3",
+  "earlier_fixture_failures": [
+    "Legacy LightGBM version gate rejected R4; fixed explicit R4 allowlist",
+    "Missing explicit model_evaluated_on_sealed flag rejected before outer access; source builder contract corrected"
+  ],
+  "partial_models_reused": false
+}

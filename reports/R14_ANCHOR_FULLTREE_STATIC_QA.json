@@ -1,0 +1,51 @@
+{
+  "format": "r14_anchor_and_fulltree_static_numeric_qa_v1",
+  "status": "passed_with_documented_coverage_limits",
+  "created_unix": 1793043366.3675678,
+  "source_sha256": {
+    "pipeline/features_r14_anchor.py": "6027bc03cf6ae97f1c533d1b1a09835e28689b19908cc636ebaad97f69981fac",
+    "ops/train_r14_anchor_cpu.py": "5890012057306e75f5dc5c1886ec5353c7f34510568ce98b35f70aadb9a54f44",
+    "ops/evaluate_r14_anchor_cpu.py": "e2537c01f4a600d1f0909b3701afd8bfc0acdbe0a49d1e55a7399862843310e2",
+    "ops/train_r14_tree_full.py": "81b683291f1b0be30b4a51d9cd19c307bcf0bb7dbf945b6b59e3e1e9a6ba9202",
+    "pipeline/trees_ensemble_r13.py": "d65b1f865cb1531c2a9fbc7e3980263d3b105751f4d99bbcbdc7591ff2c8e29e"
+  },
+  "numeric_fixture_only": true,
+  "actual_source_model_fit": false,
+  "Test_or_heldout_arrays_read": false,
+  "prior_basis_TRAIN_file_sha256": "a176bedfd772e552bb3fb310449b699b23d2fb9445af071ed0f72b05a1205113",
+  "anchor": {
+    "channels": 14,
+    "tree_features": 880,
+    "common_gain20db_max_abs_channel_error": 0.0,
+    "common_gain20db_max_abs_weight_error": 0.0,
+    "safe23_anchor_ignores_upper2_band_changes": true,
+    "missing_minutes_and_undefined_low_anchor_maps_zero": true,
+    "tree_batch1_7_bitwise": true,
+    "model_parameter_count": 27601,
+    "finite_forward_backward_no_optimizerstep": true,
+    "pool_identity_and_mask_zero": true,
+    "row_weight_formula_exact": true,
+    "pure_loss_exact_oracle_zero": 0.0,
+    "former_two_cell_counterexample_pure_loss": 0.0004558933724183589
+  },
+  "role_and_model_review": {
+    "CNN_baseline_TRAIN6000_fixed100_noES_Adam": true,
+    "tree_regressors_baseline_TRAIN12000_c0_c2": true,
+    "independent_classifier_unweighted_baseline": true,
+    "all_selection_validation_fit_only": true,
+    "policy_before17panel_load": true,
+    "fulltree_original_PhysicsLGBM_no_operator_replacement": true,
+    "fulltree78869primary_once_with_own_variant_selection1000_ES": true,
+    "fulltree_foldTRAIN_PCA_not_refit_on_panel": true,
+    "production_approval_remains_false": true,
+    "fulltree_seed": 2026102713,
+    "compact_seed": 2026102712
+  },
+  "coverage_limits": [
+    "Anchor evaluator verifies CNN checkpoint SHA but does not check the frozen summary SHA/history100 itself; independent completed postflight must cover these.",
+    "Anchor panel NPZ does not persist q/w, so saved-only metric QA cannot independently recompute poolmax; producer infer checks it.",
+    "All model selection reuses validation_fit. Repeated development panels remain exposed, not blind generalization.",
+    "Anchors are deterministic redundant representations; low bands need not be pure background. Common gain invariance is quantization-aware, not arbitrary receiver-response invariance.",
+    "Fulltree vs compact changes rows, augmentation/selection law, fold PCA, seed2026102713 vs2026102712, and feature count. Feature-count causal attribution is not isolated."
+  ]
+}

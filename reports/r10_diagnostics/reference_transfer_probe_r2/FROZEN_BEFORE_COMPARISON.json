@@ -1,0 +1,42 @@
+{
+  "model_summary_sha256": "c5c2b81ae11c56c71de73ae9260f34047d84240e8757adf5ac34d55b335bca32",
+  "artifacts": {
+    "share.txt": "d5dbdcbd320ac1893a5258a298e3092d70d55db23e897c1b76cef4dc67aaf59f",
+    "presence.txt": "fdd31580a51dea761268ca00a5c93e66da9214d1f630a6441c61826fa2c62ae1",
+    "feature_schema.json": "5b8a67382dde85e42d98e470da2ac3c91fad87053e74aaac8d23bdf0d70fa781",
+    "inner_predictions.npz": "cef96078f90c9adbc39c2830829b7bea4dce0975a8e92246dea7e1157923e751"
+  },
+  "binding": {
+    "format": "r10_reference_transfer_probe_binding_v1",
+    "plan_sha256": "68fbb0e2ea25ec9def43499c8382802f06b962869aef4885887b7608050b9a87",
+    "reference_split_csv_sha256": "3be04201ef6b958e18d578a11cbd287919f2e00386a2765ac309de738459b9b1",
+    "fit_reference_pool": "A211",
+    "never_fitted_reference_pool": "B197",
+    "source_identity": {
+      "version": "r9_minute_full_dataset_v1",
+      "config_sha256": "9962b8a5c41708b9f8a51cb77cd0aa3295969b830077e240f2329b1f6c64679a",
+      "background_source_hash": "5325acb42ecfc4983f9ca9fa6b54aa52bca5930129c4a1ca5d19004c88bfd4ff",
+      "reference_source_hash": "d9148a5ae923d4713be5fd71294596e84394780c479d7ac763a8a50d095b50a5",
+      "background_manifest_sha256": "07ef29f9530c92977277f57091e4b64585157e3b89014e1d0508b9bd1f6fdaa7",
+      "reference_manifest_sha256": "1ad2649d0e2afa4bf1b7bdab877c40b391883e4c37a701827b2598d0d4ffa7da",
+      "background_bank_sha256": "0ed303bd176424919ba7b1192950d4f95c3935f79bd79c3700aaf2daf80492a9",
+      "reference_bank_sha256": "026d57965c2bec7268eee2ffe37aa663eec50609452fbdbec1b503aa3128df52",
+      "minute_cache_sha256": "4c0b9efbe1271b3bd628c9cc29910dfcfdf84da2650dc1a437c0ad7c452a26d6",
+      "code_sha256": {
+        "pipeline/dataset_r9.py": "1fee57e895fbe727bfef26837ebbfc32e4f6e11ad8641642fddd7e7d7fbd159c",
+        "pipeline/sampler_r9.py": "cd104176b1a64c9be4b1ce9560a6af20ac41f26455adb2c92b4bb6088add4e63",
+        "pipeline/reference_pool_r9.py": "6b3e92cc73426f43d38493f481ac6a9edd2609dd97a9f7eee17b4c5cfbf1493d",
+        "pipeline/source_split_r6.py": "8f4c394d9278c49a84a2540209599496205bf985178940ee0110cbb57aebb492",
+        "pipeline/hard_negatives_r6_v2.py": "b008312e2a316b3c58cbfed39dfaefb41070c6549b908a70285e389ac10b5aa8",
+        "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+        "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab"
+      },
+      "reference_count": 509,
+      "reference_independent_CV": false
+    },
+    "comparison_not_production": true
+  },
+  "frozen_utc": "2026-10-26T14:19:26.970434+00:00",
+  "evaluation_seen": false,
+  "no_retuning_after_evaluation": true
+}

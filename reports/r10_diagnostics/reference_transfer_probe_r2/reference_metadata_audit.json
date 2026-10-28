@@ -1,0 +1,99 @@
+{
+  "A": {
+    "clips": 211,
+    "hulls": 88,
+    "days": 17,
+    "weak_class_counts": {
+      "tug": 72,
+      "cargo": 52,
+      "passengership": 30,
+      "fishing": 13,
+      "other": 11,
+      "pleasurecraft": 11,
+      "dredger": 8,
+      "background": 7,
+      "rescue": 3,
+      "tanker": 2,
+      "sailing": 2
+    },
+    "native_minute_counts": {
+      "2": 72,
+      "3": 58,
+      "4": 40,
+      "5": 13,
+      "6": 11,
+      "7": 2,
+      "8": 4,
+      "9": 1,
+      "10": 3,
+      "13": 3,
+      "16": 1,
+      "19": 1,
+      "20": 1,
+      "23": 1
+    },
+    "duration_seconds": {
+      "sum": 48955.0,
+      "min_median_max": [
+        120.0,
+        180.0,
+        1380.0
+      ]
+    },
+    "year_counts": {
+      "2016": 171,
+      "2017": 40
+    }
+  },
+  "B": {
+    "clips": 197,
+    "hulls": 90,
+    "days": 16,
+    "weak_class_counts": {
+      "tug": 78,
+      "cargo": 24,
+      "other": 23,
+      "passengership": 22,
+      "pleasurecraft": 18,
+      "fishing": 17,
+      "background": 6,
+      "sailing": 4,
+      "tanker": 3,
+      "rescue": 1,
+      "pilotvessel": 1
+    },
+    "native_minute_counts": {
+      "1": 1,
+      "2": 53,
+      "3": 56,
+      "4": 36,
+      "5": 20,
+      "6": 15,
+      "7": 2,
+      "8": 4,
+      "9": 1,
+      "11": 2,
+      "12": 2,
+      "13": 1,
+      "14": 2,
+      "17": 1,
+      "18": 1
+    },
+    "duration_seconds": {
+      "sum": 47514.0,
+      "min_median_max": [
+        119.0,
+        180.0,
+        1080.0
+      ]
+    },
+    "year_counts": {
+      "2016": 162,
+      "2017": 35
+    }
+  },
+  "excluded_clips": 101,
+  "cross_hull_day_bytes_time_overlap": 0,
+  "shared_provider_receiver_corpus": true,
+  "weak_class_is_not_new_natural_vessel_ground_truth": true
+}
