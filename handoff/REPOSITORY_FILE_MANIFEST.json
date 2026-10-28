@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T15:07:14.926596+09:00",
+  "generated_at": "2026-10-28T15:16:41.205513+09:00",
   "self_excluded": true,
   "files": [
     {
@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4872,
-      "sha256": "36a2f28ee96f4b9b280906a1f335b2f205bcf39c708768358764a12c6cbebeaf"
+      "bytes": 5019,
+      "sha256": "ac8587ffcaae9c7d76b251f883283364134bab283ecbd2525cde9bc7b8a5849f"
     },
     {
       "path": "README_ANTIGRAVITY.md",
@@ -1289,8 +1289,13 @@
     },
     {
       "path": "handoff/EXPORT_VERIFICATION.json",
-      "bytes": 223,
-      "sha256": "feb7c3ad7c4f9f7d30cff23fe13c7c02f2c0e530d7b76538add29d1c3c958789"
+      "bytes": 556,
+      "sha256": "9533ad06eebba2aa2dc934e251026fa3de1b2807bc9a30880b76fe3de2b74c11"
+    },
+    {
+      "path": "handoff/GITHUB_RELEASE_VERIFICATION.json",
+      "bytes": 939,
+      "sha256": "7501cfa1cc4bca94006a5b715d5cd8f2c2c8f7271d3f0a1e3cd816e98ba1dbc6"
     },
     {
       "path": "handoff/KNOWN_LIMITATIONS.md",
@@ -1324,8 +1329,8 @@
     },
     {
       "path": "handoff/PUBLICATION_SCOPE.json",
-      "bytes": 466,
-      "sha256": "24b263a93f7249e5f6e3d26425faa1c40056d50ba6ac82206126f66e060529ab"
+      "bytes": 585,
+      "sha256": "b6f1998eddddf3474dd47c942625f0c0accaf1fa5f232067c96da46036970759"
     },
     {
       "path": "handoff/RELEASE_RESTORE.md",
@@ -4626,6 +4631,11 @@
       "path": "handoff/setup_env.sh",
       "bytes": 855,
       "sha256": "d03a0471179bee501c727e31b133693285ff71dd5e69f1c6ae45fd423f671310"
+    },
+    {
+      "path": "handoff/verify_checkout.py",
+      "bytes": 1822,
+      "sha256": "d16ad9b4caf05a2a23d5fc99d0ae309dd16ce0e16a8c1cfe56fb686d57cf0c86"
     },
     {
       "path": "make_pipeline_figure.py",

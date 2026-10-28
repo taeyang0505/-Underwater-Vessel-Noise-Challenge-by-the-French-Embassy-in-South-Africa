@@ -26,7 +26,8 @@
 **실제 현재 상태는 원본 Mac의 state 파일이 기준이다. GitHub 파일은 자동 갱신되는 라이브 모니터가 아니다.**
 
 ```bash
-python3 handoff/doctor.py
+python3 handoff/verify_checkout.py  # 공개 파일 해시·코드 구문·CSV 검사
+python3 handoff/doctor.py           # 같은 Mac 원본의 현재 학습 상태 확인
 # 다른 위치에 원본 프로젝트가 있으면
 python3 handoff/doctor.py --root /path/to/underwater_vessel_noise.nosync
 ```
