@@ -1,0 +1,80 @@
+{
+  "version": "r16_first_ensemble_postcsv_audit_v1",
+  "created_kst": "2026-10-28T16:15:52.677229+09:00",
+  "trigger": "parent completed + final receipt and candidate CSV verified; no interruption or duplicate training",
+  "bootstrap_reps": 1000,
+  "seed": 2026102815,
+  "primary_resampling_unit": "background_group",
+  "reference_cluster_bootstrap": "additional sensitivity if >=3 nonempty reference components; not treated as independent proof",
+  "probability_logit_clip": 1e-12,
+  "ECE_bins": 10,
+  "CSV_precision": "float64 .17g",
+  "panels": [
+    "local_fit",
+    "local_gate",
+    "local_report",
+    "domain_holdout",
+    "native12_VS_hf_high_negative",
+    "native12_VS_st_francis_dense_negative"
+  ],
+  "score_methods": [
+    "prob_mean",
+    "logit_mean",
+    "logit_mean_prior80_to50",
+    "rank_mean_panel_diagnostic_only",
+    "rank_mean_fixed_local_fit_CDF"
+  ],
+  "top_quartile_slice": "SAME prob-mean top25percent mask for all methods; disclose one-class undefined AUC",
+  "balanced_calibration": "each class total0.5; NOT an estimate of Test prevalence or calibrated Test posterior",
+  "regression_comparators": [
+    "R9 Fold0 Tree",
+    "R9 Tree5 mean",
+    "R16 D0/H0 Tree10 mean"
+  ],
+  "orthogonal_projection_fit": "local_fit only, descriptive new~old OLS; fixed coefficients on all evaluation panels",
+  "interventions": [
+    "other-site same-mask negative donor",
+    "same-zero static linear tilt0..12dB"
+  ],
+  "NN_intervention_paths": [
+    "input Ch4 only",
+    "input Ch7 only",
+    "input Ch4+Ch7 with ORIGINAL pooling w",
+    "pool-only with original q",
+    "joint swapped input and w"
+  ],
+  "feature_only_intervention_warning": "OOD feature sensitivity probe bypasses SAME-sqrtw forward validation ONLY in isolated audit; no production code changed",
+  "maximum_intervention_unique_zero_windows_per_panel": 400,
+  "intervention_panel": "local_report only, unique background negatives; no Test",
+  "one_SE_rule": "group OOB center-minus-optimized RMSE gain <= bootstrap SD of paired gain; NOT SD/sqrt(B)",
+  "one_SE_action": "record recommendation and alternative policy only; NEVER replace frozen first CSV or original policy",
+  "no_Test_observations_or_query_prediction_access": true,
+  "no_training": true,
+  "official_upload": false,
+  "code_sha256": {
+    "pipeline/r16_multisupport_data.py": "2a107b3a1ae84e1c07f7cbb41db359dd11b53fbcfac44de694ceb0fb7116cbbd",
+    "pipeline/training_r16_multisupport.py": "d67603c3628472ba7f8bfb59d01810d32ffef78b0e68107a84a3f01c7f3fb49b",
+    "pipeline/models_r16_multisupport.py": "a55cb165bcf999f02e4a2c3a555795cf96ba449f37f63c3ce03fd0a445647264",
+    "pipeline/models_r16_f1_preflight.py": "b1f179fa5655fc7133375b63ebf84916e6c62f8496ff94e6e5c0ee9f6ce6724f",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770",
+    "ops/audit_r16_first_ensemble.py": "7695fc8514acf477d5ee3c8750d3b30a05042bf6936f33f4ce531201315dc069",
+    "ops/r16_postaudit_metrics.py": "e6be57264bbc3cf907f0b32866c2ea80918e4a8232f410515af31084251fea42",
+    "ops/verify_r16_postcsv_audit.py": "487078023423990d7c48c8ffafcb6dbaa454dd358b154e6ccd3e4d06705ef016",
+    "ops/finalize_r16_multisupport_full.py": "754f2ccef7583d45e8e7a40d38eb3cd5b13db7009008440f020dc4ef59345c98",
+    "ops/r16_support_temporal_data.py": "1a76749e54335dc0e824a95eeca2e898c646c63fcdddf64d971293fed40b8cee",
+    "pipeline/trees_ensemble_r9.py": "365a476c7d5cc56e701ec56ab366fd0371d857755f91330644c609f97a52c2bc"
+  },
+  "source_artifact_sha256": {
+    "data/synthetic/r16_multisupport_v1/manifest.json": "cc0b59a7d18bf3d81fe60c4d764384edfd30ace4998bd596e89793a8960bb39c",
+    "reports/r16_support_temporal_r1/data/manifest.json": "1277393b88070b519c1001dcd81858a3ac64d4ce0f444a60107c2f60d075fe80"
+  }
+}

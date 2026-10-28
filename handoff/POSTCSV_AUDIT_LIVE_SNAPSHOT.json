@@ -1,0 +1,59 @@
+{
+  "snapshot_kst": "2026-10-28T16:23:04.812803+09:00",
+  "ops/r16_multisupport_full_r1/state.json": {
+    "phase": "neural",
+    "PID": 36954,
+    "child_PID": 36956,
+    "progress": {
+      "stage": "neural",
+      "regime": "D0",
+      "kind": "bg_cnn",
+      "epoch": 68,
+      "rows_seen": 45632,
+      "total_rows": 61446,
+      "optimizer_steps": 65100,
+      "elapsed_seconds": 447.4743832498789
+    },
+    "verified_recovery_receipt": "ops/r16_multisupport_resume_20261028_r1/VERIFIED.json",
+    "official_upload": false
+  },
+  "ops/r16_multisupport_fivefold_r1/state.json": {
+    "phase": "waiting_for_fold0_CSV",
+    "PID": 37128,
+    "parent": {
+      "phase": "neural",
+      "PID": 36954,
+      "child_PID": 36956,
+      "progress": {
+        "stage": "neural",
+        "regime": "D0",
+        "kind": "bg_cnn",
+        "epoch": 68,
+        "rows_seen": 45632,
+        "total_rows": 61446,
+        "optimizer_steps": 65100,
+        "elapsed_seconds": 447.4743832498789
+      },
+      "verified_recovery_receipt": "ops/r16_multisupport_resume_20261028_r1/VERIFIED.json",
+      "official_upload": false
+    },
+    "updated_kst": "2026-10-28T16:23:01.622430+09:00",
+    "official_upload": false
+  },
+  "ops/r16_first_ensemble_audit_r1/state.json": {
+    "phase": "waiting_for_first_ensemble_CSV",
+    "PID": 37129,
+    "updated_kst": "2026-10-28T16:23:01.532761+09:00",
+    "parent_progress": {
+      "stage": "neural",
+      "regime": "D0",
+      "kind": "bg_cnn",
+      "epoch": 68,
+      "rows_seen": 45632,
+      "total_rows": 61446,
+      "optimizer_steps": 65100,
+      "elapsed_seconds": 447.4743832498789
+    },
+    "training_modified": false
+  }
+}

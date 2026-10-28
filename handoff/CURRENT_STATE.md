@@ -1,3 +1,20 @@
+# 최신 갱신 2026-10-28T16:23:04.812803+09:00
+
+## 2026-10-28 16:22 KST 우선 갱신 — 이전 snapshot보다 우선
+
+- 첫 CSV 완료 뒤 사용자 지정 네 감사(score 집계/연산자 회귀/정적 입력 치환/1,000회 그룹 부트스트랩)를 별도 일회성 CPU 실행으로 연결했다. [준비 보고서](../reports/R16_POSTCSV_AUDIT_READINESS.md), [현재 상태 스냅샷](POSTCSV_AUDIT_LIVE_SNAPSHOT.json)을 먼저 읽는다. CSV 및 실제 네 감사 결과는 아직 미완료다.
+- 기존 학습 PID와 waiter가 종료돼 있었음을 발견했다. source/data/cache/checkpoint/Adam/scheduler/RNG 검증 후 61epoch 경계에서 복구했으며 62epoch 이상 실제 완료를 확인했다. 현재 D0 CNN 약67epoch(스냅샷). 기존 PID나 오래된 state를 살아 있는 학습으로 보고하지 않는다.
+- 별도 검증된 복구 도구: `ops/resume_r16_multisupport_lifecycle.py`, `ops/continue_r16_multisupport_verified.py`. 원본 frozen trainer는 수정하지 않았다. [검증 영수증](../ops/r16_multisupport_resume_20261028_r1/VERIFIED.json). 한 번 명시적으로 복구한 실행이며 재실행하면 거부한다. 또 죽었다고 기존 명령을 자동 반복하지 않는다.
+- Documents 가상환경 패키지가 dataless 파일 읽기에서 정체됐다. 기존 설치된 로컬 Python3.12/PyTorch2.14.1에서 **MPS GPU를 유지**한다. 기존 최적 체크포인트의 저장 예측 재현 오차0, CPU/MPS Adam/RNG 복원 fixture 오차0. 레시피·손실·100epoch 계약은 그대로다.
+- 현 recovery supervisor PID36954, child36956, Fold1~4 waiter37128, 사후 감사 waiter37129. 이는 snapshot PID이며 실제 command와 생존 여부를 확인한다. 중복 실행 금지.
+- Release `handoff-2026-10-28`의 model ZIP은 **이 갱신 이전 checkpoint 스냅샷**이다. 새61epoch 복구 snapshot/이후 weights가 release에 올라갔다고 주장하지 않는다. 새 학습은 canonical 경로에만 있다.
+- 공통 ln4 차감은 순위를 바꾸지 않는다. 패널별 rank는 코호트 의존 진단으로 한정한다. one-SE 권고는 기존 첫 CSV/정책을 덮어쓰지 않는다. Test 관측값/query 배열은 감사에서 읽지 않는다.
+
+
+---
+
+## 이전 스냅샷(역사 보존)
+
 # 현재 상태 — 2026-10-28T15:02:23.505861+09:00
 
 **스냅샷이며 실시간 표시가 아니다.** 원본 프로젝트를 사용할 수 있다면 다시 읽어야 한다.

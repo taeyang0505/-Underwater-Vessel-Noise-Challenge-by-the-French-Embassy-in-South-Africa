@@ -1,0 +1,167 @@
+{
+  "status": "passed",
+  "checks": [
+    "Rank invariance, fixed-CDF query-cohort independence, exact float64 ties and one-class AUC",
+    "Exclusive discordant ties, paired source-cluster bootstrap determinism and weight caps",
+    "Actual 5,160 Tree feature baseline bitwise equality and cross-site exact-mask donor restrictions",
+    "All four CPU architecture fixtures: mask/pooling parity and independent-classifier invariance",
+    "All ten completed Trees: saved local_fit IDs and targets aligned",
+    "Actual 15 Tree checkpoint pairs load and development inference parity",
+    "Read/write query exclusion and first-complete-CSV barrier"
+  ],
+  "neural_fixture_checks": {
+    "bg_cnn": {
+      "fresh_fixture_only": true,
+      "parameters": 1503282,
+      "mask_pool_forward_max_abs": 0.0,
+      "independent_classifier_static_invariant": true,
+      "production_sqrtw_contract_rejects_intervention": true
+    },
+    "fdy": {
+      "fresh_fixture_only": true,
+      "parameters": 137534,
+      "mask_pool_forward_max_abs": 0.0,
+      "independent_classifier_static_invariant": true,
+      "production_sqrtw_contract_rejects_intervention": true
+    },
+    "itransformer": {
+      "fresh_fixture_only": true,
+      "parameters": 313600,
+      "mask_pool_forward_max_abs": 0.0,
+      "independent_classifier_static_invariant": true,
+      "production_sqrtw_contract_rejects_intervention": true
+    },
+    "tfgrid_fdy_conformer": {
+      "fresh_fixture_only": true,
+      "parameters": 2572310,
+      "mask_pool_forward_max_abs": 0.0,
+      "independent_classifier_static_invariant": true,
+      "production_sqrtw_contract_rejects_intervention": true
+    }
+  },
+  "local_fit_only_development_smoke": {
+    "rows": 2400,
+    "unique_backgrounds": 400,
+    "background_groups": 10,
+    "completed_Tree_pairs": 10,
+    "stored_Tree10_probability_mean_metrics": {
+      "n": 2400,
+      "n_positive": 1920,
+      "auc": 0.96033854166667,
+      "brier_observed_prior": 0.06581559667836553,
+      "logloss_observed_prior": 0.21564976018358312,
+      "brier_class_balanced": 0.08673007481232975,
+      "logloss_class_balanced": 0.283086659277063,
+      "ece10_observed_prior": 0.039001493427806413,
+      "ece10_class_balanced": 0.08363860545762163,
+      "reliability10": [
+        {
+          "bin": 0,
+          "n": 129,
+          "weight_mass": 0.053750000000000006,
+          "mean_score": 0.054148661051151264,
+          "positive_fraction": 0.0697674418604651
+        },
+        {
+          "bin": 1,
+          "n": 132,
+          "weight_mass": 0.055,
+          "mean_score": 0.15087122285485166,
+          "positive_fraction": 0.2272727272727273
+        },
+        {
+          "bin": 2,
+          "n": 100,
+          "weight_mass": 0.04166666666666668,
+          "mean_score": 0.23709770959978216,
+          "positive_fraction": 0.21999999999999995
+        },
+        {
+          "bin": 3,
+          "n": 82,
+          "weight_mass": 0.03416666666666667,
+          "mean_score": 0.35676807100749597,
+          "positive_fraction": 0.3414634146341463
+        },
+        {
+          "bin": 4,
+          "n": 91,
+          "weight_mass": 0.037916666666666675,
+          "mean_score": 0.4464784754867747,
+          "positive_fraction": 0.47252747252747246
+        },
+        {
+          "bin": 5,
+          "n": 96,
+          "weight_mass": 0.04,
+          "mean_score": 0.5509153732257818,
+          "positive_fraction": 0.5625
+        },
+        {
+          "bin": 6,
+          "n": 87,
+          "weight_mass": 0.03625000000000002,
+          "mean_score": 0.6555698580834789,
+          "positive_fraction": 0.8620689655172409
+        },
+        {
+          "bin": 7,
+          "n": 130,
+          "weight_mass": 0.05416666666666667,
+          "mean_score": 0.7582263394246571,
+          "positive_fraction": 0.9076923076923076
+        },
+        {
+          "bin": 8,
+          "n": 181,
+          "weight_mass": 0.07541666666666669,
+          "mean_score": 0.8521451277361817,
+          "positive_fraction": 0.9668508287292814
+        },
+        {
+          "bin": 9,
+          "n": 1372,
+          "weight_mass": 0.5716666666666667,
+          "mean_score": 0.983309987511465,
+          "positive_fraction": 0.9956268221574345
+        }
+      ],
+      "score_mean": 0.7634691338910211,
+      "p50": 0.9484140330712559,
+      "ge090": 0.5716666666666668,
+      "gt098": 0.42374999999999996,
+      "float64_duplicate_count": 400,
+      "float64_tied_value_count": 80,
+      "CSV17g_duplicate_count": 400,
+      "raw_probability_exact_zero": 0,
+      "raw_probability_exact_one": 0,
+      "conditional_same_probmean_top_quartile": {
+        "n": 2400,
+        "positive": 1920,
+        "auc": 0.96033854166667
+      }
+    },
+    "other_site_exact_mask_negative_pairs": 44
+  },
+  "locked_evaluation_executed": false,
+  "Test_read": false,
+  "model_training": false,
+  "original_source_sha256_unchanged": {
+    "pipeline/r16_multisupport_data.py": "2a107b3a1ae84e1c07f7cbb41db359dd11b53fbcfac44de694ceb0fb7116cbbd",
+    "pipeline/training_r16_multisupport.py": "d67603c3628472ba7f8bfb59d01810d32ffef78b0e68107a84a3f01c7f3fb49b",
+    "pipeline/models_r16_multisupport.py": "a55cb165bcf999f02e4a2c3a555795cf96ba449f37f63c3ce03fd0a445647264",
+    "pipeline/models_r16_f1_preflight.py": "b1f179fa5655fc7133375b63ebf84916e6c62f8496ff94e6e5c0ee9f6ce6724f",
+    "pipeline/models_r9.py": "ab6bce4859d87c75aea5344a3ca65c811bea10548e13262e47b52eed38d4ae8b",
+    "pipeline/models_r16_production.py": "ff64fc2535a3a491699074d006d6b795c7b4352a9e2c35ab271fcf32c4d61ba5",
+    "pipeline/models.py": "ccb099999612cfe5b78277eb150f7857663845abde23ee189845bcc6190a2e5c",
+    "pipeline/grid_models_r5.py": "dbba465e19fb700f660692d2a1a6754d7e80fc6b22c804ba650173f5007b4502",
+    "pipeline/hybrid_models_r5.py": "ac46324d37813a6888beee410fc9466f4504fa7d53052642ad895799f4700c51",
+    "pipeline/trees_r16_production.py": "b902229ff01c76718756dd1a2b54b4cb9eb08f7fe88585ff580f344b199de4ef",
+    "pipeline/physics_features_r6_v2.py": "7940be5fabdf55f4c52d47ee51c74573dbcc2adcd1b65bab331c8a61cde3164a",
+    "pipeline/relative_grid_r6.py": "00569f033dbf29ecee416221b05451a4cf97c354321f7048e653ea96a61bb8cf",
+    "pipeline/relative_grid_r6_v2.py": "32001227d9ef2076e0b10da48666151dc75fb4d21447ea85be68e93d29e06aab",
+    "ops/r16_temporal_features.py": "9969e772416b8b73d6efa5ebccf8018d8da007ba87abfde45514d65844e0a770"
+  },
+  "parent_phase": "neural",
+  "seconds": 11.917832625098526
+}
