@@ -1,0 +1,28 @@
+{
+  "format": "r16_version2_plan_pointer_v1",
+  "plan_only": true,
+  "candidate_config": "configs/r16_pretrained_v2_candidate.json",
+  "version1_run_plan": "ops/r16_pretrained_5090_deployment_r1/launch_receipts/r16_pretrained_cuda_bf16_r1/RUN_PLAN.json",
+  "version1_backup_receipt": "ops/server_backups/r16_pretrained_5090_r1/LOCAL_VERIFICATION.json",
+  "data_manifest": "data/synthetic/r16_multisupport_v1/manifest.json",
+  "local_fit_split": "ops/r16_pretrained_masking_r1/LOCAL_FIT_SPLIT.json",
+  "reuse_families": ["dasheng_base", "timemoe"],
+  "new_family": "convnextv2_base_fcmae",
+  "version1_families": ["dasheng_base", "dinov2_small", "timemoe"],
+  "public_weight_sources": {
+    "dasheng_base": {"source": "pipeline/pretrained_audio2d_r16.py", "constant": "PUBLIC_SPECS", "key": "dasheng_base", "cache": "models/pretrained_r16/mispeech--dasheng-base"},
+    "timemoe": {"source": "pipeline/load_foundation_r5.py", "constant": "SPECS", "key": "timemoe_public", "cache": "models/pretrained_r5/Maple728--TimeMoE-200M"},
+    "convnextv2_base_fcmae": {"source": "pipeline/pretrained_convnext_v2_r16.py", "constant": "SPEC", "key": null, "cache": "models/pretrained_r16/timm--convnextv2_base.fcmae"}
+  },
+  "production_trainer": "pipeline/training_r16_version2.py",
+  "production_cli": "ops/train_r16_version2.py",
+  "production_run_plan": "ops/r16_pretrained_version2_r1/RUN_PLAN.json",
+  "production_model_directory": "models/r16_pretrained_version2_r1",
+  "production_ops_directory": "ops/r16_pretrained_version2_r1",
+  "both_task_preflight": "ops/r16_pretrained_v2_mps_r1/PREFLIGHT_BOTH_TASKS.json",
+  "execution_status": "separate_version2_trainer_prepared_explicit_training_not_launched_by_planner",
+  "automatic_training_launch": false,
+  "automatic_download": false,
+  "automatic_Test_or_report_read": false,
+  "output_directory": "ops/r16_version2"
+}

@@ -1,0 +1,52 @@
+{
+  "policy": {
+    "version": "Clean-Val-R20_gate_v1",
+    "baseline": "old_B1",
+    "axes": [
+      [
+        "all",
+        "rmse"
+      ],
+      [
+        "zero",
+        "rmse"
+      ],
+      [
+        "zero",
+        "positive_bias"
+      ],
+      [
+        "weak",
+        "rmse"
+      ],
+      [
+        "weak",
+        "positive_bias"
+      ],
+      [
+        "HF_zero",
+        "rmse"
+      ]
+    ],
+    "strict_improvement_slices": [
+      "all",
+      "zero",
+      "weak",
+      "HF_zero"
+    ],
+    "tolerance": 1e-06,
+    "HF_threshold_db": 12.0,
+    "weak_positive_upper": 0.1,
+    "negative_selection": "HF3..8k bump >=15dB AND LF<=200Hz energy fraction <=.65; source-admitted SA only",
+    "negative_fraction": 0.5,
+    "missing_empty_or_nonfinite": "reject",
+    "calibration_or_public_score_fitting": false,
+    "scope": "New Clean-Val-R20 primary diagnostic gate; no automatic alteration of frozen historical pipelines",
+    "DEFAULT_NONNEGATIVE_BIAS_FLOOR": "max(mean(pred-y),0); zero floor cannot be strictly reduced"
+  },
+  "policy_sha256": "c90f039c13eecb7470e44c5f86802c0b3adcf168f6543d7fbac4acfd2b772769",
+  "dataset": "reports/r21_clean_val_zero_training_r1/data_multisite/clean_val_r20.npz",
+  "dataset_sha256": "7929467278d0d0ccbf6af9d35018e5c10846a011148f624404ce2eeadece58dd",
+  "entrypoint": "pipeline.clean_val_gate_r20.evaluate",
+  "scope": "Only R21 diagnostic gate; archived historical policies and production model inputs stay frozen"
+}

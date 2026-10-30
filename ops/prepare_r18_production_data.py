@@ -1,0 +1,6 @@
+"""Build the immutable R18 production inputs; no Test access."""
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from pipeline.r18_production_data import main
+if __name__=='__main__':main()

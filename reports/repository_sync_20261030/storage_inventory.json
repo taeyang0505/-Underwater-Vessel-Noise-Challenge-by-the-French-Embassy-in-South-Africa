@@ -1,0 +1,7617 @@
+{
+  "measured_KST": "2026-10-30T19:52:30.160814+09:00",
+  "scope": "Regular-file payload via lstat; symlinks not followed, unique/allocated totals hardlink-deduplicated, no directory metadata. APFS clone shared extents not measured.",
+  "timing_seconds": 6.91393774934113,
+  "totals": {
+    "regular_file_paths": 106994,
+    "directories": 12412,
+    "symlinks": 5,
+    "logical_bytes": 45430063236,
+    "unique_file_bytes": 45360309446,
+    "allocated_file_bytes": 45632274432
+  },
+  "top_level": [
+    {
+      "category": "data.nosync",
+      "regular_files": 2842,
+      "logical_bytes": 12609356735,
+      "unique_file_bytes": 12539602945,
+      "allocated_bytes": 12545654784,
+      "directories": 117,
+      "symlinks": 0,
+      "logical_GiB": 11.743378578685224,
+      "allocated_GiB": 11.684051513671875
+    },
+    {
+      "category": "models",
+      "regular_files": 6401,
+      "logical_bytes": 12406339926,
+      "unique_file_bytes": 12406339926,
+      "allocated_bytes": 12420104192,
+      "directories": 995,
+      "symlinks": 0,
+      "logical_GiB": 11.554304441437125,
+      "allocated_GiB": 11.567123413085938
+    },
+    {
+      "category": "external.nosync",
+      "regular_files": 1509,
+      "logical_bytes": 9608328468,
+      "unique_file_bytes": 9608328468,
+      "allocated_bytes": 9611350016,
+      "directories": 30,
+      "symlinks": 0,
+      "logical_GiB": 8.948453206568956,
+      "allocated_GiB": 8.95126724243164
+    },
+    {
+      "category": "ops",
+      "regular_files": 2948,
+      "logical_bytes": 4098558446,
+      "unique_file_bytes": 4098558446,
+      "allocated_bytes": 4104851456,
+      "directories": 282,
+      "symlinks": 0,
+      "logical_GiB": 3.8170800041407347,
+      "allocated_GiB": 3.8229408264160156
+    },
+    {
+      "category": "reports",
+      "regular_files": 3539,
+      "logical_bytes": 2439612358,
+      "unique_file_bytes": 2439612358,
+      "allocated_bytes": 2447933440,
+      "directories": 274,
+      "symlinks": 0,
+      "logical_GiB": 2.2720660623162985,
+      "allocated_GiB": 2.279815673828125
+    },
+    {
+      "category": ".venv_r17_eda",
+      "regular_files": 88799,
+      "logical_bytes": 1931070835,
+      "unique_file_bytes": 1931070835,
+      "allocated_bytes": 2163412992,
+      "directories": 10628,
+      "symlinks": 3,
+      "logical_GiB": 1.798449861817062,
+      "allocated_GiB": 2.0148353576660156
+    },
+    {
+      "category": "delivery",
+      "regular_files": 130,
+      "logical_bytes": 1900059729,
+      "unique_file_bytes": 1900059729,
+      "allocated_bytes": 1900363776,
+      "directories": 20,
+      "symlinks": 0,
+      "logical_GiB": 1.7695685187354684,
+      "allocated_GiB": 1.7698516845703125
+    },
+    {
+      "category": "scratch",
+      "regular_files": 23,
+      "logical_bytes": 366548491,
+      "unique_file_bytes": 366548491,
+      "allocated_bytes": 366604288,
+      "directories": 5,
+      "symlinks": 0,
+      "logical_GiB": 0.34137488435953856,
+      "allocated_GiB": 0.3414268493652344
+    },
+    {
+      "category": "figures",
+      "regular_files": 41,
+      "logical_bytes": 25495117,
+      "unique_file_bytes": 25495117,
+      "allocated_bytes": 25587712,
+      "directories": 0,
+      "symlinks": 0,
+      "logical_GiB": 0.023744178004562855,
+      "allocated_GiB": 0.023830413818359375
+    },
+    {
+      "category": "reference_materials",
+      "regular_files": 54,
+      "logical_bytes": 20578227,
+      "unique_file_bytes": 20578227,
+      "allocated_bytes": 20684800,
+      "directories": 1,
+      "symlinks": 0,
+      "logical_GiB": 0.019164967350661755,
+      "allocated_GiB": 0.01926422119140625
+    },
+    {
+      "category": "eda_deep",
+      "regular_files": 39,
+      "logical_bytes": 8242161,
+      "unique_file_bytes": 8242161,
+      "allocated_bytes": 8339456,
+      "directories": 2,
+      "symlinks": 0,
+      "logical_GiB": 0.007676110602915287,
+      "allocated_GiB": 0.0077667236328125
+    },
+    {
+      "category": "submissions",
+      "regular_files": 51,
+      "logical_bytes": 6492635,
+      "unique_file_bytes": 6492635,
+      "allocated_bytes": 6602752,
+      "directories": 13,
+      "symlinks": 0,
+      "logical_GiB": 0.006046737544238567,
+      "allocated_GiB": 0.0061492919921875
+    },
+    {
+      "category": "pipeline",
+      "regular_files": 323,
+      "logical_bytes": 4948717,
+      "unique_file_bytes": 4948717,
+      "allocated_bytes": 5656576,
+      "directories": 1,
+      "symlinks": 0,
+      "logical_GiB": 0.004608851857483387,
+      "allocated_GiB": 0.005268096923828125
+    },
+    {
+      "category": "eda",
+      "regular_files": 24,
+      "logical_bytes": 1715013,
+      "unique_file_bytes": 1715013,
+      "allocated_bytes": 1761280,
+      "directories": 2,
+      "symlinks": 0,
+      "logical_GiB": 0.0015972303226590157,
+      "allocated_GiB": 0.00164031982421875
+    },
+    {
+      "category": "audit",
+      "regular_files": 80,
+      "logical_bytes": 1364520,
+      "unique_file_bytes": 1364520,
+      "allocated_bytes": 1531904,
+      "directories": 19,
+      "symlinks": 0,
+      "logical_GiB": 0.0012708082795143127,
+      "allocated_GiB": 0.00142669677734375
+    },
+    {
+      "category": "[root-files]",
+      "regular_files": 124,
+      "logical_bytes": 747918,
+      "unique_file_bytes": 747918,
+      "allocated_bytes": 1077248,
+      "directories": 21,
+      "symlinks": 2,
+      "logical_GiB": 0.0006965529173612595,
+      "allocated_GiB": 0.001003265380859375
+    },
+    {
+      "category": "outputs",
+      "regular_files": 7,
+      "logical_bytes": 194997,
+      "unique_file_bytes": 194997,
+      "allocated_bytes": 217088,
+      "directories": 0,
+      "symlinks": 0,
+      "logical_GiB": 0.00018160510808229446,
+      "allocated_GiB": 0.000202178955078125
+    },
+    {
+      "category": "__pycache__",
+      "regular_files": 11,
+      "logical_bytes": 166979,
+      "unique_file_bytes": 166979,
+      "allocated_bytes": 188416,
+      "directories": 0,
+      "symlinks": 0,
+      "logical_GiB": 0.000155511312186718,
+      "allocated_GiB": 0.00017547607421875
+    },
+    {
+      "category": "evidence",
+      "regular_files": 17,
+      "logical_bytes": 135725,
+      "unique_file_bytes": 135725,
+      "allocated_bytes": 176128,
+      "directories": 0,
+      "symlinks": 0,
+      "logical_GiB": 0.00012640375643968582,
+      "allocated_GiB": 0.000164031982421875
+    },
+    {
+      "category": "configs",
+      "regular_files": 30,
+      "logical_bytes": 97987,
+      "unique_file_bytes": 97987,
+      "allocated_bytes": 163840,
+      "directories": 0,
+      "symlinks": 0,
+      "logical_GiB": 9.12575051188469e-05,
+      "allocated_GiB": 0.000152587890625
+    },
+    {
+      "category": "__workflow__",
+      "regular_files": 2,
+      "logical_bytes": 8252,
+      "unique_file_bytes": 8252,
+      "allocated_bytes": 12288,
+      "directories": 0,
+      "symlinks": 0,
+      "logical_GiB": 7.685273885726929e-06,
+      "allocated_GiB": 1.1444091796875e-05
+    },
+    {
+      "category": "external 2",
+      "regular_files": 0,
+      "logical_bytes": 0,
+      "unique_file_bytes": 0,
+      "allocated_bytes": 0,
+      "directories": 2,
+      "symlinks": 0,
+      "logical_GiB": 0.0,
+      "allocated_GiB": 0.0
+    }
+  ],
+  "largest_50": [
+    {
+      "path": "models/pretrained_r5/mispeech--dasheng-1.2B/model.safetensors",
+      "top": "models",
+      "bytes": 4536241360,
+      "allocated_bytes": 4536242176,
+      "unique_inode": true
+    },
+    {
+      "path": "ops/r16_pretrained_5090_deployment_r1/training_bundle.tar.gz",
+      "top": "ops",
+      "bytes": 2737722512,
+      "allocated_bytes": 2737725440,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/cache/r16_multisupport_full_r1/H0/train/x.npy",
+      "top": "data.nosync",
+      "bytes": 1566873128,
+      "allocated_bytes": 1566875648,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/cache/r16_multisupport_full_r1/D0/train/x.npy",
+      "top": "data.nosync",
+      "bytes": 1566873128,
+      "allocated_bytes": 1566875648,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/cache/r16_pretrained_catboost_benchmark_r1/fold_00_D0/regression_train.npy",
+      "top": "data.nosync",
+      "bytes": 1268245568,
+      "allocated_bytes": 1268248576,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/vtuad_strict_wav_vessel.zip.part01",
+      "top": "external.nosync",
+      "bytes": 1237445900,
+      "allocated_bytes": 1237446656,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/vtuad_strict_wav_vessel.zip.part02",
+      "top": "external.nosync",
+      "bytes": 1237445900,
+      "allocated_bytes": 1237446656,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/vtuad_strict_wav_vessel.zip.part03",
+      "top": "external.nosync",
+      "bytes": 1237445899,
+      "allocated_bytes": 1237446656,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/vtuad_strict_wav_background.zip",
+      "top": "external.nosync",
+      "bytes": 926037631,
+      "allocated_bytes": 926040064,
+      "unique_inode": true
+    },
+    {
+      "path": "models/pretrained_r5/Maple728--TimeMoE-200M/model.safetensors",
+      "top": "models",
+      "bytes": 906450104,
+      "allocated_bytes": 906452992,
+      "unique_inode": true
+    },
+    {
+      "path": "models/pretrained/kumo_large_regressor.pt",
+      "top": "models",
+      "bytes": 862909259,
+      "allocated_bytes": 862912512,
+      "unique_inode": true
+    },
+    {
+      "path": "delivery/group_cv_physics_v2_r1_gpu.zip",
+      "top": "delivery",
+      "bytes": 772302839,
+      "allocated_bytes": 772304896,
+      "unique_inode": true
+    },
+    {
+      "path": "models/r16_production_feature_cache_r1/train/x.npy",
+      "top": "models",
+      "bytes": 737352128,
+      "allocated_bytes": 737353728,
+      "unique_inode": true
+    },
+    {
+      "path": "models/r16_production_feature_cache_r2/train/x.npy",
+      "top": "models",
+      "bytes": 737352128,
+      "allocated_bytes": 737353728,
+      "unique_inode": true
+    },
+    {
+      "path": "delivery/r5_gpu_runtime_r1/data.zip",
+      "top": "delivery",
+      "bytes": 532522026,
+      "allocated_bytes": 532525056,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/cache/r16_pretrained_catboost_benchmark_r1/fold_00_D0/classification_train.npy",
+      "top": "data.nosync",
+      "bytes": 499679000,
+      "allocated_bytes": 499679232,
+      "unique_inode": true
+    },
+    {
+      "path": ".venv_r17_eda/lib/python3.12/site-packages/torch/lib/libtorch_cpu.dylib",
+      "top": ".venv_r17_eda",
+      "bytes": 421820912,
+      "allocated_bytes": 421822464,
+      "unique_inode": true
+    },
+    {
+      "path": "models/pretrained_r16/timm--convnextv2_base.fcmae/model.safetensors",
+      "top": "models",
+      "bytes": 350809374,
+      "allocated_bytes": 350810112,
+      "unique_inode": true
+    },
+    {
+      "path": "models/pretrained_r16/mispeech--dasheng-base/model.safetensors",
+      "top": "models",
+      "bytes": 341807392,
+      "allocated_bytes": 341811200,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_physics_v2_r1/fold_04/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 323631280,
+      "allocated_bytes": 323633152,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_physics_v2_r1/fold_02/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 315806412,
+      "allocated_bytes": 315809792,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_physics_v2_r1/fold_01/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 314819428,
+      "allocated_bytes": 314822656,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_physics_v2_r1/fold_00/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 313979086,
+      "allocated_bytes": 313982976,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_physics_v2_r1/fold_03/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 312911569,
+      "allocated_bytes": 312913920,
+      "unique_inode": true
+    },
+    {
+      "path": "models/tabicl_cpu_context16000/fitted.pkl",
+      "top": "models",
+      "bytes": 306876035,
+      "allocated_bytes": 306876416,
+      "unique_inode": true
+    },
+    {
+      "path": "ops/r16_pretrained_5090_deployment_r1/finalization_bundle.tar.gz",
+      "top": "ops",
+      "bytes": 289297662,
+      "allocated_bytes": 289300480,
+      "unique_inode": true
+    },
+    {
+      "path": "scratch/physics_v2_precision_preflight_incomplete/fold_00/train_recipes.json",
+      "top": "scratch",
+      "bytes": 277002191,
+      "allocated_bytes": 277004288,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_physics_v2/fold_00/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 277002191,
+      "allocated_bytes": 277004288,
+      "unique_inode": true
+    },
+    {
+      "path": "models/r14_production_nn_fold0_r1/raw_cache/epoch_037.npz",
+      "top": "models",
+      "bytes": 246072796,
+      "allocated_bytes": 246075392,
+      "unique_inode": true
+    },
+    {
+      "path": "models/r14_production_nn_fold0_r1/raw_cache/epoch_038.npz",
+      "top": "models",
+      "bytes": 246072796,
+      "allocated_bytes": 246075392,
+      "unique_inode": true
+    },
+    {
+      "path": "delivery/group_cv_gpu_handoff_v1.zip",
+      "top": "delivery",
+      "bytes": 214123445,
+      "allocated_bytes": 214126592,
+      "unique_inode": true
+    },
+    {
+      "path": "delivery/gpu_handoff.zip",
+      "top": "delivery",
+      "bytes": 210352339,
+      "allocated_bytes": 210354176,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/processed/sa_windows_db.npy",
+      "top": "data.nosync",
+      "bytes": 200461628,
+      "allocated_bytes": 200462336,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/processed/sa_rows_db.npy",
+      "top": "data.nosync",
+      "bytes": 171578028,
+      "allocated_bytes": 171581440,
+      "unique_inode": true
+    },
+    {
+      "path": "delivery/r9_gpu_training_r1.tar.gz",
+      "top": "delivery",
+      "bytes": 152911680,
+      "allocated_bytes": 152911872,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/pilot_wav/7dd55c1c4009491a713ec63bc0ce0196e74af62c4127dec0a907fd6d129494a8.wav",
+      "top": "external.nosync",
+      "bytes": 134400044,
+      "allocated_bytes": 134402048,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_passage_r4_v1/fold_04/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 117159915,
+      "allocated_bytes": 117161984,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/pilot_wav/3a99812906d2f63ed612ce44be4ef0eaf7eec491c23ae12700b94facd2f1d89f.wav",
+      "top": "external.nosync",
+      "bytes": 115200044,
+      "allocated_bytes": 115204096,
+      "unique_inode": true
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2/pilot_wav/07d2d76d623fc24139be9ecd6f7d07ba31810ac19b59ef0f317e6b006916906f.wav",
+      "top": "external.nosync",
+      "bytes": 115200044,
+      "allocated_bytes": 115204096,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_passage_r4_v1/fold_02/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 114450519,
+      "allocated_bytes": 114454528,
+      "unique_inode": true
+    },
+    {
+      "path": "models/pretrained/tabicl-regressor-v2-20260212.ckpt",
+      "top": "models",
+      "bytes": 114324594,
+      "allocated_bytes": 114327552,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_passage_r4_v1/fold_01/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 114021620,
+      "allocated_bytes": 114024448,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_passage_r4_v1/fold_00/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 113924257,
+      "allocated_bytes": 113926144,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/synthetic/group_cv_passage_r4_v1/fold_03/train_recipes.json",
+      "top": "data.nosync",
+      "bytes": 113363470,
+      "allocated_bytes": 113364992,
+      "unique_inode": true
+    },
+    {
+      "path": "ops/server_backups/r16_pretrained_5090_r1/r16_pretrained_cuda_bf16_completed.zip",
+      "top": "ops",
+      "bytes": 107206492,
+      "allocated_bytes": 107208704,
+      "unique_inode": true
+    },
+    {
+      "path": "reports/r17_clean_pipeline_r1/refit/features/train_H0.npy",
+      "top": "reports",
+      "bytes": 97584128,
+      "allocated_bytes": 97587200,
+      "unique_inode": true
+    },
+    {
+      "path": "reports/r17_clean_pipeline_r1/refit/features/train_D0.npy",
+      "top": "reports",
+      "bytes": 97584128,
+      "allocated_bytes": 97587200,
+      "unique_inode": true
+    },
+    {
+      "path": "data.nosync/raw/South_African_Real_Acoustics.zip",
+      "top": "data.nosync",
+      "bytes": 94916719,
+      "allocated_bytes": 94920704,
+      "unique_inode": true
+    },
+    {
+      "path": "ops/server_backups/r9_gpu_r1/fold_00_tfgrid_fdy_conformer_completed_r1/r9_fold00_tfgrid_fdy_conformer_completed_r1.tar.gz",
+      "top": "ops",
+      "bytes": 92883428,
+      "allocated_bytes": 92884992,
+      "unique_inode": true
+    },
+    {
+      "path": "models/r16_production_feature_cache_r1/train/w.npy",
+      "top": "models",
+      "bytes": 92169128,
+      "allocated_bytes": 92172288,
+      "unique_inode": true
+    }
+  ],
+  "symlinks": [
+    {
+      "path": "external",
+      "target": "external.nosync",
+      "link_entry_bytes": 15,
+      "followed": false
+    },
+    {
+      "path": "data",
+      "target": "data.nosync",
+      "link_entry_bytes": 11,
+      "followed": false
+    },
+    {
+      "path": ".venv_r17_eda/bin/python3",
+      "target": "<external installed runtime path omitted>",
+      "link_entry_bytes": 94,
+      "followed": false,
+      "target_redacted": true
+    },
+    {
+      "path": ".venv_r17_eda/bin/python",
+      "target": "python3",
+      "link_entry_bytes": 7,
+      "followed": false
+    },
+    {
+      "path": ".venv_r17_eda/bin/python3.12",
+      "target": "python3",
+      "link_entry_bytes": 7,
+      "followed": false
+    }
+  ],
+  "errors": [],
+  "github_existing_checkout": "work/underwater-vessel-noise-handoff (sibling of project)",
+  "exclude_from_publish": [
+    "raw competition CSV/archive and source WAVs",
+    "derived synthetic NPZ/parquet without redistribution review",
+    "vendor weights/runtime/venv",
+    "credentials, operational SSH state/logs/backups",
+    "large row predictions/HTML unless explicitly curated"
+  ],
+  "notes": [
+    "data and external symlink aliases not counted twice",
+    "allocated payload is filesystem blocks, not device-exclusive APFS storage",
+    "point-in-time scan precedes these generated inventory outputs"
+  ],
+  "second_level_breakdown": [
+    {
+      "path": "data.nosync/synthetic",
+      "files": 1019,
+      "logical_bytes": 6485420669,
+      "allocated_bytes": 6417776640
+    },
+    {
+      "path": "external.nosync/vtuad_v1.3.2",
+      "files": 157,
+      "logical_bytes": 5774342416,
+      "allocated_bytes": 5774487552
+    },
+    {
+      "path": "models/pretrained_r5",
+      "files": 4124,
+      "logical_bytes": 5558750627,
+      "allocated_bytes": 5567434752
+    },
+    {
+      "path": "data.nosync/cache",
+      "files": 40,
+      "logical_bytes": 5440562869,
+      "allocated_bytes": 5440651264
+    },
+    {
+      "path": "external.nosync/hearmyship_v1",
+      "files": 1152,
+      "logical_bytes": 3323028762,
+      "allocated_bytes": 3325382656
+    },
+    {
+      "path": "ops/r16_pretrained_5090_deployment_r1",
+      "files": 38,
+      "logical_bytes": 3029421472,
+      "allocated_bytes": 3029512192
+    },
+    {
+      "path": "models/r16_production_feature_cache_r1",
+      "files": 24,
+      "logical_bytes": 999457600,
+      "allocated_bytes": 999514112
+    },
+    {
+      "path": "models/r16_production_feature_cache_r2",
+      "files": 24,
+      "logical_bytes": 999457600,
+      "allocated_bytes": 999514112
+    },
+    {
+      "path": "models/pretrained",
+      "files": 4,
+      "logical_bytes": 977234894,
+      "allocated_bytes": 977248256
+    },
+    {
+      "path": "ops/server_backups",
+      "files": 255,
+      "logical_bytes": 961670376,
+      "allocated_bytes": 962195456
+    },
+    {
+      "path": "models/pretrained_r16",
+      "files": 15,
+      "logical_bytes": 780965285,
+      "allocated_bytes": 780992512
+    },
+    {
+      "path": "models/r14_production_trees_r1",
+      "files": 118,
+      "logical_bytes": 648571821,
+      "allocated_bytes": 648835072
+    },
+    {
+      "path": "models/r14_production_nn_fold0_r1",
+      "files": 142,
+      "logical_bytes": 638045297,
+      "allocated_bytes": 638558208
+    },
+    {
+      "path": "reports/r17_clean_pipeline_r1",
+      "files": 154,
+      "logical_bytes": 620904121,
+      "allocated_bytes": 621297664
+    },
+    {
+      "path": "external.nosync/expansion_research",
+      "files": 176,
+      "logical_bytes": 457079761,
+      "allocated_bytes": 457531392
+    },
+    {
+      "path": "data.nosync/processed",
+      "files": 1680,
+      "logical_bytes": 427955992,
+      "allocated_bytes": 431603712
+    },
+    {
+      "path": "models/tabicl_cpu_context16000",
+      "files": 5,
+      "logical_bytes": 307103686,
+      "allocated_bytes": 307109888
+    },
+    {
+      "path": "reports/r17_eda_audit_20261030",
+      "files": 168,
+      "logical_bytes": 288027276,
+      "allocated_bytes": 288374784
+    },
+    {
+      "path": "models/r9_mac_trees_r2",
+      "files": 48,
+      "logical_bytes": 229801237,
+      "allocated_bytes": 229883904
+    },
+    {
+      "path": "reports/r16_cross_operator_r1",
+      "files": 44,
+      "logical_bytes": 185574095,
+      "allocated_bytes": 185655296
+    },
+    {
+      "path": "reports/r16_support_temporal_r1",
+      "files": 174,
+      "logical_bytes": 181621008,
+      "allocated_bytes": 181989376
+    },
+    {
+      "path": "reports/r11_diagnostics",
+      "files": 192,
+      "logical_bytes": 180973006,
+      "allocated_bytes": 181399552
+    },
+    {
+      "path": "models/r16_multisupport_full_r1",
+      "files": 91,
+      "logical_bytes": 172940109,
+      "allocated_bytes": 173129728
+    },
+    {
+      "path": "models/r14_tree_full_r1",
+      "files": 30,
+      "logical_bytes": 164457168,
+      "allocated_bytes": 164528128
+    },
+    {
+      "path": "models/r6_fixed100_v1",
+      "files": 566,
+      "logical_bytes": 160555999,
+      "allocated_bytes": 161615872
+    },
+    {
+      "path": "models/r16_pretrained_cuda_bf16_r1",
+      "files": 124,
+      "logical_bytes": 129564741,
+      "allocated_bytes": 129855488
+    },
+    {
+      "path": "models/r16_catboost_peft_cpu8_r1",
+      "files": 131,
+      "logical_bytes": 98728572,
+      "allocated_bytes": 98975744
+    },
+    {
+      "path": "data.nosync/raw",
+      "files": 4,
+      "logical_bytes": 97806656,
+      "allocated_bytes": 97816576
+    },
+    {
+      "path": "data.nosync/extracted",
+      "files": 15,
+      "logical_bytes": 96002006,
+      "allocated_bytes": 96022528
+    },
+    {
+      "path": "reports/r13_cpu_correction_r1",
+      "files": 22,
+      "logical_bytes": 92509119,
+      "allocated_bytes": 92561408
+    },
+    {
+      "path": "reports/r15_forward_prototype_r1",
+      "files": 13,
+      "logical_bytes": 92119061,
+      "allocated_bytes": 92147712
+    },
+    {
+      "path": "models/r18_production_r1",
+      "files": 90,
+      "logical_bytes": 86757915,
+      "allocated_bytes": 86949888
+    },
+    {
+      "path": "models/tabicl_cpu_context1024",
+      "files": 4,
+      "logical_bytes": 84059201,
+      "allocated_bytes": 84066304
+    },
+    {
+      "path": "reports/r10_diagnostics",
+      "files": 241,
+      "logical_bytes": 80978818,
+      "allocated_bytes": 81502208
+    },
+    {
+      "path": "reports/r16_production_data_preflight_r1",
+      "files": 76,
+      "logical_bytes": 76533169,
+      "allocated_bytes": 76673024
+    },
+    {
+      "path": "data.nosync/versions",
+      "files": 84,
+      "logical_bytes": 61608543,
+      "allocated_bytes": 61784064
+    },
+    {
+      "path": "reports/r18_public_gap_audit_r1",
+      "files": 110,
+      "logical_bytes": 60056490,
+      "allocated_bytes": 60530688
+    },
+    {
+      "path": "reports/r16_clean_support_r1",
+      "files": 33,
+      "logical_bytes": 60045168,
+      "allocated_bytes": 60153856
+    },
+    {
+      "path": "models/r16_production_nn_fold0_r1",
+      "files": 11,
+      "logical_bytes": 56458050,
+      "allocated_bytes": 56487936
+    },
+    {
+      "path": "ops/r16_multisupport_resume_20261028_r1",
+      "files": 18,
+      "logical_bytes": 54572495,
+      "allocated_bytes": 54616064
+    },
+    {
+      "path": "reports/r15_band_comparison_r1",
+      "files": 17,
+      "logical_bytes": 54241280,
+      "allocated_bytes": 54284288
+    },
+    {
+      "path": "reports/r14_anchor_cpu_r1",
+      "files": 20,
+      "logical_bytes": 52706204,
+      "allocated_bytes": 52740096
+    },
+    {
+      "path": "external.nosync/noaa_sanctsound_holdout",
+      "files": 12,
+      "logical_bytes": 48180874,
+      "allocated_bytes": 48209920
+    },
+    {
+      "path": "reports/r20_integrated_cpu_diagnostics_r1",
+      "files": 172,
+      "logical_bytes": 40622191,
+      "allocated_bytes": 41009152
+    },
+    {
+      "path": "models/r9_mac_trees_r1",
+      "files": 7,
+      "logical_bytes": 40536291,
+      "allocated_bytes": 40554496
+    },
+    {
+      "path": "models/r12_compact_trees_v1",
+      "files": 63,
+      "logical_bytes": 36121488,
+      "allocated_bytes": 36270080
+    },
+    {
+      "path": "reports/r15_forward_prototype_r1_FAILED_B_dtype",
+      "files": 8,
+      "logical_bytes": 35447991,
+      "allocated_bytes": 35471360
+    },
+    {
+      "path": "reports/r13_dynamic_mix_r1",
+      "files": 24,
+      "logical_bytes": 33858236,
+      "allocated_bytes": 33906688
+    },
+    {
+      "path": "models/r16_production_trees_r1",
+      "files": 54,
+      "logical_bytes": 33585972,
+      "allocated_bytes": 33714176
+    },
+    {
+      "path": "reports/r16_target_matched_support_r1",
+      "files": 29,
+      "logical_bytes": 30204604,
+      "allocated_bytes": 30265344
+    },
+    {
+      "path": "reports/r19_multislice_law_transfer_r1",
+      "files": 114,
+      "logical_bytes": 29749088,
+      "allocated_bytes": 30011392
+    },
+    {
+      "path": "ops/r14_production_runtime_py",
+      "files": 1628,
+      "logical_bytes": 28552986,
+      "allocated_bytes": 32014336
+    },
+    {
+      "path": "reports/R13_FULL_SOURCE_PREFLIGHT_v2",
+      "files": 17,
+      "logical_bytes": 26547865,
+      "allocated_bytes": 26578944
+    },
+    {
+      "path": "models/r6_cpu_guardrails_v2",
+      "files": 105,
+      "logical_bytes": 24945217,
+      "allocated_bytes": 25120768
+    },
+    {
+      "path": "reports/r12_mask_matched_evaluation_r2",
+      "files": 22,
+      "logical_bytes": 19985798,
+      "allocated_bytes": 20033536
+    },
+    {
+      "path": "reports/r15_score_duration_r3",
+      "files": 20,
+      "logical_bytes": 19587021,
+      "allocated_bytes": 19640320
+    },
+    {
+      "path": "reports/r15_score_duration_r1",
+      "files": 20,
+      "logical_bytes": 19565239,
+      "allocated_bytes": 19615744
+    },
+    {
+      "path": "reports/r15_score_duration_r2",
+      "files": 19,
+      "logical_bytes": 19550021,
+      "allocated_bytes": 19599360
+    },
+    {
+      "path": "models/r13_compact_trees_v1",
+      "files": 33,
+      "logical_bytes": 18484489,
+      "allocated_bytes": 18554880
+    },
+    {
+      "path": "models/r18_regression_audit_r1",
+      "files": 24,
+      "logical_bytes": 18174451,
+      "allocated_bytes": 18235392
+    },
+    {
+      "path": "models/r17_clean_classifier_r1",
+      "files": 60,
+      "logical_bytes": 17984766,
+      "allocated_bytes": 18141184
+    },
+    {
+      "path": "reports/r18_production_r1",
+      "files": 200,
+      "logical_bytes": 14617990,
+      "allocated_bytes": 15097856
+    },
+    {
+      "path": "models/fullsources_cpu_a6d7f3a5_seed42",
+      "files": 31,
+      "logical_bytes": 14396591,
+      "allocated_bytes": 14467072
+    },
+    {
+      "path": "reports/DATA_EDA_PREPROCESSING_R9_REPORT_assets",
+      "files": 100,
+      "logical_bytes": 14338277,
+      "allocated_bytes": 14557184
+    },
+    {
+      "path": "models/r14_anchor_cpu_r1",
+      "files": 16,
+      "logical_bytes": 14038603,
+      "allocated_bytes": 14069760
+    },
+    {
+      "path": "models/r7_fixed100_transfer_v1",
+      "files": 33,
+      "logical_bytes": 13622534,
+      "allocated_bytes": 13692928
+    },
+    {
+      "path": "models/r12_cpu_cnn_r1",
+      "files": 58,
+      "logical_bytes": 12423893,
+      "allocated_bytes": 12582912
+    },
+    {
+      "path": "reports/r16_r11_stress_r1",
+      "files": 88,
+      "logical_bytes": 10224030,
+      "allocated_bytes": 10399744
+    },
+    {
+      "path": "reports/DATA_EDA_PREPROCESSING_R9_REPORT.pdf",
+      "files": 1,
+      "logical_bytes": 9751888,
+      "allocated_bytes": 9752576
+    },
+    {
+      "path": "models/r18_classifier_audit_r1",
+      "files": 24,
+      "logical_bytes": 8640934,
+      "allocated_bytes": 8708096
+    },
+    {
+      "path": "models/r16_support_temporal_r1",
+      "files": 47,
+      "logical_bytes": 7923439,
+      "allocated_bytes": 8032256
+    },
+    {
+      "path": "models/r13_dynamic_mix_r2",
+      "files": 24,
+      "logical_bytes": 7339929,
+      "allocated_bytes": 7405568
+    },
+    {
+      "path": "models/r12_mask_matched_control_r2",
+      "files": 16,
+      "logical_bytes": 7187442,
+      "allocated_bytes": 7229440
+    },
+    {
+      "path": "ops/r2_progress",
+      "files": 85,
+      "logical_bytes": 7004644,
+      "allocated_bytes": 7217152
+    },
+    {
+      "path": "reports/R7_R5_SUBMISSION_PATH_AUDIT_evidence",
+      "files": 4,
+      "logical_bytes": 6305666,
+      "allocated_bytes": 6311936
+    },
+    {
+      "path": "reports/r16_injection_vs_saved_test_r2",
+      "files": 12,
+      "logical_bytes": 6263784,
+      "allocated_bytes": 6291456
+    },
+    {
+      "path": "external.nosync/noaa_extension_survey",
+      "files": 12,
+      "logical_bytes": 5696655,
+      "allocated_bytes": 5738496
+    },
+    {
+      "path": "reports/r15_static_channel_audit_r1",
+      "files": 11,
+      "logical_bytes": 5349082,
+      "allocated_bytes": 5373952
+    },
+    {
+      "path": "models/r16_v1_fourway_r2",
+      "files": 15,
+      "logical_bytes": 4989223,
+      "allocated_bytes": 5025792
+    },
+    {
+      "path": "models/pilot_hms150_96a9d93a_seed42",
+      "files": 18,
+      "logical_bytes": 4946611,
+      "allocated_bytes": 4993024
+    },
+    {
+      "path": "reports/R2_FULL_PIPELINE_REPORT_bundle",
+      "files": 98,
+      "logical_bytes": 4881204,
+      "allocated_bytes": 5115904
+    },
+    {
+      "path": "reports/r16_locked_comparison_r1",
+      "files": 55,
+      "logical_bytes": 4503916,
+      "allocated_bytes": 4677632
+    },
+    {
+      "path": "models/r16_clean_support_r1",
+      "files": 25,
+      "logical_bytes": 4406055,
+      "allocated_bytes": 4468736
+    },
+    {
+      "path": "reports/R5_CNN_MAC_INFERENCE_PROFILE",
+      "files": 1,
+      "logical_bytes": 4157131,
+      "allocated_bytes": 4157440
+    },
+    {
+      "path": "models/r16_clean_pilot_r1",
+      "files": 22,
+      "logical_bytes": 4155136,
+      "allocated_bytes": 4198400
+    },
+    {
+      "path": "models/r16_mac_masking_control_r3",
+      "files": 24,
+      "logical_bytes": 4127120,
+      "allocated_bytes": 4177920
+    },
+    {
+      "path": "models/r13_cpu_cnn_r1",
+      "files": 20,
+      "logical_bytes": 4124968,
+      "allocated_bytes": 4182016
+    },
+    {
+      "path": "reports/r16_frozen_evaluation_r1",
+      "files": 33,
+      "logical_bytes": 4111302,
+      "allocated_bytes": 4182016
+    },
+    {
+      "path": "reports/r16_review_r1",
+      "files": 8,
+      "logical_bytes": 3837912,
+      "allocated_bytes": 3854336
+    },
+    {
+      "path": "ops/r16_5090_benchmark_r1",
+      "files": 17,
+      "logical_bytes": 3811688,
+      "allocated_bytes": 3846144
+    },
+    {
+      "path": "ops/__pycache__",
+      "files": 143,
+      "logical_bytes": 3614904,
+      "allocated_bytes": 3919872
+    },
+    {
+      "path": "reports/r14_decoupled_v1",
+      "files": 30,
+      "logical_bytes": 3069883,
+      "allocated_bytes": 3145728
+    },
+    {
+      "path": "models/weak_teacher",
+      "files": 2,
+      "logical_bytes": 3035669,
+      "allocated_bytes": 3039232
+    },
+    {
+      "path": "reports/r12_cpu_ablation_r1",
+      "files": 22,
+      "logical_bytes": 2924525,
+      "allocated_bytes": 2981888
+    },
+    {
+      "path": "reports/r21_clean_val_zero_training_r1",
+      "files": 88,
+      "logical_bytes": 2820948,
+      "allocated_bytes": 3051520
+    },
+    {
+      "path": "reports/r15_descriptive_audit_r1",
+      "files": 17,
+      "logical_bytes": 2812774,
+      "allocated_bytes": 2842624
+    },
+    {
+      "path": "models/r16_target_matched_support_r1",
+      "files": 14,
+      "logical_bytes": 2587093,
+      "allocated_bytes": 2621440
+    },
+    {
+      "path": "reports/r15_review_r1",
+      "files": 14,
+      "logical_bytes": 2100276,
+      "allocated_bytes": 2134016
+    },
+    {
+      "path": "reports/r13_safety_feasibility_r1",
+      "files": 23,
+      "logical_bytes": 2081831,
+      "allocated_bytes": 2113536
+    },
+    {
+      "path": "reports/R5_OFFICIAL_STARTER_TRAIN_INNER",
+      "files": 23,
+      "logical_bytes": 1931239,
+      "allocated_bytes": 1978368
+    },
+    {
+      "path": "reports/r15_member_audit_r1",
+      "files": 10,
+      "logical_bytes": 1921374,
+      "allocated_bytes": 1941504
+    },
+    {
+      "path": "reports/r14_fit_calibration_v1",
+      "files": 27,
+      "logical_bytes": 1811023,
+      "allocated_bytes": 1871872
+    },
+    {
+      "path": "reports/R2_FULL_PIPELINE_REPORT_bundle.zip",
+      "files": 1,
+      "logical_bytes": 1711902,
+      "allocated_bytes": 1712128
+    },
+    {
+      "path": "reports/r2_actual_curves",
+      "files": 14,
+      "logical_bytes": 1684111,
+      "allocated_bytes": 1708032
+    },
+    {
+      "path": "models/r18_background_audit_r1",
+      "files": 2,
+      "logical_bytes": 1583106,
+      "allocated_bytes": 1589248
+    },
+    {
+      "path": "models/r13_dynamic_mix_r1",
+      "files": 13,
+      "logical_bytes": 1462306,
+      "allocated_bytes": 1499136
+    },
+    {
+      "path": "reports/r16_v1_fourway_r2",
+      "files": 3,
+      "logical_bytes": 1324222,
+      "allocated_bytes": 1331200
+    },
+    {
+      "path": "reports/R8_SA_EDA_EVIDENCE.json",
+      "files": 1,
+      "logical_bytes": 1272781,
+      "allocated_bytes": 1273856
+    },
+    {
+      "path": "reports/r13_score_snapshot_r1",
+      "files": 23,
+      "logical_bytes": 1070065,
+      "allocated_bytes": 1130496
+    },
+    {
+      "path": "reports/dataset_figures",
+      "files": 8,
+      "logical_bytes": 1035999,
+      "allocated_bytes": 1056768
+    },
+    {
+      "path": "reports/r14_tree_full_r1",
+      "files": 22,
+      "logical_bytes": 983436,
+      "allocated_bytes": 1032192
+    },
+    {
+      "path": "reports/R5_TRAIN_MEAN_BASELINE_TRAIN_INNER",
+      "files": 12,
+      "logical_bytes": 923724,
+      "allocated_bytes": 950272
+    },
+    {
+      "path": "reports/r18_fundamental_audit_r1",
+      "files": 73,
+      "logical_bytes": 923092,
+      "allocated_bytes": 1126400
+    },
+    {
+      "path": "reports/r16_pretrained_cuda_bf16_r1",
+      "files": 14,
+      "logical_bytes": 895856,
+      "allocated_bytes": 933888
+    },
+    {
+      "path": "reports/r16_mps_speed_audit_r1",
+      "files": 4,
+      "logical_bytes": 865237,
+      "allocated_bytes": 876544
+    },
+    {
+      "path": "models/ensemble_foundation",
+      "files": 7,
+      "logical_bytes": 818188,
+      "allocated_bytes": 831488
+    },
+    {
+      "path": "reports/r14_fulltree_decoupled_v1",
+      "files": 31,
+      "logical_bytes": 736288,
+      "allocated_bytes": 802816
+    },
+    {
+      "path": "ops/r16_pretrained_masking_r1",
+      "files": 25,
+      "logical_bytes": 668672,
+      "allocated_bytes": 733184
+    },
+    {
+      "path": "reports/r6_guardrails_training_examples.png",
+      "files": 1,
+      "logical_bytes": 573648,
+      "allocated_bytes": 577536
+    },
+    {
+      "path": "models/r16_pretrained_ft_r1",
+      "files": 15,
+      "logical_bytes": 566864,
+      "allocated_bytes": 593920
+    },
+    {
+      "path": "reports/r6_guardrails_v2_figures",
+      "files": 3,
+      "logical_bytes": 542935,
+      "allocated_bytes": 548864
+    },
+    {
+      "path": "reports/r6_fixed100_figures",
+      "files": 3,
+      "logical_bytes": 539750,
+      "allocated_bytes": 544768
+    },
+    {
+      "path": "reports/r12_figures",
+      "files": 2,
+      "logical_bytes": 510366,
+      "allocated_bytes": 516096
+    },
+    {
+      "path": "reports/repository_sync_20261030",
+      "files": 4,
+      "logical_bytes": 495066,
+      "allocated_bytes": 503808
+    },
+    {
+      "path": "reports/r14_production_r2",
+      "files": 19,
+      "logical_bytes": 472586,
+      "allocated_bytes": 520192
+    },
+    {
+      "path": "reports/r16_production_tree_evaluation_r1",
+      "files": 16,
+      "logical_bytes": 446920,
+      "allocated_bytes": 479232
+    },
+    {
+      "path": "ops/r16_pretrained_cuda_bf16_r1",
+      "files": 30,
+      "logical_bytes": 430778,
+      "allocated_bytes": 495616
+    },
+    {
+      "path": "ops/r16_catboost_peft_cpu8_r1",
+      "files": 20,
+      "logical_bytes": 363368,
+      "allocated_bytes": 401408
+    },
+    {
+      "path": "ops/gpu_preflight_r5_r1",
+      "files": 44,
+      "logical_bytes": 360548,
+      "allocated_bytes": 454656
+    },
+    {
+      "path": "reports/R5_PHYSICAL_ROBUSTNESS_AUDIT.npz",
+      "files": 1,
+      "logical_bytes": 336166,
+      "allocated_bytes": 339968
+    },
+    {
+      "path": "ops/r16_first_ensemble_audit_r1",
+      "files": 11,
+      "logical_bytes": 331373,
+      "allocated_bytes": 356352
+    },
+    {
+      "path": "reports/r16_problem_gate_r1",
+      "files": 14,
+      "logical_bytes": 330282,
+      "allocated_bytes": 356352
+    },
+    {
+      "path": "reports/DATA_EDA_PREPROCESSING_R9_REPORT.html",
+      "files": 1,
+      "logical_bytes": 327967,
+      "allocated_bytes": 331776
+    },
+    {
+      "path": "reports/r13_figures",
+      "files": 2,
+      "logical_bytes": 327607,
+      "allocated_bytes": 331776
+    },
+    {
+      "path": "ops/r14_production_nn_fold0_r1.log",
+      "files": 1,
+      "logical_bytes": 322625,
+      "allocated_bytes": 323584
+    },
+    {
+      "path": "models/r16_catboost_peft_cpu8_smoke_r2",
+      "files": 13,
+      "logical_bytes": 303696,
+      "allocated_bytes": 331776
+    },
+    {
+      "path": "ops/r16_mac_masking_control_r1",
+      "files": 7,
+      "logical_bytes": 289352,
+      "allocated_bytes": 303104
+    },
+    {
+      "path": "reports/r4_visual_review",
+      "files": 4,
+      "logical_bytes": 272240,
+      "allocated_bytes": 282624
+    },
+    {
+      "path": "reports/R12_TREE_NUMERIC_FIXTURE_DEV",
+      "files": 17,
+      "logical_bytes": 267712,
+      "allocated_bytes": 299008
+    },
+    {
+      "path": "reports/R12_TREE_EXECUTOR_FIXTURE",
+      "files": 17,
+      "logical_bytes": 262903,
+      "allocated_bytes": 299008
+    },
+    {
+      "path": "reports/R12_TREE_NUMERIC_FIXTURE_FINAL_V2",
+      "files": 17,
+      "logical_bytes": 262796,
+      "allocated_bytes": 299008
+    },
+    {
+      "path": "reports/R12_TREE_NUMERIC_FIXTURE_FINAL",
+      "files": 17,
+      "logical_bytes": 259478,
+      "allocated_bytes": 286720
+    },
+    {
+      "path": "models/ensemble_shrinkage_r3",
+      "files": 10,
+      "logical_bytes": 243887,
+      "allocated_bytes": 274432
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.json",
+      "files": 1,
+      "logical_bytes": 239205,
+      "allocated_bytes": 241664
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL.json",
+      "files": 1,
+      "logical_bytes": 239203,
+      "allocated_bytes": 241664
+    },
+    {
+      "path": "reports/r16_pretrained_ft_r1",
+      "files": 31,
+      "logical_bytes": 237523,
+      "allocated_bytes": 303104
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 237086,
+      "allocated_bytes": 237568
+    },
+    {
+      "path": "ops/r14_production_nn_launch_r1.json",
+      "files": 1,
+      "logical_bytes": 233901,
+      "allocated_bytes": 237568
+    },
+    {
+      "path": "reports/DATA_EDA_PREPROCESSING_R9_REPORT.md",
+      "files": 1,
+      "logical_bytes": 233839,
+      "allocated_bytes": 237568
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL_V2.plan.json",
+      "files": 1,
+      "logical_bytes": 233462,
+      "allocated_bytes": 233472
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_PREFLIGHT_FINAL.plan.json",
+      "files": 1,
+      "logical_bytes": 233462,
+      "allocated_bytes": 233472
+    },
+    {
+      "path": "reports/r15_forward_review_r1",
+      "files": 6,
+      "logical_bytes": 223691,
+      "allocated_bytes": 233472
+    },
+    {
+      "path": "models/r14_production_outputs_r1",
+      "files": 15,
+      "logical_bytes": 198405,
+      "allocated_bytes": 237568
+    },
+    {
+      "path": "reports/data_quality_boundary_flags.parquet",
+      "files": 1,
+      "logical_bytes": 187690,
+      "allocated_bytes": 188416
+    },
+    {
+      "path": "reports/R13_EVALUATION_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 187682,
+      "allocated_bytes": 188416
+    },
+    {
+      "path": "reports/R5_CNN_PILOT_CALIBRATION",
+      "files": 5,
+      "logical_bytes": 187019,
+      "allocated_bytes": 204800
+    },
+    {
+      "path": "models/r7_small_model_controls_v1",
+      "files": 13,
+      "logical_bytes": 178316,
+      "allocated_bytes": 204800
+    },
+    {
+      "path": "reports/R5_CNN_STARTER_PAIRED_INNER",
+      "files": 3,
+      "logical_bytes": 170787,
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "ops/r16_mac_masking_control_r3",
+      "files": 13,
+      "logical_bytes": 159866,
+      "allocated_bytes": 184320
+    },
+    {
+      "path": "ops/r16_multisupport_full_r1",
+      "files": 9,
+      "logical_bytes": 157173,
+      "allocated_bytes": 172032
+    },
+    {
+      "path": "reports/data_quality_waveform_qc.parquet",
+      "files": 1,
+      "logical_bytes": 153712,
+      "allocated_bytes": 155648
+    },
+    {
+      "path": "reports/R7_FIXED100_TRANSFER_RESULTS.json",
+      "files": 1,
+      "logical_bytes": 152754,
+      "allocated_bytes": 155648
+    },
+    {
+      "path": "reports/r9_live_curves",
+      "files": 2,
+      "logical_bytes": 152319,
+      "allocated_bytes": 155648
+    },
+    {
+      "path": "reports/r6_guardrails_training_examples.svg",
+      "files": 1,
+      "logical_bytes": 150133,
+      "allocated_bytes": 151552
+    },
+    {
+      "path": "reports/R4_DATA_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 148863,
+      "allocated_bytes": 151552
+    },
+    {
+      "path": "reports/r7_review_figures",
+      "files": 1,
+      "logical_bytes": 148731,
+      "allocated_bytes": 151552
+    },
+    {
+      "path": "reports/r5_issue_figures",
+      "files": 2,
+      "logical_bytes": 142011,
+      "allocated_bytes": 147456
+    },
+    {
+      "path": "ops/r18_production_r1",
+      "files": 35,
+      "logical_bytes": 125704,
+      "allocated_bytes": 212992
+    },
+    {
+      "path": "models/r12_mask_matched_control_r1",
+      "files": 6,
+      "logical_bytes": 124904,
+      "allocated_bytes": 143360
+    },
+    {
+      "path": "reports/DATA_EDA_PREPROCESSING_R9_REPORT_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 117848,
+      "allocated_bytes": 118784
+    },
+    {
+      "path": "reports/R6_FIXED100_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 113359,
+      "allocated_bytes": 114688
+    },
+    {
+      "path": "reports/data_quality_waveform_qc.json",
+      "files": 1,
+      "logical_bytes": 112772,
+      "allocated_bytes": 114688
+    },
+    {
+      "path": "ops/r16_pretrained_ft_r1",
+      "files": 34,
+      "logical_bytes": 110082,
+      "allocated_bytes": 184320
+    },
+    {
+      "path": "reports/R6_FIXED100_TRAINING_REPORT.receipt.json",
+      "files": 1,
+      "logical_bytes": 109730,
+      "allocated_bytes": 110592
+    },
+    {
+      "path": "reports/R14_PRODUCTION_14_FEATURE_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 109473,
+      "allocated_bytes": 110592
+    },
+    {
+      "path": "reports/r12_spectral_probe",
+      "files": 7,
+      "logical_bytes": 109262,
+      "allocated_bytes": 122880
+    },
+    {
+      "path": "reports/R6_FIXED100_RESULTS.json",
+      "files": 1,
+      "logical_bytes": 106293,
+      "allocated_bytes": 106496
+    },
+    {
+      "path": "ops/r3_reference_coverage_facts.json",
+      "files": 1,
+      "logical_bytes": 104841,
+      "allocated_bytes": 106496
+    },
+    {
+      "path": "reports/R14_FULL_TREE_RESULTS.json",
+      "files": 1,
+      "logical_bytes": 104192,
+      "allocated_bytes": 106496
+    },
+    {
+      "path": "ops/r16_mac_masking_control_r2",
+      "files": 7,
+      "logical_bytes": 101769,
+      "allocated_bytes": 122880
+    },
+    {
+      "path": "reports/r16_multisupport_r1",
+      "files": 9,
+      "logical_bytes": 94860,
+      "allocated_bytes": 110592
+    },
+    {
+      "path": "reports/R6V2_CPU_ABLATION_RESULTS.json",
+      "files": 1,
+      "logical_bytes": 94635,
+      "allocated_bytes": 98304
+    },
+    {
+      "path": "models/r14_production_outputs_r2",
+      "files": 4,
+      "logical_bytes": 94624,
+      "allocated_bytes": 102400
+    },
+    {
+      "path": "ops/r14_runtime_py",
+      "files": 3,
+      "logical_bytes": 90780,
+      "allocated_bytes": 98304
+    },
+    {
+      "path": "ops/r14_outputs_synthetic_only_598hzuuq",
+      "files": 2,
+      "logical_bytes": 89656,
+      "allocated_bytes": 94208
+    },
+    {
+      "path": "reports/R8_FEATURE_PIPELINE_EVIDENCE.json",
+      "files": 1,
+      "logical_bytes": 85826,
+      "allocated_bytes": 86016
+    },
+    {
+      "path": "reports/r16_multisupport_full_preflight_r1",
+      "files": 5,
+      "logical_bytes": 84209,
+      "allocated_bytes": 90112
+    },
+    {
+      "path": "reports/R14_TORCH_FRONTEND",
+      "files": 6,
+      "logical_bytes": 82012,
+      "allocated_bytes": 98304
+    },
+    {
+      "path": "ops/training_monitor_snapshots",
+      "files": 5,
+      "logical_bytes": 78627,
+      "allocated_bytes": 90112
+    },
+    {
+      "path": "reports/R13_DELIVERY_MANIFEST.json",
+      "files": 1,
+      "logical_bytes": 77481,
+      "allocated_bytes": 77824
+    },
+    {
+      "path": "reports/R12_TRAIN_MASK_PROVENANCE_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 74100,
+      "allocated_bytes": 77824
+    },
+    {
+      "path": "ops/build_r8_data_report_pdf.py",
+      "files": 1,
+      "logical_bytes": 70800,
+      "allocated_bytes": 73728
+    },
+    {
+      "path": "reports/.DS_Store",
+      "files": 1,
+      "logical_bytes": 69636,
+      "allocated_bytes": 73728
+    },
+    {
+      "path": "models/kumo_large_cpu_context4096",
+      "files": 4,
+      "logical_bytes": 61970,
+      "allocated_bytes": 65536
+    },
+    {
+      "path": "reports/R8_EXTERNAL_DATA_EVIDENCE.json",
+      "files": 1,
+      "logical_bytes": 61082,
+      "allocated_bytes": 61440
+    },
+    {
+      "path": "reports/R9_VISUAL_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 58433,
+      "allocated_bytes": 61440
+    },
+    {
+      "path": "reports/R5_NEURAL_RUNNER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 57954,
+      "allocated_bytes": 61440
+    },
+    {
+      "path": "reports/DATA_EDA_PREPROCESSING_R9_REPORT_LINK_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 53587,
+      "allocated_bytes": 57344
+    },
+    {
+      "path": "reports/R5_PHYSICAL_ROBUSTNESS_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 52773,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "reports/R7_SMALL_MODEL_CONTROLS_RESULTS.json",
+      "files": 1,
+      "logical_bytes": 52720,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "reports/r16_pretrained_masking_r1",
+      "files": 8,
+      "logical_bytes": 52064,
+      "allocated_bytes": 77824
+    },
+    {
+      "path": "reports/R13_DATASET_CONSTRUCTION.json",
+      "files": 1,
+      "logical_bytes": 51952,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "reports/r16_independent_qa_r1",
+      "files": 8,
+      "logical_bytes": 50660,
+      "allocated_bytes": 69632
+    },
+    {
+      "path": "reports/R5_CURRENT_ISSUES_AND_GAP_REPORT.md",
+      "files": 1,
+      "logical_bytes": 49608,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "ops/background_prior_fold0_train_seed42_k32.json",
+      "files": 1,
+      "logical_bytes": 48198,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "ops/r18_public_background_forensics.py",
+      "files": 1,
+      "logical_bytes": 47561,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "ops/handoff_r5_controller.py",
+      "files": 1,
+      "logical_bytes": 47078,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "reports/report.html",
+      "files": 1,
+      "logical_bytes": 46939,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "reports/report_before_group_cv.html",
+      "files": 1,
+      "logical_bytes": 46493,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "ops/build_r6_fixed100_report.py",
+      "files": 1,
+      "logical_bytes": 46049,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "reports/R5_OUTLIER_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 45837,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "reports/R6_GUARDRAILS_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 45762,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "reports/R14_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 44310,
+      "allocated_bytes": 45056
+    },
+    {
+      "path": "ops/r16_version2",
+      "files": 1,
+      "logical_bytes": 44288,
+      "allocated_bytes": 45056
+    },
+    {
+      "path": "ops/runner_r5_mac.py",
+      "files": 1,
+      "logical_bytes": 42800,
+      "allocated_bytes": 45056
+    },
+    {
+      "path": "reports/R16_CURRENT_TRAINING_PIPELINE_FOR_ARGON_20261029.md",
+      "files": 1,
+      "logical_bytes": 42479,
+      "allocated_bytes": 45056
+    },
+    {
+      "path": "ops/pre_fp32_patch",
+      "files": 5,
+      "logical_bytes": 42086,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "reports/R12_DATASET_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 40812,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/r18_public_starter_forensics.py",
+      "files": 1,
+      "logical_bytes": 40568,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "reports/R14_MPS_BENCHMARK_r2",
+      "files": 4,
+      "logical_bytes": 40499,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "ops/build_r6_guardrails_report.py",
+      "files": 1,
+      "logical_bytes": 39957,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "reports/R12_DELIVERY_MANIFEST.json",
+      "files": 1,
+      "logical_bytes": 39549,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/server_preflight",
+      "files": 8,
+      "logical_bytes": 39208,
+      "allocated_bytes": 57344
+    },
+    {
+      "path": "reports/R10_DIAGNOSTICS_MANIFEST.json",
+      "files": 1,
+      "logical_bytes": 38234,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/r14_tree_full_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 37872,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/train_r12_lightgbm.py",
+      "files": 1,
+      "logical_bytes": 37761,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/verify_r12_evaluation_v2.py",
+      "files": 1,
+      "logical_bytes": 37713,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/mac_r5_worker.py",
+      "files": 1,
+      "logical_bytes": 37414,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/r12_cnn_training_r1.log",
+      "files": 1,
+      "logical_bytes": 37199,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/r18_public_prediction_forensics.py",
+      "files": 1,
+      "logical_bytes": 36772,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/evaluate_r12_ablation.py",
+      "files": 1,
+      "logical_bytes": 35992,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "reports/R6V2_DATASET_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 35694,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/run_r16_mac_masking_control_r3.py",
+      "files": 1,
+      "logical_bytes": 35331,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/train_r13_dynamic_mix.py",
+      "files": 1,
+      "logical_bytes": 35151,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/r16_pretrained_5090_remote_state.json",
+      "files": 1,
+      "logical_bytes": 33988,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "reports/R14_PRODUCTION_TREE_COMPLETION_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 33507,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/run_r16_mac_masking_control.py",
+      "files": 1,
+      "logical_bytes": 33290,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/r16_support_temporal_training_r1.log",
+      "files": 1,
+      "logical_bytes": 32988,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/r1_inner_error_diagnosis.json",
+      "files": 1,
+      "logical_bytes": 32564,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/build_r2_full_pipeline_report.py",
+      "files": 1,
+      "logical_bytes": 32334,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/audit_r16_first_ensemble.py",
+      "files": 1,
+      "logical_bytes": 31310,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/verify_r12_evaluation.py",
+      "files": 1,
+      "logical_bytes": 31182,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/finalize_r16_pretrained_cuda_bf16.py",
+      "files": 1,
+      "logical_bytes": 30591,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R11_DIAGNOSTICS_MANIFEST.json",
+      "files": 1,
+      "logical_bytes": 30553,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R4_DATA_PILOT_WARP.json",
+      "files": 1,
+      "logical_bytes": 30542,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R12_EVALUATION_PREDECLARED_PLAN.json",
+      "files": 1,
+      "logical_bytes": 30388,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/finalize_r16_pretrained_masked.py",
+      "files": 1,
+      "logical_bytes": 30172,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R15_DIAGNOSTICS_START.html",
+      "files": 1,
+      "logical_bytes": 29757,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/r16_support_temporal_data.py",
+      "files": 1,
+      "logical_bytes": 29734,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/r18_public_gap_audit_report.py",
+      "files": 1,
+      "logical_bytes": 29570,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/r16_production_neural_r1",
+      "files": 8,
+      "logical_bytes": 29239,
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "ops/r21_finalize_clean_comparison.py",
+      "files": 1,
+      "logical_bytes": 28913,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/verify_r13_evaluation.py",
+      "files": 1,
+      "logical_bytes": 28900,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R6_GUARDRAILS_AND_CPU_ABLATION_REPORT.md",
+      "files": 1,
+      "logical_bytes": 28819,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "ops/r11_st_francis_density_audit.py",
+      "files": 1,
+      "logical_bytes": 28722,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R13_PROVISIONAL_SOURCE_SNAPSHOTS",
+      "files": 2,
+      "logical_bytes": 28408,
+      "allocated_bytes": 32768
+    },
+    {
+      "path": "reports/R5_ENSEMBLE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 28285,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r17_finalize_audit.py",
+      "files": 1,
+      "logical_bytes": 28175,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/runpod_train_r5_mac.py",
+      "files": 1,
+      "logical_bytes": 28027,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r16_forward_data.py",
+      "files": 1,
+      "logical_bytes": 27687,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/run_r13_training.py",
+      "files": 1,
+      "logical_bytes": 27644,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R13_PORTABLE_PACKAGE_PLAN_FINAL.json",
+      "files": 1,
+      "logical_bytes": 27017,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R13_PORTABLE_PACKAGE_PLAN.json",
+      "files": 1,
+      "logical_bytes": 27017,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/r15_validation_checks_r1",
+      "files": 7,
+      "logical_bytes": 26889,
+      "allocated_bytes": 45056
+    },
+    {
+      "path": "ops/r15_forward_prototype.py",
+      "files": 1,
+      "logical_bytes": 26779,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r20_integrated_report.py",
+      "files": 1,
+      "logical_bytes": 26685,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/plan_r16_version2.py",
+      "files": 1,
+      "logical_bytes": 26612,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R12_EVALUATION_INDEPENDENT_QA_v2.json",
+      "files": 1,
+      "logical_bytes": 26173,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r16_r11_stress_evaluation.py",
+      "files": 1,
+      "logical_bytes": 25965,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r18_finalize_audit.py",
+      "files": 1,
+      "logical_bytes": 25792,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R4_TIMEWARP_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 25786,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R5_MODEL_REFERENCE_FACTCHECK.md",
+      "files": 1,
+      "logical_bytes": 25594,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R4_DATA_PILOT.json",
+      "files": 1,
+      "logical_bytes": 25330,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r9_fold_boundary_guard.py",
+      "files": 1,
+      "logical_bytes": 25101,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R9_DIAGRAM_FACTS.json",
+      "files": 1,
+      "logical_bytes": 25099,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r10_saved_prediction_audit.py",
+      "files": 1,
+      "logical_bytes": 24845,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/tabicl_inner_precision_external.json",
+      "files": 1,
+      "logical_bytes": 24812,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/mac_lgbm_r5.py",
+      "files": 1,
+      "logical_bytes": 24768,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/audit_r5_submission_replay_r1.py",
+      "files": 1,
+      "logical_bytes": 24661,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r16_support_temporal_models.py",
+      "files": 1,
+      "logical_bytes": 24643,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/r16_mac_masking_control_r3",
+      "files": 5,
+      "logical_bytes": 24612,
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "ops/r19_multislice_gate.py",
+      "files": 1,
+      "logical_bytes": 24499,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/r9_remote_r1",
+      "files": 5,
+      "logical_bytes": 24484,
+      "allocated_bytes": 40960
+    },
+    {
+      "path": "ops/evaluate_r12_mask_matched_control.py",
+      "files": 1,
+      "logical_bytes": 24406,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/train_r14_production_trees.py",
+      "files": 1,
+      "logical_bytes": 23947,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r20_physical_profiles.py",
+      "files": 1,
+      "logical_bytes": 23858,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/build_r16_review.py",
+      "files": 1,
+      "logical_bytes": 23664,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R12_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 23461,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/train_r14_tree_full.py",
+      "files": 1,
+      "logical_bytes": 23262,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/finalize_r16_pretrained.py",
+      "files": 1,
+      "logical_bytes": 23203,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/build_r12_review.py",
+      "files": 1,
+      "logical_bytes": 23134,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R13_DATASET_BASELINE_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 23093,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/infer_r9_fold0_all5_pilot.py",
+      "files": 1,
+      "logical_bytes": 23075,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r20_saved_alignment.py",
+      "files": 1,
+      "logical_bytes": 23046,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r16_fourway_r2.py",
+      "files": 1,
+      "logical_bytes": 22929,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/build_r10_diagnostics_review.py",
+      "files": 1,
+      "logical_bytes": 22759,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r14_production_outputs.py",
+      "files": 1,
+      "logical_bytes": 22518,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r15_band_comparison.py",
+      "files": 1,
+      "logical_bytes": 22265,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R16_INFERENCE_POSTPROCESSING_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 22250,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R7_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 22246,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r11_asymmetric_eq_audit.py",
+      "files": 1,
+      "logical_bytes": 22040,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/finalize_r5_mac_fold.py",
+      "files": 1,
+      "logical_bytes": 21925,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/finalize_r16_production.py",
+      "files": 1,
+      "logical_bytes": 21861,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r9_training.py",
+      "files": 1,
+      "logical_bytes": 21851,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r16_fourway.py",
+      "files": 1,
+      "logical_bytes": 21777,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/build_r11_diagnostics_review.py",
+      "files": 1,
+      "logical_bytes": 21743,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r14_production_outputs_v2.py",
+      "files": 1,
+      "logical_bytes": 21712,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R13_PREPARED_PREFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 21708,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R13_PREPARED_PREFLIGHT_FINAL.json",
+      "files": 1,
+      "logical_bytes": 21708,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r17_clean_fit_frozen_inference.py",
+      "files": 1,
+      "logical_bytes": 21542,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/verify_passage_cv_r4.py",
+      "files": 1,
+      "logical_bytes": 21432,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r19_vanilla_law_panels.py",
+      "files": 1,
+      "logical_bytes": 21407,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R9_FOLD0_COMPLETED_HANDOFF_MANIFEST.json",
+      "files": 1,
+      "logical_bytes": 21323,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/render_r14_production_status_v2.py",
+      "files": 1,
+      "logical_bytes": 21215,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R2_FULL_PIPELINE_REPORT.md",
+      "files": 1,
+      "logical_bytes": 21197,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R3_OOF_ERROR_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 21183,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/backup_r5_completed_v2.py",
+      "files": 1,
+      "logical_bytes": 21156,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R10_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 21103,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/r10_reference_transfer_probe.py",
+      "files": 1,
+      "logical_bytes": 21094,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/OFFICIAL_BASELINE_COMPARISON_FACTS.json",
+      "files": 1,
+      "logical_bytes": 20980,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r16_postprocess.py",
+      "files": 1,
+      "logical_bytes": 20830,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R16_NEURAL_ACTUAL_PREFLIGHT_r3.json",
+      "files": 1,
+      "logical_bytes": 20718,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "reports/R16_NEURAL_ACTUAL_PREFLIGHT_r2.json",
+      "files": 1,
+      "logical_bytes": 20706,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/run_r7_small_model_controls.py",
+      "files": 1,
+      "logical_bytes": 20433,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r17_clean_result_report.py",
+      "files": 1,
+      "logical_bytes": 20404,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R14_STEP1_OUTPUTS_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 20337,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R8_FEATURE_PIPELINE_EVIDENCE.md",
+      "files": 1,
+      "logical_bytes": 20140,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r11_saved_query_prediction_audit.py",
+      "files": 1,
+      "logical_bytes": 20124,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r19_multislice_law_report.py",
+      "files": 1,
+      "logical_bytes": 19952,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r15_build_review.py",
+      "files": 1,
+      "logical_bytes": 19856,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/audit_passage_timewarp_r4.py",
+      "files": 1,
+      "logical_bytes": 19835,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_r12_mask_matched_control_v2.py",
+      "files": 1,
+      "logical_bytes": 19720,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/run_r6_cpu_guardrails_v2.py",
+      "files": 1,
+      "logical_bytes": 19707,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/runpod_train_r5.py",
+      "files": 1,
+      "logical_bytes": 19668,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/GEMINI_ARGON_R16_V1_PUBLIC_RESULT_AND_EDA_BRIEF_20261029.md",
+      "files": 1,
+      "logical_bytes": 19643,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r17_eda_execute.py",
+      "files": 1,
+      "logical_bytes": 19591,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_production_tree_fold2.log",
+      "files": 1,
+      "logical_bytes": 19571,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/backup_r5_completed.py",
+      "files": 1,
+      "logical_bytes": 19491,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R16_NEURAL_SYNTHETIC_MPS_PREFLIGHT_r1.json",
+      "files": 1,
+      "logical_bytes": 19480,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/evaluate_r16_support_temporal.py",
+      "files": 1,
+      "logical_bytes": 19476,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/calibrate_r5_single_cnn.py",
+      "files": 1,
+      "logical_bytes": 19459,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_evaluate_frozen.py",
+      "files": 1,
+      "logical_bytes": 19450,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/group_cv_physics_data_audit.json",
+      "files": 1,
+      "logical_bytes": 19449,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r10_factorial_transfer_audit.py",
+      "files": 1,
+      "logical_bytes": 19413,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/render_r14_production_status.py",
+      "files": 1,
+      "logical_bytes": 19376,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/evaluate_r7_fixed100_transfer.py",
+      "files": 1,
+      "logical_bytes": 19333,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R10_DIAGNOSTICS_START.html",
+      "files": 1,
+      "logical_bytes": 19327,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r18_classifier_audit.py",
+      "files": 1,
+      "logical_bytes": 19290,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r10_reference_split_feasibility.py",
+      "files": 1,
+      "logical_bytes": 19287,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/finish_r18_production_bridge.py",
+      "files": 1,
+      "logical_bytes": 19258,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_production_tree_fold3.log",
+      "files": 1,
+      "logical_bytes": 19225,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/train_r18_production_tree.py",
+      "files": 1,
+      "logical_bytes": 19188,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_r16_masking_review.py",
+      "files": 1,
+      "logical_bytes": 19136,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_fourway_select.py",
+      "files": 1,
+      "logical_bytes": 19112,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r17_clean_data.py",
+      "files": 1,
+      "logical_bytes": 19083,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r10_temporal_permutation_audit.py",
+      "files": 1,
+      "logical_bytes": 19071,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/prepare_r9_training.py",
+      "files": 1,
+      "logical_bytes": 19005,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r19_frozen_law_inference.py",
+      "files": 1,
+      "logical_bytes": 18998,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R14_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 18971,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R11_DIAGNOSTICS_START.html",
+      "files": 1,
+      "logical_bytes": 18921,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/local_alignment_audit.py",
+      "files": 1,
+      "logical_bytes": 18895,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r20_hard_panels.py",
+      "files": 1,
+      "logical_bytes": 18863,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r14_output_r2_hybrid-fast3.log",
+      "files": 1,
+      "logical_bytes": 18841,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R8_SA_EDA_EVIDENCE.md",
+      "files": 1,
+      "logical_bytes": 18689,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r20_quiet_background_features.py",
+      "files": 1,
+      "logical_bytes": 18643,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R12_CPU_ABLATION_RESULTS.md",
+      "files": 1,
+      "logical_bytes": 18440,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_r12_mask_matched_control.py",
+      "files": 1,
+      "logical_bytes": 18386,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_postprocess_select.py",
+      "files": 1,
+      "logical_bytes": 18379,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/gpu_smoke_r5.py",
+      "files": 1,
+      "logical_bytes": 18289,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/analyze_r14_decoupled.py",
+      "files": 1,
+      "logical_bytes": 18256,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_production_tree_fold4.log",
+      "files": 1,
+      "logical_bytes": 18117,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r15_build_forward_review.py",
+      "files": 1,
+      "logical_bytes": 18028,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R9_BACKGROUND_CV_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 18022,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r17_ensemble_saved_audit.py",
+      "files": 1,
+      "logical_bytes": 17990,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r11_full_support_hf_audit.py",
+      "files": 1,
+      "logical_bytes": 17863,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/profile_dynamic_r5.py",
+      "files": 1,
+      "logical_bytes": 17730,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R16_GPU_TRAINING_SEQUENCE_AND_SCOPE_OPTIONS.md",
+      "files": 1,
+      "logical_bytes": 17645,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r18_background_audit.py",
+      "files": 1,
+      "logical_bytes": 17503,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R9_R6_PILOT_SUBMISSION.json",
+      "files": 1,
+      "logical_bytes": 17466,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R7_R5_SUBMISSION_PATH_AUDIT_RESULTS.json",
+      "files": 1,
+      "logical_bytes": 17407,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r15_input_output_audit.py",
+      "files": 1,
+      "logical_bytes": 17407,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_local_review_portal.py",
+      "files": 1,
+      "logical_bytes": 17292,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/render_r16_fourway_report.py",
+      "files": 1,
+      "logical_bytes": 17278,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/GEMINI_ARGON_R9_VALIDATION_GAP_BRIEF.txt",
+      "files": 1,
+      "logical_bytes": 17174,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_r13_full_readiness.py",
+      "files": 1,
+      "logical_bytes": 17165,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/benchmark_r16_cuda_accel.py",
+      "files": 1,
+      "logical_bytes": 17102,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/verify_relative_features_r6.py",
+      "files": 1,
+      "logical_bytes": 17070,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/render_r16_postprocess_report.py",
+      "files": 1,
+      "logical_bytes": 16970,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_r6_pilot_submission_r1.py",
+      "files": 1,
+      "logical_bytes": 16830,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_production_tree_fold0.log",
+      "files": 1,
+      "logical_bytes": 16764,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R11_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 16759,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/backup_r9_fold0_boundary_handoff_r1.py",
+      "files": 1,
+      "logical_bytes": 16627,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/build_r7_review.py",
+      "files": 1,
+      "logical_bytes": 16607,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r10_factorial_independent_qa.py",
+      "files": 1,
+      "logical_bytes": 16604,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r21_clean_val_data.py",
+      "files": 1,
+      "logical_bytes": 16604,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R6_FIXED100_TRAINING_REPORT.md",
+      "files": 1,
+      "logical_bytes": 16506,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "reports/R6_PUBLIC_TRAINING_PROVENANCE_CATALOG.json",
+      "files": 1,
+      "logical_bytes": 16505,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/r16_clean_support_check.py",
+      "files": 1,
+      "logical_bytes": 16363,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r10_starter_conversion_audit.py",
+      "files": 1,
+      "logical_bytes": 16299,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/render_r16_production_status.py",
+      "files": 1,
+      "logical_bytes": 16216,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/verify_frozen_inference_r5.py",
+      "files": 1,
+      "logical_bytes": 16197,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r17_clean_classifier_features.py",
+      "files": 1,
+      "logical_bytes": 16123,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R13_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 16122,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R6_FIXED100_EXECUTION_BUDGET.json",
+      "files": 1,
+      "logical_bytes": 16072,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R14_ANCHOR_EVALUATION_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 16010,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_postprocess_protocol_review.json",
+      "files": 1,
+      "logical_bytes": 16004,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/audit_r5_physical_robustness.py",
+      "files": 1,
+      "logical_bytes": 15943,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/build_r13_review.py",
+      "files": 1,
+      "logical_bytes": 15924,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R14_MPS_BENCHMARK",
+      "files": 5,
+      "logical_bytes": 15901,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "ops/r15_score_duration_audit.py",
+      "files": 1,
+      "logical_bytes": 15877,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r18_wav_physics_audit.py",
+      "files": 1,
+      "logical_bytes": 15870,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_clean_models.py",
+      "files": 1,
+      "logical_bytes": 15849,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/EDA_GITHUB_REPOSITORY_REVIEW_20261029.md",
+      "files": 1,
+      "logical_bytes": 15833,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/evaluate_r14_fulltree_decoupled.py",
+      "files": 1,
+      "logical_bytes": 15832,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r11_full_support_independent_qa.py",
+      "files": 1,
+      "logical_bytes": 15807,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/run_r6_cpu_ablation.py",
+      "files": 1,
+      "logical_bytes": 15778,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_verify_data.py",
+      "files": 1,
+      "logical_bytes": 15752,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_production_tree_fold1.log",
+      "files": 1,
+      "logical_bytes": 15749,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R9_MAC_OPENMP_DIAGNOSTIC",
+      "files": 13,
+      "logical_bytes": 15700,
+      "allocated_bytes": 53248
+    },
+    {
+      "path": "ops/verify_neural_runner_r5.py",
+      "files": 1,
+      "logical_bytes": 15694,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r13_cpu_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 15659,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/OFFICIAL_BASELINE_COMPARISON.md",
+      "files": 1,
+      "logical_bytes": 15633,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R11_PINPOINT_DIAGNOSTICS.md",
+      "files": 1,
+      "logical_bytes": 15605,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/finalize_r16_multisupport_full.py",
+      "files": 1,
+      "logical_bytes": 15578,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r13_dynamic_mix_evaluation.log",
+      "files": 1,
+      "logical_bytes": 15541,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/r14_production",
+      "files": 2,
+      "logical_bytes": 15487,
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "ops/verify_r6_fixed100_completed.py",
+      "files": 1,
+      "logical_bytes": 15435,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R10_LOCAL_VALIDATION_GAP_DIAGNOSTICS.md",
+      "files": 1,
+      "logical_bytes": 15422,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/summarize_r16_support_temporal.py",
+      "files": 1,
+      "logical_bytes": 15234,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_neural_actual_preflight_r3.log",
+      "files": 1,
+      "logical_bytes": 15210,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_neural_actual_preflight_r2.log",
+      "files": 1,
+      "logical_bytes": 15199,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/render_r16_clean_support.py",
+      "files": 1,
+      "logical_bytes": 15119,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r15_verify_forward_prototype.py",
+      "files": 1,
+      "logical_bytes": 15057,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/build_r6_results_report.py",
+      "files": 1,
+      "logical_bytes": 15052,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/test_run_r16_postprocess_contract.py",
+      "files": 1,
+      "logical_bytes": 15011,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r11_asymmetric_feasible_models.py",
+      "files": 1,
+      "logical_bytes": 14983,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r10_natural_variability_audit.py",
+      "files": 1,
+      "logical_bytes": 14978,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R3_REFERENCE_COVERAGE_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 14929,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/train_background_hybrid_pilot.py",
+      "files": 1,
+      "logical_bytes": 14904,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/benchmark_r16_cuda.py",
+      "files": 1,
+      "logical_bytes": 14867,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/group_cv_data_audit.json",
+      "files": 1,
+      "logical_bytes": 14841,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/collect_r4_training_backups.py",
+      "files": 1,
+      "logical_bytes": 14784,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/evaluate_r13_cpu.py",
+      "files": 1,
+      "logical_bytes": 14711,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R14_PRODUCTION_TREE_PREFLIGHT_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 14586,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R12_ALL17_GLOBAL_FREEZE.json",
+      "files": 1,
+      "logical_bytes": 14544,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_target_matched_support.py",
+      "files": 1,
+      "logical_bytes": 14425,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/train_background_prior_pilot.py",
+      "files": 1,
+      "logical_bytes": 14419,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/collect_r2_training_backups.py",
+      "files": 1,
+      "logical_bytes": 14391,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/train_native_generalization_pilot.py",
+      "files": 1,
+      "logical_bytes": 14298,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/run_r16_pretrained_cuda_bf16.py",
+      "files": 1,
+      "logical_bytes": 14279,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/model_scale_plan.html",
+      "files": 1,
+      "logical_bytes": 14200,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_neural_synthetic_preflight_r1.log",
+      "files": 1,
+      "logical_bytes": 14172,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r12_spectral_separability_probe.py",
+      "files": 1,
+      "logical_bytes": 14138,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R5_LB_FAILURE_DOMAIN_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 14134,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/backup_completed_training.py",
+      "files": 1,
+      "logical_bytes": 14124,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r21_mask_proxy_audit.py",
+      "files": 1,
+      "logical_bytes": 14050,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r21_quiet_feature_candidates.py",
+      "files": 1,
+      "logical_bytes": 14016,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r17_fit_composition_recheck.py",
+      "files": 1,
+      "logical_bytes": 13945,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/build_r16_peft_baseline.py",
+      "files": 1,
+      "logical_bytes": 13939,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/profile_r5_cnn_mac_inference.py",
+      "files": 1,
+      "logical_bytes": 13927,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r20_hard_panel_report.py",
+      "files": 1,
+      "logical_bytes": 13875,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/dataset_document_external_facts.json",
+      "files": 1,
+      "logical_bytes": 13797,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r21_clean_val_multisite.py",
+      "files": 1,
+      "logical_bytes": 13718,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/predict_r16_production_nn.py",
+      "files": 1,
+      "logical_bytes": 13659,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/verify_r12_features.py",
+      "files": 1,
+      "logical_bytes": 13526,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/render_r16_multisupport.py",
+      "files": 1,
+      "logical_bytes": 13459,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/build_r14_review.py",
+      "files": 1,
+      "logical_bytes": 13448,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/runpod_train_r4.py",
+      "files": 1,
+      "logical_bytes": 13408,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r15_static_channel_audit.py",
+      "files": 1,
+      "logical_bytes": 13311,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R5_EDA_INTEGRATION_FACTCHECK.md",
+      "files": 1,
+      "logical_bytes": 13292,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R7_R5_SUBMISSION_PATH_AUDIT_PLAN.json",
+      "files": 1,
+      "logical_bytes": 13254,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R7_R5_SUBMISSION_PATH_AUDIT_PLAN_preflight_schema.json",
+      "files": 1,
+      "logical_bytes": 13254,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/finalize_r16_multisupport_fivefold.py",
+      "files": 1,
+      "logical_bytes": 13246,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/train_r16_production_nn.py",
+      "files": 1,
+      "logical_bytes": 13242,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R14_CPU_REVIEW_RESULTS.md",
+      "files": 1,
+      "logical_bytes": 13137,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/verify_relative_r6_v2.py",
+      "files": 1,
+      "logical_bytes": 13074,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R9_REAL_DATA_CONNECTION_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 13002,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/benchmark_r16_catboost_cpu.py",
+      "files": 1,
+      "logical_bytes": 12992,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R13_CPU_CORRECTION_RESULTS.md",
+      "files": 1,
+      "logical_bytes": 12971,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/infer_r9_lightgbm_pilot.py",
+      "files": 1,
+      "logical_bytes": 12947,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/verify_pretrained_timemoe_r16.py",
+      "files": 1,
+      "logical_bytes": 12932,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/background_prior_cpu_pilot_r2.json",
+      "files": 1,
+      "logical_bytes": 12891,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R13_FULL_DATA_STATIC_INDEPENDENT_QA_PROVISIONAL.json",
+      "files": 1,
+      "logical_bytes": 12879,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R14_PRODUCTION_START.html",
+      "files": 1,
+      "logical_bytes": 12849,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/train_r13_dynamic_mix_tree_static.py",
+      "files": 1,
+      "logical_bytes": 12598,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/background_prior_features.py",
+      "files": 1,
+      "logical_bytes": 12598,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R13_FULL_PIPELINE_READINESS.md",
+      "files": 1,
+      "logical_bytes": 12550,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/profile_lgbm_mac_r5.py",
+      "files": 1,
+      "logical_bytes": 12548,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r16_pretrained_v2_mps_r1",
+      "files": 6,
+      "logical_bytes": 12381,
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "reports/R5_SHARED_INPUT_DYNAMIC_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 12378,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R9_DATA_READINESS.json",
+      "files": 1,
+      "logical_bytes": 12315,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "reports/R16_PRODUCTION_DATA_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 12268,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r17_clean_classifier_refit.py",
+      "files": 1,
+      "logical_bytes": 12212,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R7_ANIL45_SOURCE_COMPARISON.json",
+      "files": 1,
+      "logical_bytes": 12177,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r16_feature_masking.py",
+      "files": 1,
+      "logical_bytes": 12177,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r13_cpu_cnn_r1.log",
+      "files": 1,
+      "logical_bytes": 12094,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_foundation_masks_r5.py",
+      "files": 1,
+      "logical_bytes": 12031,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r14_anchor_cpu_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 12028,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/analyze_r13_safety_feasibility.py",
+      "files": 1,
+      "logical_bytes": 12017,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_training_r9.py",
+      "files": 1,
+      "logical_bytes": 12001,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/finalize_r11_full_support_audit.py",
+      "files": 1,
+      "logical_bytes": 11971,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/energy_domain_augmentation.py",
+      "files": 1,
+      "logical_bytes": 11957,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/build_background_cv_r9.py",
+      "files": 1,
+      "logical_bytes": 11941,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R8_EXTERNAL_DATA_EVIDENCE.md",
+      "files": 1,
+      "logical_bytes": 11876,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/prepare_r13_training.py",
+      "files": 1,
+      "logical_bytes": 11873,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r18_identifiability_regression.py",
+      "files": 1,
+      "logical_bytes": 11871,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_MODEL_ADAPTER_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 11753,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R15_FORWARD_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 11724,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r12_training.py",
+      "files": 1,
+      "logical_bytes": 11662,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R13_FULL_DATA_STATIC_INDEPENDENT_QA_FINAL.json",
+      "files": 1,
+      "logical_bytes": 11641,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_postprocess_math.py",
+      "files": 1,
+      "logical_bytes": 11632,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/compare_r5_cnn_starter_inner.py",
+      "files": 1,
+      "logical_bytes": 11555,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/build_r14_frontend_reports.py",
+      "files": 1,
+      "logical_bytes": 11549,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/ensemble_shrinkage_r3.py",
+      "files": 1,
+      "logical_bytes": 11533,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r9_fold0_all5_pilot.py",
+      "files": 1,
+      "logical_bytes": 11477,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_locked_comparison.py",
+      "files": 1,
+      "logical_bytes": 11446,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/plot_r6_train_evidence.py",
+      "files": 1,
+      "logical_bytes": 11439,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/evaluate_official_starter_r5.py",
+      "files": 1,
+      "logical_bytes": 11270,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/build_r5_cnn_pilot_submission.py",
+      "files": 1,
+      "logical_bytes": 11266,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_robust_sampler_r6.py",
+      "files": 1,
+      "logical_bytes": 11247,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_MODEL_ADAPTER_VERIFICATION_PRE_GLOBAL_CONTEXT.json",
+      "files": 1,
+      "logical_bytes": 11096,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_FOLD0_ADDITIONAL_MODELS_BACKUP.json",
+      "files": 1,
+      "logical_bytes": 11050,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_physics_features_r5.py",
+      "files": 1,
+      "logical_bytes": 11035,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_CNN_MAC_INFERENCE_PROFILE.json",
+      "files": 1,
+      "logical_bytes": 10898,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/benchmark_r16_catboost_cached_cpu.py",
+      "files": 1,
+      "logical_bytes": 10861,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/supervise_r16_pretrained_cuda_outputs.py",
+      "files": 1,
+      "logical_bytes": 10800,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r16_production_data.py",
+      "files": 1,
+      "logical_bytes": 10762,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/backup_r9_completed_cnn.py",
+      "files": 1,
+      "logical_bytes": 10748,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r17_make_fixed_blend_candidates.py",
+      "files": 1,
+      "logical_bytes": 10729,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_production_data_build_r1.log",
+      "files": 1,
+      "logical_bytes": 10718,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_multisupport_fivefold_r1",
+      "files": 5,
+      "logical_bytes": 10701,
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "ops/verify_r16_r11_stress_evaluation.py",
+      "files": 1,
+      "logical_bytes": 10690,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/analyze_r13_score_snapshot.py",
+      "files": 1,
+      "logical_bytes": 10672,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r9_real_data_connections.py",
+      "files": 1,
+      "logical_bytes": 10665,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/build_r13_cpu_data.py",
+      "files": 1,
+      "logical_bytes": 10557,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_TRAINING_PREFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 10543,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/run_r16_multisupport_fivefold.py",
+      "files": 1,
+      "logical_bytes": 10539,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/run_r16_5090_workflow.py",
+      "files": 1,
+      "logical_bytes": 10493,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/resume_r16_multisupport_lifecycle.py",
+      "files": 1,
+      "logical_bytes": 10483,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_trees_ensemble_r9.py",
+      "files": 1,
+      "logical_bytes": 10477,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/build_reference_pool_r9.py",
+      "files": 1,
+      "logical_bytes": 10433,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_fixed100_r6.py",
+      "files": 1,
+      "logical_bytes": 10425,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r10_finalize_factorial_audit.py",
+      "files": 1,
+      "logical_bytes": 10306,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_OUTLIER_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 10281,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/audit_r16_injection_vs_saved_test.py",
+      "files": 1,
+      "logical_bytes": 10215,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_pretrained_version2_r1",
+      "files": 1,
+      "logical_bytes": 10182,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/r17_clean_legacy_exposure_run.log",
+      "files": 1,
+      "logical_bytes": 10173,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R12_TRAIN_MASK_PROVENANCE_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 10086,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/complete_r18_production_remote.py",
+      "files": 1,
+      "logical_bytes": 10080,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/contrastive_design.json",
+      "files": 1,
+      "logical_bytes": 10075,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R6_PUBLIC_TRAINING_PROTOCOL_CODE_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 9982,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/build_r9_visual_review.py",
+      "files": 1,
+      "logical_bytes": 9912,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_CURRENT_ISSUES_FACTS.json",
+      "files": 1,
+      "logical_bytes": 9904,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/backup_r9_completed_additional_r1.py",
+      "files": 1,
+      "logical_bytes": 9881,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r6_guardrails_runner.py",
+      "files": 1,
+      "logical_bytes": 9832,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/preflight_r16_v2_mps.py",
+      "files": 1,
+      "logical_bytes": 9767,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R16_TIMEMOE_PEFT_REAL_CPU.json",
+      "files": 1,
+      "logical_bytes": 9707,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R16_TIMEMOE_PEFT_REAL_MPS.json",
+      "files": 1,
+      "logical_bytes": 9702,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/audit_vtuad_reference_r4.py",
+      "files": 1,
+      "logical_bytes": 9695,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/evaluate_r16_problem_gate_tree_stress.py",
+      "files": 1,
+      "logical_bytes": 9687,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R6_LOCAL_ALIGNMENT_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 9684,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/GEMINI_ARGON_R16_V1_PUBLIC_RESULT_AND_EDA_BRIEF_20261029.evidence.json",
+      "files": 1,
+      "logical_bytes": 9653,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R14_PRODUCTION_TREES_COMPLETION.json",
+      "files": 1,
+      "logical_bytes": 9649,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_LB_FAILURE_IMPLEMENTATION_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 9638,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r20_frozen_hard_inference.py",
+      "files": 1,
+      "logical_bytes": 9605,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_ensemble_r5.py",
+      "files": 1,
+      "logical_bytes": 9604,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_postaudit_metrics.py",
+      "files": 1,
+      "logical_bytes": 9584,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/diagnose_tabicl_inner_precision.py",
+      "files": 1,
+      "logical_bytes": 9579,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_clean_pilot_r1.log",
+      "files": 1,
+      "logical_bytes": 9578,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/train_r14_production_nn.py",
+      "files": 1,
+      "logical_bytes": 9538,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_pretrained_audio2d_r16.py",
+      "files": 1,
+      "logical_bytes": 9529,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R16_PRODUCTION_TREE_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 9440,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/frozen_inference_audit.html",
+      "files": 1,
+      "logical_bytes": 9439,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_observation_augmentation_r5.py",
+      "files": 1,
+      "logical_bytes": 9419,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_R6_PILOT_SUBMISSION_PLAN.json",
+      "files": 1,
+      "logical_bytes": 9358,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_TREES_ENSEMBLE_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 9330,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/train_r13_lightgbm.py",
+      "files": 1,
+      "logical_bytes": 9300,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r14_tree_full.py",
+      "files": 1,
+      "logical_bytes": 9287,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/test_r16_postprocess_select.py",
+      "files": 1,
+      "logical_bytes": 9277,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_TREES_ENSEMBLE_VERIFICATION_INITIAL.json",
+      "files": 1,
+      "logical_bytes": 9259,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_TRAINING_STRUCTURAL_PREFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 9247,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/external_expansion_report.html",
+      "files": 1,
+      "logical_bytes": 9195,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/train_r14_anchor_cpu.py",
+      "files": 1,
+      "logical_bytes": 9192,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r13_frozen_inference.py",
+      "files": 1,
+      "logical_bytes": 9158,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/evaluate_r16_production_trees_r1.py",
+      "files": 1,
+      "logical_bytes": 9146,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r15_output_hold_receipt.json",
+      "files": 1,
+      "logical_bytes": 9083,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r14_torch_frontend.py",
+      "files": 1,
+      "logical_bytes": 9064,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/test_run_r16_fourway_r2_contract.py",
+      "files": 1,
+      "logical_bytes": 9008,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_lgbm_runner_r5.py",
+      "files": 1,
+      "logical_bytes": 9002,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_LIGHTGBM_MAC_SPEED_PROFILE.json",
+      "files": 1,
+      "logical_bytes": 8994,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/benchmark_r14_mps.py",
+      "files": 1,
+      "logical_bytes": 8964,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R7_CHANGES_AND_AUDIT_REPORT.md",
+      "files": 1,
+      "logical_bytes": 8955,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R13_FULL_FINAL_STATIC_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 8942,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R16_PIPELINE_V1_V2.md",
+      "files": 1,
+      "logical_bytes": 8877,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_models_r9.py",
+      "files": 1,
+      "logical_bytes": 8847,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/test_r16_fourway_select.py",
+      "files": 1,
+      "logical_bytes": 8839,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R13_FULL_PIPELINE_READINESS.json",
+      "files": 1,
+      "logical_bytes": 8823,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/training_policy_v2_verification.json",
+      "files": 1,
+      "logical_bytes": 8769,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r16_clean_support_training_r1.log",
+      "files": 1,
+      "logical_bytes": 8744,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R16_POSTCSV_AUDIT_READINESS.md",
+      "files": 1,
+      "logical_bytes": 8736,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R14_FULL_TREE_RESULTS.md",
+      "files": 1,
+      "logical_bytes": 8723,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R6_TEST_GAP_CLAIMS_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 8716,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R6_PUBLIC_TRAINING_PROVENANCE_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 8670,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r14_production_nn_independent.py",
+      "files": 1,
+      "logical_bytes": 8608,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/group_cv_physics_data_verification.json",
+      "files": 1,
+      "logical_bytes": 8588,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_LB_FAILURE_VALIDATION_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 8583,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R1_INNER_ERROR_DIAGNOSIS.md",
+      "files": 1,
+      "logical_bytes": 8583,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/model_scale_plan.json",
+      "files": 1,
+      "logical_bytes": 8550,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R12_DATASET_CONSTRUCTION.md",
+      "files": 1,
+      "logical_bytes": 8424,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R7_ANIL45_SOURCE_COMPARISON.md",
+      "files": 1,
+      "logical_bytes": 8423,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/continue_r16_multisupport_verified.py",
+      "files": 1,
+      "logical_bytes": 8420,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r16_postcsv_audit.py",
+      "files": 1,
+      "logical_bytes": 8406,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_r16_production_ensemble.py",
+      "files": 1,
+      "logical_bytes": 8378,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_GRID_MODELS_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 8367,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/verify_physics_features_r6_v2.py",
+      "files": 1,
+      "logical_bytes": 8363,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R6_FIXED100_COMPLETION_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 8343,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_GRID_MODEL_SOURCES.md",
+      "files": 1,
+      "logical_bytes": 8332,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R9_TRAINING_ORCHESTRATION.md",
+      "files": 1,
+      "logical_bytes": 8325,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/data_quality_report.html",
+      "files": 1,
+      "logical_bytes": 8322,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r17_clean_legacy_exposure.py",
+      "files": 1,
+      "logical_bytes": 8303,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/evaluate_r14_anchor_cpu.py",
+      "files": 1,
+      "logical_bytes": 8286,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R12_TRAINING_ENGINE_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 8213,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/r14_production_state_r2.json",
+      "files": 1,
+      "logical_bytes": 8199,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "ops/compare_official_baseline.py",
+      "files": 1,
+      "logical_bytes": 8187,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_ACTUAL_DASHENG_CPU_R1.json",
+      "files": 1,
+      "logical_bytes": 8186,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r11_asymmetric_forward_feasibility.py",
+      "files": 1,
+      "logical_bytes": 8105,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/analyze_r14_fit_calibration.py",
+      "files": 1,
+      "logical_bytes": 8094,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_LB_FAILURE_IMPLEMENTATION_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 8058,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/literature_evidence.json",
+      "files": 1,
+      "logical_bytes": 7986,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/r4_reference_selection.md",
+      "files": 1,
+      "logical_bytes": 7902,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r14_output_policy_repair.py",
+      "files": 1,
+      "logical_bytes": 7847,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_temporal_features.py",
+      "files": 1,
+      "logical_bytes": 7842,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/supervise_r14_production_outputs_v2.py",
+      "files": 1,
+      "logical_bytes": 7840,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_PUBLIC_TRAINING_PROVENANCE_CATALOG.md",
+      "files": 1,
+      "logical_bytes": 7831,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r13_dynamic_mix_evaluation.py",
+      "files": 1,
+      "logical_bytes": 7803,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_FULL_SOURCE_PREFLIGHT",
+      "files": 2,
+      "logical_bytes": 7782,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R5_PRETRAINED_LOCAL_VERIFICATION_MANIFEST.json",
+      "files": 1,
+      "logical_bytes": 7735,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_TRAINING_PACKAGING_PLAN.json",
+      "files": 1,
+      "logical_bytes": 7692,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R4_DATA_FINAL_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 7661,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_DYNAMIC_MIX_RECOVERY_INDEPENDENT_QA_FINAL.json",
+      "files": 1,
+      "logical_bytes": 7627,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/data_quality_capacity_audit.json",
+      "files": 1,
+      "logical_bytes": 7607,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_TREES_ENSEMBLE_VERIFICATION.md",
+      "files": 1,
+      "logical_bytes": 7605,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_clean_support_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 7583,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_verify_internal_claims.py",
+      "files": 1,
+      "logical_bytes": 7526,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_VERSION1_VERSION2.html",
+      "files": 1,
+      "logical_bytes": 7507,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r15_verify_saved_duration_tables.py",
+      "files": 1,
+      "logical_bytes": 7506,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r21_frozen_clean_inference.py",
+      "files": 1,
+      "logical_bytes": 7501,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_INTEGRATION_READINESS.md",
+      "files": 1,
+      "logical_bytes": 7433,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/train_r16_production_trees.py",
+      "files": 1,
+      "logical_bytes": 7421,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r16_pretrained_masked.py",
+      "files": 1,
+      "logical_bytes": 7408,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/r4_reference_audit.json",
+      "files": 1,
+      "logical_bytes": 7375,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_FOUNDATION_ADAPTER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 7354,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/supervise_r14_production_outputs.py",
+      "files": 1,
+      "logical_bytes": 7353,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r14_status_v2.py",
+      "files": 1,
+      "logical_bytes": 7344,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r17_source_lineage_audit.py",
+      "files": 1,
+      "logical_bytes": 7336,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r15_verify_policy_and_local_rules.py",
+      "files": 1,
+      "logical_bytes": 7333,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_FEATURES_FIXTURE",
+      "files": 2,
+      "logical_bytes": 7265,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/physics_cv_runner_verification.json",
+      "files": 1,
+      "logical_bytes": 7261,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6V2_SOURCE_SPLIT_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 7248,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_SOURCE_SPLIT_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 7246,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_ACTUAL_TIMEMOE_PUBLIC_CPU_R1.json",
+      "files": 1,
+      "logical_bytes": 7239,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_multisupport_blend.py",
+      "files": 1,
+      "logical_bytes": 7236,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/benchmark_r16_mps_speed.py",
+      "files": 1,
+      "logical_bytes": 7210,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_runner_orchestration_r5.py",
+      "files": 1,
+      "logical_bytes": 7147,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/evaluate_train_mean_r5.py",
+      "files": 1,
+      "logical_bytes": 7123,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/test_r16_postprocess_math.py",
+      "files": 1,
+      "logical_bytes": 7093,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_MODEL_ADAPTER_VERIFICATION.md",
+      "files": 1,
+      "logical_bytes": 7046,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_ACTUAL_TIMEMOE_PUBLIC_CPU.json",
+      "files": 1,
+      "logical_bytes": 6972,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_EXECUTION_PLAN.md",
+      "files": 1,
+      "logical_bytes": 6901,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_FULL_FOLD0_COMPLETED_MODEL_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 6832,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r17_shortcut_audit.py",
+      "files": 1,
+      "logical_bytes": 6832,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_TREE_TRAINING_COMPLETION.json",
+      "files": 1,
+      "logical_bytes": 6753,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_dataset_r9.py",
+      "files": 1,
+      "logical_bytes": 6673,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/R2_CONTINUATION.md",
+      "files": 1,
+      "logical_bytes": 6665,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_REVIEW_READOUT.md",
+      "files": 1,
+      "logical_bytes": 6649,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_CURRENT_ISSUES_DESKTOP_COPY_PLAN.json",
+      "files": 1,
+      "logical_bytes": 6626,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_TIMEMOE_PEFT_MPS_BATCH_BENCHMARK.json",
+      "files": 1,
+      "logical_bytes": 6618,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r9_remote_state.json",
+      "files": 1,
+      "logical_bytes": 6606,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_DIAGRAM_FACTS.md",
+      "files": 1,
+      "logical_bytes": 6602,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_fourway_preregistration_r2.json",
+      "files": 1,
+      "logical_bytes": 6573,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r6_fixed100.py",
+      "files": 1,
+      "logical_bytes": 6564,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/train_tree_domain_pilot.py",
+      "files": 1,
+      "logical_bytes": 6559,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_multislice_gate_r19.py",
+      "files": 1,
+      "logical_bytes": 6529,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_GUARDRAILS_INDEPENDENT_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 6479,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r16_f1_full_models.py",
+      "files": 1,
+      "logical_bytes": 6443,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r18_production_neural.py",
+      "files": 1,
+      "logical_bytes": 6403,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r16_pretrained.py",
+      "files": 1,
+      "logical_bytes": 6384,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/render_r16_support_temporal_status.py",
+      "files": 1,
+      "logical_bytes": 6375,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_DATASET_VERIFICATION_source.py",
+      "files": 1,
+      "logical_bytes": 6333,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/data_quality_boundary_audit.json",
+      "files": 1,
+      "logical_bytes": 6311,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/r17_clean_data_run.log",
+      "files": 1,
+      "logical_bytes": 6307,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_neural_feature_cache_r2.log",
+      "files": 1,
+      "logical_bytes": 6252,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_neural_feature_cache_r1.log",
+      "files": 1,
+      "logical_bytes": 6252,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r18_production_data.py",
+      "files": 1,
+      "logical_bytes": 6231,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/runpod_train_r2.py",
+      "files": 1,
+      "logical_bytes": 6228,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R7_FIXED100_TRANSFER_REPORT.md",
+      "files": 1,
+      "logical_bytes": 6195,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/training_cv_package_preflight.json",
+      "files": 1,
+      "logical_bytes": 6174,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_GUARDRAILS_EXECUTION_PLAN.md",
+      "files": 1,
+      "logical_bytes": 6173,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r14_anchor_cpu_r1.log",
+      "files": 1,
+      "logical_bytes": 6156,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R2_OOF_INDEPENDENT_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 6146,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_LOCAL_VS_PUBLIC_DIAGNOSTIC_FACTS.json",
+      "files": 1,
+      "logical_bytes": 6137,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/runpod_train_supervisor.py",
+      "files": 1,
+      "logical_bytes": 6137,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_DYNAMIC_MIX_RECOVERY_INDEPENDENT_QA_PREFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 6101,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/test_energy_domain_augmentation.py",
+      "files": 1,
+      "logical_bytes": 6077,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r2_oof.py",
+      "files": 1,
+      "logical_bytes": 6064,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_TREE_EXECUTOR_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 6059,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R4_DATA_SUMMARY.md",
+      "files": 1,
+      "logical_bytes": 5989,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_MASK_MATCHED_CONTROL_INDEPENDENT_QA_source.py",
+      "files": 1,
+      "logical_bytes": 5988,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_fourway_preregistration_r1.json",
+      "files": 1,
+      "logical_bytes": 5976,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r16_catboost_cpu8.py",
+      "files": 1,
+      "logical_bytes": 5936,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_OUTPUTS_R2_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 5932,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_DATASET_READY_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 5901,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_NEURAL_PRODUCTION_READINESS.md",
+      "files": 1,
+      "logical_bytes": 5898,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_PRODUCTION_START.html",
+      "files": 1,
+      "logical_bytes": 5884,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r11_derived_score_loss_counterexample.py",
+      "files": 1,
+      "logical_bytes": 5845,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r14_production_features_independent.py",
+      "files": 1,
+      "logical_bytes": 5817,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/runpod_run_state.json",
+      "files": 1,
+      "logical_bytes": 5778,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_GUARDRAILS_AND_CPU_ABLATION_REPORT.receipt.json",
+      "files": 1,
+      "logical_bytes": 5764,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_TFGRID_FOLD0_TREND_SNAPSHOT.json",
+      "files": 1,
+      "logical_bytes": 5754,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_BACKGROUND_CV_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 5709,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_CURRENT_TRAINING_PIPELINE_FOR_ARGON_20261029.evidence.json",
+      "files": 1,
+      "logical_bytes": 5697,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r14_fulltree_decoupled.py",
+      "files": 1,
+      "logical_bytes": 5694,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r14_production_state.json",
+      "files": 1,
+      "logical_bytes": 5678,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R7_SMALL_MODEL_CONTROLS_RESULTS.md",
+      "files": 1,
+      "logical_bytes": 5651,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "models/kumo_large_cpu_context1024",
+      "files": 3,
+      "logical_bytes": 5641,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "reports/R4_TRAINING_PLAN.md",
+      "files": 1,
+      "logical_bytes": 5637,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_V2_GUARDRAILS_RUNNER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 5635,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/preflight_r9_cuda.py",
+      "files": 1,
+      "logical_bytes": 5537,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_FULL_DATA_STATIC_INDEPENDENT_QA_FINAL.md",
+      "files": 1,
+      "logical_bytes": 5529,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_RUN_PLAN.md",
+      "files": 1,
+      "logical_bytes": 5455,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/backup_r18_5090_completed.py",
+      "files": 1,
+      "logical_bytes": 5433,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r19_gate_postlock_candidate_audit.py",
+      "files": 1,
+      "logical_bytes": 5377,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/deploy_r9_boundary_guard.py",
+      "files": 1,
+      "logical_bytes": 5362,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r12_tree_training_r1.log",
+      "files": 1,
+      "logical_bytes": 5337,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_FOLD0_BOUNDARY_HANDOFF_BACKUP.json",
+      "files": 1,
+      "logical_bytes": 5319,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/external_expansion_catalog.json",
+      "files": 1,
+      "logical_bytes": 5315,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/train_r13_cnn.py",
+      "files": 1,
+      "logical_bytes": 5313,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/infer_r16_multisupport_tree5.py",
+      "files": 1,
+      "logical_bytes": 5298,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/build_r5_issue_report_assets.py",
+      "files": 1,
+      "logical_bytes": 5276,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_FULL_DATA_STATIC_INDEPENDENT_QA_PROVISIONAL.md",
+      "files": 1,
+      "logical_bytes": 5273,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_SINGLE_SPLIT_TRAINING_SCOPE_AND_TIME.md",
+      "files": 1,
+      "logical_bytes": 5265,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_desktop_package.py",
+      "files": 1,
+      "logical_bytes": 5256,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/dynamic_domain_training_verification.json",
+      "files": 1,
+      "logical_bytes": 5232,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/r18_fundamental_audit_r1_regression.log",
+      "files": 1,
+      "logical_bytes": 5204,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r9_nn_supervisor.py",
+      "files": 1,
+      "logical_bytes": 5183,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_DATA_READINESS.md",
+      "files": 1,
+      "logical_bytes": 5158,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r16_multisupport_full.py",
+      "files": 1,
+      "logical_bytes": 5137,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_EVALUATION_RUNNER_README.md",
+      "files": 1,
+      "logical_bytes": 5133,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_TREES_COMPLETION.md",
+      "files": 1,
+      "logical_bytes": 5130,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/run_r16_neural_supervisor.py",
+      "files": 1,
+      "logical_bytes": 5130,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_VISUAL_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 5126,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_CLASSIFIER_PROVENANCE.md",
+      "files": 1,
+      "logical_bytes": 5109,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r16_cuda_bf16_contract.py",
+      "files": 1,
+      "logical_bytes": 5100,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_PRODUCTION_STATUS.md",
+      "files": 1,
+      "logical_bytes": 5090,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r16_multisupport_full_data.py",
+      "files": 1,
+      "logical_bytes": 5046,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_PREFLIGHT_INDEPENDENT_QA.md",
+      "files": 1,
+      "logical_bytes": 5030,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_STEP1_RESULTS.md",
+      "files": 1,
+      "logical_bytes": 5018,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_RUNNER_FINAL_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 5007,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r16_multisupport_fivefold.py",
+      "files": 1,
+      "logical_bytes": 5001,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_MASK_MATCHED_CONTROL_DATA.md",
+      "files": 1,
+      "logical_bytes": 4984,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_REFERENCE_POOL_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 4980,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/benchmark_r6_cpu_threads.py",
+      "files": 1,
+      "logical_bytes": 4943,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_RUNNER_VERIFICATION_V3.json",
+      "files": 1,
+      "logical_bytes": 4937,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_RUNNER_VERIFICATION_V2.json",
+      "files": 1,
+      "logical_bytes": 4936,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/eda_pipeline.ipynb",
+      "files": 1,
+      "logical_bytes": 4888,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/r16_mac_masking_control_r2",
+      "files": 2,
+      "logical_bytes": 4865,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_target_matched_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 4847,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_DYNAMIC_MIX_RECOVERY_INDEPENDENT_QA_FINAL.md",
+      "files": 1,
+      "logical_bytes": 4845,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r13_real_connection.py",
+      "files": 1,
+      "logical_bytes": 4828,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R7_FIXED100_TRANSFER_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 4774,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_frozen_evaluation_locked_r1.log",
+      "files": 1,
+      "logical_bytes": 4727,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_LOCAL_ALIGNMENT_AUDIT_PLAN.json",
+      "files": 1,
+      "logical_bytes": 4716,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/recover_r13_dynamic_mix_import.py",
+      "files": 1,
+      "logical_bytes": 4704,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_TORCH_FRONTEND.json",
+      "files": 1,
+      "logical_bytes": 4676,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_PRODUCTION_ENSEMBLE_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 4664,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/benchmark_r13_cuda_epoch.py",
+      "files": 1,
+      "logical_bytes": 4648,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/verify_r16_clean_support.py",
+      "files": 1,
+      "logical_bytes": 4628,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/deliver_r7_review.py",
+      "files": 1,
+      "logical_bytes": 4589,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/group_cv_runner_verification.json",
+      "files": 1,
+      "logical_bytes": 4568,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_TIMEMOE_PEFT_FIXTURE_CPU_V2.json",
+      "files": 1,
+      "logical_bytes": 4519,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_SINGLE_SPLIT_TRAINING_SCOPE_AND_TIME.json",
+      "files": 1,
+      "logical_bytes": 4509,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_TORCH_FRONTEND.md",
+      "files": 1,
+      "logical_bytes": 4470,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_RELATIVE_FEATURES_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 4466,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/r18_classifier_audit_run.log",
+      "files": 1,
+      "logical_bytes": 4456,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.json",
+      "files": 1,
+      "logical_bytes": 4445,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_TRAINING_ENGINE_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 4442,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r16_target_matched_training_r1.log",
+      "files": 1,
+      "logical_bytes": 4424,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r12_mask_matched_training_r2.log",
+      "files": 1,
+      "logical_bytes": 4419,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_RUNNER_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 4412,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/sync_desktop_updates.py",
+      "files": 1,
+      "logical_bytes": 4408,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_PREFLIGHT.plan.json",
+      "files": 1,
+      "logical_bytes": 4387,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_DATASET_WORKER_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 4379,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/final_r2_integration_audit.json",
+      "files": 1,
+      "logical_bytes": 4364,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_ANCHOR_COMPLETED_MODEL_QA.json",
+      "files": 1,
+      "logical_bytes": 4321,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_PHYSICS_FEATURES_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 4321,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_FIRST_EPOCH.json",
+      "files": 1,
+      "logical_bytes": 4318,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r10_matched_target_transfer_audit.py",
+      "files": 1,
+      "logical_bytes": 4315,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_PREFIT_SUPPORT_CORRECTION.md",
+      "files": 1,
+      "logical_bytes": 4309,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R13_DATASET_CONSTRUCTION.md",
+      "files": 1,
+      "logical_bytes": 4308,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_PHYSICAL_ROBUSTNESS_AUDIT.specification.json",
+      "files": 1,
+      "logical_bytes": 4301,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R12_FEATURES_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 4295,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r15_forward_prototype_r2.log",
+      "files": 1,
+      "logical_bytes": 4284,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/build_r6_fixed100_portal.py",
+      "files": 1,
+      "logical_bytes": 4272,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R6_CPU_THREAD_HARDWARE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 4258,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_TRAINING_ORDER_AND_TIME.md",
+      "files": 1,
+      "logical_bytes": 4246,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_API_HANDOFF.md",
+      "files": 1,
+      "logical_bytes": 4216,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/group_cv_data_verification.json",
+      "files": 1,
+      "logical_bytes": 4194,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_FOLD0_CNN_LOCAL_RESTORE_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 4191,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/dataset_review_facts.json",
+      "files": 1,
+      "logical_bytes": 4164,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r13_dynamic_mix_tree_import_repair.log",
+      "files": 1,
+      "logical_bytes": 4138,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R5_LB_FAILURE_VALIDATION_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 4132,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R16_TIMEMOE_PEFT_FIXTURE_CPU.json",
+      "files": 1,
+      "logical_bytes": 4129,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/group_cv_physics_data_facts.json",
+      "files": 1,
+      "logical_bytes": 4112,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/train_r12_cnn.py",
+      "files": 1,
+      "logical_bytes": 4100,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/r6v2_cpu_training_schemafix.log",
+      "files": 1,
+      "logical_bytes": 4099,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "ops/deliver_r6_fixed100.py",
+      "files": 1,
+      "logical_bytes": 4073,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/test_r18_production_finalization.py",
+      "files": 1,
+      "logical_bytes": 4056,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_DRAFT_PREFLIGHT_ABORTED.log",
+      "files": 1,
+      "logical_bytes": 4050,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/rmse_notification_state.json",
+      "files": 1,
+      "logical_bytes": 4019,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_V2_RELATIVE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 4016,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_MAC_TREE_CRASH_DIAGNOSIS.md",
+      "files": 1,
+      "logical_bytes": 3992,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/mac_cpu_execution_plan_r1.json",
+      "files": 1,
+      "logical_bytes": 3971,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/data_quality_v2_audit.json",
+      "files": 1,
+      "logical_bytes": 3970,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_PHYSICS_FEATURES_V2_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 3950,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 3942,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/deliver_r6_review.py",
+      "files": 1,
+      "logical_bytes": 3929,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r6_guardrails_training_examples.selection.json",
+      "files": 1,
+      "logical_bytes": 3912,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_RUNNER_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 3911,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_mac_trees_r2.log",
+      "files": 1,
+      "logical_bytes": 3906,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r5_data_audit_pause_receipt.json",
+      "files": 1,
+      "logical_bytes": 3904,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r17_clean_freshfit.py",
+      "files": 1,
+      "logical_bytes": 3865,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r5_remote_state.json",
+      "files": 1,
+      "logical_bytes": 3848,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/verify_r14_production_ensemble.py",
+      "files": 1,
+      "logical_bytes": 3836,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_PREFLIGHT.FAILED.json",
+      "files": 1,
+      "logical_bytes": 3828,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_OUTPUT_V2_PROTECTED_BEFORE.json",
+      "files": 1,
+      "logical_bytes": 3817,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r18_production_remote_state.json",
+      "files": 1,
+      "logical_bytes": 3792,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_START.html",
+      "files": 1,
+      "logical_bytes": 3791,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r17_audit_common.py",
+      "files": 1,
+      "logical_bytes": 3756,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r18_production_linux_wheels.json",
+      "files": 1,
+      "logical_bytes": 3732,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_frozen_evaluation_development_r1.log",
+      "files": 1,
+      "logical_bytes": 3725,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_CURRENT_ISSUES_REPORT_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 3707,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_EVALUATION_RUNNER_FIXTURE_R2",
+      "files": 4,
+      "logical_bytes": 3700,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/summarize_r16_catboost_timing.py",
+      "files": 1,
+      "logical_bytes": 3699,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_EVALUATOR_PREFLIGHT_QA.json",
+      "files": 1,
+      "logical_bytes": 3696,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R7_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 3666,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r19_multislice_law_transfer_r1_law_generation.log",
+      "files": 1,
+      "logical_bytes": 3652,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/test_r18_production_bridge.py",
+      "files": 1,
+      "logical_bytes": 3652,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r17_clean_freshfit_run.log",
+      "files": 1,
+      "logical_bytes": 3647,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r17_component_and_boundary_audit.py",
+      "files": 1,
+      "logical_bytes": 3621,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_TREE_TRAINING_COMPLETION.json",
+      "files": 1,
+      "logical_bytes": 3594,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_RELATIVE_FEATURES_FIXTURE_smooth_prefit.json",
+      "files": 1,
+      "logical_bytes": 3586,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/TRAINING_R1_STATUS.md",
+      "files": 1,
+      "logical_bytes": 3583,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_FINAL_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 3579,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r19_paired_law_effects.py",
+      "files": 1,
+      "logical_bytes": 3559,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_MAC_TREE_CRASH_DIAGNOSIS.json",
+      "files": 1,
+      "logical_bytes": 3533,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_TREE5_PUBLIC_RESULT_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 3496,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_FINALIZER_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 3463,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_REFERENCE_POOL_AUDIT.json",
+      "files": 1,
+      "logical_bytes": 3434,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "models/r16_catboost_peft_cpu8_smoke_r1",
+      "files": 2,
+      "logical_bytes": 3423,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "reports/R9_GPU_DEPLOYMENT_LAUNCH_RECEIPT.json",
+      "files": 1,
+      "logical_bytes": 3412,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_ANCHOR_INDEPENDENT_QA.md",
+      "files": 1,
+      "logical_bytes": 3411,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_SOURCE_SPLIT_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 3368,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6V2_SOURCE_SPLIT_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 3368,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_EVALUATION_RUNNER_FIXTURE",
+      "files": 3,
+      "logical_bytes": 3367,
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "models/r12_shared_basis_v1",
+      "files": 1,
+      "logical_bytes": 3363,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_NUMERIC_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 3362,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_NUMERIC_FIXTURE_pre_resource_guard.json",
+      "files": 1,
+      "logical_bytes": 3362,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/backup_r16_fourway_r2_completed.py",
+      "files": 1,
+      "logical_bytes": 3342,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/backup_r16_fourway_completed.py",
+      "files": 1,
+      "logical_bytes": 3339,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_SUPPORT_TEMPORAL_MODEL_FIXTURE_r1.json",
+      "files": 1,
+      "logical_bytes": 3337,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/GEMINI_CONSULTATION_DRAFT.md",
+      "files": 1,
+      "logical_bytes": 3330,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_EVALUATOR_PREFLIGHT_QA.md",
+      "files": 1,
+      "logical_bytes": 3324,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_TREES_COMPLETION.csv",
+      "files": 1,
+      "logical_bytes": 3323,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/diagnose_r16_reconstruction_r1.py",
+      "files": 1,
+      "logical_bytes": 3311,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_TRAINING_ENGINE_VERIFICATION.md",
+      "files": 1,
+      "logical_bytes": 3305,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/external_expansion_declaration_DRAFT.txt",
+      "files": 1,
+      "logical_bytes": 3290,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "models/r6_cpu_guardrails_v2_FAILED_before_first_fit_schema",
+      "files": 4,
+      "logical_bytes": 3290,
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "ops/r9_mac_trees_r2_state.json",
+      "files": 1,
+      "logical_bytes": 3286,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/frozen_inference_audit.json",
+      "files": 1,
+      "logical_bytes": 3285,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_OUTPUTS_R2_REPAIR_NOTES.md",
+      "files": 1,
+      "logical_bytes": 3284,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_boundary_guard_deployment.json",
+      "files": 1,
+      "logical_bytes": 3254,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r13_tree_training_r1.log",
+      "files": 1,
+      "logical_bytes": 3227,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_TREE_PCA_CONNECTION.json",
+      "files": 1,
+      "logical_bytes": 3221,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_support_temporal_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 3196,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_RELATIVE_FEATURES_FIXTURE.md",
+      "files": 1,
+      "logical_bytes": 3177,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_postprocess_preregistration_r1.json",
+      "files": 1,
+      "logical_bytes": 3147,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD0_BOUNDARY_HANDOFF_BACKUP.md",
+      "files": 1,
+      "logical_bytes": 3135,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/train_r12_mask_matched_control_v2.py",
+      "files": 1,
+      "logical_bytes": 3130,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_MPS_BENCHMARK.md",
+      "files": 1,
+      "logical_bytes": 3127,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/train_r12_mask_matched_control.py",
+      "files": 1,
+      "logical_bytes": 3127,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r18_classifier_gain_probe.py",
+      "files": 1,
+      "logical_bytes": 3113,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_GPU_RENTAL_COST_SCENARIOS.json",
+      "files": 1,
+      "logical_bytes": 3100,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_TREE_COMPLETION_INDEPENDENT_QA.md",
+      "files": 1,
+      "logical_bytes": 3089,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_OBSERVATION_AUGMENTATION_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 3071,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_r11_stress_r1.log",
+      "files": 1,
+      "logical_bytes": 3032,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_STEP1_PUBLIC_RESULT_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 2994,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_OUTPUTS_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 2981,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r17_frozen_mask_gallery.py",
+      "files": 1,
+      "logical_bytes": 2979,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/verify_r13_tree_pca.py",
+      "files": 1,
+      "logical_bytes": 2958,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_EVALUATOR_PREFLIGHT_QA_INITIAL.json",
+      "files": 1,
+      "logical_bytes": 2949,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_small_locked_r1.log",
+      "files": 1,
+      "logical_bytes": 2939,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_EXECUTION_BUDGET.md",
+      "files": 1,
+      "logical_bytes": 2938,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/deliver_r13_review.py",
+      "files": 1,
+      "logical_bytes": 2929,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_ANCHOR_FULLTREE_STATIC_QA.json",
+      "files": 1,
+      "logical_bytes": 2917,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_V1_ORIGINAL_PUBLIC_RESULT_REVIEW.md",
+      "files": 1,
+      "logical_bytes": 2883,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_MPS_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 2882,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_MASK_MATCHED_EVALUATION_PLAN.json",
+      "files": 1,
+      "logical_bytes": 2870,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/training_readiness.html",
+      "files": 1,
+      "logical_bytes": 2867,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_tree5_public_result_observation.json",
+      "files": 1,
+      "logical_bytes": 2853,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/benchmark_r13_synthesis.py",
+      "files": 1,
+      "logical_bytes": 2824,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_RELATIVE_FEATURES_FIXTURE_hard_sign_prefit.json",
+      "files": 1,
+      "logical_bytes": 2813,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/finalize_r18_production.py",
+      "files": 1,
+      "logical_bytes": 2795,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/final_r1_data_gate_for_r2.json",
+      "files": 1,
+      "logical_bytes": 2741,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R3_ENSEMBLE_REPORT.md",
+      "files": 1,
+      "logical_bytes": 2721,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/deliver_r12_review.py",
+      "files": 1,
+      "logical_bytes": 2714,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/background_hybrid_parity_verification.json",
+      "files": 1,
+      "logical_bytes": 2713,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r20_quiet_component_validation.py",
+      "files": 1,
+      "logical_bytes": 2709,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/plot_r9_tfgrid_trend.py",
+      "files": 1,
+      "logical_bytes": 2678,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/physics_model_v3_verification.json",
+      "files": 1,
+      "logical_bytes": 2670,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_EVALUATION_INDEPENDENT_QA_v2.md",
+      "files": 1,
+      "logical_bytes": 2670,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_ROBUST_SAMPLER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 2646,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_GENERATOR_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 2646,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_FROZEN_INFERENCE_VERIFICATION_V2.json",
+      "files": 1,
+      "logical_bytes": 2645,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_FROZEN_INFERENCE_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 2645,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_output_tree-only.log",
+      "files": 1,
+      "logical_bytes": 2633,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/benchmark_r14_full_epoch.py",
+      "files": 1,
+      "logical_bytes": 2575,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r6_data_prepare.log",
+      "files": 1,
+      "logical_bytes": 2574,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r17_mask_only_diagnostic.py",
+      "files": 1,
+      "logical_bytes": 2556,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/run_r16_tree_sequence.py",
+      "files": 1,
+      "logical_bytes": 2541,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r4_server_environment.json",
+      "files": 1,
+      "logical_bytes": 2530,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_CNN_PILOT_EXTERNAL_SOURCE_DECLARATION_DRAFT.txt",
+      "files": 1,
+      "logical_bytes": 2528,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_SYNTHESIS_FULL_EPOCH_BENCHMARK.json",
+      "files": 1,
+      "logical_bytes": 2527,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_FULL_TREE_EXECUTION_PLAN.md",
+      "files": 1,
+      "logical_bytes": 2520,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_support_temporal_evaluation_r3.log",
+      "files": 1,
+      "logical_bytes": 2500,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r12_mask_matched_training_r1.log",
+      "files": 1,
+      "logical_bytes": 2487,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_LGBM_RUNNER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 2478,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r15_band_comparison_r1.log",
+      "files": 1,
+      "logical_bytes": 2439,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/poll_r18_5090.py",
+      "files": 1,
+      "logical_bytes": 2381,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_SUPERVISOR_R2_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 2363,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_EVALUATION_INDEPENDENT_QA.md",
+      "files": 1,
+      "logical_bytes": 2354,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/verify_r13_spawn_loader.py",
+      "files": 1,
+      "logical_bytes": 2336,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/verify_r7_uploaded_submission.py",
+      "files": 1,
+      "logical_bytes": 2330,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/runpod_approve_and_launch.py",
+      "files": 1,
+      "logical_bytes": 2317,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_postprocess_remote_state.json",
+      "files": 1,
+      "logical_bytes": 2275,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_RELATIVE_FEATURES_FIXTURE_smooth_prefit.md",
+      "files": 1,
+      "logical_bytes": 2273,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/background_prior_raw_diagnostic.json",
+      "files": 1,
+      "logical_bytes": 2265,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_v1_original_public_result_observation.json",
+      "files": 1,
+      "logical_bytes": 2239,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/dataset_document_data_quality_factual_audit.json",
+      "files": 1,
+      "logical_bytes": 2181,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R11_IMPROVEMENT_ABLATION_PLAN.json",
+      "files": 1,
+      "logical_bytes": 2175,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r1_failure_status.json",
+      "files": 1,
+      "logical_bytes": 2174,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/train_r16_version2.py",
+      "files": 1,
+      "logical_bytes": 2172,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_REAL_FULL_MODEL_CONNECTION_V3.json",
+      "files": 1,
+      "logical_bytes": 2122,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_REAL_FULL_MODEL_CONNECTION_V2.json",
+      "files": 1,
+      "logical_bytes": 2122,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_REAL_FULL_MODEL_CONNECTION.json",
+      "files": 1,
+      "logical_bytes": 2121,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_mac_tree_resume_handoff.json",
+      "files": 1,
+      "logical_bytes": 2099,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_LOCAL_ALIGNMENT_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 2097,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/energy_domain_augmentation_fullfold_audit.json",
+      "files": 1,
+      "logical_bytes": 2073,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_PHYSICAL_ROBUSTNESS_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 2054,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_DATA_PILOT_WARP.md",
+      "files": 1,
+      "logical_bytes": 2050,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_R6_PILOT_SUBMISSION.md",
+      "files": 1,
+      "logical_bytes": 2039,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_ACTUAL_PREFLIGHT_r3.plan.json",
+      "files": 1,
+      "logical_bytes": 2015,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_FEATURES_FIXTURE.md",
+      "files": 1,
+      "logical_bytes": 2011,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/requeue_r16_fivefold_waiter.py",
+      "files": 1,
+      "logical_bytes": 2008,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/test_multislice_gate_r19.py",
+      "files": 1,
+      "logical_bytes": 2006,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_ACTUAL_PREFLIGHT_r2.plan.json",
+      "files": 1,
+      "logical_bytes": 2002,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_STEP1_OUTPUTS_INDEPENDENT_QA.md",
+      "files": 1,
+      "logical_bytes": 1989,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/FINAL_DATASET_SCALE.md",
+      "files": 1,
+      "logical_bytes": 1967,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_SYNTHETIC_MPS_PREFLIGHT_r1.plan.json",
+      "files": 1,
+      "logical_bytes": 1939,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_execution_state.json",
+      "files": 1,
+      "logical_bytes": 1934,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_support_temporal_evaluation_r2.log",
+      "files": 1,
+      "logical_bytes": 1930,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_TIMEWARP_INDEPENDENT_QA.md",
+      "files": 1,
+      "logical_bytes": 1923,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/deliver_r14_review.py",
+      "files": 1,
+      "logical_bytes": 1903,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_DATA_PILOT.md",
+      "files": 1,
+      "logical_bytes": 1897,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R7_R5_SUBMISSION_PATH_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 1867,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_SUPERVISOR_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 1865,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R7_REVIEW_RECEIPT.json",
+      "files": 1,
+      "logical_bytes": 1855,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_OUTPUTS_R2_REPAIR_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1833,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_ACTUAL_EVALUATION_COMPLETION.json",
+      "files": 1,
+      "logical_bytes": 1799,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_mac_tree_state.json",
+      "files": 1,
+      "logical_bytes": 1797,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r15_training_pause_receipt.json",
+      "files": 1,
+      "logical_bytes": 1787,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/deliver_r10_review.py",
+      "files": 1,
+      "logical_bytes": 1768,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/deliver_r11_review.py",
+      "files": 1,
+      "logical_bytes": 1761,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_PUBLIC_SUBMISSION_COMPARISON.json",
+      "files": 1,
+      "logical_bytes": 1757,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_V2_RELATIVE_FIXTURE.md",
+      "files": 1,
+      "logical_bytes": 1744,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/gpu_preflight_local_unavailable.json",
+      "files": 1,
+      "logical_bytes": 1720,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_FROZEN_INFERENCE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1709,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD0_CNN_COMPLETED_BACKUP.md",
+      "files": 1,
+      "logical_bytes": 1709,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R7_ANIL45_POST_OBSERVATION.json",
+      "files": 1,
+      "logical_bytes": 1682,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/runpod_bootstrap.py",
+      "files": 1,
+      "logical_bytes": 1649,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_HARD_NEGATIVES_V2_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 1642,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r16_injection_vs_saved_test_r1",
+      "files": 1,
+      "logical_bytes": 1629,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_TRAINING_STATUS_LATEST.json",
+      "files": 1,
+      "logical_bytes": 1625,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r17_saved_output_descriptive.py",
+      "files": 1,
+      "logical_bytes": 1620,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD_BOUNDARY_GUARD_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 1606,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_STEP1_PUBLIC_RESULT_REVIEW.json",
+      "files": 1,
+      "logical_bytes": 1593,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_MPS_BENCHMARK.json",
+      "files": 1,
+      "logical_bytes": 1572,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_GPU_DEPLOYMENT_LAUNCH_RECEIPT.md",
+      "files": 1,
+      "logical_bytes": 1552,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/effective_source_counts.json",
+      "files": 1,
+      "logical_bytes": 1549,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r16_multisupport_fivefold_r1",
+      "files": 1,
+      "logical_bytes": 1548,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_numerical_reconstruction_r1",
+      "files": 1,
+      "logical_bytes": 1538,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/physics_sampler_v3_fixture.json",
+      "files": 1,
+      "logical_bytes": 1531,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_TRAINING_ENGINE_VERIFICATION_GLOBAL_FREQUENCY.md",
+      "files": 1,
+      "logical_bytes": 1527,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_TRAINING_ENGINE_VERIFICATION.md",
+      "files": 1,
+      "logical_bytes": 1510,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/cnn_background_prior_training_verification.json",
+      "files": 1,
+      "logical_bytes": 1493,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_EVALUATION_POSTFLIGHT_NOTES.json",
+      "files": 1,
+      "logical_bytes": 1469,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/FINAL_DATASET_SCALE.json",
+      "files": 1,
+      "logical_bytes": 1438,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD0_CNN_COMPLETED_BACKUP.json",
+      "files": 1,
+      "logical_bytes": 1428,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_EXTERNAL_SOURCE_DECLARATION_MINIMAL.txt",
+      "files": 1,
+      "logical_bytes": 1412,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_forward_data_r1.log",
+      "files": 1,
+      "logical_bytes": 1408,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/model_scale_capacity_candidates.json",
+      "files": 1,
+      "logical_bytes": 1405,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_pause_request.json",
+      "files": 1,
+      "logical_bytes": 1390,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_SOURCE_SPLIT_AUDIT.verification.json",
+      "files": 1,
+      "logical_bytes": 1386,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/server_data_verification.json",
+      "files": 1,
+      "logical_bytes": 1376,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/domain_augmentation_pilot_results.json",
+      "files": 1,
+      "logical_bytes": 1368,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_RELATIVE_FEATURES_FIXTURE_hard_sign_prefit.md",
+      "files": 1,
+      "logical_bytes": 1366,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_STATUS_RENDERER_V2_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1343,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/status_r6_fixed100.py",
+      "files": 1,
+      "logical_bytes": 1343,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_fold0_ensemble_public_result.json",
+      "files": 1,
+      "logical_bytes": 1307,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r6v2_cpu_training.log",
+      "files": 1,
+      "logical_bytes": 1292,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r4_run_state.json",
+      "files": 1,
+      "logical_bytes": 1289,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_execution_state_before_multisupport_full.json",
+      "files": 1,
+      "logical_bytes": 1285,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_SUPPORT_TEMPORAL_PARALLEL_FIXTURE_r1.json",
+      "files": 1,
+      "logical_bytes": 1279,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_fourway_r2_remote_state.json",
+      "files": 1,
+      "logical_bytes": 1271,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/mac_cpu_offload_assessment.json",
+      "files": 1,
+      "logical_bytes": 1257,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_GUARDRAILS_INDEPENDENT_AUDIT.md",
+      "files": 1,
+      "logical_bytes": 1256,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_CROSS_RUNTIME_CPU_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1245,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r4_data_generation.log",
+      "files": 1,
+      "logical_bytes": 1238,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r5_lb_failure_observation.json",
+      "files": 1,
+      "logical_bytes": 1234,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_mac_trees_r2_observations.json",
+      "files": 1,
+      "logical_bytes": 1228,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R3_SHRINKAGE_INDEPENDENT_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 1226,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_NUMERIC_FIXTURE_pre_resource_guard.md",
+      "files": 1,
+      "logical_bytes": 1223,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_NUMERIC_FIXTURE.md",
+      "files": 1,
+      "logical_bytes": 1223,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_ORCHESTRATION_DELIVERY_RECEIPT.json",
+      "files": 1,
+      "logical_bytes": 1222,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r16_multisupport_full_r1",
+      "files": 1,
+      "logical_bytes": 1192,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_DATA_BUILDER_WARP_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1191,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_fold0_handoff_backup_state.json",
+      "files": 1,
+      "logical_bytes": 1186,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_DATA_BUILDER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1160,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_MAC_HANDOFF_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1156,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_output_hybrid-fast3.log",
+      "files": 1,
+      "logical_bytes": 1153,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD0_LOCAL_ROLE_SCALE_FACTS.json",
+      "files": 1,
+      "logical_bytes": 1135,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R2_FULL_PIPELINE_REPORT_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 1131,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/runtime_precision_patch.json",
+      "files": 1,
+      "logical_bytes": 1109,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r15_forward_prototype_r1.log",
+      "files": 1,
+      "logical_bytes": 1096,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/cnn_background_prior_outer_verification.json",
+      "files": 1,
+      "logical_bytes": 1068,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_RUNNER_ORCHESTRATION_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1068,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_old_paused_process_release.json",
+      "files": 1,
+      "logical_bytes": 1060,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_ANCHOR_EVALUATOR_GUARD_QA_V2.json",
+      "files": 1,
+      "logical_bytes": 1047,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R7_R5_UPLOADED_FILE_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 1025,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_ARCHITECTURE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 1018,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/energy_domain_augmentation_verification.json",
+      "files": 1,
+      "logical_bytes": 1005,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_TRAINING_ENGINE_VERIFICATION_PLAN.json",
+      "files": 1,
+      "logical_bytes": 997,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_approval.json",
+      "files": 1,
+      "logical_bytes": 992,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/train_r16_catboost_peft.py",
+      "files": 1,
+      "logical_bytes": 982,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD0_ALL5_PILOT_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 969,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/data_quality_prebuilt_v2_verification.json",
+      "files": 1,
+      "logical_bytes": 969,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/build_source_split_r6.py",
+      "files": 1,
+      "logical_bytes": 957,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/build_hard_negatives_r6_v2.py",
+      "files": 1,
+      "logical_bytes": 941,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_FOLD0_ADDITIONAL_MODELS_BACKUP.md",
+      "files": 1,
+      "logical_bytes": 925,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_V2_GUARDRAILS_RUNNER_FIXTURE.md",
+      "files": 1,
+      "logical_bytes": 914,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_DATA_CODE_FREEZE.json",
+      "files": 1,
+      "logical_bytes": 910,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_INDEPENDENT_QA_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 893,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_TRAINING_CLI_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 884,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/build_r12_cpu_data.py",
+      "files": 1,
+      "logical_bytes": 877,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_MAC_PRODUCER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 872,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_MAC_CONTROLLER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 858,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_SPAWN_LOADER_CONNECTION.json",
+      "files": 1,
+      "logical_bytes": 857,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_REAL_DATA_CONNECTION_VERIFICATION.md",
+      "files": 1,
+      "logical_bytes": 848,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_OUTPUTS_QA_HARNESS_NOTE.json",
+      "files": 1,
+      "logical_bytes": 848,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_TWO_CSV_INDEPENDENT_CHECK.json",
+      "files": 1,
+      "logical_bytes": 846,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_MAC_SUPERVISOR_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 840,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_ENSEMBLE_ANALYTIC_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 836,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_production_tree_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 832,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R7_SMALL_MODEL_CONTROLS_VERIFICATION.json",
+      "files": 1,
+      "logical_bytes": 815,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_fold0_pilot_nn_map.json",
+      "files": 1,
+      "logical_bytes": 797,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_output_supervisor.log",
+      "files": 1,
+      "logical_bytes": 788,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r6_fixed100_state.json",
+      "files": 1,
+      "logical_bytes": 784,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_ACTUAL_MPS_TO_PRIMARY_CPU_PORTABILITY.json",
+      "files": 1,
+      "logical_bytes": 781,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_ENSEMBLE_NUMERIC_QA.json",
+      "files": 1,
+      "logical_bytes": 776,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_trees_r1.log",
+      "files": 1,
+      "logical_bytes": 748,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r5_cnn_pilot_submission_handoff.json",
+      "files": 1,
+      "logical_bytes": 730,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_MAC_WORKER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 729,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/github_handoff_publication_20261028.json",
+      "files": 1,
+      "logical_bytes": 700,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_multisupport_execution_state.json",
+      "files": 1,
+      "logical_bytes": 699,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_MAC_TREE_ENVIRONMENT_LOCK.json",
+      "files": 1,
+      "logical_bytes": 691,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r5_preparation_state.json",
+      "files": 1,
+      "logical_bytes": 690,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_PRODUCTION_FINALIZER_FIXTURE_r4.json",
+      "files": 1,
+      "logical_bytes": 680,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_PRODUCTION_FINALIZER_FIXTURE_r2.json",
+      "files": 1,
+      "logical_bytes": 680,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_PRODUCTION_FINALIZER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 680,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_PRODUCTION_FINALIZER_FIXTURE_r3.json",
+      "files": 1,
+      "logical_bytes": 680,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_FINALIZER_INDEPENDENT_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 680,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_execution_state_preproduction_snapshot.json",
+      "files": 1,
+      "logical_bytes": 659,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/gpu_preflight_fixture_verification.json",
+      "files": 1,
+      "logical_bytes": 641,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_FIXED100_PREFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 631,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_output_supervisor_r2_launch.json",
+      "files": 1,
+      "logical_bytes": 627,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_fourway_remote_state.json",
+      "files": 1,
+      "logical_bytes": 625,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_execution_state.json",
+      "files": 1,
+      "logical_bytes": 624,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r13_dynamic_mix_tree_static.log",
+      "files": 1,
+      "logical_bytes": 621,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_GPU_PACKAGE_PORTABILITY.json",
+      "files": 1,
+      "logical_bytes": 610,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/data_quality_v2_verification.json",
+      "files": 1,
+      "logical_bytes": 602,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_STATUS_RENDERER_V2_LIVE_QA.json",
+      "files": 1,
+      "logical_bytes": 601,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r6_fixed100_training.log",
+      "files": 1,
+      "logical_bytes": 599,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_TWO_CSV_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 596,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_CPU_RUNNER_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 591,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_R2_PRESERVATION_CHECK.json",
+      "files": 1,
+      "logical_bytes": 564,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/r20_integrated_cpu_diagnostics_r1_hard_panel_generation.log",
+      "files": 1,
+      "logical_bytes": 551,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/dataset_document_verification.json",
+      "files": 1,
+      "logical_bytes": 549,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/dataset_row_eligibility_detail.json",
+      "files": 1,
+      "logical_bytes": 547,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6V2_ACTUAL_DATA_PREFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 538,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r6v2_data_prepare_schemafix.log",
+      "files": 1,
+      "logical_bytes": 535,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r6v2_data_prepare.log",
+      "files": 1,
+      "logical_bytes": 535,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R9_GPU_LOCAL_PACKAGE_RECEIPT.json",
+      "files": 1,
+      "logical_bytes": 531,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_INTERRUPTED_CONTROL_R1.json",
+      "files": 1,
+      "logical_bytes": 528,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_tree_full_r1.log",
+      "files": 1,
+      "logical_bytes": 520,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_output_supervisor_launch.json",
+      "files": 1,
+      "logical_bytes": 520,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/training_readiness.json",
+      "files": 1,
+      "logical_bytes": 509,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_CPU_ENGINE_PREFIT_ISSUE.json",
+      "files": 1,
+      "logical_bytes": 509,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_public_result_observations.json",
+      "files": 1,
+      "logical_bytes": 504,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_STATUS_RENDERER_QA.json",
+      "files": 1,
+      "logical_bytes": 485,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_FROZEN_PREDICTION_FIXTURE_r1.json",
+      "files": 1,
+      "logical_bytes": 462,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_FROZEN_PREDICTION_FIXTURE_r3.json",
+      "files": 1,
+      "logical_bytes": 462,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_NEURAL_FROZEN_PREDICTION_FIXTURE_r2.json",
+      "files": 1,
+      "logical_bytes": 461,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_EVALUATION_QA_NUMERIC_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 452,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_PRODUCTION_TREE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 445,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R5_BACKUP_V2_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 445,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/domain_builder_metadata_verification.json",
+      "files": 1,
+      "logical_bytes": 443,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_DATA_GENERATION_EXECUTION.json",
+      "files": 1,
+      "logical_bytes": 439,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6_CPU_ENVIRONMENT.json",
+      "files": 1,
+      "logical_bytes": 390,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_DATASET_NUMERIC_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 366,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_EVALUATION_QA_NUMERIC_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 363,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_NN_DRAFT_PREFLIGHT_ABORTED.json",
+      "files": 1,
+      "logical_bytes": 349,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/dataset_document_physics_verification.json",
+      "files": 1,
+      "logical_bytes": 347,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R14_PRODUCTION_ENSEMBLE_NUMERIC_QA_INITIAL_FAILURE.json",
+      "files": 1,
+      "logical_bytes": 345,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R4_ENSEMBLE_SAFETY_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 339,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 317,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_MASK_MATCHED_EVALUATION_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 314,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R6V2_POSTFLIGHT.json",
+      "files": 1,
+      "logical_bytes": 313,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_mac_trees_r1.log",
+      "files": 1,
+      "logical_bytes": 298,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_DESKTOP_DELIVERY.json",
+      "files": 1,
+      "logical_bytes": 297,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r9_mac_tree_latest.json",
+      "files": 1,
+      "logical_bytes": 296,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_PRODUCTION_ENSEMBLE_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 291,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_idle_sleep_assertion_r2.json",
+      "files": 1,
+      "logical_bytes": 258,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/prepare_r18_production_data.py",
+      "files": 1,
+      "logical_bytes": 238,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R12_EVALUATION_INDEPENDENT_QA.json",
+      "files": 1,
+      "logical_bytes": 237,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R13_EVAL_SCORE_NUMERIC_FIXTURE.json",
+      "files": 1,
+      "logical_bytes": 227,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "models/lgbm_foundation_features_context1024",
+      "files": 1,
+      "logical_bytes": 227,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_production_data_verification_r1.log",
+      "files": 1,
+      "logical_bytes": 194,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r12_evaluation_r1.log",
+      "files": 1,
+      "logical_bytes": 176,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r13_data_build_r1.log",
+      "files": 1,
+      "logical_bytes": 172,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "reports/R16_REVIEW_START.html",
+      "files": 1,
+      "logical_bytes": 168,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_output_supervisor_r2.log",
+      "files": 1,
+      "logical_bytes": 79,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_problem_gate_tree_stress.log",
+      "files": 1,
+      "logical_bytes": 66,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r14_production_output_supervisor_r2.lock",
+      "files": 1,
+      "logical_bytes": 5,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "ops/r16_production_tree_sequence.log",
+      "files": 1,
+      "logical_bytes": 0,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "ops/r16_neural_supervisor_launcher.log",
+      "files": 1,
+      "logical_bytes": 0,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "models/.r14_production_MPS_writer.lock",
+      "files": 1,
+      "logical_bytes": 0,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "models/.r16_production_MPS_writer.lock",
+      "files": 1,
+      "logical_bytes": 0,
+      "allocated_bytes": 0
+    }
+  ],
+  "current_first_party_code_and_config": {
+    "directories": {
+      "[root source]": {
+        "files": 41,
+        "bytes": 309031
+      },
+      "ops": {
+        "files": 355,
+        "bytes": 4947827
+      },
+      "configs": {
+        "files": 30,
+        "bytes": 97987
+      },
+      "pipeline": {
+        "files": 132,
+        "bytes": 1647652
+      }
+    },
+    "files": 558,
+    "logical_bytes": 7002497,
+    "definition": "root *.py/*.sh/requirements* and direct pipeline/*.py,ops/*.py/*.sh,configs/*.json/yaml; excludes nested snapshots and vendor runtimes"
+  }
+}
